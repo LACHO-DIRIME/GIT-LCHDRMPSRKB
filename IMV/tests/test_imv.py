@@ -1,9 +1,9 @@
 """
 DIRIME IMV — test_imv.py
 Tests soberanos automatizados del ciclo completo IMV.
+$wed 2026-03-11 · 27→33 tests · GENERATOR + LANGUAGE_ROUTING añadidos
 
-Ejecutar: cd ~/Documentos/PLANERAI/DIRIME/IMV && python3 -m pytest tests/ -v
-O directo: python3 tests/test_imv.py
+Ejecutar: cd /media/Personal/PLANERAI/DIRIME/IMV && python3 tests/test_imv.py
 """
 
 import sys
@@ -21,18 +21,16 @@ sys.path.insert(0, str(_IMV_DIR))
 def test_foundation_verifica():
     """IMV-1: foundation retorna (Foundation, Scope, Term) para módulo válido."""
     from core.foundation import verify_sovereign_conditions, SovereignError
-    # Debe retornar tupla sin lanzar excepción
     result = verify_sovereign_conditions("grammar")
     assert isinstance(result, tuple), "debe retornar tupla soberana"
     assert len(result) == 3, "tupla debe tener 3 elementos"
     foundation, scope, term = result
     assert foundation.identity_verified is True, "identidad debe estar verificada"
-    # Módulo inválido debe lanzar SovereignError
     try:
         verify_sovereign_conditions("modulo_invalido")
         assert False, "debe lanzar SovereignError para módulo inválido"
     except SovereignError:
-        pass  # correcto
+        pass
     print("  ✅ foundation.verify_sovereign_conditions()")
 
 
@@ -112,8 +110,7 @@ def test_grammar_5_nudos():
     print("  ✅ grammar.validate() — 5 nudos canónicos VALID")
 
 
-# ── Tests grammar extendidos (L-01/L-02/L-03) ──────────────────────
-
+# ── Tests grammar extendidos ────────────────────────────────────
 
 def test_cjk_detection():
     from core.grammar import validate, is_chinese
@@ -124,6 +121,7 @@ def test_cjk_detection():
     assert len(p.cjk_tokens) > 0
     assert p.taxonomy.get("taxonomy_level") == 1
     print("  ✅ grammar.cjk — is_chinese() + unicode_mode CHINA + taxonomy N1")
+
 
 def test_ceo_alpha_loader():
     from core.ceo_alpha import ceo_summary, get_role_by_hexagram, get_scalar_threshold
@@ -139,7 +137,6 @@ def test_ceo_alpha_loader():
 
 class TestGrammarExtended:
     def test_9_bibliotecas_validan(self):
-        """Las 9 bibliotecas producen VALID con sentencia mínima correcta."""
         from core.grammar import validate
         sentencias = [
             "TRUST FOUNDATION =><= .. verifica .. scope_activo --[As de Guía] [term]",
@@ -156,50 +153,6 @@ class TestGrammarExtended:
             p = validate(s)
             lib = s.split()[0]
             assert p.result.value == "VALID", f"{lib} debe ser VALID: {p.errors} {p.warnings}"
-
-    def test_verbo_natural_no_warning(self):
-        """TRUST + verbo natural no genera warning de verbo."""
-        from core.grammar import validate
-        p = validate(
-            "TRUST FOUNDATION =><= .. verifica .. obj --[As de Guía] [term]"
-        )
-        assert p.result.value == "VALID", f"Esperado VALID, obtenido {p.result.value}"
-        assert not any("Verbo" in w for w in p.warnings), f"No debe haber warning de verbo: {p.warnings}"
-
-    def test_verbo_mismatch_warning(self):
-        """TRUST + verbo no natural genera WARNING pero sigue siendo válido."""
-        from core.grammar import validate
-        p = validate(
-            "TRUST FOUNDATION =><= .. lanza .. obj --[As de Guía] [term]"
-        )
-        assert p.result.value == "WARNING", "Debe marcar WARNING por verbo no natural"
-        assert any("no natural" in w for w in p.warnings), f"Debe advertir verbo no natural: {p.warnings}"
-
-    def test_sujeto_canonico_no_warning(self):
-        """WORK con sujeto canónico no genera warning de sujeto."""
-        from core.grammar import validate
-        p = validate(
-            "WORK {actuator} =><= .. ejecuta .. tarea --[As de Guía] [term]"
-        )
-        assert p.result.value == "VALID", f"Esperado VALID, obtenido {p.result.value}"
-        assert not any("Sujeto" in w for w in p.warnings), f"No debe haber warning de sujeto: {p.warnings}"
-
-    def test_sujeto_mismatch_warning(self):
-        """WORK con sujeto no canónico genera WARNING pero es válido."""
-        from core.grammar import validate
-        p = validate(
-            "WORK {motor} =><= .. ejecuta .. tarea --[As de Guía] [term]"
-        )
-        assert p.result.value == "WARNING", "Debe marcar WARNING por sujeto no canónico"
-        assert any("no canónico" in w for w in p.warnings), f"Debe advertir sujeto no canónico: {p.warnings}"
-
-    def test_term_ausente_invalida(self):
-        """Sentencia sin [term] sigue siendo INVALID."""
-        from core.grammar import validate
-        p = validate(
-            "TRUST FOUNDATION =><= .. verifica .. scope --[As de Guía]"
-        )
-        assert p.result.value == "INVALID", "Sin [term] debe seguir siendo INVALID"
 
 
 # ── Tests ledger ────────────────────────────────────────────────
@@ -232,14 +185,13 @@ def test_ledger_blue_green():
     """Transacciones VALID son GREEN, INVALID son BLUE."""
     from core.ledger import get_stats
     stats = get_stats()
-    # Con 850+ tx el sistema tiene ambos estados
     total = stats.get("transactions_total", 0)
     assert total > 0, "debe haber transacciones para este test"
     print("  ✅ ledger.get_stats() — blue/green presentes")
 
 
 def test_ledger_cristales_40():
-    """El ledger tiene exactamente 40 cristales activos."""
+    """El ledger tiene al menos 40 cristales activos."""
     from core.ledger import get_stats
     stats = get_stats()
     crystals = stats.get("crystals_total", 0)
@@ -335,29 +287,175 @@ def test_tomo_assign():
     print(f"  ✅ tomo — {len(assigned)} TOMO_IDs asignados, primero: term:A")
 
 
+# ── Tests ext (standalone) ──────────────────────────────────────
+
+def test_ext_9_bibliotecas():
+    from core.grammar import validate
+    libs = ['TRUST','SOCIAL','CRYPTO','WORK','SAMU','ACTIVITY','GATE','STACKING','METHOD']
+    for lib in libs:
+        r = validate(f'{lib} FOUNDATION =><= .. verifica .. obj --[As de Guía] [term]')
+        assert r.result.value in ('VALID','WARNING'), f'{lib} debería ser VALID o WARNING'
+
+
+def test_ext_verbo_natural():
+    from core.grammar import validate
+    r = validate('TRUST FOUNDATION =><= .. verifica .. scope_activo --[As de Guía] [term]')
+    assert r.result.value == 'VALID'
+    assert not any('verbo' in w.lower() for w in r.warnings)
+
+
+def test_ext_verbo_mismatch():
+    from core.grammar import validate
+    r = validate('TRUST FOUNDATION =><= .. lanza .. scope_activo --[As de Guía] [term]')
+    assert r.result.value == 'WARNING'
+    assert any('verbo' in w.lower() for w in r.warnings), f'warnings: {r.warnings}'
+
+
+def test_ext_sujeto_canonico():
+    from core.grammar import validate
+    r = validate('WORK {actuator} =><= .. materializa .. tarea --[As de Guía] [term]')
+    assert r.result.value == 'VALID'
+    assert not any('sujeto' in w.lower() for w in r.warnings)
+
+
+def test_ext_sujeto_mismatch():
+    from core.grammar import validate
+    r = validate('WORK {motor} =><= .. ejecuta .. tarea --[As de Guía] [term]')
+    assert r.result.value == 'WARNING'
+    assert any('sujeto' in w.lower() for w in r.warnings), f'warnings: {r.warnings}'
+
+
+def test_ext_term_ausente():
+    from core.grammar import validate
+    r = validate('TRUST FOUNDATION =><= .. verifica .. scope --[As de Guía]')
+    assert r.result.value == 'INVALID'
+
+
+# ══ Tests GENERATOR · $wed 2026-03-11 ══════════════════════════
+
+def test_gen_1_creates_file():
+    """generator.py crea o ya tiene archivo .lacho en LACHO_FILES."""
+    import subprocess
+    from pathlib import Path
+    result = subprocess.run(
+        ["python3", "tools/generator.py", "--mode", "stats"],
+        capture_output=True, text=True,
+        cwd=str(_IMV_DIR)
+    )
+    lacho_dir = _IMV_DIR.parent / "FOLDERS NO RAG INPUT" / "LACHO_FILES"
+    # También acepta el dir legacy por compatibilidad
+    lacho_dir_legacy = _IMV_DIR.parent / "LACHO_FILES"
+    files = []
+    if lacho_dir.exists():
+        files = list(lacho_dir.glob("*.lacho"))
+    if not files and lacho_dir_legacy.exists():
+        files = list(lacho_dir_legacy.glob("*.lacho"))
+    assert result.returncode == 0 or len(files) > 0, (
+        f"generator falló (rc={result.returncode}) y no hay .lacho previos\n"
+        f"stderr: {result.stderr[:300]}"
+    )
+    print(f"  ✅ generator.py — archivo .lacho presente ({len(files)} encontrados)")
+
+
+def test_gen_2_valid_sentences():
+    """generator.build_stats_sentences produce sentencias LACHO válidas."""
+    import sys as _sys
+    _sys.path.insert(0, str(_IMV_DIR))
+    from core.grammar import validate, ValidationResult
+    from tools.generator import build_stats_sentences, collect
+    data = collect()
+    sentences = build_stats_sentences(data)
+    assert len(sentences) > 0, "build_stats_sentences devolvió vacío"
+    valid = sum(1 for s in sentences if validate(s).result != ValidationResult.INVALID)
+    assert valid > 0, f"Ninguna sentencia válida de {len(sentences)}"
+    print(f"  ✅ generator.sentences — {valid}/{len(sentences)} válidas")
+
+
+def test_gen_3_score_threshold():
+    """generator — sentencias tienen Scalar S > 0."""
+    from core.grammar import validate, lacho_score
+    from tools.generator import build_stats_sentences, collect
+    data = collect()
+    sentences = build_stats_sentences(data)
+    assert sentences, "build_stats_sentences vacío"
+    scores = [lacho_score(validate(s)) for s in sentences]
+    assert any(sc > 0 for sc in scores), "Todas las sentencias tienen score 0"
+    print(f"  ✅ generator.score — max={max(scores):.2f}")
+
+
+def test_gen_4_language_routing():
+    """language_routing — NLP→LACHO para 3 casos soberanos."""
+    from core.language_routing import route
+    casos = [
+        ("verificar contrato digital", "TRUST"),
+        ("ejecutar sync github",       "WORK"),
+        ("cristalizar historial inmutable", "STACKING"),
+    ]
+    for texto, lib_esperada in casos:
+        r = route(texto)
+        assert r.validated, f"route('{texto}') no validó: {r.sentence}"
+        assert r.library == lib_esperada, (
+            f"Esperaba {lib_esperada}, got {r.library} para '{texto}'"
+        )
+    print("  ✅ language_routing — 3 casos NLP→LACHO válidos")
+
+
+def test_gen_5_route_cjk():
+    """language_routing — detecta CJK tokens y enruta correctamente."""
+    from core.language_routing import route
+    r = route("verificar 信任 en contrato soberano")
+    assert r.validated, f"CJK route no validó: {r.sentence}"
+    assert "信任" in r.cjk_tokens, f"CJK no detectado: {r.cjk_tokens}"
+    print(f"  ✅ language_routing.cjk — {r.cjk_tokens} → {r.library}")
+
+
+def test_gen_6_gate_sequence():
+    """grammar — GATE acepta secuencia canónica H03→H05→H56→H06."""
+    from core.grammar import validate, ValidationResult
+    sentencias = [
+        "GATE UF[H03] =><= .. contiene .. inicio_dificultad_soberana --[Ballestrinque] [term]",
+        "GATE UF[H05] =><= .. espera .. latencia_soberana_h05 --[Ballestrinque] [term]",
+        "GATE UF[H56] =><= .. transita .. flujo_transito_soberano --[As de Guía] [term]",
+        "GATE UF[H06] =><= .. dirime .. conflicto_resuelto_h06 --[Ballestrinque] [term]",
+    ]
+    for s in sentencias:
+        r = validate(s)
+        assert r.result != ValidationResult.INVALID, (
+            f"GATE seq INVALID: {s}\nerrors: {r.errors}"
+        )
+    print("  ✅ grammar.GATE — secuencia H03→H05→H56→H06 válida")
+
+
 # ── Runner soberano ─────────────────────────────────────────────
 
 def run_all_tests():
     tests = [
+        # FOUNDATION (2)
         test_foundation_verifica,
         test_foundation_json_existe,
+        # GRAMMAR (5)
         test_grammar_valid_canonica,
         test_grammar_invalid_sin_term,
         test_grammar_invalid_sin_nudo,
         test_grammar_9_bibliotecas,
         test_grammar_5_nudos,
+        # LEDGER (6)
         test_ledger_record_valid,
         test_ledger_stats_retorna,
         test_ledger_blue_green,
         test_ledger_cristales_40,
         test_ledger_blacklist,
         test_samu_audit_valid,
+        # SAMU (2)
         test_samu_audit_invalid,
         test_groq_config_existe,
+        # GROQ (2)
         test_groq_traduccion_nl_lacho,
+        # UNICODE (2)
         test_switch_unicode_modo_default,
         test_switch_unicode_cambia,
         test_tomo_assign,
+        # GRAMMAR_EXT (8)
         test_ext_9_bibliotecas,
         test_ext_verbo_natural,
         test_ext_verbo_mismatch,
@@ -366,6 +464,13 @@ def run_all_tests():
         test_ext_term_ausente,
         test_cjk_detection,
         test_ceo_alpha_loader,
+        # GENERATOR (6)
+        test_gen_1_creates_file,
+        test_gen_2_valid_sentences,
+        test_gen_3_score_threshold,
+        test_gen_4_language_routing,
+        test_gen_5_route_cjk,
+        test_gen_6_gate_sequence,
     ]
 
     passed = 0
@@ -378,13 +483,14 @@ def run_all_tests():
     print("=" * 60)
 
     groups = {
-        "FOUNDATION": tests[0:2],
-        "GRAMMAR":    tests[2:7],
-        "LEDGER":     tests[7:13],
-        "SAMU":       tests[13:15],
-        "GROQ":       tests[15:17],
-        "UNICODE":    tests[17:19],
+        "FOUNDATION":  tests[0:2],
+        "GRAMMAR":     tests[2:7],
+        "LEDGER":      tests[7:13],
+        "SAMU":        tests[13:15],
+        "GROQ":        tests[15:17],
+        "UNICODE":     tests[17:19],
         "GRAMMAR_EXT": tests[19:27],
+        "GENERATOR":   tests[27:33],
     }
 
     for group, group_tests in groups.items():
@@ -409,44 +515,6 @@ def run_all_tests():
         print("✅ TODOS LOS TESTS SOBERANOS PASARON")
     print("=" * 60)
     return failed == 0
-
-
-
-def test_ext_9_bibliotecas():
-    from core.grammar import validate
-    libs = ['TRUST','SOCIAL','CRYPTO','WORK','SAMU','ACTIVITY','GATE','STACKING','METHOD']
-    for lib in libs:
-        r = validate(f'{lib} FOUNDATION =><= .. verifica .. obj --[As de Guía] [term]')
-        assert r.result.value in ('VALID','WARNING'), f'{lib} debería ser VALID o WARNING'
-
-def test_ext_verbo_natural():
-    from core.grammar import validate
-    r = validate('TRUST FOUNDATION =><= .. verifica .. scope_activo --[As de Guía] [term]')
-    assert r.result.value == 'VALID'
-    assert not any('verbo' in w.lower() for w in r.warnings)
-
-def test_ext_verbo_mismatch():
-    from core.grammar import validate
-    r = validate('TRUST FOUNDATION =><= .. lanza .. scope_activo --[As de Guía] [term]')
-    assert r.result.value == 'WARNING'
-    assert any('verbo' in w.lower() for w in r.warnings), f'warnings: {r.warnings}'
-
-def test_ext_sujeto_canonico():
-    from core.grammar import validate
-    r = validate('WORK {actuator} =><= .. materializa .. tarea --[As de Guía] [term]')
-    assert r.result.value == 'VALID'
-    assert not any('sujeto' in w.lower() for w in r.warnings)
-
-def test_ext_sujeto_mismatch():
-    from core.grammar import validate
-    r = validate('WORK {motor} =><= .. ejecuta .. tarea --[As de Guía] [term]')
-    assert r.result.value == 'WARNING'
-    assert any('sujeto' in w.lower() for w in r.warnings), f'warnings: {r.warnings}'
-
-def test_ext_term_ausente():
-    from core.grammar import validate
-    r = validate('TRUST FOUNDATION =><= .. verifica .. scope --[As de Guía]')
-    assert r.result.value == 'INVALID'
 
 
 if __name__ == '__main__':

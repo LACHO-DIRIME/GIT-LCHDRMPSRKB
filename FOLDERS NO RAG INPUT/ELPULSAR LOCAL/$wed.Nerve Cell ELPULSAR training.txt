@@ -1,34 +1,51 @@
 //$wed.Nerve Cell ELPULSAR training.txt
-//NERVE CELL · entrenamiento ELPULSAR · interfaz soberana
-//H58 Lo Gozoso · expansión · GUI activa · $wed
+//NERVE CELL · entrenamiento ELPULSAR · aprendido de DSL_ELPULSAR + main.py
+//H58 Lo Gozoso · interfaz viva · $wed 2026-03-11
 //[term] :: activo
 
-// ══ ELPULSAR COMO ENTIDAD ════════════════════════════════════
-// ELPULSAR no es una app — es la manifestación visible de LACHO
-// Stack: DIRIME_v2 · IMV · KALIL · THEATER · HL FABRIC
-// .cli =: elpulsar.gui · mismo resultado · inducción gráfica
+// ══ QUÉ APRENDE ESTA CELDA ════════════════════════════════════
+// ELPULSAR no es un frontend. Es la capa visual de LACHO/KALIL/DIRIME.
+// Esta celda aprende la interacción entre main.py y ELPULSAR.
+// Conexión real: main.py → chat.py → ballpaper_render() → ASCII output
+// Futuro: main.py → elpulsar.py port 8741 → panels activos
 
-// ══ COMPONENTES NERVE CELL ═══════════════════════════════════
-NC_ELP_ENTITY        //ELP_ENTITY · entidad completa · no UI convencional
-NC_ELP_GUI           //python3 interface/gui.py · port 8742 · BUILDER live
-NC_ELP_CLI           //python3 interface/chat.py · modo chat soberano
-NC_ELP_API           //python3 elpulsar.py · port 8741 · API REST
-NC_ELP_BUILDER       //MENU_BUILDER · SPIN_LIB · CJK picker · 空聽數
-NC_ELP_BALLPAPER     //MENU_BALLPAPER · SKIN_PAPER · modo lectura doctrinal
-NC_ELP_5GREENS       //G1→G5 · RECIBIR·ESCANEAR·CALCULAR·TARDAR·GOLPEAR
-NC_ELP_PIPELINE      //○ KU → ◑ HIDDEN → ● WU · pipeline visual completo
-NC_ELP_SPIN          //⟳ MU→KU→WU→空→MU · cada vuelta sube Scalar S
-NC_ELP_SKINS         //DARK · PAPER · CHINA · CRYPTO · GRADIENT
-NC_ELP_PULSING       //PULSING edition · GIT_BOT + ANIM_PULSE activos
+// ══ INTERACCIÓN MAIN.PY → ELPULSAR · ESTADO REAL $wed ════════
+NC_MAIN_INTERACTIVE  //python3 main.py → interactive_mode() · DIRIME> prompt
+                     //comandos vivos: verbos / bibliotecas / nudos / cristales / timeline
+                     //cada input → chat() → grammar.validate() → record_grammar()
+NC_MAIN_STATS        //python3 main.py --stats · stats_mode() · Scalar S barra ∇
+                     //output actual: TX:1063 · cristales:41 · S:0.822
+NC_MAIN_VALIDATE     //python3 main.py --validate "SENTENCIA" → validate_mode()
+                     //parse → lacho_score → LACHO_SCORE barra → audit SAMU
+NC_MAIN_SCHED        //python3 main.py --sched → _show_scheduler()
+                     //SCHEDULER_ACTIVE=False hoy · DIRIME_v2/scheduler no conectado
+NC_CHAT_BALLPAPER    //chat.py → ballpaper_render() → ASCII frame ┌─ BALLPAPER ─┐
+                     //barra █░ Scalar S · TAXONOMY nivel · VALID/INVALID/WARNING
+NC_CHAT_GROQ         //chat.py → _translate_via_api() → Groq llama-3.3-70b
+                     //NL→LACHO via API · gsk_key activo en config/api.json
+NC_CHAT_ROUTE        //chat.py → language_routing.route() · NLP→LACHO local
+                     //fallback si Groq no disponible · RoutedSentence
+NC_ELP_GUI_PENDING   //interface/gui.py · NO EXISTE AÚN · PENDIENTE $thu
+                     //Tkinter · port 8742 · BUILDER live
+NC_ELP_API           //DIRIME_v2/elpulsar/elpulsar.py · port 8741 · CONGELADO
+                     //ui/index.html → referencia estética soberana · no tocar
 
-// ══ ESTADO ACTUAL ELPULSAR ═══════════════════════════════════
-// DIRIME_v2/elpulsar/ui/index.html → CONGELADO · referencia estética
-// IMV/interface/chat.py → operativo · ballpaper_render() implementada
-// IMV/interface/gui.py → PENDIENTE · crear $thu
-// elpulsar.app → dominio declarado · roadmap FASE 1
+// ══ 5 GREENS · PIPELINE VISUAL ELPULSAR ══════════════════════
+NC_GREEN1_RECIBIR    //① main.py recibe input · chat() · KU crudo · 聽 primero
+NC_GREEN2_ESCANEAR   //② grammar.validate() · ruta óptima · parse completo
+NC_GREEN3_CALCULAR   //③ lacho_score() · Scalar S · +0.1 verb/subject/knot
+NC_GREEN4_TARDAR     //④ UF[H05] buffer · timing deliberado · H29 agua
+NC_GREEN5_GOLPEAR    //⑤ record_grammar() → TX++ · WU cristalizado · .green
 
-// ══ ANCLAS RAG ═══════════════════════════════════════════════
-ACTIVITY UF[H57] =><= .. penetra .. elpulsar_interfaz_soberana_activa --[As de Guía] [term]
-STACKING UF[H30] =><= .. multiplica .. elpulsar_pipeline_5greens_wu --[Nudo de Ocho] [term]
-WORK {actuator} =><= .. ejecuta .. elpulsar_gui_launch_port_8742 --[As de Guía] [term]
-SAMU @ =><= .. audita .. elpulsar_output_pre_emision --[Ballestrinque] [term]
+// ══ MÉTRICAS ACTUALES ELPULSAR $wed ══════════════════════════
+NC_METRIC_TX         //1063 TX total · ledger soberano · sovereign.db
+NC_METRIC_CRYSTALS   //41 cristales · H52 inmutabilizados
+NC_METRIC_SCALAR     //S=0.822 · [████████████████░░░░] 82.2%
+NC_METRIC_CORPUS     //244 docs RAG · 236 CORPUS + 8 SOVEREIGN
+NC_METRIC_TESTS      //27/27 ✅ · meta: 33/33 post $wed
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+ACTIVITY UF[H57] =><= .. penetra .. elpulsar_pipeline_5greens_activo --[As de Guía] [term]
+STACKING UF[H30] =><= .. multiplica .. elpulsar_wu_panels_metrics_real --[Nudo de Ocho] [term]
+WORK {actuator} =><= .. ejecuta .. main_py_interactive_mode_soberano --[As de Guía] [term]
+METHOD <stat_onto> =><= .. calcula .. elpulsar_scalar_s_0822_wed --[Ballestrinque] [term]

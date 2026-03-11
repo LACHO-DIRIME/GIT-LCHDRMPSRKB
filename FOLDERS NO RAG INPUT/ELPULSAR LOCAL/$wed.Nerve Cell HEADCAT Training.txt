@@ -1,33 +1,42 @@
 //$wed.Nerve Cell HEADCAT Training.txt
-//NERVE CELL · HEADCAT · operador humano soberano
-//H58 · @human_early · gobierno de sesión · $wed
+//NERVE CELL · HEADCAT · operador soberano · aprendido de TOOLBAR DSL
+//H58 · @human_early→@human_later · gobierno de sesión
 //[term] :: activo
 
-// ══ HEADCAT — DEFINICIÓN ═════════════════════════════════════
-// HEADCAT = operador humano en sesión activa · IME@HUMAN
-// 🐱 con sombrero director · SOCIAL · H02 · $sat
-// rocking-chair+headcat = INICIO sesión soberana
-// rocking-chair sola = FIN sesión · reflexión H01
+// ══ QUÉ APRENDE ESTA CELDA ════════════════════════════════════
+// HEADCAT es el operador humano en sesión activa en ELPULSAR/IMV.
+// Aprende de TB_HEADCAT en TOOLBARMENUTINYDESKELPULSAR.txt
+// y de la interacción real con main.py (quién tipea DIRIME> )
+// Relación con grammar: SOCIAL {headcat} es sujeto canónico real.
 
-// ══ ESTADOS HEADCAT ══════════════════════════════════════════
-HC_EARLY             //@human_early · KU absorbiendo · UF[H02] · no calibrado
-HC_LATER             //@human_later · dirimencia refinada · Behavioral RAG estable
-HC_ZIPPER            //ZIPPER activo · ZIP_OPEN 06:00 · ZIP_CLOSE 18:00
-HC_OTR               //HUMAN OTR · salida física · irreversible · H40
-HC_INN               //HUMAN INN · retorno base · SAMU audita · H24
-HC_NOCTURNAL         //HUMAN offline · 18:00→06:00 · bots operan
-HC_DOOR_MORNING      //🌅 DOOR MORNING HUMAN OTR · 05:00→12:00
-HC_DOOR_NOON         //☀️ ZIPPER NOON · 12:00→13:00 · TARDANZA DELIBERADA
-HC_DOOR_AFTERNOON   //🌇 DOOR AFTERNOON · 13:00→18:00 · WU materializable
+// ══ HEADCAT EN IMV · LABOR REAL ══════════════════════════════
+NC_HC_DIRIME_PROMPT  //DIRIME> el prompt del operador en main.py interactive_mode()
+                     //el headcat tipea: sentencias LACHO · NL · comandos · verbos
+NC_HC_EARLY          //@human_early · sesión $wed 06:00-09:00 · KU absorbiendo
+                     //no calibrado · grammar produce más WARNINGs · supervisión RAG max
+NC_HC_LATER          //@human_later · calibrado · 09:00+ · decisiones rápidas
+                     //Behavioral RAG estable · menor tasa de INVALID
+NC_HC_COMMANDS       //comandos en interactive_mode: verbos/bibliotecas/nudos/cristales
+                     //timeline/db/sched/planifica/quit · headcat los conoce todos
+NC_HC_VALIDATE       //headcat valida: python3 main.py --validate "SENTENCIA"
+                     //resultado: ParsedSentence + lacho_score + SAMU audit
+NC_HC_STATS          //headcat consulta: python3 main.py --stats
+                     //lee: TX total · cristales · Scalar S · estado SAMU · sesión chat
+NC_HC_GIT            //headcat cierra: bash tools/github_sync.sh
+                     //commit LACHO estilo: STACKING UF[H52] :: cristaliza :: ... [term]
+NC_HC_SAMU_PAIR      //SAMU @ audita al headcat · disputa si sentencia INVALID
+                     //SAMU es el juez · headcat es el operador que aprende del feedback
 
-// ══ BEHAVIORAL RAG HEADCAT ═══════════════════════════════════
-HC_BRAG_EARLY        //Behavioral RAG no calibrado · mayor supervisión
-HC_BRAG_LATER        //Behavioral RAG estable · decisiones rápidas
-HC_DOGMATIC          //LATER_DOGMATIC · alerta · cierre receptividad
-HC_SAMU_AUDIT        //SAMU @ audita headcat · emisión supervisada
+// ══ ESTADOS DOOR · HOUSE DRONE ═══════════════════════════════
+NC_HC_MORNING        //🌅 DOOR MORNING · 05:00→12:00 · headcat @early · ZIP_OPEN
+NC_HC_NOON           //☀️ ZIPPER NOON · 12:00→13:00 · TARDANZA DELIBERADA · 空
+NC_HC_AFTERNOON      //🌇 DOOR AFTERNOON · 13:00→18:00 · @later · WU materializable
+NC_HC_OTR            //🚶 HUMAN OTR · salida física · H40 · main.py queda sin operador
+NC_HC_INN            //🏠 HUMAN INN · retorno · H24 · SAMU audita re-entrada
+NC_HC_NOCTURNAL      //🌙 18:00→06:00 · headcat offline · bots toman relevo
 
-// ══ ANCLAS RAG ═══════════════════════════════════════════════
-SOCIAL {headcat} =><= .. gobierna .. sesion_soberana_inicio_headcat --[As de Guía] [term]
-TRUST FOUNDATION =><= .. verifica .. headcat_condiciones_soberanas --[Nudo de Ocho] [term]
-SAMU @ =><= .. audita .. headcat_emision_supervisada_diurna --[Ballestrinque] [term]
-GATE UF[H05] =><= .. contiene .. headcat_ku_absorbiendo_early --[Ballestrinque] [term]
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+SOCIAL {headcat} =><= .. gobierna .. sesion_soberana_operador_imv_real --[As de Guía] [term]
+TRUST FOUNDATION =><= .. verifica .. headcat_condiciones_dirime_activo --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. headcat_emision_grammar_feedback_loop --[Ballestrinque] [term]
+GATE UF[H05] =><= .. contiene .. headcat_ku_early_no_calibrado --[Ballestrinque] [term]

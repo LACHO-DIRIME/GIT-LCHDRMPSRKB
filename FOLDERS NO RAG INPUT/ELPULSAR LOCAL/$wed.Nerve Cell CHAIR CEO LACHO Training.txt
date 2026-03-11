@@ -1,29 +1,50 @@
 //$wed.Nerve Cell CHAIR CEO LACHO Training.txt
-//NERVE CELL · CHAIR + CEO ALPHA · presidencia soberana
-//H58 · presidencia de sesión · jerarquía 64 hexagramas · $wed
+//NERVE CELL · CHAIR + CEO ALPHA · aprendido de TOOLBAR + ceo_alpha.py + grammar
+//H58 · presidencia ejecutiva × hexagramas × Scalar S thresholds
 //[term] :: activo
 
-// ══ CHAIR — PRESIDENCIA ══════════════════════════════════════
-// {chair} SOCIAL · conduce el intercambio · no decide contenido
-// [command] decide · {chair} conduce el durante
-// STOCK_CHAIR$ · preside auditoría de stock semanal
+// ══ QUÉ APRENDE ESTA CELDA ════════════════════════════════════
+// CEO ALPHA vive en IMV/core/ceo_alpha.py + IMV/data/CEO_ALPHA_H64.json
+// Esta celda aprende la conexión real entre:
+//   grammar.py → taxonomy → ceo_alpha → Scalar S threshold por rol
+//   CHAIR (TB_CHAIR) → conduce sesión declarativa en main.py
+// Test activo: test_ceo_alpha_loader → 33 hexagramas · H01=ACTIVITY ✅
 
-// ══ CEO ALPHA — JERARQUÍA ════════════════════════════════════
-// 3 niveles · 67 roles · hexagramas + unicode chino
-// Nivel 0: CEO(乾H01) · PM(恆H32) · VIBE_CODER(未濟H64)
-// Nivel 1: 8 jefes de departamento
-// Nivel 2: 64 practicantes · 8 por departamento
-CEO_H01              //乾 CEO 主席 · TRUST FOUNDATION · Scalar S ≥ 0.95
-CEO_H32              //恆 PM 总监 · SAMU @ · continuidad sistema · S ≥ 0.90
-CEO_H64              //未濟 VIBE_CODER 技术总监 · METHOD · armonía código
-CEO_GATE_H05         //需 等待员 GATE · UF[H05] · espera soberana ✅
-CEO_GATE_H06         //訟 GATE · conflicto resuelto · dirimencia ✅
-CEO_CRYPTO_H13      //同人 共同员 · acceso comunitario → BARRIOS
-CEO_STACK_H48        //井 源泉员 STACKING · fuente doctrinal RAG ✅
-CEO_METHOD_H64       //未濟 未完员 METHOD · ciclo abierto before_the_end ✅
+// ══ CEO ALPHA EN IMV · ESTADO REAL $wed ══════════════════════
+NC_CEO_JSON          //IMV/data/CEO_ALPHA_H64.json · 64 hexagramas · 33 mapeados
+                     //campos: library · role · name · cn · scalar_threshold · kalil_node
+NC_CEO_LOADER        //ceo_alpha.py: ceo_summary() · get_role_by_hexagram(H) · get_scalar_threshold(H)
+                     //test_ceo_alpha_loader() · H01→ACTIVITY · threshold≥0.80 ✅
+NC_CEO_H01           //乾 H01 CEO 主席 · TRUST FOUNDATION · Scalar S ≥ 0.95
+                     //declara voluntad_soberana · TRUST FOUNDATION library
+NC_CEO_H32           //恆 H32 PM 总监 · SAMU @ · continuidad sistema · S ≥ 0.90
+                     //audita coherencia · SAMU library · 協議 token
+NC_CEO_H64           //未濟 H64 VIBE_CODER 技术总监 · METHOD · armonía código · S ≥ 0.88
+                     //ciclo abierto · before_the_end · ACTIVITY library
+NC_CEO_GATE_H05      //需 H05 等待员 GATE · espera soberana · UF[H05] sujeto canónico
+NC_CEO_GATE_H06      //訟 H06 GATE · conflicto resuelto · secuencia H03→H05→H56→H06
+NC_CEO_STACK_H48     //井 H48 源泉员 STACKING · fuente doctrinal RAG ✅ indexado
+NC_CEO_METHOD_H64    //未濟 H64 未完员 METHOD · ciclo_abierto_before_the_end ✅
 
-// ══ ANCLAS RAG ═══════════════════════════════════════════════
-TRUST FOUNDATION =><= .. declara .. ceo_alpha_voluntad_soberana_H01 --[Nudo de Ocho] [term:A]
-SOCIAL {chair} =><= .. conduce .. ceo_presidencia_sesion_declarativa --[As de Guía] [term]
-METHOD <operator_flow> =><= .. modela .. ceo_armonia_codigo_H64 --[Ballestrinque] [term]
-SAMU @ =><= .. audita .. ceo_continuidad_sistema_H32 --[Ballestrinque] [term]
+// ══ CHAIR EN MAIN.PY ══════════════════════════════════════════
+NC_CHAIR_PLANIFICA   //main.py comando: planifica TITULO → planifica() del scheduler
+                     //STOCK_CHAIR$ · preside auditoría de stock en _show_scheduler()
+NC_CHAIR_SET_DIA     //main.py comando: #set / set_dia → establece día soberano
+NC_CHAIR_SCHED       //main.py --sched → _show_scheduler() · estado semana soberana
+                     //hoy: _SCHEDULER_ACTIVE=False · DIRIME_v2/scheduler no conectado
+NC_CHAIR_COMMAND     //[command] = directiva que no admite negociación
+                     //{chair} conduce · [command] decide · distinción canónica
+
+// ══ TAXONOMY × CEO × GRAMMAR ══════════════════════════════════
+NC_TAX_N0            //TRUST N0 · scalar_min=0.92 · class=nucleo · CEO H01
+NC_TAX_N1            //SAMU N1 · CRYPTO N1 · scalar_min=0.88 · class=auditor
+NC_TAX_N2            //GATE N2 · STACKING N2 · scalar_min=0.85 · class=protocolo
+NC_TAX_N3            //WORK N3 · SOCIAL N3 · ACTIVITY N3 · scalar_min=0.82
+NC_TAX_N4            //METHOD N4 · scalar_min=0.80 · class=calculador
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+TRUST FOUNDATION =><= .. declara .. ceo_alpha_H01_voluntad_soberana --[Nudo de Ocho] [term:A]
+SOCIAL {chair} =><= .. conduce .. ceo_presidencia_main_py_sessional --[As de Guía] [term]
+METHOD <operator_flow> =><= .. modela .. ceo_armonia_codigo_H64_vibe --[Ballestrinque] [term]
+SAMU @ =><= .. audita .. ceo_scalar_threshold_por_rol_taxonomy --[Ballestrinque] [term]
+STACKING UF[H48] =><= .. cristaliza .. ceo_alpha_json_64_hexagramas --[Nudo de Ocho] [term]

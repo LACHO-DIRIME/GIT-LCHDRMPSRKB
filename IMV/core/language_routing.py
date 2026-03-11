@@ -1,6 +1,6 @@
 """
 IMV/core/language_routing.py
-Bridge NLP → LACHO · Sesión 9 · 2026-03-09
+Bridge NLP → LACHO · Sesión 9 · 2026-03-09 · Fix $wed 2026-03-11
 Toma texto natural y lo convierte en sentencia LACHO válida.
 Pipeline: texto → intent → biblioteca → sujeto → verbo → objeto → sentencia
 """
@@ -102,7 +102,7 @@ def _detect_library(text: str) -> tuple[str, float]:
         if hits:
             scores[lib] = hits
 
-# POR ESTO:# CJK bonus
+    # CJK bonus
     for zh, data in CJK_TOKEN_MAP.items():
         if zh in text:
             lib = data[0] if isinstance(data, tuple) else data.get("library", "")
@@ -162,7 +162,7 @@ def _extract_object(text: str, library: str, cjk_tokens: list[str]) -> str:
 def route(text: str) -> RoutedSentence:
     """
     Convierte texto natural a sentencia LACHO válida.
-    
+
     Uso:
         from core.language_routing import route
         r = route("necesito verificar un contrato digital")
