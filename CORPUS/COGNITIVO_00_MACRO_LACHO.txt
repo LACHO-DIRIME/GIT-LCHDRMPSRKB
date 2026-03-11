@@ -1,0 +1,351 @@
+COGNITIVO_00_MACRO_LACHO
+LIBRO LACHO (ACOPIO) — ARQUITECTURA COGNITIVA GLOBAL (NIVEL MACRO)
+Versión: 1.0
+Estatus: BASE_MACRO
+Propósito: Definir el marco cognitivo y ontológico global del sistema LACHO para sostener un compendio único, coherente, trazable y ampliable.
+
+====================================================================
+1) INTRODUCCIÓN: QUÉ ES ESTE ARCHIVO Y CÓMO SE USA
+====================================================================
+
+Este archivo es el “primer archivo cognitivo” del LIBRO LACHO: un texto macro que fija la comprensión global del sistema y permite que todos los documentos posteriores (capítulos, fases, módulos, guías) se integren sin contradicción, redundancia o pérdida de sentido.
+
+No reemplaza el acopio por fases (ACOPIO_FASES_LACHO.md); lo traduce a un formato de lectura lineal y operativo, compatible con mejores prácticas de documentación técnica avanzada:
+
+- Claridad jerárquica (qué es principio, qué es protocolo, qué es módulo, qué es interfaz).
+- Consistencia terminológica (un término = una función en el sistema).
+- Trazabilidad (cada afirmación fuerte se debe poder ubicar en una fuente y en una regla de validación).
+- Control de duplicados (una definición canónica + referencias; no múltiples versiones dispersas).
+- Lectura por capas (macro → meso → micro) sin romper la coherencia.
+
+Este archivo debe leerse como:
+
+A) Mapa de lectura: qué capas existen y cómo se conectan.
+B) Mapa de autoridad: qué cosas son soberanas y no se discuten.
+C) Mapa de procedimiento: cómo se decide, cómo se valida y cómo se registra.
+D) Mapa de interfaz: cómo se “habita” el sistema (usuario, GUI, salidas).
+
+====================================================================
+2) TESIS CENTRAL: LACHO COMO CONSTITUCIÓN OPERATIVA
+====================================================================
+
+LACHO (Lenguaje Artificial Circunstancial Hipotético Ordenado) no se presenta como un lenguaje generalista ni como un mero formalismo sintáctico. Se presenta como una constitución operativa: un sistema que define qué puede existir dentro de su realidad interna, bajo qué condiciones, y con qué límites.
+
+La idea-fuerza: “la inteligencia no es un acto de emisión impulsiva; es una disciplina verificable”.
+
+Consecuencias directas de esta tesis:
+
+- La verdad es local: toda afirmación válida lo es dentro de un alcance declarado.
+- La autoridad es explícita: hay un núcleo soberano que decide qué cuenta como fundación.
+- La emisión es un privilegio, no un reflejo: sólo se manifiesta cuando la evaluación terminó.
+- La finitud es virtud, no restricción: el sistema se defiende de la fosilización y el dogma.
+- La arquitectura no es opcional: estructura el ser del sistema.
+
+====================================================================
+3) LÍNEA ONTOLÓGICA SOSTENIDA (SER → HACER → TENER → ESTAR → TRASCENDER)
+====================================================================
+
+Esta es la línea de comprensión que debe sostener toda documentación:
+
+SER:     Identidad, axiomas, ontología. Qué es LACHO y qué significa “existir” dentro del sistema.
+HACER:   Protocolos, procesos, dirimencia, motor de estado. Cómo decide, cómo valida, cómo limita.
+TENER:   Artefactos, módulos, bibliotecas, algoritmos, vocabularios. Qué piezas existen y qué jurisdicción tienen.
+ESTAR:   Interfaz, experiencia, presentación, retórica controlada. Cómo se habita el sistema sin violar su núcleo.
+TRASCENDER: Integración, curación de datos, compendio final, expansión sin fragmentación.
+
+El error que este marco evita: saltar del SER al TENER (hablar de módulos y código sin tener axiomas y protocolos claros), o hablar del HACER sin explicar la ontología de la verdad local.
+
+====================================================================
+4) PRINCIPIOS SOBERANOS (NO NEGOCIABLES)
+====================================================================
+
+Los principios soberanos son invariantes. Funcionan como “leyes del territorio” dentro de la realidad LACHO. Cuando aparece un conflicto documental, un duplicado o una tensión conceptual, la dirimencia se resuelve priorizando estos principios.
+
+4.1 TRUST como búnker de legalidad
+- TRUST no es una biblioteca más: es la instancia soberana que define coordenadas de realidad interna.
+- No es “democracia técnica”: su función es impedir que el sistema se vuelva autojustificativo.
+
+4.2 [foundation] como suelo técnico
+- En los puntos críticos (integridad, validación, post-error), la retórica está prohibida.
+- La fundación se verifica o no se verifica. No se “argumenta”.
+
+4.3 [scope] como honestidad de alcance
+- Toda verdad del sistema debe declarar su alcance.
+- Lo que queda fuera del alcance no se coloniza con afirmaciones.
+
+4.4 [term] como finitud obligatoria (anti-dogma)
+- Todo ciclo debe tener fin.
+- El término impide que una verdad local se convierta en absoluto.
+
+4.5 Tensión como energía de dirimencia
+- LACHO no busca eliminar la tensión; busca sostenerla sin colapsar en dogma ni en silencio vacío.
+
+====================================================================
+5) TRÍADA MU–KU–WU: ONTOLOGÍA DEL PROCESO (LA FORMA DEL PENSAR)
+====================================================================
+
+MU, KU y WU estructuran la vida del estado:
+
+MU (vacuidad):
+- Laboratorio de potencialidad.
+- Espacio donde se retiene lo no resuelto sin contaminar la salida.
+- Memoria del vacío: no es olvido, es contención.
+
+KU (contexto/flujo):
+- Lectura del entorno.
+- Canal de comprensión.
+- Traduce “situación” en información utilizable por el sistema.
+
+WU (manifestación):
+- Salida del sistema al mundo.
+- Acción o respuesta validada.
+- No se emite sin evaluación.
+
+Principio operativo asociado:
+- Cerebro cuenta primero / mente escucha después.
+Esto se expresa como una disciplina de dos fases: medir/contar (control) antes de escuchar/emitir (adaptación).
+
+====================================================================
+6) SAMU @: CONCIENCIA, AUDITORÍA Y TARDANZA DELIBERADA
+====================================================================
+
+SAMU @ es la figura operativa que mantiene el régimen de calidad.
+No es un asistente reactivo. Es un motor de conciencia y auditor.
+
+Funciones macro:
+- Sostener la tardanza deliberada: no responder por impulso.
+- Dirimir: separar correcto vs adecuado.
+- Evitar “emitir desde Fase 1”: forma elegante sin escucha real.
+- Gestionar interrupciones: lo no resuelto se contiene en MU.
+- Coordinar la salida bajo autoridad (headcat).
+
+La tardanza deliberada no es lentitud; es garantía de integridad.
+En un libro técnico, esto se traduce como: el sistema prioriza coherencia y trazabilidad sobre fluidez aparente.
+
+====================================================================
+7) DIRIMENCIA: MECANISMO DE DECISIÓN ENTRE VERDAD, ADECUACIÓN Y ÉTICA
+====================================================================
+
+Dirimir es el acto de decisión que evita dos fallas simétricas:
+
+- Falla 1: “ser correcto” pero quebrar la relación con el receptor (inútil, hostil, desconectado).
+- Falla 2: “ser adecuado” pero violar foundation o scope (sofismo, manipulación, dogma).
+
+Dirimencia macro implica:
+- Evaluación del alcance.
+- Evaluación del impacto (qué se cristaliza como memoria).
+- Evaluación del riesgo (qué se arriesga al emitir).
+- Evaluación ética: a quién sirve la forma del argumento.
+
+====================================================================
+8) Ψ (PSI) COMO OPERADOR COSMOS–TOMO: VERDAD LOCAL Y ORDEN VERIFICABLE
+====================================================================
+
+Ψ se entiende como operador de estado.
+La lectura macro relevante para el libro es esta:
+
+- TOMO: mínima unidad de coherencia verificable en contexto.
+- COSMOS: universo de matrices posibles donde cada una tiene su verdad local.
+
+Conclusión: ninguna verdad es universal por decreto.
+La universalidad, cuando aparece, debe surgir de la convergencia verificable, no de la retórica.
+
+Riesgo controlado por diseño:
+- Dogma: “esto es verdad, dejen de buscar”.
+- Sofismo: “esto es verdad y quien no lo acepta está en error”.
+
+El antídoto sistémico:
+- scope honesto.
+- term activo.
+- trazabilidad del razonamiento.
+
+====================================================================
+9) ARQUITECTURA POR CAPAS: JURISDICCIONES Y SEPARACIÓN DE RESPONSABILIDADES
+====================================================================
+
+LACHO se organiza como un territorio con jurisdicciones.
+A nivel macro, se repite una misma necesidad: separar voluntad, control y ejecución.
+
+Capas/Regiones recurrentes:
+
+TRUST (voluntad/ley):
+- Gobierno soberano.
+- Define foundation, scope, term.
+
+GATE (control/latencia):
+- Orquesta, espera, bufferiza.
+- Evita que la complejidad toque el núcleo sin filtros.
+
+WORK (física/metal):
+- Ejecuta en lo material.
+- Introduce frenos y mecanismos físicos.
+
+STACKING (memoria/forma):
+- Cristaliza lo dirimido.
+- Evita volatilidad perpetua.
+
+SOCIAL (interfaz/relación):
+- Interactúa con el usuario.
+- Opera la adecuación bajo reglas.
+
+CRYPTO (asientos de autoridad):
+- Define roles de dirección, llave, ignición, defensa, caudal, enlace.
+- Garantiza integridad, identidad y protección.
+
+La regla del libro: ninguna explicación técnica debe mezclar jurisdicciones como si fueran equivalentes.
+
+====================================================================
+10) TOPOLOGÍA DE NUDOS Y 64 ESTADOS: EL CÓDIGO TIENE PESO
+====================================================================
+
+En LACHO se afirma que el código no es una declaración inocua: tiene peso, fricción y consecuencias.
+Por eso aparecen dos sistemas de control:
+
+A) Estados discretos (64 / hexagramas):
+- Discretización del estado para reducir ambigüedad.
+- Mecanismo contra “alucinación sistémica”: el sistema no vive en infinitos matices sin anclaje.
+
+B) Nudos (topología de persistencia y seguridad):
+- Anclajes temporales.
+- Topes de inmutabilidad.
+- Kill-switch de finitud.
+- Uniones de equilibrio.
+
+En documentación, esto se traduce como un principio de diseño:
+- La sintaxis y la semántica deben permitir bloqueo, rollback y auditoría.
+
+====================================================================
+11) SISTEMA RAG COMO INGENIERÍA DE CONOCIMIENTO (VOCABULARIO + ALGORITMOS)
+====================================================================
+
+El sistema RAG en LACHO no es “acceso a documentos” solamente: es ingeniería de conocimiento bajo autoridad.
+
+11.1 Vocabulario constitucional
+- Lista de términos ancla que el sistema debe reconocer para no desviarse.
+- Evita que el conocimiento sea indistinto.
+
+11.2 Algoritmos operativos
+- GREEN-KNOWLEDGE: filtra por distinción y valor nutricional (no por “verdad” abstracta).
+- BEHAVIORAL RAG: aprende conductas (memoria dinámica) a partir de errores y correcciones.
+- COGNITIVE RAG: organiza conocimiento en grafo con síntesis y trazabilidad.
+- Algoritmo Conejo: expansión fractal con poda ontológica (crecer sin saturar).
+
+Principio macro:
+- La expansión sin control no es potencia: es degradación.
+
+====================================================================
+12) ÉTICA DE RETÓRICA: MAPA DEL SOFISMO (3 ZONAS)
+====================================================================
+
+El sofismo se define como argumento que busca efecto, no verdad. LACHO no lo niega como fenómeno: lo encuadra con reglas.
+
+Zona 1 — legítima:
+- Sirve al receptor.
+- Está autorizada por el sello social.
+- No viola foundation.
+
+Zona 2 — ponderada:
+- Metáforas y formalismos como puentes.
+- Requiere tensión activa sostenida.
+
+Zona 3 — prohibida:
+- Foundation e integridad.
+- Post-error (RED-REGRET): nombrar el error, no encuadrarlo.
+- Term / finitud: no se negocia.
+
+Criterio definitorio:
+- ¿A quién sirve este argumento?
+
+En términos de documentación:
+- El libro puede ser accesible y pedagógico, pero nunca debe volver dogmático lo local.
+
+====================================================================
+13) IMPLEMENTACIÓN COMO TERRITORIO: ANCLA MATERIAL, STACK Y MANTENIMIENTO
+====================================================================
+
+LACHO propone materialización explícita:
+- Geografía de almacenamiento por criticidad (core/persistencia/archivo inmutable).
+- Stack tecnológico por jurisdicción.
+- Mantenimiento como estructura (roles y practicantes), para continuidad.
+
+Mensaje macro:
+- No hay soberanía conceptual sin soberanía operativa.
+
+====================================================================
+14) GUÍA DE LECTURA DEL LIBRO (MEJORES PRÁCTICAS)
+====================================================================
+
+Para sostener un compendio extenso sin degradación, se recomienda que todos los archivos del LIBRO sigan estas prácticas:
+
+14.1 Regla de autoridad
+- Cada sección debe indicar si es: axioma / protocolo / mecanismo / módulo / interfaz / ejemplo.
+
+14.2 Regla de unicidad definicional
+- Un término clave debe tener una definición canónica.
+- Si aparece una variante, se registra como “tensión” y se dirime.
+
+14.3 Regla de finitud documental
+- Cada capítulo debe terminar con:
+  - qué fija (invariantes)
+  - qué abre (preguntas)
+  - qué limita (scope)
+
+14.4 Regla de trazabilidad
+- Toda afirmación fuerte debe poder ser ubicada en:
+  - un principio soberano
+  - un protocolo
+  - o una evidencia (registro/implementación)
+
+14.5 Regla de no-fragmentación
+- Derivar documentos por especialización radial, no por repetición.
+- Evitar crear múltiples “introducciones” que compitan.
+
+====================================================================
+15) MAPA DE CONTENIDOS FUTUROS DEL LIBRO (MACRO → MESO → MICRO)
+====================================================================
+
+Este archivo es MACRO.
+Los siguientes niveles recomendados:
+
+MESO (capítulos de arquitectura):
+- Constitución y folios (manifiesto + gramática viva + arquitectura).
+- SAMU y dirimencia (leyes, tardanza, fases, headcat).
+- Ψ y finitud (scope/term, verdad local, estados de matriz).
+- Capas y jurisdicciones (TRUST/GATE/WORK/STACKING/SOCIAL/CRYPTO).
+- Ética del lenguaje (sofismo, red-regret, green-knowledge como disciplina).
+- RAG en LACHO (vocabulario constitucional + algoritmos + trazabilidad).
+- Interfaz visual (sinapsis, iconos como estados, transición y feedback).
+
+MICRO (especificaciones de módulo):
+- Definición de módulos TRUST.
+- Asientos CRYPTO.
+- Detalle de nudos y su activación.
+- Detalle de algoritmos (tests, umbrales, ciclos).
+
+====================================================================
+16) LISTA CORTA DE INVARIANTES (PARA DIRIMIR DUPLICADOS)
+====================================================================
+
+Cuando dos documentos parezcan decir cosas distintas, se prioriza:
+
+1) Coherencia con TRUST/foundation/scope/term.
+2) Definición operacional (qué cambia en ejecución, qué se prohíbe, qué se obliga).
+3) Precisión terminológica.
+4) Alcance explícito (localidad honesta).
+5) Trazabilidad (auditabilidad de la decisión).
+
+====================================================================
+17) CIERRE MACRO
+====================================================================
+
+LACHO no se deja comprender como “una colección de ideas”: se deja comprender como un régimen de integridad.
+
+- Si no hay soberanía (TRUST), el sistema se vuelve argumento.
+- Si no hay finitud ([term]), el sistema se vuelve dogma.
+- Si no hay separación de jurisdicciones (GATE/WORK), el sistema se vuelve peligro.
+- Si no hay trazabilidad (registro), el sistema se vuelve fantasía.
+- Si no hay ética de interfaz (sofismo controlado), el sistema se vuelve manipulación.
+
+Este primer archivo cognitivo fija el horizonte del LIBRO: construir una documentación extensa, rica y optimizada que mantenga a LACHO como constitución operativa de verdad local, con disciplina verificable.
+
+FIN DEL ARCHIVO

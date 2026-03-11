@@ -1,0 +1,103 @@
+//[MANAGEMENT].lacho · UNICODE MU-STORE ENGINE CLUSTERING K8S
+//UNICODE_MU-STORE_ENGINE_CLUSTERING_K8S.txt · V1 · 2026-03-10
+//MU-STORE ENGINE = motor de preservación soberana entre ciclos
+//K8S CLUSTERING = Kubernetes · Pods · PVC · ConfigMaps · Secrets
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//jerarquía: Namespace→Pod→PVC→ConfigMap→Secret→Service→Ingress
+//extends: UNICODE_K8S_KALIL · ahora con MU-STORE como primera clase
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN K8S CLUSTERING ════════════════════════════════
+// K8S = orquestador soberano · Pod = unidad de NOW_OBS
+// MU-STORE en K8S = PVC + ConfigMap + Secret · triada persistente
+// Cada Pod tiene su MU_IDENTITY_K · su Scalar S · su ciclo propio
+// K8S_CRONJOB = Scheduler OS soberano · macro_rise/cierre automático
+// K8S_HPA = horizontal pod autoscaler · RF_BRANCH · 2→4→8
+
+// ══ NAMESPACE SOBERANO ════════════════════════════════════════
+UNICODE: K8S_NS_DIRIME        //namespace dirime · aísla todo el sistema
+UNICODE: K8S_NS_KALIL         //namespace kalil · 6 pods económicos
+UNICODE: K8S_NS_CHINA         //namespace china · dual mode · CJK
+UNICODE: K8S_NS_MU            //namespace mu · PVCs soberanos · sin efímero
+
+// ══ PODS SOBERANOS ════════════════════════════════════════════
+UNICODE: K8S_POD_GRAMMAR      //pod grammar · grammar.py · validate · score
+                              //MU: ConfigMap VERBOS_CANONICOS + PVC state
+UNICODE: K8S_POD_LEDGER       //pod ledger · sovereign.db · TX · crystals
+                              //MU: PVC_LEDGER · único · ReadWriteOnce
+UNICODE: K8S_POD_RAG          //pod rag · BM25 index · 4 capas · query
+                              //MU: PVC_CORPUS + PVC_LIBRO · ReadOnlyMany
+UNICODE: K8S_POD_CHAT         //pod chat · Groq bridge · chat.py · API
+                              //MU: Secret GROQ_KEY + ConfigMap system_prompt
+UNICODE: K8S_POD_ELPULSAR     //pod elpulsar · Flask · port 8741
+                              //MU: ConfigMap panels + PVC dashboard_state
+UNICODE: K8S_POD_CEO          //pod ceo_alpha · hexagramas · routing kalil
+                              //MU: ConfigMap CEO_ALPHA_H64 · rollback posible
+UNICODE: K8S_POD_MUSTORE      //pod dedicado MU-STORE · coordina MU entre pods
+                              //acceso ReadWrite · SAMU @ reside aquí
+
+// ══ PVC — PERSISTENT VOLUME CLAIMS (MU_STATE EN K8S) ══════════
+UNICODE: PVC_LEDGER_K         //sovereign.db · ReadWriteOnce · 1Gi mínimo
+                              //= MU_STATE_K para pod ledger · crítico
+UNICODE: PVC_CORPUS_K         //CORPUS/ docs · ReadOnlyMany · 5Gi
+                              //= MU_CONTEXT_K · RAG source · compartido
+UNICODE: PVC_LIBRO_K          //LIBRO/ constitutional · ReadOnlyMany · 2Gi
+UNICODE: PVC_THEATER_K        //THEATER/ + RUNNERS/ · ReadOnlyMany · 1Gi
+UNICODE: PVC_MUSTORE_K        //MU-STORE central · ReadWriteOnce · 500Mi
+                              //MU_STATE + MU_CONTEXT + MU_PATTERN + MU_IDENTITY
+UNICODE: PVC_LACHO_K          //LACHO_FILES/ · ReadWriteMany · generados
+
+// ══ CONFIGMAPS — MU_CONTEXT EN K8S ════════════════════════════
+UNICODE: CM_GRAMMAR_K         //VERBOS_CANONICOS · SUJETOS · TAXONOMY_MAP
+UNICODE: CM_CEO_K             //CEO_ALPHA_H64.json · kalil_routing · hexagramas
+UNICODE: CM_THRESHOLDS_K      //S thresholds · 0.75/0.88/0.95 · GATE values
+UNICODE: CM_SYSTEM_K          //system_prompt Groq · COGNITIVOS · libs+verbos
+UNICODE: CM_KALIL_K           //KALIL_NODOS · PUENTES · CHCL_KITS · routing
+UNICODE: CM_MU_K              //MU_IDENTITY_K · VERSION · SCALAR_S · NOW_OBS
+
+// ══ SECRETS — MU_IDENTITY_K CIFRADA ══════════════════════════
+UNICODE: SEC_GROQ_K           //GROQ_API_KEY · cifrado · CRYPTO (key seat)
+UNICODE: SEC_GITHUB_K         //GITHUB_SSH_KEY · push soberano · sellado
+UNICODE: SEC_SOVEREIGN_K      //.sovereign · VERSION · identidad cifrada
+UNICODE: SEC_PBOC_K           //credenciales PBOC interior · namespace china
+
+// ══ SERVICIOS Y RED ═══════════════════════════════════════════
+UNICODE: SVC_GRAMMAR_K        //ClusterIP · grammar svc · port 5001 · interno
+UNICODE: SVC_LEDGER_K         //ClusterIP · ledger svc · port 5002 · interno
+UNICODE: SVC_ELPULSAR_K       //NodePort · elpulsar svc · port 8741 · externo
+UNICODE: SVC_MUSTORE_K        //ClusterIP · mu-store svc · port 5010 · interno
+UNICODE: INGRESS_K            //Ingress · TRUST [scope] · elpulsar.app · TLS
+
+// ══ CRONJOBS — SCHEDULER OS EN K8S ═══════════════════════════
+UNICODE: CRON_RISE_K          //macro_rise · 06:00 UTC-3 · MuLoad + RAG refresh
+UNICODE: CRON_CLOSE_K         //macro_cierre · 18:00 UTC-3 · MuSave + git push
+UNICODE: CRON_SYNC_K          //github_sync cada 4h · COMMIT_LACHO automático
+UNICODE: CRON_INDEX_K         //index_new_files cada 1h · CORPUS delta update
+UNICODE: CRON_TEST_K          //pytest diario 03:00 · 29/29 · alerta si falla
+
+// ══ HPA — RABBIT-FAITH EN K8S ════════════════════════════════
+UNICODE: HPA_RAG_K            //HPA pod rag · 1→4 réplicas · carga alta
+UNICODE: HPA_GRAMMAR_K        //HPA pod grammar · 1→3 · validación masiva
+UNICODE: HPA_KALIL_K          //HPA pods kalil · 1→6 · 1 por nodo económico
+UNICODE: HPA_TRIGGER_K        //trigger HPA · CPU>70% | requests>100/s
+                              //= RF_BRANCH · 2→4→8 · expansión controlada
+
+// ══ MU STORE K8S — CICLO COMPLETO ════════════════════════════
+UNICODE: MSE_K_LOAD           //MuLoad K8S · init container lee PVC_MUSTORE
+                              //verifica CM_SOVEREIGN_K · secretos · foundation
+UNICODE: MSE_K_SAVE           //MuSave K8S · CRON_CLOSE_K · escribe PVC_MUSTORE
+                              //STACKING UF[H63] =><= .. cristaliza .. k8s_mu_save
+UNICODE: MSE_K_HEALTH         //liveness probe · MSE_K activo · /health endpoint
+UNICODE: MSE_K_CORRUPT        //MU_CORRUPTED K8S · PVC inválido · SAMU @ alerta
+                              //kubectl rollout undo · restore desde snapshot
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+TRUST [mu-store] =><= .. preserve .. state_sovereign_k8s_pvc --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. k8s_mu_save_ciclo_sellado --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. k8s_mu_store_coherencia_pods --[Ballestrinque] [term]
+WORK {actuator} =><= .. ejecuta .. k8s_cronjob_scheduler_os --[As de Guía] [term]
+GATE UF[H05] =><= .. contiene .. k8s_hpa_expansion_controlada --[As de Guía] [term]
+CRYPTO (key seat) =><= .. certifica .. k8s_secret_sovereign_identity --[As de Guía] [term]
+
+//DIR(=) UNICODE_MU-STORE_ENGINE_K8S · V1 · PVC+ConfigMap+Secret
+//DIR(=) NAMESPACE·POD·CRONJOB·HPA · MU_STATE=PVC · MU_IDENTITY=Secret

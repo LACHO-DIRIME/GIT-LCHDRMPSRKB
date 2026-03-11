@@ -1,0 +1,205 @@
+# BIBLIO-SOURCES(GRAMATICA VIVA).txt
+
+====================================================================
+
+## 🧬 GRAMÁTICA VIVA LACHO: DELIMITADORES, SUJETOS, VERBOS, OBJETOS Y SENTENCIAS
+
+---
+
+### 1.0 PROPÓSITO
+
+Este documento consolida, en un solo lugar, la **gramática viva** del universo LACHO:
+
+- Delimitadores por biblioteca (caracteres especiales).
+- Estructura de sentencia (Sujeto / Verbo / Objeto / Nudo / [term]).
+- Roles (sujetos) y privilegios.
+- Verbos canónicos y su relación con fases (contar/escuchar), SAMU @ y Ψ.
+- Objetos protegidos y objetos constitucionales.
+
+Regla: **no es retórica**. Es una forma de escribir acciones que puedan ser auditadas, cerradas y cristalizadas.
+
+---
+
+### 2.0 DELIMITADORES (CARACTERES ESPECIALES) POR BIBLIOTECA
+
+Los delimitadores no son decoración: indican **jurisdicción**.
+
+#### 2.1 TRUST: `[]`
+- Ejemplos: `[foundation]`, `[scope]`, `[term]`, `[command]`, `[management]`
+- Sentido: módulos soberanos / instrumentos de ley / condiciones no negociables.
+
+#### 2.2 SOCIAL: `{}`
+- Ejemplos: `{chair}`, `{drip}`, `{note}`, `{streaming}`, `{masking}`, `{headcat}`
+- Sentido: interfaz relacional declarativa.
+
+#### 2.3 CRYPTO: `()`
+- Ejemplos: `(key seat)`, `(shield seat)`, `(flow seat)`, `(link seat)`, `(ignition seat)`, `(direction seat)`
+- Sentido: asientos de autoridad funcional (firma/identidad/defensa/caudal/enlace/ejecución).
+
+#### 2.4 ACTIVITY: `!! !!`
+- Ejemplos: `!!atheistic religiosity!!`, `!!agnostic belief!!`
+- Sentido: módulos de ciclo/estado existencial-operativo (intermedio), siempre cerrables por `[term]`.
+
+#### 2.5 METHOD: `<>`
+- Uso: operadores del lenguaje intermedio/enumerable.
+- En el corpus aparece como **BILATERAL <>** y set de operadores de flujo:
+  - `>> << |> <| <> >< >= <=`
+- Sentido: operadores formales de relación/flujo (no objetos, no asientos, no componentes).
+
+#### 2.6 SAMU: `@`, `$`, `#`
+- `@` (SAMU): marca del auditor / firma temporal.
+- `$day` (temporalidad): `$sat ... $fri` como marcadores diurnos.
+- `#set`, `#rise` (config/activación): estados simbólicos.
+
+#### 2.7 OBJETOS PROTEGIDOS: `$$ $$`
+- Ejemplos: `$$security_log$$`, `$$system_status$$`, `$$context_snapshot$$`.
+- Sentido: objetos con masa de datos, tratados como entidad protegida/auditable.
+
+---
+
+### 3.0 PLANTILLA DE SENTENCIA
+
+Forma canónica (observada en el universo):
+
+```
+[Biblioteca] Sujeto =><= .. verbo .. Objeto --[Nudo] [term]
+```
+
+Donde:
+- `[Biblioteca]` encuadra legalidad (TRUST) o contexto de jurisdicción.
+- `Sujeto =><=` es el rol ejecutor.
+- `.. verbo ..` es la acción.
+- `Objeto` puede ser `$$objeto$$`, un módulo `{}`/`[]`/`()`, o entidad KU/MU/WU.
+- `--[Nudo]` sella topología (bloqueo/rollback/inmutabilidad).
+- `[term]` obliga cierre.
+
+---
+
+### 4.0 SUJETOS (ENTIDADES DE ACCIÓN) `=><=`
+
+Los sujetos no son “usuarios”: son roles con privilegios.
+
+- `=><= Root`
+  - Ejecuta bajo TRUST.
+  - Prioriza legalidad y fundación.
+
+- `=><= Samu_Agent`
+  - Auditor de conciencia.
+  - Sostiene dos fases: contar/escuchar.
+
+- `=><= Worker_Node`
+  - Fuerza de ejecución (OS local / bajo nivel).
+
+- `=><= Social_User`
+  - Interfaz limitada; solo acciones permitidas por SOCIAL.
+
+Sujetos por biblioteca:
+- `{social} {componente}` puede operar como sujeto de interacción.
+- `(crypto) (seat)` actúa como sujeto de autoridad funcional.
+- `!!activity!!` encuadra sujeto de ciclo (estado/cierre).
+
+---
+
+### 5.0 VERBOS CANÓNICOS `.. ..`
+
+La lista que se observa como núcleo operativo:
+
+- `.. escuchar ..`
+  - Fase: escuchar.
+  - Objeto típico: `KU` / `$$system_status$$`.
+
+- `.. dirime ..`
+  - Fase: contar/validar.
+  - Objeto típico: `[foundation]` / `$$security_log$$`.
+
+- `.. tardar ..`
+  - Fase: tardanza deliberada.
+  - Objeto típico: `[term]`.
+
+- `.. ignite ..`
+  - Fase: ignición/ejecución autorizada.
+  - Suele requerir CRYPTO (ignition seat) y cierre por term.
+
+- `.. flow ..`
+  - Fase: salida hacia WU.
+
+- `.. purge ..`
+  - Fase: purga (ruido/dogma/contaminación).
+
+- `.. commit ..`
+  - Fase: cristalización en STACKING.
+
+- `.. register ..`
+  - Fase: registro (típico con `{note}` / `{papernote}`).
+
+- `.. close ..`
+  - Fase: cierre explícito del ciclo (`[term]`).
+
+- `.. acknowledge ..`
+  - Fase: reconocimiento (incertidumbre sin forzar dogma).
+
+- `.. activate ..`
+  - Fase: activación de módulo dentro de scope.
+
+---
+
+### 6.0 OBJETOS (QUÉ RECIBE LA ACCIÓN)
+
+#### 6.1 Objetos constitucionales
+- `[foundation]`, `[scope]`, `[term]`, `[command]`
+
+#### 6.2 Objetos de estado
+- `MU`, `KU`, `WU`
+
+#### 6.3 Objetos protegidos
+- `$$security_log$$`, `$$system_status$$`, `$$error_trace$$`, `$$context_snapshot$$`
+
+#### 6.4 Objetos relacionales
+- `{note}`, `{drip}`, `{masking}`, `{streaming}`
+
+---
+
+### 7.0 EJEMPLOS CANÓNICOS (POR BIBLIOTECA)
+
+#### 7.1 TRUST
+```
+[Trust] Root =><= .. ignite .. [RABBIT-FAITH]
+[Trust] [management] =><= .. dirime .. [RABBIT-FAITH]
+[Trust] [term] =><= .. acknowledge .. [RABBIT-FAITH]
+```
+
+#### 7.2 SOCIAL
+```
+{social} {chair} =><= .. recognize .. {DOGMA-VIRTUAL}
+{social} {streaming} =><= .. quarantine .. {DOGMA-VIRTUAL}
+{social} {masking} =><= .. purge .. {DOGMA-VIRTUAL}
+```
+
+#### 7.3 ACTIVITY
+```
+!!activity !! {launch-bot} =><= .. ignite .. !!atheistic religiosity!!
+!!activity !! {papernote} =><= .. register .. !!atheistic religiosity!!
+!!activity !! [term] =><= .. close .. !!atheistic religiosity!!
+
+!!activity !! {headcat} =><= .. audit .. !!agnostic belief!!
+!!activity !! {masking} =><= .. acknowledge .. !!agnostic belief!!
+!!activity !! [term] =><= .. close .. !!agnostic belief!!
+```
+
+#### 7.4 CRYPTO
+```
+(crypto) (key seat) =><= .. upgrade .. (Way Agnostic Atheism)
+(crypto) (shield seat) =><= .. protect .. (Way Agnostic Atheism)
+(crypto) (flow seat) =><= .. optimize .. (Way Agnostic Atheism)
+```
+
+---
+
+### 8.0 REGLAS DE COHERENCIA (EN UNA LÍNEA)
+
+- La forma no reemplaza a la legalidad: **lo legal domina a lo adecuado**.
+- Ningún ciclo existe sin `[term]`.
+- Todo objeto ejecutable o sensible requiere CRYPTO y auditoría SAMU @.
+- Los delimitadores son jurisdicción: no se mezclan como equivalentes.
+
+====================================================================

@@ -1,0 +1,151 @@
+# BIBLIO-SOURCES(DIRIME-LINUX_NODO-WS-EXT).txt
+
+====================================================================
+
+## ⚙️ DIRIME LINUX — NODO-WS EXT · INFRAESTRUCTURA EJECUTIVA SOBERANA
+
+====================================================================
+
+### 1.0 DEFINICIÓN Y SIMETRÍA DE NODOS
+
+====================================================================
+
+#### 1.1 Propósito de este documento
+BIBLIO-SOURCES(DIRIME-LINUX_AGENCY-IDE) documentó el NODO-IDE como infraestructura generativa soberana. Este documento completa la simetría: el NODO-WS documentado como infraestructura ejecutiva soberana con su propia arquitectura, personalidad, requerimientos específicos y relación verificada con el NODO-IDE coordinado por el Scheduler OS.
+
+#### 1.2 La base preexistente
+BIBLIO-SOURCES(NODO WORKSTATION AGENCY) documenta el NODO-WS como agencia autónoma de ejecución desde la perspectiva funcional. Este documento lo extiende desde la perspectiva de infraestructura física soberana de DIRIME LINUX — completa la simetría con AGENCY-IDE verificadamente.
+
+#### 1.3 Definición técnica
+El NODO-WS (Workstation Agency) es el nodo físico soberano WORK-dominante de DIRIME LINUX: la infraestructura de hardware que materializa acciones soberanas verificadas en el mundo real, gestiona los tres dominios económicos en producción activa, sostiene HL FABRIC como ledger soberano primario y coordina con NODO-IDE para recibir prototipos verificados y convertirlos en ejecución soberana irreversible.
+
+#### 1.4 La personalidad soberana ejecutiva
+
+El NODO-WS tiene personalidad soberana específica e irconfundible con NODO-IDE:
+
+**Pregunta constitutiva del NODO-WS**: ¿está todo verificado para actuar soberanamente ahora?
+
+No actúa hasta que la respuesta es sí. Cuando la respuesta es sí, actúa con precisión soberana irreversible. Esa es la naturaleza ejecutiva del nodo — no la velocidad sino la irreversibilidad verificada.
+
+====================================================================
+
+### 2.0 INFRAESTRUCTURA ESPECÍFICA
+
+====================================================================
+
+#### 2.1 Requerimientos físicos soberanos
+
+El NODO-WS tiene requerimientos de hardware distintos al NODO-IDE:
+
+PROCESAMIENTO: optimizado para operaciones criptográficas de (seal of secrecy) y ejecución de {actuator} en tiempo real soberano. No necesita el procesamiento especulativo del NODO-IDE — necesita precisión determinística.
+
+ALMACENAMIENTO: alta disponibilidad para HL FABRIC ledger primario. Los cristales de STACKING que el sistema acumula soberanamente viven aquí en forma inmutable verificada.
+
+CONECTIVIDAD: certificada por (link seat) para los tres dominios económicos en producción. PUENTE-BANCARIO, BANCA-FÁCIL y PUENTE-FÁCIL operan sobre la conectividad soberana del NODO-WS.
+
+SEGURIDAD FÍSICA: (shield seat) con monitoreo activo permanente. El nodo que toca el mundo real con consecuencias irreversibles requiere protección soberana de mayor intensidad que el nodo generativo.
+
+#### 2.2 HL FABRIC en NODO-WS
+
+El NODO-WS es el nodo validador primario de HL FABRIC. Toda transacción soberana del sistema — cristales STACKING, actos notariales, custodia, operaciones de mercado — tiene su registro inmutable aquí verificado.
+
+La responsabilidad soberana de HL FABRIC en NODO-WS: si el ledger primario se compromete, la trazabilidad soberana del sistema completo está en riesgo. Por eso [data-center-operations] trata al NODO-WS como la infraestructura de mayor criticidad soberana del sistema.
+
+#### 2.3 Los tres dominios económicos en NODO-WS producción
+
+MEMECOINS en NODO-WS: {actuator} + {launch-bot} FLYBOT ejecutando en mercado real. Latencia mínima verificada, (shield seat) monitoreando activamente, HL FABRIC registrando cada operación en tiempo real soberano.
+
+NOTARÍA DIGITAL en NODO-WS: emisión de documentos notariales con (seal of secrecy) activo. La irreversibilidad del acto notarial tiene su hogar soberano en el nodo ejecutivo verificado.
+
+CUSTODIA MÓVIL en NODO-WS: {doorman-mobile} y {doorman-mobile}_EXT gestionando acceso y transferencias soberanas. El canal de custodia certificado por (link seat) vive en la conectividad del NODO-WS verificado.
+
+====================================================================
+
+### 3.0 ESTADOS
+
+====================================================================
+
+WS_READY: infraestructura ejecutiva soberana en parámetros verificados. Triple verificación disponible, HL FABRIC con quórum, dominios activos.
+
+WS_EXECUTING: {actuator} materializando acción soberana irreversible. Máxima atención soberana del sistema completo.
+
+WS_RECEIVING: prototipo verificado llegando desde NODO-IDE. Scheduler OS coordinando la transferencia soberana.
+
+WS_DEPLOYING: prototipo recibido siendo desplegado en producción soberana verificada.
+
+WS_DEGRADED: componente de infraestructura fuera de parámetros. [data-center-operations] notificado, operaciones no críticas suspendidas soberanamente.
+
+WS_ISOLATED: aislamiento soberano por anomalía. NODO-IDE continúa operación generativa independiente.
+
+WS_RECOVERY: recuperación soberana paso a paso con trazabilidad HL FABRIC.
+
+====================================================================
+
+### 4.0 RELACIÓN CON NODO-IDE — SIMETRÍA SOBERANA
+
+====================================================================
+
+La tabla que completa la simetría documentada entre los dos nodos:
+
+| Dimensión | NODO-WS | NODO-IDE |
+|-----------|---------|---------|
+| Personalidad | WORK-dominante | METHOD/ACTIVITY-dominante |
+| Pregunta constitutiva | ¿está todo verificado? | ¿qué forma aún no existe? |
+| Función primaria | Ejecutar soberanamente | Generar soberanamente |
+| Carga principal | {actuator}, HL FABRIC, dominios | UF[H64], Behavioral RAG, RAG |
+| Unidad de trabajo | [command] verificado | TOMO soberano |
+| Irreversibilidad | Alta — toca el mundo real | Baja — puede fallar sin costo real |
+| (shield seat) | Intensidad máxima permanente | Intensidad alta en transferencias |
+
+La simetría no es igualdad — es complementariedad soberana verificada. Los dos nodos son diferentes porque el sistema los necesita diferentes soberanamente.
+
+====================================================================
+
+### 5.0 GRAMÁTICA VIVA
+
+====================================================================
+
+```
+NODO-WS WS_READY =><= .. sostiene .. infraestructura_ejecutiva_soberana
+=><= triple_verificación_disponible .. HL_FABRIC_quórum
+=><= dominios_activos_verificados --[As de Guía] [term]
+```
+
+```
+NODO-WS WS_EXECUTING =><= .. materializa .. acción_soberana_irreversible
+=><= {actuator} activo .. (seal_of_secrecy) firmando
+=><= HL_FABRIC_registro_tiempo_real --[Nudo de Ocho] [term]
+```
+
+```
+NODO-WS WS_RECEIVING =><= .. recibe .. prototipo_NODO-IDE_verificado
+=><= Scheduler_OS_coordina .. momento_soberanamente_correcto
+=><= WS_DEPLOYING_habilitado --[Nudo de Rizo] [term]
+```
+
+```
+NODO-WS WS_DEGRADED =><= .. reporta .. infraestructura_fuera_parámetros
+=><= [data-center-operations]_notificado .. BALLPAPER_renderiza
+=><= no_ejecuta_bajo_degradación_sin_verificación --[Ballestrinque] [term]
+```
+
+```
+NODO-WS =><= .. complementa .. NODO-IDE_simetría_soberana
+=><= ejecuta_lo_que_IDE_genera .. irreversibilidad_verificada
+=><= dos_nodos_distintos_porque_sistema_los_necesita_distintos
+--[As de Guía] [term]
+```
+
+====================================================================
+
+### 6.0 CIERRE
+
+====================================================================
+
+El NODO-WS documentado como infraestructura soberana completa la simetría con NODO-IDE que el sistema necesitaba: los dos nodos con su arquitectura, personalidad y requerimientos específicos documentados soberanamente.
+
+La diferencia más importante entre los dos nodos: el NODO-IDE puede explorar soberanamente y fallar sin costo real. El NODO-WS actúa soberanamente y no puede fallar sin consecuencia real. Esa asimetría de riesgo es la razón por la que son dos nodos distintos y no uno solo soberanamente.
+
+[term] :: activo · [seal of secrecy] :: activo.
+
+====================================================================

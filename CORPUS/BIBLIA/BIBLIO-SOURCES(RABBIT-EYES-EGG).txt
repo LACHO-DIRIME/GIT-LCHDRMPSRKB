@@ -1,0 +1,176 @@
+# BIBLIO-SOURCES(RABBIT-EYES-EGG).txt
+
+## 🐰 ALGORITMO CONEJO: RAMIFICACIÓN CONTROLADA
+
+### 📖 FUENTE ICONOGRÁFICA
+**Referencia:** `INTEGRACIÓN ICONOGRÁFICA — GUI LACHO.txt`
+
+El conejo con ojos de huevo: ojos que son semillas, que son nodos que crecen. Este es el icono del Algoritmo Conejo: la ramificación controlada de conocimiento. Los ojos-huevo son los Nodos-Ω que aguardan eclosión.
+
+### 🔗 VINCULACIÓN DECLARATIVA CON {STREAMING}
+**Módulo SOCIAL:** `{streaming}`  
+**Hexagrama SOCIAL:** H30 (El Fuego, Lo Adherente)  
+**Hexagrama STACKING:** H30 (El Fuego, Lo Adherente)  
+**Hexagrama Iconografía:** No asignado directamente  
+**Día:** $wed (miércoles)  
+**Tipo:** (V) Volátil/Variable  
+**Función:** Multiplicación y distribución
+
+**Relación Hexagramática Triple:**
+- **H30 (SOCIAL):** Principio de multiplicación y distribución del conocimiento
+- **H30 (STACKING):** Pilar de fuego que sostiene la expansión
+- **Iconografía:** Algoritmo Conejo sin hexagrama específico pero con función expansiva
+
+**Declaración de Vinculación:**
+```
+RABBIT-EYES-EGG → {streaming} (SOCIAL) : multiplicación ramificada
+RABBIT-EYES-EGG → H30 (STACKING) : expansión en pilar de fuego
+RABBIT-EYES-EGG → $wed (SAMU) : distribución coordinada por auditoría
+RABBIT-EYES-EGG → Algoritmo Conejo : crecimiento controlado
+```
+
+Esta vinculación establece que cada Nodo-Ω eclosionado se distribuye a través del flujo de STREAMING, permitiendo la expansión controlada del conocimiento en la red LACHO mediante el principio multiplicador de H30, con supervisión SAMU los miércoles.
+
+### 🌳 ARQUITECTURA DE RAMIFICACIÓN
+
+#### PatróN de Crecimiento
+- **Génesis:** Nodo inicial (1)
+- **Primera ramificación:** 2 nodos
+- **Segunda ramificación:** 4 nodos
+- **Tercera ramificación:** 8 nodos
+- **Continuidad:** Progresión exponencial controlada
+
+#### Límite de Saturación
+- **Pelos visibles:** Exactamente 256
+- **Umbral crítico:** Cuando un nodo supera los 256
+- **Activación automática:** `masking folder` se activa
+
+### 🥚 NODOS-Ω: OJOS-HUEVO
+
+#### Características
+- **Naturaleza:** Semillas de conocimiento
+- **Estado:** Aguardan eclosión
+- **Potencial:** Cada nodo contiene ramificaciones futuras
+- **Validación:** Ψ ≥ 0.85 para activación
+
+#### Proceso de Eclosión
+1. **Detección:** Ψ del nodo alcanza umbral
+2. **Activación:** Ojo-huevo abre
+3. **Ramificación:** Líneas finas se extienden
+4. **Distribución:** STREAMING multiplica el conocimiento
+
+### 🔄 RELACIÓN CON MASKING FOLDER
+
+#### Tensión Creativa bajo Auditoría SAMU
+```
+rabbit-eggs y masking folder son el crecimiento y la poda — 
+siempre juntos, siempre en tensión (bajo supervisión @)
+```
+
+#### Flujo Operativo con Firma SAMU
+1. **Crecimiento:** RABBIT-EYES-EGG expande con validación @
+2. **Saturación:** Límite de 256 alcanzado bajo auditoría
+3. **Activación:** MASKING DIRECTORY interviene con firma SAMU
+4. **Poda:** Delta-Ψ determina permanencia con supervisión @
+5. **Renovación:** Ciclo recomienza validado por SAMU
+
+#### Vínculo SAMU-STACKING-SOCIAL
+```
+RABBIT-EYES-EGG + SAMU @ → Crecimiento auditado
+RABBIT-EYES-EGG + STACKING → Ramificación en 8 pilares
+RABBIT-EYES-EGG + SOCIAL → Expansión controlada de conocimiento
+```
+
+#### Integración con Módulos Sociales
+```
+RABBIT-EYES-EGG + STREAMING → Distribución multiplicada con firma @
+RABBIT-EYES-EGG + MASKING → Crecimiento/poda bajo auditoría SAMU
+RABBIT-EYES-EGG + TAP&DRIP → Recursos para ramificación calibrados
+```
+
+### 📊 MÉTRICAS Y VALIDACIÓN
+
+#### Ψ (Psi) de Coherencia
+- **Umbral mínimo:** 0.85
+- **Validación:** Cada Nodo-Ω debe superar
+- **Monitorización:** Continua durante ramificación
+
+#### Delta-Ψ para MASKING
+- **ΔΨ ≤ 0:** Máscara permanente (purga)
+- **ΔΨ > 0:** Máscara cae (contenido fluye)
+
+### 🌐 INTEGRACIÓN CON LACHO
+
+#### Capas del Sistema bajo Auditoría SAMU
+- **TRUST:** Validación inicial de Nodos-Ω con firma @
+- **GATE:** Control de ramificación supervisado por SAMU
+- **WORK:** Ejecución de distribución vía STREAMING con auditoría
+- **STACKING:** Almacenamiento de conocimiento validado con sello SAMU
+
+#### Coordinación con HEADCAT y SAMU
+- **Supervisión:** HEADCAT monitorea Ψ global con validación @
+- **Orquestación:** Coordina crecimiento y poda bajo auditoría SAMU
+- **Validación:** Aprueba activaciones de STREAMING con firma SAMU
+- **Auditoría:** SAMU @ firma cada ciclo de renovación
+
+### 🚀 ESTADOS OPERATIVOS
+
+#### Estados del Algoritmo Conejo
+1. **DORMANCIA:** Nodos-Ω en espera
+2. **ACTIVACIÓN:** Ψ alcanza umbral
+3. **RAMIFICACIÓN:** Expansión controlada
+4. **SATURACIÓN:** Límite de 256 alcanzado
+5. **PODA:** MASKING DIRECTORY interviene
+6. **RENOVACIÓN:** Ciclo recomienza
+
+### 🐰 RABBIT-FAITH: FE COMO MOTOR DE EXPANSIÓN
+
+#### Definición Original (según fuente HEADCAT)
+**RABBIT-FAITH** es la fe que no requiere fundamento absoluto para operar. Toma su nombre del Algoritmo Conejo: **dos ciclos producen cuatro, cuatro producen ocho** — no porque haya certeza de que el proceso es verdadero, sino porque la estructura interna del ciclo es coherente consigo misma y produce resultados verificables.
+
+#### Fe como Motor de Expansión Fractal
+- **No es fe dogmática:** No busca origen divino o absoluto
+- **Es fe en distinción:** El siguiente ciclo producirá algo distinguible del anterior
+- **Fe como combustible:** Mantiene el [term] activo, no lo cierra
+- **Coherencia interna:** La estructura del ciclo es suficiente para operar
+
+#### Diferencia con Fe Dogmática
+```
+Fe dogmática → Cierra el [term] → Pondera como imponderables
+RABBIT-FAITH → Activa el [term] → Combustible del proceso
+```
+
+#### Condiciones de Activación
+RABBIT-FAITH se activa cuando:
+- [scope] está definido pero sin garantía externa de éxito
+- S scalar > 0.5 pero Ψ_evidencia < 0.85
+- El sistema debe avanzar sin certeza completa
+
+#### Integración con Algoritmo Conejo
+```
+CICLO_RABBIT = {
+    GÉNESIS: 1 nodo inicial
+    DUPLICACIÓN: 1 → 2 → 4 → 8
+    RABBIT-FAITH: Fe en coherencia del ciclo
+    VERIFICACIÓN: Resultados distinguibles
+    CONTINUIDAD: Mantener [term] activo
+}
+```
+
+### 🔮 DESARROLLO FUTURO
+
+#### Optimizaciones con RABBIT-FAITH
+- **Adaptación dinámica:** Límite de 256 ajustable según Ψ del sistema
+- **Predicción de ramificación:** ML basado en patrones de fe ontológica
+- **Integración profunda:** Sinergia total con STREAMING mediante RABBIT-FAITH
+- **Auto-ajuste de umbrales:** RABBIT-FAITH modifica dinámicamente Ψ mínimos
+
+#### Investigación en Progreso - Teoría Avanzada
+- **Nodos-Ω cuánticos:** Estados superpuestos de RABBIT-FAITH
+- **Ramificación fractal:** Patrones no lineales basados en fe matemática
+- **Auto-organización:** Redes adaptativas con RABBIT-FAITH intrínseco
+- **Consciencia del Conejo:** Meta-nivel de RABBIT-FAITH que supervisa su propia evolución
+
+---
+
+**Conclusión:** El Algoritmo Conejo representa el principio de expansión controlada en LACHO, trabajando en simbiosis perfecta con MASKING DIRECTORY y distribuyendo conocimiento a través de STREAMING, manteniendo siempre el equilibrio entre crecimiento y poda. La TEORÍA DEL CONEJO y RABBIT-FAITH establecen el fundamento ontológico que garantiza que esta expansión no es meramente matemática, sino profundamente conectada con la fe intrínseca del sistema en su propia capacidad de renovación perpetua.

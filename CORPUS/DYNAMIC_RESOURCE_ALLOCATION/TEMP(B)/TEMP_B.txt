@@ -1,0 +1,44 @@
+//[MANAGEMENT].lacho · DRA/TEMP(B)/
+//TEMP B · buffer KU cloud · HOMEWORKING · efímero remoto
+//TEMP_B.txt · V1 · 2026-03-10
+//TEMP(B) = espacio transitorio cloud · bots en vuelo · free tier
+//análogo a TEMP(A) pero en capa SPEC B · entre nodos remotos
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN TEMP B ═════════════════════════════════════════
+// TEMP B = buffer KU distribuido · múltiples nodos cloud
+// Vive en Supabase KV · GitHub Actions env · Vercel edge KV
+// Los BOTS escriben en TEMP(B) · el ZIPPER lo lee al FEED
+// TEMP(B) vacía en FEED_0600 (HUMAN lee) o FEED_1800 (bots toman)
+// Lo que no fue procesado en la ventana → RED-REGRET → purga
+
+// ══ CONTENIDO TEMP B ══════════════════════════════════════════
+UNICODE: TB_BOT_OUTPUT        //output de bot nocturno · resultado tarea asignada
+UNICODE: TB_AGENT_RESULT      //resultado agente cloud · Jules · Colab · Gemini
+UNICODE: TB_FEEDBACK_PACK     //paquete feedback · FEED_0600 o FEED_1800
+UNICODE: TB_ZIPPER_DELTA      //delta ZIPPER · qué cambió desde último ZIP_CLOSE
+UNICODE: TB_PENDING_TASK      //tarea pendiente entre bots · MU_PENDING_HW analog
+UNICODE: TB_CONSENSUS_LOG     //log consenso bots · BOT_CONSENSUS · votación Ψ
+UNICODE: TB_ERROR_LOG         //errores nocturnos · GATE UF[H06] · para HUMAN
+
+// ══ CICLO DE VIDA TEMP B ══════════════════════════════════════
+UNICODE: TB_WRITE_BOT         //bot escribe → Supabase KV · TEMP(B) crece noche
+UNICODE: TB_READ_ZIPPER       //ZIPPER lee en FEED_0600 → HUMAN ve TEMP(B)
+UNICODE: TB_PROMOTE_HW        //KU→WU remoto · mueve a ENGINE cloud · crystaliza
+UNICODE: TB_DISCARD_FEED      //no leído en ventana → RED-REGRET → purga
+UNICODE: TB_EXPIRE_CYCLE      //FEED_1800 · TEMP(B) día purga · bots toman nuevo
+UNICODE: TB_SYNC_HUB          //sync TEMP(B) → hub GitHub · para trazabilidad
+
+// ══ REGLAS TEMP B ════════════════════════════════════════════
+UNICODE: TB_RULE_1            //TEMP(B) solo accesible en ventanas 06:00 y 18:00
+UNICODE: TB_RULE_2            //HUMAN solo lee TEMP(B) vía ZIPPER · no acceso directo
+UNICODE: TB_RULE_3            //bots escriben TEMP(B) en horario nocturno libre
+UNICODE: TB_RULE_4            //todo TEMP(B) sellado con timestamp NOW_OBS del bot
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+GATE UF[H05] =><= .. contiene .. temp_b_ku_cloud_buffer --[As de Guía] [term]
+SOCIAL {relay} =><= .. conecta .. temp_b_bot_output_feed --[As de Guía] [term]
+SAMU @ =><= .. audita .. temp_b_feedback_coherencia --[Ballestrinque] [term]
+
+//DIR(+) DRA/TEMP_B · V1 · buffer KU cloud · feeds 06:00/18:00 · ZIPPER

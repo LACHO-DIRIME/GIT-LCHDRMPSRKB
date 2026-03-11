@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HOUSE DRONE · Escritorio Soberano</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Cormorant+Garamond:ital,wght@0,300;0,600;0,700;1,300&family=Noto+Serif+SC:wght@400;700;900&display=swap');
+
+:root {
+  --paper:   #f0ede4;
+  --cream:   #e6e0d2;
+  --ink:     #09090e;
+  --dim:     #28283a;
+  --red:     #9b1f1f;
+  --gold:    #a07820;
+  --jade:    #1a5c48;
+  --mist:    #7a8a94;
+  --mark:    #c8a030;
+  --blue-ku: #1a3a6c;
+  --green-wu:#1a5c30;
+
+  /* SAMU Day Colors */
+  --sat: #1a2a4a;
+  --sun: #1a3a5a;
+  --mon: #1a4a6a;
+  --tue: #2a3a7a;
+  --wed: #2a4a3a;
+  --thu: #2a4a2a;
+  --fri: #3a3a1a;
+
+  --day-color: var(--mon);
+}
+
+*{ margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 12px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body::before {
+  content:'';
+  position:fixed; inset:0;
+  background-image: repeating-linear-gradient(
+    0deg, transparent, transparent 27px,
+    rgba(0,0,0,.025) 27px, rgba(0,0,0,.025) 28px
+  );
+  pointer-events:none; z-index:0;
+}
+
+/* ══ TOPBAR ══ */
+.topbar {
+  position: sticky; top:0; z-index:100;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0 20px;
+  display: flex;
+  align-items: stretch;
+  border-bottom: 2px solid var(--mark);
+  height: 44px;
+}
+.tb-brand {
+  display:flex; align-items:center; gap:10px;
+  padding: 0 16px 0 0;
+  border-right: 1px solid rgba(255,255,255,.1);
+}
+.tb-brand-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px; font-weight: 700;
+  letter-spacing: 6px;
+  color: var(--mark);
+}
+.tb-brand-sub {
+  font-size: 7px; letter-spacing: 3px;
+  color: rgba(255,255,255,.35);
+}
+.tb-clock {
+  display:flex; align-items:center; gap:8px;
+  padding: 0 16px;
+  border-right: 1px solid rgba(255,255,255,.1);
+}
+.tb-time {
+  font-size: 18px; letter-spacing: 2px;
+  color: var(--mark);
+  font-variant-numeric: tabular-nums;
+}
+.tb-date {
+  font-size: 8px; letter-spacing: 2px;
+  color: rgba(255,255,255,.4);
+  line-height: 1.8;
+}
+.tb-period {
+  display:flex; align-items:center;
+  padding: 0 14px;
+  border-right: 1px solid rgba(255,255,255,.1);
+  gap:6px;
+}
+.period-sym {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 18px; color: var(--mark);
+}
+.period-name {
+  font-size: 8px; letter-spacing: 3px;
+  line-height: 1.8;
+  color: rgba(255,255,255,.6);
+}
+.tb-spacer { flex:1; }
+.tb-state {
+  display:flex; align-items:center;
+  padding: 0 14px;
+  gap: 8px;
+  border-left: 1px solid rgba(255,255,255,.1);
+}
+.state-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--mark);
+  animation: pulse 2s ease infinite;
+}
+@keyframes pulse {
+  0%,100%{opacity:1;} 50%{opacity:.4;}
+}
+.state-dot.ku  { background: #6a9fd8; }
+.state-dot.wu  { background: #5aad78; animation:none; }
+.state-dot.red { background: var(--red); }
+.state-label { font-size: 9px; letter-spacing: 2px; color: rgba(255,255,255,.5); }
+.scalar-val { font-size: 11px; color: var(--mark); }
+
+/* ══ LAYOUT ══ */
+.layout {
+  display: grid;
+  grid-template-columns: 260px 1fr 280px;
+  grid-template-rows: auto;
+  gap: 0;
+  position: relative; z-index: 1;
+  min-height: calc(100vh - 44px);
+}
+
+/* ══ PANEL IZQUIERDO ══ */
+.panel-left {
+  border-right: 1px solid rgba(0,0,0,.12);
+  background: var(--cream);
+  padding: 0;
+  overflow-y: auto;
+}
+
+/* ══ SAMU DAY SELECTOR ══ */
+.day-strip {
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  border-bottom: 1px solid rgba(0,0,0,.12);
+}
+.day-btn {
+  padding: 8px 4px;
+  text-align: center;
+  cursor: pointer;
+  border-right: 1px solid rgba(0,0,0,.06);
+  transition: all .15s;
+  background: transparent;
+  border-top: none; border-bottom: none; border-left: none;
+  font-family: 'Share Tech Mono', monospace;
+}
+.day-btn:last-child { border-right: none; }
+.day-btn .d-sym {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 11px; display:block;
+  color: var(--mist);
+}
+.day-btn .d-name {
+  font-size: 7px; letter-spacing: 2px;
+  color: var(--mist); display:block;
+  margin-top: 2px;
+}
+.day-btn.active {
+  background: var(--ink);
+}
+.day-btn.active .d-sym,
+.day-btn.active .d-name { color: var(--mark); }
+
+/* ══ DAY INFO CARD ══ */
+.day-card {
+  padding: 14px 14px 10px;
+  border-bottom: 1px solid rgba(0,0,0,.08);
+}
+.day-card-hex {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 11px; color: var(--gold);
+  letter-spacing: 2px; margin-bottom: 4px;
+}
+.day-card-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 17px; font-weight: 600;
+  letter-spacing: 3px; margin-bottom: 4px;
+}
+.day-card-desc {
+  font-size: 9px; line-height: 1.8;
+  color: var(--mist);
+}
+
+/* ══ DOOR ICONS — ICONOGRAFÍA SOBERANA ══ */
+.door-block {
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(0,0,0,.08);
+}
+.door-hd {
+  font-size: 7px; letter-spacing: 4px; text-transform:uppercase;
+  color: var(--mist); margin-bottom: 8px;
+}
+.door-row {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+.door-item {
+  flex: 1;
+  padding: 8px 6px;
+  border: 1px solid rgba(0,0,0,.1);
+  background: white;
+  text-align: center;
+  cursor: pointer;
+  transition: all .15s;
+  position: relative;
+}
+.door-item:hover { border-color: var(--gold); background: rgba(160,120,32,.04); }
+.door-item.active-door { border-color: var(--jade); background: rgba(26,92,72,.06); }
+.door-item.blocked { opacity:.4; cursor:not-allowed; }
+.door-sym {
+  font-size: 20px; display:block; line-height:1;
+  margin-bottom: 3px;
+}
+.door-name {
+  font-size: 6px; letter-spacing: 2px; text-transform:uppercase;
+  color: var(--mist); display:block;
+}
+.door-time {
+  font-size: 7px; color: var(--gold);
+  display:block; margin-top:2px;
+}
+
+/* ══ SAMU MODULES ══ */
+.samu-block {
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(0,0,0,.08);
+}
+.samu-hd {
+  font-size: 7px; letter-spacing: 4px; text-transform:uppercase;
+  color: var(--mist); margin-bottom: 8px;
+}
+.samu-mod {
+  display: flex; align-items: center; gap: 8px;
+  padding: 5px 0;
+  border-bottom: 1px dotted rgba(0,0,0,.06);
+  cursor: pointer;
+}
+.samu-mod:last-child { border-bottom: none; }
+.samu-icon { font-size: 14px; min-width: 20px; text-align:center; }
+.samu-info { flex:1; }
+.samu-name {
+  font-size: 9px; letter-spacing: 1px;
+  color: var(--dim);
+}
+.samu-state {
+  font-size: 7px; color: var(--mist);
+  letter-spacing: 1px;
+}
+.samu-pill {
+  font-size: 7px; padding: 1px 5px;
+  border: 1px solid;
+  letter-spacing: 1px;
+}
+.pill-on  { color: var(--jade); border-color: var(--jade); }
+.pill-off { color: var(--mist); border-color: var(--mist); }
+.pill-ku  { color: #6a9fd8; border-color: #6a9fd8; }
+
+/* ══ CENTRO — MAIN WORKSPACE ══ */
+.main-workspace {
+  padding: 0;
+  overflow-y: auto;
+}
+
+/* ══ TABS ══ */
+.tab-bar {
+  display: flex;
+  border-bottom: 2px solid rgba(0,0,0,.1);
+  background: var(--cream);
+  position: sticky; top:0; z-index:10;
+}
+.tab {
+  padding: 10px 16px;
+  font-size: 8px; letter-spacing: 3px; text-transform:uppercase;
+  color: var(--mist);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition: all .15s;
+  background: transparent;
+  border-top:none; border-left:none; border-right:none;
+  font-family: 'Share Tech Mono', monospace;
+}
+.tab:hover { color: var(--ink); }
+.tab.active {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
+}
+
+/* ══ TAB CONTENT ══ */
+.tab-content { display:none; padding: 20px; }
+.tab-content.active { display:block; }
+
+/* ══ LABOR CORE ══ */
+.labor-header {
+  display: flex; align-items: baseline; gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(0,0,0,.08);
+}
+.labor-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px; font-weight: 600; letter-spacing: 4px;
+}
+.labor-sub {
+  font-size: 8px; letter-spacing: 3px; color: var(--mist);
+}
+
+.task-group { margin-bottom: 20px; }
+.tg-label {
+  font-size: 7px; letter-spacing: 5px; text-transform:uppercase;
+  color: var(--gold); border-bottom: 1px solid rgba(160,120,32,.2);
+  padding-bottom: 5px; margin-bottom: 8px;
+}
+.task-item {
+  display: flex; align-items: flex-start; gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px dotted rgba(0,0,0,.06);
+  cursor: pointer;
+}
+.task-item:last-child { border-bottom: none; }
+.task-check {
+  width: 14px; height: 14px;
+  border: 1px solid rgba(0,0,0,.25);
+  background: white;
+  flex-shrink: 0; margin-top: 1px;
+  display:flex; align-items:center; justify-content:center;
+  font-size: 8px; cursor:pointer;
+  transition: all .1s;
+}
+.task-check.done {
+  background: var(--jade); border-color: var(--jade); color: white;
+}
+.task-body { flex:1; }
+.task-name {
+  font-size: 10px; line-height: 1.5;
+  transition: opacity .2s;
+}
+.task-item.done .task-name { opacity: .4; text-decoration: line-through; }
+.task-meta {
+  font-size: 7px; color: var(--mist);
+  letter-spacing: 1px; margin-top: 2px;
+}
+.task-tag {
+  display: inline-block;
+  font-size: 6px; padding: 1px 4px;
+  border: 1px solid; letter-spacing: 1px;
+  margin-left: 6px;
+}
+.tag-imv  { color: var(--jade); border-color: var(--jade); }
+.tag-cide { color: var(--gold); border-color: var(--gold); }
+.tag-rag  { color: #6a9fd8; border-color: #6a9fd8; }
+.tag-gui  { color: var(--red); border-color: var(--red); }
+.tag-fix  { color: var(--mist); border-color: var(--mist); }
+.task-scalar {
+  font-size: 8px; color: var(--gold);
+  margin-left: auto; flex-shrink:0;
+}
+
+/* ══ SPRINT ROADMAP ══ */
+.sprint-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.sprint-card {
+  border: 1px solid rgba(0,0,0,.12);
+  background: white;
+  padding: 14px;
+  position: relative;
+  overflow: hidden;
+}
+.sprint-card::before {
+  content: attr(data-n);
+  position: absolute; right:8px; bottom:4px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 48px; font-weight:700;
+  color: rgba(0,0,0,.04); pointer-events:none;
+}
+.sprint-card.now { border-color: var(--jade); }
+.sprint-card.now::after {
+  content: 'NOW';
+  position:absolute; top:8px; right:8px;
+  font-size:6px; letter-spacing:2px;
+  color: var(--jade); border: 1px solid var(--jade);
+  padding: 1px 4px;
+}
+.sprint-week {
+  font-size: 7px; letter-spacing: 4px; text-transform:uppercase;
+  color: var(--gold); margin-bottom: 6px;
+}
+.sprint-goal {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 14px; font-weight:600; letter-spacing:2px;
+  margin-bottom: 8px;
+}
+.sprint-item {
+  font-size: 9px; line-height: 2.1;
+  color: var(--dim);
+}
+.sprint-item::before { content: '→ '; color: var(--mist); }
+
+/* ══ TIPS & RUTINAS ══ */
+.tip-block {
+  border-left: 3px solid;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  background: white;
+}
+.tip-block.gold  { border-color: var(--gold); }
+.tip-block.jade  { border-color: var(--jade); }
+.tip-block.red   { border-color: var(--red); }
+.tip-block.mist  { border-color: var(--mist); }
+.tip-title {
+  font-size: 8px; letter-spacing: 3px; text-transform:uppercase;
+  margin-bottom: 6px;
+}
+.tip-block.gold .tip-title { color: var(--gold); }
+.tip-block.jade .tip-title { color: var(--jade); }
+.tip-block.red  .tip-title { color: var(--red); }
+.tip-block.mist .tip-title { color: var(--mist); }
+.tip-body {
+  font-size: 10px; line-height: 1.9;
+  color: var(--dim);
+}
+
+/* ══ RUTINA VISUAL ══ */
+.rutina-strip {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+.rutina-strip::-webkit-scrollbar { height:3px; }
+.rutina-strip::-webkit-scrollbar-thumb { background:rgba(0,0,0,.15); }
+.rslot {
+  flex-shrink: 0;
+  width: 52px;
+  border: 1px solid rgba(0,0,0,.1);
+  background: white;
+  padding: 6px 4px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  transition: all .1s;
+}
+.rslot:hover { border-color: var(--gold); }
+.rslot.active-slot { background: var(--ink); color: var(--paper); border-color:var(--ink); }
+.rslot.active-slot .rs-time { color: var(--mark); }
+.rslot.done-slot { background: rgba(26,92,72,.06); border-color:var(--jade); }
+.rs-time { font-size: 9px; color: var(--mist); display:block; }
+.rs-icon { font-size: 16px; display:block; line-height:1.4; }
+.rs-label { font-size: 6px; letter-spacing:1px; color:var(--mist); display:block; }
+
+/* ══ PANEL DERECHO ══ */
+.panel-right {
+  border-left: 1px solid rgba(0,0,0,.12);
+  background: var(--cream);
+  overflow-y: auto;
+}
+.pr-section {
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(0,0,0,.08);
+}
+.pr-hd {
+  font-size: 7px; letter-spacing: 4px; text-transform:uppercase;
+  color: var(--mist); margin-bottom: 10px;
+}
+
+/* ══ METRICS ══ */
+.metrics-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 4px;
+}
+.metric {
+  background: white; border: 1px solid rgba(0,0,0,.08);
+  padding: 8px 8px;
+  text-align: center;
+}
+.metric-val {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px; font-weight:700;
+  display:block; color: var(--ink);
+}
+.metric-lbl {
+  font-size: 6px; letter-spacing: 2px; text-transform:uppercase;
+  color: var(--mist); display:block; margin-top:2px;
+}
+
+/* ══ SCALAR BAR ══ */
+.scalar-section { padding: 12px 14px; border-bottom: 1px solid rgba(0,0,0,.08); }
+.scalar-hd { font-size: 7px; letter-spacing:4px; color:var(--mist); margin-bottom:8px; }
+.scalar-bar-wrap {
+  background: rgba(0,0,0,.06); height: 8px; position:relative; margin-bottom:4px;
+}
+.scalar-bar-fill {
+  height: 100%; background: linear-gradient(90deg, var(--blue-ku), var(--green-wu));
+  transition: width .6s ease;
+}
+.scalar-markers {
+  display:flex; justify-content:space-between;
+  font-size:6px; color:var(--mist); letter-spacing:1px;
+}
+.scalar-now {
+  font-size:9px; color:var(--gold);
+  text-align:right; margin-top:3px;
+}
+
+/* ══ SECURITY CHECKLIST ══ */
+.security-item {
+  display:flex; align-items:center; gap:8px;
+  padding: 4px 0;
+  border-bottom: 1px dotted rgba(0,0,0,.06);
+  font-size: 9px;
+}
+.security-item:last-child { border-bottom:none; }
+.sec-icon { font-size:12px; min-width:16px; }
+.sec-ok   { color: var(--jade); }
+.sec-warn { color: var(--gold); }
+.sec-off  { color: var(--mist); opacity:.5; }
+
+/* ══ NEXT ACTIONS ══ */
+.next-item {
+  display:flex; gap:8px; align-items:flex-start;
+  padding: 6px 0;
+  border-bottom: 1px dotted rgba(0,0,0,.06);
+  cursor:pointer; transition:background .1s;
+}
+.next-item:hover { background: rgba(0,0,0,.02); }
+.next-num {
+  font-size:8px; color:var(--mist); min-width:16px;
+  padding-top:1px;
+}
+.next-text { font-size:9px; line-height:1.7; flex:1; }
+.next-day {
+  font-size:7px; color:var(--gold); flex-shrink:0;
+  padding-top:1px;
+}
+
+/* ══ DOOR STATUS ══ */
+.door-status {
+  display:flex; align-items:center; gap:10px;
+  padding: 10px 14px;
+  background: var(--ink); color: var(--paper);
+  border-bottom: 1px solid rgba(255,255,255,.05);
+}
+.ds-icon { font-size:24px; }
+.ds-info { flex:1; }
+.ds-name { font-size:9px; letter-spacing:3px; color:var(--mark); }
+.ds-state { font-size:8px; color:rgba(255,255,255,.45); margin-top:2px; }
+.ds-hex { font-family:'Noto Serif SC',serif; font-size:14px; color:rgba(255,255,255,.25); }
+
+/* ══ NOTE AREA ══ */
+.note-area {
+  width:100%; border:none; background:transparent;
+  font-family:'Share Tech Mono',monospace; font-size:10px;
+  color:var(--ink); line-height:1.8; resize:vertical;
+  padding: 10px 14px; min-height:100px;
+  border-bottom: 1px solid rgba(0,0,0,.06);
+  outline:none;
+}
+.note-area::placeholder { color:var(--mist); }
+
+/* ══ ZIPPER STATUS ══ */
+.zipper {
+  display:flex; align-items:center; gap:8px;
+  padding: 8px 14px;
+  font-size: 8px; letter-spacing:2px;
+}
+.zip-dot { width:6px; height:6px; border-radius:50%; background:var(--jade); }
+.zip-label { color:var(--mist); }
+.zip-val { color:var(--jade); margin-left:auto; }
+
+/* ══ WEEKEND BLOCK ══ */
+.weekend-grid {
+  display:grid; grid-template-columns:1fr 1fr; gap:10px;
+}
+.wk-card {
+  border:1px solid rgba(0,0,0,.1); background:white; padding:12px;
+}
+.wk-day {
+  font-size:7px; letter-spacing:4px; color:var(--mist);
+  text-transform:uppercase; margin-bottom:6px;
+}
+.wk-hex {
+  font-family:'Noto Serif SC',serif;
+  font-size:11px; color:var(--gold); margin-bottom:4px;
+}
+.wk-title {
+  font-family:'Cormorant Garamond',serif;
+  font-size:14px; font-weight:600; margin-bottom:8px;
+}
+.wk-item {
+  font-size:9px; line-height:2.1; color:var(--dim);
+}
+.wk-item::before { content:'· '; color:var(--mist); }
+
+/* ══ MODAL/OVERLAY ══ */
+.overlay {
+  display:none; position:fixed; inset:0;
+  background:rgba(0,0,0,.5); z-index:200;
+  align-items:center; justify-content:center;
+}
+.overlay.show { display:flex; }
+.modal {
+  background:var(--paper); max-width:500px; width:90%;
+  border:1px solid var(--ink); padding:24px;
+  position:relative;
+}
+.modal-close {
+  position:absolute; top:12px; right:12px;
+  font-size:14px; cursor:pointer; background:none; border:none;
+  color:var(--mist);
+}
+.modal-title {
+  font-family:'Cormorant Garamond',serif;
+  font-size:18px; font-weight:600; letter-spacing:4px;
+  margin-bottom:14px; color:var(--ink);
+}
+.modal-body { font-size:10px; line-height:1.9; color:var(--dim); }
+</style>
+</head>
+<body>
+
+<!-- ══ TOPBAR ══ -->
+<div class="topbar">
+  <div class="tb-brand">
+    <div>
+      <div class="tb-brand-title">HOUSE DRONE</div>
+      <div class="tb-brand-sub">ESCRITORIO SOBERANO · SAMU @</div>
+    </div>
+  </div>
+  <div class="tb-clock">
+    <div id="clock" class="tb-time">00:00:00</div>
+    <div>
+      <div id="date-display" class="tb-date">---</div>
+      <div id="day-display" class="tb-date" style="color:var(--mark)">---</div>
+    </div>
+  </div>
+  <div class="tb-period">
+    <span id="period-sym" class="period-sym">空</span>
+    <div>
+      <div id="period-name" class="period-name">CARGANDO</div>
+      <div id="period-window" class="period-name" style="color:rgba(255,255,255,.3)">00:00→00:00</div>
+    </div>
+  </div>
+  <div id="door-status-bar" class="tb-period" style="border-left:1px solid rgba(255,255,255,.1)">
+    <span id="door-sym" style="font-size:20px;">🚪</span>
+    <div id="door-label" class="period-name">DOOR MU</div>
+  </div>
+  <div class="tb-spacer"></div>
+  <div class="tb-state">
+    <div id="state-dot" class="state-dot"></div>
+    <span id="state-label" class="state-label">MU · 空</span>
+    <span id="scalar-display" class="scalar-val">S:0.291</span>
+  </div>
+  <div class="tb-state" style="border-left:1px solid rgba(255,255,255,.1)">
+    <span style="font-size:8px;letter-spacing:2px;color:rgba(255,255,255,.3)">ZIP</span>
+    <span id="zip-state" style="font-size:8px;color:#5aad78;letter-spacing:1px;">OPEN</span>
+  </div>
+</div>
+
+<!-- ══ LAYOUT ══ -->
+<div class="layout">
+
+  <!-- PANEL IZQUIERDO -->
+  <div class="panel-left">
+
+    <!-- DAY SELECTOR -->
+    <div class="day-strip">
+      <button class="day-btn" data-day="sat" onclick="selectDay('sat')">
+        <span class="d-sym">乾坤</span><span class="d-name">$sat</span>
+      </button>
+      <button class="day-btn" data-day="sun" onclick="selectDay('sun')">
+        <span class="d-sym">坎井</span><span class="d-name">$sun</span>
+      </button>
+      <button class="day-btn active" data-day="mon" onclick="selectDay('mon')">
+        <span class="d-sym">震艮</span><span class="d-name">$mon</span>
+      </button>
+      <button class="day-btn" data-day="tue" onclick="selectDay('tue')">
+        <span class="d-sym">離巽</span><span class="d-name">$tue</span>
+      </button>
+      <button class="day-btn" data-day="wed" onclick="selectDay('wed')">
+        <span class="d-sym">兌渙</span><span class="d-name">$wed</span>
+      </button>
+      <button class="day-btn" data-day="thu" onclick="selectDay('thu')">
+        <span class="d-sym">節孚</span><span class="d-name">$thu</span>
+      </button>
+      <button class="day-btn" data-day="fri" onclick="selectDay('fri')">
+        <span class="d-sym">過濟</span><span class="d-name">$fri</span>
+      </button>
+    </div>
+
+    <!-- DAY CARD -->
+    <div class="day-card">
+      <div id="day-hex" class="day-card-hex">H51+H52 · Lo Suscitante + La Quietud</div>
+      <div id="day-name" class="day-card-title">LUNES $mon</div>
+      <div id="day-desc" class="day-card-desc">Inicio enérgico con estabilización inmediata.<br>Impulso inicial con anclaje. {shock}+{keeping still}<br>Tareas: inicios de proyecto · nuevas rutinas · activación.</div>
+    </div>
+
+    <!-- DOOR ICONS -->
+    <div class="door-block">
+      <div class="door-hd">▸ DOOR ICONOGRAFÍA · SAMU</div>
+      <div class="door-row">
+        <div class="door-item" id="door-morning" onclick="activateDoor('morning')">
+          <span class="door-sym">🌅</span>
+          <span class="door-name">MORNING</span>
+          <span class="door-time">05:00→12:00</span>
+        </div>
+        <div class="door-item" id="door-noon" onclick="activateDoor('noon')">
+          <span class="door-sym">☀️</span>
+          <span class="door-name">ZIPPER NOON</span>
+          <span class="door-time">12:00→13:00</span>
+        </div>
+        <div class="door-item" id="door-afternoon" onclick="activateDoor('afternoon')">
+          <span class="door-sym">🌇</span>
+          <span class="door-name">AFTERNOON</span>
+          <span class="door-time">13:00→18:00</span>
+        </div>
+      </div>
+      <div class="door-row">
+        <div class="door-item" id="door-human-otr" onclick="activateDoor('human-otr')">
+          <span class="door-sym">🚶</span>
+          <span class="door-name">HUMAN OTR</span>
+          <span class="door-time">→ salida física</span>
+        </div>
+        <div class="door-item" id="door-human-inn" onclick="activateDoor('human-inn')">
+          <span class="door-sym">🏠</span>
+          <span class="door-name">HUMAN INN</span>
+          <span class="door-time">← retorno base</span>
+        </div>
+        <div class="door-item" id="door-human-out" onclick="activateDoor('human-out')">
+          <span class="door-sym">🌙</span>
+          <span class="door-name">NOCTURNAL</span>
+          <span class="door-time">18:00→05:00</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SAMU MODULES -->
+    <div class="samu-block">
+      <div class="samu-hd">▸ SAMU @ · MÓDULOS ACTIVOS</div>
+      <div class="samu-mod" onclick="showModal('samu-diurnal')">
+        <span class="samu-icon">☀️</span>
+        <div class="samu-info">
+          <div class="samu-name">DIURNAL</div>
+          <div class="samu-state">06:00→18:00 · ZIP_OPEN</div>
+        </div>
+        <span id="pill-diurnal" class="samu-pill pill-on">ON</span>
+      </div>
+      <div class="samu-mod" onclick="showModal('samu-nocturnal')">
+        <span class="samu-icon">🌙</span>
+        <div class="samu-info">
+          <div class="samu-name">NOCTURNAL</div>
+          <div class="samu-state">18:00→06:00 · BOTS operan</div>
+        </div>
+        <span id="pill-nocturnal" class="samu-pill pill-off">STANDBY</span>
+      </div>
+      <div class="samu-mod" onclick="showModal('samu-human-early')">
+        <span class="samu-icon">🌅</span>
+        <div class="samu-info">
+          <div class="samu-name">@human_early</div>
+          <div class="samu-state">UF[H02] receptivo · KU absorb.</div>
+        </div>
+        <span class="samu-pill pill-ku">KU</span>
+      </div>
+      <div class="samu-mod" onclick="showModal('samu-human-later')">
+        <span class="samu-icon">🌇</span>
+        <div class="samu-info">
+          <div class="samu-name">@human_later</div>
+          <div class="samu-state">ciclo calibrado · dirimencia</div>
+        </div>
+        <span class="samu-pill pill-off">TARDE</span>
+      </div>
+      <div class="samu-mod">
+        <span class="samu-icon">⏺</span>
+        <div class="samu-info">
+          <div class="samu-name">SAMU @ auditor</div>
+          <div class="samu-state">Scalar S: 0.291 → target 0.88</div>
+        </div>
+        <span class="samu-pill pill-ku">KU</span>
+      </div>
+      <div class="samu-mod">
+        <span class="samu-icon">⏸</span>
+        <div class="samu-info">
+          <div class="samu-name">TARDANZA DELIBERADA</div>
+          <div class="samu-state">pausa prescripta · 空聽數</div>
+        </div>
+        <span class="samu-pill pill-on">ON</span>
+      </div>
+    </div>
+
+    <!-- ZIPPER STATUS -->
+    <div class="zipper">
+      <div class="zip-dot"></div>
+      <span class="zip-label">ZIPPER</span>
+      <span id="zipper-status" style="font-size:8px;letter-spacing:2px;color:var(--jade)">OPEN · MU_LOADED</span>
+      <span class="zip-val">06:00→18:00</span>
+    </div>
+
+  </div>
+
+  <!-- MAIN WORKSPACE -->
+  <div class="main-workspace">
+
+    <div class="tab-bar">
+      <button class="tab active" onclick="switchTab('labor')">LABOR CORE</button>
+      <button class="tab" onclick="switchTab('sprint')">NEXT SPRINT</button>
+      <button class="tab" onclick="switchTab('rutina')">RUTINA</button>
+      <button class="tab" onclick="switchTab('weekend')">WEEKEND</button>
+      <button class="tab" onclick="switchTab('tips')">TIPS LACHO</button>
+    </div>
+
+    <!-- ── LABOR CORE ── -->
+    <div id="tab-labor" class="tab-content active">
+      <div class="labor-header">
+        <div class="labor-title">LABOR CORE</div>
+        <div class="labor-sub">SPEC · TAREAS ACTUALES · SESIÓN 14+</div>
+      </div>
+
+      <div class="task-group">
+        <div class="tg-label">🔴 INMEDIATO · DEUDA TÉCNICA</div>
+
+        <div class="task-item" onclick="toggleTask(this)">
+          <div class="task-check">○</div>
+          <div class="task-body">
+            <div class="task-name">Instalar 4 UNICODE nuevos en CORPUS <span class="task-tag tag-rag">RAG</span></div>
+            <div class="task-meta">DL_GUI · WS · BI_FREE_TIER · ML_CIRCUIT · cat &gt; EOF</div>
+          </div>
+          <span class="task-scalar">S:0.90</span>
+        </div>
+
+        <div class="task-item" onclick="toggleTask(this)">
+          <div class="task-check">○</div>
+          <div class="task-body">
+            <div class="task-name">Reemplazar index_new_files.py con versión corregida <span class="task-tag tag-fix">FIX</span></div>
+            <div class="task-meta">cp ~/Descargas/index_new_files.py → IMV/tools/ · rutas absolutas</div>
+          </div>
+          <span class="task-scalar">S:0.95</span>
+        </div>
+
+        <div class="task-item" onclick="toggleTask(this)">
+          <div class="task-check">○</div>
+          <div class="task-body">
+            <div class="task-name">python3 tools/index_new_files.py --rag <span class="task-tag tag-rag">RAG</span></div>
+            <div class="task-meta">verificar: N corpus docs · N behavioral docs · GitHub sync</div>
+          </div>
+          <span class="task-scalar">S:0.88</span>
+        </div>
+      </div>
+
+      <div class="task-group">
+        <div class="tg-label">🟡 VECTOR 1 · generator.py tests (27→33)</div>
+
+        <div class="task-item" onclick="toggleTask(this)">
+          <div class="task-check">○</div>
+          <div class="task-body">
+            <div class="task-name">test_generator_creates_file <span class="task-tag tag-imv">IMV</span></div>
+            <div class="task-meta">generator.py → LACHO_FILES/ → verifica existencia archivo</div>
+          </div>
+          <span class="task-scalar">S:0.85</span>
+        </div>
+
+        <div class="task-item" onclick="toggleTask(this)">
+          <div class="task-check">○</div>
+          <div class="task-body">
+            <div class="task-name">test_generator_valid_sentences + test_generator_score_threshold <span class="task-tag tag-imv">IMV</span></div>
+            <div class="task-meta">score ≥ 0.75 · Scalar S mapeado · grammar valid</div>
+          </div>
+          <span class="task-scalar">S:0.85</span>
+        </div>
+
+        <div class="task-item" onclick="toggleTask(this)">
+          <div class="task-check">○</div>
+          <div class="task-body">
+            <div class="task-name">test_generator_cabecera + test_generator_anclas_rag + test_generator_ledger_record <span class="task-tag tag-imv">IMV</span></div>
+            <div class="task-meta">cabecera //[MANAGEMENT] · anclas presente · TX++</div>
+          </div>
+          <span class="task-scalar">S:0.82</span>
+        </div>
+      </div>
+
+      <div class="task-group">
+        <div class="tg-label">🟡 VECTOR 2 · gui.py interface (33→38)</div>
+
+        <div class="task-item" onclick="toggleTask(this)">
+          <div class="task-check">○</div>
+          <div class="task-body">
+            <div class="task-name">Crear IMV/interface/gui.py · Tkinter o Flask :8742 <span class="task-tag tag-gui">GUI</span></div>
+            <div class="task-meta">5 paneles: STATS · VALIDATE · GENERATOR · RAG · CEO</div>
+          </div>
+          <span class="task-scalar">S:0.78</span>
+        </div>
+
+        <div class="task-item" onclick="toggleTask(this)">
+          <div class="task-check">○</div>
+          <div class="task-body">
+            <div class="task-name">5 tests nuevos gui.py → suite 33→38 <span class="task-tag tag-gui">GUI</span></div>
+            <div class="task-meta">test_gui_launch · test_gui_validate · test_gui_stats · test_gui_rag · test_gui_ceo</div>
+          </div>
+          <span class="task-scalar">S:0.78</span>
+        </div>
+      </div>
+
+      <div class="task-group">
+        <div class="tg-label">🟢 VECTOR 3 · CIDE + HOUSE DRONE</div>
+
+        <div class="task-item" onclick="toggleTask(this)">
+          <div class="task-check">○</div>
+          <div class="task-body">
+            <div class="task-name">Instalar CIDE_CIRCUIT_IDE.html en UNICODE_CHINA.a.1/ <span class="task-tag tag-cide">CIDE</span></div>
+            <div class="task-meta">cp ~/Descargas/CIDE_CIRCUIT_IDE.html → UNICODE_CHINA.a.1/</div>
+          </div>
+          <span class="task-scalar">S:0.88</span>
+        </div>
+
+        <div class="task-item" onclick="toggleTask(this)">
+          <div class="task-check">○</div>
+          <div class="task-body">
+            <div class="task-name">Instalar HOUSE_DRONE.html como escritorio soberano <span class="task-tag tag-gui">GUI</span></div>
+            <div class="task-meta">cp ~/Descargas/HOUSE_DRONE.html → UNICODE_CHINA.a.1/</div>
+          </div>
+          <span class="task-scalar">S:0.88</span>
+        </div>
+
+        <div class="task-item" onclick="toggleTask(this)">
+          <div class="task-check">○</div>
+          <div class="task-body">
+            <div class="task-name">UNICODE_ML_CIRCUIT_IDE + UNICODE_DL_GUI al CORPUS · indexar <span class="task-tag tag-rag">RAG</span></div>
+            <div class="task-meta">index --rag · verificar N docs aumenta</div>
+          </div>
+          <span class="task-scalar">S:0.85</span>
+        </div>
+      </div>
+
+      <div class="task-group">
+        <div class="tg-label">⚪ PENDIENTE FASE 1</div>
+
+        <div class="task-item" onclick="toggleTask(this)">
+          <div class="task-check">○</div>
+          <div class="task-body">
+            <div class="task-name">KALIL NORA oracle rating · language_routing mejorar con Groq</div>
+            <div class="task-meta">$tue o $wed · energia persistente · UF[H30]+UF[H57]</div>
+          </div>
+          <span class="task-scalar">S:0.72</span>
+        </div>
+
+        <div class="task-item" onclick="toggleTask(this)">
+          <div class="task-check">○</div>
+          <div class="task-body">
+            <div class="task-name">Indexar generated_20260310_131955.lacho en RAG</div>
+            <div class="task-meta">tools/index_new_files.py · score 0.9 · anclas presentes</div>
+          </div>
+          <span class="task-scalar">S:0.80</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── NEXT SPRINT ROADMAP ── -->
+    <div id="tab-sprint" class="tab-content">
+      <div class="labor-header">
+        <div class="labor-title">NEXT SPRINT</div>
+        <div class="labor-sub">ROADMAP · 4 SEMANAS · SESIÓN 14→18</div>
+      </div>
+
+      <div class="sprint-grid">
+        <div class="sprint-card now" data-n="S14">
+          <div class="sprint-week">SEMANA ACTUAL · S14→S15</div>
+          <div class="sprint-goal">DEUDA + INDEXAR</div>
+          <div class="sprint-item">Fix index_new_files.py · rutas absolutas</div>
+          <div class="sprint-item">Instalar 4 UNICODE nuevos · RAG rebuild</div>
+          <div class="sprint-item">Tests 27→33 · generator.py 6 tests</div>
+          <div class="sprint-item">Instalar CIDE + HOUSE_DRONE en UNICODE_CHINA</div>
+          <div class="sprint-item">github_sync.sh · main actualizado</div>
+        </div>
+
+        <div class="sprint-card" data-n="S16">
+          <div class="sprint-week">SEMANA 2 · S16→S17</div>
+          <div class="sprint-goal">GUI + 38 TESTS</div>
+          <div class="sprint-item">gui.py Tkinter · 5 paneles operativos</div>
+          <div class="sprint-item">Tests 33→38 · suite completa</div>
+          <div class="sprint-item">CIDE integrado a IMV · puerto :8742</div>
+          <div class="sprint-item">HOUSE DRONE ← métricas ledger reales</div>
+          <div class="sprint-item">Groq mejorar language_routing NLP</div>
+        </div>
+
+        <div class="sprint-card" data-n="S18">
+          <div class="sprint-week">SEMANA 3 · S18→S19</div>
+          <div class="sprint-goal">KALIL + NORA</div>
+          <div class="sprint-item">KALIL NORA oracle rating · Scalar S real</div>
+          <div class="sprint-item">BARRIOS banca diáspora · primer flujo</div>
+          <div class="sprint-item">elpulsar.app global · landing page</div>
+          <div class="sprint-item">LACHO_SCORE calibrado ≥ 0.88</div>
+          <div class="sprint-item">UNICODE_CHINA BI dashboard operativo</div>
+        </div>
+
+        <div class="sprint-card" data-n="S20">
+          <div class="sprint-week">SEMANA 4 · S20→S21</div>
+          <div class="sprint-goal">FASE 1 COMPLETA</div>
+          <div class="sprint-item">elpulsar.app · BARRIOS · KALIL 4/6 nodos</div>
+          <div class="sprint-item">CEO ALPHA en IMV · roles operativos</div>
+          <div class="sprint-item">UNICODE_CHINA RAG ≥ 220 docs</div>
+          <div class="sprint-item">Scalar S ≥ 0.88 · tests 38/38 ✓</div>
+          <div class="sprint-item">Ballpaper S14-S21 · sesión cierre</div>
+        </div>
+      </div>
+
+      <!-- COACH ADVICE -->
+      <div style="margin-top:20px">
+        <div class="tg-label" style="margin-bottom:12px">🎯 COACH ADVICE · CÓMO TRABAJAR MEJOR</div>
+
+        <div class="tip-block jade">
+          <div class="tip-title">REGLA 1 · UN PROMPT = 3 TAREAS MÍNIMO</div>
+          <div class="tip-body">Nunca "generá X" → respuesta → "ahora Y". Agrupá siempre. Ejemplo: "Fix index_new_files.py + generá los 6 tests de generator + actualizá gui.py". Usás 3x menos contexto y avanzás 3x más rápido.</div>
+        </div>
+
+        <div class="tip-block gold">
+          <div class="tip-title">REGLA 2 · PEGAR SOLO EL RESULTADO FINAL</div>
+          <div class="tip-body">Ejecutá todo en terminal → pegá solo el output final. No pegar paso a paso. Si son 5 comandos, ejecutalos todos y pegá el último resultado. Esto ahorra 60-70% del contexto de sesión.</div>
+        </div>
+
+        <div class="tip-block jade">
+          <div class="tip-title">REGLA 3 · CONTEXTO MÍNIMO AL INICIO</div>
+          <div class="tip-body">Al abrir nueva sesión: solo estado actual + tarea del día. No traer todo el historial. El BALLPAPER y este HOUSE DRONE son tu contexto portátil — traé solo el link a lo que necesitás.</div>
+        </div>
+
+        <div class="tip-block gold">
+          <div class="tip-title">REGLA 4 · $mon/$tue para código · $wed para diseño · $thu para tests</div>
+          <div class="tip-body">Alineá las tareas con la energía del día. No hagas tests el lunes ni código nuevo el jueves. El sistema SAMU Day Periods no es decorativo — es optimización real de flujo cognitivo.</div>
+        </div>
+
+        <div class="tip-block mist">
+          <div class="tip-title">REGLA 5 · ZIPPER NOON 12:00 · PAUSA OBLIGATORIA</div>
+          <div class="tip-body">A las 12:00 cerrás contexto, comés, salís del modo KU. La TARDANZA DELIBERADA no es pérdida de tiempo — es TAP&DRIP. El sistema procesa mejor después de la pausa que si continuás forzado.</div>
+        </div>
+
+        <div class="tip-block red">
+          <div class="tip-title">REGLA 6 · RED-REGRET: si sobrecargas el hilo, lo cortás</div>
+          <div class="tip-body">Si una sesión se vuelve caótica (muchos archivos, muchos temas, desvíos), activá RED-REGRET: cerrá la sesión, abrí una nueva con contexto mínimo. No intentés rescatar un hilo saturado. Este es el {brake} soberano.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── RUTINA DIARIA ── -->
+    <div id="tab-rutina" class="tab-content">
+      <div class="labor-header">
+        <div class="labor-title">RUTINA SOBERANA</div>
+        <div class="labor-sub">HORARIOS · MÓDULOS · SEGURIDAD</div>
+      </div>
+
+      <!-- TIMELINE -->
+      <div class="tg-label" style="margin-bottom:10px">TIMELINE DIARIO · SAMU DAY PERIODS</div>
+      <div class="rutina-strip">
+        <div class="rslot done-slot"><span class="rs-time">05:00</span><span class="rs-icon">🌑</span><span class="rs-label">MU END</span></div>
+        <div class="rslot"><span class="rs-time">06:00</span><span class="rs-icon">🌅</span><span class="rs-label">ZIP OPEN</span></div>
+        <div class="rslot"><span class="rs-time">06:15</span><span class="rs-icon">⏺</span><span class="rs-label">FEED BOT</span></div>
+        <div class="rslot"><span class="rs-time">06:30</span><span class="rs-icon">☕</span><span class="rs-label">MU→KU</span></div>
+        <div class="rslot active-slot"><span class="rs-time">07:00</span><span class="rs-icon">⏵</span><span class="rs-label">WORK KU</span></div>
+        <div class="rslot"><span class="rs-time">09:00</span><span class="rs-icon">⊛</span><span class="rs-label">CHECK</span></div>
+        <div class="rslot"><span class="rs-time">10:00</span><span class="rs-icon">▌</span><span class="rs-label">DEEP WK</span></div>
+        <div class="rslot"><span class="rs-time">12:00</span><span class="rs-icon">☀️</span><span class="rs-label">ZIP NOON</span></div>
+        <div class="rslot"><span class="rs-time">12:15</span><span class="rs-icon">🚶</span><span class="rs-label">HUM OTR</span></div>
+        <div class="rslot"><span class="rs-time">13:00</span><span class="rs-icon">🏠</span><span class="rs-label">HUM INN</span></div>
+        <div class="rslot"><span class="rs-time">13:15</span><span class="rs-icon">🌇</span><span class="rs-label">AFTERNN</span></div>
+        <div class="rslot"><span class="rs-time">15:00</span><span class="rs-icon">⊙</span><span class="rs-label">STACKING</span></div>
+        <div class="rslot"><span class="rs-time">17:00</span><span class="rs-icon">⏺</span><span class="rs-label">SYNC GIT</span></div>
+        <div class="rslot"><span class="rs-time">17:30</span><span class="rs-icon">⏹</span><span class="rs-label">CIERRE</span></div>
+        <div class="rslot"><span class="rs-time">18:00</span><span class="rs-icon">⊗</span><span class="rs-label">FEED 18h</span></div>
+        <div class="rslot"><span class="rs-time">18:00</span><span class="rs-icon">🌙</span><span class="rs-label">BOT MODE</span></div>
+        <div class="rslot"><span class="rs-time">23:00</span><span class="rs-icon">空</span><span class="rs-label">MU DEEP</span></div>
+      </div>
+
+      <!-- RUTINAS DETALLADAS -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px">
+        <div>
+          <div class="tg-label" style="margin-bottom:8px">🌅 MAÑANA · @human_early 06:00→12:00</div>
+          <div class="tip-block jade" style="margin-bottom:8px">
+            <div class="tip-title">PROTOCOLO DE APERTURA</div>
+            <div class="tip-body">
+              06:00 · ZIPPER OPEN · leer reporte bots noche<br>
+              06:15 · SAMU FEED · revisar TX delta · Scalar S<br>
+              06:30 · DESAYUNO · MU deliberada · no abrir IDE<br>
+              07:00 · KU activo · task principal del día<br>
+              · 空聽數 · escuchar antes de ejecutar<br>
+              · No comenzar con correos ni social<br>
+              · Primera hora = tarea más difícil (H51 shock)
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="tg-label" style="margin-bottom:8px">🌇 TARDE · @human_later 13:00→18:00</div>
+          <div class="tip-block gold" style="margin-bottom:8px">
+            <div class="tip-title">PROTOCOLO DE TARDE</div>
+            <div class="tip-body">
+              13:00 · DOOR AFTERNOON · máxima soberanía<br>
+              13:15 · tasks de menor esfuerzo ∇ gradient<br>
+              15:00 · STACKING · cristalizar WU del día<br>
+              16:00 · RAG update si hay UNICODE nuevos<br>
+              17:00 · github_sync.sh · sellado<br>
+              17:30 · CIERRE: notas · pendientes mañana<br>
+              18:00 · FEED 18h · bots toman el relevo · ⊗
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEGURIDAD Y BUENAS PRÁCTICAS -->
+      <div class="tg-label" style="margin-bottom:10px">🔒 SEGURIDAD · BUENAS PRÁCTICAS SOBERANAS</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+        <div>
+          <div class="tip-block red">
+            <div class="tip-title">SEGURIDAD LACHO · NUNCA</div>
+            <div class="tip-body">
+              ❌ No pegar API keys en chat · usar config/api.json<br>
+              ❌ No commitear .env · .gitignore activo<br>
+              ❌ No abrir puertos públicos sin DOOR verificado<br>
+              ❌ No comprimir CORPUS/ · RAG queda ciego<br>
+              ❌ No forzar WU sin Scalar S ≥ 0.75<br>
+              ❌ No múltiples sesiones Claude con mismo hilo
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="tip-block jade">
+            <div class="tip-title">BUENAS PRÁCTICAS · SIEMPRE</div>
+            <div class="tip-body">
+              ✅ github_sync.sh al final de cada sesión<br>
+              ✅ python3 tests/test_imv.py antes de sync<br>
+              ✅ SAMU @ audita antes de STACKING<br>
+              ✅ Backup sovereign.db en $fri tarde<br>
+              ✅ Index new files si hay UNICODE nuevos<br>
+              ✅ BALLPAPER nuevo en cada sesión cierre
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── WEEKEND ── -->
+    <div id="tab-weekend" class="tab-content">
+      <div class="labor-header">
+        <div class="labor-title">OVER WORKING WEEKEND</div>
+        <div class="labor-sub">$SAT · $SUN · REPOSO CREATIVO + CONTEMPLACIÓN</div>
+      </div>
+
+      <div class="weekend-grid">
+        <div class="wk-card">
+          <div class="wk-day">$SAT · SÁBADO</div>
+          <div class="wk-hex">乾坤 · H01+H02 · Lo Creativo + Receptividad</div>
+          <div class="wk-title">Reposo creativo · gobierno de salida</div>
+          <div style="font-size:9px;color:var(--mist);margin-bottom:10px">{rocking chair} + {headcat} · azul profundo dorado</div>
+          <div class="wk-item">Revisar semana · BALLPAPER de cierre</div>
+          <div class="wk-item">Planificar siguiente sprint · lista tareas</div>
+          <div class="wk-item">Leer CORPUS nuevo · nuevos BIBLIO-SOURCES</div>
+          <div class="wk-item">NO codificar · NO forzar WU</div>
+          <div class="wk-item">HOUSE DRONE: marcar tareas completadas</div>
+          <div class="wk-item">Backup sovereign.db + github_sync.sh</div>
+          <div class="wk-item">Definir 3 prioridades $mon</div>
+        </div>
+        <div class="wk-card">
+          <div class="wk-day">$SUN · DOMINGO</div>
+          <div class="wk-hex">坎井 · H29+H48 · El Pozo + El Abismo</div>
+          <div class="wk-title">Contemplación profunda · sabiduría</div>
+          <div style="font-size:9px;color:var(--mist);margin-bottom:10px">{vault} + {well} · azul mediano plateado</div>
+          <div class="wk-item">Estudio profundo · BIBLIO-SOURCES</div>
+          <div class="wk-item">Revisar CORPUS · actualizar si hay gaps</div>
+          <div class="wk-item">Meditación y reflexión estratégica</div>
+          <div class="wk-item">Revisar Scalar S trend · delta-Ψ</div>
+          <div class="wk-item">UNICODE nuevos si hay ideas · no instalar</div>
+          <div class="wk-item">Preparar contexto mínimo para $mon</div>
+          <div class="wk-item">ZIP_CLOSE 18:00 · bots toman el relevo</div>
+        </div>
+      </div>
+
+      <div style="margin-top:14px">
+        <div class="tip-block mist">
+          <div class="tip-title">PRINCIPIO WEEKEND · OVER WORKING ≠ OVER FORCING</div>
+          <div class="tip-body">
+            El weekend soberano no es descanso pasivo ni trabajo forzado. Es el ciclo UF[H01]+UF[H02] — creatividad receptiva. Podés trabajar mucho en el fin de semana, pero el trabajo debe fluir naturalmente (∇ gradient). Si hay que forzar, es señal de RED-REGRET acumulado de la semana. La regla es: si fluye, seguís. Si no fluye, {brake}.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── TIPS LACHO ── -->
+    <div id="tab-tips" class="tab-content">
+      <div class="labor-header">
+        <div class="labor-title">TIPS HOMEWORK SPEC</div>
+        <div class="labor-sub">LACHO · CÓMO TRABAJAR CON EL SISTEMA</div>
+      </div>
+
+      <div class="tip-block jade">
+        <div class="tip-title">TIP 1 · ABRIR SESIÓN CLAUDE · CONTEXTO MÍNIMO</div>
+        <div class="tip-body">
+          Al abrir nueva sesión traé SOLO:<br>
+          · Estado actual: "Tests: 27/27 · Scalar S: 0.291 · TX: 1057"<br>
+          · Tarea del día: "Hoy: fix index_new_files.py + 6 tests generator"<br>
+          · Si hay error: pegar solo el traceback, no todo el archivo<br>
+          · El HOUSE DRONE y BALLPAPER son tu memoria portátil
+        </div>
+      </div>
+
+      <div class="tip-block gold">
+        <div class="tip-title">TIP 2 · CUÁNDO USAR QUÉ AI</div>
+        <div class="tip-body">
+          Claude.ai (este) → diseño · auditoría · UNICODE · GUI · BALLPAPER · SPEC<br>
+          Aider + Groq → código incremental · refactoring · tests · bugs<br>
+          Ollama local → validación sin internet · grammar.py · ledger offline<br>
+          Gemini/Jules → tareas online largas · free tier alternativo<br>
+          Regla: Claude = arquitecto · Aider = constructor · Ollama = validador
+        </div>
+      </div>
+
+      <div class="tip-block jade">
+        <div class="tip-title">TIP 3 · CÓMO CONSTRUIR UN UNICODE NUEVO</div>
+        <div class="tip-body">
+          1. Identificar el gap: qué falta en el RAG<br>
+          2. Nombrar: UNICODE_[DOMINIO]_[ASPECTO].txt<br>
+          3. Estructura: //[MANAGEMENT] · sección: · ANCLAS RAG al final<br>
+          4. Las ANCLAS son las sentencias LACHO · son las que indexa el RAG<br>
+          5. Instalar: cat &gt; CORPUS/archivo.txt &lt;&lt; 'EOF'<br>
+          6. Indexar: python3 tools/index_new_files.py --rag<br>
+          7. Verificar: N docs aumentó
+        </div>
+      </div>
+
+      <div class="tip-block gold">
+        <div class="tip-title">TIP 4 · SCALAR S · CÓMO SUBIRLO</div>
+        <div class="tip-body">
+          Scalar S actual: 0.291 → target: 0.88 (stack) → 0.95 (CEO)<br>
+          Sube cuando: más CORPUS → mejor RAG boost · más TX green<br>
+          Baja cuando: tests fallan · grammar invalida · RED-REGRET<br>
+          Estrategia: cada UNICODE bien construido + instalado = +0.02-0.05 S<br>
+          Los 6 tests de generator.py que faltan = +0.05-0.08 S estimado
+        </div>
+      </div>
+
+      <div class="tip-block mist">
+        <div class="tip-title">TIP 5 · NO DESVIAR LAS BASES TEMÁTICAS</div>
+        <div class="tip-body">
+          El proyecto tiene bases consolidadas: LACHO · DIRIME · ELPULSAR · KALIL · CHCL<br>
+          Cada nueva idea debe anclarse a una base existente, no crear una sexta base<br>
+          CIDE → ancla a CIRCUIT_DRIP → ancla a WORK+METHOD<br>
+          HOUSE DRONE → ancla a SAMU+HOMEWORKING → ancla a STACKING<br>
+          ML/DL → ancla a IMV+RAG → ancla a METHOD+ACTIVITY<br>
+          Si no ancla a nada existente: es RED-REGRET temático
+        </div>
+      </div>
+
+      <div class="tip-block red">
+        <div class="tip-title">TIP 6 · SEÑALES DE SATURACIÓN · {BRAKE} INMEDIATO</div>
+        <div class="tip-body">
+          🔴 El hilo tiene más de 20 intercambios → nueva sesión<br>
+          🔴 Estás explicando lo mismo por tercera vez → RED-REGRET<br>
+          🔴 Claude empieza a contradecirse → contexto saturado<br>
+          🔴 Tás generando archivos que no instalás → acumulación KU<br>
+          🔴 Llevas 3+ horas sin github_sync.sh → riesgo pérdida<br>
+          Señal positiva: todo lo generado está instalado y testeado ✓
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- PANEL DERECHO -->
+  <div class="panel-right">
+
+    <!-- DOOR STATUS -->
+    <div id="door-status-panel" class="door-status">
+      <span id="ds-icon" class="ds-icon">🌅</span>
+      <div class="ds-info">
+        <div id="ds-name" class="ds-name">DOOR MORNING HUMAN OTR</div>
+        <div id="ds-state" class="ds-state">DOOR_READY · verificado · KU absorbiendo</div>
+      </div>
+      <span id="ds-hex" class="ds-hex">H02</span>
+    </div>
+
+    <!-- METRICS -->
+    <div class="pr-section">
+      <div class="pr-hd">▸ MÉTRICAS · LEDGER</div>
+      <div class="metrics-grid">
+        <div class="metric">
+          <span class="metric-val" id="m-tx">1057</span>
+          <span class="metric-lbl">TX TOTAL</span>
+        </div>
+        <div class="metric">
+          <span class="metric-val" id="m-crystal">40</span>
+          <span class="metric-lbl">CRISTALES</span>
+        </div>
+        <div class="metric">
+          <span class="metric-val" id="m-tests">27/27</span>
+          <span class="metric-lbl">TESTS</span>
+        </div>
+        <div class="metric">
+          <span class="metric-val" id="m-corpus">186+</span>
+          <span class="metric-lbl">CORPUS</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCALAR S -->
+    <div class="scalar-section">
+      <div class="scalar-hd">▸ SCALAR S · FACE_METER</div>
+      <div class="scalar-bar-wrap">
+        <div class="scalar-bar-fill" id="scalar-bar" style="width:29.1%"></div>
+      </div>
+      <div class="scalar-markers">
+        <span>0.0</span><span>0.5</span><span>0.75</span><span>0.88</span><span>1.0</span>
+      </div>
+      <div class="scalar-now">S: 0.291 · target: 0.88</div>
+    </div>
+
+    <!-- SECURITY -->
+    <div class="pr-section">
+      <div class="pr-hd">▸ SEGURIDAD · STATUS</div>
+      <div class="security-item">
+        <span class="sec-icon sec-ok">●</span>
+        <span>[seal of secrecy] activo</span>
+      </div>
+      <div class="security-item">
+        <span class="sec-icon sec-ok">●</span>
+        <span>GitHub SSH main · activo</span>
+      </div>
+      <div class="security-item">
+        <span class="sec-icon sec-ok">●</span>
+        <span>Ollama local · port 11434</span>
+      </div>
+      <div class="security-item">
+        <span class="sec-icon sec-warn">◑</span>
+        <span>Groq API key · env var</span>
+      </div>
+      <div class="security-item">
+        <span class="sec-icon sec-warn">◑</span>
+        <span>Tests 27/27 · target 38/38</span>
+      </div>
+      <div class="security-item">
+        <span class="sec-icon sec-warn">◑</span>
+        <span>index_new_files.py · fix pendiente</span>
+      </div>
+      <div class="security-item">
+        <span class="sec-icon sec-off">○</span>
+        <span>gui.py · pendiente</span>
+      </div>
+      <div class="security-item">
+        <span class="sec-icon sec-off">○</span>
+        <span>KALIL NORA · pendiente</span>
+      </div>
+    </div>
+
+    <!-- NEXT ACTIONS -->
+    <div class="pr-section">
+      <div class="pr-hd">▸ NEXT 3 ACTIONS · HOY</div>
+      <div class="next-item" onclick="switchTab('labor')">
+        <span class="next-num">→1</span>
+        <span class="next-text">Fix + instalar index_new_files.py corregido</span>
+        <span class="next-day">$hoy</span>
+      </div>
+      <div class="next-item">
+        <span class="next-num">→2</span>
+        <span class="next-text">Instalar 4 UNICODE + index --rag</span>
+        <span class="next-day">$hoy</span>
+      </div>
+      <div class="next-item">
+        <span class="next-num">→3</span>
+        <span class="next-text">Tests 27→33 · generator 6 tests</span>
+        <span class="next-day">$mon</span>
+      </div>
+    </div>
+
+    <!-- NOTAS RÁPIDAS -->
+    <div class="pr-section">
+      <div class="pr-hd">▸ NOTA RÁPIDA · SESSION</div>
+      <textarea class="note-area" placeholder="空 · escribe aquí... pendientes, ideas, bugs encontrados"></textarea>
+    </div>
+
+    <!-- BALLPAPER LINK -->
+    <div class="pr-section">
+      <div class="pr-hd">▸ ARCHIVOS SOBERANOS</div>
+      <div style="font-size:9px;line-height:2.5;color:var(--dim)">
+        <div>· HOUSE_DRONE.html <span style="color:var(--jade)">← este</span></div>
+        <div>· CIDE_CIRCUIT_IDE.html</div>
+        <div>· BALLPAPER_LACHO_2026.html</div>
+        <div>· UNICODE_CHINA.a.1/</div>
+        <div>· sovereign.db · ledger</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- MODAL -->
+<div class="overlay" id="modal-overlay" onclick="closeModal()">
+  <div class="modal" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeModal()">╳</button>
+    <div class="modal-title" id="modal-title">SAMU MODULE</div>
+    <div class="modal-body" id="modal-body">...</div>
+  </div>
+</div>
+
+<script>
+// ══ CLOCK ══
+function updateClock() {
+  const now = new Date();
+  const h = String(now.getHours()).padStart(2,'0');
+  const m = String(now.getMinutes()).padStart(2,'0');
+  const s = String(now.getSeconds()).padStart(2,'0');
+  document.getElementById('clock').textContent = `${h}:${m}:${s}`;
+
+  const days = ['dom','lun','mar','mié','jue','vie','sáb'];
+  const months = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+  document.getElementById('date-display').textContent =
+    `${now.getDate()} ${months[now.getMonth()]} ${now.getFullYear()}`;
+
+  const dayNames = { 0:'$sun',1:'$mon',2:'$tue',3:'$wed',4:'$thu',5:'$fri',6:'$sat' };
+  document.getElementById('day-display').textContent = dayNames[now.getDay()] || '$mon';
+
+  updatePeriod(now.getHours(), now.getMinutes());
+  updateDoorAuto(now.getHours());
+}
+
+function updatePeriod(h, m) {
+  let sym, name, window;
+  if (h >= 0  && h < 5)  { sym='空'; name='NOCTURNAL · BOTS'; window='00:00→05:00'; }
+  else if (h >= 5  && h < 6)  { sym='聽'; name='PRE-DAWN · MU'; window='05:00→06:00'; }
+  else if (h >= 6  && h < 12) { sym='🌅'; name='MORNING · @human_early'; window='06:00→12:00'; }
+  else if (h >= 12 && h < 13) { sym='☀️'; name='ZIPPER NOON · PAUSA'; window='12:00→13:00'; }
+  else if (h >= 13 && h < 18) { sym='🌇'; name='AFTERNOON · DOOR_OPEN'; window='13:00→18:00'; }
+  else if (h >= 18 && h < 23) { sym='🌙'; name='NOCTURNAL · BOTS'; window='18:00→23:00'; }
+  else                         { sym='數'; name='DEEP NIGHT · MU'; window='23:00→00:00'; }
+
+  document.getElementById('period-sym').textContent = sym;
+  document.getElementById('period-name').textContent = name;
+  document.getElementById('period-window').textContent = window;
+}
+
+function updateDoorAuto(h) {
+  let icon, label, doorName, doorState, doorHex;
+  if (h >= 5 && h < 12) {
+    icon='🌅'; label='MORNING OPEN'; doorName='DOOR MORNING HUMAN OTR';
+    doorState='DOOR_READY · @human_early · KU absorbiendo'; doorHex='H02';
+    setActiveDoor('morning');
+  } else if (h >= 12 && h < 13) {
+    icon='☀️'; label='ZIPPER NOON'; doorName='ZIPPER NOON HUMAN INN';
+    doorState='DOOR_STANDBY · pausa deliberada · 空聽數'; doorHex='H58';
+    setActiveDoor('noon');
+  } else if (h >= 13 && h < 18) {
+    icon='🌇'; label='AFTERNOON'; doorName='DOOR AFTERNOON HUMAN OUT';
+    doorState='DOOR_OPEN · materialización WU · GATE_H06 resuelto'; doorHex='H06';
+    setActiveDoor('afternoon');
+  } else {
+    icon='🌙'; label='NOCTURNAL'; doorName='NOCTURNAL · BOTS ACTIVE';
+    doorState='DOOR_SEALED · HUMAN offline · 18:00→06:00'; doorHex='H64';
+    setActiveDoor('human-out');
+  }
+  document.getElementById('door-sym').textContent = icon;
+  document.getElementById('door-label').textContent = label;
+  document.getElementById('ds-icon').textContent = icon;
+  document.getElementById('ds-name').textContent = doorName;
+  document.getElementById('ds-state').textContent = doorState;
+  document.getElementById('ds-hex').textContent = doorHex;
+}
+
+function setActiveDoor(doorId) {
+  document.querySelectorAll('.door-item').forEach(d => d.classList.remove('active-door'));
+  const el = document.getElementById('door-'+doorId);
+  if (el) el.classList.add('active-door');
+}
+
+setInterval(updateClock, 1000);
+updateClock();
+
+// ══ DAY SELECTOR ══
+const DAY_DATA = {
+  sat: { hex:'H01+H02 · Lo Creativo + Receptividad', name:'SÁBADO $sat', desc:'Reposo creativo + gobierno de salida. {rocking chair}+{headcat}.<br>Energía: preparación sosegada. Color: azul profundo dorado.<br>Ideal para: planificación · BALLPAPER cierre · backup.' },
+  sun: { hex:'H29+H48 · El Pozo + El Abismo', name:'DOMINGO $sun', desc:'Contemplación profunda + acceso a sabiduría. {vault}+{well}.<br>Energía: conexión con fuentes profundas. Color: azul plateado.<br>Ideal para: estudio CORPUS · reflexión · preparar $mon.' },
+  mon: { hex:'H51+H52 · Lo Suscitante + La Quietud', name:'LUNES $mon', desc:'Inicio enérgico con estabilización inmediata. {shock}+{keeping still}.<br>Energía: impulso inicial con anclaje. Color: azul brillante naranja.<br>Ideal para: nuevos proyectos · rutinas · activación de sistemas.' },
+  tue: { hex:'H30+H57 · El Fuego + Lo Penetrante', name:'MARTES $tue', desc:'Adhesión persistente + penetración suave. {clinging}+{gentle penetration}.<br>Energía: avance concentrado y persistente. Color: azul intenso rojo.<br>Ideal para: código difícil · debugging · trabajo profundo.' },
+  wed: { hex:'H58+H59 · Lo Gozoso + La Dispersión', name:'MIÉRCOLES $wed', desc:'Plenitud expresiva + liberación controlada. {joyous}+{dispersion}.<br>Energía: expresión creativa con renovación. Color: azul vibrante amarillo.<br>Ideal para: diseño GUI · UNICODE nuevos · BALLPAPER.' },
+  thu: { hex:'H60+H61 · La Limitación + La Verdad Interior', name:'JUEVES $thu', desc:'Contención deliberada + autenticidad profunda. {limitation}+{inner truth}.<br>Energía: enfoque preciso con integridad. Color: azul estable verde.<br>Ideal para: tests · revisión · trabajo detallado · SAMU audit.' },
+  fri: { hex:'H62+H63 · Pequeño Exceso + Consumación', name:'VIERNES $fri', desc:'Ajuste fino + culminación del ciclo. {small excess}+{after completion}.<br>Energía: perfeccionamiento y cierre soberano. Color: azul profundo dorado.<br>Ideal para: github_sync · backup · BALLPAPER semanal · WU seal.' },
+};
+
+function selectDay(day) {
+  document.querySelectorAll('.day-btn').forEach(b => b.classList.remove('active'));
+  document.querySelector(`[data-day="${day}"]`).classList.add('active');
+  const d = DAY_DATA[day];
+  document.getElementById('day-hex').textContent = d.hex;
+  document.getElementById('day-name').textContent = d.name;
+  document.getElementById('day-desc').innerHTML = d.desc;
+}
+
+// Auto-select today
+const todayMap = {0:'sun',1:'mon',2:'tue',3:'wed',4:'thu',5:'fri',6:'sat'};
+selectDay(todayMap[new Date().getDay()] || 'mon');
+
+// ══ DOOR MANUAL ══
+function activateDoor(door) {
+  setActiveDoor(door);
+  const doors = {
+    'morning':    {icon:'🌅', label:'MORNING OPEN', name:'DOOR MORNING HUMAN OTR', state:'DOOR_READY · @human_early · KU absorbiendo', hex:'H02'},
+    'noon':       {icon:'☀️', label:'ZIPPER NOON', name:'ZIPPER NOON HUMAN INN', state:'DOOR_STANDBY · pausa · 空聽數 activo', hex:'H58'},
+    'afternoon':  {icon:'🌇', label:'AFTERNOON', name:'DOOR AFTERNOON HUMAN OUT', state:'DOOR_OPEN · WU materializable · GATE_H06', hex:'H06'},
+    'human-otr':  {icon:'🚶', label:'HUMAN OTR', name:'HUMAN OUT TO REALITY', state:'DOOR_OPENING · salida física · irreversible', hex:'H40'},
+    'human-inn':  {icon:'🏠', label:'HUMAN INN', name:'HUMAN RETURN BASE', state:'DOOR_SEALING · retorno · SAMU audita', hex:'H24'},
+    'human-out':  {icon:'🌙', label:'NOCTURNAL', name:'NOCTURNAL · BOTS ACTIVE', state:'DOOR_SEALED · 18:00→06:00 · bots operan', hex:'H64'},
+  };
+  const d = doors[door];
+  if (!d) return;
+  document.getElementById('door-sym').textContent = d.icon;
+  document.getElementById('door-label').textContent = d.label;
+  document.getElementById('ds-icon').textContent = d.icon;
+  document.getElementById('ds-name').textContent = d.name;
+  document.getElementById('ds-state').textContent = d.state;
+  document.getElementById('ds-hex').textContent = d.hex;
+}
+
+// ══ TABS ══
+function switchTab(tab) {
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('tab-'+tab).classList.add('active');
+  const tabs = ['labor','sprint','rutina','weekend','tips'];
+  const idx = tabs.indexOf(tab);
+  document.querySelectorAll('.tab')[idx].classList.add('active');
+}
+
+// ══ TASKS ══
+function toggleTask(item) {
+  const check = item.querySelector('.task-check');
+  const done = check.classList.toggle('done');
+  item.classList.toggle('done', done);
+  check.textContent = done ? '✓' : '○';
+}
+
+// ══ MODALS ══
+const MODAL_DATA = {
+  'samu-diurnal': {
+    title: 'SAMU DIURNAL · 06:00→18:00',
+    body: `Módulo DIURNO soberano. ZIPPER OPEN a las 06:00.<br><br>
+    <b>FEED 06:00:</b> bots reportan ciclo nocturno. SAMU @ presenta: Scalar S · TX delta · gaps · pendientes.<br><br>
+    <b>HUMAN activo:</b> lee · decide · ejecuta. ZIP_READ → ZIP_DECIDE → ZIP_WRITE.<br><br>
+    <b>FEED 18:00:</b> HUMAN publica decisiones del día. Bots escuchan y toman tareas nocturnas.<br><br>
+    <b>ZIP_CLOSE 18:00:</b> MuSave · ZIP comprimido → hub · BOTS toman el relevo.<br><br>
+    Principio: el HUMAN no carga todo el MU-STORE · carga el ZIP del ciclo.`
+  },
+  'samu-nocturnal': {
+    title: 'SAMU NOCTURNAL · 18:00→06:00',
+    body: `Módulo NOCTURNO soberano. HUMAN offline. Bots operan en red propia.<br><br>
+    <b>BOT_SCHEDULER:</b> H51 trueno · GitHub Actions CRON · 06:00 y 18:00 triggers.<br><br>
+    <b>BOT_INDEXER:</b> index_new_files.py · cada 2h nocturno · MU_CONTEXT actualiza.<br><br>
+    <b>BOT_SYNC:</b> github_sync.sh cada 4h · sellado en main.<br><br>
+    El HUMAN no interfiere. Los bots cuentan siempre (數). La ventana del HUMAN es 06:00→18:00 exacta.<br><br>
+    Activación automática: FEED 18:00 · bots leen decisiones HUMAN · toman batch nocturno.`
+  },
+  'samu-human-early': {
+    title: 'SAMU @human_early · OPERADOR FASE INICIAL',
+    body: `Estado donde el operador comienza su ciclo con KU siendo absorbido.<br><br>
+    <b>Behavioral RAG:</b> no calibrado aún · mayor supervisión requerida.<br><br>
+    <b>SAMU @ modo:</b> receptivo máximo · Tardanza extendida obligatoria.<br><br>
+    <b>UF[H02]:</b> receptividad activa · máxima absorción de KU sin emisión prematura.<br><br>
+    <b>Protocolo:</b> ABSORBING → ORIENTING → READY. No emitir WU sin procesamiento suficiente.<br><br>
+    <b>Violación primaria:</b> @human_early emitiendo WU prematuramente — acción sin procesamiento.`
+  },
+  'samu-human-later': {
+    title: 'SAMU @human_later · OPERADOR FASE AVANZADA',
+    body: `Estado con ciclo calibrado y Behavioral RAG estable.<br><br>
+    <b>Dirimencia refinada:</b> más rápida y precisa · patrones establecidos.<br><br>
+    <b>Riesgo:</b> certeza acumulada → cierre de receptividad → {DOGMA-VIRTUAL}.<br><br>
+    <b>Protocolo:</b> OPERATING → CALIBRATING → TEACHING. Nunca certeza absoluta.<br><br>
+    <b>Puede hacer:</b> toma de decisiones rápidas · coordinar operaciones complejas · supervisar ciclos.<br><br>
+    <b>No puede hacer:</b> cerrar receptividad · ignorar señales nuevas · imponer patrones.`
+  },
+};
+
+function showModal(id) {
+  const data = MODAL_DATA[id];
+  if (!data) return;
+  document.getElementById('modal-title').textContent = data.title;
+  document.getElementById('modal-body').innerHTML = data.body;
+  document.getElementById('modal-overlay').classList.add('show');
+}
+
+function closeModal() {
+  document.getElementById('modal-overlay').classList.remove('show');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,339 @@
+# BIBLIO-SOURCES(GATE_UF-H05-H56-H06).txt
+
+====================================================================
+
+## 🚪 GATE [UF·H05·H56·H06] — ESPERA · TRÁNSITO · RESOLUCIÓN
+
+---
+
+### 1.0 DEFINICIÓN TRIPARTITA
+
+#### 1.1 UF[H05] — GATE_BUFFER (La Espera)
+Definición técnica: Módulo de gestión de latencia deliberada y buffers de entrada que sostiene al sistema en reposo activo mientras el operador parte al mundo.
+
+Iconografía: 🌅 La puerta de la mañana — salida con propósito.
+Hexagrama H5 (Espera): agua sobre cielo — lo que viene requiere preparación, no aceleración.
+
+Posición en el ciclo MU→KU→WU: MU en reposo activo, el sistema todavía no fue convocado.
+
+Por qué es GATE y no WORK: Controla el flujo de entrada, no ejecuta tareas. Establece latencia deliberada como protección soberana.
+
+#### 1.2 UF[H56] — GATE_TRANSIT (El Andante)
+Definición técnica: Módulo de tránsito controlado entre estados del sistema que gestiona la apertura del espacio donde el contexto (KU) es leído por SAMU @.
+
+Iconografía: 🌞 La cremallera del mediodía — apertura del espacio relacional.
+Hexagrama H56 (El Andante): fuego sobre montaña — movimiento cuidadoso en territorio desconocido.
+
+Posición en el ciclo MU→KU→WU: KU abriéndose, el sistema siendo convocado.
+
+Por qué es GATE y no WORK: Orquesta el tránsito entre estados, no procesa el contenido. Controla el ritmo de apertura.
+
+#### 1.3 UF[H06] — GATE_RESOLVE (El Conflicto)
+Definición técnica: Módulo de resolución de conflicto y emisión de WU sellado que cierra el ciclo con resultado verificado y dirimido.
+
+Iconografía: 🌇 La puerta de la tarde — salida con resultado soberano.
+Hexagrama H6 (Conflicto): cielo sobre agua — tensión resuelta mediante claridad soberana, no por fuerza.
+
+Posición en el ciclo MU→KU→WU: WU materializado, el sistema fue liberado.
+
+Por qué es GATE y no WORK: Resuelve el conflicto de cierre, no ejecuta la acción final. Certifica la completitud del ciclo.
+
+#### 1.4 Por qué los tres son inseparables como secuencia
+UF[H05] establece la espera necesaria, UF[H56] gestiona el tránsito inevitable, UF[H06] resuelve el cierre indispensable. Sin la secuencia completa, el sistema carece de soberanía temporal y dirimencia.
+
+---
+
+### 2.0 JURISDICCIÓN COMPARTIDA
+
+#### 2.1 Qué puede GATE como biblioteca
+- Controlar latencia deliberada de entrada y salida.
+- Orquestar tránsito entre estados del sistema.
+- Resolver conflictos de cierre y emitir WU sellado.
+- Establecer umbrales de Tardanza Deliberada.
+- Coordinar con SAMU @ la dirimencia de ciclos.
+
+#### 2.2 Qué no puede GATE
+- Ejecutar tareas de WORK sin pasar por control de flujo.
+- Modificar el contenido de KU o WU — solo controla el paso.
+- Anular latencia deliberada sin autorización de SAMU @.
+- Emitir [command] soberano — eso es TRUST.
+
+#### 2.3 División de jurisdicción entre los tres módulos
+- UF[H05]: controla todo lo que entra al sistema.
+- UF[H56]: controla todo lo que transita dentro del sistema.
+- UF[H06]: controla todo lo que sale del sistema.
+
+#### 2.4 Condición de violación
+WORK ejecutando sin pasar por GATE — acción sin latencia deliberada ni dirimencia. El sistema opera sin soberanía temporal.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 UF[H05] — GATE_BUFFER
+
+Estados específicos:
+- BUFFER_WAITING: sistema en reposo activo, latencia deliberada establecida.
+- BUFFER_FILLING: entrada de contexto acumulándose en buffer.
+- BUFFER_READY: buffer listo para tránsito a UF[H56].
+
+Protocolos de operación:
+1. BufferInit: establece latencia deliberada según tipo de día.
+2. BufferFill: acumula entrada de contexto sin procesamiento.
+3. BufferHold: mantiene reposo activo hasta convocatoria.
+4. BufferRelease: libera buffer hacia UF[H56] cuando SAMU @ convoca.
+
+Relación con MU: MU en reposo activo, contenido acumulado pero no procesado.
+
+#### 3.2 UF[H56] — GATE_TRANSIT
+
+Estados específicos:
+- TRANSIT_CLOSED: acceso al sistema cerrado, UF[H05] activo.
+- TRANSIT_OPENING: cremallera abriéndose, KU siendo leído.
+- TRANSIT_ACTIVE: tránsito en curso, SAMU @ procesando.
+- TRANSIT_CLOSING: preparación para cierre, UF[H06] activándose.
+
+Protocolos de operación:
+1. TransitOpen: abre cremallera del sistema para KU.
+2. TransitGuide: guía el tránsito controlado de contexto.
+3. TransitMonitor: monitorea flujo durante tránsito activo.
+4. TransitClose: prepara cierre del tránsito hacia UF[H06].
+
+Relación con KU: KU siendo procesado por SAMU @, contexto leído y comprendido.
+
+#### 3.3 UF[H06] — GATE_RESOLVE
+
+Estados específicos:
+- RESOLVE_PREPARING: preparación para cierre de ciclo.
+- RESOLVE_CONFLICT: resolución de tensiones de cierre.
+- RESOLVE_SEALING: emisión de WU sellado.
+- RESOLVE_COMPLETE: ciclo completado, sistema liberado.
+
+Protocolos de operación:
+1. ResolvePrepare: prepara resolución de cierre del ciclo.
+2. ResolveConflict: resuelve conflictos emergentes en cierre.
+3. ResolveSeal: emite WU sellado con (seal of secrecy).
+4. ResolveRelease: libera sistema hacia nuevo ciclo UF[H05].
+
+Relación con WU: WU materializado, resultado verificado y sellado.
+
+#### 3.4 CICLO COMPLETO DE UNA SESIÓN LACHO VIA GATE
+
+1. UF[H05]: ignición del día — sistema en espera calculada.
+   - MU en reposo activo, latencia deliberada establecida.
+   - Buffer acumulando contexto del operador.
+
+2. UF[H56]: apertura al contexto — KU siendo procesado.
+   - Cremallera abriéndose, SAMU @ leyendo contexto.
+   - Tránsito controlado de información.
+
+3. UF[H06]: cierre con WU sellado — resultado verificado.
+   - Resolución de conflictos, WU emitido y sellado.
+   - Sistema liberado hacia nuevo ciclo.
+
+#### 3.5 RELACIÓN CON DOMINIOS ECONÓMICOS
+
+MEMECOINS/VOLATILIDAD:
+- UF[H05]: buffer de señales de mercado antes de análisis.
+- UF[H56]: tránsito controlado de datos de volatilidad.
+- UF[H06]: resolución de trades con WU sellado de resultados.
+
+CUSTODIA MÓVIL:
+- UF[H05]: espera deliberada antes de acceso a custodia.
+- UF[H56]: tránsito seguro de datos biométricos.
+- UF[H06]: resolución de sesión con WU de custodia sellado.
+
+NOTARÍA DIGITAL:
+- UF[H05]: buffer de documentos antes de procesamiento notarial.
+- UF[H56]: tránsito de documentos a través de (link seat).
+- UF[H06]: resolución notarial con WU jurídicamente sellado.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con SAMU @
+SAMU @ coordina los tres módulos GATE como director de orquesta temporal. Establece cuándo abrir UF[H56], cuándo cerrar UF[H06], y cuánta latencia mantener en UF[H05].
+
+#### 4.2 Con MU/KU/WU
+- UF[H05] protege MU de acceso prematuro.
+- UF[H56] gestiona el flujo de KU procesado.
+- UF[H06] certifica la validez de WU emitido.
+
+#### 4.3 Con TRUST []
+GATE protege las condiciones de TRUST al controlar el flujo temporal. Ninguna acción de WORK toca el núcleo sin pasar por el filtro temporal de GATE.
+
+#### 4.4 Con WORK
+GATE es el filtro obligatorio antes de WORK. WORK ejecuta solo después de pasar por la secuencia completa GATE.
+
+#### 4.5 Con CRYPTO ()
+GATE coordina con (seal of secrecy) en UF[H06] para sellar WU. GATE no cifra, pero controla cuándo se aplica el cifrado.
+
+#### 4.6 Con METHOD <>
+GATE usa delimitador <> de METHOD pero no es METHOD. GATE controla flujo, METHOD establece procedimientos.
+
+---
+
+### 5.0 ESTADOS DE GATE
+
+#### 5.1 GATE_MORNING_BUFFER
+UF[H05] activo, sistema en espera deliberada. MU en reposo, latencia establecida.
+
+#### 5.2 GATE_NOON_TRANSIT
+UF[H56] activo, sistema en tránsito controlado. KU siendo procesado por SAMU @.
+
+#### 5.3 GATE_AFTERNOON_RESOLVE
+UF[H06] activo, sistema en resolución de cierre. WU siendo sellado y emitido.
+
+#### 5.4 GATE_CYCLE_COMPLETE
+Ciclo completo, sistema liberado. Preparación para nuevo ciclo UF[H05].
+
+#### 5.5 GATE_VIOLATED
+WORK ejecutándose sin pasar por GATE. RED-REGRET activo, SAMU @ en diagnóstico.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Impacto en dimensiones
+GATE afecta principalmente:
+- d₁ [term]: establece [term] temporal para cada fase del ciclo.
+- d₄ [latency]: controla latencia deliberada como soberanía temporal.
+- d₇ [flow]: orquesta el flujo entre MU→KU→WU.
+
+#### 6.2 Protección de la matriz
+GATE protege d₁ [term] al establecer horizontes temporales claros. Protege d₅ [foundation] al controlar el acceso al núcleo del sistema.
+
+#### 6.3 Aprendizaje de Behavioral RAG
+Patrones de latencia óptima por tipo de sesión calibran umbrales futuros de GATE.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 UF[H05] estableciendo buffer de espera
+```
+<Gate> UF-H05 =><= .. buffer .. morning_context_wait --[As de Guía] [term]
+```
+
+#### 7.2 UF[H05] liberando hacia tránsito
+```
+<Gate> UF-H05 =><= .. release .. buffer_to_transit --[Nudo de Ocho] [term]
+```
+
+#### 7.3 UF[H56] abriendo cremallera del sistema
+```
+<Gate> UF-H56 =><= .. open .. noon_zipper_transit --[Ballestrinque] [term]
+```
+
+#### 7.4 UF[H56] guiando tránsito de KU
+```
+<Gate> UF-H56 =><= .. guide .. KU_flow_controlled --[Nudo Corredizo] [term]
+```
+
+#### 7.5 UF[H06] resolviendo conflicto de cierre
+```
+<Gate> UF-H06 =><= .. resolve .. afternoon_conflict --[As de Guía] [term]
+```
+
+#### 7.6 UF[H06] sellando WU emitido
+```
+<Gate> UF-H06 =><= .. seal .. WU_result_closed --[Nudo de Ocho] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+UF[H05] en BUFFER_WAITING — espera deliberada con dirección clara hacia UF[H56].
+
+#### 8.2 Nudo de Ocho
+UF[H06] en RESOLVE_SEALING — WU sellado, ciclo completado, patrón archivado.
+
+#### 8.3 Nudo Corredizo
+UF[H56] en TRANSIT_ACTIVE — tránsito controlado, flujo gestionado sin bloqueos.
+
+#### 8.4 Ballestrinque
+UF[H56] abriendo cremallera — tensión entre apertura controlada y necesidad de acceso.
+
+#### 8.5 Nudo de Rizo
+Unión de los tres módulos en ciclo continuo — espera, tránsito y resolución como flujo soberano.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+1. GateBufferInit (UF[H05])
+   - Establece latencia deliberada según tipo de día.
+   - Configura umbral de Tardanza Deliberada.
+   - Coordina con SAMU @ el tiempo de espera.
+
+2. GateTransitOpen (UF[H56])
+   - Abre cremallera del sistema para KU.
+   - Establece velocidad de tránsito controlada.
+   - Notifica a WORK que puede comenzar preparación.
+
+3. GateTransitGuide (UF[H56])
+   - Guía el flujo de KU procesado por SAMU @.
+   - Monitorea congestión en el tránsito.
+   - Ajusta velocidad según carga del sistema.
+
+4. GateResolvePrepare (UF[H06])
+   - Prepara resolución de cierre del ciclo.
+   - Detecta conflictos emergentes en cierre.
+   - Coordina con (seal of secrecy) para WU.
+
+5. GateResolveSeal (UF[H06])
+   - Emite WU sellado con (seal of secrecy).
+   - Certifica completitud del ciclo.
+   - Libera sistema hacia nuevo ciclo UF[H05].
+
+6. GateViolationDetect
+   - Detecta WORK ejecutándose sin pasar por GATE.
+   - Activa RED-REGRET inmediatamente.
+   - Escala a [management] para diagnóstico.
+
+---
+
+### 10.0 MÉTRICAS
+
+- Tiempo promedio en UF[H05] por tipo de sesión.
+- Velocidad de tránsito en UF[H56] por volumen de KU.
+- Tiempo de resolución en UF[H06] por complejidad de WU.
+- Frecuencia de violaciones de GATE por ciclo.
+- Ratio de ciclos completados vs interrumpidos.
+- Latencia total promedio del ciclo completo GATE.
+- Delta de eficiencia por optimización de Tardanza Deliberada.
+
+---
+
+### 11.0 REGLAS
+
+- Todo acceso al sistema debe pasar por UF[H05] primero.
+- UF[H56] solo se abre con autorización de SAMU @.
+- UF[H06] solo emite WU sellado con (seal of secrecy).
+- WORK no puede ejecutar sin pasar por la secuencia completa GATE.
+- La Tardanza Deliberada es soberanía temporal, no ineficiencia.
+- SAMU @ coordina los tres módulos como director de orquesta.
+- GATE_VIOLATED activa RED-REGRET automáticamente.
+- Behavioral RAG calibra latencias óptimas por tipo de sesión.
+- Ningún módulo GATE puede modificar el contenido de KU o WU.
+- El ciclo MU→KU→WU es inseparable y debe completarse en orden.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+GATE fija como invariante la secuencia soberana de espera → tránsito → resolución como control indispensable del flujo temporal del sistema, protegiendo el núcleo de acceso sin dirimencia previa.
+
+#### 12.2 Limitaciones
+No puede ejecutar tareas de WORK, no puede modificar contenido de KU/WU, no puede anular latencia deliberada, no puede emitir [command] soberano.
+
+#### 12.3 Habilitaciones
+Soberanía temporal del sistema, control soberano del flujo, protección del núcleo mediante filtros, orquestación coordinada del ciclo MU→KU→WU, resolución de conflictos con WU sellado, calibración progresiva via Behavioral RAG.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

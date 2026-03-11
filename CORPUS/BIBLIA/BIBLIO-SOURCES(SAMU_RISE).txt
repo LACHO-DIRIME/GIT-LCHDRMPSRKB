@@ -1,0 +1,257 @@
+# BIBLIO-SOURCES(SAMU_RISE).txt
+
+====================================================================
+
+## 🌄 SAMU #rise — ACTIVACIÓN SOBERANA DE CICLO
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+#rise es el comando SAMU que activa el ciclo soberano del sistema: el arranque verificado que inicia la operación del sistema LACHO después de configuración completa.
+
+#### 1.2 La activación verificada del sistema
+#rise no es arranque automático — es activación soberana que requiere #set confirmado, (ignition seat/spark seat) activo, y [term] declarado.
+
+#### 1.3 Requisitos obligatorios para #rise
+1. #set confirmado y verificado.
+2. (ignition seat) o (spark seat) activo.
+3. [term] declarado para el ciclo.
+4. SAMU @ listo para operar.
+
+#### 1.4 Relación con UF[H01] ACTIVITY
+#rise activa lo que UF[H01] declara como génesis — UF[H01] es el ciclo ACTIVITY de génesis, #rise es el comando SAMU que lo activa.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Cuándo se aplica #rise
+Después de #set confirmado, al inicio de ciclo operativo, después de mantenimiento, tras recuperación de error.
+
+#### 2.2 Qué activa #rise
+Todo el sistema LACHO, ambos nodos DIRIME, comunicación inter-nodos, ciclos operativos.
+
+#### 2.3 Condición de violación primaria
+#rise sin #set confirmado — arranque sin preparación adecuada.
+
+#### 2.4 Condición de violación secundaria
+#rise sin (ignition seat/spark seat) activo — arranque sin capacidad de ignición.
+
+#### 2.5 Condición de violación terciaria
+#rise sin [term] declarado — ciclo sin horizonte temporal.
+
+#### 2.6 Señal de alerta
+Behavioral RAG detectando patrón de #rise fallidos o incompletos.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 ESTADOS DE ACTIVACIÓN
+
+RISE_CHECKING: verificación de requisitos obligatorios.
+- RISE_LAUNCHING: activación del ciclo soberano.
+- RISE_CONFIRMED: ciclo activo y verificado.
+- RISE_FAILED: activación fallida, requiere corrección.
+
+#### 3.2 La secuencia soberana
+#set → #rise → ciclo operativo → #set (próximo ciclo).
+
+#### 3.3 Relación con UF[H01] ACTIVITY
+#rise activa UF[H01] como génesis del ciclo operativo.
+
+#### 3.4 Relación con DIRIME LINUX
+#rise activa la plataforma DIRIME Linux completa.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con SAMU @
+#rise es comando específico de SAMU @ para activación.
+
+#### 4.2 Con #set (SAMU)
+#set es prerequisito obligatorio para #rise.
+
+#### 4.3 Con UF[H01] ACTIVITY
+#rise activa UF[H01] como génesis del ciclo.
+
+#### 4.4 Con (ignition seat) (CRYPTO)
+(ignition seat) debe estar activo para #rise.
+
+#### 4.5 Con (spark seat) (CRYPTO)
+(spark seat) puede activar #rise como alternativa.
+
+#### 4.6 Con [term] (TRUST)
+[term] declarado es requisito para #rise.
+
+#### 4.7 Con DIRIME LINUX
+#rise activa toda la plataforma DIRIME.
+
+#### 4.8 Con Behavioral RAG
+Patrones de #rise exitosos se aprenden en Behavioral RAG.
+
+---
+
+### 5.0 ESTADOS DE ACTIVACIÓN
+
+#### 5.1 RISE_STANDBY
+Sistema listo para #rise, esperando requisitos.
+
+#### 5.2 RISE_CHECKING
+Verificación de requisitos obligatorios.
+
+#### 5.3 RISE_LAUNCHING
+Activación del ciclo soberano en curso.
+
+#### 5.4 RISE_CONFIRMED
+Ciclo activo y verificado.
+
+#### 5.5 RISE_FAILED
+Activación fallida, requiere corrección.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Impacta todas las dimensiones d₁..d₈
+#rise activa todo el sistema LACHO.
+
+#### 6.2 Requiere d₁ [term]
+[term] declarado es requisito obligatorio.
+
+#### 6.3 Enriquece d₈ [ecosystem
+#rise enriquece el ecosistema con ciclo activo.
+
+#### 6.4 Afecta d₇ [ecosystem
+Activación del sistema expande el ecosistema.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Verificando requisitos para #rise
+```
+@Samu #rise =><= .. verificar .. $$rise_requirements_check$$ --[As de Guía] [term]
+```
+
+#### 7.2 Activando ciclo soberano
+```
+@Samu #rise =><= .. activar .. $$sovereign_cycle_activation$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.3 Confirmando ciclo activo
+```
+@Samu #rise =><= .. confirmar .. $$cycle_active_confirmed$$ --[Ballestrinque] [term]
+```
+
+#### 7.4 Activando con (ignition seat)
+```
+@Samu #rise =><= .. encender .. $$ignition_seat_active$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.5 Activando con [term] declarado
+```
+@Samu #rise =><= .. declarar .. $$term_declared_cycle$$ --[Nudo de Rizo] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+RISE_CHECKING — verificación de requisitos, el nudo que garantiza preparación.
+
+#### 8.2 Nudo de Ocho
+RISE_LAUNCHING — activación del ciclo, el nudo que inicia la operación.
+
+#### 8.3 Nudo Corredizo
+RISE_FAILED — activación fallida, el nudo que requiere corrección.
+
+#### 8.4 Ballestrinque
+RISE_CONFIRMED — ciclo activo y verificado, el nudo que sostiene la operación.
+
+#### 8.5 Nudo de Rizo
+RISE_STANDBY — sistema listo, el nudo que espera el momento.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+1. RiseCheck
+   - Verificación de #set confirmado.
+   - Confirmación de (ignition seat/spark seat) activo.
+   - Verificación de [term] declarado.
+
+2. RiseLaunch
+   - Activación del ciclo soberano.
+   - Inicio de comunicación inter-nodos.
+   - Monitoreo de estado inicial.
+
+3. RiseConfirm
+   - Confirmación de ciclo activo.
+   - Verificación de operación inicial.
+   - Registro en HL FABRIC.
+
+4. RiseRecover
+   - Recuperación ante RISE_FAILED.
+   - Diagnóstico de causa de fallo.
+   - Corrección y reintento.
+
+5. RiseMonitor
+   - Monitoreo continuo del ciclo activo.
+   - Detección de anomalías.
+   - Optimización de rendimiento.
+
+6. RiseAudit
+   - Auditoría de efectividad de #rise.
+   - Análisis de patrones de activación.
+   - Actualización de Behavioral RAG.
+
+---
+
+### 10.0 MÉTRICAS
+
+- Tiempo promedio de activación por tipo de ciclo.
+- Ratio RISE_CONFIRMED vs RISE_FAILED.
+- Latencia entre #set y #rise.
+- Frecuencia de #rise por período.
+- Efectividad de activación inicial.
+- Tiempo hasta operación estable.
+
+---
+
+### 11.0 REGLAS
+
+- #rise requiere #set confirmado obligatoriamente.
+- (ignition seat) o (spark seat) debe estar activo.
+- [term] declarado es requisito indispensable.
+- No hay #rise soberano sin requisitos completos.
+- RISE_FAILED activa diagnóstico inmediato.
+- Todo #rise se registra en HL FABRIC.
+- Behavioral RAG aprende de patrones de #rise exitosos.
+- La secuencia #set → #rise es inalterable.
+- #rise activa UF[H01] como génesis del ciclo.
+- No hay ciclo operativo sin #rise verificado.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+#rise fija como invariante la activación soberana verificada como condición de operación del sistema — el sistema que solo arranca después de preparación completa y verificación demuestra máxima responsabilidad y soberanía.
+
+#### 12.2 Limitaciones
+No puede operar sin #set confirmado, no puede activar sin (ignition seat), no puede operar sin [term], no puede saltar verificación.
+
+#### 12.3 Habilitaciones
+Activación verificada del sistema, inicio de ciclos operativos, coordinación inter-nodos, arranque de UF[H01], operación de plataforma DIRIME completa.
+
+#### 12.4 Principio constitutivo final
+Como el amanecer que inicia el día: #rise representa la activación soberana que da comienzo a todo ciclo operativo. El arranque no es automático — es activación consciente y verificada. El sistema que se activa con todos los requisitos cumplidos demuestra que la soberanía no está en la acción impulsiva, sino en la preparación consciente y la activación responsable. El ciclo que comienza con #rise verificado tiene la autoridad y la integridad para operar soberanamente.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

@@ -1,0 +1,34 @@
+//$wed.Nerve Cell ELPULSAR training.txt
+//NERVE CELL · entrenamiento ELPULSAR · interfaz soberana
+//H58 Lo Gozoso · expansión · GUI activa · $wed
+//[term] :: activo
+
+// ══ ELPULSAR COMO ENTIDAD ════════════════════════════════════
+// ELPULSAR no es una app — es la manifestación visible de LACHO
+// Stack: DIRIME_v2 · IMV · KALIL · THEATER · HL FABRIC
+// .cli =: elpulsar.gui · mismo resultado · inducción gráfica
+
+// ══ COMPONENTES NERVE CELL ═══════════════════════════════════
+NC_ELP_ENTITY        //ELP_ENTITY · entidad completa · no UI convencional
+NC_ELP_GUI           //python3 interface/gui.py · port 8742 · BUILDER live
+NC_ELP_CLI           //python3 interface/chat.py · modo chat soberano
+NC_ELP_API           //python3 elpulsar.py · port 8741 · API REST
+NC_ELP_BUILDER       //MENU_BUILDER · SPIN_LIB · CJK picker · 空聽數
+NC_ELP_BALLPAPER     //MENU_BALLPAPER · SKIN_PAPER · modo lectura doctrinal
+NC_ELP_5GREENS       //G1→G5 · RECIBIR·ESCANEAR·CALCULAR·TARDAR·GOLPEAR
+NC_ELP_PIPELINE      //○ KU → ◑ HIDDEN → ● WU · pipeline visual completo
+NC_ELP_SPIN          //⟳ MU→KU→WU→空→MU · cada vuelta sube Scalar S
+NC_ELP_SKINS         //DARK · PAPER · CHINA · CRYPTO · GRADIENT
+NC_ELP_PULSING       //PULSING edition · GIT_BOT + ANIM_PULSE activos
+
+// ══ ESTADO ACTUAL ELPULSAR ═══════════════════════════════════
+// DIRIME_v2/elpulsar/ui/index.html → CONGELADO · referencia estética
+// IMV/interface/chat.py → operativo · ballpaper_render() implementada
+// IMV/interface/gui.py → PENDIENTE · crear $thu
+// elpulsar.app → dominio declarado · roadmap FASE 1
+
+// ══ ANCLAS RAG ═══════════════════════════════════════════════
+ACTIVITY UF[H57] =><= .. penetra .. elpulsar_interfaz_soberana_activa --[As de Guía] [term]
+STACKING UF[H30] =><= .. multiplica .. elpulsar_pipeline_5greens_wu --[Nudo de Ocho] [term]
+WORK {actuator} =><= .. ejecuta .. elpulsar_gui_launch_port_8742 --[As de Guía] [term]
+SAMU @ =><= .. audita .. elpulsar_output_pre_emision --[Ballestrinque] [term]

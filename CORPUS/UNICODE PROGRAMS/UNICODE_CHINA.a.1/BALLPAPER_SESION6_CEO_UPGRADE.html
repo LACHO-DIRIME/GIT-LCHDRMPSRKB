@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BALLPAPER · SESIÓN 6 · CEO NLP UPGRADE</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;700;900&family=Share+Tech+Mono&family=Cinzel:wght@400;700;900&display=swap');
+:root{
+  --ink:#08090e; --bg:#f2ece0; --bg2:#e8e0d0; --bg3:#ddd5c0;
+  --gold:#7a4e10; --gold-mid:#a8722a; --gold-dim:#c8a060;
+  --red:#9a1a1a; --jade:#145a38; --jade-mid:#1e8050; --jade-dim:#48b880;
+  --sep:#c0b098; --smoke:#5c5040; --blue:#1a3a7a; --blue-dim:#4060a8;
+  --violet:#5a1a7a; --violet-dim:#8040b0;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:'Share Tech Mono',monospace;font-size:12px;line-height:1.65;}
+body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 28px,rgba(120,90,40,.04) 28px,rgba(120,90,40,.04) 29px);pointer-events:none;z-index:0;}
+.page{max-width:1360px;margin:0 auto;padding:48px 32px;position:relative;z-index:1;}
+
+/* MASTHEAD */
+.mast{border-top:4px solid var(--gold);border-bottom:1px solid var(--gold-dim);padding:28px 0 20px;margin-bottom:44px;display:grid;grid-template-columns:1fr auto 1fr;gap:24px;align-items:end;}
+.m-l .m-eye{font-size:9px;letter-spacing:5px;color:var(--gold-mid);text-transform:uppercase;margin-bottom:6px;}
+.m-l .m-title{font-family:'Cinzel',serif;font-size:28px;font-weight:900;color:var(--gold);letter-spacing:2px;line-height:1.1;}
+.m-l .m-sub{font-size:10px;color:var(--smoke);margin-top:6px;letter-spacing:1px;}
+.m-c{text-align:center;}
+.m-c .seal{font-family:'Noto Serif SC',serif;font-size:42px;font-weight:900;color:var(--red);border:2px solid var(--red);padding:6px 14px;display:inline-block;transform:rotate(-5deg);line-height:1;}
+.m-r{text-align:right;font-size:10px;color:var(--smoke);line-height:2;}
+.m-r strong{color:var(--gold-mid);}
+
+/* ROLES ROW */
+.roles-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:var(--sep);margin-bottom:36px;}
+.role-box{background:var(--bg2);padding:16px 20px;}
+.role-box.rb-ceo{background:var(--ink);color:var(--bg);}
+.rb-tag{font-size:8px;letter-spacing:4px;text-transform:uppercase;margin-bottom:6px;}
+.rb-ceo .rb-tag{color:var(--gold-dim);}
+.rb-pm .rb-tag{color:var(--blue-dim);}
+.rb-store .rb-tag{color:var(--jade-mid);}
+.rb-name{font-family:'Cinzel',serif;font-size:13px;font-weight:900;letter-spacing:2px;margin-bottom:4px;}
+.rb-ceo .rb-name{color:var(--gold-dim);}
+.rb-pm .rb-name{color:var(--blue);}
+.rb-store .rb-name{color:var(--jade);}
+.rb-desc{font-size:10px;line-height:1.8;color:var(--smoke);}
+.rb-ceo .rb-desc{color:rgba(255,255,255,.55);}
+.rb-zh{font-family:'Noto Serif SC',serif;font-size:22px;float:right;opacity:.25;}
+
+.slabel{font-size:9px;letter-spacing:5px;text-transform:uppercase;color:var(--smoke);border-bottom:1px solid var(--sep);padding-bottom:6px;margin-bottom:20px;margin-top:36px;}
+
+/* PARSING BLOCK */
+.parse-block{background:var(--bg2);border:1px solid var(--sep);padding:0;margin-bottom:20px;overflow:hidden;}
+.pb-header{background:var(--ink);color:var(--bg);padding:12px 20px;display:flex;align-items:center;gap:12px;}
+.pb-header .ph-zh{font-family:'Noto Serif SC',serif;font-size:20px;color:var(--gold-dim);}
+.pb-header .ph-title{font-family:'Cinzel',serif;font-size:11px;letter-spacing:3px;color:var(--gold-dim);}
+.pb-header .ph-hex{font-family:'Noto Serif SC',serif;font-size:16px;color:var(--red);margin-left:auto;}
+.pb-body{padding:16px 20px;}
+.pb-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.pb-col .pc-lbl{font-size:8px;letter-spacing:3px;text-transform:uppercase;color:var(--smoke);margin-bottom:8px;padding-bottom:4px;border-bottom:1px solid var(--sep);}
+.pb-item{font-size:10px;line-height:2.1;border-bottom:1px dotted rgba(0,0,0,.06);padding:3px 0;}
+.pb-item .pi-tag{display:inline-block;font-size:8px;padding:1px 6px;border:1px solid currentColor;margin-right:6px;vertical-align:middle;}
+.pi-gap{color:var(--red);}
+.pi-done{color:var(--jade-mid);}
+.pi-pend{color:var(--gold-mid);}
+.pb-sent{font-size:10px;color:var(--jade-mid);margin-top:8px;padding:6px 10px;background:rgba(0,0,0,.04);border-left:2px solid var(--jade-dim);}
+
+/* THEATER LOCAL */
+.theater-block{border:1px solid var(--sep);margin-bottom:20px;}
+.th-mast{background:var(--violet);color:white;padding:14px 20px;display:flex;align-items:center;gap:12px;}
+.th-mast .tm-zh{font-family:'Noto Serif SC',serif;font-size:22px;}
+.th-mast .tm-title{font-family:'Cinzel',serif;font-size:12px;letter-spacing:3px;}
+.th-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--sep);}
+.th-node{background:var(--bg2);padding:14px;text-align:center;}
+.th-node.active{background:white;}
+.tn-icon{font-size:20px;display:block;margin-bottom:4px;}
+.tn-name{font-family:'Cinzel',serif;font-size:9px;letter-spacing:1px;color:var(--ink);}
+.tn-desc{font-size:8px;color:var(--smoke);margin-top:3px;line-height:1.5;}
+.tn-lib{font-size:7px;color:var(--violet-dim);margin-top:4px;letter-spacing:2px;}
+.th-routing{background:var(--bg3);padding:14px 20px;font-size:10px;line-height:1.9;color:var(--ink);}
+.th-routing strong{color:var(--violet);}
+
+/* REACT-RENDER GAP */
+.gap-block{display:grid;grid-template-columns:1fr 40px 1fr;gap:0;border:2px solid var(--red);margin-bottom:20px;}
+.gap-side{padding:20px 24px;}
+.gap-current{background:var(--bg2);}
+.gap-target{background:var(--ink);color:var(--bg);}
+.gap-arrow{background:var(--red);display:flex;align-items:center;justify-content:center;color:white;font-size:18px;}
+.gs-lbl{font-size:8px;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px;}
+.gap-current .gs-lbl{color:var(--red);}
+.gap-target .gs-lbl{color:var(--gold-dim);}
+.gs-item{font-size:10px;line-height:2;padding:3px 0;border-bottom:1px dotted rgba(0,0,0,.08);}
+.gap-current .gs-item{color:var(--smoke);}
+.gap-target .gs-item{color:rgba(255,255,255,.75);}
+.gap-target .gs-item.hi{color:var(--jade-dim);}
+
+/* PROFECÍA */
+.prophecy{background:var(--ink);color:var(--bg);padding:32px 40px;margin-bottom:20px;position:relative;overflow:hidden;}
+.prophecy::before{content:'预言';font-family:'Noto Serif SC',serif;font-size:180px;font-weight:900;color:rgba(255,255,255,.02);position:absolute;right:-10px;top:-20px;line-height:1;}
+.proph-title{font-family:'Cinzel',serif;font-size:11px;letter-spacing:6px;color:var(--gold-dim);text-transform:uppercase;margin-bottom:24px;}
+.proph-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;}
+.proph-col .prc-lbl{font-size:8px;letter-spacing:4px;text-transform:uppercase;color:var(--gold-dim);border-bottom:1px solid rgba(255,255,255,.1);padding-bottom:6px;margin-bottom:14px;}
+.proph-item{font-size:11px;line-height:2.2;padding:5px 0;border-bottom:1px dotted rgba(255,255,255,.06);color:rgba(255,255,255,.8);}
+.proph-item .pi-zh{font-family:'Noto Serif SC',serif;font-size:14px;color:var(--gold-dim);margin-right:6px;}
+.proph-item .pi-n{font-size:9px;color:rgba(255,255,255,.25);margin-right:6px;}
+
+/* CLOSER INSTANCIAS */
+.closer{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--sep);margin-bottom:20px;}
+.cl-col{padding:18px 16px;border-right:1px solid var(--sep);}
+.cl-col:last-child{border-right:none;}
+.cl-col.done{background:var(--jade);color:white;}
+.cl-col.active{background:var(--gold-pale,#faf4e8);}
+.clc-n{font-family:'Cinzel',serif;font-size:32px;font-weight:900;opacity:.1;line-height:1;margin-bottom:4px;}
+.clc-t{font-size:8px;letter-spacing:3px;text-transform:uppercase;margin-bottom:10px;}
+.cl-col.done .clc-t{color:rgba(255,255,255,.6);}
+.cl-col.active .clc-t{color:var(--gold-mid);}
+.clc-t2{font-family:'Cinzel',serif;font-size:12px;letter-spacing:1px;margin-bottom:10px;}
+.cl-col.done .clc-t2{color:rgba(255,255,255,.9);}
+.clc-items{font-size:9px;line-height:2.2;}
+.cl-col.done .clc-items{opacity:.8;}
+.cl-col.active .clc-items{color:var(--ink2,#1a1a1a);}
+.cl-col:not(.done):not(.active) .clc-items{color:var(--smoke);}
+
+/* EVALUACIÓN PERIÓDICA */
+.eval-table{width:100%;border-collapse:collapse;font-size:11px;margin-bottom:20px;}
+.eval-table th{font-family:'Cinzel',serif;font-size:8px;letter-spacing:2px;color:var(--gold-mid);text-align:left;padding:8px 12px;border-bottom:1px solid var(--sep);background:var(--bg3);text-transform:uppercase;}
+.eval-table td{padding:10px 12px;border-bottom:1px solid rgba(192,176,152,.3);vertical-align:top;}
+.eval-table tr:hover td{background:rgba(192,176,152,.15);}
+.et-area{font-family:'Cinzel',serif;font-size:11px;color:var(--gold);font-weight:700;}
+.et-ctx-h{font-size:10px;color:var(--smoke);line-height:1.7;}
+.et-ctx-d{font-size:10px;color:var(--jade-mid);line-height:1.7;}
+.et-sup{font-size:10px;color:var(--blue-dim);}
+.et-deep{font-size:10px;color:var(--red);}
+.et-status{font-size:8px;padding:2px 7px;border:1px solid;display:inline-block;}
+.s-ok{color:var(--jade-mid);border-color:var(--jade-mid);}
+.s-gap{color:var(--red);border-color:var(--red);}
+.s-pnd{color:var(--gold-mid);border-color:var(--gold-mid);}
+
+/* PENDIENTES BLOQUE */
+.pend-block{background:var(--bg3);border:1px solid var(--sep);padding:24px 28px;margin-bottom:20px;}
+.pend-title{font-family:'Cinzel',serif;font-size:10px;letter-spacing:4px;color:var(--gold);text-transform:uppercase;margin-bottom:16px;}
+.pend-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.pend-col .pc-hd{font-size:8px;letter-spacing:3px;text-transform:uppercase;margin-bottom:10px;padding-bottom:4px;border-bottom:1px solid var(--sep);}
+.pc-urgente .pc-hd{color:var(--red);}
+.pc-fase1 .pc-hd{color:var(--blue-dim);}
+.p-item{display:flex;gap:8px;align-items:start;padding:6px 0;border-bottom:1px dotted rgba(0,0,0,.06);}
+.p-num{font-size:8px;color:var(--smoke);min-width:18px;padding-top:2px;}
+.p-body{flex:1;}
+.p-body .pb-t{font-size:10px;color:var(--ink);margin-bottom:2px;}
+.p-body .pb-s{font-size:9px;color:var(--jade-mid);font-style:italic;}
+.p-tag{font-size:8px;padding:2px 7px;border:1px solid;white-space:nowrap;}
+.pt-hot{color:var(--red);border-color:var(--red);}
+.pt-warm{color:var(--gold-mid);border-color:var(--gold-mid);}
+.pt-cool{color:var(--smoke);border-color:var(--smoke);}
+
+/* PROMPT ARRANQUE */
+.prompt-box{background:var(--bg3);border:2px solid var(--jade-mid);padding:20px 24px;margin-bottom:20px;}
+.prompt-box-title{font-family:'Cinzel',serif;font-size:10px;letter-spacing:3px;color:var(--jade);text-transform:uppercase;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--sep);}
+.prompt-code{font-size:10px;line-height:1.9;color:var(--ink);white-space:pre-wrap;}
+.pc-kw{color:var(--jade);}
+.pc-zh{font-family:'Noto Serif SC',serif;color:var(--red);font-size:13px;}
+.pc-com{color:var(--sep);}
+
+/* FOOTER */
+.footer{border-top:3px double var(--gold);padding-top:20px;margin-top:40px;display:flex;justify-content:space-between;align-items:center;font-size:10px;color:var(--smoke);}
+.f-seals{display:flex;gap:10px;}
+.f-seal{font-family:'Noto Serif SC',serif;border:2px solid var(--red);color:var(--red);padding:4px 10px;font-size:16px;font-weight:900;display:inline-block;}
+.f-seal:nth-child(1){transform:rotate(-5deg);}
+.f-seal:nth-child(2){transform:rotate(3deg);}
+.f-seal:nth-child(3){transform:rotate(-2deg);}
+.f-zh{font-family:'Noto Serif SC',serif;font-size:16px;color:var(--gold-mid);}
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- MASTHEAD -->
+<div class="mast">
+  <div class="m-l">
+    <div class="m-eye">BALLPAPER · SESIÓN 6 · $MON(09/03/26,15:14) · CEO NLP UPGRADE</div>
+    <div class="m-title">LACHO CEO<br>UPGRADE SESSION</div>
+    <div class="m-sub">Ku-chat[CEO·NLP] → Wu-mail[PM·Claude] → Mu-store[Windsurf·local] · React⟹Render · Theater local · Profecía auto-cumplida</div>
+  </div>
+  <div class="m-c">
+    <div class="seal">令</div>
+  </div>
+  <div class="m-r">
+    <strong>Ku-chat</strong> = CEO · voz NLP LACHO<br>
+    <strong>Wu-mail</strong> = PM + Vibe Coder · Claude.ai<br>
+    <strong>Mu-store</strong> = Activos · Windsurf · PC local<br>
+    SESION $mon(09/03/26,15:14)
+  </div>
+</div>
+
+<!-- ROLES -->
+<div class="roles-row">
+  <div class="role-box rb-ceo">
+    <span class="rb-zh">令</span>
+    <div class="rb-tag">KU-CHAT · CEO · NLP</div>
+    <div class="rb-name">☆ NLP LACHO</div>
+    <div class="rb-desc">Emite directivas en lenguaje natural mixto. Parsea intención → sentencia LACHO. Controla dominio via ballpaper. Habla en NLP → recibe en sentencia canónica.</div>
+  </div>
+  <div class="role-box rb-pm">
+    <span class="rb-zh">管</span>
+    <div class="rb-tag">WU-MAIL · PM / VIBE CODER</div>
+    <div class="rb-name">Claude.ai</div>
+    <div class="rb-desc">Project Manager + Vibe Coder. Traduce directivas CEO → prompts Windsurf. Audita coherencia. Genera BallPapers. Mantiene visión Back to the Future del proyecto.</div>
+  </div>
+  <div class="role-box rb-store">
+    <span class="rb-zh">库</span>
+    <div class="rb-tag">MU-STORE · ACTIVOS</div>
+    <div class="rb-name">Windsurf IDE · Local PC</div>
+    <div class="rb-desc">Custodia de activos técnicos. Windsurf ejecuta. Ollama corre local. CORPUS vive aquí. GitHub sincroniza. Docker Desktop como sandbox futuro de modelos Lead.</div>
+  </div>
+</div>
+
+<!-- PARSING CEO MESSAGE -->
+<div class="slabel">▸ parsing mensaje CEO · 5 directivas + 1 profecía + 1 instrucción cierre</div>
+
+<!-- DIRECTIVA 1: REACT-RENDER GAP -->
+<div class="parse-block">
+  <div class="pb-header">
+    <span class="ph-zh">缺</span>
+    <div>
+      <div class="ph-title">DIRECTIVA 1 — GAP REACT⟹RENDER · INSTANCIA NO AUTÓNOMA</div>
+      <div style="font-size:9px;color:rgba(255,255,255,.4);">Labor local activa contexto global pero SIN puente automático · ballpaper no reacciona solo</div>
+    </div>
+    <span class="ph-hex">屯 H03</span>
+  </div>
+  <div class="pb-body">
+    <div class="gap-block">
+      <div class="gap-side gap-current">
+        <div class="gs-lbl">ESTADO ACTUAL — GAP DETECTADO</div>
+        <div class="gs-item"><span class="pi-tag pi-gap">GAP</span>BALLPAPER es HTML estático — no reacciona a cambios del sistema</div>
+        <div class="gs-item"><span class="pi-tag pi-gap">GAP</span>No hay bridge automático ballpaper-data ↔ LLM local</div>
+        <div class="gs-item"><span class="pi-tag pi-gap">GAP</span>ballpaper_render() existe en chat.py pero no es autónomo</div>
+        <div class="gs-item"><span class="pi-tag pi-gap">GAP</span>Routing: NLP → LACHO → RAG no tiene retorno visual automático</div>
+        <div class="gs-item"><span class="pi-tag pi-gap">GAP</span>Sin ciclo cerrado: cambio en código → ballpaper actualizado</div>
+      </div>
+      <div class="gap-arrow">→</div>
+      <div class="gap-side gap-target">
+        <div class="gs-lbl">ESTADO TARGET — REACT⟹RENDER ACTIVADO</div>
+        <div class="gs-item hi">ballpaper_render() llamado automáticamente cada ciclo</div>
+        <div class="gs-item hi">python3 main.py --ballpaper genera HTML desde ledger actual</div>
+        <div class="gs-item">ELPULSAR dashboard lee sovereign.db en tiempo real</div>
+        <div class="gs-item">language-routing: NLP → token → hexagrama → visual</div>
+        <div class="gs-item">GitHub push → ballpaper actualizado en output</div>
+      </div>
+    </div>
+    <div class="pb-sent">WORK {actuator} =&gt;&lt;= .. materializa .. ballpaper_react_render_bridge --[As de Guía] [term:R1]</div>
+  </div>
+</div>
+
+<!-- DIRECTIVA 2: THEATER LOCAL -->
+<div class="parse-block">
+  <div class="pb-header">
+    <span class="ph-zh">戏</span>
+    <div>
+      <div class="ph-title">DIRECTIVA 2 — THEATER LACHO LOCAL · STACK COMPLETO</div>
+      <div style="font-size:9px;color:rgba(255,255,255,.4);">Aider · Open Claw · Ollama · Docker Desktop · gate-bots · launch-bot · headcat · ballpaper-data-learning</div>
+    </div>
+    <span class="ph-hex">艮 H52</span>
+  </div>
+  <div class="theater-block">
+    <div class="th-mast">
+      <span class="tm-zh">剧</span>
+      <div class="tm-title">THEATER STACK LOCAL — MÉTODO · TRABAJO · CRIPTO · SAMU · SOCIAL</div>
+    </div>
+    <div class="th-grid">
+      <div class="th-node active">
+        <span class="tn-icon">⚙️</span>
+        <div class="tn-name">AIDER</div>
+        <div class="tn-desc">Groq llama-3.3-70b · edición código con diff · main player CLI</div>
+        <div class="tn-lib">METHOD · WORK</div>
+      </div>
+      <div class="th-node active">
+        <span class="tn-icon">🦙</span>
+        <div class="tn-name">OLLAMA</div>
+        <div class="tn-desc">qwen2.5:0.5b local · sin internet · sandbox agéntico</div>
+        <div class="tn-lib">WORK · STACKING</div>
+      </div>
+      <div class="th-node active">
+        <span class="tn-icon">🌊</span>
+        <div class="tn-name">WINDSURF</div>
+        <div class="tn-desc">IDE principal · vibe coder · Mu-store nodo primario</div>
+        <div class="tn-lib">WORK · METHOD</div>
+      </div>
+      <div class="th-node">
+        <span class="tn-icon">🐳</span>
+        <div class="tn-name">DOCKER DESKTOP</div>
+        <div class="tn-desc">Sandbox modelos Lead · contenedores soberanos · sandbox profecía</div>
+        <div class="tn-lib">STACKING · GATE</div>
+      </div>
+      <div class="th-node">
+        <span class="tn-icon">🐾</span>
+        <div class="tn-name">OPEN CLAW</div>
+        <div class="tn-desc">Ollama-claw interface · prompt-routing local · alternativa CLI</div>
+        <div class="tn-lib">METHOD · SOCIAL</div>
+      </div>
+      <div class="th-node">
+        <span class="tn-icon">🚪</span>
+        <div class="tn-name">GATE-BOTS</div>
+        <div class="tn-desc">gate-bots local · acceso filtrado · GATE UF[H05] activo</div>
+        <div class="tn-lib">GATE</div>
+      </div>
+      <div class="th-node">
+        <span class="tn-icon">🚀</span>
+        <div class="tn-name">LOCAL LAUNCH-BOT</div>
+        <div class="tn-desc">local-activities-launch-bot · inicia servicios al arrancar PC</div>
+        <div class="tn-lib">ACTIVITY · SOCIAL</div>
+      </div>
+      <div class="th-node">
+        <span class="tn-icon">🎩</span>
+        <div class="tn-name">HEADCAT-LOCAL</div>
+        <div class="tn-desc">headcat-local-routine · LACHO→HEADCAT→FLYBOT pipeline</div>
+        <div class="tn-lib">WORK · ACTIVITY</div>
+      </div>
+      <div class="th-node">
+        <span class="tn-icon">📋</span>
+        <div class="tn-name">EARLY-TASKING</div>
+        <div class="tn-desc">early-tasking-local · tareas del día al arranque</div>
+        <div class="tn-lib">SAMU · METHOD</div>
+      </div>
+      <div class="th-node">
+        <span class="tn-icon">📰</span>
+        <div class="tn-name">BALLPAPER ROUTER</div>
+        <div class="tn-desc">ballpaper-data-learning-prompt-language-routing · React⟹Render</div>
+        <div class="tn-lib">ALL LIBS</div>
+      </div>
+    </div>
+    <div class="th-routing">
+      <strong>ROUTING LACHO LOCAL:</strong>
+      NLP input → <strong>language-routing.py</strong> → token Unicode → hexagrama → biblioteca → 
+      sentencia canónica → RAG query → SAMU valida → ledger cristaliza → 
+      <strong>ballpaper-data</strong> actualiza → React⟹Render → dashboard visual<br><br>
+      Bibliotecas activas en theater local: 
+      <strong style="color:var(--violet);">METHOD · WORK · CRYPTO · SAMU · SOCIAL</strong>
+    </div>
+  </div>
+  <div style="padding:12px 20px;">
+    <div class="pb-sent">WORK {flybot} =&gt;&lt;= .. ejecuta .. theater_stack_local_routing --[As de Guía] [term:T2] · METHOD · SAMU · SOCIAL activos</div>
+  </div>
+</div>
+
+<!-- DIRECTIVA 3: CLOSER -->
+<div class="slabel">▸ closer de instancias — postproducción · back to the future · standards sails</div>
+<div class="closer">
+  <div class="cl-col done">
+    <div class="clc-n">1</div>
+    <div class="clc-t">CERRADO ✓</div>
+    <div class="clc-t2">INSTANCIAS CONSOLIDADAS</div>
+    <div class="clc-items">
+      LACHO v0.2.1 gramática ✓<br>
+      CORPUS 197 docs ✓<br>
+      Tests 25/25 ✓<br>
+      CEO ALPHA declarado ✓<br>
+      China estrategia sellada ✓<br>
+      GitHub main 21e8486 ✓<br>
+      BallPaper v2.0 → 5 dashboards ✓
+    </div>
+  </div>
+  <div class="cl-col active">
+    <div class="clc-n">2</div>
+    <div class="clc-t">EN CURSO ◉</div>
+    <div class="clc-t2">INSTANCIAS ACTIVAS</div>
+    <div class="clc-items">
+      UNICODE-CHINA grammar.py →<br>
+      Theater RAG integration →<br>
+      CEO ALPHA en IMV →<br>
+      React⟹Render bridge →<br>
+      ELPULSAR dashboard →<br>
+      Taxonomy clasificador →<br>
+      KALIL BARRIOS + NORA →
+    </div>
+  </div>
+  <div class="cl-col">
+    <div class="clc-n">3</div>
+    <div class="clc-t">PM VISIÓN</div>
+    <div class="clc-t2">BACK TO THE FUTURE</div>
+    <div class="clc-items">
+      elpulsar.app global live<br>
+      WeChat 小程序 China<br>
+      Docker Lead sandbox<br>
+      KALIL 6 nodos operativos<br>
+      Red nodos autónoma<br>
+      Software Standard Sails<br>
+      Operarios autónomos
+    </div>
+  </div>
+  <div class="cl-col">
+    <div class="clc-n">★</div>
+    <div class="clc-t">CEO CONTROL</div>
+    <div class="clc-t2">DOMAIN BALLPAPER</div>
+    <div class="clc-items">
+      NLP → sentencia LACHO<br>
+      BallPaper = panel CEO<br>
+      Dominios: Notaría·Custodia<br>
+      Memecoins·BARRIOS·NORA<br>
+      Software Standard Sails<br>
+      Aptitude = calidad exportable<br>
+      [seal of secrecy] activo
+    </div>
+  </div>
+</div>
+
+<!-- PROFECÍA AUTO-CUMPLIDA -->
+<div class="slabel">▸ profecía auto-cumplida — mapa realista de lo hecho · lo actual · lo posible</div>
+<div class="prophecy">
+  <div class="proph-title">Oracle map — contexto histórico · estado actual · estado futuro deseado</div>
+  <div class="proph-grid">
+    <div>
+      <div class="prc-lbl">Lo hecho — base soberana</div>
+      <div class="proph-item"><span class="pi-n">✓01</span><span class="pi-zh">基</span>LACHO grammar 9 bibliotecas · tests 25/25 · ledger 1012 TX</div>
+      <div class="proph-item"><span class="pi-n">✓02</span><span class="pi-zh">断</span>DIRIME IMV · RAG 197 docs · Scalar S 0.844 · Groq activo</div>
+      <div class="proph-item"><span class="pi-n">✓03</span><span class="pi-zh">主</span>CEO ALPHA 67 roles · 64 hexagramas · Unicode chino por rol</div>
+      <div class="proph-item"><span class="pi-n">✓04</span><span class="pi-zh">图</span>5 BallPapers · Index maestro · coherencia lógica documentada</div>
+      <div class="proph-item"><span class="pi-n">✓05</span><span class="pi-zh">策</span>China dual sellada · KALIL 6 nodos definidos · roadmap 4 fases</div>
+      <div class="proph-item"><span class="pi-n">✓06</span><span class="pi-zh">码</span>Windsurf IDE · GitHub SSH main · Ollama · Aider stack activo</div>
+    </div>
+    <div>
+      <div class="prc-lbl">Lo actual — en construcción</div>
+      <div class="proph-item"><span class="pi-n">→07</span><span class="pi-zh">字</span>UNICODE-CHINA en grammar.py · is_chinese() · 20 tokens CJK</div>
+      <div class="proph-item"><span class="pi-n">→08</span><span class="pi-zh">剧</span>Theater local completo · Aider·Ollama·Docker·GateBots·Headcat</div>
+      <div class="proph-item"><span class="pi-n">→09</span><span class="pi-zh">脉</span>ELPULSAR dashboard · ballpaper_render() → React⟹Render</div>
+      <div class="proph-item"><span class="pi-n">→10</span><span class="pi-zh">节</span>KALIL primeros módulos · BARRIOS sentencias · NORA rating</div>
+      <div class="proph-item"><span class="pi-n">→11</span><span class="pi-zh">路</span>language-routing.py · NLP → token → hex → sentencia → visual</div>
+      <div class="proph-item"><span class="pi-n">→12</span><span class="pi-zh">分</span>Taxonomy clasificador · CEO ALPHA en IMV · Docker sandbox test</div>
+    </div>
+    <div>
+      <div class="prc-lbl">Profecía — estado futuro deseado</div>
+      <div class="proph-item"><span class="pi-n">★13</span><span class="pi-zh">网</span>Operarios autónomos revisando · testeando · resguardando · editando activos del proyecto 24/7</div>
+      <div class="proph-item"><span class="pi-n">★14</span><span class="pi-zh">台</span>elpulsar.app amparado por agentes propios externos · facultades autónomas · disponibilidad total</div>
+      <div class="proph-item"><span class="pi-n">★15</span><span class="pi-zh">龙</span>Docker Desktop · modelos Lead · sandbox soberano · 512 contenedores 5% RAM</div>
+      <div class="proph-item"><span class="pi-n">★16</span><span class="pi-zh">升</span>Escala agencial exponencial · tiempo · áreas · gestión en línea y local simultánea</div>
+      <div class="proph-item"><span class="pi-n">★17</span><span class="pi-zh">全</span>KALIL 6 nodos full dual · HL FABRIC · BSN · WeChat · e-CNY · operativo global</div>
+      <div class="proph-item"><span class="pi-n">★18</span><span class="pi-zh">成</span>Profecía auto-cumplida = CEO emite NLP → sistema ejecuta → ballpaper actualiza → economía opera</div>
+    </div>
+  </div>
+</div>
+
+<!-- EVALUACIÓN PERIÓDICA -->
+<div class="slabel">▸ evaluación periódica · 4 tópicos · contexto histórico + deseado + entornos</div>
+<table class="eval-table">
+  <thead>
+    <tr><th>Área</th><th>Contexto histórico</th><th>Contexto deseado (profecía)</th><th>Entorno superficial</th><th>Entorno profundo</th><th>Estado</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="et-area">LACHO<br>Gramática</td>
+      <td class="et-ctx-h">v0.2.1 · 9 bibliotecas · 1012 TX · tests 25/25 · sin CJK aún</td>
+      <td class="et-ctx-d">Gramática bilingüe ES/ZH · 20 tokens CJK nativos · unicode_mode activo</td>
+      <td class="et-sup">Windsurf → grammar.py editable · diff claro</td>
+      <td class="et-deep">Python 3 · BM25 RAG · sovereign.db SQLite · 197 docs</td>
+      <td><span class="et-status s-ok">BASE OK</span><br><span class="et-status s-gap">CJK GAP</span></td>
+    </tr>
+    <tr>
+      <td class="et-area">DIRIME<br>Motor</td>
+      <td class="et-ctx-h">Scalar S 0.844 · Groq cloud · Ollama local standby · RAG BM25</td>
+      <td class="et-ctx-d">Scalar S ≥ 0.90 · Theater integrado · language-routing activo · autónomo</td>
+      <td class="et-sup">chat.py · main.py · ballpaper_render() en código</td>
+      <td class="et-deep">BM25 sin embeddings · sin vectorstore · sin async · 1 thread</td>
+      <td><span class="et-status s-ok">FUNCIONAL</span><br><span class="et-status s-pnd">UPGRADE</span></td>
+    </tr>
+    <tr>
+      <td class="et-area">THEATER<br>Local</td>
+      <td class="et-ctx-h">rational_day.theater · 4 archivos THEATER · Windsurf · Aider operativo</td>
+      <td class="et-ctx-d">Theater completo: GateBots · LaunchBot · Headcat · EarlyTasking · BallpaperRouter</td>
+      <td class="et-sup">Archivos .theater en /THEATER · indexados en RAG boost 1.8</td>
+      <td class="et-deep">Sin Docker aún · modelos Lead pendientes · sin contenedores</td>
+      <td><span class="et-status s-ok">PARCIAL</span><br><span class="et-status s-gap">DOCKER GAP</span></td>
+    </tr>
+    <tr>
+      <td class="et-area">ELPULSAR<br>Interfaz</td>
+      <td class="et-ctx-h">ballpaper_render() en chat.py · 5 dashboards HTML estáticos generados</td>
+      <td class="et-ctx-d">React⟹Render automático · dashboard vivo · elpulsar.app live</td>
+      <td class="et-sup">HTML puro ahora · sin React framework · sin routing dinámico</td>
+      <td class="et-deep">PC vieja antiX Linux · sin server web · sin hot reload · manual</td>
+      <td><span class="et-status s-pnd">PRÓXIMO</span></td>
+    </tr>
+    <tr>
+      <td class="et-area">KALIL<br>Nodos</td>
+      <td class="et-ctx-h">6 nodos definidos en CORPUS · sentencias canónicas · sin código aún</td>
+      <td class="et-ctx-d">BARRIOS op. · NORA rating activo · CARILO loans · BOLIVAR BSN</td>
+      <td class="et-sup">KALIL_BARRIOS.lacho · KALIL_NORA.lacho files futuros</td>
+      <td class="et-deep">Sin blockchain · sin e-CNY · sin WeChat · FASE 2-3</td>
+      <td><span class="et-status s-pnd">FASE 1</span></td>
+    </tr>
+    <tr>
+      <td class="et-area">Docker<br>Lead Sandbox</td>
+      <td class="et-ctx-h">Docker Desktop instalado · sin contenedores LACHO aún · profecía terminal</td>
+      <td class="et-ctx-d">512 contenedores 5% RAM · modelos Lead · sandbox autónomo total</td>
+      <td class="et-sup">Docker Desktop UI · Windsurf containers ext.</td>
+      <td class="et-deep">PC actual: 11.6 GB RAM · antiX · necesita imagen base LACHO</td>
+      <td><span class="et-status s-pnd">HORIZONTE</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- PENDIENTES DE SESIONES ANTERIORES + UPGRADE -->
+<div class="slabel">▸ pendientes anteriores + upgrade sesión 6 · priorizados</div>
+<div class="pend-block">
+  <div class="pend-title">BACKLOG ACTUALIZADO · SESIÓN 6 · CEO UPGRADE INTEGRADO</div>
+  <div class="pend-grid">
+    <div class="pend-col pc-urgente">
+      <div class="pc-hd">🔴 URGENTE — ejecutar esta sesión</div>
+      <div class="p-item">
+        <div class="p-num">01</div>
+        <div class="p-body">
+          <div class="pb-t">python3 main.py --stats → verificar Scalar S + LACHO_SCORE baseline</div>
+          <div class="pb-s">SAMU @ =&gt;&lt;= .. audita .. estado_sistema_sesion6 --[Ballestrinque] [term]</div>
+        </div>
+        <span class="p-tag pt-hot">PRIMERO</span>
+      </div>
+      <div class="p-item">
+        <div class="p-num">02</div>
+        <div class="p-body">
+          <div class="pb-t">Crear CORPUS/UNICODE-CHINA-TOKENS.txt — 20 tokens estructura canónica</div>
+          <div class="pb-s">STACKING UF[H48] =&gt;&lt;= .. ancla .. unicode_tokens_corpus --[Nudo de Ocho] [term]</div>
+        </div>
+        <span class="p-tag pt-hot">CORPUS</span>
+      </div>
+      <div class="p-item">
+        <div class="p-num">03</div>
+        <div class="p-body">
+          <div class="pb-t">grammar.py: is_chinese() + resolve_chinese_token() + unicode_mode=CHINA + +0.05 score</div>
+          <div class="pb-s">METHOD &lt;operator_flow&gt; =&gt;&lt;= .. modela .. gramatica_china_cjk --[Ballestrinque] [term]</div>
+        </div>
+        <span class="p-tag pt-hot">IMV</span>
+      </div>
+      <div class="p-item">
+        <div class="p-num">04</div>
+        <div class="p-body">
+          <div class="pb-t">rag.py CAPA 4: THEATER + RUNNERS + AGENTS · boost 1.8/1.6/2.0</div>
+          <div class="pb-s">STACKING UF[H52] =&gt;&lt;= .. cristaliza .. theater_rag_capa4 --[Nudo de Ocho] [term]</div>
+        </div>
+        <span class="p-tag pt-hot">RAG</span>
+      </div>
+      <div class="p-item">
+        <div class="p-num">05</div>
+        <div class="p-body">
+          <div class="pb-t">GATE H03→H05→H06→H56 secuencia en grammar.py · TAXONOMY_MAP</div>
+          <div class="pb-s">GATE UF[H05] =&gt;&lt;= .. contiene .. secuencia_gate_taxonomy --[Nudo Corredizo] [term]</div>
+        </div>
+        <span class="p-tag pt-hot">GRAMMAR</span>
+      </div>
+      <div class="p-item">
+        <div class="p-num">06</div>
+        <div class="p-body">
+          <div class="pb-t">★UPGRADE: language-routing.py · bridge NLP → token → hex → sentencia → ballpaper</div>
+          <div class="pb-s">WORK {flybot} =&gt;&lt;= .. ejecuta .. language_routing_react_render --[As de Guía] [term:R1]</div>
+        </div>
+        <span class="p-tag pt-hot">NUEVO</span>
+      </div>
+    </div>
+    <div class="pend-col pc-fase1">
+      <div class="pc-hd">🟡 FASE 1 — siguiente bloque</div>
+      <div class="p-item">
+        <div class="p-num">07</div>
+        <div class="p-body">
+          <div class="pb-t">CEO ALPHA en IMV: cargar CEO_ALPHA_H64.json como módulo grammar.py</div>
+          <div class="pb-s">METHOD &lt;stat_onto&gt; =&gt;&lt;= .. modela .. ceo_alpha_json_loader --[Ballestrinque] [term]</div>
+        </div>
+        <span class="p-tag pt-warm">SISTEMA</span>
+      </div>
+      <div class="p-item">
+        <div class="p-num">08</div>
+        <div class="p-body">
+          <div class="pb-t">ELPULSAR dashboard: ballpaper_render() → main loop · React⟹Render</div>
+          <div class="pb-s">WORK {actuator} =&gt;&lt;= .. materializa .. elpulsar_react_render --[As de Guía] [term]</div>
+        </div>
+        <span class="p-tag pt-warm">UI</span>
+      </div>
+      <div class="p-item">
+        <div class="p-num">09</div>
+        <div class="p-body">
+          <div class="pb-t">KALIL BARRIOS: primeras sentencias operativas · banca comunitaria soberana</div>
+          <div class="pb-s">SOCIAL {launch-bot} =&gt;&lt;= .. lanza .. barrios_banca_diaspora --[As de Guía] [term]</div>
+        </div>
+        <span class="p-tag pt-warm">KALIL</span>
+      </div>
+      <div class="p-item">
+        <div class="p-num">10</div>
+        <div class="p-body">
+          <div class="pb-t">KALIL NORA: oracle rating METHOD · compatible Sesame Credit · 面子=score</div>
+          <div class="pb-s">METHOD &lt;stat_onto&gt; =&gt;&lt;= .. calcula .. nora_rating_mianzi_score --[Ballestrinque] [term]</div>
+        </div>
+        <span class="p-tag pt-warm">KALIL</span>
+      </div>
+      <div class="p-item">
+        <div class="p-num">11</div>
+        <div class="p-body">
+          <div class="pb-t">★UPGRADE: Theater local completo · crear gate-bots.theater + headcat-local.theater + early-tasking.theater</div>
+          <div class="pb-s">WORK {flybot} =&gt;&lt;= .. ejecuta .. theater_local_completo_upgrade --[As de Guía] [term:T2]</div>
+        </div>
+        <span class="p-tag pt-warm">NUEVO</span>
+      </div>
+      <div class="p-item">
+        <div class="p-num">12</div>
+        <div class="p-body">
+          <div class="pb-t">FLYBOT → cloud_agent.blue pipeline + HEADCAT-LOCAL routine · GitHub auto-sync</div>
+          <div class="pb-s">WORK {flybot} =&gt;&lt;= .. ejecuta .. pipeline_headcat_flybot_cloud --[As de Guía] [term]</div>
+        </div>
+        <span class="p-tag pt-cool">AGENTS</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PROMPT WINDSURF DE ARRANQUE BLOQUE 1 -->
+<div class="slabel">▸ prompt arranque windsurf — bloque 1 urgente · 3 en 1</div>
+<div class="prompt-box">
+  <div class="prompt-box-title">WINDSURF PROMPT — BLOQUE URGENTE SESIÓN 6 · 3 TAREAS</div>
+  <div class="prompt-code"><span class="pc-com"># CONTEXTO: LACHO v0.2.1 · CORPUS 197 · Tests 25/25 · Scalar S 0.844</span>
+<span class="pc-com"># CEO NLP UPGRADE activo · Theater local + React⟹Render en backlog</span>
+
+<span class="pc-com"># VERIFICAR PRIMERO:</span>
+cd /media/Personal/PLANERAI/DIRIME/IMV && python3 main.py --stats
+
+<span class="pc-com"># TAREA 1 — UNICODE-CHINA-TOKENS.txt</span>
+<span class="pc-kw">Crear</span> /media/Personal/PLANERAI/DIRIME/CORPUS/UNICODE-CHINA-TOKENS.txt
+Estructura 20 tokens: HANZI · PINYIN · LACHO_TOKEN · HEXAGRAMA · BIBLIOTECA · NODO_KALIL · DOMINIO · DUAL_EXT · DUAL_INT · SENTENCIA · ESTADO
+
+<span class="pc-com"># TAREA 2 — grammar.py CJK extension</span>
+<span class="pc-kw">Editar</span> IMV/core/grammar.py:
+1. is_chinese(text: str) -> bool · rangos U+4E00-U+9FFF
+2. resolve_chinese_token(zh: str) -> dict · RAG query "UNICODE-CHINA {zh}"
+3. En parse_sentence(): si sujeto/objeto CJK → unicode_mode="CHINA" · +0.05 score
+4. TAXONOMY_MAP dict · classify_sentence(parsed) -> dict
+
+<span class="pc-com"># TAREA 3 — rag.py CAPA 4 THEATER</span>
+<span class="pc-kw">Editar</span> IMV/core/rag.py:
+_THEATER_DIR · _RUNNERS_DIR · _AGENTS_DIR rutas soberanas
+_SOVEREIGN_SOURCES = [(theater,1.8), (runner,1.6), (agent,2.0)]
+Loop en build_rag_index() · boost por tipo de archivo
+Print: "✅ IME RAG — N CORPUS · N LIBRO · N THEATER · N RUNNER"
+
+<span class="pc-com"># AL TERMINAR:</span>
+python3 tests/test_imv.py  <span class="pc-com"># deben pasar 25/25</span>
+python3 main.py --validate "<span class="pc-zh">信任</span> 基础 =><= .. verifica .. <span class="pc-zh">主权</span>_soberana --[As de Guía] [term]"
+<span class="pc-com"># Resultado esperado: VALID · LACHO_SCORE≥0.85 · unicode_mode=CHINA · TAXONOMY=N1·biblioteca</span></div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div>
+    BALLPAPER SESIÓN 6 · $MON(09/03/26,15:14) · Ku-chat·Wu-mail·Mu-store ·<br>
+    LACHO · DIRIME · ELPULSAR · KALIL · CHCL · [term] :: activo · [seal of secrecy] :: activo
+  </div>
+  <div class="f-seals">
+    <span class="f-seal">令</span>
+    <span class="f-seal">道</span>
+    <span class="f-seal">成</span>
+  </div>
+  <div class="f-zh">升级</div>
+</div>
+
+</div>
+</body>
+</html>

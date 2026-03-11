@@ -1,0 +1,35 @@
+# BIBLIO-SOURCES(LACHO-VERBOS)
+# Gramática viva LACHO — verbos canónicos por biblioteca
+# Fuente: GUÍA DIRIME IMV + práctica verificada en ledger
+# [term] :: activo
+
+## 1.0 PRINCIPIO DE VERBO SOBERANO
+El verbo en LACHO no es decorativo — describe la acción física
+o lógica que ocurre en el sistema soberano.
+Formato obligatorio: .. verbo .. (puntos delimitadores)
+Sin puntos = sentencia INVÁLIDA.
+
+## 2.0 VERBOS POR BIBLIOTECA
+
+TRUST: verifica / declara / sostiene / autoriza / limita
+WORK: materializa / ejecuta / detiene / custodia / sella
+SAMU: dirime / audita / modera / registra / activa
+ACTIVITY: inicia / aquieta / penetra / cristaliza / lanza
+CRYPTO: autoriza / certifica / protege / firma / conecta
+SOCIAL: lanza / recibe / filtra / distribuye / registra
+GATE: suspende / transita / resuelve / filtra / permite
+STACKING: cristaliza / inmutabiliza / preserva / archiva
+METHOD: define / formaliza / opera / calcula / estructura
+
+## 3.0 VERBOS EXTENDIDOS — DOMINIOS
+
+NOTARÍA:    certifica / sella / registra / declara / inmutabiliza
+MEMECOINS:  evalúa / lanza / detiene / audita / escala
+CUSTODIA:   custodia / protege / verifica / suspende / libera
+CICLO:      activa / cierra / penetra / registra / aquieta
+
+## 4.0 REGLA DE ORO
+Un verbo LACHO describe lo que YA OCURRIÓ o lo que DEBE OCURRIR.
+No es aspiracional — es declarativo o imperativo soberano.
+
+[term] :: activo · [seal of secrecy] :: activo

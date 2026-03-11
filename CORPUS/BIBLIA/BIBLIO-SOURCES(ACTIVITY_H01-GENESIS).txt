@@ -1,0 +1,264 @@
+# BIBLIO-SOURCES(ACTIVITY_H01-GENESIS).txt
+
+====================================================================
+
+## 🌱 ACTIVITY UF[H01] — GÉNESIS / ARRANQUE SOBERANO
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+UF[H01] es el módulo ACTIVITY que gobierna el arranque soberano de todo ciclo nuevo en el sistema: el momento en que el vacío MU se convierte en la primera acción verificable.
+
+#### 1.2 H01 (Lo Creativo / Qian) como fundamento hexagramático
+Seis líneas yang — fuerza máxima sin ninguna resistencia. El dragón que emerge del abismo sin obstáculo.
+
+#### 1.3 La génesis como acto soberano verificable
+UF[H01] no es arranque automático — es declaración soberana de inicio con [term] y [foundation] activos.
+
+#### 1.4 El vacío MU como precondición de UF[H01]
+Solo desde MU genuino puede iniciarse UF[H01]. Un sistema que ya opera no puede tener génesis — puede tener reinicio, renovación, pero no H01 puro.
+
+#### 1.5 Qué habilita y qué no puede hacer
+Habilita el inicio soberano de ciclos completamente nuevos. No puede operar sobre ciclos existentes, no puede iniciar sin [term], no puede generar sin [foundation] verificado.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Qué puede iniciar UF[H01]
+Cualquier ciclo nuevo que no tenga antecedente en Behavioral RAG. Estrategias de mercado sin posición previa, procesos notariales sin historial, wallets soberanas sin custodia anterior.
+
+#### 2.2 Condición de violación primaria
+UF[H01] activado sin [term] declarado — génesis sin horizonte es expansión sin forma.
+
+#### 2.3 Condición de violación secundaria
+UF[H01] forzado sobre un ciclo que ya existe — declarar génesis sobre algo que solo necesita reinicio.
+
+#### 2.4 Señal de alerta
+Behavioral RAG detectando patrón de génesis falsa — ciclos que declaran ser nuevos cuando tienen antecedentes verificables.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 MODOS DE ACTIVACIÓN
+
+GENESIS_VOID: estado previo al arranque — MU activo, sistema en escucha máxima, sin ciclo declarado.
+- GENESIS_DECLARE: declaración soberana de nuevo ciclo con [term] inicial y [foundation] verificada.
+- GENESIS_LAUNCH: primer movimiento del ciclo nuevo — de MU a KU, del vacío a la primera señal.
+- GENESIS_STABILIZE: el ciclo nuevo adquiere forma suficiente para operar sin supervisión de H01.
+- GENESIS_HANDOFF: UF[H01] entrega el ciclo nacido a los módulos ACTIVITY correspondientes al tipo de ciclo (H02, H29, H30, etc.).
+
+#### 3.2 RELACIÓN CON H01 (LO CREATIVO)
+
+Las seis líneas yang como progresión:
+- Línea 1: dragón oculto (GENESIS_VOID) — potencial puro sin manifestación.
+- Línea 2: dragón en campo (GENESIS_DECLARE) — primera aparición en el espacio.
+- Línea 3-4: dragón activo (GENESIS_LAUNCH) — movimiento y acción continuos.
+- Línea 5: dragón en vuelo (GENESIS_STABILIZE) — estabilización en el aire.
+- Línea 6: dragón soberbio — riesgo de exceso.
+
+#### 3.3 El límite de H01
+Fuerza sin resistencia puede convertirse en arrogancia ontológica — nuevo ciclo que no reconoce sus propios límites de [term].
+
+#### 3.4 RELACIÓN CON DOMINIOS ECONÓMICOS
+
+MEMECOINS: UF[H01] como arranque de nueva estrategia de mercado desde MU — sin posición previa, sin sesgo.
+- NOTARÍA: UF[H01] como inicio de nuevo proceso notarial sin antecedente — cliente nuevo, documento nuevo.
+- CUSTODIA: UF[H01] como génesis de nueva wallet soberana — primera vez, sin historial de custodia previo.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation] (TRUST)
+UF[H01] verifica [foundation] antes de toda génesis — el suelo soberano debe estar intacto para iniciar algo nuevo.
+
+#### 4.2 Con [term] (TRUST)
+Todo ciclo nuevo requiere [term] declarado desde GENESIS_DECLARE — génesis sin horizonte es expansión sin forma.
+
+#### 4.3 Con SAMU (@)
+#rise de SAMU @ requiere UF[H01] previo — no puede haber #rise sin génesis soberana.
+
+#### 4.4 Con Behavioral RAG
+UF[H01] consulta Behavioral RAG para verificar que el ciclo es genuinamente nuevo — no tiene antecedentes.
+
+#### 4.5 Con STACKING_H1
+STACKING_H1 cristaliza la génesis de forma soberana; UF[H01] ACTIVITY es el ciclo que genera lo que STACKING_H1 luego persiste.
+
+#### 4.6 Con UF[H64] (CREATIVE-FLOW-ALPHABET)
+H64 genera desde el estado casi-completo de sistema maduro; H01 genera desde el vacío absoluto.
+
+---
+
+### 5.0 ESTADOS DEL MÓDULO
+
+#### 5.1 GENESIS_VOID
+Sistema en MU, escucha máxima, sin ciclo declarado. Potencial puro sin manifestación.
+
+#### 5.2 GENESIS_DECLARING
+Declaración soberana de nuevo ciclo en curso. [term] siendo definido, [foundation] siendo verificado.
+
+#### 5.3 GENESIS_LAUNCHING
+Primer movimiento del ciclo nuevo. De MU a KU, del vacío a la primera señal verificable.
+
+#### 5.4 GENESIS_STABILIZING
+Ciclo nuevo adquiriendo forma. Movimiento continuo buscando estabilización.
+
+#### 5.5 GENESIS_HANDOFFING
+UF[H01] entregando el ciclo nacido a módulos ACTIVITY correspondientes. Preparación para trascender.
+
+#### 5.6 GENESIS_EXCEEDED
+Fuerza sin resistencia convertida en arrogancia. Línea 6 del hexagrama activada — riesgo de exceso.
+
+#### 5.7 GENESIS_DEGRADED
+Génesis falsa detectada. Behavioral RAG encontró antecedentes no declarados.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Afecta d₁ [term]
+GENESIS_DECLARE establece [term] del nuevo ciclo — horizonte temporal soberano desde el inicio.
+
+#### 6.2 Enriquece d₈ [ecosystem]
+Cada génesis legítima expande el ecosistema con nuevo ciclo soberano.
+
+#### 6.3 Protege d₁ [foundation]
+UF[H01] verifica [foundation] antes de toda génesis — protege el suelo soberano.
+
+#### 6.4 Impacta d₇ [command]
+Nuevos ciclos pueden requerir nuevos [command] soberanos específicos.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 GENESIS_VOID en escucha máxima
+```
+!!Activity!! UF_H01 =><= .. listen .. $$MU_potential_field$$ --[As de Guía] [term]
+```
+
+#### 7.2 GENESIS_DECLARE declarando nuevo ciclo
+```
+!!Activity!! UF_H01 =><= .. declare .. $$sovereign_new_cycle$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.3 GENESIS_LAUNCH iniciando movimiento
+```
+!!Activity!! UF_H01 =><= .. launch .. $$first_movement_KU$$ --[Ballestrinque] [term]
+```
+
+#### 7.4 UF[H01] en dominio memecoins
+```
+!!Activity!! UF_H01 =><= .. originate .. $$market_strategy_new$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.5 UF[H01] en dominio notaría
+```
+!!Activity!! UF_H01 =><= .. initiate .. $$notarial_process_fresh$$ --[Nudo de Rizo] [term]
+```
+
+#### 7.6 UF[H01] en dominio custodia
+```
+!!Activity!! UF_H01 =><= .. generate .. $$wallet_sovereign_new$$ --[As de Guía] [term]
+```
+
+#### 7.7 GENESIS_HANDOFF entregando ciclo
+```
+!!Activity!! UF_H01 =><= .. handoff .. $$cycle_born_ready$$ --[Nudo de Ocho] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+GENESIS_VOID — potencial puro en escucha máxima, el dragón oculto esperando el momento.
+
+#### 8.2 Nudo de Ocho
+GENESIS_DECLARE — declaración soberana de nuevo ciclo, el primer nudo que ata el vacío a la forma.
+
+#### 8.3 Nudo Corredizo
+GENESIS_DEGRADED — génesis falsa detectada, el nudo que se deshace ante la verdad.
+
+#### 8.4 Ballestrinque
+GENESIS_LAUNCHING — tensión entre el vacío y el primer movimiento, el nudo que sostiene la transición.
+
+#### 8.5 Nudo de Rizo
+GENESIS_STABILIZING — el ciclo nuevo adquiriendo forma, el nudo que permite expansión controlada.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+1. GenesisListen
+   - Sistema en MU, escucha máxima.
+   - Monitoreo de condiciones para génesis.
+
+2. GenesisDeclare
+   - Declaración soberana de nuevo ciclo.
+   - Verificación de [foundation] y definición de [term].
+
+3. GenesisLaunch
+   - Primer movimiento del ciclo nuevo.
+   - Transición de MU a KU.
+
+4. GenesisStabilize
+   - Adquisición de forma del ciclo.
+   - Preparación para operación autónoma.
+
+5. GenesisHandoff
+   - Entrega del ciclo nacido a módulos correspondientes.
+   - Cierre de UF[H01] para ese ciclo.
+
+6. GenesisDiagnose
+   - Detección de génesis falsa.
+   - Intervención ante GENESIS_EXCEEDED.
+
+---
+
+### 10.0 MÉTRICAS
+
+- Frecuencia de ciclos GENESIS_VOID por día.
+- Ratio GENESIS_HANDOFF exitoso vs GENESIS_DEGRADED.
+- Tiempo promedio de GENESIS_STABILIZE.
+- Número de ciclos genuinamente nuevos vs reinicios disfrazados.
+- Frecuencia de GENESIS_EXCEEDED por ciclo.
+
+---
+
+### 11.0 REGLAS
+
+- UF[H01] solo opera sobre ciclos genuinamente nuevos sin antecedentes.
+- Todo GENESIS_DECLARE requiere [term] y [foundation] verificados.
+- GENESIS_EXCEEDED activa diagnóstico automático de SAMU @.
+- Behavioral RAG debe verificar ausencia de antecedentes antes de génesis.
+- GENESIS_HANDOFF es obligatorio — UF[H01] no retiene ciclos nacidos.
+- El vacío MU es precondición constitutiva de UF[H01].
+- UF[H01] no puede reiniciar ciclos existentes — eso es función de otros módulos.
+- La fuerza de H01 debe reconocer sus propios límites de [term].
+- GENESIS_DEGRADED activa protocolo de corrección inmediato.
+- #rise de SAMU @ requiere UF[H01] previo completado.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+UF[H01] fija como invariante la génesis soberana como condición de inicio legítimo de todo ciclo nuevo — el momento en que el vacío MU se convierte en la primera acción verificable con [term] y [foundation] activos.
+
+#### 12.2 Limitaciones
+No opera sobre ciclos existentes, no puede iniciar sin [term], no puede generar sin [foundation] verificado, no puede retener ciclos nacidos.
+
+#### 12.3 Habilitaciones
+Inicio soberano de ciclos completamente nuevos, expansión legítima del ecosistema, base para #rise de SAMU @, fundamento para STACKING_H1, protección contra ciclos falsos.
+
+#### 12.4 Principio constitutivo final
+Como el dragón que emerge del abismo: UF[H01] representa la fuerza pura del inicio sin obstáculo, pero debe reconocer sus propios límites para no convertirse en arrogancia. La génesis soberana no es expansión infinita, es el primer movimiento controlado desde el vacío hacia la forma verificable.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

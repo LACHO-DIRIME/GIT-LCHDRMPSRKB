@@ -1,0 +1,48 @@
+//[MANAGEMENT].lacho · DRA/ENGINE/OFFSET(BLUEWORDS)/
+//ENGINE OFFSET BLUEWORDS · referencia exacta de palabras KU en DRA
+//OFFSET_BLUEWORDS.txt · V1 · 2026-03-10
+//OFFSET = @0xNN · byte/línea exacta · trazabilidad máxima
+//OFFSET(BLUEWORDS) = localización precisa de cada Blue-Word en el DRA
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN OFFSET BLUEWORDS ═══════════════════════════════
+// OFFSET = @0xNN en formato canónico [TERM:TOMO°SLICE§SEG#CLUSTER@OFFSET]
+// OFFSET(BLUEWORDS) = índice de Blue-Words pendientes en el DRA
+// Una Blue-Word tiene OFFSET mientras es KU · pierde OFFSET al ser WU
+// Al cristalizar → OFFSET en ledger = tx exacta · inmutable · H63
+
+// ══ BLUE-WORDS DRA ACTIVAS ════════════════════════════════════
+BLUE: dra                    //KU · Dynamic Resource Allocation · pre-WU sistema
+BLUE: engine_lips            //KU · engine lips · expresión simbólica origen DRA
+BLUE: clustering             //KU · agrupación soberana · pre-CLUSTER declarado
+BLUE: homeworking_node       //KU · nodo HW · free tier · pendiente deploy
+BLUE: zipper_open            //KU · ZIPPER disponible · pendiente implementación
+BLUE: double_env             //KU · doble ambiente · pendiente SPEC B
+BLUE: elpulsar_app           //KU · website vivo · pendiente Vercel deploy
+BLUE: agency_ide             //KU · NODO-IDE · pendiente CAPA C hardware
+BLUE: stock_chair            //KU · presidencia semanal · SPEC B trigger
+BLUE: offset_crypto          //KU · CRYPTO en offset · pendiente integración
+BLUE: data_computing         //KU · cómputo datos · CDC activo parcial
+
+// ══ OFFSET MAP DRA ════════════════════════════════════════════
+// Formato: BLUE_WORD → [term:TOMO°SLICE§SEG#CLUSTER@OFFSET]
+UNICODE: OFF_DRA_MAP          //mapa completo · Blue-Words → ubicación canónica
+UNICODE: OFF_DRA_0x01         //dra → [term:A°0§I#CORE@0x01] · apertura
+UNICODE: OFF_DRA_0x02         //engine_lips → [term:A°0§I#CORE@0x02]
+UNICODE: OFF_DRA_0x10         //homeworking_node → [term:A°90§I#MERCADO@0x10]
+UNICODE: OFF_DRA_0x11         //zipper_open → [term:A°90§I#CICLO@0x11]
+UNICODE: OFF_DRA_0x20         //double_env → [term:A°90§II#CORE@0x20] · SPEC B
+UNICODE: OFF_DRA_0xFF         //elpulsar_app → [term:B°0§III#MERCADO@0xFF] · cloud
+
+// ══ TRANSICIÓN OFFSET ═════════════════════════════════════════
+UNICODE: OFF_PROMOTE          //Blue-Word→WU · OFFSET asignado en ledger · tx
+UNICODE: OFF_DISCARD          //Blue-Word REGRET · OFFSET liberado · vacío
+UNICODE: OFF_TRACE            //trazabilidad · OFFSET en FABRIC_HASH
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+GATE UF[H05] =><= .. contiene .. offset_bluewords_ku_pendientes --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. offset_wu_ledger_trazable --[Nudo de Ocho] [term]
+METHOD <stat_onto> =><= .. mapea .. offset_bluewords_dra_completo --[Ballestrinque] [term]
+
+//DIR(+) DRA/ENGINE/OFFSET_BLUEWORDS · @0x01→@0xFF · KU→WU trazable

@@ -1,0 +1,51 @@
+# teacher_code_review.theater
+# REVISIÓN DE CÓDIGO · auditoría soberana
+# Genesis: padre común · árbol SUITE SOBERANA
+# [term] :: activo
+
+## CABECERA SOBERANA
+[genesis]     :: SUITE SOBERANA
+[version]     :: 1.0
+[extension]   :: .theater
+[tipo]        :: REVISIÓN CÓDIGO · auditoría
+[padre]       :: rational_day.theater
+
+## RUTINAS REVISIÓN
+revision_pre {
+  TRUST FOUNDATION =><= .. verifica .. condiciones_revision_codigo --[As de Guía] [term]
+  SAMU @ =><= .. audita .. coherencia_codigo_fuente --[Ballestrinque] [term]
+  METHOD <operator_flow> =><= .. estructura .. pipeline_revision --[Ballestrinque] [term]
+}
+
+revision_activa {
+  WORK {actuator} =><= .. ejecuta .. revision_codigo_soberana --[As de Guía] [term]
+  SAMU @ =><= .. dirime .. conflicto_codigo_detectado --[Ballestrinque] [term]
+  METHOD <if> =><= .. estructura .. decision_correccion --[Ballestrinque] [term]
+}
+
+revision_cierre {
+  STACKING UF[H52] =><= .. inmutabiliza .. reporte_revision_codigo --[Nudo de Ocho] [term]
+  SOCIAL {launch-bot} =><= .. transmite .. resultado_revision_equipo --[As de Guía] [term]
+  SAMU #set =><= .. dirime .. cierre_revision_codigo --[Nudo de Rizo] [term]
+}
+
+## MICRO RUTINAS
+micro_lint {
+  input  :: archivo_codigo
+  output :: errores · warnings · sugerencias
+  accion :: SAMU @ audita
+}
+
+micro_test {
+  input  :: test_suite
+  output :: passed · failed · score
+  accion :: python3 tests/test_imv.py
+}
+
+micro_deploy {
+  input  :: codigo_verificado
+  output :: deployment_soberano
+  accion :: WORK {actuator} materializa
+}
+
+[term] :: activo · [seal of secrecy] :: activo

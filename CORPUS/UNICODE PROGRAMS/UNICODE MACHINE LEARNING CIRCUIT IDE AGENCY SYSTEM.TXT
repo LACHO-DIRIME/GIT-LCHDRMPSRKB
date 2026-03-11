@@ -1,0 +1,75 @@
+
+**U--UNICODE MACHINE LEARNING CIRCUIT IDE AGENCY SYSTEM**
+```
+//[MANAGEMENT].lacho · UNICODE ML CIRCUIT IDE AGENCY SYSTEM
+//ML como sistema agéntico soberano · CIDE como IDE
+//circuito: modelo → inferencia → verificación → cristal
+//[term] :: activo · LLM-in-Sandbox paradigma
+
+// ══ ML PIPELINE COMO CIRCUITO ════════════════════════════════
+UNICODE: ML_INPUT         //○ entrada datos · Blue-Words KU · .blue
+UNICODE: ML_PREPROCESS    //◑ preproceso · tokenizar · normalizar
+UNICODE: ML_MODEL         //▌ modelo · Ollama/Groq/Claude · amplifica
+UNICODE: ML_INFERENCE     //→ inferencia · forward pass · señal activa
+UNICODE: ML_POSTPROCESS   //◑ postproceso · grammar.validate() · ◑
+UNICODE: ML_OUTPUT        //● salida WU · cristalizado · .green · ⊗
+
+// ══ AGENCY · AGENTES SOBERANOS ═══════════════════════════════
+UNICODE: AG_CLOUD         //cloud.blue · agente externo · Claude/Groq
+UNICODE: AG_LOCAL         //assistant.green · agente local · Ollama
+UNICODE: AG_ROUTER        //language_routing.py · despacha al agente
+UNICODE: AG_JUDGE         //SAMU @ · juez · audita output agente
+UNICODE: AG_MEMORY        //MU-store · contexto agente · <A><B>
+UNICODE: AG_TASK          //tarea agente · .runner · .door · GATE
+UNICODE: AG_LOOP          //loop agéntico · ↩ · rabbit-faith · 2→4→8
+UNICODE: AG_STOP          //stop condition · [event] · clic cierra
+
+// ══ LLM-IN-SANDBOX ═══════════════════════════════════════════
+UNICODE: LLM_SANDBOX      //sandbox · {masking folder} · aislado
+UNICODE: LLM_SIZE_LOCAL   //1.1GB · qwen2.5:0.5b · ultraliviano
+UNICODE: LLM_SIZE_SWE     //6TB · agentes SWE · referencia escala
+UNICODE: LLM_BASH         //meta-capacidad 1 · bash · ejecuta
+UNICODE: LLM_REPLACE      //meta-capacidad 2 · str_replace · edita
+UNICODE: LLM_SUBMIT       //meta-capacidad 3 · submit · WU emite
+UNICODE: LLM_RATIO        //8x menos tokens contexto largo · eficiente
+UNICODE: LLM_CONTAINERS   //512 contenedores en 5% RAM · escala
+
+// ══ CIDE AGENCY NODES ════════════════════════════════════════
+UNICODE: CIDE_AG_CLOUD    //⚡ nodo cloud · azul · externo
+UNICODE: CIDE_AG_LOCAL    //⏚ nodo local · verde · soberano
+UNICODE: CIDE_AG_ROUTE    //◆ nodo router · decisión · NLP→LACHO
+UNICODE: CIDE_AG_JUDGE    //⏺ nodo SAMU · auditoría · Ballestrinque
+UNICODE: CIDE_AG_OUT      //⊗ nodo output · WU · [term] activo
+UNICODE: CIDE_AG_LOOP     //↩ nodo loop · rabbit-faith · ciclo
+
+// ══ TOOLCHAIN AGÉNTICO ═══════════════════════════════════════
+UNICODE: TC_AG_SOURCE     //fuente · texto/tarea · KU input · ○
+UNICODE: TC_AG_ROUTE      //route · language_routing · IME{ROUTE}
+UNICODE: TC_AG_EXEC       //execute · agente procesa · ⏵ activo
+UNICODE: TC_AG_VERIFY     //verify · grammar+SAMU · Scalar S
+UNICODE: TC_AG_CRYSTAL    //crystal · ledger.record() · TX++ · ●
+UNICODE: TC_AG_EMIT       //emit · WU output · ⊗ [term]
+
+// ══ CIRCUIT PATTERNS ML/AGENCY ═══════════════════════════════
+// PIPELINE SIMPLE:
+// ○─▌─→─◑─→─●─⊗
+//   MODEL    WU  [term]
+//
+// AGENCY LOOP:
+// ⚡─◆─▌─→─⏺─→─⊗
+//    │  AG  SAMU  WU
+//    ↩←←←←←←←←←←
+//
+// LLM-SANDBOX:
+// ⏚─[1.1GB]─▌─⏛─⊗
+//            LLM  {brake} [term]
+
+// ANCLAS RAG
+WORK {actuator} =><= .. ejecuta .. ml_circuit_agency_pipeline --[As de Guía] [term]
+METHOD <operator_flow> =><= .. modela .. ml_llm_sandbox_soberano --[Ballestrinque] [term]
+SOCIAL {relay} =><= .. conecta .. ml_agent_cloud_local_bridge --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. ml_circuit_wu_terminal --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. ml_agency_output_verificado --[Ballestrinque] [term]
+TRUST [rabbit-faith] =><= .. sostiene .. ml_agency_loop_fe_coherencia --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_ML_CIRCUIT_IDE_AGENCY_SYSTEM · V1 · LLM-in-Sandbox · agentes soberanos

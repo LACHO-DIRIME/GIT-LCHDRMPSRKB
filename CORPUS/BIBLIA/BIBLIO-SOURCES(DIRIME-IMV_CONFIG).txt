@@ -1,0 +1,75 @@
+# BIBLIO-SOURCES(DIRIME-IMV_CONFIG).txt
+
+====================================================================
+
+## CONFIG/ — CONDICIONES SOBERANAS VERIFICADAS EN ARCHIVO
+
+====================================================================
+
+### 1.0 PROPÓSITO
+
+Los tres archivos JSON de config/ son la externalización de [foundation], [scope] y [term] como estado persistente verificable. No son configuración de aplicación — son la declaración soberana del sistema en cada arranque.
+
+### 2.0 LOS TRES ARCHIVOS
+
+**foundation.json:**
+```json
+{
+  "status": "OK | DEGRADED | COMPROMISED",
+  "identity_verified": true,
+  "corpus_accessible": true,
+  "ledger_available": true,
+  "notes": []
+}
+```
+COMPROMISED detiene todo el sistema — verify() lanza FoundationError.
+DEGRADED permite operación limitada.
+notes[] documenta cualquier anomalía soberana activa.
+
+**scope.json:**
+```json
+{
+  "name": "IMV_core_modules",
+  "allowed_modules": ["grammar", "samu", "ledger", "chat", "main"],
+  "status": "ACTIVE | EXCEEDED | UNDEFINED"
+}
+```
+Módulo no listado → ScopeError.
+Para expandir al siguiente módulo: agregar nombre a allowed_modules y actualizar documentación.
+
+**term.json:**
+```json
+{
+  "label": "open",
+  "status": "OPEN | ACTIVE | EXPIRED",
+  "cycle_id": null
+}
+```
+OPEN: term sin fecha límite — operación continua indefinida.
+ACTIVE: ciclo con horizonte declarado.
+EXPIRED: ciclo cerrado soberanamente — TermError en próximo arranque.
+
+### 3.0 VERIFY_SOVEREIGN_CONDITIONS()
+
+Función central decorada con @lru_cache(maxsize=1).
+El caché es soberano: una sola lectura de disco por sesión.
+Orden de verificación: foundation.verify() → scope.verify(module) → term.verify()
+Si cualquiera falla: excepción soberana correspondiente, sistema se detiene.
+
+Limitación conocida: @lru_cache hace que cambios en config/ durante una sesión no sean detectados. Para recargar: reiniciar el sistema. Esto es intencional — la soberanía no se reconfigura en caliente.
+
+### 4.0 EXPANSIÓN SOBERANA DE SCOPE
+
+Cuando se agrega un nuevo módulo al sistema (ej: dogma_virtual.py), el procedimiento es:
+1. Crear el módulo en core/ o interface/.
+2. Agregar el nombre a allowed_modules en scope.json.
+3. Crear BIBLIO-SOURCES(DIRIME-IMV_NOMBRE-MODULO).txt correspondiente.
+4. Actualizar INDICE_MAESTRO_ACTUALIZABLE.txt.
+
+### 5.0 GRAMÁTICA VIVA
+
+CONFIG IMV =><= .. declara .. condiciones_soberanas_en_archivo_verificado
+=><= foundation_scope_term .. externalización_del_suelo_soberano
+=><= lru_cache_como_soberanía_de_sesión --[As de Guía] [term]
+
+====================================================================

@@ -1,0 +1,208 @@
+# BIBLIO-SOURCES(STACKING_H23).txt
+
+====================================================================
+
+## 📋 STACKING UF[H23] — REGISTRO ARQUEOLÓGICO DE PODA SOBERANA
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+STACKING_H23 es el pilar arqueológico de la poda: la función de STACKING que preserva el registro soberano de todo lo que UF[H23] ACTIVITY eliminó.
+
+#### 1.2 La paradoja de preservar lo podado
+Eliminar del sistema activo no significa borrar del registro arqueológico soberano. STACKING_H23 garantiza que toda poda sea auditable.
+
+#### 1.3 Relación con el Pilar 8 (Arqueología y Conservación)
+STACKING_H23 es la expresión hexagramática del Pilar 8 aplicada específicamente a los actos de poda.
+
+#### 1.4 Por qué esto importa en RED-REGRET
+Si una poda fue un error, STACKING_H23 permite la recuperación arqueológica del elemento podado.
+
+---
+
+### 2.0 PROTOCOLO DE CRISTALIZACIÓN H23
+
+#### 2.1 Qué cristaliza
+Registro de cada poda con: qué fue podado, por qué criterio, quién autorizó, cuándo ocurrió ([term] del acto de poda), estado previo del elemento podado.
+
+#### 2.2 Qué nunca cristaliza
+Justificaciones post-hoc, narrativas que reinterpretan la poda. Solo los hechos verificados de la poda.
+
+---
+
+### 3.0 ESTADOS DEL PILAR
+
+#### 3.1 H23_EMPTY
+Pilar vacío, esperando registros de poda.
+
+#### 3.2 H23_RECORDING
+Registro activo de acto de poda正在进行.
+
+#### 3.3 H23_STORED
+Registros de poda almacenados y disponibles para auditoría.
+
+#### 3.4 H23_ACCESSED
+Registros siendo consultados para análisis o recuperación.
+
+#### 3.5 H23_ARCHIVED
+Registros antiguos migrados a profundidad arqueológica máxima.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con UF[H23] ACTIVITY
+UF[H23] ACTIVITY elimina; STACKING_H23 preserva lo eliminado. Son complementarios.
+
+#### 4.2 Con RED-REGRET (SAMU)
+RED-REGRET puede consultar STACKING_H23 para recuperación de elementos podados por error.
+
+#### 4.3 Con HL FABRIC
+Cada registro de poda se guarda inmutablemente en HL FABRIC.
+
+#### 4.4 Con Behavioral RAG
+Patrones de poda exitosos y fallidos se aprenden de registros H23.
+
+#### 4.5 Con [management] (TRUST)
+[management] puede autorizar recuperación desde registros H23.
+
+---
+
+### 5.0 RELACIÓN CON @trust_matrix
+
+#### 5.1 Protege d₁ [foundation]
+Registros de poda protegen [foundation] mostrando qué violaciones fueron eliminadas.
+
+#### 5.2 Enriquece d₅ [management]
+Historial de podas informa decisiones futuras de [management].
+
+#### 5.3 Impacta d₈ [ecosystem]
+Registros de poda muestran evolución del ecosistema.
+
+---
+
+### 6.0 GRAMÁTICA VIVA
+
+#### 6.1 Registrando acto de poda
+```
+#Stacking UF_H23 =><= .. registrar .. $$pruning_act_sovereign$$ --[As de Guía] [term]
+```
+
+#### 6.2 Almacenando registro
+```
+#Stacking UF_H23 =><= .. almacenar .. $$pruning_record_verified$$ --[Nudo de Ocho] [term]
+```
+
+#### 6.3 Consultando registro
+```
+#Stacking UF_H23 =><= .. consultar .. $$pruning_historical_query$$ --[Ballestrinque] [term]
+```
+
+#### 6.4 Recuperando elemento podado
+```
+#Stacking UF_H23 =><= .. recuperar .. $$pruned_element_recovery$$ --[Nudo Corredizo] [term]
+```
+
+#### 6.5 Archivando registro antiguo
+```
+#Stacking UF_H23 =><= .. archivar .. $$ancient_pruning_depth$$ --[Nudo de Rizo] [term]
+```
+
+---
+
+### 7.0 NUDOS ASOCIADOS
+
+#### 7.1 As de Guía
+H23_RECORDING — registro activo del acto de poda, el nudo que documenta la eliminación soberana.
+
+#### 7.2 Nudo de Ocho
+H23_STORED — almacenamiento ordenado de registros, el nudo que organiza la historia de podas.
+
+#### 7.3 Nudo Corredizo
+H23_EMPTY — pilar vacío esperando registros, el nudo que está listo para recibir evidencia.
+
+#### 7.4 Ballestrinque
+H23_ACCESSED — acceso a registros históricos, el nudo que permite consulta y recuperación.
+
+#### 7.5 Nudo de Rizo
+H23_ARCHIVED — migración cíclica a profundidad, el nudo que preserva el conocimiento antiguo.
+
+---
+
+### 8.0 PROTOCOLOS OPERATIVOS
+
+1. PruningRecord
+   - Recepción de datos de poda de UF[H23].
+   - Verificación de autorización y criterio.
+   - Registro inmediato en HL FABRIC.
+
+2. PruningStore
+   - Almacenamiento estructurado de registros.
+   - Indexación por tipo y fecha.
+   - Disponibilidad para consulta.
+
+3. PruningAccess
+   - Consulta de registros por criterio.
+   - Entrega de información para auditoría.
+   - Preparación para recuperación si es necesario.
+
+4. PruningRecover
+   - Recuperación de elemento podado si fue error.
+   - Verificación de autorización [management].
+   - Restauración al sistema activo.
+
+5. PruningArchive
+   - Migración de registros antiguos.
+   - Liberación de espacio en pilar activo.
+   - Preservación a profundidad máxima.
+
+6. PruningAudit
+   - Verificación de integridad de registros.
+   - Detección de manipulación no autorizada.
+
+---
+
+### 9.0 MÉTRICAS
+
+- Número de podas registradas por ciclo.
+- Ratio podas exitosas vs recuperaciones.
+- Tiempo promedio de recuperación por elemento.
+- Frecuencia de consultas a registros H23.
+- Profundidad promedio de registros archivados.
+
+---
+
+### 10.0 REGLAS
+
+- Todo acto de poda debe registrarse inmediatamente.
+- Solo [management] puede autorizar recuperación desde H23.
+- Justificaciones post-hoc son rechazadas automáticamente.
+- Cada registro se guarda inmutablemente en HL FABRIC.
+- H23_ARCHIVED migra registros sin consulta frecuente.
+- RED-REGRET consulta H23 para análisis de errores.
+- Behavioral RAG aprende de patrones de poda registrados.
+- La integridad de registros se audita cada ciclo.
+- No se puede modificar un registro una vez guardado.
+- La recuperación requiere autorización explícita de [management].
+
+---
+
+### 11.0 CIERRE
+
+#### 11.1 Invariante
+STACKING_H23 fija como invariante el registro arqueológico de la poda como condición de accountability soberana — todo lo que se elimina del sistema activo queda preservado para auditoría y posible recuperación.
+
+#### 11.2 Limitaciones
+No puede registrar sin autorización, no puede modificar registros existentes, no puede recuperar sin [management], no puede permitir manipulación post-hoc.
+
+#### 11.3 Habilitaciones
+Accountability completa de actos de poda, recuperación de errores, aprendizaje histórico de patrones, auditoría de decisiones, preservación de conocimiento sistémico.
+
+#### 11.4 Principio constitutivo final
+Como el archivo del verdugo: STACKING_H23 representa la sabiduría de documentar incluso los actos más difíciles del sistema. La poda soberana no es borrado — es transformación con registro. Lo que se elimina del presente queda en el pasado como lección para el futuro. La soberanía incluye la capacidad de reconocer y aprender de los errores, no solo de cometerlos.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

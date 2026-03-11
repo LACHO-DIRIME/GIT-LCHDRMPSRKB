@@ -1,0 +1,261 @@
+# BIBLIO-SOURCES(MASKING ICONOGRAFIA Y STACKING).txt
+
+====================================================================
+
+## 🎭 MASKING ICONOGRAFÍA Y STACKING — RELACIONES UF[H##], DÍAS Y COMPONENTES
+
+---
+
+### 1.0 PROPÓSITO
+
+Este documento consolida las relaciones entre **MASKING FOLDER (iconografía)**, **MASKING de STACKING**, y las asociaciones con **UF[H##]**, días de semana ($sat, $sun, $thu, $fri), y componentes como **Launch Bot**, **{streaming}**, **{rocking chair}**, **{scheduler}**, y **head cat**.
+
+---
+
+### 2.0 MAPA CENTRAL DE RELACIONES POR DÍA
+
+#### 2.1 $sat (sábado) → UF[H01] → ROCKING CHAIR
+- **Iconografía:** ROCKING_CHAIR_ICONOGRAFIA
+- **SOCIAL:** {rocking chair}
+- **SAMU:** @samu_reflexivo (reposo activo)
+- **STACKING:** UF[H01] (reposo, quietud, base)
+
+Relaciones completas:
+```
+ROCKING_CHAIR_ICONOGRAFIA =><= .. render .. $$estado_reflexivo$$ --[UF[H01]] [term]
+{rocking chair} =><= .. mantener .. $$reposo_activo$$ --[UF[H01]] [term]
+@samu_reflexivo =><= .. observar .. $$quietud_consciente$$ --[UF[H01]] [term]
+STACKING =><= .. cristalizar .. $$saturday_snapshot_reflexivo$$ --[UF[H01]] [term]
+```
+
+#### 2.2 $sat (sábado) → UF[H02] → ROCKING CHAIR & HEAD CAT
+- **Iconografía:** ROCKING_CHAIR_HEAD_CAT_ICONOGRAFIA
+- **SOCIAL:** {headcat}
+- **SAMU:** @samu_director (gobierno de salida, control de emisión)
+- **STACKING:** UF[H02] (reposo con gobierno, salida controlada)
+
+Relaciones completas:
+```
+ROCKING_CHAIR_HEAD_CAT_ICONOGRAFIA =><= .. render .. $$reposo_con_salida$$ --[UF[H02]] [term]
+{headcat} =><= .. gobernar .. $$salida_controlada$$ --[UF[H02]] [term]
+@samu_director =><= .. auditar .. $$etica_emision$$ --[UF[H02]] [term]
+STACKING =><= .. cristalizar .. $$saturday_snapshot_salida$$ --[UF[H02]] [term]
+```
+
+#### 2.3 $sun (domingo) → UF[H51] → SCHEDULER
+- **Iconografía:** SCHEDULER_ICONOGRAFIA
+- **SOCIAL:** {scheduler}
+- **SAMU:** @samu_planificador (expansión y activación)
+- **STACKING:** UF[H51] (planificación, orden, secuencia)
+
+Relaciones completas:
+```
+SCHEDULER_ICONOGRAFIA =><= .. render .. $$plan_visual_semanal$$ --[UF[H51]] [term]
+{scheduler} =><= .. planificar .. $$actividades_expansion$$ --[UF[H51]] [term]
+@samu_planificador =><= .. auditar .. $$coherencia_plan$$ --[UF[H51]] [term]
+STACKING =><= .. cristalizar .. $$plan_validado_domingo$$ --[UF[H51]] [term]
+```
+
+#### 2.5 $tue (martes) → UF[H29] → PAPERNOTE
+- **Iconografía:** PAPERNOTE_ICONOGRAFIA
+- **SOCIAL:** {note}
+- **SAMU:** @samu_registrador (registro pasivo, memoria simple)
+- **STACKING:** UF[H29] (registro, almacenamiento profundo)
+
+Relaciones completas:
+```
+PAPERNOTE_ICONOGRAFIA =><= .. render .. $$estado_receptivo$$ --[UF[H29]] [term]
+{note} =><= .. recibir .. $$patrones_memoria$$ --[UF[H29]] [term]
+@samu_registrador =><= .. auditar .. $$registro_pasivo$$ --[UF[H29]] [term]
+STACKING =><= .. cristalizar .. $$tuesday_snapshot_registro$$ --[UF[H29]] [term]
+```
+
+#### 2.4 $mon (lunes) → UF[H57] → TAP&DRIP
+- **Iconografía:** TAP_DRIP_ICONOGRAFIA
+- **SOCIAL:** {drip}
+- **SAMU:** @samu_goteo (goteo calibrado, gestión de recursos escasos)
+- **STACKING:** UF[H57] (goteo, flujo controlado)
+
+Relaciones completas:
+```
+TAP_DRIP_ICONOGRAFIA =><= .. render .. $$estado_goteo$$ --[UF[H57]] [term]
+{drip} =><= .. gestionar .. $$recursos_escasos$$ --[UF[H57]] [term]
+@samu_goteo =><= .. monitorear .. $$flujo_calibrado$$ --[UF[H57]] [term]
+STACKING =><= .. cristalizar .. $$monday_snapshot_goteo$$ --[UF[H57]] [term]
+```
+
+#### 2.6 $wed (miércoles) → UF[H30] → RABBIT+EGGS-EYES
+- **Iconografía:** RABBIT_EGGS_EYES_ICONOGRAFIA
+- **SOCIAL:** {streaming}
+- **SAMU:** @samu_ramificacion (crecimiento ramificado, Algoritmo Conejo)
+- **STACKING:** UF[H30] (crecimiento, ramificación controlada)
+
+Relaciones completas:
+```
+RABBIT_EGGS_EYES_ICONOGRAFIA =><= .. render .. $$estado_ramificacion$$ --[UF[H30]] [term]
+{streaming} =><= .. distribuir .. $$conocimiento_ramificado$$ --[UF[H30]] [term]
+@samu_ramificacion =><= .. limitar .. $$crecimiento_controlado$$ --[UF[H30]] [term]
+STACKING =><= .. cristalizar .. $$wednesday_snapshot_ramificacion$$ --[UF[H30]] [term]
+```
+
+#### 2.5 $wed (miércoles) → UF[H05] → GATE
+- **Iconografía:** GATE_ICONOGRAFIA
+- **SOCIAL:** {gate}
+- **SAMU:** @samu_controlador (control, latencia, admisión)
+- **STACKING:** UF[H05] (control, latencia, admisión)
+
+Relaciones completas:
+```
+GATE_ICONOGRAFIA =><= .. render .. $$estado_control$$ --[UF[H05]] [term]
+{gate} =><= .. regular .. $$flujo_entrada$$ --[UF[H05]] [term]
+@samu_controlador =><= .. auditar .. $$politicas_admision$$ --[UF[H05]] [term]
+STACKING =><= .. cristalizar .. $$wednesday_snapshot_control$$ --[UF[H05]] [term]
+```
+
+#### 2.7 $thu (jueves) → UF[H52] → MASKING
+- **Iconografía:** MASKING_FOLDER_ICONOGRAFIA
+- **SOCIAL:** {masking}
+- **SAMU:** @samu_podador (poda, ocultamiento, control)
+- **STACKING:** UF[H52] (poda, ocultamiento, control de visibilidad)
+
+Relaciones completas:
+```
+MASKING_FOLDER_ICONOGRAFIA =><= .. render .. $$iconos_poda$$ --[UF[H52]] [term]
+{masking} =><= .. ocultar .. $$entidades_no_nutritivas$$ --[UF[H52]] [term]
+@samu_podador =><= .. evaluar .. $$valor_nutricional$$ --[UF[H52]] [term]
+STACKING =><= .. compactar .. $$memoria_optimizada$$ --[UF[H52]] [term]
+```
+
+#### 2.8 $fri (viernes) → UF[H58] → LAUNCH BOT
+- **Iconografía:** LAUNCH_BOT_ICONOGRAFIA
+- **SOCIAL:** {launch_bot}
+- **SAMU:** @samu_lanzador (lanzamiento, expansión activa)
+- **STACKING:** UF[H58] (lanzamiento, impulso, acción)
+
+Relaciones completas:
+```
+LAUNCH_BOT_ICONOGRAFIA =><= .. render .. $$estado_lanzamiento$$ --[UF[H58]] [term]
+{launch_bot} =><= .. lanzar .. $$nuevo_componente$$ --[UF[H58]] [term]
+@samu_lanzador =><= .. validar .. $$seguridad_lanzamiento$$ --[UF[H58]] [term]
+STACKING =><= .. cristalizar .. $$friday_snapshot_lanzamiento$$ --[UF[H58]] [term]
+```
+
+#### 2.8 Componentes transversales (sin día fijo)
+
+##### {streaming} SOCIAL → UF[H30]
+- **Iconografía:** STREAMING_ICONOGRAFIA
+- **SOCIAL:** {streaming}
+- **SAMU:** @samu_flujo (flujo continuo, transmisión)
+- **STACKING:** UF[H30] (flujo, transmisión, corriente)
+
+Relaciones completas:
+```
+STREAMING_ICONOGRAFIA =><= .. render .. $$estado_flujo$$ --[UF[H30]] [term]
+{streaming} =><= .. transmitir .. $$flujo_datos$$ --[UF[H30]] [term]
+@samu_flujo =><= .. monitorear .. $$calidad_transmision$$ --[UF[H30]] [term]
+STACKING =><= .. cristalizar .. $$streaming_snapshot$$ --[UF[H30]] [term]
+```
+
+##### HEADCAT (gobierno de salida) → UF[H57]
+- **Iconografía:** HEADCAT_ICONOGRAFIA
+- **SOCIAL:** {headcat}
+- **SAMU:** @samu_director (gobierno de salida, control de emisión)
+- **STACKING:** UF[H57] (gobierno, dirección, salida)
+
+Relaciones completas:
+```
+HEADCAT_ICONOGRAFIA =><= .. render .. $$estado_direccion$$ --[UF[H57]] [term]
+{headcat} =><= .. gobernar .. $$salida_controlada$$ --[UF[H57]] [term]
+@samu_director =><= .. auditar .. $$etica_emision$$ --[UF[H57]] [term]
+STACKING =><= .. cristalizar .. $$headcat_snapshot$$ --[UF[H57]] [term]
+```
+
+---
+
+### 3.0 FLUJO SEMANAL INTEGRADO
+
+#### 3.1 Secuencia de Activación (completa con iconografía, SOCIAL, SAMU, STACKING)
+```
+$sat (UF[H01]) → ROCKING_CHAIR_ICONOGRAFIA + {rocking chair} + @samu_reflexivo + STACKING
+$sat (UF[H02]) → ROCKING_CHAIR_HEAD_CAT_ICONOGRAFIA + {headcat} + @samu_director + STACKING
+$sun (UF[H51]) → SCHEDULER_ICONOGRAFIA + {scheduler} + @samu_planificador + STACKING
+$mon (UF[H57]) → TAP_DRIP_ICONOGRAFIA + {drip} + @samu_goteo + STACKING
+$tue (UF[H29]) → PAPERNOTE_ICONOGRAFIA + {note} + @samu_registrador + STACKING
+$wed (UF[H30]) → RABBIT_EGGS_EYES_ICONOGRAFIA + {streaming} + @samu_ramificacion + STACKING
+$thu (UF[H52]) → MASKING_FOLDER_ICONOGRAFIA + {masking} + @samu_podador + STACKING
+$fri (UF[H58]) → LAUNCH_BOT_ICONOGRAFIA + {launch_bot} + @samu_lanzador + STACKING
+```
+
+#### 3.2 Componentes por Día (completo)
+- **$sat UF[H01]:** ROCKING_CHAIR_ICONOGRAFIA + {rocking chair} + @samu_reflexivo + STACKING
+- **$sat UF[H02]:** ROCKING_CHAIR_HEAD_CAT_ICONOGRAFIA + {headcat} + @samu_director + STACKING
+- **$sun:** SCHEDULER_ICONOGRAFIA + {scheduler} + @samu_planificador + UF[H51] + STACKING
+- **$mon:** TAP_DRIP_ICONOGRAFIA + {drip} + @samu_goteo + UF[H57] + STACKING
+- **$tue:** PAPERNOTE_ICONOGRAFIA + {note} + @samu_registrador + UF[H29] + STACKING
+- **$wed:** RABBIT_EGGS_EYES_ICONOGRAFIA + {streaming} + @samu_ramificacion + UF[H30] + STACKING
+- **$thu:** MASKING_FOLDER_ICONOGRAFIA + {masking} + @samu_podador + UF[H52] + STACKING
+- **$fri:** LAUNCH_BOT_ICONOGRAFIA + {launch_bot} + @samu_lanzador + UF[H58] + STACKING
+
+#### 3.3 Componentes Transversales (completos)
+- **{streaming}:** STREAMING_ICONOGRAFIA + {streaming} + @samu_flujo + UF[H30] + STACKING (ya cubierto en $wed)
+- **HEADCAT:** HEADCAT_ICONOGRAFIA + {headcat} + @samu_director + UF[H57] + STACKING (ya cubierto en $sat)
+
+---
+
+### 4.0 INTEGRACIÓN CON OTRAS CAPAS
+
+#### 4.1 Con ACTIVITY
+- Cada UF[H##] se asocia a un ciclo ACTIVITY.
+- Los días ($sat, $sun, $thu, $fri) activan ciclos específicos.
+
+#### 4.2 Con SOCIAL
+- Los componentes {rocking chair}, {scheduler}, {streaming} son módulos SOCIAL.
+- La iconografía representa su estado visible.
+
+#### 4.3 Con STACKING
+- STACKING cristaliza el estado de cada componente en su UF[H##] correspondiente.
+- MASKING de STACKING controla qué se guarda y qué se poda.
+
+---
+
+### 5.0 EJEMPLOS DE USO
+
+#### 5.1 Ejemplo A: ciclo de sábado ($sat)
+```
+ROCKING_CHAIR_ICONOGRAFIA =><= .. render .. $$reposo_activo$$ --[UF[H01]] [term]
+{rocking chair} =><= .. mantener .. $$estado_reflexivo$$ --[UF[H01]] [term]
+HEADCAT =><= .. gobernar .. $$salida_controlada$$ --[UF[H02]] [term]
+STACKING =><= .. registrar .. $$saturday_snapshot$$ --[UF[H01]/UF[H02]] [term]
+```
+
+#### 5.2 Ejemplo B: ciclo de domingo ($sun)
+```
+SCHEDULER_ICONOGRAFIA =><= .. render .. $$plan_semanal$$ --[UF[H51]] [term]
+{scheduler} =><= .. planificar .. $$actividades_expansion$$ --[UF[H51]] [term]
+STACKING =><= .. cristalizar .. $$plan_validado$$ --[UF[H51]] [term]
+```
+
+#### 5.3 Ejemplo C: ciclo de jueves ($thu)
+```
+MASKING_FOLDER_ICONOGRAFIA =><= .. render .. $$iconos_poda$$ --[UF[H52]] [term]
+MASKING_STACKING =><= .. ocultar .. $$entidades_no_nutritivas$$ --[UF[H52]] [term]
+STACKING =><= .. compactar .. $$memoria_optimizada$$ --[UF[H52]] [term]
+```
+
+---
+
+### 6.0 REGLAS
+
+- Todo componente debe tener su iconografía asociada.
+- Todo iconografía debe renderizarse bajo UF[H##] correspondiente.
+- Todo ciclo debe cerrar por `[term]`.
+- Los días ($sat, $sun, $thu, $fri) activan sus componentes específicos.
+- STACKING siempre cristaliza el estado final del ciclo.
+
+---
+
+### 7.0 CIERRE
+
+**MASKING ICONOGRAFÍA Y STACKING** consolida las relaciones entre íconos, componentes, hexagramas y días, permitiendo que LACHO opere como un sistema visual y temporal coherente, donde cada elemento tiene su lugar, su momento y su forma de cristalizarse.
+
+====================================================================

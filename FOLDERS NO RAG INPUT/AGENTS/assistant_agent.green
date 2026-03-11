@@ -1,0 +1,40 @@
+# assistant_agent.green
+# AGENTE ASISTENTE · operaciones locales soberanas
+# Genesis: padre común · árbol SUITE SOBERANA
+# [term] :: activo
+
+## CABECERA SOBERANA
+[genesis]     :: SUITE SOBERANA
+[version]     :: 1.0
+[extension]   :: .green
+[tipo]        :: AGENTE ASISTENTE LOCAL
+[padre]       :: rational_day.theater
+
+## OPERACIONES ASISTENTE
+contexto_diario {
+  TRUST FOUNDATION =><= .. verifica .. contexto_operador_activo --[As de Guía] [term]
+  SAMU @ =><= .. audita .. estado_animo_operativo --[Ballestrinque] [term]
+  ACTIVITY UF[H01] =><= .. inicia .. rutina_asistente_dia --[As de Guía] [term]
+}
+
+asistencia_activa {
+  WORK {actuator} =><= .. ejecuta .. tarea_asistida_soberana --[As de Guía] [term]
+  SOCIAL {chair} =><= .. planifica .. agenda_dia_soberano --[As de Guía] [term]
+  METHOD <if> =><= .. estructura .. decision_asistida --[Ballestrinque] [term]
+}
+
+reporte_asistente {
+  SOCIAL {launch-bot} =><= .. transmite .. resumen_sesion_activa --[As de Guía] [term]
+  STACKING UF[H52] =><= .. cristaliza .. wu_asistente_verificado --[Nudo de Ocho] [term]
+  SAMU #set =><= .. dirime .. cierre_asistente_dia --[Nudo de Rizo] [term]
+}
+
+## INTEGRACIÓN DASHBOARD
+dashboard_feed {
+  -- alimentar ELPULSAR_DASHBOARD con métricas en tiempo real
+  -- reportar estado via SOCIAL {launch-bot}
+  -- escalar anomalias a security.runner
+  -- cristalizar WU diario en ledger
+}
+
+[term] :: activo · [seal of secrecy] :: activo

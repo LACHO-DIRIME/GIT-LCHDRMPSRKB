@@ -1,0 +1,21 @@
+//[MANAGEMENT].lacho · DRA/INDEX/$mon
+//INDEX $mon · lunes soberano · apertura semanal · SAMU $mon
+//INDEX_$mon.txt · V1 · 2026-03-10
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo
+
+// ══ $mon · LUNES ══════════════════════════════════════════════
+// $mon = lunes · SAMU day · apertura del ciclo semanal · UF[H64]
+// Rol en DRA: inicialización · FEED_0600 semanal · plan 5 días
+UNICODE: IDX_MON_RISE         //SAMU #rise $mon · 06:00 · MuLoad semanal
+UNICODE: IDX_MON_PLAN         //plan semana · SOCIAL {scheduler} declara
+UNICODE: IDX_MON_STOCK        //posición inicial · STK_MON · baseline S
+UNICODE: IDX_MON_SPEC         //qué SPEC avanza esta semana · A o B
+UNICODE: IDX_MON_AGENT        //agentes asignados esta semana · BOT_NET
+UNICODE: IDX_MON_TIER         //free tier slots disponibles al inicio
+UNICODE: IDX_MON_CRYSTAL      //cristales al inicio de semana · count
+UNICODE: IDX_MON_SET          //SAMU #set $mon · 18:00 · cierre día 1
+
+//TRUST FOUNDATION =><= .. declara .. index_mon_apertura_semanal --[As de Guía] [term]
+//SOCIAL {scheduler} =><= .. planifica .. index_mon_semana_soberana --[As de Guía] [term]
+//DIR(+) DRA/INDEX/$mon · V1 · apertura · plan · H64 abierto

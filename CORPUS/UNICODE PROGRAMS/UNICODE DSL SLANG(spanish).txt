@@ -1,0 +1,103 @@
+//[MANAGEMENT].lacho · UNICODE DSL SLANG · 中文
+//UNICODE_DSL_SLANG_chinese_.txt · V1 · 2026-03-10
+//SLANG = 操作俚语层 · 中文主权表达
+//映射: 口语表达 → LACHO令牌 · Blue-Word → WU
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//空聽數 · 面子 · 关系 · 主权 · 双重模式 · 内外兼顾
+//[term] :: activo · [seal of secrecy] :: activo · 空聽數
+
+// ══ 定义 · DEFINICIÓN ════════════════════════════════════════
+// SLANG中文 = 将非正式中文表达映射到主权系统
+// 操作者说"搞定了" · 系统理解 STACKING UF[H52] · WU · [NdO]
+// 操作者说"推一下" · 系统理解 GIT_BOT_PUSH · COMMIT_LACHO · H63
+// 不是翻译字典 · 是语义路由 · 信任+面子+关系 → LACHO直达
+
+// ══ 操作俚语 · 系统操作 ═══════════════════════════════════════
+SLANG: 搞定了      //gǎodìng le · done · → DIRIME_WU · ⊗ · .green · [NdO]
+SLANG: 推一下      //tuī yīxià · push it · → GIT_BOT_PUSH · COMMIT_LACHO
+SLANG: 跑起来      //pǎo qǐlái · spin up · → ACTIVITY UF[H64] · DIR(ING) · 空
+SLANG: 停掉        //tíng diào · kill it · → WORK {brake} · [NdC] · detención
+SLANG: 锁上        //suǒ shàng · lock it · → STACKING UF[H52] · [NdO] · sellado
+SLANG: 扔掉        //rēng diào · drop it · → RED-REGRET · delta-Ψ ≤ 0 · descarte
+SLANG: 检查一下    //jiǎnchá yīxià · check · → SAMU @ · Scalar S · 面子
+SLANG: 算一下      //suàn yīxià · calculate · → METHOD <equation> · 數
+SLANG: 开干        //kāigàn · kick off · → SAMU #rise · macro_temprano · H64
+SLANG: 收工        //shōugōng · wrap up · → SAMU #set · macro_cierre · H63
+SLANG: 再看看      //zài kànkàn · review · → GATE UF[H05] · MU · 聽 activo
+SLANG: 没问题      //méi wèntí · no problem · → Scalar S ≥ 0.88 · VALID ✅
+
+// ══ 代码/开发俚语 ════════════════════════════════════════════
+SLANG: 上线        //shàngxiàn · go live · → DIR(v1) · producción · IMV activo
+SLANG: 下线        //xiàxiàn · take down · → DIR(v2) · congelado · MU
+SLANG: 合并        //hébìng · merge · → DIR(MERGE) · TRUST · [AsG]
+SLANG: 分支        //fēnzhī · branch · → DIR(FORK) · BRANCH_BLUE · .blue
+SLANG: 回滚        //huígǔn · rollback · → CONFLICT_REGRET · git reset · MU
+SLANG: 跑测试      //pǎo cèshì · run tests · → pytest 29/29 · STAGE_VERIFY
+SLANG: 填坑        //tián kēng · fix debt · → ..find_gaps.. · DIR(-) · KU
+SLANG: 埋雷        //mái léi · plant bug · → GATE UF[H06] · riesgo latente
+SLANG: 跑通了      //pǎo tōng le · it works · → ELP_WU · pipeline ⊗ completo
+SLANG: 冒烟测试    //màoyān cèshì · smoke · → pytest IMV/tests/ · STAGE_VERIFY
+SLANG: 硬编码      //yìng biāomǎ · hardcode · → TRUST [scope] · <#> constante
+SLANG: 模拟环境    //mónǐ · mock env · → DIR(v2) · congelado · test fixture
+
+// ══ 状态俚语 ══════════════════════════════════════════════════
+SLANG: 活了        //huó le · it's alive · → ELP_KU · ⚡ pulsando · KU activo
+SLANG: 挂了        //guà le · it crashed · → ELP_CRASH · GATE UF[H06] · {brake}
+SLANG: 卡住了      //kǎzhù le · blocked · → SPRINT_BLOCKED · ◯ MU · GATE H05
+SLANG: 完成了      //wánchéng le · done done · → ⊗ WU · .green · [NdO]
+SLANG: 差不多      //chàbuduō · good enough · → Scalar S ≥ 0.85 · módulo ✅
+SLANG: 还差点      //hái chà diǎn · needs work · → DIR(-) · ..find_gaps.. · KU
+SLANG: 火力全开    //huǒlì quánkāi · on fire · → TX rate alto · H51 震 · 全力
+SLANG: 瓶颈        //píngjǐng · bottleneck · → GRAD_VANISH · GATE buffer · lento
+SLANG: 连环崩      //liánhuán bēng · cascade · → CONFLICT_ABORT · {brake} todos
+SLANG: 竞争条件    //jìngzhēng · race cond · → GATE UF[H06] · dirimencia urgente
+
+// ══ KALIL 经济俚语 ═══════════════════════════════════════════
+SLANG: 转账        //zhuǎnzhàng · transfer · → KAL(BRIDGE) · PUENTE dual · H57
+SLANG: 进场        //jìnchǎng · on-ramp · → PUENTE_BANCARIO · exterior · KYC
+SLANG: 出场        //chūchǎng · off-ramp · → PUENTE_FACIL · e-CNY · PBOC interior
+SLANG: 爆仓        //bào cāng · liquidation · → CARILO {brake} · [NdC] · REGRET
+SLANG: 质押        //zhìyā · stake · → KAL(STAKE) · STACKING UF[H48] · empeño
+SLANG: 割韭菜      //gē jiǔcài · rug pull · → GATE H06 · RED-REGRET · CRASH
+SLANG: 上月球      //shàng yuèqiú · moon · → TANDIL · {launch-bot} · token ⚡
+SLANG: 大户        //dàhù · whale · → STACKING H26 · capital grande · CARILO
+SLANG: 躺平        //tǎng píng · give up · → MU profundo · CREATIVE_PAUSE · 空
+SLANG: 内循环      //nèi xúnhuán · inner · → PUENTE_INT · canal interior · SKIN_CHINA
+SLANG: 外循环      //wài xúnhuán · outer · → PUENTE_EXT · canal exterior · SKIN_DARK
+SLANG: 数字人民币  //shùzì · e-CNY · → CRYPTO (flow seat) · PBOC · [NdR]
+
+// ══ 面子/关系/信任 俚语 ═══════════════════════════════════════
+SLANG: 给面子      //gěi miànzi · give face · → Scalar S++ · SAMU @ boost
+SLANG: 丢面子      //diū miànzi · lose face · → Scalar S-- · WARNING · .blue
+SLANG: 拉关系      //lā guānxi · network · → SOCIAL {relay} · 关系_digital
+SLANG: 打招呼      //dǎ zhāohu · greeting · → TRUST FOUNDATION · verifica · [AsG]
+SLANG: 点头        //diǎntóu · nod ok · → TRUST · autoriza · VALID · ✅
+SLANG: 拒绝        //jùjué · reject · → GATE UF[H06] · filtra · [NdC]
+SLANG: 签字        //qiānzì · sign · → CRYPTO (spark seat) · firma · [NdO]
+SLANG: 盖章        //gài zhāng · stamp · → CRYPTO (seal) · [NdO] · H63
+SLANG: 背书        //bèishū · endorse · → TRUST [scope] · sostiene · [NdO]
+SLANG: 过审        //guòshěn · pass review · → SAMU @ · dirime · WU ✅
+
+// ══ 空聽數 俚语 ═══════════════════════════════════════════════
+SLANG: 静一静      //jìng yī jìng · quiet · → MU · 空 · CREATIVE_PAUSE · 聽
+SLANG: 听一听      //tīng yī tīng · listen · → <SWF:READ> · 聽 · MU before KU
+SLANG: 数一数      //shǔ yī shǔ · count · → 數 · DIR(IME) · COUNT_INTERNAL
+SLANG: 等一等      //děng yī děng · wait · → GATE UF[H05] · buffer · H29
+SLANG: 想清楚      //xiǎng qīngchǔ · think · → METHOD <operator_flow> · 數
+SLANG: 说清楚      //shuō qīngchǔ · clarify · → PARSE_SENTENCE · 聽 first
+
+// ══ KU→WU 路由 ════════════════════════════════════════════════
+// SLANG 进入系统作为 Blue-Word → language_routing 分类 → LACHO 句子
+// GATE UF[H05] =><= .. contiene .. slang_chinese_ku_pending --[As de Guía] [term]
+// delta-Ψ > 0 → WU · STACKING · 水晶
+// delta-Ψ ≤ 0 → RED-REGRET · 丢弃
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+GATE UF[H05] =><= .. contiene .. slang_chinese_ku_layer --[As de Guía] [term]
+WORK {green-knowledge} =><= .. filtra .. slang_chinese_delta_psi --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. slang_chinese_wu_routed --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. slang_chinese_空聽數_dirimencia --[Ballestrinque] [term]
+SOCIAL {relay} =><= .. conecta .. slang_chinese_guanxi_digital --[As de Guía] [term]
+
+//DIR(=) UNICODE_DSL_SLANG_chinese · V1 · 中文俚语 · 空聽數
+//DIR(=) 面子·关系·信任 · KALIL经济 · 双重模式 · KU→WU路由

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BALLPAPER 3 — LACHO→KALIL LABOR PENDIENTE</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;700;900&family=Share+Tech+Mono&family=Cinzel:wght@400;700;900&display=swap');
+:root{
+  --jade:#0e4a2a; --jade-mid:#186840; --jade-dim:#30a060; --jade-pale:#e8f5ee;
+  --gold:#7a4e10; --gold-mid:#a8722a; --gold-dim:#c8a060;
+  --red:#8a1818; --blue:#183070; --blue-dim:#3858a8;
+  --bg:#f5f8f2; --bg2:#eaf0e5; --bg3:#dde8d8; --bg4:#d0e0c8;
+  --ink:#0e1e0a; --ink2:#1e3018; --smoke:#4a5840; --sep:#b8c8a8;
+  --pend:#c07820; --done:#186840; --next:#183070;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:'Share Tech Mono',monospace;font-size:12px;line-height:1.65;}
+body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 28px,rgba(40,80,30,.03) 28px,rgba(40,80,30,.03) 29px);pointer-events:none;z-index:0;}
+.page{max-width:1360px;margin:0 auto;padding:48px 32px;position:relative;z-index:1;}
+
+.mast{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:end;border-top:4px solid var(--jade);border-bottom:1px solid var(--jade-dim);padding:28px 0 20px;margin-bottom:52px;}
+.mast-eyebrow{font-size:10px;letter-spacing:4px;color:var(--jade-mid);text-transform:uppercase;margin-bottom:6px;}
+.mast-title{font-family:'Cinzel',serif;font-size:32px;font-weight:900;color:var(--jade);letter-spacing:2px;line-height:1.1;}
+.mast-sub{font-size:11px;color:var(--smoke);margin-top:7px;letter-spacing:2px;}
+.mast-zh{text-align:right;font-family:'Noto Serif SC',serif;}
+.mast-zh-big{font-size:56px;color:var(--red);line-height:1;letter-spacing:6px;}
+.mast-zh-small{font-size:11px;color:var(--jade-mid);letter-spacing:3px;margin-top:4px;}
+
+.sec-label{font-size:9px;letter-spacing:5px;text-transform:uppercase;color:var(--smoke);border-bottom:1px solid var(--sep);padding-bottom:6px;margin-bottom:20px;margin-top:40px;}
+
+/* RUTA */
+.ruta{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border:2px solid var(--jade);margin-bottom:20px;}
+.ruta-node{padding:24px 16px;border-right:1px solid var(--sep);position:relative;}
+.ruta-node:last-child{border-right:none;}
+.ruta-node.done{background:var(--jade);color:white;}
+.ruta-node.active{background:var(--jade-pale);border-top:3px solid var(--jade-mid);}
+.ruta-node.pending{background:var(--bg2);}
+.rn-num{font-family:'Cinzel',serif;font-size:32px;font-weight:900;opacity:.15;line-height:1;margin-bottom:6px;}
+.rn-name{font-family:'Cinzel',serif;font-size:12px;letter-spacing:2px;margin-bottom:8px;}
+.ruta-node.done .rn-name{color:var(--jade-dim);}
+.ruta-node.active .rn-name{color:var(--jade);}
+.ruta-node.pending .rn-name{color:var(--smoke);}
+.rn-items{font-size:9px;line-height:2.1;}
+.ruta-node.done .rn-items{opacity:.8;}
+.ruta-node.active .rn-items{color:var(--ink2);}
+.ruta-node.pending .rn-items{color:var(--smoke);}
+.rn-zh{font-family:'Noto Serif SC',serif;font-size:20px;position:absolute;bottom:12px;right:12px;opacity:.2;}
+.ruta-node.done .rn-zh{color:white;opacity:.4;}
+
+/* TAREA CARD */
+.task-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px;}
+.task-card{background:var(--bg2);border:1px solid var(--sep);padding:16px;border-left:4px solid;}
+.tc-done{border-left-color:var(--done);}
+.tc-next{border-left-color:var(--next);}
+.tc-pend{border-left-color:var(--pend);}
+
+.tc-header{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+.tc-status{font-size:8px;padding:2px 8px;border:1px solid;letter-spacing:2px;}
+.s-done{color:var(--done);border-color:var(--done);}
+.s-next{color:var(--next);border-color:var(--next);}
+.s-pend{color:var(--pend);border-color:var(--pend);}
+.tc-name{font-family:'Cinzel',serif;font-size:12px;letter-spacing:1px;color:var(--jade);}
+.tc-body{font-size:10px;line-height:1.9;color:var(--ink2);}
+.tc-sent{font-size:10px;color:var(--jade-mid);margin-top:8px;border-top:1px solid var(--sep);padding-top:6px;}
+.tc-zh{font-family:'Noto Serif SC',serif;font-size:16px;color:var(--red);float:right;margin-left:8px;}
+
+/* DOMINIO BLOCK */
+.dom-row{display:grid;grid-template-columns:200px 1fr 1fr 1fr;gap:0;border:1px solid var(--sep);margin-bottom:8px;background:var(--bg2);}
+.dom-name{background:var(--jade);color:white;padding:14px 16px;display:flex;flex-direction:column;justify-content:center;}
+.dom-name .dn-zh{font-family:'Noto Serif SC',serif;font-size:20px;margin-bottom:4px;}
+.dom-name .dn-es{font-family:'Cinzel',serif;font-size:11px;letter-spacing:2px;}
+.dom-name .dn-sub{font-size:8px;opacity:.7;margin-top:4px;}
+.dom-cell{padding:12px 16px;border-left:1px solid var(--sep);font-size:10px;line-height:1.8;}
+.dom-cell .dc-lbl{font-size:8px;letter-spacing:3px;color:var(--smoke);text-transform:uppercase;margin-bottom:6px;}
+.dom-cell .dc-val{color:var(--ink2);}
+.dom-cell .dc-token{color:var(--jade-mid);font-size:9px;}
+
+/* PENDIENTES LIST */
+.pend-list{background:var(--ink);color:var(--bg);padding:24px 28px;margin-bottom:12px;}
+.pl-title{font-family:'Cinzel',serif;font-size:11px;letter-spacing:4px;color:var(--gold-dim);margin-bottom:20px;text-transform:uppercase;}
+.pl-item{display:grid;grid-template-columns:24px 1fr auto;gap:12px;align-items:start;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.07);font-size:11px;}
+.pl-n{color:var(--gold-dim);font-size:9px;padding-top:2px;}
+.pl-body{line-height:1.7;}
+.pl-body .pb-title{color:rgba(255,255,255,.9);margin-bottom:2px;}
+.pl-body .pb-sent{font-size:9px;color:rgba(255,255,255,.4);font-style:italic;}
+.pl-tag{font-size:8px;padding:2px 8px;border:1px solid;letter-spacing:2px;white-space:nowrap;}
+.pt-next{color:var(--jade-dim);border-color:var(--jade-dim);}
+.pt-f1{color:var(--gold-dim);border-color:var(--gold-dim);}
+.pt-f2{color:rgba(255,255,255,.3);border-color:rgba(255,255,255,.2);}
+
+/* PROMPT */
+.prompt{background:var(--bg3);border:2px solid var(--jade-mid);padding:20px 24px;margin-top:12px;}
+.p-title{font-family:'Cinzel',serif;font-size:10px;letter-spacing:3px;color:var(--jade);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--sep);text-transform:uppercase;}
+.p-code{font-size:10px;line-height:1.9;color:var(--ink2);white-space:pre-wrap;}
+.p-kw{color:var(--jade);}
+.p-zh{font-family:'Noto Serif SC',serif;color:var(--red);font-size:13px;}
+.p-com{color:var(--sep);}
+
+hr.div{border:none;height:1px;background:linear-gradient(90deg,transparent,var(--jade-dim),transparent);margin:48px 0;}
+.footer{border-top:1px solid var(--sep);margin-top:52px;padding-top:20px;display:flex;justify-content:space-between;align-items:center;font-size:10px;color:var(--smoke);}
+.footer-zh{font-family:'Noto Serif SC',serif;font-size:18px;color:var(--jade-mid);}
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="mast">
+  <div>
+    <div class="mast-eyebrow">BALLPAPER 3 / 5 · LABOR DIARIA · RUTA LACHO→KALIL</div>
+    <div class="mast-title">LACHO → KALIL<br>LO QUE FALTA HACER</div>
+    <div class="mast-sub">ASPIRACIONES COMERCIALES · RUTA DE LABOR DIARIA · DOMINIOS ECONÓMICOS · PENDIENTES PRIORIZADOS</div>
+  </div>
+  <div class="mast-zh">
+    <div class="mast-zh-big">路 ䷴</div>
+    <div class="mast-zh-small">H53 · GRADUALIDAD · LA RUTA</div>
+  </div>
+</div>
+
+<!-- RUTA COMPLETA -->
+<div class="sec-label">▸ ruta completa — de lacho a kalil · 5 etapas · donde estamos</div>
+<div class="ruta">
+  <div class="ruta-node done">
+    <div class="rn-num">1</div>
+    <div class="rn-name">LACHO BASE</div>
+    <div class="rn-items">
+      Gramática 9 bibliotecas ✓<br>
+      Tests 25/25 ✓<br>
+      CORPUS 197 docs ✓<br>
+      Ledger 1012 TX ✓<br>
+      GitHub main ✓
+    </div>
+    <div class="rn-zh">基</div>
+  </div>
+  <div class="ruta-node done">
+    <div class="rn-num">2</div>
+    <div class="rn-name">DIRIME IMV</div>
+    <div class="rn-items">
+      RAG boost activo ✓<br>
+      Groq + Ollama ✓<br>
+      chat.py ballpaper ✓<br>
+      Scalar S 0.844 ✓<br>
+      Windsurf IDE ✓
+    </div>
+    <div class="rn-zh">断</div>
+  </div>
+  <div class="ruta-node active">
+    <div class="rn-num">3</div>
+    <div class="rn-name">UNICODE + CEO</div>
+    <div class="rn-items">
+      UNICODE-CHINA tokens →<br>
+      grammar.py CJK →<br>
+      CEO ALPHA IMV →<br>
+      THEATER/RAG →<br>
+      TAXONOMY →
+    </div>
+    <div class="rn-zh">中</div>
+  </div>
+  <div class="ruta-node pending">
+    <div class="rn-num">4</div>
+    <div class="rn-name">KALIL NODOS</div>
+    <div class="rn-items">
+      BARRIOS operativo<br>
+      NORA rating<br>
+      CARILO loans<br>
+      BOLIVAR blockchain<br>
+      elpulsar.app
+    </div>
+    <div class="rn-zh">展</div>
+  </div>
+  <div class="ruta-node pending">
+    <div class="rn-num">5</div>
+    <div class="rn-name">CHINA DUAL</div>
+    <div class="rn-items">
+      WeChat 小程序<br>
+      e-CNY integrado<br>
+      BSN · HL FABRIC<br>
+      Empresa WFOE/JV<br>
+      Interior operativo
+    </div>
+    <div class="rn-zh">终</div>
+  </div>
+</div>
+
+<!-- DOMINIOS ECONÓMICOS -->
+<div class="sec-label">▸ dominios económicos — de origen (3) a expansión kalil + china</div>
+
+<div class="dom-row">
+  <div class="dom-name"><div class="dn-zh">公证</div><div class="dn-es">NOTARÍA</div><div class="dn-sub">DOMINIO ORIGEN #1</div></div>
+  <div class="dom-cell"><div class="dc-lbl">Estado actual</div><div class="dc-val">PRACTICE-NOTARIA en CORPUS<br>TRUST [term] base implementada</div><div class="dc-token">TRUST FOUNDATION · 合同 · H43</div></div>
+  <div class="dom-cell"><div class="dc-lbl">Expansión China</div><div class="dc-val">Notaría virtual online<br>e-signature → 合同 声明<br>Compatible con regulación china</div><div class="dc-token">TRUST [term] · [Nudo de Ocho]</div></div>
+  <div class="dom-cell"><div class="dc-lbl">Próximo paso</div><div class="dc-val">Sentencias bilingües NOTARÍA<br>UNICODE 合同 en grammar.py<br>KALIL contrato soberano</div><div class="dc-token">→ SIGUIENTE SESIÓN</div></div>
+</div>
+
+<div class="dom-row">
+  <div class="dom-name" style="background:var(--blue);"><div class="dn-zh">保管</div><div class="dn-es">CUSTODIA</div><div class="dn-sub">DOMINIO ORIGEN #2</div></div>
+  <div class="dom-cell"><div class="dc-lbl">Estado actual</div><div class="dc-val">PRACTICE-CUSTODIA en CORPUS<br>CRYPTO (shield seat) activo</div><div class="dc-token">CRYPTO (shield) · 安全 · H14</div></div>
+  <div class="dom-cell"><div class="dc-lbl">Expansión China</div><div class="dc-val">Custodia activos digitales<br>e-CNY + crypto exterior<br>BOLIVAR BSN compatible</div><div class="dc-token">CRYPTO (shield) · 安全保管</div></div>
+  <div class="dom-cell"><div class="dc-lbl">Próximo paso</div><div class="dc-val">UNICODE 安全 en grammar.py<br>KALIL BOLIVAR stub operativo<br>Wallet dual EXT/INT</div><div class="dc-token">→ SIGUIENTE SESIÓN</div></div>
+</div>
+
+<div class="dom-row">
+  <div class="dom-name" style="background:var(--red);"><div class="dn-zh">代币</div><div class="dn-es">MEMECOINS</div><div class="dn-sub">DOMINIO ORIGEN #3</div></div>
+  <div class="dom-cell"><div class="dc-lbl">Estado actual</div><div class="dc-val">PRACTICE-MEMECOINS en CORPUS<br>SOCIAL {launch-bot} activo</div><div class="dc-token">SOCIAL {launch-bot} · 数字 · H30</div></div>
+  <div class="dom-cell"><div class="dc-lbl">Expansión China</div><div class="dc-val">Tokens "con características chinas"<br>BSN-compatible NFTs regulados<br>NO ICO opacas</div><div class="dc-token">CRYPTO (spark) · 数字货币</div></div>
+  <div class="dom-cell"><div class="dc-lbl">Próximo paso</div><div class="dc-val">Token soberano LACHO-TOKEN<br>UNICODE 数字 en grammar.py<br>KALIL TANDIL activos</div><div class="dc-token">→ SIGUIENTE SESIÓN</div></div>
+</div>
+
+<hr class="div">
+
+<!-- PENDIENTES PRIORIZADOS -->
+<div class="sec-label">▸ pendientes priorizados — de lacho a kalil · labor diaria ordenada</div>
+<div class="pend-list">
+  <div class="pl-title">BACKLOG SOBERANO — PRIORIZADO · HOY → FASE 3</div>
+
+  <div class="pl-item">
+    <div class="pl-n">01</div>
+    <div class="pl-body">
+      <div class="pb-title">python3 main.py --stats → verificar LACHO_SCORE con CORPUS 197 + Scalar S</div>
+      <div class="pb-sent">SAMU @ =&gt;&lt;= .. audita .. estado_sistema_actual --[Ballestrinque] [term]</div>
+    </div>
+    <span class="pl-tag pt-next">HOY PRIMERO</span>
+  </div>
+  <div class="pl-item">
+    <div class="pl-n">02</div>
+    <div class="pl-body">
+      <div class="pb-title">Crear CORPUS/UNICODE-CHINA-TOKENS.txt · 20 tokens · estructura canónica</div>
+      <div class="pb-sent">STACKING UF[H48] =&gt;&lt;= .. ancla .. unicode_tokens_corpus --[Nudo de Ocho] [term]</div>
+    </div>
+    <span class="pl-tag pt-next">PRÓXIMO</span>
+  </div>
+  <div class="pl-item">
+    <div class="pl-n">03</div>
+    <div class="pl-body">
+      <div class="pb-title">grammar.py: is_chinese() + resolve_chinese_token() + unicode_mode=CHINA</div>
+      <div class="pb-sent">METHOD &lt;operator_flow&gt; =&gt;&lt;= .. modela .. gramatica_china_extension --[Ballestrinque] [term]</div>
+    </div>
+    <span class="pl-tag pt-next">PRÓXIMO</span>
+  </div>
+  <div class="pl-item">
+    <div class="pl-n">04</div>
+    <div class="pl-body">
+      <div class="pb-title">rag.py: integrar THEATER/ + AGENTS/ + RUNNERS/ a build_rag_index()</div>
+      <div class="pb-sent">STACKING UF[H48] =&gt;&lt;= .. ancla .. theater_agents_rag --[Nudo de Ocho] [term]</div>
+    </div>
+    <span class="pl-tag pt-next">PRÓXIMO</span>
+  </div>
+  <div class="pl-item">
+    <div class="pl-n">05</div>
+    <div class="pl-body">
+      <div class="pb-title">grammar.py: ACTIVITY H03→H05→H56→H06 secuencia estados GATE</div>
+      <div class="pb-sent">GATE UF[H05] =&gt;&lt;= .. contiene .. secuencia_H03_H05_H56_H06 --[Nudo Corredizo] [term]</div>
+    </div>
+    <span class="pl-tag pt-next">PRÓXIMO</span>
+  </div>
+  <div class="pl-item">
+    <div class="pl-n">06</div>
+    <div class="pl-body">
+      <div class="pb-title">TAXONOMY_LACHO integrar en validador grammar.py como referencia soberana</div>
+      <div class="pb-sent">TRUST FOUNDATION =&gt;&lt;= .. verifica .. taxonomy_clasificacion_soberana --[As de Guía] [term]</div>
+    </div>
+    <span class="pl-tag pt-next">PRÓXIMO</span>
+  </div>
+  <div class="pl-item">
+    <div class="pl-n">07</div>
+    <div class="pl-body">
+      <div class="pb-title">CEO ALPHA en IMV: cargar CEO_ALPHA_H64.json como módulo operativo</div>
+      <div class="pb-sent">METHOD &lt;operator_flow&gt; =&gt;&lt;= .. modela .. ceo_alpha_64_hexagramas --[Ballestrinque] [term]</div>
+    </div>
+    <span class="pl-tag pt-f1">FASE 1</span>
+  </div>
+  <div class="pl-item">
+    <div class="pl-n">08</div>
+    <div class="pl-body">
+      <div class="pb-title">ELPULSAR dashboard: ballpaper_render() conectar a main loop</div>
+      <div class="pb-sent">WORK {actuator} =&gt;&lt;= .. materializa .. elpulsar_dashboard_visual --[As de Guía] [term]</div>
+    </div>
+    <span class="pl-tag pt-f1">FASE 1</span>
+  </div>
+  <div class="pl-item">
+    <div class="pl-n">09</div>
+    <div class="pl-body">
+      <div class="pb-title">KALIL BARRIOS: primeras sentencias operativas en IMV · banca comunitaria</div>
+      <div class="pb-sent">SOCIAL {launch-bot} =&gt;&lt;= .. lanza .. barrios_banca_diaspora --[As de Guía] [term]</div>
+    </div>
+    <span class="pl-tag pt-f1">FASE 1</span>
+  </div>
+  <div class="pl-item">
+    <div class="pl-n">10</div>
+    <div class="pl-body">
+      <div class="pb-title">KALIL NORA: oracle rating · compatible Sesame Credit · sentencias METHOD</div>
+      <div class="pb-sent">METHOD &lt;stat_onto&gt; =&gt;&lt;= .. calcula .. nora_rating_soberano --[Ballestrinque] [term]</div>
+    </div>
+    <span class="pl-tag pt-f1">FASE 1</span>
+  </div>
+  <div class="pl-item">
+    <div class="pl-n">11</div>
+    <div class="pl-body">
+      <div class="pb-title">FLYBOT → cloud_agent.blue: LACHO→HEADCAT→FLYBOT→HARDWARE</div>
+      <div class="pb-sent">WORK {flybot} =&gt;&lt;= .. ejecuta .. pipeline_headcat_hardware --[As de Guía] [term]</div>
+    </div>
+    <span class="pl-tag pt-f1">FASE 1</span>
+  </div>
+  <div class="pl-item">
+    <div class="pl-n">12</div>
+    <div class="pl-body">
+      <div class="pb-title">elpulsar.app: dominio · roadmap web · versión global + mini-programa WeChat</div>
+      <div class="pb-sent">ACTIVITY UF[H57] =&gt;&lt;= .. penetra .. elpulsar_app_global --[As de Guía] [term]</div>
+    </div>
+    <span class="pl-tag pt-f2">FASE 2</span>
+  </div>
+  <div class="pl-item">
+    <div class="pl-n">13</div>
+    <div class="pl-body">
+      <div class="pb-title">HL FABRIC: 2 nodos físicos · BOLIVAR BSN testnet · trazabilidad</div>
+      <div class="pb-sent">STACKING UF[H52] =&gt;&lt;= .. cristaliza .. hl_fabric_nodo_activo --[Nudo de Ocho] [term]</div>
+    </div>
+    <span class="pl-tag pt-f2">FASE 2</span>
+  </div>
+</div>
+
+<!-- PROMPT SESIÓN ARRANQUE -->
+<div class="sec-label">▸ prompt arranque próxima sesión — copiar directo a windsurf</div>
+<div class="prompt">
+  <div class="p-title">PROMPT INICIO — CONTEXTO MÍNIMO + 3 TAREAS</div>
+  <div class="p-code"><span class="p-com"># CONTEXTO MÍNIMO DE INICIO</span>
+Estado: LACHO v0.2.1 · CORPUS 197 · Tests 25/25 · Scalar S 0.844
+GitHub: main 21e8486 · SSH antiX activo
+Windsurf IDE activo
+
+<span class="p-com"># VERIFICAR PRIMERO</span>
+cd /media/Personal/PLANERAI/DIRIME/IMV && python3 main.py --stats
+
+<span class="p-com"># TAREA BLOQUE 1 (3 en 1):</span>
+<span class="p-kw">1.</span> Crear CORPUS/UNICODE-CHINA-TOKENS.txt — 20 tokens estructura canónica
+<span class="p-kw">2.</span> grammar.py: agregar is_chinese() + resolve_chinese_token() + unicode_mode=CHINA  
+<span class="p-kw">3.</span> rag.py: integrar THEATER/ + AGENTS/ + RUNNERS/ a build_rag_index()
+
+<span class="p-com"># Al terminar:</span>
+python3 tests/test_imv.py && python3 main.py --validate "<span class="p-zh">信任</span> 基础 =><= .. verifica .. <span class="p-zh">主权</span>_soberana --[As de Guía] [term]"</div>
+</div>
+
+<div class="footer">
+  <div>BALLPAPER 3/5 · LACHO → KALIL · LABOR DIARIA · [term] :: activo</div>
+  <div class="footer-zh">路径</div>
+  <div>DIRIME v0.2.1 · 2026-03-08</div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+# BIBLIO-SOURCES(SISTEMAS-NUMERICOS-LACHO).txt
+
+====================================================================
+## SISTEMAS NUMÉRICOS SOBERANOS — HEX · OCTAL · BINARIO
+====================================================================
+
+### 1.0 POSICIÓN EN LA ARQUITECTURA
+
+Los sistemas numéricos definen la convención de nomenclatura
+soberana de archivos (save as) y el ordenamiento secuencial
+en DIRIME LINUX. No son opcionales — son la firma técnica
+única que distingue el tipo constitucional de cada archivo.
+
+Referencia: informe NotebookLM §2 — Sistemas Numéricos
+
+====================================================================
+### 2.0 HEXADECIMAL — archivos orquestadores y documentos propios
+
+USO: orden secuencial de archivos orquestadores y documentos sistema.
+EXTENSIONES que usan hex: .tether  .lacho
+
+CONVENCIÓN:
+  Los archivos se nombran con prefijo hex de 2 dígitos:
+  01_nombre.tether  → primer orquestador
+  0A_nombre.lacho    → décimo documento soberano
+  FF_nombre.tether  → 255to orquestador — techo de bloque
+
+MAPEO EN EL PROYECTO ACTUAL:
+  Los BIBLIO-SOURCES del corpus son la forma pre-hex de .lacho
+  Cuando se implemente el filesystem soberano, cada BIBLIO-SOURCES
+  recibirá su prefijo hexadecimal según su posición en el árbol TERM.
+
+ESTADO: DOCUMENTADO — implementación en CAPA D (DIRIME LINUX completo)
+
+====================================================================
+### 3.0 OCTAL — archivos compilados y hashed
+
+USO: identificación y ordenamiento de archivos .ash (compilados/hashed)
+EXTENSIONES que usan octal: .ash
+
+CONVENCIÓN:
+  Prefijo octal de 3 dígitos:
+  001_nombre.ash  → primer archivo hashed
+  010_nombre.ash  → octavo archivo hashed
+  077_nombre.ash  → 63avo archivo hashed
+  377_nombre.ash  → 255avo — techo octal de 3 dígitos
+
+FUNCIÓN SOBERANA:
+  El formato octal para .ash garantiza que la identidad del archivo
+  compilado es distinguible de los archivos operativos (hex) y
+  nativos (binario). Sin mezcla posible entre capas.
+
+ESTADO: DOCUMENTADO — implementación en CAPA D
+
+====================================================================
+### 4.0 BINARIO — archivos nativos LACHO
+
+USO: firma técnica única para archivos nativos del sistema.
+EXTENSIONES que usan binario: .runner  .bin  .worker  .gate  .door
+                               .registry  .green  .blue
+
+CONVENCIÓN:
+  Prefijo binario de 8 bits (byte completo):
+  00000001_nombre.runner  → primer runner
+  00000010_nombre.bin     → segundo binario nativo
+  11111111_nombre.worker  → 255avo worker — techo de byte
+
+FUNCIÓN SOBERANA:
+  El binario para nativos garantiza la firma más granular.
+  8 bits = 256 posiciones = suficiente para cualquier bloque
+  de archivos de un tipo dentro de un dominio soberano.
+
+ESTADO: DOCUMENTADO — implementación en CAPA D
+
+====================================================================
+### 5.0 TABLA RESUMEN — convención de nomenclatura soberana
+
+  Sistema    Extensiones afectadas       Ejemplo
+  ─────────────────────────────────────────────────────────────
+  Hex        .tether  .lacho            0A_orquestador.tether
+  Octal      .ash                        010_compilado.ash
+  Binario    .runner .bin .worker        00000001_logica.runner
+             .gate .door .registry
+             .green .blue
+
+====================================================================
+### 6.0 RELACIÓN CON TOMO/OFFSET
+
+El OFFSET hexadecimal (0x1A) de la segmentación soberana y el
+prefijo hex de nomenclatura de archivos comparten la misma base.
+Esto no es coincidencia — es diseño soberano:
+  El OFFSET referencia posición dentro del flujo.
+  El prefijo hex referencia posición dentro del árbol de archivos.
+  Ambos son índices soberanos en base 16.
+
+====================================================================
+### 7.0 ESTADO DE IMPLEMENTACIÓN
+
+CAPA D — DIRIME LINUX completo:
+  [ ] Filesystem soberano con reglas de nomenclatura aplicadas
+  [ ] Módulo de naming automático: asigna prefijo según tipo
+  [ ] Validador de nombres: rechaza archivos sin prefijo correcto
+  [ ] Migración de BIBLIO-SOURCES → prefijos hex asignados
+
+====================================================================
+### 8.0 GRAMÁTICA VIVA
+
+WORK {actuator} =><= .. genera .. 0A_documento.lacho --[As de Guía] [term]
+STACKING UF[H52] =><= .. inmutabiliza .. 001_hash.ash --[Nudo de Ocho] [term]
+TRUST [foundation] =><= .. verifica .. firma_tecnica_soberana --[As de Guía] [term]
+
+====================================================================
+[term] :: activo · [seal of secrecy] :: activo
+====================================================================

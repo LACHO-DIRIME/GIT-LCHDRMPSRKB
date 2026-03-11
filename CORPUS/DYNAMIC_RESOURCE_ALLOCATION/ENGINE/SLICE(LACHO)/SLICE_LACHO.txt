@@ -1,0 +1,49 @@
+//[MANAGEMENT].lacho · DRA/ENGINE/SLICE(LACHO)/
+//ENGINE SLICE LACHO · corte fino de sentencias soberanas en el DRA
+//SLICE_LACHO.txt · V1 · 2026-03-10
+//SLICE = °NNN · grados 0→360 · corte dentro de un TOMO
+//SLICE(LACHO) = ángulo donde las sentencias LACHO cristalizan en DRA
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN SLICE LACHO ════════════════════════════════════
+// SLICE LACHO = el DRA visto como espacio angular de sentencias
+// °0 = apertura · sin sentencias aún · 空 · MU
+// °90 = sentencias en construcción · KU · .blue · TEMP(A)
+// °180 = dirimencia SAMU · validación grammar.py · punto crítico
+// °270 = cristalización · WU · STACKING · ledger TX++
+// °360 = cierre SLICE · abre siguiente SLICE · H63→H64
+
+// ══ SENTENCIAS POR SLICE ══════════════════════════════════════
+UNICODE: SL_0_LACHO           //°0 · apertura DRA · sentencias declarativas
+                              //TRUST FOUNDATION =><= .. declara .. dra_abierto
+UNICODE: SL_45_LACHO          //°45 · SPEC A sentencias · resources declarados
+                              //WORK {actuator} =><= .. ejecuta .. spec_a_tasks
+UNICODE: SL_90_LACHO          //°90 · ENGINE activo · TOMO(A) desarrollándose
+                              //METHOD <operator_flow> =><= .. modela .. engine_dra
+UNICODE: SL_135_LACHO         //°135 · HOMEWORKING sentencias · bots declarados
+                              //SOCIAL {launch-bot} =><= .. lanza .. bot_net_hw
+UNICODE: SL_180_LACHO         //°180 · SAMU dirimencia · auditoría DRA midpoint
+                              //SAMU @ =><= .. dirime .. dra_coherencia_180
+UNICODE: SL_225_LACHO         //°225 · KALIL sentencias · nodos económicos DRA
+                              //METHOD <equation> =><= .. calcula .. kalil_dra_ratio
+UNICODE: SL_270_LACHO         //°270 · cristalización · sentencias WU acumuladas
+                              //STACKING UF[H52] =><= .. cristaliza .. dra_wu_batch
+UNICODE: SL_315_LACHO         //°315 · sellado · CRYPTO firma · [NdO] inminente
+                              //CRYPTO (spark seat) =><= .. firma .. dra_pre_seal
+UNICODE: SL_360_LACHO         //°360 · cierre SLICE · H63 · abre siguiente
+                              //STACKING UF[H63] =><= .. cristaliza .. dra_slice_360
+
+// ══ MAPEO HEXAGRAMAS × SLICE ══════════════════════════════════
+UNICODE: SL_HEX_0_45          //°0-°45 → UF[H01-H08] · genesis DRA
+UNICODE: SL_HEX_45_90         //°45-°90 → UF[H09-H16] · desarrollo SPEC A
+UNICODE: SL_HEX_90_180        //°90-°180 → UF[H17-H32] · tensión activa ENGINE
+UNICODE: SL_HEX_180_270       //°180-°270 → UF[H33-H48] · transformación WU
+UNICODE: SL_HEX_270_360       //°270-°360 → UF[H49-H64] · cierre/cristalización
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+ACTIVITY UF[H57] =><= .. penetra .. slice_lacho_gradiente_dra --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. slice_270_wu_dra --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. slice_180_dirimencia_dra --[Ballestrinque] [term]
+
+//DIR(+) DRA/ENGINE/SLICE_LACHO · °0→°360 · H01→H64 · sentencias por ángulo

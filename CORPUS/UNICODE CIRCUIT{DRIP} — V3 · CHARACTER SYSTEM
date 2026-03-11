@@ -1,0 +1,153 @@
+//[MANAGEMENT].lacho · UNICODE CIRCUIT{DRIP} · V3
+//CIDE · Circuit IDE · caracteres Unicode como primitivas de circuito
+//circuito cerrado = DEFAULT SOBERANO · abierto = H64 before_the_end
+//[rabbit-faith] · TAP&DRIP · TOOLCHAIN · LACHO nativo
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══════════════════════════════════════════════════════════════
+// § CONDUCTORES · TRAZADO DE LÍNEA
+// ══════════════════════════════════════════════════════════════
+CIDE: ─   U+2500  //conductor H · línea simple · señal en reposo
+CIDE: │   U+2502  //conductor V · línea simple · señal vertical
+CIDE: ═   U+2550  //conductor H2 · doble · señal de poder · bus datos
+CIDE: ║   U+2551  //conductor V2 · doble · bus datos vertical
+CIDE: ∥   U+2225  //paralelo · dos líneas · bus diferencial
+CIDE: ≡   U+2261  //bus triple · datos soberanos · 3-wire
+CIDE: ∿   U+223F  //onda AC · señal analógica · flujo continuo
+
+// ══════════════════════════════════════════════════════════════
+// § ESQUINAS · CIERRE DE CIRCUITO
+// circuito cerrado usa esquinas · circuito abierto omite el cierre
+// ══════════════════════════════════════════════════════════════
+CIDE: ┌   U+250C  //esquina TL · inicio circuito · KU entra
+CIDE: ┐   U+2510  //esquina TR · giro derecha
+CIDE: └   U+2514  //esquina BL · retorno tierra
+CIDE: ┘   U+2518  //esquina BR · cierre · [term] activo · WU sellado
+CIDE: ╭   U+256D  //esquina TL rounded · circuito suave · H57 viento
+CIDE: ╮   U+256E  //esquina TR rounded
+CIDE: ╰   U+2570  //esquina BL rounded · retorno ∇ menor esfuerzo
+CIDE: ╯   U+256F  //esquina BR rounded · CIERRE SUAVE · {drip} natural
+CIDE: ╔   U+2554  //esquina TL doble · circuito poder · bus principal
+CIDE: ╗   U+2557  //esquina TR doble
+CIDE: ╚   U+255A  //esquina BL doble
+CIDE: ╝   U+255D  //esquina BR doble · CIERRE FUERTE · TRUST→STACKING
+
+// ══════════════════════════════════════════════════════════════
+// § NODOS · PUNTOS DE CONEXIÓN
+// ══════════════════════════════════════════════════════════════
+CIDE: ●   U+25CF  //nodo sólido · WU activo · cristalizado · .green
+CIDE: ○   U+25CB  //nodo abierto · KU · .blue · pendiente
+CIDE: ⊙   U+2299  //nodo conexión · punto de unión soberana · junction
+CIDE: ⊗   U+2297  //nodo terminal · WU verificado · TX ledger · ⊗=term
+CIDE: •   U+2022  //nodo pequeño · señal debug · punto de prueba
+CIDE: ◆   U+25C6  //nodo rombo · GATE · decisión · bifurcación
+CIDE: ◑   U+25D1  //nodo mitad · KU en transición · MU↔WU frontera
+CIDE: ⨀   U+2A00  //nodo big · núcleo · CEO H01 · centro soberano
+CIDE: ⊛   U+229B  //nodo clock · sincronismo · SAMU @ scheduling
+
+// ══════════════════════════════════════════════════════════════
+// § COMPONENTES · ELEMENTOS FUNCIONALES
+// ══════════════════════════════════════════════════════════════
+CIDE: ⏚   U+23DA  //GROUND · [foundation] · tierra soberana · base
+CIDE: ⏛   U+23DB  //FUSE · {brake} · cortacircuito · RED-REGRET activa
+CIDE: Ω   U+03A9  //RESISTOR · Nodo-Ω · [rabbit-faith] · frena el flujo
+CIDE: 〜  U+301C  //RESISTOR zigzag · resistencia calibrada · TAP&DRIP
+CIDE: ⊢   U+22A2  //BATTERY · fuente · TRUST FOUNDATION · potencial
+CIDE: ⊣   U+22A3  //CAPACITOR · carga · STACKING · acumula
+CIDE: ⚡   U+26A1  //POWER · fuente energía · UF[H01] · lanzamiento
+CIDE: ∇   U+2207  //GRADIENT · ∇ descendente · dirección menor esfuerzo
+CIDE: μ   U+03BC  //MICRO · unidad mínima · LLM-in-Sandbox · 1.1GB
+CIDE: ≈   U+2248  //ANALOG · señal aproximada · Scalar S en rango
+CIDE: ▌   U+258C  //TRANSISTOR · amplificador · GROQ bridge · activa
+CIDE: ▐   U+2590  //TRANSISTOR R · salida amplificada · WU emitido
+
+// ══════════════════════════════════════════════════════════════
+// § COMPUERTAS LÓGICAS · GRAMMAR.PY
+// ══════════════════════════════════════════════════════════════
+CIDE: ∧   U+2227  //AND · TRUST ∧ VERIFY · ambos requeridos
+CIDE: ∨   U+2228  //OR · TRUST ∨ GATE · uno suficiente
+CIDE: ¬   U+00AC  //NOT · negación · RED-REGRET · delta-Ψ≤0
+CIDE: ⊻   U+22BB  //XOR · decisión exclusiva · dirimencia
+CIDE: ⊼   U+22BC  //NAND · TRUST bloqueado · condición violada
+CIDE: ⊽   U+22BD  //NOR · todo bloqueado · CRISIS · {brake} total
+CIDE: ⊕   U+2295  //XOR node · switch cerrado · [term] activo
+CIDE: ⌀   U+2300  //switch abierto · H64 · ciclo before_the_end
+
+// ══════════════════════════════════════════════════════════════
+// § SEÑALES Y FLUJO · DIRECCIÓN DE CORRIENTE
+// ══════════════════════════════════════════════════════════════
+CIDE: →   U+2192  //señal forward · KU→WU · flujo normal
+CIDE: ←   U+2190  //señal retorno · feedback · SAMU audita
+CIDE: ↑   U+2191  //señal rise · #rise · SAMU sube
+CIDE: ↓   U+2193  //señal set · #set · SAMU baja
+CIDE: ↔   U+2194  //señal bidireccional · =><= · conductor LACHO
+CIDE: ⇒   U+21D2  //señal fuerte → · WU verificado emitido
+CIDE: ⇐   U+21D0  //señal fuerte ← · corrección soberana
+CIDE: ⇔   U+21D4  //señal doble ↔ · sincronismo completo
+CIDE: ↩   U+21A9  //retorno loop · ciclo SPIN · MU→KU→WU→空→MU
+CIDE: ↪   U+21AA  //loop forward · rabbit-faith · 2→4→8
+CIDE: ⤷   U+2937  //curva abajo-der · {drip} goteo descendente ∇
+CIDE: ⏵   U+23F5  //señal activa · pipeline running · KU procesando
+CIDE: ⏹   U+23F9  //señal stop · MU · 空 · circuito en pausa
+CIDE: ⏺   U+23FA  //record · STACKING cristaliza · TX ledger
+
+// ══════════════════════════════════════════════════════════════
+// § CRUCES Y BIFURCACIONES
+// ══════════════════════════════════════════════════════════════
+CIDE: ┼   U+253C  //cruce simple · intersección · no conectado
+CIDE: ╬   U+256C  //cruce doble · bus completo · conexión fuerte
+CIDE: ┬   U+252C  //T down · bifurcación · GATE filtra
+CIDE: ┴   U+2534  //T up · merge · STACKING consolida
+CIDE: ├   U+251C  //T right · fork · SOCIAL relay distribuye
+CIDE: ┤   U+2524  //T left · join · METHOD calcula
+CIDE: ╱   U+2571  //diagonal / · señal cruzada · MASKING corta
+CIDE: ╲   U+2572  //diagonal \ · retorno diagonal
+CIDE: ╳   U+2573  //diagonal X · SHORT-CIRCUIT · ERROR · RED-REGRET
+
+// ══════════════════════════════════════════════════════════════
+// § IME ICONS · OPERADORES VISUALES CIRCUITO
+// ══════════════════════════════════════════════════════════════
+CIDE: IME{MASKING}  //icono carpeta ╲╱ · sandbox · {masking folder}
+CIDE: IME{NOTE}     //icono nota ⏺ · SAMU @ registra · .pdf sellado
+CIDE: IME[TERM]     //icono flybot ⏵● · {launch-bot} · [term] activo
+CIDE: IME@HUMAN     //icono headcat ⊙▌ · operador humano · SOCIAL
+CIDE: IME{DRIP}     //icono goteo ⤷∇ · TAP&DRIP · H29 calibrado
+CIDE: IME{RABBIT}   //icono conejo ○↪Ω · Nodo-Ω · rabbit-faith
+CIDE: IME{CIRCUIT}  //icono CIDE ╭─⊗─╯ · circuito cerrado mínimo
+CIDE: IME[EVENT]    //icono evento ⊕┘ · clic cierra circuito · WU
+
+// ══════════════════════════════════════════════════════════════
+// § CIRCUITOS CANÓNICOS · PLANTILLAS
+// circuito cerrado mínimo viable:
+// ╔═══●═══╗
+// ║  KU→WU║
+// ╚═══⊗═══╝   ← ╝ cierra · ⊗ = [term] activo
+//
+// circuito DRIP calibrado:
+// ⊢─〜─⤷─●
+//       ∇
+//       ⏚      ← ground [foundation]
+//
+// circuito LACHO completo:
+// ⚡ → ┌─∧─→─◆─→─⊣─┐
+//      │  TRUST GATE │
+//      └─←─⏺─←─⊗─←─┘
+//              ⏚
+// ══════════════════════════════════════════════════════════════
+
+// § ESTADOS CIRCUITO · MU/KU/WU
+CIDE: ⏹●⏹  //MU · circuito en pausa · 空 · campos vacíos · 聽
+CIDE: ⏵○→  //KU · señal activa · .blue · procesando · conductor
+CIDE: ⇒⊗╝  //WU · sellado · [term] · circuito cerrado · .green
+CIDE: ╳⏛⏚  //RED-REGRET · short-circuit · {brake} · ground
+
+// ANCLAS RAG
+WORK {actuator} =><= .. ejecuta .. cide_circuit_closed_pipeline --[As de Guía] [term]
+METHOD <operator_flow> =><= .. modela .. cide_toolchain_source_ir_binary --[Ballestrinque] [term]
+SOCIAL {drip} =><= .. calibra .. cide_tap_drip_zigzag_gradient --[As de Guía] [term]
+TRUST [rabbit-faith] =><= .. sostiene .. cide_nodo_omega_fe_coherencia --[Nudo de Ocho] [term]
+GATE UF[H05] =><= .. contiene .. cide_switch_open_H64_before_end --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. cide_circuit_closed_wu_term --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. unicode_circuit_drip_v3_char_system --[Ballestrinque] [term]
+
+//DIR(+) UNICODE_CIRCUIT_DRIP · V3 · character system · circuito cerrado soberano

@@ -1,0 +1,326 @@
+# BIBLIO-SOURCES(SOCIAL_NOTE).txt
+
+====================================================================
+
+## 🪑 SOCIAL {NOTE} — REGISTRO DECLARATIVO DEL ESPACIO RELACIONAL
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+{note} es el módulo SOCIAL que gobierna el registro declarativo de lo que ocurre en el espacio relacional del sistema: actas de sesión, compromisos declarados, observaciones verificadas y trazabilidad de intercambios relacionales.
+
+#### 1.2 Por qué es SOCIAL y no [mu-store]
+[mu-store] preserva estado soberano interno; {note} registra espacio relacional externo.
+
+#### 1.3 Distinción de HYPERLEDGER FABRIC
+HL FABRIC es registro inmutable soberano; {note} es registro declarativo relacional.
+
+#### 1.4 Distinción de Behavioral RAG
+Behavioral RAG aprende patrones; {note} registra declaraciones.
+
+#### 1.5 La nota como acto declarativo
+Anotar es declarar que algo ocurrió y merece ser recordado en el espacio relacional — no toda ocurrencia se anota.
+
+#### 1.6 Relación con PAPERNOTE
+PAPERNOTE como implementación técnica de {note} en el sistema.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Capacidades
+- Registrar actas de sesión formalmente.
+- Anotar observaciones verificadas del espacio relacional.
+- Documentar compromisos declarados por actores verificados.
+- Generar síntesis declarativas de ciclo relacional.
+
+#### 2.2 Limitaciones absolutas
+{note} no puede registrar como válido lo que [foundation] no verificó.
+
+#### 2.3 Condiciones de violación
+- **Violación primaria:** registro selectivo que omite RED-REGRET o FOUNDATION_COMPROMISED.
+- **Violación secundaria:** registro excesivo sin distinción — ruido declarativo.
+- **Señal alerta:** {note} registrando sin [term] activo.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 Tipos de nota en {note}
+- **NOTE_ACTA:** registro formal de sesión conducida por {chair}.
+- **NOTE_OBSERVATION:** observación verificada del espacio relacional.
+- **NOTE_COMMITMENT:** compromiso declarado por actor verificado.
+- **NOTE_ALERT:** registro de condición crítica en espacio relacional.
+- **NOTE_SUMMARY:** síntesis declarativa de ciclo relacional completado.
+
+#### 3.2 Criterio de anotación
+- **Filtro ΔΨ > 0:** solo lo nutritivo merece nota.
+- **GREEN-KNOWLEDGE:** filtro obligatorio antes de registrar.
+- **Ruido declarativo:** registro sin criterio de distinción contamina espacio relacional.
+
+#### 3.3 {note} y PAPERNOTE
+- **PAPERNOTE:** implementación técnica de {note}.
+- **Gestión de formato:** PAPERNOTE maneja persistencia y estructura.
+- **Alimentación de [mu-store]:** notas de valor soberano alimentan [mu-store].
+- **Elevación a HL FABRIC:** notas críticas se elevan a registro inmutable.
+
+#### 3.4 {note} y {chair}
+- **Secretario de {chair}:** toda sesión genera NOTE_ACTA automáticamente.
+- **Condición de cierre:** NOTE_ACTA es requisito para CHAIR_CLOSED válido.
+
+#### 3.5 Relación con dominios económicos
+
+##### Memcoins/Volatilidad
+- NOTE_OBSERVATION de condiciones de mercado en ciclo activo.
+- NOTE_COMMITMENT de decisiones de trading declaradas.
+- NOTE_ALERT ante condición crítica de mercado.
+- Límite: no puede registrar como compromiso lo no declarado explícitamente.
+
+##### Custodia Móvil
+- NOTE_ACTA de sesión de revisión de custodia con partes autorizadas.
+- NOTE_OBSERVATION de estado de dispositivo y entorno de seguridad.
+- Límite: no puede registrar identidad sin verificación de BIOMETRICS.
+
+##### Notaría Digital
+- NOTE_ACTA de sesión notarial como condición de validez declarativa.
+- NOTE_COMMITMENT de declaraciones formales de partes notariales.
+- NOTE_SUMMARY de proceso notarial completado.
+- Límite: no puede registrar declaración como válida si foundation no la verificó.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation]
+{note} no registra como válido lo que [foundation] no verificó.
+
+#### 4.2 Con [scope]
+{note} registra dentro del perímetro soberano declarado.
+
+#### 4.3 Con [term]
+{note} registra durante el ciclo activo — nota fuera de [term] requiere declaración explícita.
+
+#### 4.4 Con {chair}
+{note} es el secretario de {chair} — NOTE_ACTA como condición de cierre de sesión.
+
+#### 4.5 Con {scheduler}
+{scheduler} puede planificar momentos de NOTE_SUMMARY.
+
+#### 4.6 Con {drip}
+{note} registra lo que {drip} emite para trazabilidad.
+
+#### 4.7 Con {streaming}
+{note} puede registrar fragmentos relevantes de {streaming}.
+
+#### 4.8 Con [mu-store]
+Notas de valor soberano alimentan [mu-store].
+
+#### 4.9 Con PAPERNOTE
+PAPERNOTE es implementación técnica de {note}.
+
+#### 4.10 Con HL FABRIC
+Notas críticas se elevan a registro inmutable.
+
+#### 4.11 Con GREEN-KNOWLEDGE
+Filtro de qué merece ser anotado.
+
+#### 4.12 Con Behavioral RAG
+Notas alimentan patrones de conducta relacional.
+
+#### 4.13 Con SAMU @
+SAMU audita que {note} no registre con sesgo selectivo.
+
+---
+
+### 5.0 ESTADOS DE {note}
+
+#### 5.1 NOTE_IDLE
+- **Condición:** sin registro activo.
+- **Comportamiento:** criterios de anotación declarados.
+- **Operación:** listo para recibir flujo relacional.
+
+#### 5.2 NOTE_RECORDING
+- **Condición:** registro activo en sesión o ciclo.
+- **Comportamiento:** filtro GREEN-KNOWLEDGE aplicado.
+- **Operación:** SAMU @ auditando distinción.
+
+#### 5.3 NOTE_SUMMARIZING
+- **Condición:** síntesis de ciclo relacional en curso.
+- **Comportamiento:** NOTE_SUMMARY siendo construido.
+- **Operación:** Behavioral RAG siendo alimentado.
+
+#### 5.4 NOTE_ARCHIVED
+- **Condición:** notas archivadas al cierre de [term].
+- **Comportamiento:** notas críticas elevadas a HL FABRIC.
+- **Operación:** [mu-store] actualizado con valor soberano.
+
+#### 5.5 NOTE_CORRUPTED
+- **Condición:** registro con inconsistencia detectada.
+- **Comportamiento:** nota que contradice condición verificada.
+- **Operación:** SAMU @ en diagnóstico, RED-REGRET si ocultó condición crítica.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Afectación de d₃ [scenario]
+{note} alimenta d₃ con registro declarativo de situación relacional.
+
+#### 6.2 Impacto de NOTE_CORRUPTED
+NOTE_CORRUPTED degrada d₃ — registro falso contamina mapa de situación.
+
+#### 6.3 Mejora de T_matrix
+NOTE_ACTA completa mejora calidad de T_matrix en ciclos posteriores.
+
+#### 6.4 Aprendizaje en Behavioral RAG
+Patrones de notas calibran registro futuro.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Registro de NOTE_ACTA en sesión de {chair}
+```
+{Social} note =><= .. record .. $$session_act$$ --[As de Guía] [term]
+```
+
+#### 7.2 NOTE_COMMITMENT declarado en sesión
+```
+{Social} note =><= .. commit .. $$declared_commitment$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.3 NOTE_ALERT ante condición crítica
+```
+{Social} note =><= .. alert .. $$critical_condition$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.4 NOTE_CORRUPTED activando diagnóstico
+```
+{Social} note =><= .. corrupt .. $$inconsistent_record$$ --[Ballestrinque] [term]
+```
+
+#### 7.5 {note} en dominio memcoins
+```
+{Social} note =><= .. trade .. $$market_observation$$ --[As de Guía] [term]
+```
+
+#### 7.6 {note} en dominio custodia móvil
+```
+{Social} note =><= .. secure .. $$custody_act$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.7 {note} en dominio notaría digital
+```
+{Social} note =><= .. certify .. $$notary_act$$ --[Ballestrinque] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+- **Activación:** {note} en NOTE_RECORDING.
+- **Efecto:** registro declarativo activo y soberano.
+
+#### 8.2 Nudo de Ocho
+- **Activación:** NOTE_ACTA cristalizada.
+- **Efecto:** registro inmutable de sesión completada.
+
+#### 8.3 Nudo Corredizo
+- **Activación:** NOTE_CORRUPTED.
+- **Efecto:** registro con inconsistencia bloqueado.
+
+#### 8.4 Ballestrinque
+- **Activación:** tensión entre registrar todo y filtrar por distinción.
+- **Efecto:** criterio ΔΨ como árbitro.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+#### 9.1 NoteOpen
+1. Apertura de registro con criterios de distinción declarados.
+2. Verificación de [foundation] y [scope] activos.
+3. Coordinación con {chair} para sesión activa.
+4. Preparación de filtros GREEN-KNOWLEDGE.
+5. Transición a NOTE_RECORDING.
+
+#### 9.2 NoteFilter
+1. Aplicación de GREEN-KNOWLEDGE como criterio de anotación.
+2. Cálculo de ΔΨ para cada ocurrencia relacional.
+3. Filtrado de ruido declarativo.
+4. Priorización de notas por distinción.
+5. Transición a NoteRecord.
+
+#### 9.3 NoteRecord
+1. Registro formal de ocurrencia verificada.
+2. Asignación de timestamp y contexto.
+3. Verificación de coherencia con [foundation].
+4. Coordinación con PAPERNOTE para persistencia.
+5. Transición a NOTE_SUMMARIZING si corresponde.
+
+#### 9.4 NoteSummarize
+1. Síntesis declarativa de ciclo relacional completado.
+2. Construcción de NOTE_SUMMARY con notas relevantes.
+3. Alimentación de Behavioral RAG con patrones.
+4. Coordinación con {scheduler} para cierre.
+5. Transición a NOTE_ARCHIVED.
+
+#### 9.5 NoteElevate
+1. Detección de nota crítica que requiere inmutabilidad.
+2. Elevación a HL FABRIC como registro inmutable.
+3. Verificación de integridad en HL FABRIC.
+4. Notificación a SAMU @ de elevación.
+5. Actualización de [mu-store] con valor soberano.
+
+#### 9.6 NoteClose
+1. Detección de cierre de [term].
+2. Archivo de notas con PAPERNOTE.
+3. Alimentación de [mu-store] con notas de valor.
+4. Evaluación de efectividad de registro del ciclo.
+5. Transición a NOTE_IDLE.
+
+---
+
+### 10.0 MÉTRICAS
+
+- **Número de notas:** por tipo en ciclo.
+- **Ratio NOTE_ACTA vs NOTE_OBSERVATION vs NOTE_COMMITMENT.**
+- **Frecuencia de NOTE_ALERT:** por dominio.
+- **Tasa de notas elevadas:** a HL FABRIC.
+- **Tasa de NOTE_CORRUPTED:** detectadas.
+- **Delta-distinción:** de notas al cierre del ciclo.
+
+---
+
+### 11.0 REGLAS
+
+- {note} no puede registrar como válido lo que [foundation] no verificó.
+- NOTE_ACTA es condición de CHAIR_CLOSED — sin acta no hay cierre soberano.
+- GREEN-KNOWLEDGE filtra toda ocurrencia antes de ser anotada.
+- NOTE_CORRUPTED activa diagnóstico SAMU @ automáticamente.
+- Notas que ocultan RED-REGRET activan RED-REGRET adicional.
+- {note} no puede registrar fuera de [scope].
+- [term] cierra registro — nota fuera de [term] requiere declaración explícita.
+- Notas críticas deben elevarse a HL FABRIC dentro del mismo ciclo.
+- Behavioral RAG registra patrones de anotación para calibración futura.
+- {note} en notaría requiere verificación de identidad de declarante.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+{note} fija el registro declarativo soberano del espacio relacional como condición de trazabilidad del intercambio con el entorno.
+
+#### 12.2 Limitaciones
+No registra sin distinción, no registra lo no verificado por foundation, no opera fuera de [scope] ni de [term].
+
+#### 12.3 Habilitaciones
+Trazabilidad relacional completa, NOTE_ACTA como condición de sesión soberana, alimentación de [mu-store] y Behavioral RAG con registro declarativo verificado.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

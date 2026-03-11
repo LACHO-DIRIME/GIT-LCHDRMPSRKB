@@ -1,0 +1,110 @@
+# BIBLIO-SOURCES(DIRIME-LINUX-ARQUITECTURA).txt
+Referencia: análisis GEMINI ACERCA DEL FUTURO OS
+
+====================================================================
+## 1.0 ARQUITECTURA OBJETIVO — UNIKERNEL SOBERANO
+
+Unikernel: modelo + drivers + LACHO compilados en un solo binario.
+Sin escritorio. Sin servicios innecesarios. Sin bash como init.
+El binario es el OS.
+
+Especificaciones objetivo:
+  RAM base OS:     ~150MB
+  RAM disponible:  resto para modelo cuantizado GGUF
+  Hardware actual: i5-4440 · 12GB RAM · Debian/Mint base
+  Motor inferencia: llama.cpp con cuantización GGUF
+  Lenguaje bridge: Rust (seguridad + velocidad de tensores)
+
+Base recomendada: Debian Minimal / Netinst
+  Estabilidad kernel · apt para dependencias numéricas
+  Eliminar: GUI · impresión · servicios innecesarios
+  Conservar: kernel · red · disco · apt · Python3
+
+====================================================================
+## 2.0 TRES ARQUITECTURAS — DE MENOR A MAYOR COMPLEJIDAD
+
+2.1 MICROKERNEL (CAPA C)
+  Kernel gestiona solo CPU y RAM.
+  LACHO opera en User Space con privilegios altos.
+  Lenguaje: Rust
+  Estado: CAPA C — PC nueva
+
+2.2 UNIKERNEL (CAPA D objetivo)
+  Modelo + drivers + LACHO = un solo binario.
+  Se instala directamente en SSD.
+  Al arrancar: procesador 100% dedicado al modelo.
+  Latencia mínima posible — equivalente a ASIC especializado.
+  Estado: CAPA D — DIRIME LINUX completo
+
+2.3 LANGUAGE MODEL OS — LlamaOS (arquitectura conceptual)
+  Context Window → RAM (lo que el sistema está pensando)
+  Weights (pesos) → CPU/GPU (conocimiento fijo)
+  Tools           → drivers directos a disco y red
+  Interrupciones  → input soberano → respuesta LACHO
+  Diferencia con Gemini: LACHO agrega gramática verificable
+  entre el input y el modelo — sin alucinaciones de comandos.
+
+====================================================================
+## 3.0 VENTAJA SOBERANA SOBRE PROPUESTA GEMINI
+
+Gemini propone: hardware → modelo → output
+DIRIME implementa: humano → LACHO → SAMU → ledger → modelo → output
+
+La diferencia es trazabilidad soberana:
+  - Gemini no tiene gramática de verificación intermedia
+  - Sin LACHO el modelo puede alucinar comandos del sistema
+  - El ledger inmutable no existe en ninguna propuesta Gemini
+  - STACKING es el Semantic File System que Gemini propone
+    como concepto futuro — DIRIME ya lo tiene operativo en IMV
+
+====================================================================
+## 4.0 HOJA DE RUTA TÉCNICA
+
+AHORA (hardware actual · Mint/Debian):
+  Shell Inteligente: init carga DIRIME · no bash
+  Prototipo TTY: python3 main.py como proceso principal
+  llama.cpp + Ollama: motor local (espera PC nueva)
+
+CAPA C (PC nueva · Ryzen):
+  Microkernel User Space con LACHO privilegiado
+  eBPF como CAT(OS) — Kernel-Model Bridge
+  Ollama local · swap transparente desde Groq
+  CAT(SSH) · CAT(SCAN)
+
+CAPA D (DIRIME LINUX completo):
+  Unikernel soberano compilado
+  LinuxBoot — kernel solo como bootloader
+  CAT(MU) · CAT(BOOT) · CAT(ALARM)
+  Semantic File System real via STACKING
+  WEB3 Interface · dos nodos físicos
+
+====================================================================
+## 5.0 GRAMÁTICA VIVA
+
+TRUST [foundation] =><= .. inicializa .. hardware_soberano
+  --[As de Guía] [term]
+WORK {actuator} =><= .. compila .. binario_unikernel
+  --[Nudo de Ocho] [term]
+CRYPTO (spark seat) =><= .. autoriza .. arranque_soberano
+  --[As de Guía] [term]
+GATE UF[H05] =><= .. espera .. kernel_listo
+  --[Ballestrinque] [term]
+SAMU @ =><= .. dirime .. comando_sistema
+  --[As de Guía] [term]
+
+====================================================================
+## 6.0 ARQUITECTURA OBJETIVO — UNIKERNEL SOBERANO
+
+  Unikernel: modelo + drivers + LACHO compilados en un solo binario.
+  Sin escritorio. Sin servicios innecesarios. Sin bash como init.
+  RAM base: ~150MB para OS. Resto disponible para modelo cuantizado.
+  Motor de inferencia: llama.cpp con cuantización GGUF.
+  Prototipo TTY: init carga DIRIME directamente — no bash.
+  LinuxBoot: kernel Linux solo para inicializar hardware,
+             luego cede control al binario soberano DIRIME.
+  Lenguaje objetivo: Rust para el bridge kernel-modelo.
+  Estado: CAPA D — horizonte largo
+
+====================================================================
+[term] :: activo · [seal of secrecy] :: activo
+====================================================================

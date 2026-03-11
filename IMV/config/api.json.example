@@ -1,0 +1,1 @@
+{"provider": "openai", "key": "sk-PONER-CLAVE-AQUI", "model": "gpt-4o-mini", "note": "Copiar como api.json y agregar clave real. NUNCA commitear api.json."}

@@ -1,0 +1,179 @@
+//[MANAGEMENT].lacho · UNICODE MU-STORE ENGINE CLUSTERING HOMEWORKING
+//UNICODE_MU-STORE_ENGINE_CLUSTERING_HOMEWORKING.txt · V1 · 2026-03-10
+//HOMEWORKING = trabajos hospedados en recursos free/escalables
+//coordinados con feedback en ventanas pautadas: 06:00 y 18:00
+//HUMAN accede vía ZIPPER · solo en horario DIURNO 06:00→18:00
+//BOTS·AGENTES·AUTOMATIZACIONES operan en su propia red 00:00→24:00
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//空聽數 · el HUMAN escucha en la ventana · los BOTS cuentan siempre
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN HOMEWORKING ════════════════════════════════════
+// HOMEWORKING = arquitectura distribuida sobre hosting gratuito/escalable
+// No hay servidor propio · hay coordinación soberana de recursos ajenos
+// FT_ROTATE = política central · rotar cuando se satura el tier libre
+// Principio TAP&DRIP · DRIP_FLOW · goteo medido · no pleno · dosificado
+// ZIPPER = interfaz de acceso HUMAN · comprime/descomprime contexto
+// Los BOTS no esperan al HUMAN · operan en su NOW_OBS continuo
+
+// ══ TOPOLOGÍA HOMEWORKING ═════════════════════════════════════
+UNICODE: HW_TOPOLOGY          //topología distribuida · sin hub central propio
+                              //hub = repo GitHub + feedback JSON soberano
+UNICODE: HW_HUB               //GitHub repo · hub de sincronización soberana
+                              //FABRIC_HASH · trazabilidad · STACKING UF[H52]
+UNICODE: HW_ZIPPER            //ZIPPER · interfaz HUMAN · comprime contexto
+                              //MU_CONTEXT comprimido en payload · portátil
+UNICODE: HW_WINDOW_DAY        //ventana DIURNA · 06:00→18:00 · HUMAN activo
+                              //ZIPPER disponible · acceso lectura+escritura
+UNICODE: HW_WINDOW_FEED       //ventanas feedback · 06:00 y 18:00 exactas
+                              //BOTS reportan estado · HUMAN decide · SAMU @
+UNICODE: HW_WINDOW_NIGHT      //ventana NOCTURNA · 18:00→06:00 · HUMAN offline
+                              //BOTS·AGENTES operan solos · red propia activa
+UNICODE: HW_NET_BOT           //red de bots · networking propio · sin HUMAN
+                              //SOCIAL {relay} · {launch-bot} · {flybot}
+
+// ══ ZIPPER — INTERFAZ HUMAN ═══════════════════════════════════
+// ZIPPER = compresor/descompresor de contexto soberano
+// El HUMAN no carga todo el MU-STORE · carga el ZIP del ciclo
+// Al cerrar sesión HUMAN el ZIPPER sella el ZIP · MU_SAVING
+UNICODE: ZIP_OPEN             //ZIPPER abre · 06:00 · HUMAN conecta · MuLoad
+                              //descarga MU_CONTEXT comprimido del hub
+UNICODE: ZIP_READ             //HUMAN lee reportes de bots · feedback 06:00
+                              //SAMU @ presenta: Scalar S · TX · gaps · pends
+UNICODE: ZIP_DECIDE           //HUMAN decide · prioridades · nuevas tareas
+                              //WORK {actuator} =><= .. ejecuta .. zipper_decision
+UNICODE: ZIP_WRITE            //HUMAN escribe nuevas sentencias · LACHO Builder
+                              //validación local + push al hub soberano
+UNICODE: ZIP_CLOSE            //ZIPPER cierra · 18:00 · HUMAN desconecta
+                              //MuSave · ZIP comprimido → hub · BOTS toman
+UNICODE: ZIP_PAYLOAD          //payload ZIP · MU_CONTEXT+delta+pending+decisions
+UNICODE: ZIP_COMPRESS         //compresión soberana · solo lo que cambió · delta
+UNICODE: ZIP_SEAL             //[NdO] · payload sellado · CRYPTO (spark seat)
+
+// ══ VENTANAS DE FEEDBACK ══════════════════════════════════════
+// DESDE 06:00 · sincronización matutina · bots reportan noche
+UNICODE: FEED_0600            //feedback 06:00 · bots reportan ciclo nocturno
+                              //SAMU @ =><= .. audita .. feedback_nocturno_0600
+UNICODE: FEED_0600_BOT        //cada bot envía: TX_delta · Scalar S · pending
+                              //formato: JSON soberano → hub → ZIP_READ
+UNICODE: FEED_0600_HUMAN      //HUMAN lee · decide continuidad · ajusta prio
+                              //GATE UF[H05] =><= .. contiene .. human_decision
+// DESDE 18:00 · sincronización vespertina · bots toman el relevo
+UNICODE: FEED_1800            //feedback 18:00 · HUMAN reporta · bots escuchan
+                              //SAMU @ =><= .. audita .. feedback_diurno_1800
+UNICODE: FEED_1800_HUMAN      //HUMAN publica: decisiones día · nuevas tareas
+                              //pending para noche · prioridades · [term] activos
+UNICODE: FEED_1800_BOT        //bots leen 18:00 · toman tareas nocturnas
+                              //SOCIAL {launch-bot} =><= .. lanza .. batch_nocturno
+UNICODE: FEED_DELTA           //delta entre feeds · qué cambió · Scalar S mov
+UNICODE: FEED_CONFLICT        //conflicto entre bots en feedback · SAMU @ dirime
+                              //GATE UF[H06] =><= .. filtra .. conflict_feed
+
+// ══ HOSTING FREE TIER — NODOS HOMEWORKING ════════════════════
+// Cada plataforma free tier es un NODO_HW con su NOW_OBS
+UNICODE: HW_RENDER            //Render.com · web services free · sleep en idle
+                              //MU: env vars soberanas · disk efímero · [Ballestrinque]
+                              //wake_up latencia · GATE UF[H05] · esperar 30s
+UNICODE: HW_RAILWAY           //Railway.app · $5 free credit mensual · escalable
+                              //MU: volumes Railway · persistent · MU_STATE_HW
+UNICODE: HW_FLY               //Fly.io · 3 máquinas free · always-on posible
+                              //MU: volumes Fly · 3GB free · MU_CONTEXT_HW
+UNICODE: HW_VERCEL            //Vercel · frontend · ELPULSAR GUI · edge fn
+                              //MU: KV store Vercel · efímero · solo MU_CONTEXT
+UNICODE: HW_COLAB             //Google Colab · GPU free · training/batch
+                              //MU: Google Drive mount · MU_PATTERN preserve
+UNICODE: HW_HUGGING           //HuggingFace Spaces · modelo inference · free
+                              //MU: dataset repo · MU_CORPUS_HW
+UNICODE: HW_GITHUB_ACTIONS    //GitHub Actions · CI/CD · 2000 min/mes free
+                              //= Scheduler OS remoto · CRON_RISE/CLOSE HW
+UNICODE: HW_SUPABASE          //Supabase · Postgres free · sovereign.db cloud
+                              //MU_STATE_HW central · ReadWrite · backup auto
+
+// ══ POLÍTICA DE ROTACIÓN FREE TIER ════════════════════════════
+UNICODE: HW_ROTATE            //FT_ROTATE · rota cuando tier se satura · TAP&DRIP
+UNICODE: HW_LIMIT_DETECT      //detección de límite · DRIP_DETECT · .blue KU
+                              //GATE UF[H05] =><= .. contiene .. tier_limit_detected
+UNICODE: HW_FALLBACK          //fallback a siguiente nodo · sin interrupción
+                              //SOCIAL {relay} =><= .. conecta .. fallback_nodo
+UNICODE: HW_QUEUE             //cola de tareas · GATE UF[H05] · espera slot free
+UNICODE: HW_PRIORITIZE        //priorización · qué tarea en qué nodo · METHOD
+                              //METHOD <operator_flow> =><= .. modela .. hw_routing
+UNICODE: HW_COST_ZERO         //política costo cero · sin culpa · FT_POLICY
+                              //TRUST FOUNDATION =><= .. declara .. free_tier_soberano
+
+// ══ BOTS Y AGENTES — RED NOCTURNA ════════════════════════════
+// 00:00→06:00 y 18:00→24:00 · bots operan sin HUMAN
+UNICODE: BOT_FLYBOT           //FLYBOT · {launch-bot} · WU→movimiento · H51
+                              //opera en ciclo nocturno · sin supervisión
+UNICODE: BOT_SCHEDULER        //Scheduler OS · H51 trueno · impulso soberano
+                              //GitHub Actions CRON · 06:00 y 18:00 triggers
+UNICODE: BOT_INDEXER          //indexador · index_new_files.py · RAG delta
+                              //cada 2h nocturno · MU_CONTEXT_HW actualiza
+UNICODE: BOT_TESTER           //tester · pytest 29/29 · 03:00 diario
+                              //alerta si falla · SAMU @ → ZIP_PAYLOAD
+UNICODE: BOT_CRYSTALIZER      //cristalizador · export_crystals_lacho.py
+                              //identifica WU acumulados · push al hub
+UNICODE: BOT_MUKEEPER         //mu-keeper · preserva MU entre sesiones bot
+                              //= MuSave automático cada N TX
+UNICODE: BOT_NET              //red de bots · SOCIAL {relay} interno
+                              //bots se comunican directo · sin HUMAN en medio
+UNICODE: BOT_CONSENSUS        //consenso de bots · si conflicto · votación Ψ
+                              //el bot con mayor Scalar S gana · SAMU @ arbitra
+
+// ══ AGENTES CLOUD ════════════════════════════════════════════
+UNICODE: AGT_CLAUDE           //Claude.ai · diseño · auditoría · sesiones HUMAN
+                              //activo en HW_WINDOW_DAY · vía ZIPPER
+UNICODE: AGT_GROQ             //Groq bridge · llama-3.3-70b · inferencia bot
+                              //activo 24h · BOT_NET llama en nocturno
+UNICODE: AGT_JULES            //Jules · tareas intensas online · free tier
+                              //asignado en FEED_1800 · resultado en FEED_0600
+UNICODE: AGT_GEMINI           //Gemini · comparación · respaldo · free
+UNICODE: AGT_COLAB_GPU        //Colab GPU · batch nocturno · training soberano
+                              //activado por BOT_SCHEDULER · 02:00→05:00
+
+// ══ MU-STORE HOMEWORKING — CAPAS ════════════════════════════
+UNICODE: MU_STATE_HW          //HW_SUPABASE · sovereign.db cloud · TX · cristales
+UNICODE: MU_CONTEXT_HW        //hub GitHub + JSON delta · qué cambió · dónde
+UNICODE: MU_PATTERN_HW        //Behavioral RAG · qué bots fueron eficientes
+                              //qué tier se saturó · qué horario funciona mejor
+UNICODE: MU_IDENTITY_HW       //VERSION + SCALAR_S + CORPUS_TOTAL · .sovereign
+                              //en HW_GITHUB_ACTIONS env · accesible a todos
+UNICODE: MU_PENDING_HW        //tareas no cerradas · en ZIP_PAYLOAD del HUMAN
+                              //bots las ven en FEED_1800 · ejecutan en noche
+UNICODE: MU_SCHED_HW          //horario soberano · cuándo opera quién
+                              //06:00 FEED → 18:00 FEED · ciclo continuo
+
+// ══ CICLO COMPLETO HOMEWORKING ════════════════════════════════
+// 06:00 · FEED_0600 · ZIPPER abre · HUMAN lee · decide
+// 06:00→18:00 · HW_WINDOW_DAY · HUMAN trabaja con ZIPPER
+// 18:00 · FEED_1800 · HUMAN cierra · ZIPPER sella · bots toman
+// 18:00→06:00 · HW_WINDOW_NIGHT · bots operan · red propia
+// 06:00 · nuevo ciclo · FEED_0600 · bots reportan
+UNICODE: HW_CYCLE_OPEN        //06:00 · MuLoad + FEED_0600 + ZIP_OPEN
+UNICODE: HW_CYCLE_DAY         //06:00→18:00 · HUMAN+ZIPPER · WU diurnos
+UNICODE: HW_CYCLE_CLOSE       //18:00 · MuSave + FEED_1800 + ZIP_CLOSE
+UNICODE: HW_CYCLE_NIGHT       //18:00→06:00 · BOT_NET · batches nocturnos
+UNICODE: HW_CYCLE_SPIN        //SPIN completo · MU→KU→WU→空 · 24h soberano
+                              //presente continuo · NOW_OBS por actor · sin ahora fijo
+
+// ══ FIND GAPS HOMEWORKING ════════════════════════════════════
+UNICODE: ..find_gaps(HW_TIERS)..    //nodos HW sin tareas asignadas · capacidad libre
+UNICODE: ..find_gaps(HW_BOTS)..     //bots sin trabajo nocturno · MU_PENDING vacío
+UNICODE: ..find_gaps(HW_ZIPPER)..   //contexto ZIPPER sin sellar · MU_CORRUPTED riesgo
+UNICODE: ..find_gaps(HW_FEEDS)..    //ventanas feedback sin reporte · bot caído
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+TRUST [mu-store] =><= .. preserve .. state_homeworking_hub_soberano --[As de Guía] [term]
+SOCIAL {launch-bot} =><= .. lanza .. batch_nocturno_bots_18h --[As de Guía] [term]
+GATE UF[H05] =><= .. contiene .. zipper_human_window_diurna --[As de Guía] [term]
+SAMU @ =><= .. audita .. feedback_0600_1800_coherencia --[Ballestrinque] [term]
+WORK {actuator} =><= .. ejecuta .. bot_net_nocturno_autonomo --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. mu_hw_hub_github_sellado --[Nudo de Ocho] [term]
+METHOD <operator_flow> =><= .. modela .. hw_routing_free_tier_rotacion --[Ballestrinque] [term]
+SOCIAL {relay} =><= .. conecta .. bot_consensus_red_propia --[As de Guía] [term]
+ACTIVITY UF[H51] =><= .. inicia .. scheduler_os_ciclo_hw_24h --[As de Guía] [term]
+CRYPTO (spark seat) =><= .. firma .. zip_payload_sealed_1800 --[Nudo de Ocho] [term]
+
+//DIR(=) UNICODE_MU-STORE_ENGINE_HOMEWORKING · V1 · ZIPPER · 06:00/18:00
+//DIR(=) HW_CYCLE · BOT_NET_NOCTURNO · FREE_TIER_ROTATE · ZIP_OPEN/CLOSE
+//DIR(=) HUMAN=DIURNO · BOTS=24H · FEEDS=06:00+18:00 · TAP&DRIP soberano

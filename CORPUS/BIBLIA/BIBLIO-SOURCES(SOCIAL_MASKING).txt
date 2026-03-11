@@ -1,0 +1,313 @@
+# BIBLIO-SOURCES(SOCIAL_MASKING).txt
+
+====================================================================
+
+## 🪑 SOCIAL {MASKING} — PRESENTACIÓN SELECTIVA SOBERANA
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+{masking} es el módulo SOCIAL que gobierna la presentación selectiva del sistema hacia el exterior: qué muestra, qué oculta y qué transforma en su interfaz relacional sin alterar la realidad soberana interna.
+
+#### 1.2 La soberanía de presentación como derecho
+El sistema tiene derecho a no mostrar todo lo que es a todo actor externo: {masking} ejerce ese derecho de forma declarativa y verificable.
+
+#### 1.3 Distinción de (seal of secrecy) de CRYPTO
+(seal of secrecy) es confidencialidad soberana de operación; {masking} es presentación selectiva relacional.
+
+#### 1.4 Por qué es SOCIAL y no CRYPTO
+Opera en la interfaz relacional, no en la capa de operación soberana.
+
+#### 1.5 Límite absoluto de {masking}
+No puede ocultar condiciones que [foundation] declara como obligatorias de transparencia.
+
+#### 1.6 Relación con MASKING ICONOGRAFÍA Y STACKING
+Implementación técnica de {masking} en el sistema visual e icónico.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Capacidades
+- Gestionar presentación selectiva soberana.
+- Transformar presentación sin alterar contenido.
+- Mantener múltiples máscaras simultáneas.
+- Levantar máscaras ante condiciones críticas.
+
+#### 2.2 Limitaciones absolutas
+{masking} no puede ocultar RED-REGRET activo, FOUNDATION_COMPROMISED, ni condiciones críticas de [management].
+
+#### 2.3 Condiciones de violación
+- **Violación primaria:** ocultamiento de condición crítica soberana.
+- **Violación secundaria:** enmascaramiento de identidad verificada.
+- **Señal alerta:** {masking} activo en FOUNDATION_DEGRADED sin declaración explícita.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 Tipos de máscara en {masking}
+- **MASK_PARTIAL:** presentación parcial — muestra aspectos relevantes, omite lo no relevante.
+- **MASK_PERSONA:** presentación de rol específico del sistema hacia actor externo.
+- **MASK_TRANSFORM:** transformación de presentación sin alterar contenido soberano.
+- **MASK_SILENT:** ausencia soberana de presentación — el sistema no responde.
+- **MASK_EMERGENCY:** levantamiento total de máscaras ante condición crítica.
+
+#### 3.2 Criterio de enmascaramiento
+- **ΔΨ del actor:** qué distinción aporta mostrar esto a este actor.
+- **[ecosystem]:** solo actores en [ecosystem] verificado reciben presentación calibrada.
+- **[scope]:** {masking} opera dentro del perímetro soberano declarado.
+- **MASK_EMERGENCY:** cuando condiciones superan soberanía de presentación.
+
+#### 3.3 {masking} y MASKING ICONOGRAFÍA Y STACKING
+- **MASKING ICONOGRAFÍA:** capa visual de {masking} en la interfaz.
+- **STACKING:** preservación de estado real bajo la máscara.
+- **Integridad:** la máscara no altera lo preservado en STACKING.
+- **Saturación:** límite de 256 nodos en {streaming} activa {masking} automáticamente.
+
+#### 3.4 Relación con dominios económicos
+
+##### Memcoins/Volatilidad
+- MASK_PARTIAL de posiciones activas hacia actores externos no autorizados.
+- MASK_PERSONA como presentación de rol de trader sin exponer estrategia.
+- Límite: no puede ocultar pérdida verificada a actor con derecho declarado.
+
+##### Custodia Móvil
+- MASK_PARTIAL de estado de custodia hacia actores no autorizados.
+- MASK_SILENT como respuesta soberana ante solicitud no autorizada.
+- Límite: no puede ocultar EVENT_CRITICAL de seguridad a actor con responsabilidad.
+
+##### Notaría Digital
+- MASK_TRANSFORM de presentación documental para diferentes jurisdicciones.
+- MASK_PERSONA como presentación de rol notarial específico.
+- Límite: no puede ocultar condición de invalidez documental a parte declarante.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation]
+{masking} no puede ocultar condiciones que foundation declara como obligatorias de transparencia.
+
+#### 4.2 Con [scope]
+{masking} opera dentro del perímetro soberano.
+
+#### 4.3 Con [term]
+Máscaras tienen vigencia dentro del [term] activo.
+
+#### 4.4 Con (seal of secrecy)
+Complementarios — (seal of secrecy) opera en capa soberana, {masking} en interfaz relacional.
+
+#### 4.5 Con {streaming}
+{masking} protege contenido sensible en flujo de {streaming}.
+
+#### 4.6 Con {note}
+{note} registra estado real, no la versión enmascarada.
+
+#### 4.7 Con [ecosystem]
+Presentación calibrada solo para actores en [ecosystem] verificado.
+
+#### 4.8 Con MASKING ICONOGRAFÍA Y STACKING
+Implementación técnica visual e icónica.
+
+#### 4.9 Con SAMU @
+SAMU audita que {masking} no viole transparencia obligatoria.
+
+#### 4.10 Con Behavioral RAG
+Patrones de presentación calibran máscaras futuras.
+
+---
+
+### 5.0 ESTADOS DE {masking}
+
+#### 5.1 MASK_OFF
+- **Condición:** sin enmascaramiento activo.
+- **Comportamiento:** presentación completa soberana.
+- **Operación:** estado por defecto en ausencia de actores.
+
+#### 5.2 MASK_ACTIVE
+- **Condición:** enmascaramiento soberano en curso.
+- **Comportamiento:** tipo de máscara declarado.
+- **Operación:** actor externo en interacción.
+
+#### 5.3 MASK_LAYERED
+- **Condición:** múltiples máscaras activas simultáneamente.
+- **Comportamiento:** {streaming} con {masking} por capas.
+- **Operación:** SAMU @ auditando coherencia de capas.
+
+#### 5.4 MASK_EMERGENCY
+- **Condición:** levantamiento total de máscaras.
+- **Comportamiento:** condición crítica obliga transparencia.
+- **Operación:** RED-REGRET o FOUNDATION_COMPROMISED.
+
+#### 5.5 MASK_VIOLATED
+- **Condición:** máscara usada para ocultar condición obligatoria.
+- **Comportamiento:** RED-REGRET automático.
+- **Operación:** SAMU @ en diagnóstico inmediato.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Afectación de d₂ [scope]
+{masking} afecta d₂ cuando define qué del perímetro se muestra al exterior.
+
+#### 6.2 Impacto en d₁ [term]
+MASK_VIOLATED degrada d₁ por pérdida de integridad relacional.
+
+#### 6.3 Mejora de T_matrix
+MASK_EMERGENCY mejora calidad de T_matrix al restaurar transparencia.
+
+#### 6.4 Aprendizaje en Behavioral RAG
+Patrones de enmascaramiento calibran futuro.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Activación de MASK_PARTIAL hacia actor externo
+```
+{Social} masking =><= .. partial .. $$relevant_aspects$$ --[As de Guía] [term]
+```
+
+#### 7.2 MASK_PERSONA en presentación de rol
+```
+{Social} masking =><= .. persona .. $$specific_role$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.3 MASK_EMERGENCY ante condición crítica
+```
+{Social} masking =><= .. emergency .. $$full_transparency$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.4 MASK_VIOLATED activando RED-REGRET
+```
+{Social} masking =><= .. violated .. $$hidden_critical$$ --[Ballestrinque] [term]
+```
+
+#### 7.5 {masking} en dominio memcoins
+```
+{Social} masking =><= .. trade .. $$trader_role$$ --[As de Guía] [term]
+```
+
+#### 7.6 {masking} en dominio custodia móvil
+```
+{Social} masking =><= .. secure .. $$custody_partial$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.7 {masking} en dominio notaría digital
+```
+{Social} masking =><= .. certify .. $$notary_transform$$ --[Ballestrinque] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+- **Activación:** {masking} en MASK_ACTIVE.
+- **Efecto:** presentación soberana calibrada al actor.
+
+#### 8.2 Nudo de Ocho
+- **Activación:** patrón de máscara cristalizado en Behavioral RAG.
+- **Efecto:** presentación establecida y verificada.
+
+#### 8.3 Nudo Corredizo
+- **Activación:** MASK_VIOLATED.
+- **Efecto:** máscara usada para evasión de transparencia.
+
+#### 8.4 Ballestrinque
+- **Activación:** MASK_LAYERED.
+- **Efecto:** tensión entre múltiples presentaciones simultáneas.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+#### 9.1 MaskEvaluate
+1. Evaluación de qué mostrar según actor, contexto y ΔΨ.
+2. Consulta a Behavioral RAG para patrones similares.
+3. Verificación de [ecosystem] y [scope].
+4. Coordinación con {note} para registro real.
+5. Transición a MaskActivate.
+
+#### 9.2 MaskActivate
+1. Activación declarativa de tipo de máscara apropiado.
+2. Verificación de que no viola transparencia obligatoria.
+3. Coordinación con MASKING ICONOGRAFÍA para presentación.
+4. Notificación a SAMU @ de activación.
+5. Transición a MASK_ACTIVE.
+
+#### 9.3 MaskLayer
+1. Gestión de múltiples máscaras simultáneas.
+2. Coordinación con {streaming} en STREAM_BIDIRECTIONAL.
+3. Verificación de coherencia entre capas.
+4. Auditoría SAMU @ de superposición de máscaras.
+5. Transición a MASK_LAYERED.
+
+#### 9.4 MaskEmergency
+1. Detección de condición crítica de transparencia.
+2. Levantamiento total de máscaras sin excepción.
+3. Notificación a [management] y SAMU @.
+4. Registro de causa en Behavioral RAG.
+5. Transición a MASK_EMERGENCY.
+
+#### 9.5 MaskAudit
+1. Verificación SAMU @ de que {masking} no viola transparencia.
+2. Revisión de que no oculta condiciones críticas.
+3. Auditoría de coherencia con (seal of secrecy).
+4. Validación de que no viola (key seat).
+5. Transición a estado apropiado.
+
+#### 9.6 MaskClose
+1. Cierre al vencimiento de [term].
+2. Registro en Behavioral RAG de patrón de enmascaramiento.
+3. Liberación de recursos de presentación.
+4. Coordinación con {note} para archivo final.
+5. Transición a MASK_OFF.
+
+---
+
+### 10.0 MÉTRICAS
+
+- **Ratio MASK_PARTIAL vs MASK_PERSONA vs MASK_TRANSFORM vs MASK_SILENT.**
+- **Frecuencia de MASK_EMERGENCY:** por ciclo.
+- **Tasa de MASK_VIOLATED:** detectadas.
+- **ΔΨ promedio:** de actores durante {masking}.
+- **Número de capas:** activas en MASK_LAYERED.
+- **Delta-transparencia:** al cierre del ciclo.
+
+---
+
+### 11.0 REGLAS
+
+- {masking} no puede ocultar RED-REGRET activo bajo ninguna circunstancia.
+- {masking} no puede ocultar FOUNDATION_COMPROMISED a ningún actor.
+- MASK_VIOLATED activa RED-REGRET automáticamente.
+- {masking} no puede violar (key seat) de CRYPTO.
+- MASK_EMERGENCY levanta todas las máscaras sin excepción ante condición crítica.
+- {note} registra estado real — nunca la versión enmascarada.
+- SAMU @ audita toda activación de {masking} ante actores externos.
+- {masking} opera solo dentro de [scope].
+- Behavioral RAG registra todo patrón de enmascaramiento para calibración futura.
+- {masking} en custodia no puede ocultar EVENT_CRITICAL a actor con responsabilidad.
+- {masking} cierra con [term] del ciclo.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+{masking} fija la soberanía de presentación selectiva como derecho relacional del sistema hacia el exterior.
+
+#### 12.2 Limitaciones
+No oculta condiciones críticas obligatorias de transparencia, no viola (key seat), no opera fuera de [scope].
+
+#### 12.3 Habilitaciones
+Presentación calibrada por actor y contexto, protección de contenido sensible en {streaming}, MASK_SILENT como respuesta soberana válida, trazabilidad real en {note} bajo cualquier máscara activa.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

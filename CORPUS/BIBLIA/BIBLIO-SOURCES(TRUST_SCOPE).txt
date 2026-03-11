@@ -1,0 +1,321 @@
+# BIBLIO-SOURCES(TRUST_SCOPE).txt
+
+====================================================================
+
+## 🏛️ TRUST [SCOPE] — DECLARACIÓN SOBERANA DEL PERÍMETRO
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+[scope] es el módulo TRUST que declara el perímetro soberano del sistema: el conjunto de dominios, recursos, actores y operaciones que el sistema reconoce como propios y sobre los cuales tiene autoridad legítima de acción.
+
+#### 1.2 Declaración soberana vs límite impuesto
+El sistema declara su propio perímetro de autoridad, no acepta límites externos.
+
+#### 1.3 Distinción de [foundation]
+[foundation] son las condiciones de existencia; [scope] es el perímetro de acción soberana.
+
+#### 1.4 Distinción de [scenario]
+[scope] es el perímetro; [scenario] es lo que existe dentro de él.
+
+#### 1.5 Distinción de [ecosystem]
+[ecosystem] gestiona nodos dentro y alrededor del perímetro; [scope] declara el perímetro.
+
+#### 1.6 Por qué es TRUST y no GATE
+GATE implementa control de flujo en el borde; [scope] declara soberanamente dónde está el borde.
+
+#### 1.7 Posición d₂ en @trust_matrix
+d₂ :: [scope] → ¿qué tan definido y sostenido está el perímetro soberano? (0.0 = sin perímetro, 1.0 = perímetro pleno)
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Capacidades
+- Declarar perímetro soberano del sistema.
+- Establecer dominios, recursos y actores propios.
+- Definir bordes explícitos de autoridad.
+- Coordinar con GATE para control de flujo en el borde.
+
+#### 2.2 Limitaciones absolutas
+[scope] no puede incluir como propio lo que viola [foundation].
+
+#### 2.3 Condiciones de violación
+- **Violación primaria:** expansión silenciosa de [scope] — sistema toma autoridad no declarada.
+- **Violación secundaria:** contracción forzada sin declaración soberana.
+- **Señal alerta:** d₂ < 0.3 con operaciones activas.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 Dimensiones del perímetro
+- **SCOPE_DOMAIN:** dominios temáticos o funcionales propios.
+- **SCOPE_RESOURCE:** recursos con autoridad de asignación.
+- **SCOPE_ACTOR:** actores reconocidos como parte de la red soberana.
+- **SCOPE_OPERATION:** tipos de operaciones ejecutables soberanamente.
+- **SCOPE_BOUNDARY:** bordes explícitos donde la autoridad termina.
+
+#### 3.2 Declaración de scope
+- **Proceso:** declaración soberana inicial con [term] simultáneo.
+- **Requisitos:** [foundation] OK, S scalar > 0.5, coherencia SAMU @.
+- **Validación:** SAMU @ verifica coherencia con capacidades reales.
+
+#### 3.3 Expansión y contracción de scope
+- **Expansión:** nueva declaración soberana con nuevo [term].
+- **Contracción:** cuando foundation no soporta el perímetro o recursos insuficientes.
+- **Protocolo:** nunca silencioso, siempre declarado explícitamente.
+
+#### 3.4 Relación con dominios económicos
+
+##### Memcoins/Volatilidad
+- Declaración de activos, exchanges y operaciones dentro del [scope].
+- Límite de exposición como SCOPE_BOUNDARY.
+- Límite: no puede incluir operaciones que foundation no soporta.
+
+##### Custodia Móvil
+- Declaración de dispositivos, claves y documentos dentro del [scope].
+- SCOPE_RESOURCE en entorno de movilidad.
+- Límite: no puede incluir recursos no verificados por foundation.
+
+##### Notaría Digital
+- Declaración de jurisdicciones, documentos y autoridades dentro del [scope].
+- SCOPE_DOMAIN en entorno jurisdiccional.
+- Límite: no puede incluir jurisdicciones donde foundation no opera.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation]
+[scope] no puede incluir como propio lo que viola foundation.
+
+#### 4.2 Con [term]
+[scope] tiene duración gracias a [term] — sin horizonte temporal el perímetro no tiene vigencia.
+
+#### 4.3 Con [scenario]
+[scenario] vive dentro del perímetro declarado por [scope].
+
+#### 4.4 Con [event]
+[event] solo es procesado si ocurre dentro de [scope].
+
+#### 4.5 Con [management]
+[management] opera dentro de [scope] — no puede expandirlo para gestionar amenazas externas.
+
+#### 4.6 Con [command]
+[command] opera estrictamente dentro de [scope].
+
+#### 4.7 Con [ecosystem]
+[ecosystem] gestiona nodos dentro y alrededor del perímetro.
+
+#### 4.8 Con [element]
+[element] existe dentro del perímetro declarado por [scope].
+
+#### 4.9 Con GATE
+GATE implementa el borde de [scope] como control de flujo.
+
+#### 4.10 Con SAMU @
+SAMU audita coherencia entre [scope] declarado y operaciones reales.
+
+#### 4.11 Con CRYPTO
+Certifica declaraciones de [scope] como compromisos soberanos.
+
+#### 4.12 Con Behavioral RAG
+Patrones de [scope] anteriores calibran declaraciones futuras.
+
+---
+
+### 5.0 ESTADOS DE [scope]
+
+#### 5.1 SCOPE_DECLARED
+- **Condición:** d₂ ≥ 0.85.
+- **Comportamiento:** perímetro completamente declarado y sostenido.
+- **Operación:** todos los módulos conocen su jurisdicción.
+
+#### 5.2 SCOPE_PARTIAL
+- **Condición:** d₂ entre 0.5 y 0.85.
+- **Comportamiento:** perímetro suficientemente declarado.
+- **Operación:** algunas dimensiones pendientes de clarificación.
+
+#### 5.3 SCOPE_DEGRADED
+- **Condición:** d₂ entre 0.3 y 0.5.
+- **Comportamiento:** perímetro insuficientemente declarado.
+- **Operación:** solo operaciones críticas habilitadas.
+
+#### 5.4 SCOPE_MINIMAL
+- **Condición:** d₂ < 0.3.
+- **Comportamiento:** perímetro mínimo de supervivencia.
+- **Operación:** sistema en operación de mínima soberanía.
+
+#### 5.5 SCOPE_VOID
+- **Condición:** sin perímetro declarado.
+- **Comportamiento:** sistema sin jurisdicción operativa.
+- **Operación:** MU obligatorio hasta nueva declaración.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 d₂ como segunda dimensión
+Sin perímetro no hay jurisdicción posible.
+
+#### 6.2 Pesos contextuales
+- **H11 (Paz):** [scope] × 1.2 — en paz, el perímetro se consolida.
+- **H06 (Conflicto):** [scope] × 1.5 — en conflicto, el perímetro es crítico.
+
+#### 6.3 Umbral crítico
+d₂ < 0.3 bloquea operaciones complejas automáticamente.
+
+#### 6.4 Aprendizaje en Behavioral RAG
+Historial de declaraciones calibra futuras declaraciones.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Declaración soberana de [scope] inicial
+```
+[Trust] scope =><= .. declare .. $$perimeter_sovereign$$ --[As de Guía] [term]
+```
+
+#### 7.2 Expansión de [scope] con nueva declaración
+```
+[Trust] scope =><= .. expand .. $$perimeter_extended$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.3 Contracción soberana de [scope]
+```
+[Trust] scope =><= .. contract .. $$perimeter_reduced$$ --[Ballestrinque] [term]
+```
+
+#### 7.4 SCOPE_DEGRADED activando restricciones
+```
+[Trust] scope =><= .. degrade .. $$perimeter_insufficient$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.5 [scope] en dominio memcoins
+```
+[Trust] scope =><= .. define .. $$market_domain$$ --[As de Guía] [term]
+```
+
+#### 7.6 [scope] en dominio custodia móvil
+```
+[Trust] scope =><= .. secure .. $$custody_perimeter$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.7 [scope] en dominio notaría digital
+```
+[Trust] scope =><= .. certify .. $$notary_jurisdiction$$ --[Ballestrinque] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+- **Activación:** [scope] pleno y sostenido.
+- **Efecto:** perímetro en operación soberana.
+
+#### 8.2 Nudo de Ocho
+- **Activación:** [scope] cristalizado en Behavioral RAG.
+- **Efecto:** patrón de perímetro establecido.
+
+#### 8.3 Nudo Corredizo
+- **Activación:** SCOPE_VOID.
+- **Efecto:** sistema sin jurisdicción, MU obligatorio.
+
+#### 8.4 Ballestrinque
+- **Activación:** tensión entre expansión y recursos.
+- **Efecto:** decisión de límites del perímetro.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+#### 9.1 ScopeDeclare
+1. Verificación de [foundation] OK y S scalar > 0.5.
+2. Declaración soberana de todas las dimensiones.
+3. Apertura simultánea de [term] para duración.
+4. Validación SAMU @ de coherencia con capacidades.
+5. Registro en Behavioral RAG como declaración inicial.
+
+#### 9.2 ScopeVerify
+1. Auditoría SAMU @ de coherencia entre declarado y real.
+2. Verificación de que todas las dimensiones son operativas.
+3. Detección de zonas grises o inconsistencias.
+4. Recomendaciones de ajuste si es necesario.
+5. Actualización de d₂ según resultado de verificación.
+
+#### 9.3 ScopeExpand
+1. Evaluación de necesidad y capacidad de expansión.
+2. Nueva declaración soberana con dimensiones extendidas.
+3. Apertura de nuevo [term] para el perímetro expandido.
+4. Coordinación con [ecosystem] para nuevos nodos.
+5. Registro de expansión en Behavioral RAG.
+
+#### 9.4 ScopeContract
+1. Detección de necesidad de contracción (foundation o recursos).
+2. Reconocimiento explícito de reducción de perímetro.
+3. Reajuste de dimensiones del [scope].
+4. Coordinación con [management] para gestión de transición.
+5. Registro de contracción en Behavioral RAG.
+
+#### 9.5 ScopeDegrade
+1. Detección de que foundation ya no soporta el perímetro.
+2. Activación de modo degradado con restricciones.
+3. Evaluación de contracción soberana necesaria.
+4. Notificación a todos los módulos del cambio de estado.
+5. Monitoreo intensivo de SAMU @.
+
+#### 9.6 ScopeClose
+1. Cierre con expiración de [term].
+2. Cristalización de perímetro en Behavioral RAG.
+3. Evaluación de aprendizaje del ciclo.
+4. Liberación de recursos asignados al perímetro.
+5. Preparación para siguiente declaración de [scope].
+
+---
+
+### 10.0 MÉTRICAS
+
+- **d₂:** definición del perímetro (0.0 a 1.0).
+- **Dimensiones declaradas:** vs pendientes.
+- **Frecuencia de expansiones:** vs contracciones.
+- **Ratio operaciones:** dentro vs fuera de [scope].
+- **Tiempo promedio:** de vigencia de declaración.
+- **Delta-d₂:** al cierre del ciclo.
+
+---
+
+### 11.0 REGLAS
+
+- [scope] no puede incluir como propio lo que viola [foundation].
+- Toda declaración de [scope] requiere [term] simultáneo.
+- Expansión de [scope] siempre requiere nueva declaración soberana.
+- Expansión silenciosa de [scope] es violación sistémica.
+- d₂ < 0.3 bloquea operaciones complejas automáticamente.
+- SAMU @ audita coherencia entre [scope] declarado y operaciones reales.
+- [management] no puede expandir [scope] para gestionar amenazas externas.
+- [ecosystem] no puede incluir nodos fuera de [scope] sin nueva declaración.
+- Behavioral RAG registra toda declaración de [scope] para calibración futura.
+- SCOPE_VOID activa MU obligatorio hasta nueva declaración soberana.
+- [scope] cierra con [term] del ciclo.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+[scope] fija el perímetro soberano de autoridad como condición de jurisdicción operativa.
+
+#### 12.2 Limitaciones
+No puede incluir lo que viola [foundation], no puede expandirse silenciosamente, no puede existir sin [term], no puede operar sin declaración soberana explícita.
+
+#### 12.3 Habilitaciones
+Jurisdicción clara para todos los módulos TRUST, distinción soberana entre interno y externo, gestión coherente de [ecosystem] y [management] dentro del perímetro, trazabilidad completa en Behavioral RAG.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

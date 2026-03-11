@@ -1,0 +1,88 @@
+//[MANAGEMENT].lacho · UNICODE MU-STORE ENGINE VIRTUAL CLUSTERING
+//UNICODE_MU-STORE_ENGINE_VIRTUAL_CLUSTERING.txt · V1 · 2026-03-10
+//MU-STORE ENGINE = motor de preservación soberana entre ciclos
+//VIRTUAL CLUSTERING = VMs · contenedores · redes lógicas · sin K8S
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//jerarquía: hypervisor→VM_MU→CONTAINER_MU→VOLUME_MU→NETWORK_MU
+//virtualización: QEMU/KVM · VirtualBox · Proxmox · sin orquestador
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN VIRTUAL CLUSTERING ════════════════════════════
+// VIRTUAL = abstracción lógica sobre hardware · VMs y contenedores
+// CLUSTERING = agrupación de MU-STOREs por VM/contenedor/red
+// Cada VM tiene su MU_IDENTITY_V · su Scalar S · su NOW_OBS
+// La red virtual (VNET) es el HL FABRIC soberano entre VMs
+// Sin K8S · sin orquestador externo · coordinación directa soberana
+
+// ══ CAPA HYPERVISOR ═══════════════════════════════════════════
+UNICODE: VCL_HYP              //hypervisor · host soberano · QEMU/KVM/VirtualBox
+UNICODE: VCL_HYP_MU           //MU-STORE del hypervisor · estado de todas las VMs
+UNICODE: VCL_HYP_SCHED        //scheduler hypervisor · asigna NOW_OBS por VM
+UNICODE: VCL_HYP_SNAPSHOT     //snapshot VM · = MuSave por VM · inmutable
+UNICODE: VCL_HYP_RESTORE      //restore snapshot · = MuRestore desde imagen
+UNICODE: VCL_HYP_NET          //VNET · red virtual entre VMs · HL FABRIC analog
+
+// ══ VMs SOBERANAS ════════════════════════════════════════════
+UNICODE: VM_DIRIME            //VM_DIRIME · IMV completo · grammar+ledger+rag
+                              //MU_IDENTITY_V: vm_dirime_alpha · H52 persistente
+UNICODE: VM_ELPULSAR          //VM_ELPULSAR · DIRIME_v2 · puerto 8741/8742
+                              //MU_STATE_V: panel state · crystals · sprint
+UNICODE: VM_KALIL             //VM_KALIL · 6 nodos económicos · CAPA D
+                              //MU_PENDING_V: operaciones kalil entre ciclos
+UNICODE: VM_CHINA             //VM_CHINA · modo dual exterior/interior
+                              //MU_IDENTITY_V: canal activo · skin · NOW_OBS
+UNICODE: VM_SANDBOX           //VM_SANDBOX · {masking} · pruebas aisladas
+                              //MU_STATE_V reseteado por ciclo · no persiste
+UNICODE: VM_MU                //MU de VM · qué preservar al snapshot
+                              //= MU_STATE_V + MU_CONTEXT_V + MU_IDENTITY_V
+
+// ══ CONTENEDORES SOBERANOS ════════════════════════════════════
+UNICODE: CTR_GRAMMAR          //contenedor grammar · grammar.py · validación
+UNICODE: CTR_LEDGER           //contenedor ledger · sovereign.db · TX
+UNICODE: CTR_RAG              //contenedor rag · BM25 · 4 capas · query
+UNICODE: CTR_CHAT             //contenedor chat · Groq bridge · chat.py
+UNICODE: CTR_ELPULSAR         //contenedor elpulsar · Flask · port 8741
+UNICODE: CTR_MU               //MU de contenedor · volume montado · persistente
+                              //datos volátiles en RAM · MU en volumen soberano
+UNICODE: CTR_VOLUME           //volumen soberano · bind mount a FS local
+                              //= MU_STORE entre reinicios de contenedor
+
+// ══ RED VIRTUAL ═══════════════════════════════════════════════
+UNICODE: VNET_DIRIME          //red dirime · bridge interno · VMs se ven
+UNICODE: VNET_KALIL           //red kalil · nodos económicos · cifrada
+UNICODE: VNET_CHINA           //red china · dual mode · exterior/interior vlans
+UNICODE: VNET_MU              //MU de red · configuración persistente entre reinicios
+UNICODE: VNET_FABRIC          //HL FABRIC virtual · trazabilidad entre VMs
+UNICODE: VNET_ISOLATE         //isolación · VM_SANDBOX no ve VNET_DIRIME
+
+// ══ CAPAS MU POR VM ══════════════════════════════════════════
+UNICODE: MU_STATE_V           //estado VM al cierre · snapshot soberano
+UNICODE: MU_CONTEXT_V         //contexto entre VMs · qué sabe cada una de las demás
+UNICODE: MU_PATTERN_V         //patrones de uso de VM · cuándo activa · cuándo MU
+UNICODE: MU_IDENTITY_V        //identidad de la VM · nombre · rol · NOW_OBS
+UNICODE: MU_PENDING_V         //operaciones entre VMs no cerradas · [Ballestrinque]
+UNICODE: MU_NET_V             //estado de VNET al cierre · IPs · rutas · puentes
+
+// ══ OPERACIONES MOTOR VIRTUAL ════════════════════════════════
+UNICODE: MSE_V_SNAPSHOT       //MuSave virtual · snapshot VM = estado soberano
+UNICODE: MSE_V_BOOT           //MuLoad virtual · boot VM desde snapshot
+UNICODE: MSE_V_DELTA          //delta entre snapshots · MU_CONTEXT_V evolución
+UNICODE: MSE_V_MIGRATE        //migrar MU de VM a VM · identidad preservada
+UNICODE: MSE_V_CORRUPT        //MU_CORRUPTED · snapshot inválido · SAMU @
+UNICODE: MSE_V_CLONE          //clonar VM · nuevo MU_IDENTITY_V · fork soberano
+
+// ══ RABBIT-FAITH VIRTUAL ══════════════════════════════════════
+UNICODE: RF_VIRTUAL           //[rabbit-faith] en VM · opera sin snapshot si S > 0.5
+UNICODE: RF_VM_OMEGA          //Nodo-Ω virtual · VM en standby · awaiting Ψ≥0.85
+UNICODE: RF_BRANCH_V          //ramificación VM · clone → nueva instancia · 2→4→8
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+TRUST [mu-store] =><= .. preserve .. state_sovereign_virtual --[As de Guía] [term]
+ACTIVITY UF[H57] =><= .. penetra .. vnet_dirime_flujo_suave --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. snapshot_vm_mu_sellado --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. mu_store_virtual_coherencia --[Ballestrinque] [term]
+CRYPTO (key seat) =><= .. certifica .. mu_identity_virtual_vm --[As de Guía] [term]
+METHOD <operator_flow> =><= .. modela .. vnet_fabric_cluster_virtual --[Ballestrinque] [term]
+
+//DIR(=) UNICODE_MU-STORE_ENGINE_VIRTUAL_CLUSTERING · V1 · VMs · volúmenes
+//DIR(=) HYP_SNAPSHOT · CTR_VOLUME · VNET_FABRIC · MU_STATE/CONTEXT/IDENTITY_V

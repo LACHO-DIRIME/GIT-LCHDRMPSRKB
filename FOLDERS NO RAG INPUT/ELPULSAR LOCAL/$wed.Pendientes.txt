@@ -1,0 +1,32 @@
+//$wed.Pendientes.txt
+//PENDIENTES · $wed 2026-03-11 · según HOUSE_DRONE.html
+//[term] :: activo
+
+## ✅ COMPLETADO W11 $wed
+- rag.py rglob · 236 docs RAG activos
+- THEATER 4 · RUNNER 2 · AGENT 2 indexados
+- CJK grammar · LACHO_SCORE 0.95 verificado
+- sovereign.db duplicado borrado
+- GitHub main 643cfa5
+- HOUSE_DRONE.html operativo
+
+## 🔴 $thu — PRÓXIMO
+- ACTIVITY_H03-H05-H06-H56 grammar.py
+- TAXONOMY_LACHO validador
+- CHCL_BASE.txt CHINA extensión
+
+## 🟡 $thu → $fri
+- generator.py 6 tests · 27→33
+- gui.py Tkinter · 5 tests · 33→38
+
+## 🟡 $fri
+- ELPULSAR dashboard · ballpaper_render() main loop
+- github_sync.sh automático macro_cierre
+- BALLPAPER W11 cierre
+
+## ⚪ NO TOCAR
+- DIRIME_v3 Capa C · espera PC Ryzen
+- Ollama local · PC nueva
+- WEB3 · después HL FABRIC DEV
+
+[term] :: activo

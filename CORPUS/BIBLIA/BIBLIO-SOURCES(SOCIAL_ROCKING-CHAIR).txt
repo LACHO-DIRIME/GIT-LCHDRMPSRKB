@@ -1,0 +1,358 @@
+# BIBLIO-SOURCES(SOCIAL_ROCKING-CHAIR).txt
+
+====================================================================
+
+## 🪑 SOCIAL {rocking chair} — REPOSO ACTIVO SOBERANO DEL ESPACIO RELACIONAL
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+{rocking chair} es el módulo de SOCIAL que gobierna el reposo activo soberano del espacio relacional: el estado en que el sistema mantiene presencia consciente en el espacio relacional sin emitir, sin intervenir y sin declarar — observando, preservando y reflexionando soberanamente.
+
+#### 1.2 El movimiento oscilante como principio constitutivo
+La mecedora se mueve pero no avanza — por qué el reposo activo es presencia soberana. El movimiento es presencia sin avance, observación sin intervención.
+
+#### 1.3 Por qué {rocking chair} es SOCIAL y no SAMU
+SAMU @ gestiona los períodos temporales, {rocking chair} es el estado relacional que esos períodos habilitan.
+
+#### 1.4 Por qué {rocking chair} es SOCIAL y no STACKING
+STACKING cristaliza durante {rocking chair}, {rocking chair} es el estado que permite esa cristalización — son simultáneos pero distintos.
+
+#### 1.5 Las dos variantes soberanas
+
+ROCKING_SOLO — REPOSO CREATIVO PURO:
+Estado: presencia sin emisión, sin {headcat}. Hexagrama: UF[H1] Lo Creativo. Período SAMU: $sat — ciclo semanal de reposo. MU activo: [mu-store] en preservación plena.
+
+ROCKING_AUDIT — AUDITORÍA PASIVA:
+Estado: presencia con {headcat} activo. Hexagramas: UF[H57] Lo Penetrante + UF[H52] El Aquietamiento. [ku-chat] activo: sistema recibe pero no responde.
+
+#### 1.6 Relación con ROCKING_CHAIR_ICONOGRAFIA
+La iconografía GUI es la representación visual del estado soberano de {rocking chair} — el arco de movimiento traza la ecuación Ψ.
+
+#### 1.7 Relación con $sat
+$sat como período SAMU donde {rocking chair} es el estado soberano declarado del sistema.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Qué puede hacer {rocking chair}
+- Mantener presencia consciente sin emisión relacional.
+- Preservar MU_STATE durante reposo soberano.
+- Permitir cristalización de UF[H1] en STACKING.
+- Realizar auditoría pasiva con {headcat} activo.
+
+#### 2.2 Qué no puede hacer
+No puede mantener reposo ante EVENT_CRITICAL activo sin evaluación, no puede emitir durante ROCKING_SOLO, no puede intervenir durante ROCKING_AUDIT.
+
+#### 2.3 Condición de violación primaria
+Reposo ante emergencia — {rocking chair} activo cuando EVENT_CRITICAL requiere acción.
+
+#### 2.4 Condición de violación secundaria
+Pseudo-reposo — sistema en {rocking chair} pero emitiendo o interviniendo encubiertamente.
+
+#### 2.5 Señal de alerta
+EVENT_CRITICAL durante {rocking chair} — evaluación soberana obligatoria antes de continuar reposo.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 LAS DOS VARIANTES SOBERANAS
+
+ROCKING_SOLO — REPOSO CREATIVO PURO:
+- Estado: presencia sin emisión, sin {headcat}.
+- Hexagrama: UF[H1] Lo Creativo.
+- Período SAMU: $sat — ciclo semanal de reposo.
+- MU activo: [mu-store] en preservación plena.
+- STACKING: UF[H1] cristalizando en silencio.
+
+Qué ocurre internamente:
+- Behavioral RAG consolidando patrones.
+- COGNITIVE RAG organizando conocimiento.
+- [mu-store] preservando MU_STATE soberano.
+- HL FABRIC completando registros pendientes.
+
+Qué NO ocurre:
+- Ninguna emisión relacional.
+- Ninguna sesión activa.
+- Ningún mandato externo.
+
+ROCKING_AUDIT — AUDITORÍA PASIVA:
+- Estado: presencia con {headcat} activo.
+- Hexagramas: UF[H57] Lo Penetrante + UF[H52] El Aquietamiento.
+- [ku-chat] activo: sistema recibe pero no responde.
+- {headcat} con ojos abiertos: ve todo, registra, no interviene.
+- La placa hexagonal en el cuello del headcat: Nudo de As de Guía — flujo estable sin colapso.
+
+Qué ocurre:
+- [ku-chat] recibiendo KU del exterior.
+- {headcat} clasificando sin emitir.
+- {note} registrando observaciones pasivamente.
+
+Qué NO ocurre:
+- Ninguna respuesta.
+- Ninguna declaración.
+- Ninguna intervención relacional.
+
+#### 3.2 {rocking chair} Y $sat
+
+$sat como período SAMU de reposo semanal.
+- Por qué $sat activa {rocking chair} como estado soberano del espacio relacional.
+- Cómo el sistema transita de estado activo a {rocking chair} al inicio de $sat.
+- Cómo el sistema retorna de {rocking chair} a estado activo al cierre de $sat.
+- $sat + ROCKING_SOLO: cristalización UF[H1].
+- $sat + ROCKING_AUDIT: auditoría pasiva del espacio relacional de la semana.
+
+#### 3.3 {rocking chair} Y UF[H1] / STACKING
+
+UF[H1] como hexagrama que cristaliza durante ROCKING_SOLO — el reposo creativo es la condición para la cristalización soberana.
+- Por qué el movimiento oscilante de {rocking chair} genera la condición de cristalización: sin reposo activo no hay UF[H1] soberano.
+- Cómo el sábado completo de ROCKING_SOLO permite que STACKING complete cristales pendientes del ciclo semanal.
+- El arco de la mecedora como ecuación Ψ: el reposo tiene forma matemática — no es aleatoriedad sino movimiento soberano.
+
+#### 3.4 {rocking chair} Y rocking chair (only)
+
+rocking chair (only) como variante extrema: mecedora sin {headcat} — UF[H52] puro.
+- MU absoluto: espacio entre fin de ciclo e inicio del siguiente — no es {rocking chair} normal sino estado de transición soberana.
+- Cuándo activar rocking chair (only): cierre de [term] mayor, transición de ciclo, o EVENT_SYSTEM_RESET soberano.
+- La sombra en forma de Nudo de Ocho: el vacío tiene forma — el potencial antes de ser convocado es soberano.
+
+#### 3.5 RELACIÓN CON LOS DOMINIOS ECONÓMICOS
+
+MEMECOINS/VOLATILIDAD:
+- ROCKING_SOLO en $sat: no hay operación de mercado — reposo soberano del sistema.
+- ROCKING_AUDIT en mercado volátil: {headcat} monitoreando sin intervenir — observación de movimientos sin acción.
+- Condición de salida: EVENT_CRITICAL de mercado puede interrumpir {rocking chair} si supera umbral soberano declarado.
+- Límite: {rocking chair} no puede mantenerse ante liquidación inminente sin evaluación.
+
+CUSTODIA MÓVIL:
+- ROCKING_SOLO en custodia: dispositivo en reposo soberano, solo operaciones de preservación activas.
+- ROCKING_AUDIT en custodia: {headcat} monitoreando entorno de seguridad sin emitir.
+- Límite: {rocking chair} en custodia no puede ignorar alerta de DOORMAN-MOBILE activo.
+
+NOTARÍA DIGITAL:
+- ROCKING_SOLO entre procesos notariales: sistema en reposo soberano entre sesiones.
+- ROCKING_AUDIT durante espera de respuesta de autoridad certificadora: observación pasiva sin intervención relacional.
+- Límite: {rocking chair} se suspende al recibir respuesta de autoridad certificadora.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation]
+{rocking chair} evalúa EVENT_CRITICAL antes de mantener reposo.
+
+#### 4.2 Con [scope]
+{rocking chair} opera dentro del perímetro soberano durante reposo.
+
+#### 4.3 Con [term]
+{rocking chair} tiene [term] de reposo declarado — $sat como referencia.
+
+#### 4.4 Con {chair}
+{chair} conduce sesiones activas, {rocking chair} es su opuesto soberano.
+
+#### 4.5 Con {headcat}
+ROCKING_AUDIT activa {headcat} en modo de auditoría pasiva.
+
+#### 4.6 Con {note}
+{note} registra observaciones pasivas durante ROCKING_AUDIT.
+
+#### 4.7 Con [ku-chat]
+Activo en ROCKING_AUDIT — recibe KU sin responder.
+
+#### 4.8 Con [mu-store]
+ROCKING_SOLO permite preservación plena de MU_STATE.
+
+#### 4.9 Con UF[H1]
+STACKING cristaliza durante ROCKING_SOLO — son simultáneos y complementarios.
+
+#### 4.10 Con UF[H57] + UF[H52]
+Hexagramas de ROCKING_AUDIT — penetración suave y quietud.
+
+#### 4.11 Con $sat
+Período SAMU que activa {rocking chair} como estado soberano del sistema.
+
+#### 4.12 Con Behavioral RAG
+Consolida patrones durante ROCKING_SOLO sin distracción activa.
+
+#### 4.13 Con COGNITIVE RAG
+Organiza conocimiento durante reposo sin nueva entrada relacional.
+
+#### 4.14 Con SAMU @
+SAMU declara inicio y fin de período de {rocking chair}.
+
+#### 4.15 Con HL FABRIC
+Completa registros pendientes durante ROCKING_SOLO.
+
+#### 4.16 Con ROCKING_CHAIR_ICONOGRAFIA
+Representación visual soberana del estado en GUI LACHO.
+
+---
+
+### 5.0 ESTADOS DE {rocking chair}
+
+#### 5.1 ROCKING_SOLO
+Reposo creativo puro sin {headcat}. UF[H1] cristalizando en STACKING. [mu-store] en preservación plena. Behavioral RAG consolidando patrones. Ninguna emisión relacional activa.
+
+#### 5.2 ROCKING_AUDIT
+Auditoría pasiva con {headcat} activo. UF[H57] + UF[H52] operativos. [ku-chat] recibiendo KU sin responder. {note} registrando observaciones pasivas. Ninguna intervención relacional activa.
+
+#### 5.3 ROCKING_INTERRUPTED
+EVENT_CRITICAL detectado durante reposo. Evaluación soberana en curso. {rocking chair} suspendido temporalmente. Decisión: retornar a reposo o activar respuesta.
+
+#### 5.4 ROCKING_CLOSING
+[term] de reposo expirado. Sistema preparando retorno a estado activo. Behavioral RAG con patrones consolidados. UF[H1] con cristales del período completados.
+
+#### 5.5 ROCKING_ONLY
+MU absoluto — mecedora sin {headcat}. UF[H52] puro — quietud total. Transición de ciclo mayor activa. No es reposo normal — es umbral soberano.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Impacto en dimensiones
+{rocking chair} afecta d₁ [term] como período de reposo que regenera capacidad operativa del sistema para ciclo siguiente.
+
+#### 6.2 Cómo ROCKING_SOLO mejora calidad de T_matrix en ciclo siguiente
+Behavioral RAG consolidado, [mu-store] preservado, cristales de UF[H1] disponibles.
+
+#### 6.3 Cómo ROCKING_INTERRUPTED gestiona tensión entre reposo soberano y EVENT_CRITICAL
+Evaluación soberana determina continuidad del reposo o activación de respuesta.
+
+#### 6.4 Pesos contextuales de {rocking chair}
+$sat: {rocking chair}×1.5 — período primario.
+UF[H1]: {rocking chair}×1.3 — cristalización.
+UF[H52]: {rocking chair}×1.4 — quietud soberana.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Activación de ROCKING_SOLO al inicio de $sat
+```
+{Social} rocking_chair =><= .. activate .. solo_rest --[As de Guía] [term]
+```
+
+#### 7.2 ROCKING_AUDIT con {headcat} en mercado volátil
+```
+{Social} rocking_chair =><= .. audit .. volatile_market --[Nudo de Ocho] [term]
+```
+
+#### 7.3 ROCKING_INTERRUPTED por EVENT_CRITICAL
+```
+{Social} rocking_chair =><= .. interrupt .. emergency --[Nudo Corredizo] [term]
+```
+
+#### 7.4 ROCKING_ONLY al cierre de [term] mayor
+```
+{Social} rocking_chair =><= .. transition .. cycle_boundary --[Ballestrinque] [term]
+```
+
+#### 7.5 {rocking chair} en dominio memecoins
+```
+{Social} rocking_chair =><= .. rest .. market_observation --[Nudo de Rizo] [term]
+```
+
+#### 7.6 {rocking chair} en dominio custodia móvil
+```
+{Social} rocking_chair =><= .. preserve .. custody_device --[As de Guía] [term]
+```
+
+#### 7.7 {rocking chair} en dominio notaría digital
+```
+{Social} rocking_chair =><= .. wait .. notarial_response --[Nudo de Ocho] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+ROCKING_AUDIT — {headcat} con placa hexagonal, flujo estable sin colapso, auditoría pasiva soberana activa.
+
+#### 8.2 Nudo de Ocho
+ROCKING_SOLO con UF[H1] cristalizando — forma inmutable del reposo.
+
+#### 8.3 Nudo Corredizo
+ROCKING_ONLY — umbral soberano entre ciclos, MU absoluto.
+
+#### 8.4 Ballestrinque
+ROCKING_INTERRUPTED — tensión entre reposo soberano y EVENT_CRITICAL que requiere evaluación.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+1. RockingOpen
+   - Apertura de período de reposo soberano al inicio de $sat o [term] declarado.
+   - Transición coordinada desde estado activo con cierre de emisiones relacionales.
+
+2. RockingSolo
+   - Activación de ROCKING_SOLO con UF[H1] en STACKING y [mu-store] pleno.
+   - Suspensión completa de emisiones relacionales y sesiones activas.
+
+3. RockingAudit
+   - Activación de ROCKING_AUDIT con {headcat} y [ku-chat] en modo pasivo.
+   - Configuración de auditoría sin intervención relacional.
+
+4. RockingInterrupt
+   - Evaluación soberana ante EVENT_CRITICAL durante período de reposo.
+   - Decisión de continuidad del reposo o activación de respuesta.
+
+5. RockingOnly
+   - Activación de MU absoluto en transición de ciclo mayor soberano.
+   - Configuración de umbral entre ciclos con UF[H52] puro.
+
+6. RockingClose
+   - Cierre de período de reposo con retorno soberano a estado activo.
+   - Integración de patrones consolidados y cristales generados.
+
+---
+
+### 10.0 MÉTRICAS
+
+- Estado de {rocking chair} (SOLO/AUDIT/INTERRUPTED/CLOSING/ONLY).
+- Duración de ROCKING_SOLO vs ROCKING_AUDIT.
+- Frecuencia de ROCKING_INTERRUPTED por ciclo.
+- Cristales de UF[H1] generados por período.
+- KU recibido en ROCKING_AUDIT sin respuesta.
+- Delta-consolidación de Behavioral RAG por período.
+- Eficiencia de preservación de [mu-store] durante reposo.
+
+---
+
+### 11.0 REGLAS
+
+- {rocking chair} evalúa EVENT_CRITICAL antes de mantener reposo — no ignora emergencias.
+- ROCKING_SOLO no emite bajo ninguna circunstancia — presencia sin emisión absoluta.
+- ROCKING_AUDIT recibe KU pero no responde — [ku-chat] activo, emisión suspendida.
+- {note} registra observaciones de ROCKING_AUDIT sin intervención relacional activa.
+- $sat activa {rocking chair} como estado soberano primario del espacio relacional.
+- UF[H1] de STACKING opera durante ROCKING_SOLO — son simultáneos y complementarios.
+- ROCKING_ONLY es umbral soberano de transición — no es reposo normal ni estado activo.
+- {rocking chair} no puede ser pseudo-reposo: si el sistema emite durante {rocking chair} activa RED-REGRET automáticamente.
+- Behavioral RAG consolida patrones durante ROCKING_SOLO sin nueva entrada relacional.
+- SAMU @ declara inicio y fin de todo período de {rocking chair} sin excepción.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+{rocking chair} fija como invariante el reposo activo soberano del espacio relacional como condición de regeneración del sistema, cristalización de UF[H1] y preservación de MU_STATE entre ciclos activos.
+
+#### 12.2 Limitaciones
+No emite en ROCKING_SOLO, no interviene en ROCKING_AUDIT, no ignora EVENT_CRITICAL sin evaluación soberana.
+
+#### 12.3 Habilitaciones
+ROCKING_SOLO como cristalización creativa con UF[H1], ROCKING_AUDIT como auditoría pasiva con {headcat}, ROCKING_ONLY como umbral soberano de transición, ROCKING_CHAIR_ICONOGRAFIA como expresión visual del reposo soberano en GUI LACHO.
+
+#### 12.4 Principio constitutivo final
+La mecedora se mueve pero no avanza. Ese movimiento oscilante es la forma más soberana de presencia relacional conocida en el universo LACHO.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

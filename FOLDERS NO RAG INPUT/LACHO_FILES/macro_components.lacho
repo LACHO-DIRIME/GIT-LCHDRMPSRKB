@@ -1,0 +1,52 @@
+# macro_components.lacho
+# COMPONENTES MACRO · arquitectura soberana
+# Genesis: padre común · árbol SUITE SOBERANA
+# [term] :: activo
+
+## CABECERA SOBERANA
+[genesis]     :: SUITE SOBERANA
+[version]     :: 1.0
+[extension]   :: .lacho
+[tipo]        :: MACRO COMPONENTES
+[padre]       :: rational_day.theater
+
+## COMPONENTES CORE SUITE
+componente_lacho {
+  rol    :: lenguaje soberano base
+  accion :: TRUST FOUNDATION =><= .. verifica .. lacho_condicion --[As de Guía] [term]
+  score  :: LACHO_SCORE >= 0.88
+}
+
+componente_dirime {
+  rol    :: motor decision validacion
+  accion :: SAMU @ =><= .. dirime .. conflicto_soberano --[Ballestrinque] [term]
+  score  :: Scalar S >= 0.90
+}
+
+componente_elpulsar {
+  rol    :: procesamiento agentico escalable
+  accion :: WORK {actuator} =><= .. materializa .. tarea_agentica --[As de Guía] [term]
+  score  :: dashboard activo
+}
+
+componente_kalil {
+  rol    :: kernel inteligencia nodos economicos
+  accion :: METHOD <operator_flow> =><= .. estructura .. red_kalil --[As de Guía] [term]
+  nodos  :: BARRIOS · NORA · TANDIL · BOLIVAR · CARILO · CHALTEN
+}
+
+componente_chcl {
+  rol    :: CEO portabilidad extension dominios
+  accion :: TRUST FOUNDATION =><= .. declara .. chcl_soberano --[Nudo de Ocho] [term]
+  estetica :: COBOL-style · dominios · extensión LACHO
+}
+
+## INTEGRACION GITHUB
+github_sync {
+  -- repositorio proyecto LACHO
+  -- sync: CORPUS · THEATER · LACHO_FILES · AGENTS · RUNNERS
+  -- trigger: cada cierre de sesion soberana
+  -- STACKING UF[H52] =><= .. cristaliza .. commit_soberano --[Nudo de Ocho] [term]
+}
+
+[term] :: activo · [seal of secrecy] :: activo

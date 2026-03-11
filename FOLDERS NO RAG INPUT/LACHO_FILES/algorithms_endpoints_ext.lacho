@@ -1,0 +1,64 @@
+# algorithms_endpoints_ext.lacho
+# ENDPOINTS EXTENDIDOS · algoritmos soberanos
+# Genesis: padre común · árbol SUITE SOBERANA
+# [term] :: activo
+
+## CABECERA SOBERANA
+[genesis]     :: SUITE SOBERANA
+[version]     :: 1.0
+[extension]   :: .lacho
+[tipo]        :: ALGORITMOS · endpoints extendidos
+[padre]       :: micro_solutions.lacho
+
+## ENDPOINTS CORE IMV
+ep_validate {
+  cmd    :: python3 main.py --validate "{sentencia}"
+  output :: VALID · WARNING · INVALID · score
+  accion :: TRUST FOUNDATION =><= .. verifica .. sentencia_entrante --[As de Guía] [term]
+}
+
+ep_translate {
+  cmd    :: python3 main.py "{texto_natural}"
+  output :: sentencia_lacho + validacion
+  accion :: SAMU @ =><= .. audita .. traduccion_nl_lacho --[As de Guía] [term]
+}
+
+ep_stats {
+  cmd    :: python3 main.py --stats
+  output :: lacho_score · scalar_s · tx · cristales
+  accion :: METHOD <stat_onto> =><= .. calcula .. metricas_sistema --[As de Guía] [term]
+}
+
+ep_tests {
+  cmd    :: python3 tests/test_imv.py
+  output :: passed · failed
+  accion :: SAMU @ =><= .. audita .. suite_tests_soberana --[As de Guía] [term]
+}
+
+## ENDPOINTS KALIL
+ep_kalil_nora {
+  cmd    :: METHOD <stat_onto> calcula rating
+  output :: score_riesgo · recomendacion
+  accion :: NORA analytics activo
+}
+
+ep_kalil_bolivar {
+  cmd    :: CRYPTO (key seat) certifica blockchain
+  output :: hash_verificado · estado
+  accion :: BOLIVAR validacion activo
+}
+
+ep_kalil_carilo {
+  cmd    :: METHOD <equation> calcula ratio_riesgo
+  output :: score_prestamo · decision
+  accion :: CARILO capital activo
+}
+
+## ENDPOINTS CHCL
+ep_chcl_portability {
+  cmd    :: CHCL_BASE.txt execute dominio
+  output :: sentencias_dominio_validas
+  accion :: TRUST FOUNDATION declara chcl_soberano
+}
+
+[term] :: activo · [seal of secrecy] :: activo

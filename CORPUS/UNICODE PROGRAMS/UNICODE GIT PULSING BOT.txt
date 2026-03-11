@@ -1,0 +1,115 @@
+//[MANAGEMENT].lacho · UNICODE GIT PULSING BOT
+//UNICODE_GIT_PULSING_BOT.txt · V1 · 2026-03-10
+//opera ENTRE github_sync.sh · macro_cierre · THEATER · HL FABRIC
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//jerarquía: WORK{actuator}→STACKING→SAMU@→SOCIAL{launch-bot}→H63
+//⚡⟳ · pulso soberano · commit LACHO-firmado · trazabilidad
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN GIT PULSING BOT ════════════════════════════════
+// PULSING BOT = agente soberano de sincronización continua
+// No es cron simple · es pulso vivo · cada commit = cristal H63
+// Ritmo: macro_cierre → push → hash → ledger → H63 inmutabiliza
+// SOCIAL {launch-bot} notifica · SAMU @ audita coherencia
+
+// ══ IDENTIDAD DEL BOT ═════════════════════════════════════════
+UNICODE: GIT_BOT              //agente pulsing · antiX-LACHO · [term]
+UNICODE: GIT_BOT_ID           //identidad CRYPTO (key seat) · .bin soberano
+UNICODE: GIT_BOT_PULSE        //⚡ latido activo · intervalo H51 · SPIN_RATE
+UNICODE: GIT_BOT_MU           //bot en espera · 空 · CREATIVE_PAUSE · 聽
+UNICODE: GIT_BOT_KU           //bot detectó cambios · .blue · staging
+UNICODE: GIT_BOT_WU           //bot hizo push · .green · cristal H63
+UNICODE: GIT_BOT_CRASH        //bot falló · GATE UF[H06] · RED-REGRET
+
+// ══ COMMIT PROTOCOL ═══════════════════════════════════════════
+UNICODE: COMMIT_LACHO         //formato LACHO · STACKING UF[H63] · [NdO]
+                              //MSG: "STACKING UF[H63] =><= .. cristaliza .."
+                              //     ".. sesion_FECHA --[Nudo de Ocho] [term]"
+UNICODE: COMMIT_SCALAR        //TX=N · S=0.XXX en mensaje · SAMU @
+UNICODE: COMMIT_HASH          //hash git · .bin soberano · CRYPTO (key seat)
+UNICODE: COMMIT_SIGNED        //GPG · CRYPTO (seal of secrecy) · identidad
+UNICODE: COMMIT_AUTO          //macro_cierre trigger · WORK {actuator}
+UNICODE: COMMIT_MANUAL        //RUN(CLI:SYNC) · bash tools/github_sync.sh
+UNICODE: COMMIT_DRY           //--dry-run · DIR(-) verifica sin push · 聽
+UNICODE: COMMIT_ABORT         //WORK {brake} · riesgo detectado · [NdC]
+
+// ══ STAGING PIPELINE ══════════════════════════════════════════
+// Flujo soberano: detect → stage → verify → commit → push → ledger
+UNICODE: STAGE_DETECT         //git status --short · cambios presentes · KU
+UNICODE: STAGE_FILTER         //qué NO commitear · .sovereign · secrets
+                              //GATE UF[H05] =><= .. contiene .. secreto_local
+UNICODE: STAGE_ADD            //git add -A · staging completo · KU→pre-WU
+UNICODE: STAGE_VERIFY         //pytest antes de commit · 25/25 · [Ball]
+                              //METHOD <stat_onto> =><= .. calcula .. test_suite
+UNICODE: STAGE_MSG            //construir mensaje LACHO · COMMIT_LACHO
+UNICODE: STAGE_PUSH           //git push origin main · WU → repo soberano
+UNICODE: STAGE_CONFIRM        //hash confirmado · H63 · cristal en ledger
+UNICODE: STAGE_NOTIFY         //SOCIAL {launch-bot} · notifica push completo
+
+// ══ RAMAS SOBERANAS ══════════════════════════════════════════
+UNICODE: BRANCH_MAIN          //main · producción · WU cristalizado · [NdO]
+UNICODE: BRANCH_BLUE          //feature branch · .blue · KU activo
+UNICODE: BRANCH_GREEN         //merge → main · .blue→.green · H63
+UNICODE: BRANCH_PROTECT       //TRUST [scope] · main protegido · no force push
+UNICODE: BRANCH_FORK          //DIR(FORK) · .blue split · GATE UF[H06]
+UNICODE: BRANCH_MERGE         //DIR(MERGE) · TRUST · WU reunido · [AsG]
+
+// ══ TRIGGERS DEL PULSING BOT ══════════════════════════════════
+UNICODE: TRIGGER_CIERRE       //macro_cierre theater · principal · H63
+UNICODE: TRIGGER_CRYSTAL      //nuevo cristal en ledger → auto-push
+UNICODE: TRIGGER_CORPUS       //nuevo archivo CORPUS → indexar + push
+UNICODE: TRIGGER_SCORE        //Scalar S subió → STACKING · registrar
+UNICODE: TRIGGER_MANUAL       //RUN(CLI:SYNC) · operador decide
+UNICODE: TRIGGER_SCHEDULE     //H51 timing · scheduler_instrucciones
+UNICODE: TRIGGER_THRESHOLD    //Scalar S cruzó 0.90 → push especial WU
+
+// ══ PULSO × HEXAGRAMAS ════════════════════════════════════════
+UNICODE: PULSE_H51            //震 ䷲ · impulso · trigger soberano · arranque
+UNICODE: PULSE_H63            //既濟 ䷾ · completado · commit sellado · WU
+UNICODE: PULSE_H52            //艮 ䷳ · quietud bot · MU · esperando cambios
+UNICODE: PULSE_H57            //巽 ䷸ · penetra suave · push sin fricción
+UNICODE: PULSE_H06            //訟 ䷅ · conflicto · merge conflict · GATE
+UNICODE: PULSE_H03            //屯 ䷂ · inicio difícil · primer commit soberano
+UNICODE: PULSE_H64            //未濟 ䷿ · before_the_end · rama abierta · →空
+
+// ══ HL FABRIC TRAZABILIDAD ════════════════════════════════════
+UNICODE: FABRIC_HASH          //hash git → HL FABRIC · trazabilidad inmutable
+UNICODE: FABRIC_TX            //cada commit = TX en ledger LACHO
+UNICODE: FABRIC_AUDIT         //SAMU @ · audita historial git · coherencia
+UNICODE: FABRIC_CRYSTAL       //cristal H63 con hash · WU completo
+UNICODE: FABRIC_ROLLBACK      //revert soberano · GATE UF[H06] · {brake}
+UNICODE: FABRIC_LOG           //git log --oneline · LIST(CRYSTALS) vista
+
+// ══ CONFLICTOS Y RESOLUCIÓN ═══════════════════════════════════
+UNICODE: CONFLICT_DETECT      //GATE UF[H06] · merge conflict detectado
+UNICODE: CONFLICT_SAMU        //SAMU @ =><= .. dirime .. conflicto_git
+                              //[Ballestrinque] · KU tensión · no auto-resolve
+UNICODE: CONFLICT_ABORT       //WORK {brake} · detiene merge · [NdC]
+UNICODE: CONFLICT_RESOLVE     //operador resuelve · luego COMMIT_LACHO
+UNICODE: CONFLICT_REGRET      //RED-REGRET · git reset --hard · MU limpio
+
+// ══ LIST/RUN COMMANDS BOT ═════════════════════════════════════
+UNICODE: RUN(BOT:PUSH)
+  //bash tools/github_sync.sh
+  //→ detecta · verifica · commit LACHO · push main
+UNICODE: RUN(BOT:STATUS)
+  //git status --short · STAGE_DETECT
+UNICODE: RUN(BOT:LOG)
+  //git log --oneline -10 · FABRIC_LOG · últimos 10 cristales
+UNICODE: RUN(BOT:DRY)
+  //bash tools/github_sync.sh --dry-run · COMMIT_DRY
+UNICODE: RUN(BOT:RESET)
+  //git reset --hard HEAD · CONFLICT_REGRET · MU limpio
+UNICODE: LIST(BOT:TRIGGERS)   //TRIGGER_* activos · cuáles disparan push
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+WORK {actuator} =><= .. ejecuta .. git_push_soberano --[As de Guía] [term]
+STACKING UF[H63] =><= .. cristaliza .. commit_dia_sellado --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. coherencia_repo_git --[Ballestrinque] [term]
+SOCIAL {launch-bot} =><= .. notifica .. push_confirmado_main --[As de Guía] [term]
+GATE UF[H06] =><= .. filtra .. conflicto_merge_detectado --[Nudo Corredizo] [term]
+CRYPTO (key seat) =><= .. certifica .. identidad_bot_soberano --[As de Guía] [term]
+TRUST FOUNDATION =><= .. declara .. rama_main_protegida --[Nudo de Ocho] [term]
+
+//DIR(=) UNICODE_GIT_PULSING_BOT · V1 · ⚡⟳ · COMMIT_LACHO · H63
+//DIR(=) TRIGGER_CIERRE · STAGE_PIPELINE · FABRIC_HASH · MU→KU→WU

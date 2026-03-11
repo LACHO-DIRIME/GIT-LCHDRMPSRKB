@@ -1,0 +1,29 @@
+# PRACTICE-MEMECOINS-V2
+# 15 sentencias · dominio MEMECOINS/VOLATILIDAD · [term]
+
+## GRUPO 1 — EVALUACIÓN PRE-LANZAMIENTO (Ballestrinque)
+SAMU @ =><= .. audita .. condiciones_prelanzamiento_memecoin --[Ballestrinque] [term]
+CRYPTO (spark seat) =><= .. certifica .. riesgo_mercado_volatil --[Ballestrinque] [term]
+METHOD <equation> =><= .. calcula .. ratio_riesgo_lanzamiento --[Ballestrinque] [term]
+
+## GRUPO 2 — LANZAMIENTO AUTORIZADO (As de Guía)
+CRYPTO (spark seat) =><= .. autoriza .. lanzamiento_memecoin_activo --[As de Guía] [term]
+ACTIVITY UF[H01] =><= .. inicia .. ciclo_mercado_nuevo --[As de Guía] [term]
+SOCIAL {launch-bot} =><= .. lanza .. campaña_memecoin_soberana --[As de Guía] [term]
+
+## GRUPO 3 — FRENADO DE EMERGENCIA (Nudo Corredizo)
+WORK {brake} =><= .. detiene .. operacion_memecoin_riesgosa --[Nudo Corredizo] [term]
+SAMU @ =><= .. dirime .. colapso_mercado_detectado --[Nudo Corredizo] [term]
+GATE UF[H05] =><= .. bloquea .. transaccion_volatil_critica --[Nudo Corredizo] [term]
+
+## GRUPO 4 — REGISTRO DE OPERACIÓN (Nudo de Ocho)
+STACKING UF[H52] =><= .. inmutabiliza .. operacion_memecoin_cerrada --[Nudo de Ocho] [term]
+CRYPTO (key seat) =><= .. certifica .. transaccion_blockchain_sellada --[Nudo de Ocho] [term]
+STACKING UF[H48] =><= .. archiva .. historial_mercado_periodo --[Nudo de Ocho] [term]
+
+## GRUPO 5 — CIERRE DE CICLO MERCADO (Nudo de Rizo)
+SAMU #set =><= .. dirime .. cierre_ciclo_mercado_semanal --[Nudo de Rizo] [term]
+ACTIVITY UF[H52] =><= .. cristaliza .. performance_memecoin_periodo --[Nudo de Rizo] [term]
+METHOD <stat_onto> =><= .. calcula .. metricas_ciclo_completado --[Nudo de Rizo] [term]
+
+[term] :: activo · [seal of secrecy] :: activo

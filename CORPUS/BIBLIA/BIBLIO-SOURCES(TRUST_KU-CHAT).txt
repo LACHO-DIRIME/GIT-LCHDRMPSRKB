@@ -1,0 +1,339 @@
+# BIBLIO-SOURCES(TRUST_KU-CHAT).txt
+
+====================================================================
+
+## 🏛️ TRUST [KU-CHAT] — RECEPCIÓN SOBERANA DE CONTEXTO EXTERNO
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+[ku-chat] es el módulo TRUST que gobierna la recepción soberana de contexto externo: el canal por el cual el sistema ingiere información, señales y comunicaciones desde el exterior hacia el interior del [scope], sometiéndolas a verificación soberana antes de que puedan afectar el estado del sistema.
+
+#### 1.2 KU como concepto en LACHO
+KU es el contexto bruto que llega desde afuera antes de ser validado como operativo.
+
+#### 1.3 Por qué es TRUST y no SOCIAL
+Define condición soberana de recepción (qué contexto externo el sistema acepta como procesable), no interfaz relacional.
+
+#### 1.4 Distinción de SOCIAL
+SOCIAL gestiona la interfaz relacional con el exterior; [ku-chat] gobierna la soberanía de lo que entra por esa interfaz.
+
+#### 1.5 Distinción de [wu-mail]
+[ku-chat] recibe, [wu-mail] emite — complementarios en la tríada.
+
+#### 1.6 Distinción de [mu-store]
+[mu-store] preserva estado interno; [ku-chat] verifica contexto externo entrante.
+
+#### 1.7 La tríada WU/KU/MU
+KU entra como contexto bruto verificado, MU preserva como estado soberano, WU manifiesta como resultado verificado.
+
+#### 1.8 Requisito de GREEN-KNOWLEDGE
+Todo contexto externo debe pasar filtro de distinción antes de modificar [scenario].
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Capacidades
+- Recibir contexto externo de forma soberana.
+- Verificar contexto contra [foundation] y [scope].
+- Filtrar KU_NOISE mediante GREEN-KNOWLEDGE.
+- Generar [event] desde KU_SIGNAL verificado.
+
+#### 2.2 Limitaciones absolutas
+Contexto externo que activamente viola [foundation] es rechazado sin procesar.
+
+#### 2.3 Condiciones de violación
+- **Violación primaria:** aceptación de contexto que viola [foundation] como si fuera válido.
+- **Violación secundaria:** rechazo sistemático de contexto válido — aislamiento patológico.
+- **Señal alerta:** volumen anormal de KU externo — posible PREDATOR_VIRTUAL o ataque de saturación.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 Tipos de contexto en [ku-chat]
+- **KU_SIGNAL:** señal puntual del entorno que puede generar [event].
+- **KU_CONTEXT:** contexto situacional amplio que alimenta [scenario].
+- **KU_REQUEST:** solicitud externa de acción o información.
+- **KU_DATA:** datos externos verificables que enriquecen [scenario] o [what?].
+- **KU_NOISE:** contexto externo sin distinción (ΔΨ < 0) — debe ser purgado.
+
+#### 3.2 Proceso de verificación soberana
+1. **Recepción:** [ku-chat] recibe contexto bruto.
+2. **Clasificación inicial:** tipo de KU.
+3. **Filtro GREEN-KNOWLEDGE:** ΔΨ > 0? Si no: KU_NOISE, purgar.
+4. **Verificación [foundation]:** el contexto viola foundation? Si sí: rechazar.
+5. **Verificación [scope]:** el contexto está dentro del perímetro? Si no: evaluar declaración o rechazar.
+6. **Aprobación:** KU verificado → alimenta [scenario] o genera [event].
+
+#### 3.3 [ku-chat] y PREDATOR_VIRTUAL
+- **Frecuencia:** PREDATOR_VIRTUAL llega como KU externo: {DOGMA-VIRTUAL}, presión de consenso falso.
+- **Detección:** patrón sostenido de KU_NOISE masivo.
+- **Rol de GREEN-KNOWLEDGE:** filtro crítico contra PREDATOR_VIRTUAL.
+- **Escalada:** a [management] cuando patrón es sostenido.
+
+#### 3.4 [ku-chat] y DOORMAN-MOBILE
+- **Implementación:** DOORMAN-MOBILE como [ku-chat] en entorno móvil.
+- **Verificación adicional:** requiere BIOMETRICS en entorno móvil.
+
+#### 3.5 Relación con dominios económicos
+
+##### Memcoins/Volatilidad
+- KU_DATA como flujo de precios, volúmenes y señales de mercado.
+- KU_SIGNAL como disparador de [event] de mercado.
+- Filtro: KU_NOISE de mercado abundante — GREEN-KNOWLEDGE crítico.
+- Límite: no puede aceptar señal de fuente no verificada en [ecosystem].
+
+##### Custodia Móvil
+- KU_REQUEST como solicitud de acceso o firma en entorno móvil.
+- KU_SIGNAL de seguridad como alerta de entorno degradado.
+- DOORMAN-MOBILE como guardián en custodia móvil.
+- Límite: KU externo requiere verificación BIOMETRICS antes de procesar.
+
+##### Notaría Digital
+- KU_REQUEST como solicitud de emisión o validación documental.
+- KU_CONTEXT jurisdiccional como actualización de condiciones.
+- KU_DATA de registros públicos como enriquecimiento de [scenario].
+- Límite: no puede procesar KU_REQUEST de fuente no verificada en [ecosystem].
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation]
+Contexto que viola [foundation] es rechazado sin procesar.
+
+#### 4.2 Con [scope]
+[ku-chat] verifica que contexto sea relevante al perímetro declarado.
+
+#### 4.3 Con [term]
+[ku-chat] opera dentro del ciclo activo — KU fuera de [term] no puede modificar estado.
+
+#### 4.4 Con [scenario]
+KU verificado alimenta y actualiza [scenario].
+
+#### 4.5 Con [event]
+KU_SIGNAL verificado genera [event] procesable.
+
+#### 4.6 Con [management]
+Patrón sostenido de KU hostil escala a [management].
+
+#### 4.7 Con [wu-mail]
+[ku-chat] recibe, [wu-mail] emite — ciclo completo.
+
+#### 4.8 Con [mu-store]
+[mu-store] aporta contexto interno, [ku-chat] aporta contexto externo.
+
+#### 4.9 Con GREEN-KNOWLEDGE
+Filtro obligatorio de todo KU antes de aceptar.
+
+#### 4.10 Con DOORMAN-MOBILE
+Implementación de [ku-chat] en entorno móvil.
+
+#### 4.11 Con SOCIAL
+SOCIAL es interfaz relacional, [ku-chat] es soberanía de lo que entra.
+
+#### 4.12 Con SAMU @
+SAMU audita flujo de KU y detecta patrones anómalos.
+
+#### 4.13 Con Behavioral RAG
+Patrones de KU anteriores calibran filtros futuros.
+
+---
+
+### 5.0 ESTADOS DE [ku-chat]
+
+#### 5.1 KU_OPEN
+- **Condición:** [ku-chat] activo y recibiendo.
+- **Comportamiento:** verificación soberana en curso.
+- **Operación:** flujo normal de contexto externo.
+
+#### 5.2 KU_FILTERING
+- **Condición:** volumen elevado de KU entrante.
+- **Comportamiento:** GREEN-KNOWLEDGE en filtrado intensivo.
+- **Operación:** SAMU @ monitoreando calidad del flujo.
+
+#### 5.3 KU_SATURATED
+- **Condición:** volumen excede capacidad de verificación.
+- **Comportamiento:** solo KU_SIGNAL CRÍTICO procesado.
+- **Operación:** evaluación de PREDATOR_VIRTUAL activo, escalada a [management].
+
+#### 5.4 KU_RESTRICTED
+- **Condición:** [foundation] DEGRADED o [scope] reducido.
+- **Comportamiento:** solo KU dentro de perímetro mínimo.
+- **Operación:** verificación intensificada.
+
+#### 5.5 KU_CLOSED
+- **Condición:** [term] expirado o [foundation] COMPROMISED.
+- **Comportamiento:** no acepta contexto externo.
+- **Operación:** sistema en operación interna soberana.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Contribución a d₃ [scenario]
+KU verificado mejora d₃ — contexto externo válido enriquece el mapa.
+
+#### 6.2 Contribución a d₄ [event]
+KU_SIGNAL genera d₄ — señales externas verificadas alimentan cola de eventos.
+
+#### 6.3 Impacto de KU_SATURATED
+KU_SATURATED degrada T_matrix — sistema no puede procesar contexto relevante bajo ruido.
+
+#### 6.4 Compensación con [rabbit-faith]
+[rabbit-faith] puede operar con KU parcialmente verificado si S scalar > 0.5.
+
+#### 6.5 Aprendizaje en Behavioral RAG
+Patrones de KU calibran filtros futuros.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Recepción y verificación de KU_CONTEXT válido
+```
+[Trust] ku-chat =><= .. receive .. $$context_verified$$ --[As de Guía] [term]
+```
+
+#### 7.2 KU_NOISE purgado por GREEN-KNOWLEDGE
+```
+[Trust] ku-chat =><= .. filter .. $$context_noise$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.3 KU_SIGNAL generando [event] procesable
+```
+[Trust] ku-chat =><= .. signal .. $$external_trigger$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.4 KU_SATURATED escalando a [management]
+```
+[Trust] ku-chat =><= .. escalate .. $$context_saturation$$ --[Ballestrinque] [term]
+```
+
+#### 7.5 [ku-chat] en dominio memcoins
+```
+[Trust] ku-chat =><= .. trade .. $$market_context$$ --[As de Guía] [term]
+```
+
+#### 7.6 [ku-chat] en dominio custodia móvil
+```
+[Trust] ku-chat =><= .. secure .. $$custody_request$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.7 [ku-chat] en dominio notaría digital
+```
+[Trust] ku-chat =><= .. certify .. $$notary_context$$ --[Ballestrinque] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+- **Activación:** [ku-chat] en KU_OPEN.
+- **Efecto:** recepción soberana activa y verificando.
+
+#### 8.2 Nudo de Ocho
+- **Activación:** KU verificado cristalizado en [scenario].
+- **Efecto:** contexto válido integrado al mapa.
+
+#### 8.3 Nudo Corredizo
+- **Activación:** KU_CLOSED.
+- **Efecto:** recepción suspendida por [term] expirado o foundation COMPROMISED.
+
+#### 8.4 Ballestrinque
+- **Activación:** KU_FILTERING.
+- **Efecto:** tensión entre volumen y capacidad de verificación.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+#### 9.1 KuReceive
+1. Recepción inicial de contexto externo.
+2. Clasificación de tipo de KU.
+3. Registro temporal en buffer de recepción.
+4. Notificación a GREEN-KNOWLEDGE para filtrado.
+5. Transición a KuFilter.
+
+#### 9.2 KuFilter
+1. Aplicación de GREEN-KNOWLEDGE como filtro de distinción.
+2. Cálculo de ΔΨ para cada KU.
+3. Separación de KU_NOISE (ΔΨ < 0) para purga.
+4. Priorización de KU_SIGNAL CRÍTICO si saturación.
+5. Transición a KuVerify para KU con ΔΨ > 0.
+
+#### 9.3 KuVerify
+1. Verificación soberana contra [foundation].
+2. Verificación de relevancia para [scope].
+3. Evaluación de integridad y coherencia.
+4. Consulta a Behavioral RAG para patrones conocidos.
+5. Decisión de aceptación o rechazo.
+
+#### 9.4 KuAccept
+1. Aprobación de KU verificado.
+2. Integración en [scenario] o generación de [event].
+3. Actualización de métricas de procesamiento.
+4. Notificación a módulos afectados.
+5. Registro en Behavioral RAG de patrón exitoso.
+
+#### 9.5 KuReject
+1. Rechazo de KU que viola [foundation] o es KU_NOISE.
+2. Registro de causa de rechazo.
+3. Notificación a SAMU @ si patrón anómalo.
+4. Actualización de métricas de rechazo.
+5. Purga de KU rechazado.
+
+#### 9.6 KuEscalate
+1. Detección de patrón sostenido de KU hostil.
+2. Escalada a [management] para gestión de amenaza.
+3. Coordinación con [rabbit-faith] si necesario.
+4. Activación de protocolos de defensa.
+5. Monitoreo continuo de flujo de KU.
+
+---
+
+### 10.0 MÉTRICAS
+
+- **Ratio KU_ACCEPTED vs KU_REJECTED vs KU_NOISE purgado.**
+- **Volumen de KU recibido:** por tipo y dominio.
+- **Frecuencia de KU_SATURATED:** por ciclo.
+- **Tasa de KU que genera [event]:** vs KU que alimenta [scenario].
+- **Frecuencia de PREDATOR_VIRTUAL:** detectado en flujo de KU.
+- **Delta-d₃ generado:** por KU verificado al cierre del ciclo.
+
+---
+
+### 11.0 REGLAS
+
+- Contexto externo que viola [foundation] es rechazado sin procesar.
+- Todo KU debe pasar filtro GREEN-KNOWLEDGE antes de modificar [scenario].
+- [ku-chat] no acepta contexto fuera de [scope] sin declaración soberana.
+- KU_SATURATED escala a [management] automáticamente.
+- [rabbit-faith] puede habilitar procesamiento de KU parcialmente verificado solo si S scalar > 0.5.
+- DOORMAN-MOBILE verifica todo KU en entorno móvil.
+- BIOMETRICS debe verificar identidad del emisor en KU_REQUEST de custodia.
+- SAMU @ audita todo flujo de KU y detecta patrones anómalos.
+- Behavioral RAG registra todo patrón de KU para calibración de filtros futuros.
+- [ku-chat] cierra con [term] — KU recibido fuera de [term] activo no puede modificar estado.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+[ku-chat] fija la recepción soberana verificada de contexto externo como condición de apertura controlada del sistema hacia el entorno.
+
+#### 12.2 Limitaciones
+No acepta contexto que viola foundation, no acepta KU fuera de [scope] sin declaración, no opera con [term] cerrado.
+
+#### 12.3 Habilitaciones
+Enriquecimiento soberano de [scenario] con contexto externo verificado, generación de [event] desde señales externas, detección de PREDATOR_VIRTUAL en flujo de KU, operación soberana sin aislamiento patológico ni exposición sin filtro.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

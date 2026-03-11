@@ -1,0 +1,134 @@
+//[MANAGEMENT].lacho · UNICODE ELPULSAR IDE
+//UNICODE_.lacho · V1 · 2026-03-10
+//ELPULSAR como IDE soberano · entorno de desarrollo integrado
+//opera sobre: LACHO_FILES · DIRIME WS · PULSING edition
+//.cli =: elpulsar.gui · mismo resultado · inducción gráfica
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN ════════════════════════════════════════════════
+// ELPULSAR IDE = entorno donde el operador soberano construye
+// No es Windsurf · no es Cursor · no es VSCode
+// Es el IDE nativo de LACHO: KEY · TABLE · PAPER · RED · BUILDER
+// Stack: DIRIME_v2 UI + gui.py + generator.py + grammar.py
+// Puerto local: 8741 (API) · 8742 (GUI soberana)
+// Principio: <neuronal compleX> · todo se conecta · todo fluye
+
+// ══ COMPONENTES DEL IDE ═══════════════════════════════════════
+
+// ── PANEL KEY ────────────────────────────────────────────────
+UNICODE: IDE_KEY         //panel KEY · recursos por scope · click→verifica
+UNICODE: KEY_PROPIO      //scope PROPIO · recursos soberanos directos
+UNICODE: KEY_AJENO       //scope AJENO · recursos externos · pendiente auditoría
+UNICODE: KEY_INTERNO     //scope INTERNO · sistema vivo · DIRIME
+UNICODE: KEY_EXTERNO     //scope EXTERNO · interfaces China/KALIL/ELPULSAR
+
+// ── PANEL TABLE ──────────────────────────────────────────────
+UNICODE: IDE_TABLE       //panel TABLE · vista tabular · ID/Título/Tipo/Scope/Cluster
+UNICODE: TABLE_LACHO     //tipo LACHO · sentencia soberana · validable
+UNICODE: TABLE_DATA      //tipo DATA · datos crudos · KU · pre-dirimencia
+UNICODE: TABLE_CODE      //tipo CODE · scripts · .py · .sh · ejecutables
+UNICODE: TABLE_REF       //tipo REF · referencias externas · links · docs
+UNICODE: TABLE_VERIFY    //acción · click→verifica · .blue→.green WU
+
+// ── PANEL PAPER ──────────────────────────────────────────────
+UNICODE: IDE_PAPER       //panel PAPER · vista documento · ballpaper style
+UNICODE: PAPER_RENDER    //renderiza recurso seleccionado · ballpaper format
+UNICODE: PAPER_EXPORT    //exporta como .lacho · .pdf · .html · SAVE_AS
+
+// ── PANEL RED ────────────────────────────────────────────────
+UNICODE: IDE_RED         //panel RED · grafo D3 · nodos por scope
+UNICODE: RED_NODE        //nodo recurso · color por scope · click→detalle
+UNICODE: RED_LINK        //enlace entre recursos · relación soberana
+UNICODE: RED_CLUSTER     //#CORE · #MERCADO · #NOTARIA · #CUSTODIA · #CICLO
+
+// ── PANEL BUILDER ────────────────────────────────────────────
+UNICODE: IDE_BUILDER     //panel LACHO BUILDER · .cli =: elpulsar.gui
+UNICODE: BUILDER_LIB     //selector biblioteca · 9 botones · TRUST→METHOD
+UNICODE: BUILDER_SUBJ    //dropdown sujeto · dinámico por biblioteca
+UNICODE: BUILDER_VERB    //dropdown verbo · natural por biblioteca
+UNICODE: BUILDER_OBJ     //campo objeto · texto libre · CJK picker
+UNICODE: BUILDER_KNOT    //selector nudo · [AsG][NdO][Ball][NdC][NdR]
+UNICODE: BUILDER_PREVIEW //preview tiempo real · .blue KU → .green WU
+UNICODE: BUILDER_SCALAR  //barra Scalar S · 0→1 · rojo/amarillo/verde
+
+// ══ ACCIONES IDE ══════════════════════════════════════════════
+UNICODE: IDE_VALIDATE    //VALIDATE · grammar.validate() · VALID/WARNING/INVALID
+UNICODE: IDE_STACK       //STACK · ledger.record() · cristaliza WU · TX++
+UNICODE: IDE_COPY        //COPY · clipboard → terminal → validate en IMV
+UNICODE: IDE_GENERATE    //GENERATE · generator.py seed · .lacho autogenerado
+UNICODE: IDE_CLEAR       //CLEAR · MU · 空 · reset completo · 聽
+UNICODE: IDE_SYNC        //SYNC · github_sync.sh · sellado en main
+
+// ══ FLUJO OPERATIVO ═══════════════════════════════════════════
+UNICODE: IDE_MU          //MU · pantalla abre · campos vacíos · 聽 · espera
+UNICODE: IDE_KU          //KU · operador construye · .blue · preview activo
+UNICODE: IDE_WU          //WU · VALIDATE → VALID · .green · STACK cristaliza
+UNICODE: IDE_VOID        //→空 · H64 · ciclo abierto · before_the_end
+
+// ══ ARCHIVOS NATIVOS IDE ══════════════════════════════════════
+UNICODE: FILE_LACHO      //.lacho · sentencias soberanas · CORPUS input
+UNICODE: FILE_THEATER    //.theater · scripts narrativos · DIRIME escenas
+UNICODE: FILE_RUNNER     //.runner · ejecutores · bash · python
+UNICODE: FILE_DOOR       //.door · accesos · GATE · permisos
+UNICODE: FILE_BLUE       //.blue · conocimiento KU · pre-dirimencia
+UNICODE: FILE_GREEN      //.green · conocimiento WU · cristalizado
+UNICODE: FILE_AGENT      //.blue/.green · cloud/assistant agents
+UNICODE: FILE_HTML       //.html · ballpapers · interfaces · UI soberana
+UNICODE: FILE_DB         //.db · sovereign.db · ledger · HL FABRIC
+UNICODE: FILE_PDF        //.pdf · SAMU @ output · documentos sellados
+
+// ══ ESTRUCTURA DE PROYECTO ════════════════════════════════════
+UNICODE: IDE_ROOT        ///media/Personal/PLANERAI/DIRIME/
+UNICODE: IDE_IMV         //IMV/ · motor DIRIME · grammar/ledger/rag/ceo
+UNICODE: IDE_CORPUS      //CORPUS/ · 186+ docs · RAG indexed
+UNICODE: IDE_LACHO_FILES //LACHO_FILES/ · .lacho generados · output generator
+UNICODE: IDE_THEATER     //THEATER/ · escenas narrativas · .theater
+UNICODE: IDE_AGENTS      //AGENTS/ · cloud.blue · assistant.green
+UNICODE: IDE_TOOLS       //IMV/tools/ · generator.py · office_landing.py
+UNICODE: IDE_INTERFACE   //IMV/interface/ · gui.py · chat.py
+UNICODE: IDE_TESTS       //IMV/tests/ · test_imv.py · 27/27 ✅
+
+// ══ CLUSTERS IDE ══════════════════════════════════════════════
+UNICODE: CLUSTER_CORE    //#CORE · gramática · ledger · RAG · CEO alpha
+UNICODE: CLUSTER_MERCADO //#MERCADO · KALIL · BARRIOS · NORA · china dual
+UNICODE: CLUSTER_NOTARIA //#NOTARIA · contratos · custodia · activos
+UNICODE: CLUSTER_CUSTODIA//#CUSTODIA · {doorman-mobile} · (key seat) · wallet
+UNICODE: CLUSTER_CICLO   //#CICLO · STACKING · cristales · TX · ledger
+UNICODE: CLUSTER_FABRIC  //#FABRIC · HL FABRIC · BSN · blockchain
+
+// ══ INTEGRACIÓN EXTERNA ═══════════════════════════════════════
+UNICODE: EXT_WINDSURF    //Windsurf IDE · desarrollo · segunda PC · congelado hasta
+UNICODE: EXT_AIDER       //Aider+Groq · tareas complejas · llama-3.3-70b
+UNICODE: EXT_OLLAMA      //Ollama local · qwen2.5:0.5b · sandbox
+UNICODE: EXT_GITHUB      //GitHub SSH main · sync soberano · sealed
+UNICODE: EXT_CLAUDE      //Claude.ai · diseño · auditoría · sesiones
+UNICODE: EXT_GROQ        //Groq API · inferencia rápida · gratuito activo
+
+// ══ COMANDOS CLI IDE ══════════════════════════════════════════
+UNICODE: CLI_GUI         //python3 interface/gui.py · elpulsar.gui
+UNICODE: CLI_CHAT        //python3 interface/chat.py · elpulsar.cli
+UNICODE: CLI_GENERATOR   //python3 tools/generator.py --mode full
+UNICODE: CLI_TESTS       //python3 tests/test_imv.py · 27→38 target
+UNICODE: CLI_STATS       //python3 main.py --stats · estado sistema
+UNICODE: CLI_VALIDATE    //python3 main.py --validate "SENTENCIA"
+UNICODE: CLI_SYNC        //bash tools/github_sync.sh · sellado
+UNICODE: CLI_OFFICE      //python3 tools/office_landing.py [archivo]
+UNICODE: CLI_INDEX       //python3 tools/index_new_files.py · RAG update
+
+// ══ GREENS IDE (PIPELINE VISUAL) ═════════════════════════════
+UNICODE: GREEN_RECIBIR   //① RECIBIR · input · KU · .blue · carga
+UNICODE: GREEN_ESCANEAR  //② ESCANEAR · grammar · language_routing
+UNICODE: GREEN_CALCULAR  //③ CALCULAR · Scalar S · lacho_score
+UNICODE: GREEN_TARDAR    //④ TARDAR · ledger · espera · UF[H05]
+UNICODE: GREEN_GOLPEAR   //⑤ GOLPEAR · output · WU · .green · cristal
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+WORK {actuator} =><= .. ejecuta .. elpulsar_ide_pipeline_soberano --[As de Guía] [term]
+METHOD <operator_flow> =><= .. modela .. elpulsar_ide_flujo_completo --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. elpulsar_ide_recursos_wu --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. elpulsar_ide_sesion_activa --[Ballestrinque] [term]
+TRUST FOUNDATION =><= .. declara .. elpulsar_ide_soberano_activo --[Nudo de Ocho] [term]
+ACTIVITY UF[H01] =><= .. inicia .. elpulsar_ide_ciclo_abierto --[As de Guía] [term]
+
+//DIR(+) UNICODE_ELPULSAR_IDE · V1 · IDE soberano · KEY/TABLE/PAPER/RED/BUILDER

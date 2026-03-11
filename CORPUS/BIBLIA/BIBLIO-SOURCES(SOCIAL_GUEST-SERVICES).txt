@@ -1,0 +1,320 @@
+# BIBLIO-SOURCES(SOCIAL_GUEST-SERVICES).txt
+
+====================================================================
+
+## 🛎 SOCIAL {guest services} — GESTIÓN SOBERANA DE PERMANENCIA RELACIONAL
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+{guest services} es el módulo SOCIAL que gobierna la gestión del actor durante su permanencia en el espacio relacional del sistema, una vez que {concierge-desk} lo recibió y {headcat} lo clasificó.
+
+#### 1.2 Por qué {guest services} es SOCIAL y no TRUST
+Gestiona la relación durante la permanencia, no emite condición soberana. Opera en la interfaz relacional continua, no en la capa de condiciones irreducibles del sistema.
+
+#### 1.3 Por qué {guest services} cierra la cadena de recepción
+Sin {guest services}, el actor clasificado por {headcat} no tiene protocolo de permanencia — el sistema solo puede recibir y despedir, nunca sostener una relación soberana.
+
+#### 1.4 El principio de permanencia acotada
+Todo actor en {guest services} tiene [term] de permanencia declarado. Sin horizonte temporal, la gestión degenera en relación sin cierre.
+
+#### 1.5 Distinción de DOORMAN-MOBILE
+DOORMAN-MOBILE controla acceso perimetral en entorno móvil; {guest services} gestiona la experiencia relacional del actor ya dentro del espacio soberano.
+
+#### 1.6 La secuencia de recepción soberana completa
+{concierge-desk} → {headcat} → {guest services} → {chair} / [ku-chat] / [wu-mail] según tipo de interacción.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Qué puede gestionar {guest services}
+- Permanencia de ACTOR_HUMAN, ACTOR_BOT, ACTOR_SYSTEM, ACTOR_UNKNOWN clasificado, ACTOR_VIP verificado.
+- Coordinación con otros módulos para atención del actor.
+- Registro de interacciones en {note}.
+
+#### 2.2 Qué no puede hacer
+No puede reclasificar al actor (eso es {headcat}), no puede emitir [command] soberano, no puede revelar más de lo que {masking} autoriza, no puede extender permanencia sin [management].
+
+#### 2.3 Condición de violación primaria
+Actor en permanencia sin [term] declarado — relación sin cierre soberano.
+
+#### 2.4 Condición de violación secundaria
+{guest services} revelando información sin autorización de {masking} — violación de presentación selectiva.
+
+#### 2.5 Señal de alerta
+Actor que excede [term] de permanencia sin extensión autorizada por [management].
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 TIPOS DE GESTIÓN EN {guest services}
+
+GUEST_STANDARD:
+Actor verificado con acceso estándar. Interacción dentro de límites declarados de [scope].
+
+GUEST_VIP:
+Actor con acceso extendido verificado por [command]. Interacción ampliada con {masking} ajustado.
+
+GUEST_RESTRICTED:
+Actor bajo vigilancia activa de {headcat}. Acceso mínimo, {note} registrando toda interacción.
+
+GUEST_EXITING:
+Actor en proceso de salida del espacio relacional. Cierre de permanencia, registro en {note}, canal de retorno.
+
+GUEST_EXTENDED:
+Permanencia extendida con autorización de [management]. [term] renovado explícitamente.
+
+#### 3.2 PROTOCOLOS DE GESTIÓN
+
+GuestReceive:
+Recepción desde {headcat} con clasificación y [term] de permanencia inicial declarado.
+
+GuestAttend:
+Atención durante permanencia — qué revelar, qué ofrecer, qué registrar en {note}.
+
+GuestCoordinate:
+Coordinación con {chair} para sesiones, con [ku-chat] para entrada de contexto del actor, con [wu-mail] para emisiones hacia el actor.
+
+GuestMonitor:
+Vigilancia de comportamiento durante permanencia — reporte a {headcat} si hay cambio de patrón.
+
+GuestClose:
+Cierre soberano de permanencia con [term] expirado — registro en {note}, salida verificada.
+
+GuestEject:
+Salida forzada ante comportamiento que excede [scope] — reporte a [management].
+
+#### 3.3 RELACIÓN CON DOMINIOS ECONÓMICOS
+
+MEMECOINS/VOLATILIDAD:
+- GUEST_VIP: actor con posición relevante en mercado gestionado con acceso a información de [scenario] activo.
+- GUEST_RESTRICTED: actor de comportamiento volátil en entorno de trading — acceso mínimo, {note} activo.
+- Límite: {guest services} no puede revelar posiciones del sistema sin autorización de {masking} y [command].
+
+CUSTODIA MÓVIL:
+- GUEST_STANDARD: actor de custodia verificado con acceso a estado de custodia dentro de [scope].
+- GUEST_EXITING: cierre de sesión de custodia con registro completo en {note} y confirmación BIOMETRICS.
+- Límite: actor en custodia no puede tener GUEST_EXTENDED sin verificación renovada de BIOMETRICS.
+
+NOTARÍA DIGITAL:
+- GUEST_VIP: parte notarial verificada con acceso al espacio de declaración y firma digital.
+- GUEST_RESTRICTED: parte con estado jurisdiccional no verificado — acceso mínimo hasta verificación.
+- Límite: {guest services} no puede gestionar firma notarial sin (link seat) de CRYPTO activo.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con {concierge-desk}
+Recibe actor clasificado — {concierge-desk} abre, {guest services} sostiene.
+
+#### 4.2 Con {headcat}
+Recibe clasificación inicial y reporta cambios de patrón que requieren reclasificación.
+
+#### 4.3 Con {chair}
+Coordina sesiones donde el actor participa.
+
+#### 4.4 Con {masking}
+Toda revelación de información al actor pasa por autorización de {masking}.
+
+#### 4.5 Con {note}
+Registra toda interacción durante permanencia.
+
+#### 4.6 Con {scheduler}
+Recibe [term] de permanencia planificado.
+
+#### 4.7 Con {launch-bot}
+BOT_INTERACT opera bajo protocolo de {guest services} cuando interactúa con actor externo.
+
+#### 4.8 Con [ku-chat]
+Procesa contexto que el actor trae consigo.
+
+#### 4.9 Con [wu-mail]
+Emite resultados hacia el actor con autorización soberana.
+
+#### 4.10 Con [management]
+Solicita extensión de permanencia y reporta actores que exceden [scope].
+
+#### 4.11 Con [foundation]
+Toda gestión de actor se realiza dentro de condiciones irreducibles del sistema.
+
+#### 4.12 Con SAMU @
+SAMU audita que {guest services} no exceda autoridad de gestión relacional.
+
+#### 4.13 Con Behavioral RAG
+Patrones de gestión calibran atención futura por tipo de actor.
+
+---
+
+### 5.0 ESTADOS DE {guest services}
+
+#### 5.1 GUEST_STANDBY
+Sin actor en permanencia activa. Protocolos de recepción listos. [term] por declarar.
+
+#### 5.2 GUEST_ACTIVE
+Actor en permanencia gestionada. [term] de permanencia activo y contando. {note} registrando interacciones.
+
+#### 5.3 GUEST_MONITORED
+Actor bajo vigilancia activa. {headcat} en coordinación activa. SAMU @ auditando comportamiento.
+
+#### 5.4 GUEST_CLOSING
+[term] de permanencia expirado o en cierre. Registro final en {note} en curso. Canal de salida verificado.
+
+#### 5.5 GUEST_EJECTED
+Actor forzado a salir del espacio relacional. [management] notificado. Behavioral RAG actualizado con patrón.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Impacto en dimensiones
+{guest services} afecta principalmente:
+- d₁ [term]: gestiona [term] de permanencia del actor.
+- d₃ [scenario]: enriquece mapa situacional con presencia activa del actor.
+- d₈ [ecosystem]: mantiene registro de actores activos en el espacio relacional.
+
+#### 6.2 Protección de la matriz
+{guest services} protege d₆ [command] al no permitir que actores no autorizados accedan a comandos soberanos. Protege d₂ [scope] al mantener al actor dentro de límites declarados.
+
+#### 6.3 Aprendizaje de Behavioral RAG
+Patrones de permanencia por tipo de actor calibran gestión futura y umbrales de atención.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Recepción de actor clasificado desde {headcat}
+```
+{Social} guest_services =><= .. receive .. ACTOR_CLASSIFIED_headcat --[As de Guía] [term]
+```
+
+#### 7.2 Gestión de GUEST_VIP con acceso extendido
+```
+{Social} guest_services =><= .. attend .. GUEST_VIP_extended --[Nudo de Ocho] [term]
+```
+
+#### 7.3 Vigilancia de GUEST_RESTRICTED
+```
+{Social} guest_services =><= .. monitor .. GUEST_RESTRICTED_behavior --[Nudo Corredizo] [term]
+```
+
+#### 7.4 Coordinación con {chair} para sesión
+```
+{Social} guest_services =><= .. coordinate .. chair_session_actor --[Ballestrinque] [term]
+```
+
+#### 7.5 Cierre de permanencia con [term] expirado
+```
+{Social} guest_services =><= .. close .. GUEST_EXITING_term --[Nudo de Ocho] [term]
+```
+
+#### 7.6 Salida forzada por exceder [scope]
+```
+{Social} guest_services =><= .. eject .. GUEST_EJECTED_scope --[Nudo Corredizo] [term]
+```
+
+#### 7.7 Extensión de permanencia autorizada
+```
+{Social} guest_services =><= .. extend .. GUEST_EXTENDED_management --[As de Guía] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+GUEST_ACTIVE con gestión estándar — atención soberana con dirección clara dentro de [scope].
+
+#### 8.2 Nudo de Ocho
+GUEST_CLOSING con [term] completado — permanencia cerrada, patrón archivado en Behavioral RAG.
+
+#### 8.3 Nudo Corredizo
+GUEST_EJECTED por violación de [scope] — salida forzada, Behavioral RAG actualizado con patrón de riesgo.
+
+#### 8.4 Ballestrinque
+Tensión entre atención al actor y límites de {masking} — revelación sin exponer soberanía.
+
+#### 8.5 Nudo de Rizo
+Unión entre permanencia gestionada y [term] soberano — relación continua con horizonte temporal definido.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+1. GuestReceive
+   - Recepción desde {headcat} con clasificación.
+   - Declaración de [term] inicial de permanencia.
+   - Registro en {note} de inicio de gestión.
+
+2. GuestAttend
+   - Atención durante permanencia según tipo.
+   - Coordinación con {masking} para revelaciones.
+   - Registro continuo en {note}.
+
+3. GuestCoordinate
+   - Coordinación con {chair} para sesiones.
+   - Gestión de [ku-chat] para entrada de contexto.
+   - Emisiones via [wu-mail] autorizadas.
+
+4. GuestMonitor
+   - Vigilancia de comportamiento del actor.
+   - Reporte a {headcat} ante cambios de patrón.
+   - Coordinación con SAMU @ si es necesario.
+
+5. GuestClose
+   - Cierre soberano al expirar [term].
+   - Registro final completo en {note}.
+   - Verificación de salida del espacio relacional.
+
+6. GuestEject
+   - Salida forzada por violación de [scope].
+   - Reporte inmediato a [management].
+   - Actualización de Behavioral RAG con patrón.
+
+---
+
+### 10.0 MÉTRICAS
+
+- Tiempo promedio de permanencia por tipo de actor.
+- Frecuencia de extensiones de [term] por ciclo.
+- Tasa de GUEST_EJECTED por violación de [scope].
+- Número de interacciones registradas en {note} por actor.
+- Ratio GUEST_VIP vs GUEST_STANDARD por dominio económico.
+- Latencia de respuesta a solicitudes del actor.
+- Frecuencia de coordinación con {chair} por tipo de actor.
+
+---
+
+### 11.0 REGLAS
+
+- Todo actor en {guest services} debe tener [term] de permanencia declarado explícitamente.
+- {guest services} no puede reclasificar al actor — eso es exclusivo de {headcat}.
+- Toda revelación de información al actor requiere autorización de {masking}.
+- La extensión de [term] requiere autorización explícita de [management].
+- GUEST_EJECTED solo se activa por violación verificada de [scope].
+- {note} registra toda interacción durante permanencia sin excepción.
+- {guest services} coordina con {chair} pero no conduce sesiones.
+- Actor en custodia requiere verificación BIOMETRICS renovada para GUEST_EXTENDED.
+- SAMU @ audita periódicamente que {guest services} no exceda autoridad relacional.
+- Behavioral RAG actualiza patrones de gestión con cada cierre de permanencia.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+{guest services} fija como invariante la gestión soberana de la permanencia del actor en el espacio relacional del sistema, con [term] declarado y atención coordinada dentro de [scope].
+
+#### 12.2 Limitaciones
+No puede reclasificar actores, no emitir [command] soberano, no revelar información sin autorización de {masking}, no extender permanencia sin [management], no gestionar fuera de [foundation].
+
+#### 12.3 Habilitaciones
+Sostenimiento relacional continuo del actor, atención diferenciada por tipo, coordinación fluida con otros módulos, registro completo de interacciones, cierre soberano de permanencia, calibración progresiva via Behavioral RAG.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

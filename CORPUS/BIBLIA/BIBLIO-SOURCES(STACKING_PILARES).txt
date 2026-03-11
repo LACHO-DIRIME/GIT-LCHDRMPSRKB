@@ -1,0 +1,377 @@
+# BIBLIO-SOURCES(STACKING_PILARES).txt
+
+====================================================================
+
+## 🗂 STACKING — CRISTALIZACIÓN, PESO Y MEMORIA SOBERANA
+
+---
+
+### 1.0 STACKING COMO BIBLIOTECA DE CRISTALIZACIÓN
+
+#### 1.1 Por qué cristalización y no almacenamiento
+STACKING no es base de datos neutral — es memoria con peso, fricción y propósito constitucional. Lo que entra a STACKING no es fácil de borrar.
+
+#### 1.2 El .stack como formato canónico de STACKING
+.stack es el formato soberano de cristalización: estructura con peso verificable, fricción constitutiva y propósito definido.
+
+#### 1.3 Relación entre GREEN-KNOWLEDGE (WORK) y STACKING
+Solo lo que pasa el filtro GREEN (delta-Ψ > 0) puede cristalizar en STACKING. GREEN-KNOWLEDGE es el guardián de la entrada a STACKING.
+
+#### 1.4 Relación entre STACKING y Behavioral/Cognitive RAG
+Behavioral RAG opera sobre Pilar 4 (temporal), Cognitive RAG sobre Pilar 8 (arqueología). Los dos RAG son usuarios directos de los pilares STACKING.
+
+---
+
+### 2.0 DOCUMENTO POR PILAR
+
+#### 2.1 PILAR 1 — PERSISTENCIA FUNDAMENTAL
+Definición técnica: El suelo de memoria que garantiza que el sistema existe y puede operar.
+
+Función sistémica:
+- Condición de posibilidad de todos los demás pilares.
+- Relacionado con [foundation] de TRUST pero en capa de memoria persistente.
+- No es el .stack más importante — es la condición de existencia.
+
+Estados operativos:
+- PERSISTENCE_ACTIVE: suelo de memoria operativo.
+- PERSISTENCE_DEGRADING: integridad comprometida.
+- PERSISTENCE_REBUILDING: reconstrucción en curso.
+- PERSISTENCE_STABLE: suelo sólido y verificable.
+
+Condición de violación: Pérdida de persistencia fundamental que amenaza la existencia del sistema.
+
+#### 2.2 PILAR 2 — FORMA ESTRUCTURAL
+Definición técnica: La organización con peso — cómo la memoria se da forma a sí misma reflejando jerarquías de autoridad.
+
+Función sistémica:
+- Estructura que no es índice neutral.
+- Refleja jerarquías de autoridad del sistema.
+- Organización con peso y fricción intrínsecas.
+
+Estados operativos:
+- STRUCTURE_FORMING: forma siendo establecida.
+- STRUCTURE_WEIGHTED: peso asignado según autoridad.
+- STRUCTURE_STABLE: estructura consolidada.
+- STRUCTURE_REORGANIZING: reorganización por cambio de autoridad.
+
+Condición de violación: Estructura sin peso o sin jerarquía de autoridad definida.
+
+#### 2.3 PILAR 3 — CRISTALIZACIÓN DE CONOCIMIENTO
+Definición técnica: El proceso por el que WU verificado se vuelve permanente de forma irreversible.
+
+Función sistémica:
+- Transformación de WU efímero en memoria permanente.
+- Irreversibilidad por diseño constitucional.
+- Requiere [command] soberano para modificación posterior.
+
+Estados operativos:
+- CRYSTALLIZING: WU siendo cristalizado.
+- CRYSTALLIZED: conocimiento permanente formado.
+- CRYSTALLIZATION_LOCKED: cristalización bloqueada contra cambios.
+- CRYSTALLIZATION_DEPRECATED: cristalización obsoleta pero preservada.
+
+Condición de violación: Modificación de conocimiento cristalizado sin [command] soberano.
+
+#### 2.4 PILAR 4 — ORGANIZACIÓN TEMPORAL
+Definición técnica: El tiempo como eje de la memoria — STACKING guarda qué, cuándo, en qué orden, bajo qué [term].
+
+Función sistémica:
+- Base para Behavioral RAG.
+- Secuencia temporal verificable de eventos.
+- Ordenamiento con propósito constitucional.
+
+Estados operativos:
+- TEMPORAL_ORDERING: eventos siendo ordenados.
+- TEMPORAL_SEQUENCED: secuencia establecida.
+- TEMPORAL_INDEXED: indexado temporal completo.
+- TEMPORAL_ARCHIVED: secuencia archivada como histórica.
+
+Condición de violación: Alteración de secuencia temporal sin autorización soberana.
+
+#### 2.5 PILAR 5 — JERARQUÍA SEMÁNTICA
+Definición técnica: Niveles de autoridad del conocimiento cristalizado — no toda la memoria tiene el mismo peso.
+
+Función sistémica:
+- Refleja niveles de autoridad del sistema completo.
+- Organización semántica con peso diferenciado.
+- Acceso diferenciado según nivel jerárquico.
+
+Estados operativos:
+- HIERARCHY_ASSIGNING: niveles siendo asignados.
+- HIERARCHY_STRUCTURED: jerarquía establecida.
+- HIERARCHY_ENFORCED: niveles being enforced.
+- HIERARCHY_REBALANCED: jerarquía reequilibrada.
+
+Condición de violación: Acceso a nivel jerárquico sin autoridad correspondiente.
+
+#### 2.6 PILAR 6 — PESO Y FRICCIÓN
+Definición técnica: La memoria que cuesta modificar — sin fricción, no hay cristal, hay fluido.
+
+Función sistémica:
+- Característica constitutiva de STACKING, no defecto.
+- Protección contra modificaciones no autorizadas.
+- Costo energético de cambio como medida de valor.
+
+Estados operativos:
+- WEIGHT_ESTABLISHED: peso asignado a memoria.
+- FRICTION_ACTIVE: fricción protegiendo cambios.
+- WEIGHT_CHANGING: modificación autorizada en curso.
+- FRICTION_BYPASSED: fricción suspendida temporalmente.
+
+Condición de violación: Modificación sin costo de fricción o sin autoridad soberana.
+
+#### 2.7 PILAR 7 — ACCESO Y RECUPERACIÓN
+Definición técnica: La soberanía de lectura — quién puede leer qué, bajo qué condiciones de autoridad y [scope].
+
+Función sistémica:
+- Control de acceso a memoria cristalizada.
+- Verificación de autoridad antes de lectura.
+- Delimitación de [scope] de acceso.
+
+Estados operativos:
+- ACCESS_GRANTING: acceso siendo autorizado.
+- ACCESS_VERIFIED: autoridad verificada.
+- ACCESS_ACTIVE: lectura en curso.
+- ACCESS_REVOKED: acceso revocado por violación.
+
+Condición de violación: Acceso no autorizado o fuera de [scope] declarado.
+
+#### 2.8 PILAR 8 — ARQUEOLOGÍA Y CONSERVACIÓN
+Definición técnica: Lo que no se puede borrar — el registro arqueológico del sistema aunque ya no esté activo operativamente.
+
+Función sistémica:
+- Base para Cognitive RAG.
+- Conservación de todo lo dirimido soberanamente.
+- Registro histórico inmodificable.
+
+Estados operativos:
+- ARCHAEOLOGICAL_RECORDING: evento siendo archivado.
+- ARCHAEOLOGICAL_PRESERVED: registro conservado.
+- ARCHAEOLOGICAL_ACCESSIBLE: acceso para Cognitive RAG.
+- ARCHAEOLOGICAL_IMMUTABLE: registro bloqueado contra cambios.
+
+Condición de violación: Intento de modificación de registro arqueológico.
+
+---
+
+### 3.0 EL PROCESO DE CRISTALIZACIÓN
+
+#### 3.1 Flujo completo
+WORK ejecuta → delta-Ψ > 0 → GREEN-KNOWLEDGE → Pilar 3 (cristaliza) → Pilar 1 (persiste) → Pilar 4 (se fecha) → Pilar 5 (se jerarquiza) → Pilar 6 (adquiere peso) → Pilar 7 (se hace accesible) → Pilar 8 (queda en arqueología cuando expira).
+
+#### 3.2 Verificación en cada paso
+Cada paso del proceso requiere verificación de coherencia con [foundation] antes de continuar al siguiente.
+
+#### 3.3 Irreversibilidad constitucional
+Una vez completado el proceso, la cristalización es irreversible sin [command] soberano explícito.
+
+---
+
+### 4.0 BEHAVIORAL RAG Y COGNITIVE RAG EN STACKING
+
+#### 4.1 Behavioral RAG sobre Pilar 4 (temporal)
+Behavioral RAG aprende patrones temporales:
+- Secuencias de eventos exitosas.
+- Umbrales óptimos de tiempo entre acciones.
+- Patrones de estacionalidad en el sistema.
+
+#### 4.2 Cognitive RAG sobre Pilar 8 (arqueología)
+Cognitive RAG accede a historia profunda:
+- Decisiones históricas y sus resultados.
+- Evolución de la autoridad del sistema.
+- Patrones de cambio constitucional a lo largo del tiempo.
+
+#### 4.3 Coordinación entre los dos RAG
+Behavioral RAG informa decisiones presentes; Cognitive RAG informa decisiones estratégicas. Ambos se coordinan a través de SAMU @.
+
+---
+
+### 5.0 RELACIONES CON OTRAS CAPAS
+
+#### 5.1 Con WORK
+GREEN-KNOWLEDGE de WORK es el guardián de entrada a STACKING. Solo delta-Ψ > 0 puede pasar.
+
+#### 5.2 Con SAMU @
+SAMU @ coordina la cristalización. Autoriza cada paso del proceso y verifica coherencia.
+
+#### 5.3 Con TRUST []
+[foundation] de TRUST es el suelo que Pilar 1 (Persistencia Fundamental) protege en capa de memoria.
+
+#### 5.4 Con CRYPTO ()
+(seal of secrecy) de CRYPTO sella la cristalización en Pilar 3. Protege contra modificaciones no autorizadas.
+
+---
+
+### 6.0 ESTADOS DE STACKING
+
+#### 6.1 STACKING_RECEIVING
+Recibiendo WU de WORK para evaluación GREEN-KNOWLEDGE.
+
+#### 6.2 STACKING_CRISTALLIZING
+Proceso de cristalización activo en Pilar 3.
+
+#### 6.3 STACKING_STRUCTURING
+Forma estructural siendo establecida en Pilar 2.
+
+#### 6.4 STACKING_PERSISTING
+Persistencia fundamental activa en Pilar 1.
+
+#### 6.5 STACKING_ARCHIVED
+Cristalización completa y archivada en Pilar 8.
+
+---
+
+### 7.0 RELACIÓN CON @trust_matrix
+
+#### 7.1 Impacto en dimensiones
+STACKING afecta principalmente:
+- d₁ [term]: [term] de cada cristalización.
+- d₅ [foundation]: protección de suelo en memoria.
+- d₈ [ecosystem]: impacto en entorno del sistema.
+
+#### 7.2 Protección de la matriz
+STACKING protege d₅ [foundation] al hacer persistente el suelo del sistema. Protege d₆ [command] al requerir autoridad para modificaciones.
+
+#### 7.3 Aprendizaje de los RAG
+Patrones de cristalización exitosa calibran futuros procesos de STACKING.
+
+---
+
+### 8.0 GRAMÁTICA VIVA
+
+#### 8.1 Cristalización de WU en Pilar 3
+```
+#Stacking =><= .. crystallize .. WU_verified --[As de Guía] [term]
+```
+
+#### 8.2 Persistencia fundamental en Pilar 1
+```
+#Stacking =><= .. persist .. fundamental_memory --[Nudo de Ocho] [term]
+```
+
+#### 8.3 Organización temporal en Pilar 4
+```
+#Stacking =><= .. organize .. temporal_sequence --[Ballestrinque] [term]
+```
+
+#### 8.4 Jerarquía semántica en Pilar 5
+```
+#Stacking =><= .. hierarchize .. knowledge_authority --[Nudo Corredizo] [term]
+```
+
+#### 8.5 Peso y fricción en Pilar 6
+```
+#Stacking =><= .. weight .. memory_with_friction --[Nudo de Rizo] [term]
+```
+
+#### 8.6 Acceso controlado en Pilar 7
+```
+#Stacking =><= .. access .. controlled_reading --[As de Guía] [term]
+```
+
+#### 8.7 Arqueología conservada en Pilar 8
+```
+#Stacking =><= .. archive .. historical_record --[Nudo de Ocho] [term]
+```
+
+#### 8.8 Proceso completo de cristalización
+```
+#Stacking =><= .. complete .. full_crystallization --[Ballestrinque] [term]
+```
+
+---
+
+### 9.0 NUDOS ASOCIADOS
+
+#### 9.1 As de Guía
+Pilar 3 en CRYSTALLIZING — cristalización con dirección clara y propósito definido.
+
+#### 9.2 Nudo de Ocho
+Pilar 1 en PERSISTENCE_STABLE — suelo sólido, sistema estable, memoria permanente.
+
+#### 9.3 Nudo Corredizo
+Pilar 6 en FRICTION_ACTIVE — memoria protegida, cambio contenido, sistema seguro.
+
+#### 9.4 Ballestrinque
+Pilar 4 en TEMPORAL_ORDERING — tensión entre secuencia temporal y necesidad de acceso inmediato.
+
+#### 9.5 Nudo de Rizo
+Unión entre Pilar 5 y Pilar 6 — jerarquía con peso, autoridad con fricción.
+
+---
+
+### 10.0 PROTOCOLOS OPERATIVOS
+
+1. StackReceive
+   - Recepción de WU desde WORK.
+   - Evaluación GREEN-KNOWLEDGE (delta-Ψ > 0).
+   - Preparación para cristalización.
+
+2. StackCrystallize
+   - Proceso de cristalización en Pilar 3.
+   - Verificación de coherencia con [foundation].
+   - Sellado con (seal of secrecy).
+
+3. StackStructure
+   - Establecimiento de forma estructural en Pilar 2.
+   - Asignación de peso según autoridad.
+   - Organización jerárquica.
+
+4. StackTemporalize
+   - Organización temporal en Pilar 4.
+   - Secuenciación de eventos.
+   - Indexación para Behavioral RAG.
+
+5. StackAccess
+   - Control de acceso en Pilar 7.
+   - Verificación de autoridad.
+   - Delimitación de [scope].
+
+6. StackArchive
+   - Conservación arqueológica en Pilar 8.
+   - Bloqueo contra modificaciones.
+   - Disponibilidad para Cognitive RAG.
+
+---
+
+### 11.0 MÉTRICAS
+
+- Tiempo promedio de cristalización por tipo de WU.
+- Ratio de WU que pasa filtro GREEN-KNOWLEDGE.
+- Peso promedio de memoria cristalizada.
+- Frecuencia de accesos por nivel jerárquico.
+- Número de registros arqueológicos accedidos por Cognitive RAG.
+- Delta de fricción por modificación autorizada.
+- Tasa de éxito de Behavioral RAG en predicciones temporales.
+
+---
+
+### 12.0 REGLAS
+
+- Solo WU con delta-Ψ > 0 puede cristalizar.
+- Toda cristalización requiere verificación de [foundation].
+- La modificación de memoria cristalizada requiere [command] soberano.
+- El acceso a Pilar 7 requiere autoridad verificada.
+- Pilar 8 es inmodificable una vez archivado.
+- Behavioral RAG tiene acceso prioritario a Pilar 4.
+- Cognitive RAG tiene acceso exclusivo a Pilar 8.
+- La fricción de Pilar 6 es constitutiva, no reducible.
+- La jerarquía de Pilar 5 refleja autoridad del sistema.
+- GREEN-KNOWLEDGE de WORK es guardián irrenunciable de entrada.
+
+---
+
+### 13.0 CIERRE
+
+#### 13.1 Invariante
+STACKING fija como invariante la cristalización soberana de memoria con peso, fricción y propósito constitucional — lo que el sistema aprende y conserva de forma permanente y jerarquizada.
+
+#### 13.2 Limitaciones
+No puede cristalizar sin delta-Ψ > 0, no puede modificar memoria cristalizada sin [command], no puede eliminar registro arqueológico, no puede operar sin fricción constitutiva.
+
+#### 13.3 Habilitaciones
+Memoria permanente con propósito, aprendizaje continuo via Behavioral RAG, historia profunda via Cognitive RAG, protección por peso y fricción, jerarquía de autoridad clara, acceso soberano controlado, conservación arqueológica completa.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

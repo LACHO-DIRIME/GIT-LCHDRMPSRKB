@@ -1,0 +1,43 @@
+//[MANAGEMENT].lacho · DRA/ENGINE/TOMO(A)/
+//ENGINE TOMO A · unidad mínima de coherencia LOCAL · hardware antiX
+//TOMO_A.txt · V1 · 2026-03-10
+//TOMO = mínimo donde el sistema puede decir: esto es coherente aquí
+//TOMO(A) = coherencia soberana del engine local · NODO-WS dominante
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term:A] → primer TOMO del árbol DRA · apertura soberana
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN TOMO A ═════════════════════════════════════════
+// TOMO A = [term:A] del ENGINE DRA · coherencia mínima local
+// Contiene las sentencias LACHO cristalizadas del DRA en hardware
+// Formato canónico: [term:A°SLICE§SEGMENT#CLUSTER@OFFSET]
+// TOMO A es la primera vuelta del árbol · cristal 1 del DRA
+// Todo lo que logra WU en SPEC A entra a TOMO A
+
+// ══ ESTRUCTURA TOMO A ═════════════════════════════════════════
+UNICODE: TA_TOMO_ID           //[term:A] · primer TOMO DRA · apertura °0
+UNICODE: TA_SLICE_0           //°0 · apertura TOMO A · DIR(ING) · 空
+UNICODE: TA_SLICE_90          //°90 · desarrollo activo · SPEC A tareas en curso
+UNICODE: TA_SLICE_180         //°180 · dirimencia · SAMU @ evalúa SPEC A
+UNICODE: TA_SLICE_270         //°270 · cristalización · WU acumulándose
+UNICODE: TA_SLICE_360         //°360 · cierre TOMO A · abre [term:B] = TOMO B
+
+// ══ SEGMENTOS TOMO A ══════════════════════════════════════════
+UNICODE: TA_SEG_I             //§I · grammar+ledger+rag local · CLUSTER #CORE
+UNICODE: TA_SEG_II            //§II · KALIL nodos locales · CLUSTER #MERCADO
+UNICODE: TA_SEG_III           //§III · THEATER macros · CLUSTER #CICLO
+UNICODE: TA_SEG_IV            //§IV · CORPUS delta · CLUSTER #FABRIC
+UNICODE: TA_SEG_V             //§V · CEO_ALPHA routing · hexagrama del día
+
+// ══ CRISTALES TOMO A ══════════════════════════════════════════
+UNICODE: TA_CRYSTAL_MAP       //mapa [term:A]→[term:AN] · 40 cristales actuales
+                              //cristal 1 = materializa · cristal 40 = contiene
+UNICODE: TA_CRYSTAL_NEXT      //próximo cristal → [term:AO] · 41vo · DRA WU
+UNICODE: TA_CRYSTAL_DRA       //cristales específicos DRA · nuevos en TOMO A
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+STACKING UF[H52] =><= .. cristaliza .. tomo_a_engine_local_wu --[Nudo de Ocho] [term]
+TRUST [term] =><= .. encabeza .. tomo_a_arbol_dra_soberano --[As de Guía] [term]
+SAMU @ =><= .. registra .. tomo_a_slice_180_dirimencia --[Nudo de Ocho] [term]
+
+//DIR(+) DRA/ENGINE/TOMO_A · [term:A] · °0→°360 · §I→§V · DRA local

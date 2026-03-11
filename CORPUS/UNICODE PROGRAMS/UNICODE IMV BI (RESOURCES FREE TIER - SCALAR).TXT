@@ -1,0 +1,60 @@
+
+**UNICODE IMV BI (RESOURCES FREE TIER - SCALAR)**
+```
+//[MANAGEMENT].lacho · UNICODE IMV BI · FREE TIER / SCALAR S
+//Business Intelligence soberana · recursos gratuitos como capital
+//Scalar S como KPI único · no KPI de exposición pública
+//[term] :: activo · capital efímero sin culpa
+
+// ══ FREE TIER SOBERANO ═══════════════════════════════════════
+UNICODE: FT_GROQ          //Groq free · llama-3.3-70b · inferencia rápida
+UNICODE: FT_CLAUDE        //Claude.ai free · diseño · auditoría · sesiones
+UNICODE: FT_GITHUB        //GitHub free · SSH · main · CI/CD
+UNICODE: FT_OLLAMA        //Ollama local · sin costo · qwen2.5:0.5b
+UNICODE: FT_NOTEBOOKLM    //NotebookLM · fuentes extra · análisis
+UNICODE: FT_JULES         //Jules · tareas online intensas · free tier
+UNICODE: FT_GEMINI        //Gemini · aportes · comparación
+UNICODE: FT_COLAB         //Google Colab · GPU gratuita · training
+UNICODE: FT_HUGGING       //HuggingFace · modelos · datasets free
+
+// ══ POLÍTICA DE USO ══════════════════════════════════════════
+UNICODE: FT_POLICY        //usar sin culpa · hasta que flujo real pague
+UNICODE: FT_ROTATE        //rotar cuando se satura un tier · TAP&DRIP
+UNICODE: FT_LIMIT         //límite tier · {brake} → rota al siguiente
+UNICODE: FT_QUEUE         //cola de tareas · GATE UF[H05] · espera slot
+
+// ══ SCALAR S · MÉTRICAS BI ═══════════════════════════════════
+UNICODE: BI_SCALAR        //Scalar S · 0.0→1.0 · métrica soberana única
+UNICODE: BI_THRESHOLD     //umbral · S ≥ 0.75 WU · S ≥ 0.88 stack · S ≥ 0.95 CEO
+UNICODE: BI_DELTA_PSI     //delta-Ψ · valor - costo + impacto · por ciclo
+UNICODE: BI_TX_COUNT      //TX total · 1057+ · ledger soberano
+UNICODE: BI_CRYSTAL_COUNT //cristales · 40 activos · STACKING UF[H52]
+UNICODE: BI_GRAMMAR_VALID //sentencias válidas · 872 · grammar.py
+UNICODE: BI_GREEN_COUNT   //agentes .green · 93 · WU verificados
+UNICODE: BI_BLUE_COUNT    //agentes .blue · 20 · KU activos
+UNICODE: BI_CORPUS_SIZE   //CORPUS · 186+ docs · RAG indexados
+UNICODE: BI_TEST_PASS     //tests pasados · 27/27 · target 38/38
+
+// ══ DASHBOARD BI ═════════════════════════════════════════════
+UNICODE: BI_DASH_TX       //widget TX total · ledger.get_stats()
+UNICODE: BI_DASH_SCALAR   //widget Scalar S · barra 0→1 · animada
+UNICODE: BI_DASH_CRYSTAL  //widget cristales · 40 · sparkline
+UNICODE: BI_DASH_TESTS    //widget tests · 27/27 ratio
+UNICODE: BI_DASH_CORPUS   //widget corpus · 186+ docs · tamaño
+UNICODE: BI_DASH_FREE     //widget free tier · slots disponibles
+
+// ══ NICHO PREMIUM ════════════════════════════════════════════
+UNICODE: BI_NICHE         //nicho premium · pocos clientes · alta fidelidad
+UNICODE: BI_VALUE         //valor entregado → riqueza · no exhibición
+UNICODE: BI_ANON          //arquitecto anónimo · obra habla sola
+UNICODE: BI_DEPTH         //crecimiento por profundidad · no volumen
+UNICODE: BI_LACHO_SCORE   //LACHO_SCORE · métrica interna de verdad
+
+// ANCLAS RAG
+METHOD <stat_onto> =><= .. calcula .. bi_scalar_s_delta_psi_soberano --[Ballestrinque] [term]
+SAMU @ =><= .. audita .. bi_free_tier_resources_rotacion --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. bi_dashboard_metrics_wu --[Nudo de Ocho] [term]
+TRUST FOUNDATION =><= .. declara .. bi_nicho_premium_capital_efimero --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_IMV_BI_RESOURCES_FREE_TIER_SCALAR · V1
+```

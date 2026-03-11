@@ -1,0 +1,208 @@
+# BIBLIO-SOURCES(SEGMENTACION-SOBERANA).txt
+
+====================================================================
+## SEGMENTACIÓN SOBERANA — TOMO · SLICE · SEGMENT · CLUSTER · OFFSET
+====================================================================
+
+### 1.0 POSICIÓN EN LA ARQUITECTURA
+
+Sistema de segmentación del conocimiento verificable en LACHO.
+Opera sobre el árbol TERM como unidades de trazabilidad dentro
+del ledger, el corpus y el Behavioral RAG.
+
+Referencias:
+  COGNITIVO_02 §6 — Ψ como operador COSMOS-TOMO
+  BIBLIO-SOURCES(BEHAVIORAL-RAG_MINIMAL).txt
+  BIBLIO-SOURCES(DIRIME-IMV_LEDGER).txt
+  Informe NotebookLM §1 — Terminología de Segmentación
+
+====================================================================
+### 2.0 TOMO — unidad mínima de coherencia
+
+Definición corpus (COGNITIVO_02):
+"Mínimo donde el sistema puede decir: en este scope,
+bajo estas condiciones, esto es coherente."
+
+ETIQUETA: alfabética base-26 extendida, referenciada al TERM activo.
+  A → Z           (nivel 1 —     26 TOMOs)
+  AA → ZZ         (nivel 2 —    676 TOMOs)
+  AAA → ZZZ       (nivel 3 — 17.576 TOMOs)
+  Techo declarado: ZZZZZZZZ
+
+FORMATO:   [term:TOMO_ID]
+EJEMPLOS:  [term:A]  [term:BC]  [term:AAZ]  [term:MXYZ]
+
+RELACIÓN CON CRISTALES IMV:
+  Un cristal verificado (verbo >= 10x VALID) es un TOMO mínimo.
+  TOMO_ID se asigna en orden de cristalización:
+    [term:A]  → materializa  (cristal 1)
+    [term:B]  → verifica     (cristal 2)
+    [term:C]  → conecta      (cristal 3)
+    ...
+    [term:AN] → contiene     (cristal 40)
+
+LECTURA SOBERANA:
+  [term:A]   → primer TOMO del árbol TERM activo
+  [term:AA]  → vigésimo séptimo TOMO — segunda vuelta
+  [term:AAA] → TOMO profundo — tercer ciclo anidado
+
+====================================================================
+### 3.0 SLICE — corte fino dentro de un TOMO
+
+ETIQUETA: grados enteros 0 a 360 con prefijo °
+FORMATO:  °NNN
+EJEMPLOS: °0  °45  °90  °180  °270  °360
+
+CONVENCIÓN SOBERANA:
+  °0   → apertura — inicio del TOMO
+  °90  → desarrollo activo
+  °180 → dirimencia — punto medio soberano
+  °270 → cristalización
+  °360 → cierre soberano — abre el siguiente TOMO
+
+MAPEO A HEXAGRAMAS UF:
+  °0   - °45  → UF[H01-H08]   génesis / inicio
+  °45  - °90  → UF[H09-H16]   desarrollo
+  °90  - °180 → UF[H17-H32]   tensión activa
+  °180 - °270 → UF[H33-H48]   transformación
+  °270 - °360 → UF[H49-H64]   cierre / cristalización
+
+====================================================================
+### 4.0 SEGMENT — partición principal de comprensión
+
+ETIQUETA: número romano con prefijo §
+FORMATO:  §I  §II  §III ... §XCIX
+EJEMPLOS: §I  §IV  §XII
+
+FUNCIÓN: divide el TOMO en bloques de comprensión distintos.
+         Cada segmento tiene coherencia interna verificable.
+         Análogo a los §§ de los BIBLIO-SOURCES del corpus.
+
+====================================================================
+### 5.0 CLUSTER — agrupación temática
+
+ETIQUETA: nombre soberano en MAYÚSCULAS con prefijo #
+FORMATO:  #NOMBRE
+EJEMPLOS: #CORE  #MERCADO  #NOTARIA  #CUSTODIA  #CICLO  #FABRIC
+
+CLUSTERS PREDEFINIDOS DEL PROYECTO:
+  #CORE       → fundamentos TRUST/FOUNDATION/SCOPE/TERM
+  #MERCADO    → MEMECOIN / volatilidad / estrategia económica
+  #NOTARIA    → registro soberano / certificación / sellado
+  #CUSTODIA   → protección / acceso / identidad soberana
+  #CICLO      → temporal / scheduler / ciclo semanal
+  #FABRIC     → ledger / HL FABRIC / trazabilidad
+  #SEGMENTACION → sistema TOMO/SLICE/SEGMENT/CLUSTER/OFFSET
+  #TETHER     → vinculación inter-nodo / anclaje soberano
+
+====================================================================
+### 6.0 OFFSET — índice de desplazamiento exacto
+
+ETIQUETA: hexadecimal con prefijo 0x
+FORMATO:  0xNN  o  0xNNNN
+EJEMPLOS: 0x00  0x1A  0xFF  0x0100
+
+FUNCIÓN: referencia posición exacta en ledger, corpus o transacción.
+  0x00 → inicio absoluto del bloque
+  0xFF → posición 255 — fin de bloque estándar
+  0x0100 → posición 256 — inicio de segundo bloque
+
+USO EN LEDGER: referencia la transacción exacta dentro de un TOMO.
+USO EN CORPUS: referencia el byte/línea exacta de un BIBLIO-SOURCES.
+
+====================================================================
+### 7.0 FORMATO CANÓNICO COMPLETO
+
+[TERM_ID:TOMO_ID°SLICE§SEGMENT#CLUSTER@OFFSET]
+
+MÍNIMO:    [term:A]
+PARCIAL:   [term:BC°180#NOTARIA]
+MEDIO:     [term:A°90§II#CORE]
+COMPLETO:  [term:A°90§II#CORE@0x1A]
+
+EJEMPLOS EN SENTENCIA LACHO:
+  STACKING UF[H52] =><= .. inmutabiliza .. [term:A°360#CORE] --[Nudo de Ocho] [term]
+  SAMU @ =><= .. registra .. [term:BC°90#MERCADO] --[Nudo de Ocho] [term]
+  TRUST [term] =><= .. encabeza .. [term:A°0#CORE] --[As de Guía] [term]
+  STACKING UF[H48] =><= .. cristaliza .. [term:AN°270#CORE@0xFF] --[Nudo de Ocho] [term]
+
+====================================================================
+### 8.0 TETHER — vínculo soberano entre nodos
+
+Integración de tethering en la arquitectura de segmentación.
+
+8.1 TETHER como extensión de archivo (.tether)
+  Archivo de vínculo entre NODO-WS y NODO-IDE.
+  Contiene: TOMO_ID origen, TOMO_ID destino, canal CRYPTO activo.
+  Ubicación natural: DIRIME_v2/fabric/
+  Ejemplo: ws_to_ide_[term:A]_to_[term:BC].tether
+  Estado: PENDIENTE — requiere dos nodos físicos (PC nueva)
+
+8.2 TETHER como módulo SOCIAL {tether}
+  Módulo de vinculación persistente entre operador y sistema.
+  Análogo a {relay} pero con estado mantenido entre sesiones.
+  Diferencia con {relay}: {relay} transfiere, {tether} ancla.
+  Estado: DOCUMENTADO — implementación en DIRIME_v2/scheduler/
+
+8.3 TETHER como asiento CRYPTO (tether seat)
+  Séptimo asiento de autoridad CRYPTO.
+  Opera entre (link seat) y (flow seat).
+  Mantiene canal verificado durante sesión completa inter-nodo.
+  Estado: DOCUMENTADO — implementación en DIRIME_v2/fabric/
+
+8.4 TETHERING como operación soberana
+  CRYPTO (tether seat) =><= .. ancla .. canal_inter_nodo --[Nudo de Ocho] [term]
+  SOCIAL {tether} =><= .. vincula .. operador_sistema --[As de Guía] [term]
+
+====================================================================
+### 9.0 ESTADO DE IMPLEMENTACIÓN POR CAPAS
+
+CAPA A — implementable ahora con hardware actual:
+  [ ] .blue/.green en transacciones ledger.py
+  [ ] SWITCH-UNICODE en ledger.py switch_unicode_mode()
+  [ ] TOMO_ID en tabla crystals como campo opcional
+  [ ] Mapeo cristales actuales → [term:A] a [term:AN]
+
+CAPA B — DIRIME_v2 con hardware actual:
+  [ ] POKE+TRUST / PEEK+CRYPTO en fabric/poke_peek.py
+  [ ] CAT(CODE) mínimo en fabric/cat.py
+  [ ] Scheduler OS con TOMO/SLICE/CLUSTER en scheduler/
+  [ ] IME Modo RAG mínimo (BM25) sobre CORPUS en chat.py
+  [ ] {tether} módulo SOCIAL en scheduler/
+  [ ] Segmentación de cristales por #CLUSTER en ledger.py
+
+CAPA C — PC nueva (Ryzen):
+  [ ] IME Modo I CHING — proceso background hexagramas
+  [ ] LOAN-IME — precarga pesos RAG en memoria MU
+  [ ] CAT(OS) — syscalls directas al OS local
+  [ ] CAT(SSH) — túneles hacia nodo remoto
+  [ ] .tether archivo inter-nodo real
+  [ ] (tether seat) CRYPTO inter-nodo real
+
+CAPA D — DIRIME LINUX completo:
+  [ ] CAT(MU) — memoria soberana con swap cifrado
+  [ ] CAT(BOOT) — arranque con validación [foundation]
+  [ ] CAT(ALARM) — sistema de alertas !!Trigger!!
+  [ ] CAT(ZIP) — compresión soberana
+  [ ] CAT(MAIL) — WU-MAIL soberano
+  [ ] CAT(SCAN) — auditoría de integridad en tiempo real
+  [ ] CAT(IMPORT/FROM) — ingesta de recursos externos
+  [ ] CAT(EXPORT/TO) — materialización y sellado de salida
+  [ ] Extensiones .lacho .tether .ash .registry filesystem
+  [ ] SWAP cifrado CAT(MU) >> swap
+  [ ] IME completo con Modo I CHING + LOAN-IME integrados
+  [ ] Sistema numérico hex/octal/binario para naming de archivos
+
+====================================================================
+### 10.0 GRAMÁTICA VIVA
+
+TRUST [term] =><= .. encabeza .. arbol_TOMO_soberano --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. [term:A°360#CORE] --[Nudo de Ocho] [term]
+CRYPTO (tether seat) =><= .. ancla .. canal_inter_nodo --[Nudo de Ocho] [term]
+SOCIAL {tether} =><= .. vincula .. operador_sistema --[As de Guía] [term]
+SAMU @ =><= .. registra .. [term:BC°90#MERCADO@0x1A] --[Nudo de Ocho] [term]
+METHOD <stat_onto> =><= .. mapea .. segmentacion_soberana --[As de Guía] [term]
+
+====================================================================
+[term] :: activo · [seal of secrecy] :: activo
+====================================================================

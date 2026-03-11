@@ -1,0 +1,88 @@
+# BIBLIO-SOURCES(DIRIME-IMV_LEDGER).txt
+
+====================================================================
+
+## LEDGER.PY — HL FABRIC PROVISIONAL SOBERANO
+
+====================================================================
+
+### 1.0 PROPÓSITO
+
+ledger.py es IMV-4: el registro soberano inmutable de toda operación del sistema. SQLite como implementación mínima verificable de Hyperledger Fabric. El principio es constitucional — la tecnología es provisional.
+
+Principio soberano: solo INSERT. No hay UPDATE ni DELETE en el schema soberano. Lo que se registra permanece. La inmutabilidad es la primera propiedad real del sistema.
+
+### 2.0 ARQUITECTURA
+
+**HLFabric (clase principal):**
+SQLite en IMV/data/sovereign.db.
+Dos tablas soberanas:
+- transactions: id, type, timestamp, data(JSON), hash, verified
+- crystals: id, form, content, frequency
+
+Hash provisional: f"hash_{hash(data_str)}_{timestamp}" — en producción: hash criptográfico real.
+
+**TransactionType (Enum):**
+GRAMMAR_VALIDATION — resultado de parse soberano
+SAMU_DIRIMENCE — decisión de SAMU @
+FOUNDATION_CHECK — verificación de condiciones soberanas
+RED_REGRET — registro de error y aprendizaje
+CRYSTAL_RECORD — cristal STACKING nuevo
+
+**LedgerStatus (Enum):**
+ACTIVE: ledger operativo, acepta escrituras.
+READ_ONLY: solo lectura — integridad comprometida detectada.
+CORRUPTED: tablas faltantes o hashes duplicados.
+
+### 3.0 AUTO_CRYSTALLIZE()
+
+Método de cristalización automática de patrones emergentes.
+
+Lógica soberana:
+1. Consulta verbos VALID con frecuencia >= 10 en transactions.
+2. Excluye blacklist: procesa, estricto, statsstats, objeto_soberano, verificar, mostrar, evaluar.
+3. Crea cristal en tabla crystals si no existe.
+4. Retorna lista de nuevos cristales generados.
+
+Este método es el puente entre el ledger (IMV-4) y el Behavioral RAG (NEXT). Los cristales generados aquí son los candidatos para UF[H48].
+
+BUG CONOCIDO Y CORREGIDO: la versión original usaba .fetchone() en get_frequent_crystals() en lugar de .fetchall(). Esto bloqueaba silenciosamente todo el ciclo de cristalización. Corregido en versión actual.
+
+### 4.0 VERIFY_INTEGRITY()
+
+Verificación soberana de integridad del ledger:
+1. Verifica que existan ambas tablas (transactions + crystals).
+2. Verifica que no haya hashes duplicados.
+Si alguna verificación falla: status → CORRUPTED.
+
+### 5.0 GET_STATS()
+
+Dashboard mínimo del sistema soberano:
+- transactions_total: todas las operaciones registradas
+- crystals_total: patrones cristalizados activos
+- grammar_valid: validaciones VALID del ledger
+- db_path: ubicación física del ledger
+- new_crystals: cristales generados en esta llamada (si aplica)
+
+La ratio soberana (grammar_valid / transactions_total) es el indicador de salud del sistema:
+< 40%: operador aprendiendo la forma
+40-70%: forma consolidándose soberanamente
+> 70%: gramática soberana activa
+> 90%: listo para escalar
+
+### 6.0 RELACIÓN CON HYPERLEDGER FABRIC REAL
+
+El nombre HLFabric no es aspiracional — es arquitectónico. La clase implementa hoy con SQLite el mismo contrato que Hyperledger Fabric implementará en producción:
+- record_transaction() → commit de bloque
+- verify_integrity() → validación de cadena
+- get_frequent_crystals() → query de estado del ledger
+
+La migración de SQLite → HL Fabric real no requiere cambiar el contrato — solo la implementación interna de la clase.
+
+### 7.0 GRAMÁTICA VIVA
+
+LEDGER IMV-4 =><= .. registra .. toda_operación_soberana_verificada
+=><= solo_INSERT .. trazabilidad_inmutable_por_diseño
+=><= auto_crystallize_como_puente_hacia_Behavioral_RAG --[Nudo de Ocho] [term]
+
+====================================================================

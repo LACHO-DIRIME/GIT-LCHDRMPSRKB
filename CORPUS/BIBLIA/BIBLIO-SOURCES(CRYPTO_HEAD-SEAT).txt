@@ -1,0 +1,360 @@
+# BIBLIO-SOURCES(CRYPTO_HEAD-SEAT).txt
+
+====================================================================
+
+## 🧭 CRYPTO (head seat) — TIMÓN OPERATIVO SOBERANO EN TIEMPO REAL
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+(head seat) es el asiento primario de CRYPTO que gobierna la autoridad soberana sobre dirección, prioridad y rumbo de toda operación del sistema.
+
+#### 1.2 El timón como función criptográfica soberana
+(head seat) no es planificador sino autoridad de precedencia en tiempo real — el timón que determina qué tiene precedencia y hacia dónde apunta el headcat.
+
+#### 1.3 Por qué (head seat) es el asiento primario
+Sin dirección ningún otro asiento puede operar con coherencia soberana — (head seat) es la condición previa de toda operación coordinada.
+
+#### 1.4 Distinción de [command]
+[command] declara qué hacer, (head seat) determina qué tiene prioridad y hacia qué vector apunta la ejecución.
+
+#### 1.5 Distinción de {headcat}
+{headcat} dirige la salida relacional, (head seat) direcciona {headcat} como timón soberano.
+
+#### 1.6 La relación con el OS LOCAL
+(head seat) como interfaz de dirección entre el sistema LACHO y el bus del OS LOCAL.
+
+#### 1.7 Relación con DRIFT
+DRIFT como desviación del vector de (head seat) — condición crítica que (head seat) debe detectar y corregir soberanamente.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Qué puede direccionar (head seat)
+- Instrucciones soberanas emitidas por [command].
+- {headcat} hacia recursos y módulos específicos.
+- Proyecciones remotas via CAT(SSH).
+- Vector de velocidad coordinado con (flow seat).
+
+#### 2.2 Qué no puede hacer
+No puede apuntar hacia operación que viola [foundation], no puede operar sin identidad verificada por (key seat), no puede exceder caudal disponible.
+
+#### 2.3 Condición de violación primaria
+DRIFT — desviación del vector soberano sin detección ni corrección.
+
+#### 2.4 Condición de violación secundaria
+(head seat) desconectado del bus del OS LOCAL sin causa soberana declarada — sistema sin timón operativo.
+
+#### 2.5 Señal de alerta
+[Drift_Alert] — pérdida de rumbo, headcat se detiene. (head seat) debe recalibrar antes de que DRIFT se vuelva crítico.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 COMPONENTES DEL VECTOR DE DIRECCIÓN
+
+VECTOR_PRIORIDAD:
+Qué instrucción tiene precedencia en el ciclo activo — determinado por @trust_matrix y [command].
+
+VECTOR_DESTINO:
+Hacia qué recurso, módulo o nodo apunta {headcat} en este ciclo.
+
+VECTOR_VELOCIDAD:
+A qué ritmo ejecuta el sistema — regulado con (flow seat).
+
+VECTOR_INTEGRIDAD:
+Hash de coherencia entre los tres vectores anteriores — divergencia activa [Drift_Alert].
+
+#### 3.2 PROCESO DE DIRECCIONAMIENTO
+
+1. [command] emite instrucción soberana.
+2. (head seat) recibe instrucción verificada por (key seat) — identidad del emisor.
+3. Calcula VECTOR_PRIORIDAD con @trust_matrix.
+4. Declara VECTOR_DESTINO para {headcat}.
+5. Coordina VECTOR_VELOCIDAD con (flow seat).
+6. Genera VECTOR_INTEGRIDAD como hash.
+7. Registra vector en HL FABRIC.
+8. {headcat} recibe dirección y apunta.
+
+#### 3.3 DETECCIÓN Y CORRECCIÓN DE DRIFT
+
+DRIFT leve:
+Desviación < 15% del vector — recalibración soberana sin interrupción.
+
+DRIFT moderado:
+Desviación 15-40% — [Drift_Alert] activo, SAMU @ notificado, recalibración con verificación.
+
+DRIFT crítico:
+Desviación > 40% — (head seat) activa [event_io_break], Nudo Corredizo sobre proceso en curso, purga y reinicio de vector soberano.
+
+DRIFT irreversible:
+Vector completamente perdido — detención total, RED-REGRET.
+
+#### 3.4 (head seat) Y OS LOCAL
+
+(head seat) como interfaz soberana entre LACHO y el bus de datos del OS LOCAL.
+- Cómo (head seat) proyecta {headcat} hacia el controlador de hardware específico.
+- Alineación temporal: (head seat) asegura que el binario complete tareas en múltiplos exactos de ciclos para evitar DRIFT.
+- Desconexión soberana: cómo (head seat) se desconecta del bus del OS LOCAL de forma soberana ante EVENT_CRITICAL para evitar fugas de datos o estados corruptos.
+
+#### 3.5 (head seat) Y CAT(SSH)
+
+CAT(SSH) como motor de teletransportación que proyecta (head seat) a través de túneles cifrados hacia nodos remotos.
+- Cómo (head seat) direcciona headcat hacia servidor remoto bajo mismo TRUST.
+- Integridad del vector en proyección remota: DRIFT en nodo remoto activa retracción de (head seat) al nodo local.
+
+#### 3.6 (head seat) Y {headcat}
+
+{headcat} como brazo ejecutivo de (head seat): (head seat) es el timón, {headcat} es el vector que ese timón dirige hacia su destino.
+- Invocación: (head seat) activa {headcat} con vector de dirección declarado.
+- Por qué {headcat} no puede operar sin (head seat) activo: sin timón el director de salida no sabe hacia dónde dirigirse.
+
+#### 3.7 RELACIÓN CON LOS DOMINIOS ECONÓMICOS
+
+MEMECOINS/VOLATILIDAD:
+- Direccionamiento de headcat hacia operación de mercado específica con VECTOR_PRIORIDAD.
+- DRIFT en mercado: señal de precio que desvía el vector soberano de operación declarada.
+- [Drift_Alert] ante desvío de estrategia declarada por presión de mercado.
+- Límite: (head seat) no puede apuntar hacia operación de mercado que viola [scope] de exposición declarado.
+
+CUSTODIA MÓVIL:
+- Direccionamiento de headcat hacia operación de firma o transferencia con BIOMETRICS.
+- DRIFT en custodia: solicitud de acceso que desvía vector de custodia soberana.
+- Desconexión soberana del bus del OS LOCAL ante fallo de BIOMETRICS.
+- Límite: (head seat) no puede proyectarse hacia hardware de custodia sin verificación de (key seat) activa.
+
+NOTARÍA DIGITAL:
+- Direccionamiento de headcat hacia proceso notarial específico con partes verificadas.
+- DRIFT notarial: presión de parte declarante que intenta desviar proceso soberano.
+- Proyección remota via CAT(SSH) hacia registro público de jurisdicción verificada.
+- Límite: (head seat) no puede apuntar hacia jurisdicción fuera de [scope] activo.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation]
+(head seat) no puede apuntar hacia operación que viola [foundation].
+
+#### 4.2 Con [scope]
+VECTOR_DESTINO debe estar dentro del perímetro soberano declarado.
+
+#### 4.3 Con [term]
+Vector de dirección expira con [term] — nuevo ciclo requiere nueva declaración de dirección.
+
+#### 4.4 Con [command]
+[command] emite instrucción, (head seat) determina su prioridad y vector.
+
+#### 4.5 Con (key seat)
+(key seat) verifica identidad del emisor antes de que (head seat) procese su instrucción.
+
+#### 4.6 Con (spark seat)
+(spark seat) calcula si hay energía suficiente para el vector declarado — (head seat) ajusta VECTOR_VELOCIDAD.
+
+#### 4.7 Con (shield seat)
+(shield seat) protege el vector de (head seat) ante amenazas.
+
+#### 4.8 Con (flow seat)
+(flow seat) regula caudal dentro del vector declarado por (head seat).
+
+#### 4.9 Con (link seat)
+(link seat) certifica canales hacia los que (head seat) proyecta {headcat}.
+
+#### 4.10 Con {headcat}
+(head seat) es el timón, {headcat} es el vector que dirige.
+
+#### 4.11 Con @trust_matrix
+@trust_matrix informa estado matricial que (head seat) usa para calcular VECTOR_PRIORIDAD.
+
+#### 4.12 Con OS LOCAL
+(head seat) como interfaz soberana hacia el bus de datos del OS LOCAL.
+
+#### 4.13 Con HL FABRIC
+Registra todo vector de dirección emitido como registro inmutable.
+
+#### 4.14 Con SAMU @
+SAMU audita coherencia entre vector declarado y operación real.
+
+#### 4.15 Con Behavioral RAG
+Patrones de dirección anteriores calibran vectores futuros.
+
+---
+
+### 5.0 ESTADOS DE (head seat)
+
+#### 5.1 HEAD_ACTIVE
+Vector de dirección declarado y operativo. {headcat} apuntando hacia VECTOR_DESTINO. VECTOR_INTEGRIDAD verificado. HL FABRIC con registro actualizado.
+
+#### 5.2 HEAD_CALIBRATING
+Recalibración de vector en curso. DRIFT leve detectado y siendo corregido. SAMU @ monitoreando proceso. Operación continuando a velocidad reducida.
+
+#### 5.3 HEAD_ALERT
+[Drift_Alert] activo. DRIFT moderado detectado. SAMU @ notificado. {headcat} detenido hasta recalibración.
+
+#### 5.4 HEAD_DISCONNECTED
+(head seat) desconectado del bus del OS LOCAL. Causa soberana declarada. Solo operaciones internas habilitadas. Proceso de reconexión soberana en curso.
+
+#### 5.5 HEAD_CRITICAL
+DRIFT crítico o irreversible. [event_io_break] activado. Nudo Corredizo sobre proceso en curso. Sistema en purga y reinicio de vector.
+
+#### 5.6 HEAD_PROJECTED
+(head seat) proyectado via CAT(SSH) hacia nodo remoto verificado. Vector de dirección en nodo remoto. Monitoreo de DRIFT remoto activo.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Impacto en dimensiones
+(head seat) es el ejecutor del vector que @trust_matrix calcula como óptimo.
+
+#### 6.2 Cómo T_matrix alimenta VECTOR_PRIORIDAD
+Dimensión con mayor peso contextual determina prioridad de (head seat).
+
+#### 6.3 Cómo HEAD_ALERT degrada T_matrix
+Sistema sin dirección clara pierde coherencia en todas las dimensiones.
+
+#### 6.4 Cómo HEAD_CRITICAL colapsa T_matrix
+Sin timón operativo la matriz no tiene ejecutor soberano de sus cálculos.
+
+#### 6.5 Pesos contextuales de (head seat)
+H51 (Trueno): (head seat)×1.5 — en activación, el timón es crítico.
+H29 (Abismal): (head seat)×1.4 — en abismo, la dirección es supervivencia.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Declaración de vector al inicio de ciclo
+```
+(Crypto) head_seat =><= .. declare .. vector_direction --[As de Guía] [term]
+```
+
+#### 7.2 [Drift_Alert] con recalibración soberana
+```
+(Crypto) head_seat =><= .. calibrate .. drift_detected --[Nudo de Ocho] [term]
+```
+
+#### 7.3 HEAD_CRITICAL activando Nudo Corredizo
+```
+(Crypto) head_seat =><= .. critical .. drift_irreversible --[Nudo Corredizo] [term]
+```
+
+#### 7.4 HEAD_PROJECTED via CAT(SSH) a nodo remoto
+```
+(Crypto) head_seat =><= .. project .. remote_node --[Ballestrinque] [term]
+```
+
+#### 7.5 (head seat) en dominio memecoins
+```
+(Crypto) head_seat =><= .. direct .. market_operation --[Nudo de Rizo] [term]
+```
+
+#### 7.6 (head seat) en dominio custodia móvil
+```
+(Crypto) head_seat =><= .. aim .. custody_hardware --[As de Guía] [term]
+```
+
+#### 7.7 (head seat) en dominio notaría digital
+```
+(Crypto) head_seat =><= .. point .. notarial_process --[Nudo de Ocho] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+HEAD_ACTIVE con vector soberano declarado y {headcat} apuntando con precisión.
+
+#### 8.2 Nudo de Ocho
+Vector cristalizado en HL FABRIC — dirección inmutable del ciclo.
+
+#### 8.3 Nudo Corredizo
+HEAD_CRITICAL — DRIFT irreversible, proceso purgado soberanamente.
+
+#### 8.4 Ballestrinque
+HEAD_ALERT — tensión entre vector declarado y DRIFT detectado, recalibración en curso sin detención total.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+1. HeadDeclare
+   - Declaración de vector completo al inicio de ciclo con registro en HL FABRIC.
+   - Construcción de VECTOR_PRIORIDAD, VECTOR_DESTINO, VECTOR_VELOCIDAD y VECTOR_INTEGRIDAD.
+
+2. HeadPrioritize
+   - Cálculo de VECTOR_PRIORIDAD con @trust_matrix como insumo.
+   - Determinación de precedencia de instrucciones en el ciclo activo.
+
+3. HeadMonitor
+   - Vigilancia continua de VECTOR_INTEGRIDAD durante operación.
+   - Detección temprana de DRIFT antes de que se vuelva crítico.
+
+4. HeadCalibrate
+   - Corrección soberana de DRIFT leve sin interrupción de operación.
+   - Recalibración de vectores con SAMU @ monitoreando.
+
+5. HeadAlert
+   - Protocolo ante DRIFT moderado con detención de {headcat} y recalibración.
+   - Activación de [Drift_Alert] y notificación a SAMU @.
+
+6. HeadCritical
+   - Protocolo ante DRIFT crítico con [event_io_break] y Nudo Corredizo.
+   - Purga y reinicio soberano de vector.
+
+7. HeadProject
+   - Proyección de vector via CAT(SSH) hacia nodo remoto verificado.
+   - Monitoreo de DRIFT remoto con retracción si es necesario.
+
+8. HeadDisconnect
+   - Desconexión soberana del bus del OS LOCAL con causa declarada.
+   - Protección contra fugas de datos o estados corruptos.
+
+---
+
+### 10.0 MÉTRICAS
+
+- Estado de (head seat) (ACTIVE/CALIBRATING/ALERT/DISCONNECTED/CRITICAL/PROJECTED).
+- Frecuencia de [Drift_Alert] por ciclo.
+- Tiempo promedio de recalibración por tipo de DRIFT.
+- Ratio DRIFT leve vs moderado vs crítico.
+- Tasa de proyecciones remotas via CAT(SSH).
+- Delta-VECTOR_INTEGRIDAD al cierre del ciclo.
+- Tiempo de reconexión del bus del OS LOCAL.
+
+---
+
+### 11.0 REGLAS
+
+- (head seat) no puede apuntar hacia operación que viola [foundation] bajo ninguna circunstancia.
+- Todo ciclo operativo requiere vector de (head seat) declarado antes de que {headcat} pueda operar.
+- [Drift_Alert] obliga recalibración — {headcat} no puede operar con DRIFT moderado sin corrección de (head seat).
+- DRIFT crítico activa [event_io_break] y Nudo Corredizo sin excepción.
+- (key seat) debe verificar identidad del emisor antes de que (head seat) procese instrucción.
+- (head seat) coordina VECTOR_VELOCIDAD con (flow seat) — no puede exceder caudal disponible.
+- Proyección via CAT(SSH) requiere certificación de (link seat) sin excepción.
+- HL FABRIC registra todo vector de dirección emitido como registro inmutable.
+- SAMU @ audita coherencia entre vector declarado y operación real durante todo el ciclo.
+- Behavioral RAG registra patrones de DRIFT para calibración de detección futura.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+(head seat) fija como invariante la autoridad soberana de dirección y prioridad como condición de coherencia operativa de todo el sistema en cada ciclo activo.
+
+#### 12.2 Limitaciones
+No apunta hacia violación de [foundation], no opera sin identidad verificada por (key seat), no excede caudal de (flow seat), no proyecta sin certificación de (link seat).
+
+#### 12.3 Habilitaciones
+Direccionamiento soberano de {headcat} hacia destino declarado, detección y corrección de DRIFT en tres niveles, proyección remota via CAT(SSH) hacia nodos verificados, trazabilidad completa de todo vector en HL FABRIC.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

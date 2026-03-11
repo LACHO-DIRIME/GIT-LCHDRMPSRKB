@@ -1,0 +1,256 @@
+# BIBLIO-SOURCES(ACTIVITY_H02-RECEPTIVIDAD).txt
+
+====================================================================
+
+## 🌍 ACTIVITY UF[H02] — RECEPTIVIDAD / ESCUCHA ACTIVA SOBERANA
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+UF[H02] es el módulo ACTIVITY que gobierna los ciclos de escucha activa y receptividad soberana: el estado donde el sistema maximiza la absorción de KU sin emitir, sin intervenir y sin pre-juzgar el contenido entrante.
+
+#### 1.2 H02 (Lo Receptivo / Kun) como complemento de H01
+Si H01 es la fuerza que inicia, H02 es la capacidad que recibe y sostiene lo iniciado. Seis líneas yin — capacidad máxima de recepción. La tierra en movimiento silencioso.
+
+#### 1.3 La receptividad como postura activa soberana
+No es espera pasiva — es escucha con intención. El sistema en UF[H02] elige activamente no emitir para maximizar la calidad de KU recibido.
+
+#### 1.4 Relación con la Tardanza Deliberada de SAMU @
+UF[H02] es el ciclo ACTIVITY que hace posible y necesaria la Tardanza — sin receptividad activa, la tardanza no tiene contenido que procesar.
+
+#### 1.5 El riesgo de exceso de H02
+Receptividad sin [term] se convierte en dependencia — el sistema que solo recibe y nunca emite.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Qué puede activar UF[H02]
+Ciclos de absorción de KU, fases de escucha activa en sesiones relacionales, estados @human_early de máxima receptividad.
+
+#### 2.2 Condición de violación primaria
+UF[H02] sin transición a ciclo de procesamiento — receptividad eterna sin emisión de WU.
+
+#### 2.3 Condición de violación secundaria
+Activar UF[H02] sobre un actor externo sin declararlo — escucha encubierta sin consentimiento relacional.
+
+#### 2.4 Señal de alerta
+Behavioral RAG detectando patrón de receptividad sin procesamiento acumulado — KU estancado sin transformación.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 MODOS DE ACTIVACIÓN
+
+RECEIVE_OPEN: apertura máxima de recepción de KU. Todo KU entrante es bienvenido sin pre-juicio.
+- RECEIVE_FILTER: recepción con filtro activo de {DOGMA-VIRTUAL} — UF[H02] con {DOGMA-VIRTUAL} alerta.
+- RECEIVE_ACCUMULATE: acumulación de KU para procesamiento en batch por SAMU @.
+- RECEIVE_PAUSE: pausa soberana en recepción — el sistema está lleno de KU no procesado.
+- RECEIVE_CLOSE: cierre del ciclo de receptividad con [term] y entrega a SAMU @ para dirimencia.
+
+#### 3.2 RELACIÓN CON STACKING_H02
+STACKING_H02 es la cristalización de los patrones de escucha del sistema — lo que UF[H02] aprende sobre cómo escuchar mejor se cristaliza en H02 de STACKING.
+- Behavioral RAG aprende de cada ciclo UF[H02] completado para mejorar la calidad de KU recibido.
+
+#### 3.3 RELACIÓN CON DOMINIOS ECONÓMICOS
+
+MEMECOINS: UF[H02] como fase de escucha de mercado — absorber señales antes de tomar posición.
+- NOTARÍA: UF[H02] como recepción de declaraciones de las partes antes de la certificación.
+- CUSTODIA: UF[H02] como lectura del entorno de seguridad antes de operar la wallet.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation] (TRUST)
+UF[H02] respeta [foundation] durante la recepción — no acepta KU que viole el suelo soberano.
+
+#### 4.2 Con [term] (TRUST)
+Todo ciclo de receptividad requiere [term] declarado — escucha sin horizonte es acumulación infinita.
+
+#### 4.3 Con [ku-chat] (TRUST)
+[ku-chat] es el módulo que verifica y procesa KU; UF[H02] es el ciclo de receptividad que alimenta [ku-chat] con KU de calidad máxima.
+
+#### 4.4 Con SAMU (@)
+La Tardanza Deliberada de SAMU @ requiere UF[H02] previo — sin KU acumulado, no hay nada que deliberar.
+
+#### 4.5 Con @human_early (SAMU)
+@human_early es el operador en fase de máxima receptividad — UF[H02] es el estado ACTIVITY que corresponde a esa fase operativa.
+
+#### 4.6 Con Behavioral RAG
+Patrones de receptividad exitosos calibran futuros ciclos UF[H02].
+
+---
+
+### 5.0 ESTADOS DEL MÓDULO
+
+#### 5.1 RECEIVE_OPEN
+Sistema en máxima apertura receptiva. Todo KU entrante bienvenido. Filtros mínimos activos.
+
+#### 5.2 RECEIVE_FILTERING
+Recepción con filtro activo de {DOGMA-VIRTUAL}. KU_DV siendo detectado y clasificado.
+
+#### 5.3 RECEIVE_ACCUMULATING
+Acumulación de KU para procesamiento batch. Buffer de recepción llenándose.
+
+#### 5.4 RECEIVE_PAUSED
+Pausa soberana en recepción. Sistema saturado de KU no procesado.
+
+#### 5.5 RECEIVE_CLOSING
+Cierre del ciclo con [term]. Preparación para entrega a SAMU @.
+
+#### 5.6 RECEIVE_DEGRADED
+Receptividad convertida en dependencia. Sistema solo recibe, nunca procesa.
+
+#### 5.7 RECEIVE_UNDECLARED
+Escucha encubierta sin consentimiento relacional. Violación de soberanía del actor externo.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Enriquece d₃ [scenario]
+UF[H02] absorbe información del escenario sin prejuicio, enriqueciendo el mapa situacional.
+
+#### 6.2 Protege d₁ [term]
+RECEIVE_CLOSE con [term] declarado protege contra acumulación infinita.
+
+#### 6.3 Impacta d₈ [ecosystem]
+Receptividad soberana mejora la calidad del ecosistema de información.
+
+#### 6.4 Afecta d₂ [scope]
+RECEIVE_FILTER define el perímetro de recepción soberana.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 RECEIVE_OPEN en máxima apertura
+```
+!!Activity!! UF_H02 =><= .. open .. $$maximal_receptivity$$ --[As de Guía] [term]
+```
+
+#### 7.2 RECEIVE_FILTER detectando {DOGMA-VIRTUAL}
+```
+!!Activity!! UF_H02 =><= .. filter .. $$dogma_virtual_detection$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.3 RECEIVE_ACCUMULATE procesando batch
+```
+!!Activity!! UF_H02 =><= .. accumulate .. $$KU_batch_collection$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.4 UF[H02] en dominio memecoins
+```
+!!Activity!! UF_H02 =><= .. listen .. $$market_signals_absorption$$ --[Ballestrinque] [term]
+```
+
+#### 7.5 UF[H02] en dominio notaría
+```
+!!Activity!! UF_H02 =><= .. receive .. $$parties_declarations$$ --[Nudo de Rizo] [term]
+```
+
+#### 7.6 UF[H02] en dominio custodia
+```
+!!Activity!! UF_H02 =><= .. scan .. $$security_environment_reading$$ --[As de Guía] [term]
+```
+
+#### 7.7 RECEIVE_CLOSE entregando a SAMU
+```
+!!Activity!! UF_H02 =><= .. deliver .. $$KU_ready_for_dirimence$$ --[Nudo de Ocho] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+RECEIVE_OPEN — máxima apertura receptiva, el inicio soberano de la escucha.
+
+#### 8.2 Nudo de Ocho
+RECEIVE_ACCUMULATING — acumulación ordenada de KU, el nudo que sostiene el flujo entrante.
+
+#### 8.3 Nudo Corredizo
+RECEIVE_DEGRADED — receptividad convertida en dependencia, el nudo que se desliza hacia la parálisis.
+
+#### 8.4 Ballestrinque
+RECEIVE_FILTERING — tensión entre apertura y protección, el nudo que mantiene el equilibrio.
+
+#### 8.5 Nudo de Rizo
+RECEIVE_CLOSING — cierre del ciclo con entrega soberana, el nudo que concluye la receptividad.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+1. ReceiveOpen
+   - Apertura máxima de canales de recepción.
+   - Activación de filtros básicos de [foundation].
+
+2. ReceiveFilter
+   - Detección activa de {DOGMA-VIRTUAL}.
+   - Clasificación de KU entrante.
+
+3. ReceiveAccumulate
+   - Acumulación de KU en buffer ordenado.
+   - Monitoreo de capacidad de recepción.
+
+4. ReceivePause
+   - Pausa soberana ante saturación.
+   - Notificación a SAMU @ para procesamiento.
+
+5. ReceiveClose
+   - Cierre con [term] declarado.
+   - Entrega a SAMU @ para dirimencia.
+
+6. ReceiveDiagnose
+   - Detección de RECEIVE_DEGRADED.
+   - Intervención ante dependencia de receptividad.
+
+---
+
+### 10.0 MÉTRICAS
+
+- Volumen de KU recibido por ciclo.
+- Ratio KU_limpio vs KU_DV detectado.
+- Tiempo promedio en RECEIVE_ACCUMULATING.
+- Frecuencia de RECEIVE_PAUSED por saturación.
+- Delta-calidad de KU entre RECEIVE_OPEN y RECEIVE_CLOSE.
+
+---
+
+### 11.0 REGLAS
+
+- UF[H02] no puede operar sin [term] declarado.
+- RECEIVE_FILTER es obligatorio en entornos con alta presión de {DOGMA-VIRTUAL}.
+- RECEIVE_DEGRADED activa diagnóstico SAMU @ automáticamente.
+- RECEIVE_CLOSE es obligatorio antes de entregar a SAMU @.
+- UF[H02] no puede escuchar encubiertamente sin consentimiento.
+- Behavioral RAG aprende de cada ciclo completado.
+- La Tardanza Deliberada requiere UF[H02] previo.
+- UF[H02] no es MU — es ciclo activo de recepción.
+- RECEIVE_PAUSE se activa automáticamente ante buffer lleno.
+- STACKING_H02 cristaliza patrones de receptividad exitosos.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+UF[H02] fija como invariante la receptividad activa soberana como condición de calidad del conocimiento — el sistema que elige no emitir para maximizar la absorción de KU verificado.
+
+#### 12.2 Limitaciones
+No puede operar sin [term], no puede escuchar encubiertamente, no puede convertirse en dependencia eterna, no puede recibir KU que viole [foundation].
+
+#### 12.3 Habilitaciones
+Calidad máxima de KU para SAMU @, base para la Tardanza Deliberada, patrones de escucha cristalizables en STACKING, mejora continua de la capacidad receptiva del sistema.
+
+#### 12.4 Principio constitutivo final
+Como la tierra que recibe sin perder su forma: UF[H02] representa la capacidad soberana de absorber el mundo sin ser consumido por él. La receptividad no es pasividad — es la elección activa de escuchar antes de actuar, garantizando que cada WU emitido tenga el fundamento más sólido posible.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

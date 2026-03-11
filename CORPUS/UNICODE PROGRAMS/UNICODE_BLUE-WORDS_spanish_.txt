@@ -1,0 +1,133 @@
+//[MANAGEMENT].lacho · BLUE-WORDS · ESPAÑOL
+//UNICODE_.lacho · V1 · 2026-03-10
+//Blue-Words: vocabulario KU · capa pre-dirimencia · español
+//flujo: Blue-Words → {green-knowledge} → STACKING o RED-REGRET
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN ════════════════════════════════════════════════
+// Las Blue-Words son tokens KU en bruto — no verificados aún
+// Entran al sistema como .blue · pre-dirimencia · GATE UF[H05]
+// {green-knowledge} filtra: delta-Ψ > 0 → STACKING (.green WU)
+//                           delta-Ψ ≤ 0 → RED-REGRET (descarte)
+
+// ══ VOCABULARIO OPERATIVO ESPAÑOL ════════════════════════════
+
+// ── DOMINIO TRUST ────────────────────────────────────────────
+BLUE: verificar       //KU · pendiente validación TRUST · .blue
+BLUE: declarar        //KU · declaración no sellada · .blue
+BLUE: autorizar       //KU · autorización pendiente · GATE UF[H06]
+BLUE: limitar         //KU · límite no confirmado · .blue
+BLUE: sostener        //KU · continuidad no verificada · .blue
+BLUE: fundación       //KU · suelo no sellado · pre-[foundation]
+BLUE: alcance         //KU · jurisdicción no declarada · pre-[scope]
+BLUE: contrato        //KU · [term] no activo · pre-合同
+BLUE: soberanía       //KU · 主权 no declarada · .blue
+BLUE: voluntad        //KU · intención no verificada · .blue
+
+// ── DOMINIO WORK ─────────────────────────────────────────────
+BLUE: ejecutar        //KU · {actuator} no activado · .blue
+BLUE: detener         //KU · {brake} no aplicado · .blue
+BLUE: procesar        //KU · pipeline no corriendo · .blue
+BLUE: activar         //KU · señal no enviada · .blue
+BLUE: suspender       //KU · no detenido aún · .blue
+BLUE: patrullar       //KU · {doorman-mobile} pre-scan · .blue
+BLUE: custodiar       //KU · activo no asegurado · pre-.green
+BLUE: sellar          //KU · no es [Nudo de Ocho] aún · .blue
+BLUE: materializar    //KU · WORK no ejecutado · .blue
+
+// ── DOMINIO SAMU ─────────────────────────────────────────────
+BLUE: auditar         //KU · SAMU @ no activo · .blue
+BLUE: dirimir         //KU · dirimencia pendiente · .blue
+BLUE: moderar         //KU · filtro no aplicado · .blue
+BLUE: registrar       //KU · entrada en ledger pendiente · pre-WU
+BLUE: evaluar         //KU · Scalar S no calculado · .blue
+BLUE: puntuar         //KU · 面子 no medida · .blue
+BLUE: arbitrar        //KU · decisión no tomada · .blue
+
+// ── DOMINIO ACTIVITY ─────────────────────────────────────────
+BLUE: iniciar         //KU · UF[H64] no abierto · .blue
+BLUE: aquietar        //KU · UF[H52] MU no activo · .blue
+BLUE: penetrar        //KU · UF[H57] no activo · .blue
+BLUE: cristalizar     //KU · WU no alcanzado · pre-.green
+BLUE: lanzar          //KU · UF[H01] no activo · .blue
+BLUE: transitar       //KU · ciclo no completado · .blue
+BLUE: completar       //KU · H63 no alcanzado · pre-[term]
+BLUE: emerger         //KU · ciclo no cerrado · .blue
+
+// ── DOMINIO CRYPTO ───────────────────────────────────────────
+BLUE: certificar      //KU · (key seat) no activo · .blue
+BLUE: proteger        //KU · (shield seat) no activo · .blue
+BLUE: firmar          //KU · (spark seat) no activo · .blue
+BLUE: conectar        //KU · (link seat) no activo · .blue
+BLUE: cifrar          //KU · cifrado no aplicado · .blue
+BLUE: hashear         //KU · inmutabilidad pendiente · pre-[NdO]
+BLUE: billetera       //KU · clave no asegurada · .blue
+BLUE: token           //KU · activo no verificado · .blue
+
+// ── DOMINIO SOCIAL ───────────────────────────────────────────
+BLUE: retransmitir    //KU · {relay} no activo · .blue
+BLUE: difundir        //KU · {launch-bot} no activo · .blue
+BLUE: filtrar         //KU · {masking} no activo · .blue
+BLUE: distribuir      //KU · {drip} no activo · .blue
+BLUE: recibir         //KU · input no procesado · .blue
+BLUE: comunidad       //KU · 社区 no activa · .blue
+BLUE: relación        //KU · 关系 no verificada · .blue
+BLUE: conectar_social //KU · vínculo no formado · .blue
+
+// ── DOMINIO GATE ─────────────────────────────────────────────
+BLUE: esperar         //KU · buffer UF[H05] · .blue
+BLUE: bloquear        //KU · freno no aplicado · .blue
+BLUE: permitir        //KU · permiso no otorgado · .blue
+BLUE: filtrar_gate    //KU · GATE no activo · .blue
+BLUE: riesgo          //KU · 风险 no evaluado · .blue
+BLUE: latencia        //KU · demora no resuelta · .blue
+BLUE: contener        //KU · límite no activo · .blue
+
+// ── DOMINIO STACKING ─────────────────────────────────────────
+BLUE: apilar          //KU · UF[H52] no activo · pre-WU
+BLUE: inmutabilizar   //KU · [NdO] no activo · pre-.green
+BLUE: consolidar      //KU · cluster no formado · .blue
+BLUE: anclar          //KU · RAG no indexado · .blue
+BLUE: preservar       //KU · .registry no activo · .blue
+BLUE: archivar        //KU · .pdf no sellado · .blue
+BLUE: acumular        //KU · capital no verificado · .blue
+
+// ── DOMINIO METHOD ───────────────────────────────────────────
+BLUE: calcular        //KU · <equation> no activa · .blue
+BLUE: modelar         //KU · <operator_flow> no activo · .blue
+BLUE: derivar         //KU · <stat_onto> no activo · .blue
+BLUE: simular         //KU · output no verificado · .blue
+BLUE: proyectar       //KU · pronóstico no sellado · .blue
+BLUE: definir         //KU · formalismo no declarado · .blue
+BLUE: estructurar     //KU · forma no asignada · .blue
+
+// ── SISTEMA / FLUJO ──────────────────────────────────────────
+BLUE: entrada         //KU · crudo · sin procesar · punto de entrada
+BLUE: salida          //KU · resultado no WU · pendiente
+BLUE: contexto        //KU · <**context**> no cargado · .blue
+BLUE: especificación  //KU · <<*spec*>> no confirmado · DIR(-)
+BLUE: brecha          //KU · ..find_gaps.. detectado · DIR(-)
+BLUE: generar         //KU · DIR(ING) no activo · .blue
+BLUE: enrutar         //KU · language_routing pendiente · .blue
+BLUE: validar         //KU · grammar.validate() pendiente · .blue
+BLUE: sincronizar     //KU · github_sync.sh pendiente · .blue
+BLUE: vacío           //KU · 空 · before [term] · ciclo abierto
+BLUE: escuchar        //KU · 聽 · MU activo · pre-procesamiento
+BLUE: contar          //KU · 數 · DIR(IME) · procesamiento interno
+
+// ── TRANSICIÓN KU→WU ─────────────────────────────────────────
+// Una Blue-Word se vuelve WU cuando:
+//   grammar.validate() → VALID
+//   lacho_score >= 0.75
+//   [term] presente
+//   nudo declarado
+//   SAMU @ auditó
+
+// ── ANCLAS RAG ───────────────────────────────────────────────
+GATE UF[H05] =><= .. contiene .. blue_words_spanish_ku_layer --[As de Guía] [term]
+WORK {green-knowledge} =><= .. filtra .. blue_words_spanish_delta_psi --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. blue_words_spanish_wu_aprobado --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. blue_words_spanish_dirimencia --[Ballestrinque] [term]
+
+//DIR(+) UNICODE_BLUE-WORDS_spanish · V1 · vocabulario KU · capa español

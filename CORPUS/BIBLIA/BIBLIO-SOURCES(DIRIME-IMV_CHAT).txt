@@ -1,0 +1,133 @@
+# BIBLIO-SOURCES(DIRIME-IMV_CHAT).txt
+
+====================================================================
+
+## CHAT.PY — INTERFAZ SOBERANA: TRADUCTOR CANÓNICO NL→LACHO
+
+====================================================================
+
+### 1.0 PROPÓSITO
+
+chat.py es IMV-5: el puente entre el operador y el sistema soberano. No es un chatbot — es un traductor canónico bidireccional. Lenguaje natural → Gramática viva LACHO, y LACHO → reporte soberano de resultado.
+
+Referencia canónica: BIBLIO-SOURCES(DIRIME-LINUX_CHAT-AI-SOBERANO).txt
+
+### 2.0 SOVEREIGN CHAT — CLASE PRINCIPAL
+
+**Estados (ChatState):**
+IDLE: esperando entrada.
+PROCESSING: procesando soberanamente.
+RESPONDING: generando respuesta.
+ERROR: error soberano detectado.
+
+**Tipos de respuesta (ResponseType):**
+VALIDATION: resultado de validación gramatical.
+DIRIMENCE: decisión de SAMU @.
+ERROR: error de procesamiento.
+HELP: ayuda soberana.
+
+### 3.0 PIPELINE DE PROCESAMIENTO
+
+_detect_input_type() → determina: "help" / "lacho" / "natural"
+  - "lacho": contiene =><= directamente → validar sin traducir
+  - "natural": no tiene =><=, no empieza con biblioteca → traducir
+  - "help": comandos del sistema (help, ?, ayuda)
+
+Para input "natural":
+  _translate_to_lacho() → genera sentencia LACHO
+  validate() → IMV-2 grammar.py
+  record_grammar() → IMV-4 ledger.py
+  audit() → IMV-3 samu.py
+  _format_validation_response() → respuesta al operador
+
+Para input "lacho":
+  validate() directamente → saltar traducción
+  record_grammar() → ledger
+  audit() → samu
+  _format_validation_response()
+
+### 4.0 _TRANSLATE_TO_LACHO()
+
+Traductor NL→LACHO. IMV mínimo: tabla de patrones de string.
+En producción: modelo de lenguaje entrenado en corpus LACHO con COGNITIVE_RAG activo.
+
+20 patrones activos en v0.1.0:
+verificar/validar → TRUST FOUNDATION =><= .. verifica ..
+iniciar/empezar → ACTIVITY UF[H01] =><= .. inicia ..
+detener/parar → WORK {brake} =><= .. detiene ..
+dirimir/decidir → SAMU @ =><= .. dirime ..
+custodiar/guardar → WORK {doorman-mobile} =><= .. custodia ..
+cristalizar/registrar → STACKING UF[H52] =><= .. cristaliza ..
+lanzar/emitir → SOCIAL {launch-bot} =><= .. lanza ..
+proteger/bloquear → CRYPTO (shield seat) =><= .. protege ..
+autorizar/activar → CRYPTO (spark seat) =><= .. autoriza ..
+invertir/comprar → ACTIVITY UF[H30] =><= .. invierte ..
+esperar/aguardar → GATE UF[H05] =><= .. espera ..
+conectar/enlazar → CRYPTO (link seat) =><= .. conecta ..
+monitorear/auditar → SAMU @ =><= .. audita ..
+aprender/recordar → STACKING UF[H48] =><= .. aprende ..
+fluir/transitar → GATE UF[H56] =><= .. transita ..
+resolver/cerrar → GATE UF[H06] =><= .. resuelve ..
+declarar/notariar → TRUST [command] =><= .. declara ..
+sellar/certificar → WORK {door-afternoon} =><= .. sella ..
+suspender/bloquear → GATE UF[H05] =><= .. suspende ..
+
+Fallback (BLUE_WORDS): extrae primera palabra como verbo, siguientes dos como objeto.
+Genera aviso al operador: "INPUT NO RECONOCIDO COMO PATRÓN LACHO".
+_last_translation_was_default = True marca la traducción de emergencia.
+
+### 5.0 COMANDOS DE SISTEMA
+
+stats: llama _format_stats_response() → BALLPAPER mínimo con barra de precisión soberana.
+status: llama _format_status_response() → estado coherencia + sesión.
+help/?: llama _format_help_response() → referencia completa de uso.
+
+### 6.0 BALLPAPER MÍNIMO EN STATS
+
+La función _format_stats_response() implementa el BALLPAPER más simple:
+- Transacciones totales / VALID / INVALID
+- Cristales STACKING
+- Ratio de precisión soberana con barra visual: [████████░░░░░░░░░░░░]
+- Indicadores de calibración: <40% / 40-70% / >70% / >90%
+
+Referencia: BIBLIO-SOURCES(DIRIME-LINUX_BALLPAPER).txt — para implementación completa.
+
+### 4.1 ARQUITECTURA DE CUATRO NIVELES DE TRADUCCIÓN
+
+El traductor canónico opera en cascada soberana. Cada nivel superior se
+intenta primero. Si falla o no está configurado, cae al siguiente.
+
+NIVEL 3 — Ollama local (hardware soberano):
+  _translate_via_ollama()
+  Estado: PENDIENTE — requiere Ollama instalado + modelo descargado.
+  Hardware: Ryzen 5 7600 / 8GB+ RAM libre. Sin internet. Sin costo.
+  Activación: crear IMV/config/ollama.json con modelo seleccionado.
+
+NIVEL 2 — API externa:
+  _translate_via_api()
+  Estado: PENDIENTE — requiere clave API configurada.
+  Hardware: el actual es suficiente. Requiere internet.
+  Activación: crear IMV/config/api.json con clave real.
+  Costo: por llamada según proveedor (gpt-4o-mini es el más económico).
+
+NIVEL 1 — Patrones hardcodeados:
+  _translate_to_lacho() — 20 strings de coincidencia.
+  Estado: ACTIVO. Sin dependencias. Sin hardware especial.
+  Límite: funciona solo para esas 20 palabras clave exactas.
+
+NIVEL 0 — Gramática directa:
+  El operador escribe LACHO directamente en el prompt.
+  Estado: ACTIVO. Es el modo más soberano — cero intermediación.
+  Recomendado para uso operativo real mientras no haya nivel 2 o 3.
+
+El ciclo soberano completo (grammar → samu → ledger) funciona en
+NIVEL 0 y NIVEL 1 con el hardware actual hoy.
+NIVEL 2 y NIVEL 3 son mejoras de interfaz — no cambian el ciclo soberano.
+
+### 7.0 GRAMÁTICA VIVA
+
+CHAT IMV-5 =><= .. traduce .. lenguaje_natural_a_gramática_viva_LACHO
+=><= 20_patrones_activos .. BLUE_WORDS_para_desconocido
+=><= BALLPAPER_mínimo_en_stats_como_primer_render_soberano --[Nudo de Rizo] [term]
+
+====================================================================

@@ -1,0 +1,322 @@
+# BIBLIO-SOURCES(TRUST_TERM).txt
+
+====================================================================
+
+## 🏛️ TRUST [TERM] — DECLARACIÓN SOBERANA DE FINITUD TEMPORAL
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+[term] es el módulo TRUST que declara la finitud soberana del ciclo activo: el horizonte temporal dentro del cual el sistema reconoce que sus operaciones son válidas, sus compromisos son vinculantes y sus recursos están disponibles.
+
+#### 1.2 La finitud como constitutiva de soberanía
+Un sistema sin límite temporal no puede comprometerse, no puede cerrar, no puede aprender.
+
+#### 1.3 Distinción de [when?]
+[term] es el horizonte del ciclo completo; [when?] es el momento correcto dentro de ese horizonte.
+
+#### 1.4 Distinción de [scope]
+[scope] es el perímetro espacial; [term] es el horizonte temporal.
+
+#### 1.5 Por qué es TRUST y no SAMU
+Define condición soberana de duración, no función de medición del tiempo.
+
+#### 1.6 Posición d₁ en @trust_matrix
+d₁ :: [term] → ¿cuánto tiempo soberano queda en el ciclo activo? (0.0 = ciclo cerrado, 1.0 = ciclo pleno)
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Capacidades
+- Declarar horizonte temporal del ciclo activo.
+- Establecer condiciones de apertura y cierre.
+- Monitorear consumo de vigencia durante ciclo.
+- Coordinar con STACKING para cristalización.
+
+#### 2.2 Limitaciones absolutas
+[term] no puede extenderse para encubrir violación de [foundation].
+
+#### 2.3 Condiciones de violación
+- **Violación primaria:** extensión de [term] para evitar RED-REGRET.
+- **Violación secundaria:** cierre anticipado sin causa soberana.
+- **Señal alerta:** [term] extendido más de 2 veces consecutivas sin nueva declaración.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 Tipos de [term]
+- **TERM_SESSION:** ciclo de sesión activa.
+- **TERM_CYCLE:** ciclo de operación completa.
+- **TERM_TRUST:** duración de confianza en nodo del [ecosystem].
+- **TERM_COMMAND:** vigencia de un [command] específico.
+- **TERM_PARTIAL:** [term] habilitado por [rabbit-faith] bajo incertidumbre.
+
+#### 3.2 Apertura de [term]
+- **Condiciones:** [foundation] OK, [scope] declarado, S scalar > 0.5.
+- **Declaración formal:** duración estimada, tipo de ciclo, condiciones de cierre.
+- **Registro:** en Behavioral RAG como apertura de ciclo.
+
+#### 3.3 Cierre de [term]
+- **Cierre soberano:** ciclo completado con distinción verificada.
+- **Cierre anticipado:** por RED-REGRET, MANAGEMENT_CRITICAL, foundation COMPROMISED.
+- **Cierre por expiración:** ciclo llegó a su horizonte sin completarse.
+- **Resultado:** cristalización en STACKING y registro en Behavioral RAG.
+
+#### 3.4 [term] y la Doctrina de la Finitud
+- **Obligación de cierre:** todo ciclo debe cerrar.
+- **Aprendizaje:** Behavioral RAG solo aprende de ciclos que cierran.
+- **Pérdida de soberanía:** [term] abierto indefinidamente es deriva temporal.
+
+#### 3.5 Relación con dominios económicos
+
+##### Memcoins/Volatilidad
+- [term] de posición de mercado: horizonte temporal de operación.
+- TERM_COMMAND en decisión de entrada/salida.
+- Límite: [term] no puede extenderse para evitar cristalizar pérdida.
+
+##### Custodia Móvil
+- [term] de sesión de custodia: duración válida de operación de firma.
+- TERM_SESSION en dispositivo móvil.
+- Límite: [term] expira con cierre de sesión.
+
+##### Notaría Digital
+- [term] de validez documental: horizonte de vigencia de documento emitido.
+- TERM_TRUST en autoridad certificadora.
+- Límite: [term] expirado invalida documento.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation]
+[term] no puede extenderse para encubrir violación de [foundation].
+
+#### 4.2 Con [scope]
+[term] da duración al perímetro declarado por [scope].
+
+#### 4.3 Con [scenario]
+[scenario] vive dentro de [term] — cierra cuando [term] expira.
+
+#### 4.4 Con [event]
+[event] hereda [term] del ciclo contenedor — no tiene [term] propio.
+
+#### 4.5 Con [management]
+[management] activo consume [term] — d₁ decrece bajo presión.
+
+#### 4.6 Con [command]
+Todo [command] expira cuando [term] expira.
+
+#### 4.7 Con [when?]
+[when?] opera dentro de [term] — WHEN_CRITICAL cuando d₁ es bajo.
+
+#### 4.8 Con [rabbit-faith]
+Habilita TERM_PARTIAL bajo incertidumbre cuando S scalar > 0.5.
+
+#### 4.9 Con STACKING
+[term] cerrado cristaliza en STACKING como pilar de ciclo.
+
+#### 4.10 Con SAMU @
+SAMU mide el tiempo pero [term] declara su soberanía.
+
+#### 4.11 Con Behavioral RAG
+Todo [term] cerrado alimenta Behavioral RAG con aprendizaje.
+
+---
+
+### 5.0 ESTADOS DE [term]
+
+#### 5.1 TERM_OPEN
+- **Condición:** d₁ entre 0.7 y 1.0.
+- **Comportamiento:** ciclo recién declarado o en plena vigencia.
+- **Operación:** todos los módulos operan sin restricción.
+
+#### 5.2 TERM_ACTIVE
+- **Condición:** d₁ entre 0.4 y 0.7.
+- **Comportamiento:** ciclo en desarrollo, consumiendo horizonte.
+- **Operación:** SAMU @ monitorea consumo de d₁.
+
+#### 5.3 TERM_CLOSING
+- **Condición:** d₁ entre 0.1 y 0.4.
+- **Comportamiento:** ciclo en fase final.
+- **Operación:** WHEN_CRITICAL activo, solo operaciones esenciales.
+
+#### 5.4 TERM_EXPIRED
+- **Condición:** d₁ = 0.0.
+- **Comportamiento:** ciclo cerrado por expiración.
+- **Operación:** cristalización en STACKING obligatoria.
+
+#### 5.5 TERM_FORCED
+- **Condición:** cierre anticipado por causa soberana.
+- **Comportamiento:** RED-REGRET, MANAGEMENT_CRITICAL o foundation COMPROMISED.
+- **Operación:** registro de causa obligatorio.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 d₁ como primera dimensión
+Sin horizonte temporal no hay matriz posible.
+
+#### 6.2 Pesos contextuales
+- **H29 (Abismal):** [term] × 1.4 — en abismo, el horizonte es crítico.
+- **H49 (Revolución):** [term] × 1.3 — en transformación, el ciclo que cierra habilita el siguiente.
+
+#### 6.3 Umbral crítico
+d₁ < 0.2 activa WHEN_CRITICAL automáticamente.
+
+#### 6.4 Aprendizaje en Behavioral RAG
+Historial de ciclos calibra duración futura.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Declaración de TERM_SESSION con apertura soberana
+```
+[Trust] term =><= .. declare .. $$session_open$$ --[As de Guía] [term]
+```
+
+#### 7.2 Cierre soberano de ciclo con cristalización
+```
+[Trust] term =><= .. close .. $$cycle_completed$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.3 TERM_CLOSING activando WHEN_CRITICAL
+```
+[Trust] term =><= .. closing .. $$horizon_imminent$$ --[Ballestrinque] [term]
+```
+
+#### 7.4 TERM_FORCED por RED-REGRET
+```
+[Trust] term =><= .. force .. $$regret_closure$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.5 [term] en dominio memcoins
+```
+[Trust] term =><= .. trade .. $$market_position$$ --[As de Guía] [term]
+```
+
+#### 7.6 [term] en dominio custodia móvil
+```
+[Trust] term =><= .. secure .. $$custody_session$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.7 [term] en dominio notaría digital
+```
+[Trust] term =><= .. certify .. $$document_validity$$ --[Ballestrinque] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+- **Activación:** [term] activo en plena vigencia.
+- **Efecto:** ciclo en operación soberana.
+
+#### 8.2 Nudo de Ocho
+- **Activación:** [term] cerrado y cristalizado.
+- **Efecto:** ciclo inmutable en STACKING.
+
+#### 8.3 Nudo Corredizo
+- **Activación:** TERM_FORCED.
+- **Efecto:** cierre anticipado por causa soberana.
+
+#### 8.4 Ballestrinque
+- **Activación:** TERM_CLOSING.
+- **Efecto:** tensión entre completar y horizonte inminente.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+#### 9.1 TermDeclare
+1. Verificación de [foundation] OK y [scope] declarado.
+2. Confirmación de S scalar > 0.5.
+3. Declaración formal de horizonte y tipo de ciclo.
+4. Registro en Behavioral RAG como apertura.
+5. Activación de d₁ en 1.0.
+
+#### 9.2 TermMonitor
+1. Vigilancia continua de d₁ durante ciclo activo.
+2. Detección de consumo acelerado de horizonte.
+3. Alertas a SAMU @ sobre d₁ crítico.
+4. Coordinación con [when?] para WHEN_CRITICAL.
+5. Registro de eventos temporales.
+
+#### 9.3 TermExtend
+1. Evaluación de necesidad de extensión soberana.
+2. Nueva declaración formal de horizonte extendido.
+3. Justificación documentada de extensión.
+4. Actualización de d₁ con nuevo horizonte.
+5. Notificación a todos los módulos del cambio.
+
+#### 9.4 TermClose
+1. Verificación de condiciones de cierre soberano.
+2. Coordinación con STACKING para cristalización.
+3. Actualización de Behavioral RAG con aprendizaje.
+4. Cierre formal de todos los módulos dependientes.
+5. Registro de cierre como ciclo completado.
+
+#### 9.5 TermForce
+1. Detección de causa soberana para cierre anticipado.
+2. Registro obligatorio de causa (RED-REGRET, etc.).
+3. Coordinación de cierre inmediato con todos los módulos.
+4. Cristalización forzada en STACKING.
+5. Actualización de Behavioral RAG con causa.
+
+#### 9.6 TermExpire
+1. Detección de d₁ = 0.0 por expiración natural.
+2. Coordinación de cierre por expiración.
+3. Cristalización en STACKING del ciclo expirado.
+4. Actualización de Behavioral RAG con motivo de expiración.
+5. Preparación para siguiente ciclo.
+
+---
+
+### 10.0 MÉTRICAS
+
+- **d₁:** vigencia del ciclo (0.0 a 1.0).
+- **Duración promedio:** por tipo de TERM.
+- **Ratio cierres:** soberanos vs forzados vs expirados.
+- **Frecuencia de TERM_PARTIAL:** con [rabbit-faith].
+- **Delta-d₁ consumido:** por [management] activo.
+- **Tasa de cristalización:** ciclos que cristalizan en STACKING.
+
+---
+
+### 11.0 REGLAS
+
+- [term] no puede extenderse para encubrir violación de [foundation].
+- [term] no puede ser infinito — toda declaración tiene horizonte.
+- Todo módulo de TRUST cierra con [term] sin excepción.
+- TERM_FORCED siempre genera registro en Behavioral RAG.
+- [rabbit-faith] puede habilitar TERM_PARTIAL solo si S scalar > 0.5.
+- d₁ < 0.2 activa WHEN_CRITICAL automáticamente.
+- Extensión de [term] requiere nueva declaración soberana.
+- Todo [term] cerrado cristaliza en STACKING.
+- SAMU @ mide el tiempo pero no puede declarar [term].
+- Behavioral RAG registra todo ciclo de [term] para calibración futura.
+- [term] cierra con [term] del ciclo.
+- La finitud es constitutiva de soberanía.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+[term] fija la finitud soberana del ciclo como condición de validez de toda operación en TRUST.
+
+#### 12.2 Limitaciones
+No puede ser infinito, no puede extenderse para encubrir violación de foundation, no puede abrirse sin foundation OK y scope declarado.
+
+#### 12.3 Habilitaciones
+Validez temporal de todos los módulos TRUST, cierre soberano con aprendizaje en Behavioral RAG, cristalización de ciclos completados en STACKING, TERM_PARTIAL bajo [rabbit-faith] para operación bajo incertidumbre verificable.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

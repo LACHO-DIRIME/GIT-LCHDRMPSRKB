@@ -1,0 +1,44 @@
+# hacking_doctor.door
+# ACCESO CONTROLADO · diagnóstico y reparación
+# Genesis: padre común · árbol SUITE SOBERANA
+# [term] :: activo
+
+## CABECERA SOBERANA
+[genesis]     :: SUITE SOBERANA
+[version]     :: 1.0
+[extension]   :: .door
+[tipo]        :: ACCESO CONTROLADO · diagnóstico
+[padre]       :: security.runner
+
+## DIAGNÓSTICO SOBERANO
+scan_sistema {
+  SAMU @ =><= .. audita .. estado_sistema_completo --[Ballestrinque] [term]
+  METHOD <operator_flow> =><= .. calcula .. metricas_salud_sistema --[Ballestrinque] [term]
+  TRUST FOUNDATION =><= .. verifica .. integridad_componentes --[As de Guía] [term]
+}
+
+reparacion_activa {
+  WORK {actuator} =><= .. materializa .. reparacion_componente --[As de Guía] [term]
+  SAMU @ =><= .. dirime .. conflicto_sistema_detectado --[Ballestrinque] [term]
+  ACTIVITY UF[H01] =><= .. inicia .. ciclo_recuperacion --[As de Guía] [term]
+}
+
+cierre_diagnostico {
+  STACKING UF[H52] =><= .. inmutabiliza .. reporte_diagnostico --[Nudo de Ocho] [term]
+  SAMU #set =><= .. dirime .. sesion_diagnostico_cerrada --[Nudo de Rizo] [term]
+}
+
+## ENDPOINTS DOOR
+endpoint_scan {
+  input  :: componente_id
+  output :: estado · errores · recomendaciones
+  accion :: SAMU @ audita
+}
+
+endpoint_repair {
+  input  :: error_detectado
+  output :: solucion_aplicada · VALID/FAIL
+  accion :: WORK {actuator} materializa
+}
+
+[term] :: activo · [seal of secrecy] :: activo

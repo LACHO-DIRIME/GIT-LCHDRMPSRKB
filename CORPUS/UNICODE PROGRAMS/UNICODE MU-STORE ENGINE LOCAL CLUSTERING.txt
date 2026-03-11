@@ -1,0 +1,104 @@
+//[MANAGEMENT].lacho · UNICODE MU-STORE ENGINE LOCAL CLUSTERING
+//UNICODE_MU-STORE_ENGINE_LOCAL_CLUSTERING.txt · V1 · 2026-03-10
+//MU-STORE ENGINE = motor de preservación soberana entre ciclos
+//LOCAL CLUSTERING = hardware antiX · NODO-WS · sin red externa
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//jerarquía: [mu-store]→MU_STATE→MU_CONTEXT→MU_PATTERN→MU_IDENTITY
+//hardware: antiX · /media/Personal/ · sovereign.db · sin cloud
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN LOCAL CLUSTERING ═══════════════════════════════
+// LOCAL = todo en un solo hardware · antiX · sin red externa
+// CLUSTERING = agrupación de estados MU por dominio soberano
+// El MU-STORE preserva entre ciclos lo que STACKING cristaliza dentro
+// Diferencia crítica: STACKING = dentro del ciclo / MU-STORE = entre ciclos
+// En LOCAL el cluster es el sistema de archivos: /media/Personal/
+
+// ══ IDENTIDAD DEL MOTOR ═══════════════════════════════════════
+UNICODE: MSE_LOCAL            //MU-STORE ENGINE LOCAL · modo hardware único
+                              //antiX · /media/Personal/PLANERAI/DIRIME/
+UNICODE: MSE_L_DORMANT        //MU_DORMANT · entre ciclos · potencial intacto
+                              //archivos preservados · sovereign.db cerrado
+UNICODE: MSE_L_LOADING        //MU_LOADING · inicio [term] · carga estado prev
+                              //verificación [foundation] antes de cargar
+UNICODE: MSE_L_ACTIVE         //MU_ACTIVE · estado cargado · ciclo en curso
+                              //alimenta [scenario] · SAMU @ monitorea
+UNICODE: MSE_L_SAVING         //MU_SAVING · cierre [term] · macro_cierre
+                              //selecciona qué preservar · purga EVENT_NOISE
+UNICODE: MSE_L_CORRUPTED      //MU_CORRUPTED · inconsistencia detectada
+                              //carga bloqueada · SAMU @ diagnóstico intensivo
+
+// ══ CAPAS DE PRESERVACIÓN ════════════════════════════════════
+UNICODE: MU_STATE_L           //estado operativo al cierre del ciclo · snapshot
+                              //STACKING UF[H52] =><= .. preserva .. state_local
+UNICODE: MU_CONTEXT_L         //contexto validado del último ciclo · RAG delta
+                              //lo que cambió en CORPUS · nuevos docs indexados
+UNICODE: MU_PATTERN_L         //patrones de operación · Behavioral RAG soberano
+                              //verbos más usados · bibliotecas dominantes del día
+UNICODE: MU_IDENTITY_L        //identidad verificada entre sesiones · CRYPTO key
+                              //VERSION · CORPUS_TOTAL · Scalar S al cierre
+UNICODE: MU_PENDING_L         //operaciones no cerradas · MU_PENDING evaluación
+                              //[Ballestrinque] · continúa vs cierre definitivo
+
+// ══ CLUSTERS LOCALES ══════════════════════════════════════════
+// Cada cluster LOCAL tiene su propio MU-STORE soberano
+UNICODE: CL_CORE_L            //cluster #CORE · grammar+ledger+rag+ceo · MU local
+UNICODE: CL_LACHO_L           //cluster #LACHO · sentencias · cristales · .lacho
+UNICODE: CL_KALIL_L           //cluster #KALIL · 6 nodos · stub → WU pendiente
+UNICODE: CL_THEATER_L         //cluster #THEATER · macros · .theater · .runner
+UNICODE: CL_CORPUS_L          //cluster #CORPUS · 186+ docs · RAG indexed · delta
+UNICODE: CL_CHINA_L           //cluster #CHINA · CJK tokens · dual mode local
+UNICODE: CL_CEO_L             //cluster #CEO · 64 hexagramas · daily cycle
+
+// ══ FILESYSTEM COMO MU-STORE ══════════════════════════════════
+UNICODE: FS_ROOT_L            ///media/Personal/PLANERAI/DIRIME/ · raíz soberana
+UNICODE: FS_SOVEREIGN_L       //.sovereign · VERSION · CORPUS_TOTAL · MU_IDENTITY
+UNICODE: FS_LEDGER_L          //sovereign.db · TX · cristales · Scalar S · MU_STATE
+UNICODE: FS_CORPUS_L          //CORPUS/ · 186+ docs · MU_CONTEXT delta
+UNICODE: FS_THEATER_L         //THEATER/ · macros · MU_PATTERN conductual
+UNICODE: FS_LACHO_FILES_L     //LACHO_FILES/ · .lacho generados · MU_PENDING
+UNICODE: FS_CEO_JSON_L        //IMV/data/CEO_ALPHA_H64.json · hexagrama día
+
+// ══ OPERACIONES DEL MOTOR LOCAL ═══════════════════════════════
+UNICODE: MSE_L_LOAD           //MuLoad local · lee .sovereign + sovereign.db
+                              //verifica [foundation] · carga MU_STATE_L
+UNICODE: MSE_L_ACTIVATE       //MuActivate · alimenta [scenario] · RAG refresh
+                              //python3 tools/index_new_files.py · LOAD_CORPUS
+UNICODE: MSE_L_UPDATE         //MuUpdate · actualiza durante ciclo · MU_PATTERN_L
+                              //cada TX nuevo es delta de MU_CONTEXT_L
+UNICODE: MSE_L_SAVE           //MuSave · macro_cierre · escribe .sovereign
+                              //STACKING UF[H63] =><= .. cristaliza .. mu_save_local
+UNICODE: MSE_L_VERIFY         //MuVerify · pytest 29/29 + SAMU @ · integridad
+UNICODE: MSE_L_RESTORE        //MuRestore · desde Behavioral RAG · si CORRUPTED
+
+// ══ RABBIT-FAITH LOCAL ════════════════════════════════════════
+UNICODE: RF_LOCAL             //[rabbit-faith] · opera con MU_LOADING incompleto
+                              //condición: Scalar S > 0.5 · habilita carga parcial
+UNICODE: RF_THRESHOLD_L       //S > 0.5 → permite operar · S < 0.5 → GATE bloquea
+UNICODE: RF_SEED_L            //Nodo-Ω local · semilla · Ψ ≥ 0.85 para eclosión
+
+// ══ INTEGRACIÓN DIRIME ════════════════════════════════════════
+UNICODE: MSE_L_SAMU           //SAMU @ audita integridad MU-STORE al cierre/apertura
+UNICODE: MSE_L_MACRO_OPEN     //SAMU #rise → MuLoad + MuActivate · inicio soberano
+UNICODE: MSE_L_MACRO_CLOSE    //SAMU #set → MuSave + commit LACHO · cierre soberano
+UNICODE: MSE_L_GIT            //GIT_BOT → preserva MU en repo · FABRIC_HASH
+
+// ══ RUN/LIST LOCAL ════════════════════════════════════════════
+UNICODE: RUN(MSE:LOCAL:LOAD)
+  //python3 main.py --stats → lee MU_IDENTITY_L
+  //cat .sovereign → VERSION · CORPUS_TOTAL · S
+UNICODE: RUN(MSE:LOCAL:SAVE)
+  //bash tools/github_sync.sh → MuSave + push
+  //STACKING UF[H63] · cristal del ciclo
+UNICODE: LIST(MSE:LOCAL:CLUSTERS)  //CORE·LACHO·KALIL·THEATER·CORPUS·CHINA·CEO
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+TRUST [mu-store] =><= .. preserve .. state_sovereign_local --[As de Guía] [term]
+TRUST [mu-store] =><= .. load .. preserved_context_local --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. mu_store_local_integridad --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. mu_save_local_ciclo --[Nudo de Ocho] [term]
+GATE UF[H05] =><= .. contiene .. mu_loading_local_foundation --[As de Guía] [term]
+CRYPTO (key seat) =><= .. certifica .. mu_identity_local_sesion --[As de Guía] [term]
+
+//DIR(=) UNICODE_MU-STORE_ENGINE_LOCAL_CLUSTERING · V1 · antiX hardware
+//DIR(=) MU_STATE·CONTEXT·PATTERN·IDENTITY·PENDING · 7 clusters locales

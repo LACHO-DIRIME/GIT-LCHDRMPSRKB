@@ -1,0 +1,43 @@
+# file_manager.gate
+# GESTIÓN DE ARCHIVOS · control soberano filesystem
+# Genesis: padre común · árbol SUITE SOBERANA
+# [term] :: activo
+
+## CABECERA SOBERANA
+[genesis]     :: SUITE SOBERANA
+[version]     :: 1.0
+[extension]   :: .gate
+[tipo]        :: GESTIÓN ARCHIVOS
+[padre]       :: rational_day.theater
+
+## OPERACIONES ARCHIVO
+lectura_soberana {
+  TRUST FOUNDATION =><= .. verifica .. permiso_lectura_archivo --[As de Guía] [term]
+  WORK {actuator} =><= .. ejecuta .. lectura_archivo_soberano --[As de Guía] [term]
+}
+
+escritura_soberana {
+  CRYPTO (key seat) =><= .. certifica .. permiso_escritura --[As de Guía] [term]
+  WORK {actuator} =><= .. materializa .. escritura_archivo_nuevo --[As de Guía] [term]
+  STACKING UF[H52] =><= .. inmutabiliza .. archivo_sellado --[Nudo de Ocho] [term]
+}
+
+gestion_corpus {
+  -- indexar nuevos archivos al RAG automaticamente
+  -- extensiones soberanas: .theater .lacho .runner .door .blue .green .gate
+  -- padre comun: genesis SUITE SOBERANA
+  -- arbol: DIRIME/THEATER · DIRIME/LACHO_FILES · DIRIME/AGENTS · DIRIME/RUNNERS
+}
+
+## ÁRBOL SOBERANO COMPLETO
+arbol_sistema {
+  DIRIME/THEATER/      :: .theater .gate
+  DIRIME/LACHO_FILES/  :: .lacho
+  DIRIME/AGENTS/       :: .blue .green
+  DIRIME/RUNNERS/      :: .runner .door
+  DIRIME/CORPUS/       :: BIBLIO-SOURCES · PRACTICE · CRYSTALS
+  DIRIME/JOURNAL/      :: planes · reportes
+  DIRIME/IMV/          :: motor validación · ledger · RAG
+}
+
+[term] :: activo · [seal of secrecy] :: activo

@@ -1,0 +1,47 @@
+# newspaper_dashboard.theater
+# DASHBOARD CONTROL · vista soberana del sistema
+# Genesis: padre común · árbol SUITE SOBERANA
+# [term] :: activo
+
+## CABECERA SOBERANA
+[genesis]     :: SUITE SOBERANA
+[version]     :: 1.0
+[extension]   :: .theater
+[tipo]        :: DASHBOARD · control · instrucciones
+[padre]       :: rational_day.theater
+
+## PANEL SOBERANO
+panel_estado {
+  TRUST FOUNDATION =><= .. verifica .. estado_suite_completo --[As de Guía] [term]
+  SAMU @ =><= .. audita .. coherencia_dashboard_activo --[As de Guía] [term]
+  METHOD <stat_onto> =><= .. calcula .. metricas_sistema_vivo --[As de Guía] [term]
+}
+
+panel_alertas {
+  SAMU @ =><= .. dirime .. alerta_critica_detectada --[Nudo Corredizo] [term]
+  GATE UF[H06] =><= .. bloquea .. acceso_anomalo_dashboard --[Nudo Corredizo] [term]
+  WORK {brake} =><= .. detiene .. proceso_dashboard_riesgoso --[Nudo Corredizo] [term]
+}
+
+panel_reportes {
+  SOCIAL {launch-bot} =><= .. transmite .. reporte_dashboard_diario --[As de Guía] [term]
+  STACKING UF[H52] =><= .. cristaliza .. snapshot_sistema_actual --[Nudo de Ocho] [term]
+  SAMU #set =><= .. dirime .. cierre_dashboard_sesion --[Nudo de Rizo] [term]
+}
+
+## INSTRUCCIONES DASHBOARD
+instrucciones {
+  -- mostrar LACHO_SCORE · Scalar S · TX total en tiempo real
+  -- alertar si LACHO_SCORE < 0.50
+  -- alertar si Scalar S < 0.70
+  -- registrar snapshot cada cierre de sesion
+  -- feed desde assistant_agent.green
+}
+
+## STREAMING CONTROL
+streaming {
+  SOCIAL {drip} =><= .. transmite .. feed_continuo_dashboard --[As de Guía] [term]
+  METHOD <operator_flow> =><= .. estructura .. pipeline_datos_vivo --[As de Guía] [term]
+}
+
+[term] :: activo · [seal of secrecy] :: activo

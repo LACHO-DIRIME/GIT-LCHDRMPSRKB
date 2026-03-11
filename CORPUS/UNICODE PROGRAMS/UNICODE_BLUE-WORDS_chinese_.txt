@@ -1,0 +1,115 @@
+//[MANAGEMENT].lacho · BLUE-WORDS · 中文
+//UNICODE_.lacho · V1 · 2026-03-10
+//Blue-Words: KU词汇 · 前裁决层 · 汉字层
+//流程: Blue-Words → {green-knowledge} → STACKING 或 RED-REGRET
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo · 空聽數
+
+// ══ 定义 · DEFINITION ════════════════════════════════════════
+// Blue-Words 是原始KU输入令牌 — 尚未验证
+// 以 .blue 状态进入系统 · 前裁决 · GATE UF[H05]
+// {green-knowledge} 过滤: delta-Ψ > 0 → STACKING (WU .green)
+//                         delta-Ψ ≤ 0 → RED-REGRET (丢弃)
+
+// ══ 信任域 · TRUST DOMAIN ════════════════════════════════════
+BLUE: 验证    //yànzhèng · KU · TRUST验证待定 · .blue
+BLUE: 声明    //shēngmíng · KU · 声明未封印 · .blue
+BLUE: 授权    //shòuquán · KU · 授权待定 · GATE UF[H06]
+BLUE: 限制    //xiànzhì · KU · 边界未确认 · .blue
+BLUE: 维持    //wéichí · KU · 连续性未验证 · .blue
+BLUE: 主权    //zhǔquán · KU · 主权未声明 · pre-[scope]
+BLUE: 合同    //hétong · KU · [term]未激活 · pre-合同
+BLUE: 信任    //xìnrèn · KU · 信任未验证 · pre-WU
+BLUE: 基础    //jīchǔ · KU · 地基未封印 · pre-[foundation]
+BLUE: 关系    //guānxi · KU · 关系未建立 · .blue
+
+// ══ 工作域 · WORK DOMAIN ════════════════════════════════════
+BLUE: 执行    //zhíxíng · KU · {actuator}未激活 · .blue
+BLUE: 停止    //tíngzhǐ · KU · {brake}未应用 · .blue
+BLUE: 处理    //chǔlǐ · KU · 管道未运行 · .blue
+BLUE: 激活    //jīhuó · KU · 信号未发送 · .blue
+BLUE: 暂停    //zàntíng · KU · 未停止 · .blue
+BLUE: 巡逻    //xúnluó · KU · {doorman-mobile}预扫描 · .blue
+BLUE: 托管    //tuōguǎn · KU · 资产未保障 · pre-.green
+BLUE: 封印    //fēngyìn · KU · 非[Nudo de Ocho] · .blue
+BLUE: 交易    //jiāoyì · KU · 交易未验证 · .blue
+BLUE: 桥梁    //qiáoliáng · KU · 桥接未激活 · .blue
+
+// ══ 审计域 · SAMU DOMAIN ════════════════════════════════════
+BLUE: 审计    //shěnjì · KU · SAMU @未激活 · .blue
+BLUE: 裁决    //cáijué · KU · 裁决待定 · .blue
+BLUE: 调解    //tiáojiě · KU · 过滤器未应用 · .blue
+BLUE: 登记    //dēngjì · KU · 账本条目待定 · pre-WU
+BLUE: 评估    //pínggū · KU · Scalar S未计算 · .blue
+BLUE: 面子    //miànzi · KU · 标量未测量 · .blue
+BLUE: 仲裁    //zhòngcái · KU · 决定未作出 · .blue
+
+// ══ 活动域 · ACTIVITY DOMAIN ════════════════════════════════
+BLUE: 启动    //qǐdòng · KU · UF[H64]未开放 · .blue
+BLUE: 静止    //jìngzhǐ · KU · UF[H52] MU未激活 · .blue
+BLUE: 渗透    //shèntòu · KU · UF[H57]未激活 · .blue
+BLUE: 结晶    //jiéjīng · KU · WU未达到 · pre-.green
+BLUE: 发射    //fāshè · KU · UF[H01]未激活 · .blue
+BLUE: 过渡    //guòdù · KU · 周期未完成 · .blue
+BLUE: 完成    //wánchéng · KU · H63未达到 · pre-[term]
+
+// ══ 加密域 · CRYPTO DOMAIN ════════════════════════════════════
+BLUE: 认证    //rènzhèng · KU · (key seat)未激活 · .blue
+BLUE: 保护    //bǎohù · KU · (shield seat)未激活 · .blue
+BLUE: 签名    //qiānmíng · KU · (spark seat)未激活 · .blue
+BLUE: 连接    //liánjié · KU · (link seat)未激活 · .blue
+BLUE: 加密    //jiāmì · KU · 密码未应用 · .blue
+BLUE: 安全    //ānquán · KU · 安全未确认 · .blue
+BLUE: 货币    //huòbì · KU · e-CNY未验证 · .blue
+BLUE: 数字    //shùzì · KU · 数字资产未验证 · .blue
+
+// ══ 社交域 · SOCIAL DOMAIN ════════════════════════════════════
+BLUE: 中继    //zhōngjì · KU · {relay}未激活 · .blue
+BLUE: 广播    //guǎngbō · KU · {launch-bot}未激活 · .blue
+BLUE: 过滤    //guòlǜ · KU · {masking}未激活 · .blue
+BLUE: 分发    //fēnfā · KU · {drip}未激活 · .blue
+BLUE: 接收    //jiēshōu · KU · 输入未处理 · .blue
+BLUE: 社区    //shèqū · KU · 社区未激活 · .blue
+BLUE: 网络    //wǎngluò · KU · HL FABRIC未激活 · .blue
+BLUE: 节点    //jiédiǎn · KU · 节点未连接 · .blue
+
+// ══ 门控域 · GATE DOMAIN ════════════════════════════════════
+BLUE: 等待    //děngdài · KU · UF[H05]缓冲区 · .blue
+BLUE: 阻断    //zǔduàn · KU · 制动未应用 · .blue
+BLUE: 允许    //yǔnxǔ · KU · 许可未授予 · .blue
+BLUE: 风险    //fēngxiǎn · KU · 风险未评估 · .blue
+BLUE: 延迟    //yánchí · KU · 延迟未解决 · .blue
+
+// ══ 堆叠域 · STACKING DOMAIN ════════════════════════════════
+BLUE: 堆叠    //duīdié · KU · UF[H52]未激活 · pre-WU
+BLUE: 固化    //gùhuà · KU · [NdO]未激活 · pre-.green
+BLUE: 巩固    //gǒnggù · KU · 集群未形成 · .blue
+BLUE: 锚定    //máodìng · KU · RAG未索引 · .blue
+BLUE: 资本    //zīběn · KU · 资本未验证 · .blue
+BLUE: 银行    //yínháng · KU · 银行未连接 · .blue
+BLUE: 贷款    //dàikuǎn · KU · 贷款未验证 · .blue
+
+// ══ 方法域 · METHOD DOMAIN ════════════════════════════════════
+BLUE: 计算    //jìsuàn · KU · <equation>未激活 · .blue
+BLUE: 建模    //jiànmó · KU · <operator_flow>未激活 · .blue
+BLUE: 推导    //tuīdǎo · KU · <stat_onto>未激活 · .blue
+BLUE: 模拟    //mónǐ · KU · 输出未验证 · .blue
+BLUE: 预测    //yùcè · KU · 预测未封印 · .blue
+BLUE: 智能    //zhìnéng · KU · AI核心未激活 · .blue
+BLUE: 协议    //xiéyì · KU · 协议未激活 · .blue
+
+// ══ 空聽數 · LISTEN PROTOCOL ════════════════════════════════
+BLUE: 空      //kōng · VOID · 空 · before [term] · H64 open
+BLUE: 聽      //tīng · LISTEN · MU · <SWF:READ> before emit
+BLUE: 數      //shù · COUNT · DIR(IME) · internal · no emit yet
+BLUE: 道      //dào · WAY · path not yet chosen · .blue
+BLUE: 静      //jìng · QUIET · MU state · UF[H52] · CREATIVE_PAUSE
+BLUE: 虚      //xū · EMPTY · pre-空 · pure KU · .blue
+
+// ══ ANCLAS RAG ══════════════════════════════════════════════
+GATE UF[H05] =><= .. contiene .. blue_words_chinese_ku_layer --[As de Guía] [term]
+WORK {green-knowledge} =><= .. filtra .. blue_words_chinese_delta_psi --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. blue_words_chinese_wu_verified --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. blue_words_chinese_空聽數 --[Ballestrinque] [term]
+
+//DIR(+) UNICODE_BLUE-WORDS_chinese · V1 · KU词汇 · 汉字层 · 空聽數

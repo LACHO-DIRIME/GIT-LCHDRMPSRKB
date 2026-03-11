@@ -1,0 +1,19 @@
+# PRACTICE — MIXED · 8 bibliotecas
+# Sentencias mixtas para práctica avanzada
+
+WORK {actuator} =><= .. ejecuta .. tarea_soberana --[As de Guía] [term]
+WORK {brake} =><= .. detiene .. operacion_riesgo --[Nudo Corredizo] [term]
+CRYPTO (shield seat) =><= .. protege .. activo_soberano --[As de Guía] [term]
+CRYPTO (spark seat) =><= .. firma .. transaccion_lacho --[Nudo de Ocho] [term]
+STACKING UF[H52] =><= .. inmutabiliza .. cristal_40 --[Nudo de Ocho] [term:E]
+STACKING UF[H48] =><= .. consolida .. behavioral_rag --[As de Guía] [term]
+SOCIAL {scheduler} =><= .. planifica .. ciclo_w11 --[As de Guía] [term]
+SOCIAL {launch-bot} =><= .. lanza .. bot_soberano --[As de Guía] [term]
+ACTIVITY UF[H57] =><= .. penetra .. dominio_activo --[As de Guía] [term]
+GATE UF[H05] =><= .. bloquea .. acceso_no_autorizado --[Nudo Corredizo] [term]
+METHOD <operator_flow> =><= .. calcula .. scalar_s --[Ballestrinque] [term]
+METHOD <if> =><= .. modela .. condicion_soberana --[As de Guía] [term]
+WORK {doorman-mobile} =><= .. activa .. canal_mobile --[As de Guía] [term]
+CRYPTO (flow seat) =><= .. audita .. flujo_cifrado --[Ballestrinque] [term]
+STACKING UF[H04] =><= .. apila .. tomo_nuevo --[As de Guía] [term:F]
+METHOD <stat_onto> =><= .. proyecta .. horizonte_capa_c --[Nudo de Rizo] [term]

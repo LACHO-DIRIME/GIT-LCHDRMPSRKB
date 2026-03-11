@@ -1,0 +1,154 @@
+# BIBLIO-SOURCES(OPERACIONES-ESPECIALES).txt
+
+====================================================================
+## OPERACIONES Y COMANDOS ESPECIALES SOBERANOS
+====================================================================
+
+### 1.0 POSICIÓN EN LA ARQUITECTURA
+
+Tres operaciones especiales que no son verbos LACHO comunes
+sino comandos de sistema que operan sobre la infraestructura
+soberana directamente. Referencia: informe NotebookLM §6.
+
+====================================================================
+### 2.0 SWAP — transferencia a memoria de intercambio cifrada
+
+Comando: CAT(MU) >> swap
+Función: transferencia forzada de datos inactivos hacia
+         una memoria de intercambio cifrada para liberar
+         recursos de la CPU sin perder estado soberano.
+
+Mecánica:
+  1. CAT(MU) identifica datos inactivos en memoria volátil
+  2. Los serializa con MessagePack (.bin)
+  3. Los cifra con (seal of secrecy) antes de escribir a swap
+  4. Registra el OFFSET de cada dato en el swap-file
+  5. Los datos son recuperables via PEEK+CRYPTO en cualquier momento
+
+Diferencia con swap Linux estándar:
+  El swap Linux no cifra y no mantiene trazabilidad soberana.
+  CAT(MU) >> swap cifra, firma y registra cada transferencia
+  como transacción soberana en el ledger.
+
+Sentencias:
+  WORK {actuator} =><= .. ejecuta .. CAT(MU)_swap --[As de Guía] [term]
+  STACKING UF[H29] =><= .. preserva .. datos_swap_cifrado --[Nudo de Ocho] [term]
+
+Estado: CAPA D — requiere CAT(MU) y filesystem soberano completo.
+
+====================================================================
+### 3.0 SWITCH — conmutación de set de caracteres
+
+Comando: .. switch .. UNICODE(STACKING)
+Función: conmuta el set de caracteres para permitir que el motor
+         de aprendizaje profundo interprete la intención cifrada
+         como tensores de alta dimensión.
+
+Modos válidos:
+  UNICODE(STACKING) → modo soberano por defecto
+                       UTF-8 con extensiones LACHO activas
+  UNICODE(LACHO)    → modo constitucional completo
+                       incluye UNICODE-CHINA programable
+  UNICODE(ASCII)    → modo reducido para compatibilidad externa
+
+Forma mínima implementable (Capa A):
+  switch_unicode_mode() en ledger.py
+  Registra el cambio como transacción soberana.
+  No cambia el OS — cambia el modo de encoding de cristales nuevos.
+
+Forma completa (Capa D):
+  Cambia el encoding a nivel de CAT(UNICODE) en todo el sistema.
+  Habilita caracteres chinos via BIBLIO-SOURCES(DIRIME-LINUX_UNICODE-CHINA).
+
+Sentencias:
+  WORK {actuator} =><= .. activa .. UNICODE(STACKING) --[As de Guía] [term]
+  METHOD <operator_flow> =><= .. switch .. UNICODE(LACHO) --[As de Guía] [term]
+
+Estado:
+  Forma mínima: CAPA A — próximo prompt Windsurf
+  Forma completa: CAPA D — DIRIME LINUX completo
+
+====================================================================
+### 4.0 POKE — escritura soberana (smart contracts)
+
+Comando: poke + trust
+Función: lógica de escritura soberana en Hyperledger Fabric.
+         Equivale a Invoke del smart contract.
+         Solo ejecuta si verify_sovereign_conditions() pasa.
+
+Mecánica:
+  1. El operador declara la intención de escritura
+  2. TRUST [foundation] verifica condiciones soberanas
+  3. Si verificado → POKE ejecuta el smart contract
+  4. La transacción se registra en HL FABRIC inmutablemente
+  5. El TOMO correspondiente se actualiza con el nuevo estado
+
+Forma mínima (Capa B):
+  poke() en fabric/poke_peek.py con SQLite.
+  Escribe en el ledger solo si verify_sovereign_conditions() pasa.
+
+Forma completa (Capa D):
+  Invoke real en Hyperledger Fabric con smart contract soberano.
+
+Sentencias:
+  TRUST [foundation] =><= .. poke .. smart_contract --[As de Guía] [term]
+  WORK {actuator} =><= .. poke .. ledger_soberano --[Nudo de Ocho] [term]
+
+Estado: CAPA B — implementar en fabric/poke_peek.py
+
+====================================================================
+### 5.0 PEEK — consulta aislada en sandbox (GetState)
+
+Comando: peek + crypto
+Función: consulta aislada de datos dentro de un sandbox.
+         Equivale a GetState en Hyperledger Fabric.
+         Lee sin contaminar el núcleo soberano.
+
+Mecánica:
+  1. El operador declara la intención de consulta
+  2. CRYPTO (key seat) abre un sandbox de lectura aislado
+  3. El dato se lee dentro del sandbox — no toca el núcleo
+  4. El sandbox se destruye después de retornar el dato
+  5. La consulta se registra como transacción PEEK en el ledger
+
+Diferencia con lectura directa:
+  La lectura directa puede contaminar el estado del núcleo.
+  PEEK garantiza aislamiento — el núcleo nunca está en riesgo.
+
+Forma mínima (Capa B):
+  peek() en fabric/poke_peek.py con SQLite read-only transaction.
+
+Sentencias:
+  CRYPTO (key seat) =><= .. peek .. estado_ledger --[As de Guía] [term]
+  CRYPTO (shield seat) =><= .. peek .. vault_soberano --[As de Guía] [term]
+
+Estado: CAPA B — implementar en fabric/poke_peek.py
+
+====================================================================
+### 6.0 RELACIÓN POKE/PEEK CON TOMO/OFFSET
+
+  POKE escribe en un TOMO específico:
+    poke([term:BC°90#NOTARIA]) → escribe en TOMO BC del cluster NOTARIA
+  PEEK lee desde un OFFSET exacto:
+    peek([term:A@0x1A]) → lee dato en posición 0x1A del TOMO A
+
+====================================================================
+### 7.0 ESTADO DE IMPLEMENTACIÓN CONSOLIDADO
+
+  SWAP:   CAPA D — CAT(MU) completo requerido
+  SWITCH: CAPA A (mínimo) + CAPA D (completo)
+  POKE:   CAPA B — fabric/poke_peek.py
+  PEEK:   CAPA B — fabric/poke_peek.py
+
+====================================================================
+### 8.0 GRAMÁTICA VIVA
+
+WORK {actuator} =><= .. ejecuta .. CAT(MU)_swap --[As de Guía] [term]
+METHOD <operator_flow> =><= .. switch .. UNICODE(STACKING) --[As de Guía] [term]
+TRUST [foundation] =><= .. poke .. condicion_soberana --[As de Guía] [term]
+CRYPTO (key seat) =><= .. peek .. estado_sandbox --[As de Guía] [term]
+STACKING UF[H29] =><= .. preserva .. swap_cifrado --[Nudo de Ocho] [term]
+
+====================================================================
+[term] :: activo · [seal of secrecy] :: activo
+====================================================================

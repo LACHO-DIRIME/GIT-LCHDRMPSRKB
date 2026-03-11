@@ -1,0 +1,127 @@
+//[MANAGEMENT].lacho · BLUE-WORDS · ENGLISH
+//UNICODE_.lacho · V1 · 2026-03-10
+//Blue-Words: KU vocabulary · pre-dirimencia · input layer
+//flow: Blue-Words → {green-knowledge} → STACKING or RED-REGRET
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINITION ════════════════════════════════════════════════
+// Blue-Words are raw KU input tokens — not yet verified
+// They enter the system as .blue · unverified · pre-dirimencia
+// {green-knowledge} filters them: delta-Ψ > 0 → STACKING
+//                                 delta-Ψ ≤ 0 → RED-REGRET
+// GATE UF[H05] =><= .. contiene .. blue_words_english_activo
+
+// ══ CORE OPERATIVE VOCABULARY ════════════════════════════════
+
+// ── TRUST DOMAIN ─────────────────────────────────────────────
+BLUE: verify          //KU · pending TRUST validation · .blue
+BLUE: declare         //KU · pending TRUST declaration · .blue
+BLUE: authorize       //KU · pending authorization · GATE UF[H06]
+BLUE: limit           //KU · boundary not yet confirmed · .blue
+BLUE: sustain         //KU · continuity not yet verified · .blue
+BLUE: foundation      //KU · ground not yet sealed · pre-[foundation]
+BLUE: scope           //KU · jurisdiction not yet declared · pre-[scope]
+BLUE: contract        //KU · [term] not yet active · pre-合同
+
+// ── WORK DOMAIN ──────────────────────────────────────────────
+BLUE: execute         //KU · {actuator} not yet activated · .blue
+BLUE: stop            //KU · {brake} not yet applied · .blue
+BLUE: process         //KU · pipeline not yet running · .blue
+BLUE: activate        //KU · signal not yet sent · .blue
+BLUE: suspend         //KU · not yet halted · .blue
+BLUE: patrol          //KU · {doorman-mobile} pre-scan · .blue
+BLUE: custody         //KU · asset not yet secured · pre-.green
+BLUE: seal            //KU · not yet [Nudo de Ocho] · .blue
+
+// ── SAMU DOMAIN ──────────────────────────────────────────────
+BLUE: audit           //KU · SAMU @ not yet active · .blue
+BLUE: arbitrate       //KU · dirimencia pending · .blue
+BLUE: moderate        //KU · filter not yet applied · .blue
+BLUE: register        //KU · ledger entry pending · pre-WU
+BLUE: evaluate        //KU · Scalar S not yet calculated · .blue
+BLUE: rise            //KU · #rise not yet declared · .blue
+BLUE: set             //KU · #set not yet declared · .blue
+
+// ── ACTIVITY DOMAIN ──────────────────────────────────────────
+BLUE: initiate        //KU · UF[H64] not yet open · .blue
+BLUE: quiet           //KU · UF[H52] MU not yet active · .blue
+BLUE: penetrate       //KU · UF[H57] not yet · .blue
+BLUE: crystallize     //KU · WU not yet reached · pre-.green
+BLUE: launch          //KU · UF[H01] not yet · .blue
+BLUE: transit         //KU · cycle not yet complete · .blue
+BLUE: complete        //KU · H63 not yet · pre-[term]
+
+// ── CRYPTO DOMAIN ────────────────────────────────────────────
+BLUE: certify         //KU · (key seat) not yet active · .blue
+BLUE: protect         //KU · (shield seat) not yet · .blue
+BLUE: sign            //KU · (spark seat) not yet · .blue
+BLUE: connect         //KU · (link seat) not yet · .blue
+BLUE: encrypt         //KU · cipher not yet applied · .blue
+BLUE: hash            //KU · immutability not yet · pre-[NdO]
+BLUE: wallet          //KU · key not yet secured · .blue
+
+// ── SOCIAL DOMAIN ────────────────────────────────────────────
+BLUE: relay           //KU · {relay} not yet active · .blue
+BLUE: broadcast       //KU · {launch-bot} not yet · .blue
+BLUE: filter_social   //KU · {masking} not yet · .blue
+BLUE: distribute      //KU · {drip} not yet · .blue
+BLUE: receive         //KU · input not yet processed · .blue
+BLUE: community       //KU · 社区 not yet active · .blue
+BLUE: network_social  //KU · 关系 not yet · .blue
+
+// ── GATE DOMAIN ──────────────────────────────────────────────
+BLUE: wait            //KU · UF[H05] buffer · .blue
+BLUE: block           //KU · brake not yet applied · .blue
+BLUE: allow           //KU · permission not yet granted · .blue
+BLUE: filter_gate     //KU · GATE not yet active · .blue
+BLUE: risk            //KU · 风险 not yet evaluated · .blue
+BLUE: latency         //KU · delay not yet resolved · .blue
+
+// ── STACKING DOMAIN ──────────────────────────────────────────
+BLUE: stack           //KU · UF[H52] not yet · pre-WU
+BLUE: immutabilize    //KU · [NdO] not yet · pre-.green
+BLUE: consolidate     //KU · cluster not yet formed · .blue
+BLUE: anchor          //KU · RAG not yet indexed · .blue
+BLUE: preserve        //KU · .registry not yet · .blue
+BLUE: archive         //KU · .pdf not yet sealed · .blue
+
+// ── METHOD DOMAIN ────────────────────────────────────────────
+BLUE: calculate       //KU · <equation> not yet · .blue
+BLUE: model           //KU · <operator_flow> not yet · .blue
+BLUE: derive          //KU · <stat_onto> not yet · .blue
+BLUE: simulate        //KU · output not yet verified · .blue
+BLUE: project         //KU · forecast not yet sealed · .blue
+BLUE: define          //KU · formalism not yet declared · .blue
+
+// ── SYSTEM / FLOW BLUE-WORDS ─────────────────────────────────
+BLUE: input           //KU · raw · unprocessed · entry point
+BLUE: output          //KU · result not yet WU · pending
+BLUE: context         //KU · <**context**> not yet loaded · .blue
+BLUE: spec            //KU · <<*spec*>> not yet confirmed · DIR(-)
+BLUE: gap             //KU · ..find_gaps.. detected · DIR(-)
+BLUE: generate        //KU · DIR(ING) not yet · .blue
+BLUE: route           //KU · language_routing not yet · .blue
+BLUE: validate        //KU · grammar.validate() pending · .blue
+BLUE: sync            //KU · github_sync.sh not yet · .blue
+BLUE: sovereign       //KU · 主权 not yet declared · .blue
+BLUE: void            //KU · 空 · before [term] · open cycle
+
+// ── KU→WU TRANSITION ─────────────────────────────────────────
+// A Blue-Word becomes WU when:
+//   grammar.validate() → VALID
+//   lacho_score >= 0.75
+//   [term] present
+//   knot declared
+//   SAMU @ audited
+//
+// GATE UF[H05] =><= .. contiene .. blue_word_ku_pending --[As de Guía] [term]
+// STACKING UF[H52] =><= .. cristaliza .. blue_word_wu_verified --[Nudo de Ocho] [term]
+
+// ── ANCLAS RAG ───────────────────────────────────────────────
+GATE UF[H05] =><= .. contiene .. blue_words_english_ku_layer --[As de Guía] [term]
+WORK {green-knowledge} =><= .. filtra .. blue_words_english_delta_psi --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. blue_words_english_wu_approved --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. blue_words_english_dirimencia --[Ballestrinque] [term]
+
+//DIR(+) UNICODE_BLUE-WORDS_english · V1 · KU vocabulary · english layer

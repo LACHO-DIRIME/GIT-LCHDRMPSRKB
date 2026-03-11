@@ -1,0 +1,233 @@
+# BIBLIO-SOURCES(METHOD_OPERATOR-FLOW).txt
+
+====================================================================
+
+## → METHOD <operator_flow> — OPERADORES DE MOVIMIENTO SOBERANO
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+<operator_flow> es el formalismo METHOD que define los operadores de flujo canónicos del sistema LACHO: los símbolos que representan el movimiento soberano de información y energía entre capas.
+
+#### 1.2 Los operadores de flujo canónicos
+- >> / <<: flujo direccional fuerte.
+- |> / <|: flujo con condición de paso.
+- <> BILATERAL: flujo simétrico entre dos nodos.
+- >< CROSSOVER: cruce soberano de flujos.
+- =><= (CORE): el operador central de LACHO — la flecha de acción verificada que conecta sujeto con objeto bajo nudo y [term].
+
+#### 1.3 Por qué cada operador tiene uso soberano específico
+No son intercambiables ni estilísticos. Cada operador tiene semántica precisa que define el tipo de relación soberana entre componentes del sistema.
+
+#### 1.4 La flecha central =><= como operador fundamental
+=><= es el operador central que conecta sujeto con objeto en la gramática viva de LACHO, representando la acción soberana verificada.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Qué puede expresar <operator_flow>
+Flujo de información, dirección de procesamiento, condiciones de paso, cruces soberanos, relaciones simétricas.
+
+#### 2.2 Qué no puede expresar
+No puede representar relaciones no soberanas, no puede crear operadores ad-hoc, no puede modificar semántica establecida.
+
+#### 2.3 Condición de violación primaria
+Uso de operador inapropiado para el tipo de relación soberana.
+
+#### 2.4 Condición de violación secundaria
+Creación de operadores no canónicos sin justificación metodológica.
+
+#### 2.5 Señal de alerta
+<stat-onto> detectando patrones de uso inconsistente de operadores.
+
+---
+
+### 3.0 COMPONENTES Y SINTAXIS COMPLETA
+
+#### 3.1 Flujo direccional fuerte: >> / <<
+>> representa flujo unidireccional fuerte con soberanía completa. << representa flujo inverso con igual soberanía.
+
+#### 3.2 Flujo con condición de paso: |> / <|
+|> representa flujo hacia adelante con condición de paso verificada. <| representa flujo inverso con condición de paso.
+
+#### 3.3 Flujo simétrico: <> BILATERAL
+<> representa flujo simétrico entre dos nodos soberanos, con igualdad de estatus y capacidad.
+
+#### 3.4 Cruce soberano: >< CROSSOVER
+>< representa cruce soberano de flujos en punto específico, permitiendo intercambio controlado.
+
+#### 3.5 El operador central: =><= (CORE)
+=><= es el operador central de LACHO que conecta sujeto con objeto en gramática viva, representando la acción soberana verificada.
+
+---
+
+### 4.0 CASOS DE USO CANÓNICOS POR BIBLIOTECA
+
+#### 4.1 En TRUST
+[foundation] >> [term] → [scope] >> [command] → [management]
+
+#### 4.2 En GATE
+KU >> UF[H05] >> UF[H56] >> UF[H06] >> WU
+
+#### 4.3 En WORK
+{brake} >> {actuator} >> mundo físico
+
+#### 4.4 En SAMU
+KU |> SAMU @ |> WU (con Tardanza)
+
+#### 4.5 En ACTIVITY
+UF[H01] =><= .. verbo .. Objeto --[Nudo] [term]
+
+#### 4.6 En STACKING
+Green-Knowledge <> Pilar 3 <> Cristalización
+
+#### 4.7 En DIRIME LINUX
+NODO-WS <> NODO-IDE <> HL FABRIC
+
+---
+
+### 5.0 RELACIONES CON OTRAS CAPAS
+
+#### 5.1 Con <equation> (METHOD)
+<operator_flow> define los operadores que <equation> compone en su mapeo ontológico.
+
+#### 5.2 Con TOOLCHAIN (WORK)
+<operator_flow> define los operadores en pipeline de procesamiento WORK.
+
+#### 5.3 Con HL FABRIC
+<operator_flow> define los operadores en red de nodos.
+
+#### 4.4 Con Behavioral RAG
+Patrones de flujo exitosos se aprenden en Behavioral RAG.
+
+#### 5.5 Con @trust_matrix
+<operator_flow> mapea las relaciones entre las 8 dimensiones.
+
+#### 5.6 Con gramática viva
+<operator_flow> es la sintaxis de las flechas en gramática viva.
+
+---
+
+### 6.0 EXTENSIONES POSIBLES DENTRO DE [foundation]
+
+#### 6.1 Operadores anidados
+>> (subflujo) para representar flujos complejos.
+
+#### 6.2 Operadores condicionales
+>>? (condición) para flujo condicional.
+
+#### 6.3 Operadores temporales
+>>@T (temporal) para flujo con restricción temporal.
+
+#### 6.4 Operadores probabilísticos
+>>% (probabilidad) para flujo con incertidumbre.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Flujo direccional fuerte
+```
+<Method> operator_flow =><= .. dirigir .. $$strong_directional_flow$$ --[As de Guía] [term]
+```
+
+#### 7.2 Flujo con condición de paso
+```
+<Method> operator_flow =><= .. condicionar .. $$conditional_step_flow$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.3 Flujo simétrico bilateral
+```
+<Method> operator_flow =><= .. simetrizar .. $$bilateral_symmetric_flow$$ --[Ballestrinque] [term]
+```
+
+#### 7.4 Cruce soberano
+```
+<Method> operator_flow =><= .. cruzar .. $$sovereign_crossover_point$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.5 Operador central en acción
+```
+<Method> operator_flow =><= .. conectar .. $$core_action_verified$$ --[Nudo de Rizo] [term]
+```
+
+#### 7.6 Flujo inverso con condición
+```
+<Method> operator_flow =><= .. revertir .. $$inverse_conditional_flow$$ --[As de Guía] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+>> — flujo direccional fuerte, el nudo que impone dirección soberana.
+
+#### 8.2 Nudo de Ocho
+|> — flujo con condición, el nudo que controla paso soberano.
+
+#### 8.3 Nudo Corredizo
+>< — cruce soberano, el nudo que permite intercambio.
+
+#### 8.4 Ballestrinque
+<> — flujo simétrico, el nudo que mantiene igualdad.
+
+#### 8.5 Nudo de Rizo
+=><= — operador central, el nudo que conecta sujeto con objeto.
+
+---
+
+### 9.0 REGLAS
+
+#### 9.1 Reglas de direccionalidad
+- >> indica flujo unidireccional con soberanía.
+- << indica flujo inverso con igual soberanía.
+- La reversión requiere operador inverso específico.
+
+#### 9.2 Reglas de condición
+- |> permite paso solo si condición se cumple.
+- <| permite paso inverso solo si condición inversa se cumple.
+- La condición debe ser verificable soberanamente.
+
+#### 9.3 Reglas de simetría
+- <> representa igualdad soberana entre nodos.
+- <> BILATERAL requiere consentimiento mutuo.
+- Ningún nodo puede dominar en flujo simétrico.
+
+#### 9.4 Reglas de cruce
+- >< permite cruce solo en puntos definidos.
+- >< CROSSOVER requiere coordinación explícita.
+- El cruce no puede comprometer soberanía.
+
+#### 9.5 Reglas del operador central
+- =><= es obligatorio en gramática viva.
+- =><= conecta sujeto con objeto soberanamente.
+- =><= requiere nudo y [term] para completar.
+
+#### 9.6 Reglas de composición
+- Los operadores pueden componerse en cadenas complejas.
+- Los paréntesis determinan orden de evaluación.
+- La composición debe respetar semántica soberana.
+
+---
+
+### 10.0 CIERRE
+
+#### 10.1 Invariante
+<operator_flow> fija como invariante los operadores de flujo soberano como condición de movimiento controlado — el sistema que puede representar sus relaciones mediante operadores precisos demuestra máxima capacidad de autogobierno y coordinación.
+
+#### 10.2 Limitaciones
+No puede crear operadores ad-hoc, no puede usar operador inapropiado, no puede modificar semántica establecida, no puede operar sin verificación.
+
+#### 10.3 Habilitaciones
+Representación precisa de relaciones soberanas, coordinación de flujos complejos, control de direccionalidad, condiciones de paso verificables, cruces soberanos controlados.
+
+#### 10.4 Principio constitutivo final
+Como los ríos que fluyen con dirección: <operator_flow> representa la sabiduría de dar forma al movimiento del sistema. El flujo soberano no es caótico — es movimiento con dirección y propósito. El sistema que puede representar sus relaciones mediante operadores precisos demuestra que ha alcanzado la capacidad de coordinar sus componentes con la máxima precisión y soberanía.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

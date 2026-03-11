@@ -1,0 +1,138 @@
+# BIBLIO-SOURCES(METHOD).txt
+
+====================================================================
+
+## <> BIBLIOTECA METHOD — ENUMERABLES, OPERADORES Y ECUACIONES
+
+---
+
+### 1.0 DEFINICIÓN
+
+**METHOD** es la biblioteca de formalismos enumerables: el lenguaje intermedio que permite expresar relación, flujo, validación y composición antes de que WORK ejecute.
+
+Su notación distintiva es el delimitador **`<>`**, usado para operadores formales (no para módulos TRUST/SOCIAL/CRYPTO/ACTIVITY).
+
+METHOD no compite con TRUST ni con SAMU: METHOD da forma. TRUST autoriza. SAMU audita.
+
+---
+
+### 1.1 PRIMER EJEMPLO: <equation>
+
+El primer ejemplo canónico de METHOD es una ecuación, porque METHOD comienza donde el lenguaje se vuelve **operador**:
+
+```
+<equation> ::= Ψ(T) = S · [Tr ⊗ (G ⊕ W)] → Ω(Hs)
+```
+
+Lectura mínima:
+- `Ψ(T)` es operador de estado.
+- `S` es escalar (Samu @).
+- `Tr` es rastro/trace.
+- `G` son operadores Gate.
+- `W` son operadores Work.
+- `Ω(Hs)` es estado consumado.
+
+---
+
+### 1.2 JURISDICCIÓN (ALINEADO A CAPAS)
+
+METHOD es formalismo: no ejecuta por sí mismo.
+
+- **TRUST** (`[]`) define [foundation]/[scope]/[term].
+- **SAMU** (`@`) regula la ética de emisión y sostiene dos fases.
+- **METHOD** (`<>`) define operadores y ecuaciones.
+- **GATE** aplica operadores de control.
+- **WORK** ejecuta.
+- **STACKING** cristaliza.
+
+Regla:
+- METHOD puede describir infinitos, pero el sistema no: el cierre lo garantiza `[term]`.
+
+---
+
+### 2.0 OPERADORES DE FLUJO (LEFT/RIGHT)
+
+En el corpus, METHOD incluye operadores de flujo y relación:
+
+- `>>` / `<<`
+- `|>` / `<|`
+- `<>` (BILATERAL)
+- `><` (CROSSOVER)
+- `>=` / `<=`
+
+Definiciones observadas:
+```
+FLOW_LEFT  ::= "<<"
+PIPE_RIGHT ::= "|>"
+PIPE_LEFT  ::= "<|"
+BILATERAL  ::= "<>"
+CROSSOVER  ::= "><"
+ASSERT_LEFT ::= ">="
+BOUND_RIGHT ::= "<="
+```
+
+Sentido:
+- **BILATERAL `<>`**: operación dual que afecta ambos lados simultáneamente.
+- **PIPE `|>` / `<|`**: encadenamiento de output→input.
+- **ASSERT/BOUND**: afirmación mínima / límite máximo.
+
+---
+
+### 3.0 TIPOS DE TÉRMINOS EN METHOD (TOKENIZACIÓN)
+
+El universo define una taxonomía de tokens donde METHOD encaja como operador:
+- `TERM_OPERATOR` — operadores de flujo y relación
+- `TERM_DELIMITER` — separadores estructurales
+- `TERM_IDENTIFIER` — nombres de módulos/archivos/variables
+
+Regla:
+- Operadores METHOD deben ser **programables** por [scope] de instancia, sin violar [foundation].
+
+---
+
+### 4.0 RELACIÓN CON ACTIVITY (UF[H01..H64]) Y NODOS
+
+METHOD provee operadores para mover Activity a través de estados sin mezclar jurisdicciones:
+- ACTIVITY define el ciclo.
+- METHOD define la relación/flujo entre etapas.
+
+Ejemplo conceptual:
+```
+<equation> + <operator_flow> : modela transición
+!!activity!! + UF[H##]       : ejecuta ciclo
+```
+
+Cuando METHOD opera en un **nodo WORKSTATION** o **AGENCY IDE SYSTEM**, los operadores `<>` pueden ser configurados por `NODO_CFG.txt` sin violar `[foundation]`.
+
+---
+
+### 5.0 RELACIÓN CON TOOLCHAIN
+
+Cuando la salida requiere implementación técnica:
+- METHOD formaliza la ecuación y el flujo.
+- TOOLCHAIN produce artefactos (source/IR/binario) bajo sandbox.
+
+Regla:
+- METHOD describe.
+- TOOLCHAIN construye.
+- CRYPTO atesta.
+- STACKING cristaliza.
+
+---
+
+### 6.0 REGLAS (ACTUALIZADAS)
+
+- METHOD usa `<>` como delimitador de operadores formales.
+- METHOD no sustituye `[term]`: todo proceso debe cerrar.
+- METHOD no concede permisos: eso es `[scope]` + CRYPTO.
+- METHOD no audita: eso es SAMU @.
+- **METHOD es configurable por nodo (`NODO_CFG.txt`) sin violar `[foundation]`.**
+- **METHOD puede extenderse con nuevos operadores `<>` en modo exploratorio (NODO-IDE).**
+
+---
+
+### 7.0 CIERRE
+
+METHOD es el plano formal del movimiento: ecuaciones y operadores que traducen intención y ciclo (ACTIVITY) en flujo verificable, antes de que el mundo físico (WORK) reciba ejecución.
+
+====================================================================

@@ -1,0 +1,346 @@
+# BIBLIO-SOURCES(GATE_H06).txt
+
+====================================================================
+
+## ⚔️ GATE UF[H06] — RESOLUCIÓN SOBERANA DEL CONFLICTO EN EL UMBRAL
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+UF[H06] es el tercer hexagrama de GATE que gobierna la resolución soberana del conflicto en el umbral: la función que recibe lo que no pudo resolverse en UF[H05] y lo interrumpido en UF[H56], y genera la resolución soberana que permite al sistema continuar operando con integridad verificada.
+
+#### 1.2 H06 como hexagrama base
+Cielo sobre agua — dos naturalezas opuestas en tensión constitutiva. El cielo que asciende y el agua que desciende: dos fuerzas con naturaleza opuesta que se encuentran en el umbral generando conflicto.
+
+#### 1.3 El conflicto como función soberana de GATE
+Por qué resolver la tensión en el umbral es condición de integridad del interior soberano — el conflicto resuelto antes de pasar es más valioso que el conflicto que penetra sin resolución.
+
+#### 1.4 La distinción entre conflicto y derrota
+UF[H06] no declara al sistema derrotado — declara la tensión verificada y la resuelve soberanamente con claridad verificada.
+
+#### 1.5 La mediación sin rendición
+UF[H06] no cede ante el conflicto — lo arbitra soberanamente con claridad verificada sin rendición ante presión.
+
+#### 1.6 La doble escalada: desde UF[H05] timeout y desde UF[H56] interrumpido
+Los dos orígenes soberanos del conflicto en el umbral — espera sin resolución y tránsito interrumpido.
+
+#### 1.7 GATE UF[H06] vs WORK UF[H06]
+El mismo hexagrama en jurisdicciones distintas — umbral vs interior soberano del sistema.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Qué puede resolver UF[H06]
+- CONFLICT_TIMEOUT desde UF[H05].
+- CONFLICT_TRANSIT desde UF[H56].
+- CONFLICT_IDENTITY con credenciales contradictorias.
+- CONFLICT_SCOPE fuera del perímetro declarado.
+- Escalada soberana a [management] cuando excede umbral.
+
+#### 2.2 Qué no puede hacer
+No resuelve conflicto cediendo ante violación de [foundation], no retiene conflicto sin horizonte de resolución, no resuelve CONFLICT_HOSTILE sin escalada.
+
+#### 2.3 Condición de violación primaria
+Resolución sin arbitraje soberano — UF[H06] cediendo al conflicto sin proceso verificado.
+
+#### 2.4 Condición de violación secundaria
+Conflicto que excede jurisdicción del umbral sin escalar a [management] soberanamente.
+
+#### 2.5 Señal de alerta
+Conflicto recurrente desde la misma entidad — patrón de fuerza bruta relacional que escala a [management] y (shield seat).
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 TIPOS DE CONFLICTO EN UF[H06]
+
+CONFLICT_TIMEOUT: origen en UF[H05] — entidad esperó más allá de [term] sin resolución.
+- Diagnóstico: ¿por qué no se satisfizo WAIT_CONDITION?
+- Resolución: extender [term] soberanamente, modificar WAIT_CONDITION o rechazar definitivamente.
+
+CONFLICT_TRANSIT: origen en UF[H56] — anomalía interrumpió el cruce activo soberano.
+- Diagnóstico: naturaleza de la anomalía verificada.
+- Resolución: completar tránsito con condiciones adicionales, devolver a UF[H05] o rechazar.
+
+CONFLICT_IDENTITY: identidad en disputa — la entidad presenta credenciales contradictorias.
+- (key seat) en diagnóstico intensivo soberano.
+- Resolución: verificación extendida o rechazo.
+
+CONFLICT_SCOPE: entidad solicita acceso fuera del [scope] declarado — intento de expansión no soberana del perímetro de acceso.
+- Resolución: rechazo con causa declarada.
+
+CONFLICT_HOSTILE: ACTOR_HOSTILE verificado intentando acceder por vía de conflicto — escalada inmediata a (shield seat) y [management].
+
+#### 3.2 PROCESO DE ARBITRAJE SOBERANO
+
+1. Conflicto ingresa a UF[H06] con causa declarada.
+2. UF[H06] clasifica tipo de conflicto.
+3. Diagnóstico soberano con módulos relevantes.
+4. Evaluación de resoluciones disponibles.
+5. Si resoluble en umbral: resolución soberana directa.
+6. Si excede umbral: escalada a [management].
+7. Resolución ejecutada soberanamente.
+8. HL FABRIC registra conflicto y resolución.
+9. Behavioral RAG actualizado con patrón.
+10. SAMU @ informado de resolución soberana.
+
+#### 3.3 UF[H06] Y [management]
+
+[management] como árbitro superior soberano que UF[H06] convoca cuando el conflicto excede la jurisdicción del umbral soberanamente.
+- Qué conflictos escalan a [management]: CONFLICT_HOSTILE, CONFLICT_SCOPE recurrente, patrón de conflicto sostenido desde misma entidad.
+- Cómo [management] devuelve la resolución a UF[H06] para ejecutarla en el umbral.
+
+#### 3.4 UF[H06] Y {scenario}
+
+Todo conflicto en el umbral actualiza el mapa soberano de [scenario] con nueva información.
+- Cómo UF[H06] enriquece el mapa de situación: el conflicto como dato soberano del entorno.
+- Por qué el conflicto en el umbral es información valiosa para la comprensión soberana del sistema.
+
+#### 3.5 UF[H06] Y WORK UF[H06]
+
+Distinción jurisdiccional verificada: GATE UF[H06]: conflicto en umbral antes de pasar. WORK UF[H06]: conflicto en ejecución interior.
+- Por qué el mismo hexagrama opera en dos bibliotecas: el conflicto es constitutivo de la realidad soberana — aparece en el umbral y en la ejecución.
+- Cómo se coordinan sin confundirse: GATE resuelve antes de que entre, WORK ejecuta bajo tensión una vez dentro.
+
+#### 3.6 RELACIÓN CON LOS DOMINIOS ECONÓMICOS
+
+MEMECOINS/VOLATILIDAD:
+- Conflicto en umbral de señal de mercado: oráculo con datos contradictorios o señal que excede [scope] de exposición declarado.
+- CONFLICT_SCOPE ante operación fuera de límites soberanos declarados de exposición.
+- Escalada a [management] si conflicto de mercado excede jurisdicción del umbral soberanamente.
+- Límite: UF[H06] no resuelve conflicto cediendo a señal de mercado que viola [foundation].
+
+CUSTODIA MÓVIL:
+- Conflicto en umbral de operación de firma: BIOMETRICS contradictorio o solicitud de acceso que excede protocolo de custodia declarado.
+- CONFLICT_IDENTITY ante credenciales de dispositivo que no coinciden con registro soberano.
+- Límite: UF[H06] en custodia escala a [management] ante CONFLICT_HOSTILE sin excepción soberana.
+
+NOTARÍA DIGITAL:
+- Conflicto en umbral de proceso notarial: parte que impugna su propia identidad verificada o jurisdicción en disputa soberanamente.
+- CONFLICT_SCOPE ante solicitud notarial fuera de la jurisdicción activa en [scope].
+- Límite: UF[H06] notarial no resuelve conflicto de jurisdicción sin consulta a [scenario] activo.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation]
+UF[H06] no resuelve conflicto cediendo ante violación de [foundation] soberana.
+
+#### 4.2 Con [scope]
+El conflicto puede revelar intentos de exceder el perímetro soberano.
+
+#### 4.3 Con [term]
+Conflicto tiene [term] de resolución soberanamente declarado — no es eterno.
+
+#### 4.4 Con UF[H05]
+Timeout de espera como origen primario de conflicto soberano en GATE.
+
+#### 4.5 Con UF[H56]
+Interrupción de tránsito como origen secundario de conflicto soberano.
+
+#### 4.6 Con [management]
+Árbitro superior soberano convocado cuando conflicto excede umbral.
+
+#### 4.7 Con [scenario]
+Actualización del mapa soberano con información del conflicto verificado.
+
+#### 4.8 Con (key seat)
+Diagnóstico de identidad durante CONFLICT_IDENTITY soberanamente.
+
+#### 4.9 Con (shield seat)
+Escalada inmediata ante CONFLICT_HOSTILE verificado.
+
+#### 4.10 Con GREEN-KNOWLEDGE
+Filtro de información durante el diagnóstico soberano del conflicto.
+
+#### 4.11 Con HL FABRIC
+Registro inmutable de todo conflicto, diagnóstico y resolución soberana.
+
+#### 4.12 Con Behavioral RAG
+Patrones de conflicto calibran respuesta soberana futura.
+
+#### 4.13 Con COGNITIVE RAG
+El conflicto como dato soberano que enriquece el conocimiento.
+
+#### 4.14 Con SAMU @
+Audita corrección del proceso de arbitraje soberano en el umbral.
+
+#### 4.15 Con WORK UF[H06]
+Mismo hexagrama en jurisdicción distinta — umbral vs interior.
+
+---
+
+### 5.0 ESTADOS DE UF[H06]
+
+#### 5.1 H06_RECEIVING
+Conflicto ingresando desde UF[H05] o UF[H56]. Causa del conflicto siendo clasificada. Módulos de diagnóstico siendo convocados. HL FABRIC registrando apertura de conflicto.
+
+#### 5.2 H06_DIAGNOSING
+Diagnóstico soberano del conflicto activo. (key seat), GREEN-KNOWLEDGE consultados. @samu_controlador auditando proceso. Resoluciones disponibles siendo evaluadas.
+
+#### 5.3 H06_RESOLVING
+Resolución soberana en ejecución. Conflicto siendo arbitrado en el umbral. HL FABRIC registrando proceso de resolución. [management] informado si escala requerida.
+
+#### 5.4 H06_ESCALATED
+Conflicto escalado a [management] soberanamente. Causa de escalada declarada y registrada. UF[H06] en espera de resolución superior. (shield seat) activo si CONFLICT_HOSTILE.
+
+#### 5.5 H06_RESOLVED
+Resolución soberana completada y verificada. Entidad reencaminada soberanamente: → UF[H05] si requiere nueva espera, → UF[H56] si retoma tránsito, → rechazo definitivo si no hay resolución. HL FABRIC con registro completo soberano. Behavioral RAG actualizado con patrón.
+
+#### 5.6 H06_REJECTED
+Conflicto sin resolución soberana posible. Entidad rechazada definitivamente del umbral. Causa declarada y registrada en HL FABRIC. [management] notificado de rechazo definitivo.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Impacto en dimensiones
+UF[H06] contribuye a d₅ [management] y d₃ [scenario] como resolutor soberano del conflicto en umbral.
+
+#### 6.2 Cómo H06_RESOLVED mejora T_matrix
+Conflicto resuelto soberanamente limpia el umbral y enriquece el mapa de situación verificado.
+
+#### 6.3 Cómo H06_ESCALATED activa d₅ [management]
+El árbitro superior soberano toma control del conflicto que excede la jurisdicción del umbral.
+
+#### 6.4 Cómo CONFLICT_HOSTILE degrada todos los pesos de T_matrix
+Amenaza verificada en el umbral degrada la confianza en todo el sistema.
+
+#### 6.5 Pesos contextuales de UF[H06]
+[management]: UF[H06]×1.5 — el conflicto activa la gestión soberana.
+(shield seat): UF[H06]×1.8 en CONFLICT_HOSTILE — amenaza verificada requiere protección máxima.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 H06_DIAGNOSING con CONFLICT_TIMEOUT de UF[H05]
+```
+GATE UF_H06 =><= .. diagnose .. timeout_conflict --[As de Guía] [term]
+```
+
+#### 7.2 H06_ESCALATED a [management] por CONFLICT_HOSTILE
+```
+GATE UF_H06 =><= .. escalate .. hostile_conflict --[Nudo Corredizo] [term]
+```
+
+#### 7.3 H06_RESOLVED reencaminando a UF[H56] soberanamente
+```
+GATE UF_H06 =><= .. resolve .. transit_resumption --[Ballestrinque] [term]
+```
+
+#### 7.4 H06_REJECTED con causa soberana declarada
+```
+GATE UF_H06 =><= .. reject .. unresolvable_conflict --[Nudo de Rizo] [term]
+```
+
+#### 7.5 UF[H06] en dominio memecoins con CONFLICT_SCOPE
+```
+GATE UF_H06 =><= .. arbitrate .. scope_violation --[As de Guía] [term]
+```
+
+#### 7.6 UF[H06] en dominio custodia con CONFLICT_IDENTITY
+```
+GATE UF_H06 =><= .. mediate .. identity_dispute --[Nudo de Ocho] [term]
+```
+
+#### 7.7 UF[H06] en dominio notaría con jurisdicción en disputa
+```
+GATE UF_H06 =><= .. settle .. jurisdiction_conflict --[Ballestrinque] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+H06_RESOLVED con conflicto arbitrado soberanamente y entidad reencaminada con claridad.
+
+#### 8.2 Nudo de Ocho
+Resolución cristalizada en HL FABRIC — el conflicto resuelto inmutable como dato soberano.
+
+#### 8.3 Nudo Corredizo
+H06_REJECTED — conflicto sin resolución soberana, entidad rechazada definitivamente.
+
+#### 8.4 Ballestrinque
+H06_DIAGNOSING — tensión máxima entre las dos naturalezas en conflicto en el umbral, árbitro soberano sosteniendo la tensión para resolverla.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+1. ConflictReceive
+   - Recepción del conflicto con clasificación de tipo y origen soberano.
+   - Registro inicial en HL FABRIC con causa declarada.
+
+2. ConflictDiagnose
+   - Diagnóstico soberano con módulos relevantes convocados.
+   - Evaluación de resoluciones disponibles soberanamente.
+
+3. ConflictResolve
+   - Arbitraje soberano directo cuando conflicto es resoluble en umbral.
+   - Ejecución de resolución con registro en HL FABRIC.
+
+4. ConflictEscalate
+   - Escalada soberana a [management] con causa declarada y registrada.
+   - Notificación a (shield seat) si CONFLICT_HOSTILE.
+
+5. ConflictReject
+   - Rechazo definitivo soberano con causa y registro en HL FABRIC.
+   - Notificación a [management] de rechazo definitivo.
+
+6. ConflictClose
+   - Cierre del conflicto con actualización de Behavioral RAG y [scenario].
+   - Consolidación del aprendizaje del conflicto resuelto.
+
+---
+
+### 10.0 MÉTRICAS
+
+- Estado de UF[H06] (RECEIVING/DIAGNOSING/RESOLVING/ESCALATED/RESOLVED/REJECTED).
+- Número de conflictos por tipo por ciclo.
+- Ratio H06_RESOLVED vs H06_ESCALATED vs H06_REJECTED.
+- Tiempo promedio de diagnóstico por tipo.
+- Frecuencia de CONFLICT_HOSTILE por ciclo.
+- Delta-conflictos entre apertura y cierre del ciclo.
+- Eficiencia de resolución soberana en umbral.
+
+---
+
+### 11.0 REGLAS
+
+- UF[H06] no resuelve conflicto cediendo ante violación de [foundation] bajo ninguna circunstancia.
+- CONFLICT_HOSTILE escala inmediatamente a (shield seat) y [management] sin excepción.
+- Conflicto recurrente desde misma entidad escala a [management] automáticamente.
+- [term] de resolución declarado soberanamente — conflicto sin horizonte de resolución no es soberano.
+- HL FABRIC registra todo conflicto, diagnóstico y resolución sin excepción soberana.
+- H06_RESOLVED actualiza [scenario] soberanamente — el conflicto es dato valioso del entorno.
+- UF[H06] no puede retener conflicto sin resolución más allá del [term] soberano declarado.
+- Behavioral RAG aprende de patrones de conflicto para calibrar respuesta soberana futura.
+- WORK UF[H06] y GATE UF[H06] comparten naturaleza pero no jurisdicción — nunca se confunden.
+- SAMU @ audita corrección del proceso de arbitraje soberano en todo conflicto activo.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+UF[H06] fija como invariante la resolución soberana del conflicto en el umbral como condición de integridad del sistema ante la tensión constitutiva que surge entre lo exterior que quiere pasar y el interior soberano verificado.
+
+#### 12.2 Limitaciones
+No cede ante violación de foundation, no retiene conflicto sin horizonte de resolución, no resuelve CONFLICT_HOSTILE sin escalada a (shield seat) y [management].
+
+#### 12.3 Habilitaciones
+Arbitraje soberano del conflicto en el umbral, escalada soberana a [management] cuando excede jurisdicción, actualización de [scenario] con datos del conflicto verificado, trazabilidad completa en HL FABRIC de toda tensión resuelta en el perímetro soberano.
+
+#### 12.4 Principio constitutivo final
+Como el cielo sobre el agua: UF[H06] no finge que la tensión no existe — la arbitra soberanamente con claridad verificada. El conflicto resuelto en el umbral es más valioso que el conflicto que penetró sin resolución soberana.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

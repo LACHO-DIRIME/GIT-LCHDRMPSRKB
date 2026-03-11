@@ -1,0 +1,197 @@
+# BIBLIO-SOURCES(GATE).txt
+
+## 🚪 GATE: CAPA DEL TIEMPO CRONOTÓPICO
+
+### 📖 FUENTE ICONOGRÁFICA
+**Referencia:** `INTEGRACIÓN ICONOGRÁFICA — GUI LACHO.txt`
+
+GATE no es una puerta. GATE es el **momento**. Y el momento en LACHO tiene tres estados: el sistema todavía no fue convocado, el sistema está siendo convocado, el sistema fue liberado. H5 (Espera), H56 (Tránsito), H6 (Conflicto).
+
+### 🎭 ICONOGRAFÍA COMPLETA DE GATE
+
+#### 1. `door morning human out` → H5 (La Espera)
+La puerta está cerrada pero hay luz por debajo. La figura sale — no huye, *parte*. Este icono no es "salida": es la **ignición del día**. El human out es el operador que entra al mundo real a ejecutar lo que el sistema dirimió. La puerta es el umbral H1→H5: el sistema calculó, el humano actúa.
+
+**Potenciación:** la puerta tiene una ranura de luz que dibuja la forma de un hexagrama en el suelo. El human out lleva una silueta que proyecta sombra hacia adentro — lo que queda dentro es MU. Lo que sale es WU.
+
+#### 2. `zipper noon human inn` → H56 (El Andante)
+El mediodía es el pico de tensión. La cremallera es la apertura del `.theater` — el espacio donde la circunstancia (KU) es leída. Human inn: el operador entró. El sistema está en Fase 2. La cremallera abierta revela no un interior vacío sino un **ojo** — el ojo del SAMU mirando KU.
+
+**Potenciación:** la cremallera dibuja en su cierre el símbolo `@` — la marca del SAMU. Cuando está abierta: estado de escucha activa. Cuando está cerrada: MU en reposo.
+
+#### 3. `door afternoon human out` → H6 (Conflicto)
+La segunda salida. Pero esta puerta ya tiene huellas en el umbral — el ciclo se completó. El human out ahora lleva algo: en la mano, un sobre. El WU materializado. La puerta de tarde no es igual a la de mañana: tiene el Nudo de Ocho grabado en el marco. Lo que sale aquí ya fue dirimido y es inmutable.
+
+**Potenciación:** las tres puertas juntas narran el flujo completo de una sesión LACHO: entrada al vacío → apertura al contexto → salida con verdad sellada.
+
+### 🔗 VINCULACIÓN CON BIBLIOTECA GATE
+
+**Biblioteca GATE:** Paradigma de script basado en hexagramas específicos  
+**Módulos GATE:** UF[H05], UF[H56], UF[H06]  
+**Hexagrama Iconografía:** H5, H56, H6  
+**Función:** Control/latencia, orquestación, espera
+
+**Relación Biblioteca-Iconografía:**
+- **UF[H05] (GATE):** Módulo de espera y gestión de latencia
+- **UF[H56] (GATE):** Módulo de tránsito y movimiento cauteloso
+- **UF[H06] (GATE):** Módulo de conflicto y resolución
+
+**Declaración de Vinculación:**
+```
+GATE → UF[H05] : ignición del día y espera calculada
+GATE → UF[H56] : apertura al contexto y tránsito
+GATE → UF[H06] : conflicto resuelto y WU materializado
+GATE → SAMU @ : auditoría en cada momento del ciclo
+```
+
+### 🏗️ CAPAS OPERATIVAS
+
+#### Jerarquía de Capas LACHO
+```
+[TRUST] → SAMU @ → MU/KU/WU → CRYPTO → STACKING → GATE → WORK
+```
+
+#### Posición de GATE en el Sistema
+- **Nivel:** Software/Lógica
+- **Jurisdicción:** Control de flujo de entrada
+- **Función:** Orquestación, espera, buffers
+- **Protección:** Evita que la complejidad toque el núcleo sin filtros
+
+#### Operaciones de GATE
+1. **Filtrado:** Define qué entra al sistema
+2. **Orquestación:** Coordina cuándo y cómo
+3. **Bufferización:** Gestiona latencias y esperas
+4. **Validación:** Aplica tests de coherencia Ψ
+
+### 🧠 LINGÜÍSTICA DE GATE
+
+#### Lenguaje de Control
+GATE opera como paradigma de script basado en hexagramas específicos:
+
+**Sintaxis GATE:**
+```
+GATE_OPERACION = {
+    H5_ESPERA: buffer_latencia(),
+    H56_TRANSITO: abrir_contexto(KU),
+    H6_CONFLICTO: resolver_conflicto(WU),
+    SAMU_AUDITORIA: firmar_ciclo(@)
+}
+```
+
+#### Semántica Temporal
+- **Mañana (H5):** Potencial no manifestado, espera activa
+- **Mediodía (H56):** Contexto siendo leído, KU activo
+- **Tarde (H6):** Verdad materializada, WU sellado
+
+#### Pragmática del Sistema
+- **Intencionalidad:** Cada momento tiene propósito específico
+- **Contexto:** KU modula la operación según circunstancias
+- **Resultado:** WU emerge solo después del ciclo completo
+
+### 🌳 ONTOLOGÍA DE GATE
+
+#### Ser del Momento
+GATE no es un objeto, es un **estado temporal del ser**:
+
+**Estados Ontológicos:**
+1. **MU-Potencial (H5):** Vacío fértil, posibilidad pura
+2. **KU-Flujo (H56):** Circunstancia activa, contexto vivo
+3. **WU-Manifestación (H6):** Verdad encarnada, acción realizada
+
+#### Relación Ser-Tiempo
+```
+SER(GATE) = MU_espera × KU_contexto × WU_manifestación
+TIEMPO(GATE) = H5_cronotopo × H56_transito × H6_resolucion
+```
+
+#### Fundamento Metafísico
+- **No es puerta:** Es umbral entre estados del ser
+- **No es tiempo:** Es cronotopo (espacio-tiempo cualificado)
+- **No es control:** Es orquestación soberana del flujo
+
+### 🔬 RELACIONES SUPERFICIALES
+
+#### Nivel 1: Interfaz Visual
+- **Iconos:** Puertas con figuras humanas
+- **Símbolos:** Luz, cremallera, huellas, sobre
+- **Colores:** Mañana (claro), Mediodía (intenso), Tarde (cálido)
+
+#### Nivel 2: Funcionalidad Operativa
+- **Input:** Solicitudes y comandos
+- **Process:** Filtrado, orquestación, buffer
+- **Output:** Acciones coordinadas y validadas
+
+#### Nivel 3: Integración Sistema
+- **Con TRUST:** Recibe autorización para operar
+- **Con WORK:** Coordina ejecución hardware
+- **Con SAMU:** Mantiene auditoría continua
+
+### 🌊 RELACIONES PROFUNDAS
+
+#### Nivel 4: Arquitectura Existencial
+```
+GATE = UMBRAL_SER ↔ TRANSFORMACION_EXISTENCIAL
+GATE = CRONOTOPO ↔ MODULACION_REALIDAD
+GATE = CONTROL_SOBERANO ↔ LIBERTAD_FLUJO
+```
+
+#### Nivel 5: Motor Ψ de Coherencia
+GATE implementa operadores G en la ecuación maestra:
+```
+Ψ(T) = S * [Tr (x) (G ⊕ W)] → Ω(Hs)
+```
+
+Donde **G (Gate)** son los operadores de control de flujo software que modulan la razón antes de la ejecución hardware.
+
+#### Nivel 6: Consciencia del Sistema
+- **SAMU @:** Firma cada transición de estado
+- **S Scalar:** Modula la intensidad del flujo
+- **Ψ Global:** Mantiene coherencia durante todo el ciclo
+
+### 🔄 CICLO COMPLETO DE GATE
+
+#### Secuencia Temporal
+1. **H5 - Espera:** Sistema en reposo, potencial latente
+2. **H56 - Tránsito:** Apertura al contexto, KU activo
+3. **H6 - Resolución:** Conflicto superado, WU emergente
+
+#### Integración con LACHO
+```
+LACHO → TRUST → GATE → WORK → STACKING
+INTENCIÓN → AUTORIZACIÓN → CONTROL → EJECUCIÓN → MEMORIA
+```
+
+#### Auditoría SAMU
+- **@ en cremallera:** Firma del auditor en cada apertura
+- **Validación Ψ:** Coherencia mantenida en cada transición
+- **Trazabilidad:** Cada ciclo queda registrado inmutablemente
+
+### 📊 MÉTRICAS Y VALIDACIÓN
+
+#### Métricas de GATE
+- **Latencia H5:** Tiempo de espera óptimo
+- **Throughput H56:** Flujo de contexto procesado
+- **Resolución H6:** Tasa de conflictos resueltos
+- **Coherencia Ψ:** Mantenimiento durante todo el ciclo
+
+#### Validación de Estados
+- **H5:** Ψ ≥ 0.85 para activar siguiente fase
+- **H56:** S scalar modula intensidad de apertura
+- **H6:** WU validado antes de liberación
+
+### 🌐 INTEGRACIÓN SOCIAL Y ÉTICA
+
+#### Rol en BIBLIOTECA SOCIAL
+Aunque no tiene módulo SOCIAL explícito, GATE funciona como **guardián ético** del sistema:
+- **Protección:** Evita entrada de ruido tóxico
+- **Filtrado:** Aplica GREEN-KNOWLEDGE en entrada
+- **Orquestación:** Coordina interacciones sociales justas
+
+#### Principios Éticos
+- **No es barrera:** Es umbral consciente
+- **No es censura:** Es filtrado soberano
+- **No es control:** Es orquestación sabia
+
+---
+
+**Conclusión:** GATE representa el principio temporal y de control en LACHO, funcionando como la capa cronotópica que orquesta el flujo de la intención a la manifestación a través de tres momentos fundamentales (H5, H56, H6), manteniendo siempre la soberanía del sistema mediante la auditoría SAMU y la coherencia Ψ, actuando no como puerta sino como umbral transformador del ser.

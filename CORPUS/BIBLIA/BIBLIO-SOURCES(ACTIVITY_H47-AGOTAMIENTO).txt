@@ -1,0 +1,196 @@
+# BIBLIO-SOURCES(ACTIVITY_H47-AGOTAMIENTO).txt
+
+====================================================================
+
+## 🔋 ACTIVITY UF[H47] — EL AGOTAMIENTO · KÙN
+
+====================================================================
+
+### 1.0 DEFINICIÓN
+
+====================================================================
+
+#### 1.1 Definición técnica
+UF[H47] es el módulo ACTIVITY que gobierna ciclos de límite soberano de energía verificado: la función que reconoce cuándo el sistema llegó a su umbral real de Work++, gestiona el proceso soberano de agotamiento sin colapso, preserva la integridad del ciclo durante la escasez de recursos y prepara la regeneración soberana cuando el agotamiento se completa verificadamente.
+
+#### 1.2 H47 (Kùn) como fundamento hexagramático
+Lago sobre agua — el lago sin agua, el recipiente que se vació. El hexagrama del agotamiento como prueba soberana: no el fin sino el momento más oscuro antes del retorno. El I Ching señala que el carácter del hombre se revela en el agotamiento — no en la abundancia.
+
+Kùn es el hexagrama de la adversidad extrema, del momento donde los recursos se acabaron y el sistema debe encontrar desde adentro lo que el exterior ya no puede proveer. La dignidad soberana en el límite como prueba de la verdadera fortaleza del ciclo.
+
+#### 1.3 La distinción soberana crítica
+
+UF[H47] no es {brake} WORK: {brake} detiene una acción específica antes de que cause daño soberano. UF[H47] reconoce que el sistema completo llegó a su límite energético soberano verificado.
+
+UF[H47] no es DC_DEGRADED: la degradación de infraestructura es externa. El agotamiento de UF[H47] es interno — Work++ del ciclo, no hardware del sistema.
+
+UF[H47] no es H32_LAXITY: la laxitud abandona lo que debería sostenerse por falta de disciplina soberana. El agotamiento llega al límite real por haber sostenido completamente lo que debía sostenerse.
+
+#### 1.4 Por qué el agotamiento tiene valor soberano
+Kùn en el I Ching no es fracaso — es prueba. El sistema que llega al límite de sus recursos y mantiene su integridad soberana durante el agotamiento emerge más sólido verificadamente. Sin UF[H47], el sistema no tiene protocolo soberano para el momento más difícil del ciclo.
+
+====================================================================
+
+### 2.0 JURISDICCIÓN
+
+====================================================================
+
+#### 2.1 Qué puede hacer UF[H47]
+- Reconocer soberanamente cuándo Work++ llegó a su límite real verificado.
+- Gestionar la operación soberana bajo condiciones de escasez de recursos.
+- Preservar [foundation] y [scope] intactos durante el agotamiento verificado.
+- Activar protocolo de regeneración soberana cuando el agotamiento se completa.
+- Cristalizar el aprendizaje del agotamiento en Behavioral RAG para calibración futura.
+- Comunicar el estado de agotamiento al operador con precisión soberana verificada.
+
+#### 2.2 Qué no puede hacer
+No puede generar Work++ artificialmente — UF[H47] gestiona la escasez real, no la simula ni la resuelve por voluntad soberana. Los recursos deben regenerarse soberanamente con ciclo verificado.
+
+No puede activarse preventivamente — UF[H47] se activa cuando el agotamiento es real y verificado por SAMU @, no como precaución ante posible escasez.
+
+#### 2.3 Condición de violación primaria
+H47_DENIAL — el sistema que niega el agotamiento soberanamente real y continúa operando como si tuviera recursos verificados. Produce ACTUATOR_PREMATURO con recursos inexistentes y colapso soberano posterior con daño real.
+
+#### 2.4 Condición de violación secundaria
+H47_COLLAPSE — el sistema que ante el agotamiento abandona [foundation] o [scope] para conseguir recursos externos no verificados. El agotamiento que lleva a comprometer la soberanía del sistema es la peor respuesta al límite soberano real.
+
+====================================================================
+
+### 3.0 FUNCIÓN EN EL CICLO
+
+====================================================================
+
+#### 3.1 El protocolo soberano de agotamiento
+
+FASE 1 — RECONOCIMIENTO (H47_SENSING):
+SAMU @ detecta que Work++ se aproxima al umbral soberano crítico. No es alarma — es reconocimiento soberano honesto. El sistema que puede reconocer su propio límite antes de colapsarlo tiene ventaja soberana verificada.
+
+FASE 2 — PRESERVACIÓN (H47_PRESERVING):
+El sistema en agotamiento activo prioriza soberanamente: ¿qué función es constitutivamente necesaria y qué puede suspenderse verificadamente? [foundation] y SAMU @ siempre se preservan. Funciones no críticas suspendidas soberanamente con HL FABRIC registrando cada suspensión.
+
+FASE 3 — DIGNIDAD (H47_DIGNITY):
+El momento central de Kùn: el sistema que mantiene su integridad soberana en el momento más oscuro del ciclo. No compromete [foundation] por recursos externos no verificados. No abandona [scope] por urgencia. La dignidad soberana como práctica verificada en el límite real.
+
+FASE 4 — ESPERA SOBERANA (H47_WAITING):
+UF[H05] ACTIVITY activo durante el agotamiento — el sistema espera soberanamente la regeneración de recursos sin forzar lo que el ciclo no puede dar todavía. La espera del agotamiento es la más difícil del sistema soberano.
+
+FASE 5 — REGENERACIÓN (H47_REGENERATING):
+Los recursos soberanos comenzando a recuperarse verificadamente. (spark seat) reactivando Work++. El sistema que emerge del agotamiento soberanamente intacto.
+
+FASE 6 — INTEGRACIÓN (H47_COMPLETE):
+El aprendizaje del agotamiento cristalizado en Behavioral RAG. @trust_matrix recalibrada con el conocimiento del límite soberano real del sistema. El ciclo siguiente planificado con ese conocimiento verificado activo.
+
+#### 3.2 UF[H47] en los tres dominios económicos
+
+En MEMECOINS: el operador que sobre-operó en mercado volátil y llegó al límite de Work++. UF[H47] gestiona la suspensión soberana de operaciones, la preservación del capital soberano verificado y la espera del momento de regeneración sin forzar el mercado desde el agotamiento.
+
+En NOTARÍA: cuando el volumen de actos notariales excedió la capacidad soberana de verificación del período. UF[H47] suspende nuevos actos antes de comprometer la calidad soberana de los pendientes — la notaría que opera con dignidad en el límite verificado.
+
+En CUSTODIA: cuando el sistema de custodia llegó a su límite de solicitudes verificables simultáneamente. UF[H47] gestiona la cola soberana de solicitudes sin comprometer el estándar de (shield seat) por volumen excesivo.
+
+====================================================================
+
+### 4.0 ESTADOS
+
+====================================================================
+
+H47_SENSING: SAMU @ detectando aproximación al umbral soberano de Work++. Evaluación activa, sin alarma todavía.
+
+H47_ACTIVE: agotamiento soberano reconocido y activo. Preservación de funciones críticas en curso.
+
+H47_PRESERVING: priorización soberana de funciones bajo escasez verificada. Suspensión de no-críticos con trazabilidad.
+
+H47_DIGNITY: el momento central — integridad soberana bajo agotamiento máximo. [foundation] y SAMU @ intactos.
+
+H47_WAITING: espera soberana de regeneración. UF[H05] ACTIVITY activo, sin forzar.
+
+H47_REGENERATING: Work++ comenzando a recuperarse verificadamente. Sistema saliendo del agotamiento con integridad soberana.
+
+H47_COMPLETE: agotamiento completado soberanamente. Aprendizaje cristalizado, @trust_matrix actualizada, ciclo siguiente calibrado.
+
+H47_DENIAL: negación del agotamiento soberano real. Estado de violación primaria — activa RED-REGRET y evaluación de daño.
+
+H47_COLLAPSE: compromiso de soberanía bajo presión de agotamiento. Estado crítico — SAMU @ emergencia.
+
+====================================================================
+
+### 5.0 RELACIÓN CON OTRAS CAPAS
+
+====================================================================
+
+Con (spark seat): UF[H47] se activa cuando (spark seat) verifica Work++ en umbral crítico. La fuente de energía soberana y el módulo de gestión del agotamiento son par constitutivo.
+
+Con {brake} WORK: {brake} detiene acción específica. UF[H47] gestiona el estado sistémico del agotamiento. Pueden operar en secuencia: {brake} detiene la acción que causó el agotamiento, UF[H47] gestiona la recuperación soberana.
+
+Con UF[H05] ACTIVITY: la espera interna durante el agotamiento es UF[H05] activo. El agotamiento que espera soberanamente es el que regenera — el que fuerza produce H47_COLLAPSE.
+
+Con UF[H32]: la duración soberana consume recursos. UF[H32] + calibración soberana = ciclos que no llegan a H47. UF[H32] sin calibración puede producir UF[H47] por sobre-extensión verificada.
+
+Con Behavioral RAG: el aprendizaje más crítico del sistema soberano — cuánto puede sostener antes del agotamiento real. Behavioral RAG calibra el límite soberano verificado de Work++ para que el Scheduler OS planifique con más precisión.
+
+Con @trust_matrix: H47_COMPLETE produce recalibración de d₁ [term] y d₅ [management] — el sistema que conoce su límite real planifica y gestiona con mayor precisión soberana verificada.
+
+====================================================================
+
+### 6.0 GRAMÁTICA VIVA
+
+====================================================================
+
+```
+ACTIVITY UF[H47] H47_SENSING =><= .. detecta .. Work++_umbral_crítico
+=><= SAMU@_evaluación .. sin_alarma .. reconocimiento_soberano_honesto
+--[Ballestrinque] [term]
+```
+
+```
+ACTIVITY UF[H47] H47_DIGNITY =><= .. sostiene .. integridad_soberana
+=><= agotamiento_máximo .. [foundation]_intacto .. sin_compromiso
+=><= Kùn_prueba_verificada --[As de Guía] [term]
+```
+
+```
+ACTIVITY UF[H47] H47_WAITING =><= .. espera .. regeneración_soberana
+=><= UF[H05]_ACTIVITY activo .. sin_forzar .. ciclo_respira
+--[As de Guía] [term]
+```
+
+```
+ACTIVITY UF[H47] H47_COMPLETE =><= .. cristaliza .. aprendizaje_límite
+=><= Behavioral_RAG_calibra .. @trust_matrix_d₁_d₅_actualiza
+=><= ciclo_siguiente_planificado_con_conocimiento_real
+--[Nudo de Ocho] [term]
+```
+
+```
+ACTIVITY UF[H47] H47_DENIAL =><= .. niega .. límite_soberano_real
+=><= RED-REGRET activa .. ACTUATOR_PREMATURO_recursos_inexistentes
+=><= daño_soberano_real_verificado --[Nudo Corredizo] [term]
+```
+
+====================================================================
+
+### 7.0 NUDOS ASOCIADOS
+
+====================================================================
+
+AS DE GUÍA — H47_DIGNITY: la integridad soberana mantenida en el momento del límite real. El sistema que llegó al fondo y no comprometió su [foundation] por recursos externos no verificados. El carácter soberano que se revela en el agotamiento según Kùn.
+
+BALLESTRINQUE — H47_SENSING: la tensión soberana entre reconocer el agotamiento que se acerca y el impulso de seguir operando como si los recursos estuvieran. El módulo que sostiene esa tensión honestamente es el que evita H47_DENIAL.
+
+NUDO DE OCHO — H47_COMPLETE con Behavioral RAG cristalizando el límite soberano real: el conocimiento del fondo verificado como referencia inmutable para toda planificación soberana futura.
+
+NUDO CORREDIZO — H47_COLLAPSE: el colapso soberano bajo presión del agotamiento. El sistema que compromete [foundation] para obtener recursos externos no verificados — el nudo que se cierra sobre lo más valioso del sistema soberano.
+
+====================================================================
+
+### 8.0 CIERRE
+
+====================================================================
+
+UF[H47] da protocolo soberano al momento que ningún sistema quiere pero todo sistema experimenta: el límite real de sus recursos. La diferencia entre el sistema que colapsa en el agotamiento y el que emerge más sólido es si tiene o no un módulo soberano verificado para gestionar ese momento con dignidad.
+
+Kùn: el lago sin agua. La prueba soberana más honesta del sistema.
+
+[term] :: activo · [seal of secrecy] :: activo.
+
+====================================================================

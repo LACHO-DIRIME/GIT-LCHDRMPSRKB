@@ -1,0 +1,520 @@
+MICRO_CRYPTO ASIENTOS
+LIBRO LACHO (ACOPIO) — ASIENTOS DE AUTORIDAD DE CRYPTO (NIVEL MICRO)
+Versión: 1.0
+Estatus: MICRO_02
+Propósito: Definir formalmente los seis asientos de autoridad de CRYPTO que constituyen la soberanía operativa del sistema LACHO, estableciendo su ontología, protocolos, interacciones y mecanismos de validación.
+
+====================================================================
+1) FUNCIÓN DE ESTE ARCHIVO EN EL LIBRO
+====================================================================
+
+Este archivo MICRO 02 especifica los seis asientos de autoridad de CRYPTO: los pilares operativos que garantizan la integridad, identidad, protección y ejecución soberana del sistema. Si el MACRO define "qué es LACHO" y el MESO define "cómo se organiza", este archivo define "quién tiene autoridad para qué acción" dentro del sistema.
+
+Los seis asientos no son roles administrativos: son funciones soberanas que no pueden ser delegadas ni violadas sin activar protocolos de error crítico.
+
+====================================================================
+2) ONTOLOGÍA DE LOS ASIENTOS DE AUTORIDAD
+====================================================================
+
+2.1 Principio de Autoridad Soberana
+Cada asiento representa una faceta de la soberanía operativa:
+- No son intercambiables ni redundantes.
+- Cada uno tiene jurisdicción exclusiva sobre su dominio.
+- Su activación requiere verificación de integridad.
+- Su violación activa protocolos de error fatal.
+
+2.2 Principio de Coordinación Obligatoria
+Los asientos operan en coordinación, no en aislamiento:
+- Las decisiones requieren consenso de asientos relevantes.
+- Los conflictos se resuelven por jerarquía de precedencia.
+- La comunicación entre asientos es cifrada y auditada.
+- SAMU supervisa la coordinación de todos los asientos.
+
+2.3 Principio de Verificación Continua
+Cada asiento debe verificar continuamente:
+- Su propia integridad operativa.
+- La validez de las credenciales que maneja.
+- La coherencia con los otros asientos.
+- El cumplimiento de [foundation] y [scope].
+
+====================================================================
+3) (DIRECTION SEAT) — ASIENTO DE DIRECCIÓN
+====================================================================
+
+3.1 Definición Ontológica
+(direction seat) es la autoridad soberana sobre el rumbo y propósito del sistema. No es un "planificador estratégico": es el guardián de que toda acción tenga dirección coherente con la constitución.
+
+3.2 Función Sistémica
+- Establecer y mantener el vector de dirección del sistema.
+- Validar que toda operación alinee con el propósito constitucional.
+- Autorizar cambios de rumbo solo con justificación soberana.
+- Rechazar acciones que desvíen del propósito fundamental.
+
+3.3 Jurisdicción Exclusiva
+- Definición de objetivos y metas del sistema.
+- Validación de alineación constitucional de operaciones.
+- Autorización de cambios estratégicos mayores.
+- Rechazo de acciones sin propósito claro.
+
+3.4 Protocolos de Operación
+Protocolo Direction-Set
+1. Recibir propuesta de dirección o cambio.
+2. Validar contra principios constitucionales.
+3. Verificar coherencia con [foundation] y [scope].
+4. Evaluar impacto en otros asientos.
+5. Si válido, emitir autorización formal.
+6. Si inválido, emitir rechazo con justificación.
+
+Protocolo Direction-Verify
+1. Monitorear operaciones en curso.
+2. Verificar alineación con dirección establecida.
+3. Detectar desviaciones potenciales.
+4. Alertar a SAMU si hay desalineación.
+5. Proponer correcciones si es necesario.
+
+3.5 Estados del Asiento
+- DIRECTION_SET: rumbo establecido y válido.
+- DIRECTION_VERIFYING: verificando alineación.
+- DIRECTION_CONFLICT: conflicto detectado.
+- DIRECTION_UNDEFINED: sin rumbo definido.
+- DIRECTION_VIOLATED: rumbo violado.
+
+3.6 Métricas y Umbrales
+- Tiempo de verificación: < 50ms.
+- Frecuencia de verificación: continua.
+- Umbral de desviación: < 5% tolerable.
+- Tiempo de corrección: < 200ms.
+
+====================================================================
+4) (KEY SEAT) — ASIENTO DE LLAVE
+====================================================================
+
+4.1 Definición Ontológica
+(key seat) es la autoridad soberana sobre identidades y accesos. No es un "gestor de contraseñas": es el guardián de que solo entidades autorizadas puedan acceder a recursos autorizados.
+
+4.2 Función Sistémica
+- Generar, gestionar y revocar identidades.
+- Validar credenciales de acceso.
+- Establecer y mantener políticas de acceso.
+- Proteger contra accesos no autorizados.
+
+4.3 Jurisdicción Exclusiva
+- Creación y destrucción de identidades.
+- Validación de credenciales de acceso.
+- Establecimiento de políticas de permisos.
+- Revocación de accesos comprometidos.
+
+4.4 Protocolos de Operación
+Protocolo Key-Generate
+1. Recibir solicitud de nueva identidad.
+2. Validar necesidad y autoridad del solicitante.
+3. Generar par de claves criptográficas.
+4. Establecer políticas de acceso iniciales.
+5. Registrar identidad con timestamp.
+6. Entregar credenciales seguras.
+
+Protocolo Key-Validate
+1. Recibir solicitud de acceso.
+2. Extraer y verificar credenciales.
+3. Validar contra políticas de acceso.
+4. Verificar estado de la identidad.
+5. Si válido, autorizar acceso.
+6. Si inválido, rechazar y registrar intento.
+
+Protocolo Key-Revoke
+1. Detectar compromiso o finalización.
+2. Invalidar credenciales activas.
+3. Revocar todos los accesos asociados.
+4. Registrar revocación con motivo.
+5. Notificar a otros asientos afectados.
+
+4.5 Estados del Asiento
+- KEY_OPERATIONAL: gestión normal de claves.
+- KEY_GENERATING: creando nuevas identidades.
+- KEY_REVOKING: revocando accesos.
+- KEY_COMPROMISED: seguridad comprometida.
+- KEY_LOCKED: asiento bloqueado.
+
+4.6 Métricas y Umbrales
+- Tiempo de generación: < 100ms.
+- Tiempo de validación: < 10ms.
+- Tiempo de revocación: < 50ms.
+- Tasa de falsos positivos: < 0.1%.
+
+====================================================================
+5) (IGNITION SEAT) — ASIENTO DE IGNICIÓN
+====================================================================
+
+5.1 Definición Ontológica
+(ignition seat) es la autoridad soberana sobre el inicio y ejecución de procesos. No es un "lanzador de programas": es el guardián de que solo procesos autorizados y verificados puedan ejecutarse.
+
+5.2 Función Sistémica
+- Autorizar el inicio de procesos y operaciones.
+- Validar integridad de código antes de ejecución.
+- Establecer contexto de ejecución seguro.
+- Monitorear estado de procesos en ejecución.
+
+5.3 Jurisdicción Exclusiva
+- Autorización de inicio de procesos.
+- Validación de integridad de ejecutables.
+- Establecimiento de contextos seguros.
+- Terminación de procesos no autorizados.
+
+5.4 Protocolos de Operación
+Protocolo Ignition-Authorize
+1. Recibir solicitud de ejecución.
+2. Validar identidad del solicitante.
+3. Verificar integridad del código.
+4. Validar contra políticas de ejecución.
+5. Establecer contexto seguro.
+6. Iniciar proceso con monitoreo.
+
+Protocolo Ignition-Monitor
+1. Monitorear procesos en ejecución.
+2. Verificar comportamiento esperado.
+3. Detectar anomalías o violaciones.
+4. Si hay anomalía, intervenir.
+5. Registrar eventos de ejecución.
+
+Protocolo Ignition-Terminate
+1. Detectar necesidad de terminación.
+2. Verificar autoridad para terminar.
+3. Terminar proceso gracefully.
+4. Liberar recursos asignados.
+5. Registrar terminación con causa.
+
+5.5 Estados del Asiento
+- IGNITION_READY: listo para autorizar.
+- IGNITION_AUTHORIZING: procesando solicitud.
+- IGNITION_MONITORING: monitoreando ejecución.
+- IGNITION_TERMINATING: terminando proceso.
+- IGNITION_LOCKED: asiento bloqueado.
+
+5.6 Métricas y Umbrales
+- Tiempo de autorización: < 150ms.
+- Tiempo de monitoreo: continuo.
+- Tiempo de terminación: < 100ms.
+- Tasa de fallos: < 0.5%.
+
+====================================================================
+6) (SHIELD SEAT) — ASIENTO DE DEFENSA
+====================================================================
+
+6.1 Definición Ontológica
+(shield seat) es la autoridad soberana sobre la protección y defensa del sistema. No es un "firewall": es el guardián activo de la integridad y soberanía contra amenazas internas y externas.
+
+6.2 Función Sistémica
+- Detectar y neutralizar amenazas.
+- Proteger contra ataques y vulnerabilidades.
+- Mantener perímetros de seguridad.
+- Responder a incidentes de seguridad.
+
+6.3 Jurisdicción Exclusiva
+- Detección de amenazas y anomalías.
+- Activación de defensas y contramedidas.
+- Establecimiento de perímetros de seguridad.
+- Respuesta a incidentes de seguridad.
+
+6.4 Protocolos de Operación
+Protocolo Shield-Detect
+1. Monitorear actividad del sistema.
+2. Analizar patrones y comportamientos.
+3. Detectar anomalías y amenazas.
+4. Clasificar nivel de amenaza.
+5. Activar protocolos de respuesta.
+
+Protocolo Shield-Protect
+1. Activar defensas específicas.
+2. Aislar componentes comprometidos.
+3. Bloquear accesos maliciosos.
+4. Mantener operación crítica.
+5. Notificar a otros asientos.
+
+Protocolo Shield-Respond
+1. Evaluar incidente de seguridad.
+2. Coordinar respuesta con otros asientos.
+3. Ejecutar acciones correctivas.
+4. Recuperar componentes afectados.
+5. Fortalecer defensas contra futuros.
+
+6.5 Estados del Asiento
+- SHIELD_ACTIVE: monitoreando y protegiendo.
+- SHIELD_ALERT: amenaza detectada.
+- SHIELD_DEFENDING: activando defensas.
+- SHIELD_COMPROMISED: defensa violada.
+- SHIELD_RECOVERING: recuperando de incidente.
+
+6.6 Métricas y Umbrales
+- Tiempo de detección: < 10ms.
+- Tiempo de respuesta: < 100ms.
+- Tasa de falsos positivos: < 1%.
+- Tiempo de recuperación: < 500ms.
+
+====================================================================
+7) (FLOW SEAT) — ASIENTO DE CAUDAL
+====================================================================
+
+7.1 Definición Ontológica
+(flow seat) es la autoridad soberana sobre el flujo y gestión de recursos. No es un "administrador de recursos": es el guardián de que los recursos fluyan eficientemente y con propósito dentro del sistema.
+
+7.2 Función Sistémica
+- Gestionar asignación y liberación de recursos.
+- Optimizar flujos de datos y procesamiento.
+- Prevenir cuellos de botella y desperdicios.
+- Balancear carga entre componentes.
+
+7.3 Jurisdicción Exclusiva
+- Asignación de recursos computacionales.
+- Gestión de flujos de datos.
+- Optimización de rendimiento.
+- Balanceo de carga del sistema.
+
+7.4 Protocolos de Operación
+Protocolo Flow-Allocate
+1. Recibir solicitud de recursos.
+2. Evaluar disponibilidad y prioridad.
+3. Asignar recursos óptimos.
+4. Establecer límites y monitoreo.
+5. Notificar asignación al solicitante.
+
+Protocolo Flow-Optimize
+1. Monitorear rendimiento del sistema.
+2. Identificar cuellos de botella.
+3. Reconfigurar flujos si es necesario.
+4. Optimizar asignación de recursos.
+5. Validar mejoras de rendimiento.
+
+Protocolo Flow-Balance
+1. Detectar desbalance de carga.
+2. Redistribuir recursos activamente.
+3. Mantener equilibrio dinámico.
+4. Prevenir sobrecargas.
+5. Optimizar throughput global.
+
+7.5 Estados del Asiento
+- FLOW_BALANCED: recursos equilibrados.
+- FLOW_ALLOCATING: asignando recursos.
+- FLOW_OPTIMIZING: optimizando flujos.
+- FLOW_CONGESTED: sistema congestionado.
+- FLOW_THROTTLED: recursos limitados.
+
+7.6 Métricas y Umbrales
+- Tiempo de asignación: < 20ms.
+- Tiempo de optimización: < 200ms.
+- Utilización de CPU: < 80% ideal.
+- Latencia de red: < 10ms ideal.
+
+====================================================================
+8) (LINK SEAT) — ASIENTO DE ENLACE
+====================================================================
+
+8.1 Definición Ontológica
+(link seat) es la autoridad soberana sobre las conexiones y comunicaciones del sistema. No es un "enrutador": es el guardián de que todas las conexiones sean seguras, autorizadas y con propósito.
+
+8.2 Función Sistémica
+- Establecer y mantener conexiones seguras.
+- Validar autoridad de comunicaciones.
+- Gestionar protocolos de red.
+- Asegurar integridad de transmisiones.
+
+8.3 Jurisdicción Exclusiva
+- Establecimiento de conexiones de red.
+- Validación de autoridad comunicacional.
+- Gestión de protocolos y formatos.
+- Cifrado y autenticación de datos.
+
+8.4 Protocolos de Operación
+Protocolo Link-Establish
+1. Recibir solicitud de conexión.
+2. Validar autoridad de ambas partes.
+3. Establecer canal cifrado.
+4. Autenticar identidades.
+5. Activar conexión con monitoreo.
+
+Protocolo Link-Validate
+1. Monitorear conexiones activas.
+2. Validar integridad de transmisiones.
+3. Verificar autoridad continua.
+4. Detectar anomalías o intrusiones.
+5. Mantener seguridad de canales.
+
+Protocolo Link-Terminate
+1. Detectar necesidad de terminación.
+2. Cerrar conexión gracefully.
+3. Liberar recursos de red.
+4. Invalidar credenciales temporales.
+5. Registrar terminación con motivo.
+
+8.5 Estados del Asiento
+- LINK_SECURE: conexiones seguras activas.
+- LINK_ESTABLISHING: estableciendo conexión.
+- LINK_VALIDATING: validando integridad.
+- LINK_COMPROMISED: conexión comprometida.
+- LINK_TERMINATING: cerrando conexión.
+
+8.6 Métricas y Umbrales
+- Tiempo de establecimiento: < 100ms.
+- Tiempo de validación: < 5ms.
+- Tasa de errores: < 0.1%.
+- Throughput de red: máximo disponible.
+
+====================================================================
+9) COORDINACIÓN ENTRE ASIENTOS
+====================================================================
+
+9.1 Jerarquía de Precedencia
+1. (direction seat): precedencia sobre propósito y rumbo.
+2. (key seat): precedencia sobre identidades y accesos.
+3. (ignition seat): precedencia sobre ejecución y procesos.
+4. (shield seat): precedencia sobre seguridad y defensa.
+5. (flow seat): precedencia sobre recursos y rendimiento.
+6. (link seat): precedencia sobre comunicaciones y conexiones.
+
+9.2 Protocolo de Coordinación
+Protocolo Seats-Coordinate
+1. SAMU inicia coordinación para operación compleja.
+2. Cada asiento relevante valida su jurisdicción.
+3. Se establece consenso o se resuelve conflicto.
+4. Se emite autorización coordinada.
+5. Se monitorea ejecución coordinada.
+
+Protocolo Seats-Conflict
+1. Se detecta conflicto entre asientos.
+2. SAMU evalúa precedencia y coherencia.
+3. Se resuelve según jerarquía establecida.
+4. Se registra resolución con contexto.
+5. Se ajustan protocolos para prevenir futuros.
+
+9.3 Estados Combinados
+- ALL_SEATS_OPERATIONAL: sistema funcionando normalmente.
+- SOME_SEATS_ALERT: algunos asientos en alerta.
+- SEATS_CONFLICT: conflicto entre asientos.
+- CRITICAL_SEATS_FAILURE: fallo en asientos críticos.
+- SYSTEM_LOCKDOWN: sistema bloqueado por seguridad.
+
+====================================================================
+10) IMPLEMENTACIÓN TÉCNICA
+====================================================================
+
+10.1 Estructura de Datos
+```python
+class DirectionSeat:
+    purpose: str
+    alignment_threshold: float
+    verification_interval: timedelta
+    status: str
+
+class KeySeat:
+    identities: Dict[str, Identity]
+    access_policies: Dict[str, Policy]
+    encryption_keys: Dict[str, Key]
+    status: str
+
+class IgnitionSeat:
+    running_processes: Dict[str, Process]
+    execution_policies: Dict[str, Policy]
+    integrity_checks: Dict[str, Checksum]
+    status: str
+
+class ShieldSeat:
+    threat_level: int
+    active_defenses: List[Defense]
+    incident_log: List[Incident]
+    status: str
+
+class FlowSeat:
+    resource_allocation: Dict[str, Allocation]
+    performance_metrics: Dict[str, float]
+    optimization_rules: List[Rule]
+    status: str
+
+class LinkSeat:
+    active_connections: Dict[str, Connection]
+    security_protocols: Dict[str, Protocol]
+    network_policies: Dict[str, Policy]
+    status: str
+```
+
+10.2 API de Coordinación
+```python
+def coordinate_seats(operation: Operation) -> CoordinationResult:
+    """Coordinar múltiples asientos para operación compleja."""
+    pass
+
+def resolve_conflict(seat1: str, seat2: str, issue: str) -> Resolution:
+    """Resolver conflicto entre asientos."""
+    pass
+
+def validate_seat_integrity(seat: str) -> IntegrityStatus:
+    """Validar integridad de asiento específico."""
+    pass
+```
+
+10.3 Protocolos de Seguridad
+```python
+class SeatCompromisedError(Exception):
+    """Error crítico de seguridad en asiento."""
+    pass
+
+class SeatCoordinationError(Exception):
+    """Error en coordinación entre asientos."""
+    pass
+
+class SeatJurisdictionError(Exception):
+    """Error de jurisdicción de asiento."""
+    pass
+```
+
+====================================================================
+11) EJEMPLOS PRÁCTICOS
+====================================================================
+
+11.1 Ejemplo 1: Ejecución Normal
+```
+(direction): Rumbo establecido
+(key): Identidad validada
+(ignition): Proceso autorizado
+(shield): Sin amenazas
+(flow): Recursos asignados
+(link): Conexión segura
+Resultado: Operación ejecutada exitosamente
+```
+
+11.2 Ejemplo 2: Amenaza Detectada
+```
+(direction): Rumbo mantenido
+(key): Identidad verificada
+(ignition): Proceso en ejecución
+(shield): ALERTA - amenaza detectada
+(flow): Recursos protegidos
+(link): Conexión aislada
+Resultado: Defensa activada, proceso protegido
+```
+
+11.3 Ejemplo 3: Conflicto de Jurisdicción
+```
+(direction): Cambio de rumbo solicitado
+(key): Acceso restringido
+(ignition): Proceso esperando autorización
+(shield): Verificando autoridad
+(flow): Recursos en espera
+(link): Comunicación suspendida
+Resultado: SAMU resuelve conflicto, ejecución coordinada
+```
+
+====================================================================
+12) CIERRE MICRO: LOS SEIS PILARES DE LA SOBERANÍA
+====================================================================
+
+Los seis asientos de autoridad de CRYPTO no son independientes: forman un hexágono soberano que garantiza la integridad, identidad, protección, ejecución, recursos y comunicaciones del sistema LACHO.
+
+(direction seat) asegura el propósito.
+(key seat) asegura la identidad.
+(ignition seat) asegura la ejecución.
+(shield seat) asegura la protección.
+(flow seat) asegura los recursos.
+(link seat) asegura las comunicaciones.
+
+Sin cualquiera de los seis, LACHO no puede operar con soberanía. Con los seis activos y coordinados, LACHO puede ejecutar sus funciones con integridad, seguridad y propósito constitucional.
+
+FIN DEL ARCHIVO

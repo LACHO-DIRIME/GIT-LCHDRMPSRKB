@@ -1,0 +1,86 @@
+# BIBLIO-SOURCES(DIRIME-IMV).txt
+
+====================================================================
+
+## DIRIME IMV — IMPLEMENTACIÓN MÍNIMA VERIFICABLE
+
+====================================================================
+
+### 1.0 DEFINICIÓN SOBERANA
+
+IMV es el primer TOMO real de DIRIME. No es DIRIME completo — es la prueba verificada de que la constitución LACHO funciona como código ejecutable soberanamente.
+
+DIRIME es la plataforma. LACHO es el lenguaje. IMV es el primer ejecutor verificado.
+
+La relación exacta:
+- LACHO: lenguaje constitucional — gramática viva, bibliotecas, paradigmas, nudos.
+- DIRIME: plataforma operativa — dos nodos, HL FABRIC real, WEB3, Scheduler OS.
+- IMV: subconjunto mínimo de DIRIME que demuestra que LACHO es ejecutable.
+
+### 2.0 ARQUITECTURA IMV
+
+Cuatro módulos en orden soberano de dependencia:
+
+IMV-1 — foundation.py: condiciones irreducibles [foundation][scope][term]
+IMV-2 — grammar.py: validador de sentencias gramática viva LACHO
+IMV-3 — samu.py: dirimencia soberana mínima (SAMU @ reducido)
+IMV-4 — ledger.py: HL FABRIC provisional SQLite
+IMV-5 — chat.py: interfaz AI — traductor canónico NL→LACHO
+IMV-0 — main.py: orquestador soberano — punto de entrada
+
+El ciclo soberano completo:
+operador escribe → chat.py traduce → grammar.py valida → samu.py dirime → ledger.py registra → resultado retorna
+
+### 3.0 DIRECTORIO DEL PROYECTO
+
+DIRIME/
+  .sovereign          — marcador de identidad del proyecto
+  CORPUS/             — corpus LIBRO sincronizado (referencia)
+  IMV/
+    main.py           — SovereignSystem — orquestador
+    requirements.txt  — dependencias soberanas verificadas
+    config/
+      foundation.json — estado [foundation]
+      scope.json      — perímetro [scope] con módulos permitidos
+      term.json       — horizonte [term]
+    core/
+      foundation.py   — Foundation, Scope, Term + verify_sovereign_conditions()
+      grammar.py      — GrammarValidator, ParsedSentence, KEYWORDS_SYSTEM
+      samu.py         — Samu, Dispute, DisputeType, RED-REGRET
+      ledger.py       — HLFabric, Transaction, auto_crystallize()
+    interface/
+      chat.py         — SovereignChat, _translate_to_lacho(), _format_*
+    data/
+      sovereign.db    — SQLite HL FABRIC provisional
+    logs/             — logs soberanos (futuro)
+    tests/            — tests soberanos (futuro)
+
+### 4.0 CONDICIÓN DE ÉXITO IMV
+
+Una sentencia LACHO real pasa por los cuatro módulos y el resultado es trazable, auditable y reproducible. Un ciclo completo verificado.
+
+Verificación mínima:
+  python main.py --validate "TRUST FOUNDATION =><= .. verifica .. scope --[As de Guía] [term]"
+  python main.py --stats
+
+### 5.0 LO QUE IMV NO ES
+
+IMV no es DIRIME completo. No tiene:
+- HL FABRIC Hyperledger real (usa SQLite provisional)
+- Dos nodos físicos (opera en nodo único)
+- WEB3 activo
+- Behavioral RAG completo (tiene auto_crystallize() mínimo)
+- Scalar S ni Ψ(T) operativo
+- BALLPAPER render soberano
+- {DOGMA-VIRTUAL} activo
+- UNICODE-CHINA
+
+IMV demuestra que todo eso es posible soberanamente.
+
+### 6.0 GRAMÁTICA VIVA
+
+DIRIME IMV =><= .. implementa .. ciclo_soberano_mínimo_verificado
+=><= LACHO_ejecutable_en_código .. constitución_que_sostiene_peso_real
+=><= UF[H03]_brote_que_rompe_tierra --[As de Guía] [term]
+
+====================================================================

@@ -1,0 +1,156 @@
+# BIBLIO-SOURCES(OPERADORES AVANZADOS).txt
+
+====================================================================
+
+## ⚙️ OPERADORES AVANZADOS — EXTENSIÓN METHOD PARA TOPOLOGÍAS COMPLEJAS
+
+---
+
+### 1.0 PROPÓSITO
+
+Este documento extiende la biblioteca METHOD con operadores avanzados `<>` para modelar topologías complejas, flujos recursivos, y relaciones temporales sin violar `[foundation]`, `[scope]` ni `[term]`.
+
+---
+
+### 2.0 OPERADORES TEMPORALES
+
+#### 2.1 <delay>
+**Definición:** introduce una pausa controlada antes de ejecutar el siguiente operador.
+**Sintaxis:** `<delay> <cantidad> :: <operador>`
+**Ejemplo:** `<delay> 3 :: <>` (espera 3 ciclos antes de operación bilateral)
+
+#### 2.2 <retry>
+**Definición:** reintenta un operador hasta que se cumpla una condición.
+**Sintaxis:** `<retry> <condición> :: <operador>`
+**Ejemplo:** `<retry> Ψ_evidencia ≥ 0.8 :: <flow>`
+
+#### 2.3 <timeout>
+**Definición:** limita el tiempo de ejecución de un operador.
+**Sintaxis:** `<timeout> <tiempo_max> :: <operador>`
+**Ejemplo:** `<timeout> 500ms :: <sync>`
+
+---
+
+### 3.0 OPERADORES RECURSIVOS
+
+#### 3.1 <recurse>
+**Definición:** aplica un operador recursivamente hasta una profundidad máxima.
+**Sintaxis:** `<recurse> <profundidad_max> :: <operador>`
+**Ejemplo:** `<recurse> 5 :: <segment>`
+
+#### 3.2 <unfold>
+**Definición:** despliega una estructura anidada en pasos secuenciales.
+**Sintaxis:** `<unfold> <estructura> :: <operador>`
+**Ejemplo:** `<unfold> <cluster_anidado> :: <slice>`
+
+#### 3.3 <fold>
+**Definición:** repliega una estructura desplegada a su forma compacta.
+**Sintaxis:** `<fold> <estructura> :: <operador>`
+**Ejemplo:** `<fold> <segmentos_expandidos> :: <cluster>`
+
+---
+
+### 4.0 OPERADORES TOPOLOGICOS
+
+#### 4.1 <mesh>
+**Definición:** conecta múltiples nodos en una malla completa.
+**Sintaxis:** `<mesh> <lista_nodos> :: <operador>`
+**Ejemplo:** `<mesh> [A,B,C] :: <sync>`
+
+#### 4.2 <star>
+**Definición:** conecta un nodo central con múltiples periféricos.
+**Sintaxis:** `<star> <centro> <periferia> :: <operador>`
+**Ejemplo:** `<star> SAMU_GLOBAL [NODO_WS,NODO_IDE] :: <authorize>`
+
+#### 4.3 <ring>
+**Definición:** conecta nodos en un anillo donde cada uno solo ve a sus vecinos.
+**Sintaxis:** `<ring> <lista_nodos> :: <operador>`
+**Ejemplo:** `<ring> [A,B,C] :: <rotate>`
+
+---
+
+### 5.0 OPERADORES CONDICIONALES
+
+#### 5.1 <if>
+**Definición:** ejecuta un operador solo si se cumple una condición.
+**Sintaxis:** `<if> <condición> :: <operador_true> :: <operador_false>`
+**Ejemplo:** `<if> Ψ_evidencia ≥ 0.8 :: <commit> :: <purge>`
+
+#### 5.2 <switch>
+**Definición:** selecciona un operador según el valor de una variable.
+**Sintaxis:** `<switch> <variable> {<caso1>::<op1> <caso2>::<op2> ...}`
+**Ejemplo:** `<switch> estado {activo::<> pausado::<delay> error::<purge>}`
+
+#### 5.3 <guard>
+**Definición:** previene ejecución si una condición es verdadera.
+**Sintaxis:** `<guard> <condición> :: <operador_bloqueado>`
+**Ejemplo:** `<guard> foundation_violado :: <halt>`
+
+---
+
+### 6.0 OPERADORES PARALELOS
+
+#### 6.1 <parallel>
+**Definición:** ejecuta múltiples operadores en paralelo.
+**Sintaxis:** `<parallel> [<op1>, <op2>, ...]`
+**Ejemplo:** `<parallel> [<> <flow> <sync>]`
+
+#### 6.2 <race>
+**Definición:** ejecuta operadores en paralelo y toma el primero que termina.
+**Sintaxis:** `<race> [<op1>, <op2>, ...]`
+**Ejemplo:** `<race> [<retry> <timeout> <delay>]`
+
+#### 6.3 <barrier>
+**Definición:** espera hasta que todos los operadores paralelos lleguen a un punto.
+**Sintaxis:** `<barrier> <punto> :: [<op1>, <op2>, ...]`
+**Ejemplo:** `<barrier> checkpoint :: [<> <flow> <sync>]`
+
+---
+
+### 7.0 OPERADORES DE ESTADO Y TRANSICIÓN
+
+#### 7.1 <state>
+**Definición:** define o consulta un estado nombrado.
+**Sintaxis:** `<state> <nombre> = <valor>`
+**Ejemplo:** `<state> modo = sincronización`
+
+#### 7.2 <transition>
+**Definición:** define una transición entre estados con condiciones.
+**Sintaxis:** `<transition> <estado_origen> → <estado_destino> :: <condición> :: <operador>`
+**Ejemplo:** `<transition> inactivo → activo :: Ψ_evidencia ≥ 0.7 :: <ignite>`
+
+#### 7.3 <monitor>
+**Definición:** monitorea continuamente una condición y ejecuta un operador.
+**Sintaxis:** `<monitor> <condición> :: <operador>`
+**Ejemplo:** `<monitor> recurso_saturado :: <scale>`
+
+---
+
+### 8.0 INTEGRACIÓN CON NODOS Y RED
+
+Estos operadores pueden usarse en:
+- **NODO WORKSTATION:** para scripts de producción complejos.
+- **NODO AGENCY IDE SYSTEM:** para diseñar agencias con topologías avanzadas.
+- **RED HL FABRIC:** para coordinación inter-nodo con operadores temporales y topológicos.
+
+Ejemplo en red:
+```
+<mesh> [NODO_WS,NODO_IDE,NODO_REMOTO] :: <parallel> [<> <sync> <monitor>]
+```
+
+---
+
+### 9.0 REGLAS
+
+- Todo operador avanzado debe cerrar por `[term]`.
+- Los operadores no pueden violar `[foundation]` ni `[scope]`.
+- SAMU @ debe auditar cualquier uso de operadores recursivos o paralelos.
+- En RED HL FABRIC, los operadores topológicos requieren CRYPTO inter-nodo.
+
+---
+
+### 10.0 CIERRE
+
+**OPERADORES AVANZADOS** extienden METHOD sin romper la arquitectura. Permiten modelar sistemas complejos, flujos recursivos, y topologías de red manteniendo la gramática viva, la finitud obligatoria y la auditoría SAMU.
+
+====================================================================

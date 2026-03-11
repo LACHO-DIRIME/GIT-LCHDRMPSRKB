@@ -1,0 +1,481 @@
+# INDICE_MAESTRO_ACTUALIZABLE.txt — VERSIÓN ACTUALIZADA
+
+====================================================================
+
+## 📚 ÍNDICE MAESTRO ACTUALIZABLE — LIBRO LACHO
+
+**Estado a la fecha**: 176 archivos verificados en directorio · 51 incorporaciones nuevas documentadas en esta actualización soberana.
+
+====================================================================
+
+### 1.0 PROPÓSITO
+
+Este índice mantiene el LIBRO navegable sin dispersión. Es "vivo": cuando creas un nuevo `BIBLIO-SOURCES(NUEVO).txt`, agrégalo aquí siguiendo la plantilla.
+
+====================================================================
+
+### 2.0 REGLA DE ACTUALIZACIÓN ($sun: expansión)
+
+- Cada vez que agregues un archivo, añade una línea al final.
+- Mantén el formato: `| Archivo | Propósito | Capa | Estado |` 
+- Usa `$sun` como marca de día de expansión.
+
+====================================================================
+
+### 3.0 TABLA MAESTRA COMPLETA
+
+#### COGNITIVOS (serie SER/HACER/TENER/ESTAR)
+
+| Archivo | Propósito | Capa | Estado |
+|---------|-----------|------|--------|
+| COGNITIVO_00_MACRO_LACHO.txt | Visión global y régimen de integridad | MACRO | ESTABLE |
+| COGNITIVO_01_MESO_CONSTITUCION_Y_FOLIOS.txt | Constitución concreta, gramática viva, nudos | MESO | ESTABLE |
+| COGNITIVO_02_MESO_SAMU_PSI_DIRIMENCIA_SCOPE_TERM.txt | Régimen de decisión, SAMU, Ψ, dirimencia | MESO | ESTABLE |
+| COGNITIVO_03_MICRO_INTEGRATION.txt | Integración micro completa, taxonomía viva del libro | MICRO | NUEVO |
+| COGNITIVO_04_ESTAR.txt | Fenomenología soberana: cómo se habita LACHO en vivo | MICRO | NUEVO |
+
+#### ÍNDICES Y ESTRUCTURA
+
+| Archivo | Propósito | Capa | Estado |
+|---------|-----------|------|--------|
+| INDICE_DEL_LIBRO.txt | Índice original de lectura | MACRO | ESTABLE |
+| INDICE_MAESTRO_ACTUALIZABLE.txt | Índice vivo, autoactualizable | MACRO | ACTIVO |
+| LIBRO.txt | Documento madre del sistema | MACRO | ESTABLE |
+| BIBLIOTECAS_MADRE_LACHO.txt | Fuentes UNICODE programables y BALLPAPER | MACRO | ESTABLE |
+| MANIFIESTO_LACHO_FUTURISTA.txt | Visión futurista del sistema soberano | MACRO | ESTABLE |
+| SOURCE&ASSET%WORTH.txt | Valoración soberana de activos y fuentes | MACRO | ESTABLE |
+| ABC.txt | Referencia alfabética canónica | MACRO | ESTABLE |
+| ANAL.txt | Análisis estructural del sistema | MACRO | ESTABLE |
+
+#### MICRO SÍNTESIS
+
+| Archivo | Propósito | Capa | Estado |
+|---------|-----------|------|--------|
+| MICRO_TRUST_FOUNDATION_SCOPE_TERM.txt | Módulos soberanos de TRUST | MICRO | ESTABLE |
+| MICRO_CRYPTO_ASIENTOS.txt | Seis asientos de autoridad CRYPTO | MICRO | ESTABLE |
+| MICRO_SOCIAL_COMPONENTES.txt | Componentes de relación SOCIAL | MICRO | ESTABLE |
+| MICRO_STACKING_PILARES.txt | Pilares de persistencia STACKING | MICRO | ESTABLE |
+
+#### MACRO RAÍZ
+
+| Archivo | Propósito | Capa | Estado |
+|---------|-----------|------|--------|
+| BIBLIO-SOURCES.txt | Bibliotecas madre y protocolos | MACRO | ESTABLE |
+| BIBLIO-SOURCES(GRAMATICA VIVA).txt | Delimitadores, sujetos, verbos, objetos, sentencia | MACRO | ESTABLE |
+| BIBLIO-SOURCES(ACTIVITY).txt | Ciclos, agencia, UF[H01..H64], RAG | MACRO | ESTABLE |
+| BIBLIO-SOURCES(TOOLCHAIN).txt | LLM + compilador + sandbox, pipeline verificable | MACRO | ESTABLE |
+| BIBLIO-SOURCES(METHOD).txt | Operadores <>, ecuaciones, formalismos enumerables | MACRO | ESTABLE |
+| BIBLIO-SOURCES(AGENCY IDE SYSTEM).txt | Innovación aglutinante, integración de capas | MACRO | ESTABLE |
+| BIBLIO-SOURCES(CHAT AI COMPANION).txt | Uso diario con chat AI, plantillas, ejemplos | MACRO | ESTABLE |
+| BIBLIO-SOURCES(GATE).txt | Control de latencia, orquestación, conflicto | MACRO | ESTABLE |
+| BIBLIO-SOURCES(HEADCAT).txt | Director de salida, gobierno de WU | MACRO | ESTABLE |
+| BIBLIO-SOURCES(MASKING DIRECTORY).txt | Ocultamiento, poda ontológica, GREEN-KNOWLEDGE | MACRO | ESTABLE |
+| BIBLIO-SOURCES(PAPERNOTE).txt | Registro pasivo, memoria simple | MACRO | ESTABLE |
+| BIBLIO-SOURCES(RABBIT-EYES-EGG).txt | Streaming, conocimiento controlado | MACRO | ESTABLE |
+| BIBLIO-SOURCES(TAP&DRIP).txt | Goteo calibrado, gestión de recursos | MACRO | ESTABLE |
+| BIBLIO-SOURCES(FLYBOT).txt | Bot volador, exploración activa | MACRO | ESTABLE |
+| BIBLIO-SOURCES(RED HL FABRIC).txt | Red soberana inter-nodos Hyperledger | MACRO | ESTABLE |
+| BIBLIO-SOURCES(OPERADORES AVANZADOS).txt | Operadores extendidos del sistema | MACRO | ESTABLE |
+| BIBLIO-SOURCES(VERIFICACION CRUZADA PYTHON-RUST-GOLANG).txt | Pipeline de verificación técnica | MACRO | ESTABLE |
+| BIBLIO-SOURCES(MASKING ICONOGRAFIA Y STACKING).txt | Iconografía soberana + STACKING visual | MACRO | ESTABLE |
+| BIBLIO-SOURCES(NODO WORKSTATION AGENCY).txt | WORKSTATION como agencia autónoma, nodos | MACRO | ESTABLE |
+| BIBLIO-SOURCES(WEB3_INTERFACE).txt | Interfaz WEB3 soberana verificada | MACRO | ESTABLE |
+| BIBLIO-SOURCES(anexo-1).txt | Complemento técnico 1 | MACRO | ESTABLE |
+| BIBLIO-SOURCES(anexo-2).txt | Complemento técnico 2 | MACRO | ESTABLE |
+| BIBLIO-SOURCES(anexo-3).txt | Complemento técnico 3 | MACRO | ESTABLE |
+
+#### BIBLIOTECA TRUST
+
+| Archivo | Propósito | Capa | Estado |
+|---------|-----------|------|--------|
+| BIBLIO-SOURCES(TRUST_FOUNDATION).txt | [foundation] — invariante soberano del sistema | MICRO | ESTABLE |
+| BIBLIO-SOURCES(TRUST_SCOPE).txt | [scope] — perímetro soberano operativo | MICRO | ESTABLE |
+| BIBLIO-SOURCES(TRUST_TERM).txt | [term] — horizonte temporal soberano | MICRO | ESTABLE |
+| BIBLIO-SOURCES(TRUST_SCENARIO).txt | [scenario] — mapa soberano del escenario | MICRO | ESTABLE |
+| BIBLIO-SOURCES(TRUST_COMMAND).txt | [command] — mandato soberano verificado | MICRO | ESTABLE |
+| BIBLIO-SOURCES(TRUST_MANAGEMENT).txt | [management] — gestión soberana de parámetros | MICRO | ESTABLE |
+| BIBLIO-SOURCES(TRUST_ELEMENT).txt | [element] — unidad soberana de sistema | MICRO | ESTABLE |
+| BIBLIO-SOURCES(TRUST_LANGUAGE).txt | [language] — capa semántica soberana | MICRO | ESTABLE |
+| BIBLIO-SOURCES(TRUST_ECOSYSTEM).txt | [ecosystem] — entorno soberano extendido | MICRO | ESTABLE |
+| BIBLIO-SOURCES(TRUST_EVENT).txt | [event] — evento soberano verificado | MICRO | ESTABLE |
+| BIBLIO-SOURCES(TRUST_HOW).txt | [how] — protocolo soberano de ejecución | MICRO | ESTABLE |
+| BIBLIO-SOURCES(TRUST_WHAT).txt | [what] — objeto soberano de la acción | MICRO | ESTABLE |
+| BIBLIO-SOURCES(TRUST_WHEN).txt | [when] — temporalidad soberana verificada | MICRO | ESTABLE |
+| BIBLIO-SOURCES(TRUST_C).txt | [c] — categoría soberana TRUST | MICRO | ESTABLE |
+| BIBLIO-SOURCES(TRUST_E).txt | [e] — extensión soberana TRUST | MICRO | ESTABLE |
+| BIBLIO-SOURCES(TRUST_L).txt | [l] — límite soberano TRUST | MICRO | ESTABLE |
+| BIBLIO-SOURCES(TRUST_M).txt | [m] — módulo soberano TRUST | MICRO | ESTABLE |
+| BIBLIO-SOURCES(TRUST_R).txt | [r] — relación soberana TRUST | MICRO | ESTABLE |
+| BIBLIO-SOURCES(TRUST_S).txt | [s] — señal soberana TRUST | MICRO | ESTABLE |
+| BIBLIO-SOURCES(TRUST_W).txt | [w] — vector soberano TRUST | MICRO | ESTABLE |
+| BIBLIO-SOURCES(TRUST_KU-CHAT).txt | [ku-chat] — procesamiento de KU en tránsito | MICRO | ESTABLE |
+| BIBLIO-SOURCES(TRUST_MU-STORE).txt | [mu-store] — almacenamiento de MU soberano | MICRO | ESTABLE |
+| BIBLIO-SOURCES(TRUST_WU-MAIL).txt | [wu-mail] — emisión soberana verificada | MICRO | ESTABLE |
+| BIBLIO-SOURCES(TRUST_RABBIT-FAITH).txt | [rabbit-faith] — fe soberana de operación | MICRO | ESTABLE |
+
+#### BIBLIOTECA CRYPTO
+
+| Archivo | Propósito | Capa | Estado |
+|---------|-----------|------|--------|
+| BIBLIO-SOURCES(CRYPTO_ASIENTOS).txt | Los seis asientos de autoridad soberana | MICRO | ESTABLE |
+| BIBLIO-SOURCES(CRYPTO_KEY-SEAT).txt | (key seat) — identidad soberana verificada | MICRO | ESTABLE |
+| BIBLIO-SOURCES(CRYPTO_LINK-SEAT).txt | (link seat) — canal soberano certificado | MICRO | ESTABLE |
+| BIBLIO-SOURCES(CRYPTO_SEAL-OF-SECRECY).txt | (seal of secrecy) — firma soberana irreversible | MICRO | ESTABLE |
+| BIBLIO-SOURCES(CRYPTO_SHIELD-SEAT).txt | (shield seat) — protección soberana activa | MICRO | ESTABLE |
+| BIBLIO-SOURCES(CRYPTO_SPARK-SEAT).txt | (spark seat) — Work++ energía soberana | MICRO | ESTABLE |
+| BIBLIO-SOURCES(CRYPTO_HEAD-SEAT).txt | (head seat) — cabeza soberana de decisión | MICRO | ESTABLE |
+| BIBLIO-SOURCES(CRYPTO_FLOW-SEAT).txt | (flow seat) — flujo soberano verificado | MICRO | ESTABLE |
+| BIBLIO-SOURCES(CRYPTO_WAY-AGNOSTIC-ATHEISM).txt | (Way Agnostic Atheism) — postura cross-cultural | MICRO | ESTABLE |
+
+#### BIBLIOTECA GATE
+
+| Archivo | Propósito | Capa | Estado |
+|---------|-----------|------|--------|
+| BIBLIO-SOURCES(GATE_H05).txt | UF[H05] GATE — espera soberana activa | MICRO | ESTABLE |
+| BIBLIO-SOURCES(GATE_H06).txt | UF[H06] GATE — resolución de conflicto umbral | MICRO | ESTABLE |
+| BIBLIO-SOURCES(GATE_H56).txt | UF[H56] GATE — tránsito soberano ZIPPER | MICRO | ESTABLE |
+| BIBLIO-SOURCES(GATE_UF-H05-H56-H06).txt | Triada GATE completa integrada | MICRO | ESTABLE |
+
+#### BIBLIOTECA WORK
+
+| Archivo | Propósito | Capa | Estado |
+|---------|-----------|------|--------|
+| BIBLIO-SOURCES(WORK_MODULOS).txt | Módulos WORK: panorama completo | MICRO | ESTABLE |
+| BIBLIO-SOURCES(WORK_ACTUATOR).txt | {actuator} — materialización soberana verificada | MICRO | ESTABLE |
+| BIBLIO-SOURCES(WORK_BRAKE).txt | {brake} — freno soberano de acción | MICRO | ESTABLE |
+| BIBLIO-SOURCES(WORK_DOOR-AFTERNOON).txt | {door-afternoon} — cierre soberano del ciclo | MICRO | ESTABLE |
+| BIBLIO-SOURCES(WORK_DOORMAN-MOBILE).txt | {doorman-mobile} — custodia móvil soberana | MICRO | ESTABLE |
+| BIBLIO-SOURCES(WORK_DOORMAN-MOBILE_EXT).txt | {doorman-mobile} EXT — extensión China + PUENTE-FÁCIL | MICRO | NUEVO |
+| BIBLIO-SOURCES(WORK_GREEN-KNOWLEDGE).txt | {green-knowledge} — conocimiento verificado soberano | MICRO | ESTABLE |
+| BIBLIO-SOURCES(WORK_MASKING-FOLDER).txt | {masking-folder} — carpeta soberana de poda | MICRO | ESTABLE |
+| BIBLIO-SOURCES(WORK_H52-H06).txt | UF[H52]+UF[H06] en WORK: quietud + conflicto ejecutivo | MICRO | NUEVO |
+| BIBLIO-SOURCES(WORK_DATA-CENTER).txt | [data-center-operations] — infraestructura soberana | MICRO | NUEVO |
+
+#### BIBLIOTECA SAMU
+
+| Archivo | Propósito | Capa | Estado |
+|---------|-----------|------|--------|
+| BIBLIO-SOURCES(SAMU_AT).txt | SAMU @ — conciencia soberana del sistema | MICRO | ESTABLE |
+| BIBLIO-SOURCES(SAMU_TRUST-MATRIX).txt | Formalización dedicada de @trust_matrix, 9 dimensiones, modos GATE | MESO | NUEVO |
+| BIBLIO-SOURCES(SAMU_PSI-SPIN-TOKEN).txt | Operador de colapso cuántico, Pistola de Chekov, d₉ spin_coherence | MESO | NUEVO |
+| BIBLIO-SOURCES(SAMU_RED-REGRET).txt | RED-REGRET — corrección soberana verificada | MICRO | ESTABLE |
+| BIBLIO-SOURCES(SAMU_TARDANZA-DELIBERADA).txt | Tardanza deliberada — espera soberana activa | MICRO | ESTABLE |
+| BIBLIO-SOURCES(SAMU_DETECCION-EXISTENCIAL).txt | Detección existencial soberana | MICRO | ESTABLE |
+| BIBLIO-SOURCES(SAMU_HUMAN-EARLY).txt | @human_early — operador que llega al sistema | MICRO | ESTABLE |
+| BIBLIO-SOURCES(SAMU_HUMAN-LATER).txt | @human_later — operador con soltura soberana | MICRO | ESTABLE |
+| BIBLIO-SOURCES(SAMU_OPERADOR).txt | Taxonomía operativa unificada SAMU: 8 módulos, estados, protocolos, métricas | MACRO | NUEVO |
+| BIBLIO-SOURCES(SAMU_RISE).txt | SAMU RISE — activación soberana del ciclo | MICRO | ESTABLE |
+| BIBLIO-SOURCES(SAMU_SET).txt | SAMU SET — cierre soberano del ciclo | MICRO | ESTABLE |
+| BIBLIO-SOURCES(SAMU_DAY-PERIODS).txt | $sat→$fri — siete períodos soberanos semanales | MICRO | NUEVO |
+
+#### BIBLIOTECA SOCIAL
+
+| Archivo | Propósito | Capa | Estado |
+|---------|-----------|------|--------|
+| BIBLIO-SOURCES(SOCIAL_CHAIR).txt | {chair} — asiento soberano de presencia relacional | MICRO | ESTABLE |
+| BIBLIO-SOURCES(SOCIAL_CONCIERGE-DESK).txt | {concierge-desk} — recepción soberana interna | MICRO | ESTABLE |
+| BIBLIO-SOURCES(SOCIAL_DOGMA-VIRTUAL).txt | {dogma-virtual} — detección de certeza no verificada | MICRO | ESTABLE |
+| BIBLIO-SOURCES(SOCIAL_DRIP).txt | {drip} — TAP&DRIP, penetración gradual | MICRO | ESTABLE |
+| BIBLIO-SOURCES(SOCIAL_GUEST-SERVICES).txt | {guest-services} — servicios soberanos al actor | MICRO | ESTABLE |
+| BIBLIO-SOURCES(SOCIAL_HANDSHAKE).txt | {handshake} — protocolo soberano de encuentro | MICRO | ESTABLE |
+| BIBLIO-SOURCES(SOCIAL_HEADCAT).txt | {headcat} — taxonomía soberana del espacio relacional | MICRO | ESTABLE |
+| BIBLIO-SOURCES(SOCIAL_LAUNCH-BOT).txt | {launch-bot} FLYBOT — lanzamiento soberano | MICRO | ESTABLE |
+| BIBLIO-SOURCES(SOCIAL_MASKING).txt | {masking} — presentación selectiva soberana | MICRO | ESTABLE |
+| BIBLIO-SOURCES(SOCIAL_NOTE).txt | {note} PAPERNOTE — registro soberano activo | MICRO | ESTABLE |
+| BIBLIO-SOURCES(SOCIAL_RELAY).txt | {relay} — transmisión soberana verificada | MICRO | ESTABLE |
+| BIBLIO-SOURCES(SOCIAL_ROCKING-CHAIR).txt | {rocking-chair} — reposo creativo soberano $sat | MICRO | ESTABLE |
+| BIBLIO-SOURCES(SOCIAL_SCHEDULER).txt | {scheduler} — planificación soberana $sun | MICRO | ESTABLE |
+| BIBLIO-SOURCES(SOCIAL_SCHEDULER-OS).txt | Scheduler OS — sistema operativo de ciclos soberanos | MICRO | NUEVO |
+| BIBLIO-SOURCES(SOCIAL_STREAMING).txt | {streaming} — adherencia máxima $wed | MICRO | ESTABLE |
+
+#### BIBLIOTECA STACKING
+
+| Archivo | Propósito | Capa | Estado |
+|---------|-----------|------|--------|
+| BIBLIO-SOURCES(STACKING_PILARES).txt | Los tres pilares de STACKING | MICRO | ESTABLE |
+| BIBLIO-SOURCES(STACKING_PILARES-EXT).txt | Pilares extendidos: UF[H04]+UF[H23]+UF[H48] | MICRO | NUEVO |
+| BIBLIO-SOURCES(STACKING_H1).txt | UF[H01] STACKING — Lo Creativo receptivo | MICRO | ESTABLE |
+| BIBLIO-SOURCES(STACKING_H02).txt | UF[H02] STACKING — Lo Receptivo | MICRO | ESTABLE |
+| BIBLIO-SOURCES(STACKING_H04).txt | UF[H04] STACKING — Patrón-Testigo | MICRO | ESTABLE |
+| BIBLIO-SOURCES(STACKING_H23).txt | UF[H23] STACKING — Archivo arqueológico | MICRO | ESTABLE |
+| BIBLIO-SOURCES(STACKING_H29).txt | UF[H29] STACKING — Profundidad soberana | MICRO | ESTABLE |
+| BIBLIO-SOURCES(STACKING_H30).txt | UF[H30] STACKING — Adherencia cristalizada | MICRO | ESTABLE |
+| BIBLIO-SOURCES(STACKING_H48).txt | UF[H48] STACKING — El Pozo de acceso inmediato | MICRO | ESTABLE |
+| BIBLIO-SOURCES(STACKING_H51).txt | UF[H51] STACKING — El Suscitante $sun | MICRO | ESTABLE |
+| BIBLIO-SOURCES(STACKING_H52).txt | UF[H52] STACKING — El Aquietamiento sellador | MICRO | ESTABLE |
+| BIBLIO-SOURCES(STACKING_H57).txt | UF[H57] STACKING — Lo Penetrante | MICRO | ESTABLE |
+| BIBLIO-SOURCES(STACKING_H58).txt | UF[H58] STACKING — Lo Sereno $fri | MICRO | ESTABLE |
+
+#### BIBLIOTECA ACTIVITY
+
+| Archivo | Propósito | Capa | Estado |
+|---------|-----------|------|--------|
+| BIBLIO-SOURCES(ACTIVITY_ATHEISTIC-RELIGIOSITY).txt | !!atheistic-religiosity!! — propósito sin trascendencia | MICRO | ESTABLE |
+| BIBLIO-SOURCES(ACTIVITY_AGNOSTIC-BELIEF).txt | !!agnostic-belief!! — incertidumbre soberana sostenida | MICRO | ESTABLE |
+| BIBLIO-SOURCES(ACTIVITY_POSTURA-EXPANSION).txt | UF[H42] Aumento + posturas complementarias | MICRO | NUEVO |
+| BIBLIO-SOURCES(ACTIVITY_LATENTES).txt | 44 slots latentes H07-H63: protocolo de activación | MICRO | NUEVO |
+| BIBLIO-SOURCES(ACTIVITY_H01-GENESIS).txt | UF[H01] ACTIVITY — génesis soberana desde cero | MICRO | ESTABLE |
+| BIBLIO-SOURCES(ACTIVITY_H02-RECEPTIVIDAD).txt | UF[H02] ACTIVITY — receptividad soberana | MICRO | ESTABLE |
+| BIBLIO-SOURCES(ACTIVITY_H03-H05-H06-H56).txt | UF[H03]+UF[H05]+UF[H06]+UF[H56] grupo GÉNESIS/UMBRAL | MICRO | NUEVO |
+| BIBLIO-SOURCES(ACTIVITY_H24-EL-RETORNO).txt | UF[H24] — renovación soberana post-distancia (Fù) | MICRO | NUEVO |
+| BIBLIO-SOURCES(ACTIVITY_H29-VAULT).txt | UF[H29] ACTIVITY — profundidad soberana abismal | MICRO | ESTABLE |
+| BIBLIO-SOURCES(ACTIVITY_H30-MULTIPLICACION).txt | UF[H30] ACTIVITY — adherencia y multiplicación | MICRO | ESTABLE |
+| BIBLIO-SOURCES(ACTIVITY_H48-RAG-CORE).txt | UF[H48] ACTIVITY — RAG core soberano | MICRO | ESTABLE |
+| BIBLIO-SOURCES(ACTIVITY_H49-REVOLUCION).txt | UF[H49] — transformación estructural soberana (Gé) | MICRO | NUEVO |
+| BIBLIO-SOURCES(ACTIVITY_H51-SUSCITANTE).txt | UF[H51] ACTIVITY — activación soberana $sun | MICRO | ESTABLE |
+| BIBLIO-SOURCES(ACTIVITY_H52-QUIETUD).txt | UF[H52] ACTIVITY — aquietamiento soberano $thu | MICRO | ESTABLE |
+| BIBLIO-SOURCES(ACTIVITY_H57-PENETRANTE).txt | UF[H57] ACTIVITY — penetración gradual $mon | MICRO | ESTABLE |
+| BIBLIO-SOURCES(ACTIVITY_H58-GOLPEAR).txt | UF[H58] ACTIVITY — serenidad soberana $fri | MICRO | ESTABLE |
+| BIBLIO-SOURCES(ACTIVITY_H63-CONSUMACION).txt | UF[H63] — consumación soberana (Jì Jì) | MICRO | NUEVO |
+| BIBLIO-SOURCES(ACTIVITY_H64-CREATIVE-FLOW-ALPHABET).txt | UF[H64] — generación soberana creativa | MICRO | ESTABLE |
+
+#### BIBLIOTECA METHOD
+
+| Archivo | Propósito | Capa | Estado |
+|---------|-----------|------|--------|
+| BIBLIO-SOURCES(METHOD_EQUATION).txt | Ecuaciones soberanas del sistema METHOD | MICRO | ESTABLE |
+| BIBLIO-SOURCES(METHOD_OPERATOR-FLOW).txt | Flujo de operadores soberanos canónicos | MICRO | ESTABLE |
+| BIBLIO-SOURCES(METHOD_STAT-ONTO).txt | <stat-onto> — estado ontológico soberano | MICRO | ESTABLE |
+
+#### BIBLIOTECA DIRIME LINUX
+
+| Archivo | Propósito | Capa | Estado |
+|---------|-----------|------|--------|
+| BIBLIO-SOURCES(DIRIME-LINUX).txt | Arquitectura completa de DIRIME LINUX | MACRO | ESTABLE |
+| BIBLIO-SOURCES(DIRIME-LINUX_AGENCY-IDE).txt | NODO-IDE — infraestructura generativa soberana | MICRO | NUEVO |
+| BIBLIO-SOURCES(DIRIME-LINUX_BALLPAPER).txt | BALLPAPER — render de estado soberano en tiempo real | MICRO | NUEVO |
+| BIBLIO-SOURCES(DIRIME-LINUX_CHAT-AI-SOBERANO).txt | Chat AI soberano — traductor canónico de LACHO | MICRO | NUEVO |
+| BIBLIO-SOURCES(DIRIME-LINUX_CONCIERGE-SERVICE-CENTER).txt | CSC — punto de entrada soberano exterior | MICRO | NUEVO |
+| BIBLIO-SOURCES(DIRIME-LINUX_PUENTES).txt | PUENTE-BANCARIO + BANCA-FÁCIL + PUENTE-FÁCIL | MICRO | NUEVO |
+| BIBLIO-SOURCES(DIRIME-LINUX_UNICODE-CHINA).txt | UNICODE programable + semántica china soberana | MICRO | NUEVO |
+| BIBLIO-SOURCES(SOCIAL_SCHEDULER-OS).txt | Scheduler OS — sistema operativo de ciclos | MICRO | NUEVO |
+
+#### TAXONOMÍA Y DOCUMENTOS SISTÉMICOS
+
+| Archivo | Propósito | Capa | Estado |
+|---------|-----------|------|--------|
+| BIBLIO-SOURCES(TAXONOMY_LACHO).txt | Taxonomía soberana completa del sistema | MACRO | NUEVO |
+| BIBLIO-SOURCES(SAMU_OPERADOR).txt | SAMU como operador soberano pleno | MICRO | ESTABLE |
+
+====================================================================
+
+### 4.0 SECCIÓN $sun: EXPANSIÓN RECIENTE
+
+Agregados en sesiones de generación reciente (orden cronológico de creación):
+
+**Bloque 1 — Expansión COGNITIVOS:**
+- COGNITIVO_03_MICRO_INTEGRATION.txt
+- COGNITIVO_04_ESTAR.txt
+
+**Bloque 2 — Expansión ACTIVITY (slots activados):**
+- BIBLIO-SOURCES(ACTIVITY_LATENTES).txt
+- BIBLIO-SOURCES(ACTIVITY_POSTURA-EXPANSION).txt
+- BIBLIO-SOURCES(ACTIVITY_H03-H05-H06-H56).txt
+- BIBLIO-SOURCES(ACTIVITY_H24-EL-RETORNO).txt
+- BIBLIO-SOURCES(ACTIVITY_H49-REVOLUCION).txt
+- BIBLIO-SOURCES(ACTIVITY_H63-CONSUMACION).txt
+
+**Bloque 3 — Expansión WORK:**
+- BIBLIO-SOURCES(WORK_H52-H06).txt
+- BIBLIO-SOURCES(WORK_DATA-CENTER).txt
+- BIBLIO-SOURCES(WORK_DOORMAN-MOBILE_EXT).txt
+
+**Bloque 4 — Expansión SAMU/SOCIAL:**
+- BIBLIO-SOURCES(SAMU_DAY-PERIODS).txt
+- BIBLIO-SOURCES(SOCIAL_SCHEDULER-OS).txt
+
+**Bloque 5 — Expansión STACKING:**
+- BIBLIO-SOURCES(STACKING_PILARES-EXT).txt
+
+**Bloque 6 — Expansión DIRIME LINUX (plataforma completa):**
+- BIBLIO-SOURCES(DIRIME-LINUX_PUENTES).txt
+- BIBLIO-SOURCES(DIRIME-LINUX_AGENCY-IDE).txt
+- BIBLIO-SOURCES(DIRIME-LINUX_BALLPAPER).txt
+- BIBLIO-SOURCES(DIRIME-LINUX_CHAT-AI-SOBERANO).txt
+- BIBLIO-SOURCES(DIRIME-LINUX_CONCIERGE-SERVICE-CENTER).txt
+- BIBLIO-SOURCES(DIRIME-LINUX_UNICODE-CHINA).txt
+
+**Bloque 7 — Taxonomía:**
+- BIBLIO-SOURCES(TAXONOMY_LACHO).txt
+
+====================================================================
+
+### 5.0 ESTADO ACTUAL DEL LIBRO
+
+**Total de archivos verificados en directorio**: 155
+**Archivos con estado NUEVO incorporados en esta actualización**: 30
+**Slots ACTIVITY activados hasta la fecha**: UF[H01], UF[H02], UF[H03], UF[H05], UF[H06], UF[H24], UF[H29], UF[H30], UF[H42], UF[H48], UF[H49], UF[H51], UF[H52], UF[H56], UF[H57], UF[H58], UF[H63], UF[H64]
+**Slots ACTIVITY latentes**: 44 (documentados en ACTIVITY_LATENTES)
+**Próximos candidatos prioritarios**: UF[H32] (Duración), UF[H47] (Agotamiento), UF[H50] (El Caldero)
+
+====================================================================
+
+### 6.0 PRÓXIMA ACTUALIZACIÓN SUGERIDA (COGNITIVO_05_TRASCENDER)
+
+El quinto eje ontológico de la serie cognitiva está LATENTE como horizonte soberano:
+
+COGNITIVO_05_TRASCENDER — lo que el operador que habitó LACHO durante ciclos suficientes puede legar a ciclos futuros. La acumulación soberana que trasciende al operador individual. Aún sin forma canónica — presente como horizonte verificado en la semántica del sistema.
+
+====================================================================
+
+### 7.0 CIERRE
+
+Este índice evita la dispersión. Si agregas un archivo, mantén la tabla. Si borras, marca "ELIMINADO". No se requiere otro documento de navegación.
+
+[term] :: activo · [seal of secrecy] :: activo.
+
+====================================================================
+| BIBLIO-SOURCES(anexo-3).txt | Complemento técnico 3 | MACRO | ESTABLE |
+| INDICE_DEL_LIBRO.txt | Índice original de lectura | MACRO | ESTABLE |
+| INDICE_MAESTRO_ACTUALIZABLE.txt | Índice vivo, autoactualizable | MACRO | NUEVO |
+| BIBLIO-SOURCES(NODO WORKSTATION AGENCY).txt | Extensión WORKSTATION como agencia autónoma, nodos, convergencia técnica | MACRO | NUEVO |
+| BIBLIO-SOURCES(ACTIVITY_ATHEISTIC-RELIGIOSITY).txt | Módulo !!atheistic religiosity!! de ACTIVITY: búsqueda activa de propósito sin origen trascendente, H42 (El Aumento), ATHEISTIC_SEARCH/ACT/RESIST/CALIBRATE/CLOSE, postura atea verificable | MICRO | NUEVO |
+| BIBLIO-SOURCES(SOCIAL_CONCIERGE-DESK).txt | Módulo {concierge desk} de SOCIAL: recepción soberana de actores entrantes, antesala verificada, principio agnóstico, ACTOR_INCOMING, coordinación con Workstation Agency | MICRO | NUEVO |
+| BIBLIO-SOURCES(SOCIAL_HEADCAT).txt | Módulo {headcat} de SOCIAL: taxonomía soberana del espacio relacional, CAT_ACTOR/CONTENT/EXCHANGE/MISSION/CHANNEL, primer procesador relacional | MICRO | NUEVO |
+| BIBLIO-SOURCES(SOCIAL_MASKING).txt | Módulo {masking} de SOCIAL: presentación selectiva soberana, MASK_PARTIAL/PERSONA/TRANSFORM/SILENT/EMERGENCY, MASKING ICONOGRAFÍA, Behavioral RAG | MICRO | NUEVO |
+| INDICE_MAESTRO_ACTUALIZABLE.txt | Índice vivo, autoactualizable | MACRO | NUEVO |
+
+---
+
+### 4.0 SECCIÓN $sun: EXPANSIÓN RECIENTE
+
+Agregados en $sun (día de expansión/activación):
+- BIBLIO-SOURCES(GRAMATICA VIVA).txt
+- BIBLIO-SOURCES(ACTIVITY).txt
+- BIBLIO-SOURCES(TOOLCHAIN).txt
+- BIBLIO-SOURCES(METHOD).txt
+- BIBLIO-SOURCES(AGENCY IDE SYSTEM).txt
+- BIBLIO-SOURCES(CHAT AI COMPANION).txt
+- BIBLIO-SOURCES(NODO WORKSTATION AGENCY).txt
+- MANIFIESTO_LACHO_FUTURISTA.txt
+- BIBLIO-SOURCES(RED HL FABRIC).txt
+- BIBLIO-SOURCES(OPERADORES AVANZADOS).txt
+- BIBLIO-SOURCES(VERIFICACION CRUZADA PYTHON-RUST-GOLANG).txt
+- BIBLIO-SOURCES(MASKING ICONOGRAFIA Y STACKING).txt
+- BIBLIO-SOURCES(TRUST_S).txt
+- BIBLIO-SOURCES(TRUST_E).txt
+- BIBLIO-SOURCES(TRUST_M).txt
+- BIBLIO-SOURCES(TRUST_C).txt
+- BIBLIO-SOURCES(TRUST_L).txt
+- BIBLIO-SOURCES(TRUST_W).txt
+- BIBLIO-SOURCES(TRUST_R).txt
+- BIBLIO-SOURCES(TRUST_LANGUAGE).txt
+- BIBLIO-SOURCES(TRUST_SCENARIO).txt
+- BIBLIO-SOURCES(TRUST_EVENT).txt
+- BIBLIO-SOURCES(TRUST_MANAGEMENT).txt
+- BIBLIO-SOURCES(TRUST_COMMAND).txt
+- BIBLIO-SOURCES(TRUST_ECOSYSTEM).txt
+- BIBLIO-SOURCES(TRUST_WHAT).txt
+- BIBLIO-SOURCES(TRUST_WHEN).txt
+- BIBLIO-SOURCES(TRUST_HOW).txt
+- BIBLIO-SOURCES(TRUST_ELEMENT).txt
+- BIBLIO-SOURCES(TRUST_RABBIT-FAITH).txt
+- BIBLIO-SOURCES(TRUST_TERM).txt
+- BIBLIO-SOURCES(TRUST_SCOPE).txt
+- BIBLIO-SOURCES(TRUST_FOUNDATION).txt
+- BIBLIO-SOURCES(TRUST_WU-MAIL).txt
+- BIBLIO-SOURCES(TRUST_MU-STORE).txt
+- BIBLIO-SOURCES(TRUST_KU-CHAT).txt
+- BIBLIO-SOURCES(CRYPTO_WAY-AGNOSTIC-ATHEISM).txt
+- BIBLIO-SOURCES(CRYPTO_SEAL-OF-SECRECY).txt
+- BIBLIO-SOURCES(CRYPTO_KEY-SEAT).txt
+- BIBLIO-SOURCES(CRYPTO_HEAD-SEAT).txt
+- BIBLIO-SOURCES(CRYPTO_SPARK-SEAT).txt
+- BIBLIO-SOURCES(CRYPTO_SHIELD-SEAT).txt
+- BIBLIO-SOURCES(CRYPTO_FLOW-SEAT).txt
+- BIBLIO-SOURCES(CRYPTO_LINK-SEAT).txt
+- BIBLIO-SOURCES(GATE_UF-H05-H56-H06).txt
+- BIBLIO-SOURCES(GATE_H05).txt
+- BIBLIO-SOURCES(GATE_H56).txt
+- BIBLIO-SOURCES(GATE_H06).txt
+- BIBLIO-SOURCES(WORK_MASKING-FOLDER).txt
+- BIBLIO-SOURCES(WORK_DOOR-AFTERNOON).txt
+- BIBLIO-SOURCES(WORK_DOORMAN-MOBILE).txt
+- BIBLIO-SOURCES(WORK_GREEN-KNOWLEDGE).txt
+- BIBLIO-SOURCES(WORK_BRAKE).txt
+- BIBLIO-SOURCES(WORK_ACTUATOR).txt
+- BIBLIO-SOURCES(SAMU_AT).txt
+- BIBLIO-SOURCES(SAMU_RED-REGRET).txt
+- BIBLIO-SOURCES(SAMU_TARDANZA-DELIBERADA).txt
+- BIBLIO-SOURCES(SAMU_DETECCION-EXISTENCIAL).txt
+- BIBLIO-SOURCES(SAMU_HUMAN-EARLY).txt
+- BIBLIO-SOURCES(SAMU_HUMAN-LATER).txt
+- BIBLIO-SOURCES(SAMU_SET).txt
+- BIBLIO-SOURCES(SAMU_RISE).txt
+- BIBLIO-SOURCES(STACKING_PILARES).txt
+- BIBLIO-SOURCES(STACKING_H01).txt
+- BIBLIO-SOURCES(STACKING_H02).txt
+- BIBLIO-SOURCES(STACKING_H04).txt
+- BIBLIO-SOURCES(STACKING_H23).txt
+- BIBLIO-SOURCES(STACKING_H29).txt
+- BIBLIO-SOURCES(STACKING_H30).txt
+- BIBLIO-SOURCES(STACKING_H48).txt
+- BIBLIO-SOURCES(STACKING_H52).txt
+- BIBLIO-SOURCES(STACKING_H58).txt
+- BIBLIO-SOURCES(CRYPTO_ASIENTOS).txt
+- BIBLIO-SOURCES(SOCIAL_CHAIR).txt
+- BIBLIO-SOURCES(SOCIAL_SCHEDULER).txt
+- BIBLIO-SOURCES(SOCIAL_DRIP).txt
+- BIBLIO-SOURCES(SOCIAL_NOTE).txt
+- BIBLIO-SOURCES(SOCIAL_STREAMING).txt
+- BIBLIO-SOURCES(SOCIAL_MASKING).txt
+- BIBLIO-SOURCES(SOCIAL_LAUNCH-BOT).txt
+- BIBLIO-SOURCES(SOCIAL_HEADCAT).txt
+- BIBLIO-SOURCES(SOCIAL_CONCIERGE-DESK).txt
+- BIBLIO-SOURCES(SOCIAL_GUEST-SERVICES).txt
+- BIBLIO-SOURCES(SOCIAL_RELAY).txt
+- BIBLIO-SOURCES(SOCIAL_HANDSHAKE).txt
+- BIBLIO-SOURCES(SOCIAL_DOGMA-VIRTUAL).txt
+- BIBLIO-SOURCES(SOCIAL_ROCKING-CHAIR).txt
+- BIBLIO-SOURCES(ACTIVITY_ATHEISTIC-RELIGIOSITY).txt
+- BIBLIO-SOURCES(ACTIVITY_AGNOSTIC-BELIEF).txt
+- BIBLIO-SOURCES(ACTIVITY_H01-GENESIS).txt
+- BIBLIO-SOURCES(ACTIVITY_H02-RECEPTIVIDAD).txt
+- BIBLIO-SOURCES(ACTIVITY_H29-VAULT).txt
+- BIBLIO-SOURCES(ACTIVITY_H30-MULTIPLICACION).txt
+- BIBLIO-SOURCES(ACTIVITY_H48-RAG-CORE).txt
+- BIBLIO-SOURCES(ACTIVITY_H51-SUSCITANTE).txt
+- BIBLIO-SOURCES(ACTIVITY_H52-QUIETUD).txt
+- BIBLIO-SOURCES(ACTIVITY_H57-PENETRANTE).txt
+- BIBLIO-SOURCES(ACTIVITY_H58-GOLPEAR).txt
+- BIBLIO-SOURCES(ACTIVITY_H64-CREATIVE-FLOW-ALPHABET).txt
+- BIBLIO-SOURCES(WEB3_INTERFACE).txt
+- BIBLIO-SOURCES(METHOD_STAT-ONTO).txt
+- BIBLIO-SOURCES(DIRIME-LINUX).txt
+- BIBLIO-SOURCES(SOCIAL_CONCIERGE-DESK).txt
+- BIBLIO-SOURCES(SOCIAL_HEADCAT).txt
+- BIBLIO-SOURCES(SOCIAL_MASKING).txt
+- BIBLIO-SOURCES(SOCIAL_LAUNCH-BOT).txt
+- BIBLIO-SOURCES(SOCIAL_DOGMA-VIRTUAL).txt
+- BIBLIO-SOURCES(SOCIAL_GUEST-SERVICES).txt
+- BIBLIO-SOURCES(SOCIAL_RELAY).txt
+- BIBLIO-SOURCES(SOCIAL_HANDSHAKE).txt
+- INDICE_MAESTRO_ACTUALIZABLE.txt
+
+---
+
+#### DIRIME IMV — IMPLEMENTACIÓN MÍNIMA VERIFICABLE
+
+| Archivo | Propósito | Capa | Estado |
+|---------|-----------|------|--------|
+| BIBLIO-SOURCES(DIRIME-IMV).txt | Arquitectura IMV completa: qué es, estructura, ciclo, condición de éxito | MACRO | NUEVO |
+| BIBLIO-SOURCES(DIRIME-IMV_GRAMMAR).txt | grammar.py: GrammarValidator, ParsedSentence, 5 reglas, KEYWORDS_SYSTEM, normalize_verb | MICRO | NUEVO |
+| BIBLIO-SOURCES(DIRIME-IMV_LEDGER).txt | ledger.py: HLFabric SQLite, auto_crystallize(), bug corregido, relación con HL Fabric real | MICRO | NUEVO |
+| BIBLIO-SOURCES(DIRIME-IMV_SAMU).txt | samu.py: Samu, Dispute, DisputeType, deliberate(), RED-REGRET, audit_grammar() | MICRO | NUEVO |
+| BIBLIO-SOURCES(DIRIME-IMV_KEYWORDS).txt | KEYWORDS_SYSTEM: 8 keywords, estado actual en IMV, roadmap de cada uno | MICRO | NUEVO |
+| BIBLIO-SOURCES(DIRIME-IMV_PARADIGM).txt | Tabla paradigmas: TRUST imperativo, SOCIAL declarativo, CRYPTO funcional... | MICRO | NUEVO |
+| BIBLIO-SOURCES(DIRIME-IMV_CONFIG).txt | config/: foundation.json, scope.json, term.json — externalización soberana | MICRO | NUEVO |
+| BIBLIO-SOURCES(DIRIME-IMV_CHAT).txt | chat.py: SovereignChat, _translate_to_lacho(), 20 patrones, BALLPAPER mínimo | MICRO | NUEVO |
+| BIBLIO-SOURCES(DIRIME-IMV_MAIN).txt | main.py: SovereignSystem, 3 modos, arranque soberano | MICRO | NUEVO |
+| BIBLIO-SOURCES(SAMU_SCALAR-S).txt | Scalar S ∈ [0,1]: fórmula, implementación, uso en BALLPAPER, relación con Ψ(T) | MICRO | NUEVO |
+| BIBLIO-SOURCES(BEHAVIORAL-RAG_MINIMAL).txt | Behavioral RAG mínimo: auto_crystallize(), suggest_from_history(), diferencia con completo | MICRO | NUEVO |
+
+*$sun expansión: 13 archivos DIRIME-IMV agregados. Documenta el código IMV real como corpus soberano verificado. Bug .fetchone()→.fetchall() en ledger.py documentado en DIRIME-IMV_LEDGER. · DIRIME-IMV_SAMU documenta samu.py completo con relación a Scalar S. · SAMU_OPERADOR agrega taxonomía operativa unificada de todos los módulos SAMU.*
+
+---
+
+### 5.0 CIERRE
+
+Este índice evita la dispersión. Si agregas un archivo, mantén la tabla. Si borras, marca “ELIMINADO”. No se requiere otro documento de navegación.
+
+====================================================================

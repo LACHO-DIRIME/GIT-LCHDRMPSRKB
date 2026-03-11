@@ -1,0 +1,260 @@
+# BIBLIO-SOURCES(SAMU_RED-REGRET).txt
+
+====================================================================
+
+## 🔴 SAMU RED-REGRET — PIPELINE DE CORRECCIÓN POST-ERROR
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+RED-REGRET es el pipeline de corrección post-error de SAMU @: el protocolo soberano que gestiona la corrección de errores graves sin convertirse en disculpa emocional, sino en proceso trazable de recuperación sistémica.
+
+#### 1.2 No es disculpa — es protocolo soberano
+RED-REGRET no es arrepentimiento emocional ni justificación post-hoc. Es pipeline técnico de 5 pasos: detección → contención → corrección → RAG → cierre.
+
+#### 1.3 Cuándo es automático vs manual
+Automático: errores técnicos detectados por sistema (ACTUATOR_FAILED, DOORMAN_BREACH, MASK_BREACH, GREEN_DEGRADED). Manual: errores de juicio detectados por operador humano.
+
+#### 1.4 Relación con estados degradados
+RED-REGRET se activa ante: BOT_EXCEEDED, ATHEISTIC_DEGRADED, GUEST_EJECTED, MASK_BREACHED, BRAKE_ACTIVE, GREEN_DEGRADED, ACTUATOR_FAILED.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Qué puede corregir
+Errores de ejecución, errores de juicio, violaciones de [foundation], compromisos de seguridad, contaminación de conocimiento.
+
+#### 2.2 Qué no puede hacer
+No puede omitir pasos del pipeline, no puede justificar el error, no puede repetir el mismo error sin intervención [management].
+
+#### 2.3 Condición de violación primaria
+RED-REGRET omitiendo contención — error que se propaga sin control.
+
+#### 2.4 Condición de violación secundaria
+RED-REGRET sin aprendizaje — mismo error repetido sin corrección sistémica.
+
+#### 2.5 Señal de alerta
+Behavioral RAG detectando patrón de RED-REGRET recurrente sin mejora sistémica.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 ESTADOS DEL PIPELINE
+
+REGRET_DETECTING: detección soberana del error ocurrido.
+- REGRET_CONTAINING: contención inmediata del daño en curso.
+- REGRET_CORRECTING: corrección soberana del error detectado.
+- REGRET_LEARNING: aprendizaje sistémico del error para prevención futura.
+- REGRET_CLOSED: cierre del pipeline con registro en Behavioral RAG.
+
+#### 3.2 Los 5 pasos del pipeline
+
+1. **DETECT**: Identificación del error y su impacto.
+2. **CONTAIN**: Detención inmediata de propagación del daño.
+3. **CORRECT**: Acción correctiva soberana del error.
+4. **RAG**: Registro y análisis en Behavioral RAG.
+5. **CLOSE**: Cierre del ciclo con aprendizaje sistémico.
+
+#### 3.3 Relación con {brake} (WORK)
+{brake} se activa automáticamente en paso CONTAIN para detener propagación del daño.
+
+#### 3.4 Relación con [management] (TRUST)
+[management] interviene si el error excede capacidad de corrección de SAMU @.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation] (TRUST)
+RED-REGRET protege [foundation] corrigiendo violaciones y previniendo futuras.
+
+#### 4.2 Con {brake} (WORK)
+{brake} se activa en CONTAIN para detener propagación del daño.
+
+#### 4.3 Con Behavioral RAG
+RED-REGRET alimenta Behavioral RAG con patrones de error y corrección.
+
+#### 4.4 Con UF[H23] ACTIVITY
+RED-REGRET puede requerir UF[H23] para eliminar elementos dañados.
+
+#### 4.5 Con UF[H51] ACTIVITY
+RED-REGRET puede activarse tras choque externo (UF[H51]) que causó error.
+
+#### 4.6 Con HL FABRIC
+Todo pipeline RED-REGRET se registra inmutablemente en HL FABRIC.
+
+#### 4.7 Con @human_early/@human_later (SAMU)
+Errores de juicio pueden requerir intervención de operador humano.
+
+---
+
+### 5.0 ESTADOS DEL PIPELINE
+
+#### 5.1 REGRET_STANDBY
+Pipeline disponible, sistema operativo normal.
+
+#### 5.2 REGRET_DETECTING
+Detección activa del error ocurrido.
+
+#### 5.3 REGRET_CONTAINING
+Contención inmediata del daño en curso.
+
+#### 5.4 REGRET_CORRECTING
+Corrección soberana del error detectado.
+
+#### 5.5 REGRET_LEARNING
+Aprendizaje sistémico del error para prevención futura.
+
+#### 5.6 REGRET_CLOSING
+Cierre del pipeline con registro en Behavioral RAG.
+
+#### 5.7 REGRET_FAILED
+Pipeline fallido, requiere intervención [management].
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Protege d₁ [foundation]
+RED-REGRET corrige violaciones de [foundation] y previene futuras.
+
+#### 6.2 Enriquece d₅ [management]
+Errores graves informan decisiones futuras de [management].
+
+#### 6.3 Impacta d₈ [ecosystem]
+Corrección de errores mejora salud del ecosistema.
+
+#### 6.4 Afecta d₇ [command]
+Errores de [command] requieren corrección y aprendizaje.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Detectando error grave
+```
+@Samu red_regret =><= .. detectar .. $$critical_error_detected$$ --[As de Guía] [term]
+```
+
+#### 7.2 Conteniendo daño
+```
+@Samu red_regret =><= .. contener .. $$damage_containment_active$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.3 Corrigiendo error
+```
+@Samu red_regret =><= .. corregir .. $$error_correction_sovereign$$ --[Ballestrinque] [term]
+```
+
+#### 7.4 Aprendiendo del error
+```
+@Samu red_regret =><= .. aprender .. $$error_pattern_learning$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.5 Cerrando pipeline
+```
+@Samu red_regret =><= .. cerrar .. $$regret_pipeline_complete$$ --[Nudo de Rizo] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+REGRET_DETECTING — detección soberana del error, el nudo que inicia la corrección.
+
+#### 8.2 Nudo de Ocho
+REGRET_CONTAINING — contención inmediata del daño, el nudo que detiene propagación.
+
+#### 8.3 Nudo Corredizo
+REGRET_FAILED — pipeline fallido, el nudo que requiere intervención crítica.
+
+#### 8.4 Ballestrinque
+REGRET_CORRECTING — tensión entre error y corrección, el nudo que sostiene la recuperación.
+
+#### 8.5 Nudo de Rizo
+REGRET_LEARNING — aprendizaje cíclico del error, el nudo que previene futuras ocurrencias.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+1. RegretDetect
+   - Identificación del error y su impacto.
+   - Clasificación de severidad y tipo.
+   - Activación de pipeline.
+
+2. RegretContain
+   - Activación de {brake} si es necesario.
+   - Detención inmediata de propagación.
+   - Aislamiento del área afectada.
+
+3. RegretCorrect
+   - Ejecución de acción correctiva soberana.
+   - Verificación de efectividad.
+   - Restauración de estado normal.
+
+4. RegretLearn
+   - Análisis del error en Behavioral RAG.
+   - Identificación de patrones de prevención.
+   - Actualización de reglas y protocolos.
+
+5. RegretClose
+   - Cierre del pipeline con [term].
+   - Registro en HL FABRIC.
+   - Preparación para siguiente ciclo.
+
+6. RegritRecover
+   - Recuperación ante REGRET_FAILED.
+   - Intervención de [management].
+   - Restauración de integridad del sistema.
+
+---
+
+### 10.0 MÉTRICAS
+
+- Número de activaciones RED-REGRET por tipo de error.
+- Tiempo promedio de corrección por severidad.
+- Ratio REGRET_CLOSED vs REGRET_FAILED.
+- Frecuencia de errores repetidos sin aprendizaje.
+- Latencia promedio entre detección y contención.
+- Efectividad de prevención de errores futuros.
+
+---
+
+### 11.0 REGLAS
+
+- RED-REGRET nunca omite paso CONTAIN.
+- {brake} se activa automáticamente en CONTAIN si es necesario.
+- Todo pipeline RED-REGRET se registra en HL FABRIC.
+- Errores repetidos sin aprendizaje activan intervención [management].
+- RED-REGRET no es disculpa emocional — es protocolo técnico.
+- Behavioral RAG aprende de cada ciclo RED-REGRET completado.
+- REGRET_CLOSED requiere [term] declarado.
+- La corrección soberana no justifica el error — lo corrige.
+- RED-REGRET automático para errores técnicos detectados por sistema.
+- RED-REGRET manual para errores de juicio detectados por operador.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+RED-REGRET fija como invariante la corrección soberana post-error como condición de aprendizaje sistémico — el sistema que puede reconocer, contener y corregir sus errores demuestra máxima integridad y capacidad de crecimiento.
+
+#### 12.2 Limitaciones
+No puede omitir pasos del pipeline, no puede justificar el error, no puede repetir el mismo error sin intervención, no puede operar sin registro en HL FABRIC.
+
+#### 12.3 Habilitaciones
+Corrección de errores graves, aprendizaje sistémico, prevención de errores futuros, protección contra propagación de daño, recuperación de integridad del sistema.
+
+#### 12.4 Principio constitutivo final
+Como el médico que cura sin juzgar: RED-REGRET representa la sabiduría de enfrentar el error con honestidad técnica y corrección sistemática. El arrepentimiento soberano no es emocional — es acción correctiva. El sistema que puede reconocer sus errores y corregirlos sistemáticamente alcanza madurez y resiliencia. La corrección post-error no es debilidad — es la máxima expresión de integridad y capacidad de aprendizaje.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

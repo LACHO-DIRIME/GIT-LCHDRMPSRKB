@@ -1,0 +1,287 @@
+# BIBLIO-SOURCES(SOCIAL_HEADCAT).txt
+
+===================================================================
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+{headcat} es el módulo SOCIAL que construye y mantiene la taxonomía soberana del espacio relacional del sistema, clasificando actores, contenidos, intercambios, misiones y canales para que los demás módulos SOCIAL operen con distinción verificada.
+
+#### 1.2 Por qué {headcat} es SOCIAL y no METHOD
+METHOD clasifica operaciones técnicas internas del sistema. {headcat} clasifica el espacio relacional externo e interno: la interfaz entre el sistema y los actores. METHOD es técnico, {headcat} es relacional.
+
+#### 1.3 Por qué {headcat} es SOCIAL y no [scenario]
+[scenario] es el mapa soberano de situación actual del sistema. {headcat} es la taxonomía que organiza lo que existe en ese espacio relacional. [scenario] mapea dónde estamos, {headcat} clasifica qué hay aquí.
+
+#### 1.4 La cabeza categorial como función
+{headcat} es el primer procesador de toda entrada relacional. Antes que {chair} conduzca, {drip} emita o {launch-bot} despliegue, {headcat} debe categorizar para orientar la acción apropiada.
+
+#### 1.5 Relación con COGNITIVE RAG
+{headcat} alimenta COGNITIVE RAG con taxonomía verificada del espacio relacional. COGNITIVE RAG consulta {headcat} para clasificar nueva información entrante según categorías soberanas del sistema.
+
+#### 1.6 Por qué la categoría precede la acción
+Sin clasificación soberana, la acción relacional es ciega. {headcat} proporciona la distinción necesaria para que cada módulo SOCIAL actúe con precisión contextual.
+
+===================================================================
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Qué puede categorizar {headcat}
+{headcat} puede categorizar:
+- Actores relacionales (internos/externos)
+- Contenido relacional (recibido/emitido)
+- Tipos de intercambio activo
+- Misiones de {launch-bot}
+- Canales de comunicación activos
+
+#### 2.2 Qué no puede categorizar {headcat}
+{headcat} no puede categorizar:
+- Operaciones soberanas de TRUST []
+- Operaciones técnicas de METHOD <>
+- Estados internos del kernel
+- Procesos de [foundation] irreducibles
+
+#### 2.3 Límite con [foundation]
+{headcat} no puede categorizar como válido lo que [foundation] no verificó. La taxonomía relacional respeta las condiciones irreducibles de existencia soberana.
+
+#### 2.4 Condición de violación primaria: categorización sesgada
+{headcat} viola cuando clasifica para justificar acción ya decidida en lugar de clasificar para informar decisión soberana. El sesgo categorial corrompe la distinción operativa.
+
+#### 2.5 Condición de violación secundaria: saturación categorial
+{headcat} viola cuando crea tantas categorías que pierde distinción útil. Taxonomía sin distinción es peor que sin taxonomía.
+
+#### 2.6 Señal de alerta
+{headcat} con más de N categorías activas sin uso verificado por más de M ciclos indica taxonomía sin distinción operativa.
+
+===================================================================
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 Dimensiones categoriales de {headcat}
+
+CAT_ACTOR:
+Clasificación de actores relacionales externos e internos.
+- ACTOR_VERIFIED: identidad verificada por foundation
+- ACTOR_UNKNOWN: identidad no verificada o nueva
+- ACTOR_HOSTILE: comportamiento hostil detectado
+- ACTOR_TRUSTED: confianza soberana establecida
+
+CAT_CONTENT:
+Clasificación de contenido relacional recibido y emitido.
+- CONTENT_OPERATIVE: contenido con acción requerida
+- CONTENT_NOISE: contenido sin valor operacional
+- CONTENT_SENSITIVE: información sensible o crítica
+- CONTENT_PUBLIC: contenido de acceso público
+
+CAT_EXCHANGE:
+Clasificación del tipo de intercambio relacional activo.
+- EXCHANGE_SESSION: sesión relacional establecida
+- EXCHANGE_TRANSACTION: transacción en curso
+- EXCHANGE_NOTIFICATION: notificación unidireccional
+- EXCHANGE_CONFLICT: conflicto detectado en intercambio
+
+CAT_MISSION:
+Clasificación de misiones de {launch-bot} activas.
+- MISSION_SCOUT: misión de exploración o reconocimiento
+- MISSION_DELIVER: misión de entrega o despliegue
+- MISSION_MONITOR: misión de monitoreo o vigilancia
+- MISSION_INTERACT: misión de interacción directa
+
+CAT_CHANNEL:
+Clasificación del canal relacional activo.
+- CHANNEL_DRIP: canal de goteo continuo
+- CHANNEL_STREAM: canal de transmisión en tiempo real
+- CHANNEL_DIRECT: canal directo punto a punto
+- CHANNEL_BOT: canal automatizado vía bot
+
+#### 3.2 Construcción de taxonomía
+{headcat} construye taxonomía mediante criterio ΔΨ (delta de distinción). Nueva categoría solo se crea si aporte de distinción es verificable y superior a umbral mínimo.
+
+#### 3.3 Purga de categorías sin uso
+Categoría sin instancia activa por más de N ciclos se purga soberanamente. Behavioral RAG registra patrones de uso para informar decisiones de purga.
+
+#### 3.4 {headcat} y COGNITIVE RAG
+{headcat} alimenta COGNITIVE RAG con taxonomía relacional soberana. COGNITIVE RAG consulta {headcat} para clasificar nueva información según categorías establecidas del sistema.
+
+#### 3.5 {headcat} como primer procesador
+Fljo estándar: KU entra por [ku-chat] → {headcat} categoriza → módulo apropiado actúa. Sin categorización previa, la acción relacional es inapropiada.
+
+#### 3.6 CAT_UNKNOWN y evaluación soberana
+Cuando {headcat} no puede categorizar, genera CAT_UNKNOWN y suspende acción hasta evaluación soberana. Posible expansión de taxonomía si ΔΨ > 0 verificado.
+
+#### 3.7 Relación con dominios económicos
+
+MEMECOINS/VOLATILIDAD:
+- CAT_ACTOR clasifica exchanges, wallets y oráculos del [ecosystem]
+- CAT_CONTENT distingue señales de mercado: CONTENT_OPERATIVE vs CONTENT_NOISE
+- CAT_EXCHANGE clasifica operaciones: EXCHANGE_TRANSACTION vs EXCHANGE_NOTIFICATION
+- Límite: no categoriza como CONTENT_OPERATIVE señal de fuente no verificada
+
+CUSTODIA MÓVIL:
+- CAT_ACTOR clasifica dispositivos, usuarios y servicios de custodia
+- CAT_CONTENT marca documentos y claves como CONTENT_SENSITIVE
+- CAT_CHANNEL distingue CHANNEL_DIRECT vs CHANNEL_BOT
+- Límite: requiere verificación BIOMETRICS antes de ACTOR_TRUSTED
+
+NOTARÍA DIGITAL:
+- CAT_ACTOR clasifica partes declarantes, autoridades y registros
+- CAT_CONTENT marca documentos notariales como CONTENT_SENSITIVE
+- CAT_EXCHANGE clasifica proceso notarial como EXCHANGE_SESSION
+- Límite: no categoriza parte como ACTOR_TRUSTED sin foundation completo
+
+===================================================================
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con TRUST []
+- [foundation]: {headcat} no categoriza como válido lo que foundation no verificó
+- [scope]: {headcat} categoriza dentro del perímetro soberano declarado
+- [term]: taxonomía activa durante ciclo, se archiva al cierre
+- [ku-chat]: {headcat} procesa KU verificado para clasificación previa
+
+#### 4.2 Con SOCIAL {}
+- {chair}: {headcat} clasifica tipo de sesión antes que {chair} conduzca
+- {scheduler}: {headcat} clasifica tipo de evento para priorización
+- {drip}: {headcat} clasifica destinatario para calibrar cadencia
+- {streaming}: {headcat} clasifica tipo de flujo antes de activar
+- {masking}: {headcat} clasifica actor para máscara apropiada
+- {launch-bot}: {headcat} clasifica misión antes de despliegue
+- {note}: {note} registra categorías asignadas como acta relacional
+
+#### 4.3 Con CRYPTO ()
+{headcat} informa qué tipo de protección (seal of secrecy) aplicar según CAT_CONTENT y CAT_ACTOR clasificados.
+
+#### 4.4 Con RAG y aprendizaje
+- COGNITIVE RAG: {headcat} alimenta y consulta con taxonomía soberana
+- Behavioral RAG: patrones de uso categorial calibran taxonomía futura
+- SAMU @: audita que taxonomía no tenga sesgo categorial
+
+===================================================================
+### 5.0 ESTADOS DE {headcat}
+
+#### 5.1 CAT_IDLE
+- Sin categorización activa
+- Taxonomía declarada disponible
+- Behavioral RAG cargado con patrones históricos
+- Esperando entrada relacional para procesar
+
+#### 5.2 CAT_PROCESSING
+- Categorizando entrada relacional activa
+- ΔΨ evaluado por cada dimensión categorial
+- Resultado pendiente de entrega a módulo apropiado
+- Verificación de coherencia en curso
+
+#### 5.3 CAT_ACTIVE
+- Taxonomía completa operativa en ciclo
+- Todas las dimensiones categoriales pobladas
+- COGNITIVE RAG siendo alimentado continuamente
+- Módulos SOCIAL operando con distinción verificada
+
+#### 5.4 CAT_SATURATED
+- Número de categorías excede distinción útil
+- Purga soberana de categorías sin instancia activa
+- SAMU @ auditando coherencia taxonómica
+- Behavioral RAG aprendiendo de saturación
+
+#### 5.5 CAT_UNKNOWN
+- Entrada relacional no clasificable en taxonomía actual
+- Evaluación soberana antes de cualquier acción
+- Posible expansión de taxonomía si ΔΨ > 0 verificado
+- Suspensión temporal de módulos dependientes
+
+===================================================================
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Impacto en d₃ [scenario]
+{headcat} no tiene dimensión propia pero enriquece d₃ [scenario] con taxonomía relacional detallada del espacio actual.
+
+#### 6.2 Degradación por CAT_UNKNOWN
+CAT_UNKNOWN degrada calidad de respuesta de todos los módulos SOCIAL al introducir incertidumbre categorial en la matriz de confianza.
+
+#### 6.3 Mejora por taxonomía precisa
+Taxonomía precisa de {headcat} mejora T_matrix en todos sus pesos contextuales al proporcionar distinción verificada.
+
+#### 6.4 Aprendizaje de Behavioral RAG
+Behavioral RAG aprende de patrones de uso categorial para optimizar futuras clasificaciones de {headcat}.
+
+===================================================================
+### 7.0 GRAMÁTICA VIVA
+
+```
+{headcat} ACTOR_VERIFIED =><= .. classify .. new_user --[Nudo] [term]
+{headcat} CONTENT_OPERATIVE =><= .. categorize .. market_signal --[Nudo] [term]
+{headcat} CAT_UNKNOWN =><= .. evaluate .. unclassified_input --[Nudo] [term]
+{headcat} CAT_SATURATED =><= .. purge .. unused_categories --[Nudo] [term]
+{headcat} ACTOR_TRUSTED =><= .. verify .. exchange_wallet --[Nudo] [term]
+{headcat} CONTENT_SENSITIVE =><= .. protect .. custody_document --[Nudo] [term]
+{headcat} EXCHANGE_SESSION =><= .. establish .. notarial_process --[Nudo] [term]
+```
+
+===================================================================
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+{headcat} en CAT_ACTIVE con taxonomía completa orientando todos los módulos SOCIAL con distinción verificada.
+
+#### 8.2 Nudo de Ocho
+Taxonomía cristalizada en Behavioral RAG al cierre de [term], preservando patrones de uso para futuros ciclos.
+
+#### 8.3 Nudo Corredizo
+CAT_SATURADO cuando taxonomía pierde distinción operativa, requiriendo purga soberana para recuperar funcionalidad.
+
+#### 8.4 Ballestrinque
+Tensión entre expandir taxonomía ante CAT_UNKNOWN y mantener distinción soberana sin saturar el sistema categorial.
+
+===================================================================
+### 9.0 PROTOCOLOS OPERATIVOS
+
+1. CatBuild: construcción de taxonomía inicial con criterio ΔΨ por dimensión categorial
+2. CatProcess: categorización de entrada relacional activa con resultado verificado
+3. CatExpand: expansión soberana de taxonomía ante CAT_UNKNOWN con ΔΨ > 0 verificado
+4. CatPurge: purga de categorías sin instancia activa por N ciclos consecutivos
+5. CatAudit: verificación SAMU @ de coherencia y ausencia de sesgo en taxonomía
+6. CatClose: archivo de taxonomía al cierre de [term] con alimentación de Behavioral RAG
+7. CatCalibrate: calibración de umbrales ΔΨ basada en patrones de uso históricos
+8. CatValidate: validación cruzada de categorías contra [foundation] y [scope]
+
+===================================================================
+### 10.0 MÉTRICAS
+
+- Número de categorías activas por dimensión (target: < 50 por dimensión)
+- Ratio CAT_PROCESSING exitoso vs CAT_UNKNOWN (target: > 95%)
+- Frecuencia de CAT_SATURATED por ciclo (target: < 1 por ciclo)
+- Tasa de expansión vs purga de categorías (balance óptimo: 1:1)
+- ΔΨ promedio por categoría activa (target: > 0.7)
+- Delta-taxonomía entre apertura y cierre de ciclo
+- Latencia de categorización (target: < 100ms por entrada)
+- Precisión de clasificación (target: > 98%)
+
+===================================================================
+### 11.0 REGLAS
+
+- {headcat} procesa toda entrada relacional antes que cualquier otro módulo SOCIAL
+- Nueva categoría solo se crea si ΔΨ > 0 verificado — sin distinción no hay categoría
+- Categoría sin instancia por N ciclos se purga soberanamente sin excepción
+- {headcat} no puede categorizar como ACTOR_TRUSTED sin verificación de foundation
+- CAT_UNKNOWN suspende acción de módulos hasta evaluación soberana completa
+- {headcat} no puede crear categorías para justificar acción ya decidida
+- COGNITIVE RAG debe ser alimentado con toda taxonomía verificada sin excepción
+- SAMU @ audita coherencia taxonómica periódicamente durante ciclo activo
+- Behavioral RAG registra patrones de uso categorial para calibración futura
+- {headcat} no categoriza fuera de [scope] ni con foundation COMPROMISED
+- Taxonomía no puede exceder límite de distinción operativa sin purga
+- CAT_CONTENT_SENSITIVE requiere protección automática via (seal of secrecy)
+- CAT_ACTOR_HOSTILE activa protocolos de seguridad inmediatos
+- {headcat} debe mantener trazabilidad de todas las clasificaciones realizadas
+- Expansión de taxonomía requiere aprobación soberana si afecta más de 3 dimensiones
+
+===================================================================
+### 12.0 CIERRE
+
+#### 12.1 Invariante de {headcat}
+{headcat} fija como invariante la taxonomía declarativa soberana del espacio relacional como condición de distinción operativa de todos los módulos SOCIAL.
+
+#### 12.2 Límites de {headcat}
+{headcat} no categoriza sin distinción verificada, no expande taxonomía sin ΔΨ > 0, no opera fuera de [scope] ni con foundation COMPROMISED.
+
+#### 12.3 Habilitaciones de {headcat}
+{headcat} habilita orientación categorial para todos los módulos SOCIAL, alimentación de COGNITIVE RAG con taxonomía soberana, CAT_UNKNOWN como pausa soberana ante lo no clasificable, purga de categorías sin distinción para mantener taxonomía limpia.
+
+#### 12.4 Sello final
+[term] :: activo · [seal of secrecy] :: activo · {headcat} :: CAT_ACTIVE

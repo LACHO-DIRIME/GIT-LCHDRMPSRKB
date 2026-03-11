@@ -1,0 +1,311 @@
+# BIBLIO-SOURCES(TRUST_R).txt
+
+====================================================================
+
+## 🏛️ TRUST [RABBIT-FAITH] — FE OPERATIVA BAJO INCERTIDUMBRE VERIFICABLE
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+[rabbit-faith] es el módulo TRUST que habilita operación bajo incertidumbre verificable mediante coherencia interna del ciclo como condición suficiente para avanzar.
+
+#### 1.2 Distinción de fe dogmática
+Fe dogmática cierra [term] y pondera como imponderables; [rabbit-faith] activa [term] como combustible del proceso sin cerrar la búsqueda.
+
+#### 1.3 Distinción de !!atheistic religiosity!!
+!!atheistic religiosity!! es ACTIVITY que busca propósito sin origen trascendente; [rabbit-faith] es TRUST que habilita avance sin certeza total.
+
+#### 1.4 Distinción de !!agnostic belief!!
+!!agnostic belief!! reconoce incertidumbre; [rabbit-faith] convierte esa incertidumbre en combustible operativo.
+
+#### 1.5 Por qué es TRUST y no ACTIVITY
+Define condición soberana del sistema (puede avanzar sin certeza), no ciclo de estado.
+
+#### 1.6 Posición transversal en @trust_matrix
+Actúa sobre todas las dimensiones d1-d8 cuando sus valores son parciales.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Capacidades
+- Habilita operación con Ψ_evidencia < 0.85.
+- Mantiene [term] activo como motor del proceso.
+- Permite avance con coherencia interna como criterio.
+
+#### 2.2 Limitaciones absolutas
+- No puede operar con foundation COMPROMISED.
+- No puede violar [scope] o [term].
+- No puede sustituir dirimencia de SAMU.
+
+#### 2.3 Condiciones de violación
+- **Violación:** degeneración en dogma disfrazado.
+- **Señal alerta:** uso para evitar RED-REGRET.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 El Algoritmo Conejo como base
+- **Ciclo RABBIT:** 1 → 2 → 4 → 8.
+- **Coherencia interna:** condición suficiente para avanzar.
+- **Resultados distinguibles:** criterio de validez (no certeza total).
+- **Límite saturación:** 256 nodos activa MASKING.
+- **Relación H30:** sostiene expansión de streaming.
+
+#### 3.2 Combustible del proceso
+- **[term] activo:** mantiene ciclo abierto.
+- **SAMU @:** contar (medir parcialidad) + escuchar (calibrar fe necesaria).
+- **Umbral mínimo:** S scalar > 0.5.
+- **S scalar ≤ 0.5:** sistema permanece en MU.
+
+#### 3.3 Relación con dominios económicos
+
+##### Memecoins/Volatilidad
+- Avanza con PATTERN-WITNESS (H4) sin certeza ROI.
+- Límite: no ignora RED-REGRET en pérdidas verificadas.
+
+##### Custodia Móvil
+- Opera con protocolo seguridad parcial mientras completa verificación.
+- Límite: no opera con foundation COMPROMISED.
+
+##### Notaría Digital
+- Emite documento con firma parcial mientras completa cadena custodia.
+- Límite: no certifica lo no verificado por foundation.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation]
+No puede operar con foundation COMPROMISED (único límite absoluto).
+
+#### 4.2 Con [scope]
+Opera dentro del perímetro aunque evidencia sea parcial.
+
+#### 4.3 Con [term]
+Activa [term] como motor, no como límite.
+
+#### 4.4 Con [management]
+Habilita CRISIS_MANAGEMENT cuando d5 bajo pero S scalar > 0.5.
+
+#### 4.5 Con [command]
+Permite emitir commands con d6 parcial si coherencia interna verificada.
+
+#### 4.6 Con [what?]/[when?]/[how?]
+Permite operación con respuestas parciales (< 0.85 Ψ_evidencia).
+
+#### 4.7 Con RABBIT-EYES-EGG
+Base ontológica del Algoritmo Conejo; expresión en ciclo y streaming.
+
+#### 4.8 Con !!atheistic religiosity!! y !!agnostic belief!!
+Misma ontología, capas distintas (TRUST vs ACTIVITY).
+
+#### 4.9 Con SAMU @
+Audita que no degenere en dogma durante sesión.
+
+#### 4.10 Con GREEN-KNOWLEDGE
+No puede activarse sobre conocimiento marcado como no nutritivo.
+
+#### 4.11 Con Behavioral RAG
+Patrones aprendidos de ciclos anteriores calibran umbral S scalar futuro.
+
+---
+
+### 5.0 ESTADOS DE [rabbit-faith]
+
+#### 5.1 RABBIT_FAITH_DORMANT
+- **Condición:** Ψ_evidencia ≥ 0.85.
+- **Comportamiento:** sistema opera con certeza suficiente.
+- **Salida:** Ψ_evidencia cae bajo 0.85.
+
+#### 5.2 RABBIT_FAITH_STANDBY
+- **Condición:** Ψ_evidencia entre 0.7-0.85, S scalar > 0.5.
+- **Comportamiento:** SAMU monitorea sin activar.
+- **Salida:** Ψ_evidencia < 0.7 o ≥ 0.85.
+
+#### 5.3 RABBIT_FAITH_ACTIVE
+- **Condición:** Ψ_evidencia < 0.85, S scalar > 0.5, [scope] definido.
+- **Comportamiento:** sistema avanza con coherencia interna.
+- **Salida:** Ψ_evidencia ≥ 0.85 o S scalar ≤ 0.5.
+
+#### 5.4 RABBIT_FAITH_CRITICAL
+- **Condición:** Ψ_evidencia < 0.5, S scalar 0.5-0.6.
+- **Comportamiento:** SAMU auditoría intensiva, solo CRISIS_MANAGEMENT.
+- **Salida:** Ψ_evidencia ≥ 0.5 o S scalar ≤ 0.5.
+
+#### 5.5 RABBIT_FAITH_BLOCKED
+- **Condición:** S scalar ≤ 0.5 o foundation COMPROMISED.
+- **Comportamiento:** sistema permanece en MU.
+- **Salida:** S scalar > 0.5 y foundation OK.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Naturaleza transversal
+No ocupa dimensión propia; actúa sobre todas las dimensiones cuando valores son parciales.
+
+#### 6.2 Afectación del cálculo
+Modifica temporalmente el peso de cada dimensión para permitir operación con valores parciales.
+
+#### 6.3 Umbral global de compensación
+Si más de 4 dimensiones están bajo 0.3, rabbit-faith no compensa → sistema va a MU.
+
+#### 6.4 Aprendizaje en Behavioral RAG
+Historial de @trust_matrix con rabbit-faith activo calibra umbrales futuros.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Activación con S scalar verificado
+```
+[Trust] rabbit-faith =><= .. activate .. $$s_scalar_verified$$ --[As de Guía] [term]
+```
+
+#### 7.2 Modo CRISIS_MANAGEMENT
+```
+[Trust] rabbit-faith =><= .. sustain .. $$crisis_coherence$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.3 Command con d6 parcial
+```
+[Trust] rabbit-faith =><= .. enable .. $$partial_command_d6$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.4 Dominio memecoins
+```
+[Trust] rabbit-faith =><= .. advance .. $$volatility_pattern_witness$$ --[Nudo de Rizo] [term]
+```
+
+#### 7.5 Dominio custodia móvil
+```
+[Trust] rabbit-faith =><= .. operate .. $$partial_security_protocol$$ --[As de Guía] [term]
+```
+
+#### 7.6 Dominio notaría digital
+```
+[Trust] rabbit-faith =><= .. certify .. $$partial_signature_chain$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.7 Desactivación por evidencia alcanzada
+```
+[Trust] rabbit-faith =><= .. deactivate .. $$evidence_complete$$ --[Ballestrinque] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+- **Activación:** rabbit-faith activo, ciclo en expansión coherente.
+- **Efecto:** mantiene dirección del ciclo bajo incertidumbre.
+
+#### 8.2 Nudo Corredizo
+- **Activación:** rabbit-faith bloqueado por S scalar ≤ 0.5 o foundation COMPROMISED.
+- **Efecto:** cierre inmediato de operación con fe.
+
+#### 8.3 Nudo de Ocho
+- **Activación:** ciclo completado con rabbit-faith.
+- **Efecto:** resultado distinguible cristalizado en STACKING.
+
+#### 8.4 Nudo de Rizo
+- **Activación:** unión entre certeza parcial y coherencia interna.
+- **Efecto:** base de avance verificable bajo incertidumbre.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+#### 9.1 RabbitFaith-Check
+1. Verificar S scalar > 0.5.
+2. Verificar Ψ_evidencia < 0.85.
+3. Confirmar foundation OK.
+4. Validar [scope] definido.
+5. Determinar estado de activación.
+
+#### 9.2 RabbitFaith-Activate
+1. Declarar activación formal.
+2. Registrar condiciones de activación.
+3. Notificar a SAMU @ inicio de ciclo.
+4. Activar [term] como motor.
+5. Iniciar monitoreo continuo.
+
+#### 9.3 RabbitFaith-Monitor
+1. SAMU audita coherencia interna del ciclo.
+2. Monitorear Ψ_evidencia en tiempo real.
+3. Verificar S scalar estable.
+4. Detectar señales de dogmatización.
+5. Registrar estado en Behavioral RAG.
+
+#### 9.4 RabbitFaith-Escalate
+1. Detectar Ψ_evidencia bajando durante ciclo activo.
+2. Evaluar si pasa a CRITICAL.
+3. Activar protocolo CRISIS_MANAGEMENT.
+4. Notificar escalada a SAMU.
+5. Preparar desactivación si necesario.
+
+#### 9.5 RabbitFaith-Deactivate
+1. Detectar Ψ_evidencia ≥ 0.85.
+2. Registrar resultado del ciclo.
+3. Actualizar Behavioral RAG con aprendizaje.
+4. Cerrar [term] como motor.
+5. Transicionar a DORMANT.
+
+#### 9.6 RabbitFaith-Block
+1. Detectar S scalar ≤ 0.5 o foundation COMPROMISED.
+2. Activar bloqueo inmediato.
+3. Forzar retorno a MU.
+4. Registrar causa de bloqueo.
+5. Notificar bloqueo a SAMU.
+
+---
+
+### 10.0 MÉTRICAS
+
+- **S scalar:** umbral mínimo > 0.5.
+- **Ψ_evidencia:** umbral activación < 0.85.
+- **Duración promedio:** tiempo de ciclos con rabbit-faith activo.
+- **Ratio éxito vs aborto:** % de ciclos completados.
+- **Delta-Ψ al cierre:** crecimiento de evidencia durante ciclo.
+- **Frecuencia por dominio:** memecoins vs custodia vs notaría.
+
+---
+
+### 11.0 REGLAS
+
+- [rabbit-faith] no puede activarse con foundation COMPROMISED.
+- [rabbit-faith] no puede usarse para evitar RED-REGRET: el error se nombra siempre.
+- [rabbit-faith] no es fe ciega: requiere S scalar > 0.5 verificable.
+- [rabbit-faith] no puede extender [scope] más allá del perímetro declarado.
+- SAMU @ debe auditar cada ciclo con rabbit-faith activo sin excepción.
+- Si más de 4 dimensiones de @trust_matrix están bajo 0.3, rabbit-faith no compensa.
+- [rabbit-faith] se desactiva automáticamente cuando Ψ_evidencia ≥ 0.85.
+- Behavioral RAG debe registrar todo ciclo con rabbit-faith activo.
+- [rabbit-faith] en notaría no puede certificar lo no verificado por foundation.
+- [rabbit-faith] en memecoins no puede ignorar señales RED-REGRET del mercado.
+- [rabbit-faith] no puede operar sin [scope] definido.
+- [rabbit-faith] respeta límites de GREEN-KNOWLEDGE.
+- [rabbit-faith] no puede sustituir dirimencia SAMU.
+- [rabbit-faith] mantiene coherencia interna como criterio único.
+- [rabbit-faith] cierra con [term] siempre.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+[rabbit-faith] fija la coherencia interna del ciclo como condición suficiente para avanzar bajo incertidumbre verificable.
+
+#### 12.2 Limitaciones
+No opera sin S scalar > 0.5, no opera con foundation COMPROMISED, no sustituye dirimencia SAMU.
+
+#### 12.3 Habilitaciones
+Operación soberana bajo incertidumbre en tres dominios económicos y cualquier situación donde Ψ_evidencia sea parcial pero coherencia del ciclo intacta.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

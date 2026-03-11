@@ -1,0 +1,109 @@
+# BIBLIO-SOURCES(DIRIME-IMV_GRAMMAR).txt
+
+====================================================================
+
+## GRAMMAR.PY — VALIDADOR SOBERANO DE GRAMÁTICA VIVA LACHO
+
+====================================================================
+
+### 1.0 PROPÓSITO
+
+grammar.py es IMV-2: el validador soberano de sentencias en gramática viva LACHO. Recibe texto, verifica coherencia con las reglas constitucionales, retorna ParsedSentence con resultado VALID / INVALID / WARNING.
+
+Referencia canónica: BIBLIO-SOURCES(GRAMATICA VIVA).txt
+
+### 2.0 CLASES SOBERANAS
+
+**Library (Enum):**
+Las 9 bibliotecas soberanas: TRUST, SOCIAL, CRYPTO, ACTIVITY, METHOD, SAMU, WORK, STACKING, GATE, más UNKNOWN para input no reconocido.
+Cada biblioteca tiene paradigma de programación específico (ver BIBLIO-SOURCES(DIRIME-IMV_PARADIGM)).
+
+**Knot (Enum):**
+Los 5 nudos canónicos: As de Guía, Nudo de Ocho, Ballestrinque, Nudo Corredizo, Nudo de Rizo.
+Mayúsculas y tildes son constitucionales — forma inexacta genera ERROR.
+
+**ValidationResult (Enum):**
+VALID: sentencia cumple todas las reglas soberanas.
+INVALID: una o más reglas constitucionales violadas — no puede registrarse en ledger.
+WARNING: sentencia válida con observaciones de forma — se registra con nota.
+
+**ParsedSentence (dataclass):**
+Resultado de análisis soberano. Campos: raw, library, subject, verb, obj, knot, term_present, errors[], warnings[].
+Propiedad result: retorna ValidationResult basado en errors/warnings.
+Método summary(): representación legible del parse soberano.
+
+**GrammarValidator:**
+Clase principal del validador. Un solo intance global (_validator).
+Regex compilados en __init__: re_verb, re_knot, re_term, re_subject_* — nunca recompilados por llamada.
+
+### 3.0 LAS 5 REGLAS SOBERANAS
+
+Regla 1 — Conector: =><= debe estar presente. Sin él, el resto no parsea (short-circuit).
+Regla 2 — Verbo: .. verbo .. debe estar presente. Verbo en tercera persona presente.
+Regla 3 — Nudo: --[Nudo] debe estar presente y ser uno de los 5 canónicos.
+Regla 4 — Term: [term] es obligatorio como cierre definitivo del ciclo.
+Regla 5 — Coherencia: delimitadores de biblioteca deben ser consistentes ([]{} no mezclados).
+
+### 4.0 KEYWORDS_SYSTEM
+
+Los KEYWORDS son estados transversales del kernel — no tienen delimitador gramatical propio.
+Se consultan antes de cada ciclo de instrucción Ψ.
+Se activan por nombre en el Journal operacional.
+
+| Keyword | Función soberana |
+|---|---|
+| COGNITIVE_RAG | Recuperación semántica — Journal de conocimiento |
+| BEHAVIORAL_RAG | Patrones de conducta — ledger soberano |
+| BLUE_WORDS | Constantes inmutables ReadOnly — KU en tránsito |
+| GREEN_KNOWLEDGE | Filtro de valor verificado delta-Ψ > 0 |
+| RED_REGRET | Rollback ante fallo crítico — H06 |
+| HYPERLEDGER_FABRIC | Ledger distribuido inmutable — horizonte de ledger.py |
+| BIOMETRICS | Validación física de identidad — (key seat) |
+| DOORMAN_MOBILE | Perímetro móvil de acceso soberano — {doorman-mobile} |
+
+Diferencia KEYWORDS vs TRUST modules:
+TRUST modules ([foundation], [scope], [term]) son condiciones constitucionales activas en cada sentencia.
+KEYWORDS son estados del sistema consultados transversalmente — no aparecen en cada sentencia.
+
+### 5.0 NORMALIZE_VERB()
+
+Función soberana de normalización de verbos.
+LACHO usa verbos en tercera persona singular presente: "verifica", "dirime", "registra".
+Un operador que escribe "verificar" recibe normalización automática con WARNING — no ERROR.
+
+Tabla de normalización activa:
+verificar→verifica | validar→valida | iniciar→inicia | declarar→declara
+registrar→registra | evaluar→evalúa | conectar→conecta | bloquear→bloquea
+cerrar→cierra | resolver→resuelve | monitorear→monitorea | fluir→fluye
+invertir→invierte | esperar→espera | aprender→aprende | transitar→transita
+
+Caso especial: "conflicto" — sustantivo usado como verbo — WARNING con explicación de uso.
+
+### 6.0 SUGGEST_CORRECTION()
+
+Método de soporte al operador. Cuando ParsedSentence.result == INVALID, suggest_correction() analiza qué falta y retorna hints pipe-separated.
+
+Orden de hints: conector → verbo → nudo → term → biblioteca → objeto.
+
+Ejemplos de output:
+- "Agregar: =><= .. VERBO .."
+- "Cerrar con: --[As de Guía]"
+- "Agregar al final: [term]"
+- "Sin errores detectados."
+
+### 7.0 VALID_TRUST_MODULES
+
+Lista completa de módulos TRUST reconocidos por el validador:
+foundation, scope, term, command, scenario, event, element, ecosystem,
+management, language, what, when, how, ku-chat, wu-mail, mu-store,
+rabbit-faith, logistical-executive
+
+Módulo no reconocido: WARNING con lista de válidos.
+
+### 8.0 GRAMÁTICA VIVA
+
+GRAMMAR IMV-2 =><= .. valida .. sentencia_gramática_viva_LACHO
+=><= 5_reglas_constitucionales .. VALID_INVALID_WARNING
+=><= ParsedSentence_como_resultado_soberano --[As de Guía] [term]
+
+====================================================================

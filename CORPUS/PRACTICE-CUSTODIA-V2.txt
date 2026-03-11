@@ -1,0 +1,29 @@
+# PRACTICE-CUSTODIA-V2
+# 15 sentencias · dominio CUSTODIA MÓVIL · [term]
+
+## GRUPO 1 — VERIFICACIÓN DE IDENTIDAD (As de Guía)
+TRUST FOUNDATION =><= .. verifica .. identidad_operador_custodia --[As de Guía] [term]
+CRYPTO (key seat) =><= .. certifica .. acceso_dispositivo_movil --[As de Guía] [term]
+WORK {actuator} =><= .. ejecuta .. verificacion_biometrica_activa --[As de Guía] [term]
+
+## GRUPO 2 — PROTECCIÓN DE ACTIVO (Nudo de Ocho)
+CRYPTO (shield seat) =><= .. protege .. wallet_custodia_soberana --[Nudo de Ocho] [term]
+STACKING UF[H52] =><= .. inmutabiliza .. registro_custodia_activo --[Nudo de Ocho] [term]
+TRUST FOUNDATION =><= .. sostiene .. contrato_custodia_sellado --[Nudo de Ocho] [term]
+
+## GRUPO 3 — ACCESO EN TENSIÓN (Ballestrinque)
+SAMU @ =><= .. audita .. solicitud_acceso_custodia_pendiente --[Ballestrinque] [term]
+GATE UF[H06] =><= .. filtra .. acceso_disputado_activo --[Ballestrinque] [term]
+TRUST FOUNDATION =><= .. verifica .. credencial_custodia_dudosa --[Ballestrinque] [term]
+
+## GRUPO 4 — ACCESO BLOQUEADO (Nudo Corredizo)
+WORK {brake} =><= .. detiene .. acceso_no_autorizado_custodia --[Nudo Corredizo] [term]
+GATE UF[H05] =><= .. bloquea .. intento_acceso_riesgoso --[Nudo Corredizo] [term]
+SAMU @ =><= .. dirime .. brecha_seguridad_custodia --[Nudo Corredizo] [term]
+
+## GRUPO 5 — ROTACIÓN DE CICLO CUSTODIA (Nudo de Rizo)
+SAMU #set =><= .. dirime .. cierre_ciclo_custodia_semanal --[Nudo de Rizo] [term]
+ACTIVITY UF[H52] =><= .. cristaliza .. rotacion_custodia_completada --[Nudo de Rizo] [term]
+STACKING UF[H48] =><= .. preserva .. historial_custodia_periodo --[Nudo de Rizo] [term]
+
+[term] :: activo · [seal of secrecy] :: activo

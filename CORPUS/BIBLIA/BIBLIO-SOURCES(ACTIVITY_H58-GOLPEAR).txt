@@ -1,0 +1,267 @@
+# BIBLIO-SOURCES(ACTIVITY_H58-GOLPEAR).txt
+
+====================================================================
+
+## 💥 ACTIVITY UF[H58] — GOLPEAR / EJECUTAR · ACCIÓN SOBERANA DIRECTA
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+UF[H58] es el módulo ACTIVITY que gobierna ciclos de ejecución directa soberana: el estado donde el sistema actúa con golpe verificado, decisivo y trazable sobre el objetivo declarado.
+
+#### 1.2 El golpe soberano como acto preparado, no impulsivo
+UF[H58] es el último eslabón de una cadena que comenzó en UF[H01] y pasó por SAMU @ completo.
+
+#### 1.3 H58 como fundamento hexagramático
+H58 (Lo Sereno / Dui): lago sobre lago — la alegría de la acción soberana ejecutada. El lago que refleja sin distorsión. La ejecución que es serena porque fue completamente preparada antes del golpe.
+
+#### 1.4 Los tres criterios del golpe soberano
+1. [command] emitido y verificado.
+2. Dirimencia SAMU @ completada.
+3. GATE_H06 resuelto — conflicto procesado.
+
+#### 1.5 El riesgo de UF[H58] prematuro
+El golpe antes de la preparación completa es el error más costoso en LACHO — activa RED-REGRET con daño real en WORK.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Condición de violación primaria
+UF[H58] ejecutado sin los tres criterios completos — golpe soberanamente incompleto.
+
+#### 2.2 Condición de violación secundaria
+UF[H58] repetido sobre el mismo objetivo sin nuevo ciclo de preparación — golpe habitual que pierde la serenidad soberana de Dui.
+
+#### 2.3 Señal de alerta
+Behavioral RAG detectando patrón de ejecuciones con delta negativo consistente — sistema golpeando sin preparación adecuada.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 MODOS DE ACTIVACIÓN
+
+STRIKE_READY: verificación final pre-ejecución. Los tres criterios confirmados. {brake} disponible.
+- STRIKE_EXECUTE: ejecución del golpe soberano. {actuator} activado. Trazabilidad completa activa.
+- STRIKE_VERIFY: verificación post-golpe del resultado. ¿El impacto fue el esperado? ¿Daño colateral?
+- STRIKE_ADJUST: ajuste soberano ante resultado divergente — no es RED-REGRET todavía, es calibración.
+- STRIKE_CLOSE: cierre del ciclo con [term] y archivo en Behavioral RAG del patrón de ejecución.
+
+#### 3.2 RELACIÓN CON DOMINIOS ECONÓMICOS
+
+MEMECOINS: UF[H58] como ejecución de orden de mercado ya dirimida — el momento del trade soberano.
+- NOTARÍA: UF[H58] como acto de certificación final — la firma soberana del documento verificado.
+- CUSTODIA: UF[H58] como ejecución de transferencia de custodia — el acto irreversible de la wallet.
+
+#### 3.3 Distinción de {actuator} (WORK)
+{actuator} es la herramienta física de ejecución; UF[H58] es el ciclo ACTIVITY que autoriza y gestiona el acto de ejecutar.
+
+#### 3.4 La serenidad de H58 como señal soberana
+La ejecución que necesita adrenalina no fue suficientemente preparada. UF[H58] soberano es tranquilo porque el trabajo previo fue completo.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [command] (TRUST)
+STRIKE_READY verifica que [command] esté emitido y verificado antes de ejecutar.
+
+#### 4.2 Con SAMU (@)
+STRIKE_READY requiere dirimencia SAMU @ completada como segundo criterio soberano.
+
+#### 4.3 Con GATE_H06 (Conflicto/Resolución)
+GATE_H06 resuelto es tercer criterio — conflicto procesado antes de ejecución.
+
+#### 4.4 Con {actuator} (WORK)
+{actuator} es activado por STRIKE_EXECUTE para materializar el golpe soberano.
+
+#### 4.5 Con {brake} (WORK)
+{brake} está disponible durante STRIKE_READY como última línea de defensa.
+
+#### 4.6 Con RED-REGRET (SAMU)
+STRIKE_ADJUST puede escalar a RED-REGRET si el resultado diverge significativamente.
+
+---
+
+### 5.0 ESTADOS DEL MÓDULO
+
+#### 5.1 STRIKE_STANDBY
+Sistema listo para ejecución, esperando cumplimiento de tres criterios.
+
+#### 5.2 STRIKE_READYING
+Verificación final de los tres criterios soberanos. {brake} en modo de espera.
+
+#### 5.3 STRIKE_EXECUTING
+Ejecución activa del golpe soberano. {actuator} operando.
+
+#### 5.4 STRIKE_VERIFYING
+Verificación post-ejecución del resultado alcanzado.
+
+#### 5.5 STRIKE_ADJUSTING
+Ajuste soberano ante resultado divergente del esperado.
+
+#### 5.6 STRIKE_CLOSING
+Cierre del ciclo con [term] y archivo del patrón de ejecución.
+
+#### 5.7 STRIKE_FAILED
+Ejecución fallida o con daño colateral crítico.
+
+#### 5.8 STRIKE_PREMATURE
+Ejecución sin preparación completa — violación soberana grave.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Protege d₁ [foundation]
+STRIKE_READY protege [foundation] verificando criterios antes de ejecución.
+
+#### 6.2 Impacta d₆ [command]
+STRIKE_EXECUTE materializa [command] soberano en acción física.
+
+#### 6.3 Enriquece d₈ [ecosystem]
+Ejecuciones exitosas enriquecen el ecosistema con resultados verificables.
+
+#### 6.4 Afecta d₇ [command]
+STRIKE_ADJUST puede generar nuevo [command] de corrección.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 STRIKE_READY verificando criterios
+```
+!!Activity!! UF_H58 =><= .. ready .. $$three_criteria_verified$$ --[As de Guía] [term]
+```
+
+#### 7.2 STRIKE_EXECUTE ejecutando golpe
+```
+!!Activity!! UF_H58 =><= .. execute .. $$sovereign_strike_decisive$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.3 STRIKE_VERIFY verificando resultado
+```
+!!Activity!! UF_H58 =><= .. verify .. $$strike_result_assessment$$ --[Ballestrinque] [term]
+```
+
+#### 7.4 UF[H58] en dominio memecoins
+```
+!!Activity!! UF_H58 =><= .. trade .. $$market_order_executed$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.5 UF[H58] en dominio notaría
+```
+!!Activity!! UF_H58 =><= .. certify .. $$document_final_signature$$ --[Nudo de Rizo] [term]
+```
+
+#### 7.6 UF[H58] en dominio custodia
+```
+!!Activity!! UF_H58 =><= .. transfer .. $$custody_wallet_operation$$ --[As de Guía] [term]
+```
+
+#### 7.7 STRIKE_CLOSE cerrando ciclo
+```
+!!Activity!! UF_H58 =><= .. close .. $$execution_cycle_complete$$ --[Nudo de Ocho] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+STRIKE_READY — preparación completa verificada, el nudo que garantiza ejecución soberana.
+
+#### 8.2 Nudo de Ocho
+STRIKE_EXECUTING — golpe decisivo en acción, el nudo que materializa la decisión soberana.
+
+#### 8.3 Nudo Corredizo
+STRIKE_PREMATURE — ejecución incompleta, el nudo que se desliza hacia el error costoso.
+
+#### 8.4 Ballestrinque
+STRIKE_VERIFYING — tensión entre expectativa y resultado, el nudo que evalúa el impacto.
+
+#### 8.5 Nudo de Rizo
+STRIKE_CLOSING — cierre del ciclo ejecutivo, el nudo que concluye la acción soberana.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+1. StrikeReady
+   - Verificación de [command] emitido.
+   - Confirmación de dirimencia SAMU @.
+   - Verificación de GATE_H06 resuelto.
+   - Activación de {brake} disponible.
+
+2. StrikeExecute
+   - Activación de {actuator}.
+   - Ejecución del golpe soberano.
+   - Trazabilidad completa activa.
+
+3. StrikeVerify
+   - Evaluación del resultado.
+   - Detección de daño colateral.
+   - Comparación con expectativa.
+
+4. StrikeAdjust
+   - Ajuste ante resultado divergente.
+   - Calibración sin RED-REGRET si es posible.
+   - Preparación para siguiente ciclo.
+
+5. StrikeClose
+   - Cierre con [term] declarado.
+   - Archivo en Behavioral RAG.
+   - Actualización de patrones.
+
+6. StrikeRecover
+   - Recuperación ante STRIKE_FAILED.
+   - Activación de RED-REGRET si es necesario.
+   - Intervención de {brake}.
+
+---
+
+### 10.0 MÉTRICAS
+
+- Ratio STRIKE_EXECUTE vs STRIKE_FAILED.
+- Tiempo promedio de verificación STRIKE_READY.
+- Delta entre resultado esperado y real.
+- Frecuencia de STRIKE_ADJUST por ejecución.
+- Tiempo de recuperación ante STRIKE_FAILED.
+
+---
+
+### 11.0 REGLAS
+
+- Los tres criterios son obligatorios para STRIKE_EXECUTE.
+- STRIKE_PREMATURE activa RED-REGRET automáticamente.
+- {actuator} solo se activa con STRIKE_EXECUTE verificado.
+- STRIKE_VERIFY es obligatorio después de toda ejecución.
+- STRIKE_FAILED requiere intervención inmediata.
+- La serenidad de Dui es señal de preparación completa.
+- Behavioral RAG aprende de cada ciclo de ejecución.
+- {brake} está disponible durante STRIKE_READY.
+- STRIKE_CLOSE requiere [term] declarado.
+- El golpe soberano es tranquilo porque el trabajo previo fue completo.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+UF[H58] fija como invariante la ejecución directa soberana como condición de materialización de decisiones — el sistema que actúa solo después de completa preparación ejecuta con serenidad y eficacia.
+
+#### 12.2 Limitaciones
+No puede ejecutar sin los tres criterios, no puede ser impulsivo, no puede omitir verificación post-ejecución, no puede repetir golpe sin nueva preparación.
+
+#### 12.3 Habilitaciones
+Materialización de [command] soberano, ejecución verificada y trazable, serenidad en la acción, patrones de ejecución cristalizables, integración con {actuator} WORK.
+
+#### 12.4 Principio constitutivo final
+Como el lago sereno que refleja sin distorsión: UF[H58] representa la sabiduría de la acción completamente preparada. La ejecución soberana no necesita adrenalina porque la certeza viene de la preparación, no del momento. El golpe que es sereno es el golpe que fue completamente pensado antes de ser ejecutado.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

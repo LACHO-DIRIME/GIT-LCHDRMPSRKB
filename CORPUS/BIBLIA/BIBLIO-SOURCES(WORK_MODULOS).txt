@@ -1,0 +1,420 @@
+# BIBLIO-SOURCES(WORK_MODULOS).txt
+
+====================================================================
+
+## ⚙️ WORK — EJECUCIÓN FÍSICA SOBERANA CON FRICCIÓN REAL
+
+---
+
+### 1.0 DEFINICIÓN DE WORK COMO BIBLIOTECA
+
+#### 1.1 Por qué WORK es la capa final y más irreversible
+WORK es la biblioteca de ejecución física — el contacto soberano del sistema con el mundo real. Toda acción de WORK es irreversible hasta nuevo [command] soberano.
+
+#### 1.2 La fricción física como característica constitutiva
+WORK tiene consecuencias que TRUST, SOCIAL y CRYPTO no tienen — toca el mundo real. La ejecución física implica fricción, costo energético y consecuencias materiales verificables.
+
+#### 1.3 El .worker como forma canónica de ejecución
+.worker es el binario AOT para producción crítica. Compilado Ahead-of-Time, verificado, irreversible por naturaleza. Es la forma soberana de ejecución WORK.
+
+#### 1.4 Relación entre GATE y WORK
+GATE autoriza el momento; WORK ejecuta la acción. Sin GATE, WORK no puede activarse soberanamente. GATE establece cuándo; WORK establece cómo.
+
+#### 1.5 Tipos de archivo WORK
+.rs, .py, .worker, .runner, .blue, .stack. Cada tipo tiene su propósito en la cadena de ejecución soberana.
+
+---
+
+### 2.0 DOCUMENTO POR MÓDULO
+
+#### 2.1 {masking folder} — Sandbox Hardware
+
+Definición técnica: Sandbox de hardware — aislamiento físico de procesos críticos que contiene ejecución peligrosa dentro de entorno controlado.
+
+Jurisdicción exclusiva:
+- Contención física de procesos WORK críticos.
+- Aislamiento de hardware para ejecución no confiable.
+- Creación de entornos de prueba seguros.
+
+Límites:
+- No puede contener procesos que requieren hardware real.
+- No puede reemplazar verificación de TRUST.
+- No puede operar sin supervisión de SAMU @.
+
+Estados operativos:
+- MASK_ISOLATED: sandbox activo, proceso contenido.
+- MASK_MONITORING: monitoreo de proceso en sandbox.
+- MASK_BREACHED: violación detectada, RED-REGRET activo.
+- MASK_CLEANED: sandbox limpio, listo para nuevo uso.
+
+Relación con GATE: Recibe autorización de GATE para activar sandbox. Sin GATE, no hay ejecución contenida.
+
+Condición de violación: Proceso crítico ejecutado fuera de sandbox sin autorización soberana.
+
+#### 2.2 {door afternoon human out} — Salida Física Sellada
+
+Definición técnica: La salida sellada al mundo físico que materializa WU en acción física verificada.
+
+Jurisdicción exclusiva:
+- Materialización de resultados del sistema en mundo real.
+- Ejecución de acciones físicas autorizadas por GATE.
+- Sellado de resultados con (seal of secrecy).
+
+Límites:
+- No puede ejecutar sin autorización de UF[H06] de GATE.
+- No puede modificar resultados WU ya emitidos.
+- No puede operar fuera de [scope] declarado.
+
+Estados operativos:
+- DOOR_CLOSED: salida física cerrada, esperando autorización.
+- DOOR_OPENING: preparación para materialización física.
+- DOOR_EXECUTING: acción física en curso, WU materializándose.
+- DOOR_SEALED: acción completada, resultado sellado.
+
+Relación con GATE: Conecta directamente con UF[H06] de GATE. GATE resuelve, WORK materializa.
+
+Condición de violación: Ejecución física sin autorización de UF[H06] o sin sellado de resultado.
+
+#### 2.3 {doorman-mobile} — Agente Móvil de Custodia
+
+Definición técnica: Agente móvil de control de acceso en entorno de custodia que guarda el perímetro físico del dispositivo.
+
+Jurisdicción exclusiva:
+- Control de acceso físico a dispositivos de custodia.
+- Monitoreo perimetral en entorno móvil.
+- Detección de ACTOR_HOSTILE en hardware.
+
+Límites:
+- No puede reemplazar {concierge-desk} (opera en hardware, no en espacio relacional).
+- No puede acceder a contenido cifrado sin (shield seat).
+- No puede operar sin coordinación con BIOMETRICS.
+
+Estados operativos:
+- DOORMAN_PATROLLING: monitoreo perimetral activo.
+- DOORMAN_ALERT: intrusión detectada, SAMU @ notificado.
+- DOORMAN_BLOCKING: acceso bloqueado, verificación en curso.
+- DOORMAN_SECURE: perímetro seguro, monitoreo continuo.
+
+Relación con GATE: Recibe alertas de GATE sobre ACTOR_HOSTILE clasificado por {concierge-desk}.
+
+Condición de violación: Acceso físico permitido sin verificación BIOMETRICS o sin coordinación con {concierge-desk}.
+
+#### 2.4 {green-knowledge} — Árbol de Valor Verificado
+
+Definición técnica: Árbol de valor verificado — conocimiento que ha pasado el filtro GREEN (delta-Ψ > 0).
+
+Jurisdicción exclusiva:
+- Filtrado de conocimiento por valor soberano.
+- Validación de delta-Ψ > 0 como condición GREEN.
+- Preparación de conocimiento para STACKING.
+
+Límites:
+- No puede modificar criterio delta-Ψ (eso es TRUST).
+- No puede pasar conocimiento que no cumpla GREEN.
+- No puede operar sin supervisión de Behavioral RAG.
+
+Estados operativos:
+- GREEN_FILTERING: conocimiento siendo evaluado por delta-Ψ.
+- GREEN_PASSED: conocimiento aprobado, listo para STACKING.
+- GREEN_REJECTED: conocimiento rechazado, delta-Ψ ≤ 0.
+- GREEN_ARCHIVED: conocimiento archivado para referencia futura.
+
+Relación con GATE: Recibe conocimiento validado por GATE para filtrado GREEN.
+
+Condición de violación: Conocimiento no GREEN pasado a STACKING sin autorización soberana.
+
+#### 2.5 {brake} — Freno Físico Soberano
+
+Definición técnica: Freno físico soberano — mecanismo de interrupción de ejecución WORK ante violación detectada.
+
+Jurisdicción exclusiva:
+- Interrupción soberana de ejecución WORK.
+- Activación de kill-switch físico ante violación crítica.
+- Protección de hardware ante daño irreversible.
+
+Límites:
+- Solo puede activarse con autorización de SAMU @.
+- No puede usarse para interrumpir ejecución legítima.
+- No puede operar sin coordinación con RED-REGRET.
+
+Estados operativos:
+- BRAKE_STANDBY: freno en espera, monitoreo activo.
+- BRAKE_TRIGGERED: violación detectada, freno activado.
+- BRAKE_HOLDING: ejecución detenida, diagnóstico en curso.
+- BRAKE_RELEASED: freno liberado, sistema seguro.
+
+Relación con GATE: Puede activarse en cualquier fase de GATE si detecta violación crítica.
+
+Condición de violación: Uso de {brake} sin violación real detectada o sin autorización de SAMU @.
+
+#### 2.6 {actuator} — Motor de Ejecución Verificada
+
+Definición técnica: Motor de ejecución verificada — el componente que toca el mundo real con mandato soberano verificado.
+
+Jurisdicción exclusiva:
+- Materialización física de comandos WORK.
+- Verificación de mandato soberano antes de ejecución.
+- Ejecución con consecuencias físicas reales.
+
+Límites:
+- No puede ejecutar sin [command] soberano verificado.
+- No puede operar fuera de [scope] declarado.
+- No puede modificar resultados físicos ya ejecutados.
+
+Estados operativos:
+- ACTUATOR_READY: motor listo para ejecución.
+- ACTUATOR_EXECUTING: acción física en curso.
+- ACTUATOR_VERIFYING: verificación de resultado físico.
+- ACTUATOR_COMPLETE: ejecución completada, resultado verificado.
+
+Relación con GATE: Recibe autorización final de GATE para ejecutar acción física.
+
+Condición de violación: Ejecución física sin mandato soberano verificado o fuera de [scope].
+
+---
+
+### 3.0 {brake} COMO MÓDULO CRÍTICO
+
+#### 3.1 Es el único módulo WORK que puede detener WORK
+{brake} tiene autoridad soberana para interrumpir cualquier ejecución WORK ante violación detectada. Ningún otro módulo WORK puede detener la ejecución física.
+
+#### 3.2 Condiciones de activación soberana
+- Violación de [foundation] detectada en ejecución.
+- Activación de RED-REGRET por SAMU @.
+- Detección de ACTOR_HOSTILE en hardware.
+- Excedencia de [scope] en ejecución física.
+
+#### 3.3 Relación con RED-REGRET de SAMU @
+RED-REGRET activa {brake} automáticamente. {brake} es la manifestación física del RED-REGRET lógico. Sin {brake}, RED-REGRET no tendría efecto en mundo real.
+
+#### 3.4 Protocolo de activación ante violación crítica
+1. Detección de violación por SAMU @.
+2. Activación inmediata de {brake}.
+3. Interrupción de ejecución WORK.
+4. Diagnóstico de causa y alcance.
+5. Reporte a [management] con recomendación.
+
+---
+
+### 4.0 {doorman-mobile} EN CUSTODIA
+
+#### 4.1 Relación con BIOMETRICS como condición de activación
+{doorman-mobile} solo permite acceso físico con verificación BIOMETRICS exitosa. Sin BIOMETRICS, el acceso físico es bloqueado automáticamente.
+
+#### 4.2 Relación con BOT_MONITOR de {launch-bot}
+BOT_MONITOR reporta actividad sospechosa a {doorman-mobile}. {doorman-mobile} ajusta nivel de seguridad perimetral según reportes de BOT_MONITOR.
+
+#### 4.3 Relación con (shield seat) de CRYPTO
+(shield seat) proporciona blindaje criptográfico al perímetro físico. {doorman-mobile} opera en conjunto con (shield seat) para protección completa.
+
+#### 4.4 Relación con ACTOR_HOSTILE detectado por {concierge-desk}
+{concierge-desk} clasifica ACTOR_HOSTILE en espacio relacional; {doorman-mobile} bloquea su acceso físico. Operación coordinada entre capa SOCIAL y WORK.
+
+---
+
+### 5.0 {green-knowledge} COMO FILTRO SOBERANO
+
+#### 5.1 Criterio delta-Ψ > 0 como condición de GREEN
+delta-Ψ > 0 es la condición matemática para que conocimiento pase el filtro GREEN. Solo conocimiento que aumenta el valor soberano del sistema puede continuar.
+
+#### 5.2 Qué no pasa el filtro GREEN
+- Conocimiento con delta-Ψ ≤ 0 (no agrega valor).
+- Información duplicada o redundante.
+- Datos sin verificabilidad soberana.
+- Conocimiento que viola [foundation].
+
+#### 5.3 Relación con STACKING
+Lo que pasa GREEN puede cristalizar en STACKING. STACKING solo recibe conocimiento validado por {green-knowledge}.
+
+#### 5.4 Relación con Behavioral RAG y Cognitive RAG
+Behavioral RAG calibra el criterio delta-Ψ según patrones históricos. Cognitive RAG procesa conocimiento GREEN para optimización futura.
+
+---
+
+### 6.0 RELACIONES CON OTRAS CAPAS
+
+#### 6.1 Con GATE
+GATE autoriza el momento de ejecución; WORK materializa la acción. La secuencia GATE→WORK es indispensable para soberanía física.
+
+#### 6.2 Con TRUST []
+WORK ejecuta bajo condiciones de TRUST. [foundation], [scope], [term] son límites infranqueables para WORK.
+
+#### 6.3 Con SAMU @
+SAMU @ monitorea toda ejecución WORK. Puede activar {brake} ante violación. Coordina la seguridad física del sistema.
+
+#### 6.4 Con CRYPTO ()
+WORK usa (seal of secrecy) para sellar resultados físicos. (shield seat) protege el hardware durante ejecución.
+
+#### 6.5 Con SOCIAL {}
+{doorman-mobile} coordina con {concierge-desk} para seguridad física. {masking folder} complementa {masking} de SOCIAL.
+
+---
+
+### 7.0 ESTADOS DE WORK
+
+#### 7.1 WORK_STANDBY
+Sistema listo para ejecución física. Esperando autorización de GATE.
+
+#### 7.2 WORK_EXECUTING
+Acción física en curso. {actuator} activo, consecuencias reales ocurriendo.
+
+#### 7.3 WORK_BRAKED
+Ejecución detenida por {brake}. Violación detectada, SAMU @ en diagnóstico.
+
+#### 7.4 WORK_COMPLETED
+Ejecución completada exitosamente. Resultados sellados, sistema seguro.
+
+#### 7.5 WORK_VIOLATED
+Violación de seguridad detectada. RED-REGRET activo, [management] notificado.
+
+---
+
+### 8.0 RELACIÓN CON @trust_matrix
+
+#### 8.1 Impacto en dimensiones
+WORK afecta principalmente:
+- d₂ [scope]: ejecución dentro de límites declarados.
+- d₆ [command]: ejecución de mandatos soberanos.
+- d₈ [ecosystem]: impacto físico en entorno del sistema.
+
+#### 8.2 Protección de la matriz
+WORK protege d₅ [foundation] al ejecutar solo bajo condiciones verificadas. {brake} protege todas las dimensiones ante violación.
+
+#### 8.3 Aprendizaje de Behavioral RAG
+Patrones de ejecución exitosa calibran futuras decisiones de WORK y umbrales de {brake}.
+
+---
+
+### 9.0 GRAMÁTICA VIVA
+
+#### 9.1 {masking folder} conteniendo proceso crítico
+```
+[Work] masking_folder =><= .. isolate .. critical_process --[As de Guía] [term]
+```
+
+#### 9.2 {door afternoon human out} materializando WU
+```
+[Work] door_afternoon_human_out =><= .. execute .. WU_physical --[Nudo de Ocho] [term]
+```
+
+#### 9.3 {doorman-mobile} bloqueando acceso no autorizado
+```
+[Work] doorman_mobile =><= .. block .. unauthorized_access --[Nudo Corredizo] [term]
+```
+
+#### 9.4 {green-knowledge} filtrando por delta-Ψ
+```
+[Work] green_knowledge =><= .. filter .. knowledge_delta_psi --[Ballestrinque] [term]
+```
+
+#### 9.5 {brake} activado por violación crítica
+```
+[Work] brake =><= .. trigger .. critical_violation --[Nudo Corredizo] [term]
+```
+
+#### 9.6 {actuator} ejecutando acción física
+```
+[Work] actuator =><= .. execute .. physical_action --[As de Guía] [term]
+```
+
+#### 9.7 WORK completo con resultados sellados
+```
+[Work] work_modules =><= .. complete .. sealed_results --[Nudo de Ocho] [term]
+```
+
+---
+
+### 10.0 NUDOS ASOCIADOS
+
+#### 10.1 As de Guía
+{actuator} en ACTUATOR_EXECUTING — acción física con dirección clara y mandato soberano.
+
+#### 10.2 Nudo de Ocho
+{door afternoon human out} en DOOR_SEALED — ejecución completada, resultado sellado, ciclo cerrado.
+
+#### 10.3 Nudo Corredizo
+{brake} en BRAKE_TRIGGERED — interrupción necesaria, daño evitado, sistema protegido.
+
+#### 10.4 Ballestrinque
+{green-knowledge} filtrando conocimiento — tensión entre valor agregado y criterio soberano.
+
+#### 10.5 Nudo de Rizo
+Unión entre GATE y WORK — autorización temporal materializada en acción física irreversible.
+
+---
+
+### 11.0 PROTOCOLOS OPERATIVOS
+
+1. MaskingIsolate ({masking folder})
+   - Creación de sandbox hardware para proceso crítico.
+   - Aislamiento físico de ejecución no confiable.
+   - Monitoreo continuo de proceso contenido.
+
+2. DoorExecute ({door afternoon human out})
+   - Materialización física de WU autorizado.
+   - Verificación de mandato soberano antes de ejecución.
+   - Sellado de resultados con (seal of secrecy).
+
+3. DoormanPatrol ({doorman-mobile})
+   - Monitoreo perimetral de dispositivo de custodia.
+   - Verificación BIOMETRICS para acceso físico.
+   - Coordinación con {concierge-desk} para seguridad.
+
+4. GreenFilter ({green-knowledge})
+   - Evaluación de conocimiento por criterio delta-Ψ.
+   - Filtrado de conocimiento no GREEN.
+   - Preparación de conocimiento aprobado para STACKING.
+
+5. BrakeTrigger ({brake})
+   - Activación de freno físico ante violación.
+   - Coordinación con RED-REGRET de SAMU @.
+   - Diagnóstico de causa y alcance de violación.
+
+6. ActuatorExecute ({actuator})
+   - Ejecución física con mandato soberano verificado.
+   - Verificación de [scope] antes de acción.
+   - Registro de consecuencias físicas reales.
+
+---
+
+### 12.0 MÉTRICAS
+
+- Tiempo promedio de ejecución por tipo de acción WORK.
+- Frecuencia de activación de {brake} por violación.
+- Ratio de procesos contenidos exitosamente en {masking folder}.
+- Tasa de conocimiento aprobado por filtro GREEN.
+- Número de accesos bloqueados por {doorman-mobile}.
+- Delta-Ψ promedio del conocimiento procesado.
+- Frecuencia de ejecuciones físicas completadas exitosamente.
+
+---
+
+### 13.0 REGLAS
+
+- Toda ejecución WORK requiere autorización previa de GATE.
+- {brake} solo puede activarse con autorización de SAMU @.
+- {doorman-mobile} requiere verificación BIOMETRICS para acceso físico.
+- {green-knowledge} solo pasa conocimiento con delta-Ψ > 0.
+- {actuator} no puede ejecutar sin [command] soberano verificado.
+- {masking folder} debe contener todo proceso crítico no verificado.
+- {door afternoon human out} debe sellar todos los resultados físicos.
+- RED-REGRET activa {brake} automáticamente.
+- Behavioral RAG calibra criterio delta-Ψ según patrones históricos.
+- Ningún módulo WORK puede operar fuera de [scope] declarado.
+
+---
+
+### 14.0 CIERRE
+
+#### 14.1 Invariante
+WORK fija como invariante la ejecución física soberana con fricción real — el contacto irreversible del sistema con el mundo material bajo condiciones verificadas y con mecanismos de protección física.
+
+#### 14.2 Limitaciones
+No puede ejecutar sin autorización de GATE, no puede revertir consecuencias físicas, no puede operar fuera de [scope], no puede modificar resultados ya ejecutados.
+
+#### 14.3 Habilitaciones
+Materialización soberana de resultados del sistema, protección física mediante {brake} y {doorman-mobile}, filtrado de valor mediante {green-knowledge}, aislamiento seguro mediante {masking folder}, ejecución verificada mediante {actuator}, sellado de resultados mediante (seal of secrecy).
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

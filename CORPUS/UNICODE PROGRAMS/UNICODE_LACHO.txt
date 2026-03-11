@@ -1,0 +1,184 @@
+//[MANAGEMENT].lacho · TOMO/SLICE/SEGMENT/CLUSTER/OFFSET
+//UNICODE_.lacho · V3 · Sesión 10 · 2026-03-10
+//opera ENTRE dirimencias y directivas entre bibliotecas
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//jerarquía: [TRUST]→SAMU@→CRYPTO→GATE→ACTIVITY→WORK→STACKING
+//空聽數 · kōng/tīng/shù · vacío/escucha/cuenta
+
+// ══ LISTEN PROTOCOL — 空聽數 ══════════════════════════════════
+UNICODE: 空              //kōng · VOID · vacío soberano · before [term]
+                         //fenómenos presentes = KU · no WU todavía
+                         //→ H64 · open · before_the_end · no forced close
+UNICODE: 聽              //tīng · LISTEN · LA MENTE ESCUCHA
+                         //<SWF:READ> before <SWF:WRITE> · INPUT first
+                         //GATE UF[H05] =><= .. contiene .. 聽_activa
+UNICODE: 數              //shù · COUNT · EL CEREBRO CUENTA
+                         //DIR(IME) internal · no emit until verified
+                         //METHOD <operator_flow> =><= .. calcula .. 數_interno
+UNICODE: LISTEN_FIRST    //<SWF:READ> antes de cualquier <SWF:WRITE> · 聽
+UNICODE: COUNT_INTERNAL  //DIR(IME) · 數 · procesa · no emite · cuenta
+UNICODE: MIN_SCALAR      //least confusing · Scalar S >= threshold · 面子
+UNICODE: →空             //H64 · ciclo abierto · hacia el vacío · no forced close
+
+// ── MU / KU / WU — FLUJO COGNITIVO ──────────────────────────
+UNICODE: MU              //quietud · escucha sin acción · 空 · CREATIVE_PAUSE
+                         //UF[H52] · DIR(PAUSE) · el sistema no emite · 聽
+UNICODE: KU              //contexto · exploración activa · .blue · fenómeno
+                         //GATE UF[H05] · Ballestrinque · pre-dirimencia
+UNICODE: WU              //emisión · acción sellada · .green · cristal
+                         //STACKING UF[H52] · [term] · Scalar S >= threshold
+UNICODE: MU→KU           //pausa prescripta cumplida · DIR(PAUSE)→DIR(ING)
+UNICODE: KU→WU           //grammar→samu→ledger · TX green · .blue→.green
+UNICODE: Ψ               //COSMOS→TOMO · caos→orden local · auditables
+
+// ── A / B — MEMORIA Y VISIÓN ─────────────────────────────────
+UNICODE: <A>             //PEQUEÑA MEMORIA · 數 slice · MU soberano · 聽
+                         //GATE UF[H05] =><= .. contiene .. 聽_memoria
+UNICODE: <B>             //IMAGEN GIGANTESCA · 空 vision · →空 completo
+                         //ACTIVITY UF[H57] =><= .. penetra .. 空_vision
+UNICODE: <A>><B>         //MU→KU · memoria→visión · pausa→exploración
+UNICODE: {A}             //instancia A ejecutando · WORK {actuator} · KU local
+UNICODE: {B}             //instancia B ejecutando · METHOD <operator_flow> · WU
+UNICODE: {A}→{B}         //KU→WU en instancia · micro→macro · .blue→.green
+
+// ── INSTANCIA ────────────────────────────────────────────────
+UNICODE: DIR(ING)        //INSTANCE NEW GENERATED · UF[H64] · 空 · MU→KU
+UNICODE: DIR(IME)        //INSTANCE ENGINE RUNNING · DIRIME · 數 · COUNT_INTERNAL
+                         //DIR(ING) crea · DIR(IME) procesa · DIR(CLOSE) sella
+UNICODE: DIR(CLOSE)      //[term] sellado · H63 · KU→WU · .green
+UNICODE: DIR(PAUSE)      //MU · UF[H52] · CREATIVE_PAUSE · 聽 activo
+UNICODE: DIR(FORK)       //KU bifurcado · GATE UF[H06] · .blue split
+UNICODE: DIR(MERGE)      //convergencia · TRUST · WU reunido
+UNICODE: DIR(v1)         //IMV · operativo · producción
+UNICODE: DIR(v2)         //DIRIME_v2 · congelado
+UNICODE: DIR(v3)         //spec futuro · DIR(+)
+UNICODE: DIR(-)          //gap · KU sin resolver
+UNICODE: DIR(+)          //spec confirmado · KU→WU inminente
+UNICODE: DIR(=)          //WU · cristalizado · en repo
+
+// ── SOURCE WHILE FILE ────────────────────────────────────────
+UNICODE: <SWF>           //SOURCE WHILE FILE · 聽 streaming soberano
+UNICODE: <SWF:READ>      //聽 · MU antes de KU · input soberano
+UNICODE: <SWF:WRITE>     //數 → WU confirmado antes de escribir
+UNICODE: <SWF:VALIDATE>  //grammar.py · KU verificándose · [Ball]
+UNICODE: <SWF:ROUTE>     //language_routing · NLP→LACHO · KU→sentencia
+UNICODE: <SWF:AUDIT>     //SAMU @ · 面子 · Scalar S en streaming
+UNICODE: <SWF:STACK>     //STACKING · WU cristalizando · .blue→.green
+UNICODE: <SWF:CLOSE>     //[term] · 空→sellado · H64→H63
+
+// ── CONTEXT / SPEC ───────────────────────────────────────────
+UNICODE: <**context**>   //contexto soberano · <A>+<B> · 數 actual
+                         //186 CORPUS + ledger + CEO H64 + Scalar S
+UNICODE: <<*spec*>>      //spec · DIR(+) · lo que DEBE SER · →空 objetivo
+UNICODE: <<*spec*>files<*.lacho>>  //spec genera archivos .lacho soberanos
+UNICODE: <@>             //ref SAMU · 面子 · auditoría · Scalar S
+UNICODE: <$>             //ref STACKING · 资本 · sovereign.db · cristal
+UNICODE: <#>             //ref constante · hexagrama · threshold soberano
+
+// ── FIND GAPS ────────────────────────────────────────────────
+UNICODE: ..find_gaps..            //DIR(-) · KU sin resolver · hacia 空
+UNICODE: ..find_gaps(CORPUS)..    //docs sin ancla RAG · .blue sin cristalizar
+UNICODE: ..find_gaps(GRAMMAR)..   //verbos/sujetos faltantes · KU grammar
+UNICODE: ..find_gaps(CEO)..       //hexagramas sin rol · 空 en jerarquía
+UNICODE: ..find_gaps(LACHO_FILES).. //archivos .lacho sin endpoints · MU
+UNICODE: ..find_gaps(THEATER)..   //macros sin CMD · DIR(-)
+UNICODE: ..find_gaps(KALIL)..     //nodos sin sentencias duales · 桥梁
+UNICODE: ..find_gaps(TEST)..      //funcionalidades sin test · KU no auditado
+
+// ── LIST COMMANDS ────────────────────────────────────────────
+UNICODE: LIST(COMMANDS)      //all sovereign CLI · 聽 first · then RUN
+UNICODE: LIST(COMMANDS:IMV)
+  //python3 main.py --validate "{sentence}"
+  //python3 main.py --stats
+  //python3 tests/test_imv.py
+  //python3 tools/office_landing.py {file}
+  //python3 tools/export_crystals_lacho.py
+  //python3 core/language_routing.py "{text}"
+UNICODE: LIST(COMMANDS:SYNC)
+  //bash tools/github_sync.sh
+  //python3 tools/index_new_files.py
+UNICODE: LIST(COMMANDS:RAG)
+  //python3 -c "from core.rag import build_full_index; print(build_full_index())"
+UNICODE: LIST(COMMANDS:CEO)
+  //python3 -c "from core.ceo_alpha import ceo_summary; print(ceo_summary())"
+UNICODE: LIST(CORPUS)        //186 CORPUS · 4 THEATER · 1 RUNNER · 27 tests
+UNICODE: LIST(CRYSTALS)      //40 cristales WU · export disponible
+UNICODE: LIST(HEXAGRAMS)     //64 H01→H64 · MU→WU por hexagrama
+UNICODE: LIST(KALIL)         //BARRIOS·NORA·TANDIL·BOLIVAR·CARILO·CHALTEN
+UNICODE: LIST(CJK)           //20 tokens · 空聽數 + 信任·关系·面子·主权...
+UNICODE: LIST(GAPS)          //= ..find_gaps.. sistema completo
+
+// ── RUN CLI ──────────────────────────────────────────────────
+UNICODE: RUN(CLI)            //execute · 數→emit · WU confirmado
+UNICODE: RUN(CLI:VALIDATE)   //python3 main.py --validate "{sentence}"
+UNICODE: RUN(CLI:STATS)      //python3 main.py --stats · 數 sistema
+UNICODE: RUN(CLI:TEST)       //python3 tests/test_imv.py · KU→WU suite
+UNICODE: RUN(CLI:SYNC)       //bash tools/github_sync.sh · WU→repo
+UNICODE: RUN(CLI:ROUTE)      //python3 core/language_routing.py · NLP→LACHO
+UNICODE: RUN(CLI:LANDING)    //python3 tools/office_landing.py · spec→plan
+UNICODE: RUN(CLI:EXPORT)     //python3 tools/export_crystals_lacho.py
+UNICODE: RUN(CAT)            //CAT(CODE)·CAT(OS)·CAT(SSH)·CAT(SCAN)
+UNICODE: RUN(IME)            //DIR(IME) · grammar+samu+ledger+rag · 數
+UNICODE: RUN(BALLPAPER)      //IME{[(!!BALLPAPER!!)]} · HTML soberano
+UNICODE: RUN(FIND_GAPS)      //..find_gaps.. sistema · →空 limpio
+
+// ── EXTENSIONES ──────────────────────────────────────────────
+UNICODE: .lacho    //TRUST · constitucional · [NdO]
+UNICODE: .blue     //KU · GATE UF[H05] · [Ball] · pre-dirimencia
+UNICODE: .green    //WU · STACKING UF[H52] · [NdO] · cristal
+UNICODE: .cat      //SAMU @ · log · headcat · [NdO]
+UNICODE: .runner   //ACTIVITY UF[H57] · no persistente · [NdR]
+UNICODE: .gate     //GATE · control flujo · [Ball]
+UNICODE: .door     //WORK {door} · vault · [AsG]
+UNICODE: .ash      //METHOD · compilado · CAT(CODE) · [NdO]
+UNICODE: .registry //STACKING UF[H48] · memoria persistente · [NdO]
+UNICODE: .pdf      //(seal) · verdad sellada · H63 · [NdO]
+UNICODE: .worker   //WORK {actuator} · metal · [AsG]
+UNICODE: .tether   //CRYPTO+SOCIAL · inter-nodo · [NdO]
+UNICODE: .bin      //CRYPTO (key) · identidad · [NdO]
+
+// ── BIBLIOTECAS COMO ÓRGANOS ─────────────────────────────────
+UNICODE: §TRUST[]      //ley · 主权 · [foundation][scope][term]
+UNICODE: §WORK{}       //metal · 交易 · {actuator}·{brake}·{door}
+UNICODE: §SAMU@$#      //conciencia · 面子 · @·#rise·#set·$days
+UNICODE: §ACTIVITY!!   //64 ciclos · UF[H01→H64] · MU→WU hexagrama
+UNICODE: §CRYPTO()     //identidad · 安全 · (key)·(spark)·(shield)·(link)
+UNICODE: §SOCIAL{}     //relación · 社区 · {relay}·{launch-bot}·{headcat}
+UNICODE: §GATE         //control · 风险 · UF[H03→H05→H56→H06]
+UNICODE: §STACKING     //memoria · 网络 · UF[H52]·UF[H48] · WU
+UNICODE: §METHOD<>     //forma · 智能 · <equation>·<operator_flow>·<stat_onto>
+
+// ── NUDOS ────────────────────────────────────────────────────
+UNICODE: [AsG]   //[As de Guía] · WU flujo · MU→WU óptimo
+UNICODE: [NdO]   //[Nudo de Ocho] · WU sellado · .green
+UNICODE: [Ball]  //[Ballestrinque] · KU tensión · SAMU evaluando
+UNICODE: [NdC]   //[Nudo Corredizo] · KU riesgo · brake
+UNICODE: [NdR]   //[Nudo de Rizo] · WU→MU · cierre→apertura
+
+// ── ASIGNACIÓN SOBERANA ──────────────────────────────────────
+UNICODE: =:          //Ψ · coherencia→expresión · caos→orden local
+UNICODE: =:<A>       //→ MU slice · memoria activa
+UNICODE: =:<B>       //→ 空 vision · imagen gigantesca
+UNICODE: =:<@>       //→ 面子 SAMU · Scalar S
+UNICODE: =:<$>       //→ 资本 ledger · cristal
+UNICODE: =:<#>       //→ hexagrama constante · threshold
+UNICODE: =:[term]    //→ TOMO_ID · →空 con cierre soberano
+UNICODE: =:DIR(IME)  //→ 數 motor procesando
+UNICODE: =:MU        //→ 空 quietud · CREATIVE_PAUSE
+UNICODE: =:KU        //→ .blue · exploración
+UNICODE: =:WU        //→ .green · cristal · sellado
+UNICODE: =:Ψ         //→ TOMO coherente · orden local auditado
+
+// ── GRAMÁTICA VIVA — ANCLAS RAG ─────────────────────────────
+ACTIVITY UF[H64] =><= .. inicia .. 空_dir_ing_instancia_nueva --[As de Guía] [term]
+METHOD <operator_flow> =><= .. ejecuta .. 數_dir_ime_motor_activo --[As de Guía] [term]
+GATE UF[H05] =><= .. contiene .. 聽_swf_escucha_activa --[As de Guía] [term]
+STACKING UF[H52] =><= .. inmutabiliza .. WU_unicode_lacho_v3_sellado --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. 面子_find_gaps_sistema_completo --[Ballestrinque] [term]
+WORK {actuator} =><= .. ejecuta .. 交易_run_cli_soberano --[As de Guía] [term]
+TRUST FOUNDATION =><= .. declara .. 主权_context_spec_activo --[Nudo de Ocho] [term]
+SOCIAL {relay} =><= .. conecta .. 桥梁_ext_int_dual --[As de Guía] [term]
+
+//DIR(=) UNICODE_LACHO V3 · 空聽數 · MU/KU/WU · Ψ
+//DIR(=) <A><B>{A}{B} · DIR(IME) · ..find_gaps.. · LIST(COMMANDS) · RUN(CLI)
+//DIR(=) <**context**> · <<*spec*>files<*.lacho>> · sesión 10

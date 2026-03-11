@@ -1,0 +1,18 @@
+//[MANAGEMENT].lacho · DRA/INDEX/$sat
+//INDEX $sat · sábado soberano · backup y sellado semanal
+//INDEX_$sat.txt · V1 · 2026-03-10
+//[term] :: activo
+
+// ══ $sat · SÁBADO ═════════════════════════════════════════════
+// $sat = backup total · {door} sella semana · MuSave semanal
+UNICODE: IDX_SAT_RISE         //SAMU #rise $sat · 06:00 · backup ritual
+UNICODE: IDX_SAT_BACKUP       //BKP_FULL · tar DRA/ completo · DOOR_SEAL
+UNICODE: IDX_SAT_MU_SAVE      //MuSave semanal · .sovereign actualizado
+UNICODE: IDX_SAT_PUSH         //git push semana completa · FABRIC_HASH
+UNICODE: IDX_SAT_STATS        //python3 main.py --stats · resumen semana
+UNICODE: IDX_SAT_NEXT         //plan semana siguiente · SOCIAL {scheduler}
+UNICODE: IDX_SAT_SET          //SAMU #set $sat · semana sellada · H63→空
+
+//WORK {door} =><= .. sella .. index_sat_backup_semanal --[Nudo de Ocho] [term]
+//STACKING UF[H52] =><= .. inmutabiliza .. index_sat_mu_save_semanal --[Nudo de Ocho] [term]
+//DIR(+) DRA/INDEX/$sat · V1 · backup total · {door} · H63 semana cerrada

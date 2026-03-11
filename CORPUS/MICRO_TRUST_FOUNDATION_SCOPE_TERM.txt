@@ -1,0 +1,313 @@
+MICRO_TRUST FOUNDATION SCOPE TERM
+LIBRO LACHO (ACOPIO) — MÓDULOS SOBERANOS DE TRUST (NIVEL MICRO)
+Versión: 1.0
+Estatus: MICRO_01
+Propósito: Definir formalmente los tres módulos soberanos de TRUST ([foundation], [scope], [term]) que constituyen la base de toda la arquitectura LACHO, estableciendo su ontología, protocolos, límites y mecanismos de validación.
+
+====================================================================
+1) FUNCIÓN DE ESTE ARCHIVO EN EL LIBRO
+====================================================================
+
+Este archivo MICRO 01 especifica la tríada soberana de TRUST: el pilar fundamental que sostiene toda la constitución LACHO. Si el MACRO define "qué es LACHO" y el MESO define "cómo se organiza", este archivo define "qué es inmutable y qué es negociable" dentro del sistema.
+
+Los tres módulos soberanos no son configurables: son condiciones de posibilidad del sistema. Cualquier intento de violarlos activa protocolos de error y detención inmediata.
+
+====================================================================
+2) [FOUNDATION] — EL SUELO TÉCNICO
+====================================================================
+
+2.1 Definición Ontológica
+[foundation] es el suelo técnico sobre el cual todo lo demás se construye. No es una base filosófica abstracta: es la verificación material de que el sistema puede existir y operar.
+
+2.2 Función Sistémica
+- Verificar que las condiciones mínimas de existencia están cumplidas.
+- Validar que los componentes críticos están operativos.
+- Asegurar que la arquitectura base no está comprometida.
+- Proporcionar el punto de partida para cualquier operación.
+
+2.3 Jurisdicción Absoluta
+- Ningún otro módulo puede modificar [foundation].
+- Solo TRUST puede leer el estado de [foundation].
+- [foundation] tiene precedencia sobre cualquier otra consideración.
+- Su violación activa RED-REGRET inmediato.
+
+2.4 Protocolos de Verificación
+Protocolo Foundation-Check
+1. Verificar integridad de bibliotecas base (TRUST, CRYPTO, SOCIAL).
+2. Validar acceso a recursos esenciales (memoria, disco, red).
+3. Comprobar que los asientos críticos de CRYPTO están operativos.
+4. Confirmar que el sistema de archivos está accesible.
+5. Validar que el motor de ejecución está disponible.
+
+Protocolo Foundation-Recovery
+1. Si algún componente crítico falla, detener todo el sistema.
+2. Registrar el error con timestamp y contexto completo.
+3. Intentar recuperación automática solo si es seguro.
+4. Si la recuperación falla, mantener sistema en estado MU.
+5. Notificar al operador con [regret] activo.
+
+2.5 Estados de [foundation]
+- FOUNDATION_OK: todos los componentes críticos operativos.
+- FOUNDATION_DEGRADED: algunos componentes no críticos fallan.
+- FOUNDATION_COMPROMISED: componentes críticos fallan.
+- FOUNDATION_UNKNOWN: estado no determinable.
+
+2.6 Métricas y Umbrales
+- Tiempo de verificación: < 100ms.
+- Frecuencia de verificación: cada ciclo de sistema.
+- Umbral de error: 0% para componentes críticos.
+- Umbral de advertencia: > 5% para componentes no críticos.
+
+====================================================================
+3) [SCOPE] — EL PERÍMETRO DE REALIDAD
+====================================================================
+
+3.1 Definición Ontológica
+[scope] define el perímetro de realidad dentro del cual LACHO puede operar. No es un límite arbitrario: es la delimitación consciente de qué puede conocer, procesar y afectar el sistema.
+
+3.2 Función Sistémica
+- Definir qué recursos están disponibles para el sistema.
+- Establecer qué operaciones están permitidas.
+- Delimitar qué conocimiento es accesible.
+- Proteger al sistema de exceder sus capacidades.
+
+3.3 Jurisdicción Configurable
+- TRUST define el [scope] inicial.
+- SAMU puede ajustar [scope] dinámicamente.
+- SOCIAL puede solicitar expansión de [scope].
+- CRYPTO valida cambios en [scope].
+
+3.4 Protocolos de Gestión
+Protocolo Scope-Definition
+1. Declarar recursos disponibles (CPU, memoria, disco, red).
+2. Especificar operaciones permitidas (lectura, escritura, ejecución).
+3. Definir fuentes de conocimiento accesibles.
+4. Establecer límites de tiempo y frecuencia.
+5. Validar coherencia con [foundation].
+
+Protocolo Scope-Expansion
+1. SAMU detecta necesidad de expansión.
+2. Se evalúa impacto en [foundation].
+3. Se solicita autorización a TRUST.
+4. Si se aprueba, se actualiza [scope].
+5. Se registra cambio con timestamp.
+
+Protocolo Scope-Reduction
+1. Se detecta condición que requiere reducción.
+2. Se evalúa impacto en operaciones activas.
+3. Se notifica a componentes afectados.
+4. Se reduce [scope] gradualmente.
+5. Se mantiene integridad del sistema.
+
+3.5 Estados de [scope]
+- SCOPE_NORMAL: operación dentro de límites definidos.
+- SCOPE_EXPANDING: proceso de expansión en curso.
+- SCOPE_RESTRICTING: proceso de reducción en curso.
+- SCOPE_SATURATED: límites alcanzados, no se puede expandir.
+- SCOPE_VIOLATED: intento de operación fuera de límites.
+
+3.6 Métricas y Umbrales
+- Utilización de CPU: < 80% para operación normal.
+- Utilización de memoria: < 70% para operación normal.
+- Frecuencia de expansión: máximo 1 por hora.
+- Tiempo de expansión: < 500ms.
+
+====================================================================
+4) [TERM] — LA FINITUD OBLIGATORIA
+====================================================================
+
+4.1 Definición Ontológica
+[term] es la finitud obligatoria que previene el dogma y la infinitud. No es un límite arbitrario: es la condición que garantiza que todo proceso tenga un principio y un fin definidos.
+
+4.2 Función Sistémica
+- Establecer finitud para todas las operaciones.
+- Prevenir bucles infinitos y procesos sin término.
+- Garantizar que todo lo que comienza pueda terminar.
+- Proporcionar mecanismo de cierre definitivo.
+
+4.3 Jurisdicción Absoluta
+- Ningún módulo puede operar sin [term].
+- SAMU es el único que puede activar [term].
+- [term] tiene precedencia sobre cualquier otra consideración.
+- Su violación activa protocolo de error fatal.
+
+4.4 Protocolos de Aplicación
+Protocolo Term-Declaration
+1. Toda operación debe declarar su [term] al iniciar.
+2. El [term] debe ser verificable y medible.
+3. Se establecen condiciones de terminación.
+4. Se define tiempo máximo de ejecución.
+5. Se registran recursos máximos permitidos.
+
+Protocolo Term-Activation
+1. SAMU monitorea progreso hacia [term].
+2. Si se cumplen condiciones, se activa [term].
+3. Si se excede tiempo máximo, se activa [term].
+4. Si se exceden recursos, se activa [term].
+5. Si hay error irrecuperable, se activa [term].
+
+Protocolo Term-Execution
+1. Se detiene nueva entrada de datos.
+2. Se finaliza procesamiento en curso.
+3. Se liberan recursos asignados.
+4. Se registra estado final.
+5. Se notifica conclusión a componentes.
+
+4.5 Tipos de [term]
+- TERM_TIME: basado en tiempo máximo.
+- TERM_RESOURCE: basado en límite de recursos.
+- TERM_CONDITION: basado en condición específica.
+- TERM_MANUAL: activado por operador.
+- TERM_ERROR: activado por error irrecuperable.
+- TERM_EMERGENCY: activado por condición crítica.
+
+4.6 Estados de [term]
+- TERM_PENDING: término declarado pero no activado.
+- TERM_ACTIVE: término en proceso de ejecución.
+- TERM_COMPLETED: término ejecutado exitosamente.
+- TERM_FAILED: término ejecutado con error.
+- TERM_EMERGENCY: término activado por emergencia.
+
+4.7 Métricas y Umbrales
+- Tiempo máximo de operación: configurable por tipo.
+- Umbral de recursos: configurable por operación.
+- Frecuencia de activación: monitoreada continuamente.
+- Tiempo de ejecución de [term]: < 100ms.
+
+====================================================================
+5) INTERACCIÓN ENTRE LOS TRES MÓDULOS
+====================================================================
+
+5.1 Jerarquía de Precedencia
+1. [foundation] tiene precedencia absoluta.
+2. [scope] se ajusta a [foundation].
+3. [term] se aplica dentro de [scope].
+4. Ningún módulo puede violar al que le precede.
+
+5.2 Protocolo de Coordinación
+Protocolo Trio-Validation
+1. [foundation] verifica condiciones base.
+2. [scope] delimita operación permitida.
+3. [term] establece finitud obligatoria.
+4. SAMU valida coherencia entre los tres.
+5. Si todo es válido, se autoriza operación.
+
+Protocolo Trio-Conflict
+1. Si [scope] viola [foundation], se rechaza [scope].
+2. Si [term] viola [scope], se ajusta [term].
+3. Si operación viola cualquiera, se detiene.
+4. Se registra conflicto con contexto.
+5. Se activa protocolo de recuperación.
+
+5.3 Estados Combinados
+- FOUNDATION_OK + SCOPE_NORMAL + TERM_PENDING: operación normal.
+- FOUNDATION_DEGRADED + SCOPE_RESTRICTING + TERM_ACTIVE: degradación controlada.
+- FOUNDATION_COMPROMISED + SCOPE_VIOLATED + TERM_EMERGENCY: emergencia.
+- FOUNDATION_UNKNOWN + SCOPE_SATURATED + TERM_FAILED: error crítico.
+
+====================================================================
+6) IMPLEMENTACIÓN TÉCNICA
+====================================================================
+
+6.1 Estructura de Datos
+```python
+class FoundationModule:
+    status: str  # OK, DEGRADED, COMPROMISED, UNKNOWN
+    components: Dict[str, bool]
+    last_check: datetime
+    metrics: Dict[str, float]
+
+class ScopeModule:
+    resources: Dict[str, Limit]
+    operations: List[str]
+    knowledge_sources: List[str]
+    time_limits: Dict[str, timedelta]
+    status: str  # NORMAL, EXPANDING, RESTRICTING, SATURATED, VIOLATED
+
+class TermModule:
+    term_type: str  # TIME, RESOURCE, CONDITION, MANUAL, ERROR, EMERGENCY
+    conditions: Dict[str, Any]
+    max_duration: timedelta
+    max_resources: Dict[str, float]
+    status: str  # PENDING, ACTIVE, COMPLETED, FAILED, EMERGENCY
+```
+
+6.2 API de Validación
+```python
+def validate_foundation() -> FoundationStatus:
+    """Verificar estado del suelo técnico."""
+    pass
+
+def validate_scope(operation: Operation) -> ScopeStatus:
+    """Validar operación contra perímetro de realidad."""
+    pass
+
+def validate_term(operation: Operation) -> TermStatus:
+    """Validar finitud obligatoria de operación."""
+    pass
+
+def validate_trio(operation: Operation) -> TrioStatus:
+    """Validar coordinación de los tres módulos."""
+    pass
+```
+
+6.3 Protocolos de Error
+```python
+class FoundationError(Exception):
+    """Error crítico en suelo técnico."""
+    pass
+
+class ScopeViolationError(Exception):
+    """Violación de perímetro de realidad."""
+    pass
+
+class TermViolationError(Exception):
+    """Violación de finitud obligatoria."""
+    pass
+
+class TrioConflictError(Exception):
+    """Conflicto entre módulos soberanos."""
+    pass
+```
+
+====================================================================
+7) EJEMPLOS PRÁCTICOS
+====================================================================
+
+7.1 Ejemplo 1: Operación Normal
+```
+[foundation]: OK
+[scope]: CPU < 50%, memoria < 40%, disco < 60%
+[term]: 5 minutos máximo, 1GB RAM máximo
+Resultado: Operación autorizada y monitoreada
+```
+
+7.2 Ejemplo 2: Expansión de Scope
+```
+[foundation]: OK
+[scope]: necesita más memoria para procesamiento
+[term]: 10 minutos máximo, 2GB RAM máximo
+Resultado: [scope] expandido temporalmente
+```
+
+7.3 Ejemplo 3: Emergencia
+```
+[foundation]: COMPROMISED (disco fallando)
+[scope]: VIOLATED (no puede escribir logs)
+[term]: EMERGENCY (detener inmediatamente)
+Resultado: Sistema detenido, [regret] activo
+```
+
+====================================================================
+8) CIERRE MICRO: LA TRÍADA SOBERANA
+====================================================================
+
+Los tres módulos soberanos de TRUST no son independientes: forman una tríada inseparable que garantiza la existencia, operación y terminación controlada del sistema LACHO.
+
+[foundation] asegura que el sistema pueda existir.
+[scope] asegura que el sistema pueda operar.
+[term] asegura que el sistema pueda terminar.
+
+Sin cualquiera de los tres, LACHO no puede funcionar. Con los tres activos y coordinados, LACHO puede crecer, aprender y evolucionar sin perder su integridad ni su propósito.
+
+FIN DEL ARCHIVO

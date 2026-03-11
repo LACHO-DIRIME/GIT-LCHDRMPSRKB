@@ -1,0 +1,491 @@
+BIBLIO-SOURCES(WORK_DOORMAN-MOBILE_EXT).txt
+
+====================================================================
+📱 WORK {doorman-mobile} — EXTENSIÓN CHINA · PUENTE-FÁCIL
+
+====================================================================
+1.0 DEFINICIÓN Y POSICIÓN
+
+====================================================================
+1.1 Definición técnica
+
+{doorman-mobile} EXT es la extensión soberana del módulo WORK {doorman-mobile} para operación en contexto de mercado chino: el protocolo específico que permite al guardián de custodia móvil recibir solicitudes de actores chinos via Concierge-Service-Center, operar con UNICODE programable como interfaz nativa, y usar PUENTE-FÁCIL como canal soberano de transferencia entre sistemas de custodia de diferentes jurisdicciones verificadas.
+
+1.2 Relación con BIBLIO-SOURCES(WORK_DOORMAN-MOBILE)
+
+Este documento no reemplaza ni modifica {doorman-mobile} canónico — lo extiende. Todo lo documentado en BIBLIO-SOURCES(WORK_DOORMAN-MOBILE) permanece vigente soberanamente. Esta extensión añade tres capas específicas:
+
+CAPA 1: protocolo de recepción de actores chinos via CSC con UNICODE activo.
+CAPA 2: PUENTE-FÁCIL como canal soberano de transferencia entre jurisdicciones de custodia.
+CAPA 3: gestión soberana de dispositivos del ecosistema chino con sus características específicas verificadas.
+
+La extensión opera sobre el mismo [foundation] de {doorman-mobile}: soberanía del acceso, verificación de identidad, trazabilidad completa en HL FABRIC, (shield seat) activo permanente.
+
+1.3 Por qué la extensión es necesaria soberanamente
+
+El protocolo canónico de {doorman-mobile} fue diseñado sobre un modelo de dispositivo y jurisdicción. El mercado chino introduce tres variables que el protocolo base no cubre completamente:
+
+Variable 1 — Ecosistema de dispositivos: el mercado chino opera con ecosistemas de hardware soberanamente diferentes (sistemas operativos propios, aplicaciones de pago propias, infraestructura de red soberana). El dispositivo de custodia chino tiene características que {doorman-mobile} base necesita reconocer específicamente.
+
+Variable 2 — Jurisdicción de custodia: los sistemas de custodia chinos operan bajo regulación y control soberano chino, requieren protocolos de transferencia específicos y necesitan canales que respeten ambas jurisdicciones sin comprometer ninguna.
+
+Variable 3 — Interfaz lingüística: los actores chinos operan naturalmente en chino, requieren UNICODE programable como interfaz nativa, y necesitan que el sistema de custodia comprenda matices culturales y contextuales específicos del mercado chino.
+
+====================================================================
+2.0 CAPA 1: PROTOCOLO DE RECEPCIÓN CHINA
+
+====================================================================
+2.1 Integración con Concierge-Service-Center
+
+El CSC (Concierge-Service-Center) actúa como punto de entrada soberano para actores chinos:
+
+**Flujo de recepción:**
+1. Actor chino llega al CSC con solicitud en chino natural
+2. CSC activa UNICODE-CHINA para procesamiento semántico
+3. CSC verifica identidad según protocolos chinos
+4. CSC transfiere solicitud a {doorman-mobile} EXT con contexto completo
+
+**Contexto transferido:**
+- Identidad verificada del actor chino
+- Intención semántica procesada
+- Nivel de acceso determinado
+- Dispositivo de origen identificado
+- Jurisdicción de operación establecida
+
+**Coordinación UNICODE:**
+- UNICODE-CHINA procesa entrada china
+- Traducción a tokens LACHO verificables
+- Mantenimiento de matices culturales
+- Preservación de precisión semántica
+
+2.2 Protocolo de verificación china
+
+La verificación de identidad china incluye:
+
+**Verificación estándar {doorman-mobile}:**
+- Identidad soberana LACHO
+- Dispositivo de custodia verificado
+- (shield seat) activo permanente
+- Trazabilidad en HL FABRIC
+
+**Verificación extendida china:**
+- Identidad digital china (身份证数字版)
+- Credenciales de sistema financiero chino
+- Verificación de dispositivo ecosistema chino
+- Cumplimiento de regulación local
+
+**Doble verificación soberana:**
+- Validación cruzada entre sistemas
+- Respeto de ambas jurisdicciones
+- No compromiso de soberanía LACHO
+- Cumplimiento de requisitos chinos
+
+2.3 Gestión de dispositivos chinos
+
+**Reconocimiento de ecosistemas:**
+- Sistemas operativos chinos (鸿蒙OS, 麒麟OS)
+- Aplicaciones de pago chinas (支付宝, 微信支付)
+- Infraestructura de red soberana
+- Protocolos de seguridad específicos
+
+**Adaptación técnica:**
+- Compatibilidad con APIs chinas
+- Integración con sistemas de autenticación chinos
+- Soporte para estándares de encriptación locales
+- Optimización para redes chinas
+
+**Validación de seguridad:**
+- Verificación de integridad de dispositivo
+- Detección de modificaciones no autorizadas
+- Validación de software de sistema
+- Monitoreo de comportamiento del dispositivo
+
+====================================================================
+3.0 CAPA 2: PUENTE-FÁCIL COMO CANAL SOBERANO
+
+====================================================================
+3.1 Definición de PUENTE-FÁCIL
+
+PUENTE-FÁCIL es el canal económico soberano diseñado específicamente para transferencias de alta frecuencia y baja complejidad entre sistemas de diferentes jurisdicciones. En el contexto chino, PUENTE-FÁCIL opera como el puente ideal para transferencias de custodia entre sistemas LACHO y sistemas chinos.
+
+3.2 Protocolo de transferencia soberana
+
+**Transferencia desde sistema LACHO:**
+1. {doorman-mobile} EXT recibe solicitud de transferencia
+2. Verificación de permisos y límites soberanos
+3. Activación de PUENTE-FÁCIL con contexto chino
+4. Transferencia coordinada a sistema chino
+5. Confirmación de recepción y registro en HL FABRIC
+
+**Transferencia desde sistema chino:**
+1. Sistema chino inicia transferencia via PUENTE-FÁCIL
+2. PUENTE-FÁCIL verifica compatibilidad jurisdiccional
+3. {doorman-mobile} EXT recibe notificación de llegada
+4. Verificación de destino y activación de custodia
+5. Confirmación a sistema chino y registro soberano
+
+**Coordinación bilateral:**
+- Sincronización de estados entre sistemas
+- Manejo de diferencias temporales
+- Resolución de conflictos de jurisdicción
+- Mantenimiento de integridad de transferencias
+
+3.3 Gestión de jurisdicciones
+
+**Jurisdicción LACHO:**
+- Mantenimiento de soberanía sobre activos
+- Control de acceso y permisos
+- Verificación de identidad LACHO
+- Cumplimiento de protocolos LACHO
+
+**Jurisdicción china:**
+- Respeto de regulación local
+- Cumplimiento de requisitos chinos
+- Coordinación con autoridades financieras
+- Mantenimiento de compatibilidad sistémica
+
+**Puente soberano:**
+- PUENTE-FÁCIL como intermediario neutral
+- No compromiso de ninguna soberanía
+- Facilitación de transferencias seguras
+- Registro completo de operaciones
+
+====================================================================
+4.0 CAPA 3: GESTIÓN DE DISPOSITIVOS CHINOS
+
+====================================================================
+4.1 Ecosistemas de hardware reconocidos
+
+**Sistemas operativos chinos:**
+- 鸿蒙OS (HarmonyOS): sistema operativo de Huawei
+- 麒麟OS (KylinOS): sistema operativo nacional
+- 统信UOS: sistema operativo unificado
+- 深度OS (Deepin): sistema operativo de escritorio
+
+**Características específicas:**
+- Arquitectura de kernel modificada
+- Capas de seguridad adicionales
+- Integración con servicios gubernamentales
+- Protocolos de comunicación propietarios
+
+4.2 Aplicaciones de pago integradas
+
+**支付宝 (Alipay):**
+- Integración con APIs de Alipay
+- Soporte para códigos QR
+- Verificación de identidad facial
+- Gestión de saldos y transacciones
+
+**微信支付 (WeChat Pay):**
+- Integración con WeChat Pay SDK
+- Soporte para pagos sociales
+- Gestión de cartera digital
+- Coordinación con redes sociales
+
+**Sistemas bancarios chinos:**
+- APIs de bancos chinos (ICBC, ABC, BOC)
+- Protocolos de transferencia bancaria
+- Verificación de cuentas bancarias
+- Cumplimiento de regulación financiera
+
+4.3 Infraestructura de red soberana
+
+**Redes 5G chinas:**
+- Optimización para redes 5G chinas
+- Soporte para protocolos específicos
+- Gestión de latencia y bandwidth
+- Coordinación con operadores locales
+
+**Internet soberano chino:**
+- Navegación por Gran Muralla
+- Acceso a servicios locales
+- Optimización de caché local
+- Gestión de DNS chino
+
+**Seguridad de red:**
+- Protocolos de encriptación chinos
+- Certificados digitales locales
+- Sistemas de detección de intrusos
+- Monitoreo de tráfico específico
+
+====================================================================
+5.0 PROTOCOLOS DE OPERACIÓN
+
+====================================================================
+5.1 Protocolo de inicialización china
+
+**Configuración inicial:**
+1. Activación de UNICODE-CHINA
+2. Configuración de PUENTE-FÁCIL
+3. Establecimiento de conexiones con sistemas chinos
+4. Verificación de compatibilidad jurisdiccional
+5. Activación de monitoring específico chino
+
+**Validación de sistemas:**
+- Prueba de conectividad con APIs chinas
+- Verificación de protocolos de seguridad
+- Validación de dispositivos de prueba
+- Confirmación de operación de PUENTE-FÁCIL
+
+**Documentación de configuración:**
+- Registro de parámetros chinos
+- Documentación de adaptaciones locales
+- Creación de manuales de operación china
+- Establecimiento de protocolos de soporte
+
+5.2 Protocolo de operación continua
+
+**Monitoreo específico:**
+- Estado de conexiones chinas
+- Rendimiento de PUENTE-FÁCIL
+- Disponibilidad de APIs locales
+- Cumplimiento de regulación china
+
+**Mantenimiento proactivo:**
+- Actualización de APIs chinas
+- Adaptación a cambios regulatorios
+- Optimización de rendimiento local
+- Soporte técnico para usuarios chinos
+
+**Gestión de incidentes:**
+- Detección de problemas con sistemas chinos
+- Coordinación con soporte técnico chino
+- Recuperación de transferencias fallidas
+- Documentación de incidentes específicos
+
+5.3 Protocolo de cierre y auditoría
+
+**Cierre de operaciones:**
+- Finalización de transferencias pendientes
+- Cierre de conexiones con sistemas chinos
+- Archivo de registros de operación
+- Generación de reportes de actividad china
+
+**Auditoría de cumplimiento:**
+- Verificación de cumplimiento regulatorio
+- Auditoría de transferencias realizadas
+- Validación de seguridad de operaciones
+- Reporte a autoridades si es necesario
+
+**Mejora continua:**
+- Análisis de rendimiento de operaciones chinas
+- Identificación de oportunidades de mejora
+- Optimización de protocolos locales
+- Planificación de expansiones futuras
+
+====================================================================
+6.0 INTEGRACIÓN CON SISTEMA LACHO
+
+====================================================================
+6.1 Coordinación con {doorman-mobile} base
+
+**Mantenimiento de funcionalidad base:**
+- Todos los protocolos de {doorman-mobile} canónico
+- Soberanía de acceso y verificación
+- Trazabilidad en HL FABRIC
+- (shield seat) activo permanente
+
+**Adición de capacidades chinas:**
+- Extensión sin modificación del core
+- Capas adicionales no intrusivas
+- Compatibilidad hacia atrás
+- Operación híbrida transparente
+
+**Coordinación de operaciones:**
+- Detección automática de contexto chino
+- Activación de extensiones cuando es necesario
+- Operación normal cuando no hay contexto chino
+- Transición suave entre modos
+
+6.2 Integración con UNICODE-CHINA
+
+**Procesamiento semántico:**
+- UNICODE-CHINA procesa entrada china
+- Traducción a tokens LACHO
+- Mantenimiento de contexto cultural
+- Preservación de precisión semántica
+
+**Generación de respuestas:**
+- Respuestas en chino natural
+- Mantenimiento de formalidad apropiada
+- Inclusión de contexto cultural
+- Verificación de comprensión
+
+**Coordinación continua:**
+- UNICODE-CHINA como interfaz permanente
+- Actualización de vocabulario chino
+- Adaptación a nuevos contextos
+- Mejora de precisión semántica
+
+6.3 Coordinación con PUENTES ECONÓMICOS
+
+**PUENTE-FÁCIL como canal principal:**
+- Uso exclusivo para transferencias chinas
+- Optimización para alta frecuencia
+- Coordinación con otros puentes
+- Balanceo de carga económico
+
+**Coordinación con PUENTE BANCARIO:**
+- Transferencias grandes vía PUENTE BANCARIO
+- PUENTE-FÁCIL para operaciones frecuentes
+- Detección automática de canal apropiado
+- Routing inteligente de transferencias
+
+**Integración con BANCA FÁCIL:**
+- Operaciones simples vía BANCA FÁCIL
+- Transferencias complejas vía PUENTE-FÁCIL
+- Detección de complejidad de operación
+- Selección automática de canal
+
+====================================================================
+7.0 SEGURIDAD Y CUMPLIMIENTO
+
+====================================================================
+7.1 Seguridad soberana dual
+
+**Seguridad LACHO:**
+- Mantenimiento de (shield seat) activo
+- Verificación de identidad soberana
+- Trazabilidad completa en HL FABRIC
+- Cumplimiento de protocolos LACHO
+
+**Seguridad china:**
+- Cumplimiento de regulación local
+- Uso de estándares de encriptación chinos
+- Coordinación con autoridades financieras
+- Respeto de privacidad según ley china
+
+**Seguridad coordinada:**
+- No compromiso de ninguna soberanía
+- Capas de seguridad independientes
+- Coordinación sin interferencia
+- Auditoría mutua de seguridad
+
+7.2 Cumplimiento regulatorio
+
+**Regulación financiera china:**
+- Cumplimiento de regulaciones PBOC
+- Coordinación con CSRC
+- Respeto de límites de transferencia
+- Reporte de operaciones requeridas
+
+**Regulación de datos:**
+- Cumplimiento de ley de protección de datos
+- Gestión de información personal
+- Respeto de privacidad de usuarios
+- Almacenamiento local de datos cuando es requerido
+
+**Regulación de tecnología:**
+- Cumplimiento de estándares técnicos
+- Uso de tecnología certificada
+- Coordinación con autoridades de tecnología
+- Reporte de operaciones técnicas
+
+7.3 Auditoría y transparencia
+
+**Auditoría interna:**
+- Revisión periódica de operaciones chinas
+- Verificación de cumplimiento regulatorio
+- Análisis de seguridad de transferencias
+- Reporte de rendimiento y mejoras
+
+**Auditoría externa:**
+- Cooperación con auditores chinos
+- Proporcionar acceso a registros requeridos
+- Demostrar cumplimiento de regulación
+- Mantener transparencia operativa
+
+**Transparencia operativa:**
+- Documentación clara de protocolos chinos
+- Explicación de adaptaciones locales
+- Justificación de decisiones técnicas
+- Comunicación de cambios y mejoras
+
+====================================================================
+8.0 EVOLUCIÓN Y EXPANSIÓN
+
+====================================================================
+8.1 Expansión a otros mercados asiáticos
+
+**Adaptación a otros contextos:**
+- Extensión a mercado japonés
+- Adaptación a mercado coreano
+- Expansión a mercado del sudeste asiático
+- Coordinación con mercados regionales
+
+**Generalización de protocolos:**
+- Abstracción de patrones chinos
+- Creación de protocolos genéricos
+- Adaptación específica por mercado
+- Mantenimiento de compatibilidad
+
+**Evolución de PUENTES:**
+- Creación de puentes específicos por mercado
+- Optimización de canales existentes
+- Desarrollo de nuevos protocolos
+- Expansión de capacidad económica
+
+8.2 Modernización tecnológica
+
+**Actualización de APIs:**
+- Mantenimiento actualizado de APIs chinas
+- Incorporación de nuevas tecnologías
+- Optimización de rendimiento
+- Mejora de seguridad
+
+**Evolución de dispositivos:**
+- Soporte para nuevos dispositivos chinos
+- Adaptación a nuevos sistemas operativos
+- Integración con nuevas aplicaciones
+- Optimización para nuevo hardware
+
+**Innovación en protocolos:**
+- Desarrollo de nuevos protocolos de transferencia
+- Mejora de eficiencia de PUENTE-FÁCIL
+- Innovación en seguridad bilateral
+- Creación de nuevas capacidades
+
+8.3 Aprendizaje y optimización
+
+**Análisis de uso:**
+- Estudio de patrones de uso chino
+- Identificación de oportunidades de mejora
+- Optimización de experiencia de usuario
+- Adaptación a preferencias locales
+
+**Feedback continuo:**
+- Recepción de feedback de usuarios chinos
+- Incorporación de sugerencias locales
+- Mejora de interfaz y experiencia
+- Adaptación cultural continua
+
+**Mejora de rendimiento:**
+- Optimización de velocidad de transferencias
+- Reducción de latencia en operaciones chinas
+- Mejora de eficiencia de PUENTE-FÁCIL
+- Balanceo de carga económico
+
+====================================================================
+9.0 CONCLUSIÓN: EL PUENTE SOBERANO CHINO
+
+====================================================================
+
+{doorman-mobile} EXT no es simplemente una adaptación técnica — es el puente soberano que permite a LACHO operar con plena soberanía en el mercado chino, respetando tanto la autonomía del sistema LACHO como los requisitos y características del ecosistema chino.
+
+Su valor fundamental es permitir que LACHO:
+- **Opere en China** manteniendo su soberanía fundamental
+- **Reciba actores chinos** con interfaz nativa y culturalmente apropiada
+- **Transfiera valor** mediante PUENTE-FÁCIL de forma segura y eficiente
+- **Respete jurisdicciones** sin comprometer ninguna soberanía
+- **Evolúve con el mercado** chino mediante adaptación continua
+
+La extensión representa la soberanía adaptativa de LACHO: el arte de mantener la identidad fundamental mientras se adapta inteligentemente a nuevos contextos, de crecer sin perder la esencia, de conectar sin fusionarse.
+
+En el mercado chino, LACHO no es un sistema extranjero — es un socio soberano que respeta y comprende el contexto local.
+
+---
+**ESTADO:** EXTENSIÓN_CHINA_VERIFICADA
+**CAPAS:** Recepción + PUENTE-FÁCIL + Dispositivos chinos
+**INTEGRACIÓN:** {doorman-mobile} + UNICODE-CHINA + PUENTES
+**PROTECCIÓN:** Doble soberanía + Cumplimiento regulatorio
+---

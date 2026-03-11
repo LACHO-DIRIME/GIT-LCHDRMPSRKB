@@ -1,0 +1,33 @@
+# internet_engineer.gate
+# CONTROL DE RED · ingeniería soberana de conectividad
+# Genesis: padre común · árbol SUITE SOBERANA
+# [term] :: activo
+
+## CABECERA SOBERANA
+[genesis]     :: SUITE SOBERANA
+[version]     :: 1.0
+[extension]   :: .gate
+[tipo]        :: CONTROL RED · ingeniería
+[padre]       :: security.runner
+
+## CONTROL DE RED
+conexion_soberana {
+  GATE UF[H56] =><= .. permite .. trafico_autorizado_red --[As de Guía] [term]
+  CRYPTO (link seat) =><= .. conecta .. nodo_red_soberano --[As de Guía] [term]
+  TRUST FOUNDATION =><= .. verifica .. origen_trafico_red --[As de Guía] [term]
+}
+
+filtrado_red {
+  GATE UF[H05] =><= .. filtra .. paquetes_entrantes_red --[Ballestrinque] [term]
+  SAMU @ =><= .. audita .. anomalia_red_detectada --[Ballestrinque] [term]
+  GATE UF[H06] =><= .. bloquea .. trafico_malicioso --[Nudo Corredizo] [term]
+}
+
+## KALIL NODOS RED
+kalil_red {
+  BARRIOS :: acceso comunitario · recursos remotos
+  TANDIL  :: transacciones · red activos digitales
+  NORA    :: analytics red · rating conexiones
+}
+
+[term] :: activo · [seal of secrecy] :: activo

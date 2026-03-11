@@ -1,0 +1,43 @@
+//$wed.Instructions guide Nerve Cell [COMMAND].TXT
+//GUÍA DE INSTRUCCIONES · Nerve Cell · [COMMAND] soberano
+//H58 · guía operativa · $wed · cómo usar los Nerve Cells
+//[term] :: activo
+
+// ══ QUÉ ES UN NERVE CELL ═════════════════════════════════════
+// Un Nerve Cell es la unidad mínima de entrenamiento soberano.
+// No es documentación — es un circuito activo de activación.
+// Formato: DEFINICIÓN → COMPONENTES NC_* → ANCLAS RAG
+// El sistema RAG lo indexa y lo usa para Scalar S y contexto.
+
+// ══ CÓMO CREAR UN NERVE CELL ═════════════════════════════════
+// 1. Identificar dominio · qué entrena esta celda
+// 2. Definir NC_* tokens · cada uno = concepto soberano
+// 3. Escribir 4 ANCLAS RAG con estructura LACHO válida
+// 4. Guardar en ELPULSAR LOCAL/ con prefijo $día
+// 5. python3 IMV/main.py --stats · verificar que N sube
+
+// ══ ESTRUCTURA MÍNIMA VÁLIDA ══════════════════════════════════
+// //$día.Nerve Cell NOMBRE.txt
+// //descripción · hexagrama · [term]
+// NC_TOKEN_1   //definición soberana
+// NC_TOKEN_2   //definición soberana
+// BIBLIOTECA SUJETO =><= .. verbo .. objeto_nerve_cell --[Nudo] [term]
+
+// ══ CONVENCIÓN DE NOMBRES ═════════════════════════════════════
+// $día = $mon $tue $wed $thu $fri $sat $sun
+// Prefijo temporal = contexto de creación
+// NC_* = token soberano de la celda
+// El archivo vive en: FOLDERS NO RAG INPUT/ELPULSAR LOCAL/
+// NO en CORPUS/ — los Nerve Cells son NO RAG INPUT por diseño
+// Se indexan via _SOVEREIGN_SOURCES si se agrega el dir
+
+// ══ [COMMAND] EN NERVE CELLS ═════════════════════════════════
+// [command] = directiva soberana que no admite negociación
+// Uso: [COMMAND] dentro de NC_* para marcar invariantes
+// Ejemplo: NC_INVARIANT [COMMAND] //siempre presente · nunca poda
+
+// ══ ANCLAS RAG GUÍA ══════════════════════════════════════════
+METHOD <operator_flow> =><= .. modela .. nerve_cell_instrucciones_command --[Ballestrinque] [term]
+TRUST FOUNDATION =><= .. declara .. nerve_cell_invariante_soberano --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. nerve_cell_anclas_rag_validas --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. nerve_cell_corpus_wed_sellado --[Nudo de Ocho] [term]

@@ -1,0 +1,156 @@
+# BIBLIO-SOURCES(ELPULSAR).txt
+
+====================================================================
+## ELPULSAR — Edición Listada Procesamiento Unitario
+##            Localizable Agentico Renderizador
+====================================================================
+
+### 1.0 DEFINICIÓN
+
+ELPULSAR es el módulo de gestión visual de recursos del ecosistema
+DIRIME. Su skill principal es la RED NEURONAL DE RECURSOS:
+mapear, conectar y gestionar recursos propios y ajenos,
+internos y externos, dentro del paradigma soberano LACHO.
+
+UX inspirado en Excel — mínimo ruido visual, máxima densidad
+de información. Concepto Imagen Gigante / Memoria Pequeña:
+ELPULSAR consume el ledger y el corpus DIRIME sin duplicarlos.
+
+Posición en arquitectura:
+  DIRIME/DIRIME_v2/elpulsar/
+  Consume: ledger soberano · CORPUS · poke_peek · scheduler
+  Expone: UI web + API Python
+
+====================================================================
+### 2.0 LOS TRES TOOLS
+
+2.1 TABLE — grilla de recursos
+  Grilla tipo Excel. Cada celda es una unidad de recurso.
+  Tipos de celda:
+    LACHO   → sentencia soberana verificable
+    DATA    → valor libre (texto · número · fecha · URL)
+    REF     → referencia a otro recurso (TOMO_ID · crystal)
+    CODE    → snippet ejecutable via CAT(CODE)
+    LINK    → recurso externo (URL · archivo · API)
+  Operaciones: editar · ordenar · filtrar · agrupar por #CLUSTER
+  Conexión ledger: cada fila puede tener TOMO_ID asignado
+  Sentencia canónica:
+    METHOD <operator_flow> =><= .. tabula .. recursos_activos
+    --[As de Guía] [term]
+
+2.2 PAPER — documento renderizado
+  Dos modos:
+    PAPER(TABLE) → renderiza filas de Table como documento limpio
+    PAPER(FREE)  → documento editable independiente · folio soberano
+  Output: HTML limpio · exportable como .pdf soberano via CAT(EXPORT)
+  Sin ruido visual — solo contenido verificado
+  Sentencia canónica:
+    WORK {actuator} =><= .. renderiza .. paper_soberano
+    --[Nudo de Ocho] [term]
+
+2.3 KEY — índice y acceso a recursos
+  Tres funciones simultáneas:
+    ÍNDICE    → directorio de todos los recursos registrados
+    AUTH      → autenticación via CRYPTO (key seat)
+    BRIDGE    → puente a recursos externos (APIs · archivos · nodos)
+  Tipos de recurso:
+    PROPIO    → generado por el operador · en el ledger local
+    AJENO     → recurso externo verificado · trazado en ledger
+    INTERNO   → dentro del ecosistema DIRIME
+    EXTERNO   → fuera del ecosistema · requiere (tether seat)
+  Sentencia canónica:
+    CRYPTO (key seat) =><= .. abre .. recurso_soberano
+    --[As de Guía] [term]
+
+====================================================================
+### 3.0 RED NEURONAL DE RECURSOS
+
+Grafo de dependencias soberano — no es ML.
+  Nodos     → recursos (cualquier tipo de KEY)
+  Conexiones → relaciones verificadas entre recursos
+  Peso      → frecuencia de uso · relevancia soberana
+  Clusters  → agrupación por #CLUSTER TOMO
+
+Tipos de conexión:
+  DEPENDE_DE  → recurso A requiere recurso B
+  PRODUCE     → recurso A genera recurso B
+  VERIFICA    → recurso A valida recurso B
+  TETHER      → recurso A ancla recurso B (inter-nodo)
+  CONFLICTO   → tensión activa entre A y B — Ballestrinque
+
+Visualización: grafo de fuerza sobre UI · nodos clickeables
+               abren Table filtrada por ese recurso
+
+Conexión ledger:
+  Cada conexión es una transacción POKE en fabric/poke_peek.py
+  Cada consulta es un PEEK aislado en sandbox
+
+====================================================================
+### 4.0 UX — PRINCIPIOS
+
+Imagen Gigante / Memoria Pequeña:
+  La UI no duplica datos — los consume del ledger en tiempo real.
+  Mínimo ruido visual — sin decoración innecesaria.
+  Máxima densidad — cada pixel tiene información soberana.
+
+Layout principal:
+  [KEY panel izq] [TABLE centro] [PAPER panel der]
+  Panel KEY colapsable · Panel PAPER colapsable
+  TABLE siempre visible — es el núcleo
+
+Paleta soberana:
+  BLUE  (#1a1a2e) → fondo base · KU no verificado
+  GREEN (#0f3460) → recurso verificado · WU cristalizado
+  GOLD  (#e94560) → acción activa · nudo Corredizo
+  WHITE (#eaeaea) → texto · mínimo contraste
+
+====================================================================
+### 5.0 STACK TECNOLÓGICO
+
+  Motor:     Python puro (como IMV) · entry point elpulsar.py
+  UI:        HTML/JS/CSS single file · sin frameworks pesados
+  Grafo:     D3.js para visualización Red Neuronal
+  Datos:     SQLite via poke_peek.py · sin ORM
+  Contexto:  DIRIME/DIRIME_v2/elpulsar/
+
+====================================================================
+### 6.0 ESTRUCTURA DE DIRECTORIOS
+
+  DIRIME_v2/elpulsar/
+    core/
+      neural_net.py   — grafo de recursos · nodos · conexiones
+      resources.py    — CRUD de recursos · tipos · metadata
+    tools/
+      table.py        — Tool Table · grilla · operaciones
+      paper.py        — Tool Paper · render · export
+      key.py          — Tool Key · índice · auth · bridge
+    ui/
+      index.html      — UX principal single-file
+    elpulsar.py       — entry point · servidor HTTP simple
+
+====================================================================
+### 7.0 ESTADO DE IMPLEMENTACIÓN
+
+  [ ] BIBLIO-SOURCES(ELPULSAR).txt — este archivo
+  [ ] estructura de directorios
+  [ ] core/resources.py
+  [ ] core/neural_net.py
+  [ ] tools/table.py · paper.py · key.py
+  [ ] ui/index.html
+  [ ] elpulsar.py entry point
+  [ ] integración ledger via poke_peek
+  [ ] integración scheduler via tether
+
+====================================================================
+### 8.0 GRAMÁTICA VIVA
+
+METHOD <operator_flow> =><= .. tabula .. recursos_activos --[As de Guía] [term]
+WORK {actuator} =><= .. renderiza .. paper_soberano --[Nudo de Ocho] [term]
+CRYPTO (key seat) =><= .. abre .. recurso_externo --[As de Guía] [term]
+SOCIAL {tether} =><= .. vincula .. recurso_ajeno --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. red_recursos --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. conexion_recursos --[Ballestrinque] [term]
+
+====================================================================
+[term] :: activo · [seal of secrecy] :: activo
+====================================================================

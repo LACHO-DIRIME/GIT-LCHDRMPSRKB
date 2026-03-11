@@ -1,0 +1,50 @@
+//[MANAGEMENT].lacho · DRA/ENGINE/CLUSTER(DATA_COMPUTING)/
+//ENGINE CLUSTER DATA COMPUTING · cómputo soberano de datos del DRA
+//CLUSTER_DATA_COMPUTING.txt · V1 · 2026-03-10
+//CLUSTER = #NOMBRE · agrupación por función · trazabilidad en ledger
+//DATA COMPUTING = cómputo sobre CORPUS · NLP · vectores · RAG · Scalar S
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN CLUSTER DATA COMPUTING ════════════════════════
+// #DATA_COMPUTING = cluster que agrupa todo cómputo sobre datos en DRA
+// NLP vectores · BM25 · embeddings · Scalar S cálculo · batch processing
+// Recursos: local (antiX) + cloud (Colab GPU) + free tier APIs
+// TAP&DRIP aplicado: cómputo dosificado · no pleno · gradiente ∇
+
+// ══ SUBCLUSTERS DATA ══════════════════════════════════════════
+UNICODE: CDC_NLP              //#NLP · language_routing · clasificación · vectores
+UNICODE: CDC_RAG              //#RAG · BM25 index · 4 capas · query boosted
+UNICODE: CDC_SCALAR           //#SCALAR · lacho_score · Scalar S · delta-Ψ
+UNICODE: CDC_BATCH            //#BATCH · procesamiento masivo · Colab GPU nocturno
+UNICODE: CDC_EMBED            //#EMBED · embeddings semánticos · CAPA C target
+UNICODE: CDC_CRYPTO_DATA      //#CRYPTO_DATA · hashes · firmas · trazabilidad
+
+// ══ RECURSOS ASIGNADOS ════════════════════════════════════════
+UNICODE: CDC_LOCAL            //antiX · grammar.py · rag.py · 186+ docs · ahora
+UNICODE: CDC_GROQ_COMP        //Groq API · inferencia NLP · free tier · 24h bots
+UNICODE: CDC_COLAB            //Google Colab GPU · batch nocturno · entrenamiento
+UNICODE: CDC_HUGGING          //HuggingFace · modelos pre-entrenados · datasets
+UNICODE: CDC_NOTEBOOKLM       //NotebookLM · análisis CORPUS · auditoría semántica
+
+// ══ PIPELINE DATA COMPUTING ══════════════════════════════════
+UNICODE: CDC_INGEST           //ingestión · index_new_files.py · LOAD_CORPUS
+UNICODE: CDC_PROCESS          //procesamiento · language_routing · classify
+UNICODE: CDC_SCORE            //scoring · lacho_score · Scalar S · per doc
+UNICODE: CDC_INDEX            //indexado · BM25 rebuild · RAG refresh
+UNICODE: CDC_EXPORT           //exportación · export_crystals_lacho.py · WU
+UNICODE: CDC_BATCH_RUN        //batch nocturno · BOT_TESTER + BOT_INDEXER
+                              //WORK {actuator} =><= .. ejecuta .. cdc_batch_run
+
+// ══ DRIP COMPUTING ════════════════════════════════════════════
+UNICODE: CDC_DRIP_RATE        //DRIP_RATE cómputo · Scalar S determina cadencia
+UNICODE: CDC_DRIP_QUOTA       //cuota API · free tier límite · GATE UF[H05]
+UNICODE: CDC_DRIP_ROTATE      //FT_ROTATE · Groq→Ollama→Gemini · si satura
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+METHOD <operator_flow> =><= .. modela .. cluster_data_computing_pipeline --[Ballestrinque] [term]
+WORK {actuator} =><= .. ejecuta .. cdc_batch_nocturno_colab --[As de Guía] [term]
+STACKING UF[H48] =><= .. cristaliza .. cdc_index_rag_actualizado --[Nudo de Ocho] [term]
+GATE UF[H05] =><= .. contiene .. cdc_drip_quota_free_tier --[As de Guía] [term]
+
+//DIR(+) DRA/ENGINE/CLUSTER_DATA_COMPUTING · #NLP·RAG·SCALAR·BATCH·EMBED

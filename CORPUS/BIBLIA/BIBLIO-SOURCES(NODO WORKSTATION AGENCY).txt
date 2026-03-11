@@ -1,0 +1,179 @@
+# BIBLIO-SOURCES(NODO WORKSTATION AGENCY).txt
+
+====================================================================
+
+## 🖥️ EXTENSIÓN WORKSTATION — AGENCIA AUTÓNOMA Y CONVERGENCIA TÉCNICA
+
+---
+
+### 1.0 DEFINICIÓN
+
+**WORKSTATION** ya existe en LACHO como capa de ejecución física. Esta extensión define cómo una instancia de WORKSTATION puede operar como **agencia autónoma** (nodo) con:
+- **Modo local** (workstation individual).
+- **Red propia** (HL FABRIC u otra infraestructura privada).
+- **Código total** (implementación propia desde cero).
+
+Cada nodo WORKSTATION tiene **personalidad**, **objetivos**, **configuración** y **programación total** en LACHO, y converge con otros nodos (como AGENCY IDE SYSTEM) según **prioridad técnica**.
+
+---
+
+### 2.0 MODOS DE AGENCIA BASADOS EN WORKSTATION
+
+#### 2.1 Workstation como Agencia Ejecutora (NODO-WS)
+- **Personalidad:** pragmática, ejecutora, enfocada en producción.
+- **Objetivos:** construir, ejecutar, mantener infraestructura.
+- **Configuración:** WORK-dominante, GATE-control, CRYPTO-seguro.
+- **Programación:** scripts de WORK, pipelines TOOLCHAIN, ciclos ACTIVITY cortos.
+
+#### 2.2 AGENCY IDE SYSTEM como Agencia Diseñadora (NODO-IDE)
+- **Personalidad:** exploratoria, sintética, enfocada en diseño y agencia.
+- **Objetivos:** diseñar agencias, prototipar ciclos, integrar gramática viva.
+- **Configuración:** METHOD-dominante, ACTIVITY-dominante, SAMU-activo.
+- **Programación:** ecuaciones METHOD, operadores `<>`, TOMO/segmentadores.
+
+---
+
+### 3.0 CONFIGURACIÓN DE NODO (PLANTILLA)
+
+Cada nodo declara su configuración en un archivo `NODO_CFG.txt`:
+
+```
+[NODO_CFG]
+NOMBRE = <nombre>
+PERSONALIDAD = <pragmática|exploratoria|auditiva|defensiva>
+OBJETIVO_PRINCIPAL = <producción|diseño|auditoría|seguridad>
+BIBLIOTECA_DOMINANTE = <WORK|METHOD|ACTIVITY|SOCIAL|CRYPTO|TRUST>
+RED = <local|HL_FABRIC|propia|ninguna>
+NO_NET = <true|false>
+POLICY = <restrictivo|abierto|auditado>
+SAMU_MODO = <activo|pasivo|solo_auditoría>
+```
+
+Ejemplo para NODO-WS:
+```
+[NODO_CFG]
+NOMBRE = Workstation_Alpha
+PERSONALIDAD = pragmática
+OBJETIVO_PRINCIPAL = producción
+BIBLIOTECA_DOMINANTE = WORK
+RED = HL_FABRIC
+NO_NET = false
+POLICY = restrictivo
+SAMU_MODO = activo
+```
+
+Ejemplo para NODO-IDE:
+```
+[NODO_CFG]
+NOMBRE = Agency_IDE_Beta
+PERSONALIDAD = exploratoria
+OBJETIVO_PRINCIPAL = diseño
+BIBLIOTECA_DOMINANTE = METHOD
+RED = local
+NO_NET = true
+POLICY = auditado
+SAMU_MODO = solo_auditoría
+```
+
+---
+
+### 4.0 PROGRAMACIÓN TOTAL EN LACHO
+
+Cada nodo puede programar:
+- **Ciclos ACTIVITY** con UF[H##] propios.
+- **Operadores METHOD** nuevos (extender `<>`).
+- **Componentes SOCIAL** personalizados.
+- **Asientos CRYPTO** adicionales (si la red lo permite).
+- **Scripts WORK** específicos del hardware.
+
+Regla:
+- Todo lo programado debe respetar `[foundation]`, `[scope]`, `[term]`.
+- Todo debe ser auditable por SAMU @.
+
+---
+
+### 5.0 CONVERGENCIA POR PRIORIDAD TÉCNICA
+
+Cuando múltiples nodos coexisten, convergen según prioridad técnica:
+
+#### 5.1 Jerarquía de Prioridad
+1. **TRUST** (global, no negociable)
+2. **SAMU @** (árbitro inter-nodo)
+3. **CRYPTO** (seguridad compartida)
+4. **GATE** (control de flujo inter-nodo)
+5. **WORK** (ejecución física)
+6. **METHOD** (formalización)
+7. **ACTIVITY** (ciclos)
+8. **SOCIAL** (interfaz)
+
+#### 5.2 Protocolo de Convergencia
+```
+[TRUST] =><= .. validate .. [NODO_CFG] --[Nudo de Ocho] [term]
+SAMU @ =><= .. dirime .. <conflicto_inter_nodo> --[Nudo Corredizo] [term]
+CRYPTO (link seat) =><= .. establish .. <canal_seguro> --[Nudo de Ocho] [term]
+GATE UF[H05] =><= .. synchronize .. <flujos_convergentes> --[Nudo de Ocho] [term]
+```
+
+#### 5.3 Resolución de Conflictos
+- Si dos nodos quieren el mismo recurso: GATE decide por UF[H05]/UF[H56]/UF[H06].
+- Si hay conflicto de propósito: SAMU @ dirime con dos fases (contar/escuchar).
+- Si hay violación de [foundation]: TRUST detiene todo.
+
+---
+
+### 6.0 EXTENSIÓN A RED PROPIA (HL FABRIC)
+
+Un nodo puede extenderse a una red propia:
+- **HL FABRIC** como infraestructura base.
+- Cada nodo en la red tiene su `NODO_CFG`.
+- La red tiene un `RED_CFG.txt` global:
+```
+[RED_CFG]
+NOMBRE = <nombre_red>
+TIPO = <HL_FABRIC|propia|mixta>
+NO_NET_GLOBAL = <true|false>
+POLICY_GLOBAL = <restrictivo|abierto|auditado>
+SAMU_GLOBAL = <centralizado|distribuido>
+```
+
+---
+
+### 7.0 EJEMPLOS DE OPERACIÓN
+
+#### 7.1 Ejemplo A: NODO-WS construye herramienta
+```
+[Workstation_Alpha] WORK =><= .. execute .. $$build_pipeline$$ --[Nudo de Ocho] [term]
+[Workstation_Alpha] CRYPTO (ignition seat) =><= .. authorize .. $$binary_output$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.2 Ejemplo B: NODO-IDE diseña agencia
+```
+[Agency_IDE_Beta] METHOD =><= .. compose .. <equation> --[Nudo Corredizo] [term]
+[Agency_IDE_Beta] ACTIVITY =><= .. register .. !!new_agency_cycle!! --[Nudo de Ocho] [term]
+```
+
+#### 7.3 Ejemplo C: Convergencia inter-nodo
+```
+SAMU @ =><= .. dirime .. <Workstation_Alpha_vs_Agency_IDE_Beta> --[Nudo Corredizo] [term]
+GATE UF[H05] =><= .. synchronize .. <flujos_convergentes> --[Nudo de Ocho] [term]
+```
+
+---
+
+### 8.0 REGLAS FINALES
+
+- Cada nodo es soberano dentro de su `[scope]`.
+- La convergencia no elimina la personalidad: la coordina.
+- Todo ciclo, en cualquier nodo, debe cerrar por `[term]`.
+- SAMU @ es el único árbitro inter-nodo.
+- La red puede ser local, HL FABRIC, o totalmente propia.
+
+---
+
+### 9.0 CIERRE
+
+**WORKSTATION** como capa existente de LACHO puede extenderse para operar como **agencia autónoma** (nodo). Cuando converge con otras agencias (como AGENCY IDE SYSTEM), lo hace según prioridad técnica, sin ceder soberanía y manteniendo la gramática viva, la finitud obligatoria y la auditoría SAMU.
+
+Esta extensión no crea una nueva biblioteca: define cómo usar la capa WORKSTATION para construir nodos programables, configurables y convergentes dentro del universo LACHO.
+
+====================================================================

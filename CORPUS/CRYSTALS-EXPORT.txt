@@ -1,0 +1,83 @@
+# CRYSTALS-EXPORT — cristales WU
+# Generado desde sovereign.db
+
+# [term:A]
+Verbo 'materializa' verificado 70 veces en ledger soberano.
+# [term:AA]
+Verbo 'transforma' verificado 10 veces en ledger soberano.
+# [term:AB]
+Verbo 'agota' verificado 10 veces en ledger soberano.
+# [term:AC]
+Verbo 'culmina' verificado 10 veces en ledger soberano.
+# [term:AD]
+Verbo 'espera' verificado 10 veces en ledger soberano.
+# [term:AE]
+Verbo 'autoriza' verificado 12 veces en ledger soberano.
+# [term:AF]
+Verbo 'lanza' verificado 10 veces en ledger soberano.
+# [term:AG]
+Verbo 'bloquea' verificado 10 veces en ledger soberano.
+# [term:AH]
+Verbo 'sella' verificado 10 veces en ledger soberano.
+# [term:AI]
+Verbo 'resuelve' verificado 10 veces en ledger soberano.
+# [term:AJ]
+Verbo 'fluye' verificado 10 veces en ledger soberano.
+# [term:AK]
+Verbo 'golpea' verificado 10 veces en ledger soberano.
+# [term:AL]
+Verbo 'filtra' verificado 10 veces en ledger soberano.
+# [term:AM]
+Verbo 'contiene' verificado 10 veces en ledger soberano.
+# [term:AN]
+Verbo 'inicia' verificado 5 veces en ledger soberano.
+# [term:B]
+Verbo 'verifica' verificado 67 veces en ledger soberano.
+# [term:C]
+Verbo 'conecta' verificado 19 veces en ledger soberano.
+# [term:D]
+Verbo 'registra' verificado 17 veces en ledger soberano.
+# [term:E]
+Verbo 'custodia' verificado 16 veces en ledger soberano.
+# [term:F]
+Verbo 'multiplica' verificado 16 veces en ledger soberano.
+# [term:G]
+Verbo 'cierra' verificado 16 veces en ledger soberano.
+# [term:H]
+Verbo 'muestra' verificado 15 veces en ledger soberano.
+# [term:I]
+Verbo 'planifica' verificado 15 veces en ledger soberano.
+# [term:J]
+Verbo 'activa' verificado 15 veces en ledger soberano.
+# [term:K]
+Verbo 'inmutabiliza' verificado 14 veces en ledger soberano.
+# [term:L]
+Verbo 'colapsa' verificado 13 veces en ledger soberano.
+# [term:M]
+Verbo 'calcula' verificado 12 veces en ledger soberano.
+# [term:N]
+Verbo 'declara' verificado 12 veces en ledger soberano.
+# [term:O]
+Verbo 'dirime' verificado 13 veces en ledger soberano.
+# [term:P]
+Verbo 'distribuye' verificado 12 veces en ledger soberano.
+# [term:Q]
+Verbo 'evalúa' verificado 11 veces en ledger soberano.
+# [term:R]
+Verbo 'persevera' verificado 11 veces en ledger soberano.
+# [term:S]
+Verbo 'transita' verificado 11 veces en ledger soberano.
+# [term:T]
+Verbo 'sostiene' verificado 11 veces en ledger soberano.
+# [term:U]
+Verbo 'audita' verificado 14 veces en ledger soberano.
+# [term:V]
+Verbo 'ejecuta' verificado 11 veces en ledger soberano.
+# [term:W]
+Verbo 'protege' verificado 13 veces en ledger soberano.
+# [term:X]
+Verbo 'cristaliza' verificado 12 veces en ledger soberano.
+# [term:Y]
+Verbo 'modera' verificado 11 veces en ledger soberano.
+# [term:Z]
+Verbo 'aprende' verificado 10 veces en ledger soberano.

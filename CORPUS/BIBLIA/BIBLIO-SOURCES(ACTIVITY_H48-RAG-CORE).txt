@@ -1,0 +1,266 @@
+# BIBLIO-SOURCES(ACTIVITY_H48-RAG-CORE).txt
+
+====================================================================
+
+## 🪣 ACTIVITY UF[H48] — RAG_CORE / DATA_POOL · EL POZO SOBERANO
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+UF[H48] es el módulo ACTIVITY que gobierna los ciclos de acceso soberano al pool de datos del sistema: la interfaz ACTIVITY con Behavioral RAG y Cognitive RAG.
+
+#### 1.2 El pozo como metáfora operativa constitutiva
+Disponibilidad constante, degradación por abandono o contaminación, utilidad dependiente del cubo (protocolo de acceso) no del agua (datos).
+
+#### 1.3 H48 como núcleo del ciclo de aprendizaje de LACHO
+UF[H48] es el módulo que cierra el loop de aprendizaje soberano — lo que el sistema experimenta en todos los demás UF[H##] vuelve por H48 cuando SAMU @ necesita dirimencia informada.
+
+#### 1.4 Qué diferencia una consulta H48 soberana de una contaminada
+El protocolo de acceso (el cubo) — si el acceso al RAG está contaminado por KU_DV no clasificado, la recuperación es falsa aunque el RAG tenga datos correctos.
+
+#### 1.5 Distinción entre Behavioral RAG y Cognitive RAG
+Behavioral RAG (Pilar 4 STACKING): patrones de comportamiento operativo del sistema. Cognitive RAG (Pilar 8 STACKING): arqueología del conocimiento soberano acumulado. UF[H48] accede a ambos según el tipo de consulta.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Qué puede hacer UF[H48]
+Consultar Behavioral RAG, consultar Cognitive RAG, actualizar ambos con nuevo conocimiento verificado, detectar contaminación en el pool de datos.
+
+#### 2.2 Condición de violación primaria
+Consulta RAG con KU_DV no clasificado como entrada — el cubo roto contamina el pozo.
+
+#### 2.3 Condición de violación secundaria
+UF[H48] actualizando RAG sin verificación de SAMU @ — escritura no soberana en el pool de datos.
+
+#### 2.4 Señal de alerta
+Behavioral RAG detectando consultas recurrentes con resultados inconsistentes — posible contaminación del pozo.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 MODOS DE ACTIVACIÓN
+
+RAG_QUERY_BEHAVIORAL: consulta de patrones operativos en Behavioral RAG para dirimencia.
+- RAG_QUERY_COGNITIVE: consulta arqueológica en Cognitive RAG para contexto histórico soberano.
+- RAG_UPDATE: actualización verificada del RAG con nuevo conocimiento Green-Knowledge.
+- RAG_AUDIT: auditoría del estado del pool de datos — detección de contaminación por KU_DV.
+- RAG_PURGE: eliminación soberana de datos contaminados con conexión a UF[H23] (Poda Ontológica).
+- RAG_CLOSE: cierre del ciclo de acceso con [term] y registro de la consulta en {note}.
+
+#### 3.2 RELACIÓN CON DOMINIOS ECONÓMICOS
+
+MEMECOINS: UF[H48] consultando Behavioral RAG de estrategias de mercado para nueva dirimencia.
+- NOTARÍA: UF[H48] consultando Cognitive RAG de precedentes jurisdiccionales soberanos.
+- CUSTODIA: UF[H48] actualizando Behavioral RAG con nuevos patrones de comportamiento de custodia.
+
+#### 3.3 Distinción de STACKING
+STACKING cristaliza nuevo conocimiento; UF[H48] accede a lo ya cristalizado para que SAMU @ pueda dirimirlo en el ciclo activo.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con Behavioral RAG (STACKING Pilar 4)
+UF[H48] es la interfaz ACTIVITY que consulta patrones de comportamiento operativo cristalizados.
+
+#### 4.2 Con Cognitive RAG (STACKING Pilar 8)
+UF[H48] accede a la arqueología del conocimiento soberano acumulado.
+
+#### 4.3 Con STACKING_H48
+STACKING_H48 es el pozo cristalizado; UF[H48] es el protocolo de acceso soberano a ese pozo.
+
+#### 4.4 Con UF[H23] (Poda Ontológica)
+RAG_PURGE transfiere datos contaminados a UF[H23] para eliminación soberana.
+
+#### 4.5 Con {note} (SOCIAL)
+RAG_CLOSE registra cada consulta en {note} para trazabilidad completa.
+
+#### 4.6 Con SAMU (@)
+UF[H48] provee a SAMU @ el contexto histórico necesario para dirimencia informada.
+
+---
+
+### 5.0 ESTADOS DEL MÓDULO
+
+#### 5.1 RAG_READY
+Pozo disponible, protocolo de acceso verificado, listo para consultas.
+
+#### 5.2 RAG_QUERYING_BEHAVIORAL
+Consulta activa de patrones operativos en Behavioral RAG.
+
+#### 5.3 RAG_QUERYING_COGNITIVE
+Consulta arqueológica activa en Cognitive RAG.
+
+#### 5.4 RAG_UPDATING
+Actualización verificada del pool con nuevo Green-Knowledge.
+
+#### 5.5 RAG_AUDITING
+Auditoría del estado del pool, detección de contaminación.
+
+#### 5.6 RAG_PURGING
+Eliminación soberana de datos contaminados, transferencia a UF[H23].
+
+#### 5.7 RAG_CONTAMINATED
+Pozo contaminado, consultas devolviendo resultados falsos, requiere limpieza inmediata.
+
+#### 5.8 RAG_CLOSED
+Cierre del ciclo de acceso con [term] y registro en {note}.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Enriquece d₃ [scenario]
+UF[H48] provee contexto histórico soberano que enriquece el mapa situacional.
+
+#### 6.2 Impacta d₅ [management]
+Consultas complejas pueden requerir decisión de [management] sobre validez de datos.
+
+#### 6.3 Protege d₁ [foundation]
+RAG_AUDIT protege [foundation] detectando contaminación del conocimiento.
+
+#### 6.4 Afecta d₈ [ecosystem]
+La calidad del pozo afecta la salud de todo el ecosistema de conocimiento.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 RAG_QUERY_BEHAVIORAL consultando patrones
+```
+!!Activity!! UF_H48 =><= .. query .. $$behavioral_patterns_operative$$ --[As de Guía] [term]
+```
+
+#### 7.2 RAG_QUERY_COGNITIVE accediendo arqueología
+```
+!!Activity!! UF_H48 =><= .. access .. $$cognitive_archaeology_sovereign$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.3 RAG_UPDATE actualizando conocimiento
+```
+!!Activity!! UF_H48 =><= .. update .. $$green_knowledge_verified$$ --[Ballestrinque] [term]
+```
+
+#### 7.4 RAG_AUDIT detectando contaminación
+```
+!!Activity!! UF_H48 =><= .. audit .. $$pool_data_contamination$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.5 UF[H48] en dominio memecoins
+```
+!!Activity!! UF_H48 =><= .. consult .. $$market_strategies_history$$ --[Nudo de Rizo] [term]
+```
+
+#### 7.6 UF[H48] en dominio notaría
+```
+!!Activity!! UF_H48 =><= .. retrieve .. $$jurisdictional_precedents$$ --[As de Guía] [term]
+```
+
+#### 7.7 RAG_PURGE eliminando contaminados
+```
+!!Activity!! UF_H48 =><= .. purge .. $$contaminated_data_removal$$ --[Nudo Corredizo] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+RAG_READY — pozo disponible y puro, el acceso soberano garantizado.
+
+#### 8.2 Nudo de Ocho
+RAG_QUERYING_BEHAVIORAL — consulta estructurada de patrones, el nudo que organiza el conocimiento operativo.
+
+#### 8.3 Nudo Corredizo
+RAG_CONTAMINATED — pozo dañado, el nudo que se desliza hacia la corrupción del conocimiento.
+
+#### 8.4 Ballestrinque
+RAG_UPDATING — tensión entre conocimiento nuevo y existente, el nudo que integra sin contaminar.
+
+#### 8.5 Nudo de Rizo
+RAG_QUERYING_COGNITIVE — bucle arqueológico profundo, el nudo que conecta presente con pasado soberano.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+1. RagQueryBehavioral
+   - Consulta de patrones operativos.
+   - Verificación de entrada limpia.
+   - Retorno de resultados relevantes.
+
+2. RagQueryCognitive
+   - Acceso arqueológico profundo.
+   - Búsqueda de precedentes soberanos.
+   - Contextualización histórica.
+
+3. RagUpdate
+   - Verificación de Green-Knowledge.
+   - Integración sin contaminación.
+   - Actualización de índices.
+
+4. RagAudit
+   - Escaneo de integridad del pool.
+   - Detección de anomalías.
+   - Reporte de estado del pozo.
+
+5. RagPurge
+   - Identificación de datos contaminados.
+   - Transferencia a UF[H23].
+   - Limpieza del pozo.
+
+6. RagClose
+   - Cierre con [term] declarado.
+   - Registro en {note}.
+   - Preparación para siguiente ciclo.
+
+---
+
+### 10.0 MÉTRICAS
+
+- Número de consultas por tipo (behavioral vs cognitive).
+- Ratio de consultas exitosas vs contaminadas.
+- Tiempo promedio de respuesta por tipo de consulta.
+- Frecuencia de RAG_AUDIT por ciclo.
+- Cantidad de datos purgados por contaminación.
+- Delta-calidad del pozo entre auditorías.
+
+---
+
+### 11.0 REGLAS
+
+- UF[H48] nunca consulta con KU_DV sin clasificar.
+- RAG_UPDATE requiere verificación SAMU @ obligatoria.
+- RAG_AUDIT se activa automáticamente ante resultados inconsistentes.
+- RAG_PURGE es la única vía de eliminación de datos contaminados.
+- Behavioral RAG y Cognitive RAG tienen protocolos de acceso distintos.
+- RAG_CONTAMINADO activa protocolo de emergencia inmediato.
+- STACKING_H48 mantiene la integridad estructural del pozo.
+- {note} registra toda consulta para trazabilidad soberana.
+- UF[H48] no es el RAG — es el protocolo de acceso soberano.
+- El cubo (protocolo) determina la calidad del agua (datos) recuperada.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+UF[H48] fija como invariante el acceso soberano al conocimiento acumulado como condición de dirimencia informada — el pozo que siempre está disponible para quien llega con protocolo verificado.
+
+#### 12.2 Limitaciones
+No puede consultar con entrada contaminada, no puede actualizar sin verificación, no puede ignorar contaminación detectada, no puede permitir acceso sin [term].
+
+#### 12.3 Habilitaciones
+Dirimencia informada para SAMU @, aprendizaje continuo del sistema, contexto histórico para decisiones nuevas, integridad del conocimiento soberano, trazabilidad completa de consultas.
+
+#### 12.4 Principio constitutivo final
+Como el pozo que nunca se agota pero puede contaminarse: UF[H48] representa la sabiduría de mantener el conocimiento accesible pero protegido. El acceso soberano no es solo tener datos — es tener el protocolo correcto para recuperarlos sin corromperlos. El pozo puro sirve a todos; el pozo contaminado engaña a todos.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

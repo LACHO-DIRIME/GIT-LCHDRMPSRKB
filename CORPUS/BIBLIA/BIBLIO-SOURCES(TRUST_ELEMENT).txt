@@ -1,0 +1,318 @@
+# BIBLIO-SOURCES(TRUST_ELEMENT).txt
+
+====================================================================
+
+## 🏛️ TRUST [ELEMENT] — UNIDAD MÍNIMA DE EXISTENCIA OPERATIVA
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+[element] es el módulo TRUST que define la unidad mínima e indivisible sobre la cual el sistema puede actuar soberanamente.
+
+#### 1.2 Por qué es TRUST y no WORK
+Define condición soberana de existencia (qué unidades reconoce como reales y accionables), no ejecución física.
+
+#### 1.3 Distinción de [what?]
+[what?] declara cuál [element] es el objeto de acción; [element] existe independientemente de ser declarado objeto.
+
+#### 1.4 Distinción de [event]
+[event] ocurre sobre [element]; [element] no es el evento.
+
+#### 1.5 Distinción de [command]
+[command] actúa sobre [element]; [element] no es la acción.
+
+#### 1.6 Ciclo de vida de [element]
+Declaración → uso → saturación → cristalización en STACKING o purga.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Capacidades
+- Definir unidades mínimas de existencia operativa.
+- Establecer criterios de distinción (delta-Ψ).
+- Gestionar ciclo de vida completo.
+- Coordinar con STACKING para cristalización.
+
+#### 2.2 Limitaciones absolutas
+Ningún [element] puede ser constitutivo de violación de [foundation].
+
+#### 2.3 Condiciones de violación
+- **Saturación:** delta-Ψ < 0.1 por 3 ciclos consecutivos.
+- **Señal alerta:** acumulación de elementos saturados sin purga.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 Tipos de elemento
+- **ELEMENT_ENTITY:** entidad concreta con identidad propia.
+- **ELEMENT_RESOURCE:** recurso asignable (Work++, tiempo, memoria).
+- **ELEMENT_STATE:** condición verificable del sistema.
+- **ELEMENT_PROCESS:** proceso activo intervenible.
+- **ELEMENT_RELATION:** vínculo entre elementos con existencia propia.
+
+#### 3.2 Ciclo de vida completo
+- **Declaración:** [command] crea [element] con delta-Ψ inicial.
+- **Uso:** [element] participa en ciclos activos.
+- **Saturación:** pérdida de distinción operativa.
+- **Cristalización:** estado final válido preservado por STACKING.
+- **Purga:** eliminación por saturación o ruido.
+
+#### 3.3 [element] y STACKING
+- **Destino:** [element] cristalizado es preservado por STACKING.
+- **Inmutabilidad:** cristalización es irreversible (Nudo de Ocho).
+- **Diferencia:** cristalización preserva distinción, purga elimina ruido.
+
+#### 3.4 Relación con dominios económicos
+
+##### Memcoins/Volatilidad
+- Activos y posiciones como ELEMENT_ENTITY.
+- Precio y volumen como ELEMENT_RESOURCE.
+- Límite: ELEMENT saturado no puede ser objeto de [command].
+
+##### Custodia Móvil
+- Dispositivo y clave como ELEMENT_ENTITY.
+- Permisos y sesiones como ELEMENT_PROCESS.
+- Límite: [element] no puede declararse sin verificación [foundation].
+
+##### Notaría Digital
+- Documento y firma como ELEMENT_ENTITY.
+- Proceso de validación como ELEMENT_PROCESS.
+- Límite: requiere Ψ_evidencia ≥ 0.85 para declaración.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation]
+Ningún [element] puede ser constitutivo de violación de [foundation].
+
+#### 4.2 Con [scope]
+[element] existe y opera dentro del perímetro declarado.
+
+#### 4.3 Con [term]
+[element] tiene vigencia dentro del ciclo — purga o cristaliza al cierre.
+
+#### 4.4 Con [what?]
+[what?] declara cuál [element] es el objeto de acción.
+
+#### 4.5 Con [event]
+[event] ocurre sobre [element] y puede modificar su estado.
+
+#### 4.6 Con [command]
+[command] actúa sobre [element] como superficie de acción.
+
+#### 4.7 Con [scenario]
+[element] puebla el mapa que [scenario] valida.
+
+#### 4.8 Con [management]
+[management] gestiona amenazas que afectan [element].
+
+#### 4.9 Con STACKING
+[element] cristalizado es preservado como pilar.
+
+#### 4.10 Con SAMU @
+SAMU audita ciclo de vida de [element] y valida purgas.
+
+#### 4.11 Con GREEN-KNOWLEDGE
+Valida que [element] aporte distinción (delta-Ψ > 0).
+
+#### 4.12 Con Behavioral RAG
+[element] cristalizado alimenta patrones de calibración futura.
+
+---
+
+### 5.0 ESTADOS DE [element]
+
+#### 5.1 ELEMENT_DECLARED
+- **Condición:** delta-Ψ inicial establecido.
+- **Comportamiento:** [element] reconocido por el sistema.
+- **Operación:** pendiente de uso o verificación.
+
+#### 5.2 ELEMENT_ACTIVE
+- **Condición:** delta-Ψ > 0.1 sostenido.
+- **Comportamiento:** participando en ciclo activo.
+- **Operación:** SAMU @ monitorea distinción aportada.
+
+#### 5.3 ELEMENT_SATURATED
+- **Condición:** delta-Ψ < 0.1 por 3 ciclos consecutivos.
+- **Comportamiento:** perdió distinción operativa.
+- **Operación:** candidato a purga inmediata.
+
+#### 5.4 ELEMENT_CRYSTALLIZED
+- **Condición:** delta-Ψ verificado en estado final válido.
+- **Comportamiento:** preservado por STACKING como pilar.
+- **Operación:** inmutable — Nudo de Ocho.
+
+#### 5.5 ELEMENT_PURGED
+- **Condición:** eliminado por saturación o ruido.
+- **Comportamiento:** sin cristalización.
+- **Operación:** registro en Behavioral RAG de causa.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Afectación indirecta
+[element] no tiene dimensión propia pero afecta d₃ [scenario] y d₆ [command].
+
+#### 6.2 Impacto en d₃
+Acumulación de ELEMENT_SATURATED degrada d₃.
+
+#### 6.3 Impacto en d₆
+Escasez de ELEMENT_ACTIVE degrada d₆.
+
+#### 6.4 Aprendizaje en Behavioral RAG
+Patrones de cristalización calibran ciclos futuros.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Declaración de ELEMENT_ENTITY por [command]
+```
+[Trust] element =><= .. declare .. $$new_entity$$ --[As de Guía] [term]
+```
+
+#### 7.2 ELEMENT_ACTIVE participando en ciclo
+```
+[Trust] element =><= .. activate .. $$active_element$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.3 ELEMENT_SATURATED siendo purgado
+```
+[Trust] element =><= .. purge .. $$saturated_element$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.4 ELEMENT_CRYSTALLIZED en STACKING
+```
+[Trust] element =><= .. crystallize .. $$final_element$$ --[Ballestrinque] [term]
+```
+
+#### 7.5 [element] en dominio memcoins
+```
+[Trust] element =><= .. trade .. $$market_asset$$ --[As de Guía] [term]
+```
+
+#### 7.6 [element] en dominio custodia móvil
+```
+[Trust] element =><= .. secure .. $$custody_device$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.7 [element] en dominio notaría digital
+```
+[Trust] element =><= .. certify .. $$notary_document$$ --[Ballestrinque] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+- **Activación:** [element] activo en ciclo.
+- **Efecto:** distinción sostenida.
+
+#### 8.2 Nudo de Ocho
+- **Activación:** [element] cristalizado en STACKING.
+- **Efecto:** estado final inmutable.
+
+#### 8.3 Nudo Corredizo
+- **Activación:** ELEMENT_SATURATED.
+- **Efecto:** purga inminente.
+
+#### 8.4 Ballestrinque
+- **Activación:** tensión entre cristalización y purga.
+- **Efecto:** decisión de destino del elemento.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+#### 9.1 ElementDeclare
+1. Declaración por [command] con parámetros iniciales.
+2. Establecimiento de delta-Ψ base.
+3. Verificación de compatibilidad con [foundation].
+4. Registro inicial en Behavioral RAG.
+5. Asignación de tipo de elemento.
+
+#### 9.2 ElementActivate
+1. Incorporación a ciclo activo con auditoría SAMU @.
+2. Monitoreo inicial de delta-Ψ.
+3. Coordinación con [what?] para declaración de objeto.
+4. Establecimiento de métricas de uso.
+5. Notificación a [scenario] del elemento activo.
+
+#### 9.3 ElementMonitor
+1. Vigilancia continua de delta-Ψ durante ciclo.
+2. Detección de tendencias de saturación.
+3. Auditoría SAMU @ de distinción aportada.
+4. Registro de eventos en Behavioral RAG.
+5. Alertas tempranas de ELEMENT_SATURATED.
+
+#### 9.4 ElementSaturate
+1. Detección de delta-Ψ < 0.1 por 3 ciclos.
+2. Marcado automático como ELEMENT_SATURATED.
+3. Evaluación de causa de saturación.
+4. Decisión entre purga y recuperación.
+5. Notificación a [management] si es amenaza sistémica.
+
+#### 9.5 ElementCrystallize
+1. Verificación de estado final válido.
+2. Coordinación con STACKING para preservación.
+3. Cristalización como Nudo de Ocho inmutable.
+4. Alimentación de Behavioral RAG con patrón.
+5. Cierre del ciclo de vida del elemento.
+
+#### 9.6 ElementPurge
+1. Eliminación de elemento saturado o ruidoso.
+2. Registro de causa en Behavioral RAG.
+3. Liberación de recursos asignados.
+4. Notificación a SAMU @ de purga completada.
+5. Actualización de métricas del sistema.
+
+---
+
+### 10.0 MÉTRICAS
+
+- **delta-Ψ del elemento:** distinción aportada.
+- **Ratio ELEMENT_ACTIVE vs ELEMENT_SATURATED.**
+- **Frecuencia de cristalización vs purga.**
+- **Tiempo promedio de vida por tipo de elemento.**
+- **Tasa de elementos declarados que cristalizan.**
+- **Delta-distinción acumulada al cierre del ciclo.**
+
+---
+
+### 11.0 REGLAS
+
+- Solo [command] puede declarar [element].
+- Ningún [element] puede ser constitutivo de violación de [foundation].
+- [element] no puede existir fuera de [scope].
+- delta-Ψ < 0.1 por 3 ciclos obliga purga.
+- ELEMENT_CRYSTALLIZED es inmutable.
+- SAMU @ audita todo ciclo de vida de [element].
+- GREEN-KNOWLEDGE debe validar distinción antes de cristalizar.
+- Behavioral RAG registra toda purga con causa documentada.
+- [element] en notaría requiere Ψ_evidencia ≥ 0.85.
+- [element] purga o cristaliza al cierre de [term].
+- [element] cierra con [term] del ciclo.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+[element] fija la unidad mínima e indivisible de existencia operativa como superficie soberana de acción.
+
+#### 12.2 Limitaciones
+No puede ser constitutivo de violación de [foundation], no existe fuera de [scope], no puede quedarse indefinido.
+
+#### 12.3 Habilitaciones
+Superficie de acción para [command], objeto para [what?], destino de [event], alimentación de STACKING con pilares verificados, calibración de Behavioral RAG con patrones de distinción cristalizada.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

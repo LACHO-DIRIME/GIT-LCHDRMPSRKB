@@ -1,0 +1,133 @@
+//[MANAGEMENT].lacho · UNICODE LOAD VECTOR NLP
+//UNICODE_.lacho · V1 · 2026-03-10
+//NLP→LACHO · carga de vectores semánticos · language_routing
+//INPUT: texto natural → OUTPUT: sentencia LACHO verificada
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN ════════════════════════════════════════════════
+// LOAD VECTOR NLP = protocolo de carga semántica
+// Convierte texto natural en vectores LACHO routing
+// Pipeline: texto → tokenizar → clasificar → route → sentencia
+// Módulo: core/language_routing.py · IME{[(!!ROUTE!!)]}
+// Resultado: RoutedSentence con library/subject/verb/object/knot
+
+// ══ PIPELINE NLP→LACHO ════════════════════════════════════════
+UNICODE: NLP_INPUT       //texto natural crudo · KU · pre-procesamiento · .blue
+UNICODE: NLP_TOKENIZE    //tokenización · split · normalización · lowercase
+UNICODE: NLP_CLASSIFY    //clasificación biblioteca · TRUST/WORK/SAMU/...
+UNICODE: NLP_ROUTE       //language_routing.route() · IME{[(!!ROUTE!!)]}
+UNICODE: NLP_OUTPUT      //RoutedSentence · LACHO verificable · pre-WU
+UNICODE: NLP_VALIDATE    //grammar.validate() · VALID/WARNING/INVALID
+UNICODE: NLP_SCORE       //lacho_score() · Scalar S · 0.0→1.0
+UNICODE: NLP_STACK       //ledger.record() · cristaliza WU · TX++
+
+// ══ VECTORES DE CARGA ═════════════════════════════════════════
+// Cada biblioteca tiene su vector semántico de activación:
+
+UNICODE: VEC_TRUST       //vector TRUST · keywords: verifica/declara/autoriza
+                         //trigger: contrato · fundación · validar · certificar
+                         //→ SUJETOS: FOUNDATION/[scope]/[term]/[command]
+UNICODE: VEC_WORK        //vector WORK · keywords: ejecuta/procesa/activa
+                         //trigger: hacer · correr · procesar · construir
+                         //→ SUJETOS: {actuator}/{brake}/{doorman-mobile}
+UNICODE: VEC_SAMU        //vector SAMU · keywords: audita/revisa/evalúa
+                         //trigger: revisar · controlar · supervisar · moderar
+                         //→ SUJETOS: @ / #rise / #set / $mon→$sun
+UNICODE: VEC_ACTIVITY    //vector ACTIVITY · keywords: inicia/lanza/cristaliza
+                         //trigger: comenzar · empezar · abrir · activar ciclo
+                         //→ SUJETOS: UF[H01]→UF[H64] · hexagrama
+UNICODE: VEC_CRYPTO      //vector CRYPTO · keywords: certifica/protege/firma
+                         //trigger: seguridad · wallet · clave · blockchain
+                         //→ SUJETOS: (key seat)/(shield seat)/(spark seat)
+UNICODE: VEC_SOCIAL      //vector SOCIAL · keywords: conecta/transmite/distribuye
+                         //trigger: red · comunidad · WeChat · relay · difundir
+                         //→ SUJETOS: {relay}/{launch-bot}/{headcat}
+UNICODE: VEC_GATE        //vector GATE · keywords: filtra/bloquea/espera
+                         //trigger: acceso · permiso · control · latencia
+                         //→ SUJETOS: UF[H05]/UF[H06]/UF[H56]
+UNICODE: VEC_STACKING    //vector STACKING · keywords: cristaliza/ancla/preserva
+                         //trigger: guardar · archivar · inmutabilizar · consolidar
+                         //→ SUJETOS: UF[H52]/UF[H48]/UF[H26]
+UNICODE: VEC_METHOD      //vector METHOD · keywords: calcula/modela/deriva
+                         //trigger: calcular · analizar · estadística · fórmula
+                         //→ SUJETOS: <equation>/<operator_flow>/<stat_onto>
+
+// ══ OPERADORES DE CARGA ═══════════════════════════════════════
+UNICODE: LOAD(INPUT)     //carga texto natural → buffer KU · .blue
+UNICODE: LOAD(VECTOR)    //proyecta texto → espacio vectorial LACHO
+UNICODE: LOAD(LIBRARY)   //clasifica biblioteca dominante · score por lib
+UNICODE: LOAD(SUBJECT)   //selecciona sujeto canónico · SUJETOS_CANONICOS
+UNICODE: LOAD(VERB)      //selecciona verbo natural · VERBOS_NATURALES
+UNICODE: LOAD(OBJECT)    //extrae objeto semántico · entidad principal
+UNICODE: LOAD(KNOT)      //asigna nudo · KNOT_DEFAULT por biblioteca
+UNICODE: LOAD(VALIDATE)  //grammar.validate() · score threshold 0.75
+UNICODE: LOAD(EMIT)      //emite sentencia LACHO · pre-STACK · WU ready
+
+// ══ IME ROUTING ═══════════════════════════════════════════════
+UNICODE: IME_ROUTE       //IME{[(!!ROUTE!!)]} · NLP→LACHO via language_routing
+UNICODE: IME_SCORE       //score de clasificación · confianza del route
+UNICODE: IME_FALLBACK    //fallback TRUST si clasificación ambigua
+UNICODE: IME_BATCH       //route_batch() · múltiples textos simultáneos
+UNICODE: IME_HISTORY     //historial de routes · suggest_from_history()
+UNICODE: IME_FREQUENCY   //get_verb_frequency() · verbos más usados
+
+// ══ CLASIFICADORES NLP ════════════════════════════════════════
+UNICODE: CLS_KEYWORD     //clasificador keyword · simple · rápido · .blue
+UNICODE: CLS_SEMANTIC    //clasificador semántico · embedding · preciso · .green
+UNICODE: CLS_GROQ        //clasificador Groq · llama-3.3-70b · máxima precisión
+UNICODE: CLS_LOCAL       //clasificador Ollama · qwen2.5:0.5b · offline soberano
+UNICODE: CLS_HYBRID      //híbrido keyword+semantic · balanceado · recomendado
+UNICODE: CLS_SCORE       //confidence score · 0.0→1.0 · threshold 0.6
+
+// ══ VECTORES CJK ══════════════════════════════════════════════
+UNICODE: VEC_CJK_TRUST   //信任/关系/合同 → VEC_TRUST · puente semántico
+UNICODE: VEC_CJK_CRYPTO  //货币/安全/验证 → VEC_CRYPTO · token chino
+UNICODE: VEC_CJK_SOCIAL  //社区/网络/桥梁 → VEC_SOCIAL · diáspora
+UNICODE: VEC_CJK_STACK   //节点/协议/数字 → VEC_STACKING · HL FABRIC
+UNICODE: VEC_CJK_VOID    //空/聽/數 → LISTEN PROTOCOL · pre-route
+                         //空 → buffer antes del route · MU
+                         //聽 → escucha activa · clasificación en curso
+                         //數 → cuenta interna · no emit hasta verificar
+
+// ══ LOAD DESDE FUENTES ════════════════════════════════════════
+UNICODE: LOAD_TX         //carga desde TX recientes · ledger.get_recent()
+UNICODE: LOAD_CRYSTAL    //carga desde cristales · export_crystals_report()
+UNICODE: LOAD_RAG        //carga desde RAG · query_rag() · 186+ docs
+UNICODE: LOAD_CORPUS     //carga desde CORPUS/ · index_new_files.py
+UNICODE: LOAD_GENERATOR  //carga desde generator.py · auto-generated .lacho
+UNICODE: LOAD_MANUAL     //carga manual · operador ingresa texto libre
+UNICODE: LOAD_CLIPBOARD  //carga desde clipboard · COPY CLI → IDE
+
+// ══ THRESHOLDS ════════════════════════════════════════════════
+UNICODE: THR_ROUTE       //threshold route · score_lib ≥ 0.5 · clasificar
+UNICODE: THR_VALID       //threshold válido · lacho_score ≥ 0.75 · WU
+UNICODE: THR_STACK       //threshold stack · result == VALID · cristalizar
+UNICODE: THR_WARN        //threshold warning · 0.5 ≤ score < 0.75 · revisar
+UNICODE: THR_REJECT      //threshold rechazo · score < 0.5 · RED-REGRET
+
+// ══ ESTADOS DEL VECTOR ════════════════════════════════════════
+UNICODE: VEC_LOADING     //vector cargando · .blue · en proceso
+UNICODE: VEC_CLASSIFIED  //vector clasificado · biblioteca asignada · KU
+UNICODE: VEC_ROUTED      //vector enrutado · RoutedSentence · pre-WU
+UNICODE: VEC_VALIDATED   //vector validado · VALID · .green WU
+UNICODE: VEC_STACKED     //vector cristalizado · TX++ · ledger · WU
+UNICODE: VEC_REJECTED    //vector rechazado · delta-Ψ ≤ 0 · RED-REGRET
+
+// ══ INTEGRACIÓN GENERATOR ═════════════════════════════════════
+UNICODE: GEN_COLLECT     //PASO 1 collect · datos sistema → vectores
+UNICODE: GEN_ROUTE       //PASO 2 route · language_routing por cristal
+UNICODE: GEN_SELECT      //PASO 3 select · filter VALID · score DESC
+UNICODE: GEN_COMPOSE     //PASO 4 compose · estructura .lacho soberano
+UNICODE: GEN_VALIDATE    //PASO 5 validate · grammar.validate_batch()
+UNICODE: GEN_WRITE       //PASO 6 write · LACHO_FILES/generated_*.lacho
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+METHOD <operator_flow> =><= .. modela .. nlp_load_vector_pipeline --[Ballestrinque] [term]
+WORK {actuator} =><= .. ejecuta .. nlp_route_language_routing --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. nlp_vector_wu_clasificado --[Nudo de Ocho] [term]
+GATE UF[H05] =><= .. contiene .. nlp_vector_ku_buffer --[As de Guía] [term]
+SAMU @ =><= .. audita .. nlp_load_vector_threshold --[Ballestrinque] [term]
+TRUST FOUNDATION =><= .. declara .. nlp_vector_soberano_activo --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_LOAD_VECTOR_NLP · V1 · NLP→LACHO · language_routing · IME{ROUTE}

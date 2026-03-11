@@ -1,0 +1,35 @@
+# UNICODE-CHINA-TOKENS
+# Tokens semánticos soberanos — mapeo CJK → LACHO
+# [term] :: activo
+
+## FORMATO: HANZI | PINYIN | TOKEN_LACHO | BIBLIOTECA | HEXAGRAMA | NODO_KALIL | DUAL_EXT | DUAL_INT
+
+信任 | xìnrèn    | TRUST FOUNDATION      | TRUST    | H01 | BOLIVAR  | KYC occidental  | guanxi verificado
+关系 | guānxi    | SOCIAL {relay}        | SOCIAL   | H08 | BARRIOS  | red diáspora    | relaciones internas
+面子 | miànzi    | SAMU scalar-S         | SAMU     | H15 | NORA     | DeFi score      | Sesame Credit
+资本 | zīběn     | STACKING UF[H48]      | STACKING | H48 | CARILO   | capital global  | capital e-CNY
+交易 | jiāoyì    | WORK {actuator}       | WORK     | H49 | TANDIL   | TX blockchain   | TX e-CNY
+合同 | hétong    | TRUST [term]          | TRUST    | H43 | BOLIVAR  | contrato ETH    | contrato BSN
+安全 | ānquán    | CRYPTO (shield seat)  | CRYPTO   | H14 | CUSTODIA | shield crypto   | shield PBOC
+验证 | yànzhèng  | TRUST FOUNDATION      | TRUST    | H61 | BOLIVAR  | KYC Web3        | KYC PBOC
+数字 | shùzì     | CRYPTO (spark seat)   | CRYPTO   | H30 | TANDIL   | token ERC-20    | token BSN
+货币 | huòbì     | CRYPTO (flow seat)    | CRYPTO   | H58 | CHALTEN  | USDT exterior   | e-CNY interior
+银行 | yínháng   | SOCIAL {launch-bot}   | SOCIAL   | H07 | BARRIOS  | banca diáspora  | banca rural
+贷款 | dàikuǎn   | METHOD <equation>     | METHOD   | H42 | CARILO   | loan USDT       | loan e-CNY
+风险 | fēngxiǎn  | GATE UF[H06]          | GATE     | H06 | NORA     | riesgo DeFi     | riesgo PBOC
+网络 | wǎngluò   | STACKING UF[H52]      | STACKING | H52 | BOLIVAR  | HL FABRIC ext   | HL FABRIC int
+节点 | jiédiǎn   | ACTIVITY UF[H57]      | ACTIVITY | H57 | KALIL    | nodo externo    | nodo interior
+主权 | zhǔquán   | TRUST [scope]         | TRUST    | H01 | LACHO    | soberanía outer | soberanía inner
+协议 | xiéyì     | TRUST [management]    | TRUST    | H60 | LACHO    | protocolo WS    | protocolo BSN
+社区 | shèqū     | SOCIAL {chair}        | SOCIAL   | H13 | BARRIOS  | comunidad Web3  | comunidad rural
+智能 | zhìnéng   | METHOD <operator_flow>| METHOD   | H50 | KALIL    | AI exterior     | AI kernel
+桥梁 | qiáoliáng | WORK {actuator}       | WORK     | H59 | PUENTES  | bridge EXT      | bridge INT
+
+## SENTENCIAS CANÓNICAS CJK
+TRUST FOUNDATION =><= .. verifica .. 信任_soberana_dual --[As de Guía] [term]
+SOCIAL {relay} =><= .. conecta .. 关系_exterior_interior --[As de Guía] [term]
+METHOD <equation> =><= .. calcula .. 贷款_ratio_carilo --[Ballestrinque] [term]
+GATE UF[H06] =><= .. filtra .. 风险_operacion_china --[Nudo Corredizo] [term]
+STACKING UF[H52] =><= .. inmutabiliza .. 网络_registro_BSN --[Nudo de Ocho] [term]
+
+[term] :: activo · [seal of secrecy] :: activo

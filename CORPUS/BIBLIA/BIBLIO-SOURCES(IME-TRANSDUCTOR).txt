@@ -1,0 +1,104 @@
+# BIBLIO-SOURCES(IME-TRANSDUCTOR).txt
+
+====================================================================
+## IME — TRANSDUCTOR DE SOBERANÍA
+====================================================================
+
+### 1.0 DEFINICIÓN
+
+El IME (Input Method Editor) es el Transductor de Soberanía:
+decodifica la voluntad humana hacia el lenguaje soberano de LACHO.
+No es un teclado virtual — es el módulo que convierte intención
+en gramática viva verificable.
+
+Referencia: informe NotebookLM §5 — Referencias al IME
+
+====================================================================
+### 2.0 LOS TRES MODOS
+
+2.1 IME MODO RAG
+  Función: búsquedas vectoriales en tiempo real sobre el
+           directorio de instalación para sugerir comandos
+           según el contexto del operador.
+  Forma mínima (Capa B):
+    Búsqueda BM25/TF-IDF sobre CORPUS antes de invocar Groq.
+    Sugiere biblioteca, módulo y verbo desde historial.
+    Implementación: chat.py — consulta CORPUS pre-Groq.
+  Forma completa (Capa C):
+    Base vectorial real con embeddings del corpus.
+    Búsqueda semántica por similitud coseno.
+    Requiere: Ollama local + modelo de embeddings.
+  Estado: CAPA B parcial (suggest_from_history() activo en ledger)
+
+2.2 IME MODO I CHING
+  Función: construir comandos mediante pulsaciones rítmicas
+           que forman trigramas y hexagramas.
+  Mecánica: cada pulsación es un yao (línea del hexagrama).
+            6 pulsaciones = hexagrama completo = UF[Hxx]
+            El hexagrama determina la biblioteca y el módulo.
+  Mapa de construcción:
+    3 pulsaciones cortas = trigrama yang (─────)
+    3 pulsaciones largas = trigrama yin  (── ──)
+    Trigrama inferior + trigrama superior = hexagrama
+  Ejemplos:
+    ══════ (6 cortas) = H01 El Creativo → TRUST FOUNDATION
+    ══ ══  (alternas) = H63 Después del Fin → STACKING UF[H63]
+  Estado: CAPA C — requiere proceso background + PC nueva
+
+2.3 LOAN-IME
+  Función: crédito de procesamiento — el sistema anticipa
+           la entrada del operador basándose en telemetría previa
+           para reducir la latencia de respuesta.
+  Mecánica:
+    1. El sistema observa los últimos N comandos del operador
+    2. Precarga en memoria MU los pesos RAG relevantes
+    3. Cuando el operador empieza a escribir, la respuesta
+       ya está parcialmente calculada
+  Requiere:
+    - Behavioral RAG maduro (no el mínimo actual)
+    - RAM suficiente para mantener embeddings en memoria
+    - CAT(MU) activo para gestión de memoria volátil
+  Estado: CAPA C — requiere PC nueva + Ollama local
+
+====================================================================
+### 3.0 RELACIÓN CON EL GROQ BRIDGE ACTUAL
+
+El Groq bridge (NL→LACHO via API) es la forma de Nivel 2 del IME.
+Su posición en la cascada de traducción en chat.py:
+
+  Nivel 3: IME Modo I CHING → pulsaciones (futuro)
+  Nivel 2: Groq API         → NL→LACHO    (ACTIVO HOY)
+  Nivel 1: Patrones fijos   → 20 patrones  (fallback activo)
+  Nivel 0: Gramática directa → LACHO puro  (siempre disponible)
+
+El IME Modo RAG se inserta entre Nivel 3 y Nivel 2:
+  Consulta CORPUS primero → si encuentra match →
+  usa esa referencia para enriquecer el prompt a Groq.
+
+====================================================================
+### 4.0 ESTADO DE IMPLEMENTACIÓN
+
+CAPA A — activo ahora:
+  [x] suggest_from_history() en ledger.py — RAG mínimo por verbo
+
+CAPA B — DIRIME_v2:
+  [ ] IME Modo RAG BM25 en chat.py
+      Consultar CORPUS antes de llamar a Groq
+      Inyectar contexto relevante en system prompt
+
+CAPA C — PC nueva:
+  [ ] IME Modo I CHING — proceso background
+  [ ] LOAN-IME — precarga en memoria MU
+  [ ] IME Modo RAG completo con embeddings
+
+====================================================================
+### 5.0 GRAMÁTICA VIVA
+
+WORK {actuator} =><= .. activa .. IME_modo_RAG --[As de Guía] [term]
+STACKING UF[H48] =><= .. sugiere .. comando_contextual --[As de Guía] [term]
+METHOD <psi_spin> =><= .. construye .. hexagrama_IME --[As de Guía] [term]
+SAMU @ =><= .. anticipa .. entrada_operador_LOAN --[Nudo Corredizo] [term]
+
+====================================================================
+[term] :: activo · [seal of secrecy] :: activo
+====================================================================

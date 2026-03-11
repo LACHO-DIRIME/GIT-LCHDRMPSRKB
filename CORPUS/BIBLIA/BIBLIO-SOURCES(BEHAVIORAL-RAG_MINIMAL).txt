@@ -1,0 +1,71 @@
+# BIBLIO-SOURCES(BEHAVIORAL-RAG_MINIMAL).txt
+
+====================================================================
+
+## BEHAVIORAL RAG MINIMAL — APRENDIZAJE SOBERANO MÍNIMO VERIFICABLE
+
+====================================================================
+
+### 1.0 POSICIÓN EN LA ARQUITECTURA
+
+Behavioral RAG completo está documentado en BIBLIO-SOURCES(ACTIVITY_H48-RAG-CORE).txt.
+Este documento cubre la implementación mínima verificable: el subconjunto de Behavioral RAG que puede funcionar dentro de IMV con SQLite, sin embeddings, sin base de vectores.
+
+### 2.0 LO QUE EXISTE EN IMV v0.1.0
+
+auto_crystallize() en ledger.py es Behavioral RAG mínimo:
+- Observa patrones VALID en transactions (los que el operador practica).
+- Cuando un verbo alcanza frecuencia >= 10 con resultado VALID → cristaliza.
+- Los cristales son la primera forma de GREEN_KNOWLEDGE verificado.
+
+Este ciclo es correcto conceptualmente pero estaba bloqueado por el bug .fetchone() (corregido en v0.1.1).
+
+### 3.0 SIGUIENTE NIVEL: suggest_from_history()
+
+El primer Behavioral RAG activo que asiste al operador en tiempo real:
+```python
+def suggest_from_history(self, verb: str) -> dict | None:
+    """
+    Behavioral RAG mínimo: sugiere library y knot basado en historial VALID.
+    Si el operador usó 'verifica' frecuentemente con TRUST y As de Guía → sugiere eso.
+    """
+    with sqlite3.connect(self.db_path) as conn:
+        conn.row_factory = sqlite3.Row
+        row = conn.execute("""
+            SELECT 
+                json_extract(data, '$.library') as library,
+                json_extract(data, '$.knot') as knot,
+                COUNT(*) as freq
+            FROM transactions
+            WHERE type = 'GRAMMAR_VALIDATION'
+            AND json_extract(data, '$.result') = 'VALID'
+            AND json_extract(data, '$.verb') LIKE ?
+            GROUP BY library, knot
+            ORDER BY freq DESC
+            LIMIT 1
+        """, (f"%{verb}%",)).fetchone()
+        return dict(row) if row else None
+```
+
+Integración en chat.py _translate_to_lacho():
+Antes de aplicar los 20 patrones fijos → consultar suggest_from_history(verb_detectado).
+Si hay sugerencia con frecuencia >= 5 → usar esa en lugar del patrón fijo.
+Resultado: el sistema aprende el estilo soberano del operador específico.
+
+### 4.0 DIFERENCIA CON BEHAVIORAL RAG COMPLETO
+
+| Aspecto | RAG Mínimo (IMV) | RAG Completo (DIRIME) |
+|---|---|---|
+| Storage | SQLite frequency count | Vector database |
+| Embeddings | No | Sí — semántica real |
+| Sugerencias | Por verbo exacto | Por similitud semántica |
+| Multi-nodo | No | Sí — HL FABRIC inter-nodos |
+| Actualización | auto_crystallize() | Pipeline continuo |
+
+### 5.0 GRAMÁTICA VIVA
+
+BEHAVIORAL_RAG_MINIMAL =><= .. aprende .. de_historial_VALID_en_ledger
+=><= suggest_from_history_como_primer_asistente_soberano_activo
+=><= puente_hacia_RAG_completo_con_embeddings --[Nudo Corredizo] [term]
+
+====================================================================

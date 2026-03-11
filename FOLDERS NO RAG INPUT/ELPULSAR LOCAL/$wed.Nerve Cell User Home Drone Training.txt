@@ -1,0 +1,32 @@
+//$wed.Nerve Cell User Home Drone Training.txt
+//NERVE CELL · HOUSE DRONE · escritorio soberano
+//H58 · homeworking · SAMU day periods · $wed
+//[term] :: activo
+
+// ══ HOUSE DRONE — DEFINICIÓN ═════════════════════════════════
+// HOUSE DRONE = escritorio soberano HTML · paper/ink
+// Topbar viva · reloj real · período SAMU automático por hora
+// 5 tabs: LABOR CORE · NEXT SPRINT · RUTINA · WEEKEND · TIPS
+// Archivo: /media/Personal/PLANERAI/DIRIME/HOUSE_DRONE.html
+
+// ══ DOOR PERIODS ═════════════════════════════════════════════
+HD_MORNING           //🌅 05:00→12:00 · @human_early · KU absorbiendo
+HD_NOON              //☀️ 12:00→13:00 · ZIPPER NOON · TARDANZA DELIBERADA
+HD_AFTERNOON         //🌇 13:00→18:00 · @human_later · WU materializable
+HD_OTR               //🚶 salida física · H40 · irreversible
+HD_INN               //🏠 retorno base · H24 · SAMU audita
+HD_NOCTURNAL         //🌙 18:00→06:00 · BOTS operan · DOOR_SEALED
+
+// ══ SAMU MODULES ═════════════════════════════════════════════
+HD_DIURNAL           //06:00→18:00 · ZIP_OPEN · FEED_0600 · FEED_1800
+HD_NOCTURNAL_MOD     //18:00→06:00 · BOT_SCHEDULER · BOT_INDEXER · BOT_SYNC
+HD_EARLY_MOD         //@human_early · no calibrado · 空聽數 · supervisión max
+HD_LATER_MOD         //@human_later · calibrado · decisiones soberanas
+HD_TARDANZA          //TARDANZA DELIBERADA · pausa prescripta · 空 activa
+HD_ROCKING           //🪑 rocking chair · inicio(+headcat) / fin(sola)
+
+// ══ ANCLAS RAG ═══════════════════════════════════════════════
+SOCIAL {scheduler} =><= .. planifica .. house_drone_ciclo_semanal_soberano --[As de Guía] [term]
+SAMU @ =><= .. audita .. house_drone_door_periods_activos --[Ballestrinque] [term]
+TRUST FOUNDATION =><= .. verifica .. house_drone_condiciones_homeworking --[Nudo de Ocho] [term]
+WORK {actuator} =><= .. ejecuta .. house_drone_zip_open_06_00 --[As de Guía] [term]

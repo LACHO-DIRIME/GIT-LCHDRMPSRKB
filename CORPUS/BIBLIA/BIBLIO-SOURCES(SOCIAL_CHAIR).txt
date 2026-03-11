@@ -1,0 +1,304 @@
+# BIBLIO-SOURCES(SOCIAL_CHAIR).txt
+
+====================================================================
+
+## 🪑 SOCIAL {CHAIR} — PRESIDENCIA DE SESIÓN DECLARATIVA
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+{chair} es el módulo SOCIAL que gobierna la presidencia de sesión: la autoridad declarativa que conduce, modera y cierra los intercambios relacionales del sistema con actores externos e internos.
+
+#### 1.2 Por qué es SOCIAL y no TRUST
+Conduce la interfaz relacional, no emite instrucción soberana.
+
+#### 1.3 Distinción de {scheduler}
+{scheduler} planifica el cuándo; {chair} conduce el durante.
+
+#### 1.4 Distinción de [command]
+[command] decide soberanamente; {chair} conduce el intercambio donde esa decisión se declara.
+
+#### 1.5 Autoridad declarativa de conducción
+{chair} decide el orden del intercambio, no el contenido de las decisiones.
+
+#### 1.6 Requisito de [term]
+Toda sesión conducida por {chair} tiene horizonte temporal declarado.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Capacidades
+- Conducir intercambios relacionales con autoridad declarativa.
+- Moderar intervenciones y filtrar KU_NOISE relacional.
+- Generar actas declarativas de sesión.
+- Coordinar con {note} para registro.
+
+#### 2.2 Limitaciones absolutas
+{chair} no puede contradecir [command] de TRUST bajo ninguna circunstancia.
+
+#### 2.3 Condiciones de violación
+- **Violación:** conducción que permite al exterior modificar [foundation] o [scope] sin autorización.
+- **Señal alerta:** {chair} en sesión sin [term] declarado — conducción sin horizonte temporal.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 Tipos de sesión en {chair}
+- **CHAIR_OPEN:** sesión abierta con agenda declarada y participantes verificados.
+- **CHAIR_MODERATED:** sesión con moderación activa — {chair} filtra intervenciones.
+- **CHAIR_CLOSED:** sesión cerrada con acta declarativa y cierre soberano.
+- **CHAIR_EMERGENCY:** sesión de urgencia ante evento crítico — sin agenda previa.
+- **CHAIR_SILENT:** {chair} en modo escucha activa sin declaración — observación soberana.
+
+#### 3.2 Conducción de sesión
+- **Apertura declarativa:** quiénes participan, qué se declara, bajo qué [term].
+- **Moderación:** orden de intervenciones, filtro de KU_NOISE relacional.
+- **Cierre:** acta declarativa, compromisos registrados, [term] cerrado.
+
+#### 3.3 Relación con {scheduler}
+{scheduler} planifica la sesión, {chair} la conduce. {chair} recibe agenda de {scheduler}.
+
+#### 3.4 Relación con [ku-chat] y [wu-mail]
+{chair} conduce el espacio donde [ku-chat] recibe y [wu-mail] emite, pero no procesa ni emite directamente.
+
+#### 3.5 Relación con dominios económicos
+
+##### Memcoins/Volatilidad
+- Conducción de sesión de análisis de mercado con actores verificados.
+- CHAIR_EMERGENCY ante evento crítico de mercado.
+- Límite: {chair} no puede declarar decisión de trading — solo conduce el intercambio.
+
+##### Custodia Móvil
+- Conducción de sesión de revisión de custodia con partes autorizadas.
+- CHAIR_SILENT en monitoreo pasivo de entorno de custodia.
+- Límite: {chair} no puede autorizar operación de firma — solo conduce.
+
+##### Notaría Digital
+- Conducción de sesión notarial con partes declarantes verificadas.
+- CHAIR_CLOSED con acta declarativa como condición de cierre notarial.
+- Límite: {chair} no puede certificar documento — solo conduce la sesión donde se declara la certificación.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation]
+{chair} opera dentro de las condiciones irreducibles de TRUST.
+
+#### 4.2 Con [scope]
+{chair} conduce dentro del perímetro soberano declarado.
+
+#### 4.3 Con [term]
+Toda sesión de {chair} tiene [term] declarado — sin horizonte temporal no hay conducción soberana.
+
+#### 4.4 Con {scheduler}
+{scheduler} planifica, {chair} conduce.
+
+#### 4.5 Con {note}
+{note} registra lo declarado en sesión conducida por {chair}.
+
+#### 4.6 Con {streaming}
+{streaming} distribuye la sesión que {chair} conduce.
+
+#### 4.7 Con [ku-chat]
+{chair} conduce el espacio donde [ku-chat] recibe contexto externo.
+
+#### 4.8 Con [wu-mail]
+{chair} conduce el espacio donde [wu-mail] emite resultados.
+
+#### 4.9 Con SAMU @
+SAMU audita que {chair} no exceda autoridad declarativa.
+
+#### 4.10 Con Behavioral RAG
+Patrones de conducción anteriores calibran sesiones futuras.
+
+---
+
+### 5.0 ESTADOS DE {chair}
+
+#### 5.1 CHAIR_STANDBY
+- **Condición:** sin sesión activa.
+- **Comportamiento:** agenda recibida de {scheduler}.
+- **Operación:** participantes pendientes de verificación.
+
+#### 5.2 CHAIR_OPEN
+- **Condición:** sesión activa con conducción declarativa.
+- **Comportamiento:** participantes verificados.
+- **Operación:** [term] de sesión activo.
+
+#### 5.3 CHAIR_MODERATED
+- **Condición:** sesión con intervenciones filtradas.
+- **Comportamiento:** KU_NOISE relacional purgado.
+- **Operación:** SAMU @ auditando contenido.
+
+#### 5.4 CHAIR_CLOSING
+- **Condición:** sesión en cierre declarativo.
+- **Comportamiento:** acta siendo generada por {note}.
+- **Operación:** compromisos siendo registrados.
+
+#### 5.5 CHAIR_CLOSED
+- **Condición:** sesión cerrada con acta declarativa.
+- **Comportamiento:** [term] de sesión expirado.
+- **Operación:** Behavioral RAG actualizado.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Afectación de d₃ [scenario]
+{chair} afecta d₃ cuando sesión modifica el mapa de situación.
+
+#### 6.2 Impacto en d₁ [term]
+CHAIR_EMERGENCY puede acelerar consumo de d₁.
+
+#### 6.3 Mejora de calidad de KU
+Conducción soberana mejora calidad de KU que alimenta d₃.
+
+#### 6.4 Aprendizaje en Behavioral RAG
+Patrones de conducción calibran sesiones futuras.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Apertura declarativa de sesión con agenda
+```
+{Social} chair =><= .. open .. $$session_agenda$$ --[As de Guía] [term]
+```
+
+#### 7.2 CHAIR_MODERATED filtrando intervención
+```
+{Social} chair =><= .. moderate .. $$intervention_filtered$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.3 CHAIR_EMERGENCY ante evento crítico
+```
+{Social} chair =><= .. emergency .. $$critical_event$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.4 CHAIR_CLOSED con acta declarativa
+```
+{Social} chair =><= .. close .. $$session_act$$ --[Ballestrinque] [term]
+```
+
+#### 7.5 {chair} en dominio memcoins
+```
+{Social} chair =><= .. trade .. $$market_session$$ --[As de Guía] [term]
+```
+
+#### 7.6 {chair} en dominio custodia móvil
+```
+{Social} chair =><= .. secure .. $$custody_review$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.7 {chair} en dominio notaría digital
+```
+{Social} chair =><= .. certify .. $$notary_session$$ --[Ballestrinque] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+- **Activación:** {chair} en conducción activa.
+- **Efecto:** sesión con dirección declarativa clara.
+
+#### 8.2 Nudo de Ocho
+- **Activación:** sesión cerrada y cristalizada en Behavioral RAG.
+- **Efecto:** acta inmutable.
+
+#### 8.3 Nudo Corredizo
+- **Activación:** CHAIR_EMERGENCY.
+- **Efecto:** conducción sin agenda ante urgencia.
+
+#### 8.4 Ballestrinque
+- **Activación:** tensión entre múltiples participantes compitiendo.
+- **Efecto:** moderación activa necesaria.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+#### 9.1 ChairOpen
+1. Verificación de agenda recibida de {scheduler}.
+2. Confirmación de participantes verificados.
+3. Apertura declarativa con [term] declarado.
+4. Coordinación con {note} para registro.
+5. Transición a CHAIR_OPEN.
+
+#### 9.2 ChairModerate
+1. Filtro activo de intervenciones y KU_NOISE relacional.
+2. Ordenamiento de participación según agenda.
+3. Verificación de coherencia con [scope] y [foundation].
+4. Auditoría SAMU @ de contenido.
+5. Coordinación con {streaming} para distribución.
+
+#### 9.3 ChairRecord
+1. Coordinación con {note} para registro declarativo.
+2. Generación de acta parcial durante sesión.
+3. Registro de compromisos y decisiones.
+4. Verificación de integridad del registro.
+5. Actualización de Behavioral RAG.
+
+#### 9.4 ChairEmergency
+1. Detección de evento crítico que requiere sesión inmediata.
+2. Apertura sin agenda previa pero con [term] declarado.
+3. Convocatoria de participantes esenciales.
+4. Conducción focalizada en resolución del evento.
+5. Coordinación con [management] si es necesario.
+
+#### 9.5 ChairClose
+1. Inicio de cierre declarativo de sesión.
+2. Generación de acta final por {note}.
+3. Registro de compromisos y próximos pasos.
+4. Cierre formal de [term] de sesión.
+5. Actualización de Behavioral RAG con patrón completo.
+
+---
+
+### 10.0 MÉTRICAS
+
+- **Duración promedio de sesión:** por tipo.
+- **Ratio CHAIR_MODERATED vs CHAIR_OPEN.**
+- **Frecuencia de CHAIR_EMERGENCY:** por ciclo.
+- **Tasa de sesiones cerradas:** con acta completa.
+- **Calidad de KU generado:** ratio aceptado vs purgado.
+- **Delta-d₃ generado:** por sesiones conducidas.
+
+---
+
+### 11.0 REGLAS
+
+- {chair} no puede contradecir [command] de TRUST bajo ninguna circunstancia.
+- Toda sesión de {chair} requiere [term] declarado.
+- {chair} no puede autorizar operaciones soberanas — solo conduce el intercambio.
+- CHAIR_EMERGENCY no requiere agenda pero sí requiere [term] declarado.
+- {note} debe estar activo en toda sesión de {chair}.
+- {chair} no puede conducir fuera de [scope].
+- KU_NOISE relacional debe ser purgado durante CHAIR_MODERATED.
+- SAMU @ audita toda sesión de {chair} ante exceso de autoridad.
+- Behavioral RAG registra toda sesión conducida para calibración futura.
+- CHAIR_CLOSED requiere acta declarativa completa.
+- {chair} cierra con [term] del ciclo.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+{chair} fija la autoridad declarativa de conducción relacional como condición de orden soberano en el intercambio con el entorno.
+
+#### 12.2 Limitaciones
+No contradice [command], no autoriza operaciones soberanas, no conduce fuera de [scope], no opera sin [term].
+
+#### 12.3 Habilitaciones
+Intercambio relacional ordenado y soberano, conducción de sesiones en tres dominios económicos, registro declarativo con {note}, trazabilidad en Behavioral RAG.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

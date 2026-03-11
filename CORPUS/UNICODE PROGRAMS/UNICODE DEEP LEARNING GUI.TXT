@@ -1,0 +1,63 @@
+**UNICODE DEEP LEARNING GUI**
+```
+//[MANAGEMENT].lacho · UNICODE DEEP LEARNING GUI
+//GUI soberana del sistema DL · capas · pesos · gradientes
+//integrado a CIDE · nodos como neuronas · wires como pesos
+//[term] :: activo · 空聽數
+
+// ══ CAPAS · LAYERS ═══════════════════════════════════════════
+UNICODE: DL_INPUT_LAYER   //capa entrada · Blue-Words KU · ○→
+UNICODE: DL_HIDDEN_LAYER  //capa oculta · grammar.py · ◑→◑
+UNICODE: DL_OUTPUT_LAYER  //capa salida · WU cristalizado · →●
+UNICODE: DL_LOSS          //función pérdida · delta-Ψ · RED-REGRET
+UNICODE: DL_BACKPROP      //backprop · ←←← retorno · SAMU audita
+UNICODE: DL_FORWARD       //forward pass · →→→ · KU fluye
+UNICODE: DL_EPOCH         //época · ciclo SPIN completo · MU→空→MU
+UNICODE: DL_BATCH         //batch · TOMO/SLICE · procesamiento grupal
+
+// ══ PESOS · WEIGHTS ══════════════════════════════════════════
+UNICODE: DL_WEIGHT_POS    //peso positivo · delta-Ψ > 0 · .green
+UNICODE: DL_WEIGHT_NEG    //peso negativo · delta-Ψ ≤ 0 · RED-REGRET
+UNICODE: DL_WEIGHT_ZERO   //peso cero · MU · neutro · 空
+UNICODE: DL_WEIGHT_UPDATE //actualización · SAMU @ · ledger.record()
+UNICODE: DL_FREEZE        //freeze pesos · UF[H52] STACKING · inmutable
+UNICODE: DL_UNFREEZE      //unfreeze · UF[H64] · ciclo abierto
+
+// ══ ACTIVACIONES ═════════════════════════════════════════════
+UNICODE: DL_RELU          //ReLU · max(0,x) · delta-Ψ gate · ◆
+UNICODE: DL_SIGMOID       //sigmoid · 0→1 · Scalar S mapping · ≈
+UNICODE: DL_SOFTMAX       //softmax · distribución · SOCIAL {drip}
+UNICODE: DL_TANH          //tanh · -1→1 · dirimencia bipolar · ⊻
+
+// ══ GRADIENTES · CIDE CIRCUIT ════════════════════════════════
+UNICODE: DL_GRAD_FLOW     //flujo ∇ · ⤷ descendente · menor esfuerzo
+UNICODE: DL_GRAD_CLIP     //clip ∇ · {brake} · evita explosión · ⏛
+UNICODE: DL_GRAD_VANISH   //∇ desvanecido · señal débil · GATE buffer
+UNICODE: DL_GRAD_EXPLODE  //∇ explosivo · RED-REGRET · {brake} total
+UNICODE: DL_LR            //learning rate · TAP&DRIP · goteo calibrado
+
+// ══ MODELOS SOBERANOS ════════════════════════════════════════
+UNICODE: DL_OLLAMA        //Ollama local · qwen2.5:0.5b · sandbox ⏚
+UNICODE: DL_GROQ          //Groq API · llama-3.3-70b · cloud ⚡
+UNICODE: DL_CLAUDE        //Claude.ai · diseño+auditoría · SAMU tier
+UNICODE: DL_EMBEDDING     //embedding · VEC_* · NLP→LACHO router
+UNICODE: DL_FINE_TUNE     //fine-tune · CORPUS 186+ · RAG soberano
+UNICODE: DL_INFERENCE     //inferencia · IME{[(!!ROUTE!!)]} · WU out
+
+// ══ GUI CIRCUIT NODES ════════════════════════════════════════
+UNICODE: DL_NODE_INPUT    //○ nodo entrada · .blue · KU
+UNICODE: DL_NODE_HIDDEN   //◑ nodo oculto · transición · ◑
+UNICODE: DL_NODE_OUTPUT   //● nodo salida · .green · WU
+UNICODE: DL_NODE_LOSS     //╳ nodo pérdida · RED-REGRET
+UNICODE: DL_WIRE_POS      //─── wire positivo · señal activa
+UNICODE: DL_WIRE_NEG      //╌╌╌ wire negativo · señal débil
+UNICODE: DL_WIRE_BACK     //←── backprop wire · SAMU feedback
+
+// ANCLAS RAG
+METHOD <operator_flow> =><= .. modela .. dl_gui_pipeline_soberano --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. dl_weights_frozen_inmutable --[Nudo de Ocho] [term]
+WORK {actuator} =><= .. ejecuta .. dl_forward_pass_ku_wu --[As de Guía] [term]
+SAMU @ =><= .. audita .. dl_backprop_delta_psi --[Ballestrinque] [term]
+
+//DIR(+) UNICODE_DEEP_LEARNING_GUI · V1
+```

@@ -1,0 +1,11 @@
+# API keys — nunca a git
+IMV/config/api.json
+IMV/config/ollama.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Base de datos soberana
+IMV/data/sovereign.db

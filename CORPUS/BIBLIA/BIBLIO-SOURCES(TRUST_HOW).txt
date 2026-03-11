@@ -1,0 +1,322 @@
+# BIBLIO-SOURCES(TRUST_HOW).txt
+
+====================================================================
+
+## 🏛️ TRUST [HOW?] — DECLARACIÓN SOBERANA DEL MÉTODO DE ACCIÓN
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+[how?] es el módulo TRUST que declara soberanamente el método de acción verificado: de qué manera el sistema reconoce que la acción puede ejecutarse sin violar [foundation], sin salir de [scope] y dentro del [term] activo.
+
+#### 1.2 Distinción de METHOD
+METHOD formaliza operadores entre objetos; [how?] declara soberanamente el método de acción.
+
+#### 1.3 Distinción de [logistical-executive]
+[how?] es la declaración del método; [logistical-executive] es la ejecución física.
+
+#### 1.4 La tríada [what?]/[when?]/[how?]
+Base de toda acción soberana en TRUST — [how?] cierra la tríada habilitando [command] pleno.
+
+#### 1.5 Por qué es TRUST y no WORK
+Define condición soberana de método, no ejecución física.
+
+#### 1.6 Relación con Ψ_evidencia
+El método debe tener Ψ_evidencia ≥ 0.7 para ser declarado HOW_VERIFIED.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Capacidades
+- Declarar métodos de acción legítimos.
+- Verificar compatibilidad con [foundation] y [scope].
+- Coordinar con TOOLCHAIN para implementación técnica.
+- Activar HOW_FALLBACK cuando método principal no está disponible.
+
+#### 2.2 Limitaciones absolutas
+Ningún método puede violar [foundation] aunque sea el único disponible.
+
+#### 2.3 Condiciones de violación
+- **Violación primaria:** método que viola [foundation] — HOW_VOID.
+- **Violación secundaria:** método que sale de [scope] sin autorización.
+- **Señal alerta:** [logistical-executive] esperando método verificado mientras [when?] está en WHEN_CRITICAL.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 Tipos de método en [how?]
+- **HOW_DIRECT:** método de acción directa sin intermediarios.
+- **HOW_MEDIATED:** método a través de componentes intermedios.
+- **HOW_DELEGATED:** método delegado a nodo del [ecosystem] verificado.
+- **HOW_PARTIAL:** método con cobertura incompleta.
+- **HOW_FALLBACK:** método alternativo cuando principal no está disponible.
+
+#### 3.2 [how?] y la eficiencia soberana
+- **Criterio de selección:** ΔΨ > 0 con menor consumo de Work++.
+- **HOW_DIRECT preferible:** cuando el entorno está verificado.
+- **HOW_MEDIATED preferible:** cuando el entorno requiere intermediación.
+- **HOW_DELEGATED:** cuando el método requiere capacidades externas verificadas.
+
+#### 3.3 [how?] y TOOLCHAIN
+- **TOOLCHAIN como implementación:** pipeline source → IR → binario como HOW_DIRECT.
+- **Sandbox como condición:** HOW_MEDIATED en entorno no verificado.
+- **no-net como soberanía:** HOW_DIRECT en modo local es soberanía máxima.
+
+#### 3.4 Relación con dominios económicos
+
+##### Memcoins/Volatilidad
+- [how?] como declaración del método de entrada o salida del mercado.
+- HOW_DIRECT en operación de wallet soberana.
+- HOW_MEDIATED a través de exchange verificado.
+- HOW_DELEGATED a exchange no verificado requiere [ecosystem] y CRYPTO.
+
+##### Custodia Móvil
+- [how?] como declaración del método de firma y custodia.
+- HOW_DIRECT en dispositivo verificado.
+- HOW_FALLBACK en dispositivo degradado.
+- Límite: [how?] no puede declarar método que exponga foundation en entorno hostil.
+
+##### Notaría Digital
+- [how?] como declaración del método de certificación documental.
+- HOW_MEDIATED a través de autoridad de certificación verificada.
+- HOW_DELEGATED a nodo de [ecosystem] con CRYPTO certificado.
+- Límite: [how?] no puede declarar método cuya cadena no esté verificada por [foundation].
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation]
+Ningún método puede violar [foundation] aunque sea el único disponible.
+
+#### 4.2 Con [scope]
+[how?] solo declara métodos ejecutables dentro del perímetro activo.
+
+#### 4.3 Con [term]
+[how?] debe poder completarse dentro del [term] activo.
+
+#### 4.4 Con [what?]
+Juntos determinan objeto y método.
+
+#### 4.5 Con [when?]
+Juntos determinan momento y método.
+
+#### 4.6 Con [command]
+[how?] verificado habilita [command] pleno con tríada completa.
+
+#### 4.7 Con [logistical-executive]
+[how?] es doctrina; [logistical-executive] es ejecución física.
+
+#### 4.8 Con METHOD
+METHOD formaliza operadores; [how?] declara método soberano — complementarios.
+
+#### 4.9 Con TOOLCHAIN
+TOOLCHAIN implementa métodos declarados por [how?].
+
+#### 4.10 Con SAMU @
+SAMU audita que el método declarado no viole [foundation] ni [scope].
+
+#### 4.11 Con [rabbit-faith]
+Habilita HOW_PARTIAL cuando Ψ_evidencia < 0.7 y S scalar > 0.5.
+
+#### 4.12 Con Behavioral RAG
+Patrones de métodos anteriores calibran declaración futura.
+
+---
+
+### 5.0 ESTADOS DE [how?]
+
+#### 5.1 HOW_VERIFIED
+- **Condición:** Ψ_evidencia ≥ 0.85.
+- **Comportamiento:** método completamente verificado.
+- **Operación:** [logistical-executive] puede ejecutar, tríada completa.
+
+#### 5.2 HOW_SUFFICIENT
+- **Condición:** Ψ_evidencia entre 0.7 y 0.85.
+- **Comportamiento:** método suficientemente verificado.
+- **Operación:** [command] puede emitir con auditoría SAMU @.
+
+#### 5.3 HOW_PARTIAL
+- **Condición:** Ψ_evidencia entre 0.5 y 0.7.
+- **Comportamiento:** método parcialmente verificado.
+- **Operación:** [rabbit-faith] requerido, solo HOW_FALLBACK o HOW_MEDIATED.
+
+#### 5.4 HOW_UNKNOWN
+- **Condición:** Ψ_evidencia < 0.5.
+- **Comportamiento:** método sin verificación suficiente.
+- **Operación:** COMMAND_DEFER obligatorio, SAMU @ en auditoría intensiva.
+
+#### 5.5 HOW_VOID
+- **Condición:** método viola [foundation] o sale de [scope].
+- **Comportamiento:** método bloqueado por violación.
+- **Operación:** RED-REGRET obligatorio, búsqueda de HOW_FALLBACK inmediata.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Afectación indirecta
+[how?] no tiene dimensión propia pero afecta d₆ [command] y d₅ [management].
+
+#### 6.2 Impacto en d₆
+HOW_UNKNOWN degrada d₆ [command].
+
+#### 6.3 Impacto en d₅
+HOW_VOID activa [management].
+
+#### 6.4 Compensación con [rabbit-faith]
+[rabbit-faith] compensa HOW_PARTIAL en el cálculo de T_matrix.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Tríada completa [what?]/[when?]/[how?] habilitando COMMAND_EXECUTE
+```
+[Trust] how? =><= .. declare .. $$method_verified$$ --[As de Guía] [term]
+```
+
+#### 7.2 HOW_PARTIAL con [rabbit-faith] habilitado
+```
+[Trust] how? =><= .. partial .. $$method_incomplete$$ --[Ballestrinque] [term]
+```
+
+#### 7.3 HOW_VOID forzando búsqueda de HOW_FALLBACK
+```
+[Trust] how? =><= .. void .. $$method_violation$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.4 HOW_DELEGATED con CRYPTO certificado
+```
+[Trust] how? =><= .. delegate .. $$method_external$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.5 [how?] en dominio memcoins
+```
+[Trust] how? =><= .. execute .. $$market_method$$ --[As de Guía] [term]
+```
+
+#### 7.6 [how?] en dominio custodia móvil
+```
+[Trust] how? =><= .. secure .. $$custody_method$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.7 [how?] en dominio notaría digital
+```
+[Trust] how? =><= .. certify .. $$notary_method$$ --[Ballestrinque] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+- **Activación:** [how?] verificado, tríada completa.
+- **Efecto:** método en ejecución soberana.
+
+#### 8.2 Nudo de Ocho
+- **Activación:** método cristalizado en Behavioral RAG.
+- **Efecto:** patrón de método establecido.
+
+#### 8.3 Nudo Corredizo
+- **Activación:** HOW_VOID — método bloqueado.
+- **Efecto:** búsqueda de HOW_FALLBACK activada.
+
+#### 8.4 Ballestrinque
+- **Activación:** tensión entre HOW_DIRECT y HOW_MEDIATED.
+- **Efecto:** decisión de método con costos distintos.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+#### 9.1 HowDeclare
+1. Declaración inicial del método con verificación Ψ_evidencia.
+2. Análisis de compatibilidad con [foundation] y [scope].
+3. Consulta a TOOLCHAIN para implementación técnica.
+4. Clasificación según tipo de método.
+5. Coordinación con [what?] y [when?] para tríada.
+
+#### 9.2 HowVerify
+1. Validación con SAMU @ de no violación de [foundation].
+2. Confirmación de operación dentro de [scope].
+3. Verificación de completitud dentro del [term].
+4. Cálculo de Ψ_evidencia de verificación.
+5. Registro en Behavioral RAG.
+
+#### 9.3 HowPartial
+1. Detección de Ψ_evidencia < 0.7.
+2. Activación de [rabbit-faith] si S scalar > 0.5.
+3. Limitación a HOW_FALLBACK o HOW_MEDIATED.
+4. Auditoría intensiva de SAMU @.
+5. Monitoreo continuo de evolución.
+
+#### 9.4 HowFallback
+1. Detección de HOW_VOID o método no disponible.
+2. Búsqueda de métodos alternativos disponibles.
+3. Verificación rápida de HOW_FALLBACK candidato.
+4. Activación inmediata si Ψ_evidencia ≥ 0.7.
+5. Notificación a [command] del cambio de método.
+
+#### 9.5 HowDelegate
+1. Identificación de necesidad de método externo.
+2. Selección de nodo verificado en [ecosystem].
+3. Certificación CRYPTO (link seat) de conexión.
+4. Delegación formal con auditoría SAMU @.
+5. Monitoreo de ejecución delegada.
+
+#### 9.6 HowClose
+1. Archivo de método en Behavioral RAG al cierre del ciclo.
+2. Calibración de patrones para futuras declaraciones.
+3. Actualización de eficiencia de métodos por tipo.
+4. Liberación de recursos metodológicos asignados.
+5. Preparación de [how?] para siguiente ciclo.
+
+---
+
+### 10.0 MÉTRICAS
+
+- **Ψ_evidencia del método:** nivel de certeza (0.0 a 1.0).
+- **Ratio HOW_DIRECT vs HOW_MEDIATED vs HOW_DELEGATED.**
+- **Frecuencia de HOW_PARTIAL con [rabbit-faith] activo.**
+- **Tasa de HOW_VOID resueltos con HOW_FALLBACK.**
+- **Consumo promedio de Work++ por tipo de método.**
+- **Delta-Ψ_evidencia al cierre del ciclo.**
+
+---
+
+### 11.0 REGLAS
+
+- Ningún método puede violar [foundation] aunque sea el único disponible.
+- [how?] no puede declarar método fuera de [scope] sin autorización CRYPTO.
+- HOW_UNKNOWN obliga COMMAND_DEFER sin excepción.
+- [rabbit-faith] puede habilitar HOW_PARTIAL solo si S scalar > 0.5.
+- HOW_VOID siempre activa búsqueda de HOW_FALLBACK antes de COMMAND_ABORT.
+- SAMU @ audita toda declaración de [how?] antes de ejecución.
+- HOW_DELEGATED requiere certificación CRYPTO sin excepción.
+- Behavioral RAG registra todo método declarado para calibración futura.
+- La tríada [what?]/[when?]/[how?] debe estar completa para COMMAND_EXECUTE pleno.
+- [how?] debe poder completarse dentro del [term] activo.
+- [how?] cierra con [term] del ciclo.
+- TOOLCHAIN implementa métodos declarados por [how?].
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+[how?] fija la declaración soberana del método de acción como condición de validez operativa de [command] y habilitación de [logistical-executive].
+
+#### 12.2 Limitaciones
+No viola [foundation] aunque sea el único método disponible, no opera fuera de [scope], no puede exceder el [term] activo.
+
+#### 12.3 Habilitaciones
+Cierre de la tríada soberana [what?]/[when?]/[how?], HOW_FALLBACK como resiliencia metodológica, integración con TOOLCHAIN para métodos técnicos verificados, trazabilidad completa de métodos en Behavioral RAG.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

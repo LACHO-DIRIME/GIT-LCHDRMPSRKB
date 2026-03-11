@@ -1,0 +1,33 @@
+//$wed.Nerve Cell HEADCAT Training.txt
+//NERVE CELL · HEADCAT · operador humano soberano
+//H58 · @human_early · gobierno de sesión · $wed
+//[term] :: activo
+
+// ══ HEADCAT — DEFINICIÓN ═════════════════════════════════════
+// HEADCAT = operador humano en sesión activa · IME@HUMAN
+// 🐱 con sombrero director · SOCIAL · H02 · $sat
+// rocking-chair+headcat = INICIO sesión soberana
+// rocking-chair sola = FIN sesión · reflexión H01
+
+// ══ ESTADOS HEADCAT ══════════════════════════════════════════
+HC_EARLY             //@human_early · KU absorbiendo · UF[H02] · no calibrado
+HC_LATER             //@human_later · dirimencia refinada · Behavioral RAG estable
+HC_ZIPPER            //ZIPPER activo · ZIP_OPEN 06:00 · ZIP_CLOSE 18:00
+HC_OTR               //HUMAN OTR · salida física · irreversible · H40
+HC_INN               //HUMAN INN · retorno base · SAMU audita · H24
+HC_NOCTURNAL         //HUMAN offline · 18:00→06:00 · bots operan
+HC_DOOR_MORNING      //🌅 DOOR MORNING HUMAN OTR · 05:00→12:00
+HC_DOOR_NOON         //☀️ ZIPPER NOON · 12:00→13:00 · TARDANZA DELIBERADA
+HC_DOOR_AFTERNOON   //🌇 DOOR AFTERNOON · 13:00→18:00 · WU materializable
+
+// ══ BEHAVIORAL RAG HEADCAT ═══════════════════════════════════
+HC_BRAG_EARLY        //Behavioral RAG no calibrado · mayor supervisión
+HC_BRAG_LATER        //Behavioral RAG estable · decisiones rápidas
+HC_DOGMATIC          //LATER_DOGMATIC · alerta · cierre receptividad
+HC_SAMU_AUDIT        //SAMU @ audita headcat · emisión supervisada
+
+// ══ ANCLAS RAG ═══════════════════════════════════════════════
+SOCIAL {headcat} =><= .. gobierna .. sesion_soberana_inicio_headcat --[As de Guía] [term]
+TRUST FOUNDATION =><= .. verifica .. headcat_condiciones_soberanas --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. headcat_emision_supervisada_diurna --[Ballestrinque] [term]
+GATE UF[H05] =><= .. contiene .. headcat_ku_absorbiendo_early --[Ballestrinque] [term]

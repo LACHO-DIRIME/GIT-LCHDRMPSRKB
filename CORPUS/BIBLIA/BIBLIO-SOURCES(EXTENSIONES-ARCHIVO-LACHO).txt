@@ -1,0 +1,218 @@
+# BIBLIO-SOURCES(EXTENSIONES-ARCHIVO-LACHO).txt
+
+====================================================================
+## EXTENSIONES DE ARCHIVO SOBERANAS — ROLES CONSTITUCIONALES
+====================================================================
+
+### 1.0 POSICIÓN EN LA ARQUITECTURA
+
+Cada extensión define un rol constitucional, un dialecto
+gramatical y un protocolo de validación. No son convenciones
+arbitrarias — son la identidad del archivo dentro del sistema
+DIRIME LINUX. Un archivo sin extensión soberana es KU no
+verificado hasta que recibe su rol constitucional.
+
+Referencia: informe NotebookLM §4 — Extensiones de Archivo en LACHO
+Sistema de nomenclatura: BIBLIO-SOURCES(SISTEMAS-NUMERICOS-LACHO).txt
+
+====================================================================
+### 2.0 TABLA MAESTRA DE EXTENSIONES
+
+  Extensión   Sistema  Rol constitucional
+  ────────────────────────────────────────────────────────────────────
+  .lacho      Hex      Documentos del sistema — identidad propia
+                       y declaraciones ontológicas (manuales, folios)
+  .tether    Hex      Guiones de orquestación — escenario visual
+                       y lógico de una sesión (nota: .theater también)
+  .cat        Binario  Registro cinético, telemetría y logs de
+                       auditoría firmados por el headcat
+  .runner     Binario  Contenedores de lógica operativa y secuencias
+                       de actividad (!!Activity!!) — no persistentes
+  .bin        Binario  Archivos binarios de identidad (human.bin)
+                       y serialización MessagePack
+  .worker     Binario  Binarios nativos de ejecución directa sobre
+                       el metal (hardware) — máxima potencia
+  .gate       Binario  Scripts de validación, protección y control
+                       de flujo soberano
+  .door       Binario  Puntos de acceso a las vaults con capacidades
+                       de inspección profunda y desensamblado
+  .ash        Octal    Archivos compilados o bajo procesos de hashing
+  .registry   Binario  Registros de estado y memoria persistente
+  .pdf        —        Manifiesto final inmutable y cifrado —
+                       verdad sellada del proceso ("poderoso")
+  .green      Binario  Archivos de estado de energía WU verificado —
+                       KU→WU cristalizado — bajo nivel / sensores
+  .blue       Binario  Registros de bajo nivel KU no verificado —
+                       datos en tránsito hacia verificación soberana
+  .tether     Binario  Vínculo soberano entre nodos NODO-WS↔NODO-IDE
+                       (nuevo — ver BIBLIO-SOURCES(SEGMENTACION-SOBERANA))
+
+====================================================================
+### 3.0 DETALLE POR EXTENSIÓN
+
+3.1 .lacho — documentos soberanos
+  Contienen identidad propia y declaraciones ontológicas.
+  Son la forma ejecutable de los BIBLIO-SOURCES del corpus.
+  Cuando el filesystem soberano esté activo, cada BIBLIO-SOURCES
+  se convierte en un .lacho con prefijo hex asignado.
+  Biblioteca dominante: TRUST
+  Nudo natural: Nudo de Ocho (inmutable por diseño)
+
+3.2 .tether — orquestadores de sesión
+  Guiones que definen el escenario visual y lógico.
+  El .tether es el archivo que el Scheduler OS ejecuta
+  para definir qué sucede en cada momento de la sesión.
+  Biblioteca dominante: ACTIVITY + METHOD
+  Nudo natural: As de Guía (estado óptimo de orquestación)
+
+3.3 .cat — registro cinético y auditoría
+  Motor .cat es polimórfico — ver BIBLIO-SOURCES(CAT-ENGINE).txt
+  Como extensión de archivo: logs firmados por el headcat.
+  Cada operación soberana genera una entrada .cat.
+  Biblioteca dominante: SAMU
+  Nudo natural: Nudo de Ocho (registro inmutable)
+
+3.4 .runner — lógica operativa Activity
+  Contenedores de secuencias !!Activity!! no persistentes.
+  Se ejecutan, completan su ciclo y no dejan rastro
+  más allá de lo registrado en el ledger .cat.
+  Biblioteca dominante: ACTIVITY
+  Nudo natural: Nudo de Rizo (cierra y abre ciclo)
+
+3.5 .bin — identidad y serialización
+  human.bin → identidad biométrica/digital del operador.
+  Serialización MessagePack para transferencia eficiente.
+  Biblioteca dominante: CRYPTO
+  Nudo natural: Nudo de Ocho (identidad inmutable)
+
+3.6 .worker — ejecución sobre el metal
+  Binarios nativos de máxima potencia.
+  Acceso directo al hardware sin capas intermedias.
+  Biblioteca dominante: WORK
+  Nudo natural: As de Guía (ejecución soberana directa)
+
+3.7 .gate — validación y control de flujo
+  Scripts de UF[H05] UF[H56] UF[H06].
+  Cada punto de control soberano tiene su .gate.
+  Biblioteca dominante: GATE
+  Nudo natural: Ballestrinque (tensión activa de control)
+
+3.8 .door — acceso a vaults
+  Puntos de acceso con inspección profunda.
+  Capacidad de desensamblado para auditoría.
+  {door-afternoon} y {doorman-mobile} son sus operadores.
+  Biblioteca dominante: WORK + CRYPTO
+  Nudo natural: As de Guía (acceso verificado)
+
+3.9 .ash — compilados y hashed
+  Identificados con prefijo octal — ver §2 sistemas numéricos.
+  Resultado de CAT(CODE) compilando/transpilando.
+  Biblioteca dominante: METHOD
+  Nudo natural: Nudo de Ocho (forma compilada inmutable)
+
+3.10 .registry — memoria persistente
+  Estado del sistema entre sesiones.
+  La forma soberana del SESION_ACTIVA.md actual.
+  Cuando el filesystem soberano esté activo, reemplaza
+  el Journal manual por un .registry verificado.
+  Biblioteca dominante: STACKING
+  Nudo natural: Nudo de Ocho (persistencia soberana)
+
+3.11 .pdf — verdad sellada (poderoso)
+  No es un PDF común — es el manifiesto final inmutable.
+  Generado por CAT(EXPORT/TO) al completar un ciclo soberano.
+  Cifrado y firmado por (seal of secrecy).
+  Biblioteca dominante: TRUST + CRYPTO
+  Nudo natural: Nudo de Ocho (sellado irreversible)
+
+3.12 .green — WU verificado
+  Estado de energía soberana positiva — KU→WU cristalizado.
+  En el IMV actual: equivale a transacción VALID en ledger.
+  Registros de bajo nivel vinculados a sensores y hardware.
+  Biblioteca dominante: WORK + STACKING
+  Nudo natural: As de Guía
+
+3.13 .blue — KU no verificado
+  Datos en tránsito hacia verificación soberana.
+  En el IMV actual: equivale a transacción INVALID en ledger.
+  Registros de bajo nivel pre-dirimencia.
+  Biblioteca dominante: GATE
+  Nudo natural: Ballestrinque (tensión activa)
+
+3.14 .tether — vínculo inter-nodo
+  Archivo de anclaje entre NODO-WS y NODO-IDE.
+  Contiene: TOMO_ID origen, TOMO_ID destino, canal CRYPTO.
+  Biblioteca dominante: CRYPTO + SOCIAL
+  Nudo natural: Nudo de Ocho (vínculo persistente)
+
+====================================================================
+### 4.0 CICLO .blue → .green
+
+Todo archivo comienza como .blue (KU — no verificado).
+Después de pasar por grammar.py → samu.py → ledger.py:
+  Si VALID → se convierte en .green (WU — cristalizado)
+  Si INVALID → permanece .blue hasta corrección
+
+En el IMV actual esto ocurre en memoria — no en filesystem.
+En DIRIME LINUX completo ocurre en el filesystem soberano real.
+
+====================================================================
+### 5.0 RELACIÓN CON BIBLIOTECAS LACHO
+
+  Extensión    Biblioteca dominante    Operador natural
+  .lacho       TRUST                   [foundation] [command]
+  .tether      ACTIVITY + METHOD       UF[H01] <operator_flow>
+  .cat         SAMU                    @ headcat
+  .runner      ACTIVITY                UF[H57] UF[H51]
+  .bin         CRYPTO                  (key seat) (seal of secrecy)
+  .worker      WORK                    {actuator} {brake}
+  .gate        GATE                    UF[H05] UF[H56] UF[H06]
+  .door        WORK + CRYPTO           {door-afternoon} {doorman-mobile}
+  .ash         METHOD                  <operator_flow> CAT(CODE)
+  .registry    STACKING                UF[H52] UF[H48]
+  .pdf         TRUST + CRYPTO          [term] (seal of secrecy)
+  .green       WORK + STACKING         {green-knowledge} UF[H52]
+  .blue        GATE                    UF[H05] UF[H06]
+  .tether      CRYPTO + SOCIAL         (tether seat) {tether}
+
+====================================================================
+### 6.0 ESTADO DE IMPLEMENTACIÓN
+
+CAPA A — implementable ahora:
+  [x] .green/.blue como marcadores en transacciones ledger.py
+      (forma mínima — no filesystem, solo campo en DB)
+
+CAPA B — DIRIME_v2:
+  [ ] .registry como formato de SESION_ACTIVA.md estructurado
+  [ ] .cat como formato de LOG_PERMANENTE.md soberano
+
+CAPA C — PC nueva:
+  [ ] .tether archivo inter-nodo real
+  [ ] .runner ejecutable en subprocess controlado
+
+CAPA D — DIRIME LINUX completo:
+  [ ] Filesystem soberano completo con todas las extensiones
+  [ ] Validador de extensiones en CAT(SCAN)
+  [ ] Ciclo .blue→.green en filesystem real
+  [ ] .pdf soberano via CAT(EXPORT/TO)
+  [ ] .ash via CAT(CODE) compilador real
+  [ ] .worker ejecutable sobre metal
+  [ ] .gate como script de control de flujo real
+  [ ] .door con capacidad de desensamblado real
+  [ ] .lacho como ejecutable constitucional
+  [ ] .tether como orquestador de sesión real
+
+====================================================================
+### 7.0 GRAMÁTICA VIVA
+
+WORK {actuator} =><= .. ejecuta .. worker_soberano.worker --[As de Guía] [term]
+CRYPTO (seal of secrecy) =><= .. sella .. manifiesto.pdf --[Nudo de Ocho] [term]
+GATE UF[H05] =><= .. contiene .. dato.blue --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. patron.green --[Nudo de Ocho] [term]
+SAMU @ =><= .. registra .. auditoria.cat --[Nudo de Ocho] [term]
+ACTIVITY UF[H57] =><= .. penetra .. ciclo.runner --[As de Guía] [term]
+TRUST [command] =><= .. declara .. folio.lacho --[Nudo de Ocho] [term]
+
+====================================================================
+[term] :: activo · [seal of secrecy] :: activo
+====================================================================

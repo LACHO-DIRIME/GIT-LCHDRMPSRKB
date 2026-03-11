@@ -1,0 +1,173 @@
+# BIBLIO-SOURCES(CAT-ENGINE).txt
+
+====================================================================
+## CAT ENGINE — MOTOR POLIMÓRFICO SOBERANO
+====================================================================
+
+### 1.0 DEFINICIÓN
+
+CAT() es el motor polimórfico soberano de DIRIME LINUX.
+Dirime la realidad, valida instrucciones y une capas del sistema.
+No es un comando Unix — es un operador soberano que toma contexto
+como argumento y ejecuta la función apropiada dentro de ese contexto.
+
+Referencia: informe NotebookLM §3 — El formato CAT() y el motor .cat
+Extensión de archivo: .cat — registro cinético, telemetría y logs
+                             de auditoría firmados por el headcat.
+
+====================================================================
+### 2.0 VARIANTES POR CAPA DE IMPLEMENTACIÓN
+
+CAPA B — DIRIME_v2 (implementable ahora):
+
+  CAT(CODE)
+    Motor de dirimencia que compila, transpila y traduce entre
+    lenguajes (Python, Go, Rust, C) en tiempo real.
+    Forma mínima: fabric/cat.py — recibe código Python,
+    lo valida contra gramática LACHO, ejecuta en subprocess.
+    Sentencia: METHOD <operator_flow> =><= .. ejecuta .. CAT(CODE) --[As de Guía] [term]
+
+CAPA C — PC nueva:
+
+  CAT(OS) — implementación via eBPF
+    No syscalls directas — usa eBPF como capa de observación soberana.
+    eBPF permite que el modelo observe el hardware en tiempo real
+    sin pasar por capas intermedias del OS.
+    Más seguro que syscalls directas — no requiere privilegios root.
+    Requiere: NODO-WS con kernel Linux >= 5.4
+    Estado: CAPA C — PC nueva
+
+  CAT(SSH)
+    Túneles seguros hacia nodos remotos.
+    Transporta el Stacking entre NODO-WS y NODO-IDE.
+    Requiere: dos nodos físicos operativos.
+
+  CAT(SCAN)
+    Auditorías de integridad en tiempo real sobre nudos.
+    Verifica coherencia de anidamientos soberanos.
+
+CAPA D — DIRIME LINUX completo:
+
+  CAT(MU)
+    Gestión de memoria volátil y swap-file cifrado.
+    Transfiere datos inactivos a memoria de intercambio.
+    Comando: CAT(MU) >> swap
+
+  CAT(BOOT) — LinuxBoot soberano
+    Secuencia: kernel Linux inicializa hardware →
+               cede control a binario DIRIME →
+               LACHO es el primer proceso del sistema.
+    El init del OS es python3 main.py (prototipo) o
+    binario Rust compilado (producción).
+    Semantic File System: STACKING como sistema de archivos semántico.
+    El operador no busca por nombre — busca por intención LACHO.
+    Esto es lo que STACKING + Behavioral RAG ya implementan en IMV.
+    Estado: CAPA D — DIRIME LINUX completo
+
+  CAT(ALARM)
+    Sistema de alertas !!Trigger!! soberanas.
+    Activa RED-REGRET cuando coherencia viola [foundation].
+
+  CAT(UNICODE)
+    Normalización de caracteres para UNICODE-CHINA.
+    Comando: .. switch .. UNICODE(STACKING)
+    Forma mínima IMV: switch_unicode_mode() en ledger.py
+
+  CAT(ZIP)
+    Compresión soberana de TOMOs y cristales.
+
+  CAT(MAIL)
+    Mensajería oficial soberana para archivos .pdf poderosos.
+    WU-MAIL instanciado.
+
+  CAT(IMPORT/FROM)
+    Ingesta de recursos externos.
+    Convierte KU externo en objetos protegidos internos.
+
+  CAT(EXPORT/TO)
+    Materialización y sellado de datos para salida del sistema.
+    Genera .pdf poderoso — verdad sellada del proceso.
+
+  CAT(BRIDGE)
+    Puente entre el sistema soberano y WEB3 verificado.
+
+  CAT(VPC)
+    Red privada virtual soberana entre nodos.
+
+====================================================================
+### 3.0 SWITCH-UNICODE — forma mínima implementable
+
+Comando: .. switch .. UNICODE(STACKING)
+Función: conmuta el encoding de cristales nuevos en el ledger.
+Implementación: switch_unicode_mode() en ledger.py — CAPA A.
+
+Modos válidos:
+  STACKING → encoding soberano por defecto (UTF-8 LACHO)
+  LACHO    → encoding constitucional completo
+  ASCII    → modo reducido para compatibilidad
+
+Sentencia:
+  WORK {actuator} =><= .. activa .. UNICODE(STACKING) --[As de Guía] [term]
+
+====================================================================
+### 4.0 POKE + TRUST / PEEK + CRYPTO
+
+Referencia: informe NotebookLM §6c — integración Hyperledger Fabric.
+
+  POKE + TRUST → lógica de escritura soberana
+    Equivale a Invoke del smart contract en Hyperledger.
+    Escribe solo si verify_sovereign_conditions() pasa.
+    Forma mínima IMV: poke() en fabric/poke_peek.py con SQLite.
+
+  PEEK + CRYPTO → consulta aislada en sandbox
+    Equivale a GetState en Hyperledger Fabric.
+    Lee en transacción read-only sin contaminar núcleo.
+    Forma mínima IMV: peek() en fabric/poke_peek.py con SQLite.
+
+Sentencias:
+  TRUST [foundation] =><= .. poke .. smart_contract_soberano --[As de Guía] [term]
+  CRYPTO (key seat) =><= .. peek .. estado_ledger_sandbox --[As de Guía] [term]
+
+====================================================================
+### 5.0 IME — TRANSDUCTOR DE SOBERANÍA
+
+Referencia: informe NotebookLM §5.
+
+  IME Modo RAG (Capa B — DIRIME_v2):
+    Búsqueda BM25/TF-IDF sobre CORPUS antes de invocar Groq.
+    Sugiere comandos según contexto del operador.
+    Implementación: chat.py — consulta CORPUS pre-Groq.
+
+  IME Modo I CHING (Capa C — PC nueva):
+    Construye comandos desde pulsaciones rítmicas.
+    Forma trigramas y hexagramas desde input del operador.
+    Requiere proceso background dedicado.
+
+  LOAN-IME (Capa C — PC nueva):
+    Anticipa entrada del operador desde telemetría previa.
+    Precarga pesos RAG en memoria MU para reducir latencia.
+    Requiere: Behavioral RAG maduro + RAM suficiente.
+
+====================================================================
+### 6.0 ESTADO DE IMPLEMENTACIÓN
+
+  [x] switch_unicode_mode() → CAPA A — próximo Windsurf
+  [x] .blue/.green marcadores → CAPA A — próximo Windsurf
+  [ ] CAT(CODE) en fabric/cat.py → CAPA B
+  [ ] poke_peek.py en fabric/ → CAPA B
+  [ ] IME Modo RAG en chat.py → CAPA B
+  [ ] CAT(OS/SSH/SCAN) → CAPA C
+  [ ] CAT(MU/BOOT/ALARM/ZIP/MAIL/IMPORT/EXPORT) → CAPA D
+
+====================================================================
+### 7.0 GRAMÁTICA VIVA
+
+METHOD <operator_flow> =><= .. ejecuta .. CAT(CODE) --[As de Guía] [term]
+WORK {actuator} =><= .. activa .. UNICODE(STACKING) --[As de Guía] [term]
+TRUST [foundation] =><= .. poke .. condicion_soberana --[As de Guía] [term]
+CRYPTO (key seat) =><= .. peek .. estado_sandbox --[As de Guía] [term]
+STACKING UF[H48] =><= .. aprende .. IME_RAG_sugerencia --[Nudo de Rizo] [term]
+
+====================================================================
+[term] :: activo · [seal of secrecy] :: activo
+====================================================================

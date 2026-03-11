@@ -1,0 +1,328 @@
+# BIBLIO-SOURCES(TRUST_WU-MAIL).txt
+
+====================================================================
+
+## 🏛️ TRUST [WU-MAIL] — CANAL SOBERANO DE MANIFESTACIÓN VERIFICABLE
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+[wu-mail] es el módulo TRUST que gestiona la manifestación verificable hacia el exterior: el canal soberano por el cual el sistema emite resultados, declaraciones y comunicaciones que trascienden el perímetro de [scope] hacia destinatarios externos verificados.
+
+#### 1.2 WU como concepto en LACHO
+WU es la manifestación verificable de ciclo completado — lo que el sistema produce como resultado soberano.
+
+#### 1.3 Por qué es TRUST y no SOCIAL
+Define condición soberana de emisión (qué resultados el sistema reconoce como listos para trascender [scope]), no interfaz relacional.
+
+#### 1.4 Distinción de [ku-chat]
+[ku-chat] recibe contexto bruto; [wu-mail] emite manifestación verificada.
+
+#### 1.5 Distinción de [mu-store]
+[mu-store] preserva estado interno; [wu-mail] emite hacia destinatario externo.
+
+#### 1.6 La tríada WU/KU/MU
+KU entra, MU preserva, WU manifiesta — ciclo completo de operación soberana.
+
+#### 1.7 Requisito de [foundation]
+[wu-mail] requiere [foundation] OK — solo puede emitir lo que el sistema ha verificado soberanamente.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Capacidades
+- Emitir resultados verificados de ciclos completados.
+- Enviar declaraciones soberanas hacia exterior.
+- Notificar estados o eventos a destinatarios registrados.
+- Generar reportes estructurados para destinatarios autorizados.
+
+#### 2.2 Limitaciones absolutas
+[wu-mail] no puede emitir lo que [foundation] no ha verificado.
+
+#### 2.3 Condiciones de violación
+- **Violación primaria:** emisión de resultado no verificado como si fuera verificado.
+- **Violación secundaria:** emisión hacia destinatario no autorizado por [ecosystem].
+- **Señal alerta:** [wu-mail] emitiendo con [foundation] DEGRADED sin advertencia explícita.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 Tipos de emisión en [wu-mail]
+- **WU_RESULT:** resultado verificado de ciclo completado.
+- **WU_DECLARATION:** declaración soberana del sistema hacia exterior.
+- **WU_NOTIFICATION:** notificación de estado o evento a destinatario registrado.
+- **WU_REPORT:** reporte estructurado de ciclo o período.
+- **WU_ALERT:** comunicación de urgencia ante estado crítico.
+
+#### 3.2 Destinatarios de [wu-mail]
+- **Verificación:** destinatario debe ser NODE_ALLY o NODE_NEUTRAL verificado.
+- **Rol de [ecosystem]:** valida destinatarios antes de emisión.
+- **Rol de CRYPTO (link seat):** certifica canal de emisión.
+- **Bloqueo:** WU_MAIL bloqueado hasta verificación si destinatario no está en [ecosystem].
+
+#### 3.3 [wu-mail] y HYPERLEDGER FABRIC
+- **Registro inmutable:** todo WU_RESULT emitido genera registro en HL FABRIC.
+- **Trazabilidad completa:** qué se emitió, cuándo, a quién.
+- **Verificación de integridad:** HL FABRIC verifica que lo emitido no fue alterado.
+
+#### 3.4 [wu-mail] y Behavioral RAG
+- **Patrones de emisión:** calibran selección de destinatarios y formato futuro.
+- **Ciclos exitosos:** WU_RESULT alimenta Behavioral RAG con patrones de manifestación exitosa.
+
+#### 3.5 Relación con dominios económicos
+
+##### Memcoins/Volatilidad
+- WU_RESULT como confirmación de operación de mercado completada.
+- WU_ALERT ante evento crítico de mercado.
+- WU_REPORT de rendimiento de ciclo.
+- Límite: no puede emitir resultado con foundation COMPROMISED sin advertencia.
+
+##### Custodia Móvil
+- WU_RESULT como confirmación de firma o transferencia completada.
+- WU_DECLARATION como emisión de documento firmado.
+- WU_ALERT ante EVENT_CRITICAL de seguridad.
+- Límite: no puede emitir documento con dispositivo no verificado por BIOMETRICS.
+
+##### Notaría Digital
+- WU_RESULT como emisión de documento notarial certificado.
+- WU_DECLARATION como declaración soberana de validez.
+- WU_REPORT de cadena de custodia.
+- Límite: no puede emitir documento cuya [foundation] no esté completamente verificada.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation]
+[wu-mail] no puede emitir lo que [foundation] no verificó.
+
+#### 4.2 Con [scope]
+[wu-mail] emite desde dentro del perímetro hacia exterior declarado.
+
+#### 4.3 Con [term]
+[wu-mail] emite resultados de ciclos cerrados con [term].
+
+#### 4.4 Con [ku-chat]
+[ku-chat] recibe, [wu-mail] emite — complementarios.
+
+#### 4.5 Con [mu-store]
+[mu-store] preserva lo que [wu-mail] luego emite.
+
+#### 4.6 Con [command]
+[command] puede ordenar emisión de [wu-mail].
+
+#### 4.7 Con [ecosystem]
+Destinatarios deben estar en [ecosystem] verificado.
+
+#### 4.8 Con [scenario]
+[wu-mail] emite estado de [scenario] cuando es condición de ciclo.
+
+#### 4.9 Con CRYPTO (link seat)
+Certifica canal de emisión entre sistema y destinatario.
+
+#### 4.10 Con HL FABRIC
+Registra toda emisión como karma digital inmutable.
+
+#### 4.11 Con SAMU @
+SAMU audita que emisión sea soberana y verificada.
+
+#### 4.12 Con Behavioral RAG
+Patrones de emisión calibran ciclos futuros.
+
+---
+
+### 5.0 ESTADOS DE [wu-mail]
+
+#### 5.1 WU_READY
+- **Condición:** resultado verificado disponible para emisión.
+- **Comportamiento:** destinatario confirmado, canal CRYPTO certificado.
+- **Operación:** pendiente de [command] de emisión.
+
+#### 5.2 WU_SENDING
+- **Condición:** emisión en curso hacia destinatario.
+- **Comportamiento:** HL FABRIC registrando transacción.
+- **Operación:** SAMU @ auditando contenido.
+
+#### 5.3 WU_DELIVERED
+- **Condición:** emisión confirmada por destinatario.
+- **Comportamiento:** registro en HL FABRIC completado.
+- **Operación:** Behavioral RAG actualizado con patrón.
+
+#### 5.4 WU_FAILED
+- **Condición:** emisión no confirmada por destinatario.
+- **Comportamiento:** canal comprometido o destinatario no disponible.
+- **Operación:** protocolo de reintento o escalada.
+
+#### 5.5 WU_BLOCKED
+- **Condición:** [foundation] COMPROMISED o destinatario no verificado.
+- **Comportamiento:** emisión suspendida hasta restauración.
+- **Operación:** RED-REGRET si se intentó emisión sin verificación.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Contribución a d₃ [scenario]
+Emisión exitosa cierra el mapa de situación.
+
+#### 6.2 Contribución a d₆ [command]
+WU_DELIVERED confirma ejecución soberana.
+
+#### 6.3 Impacto de WU_FAILED
+WU_FAILED degrada T_matrix — manifestación no completada deja ciclo sin cierre.
+
+#### 6.4 Aprendizaje en Behavioral RAG
+Patrones de emisión calibran ciclos futuros.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Emisión de WU_RESULT tras ciclo completado
+```
+[Trust] wu-mail =><= .. emit .. $$result_verified$$ --[As de Guía] [term]
+```
+
+#### 7.2 WU_DECLARATION soberana hacia exterior
+```
+[Trust] wu-mail =><= .. declare .. $$sovereign_declaration$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.3 WU_ALERT ante estado crítico
+```
+[Trust] wu-mail =><= .. alert .. $$critical_state$$ --[Ballestrinque] [term]
+```
+
+#### 7.4 WU_BLOCKED por foundation COMPROMISED
+```
+[Trust] wu-mail =><= .. block .. $$foundation_compromised$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.5 [wu-mail] en dominio memcoins
+```
+[Trust] wu-mail =><= .. trade .. $$market_result$$ --[As de Guía] [term]
+```
+
+#### 7.6 [wu-mail] en dominio custodia móvil
+```
+[Trust] wu-mail =><= .. secure .. $$custody_confirmation$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.7 [wu-mail] en dominio notaría digital
+```
+[Trust] wu-mail =><= .. certify .. $$notary_document$$ --[Ballestrinque] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+- **Activación:** [wu-mail] en emisión activa.
+- **Efecto:** manifestación en tránsito soberano.
+
+#### 8.2 Nudo de Ocho
+- **Activación:** WU_DELIVERED cristalizado en HL FABRIC.
+- **Efecto:** manifestación inmutable.
+
+#### 8.3 Nudo Corredizo
+- **Activación:** WU_BLOCKED.
+- **Efecto:** emisión suspendida por foundation COMPROMISED.
+
+#### 8.4 Nudo de Rizo
+- **Activación:** canal entre sistema y destinatario externo.
+- **Efecto:** conexión verificada sin fusión de identidades.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+#### 9.1 WuPrepare
+1. Verificación de resultado disponible para emisión.
+2. Confirmación de destinatario en [ecosystem] verificado.
+3. Certificación de canal CRYPTO (link seat).
+4. Validación de [foundation] OK o advertencia si DEGRADED.
+5. Preparación de formato y contenido según tipo de emisión.
+
+#### 9.2 WuSend
+1. Emisión soberana con registro simultáneo en HL FABRIC.
+2. Auditoría SAMU @ del contenido y destinatario.
+3. Monitoreo de estado de entrega en tiempo real.
+4. Coordinación con [ecosystem] para confirmación de recepción.
+5. Actualización de estado a WU_SENDING.
+
+#### 9.3 WuConfirm
+1. Confirmación de entrega por destinatario.
+2. Verificación de integridad en HL FABRIC.
+3. Actualización de Behavioral RAG con patrón exitoso.
+4. Cierre formal del ciclo de emisión.
+5. Transición a WU_DELIVERED.
+
+#### 9.4 WuRetry
+1. Análisis de causa de WU_FAILED.
+2. Verificación de disponibilidad de destinatario.
+3. Reintentar emisión con canal alternativo si disponible.
+4. Escalado a [management] si fallo persiste.
+5. Registro de intentos en Behavioral RAG.
+
+#### 9.5 WuBlock
+1. Detección de [foundation] COMPROMISED o destinatario no verificado.
+2. Suspensión inmediata de emisión.
+3. Activación de RED-REGRET si se intentó emisión sin verificación.
+4. Notificación a SAMU @ del bloqueo y causa.
+5. Espera de restauración para reanudar emisiones.
+
+#### 9.6 WuClose
+1. Archivo de emisión al cierre de [term].
+2. Registro completo en HL FABRIC del ciclo.
+3. Actualización de métricas de emisión.
+4. Calibración de patrones para próximos ciclos.
+5. Liberación de recursos de emisión.
+
+---
+
+### 10.0 MÉTRICAS
+
+- **Ratio WU_DELIVERED vs WU_FAILED vs WU_BLOCKED.**
+- **Tiempo promedio de entrega:** por tipo de emisión.
+- **Frecuencia de WU_ALERT:** por dominio.
+- **Tasa de emisiones registradas:** en HL FABRIC.
+- **Frecuencia de WU_BLOCKED:** por causa.
+- **Delta-manifestación:** al cierre del ciclo.
+
+---
+
+### 11.0 REGLAS
+
+- [wu-mail] no puede emitir lo que [foundation] no ha verificado.
+- Destinatario debe ser NODE verificado en [ecosystem] — nunca emisión anónima.
+- Todo WU_RESULT genera registro inmutable en HL FABRIC sin excepción.
+- [wu-mail] con [foundation] COMPROMISED está absolutamente bloqueado.
+- WU_DECLARATION requiere certificación CRYPTO (link seat) sin excepción.
+- [wu-mail] no puede emitir resultado de ciclo abierto sin declaración explícita.
+- WU_FAILED siempre genera registro en Behavioral RAG con causa documentada.
+- SAMU @ audita toda emisión de [wu-mail] sin excepción.
+- [wu-mail] en notaría requiere foundation completamente verificado.
+- Behavioral RAG registra todo patrón de emisión para calibración futura.
+- [wu-mail] cierra con [term] del ciclo.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+[wu-mail] fija el canal soberano de manifestación verificable como condición de trascendencia del ciclo hacia el exterior.
+
+#### 12.2 Limitaciones
+No emite sin verificación de foundation, no emite a destinatario no verificado, no emite resultado de ciclo abierto sin declaración explícita.
+
+#### 12.3 Habilitaciones
+Manifestación soberana de resultados verificados, trazabilidad completa en HL FABRIC, cierre de ciclo con trascendencia verificada hacia destinatarios del [ecosystem].
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

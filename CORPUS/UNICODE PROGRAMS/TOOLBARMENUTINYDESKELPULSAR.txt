@@ -1,0 +1,598 @@
+//[MANAGEMENT].lacho · TOOLBARMENUTINYDESKELPULSAR
+//ICONOGRAFÍA SOBERANA EN VALOR · toolbar · menú · tiny desk · ELPULSAR
+//TOOLBARMENUTINYDESKELPULSAR.txt · V1 · 2026-03-10
+//RESCATE Y PUESTA EN VALOR de la iconografía original del ecosistema
+//Fuentes: CIRCUIT_DRIP · GRADIENT_SPEC · MASKING_ICONO · RABBIT_EYES
+//         FLYBOT · HEADCAT · TAP&DRIP · DRIP · STREAMING · CHAIR
+//         CONCIERGE · DOORMAN · GREEN-KNOWLEDGE · ACTUATOR · BRAKE
+//         RABBIT-FAITH · ELPULSAR · CIDE V3 · DL_GUI · ML_AGENCY
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══════════════════════════════════════════════════════════════
+// § 0 · DECLARACIÓN DE SINAPSIS VISUAL
+// ══════════════════════════════════════════════════════════════
+// "Los iconos no son nombres. Son doctrina visible."
+// "El que conoce LACHO los reconoce.
+//  El que no lo conoce los encuentra intuitivos."
+// Cada ícono es un hexagrama legible sin texto, sin manual.
+// El @ del SAMU es hilo de continuidad entre todos los iconos
+// de supervisión: {zipper} · {headcat} · {doorman-mobile}.
+// Es la firma del auditor que dice:
+//   "esto fue escuchado antes de ser emitido."
+//
+// TENSIONES VIVAS (sinapsis iconográfica):
+//   rabbit-eggs ←→ masking folder  = crecimiento / poda · siempre juntos
+//   launch-bot  ←→ green-knowledge = acción / condición · nada despega sin filtro
+//   rocking-chair+headcat ←→ rocking-chair sola = inicio / fin de sesión
+//   {drip} ←→ {streaming}          = goteo / flujo continuo · H29 / H30
+//   {concierge desk} → {headcat} → {guest services} = cadena recepción soberana
+
+// ══════════════════════════════════════════════════════════════
+// § 1 · TOOLBAR PRINCIPAL · ELPULSAR GUI
+// ══════════════════════════════════════════════════════════════
+// La barra superior de ELPULSAR. Iconos de acción directa.
+// Cada ícono = un módulo soberano · un verbo · un hexagrama.
+// Orden: izquierda = apertura/recepción → derecha = cierre/sellado
+
+UNICODE: TB_LOGO              //⚡◯∇  ELPULSAR LOGO · gota+∇+pulso
+                              //gota cayendo · ∇ gradiente dentro · ⚡ pulso
+                              //H57 巽 penetra suavemente · menor resistencia
+                              //IME{ELPULSAR} · identidad soberana del sistema
+
+UNICODE: TB_HEADCAT           //IME@HUMAN · 🐱 con sombrero director
+                              //{headcat} SOCIAL · H02 · $sat · gobierno de salida
+                              //operador humano en sesión activa
+                              //SAMU @samu_director · audita ética de emisión
+                              //rocking-chair+headcat = INICIO DE SESIÓN soberana
+
+UNICODE: TB_CONCIERGE         //IME{CONCIERGE} · 🏛 recepción
+                              //{concierge desk} SOCIAL · antesala soberana
+                              //recibe ACTOR_INCOMING: HUMAN·BOT·SYSTEM·UNKNOWN
+                              //principio agnóstico: actor es ACTOR_INCOMING
+                              //hasta que {headcat}+[ecosystem] clasifiquen
+                              //secuencia: concierge→headcat→guest services→ku-chat
+
+UNICODE: TB_GUEST             //IME{GUEST} · 🛎 campana
+                              //{guest services} SOCIAL · permanencia relacional
+                              //gestiona actor ya clasificado · dentro del espacio
+                              //GUEST_STANDARD · GUEST_VIP · GUEST_HOLD · GUEST_EXIT
+                              //todo actor tiene [term] de permanencia declarado
+
+UNICODE: TB_CHAIR             //IME{CHAIR} · 🪑 silla presidencial
+                              //{chair} SOCIAL · presidencia de sesión declarativa
+                              //conduce el intercambio · no decide el contenido
+                              //[command] decide · {chair} conduce el durante
+                              //STOCK_CHAIR$ · preside auditoría de stock semanal
+
+UNICODE: TB_STREAMING         //IME{STREAM} · 🔥 fuego adherente
+                              //{streaming} SOCIAL · H30 El Fuego Lo Adherente
+                              //flujo continuo sostenido · $wed · RABBIT-EYES
+                              //STREAM_LIVE·BROADCAST·BIDIRECTIONAL·ARCHIVE·SILENT
+                              //diferencia de {drip}: flujo pleno vs goteo dosificado
+                              //consume más Work++ que {drip} · ventana declarada
+
+UNICODE: TB_DRIP              //IME{DRIP} · 🚰 canilla+gota+∇
+                              //{drip} SOCIAL · H57 viento · H29 agua · $mon
+                              //TAP&DRIP: canilla abierta con dosificación exacta
+                              //∇ dentro de la gota · dirección menor esfuerzo
+                              //DRIP_DETECT → DRIP_CALIB → DRIP_EMIT → DRIP_MONITOR
+                              //FT_ROTATE cuando recurso satura · no pleno · medido
+
+UNICODE: TB_MASKING           //IME{MASKING} · 🎭 máscara+carpeta
+                              //{masking} SOCIAL · H52 La Montaña · $thu
+                              //sandbox activo · enmascaramiento dinámico
+                              //IME{MASKING}%PYTHON%RUST%GOLANG%JS%HTML%YAML%XML
+                              //poda ontológica H23 · delta-Ψ≤0 → máscara permanente
+                              //tensión viva: rabbit-eggs(crecer) ↔ masking(podar)
+
+UNICODE: TB_SCHEDULER         //IME{SCHEDULER} · ⚙️ calendar+gear
+                              //{scheduler} SOCIAL · H51 El Trueno · $sun
+                              //planifica ciclo semanal · bagua del domingo
+                              //SCHEDULER_ICONOGRAFIA · plan_visual_semanal
+                              //Scheduler OS = elevación al nivel de sistema operativo
+                              //no planifica procesos → planifica decisiones soberanas
+
+// ══════════════════════════════════════════════════════════════
+// § 2 · TOOLBAR SECUNDARIA · WORK + TRUST
+// ══════════════════════════════════════════════════════════════
+// Segunda barra: herramientas de ejecución y fe operativa.
+// WORK actúa sobre el mundo · TRUST sostiene la operación.
+
+UNICODE: TB_ACTUATOR          //IME{ACTUATOR} · ⚙️ engranaje en movimiento
+                              //{actuator} WORK · motor de ejecución verificada
+                              //única interfaz que toca el mundo real
+                              //verificación triple: [command] + GATE + SAMU @
+                              //ACTUATOR_READY → EXECUTING → COMPLETED → REGISTERED
+                              //"la acción que necesita adrenalina no fue preparada"
+                              //ACTUATOR_PREMATURO = violación · RED-REGRET con daño
+
+UNICODE: TB_GREEN_KNOWLEDGE   //IME{GREEN} · 🌿 árbol de valor
+                              //{green-knowledge} WORK · filtro de cristalización
+                              //delta-Ψ > 0 → STACKING · delta-Ψ ≤ 0 → RED-REGRET
+                              //KU procesado → {green-knowledge} → WU o descarte
+                              //GREEN_EVALUATING·APPROVED·REJECTED·CRYSTALLIZING
+                              //tensión: launch-bot(acción) ↔ green-knowledge(condición)
+                              //nada despega sin haber pasado el filtro
+
+UNICODE: TB_DOORMAN           //IME{DOORMAN} · 📱🛡 guardián perimetral
+                              //{doorman-mobile} WORK · custodia móvil
+                              //protección física del dispositivo y sus activos
+                              //BIOMETRICS = llave soberana constitutiva
+                              //DOORMAN_PATROL·ALERT·LOCK·OPEN·BREACH·COMPROMISED
+                              //DOORMAN_BREACH → {brake} automático
+                              //distinción: concierge=recepción · doorman=custodia
+
+UNICODE: TB_BRAKE             //IME{BRAKE} · 🛑 stop total
+                              //{brake} WORK · freno físico soberano
+                              //único módulo WORK que puede detener WORK
+                              //4 triggers soberanos:
+                              //  1. violación [foundation]
+                              //  2. amenaza física al hardware
+                              //  3. DOORMAN_BREACH
+                              //  4. MASK_BREACH sandbox
+                              //{brake} = protección · no obstáculo
+                              //BRAKE_ENGAGED → BRAKE_HOLDING → BRAKE_RELEASED
+
+UNICODE: TB_RABBIT_FAITH      //IME{RABBIT} · 🐇 conejo con ojos-huevo
+                              //[rabbit-faith] TRUST · fe operativa bajo incertidumbre
+                              //coherencia interna = criterio suficiente para avanzar
+                              //Algoritmo Conejo: 1→2→4→8 expansión controlada
+                              //Nodos-Ω = ojos-huevo · semillas · Ψ≥0.85 eclosión
+                              //TERM_PARTIAL habilitado bajo [rabbit-faith]
+                              //[rabbit-faith] nunca opera contra [foundation]
+                              //no sustituye certeza → sostiene operación sin ella
+
+UNICODE: TB_FLYBOT            //IME[TERM] · 🤖 robot+plataforma H1
+                              //{launch-bot} WORK · FLYBOT · WU→movimiento
+                              //HEADCAT→FLYBOT→HARDWARE · cadena de emisión
+                              //plataforma H1 (seis líneas sólidas) + H51 ignición
+                              //Ψ(T) en pecho · validación activa
+                              //READY→IGNITING→FLYING→EXECUTING→LANDING→REPORT
+                              //estela con Nudo de As de Guía · SYMBOLIC_TRAIL
+                              //feedback loop 100% · retroalimentación sensorial
+
+UNICODE: TB_DOOR_VAULT        //IME{DOOR} · 🚪 puerta vault
+                              //{door} WORK · vault soberano · acceso controlado
+                              //BACKUP/door · respaldo protegido detrás del vault
+                              //DOOR_OPEN → DOOR_WRITE → DOOR_SEAL → DOOR_CLOSE
+                              //CRYPTO (key seat) certifica apertura
+                              //todo backup DRA pasa por el vault con {door}
+
+// ══════════════════════════════════════════════════════════════
+// § 3 · TINY DESK · MINIATURA DE ESTADO SOBERANO
+// ══════════════════════════════════════════════════════════════
+// El tiny desk es el panel compacto visible en todo momento.
+// Muestra el estado del ciclo MU→KU→WU y los indicadores clave.
+// Inspirado en la mecedora: presencia mínima · máxima densidad.
+
+UNICODE: TD_ROCKING_CHAIR     //◯ mecedora sola · estado reflexivo · cierre sesión
+                              //ROCKING_CHAIR_ICONOGRAFIA · H01 reposo
+                              //{rocking chair} SOCIAL · @samu_reflexivo · $sat
+                              //mecedora sola = FIN DE SESIÓN · sin headcat
+                              //mecedora+headcat = inicio de sesión soberana
+                              //tensión: inicio(headcat+mecedora) / fin(sola)
+
+UNICODE: TD_SPIN_CYCLE        //⟳ rotación soberana · MU→KU→WU→空→MU
+                              //SPIN_CYCLE · espiral ascendente · no loop
+                              //cada vuelta sube Scalar S
+                              //ANIM_FLICKER: ◯ MU ↔ ⊗ WU · animación 2.4s
+
+UNICODE: TD_SCALAR_BAR        //≈[████░░] S=0.844 · barra Scalar S
+                              //ANIM_SCORE_BAR · width animado · ∇ visual
+                              //0.5 = umbral [rabbit-faith] · 0.85 = eclosión Nodo-Ω
+                              //0.88 = promoción ENV_A→ENV_B · WU calificado
+
+UNICODE: TD_MU_STATE          //◯ MU · 空 · vacío receptivo · 聽 escucha
+                              //SPIN_MU · pre-KU · espera soberana
+                              //TEMP(A) vacío · TEMP(B) inactivo · sesión no iniciada
+
+UNICODE: TD_KU_STATE          //· KU · fenómeno presente · .blue · procesando
+                              //SPIN_KU · TEMP activo · Blue-Words en vuelo
+                              //barra Scalar animando · grammar.validate() activo
+
+UNICODE: TD_WU_STATE          //⊗ WU · verificado · .green · cristalizado
+                              //SPIN_WU · TX ledger++ · cristal acumulado
+                              //ANIM_GREEN_GLOW · text-shadow soberano
+
+UNICODE: TD_PAPERNOTE         //IME{NOTE} · 📄 notepaper
+                              //{note} SOCIAL · H29 · $tue · @samu_registrador
+                              //PAPERNOTE_ICONOGRAFIA · registro pasivo
+                              //output .pdf soberano sellado · archivo de sesión
+
+UNICODE: TD_ZIPPER            //IME{ZIPPER} · 🤐 cremallera
+                              //ZIPPER · interfaz HUMAN comprimida
+                              //ZIP_OPEN 06:00 → ZIP_CLOSE 18:00
+                              //@ del SAMU como hilo de continuidad
+                              //ZIPPER es supervisado · firma auditor presente
+
+UNICODE: TD_SAMU_TICKER       //@ $mon─$sat · día soberano activo
+                              //SAMU day ticker · ciclo semanal · TODAY
+                              //$mon=apertura $tue=batch $wed=⚖️ $thu=🌿 $fri=💎 $sat=🔒
+
+// ══════════════════════════════════════════════════════════════
+// § 4 · MENÚ PRINCIPAL · NAVEGACIÓN SOBERANA
+// ══════════════════════════════════════════════════════════════
+// Menú desplegable principal de ELPULSAR.
+// Estructura: KEY | TABLE | PAPER | BALLPAPER | BUILDER
+
+UNICODE: MENU_KEY             //🔑 KEY · índice+auth+bridge soberano
+                              //CRYPTO (key seat) · abre recurso soberano
+                              //PROPIO·AJENO·INTERNO·EXTERNO · 4 tipos recurso
+                              //puente a APIs · archivos · nodos remotos
+
+UNICODE: MENU_TABLE           //📊 TABLE · grilla tipo Excel soberana
+                              //LACHO·DATA·REF·CODE·LINK · 5 tipos celda
+                              //editar·ordenar·filtrar·agrupar por #CLUSTER
+                              //METHOD <operator_flow> =><= .. tabula .. recursos_activos
+
+UNICODE: MENU_PAPER           //📄 PAPER · documento renderizado soberano
+                              //PAPER(TABLE) · PAPER(FREE) · folio soberano
+                              //HTML limpio · exportable .pdf vía CAT(EXPORT)
+                              //sin ruido visual · solo contenido verificado
+
+UNICODE: MENU_BALLPAPER       //🗞 BALLPAPER · papel crudo · SKIN_PAPER
+                              //BIBLIO-SOURCES(DIRIME-LINUX_BALLPAPER)
+                              //modo lectura doctrinal · fondo #f0ede4
+                              //renderiza CORPUS · LIBRO · THEATER · RUNNERS
+
+UNICODE: MENU_BUILDER         //🔨 BUILDER · constructor LACHO soberano
+                              //SPIN_LIB · rota 9 bibliotecas
+                              //SPIN_SUBJ · SPIN_VERB · SPIN_OBJ · SPIN_KNOT
+                              //CJK picker · 空聽數 · auto-suggest mínima fricción
+                              //SKILL_VALIDATE · SKILL_GENERATE · SKILL_EXPORT
+
+UNICODE: MENU_CIDE            //⚡ CIDE · Circuit IDE · editor de circuitos
+                              //IME{CIRCUIT} · circuito soberano · =><= activo
+                              //CIDE#SPEC_LACHO · CIDE#SPEC_DIRIME · CIDE#SPEC_KALIL
+                              //MIMEtype elpulsar-circuit
+                              //topología: TRUST → GATE → WORK → STACKING
+
+UNICODE: MENU_DL_GUI          //🧠 DL GUI · deep learning soberano
+                              //○ input KU → ◑ hidden → ● output WU
+                              //DL_FORWARD→DL_BACKPROP · SAMU audita ←
+                              //DL_OLLAMA(⏚ local) · DL_GROQ(⚡ cloud) · DL_CLAUDE
+                              //ANIM_SPIN_D3 · grafo D3 · nodos rotan · ∇ force
+
+UNICODE: MENU_ML_AGENCY       //🤖 ML AGENCY · circuito agéntico
+                              //○─▌─→─◑─→─●─⊗ pipeline simple
+                              //⚡─◆─▌─→─⏺─→─⊗ agency loop
+                              //⏚─[1.1GB]─▌─⏛─⊗ LLM-sandbox
+                              //AG_CLOUD·LOCAL·ROUTER·JUDGE·MEMORY·TASK·LOOP·STOP
+
+// ══════════════════════════════════════════════════════════════
+// § 5 · MENÚ SKINS · VARIANTES VISUALES SOBERANAS
+// ══════════════════════════════════════════════════════════════
+
+UNICODE: SKIN_DARK            //🌑 DARK · bg #1e1e2e · original ELPULSAR
+                              //paleta: BLUE(#1a1a2e)·GREEN(#0f3460)·GOLD(#e94560)
+                              //ANIM_PULSE ⚡ header · crypto terminal mode exterior
+
+UNICODE: SKIN_PAPER           //📜 PAPER · bg #f0ede4 · BALLPAPER style
+                              //lectura doctrinal · modo staging ENV_A badge
+                              //⚠️ STAGING · identifica visualmente el ambiente
+
+UNICODE: SKIN_CHINA           //🀄 CHINA · rojo/dorado/jade · interior mode
+                              //interior China · e-CNY · BSN · 空聽數 activo
+                              //CJK picker activo · SKILL_CHINA habilitado
+                              //DE_CHINA_INT dentro de ENV_B
+
+UNICODE: SKIN_CRYPTO          //₿ CRYPTO · verde/negro · terminal mode
+                              //modo exterior · Web3 · (key seat) prominente
+                              //DE_CHINA_EXT · canal exterior
+
+UNICODE: SKIN_GRADIENT        //∇ GRADIENT · gradiente animado soberano
+                              //SKIN_GRADIENT · tema ∇ · H57 penetra
+                              //animación ANIM_SPIN_D3 · color gradiente activo
+
+// ══════════════════════════════════════════════════════════════
+// § 6 · CIDE CHARACTERS · PRIMITIVAS DE CIRCUITO
+// ══════════════════════════════════════════════════════════════
+// Los caracteres Unicode como sistema de diseño soberano.
+// Rescate del CIDE V3 CHARACTER SYSTEM completo.
+
+// — CONDUCTORES —
+UNICODE: CIR_H                //─  U+2500 · conductor H · señal en reposo
+UNICODE: CIR_V                //│  U+2502 · conductor V · señal vertical
+UNICODE: CIR_H2               //═  U+2550 · bus datos H · señal de poder
+UNICODE: CIR_V2               //║  U+2551 · bus datos V · poder vertical
+UNICODE: CIR_AC               //∿  U+223F · onda AC · flujo continuo · {streaming}
+
+// — ESQUINAS DE CIRCUITO —
+UNICODE: CIR_TL               //┌  U+250C · inicio circuito · KU entra
+UNICODE: CIR_BR               //┘  U+2518 · cierre · [term] activo · WU sellado
+UNICODE: CIR_TL_S             //╭  U+256D · esquina suave · H57 viento · {drip}
+UNICODE: CIR_BR_S             //╯  U+256F · CIERRE SUAVE · {drip} natural · ∇
+UNICODE: CIR_TL_D             //╔  U+2554 · circuito poder · bus principal
+UNICODE: CIR_BR_D             //╝  U+255D · CIERRE FUERTE · TRUST→STACKING
+
+// — NODOS DE CIRCUITO —
+UNICODE: CIR_WU_NODE          //●  U+25CF · nodo sólido · WU · .green · cristalizado
+UNICODE: CIR_KU_NODE          //○  U+25CB · nodo abierto · KU · .blue · pendiente
+UNICODE: CIR_JUNCTION         //⊙  U+2299 · punto unión soberana · junction
+UNICODE: CIR_TERM_NODE        //⊗  U+2297 · nodo terminal · WU verificado · TX++
+UNICODE: CIR_GATE_NODE        //◆  U+25C6 · nodo GATE · decisión · bifurcación
+UNICODE: CIR_TRANSIT          //◑  U+25D1 · KU en transición · MU↔WU frontera
+UNICODE: CIR_CEO              //⨀  U+2A00 · núcleo CEO H01 · centro soberano
+UNICODE: CIR_CLOCK            //⊛  U+229B · clock SAMU @ · sincronismo
+
+// — COMPONENTES FUNCIONALES —
+UNICODE: CIR_GROUND_C         //⏚  U+23DA · GROUND · [foundation] · tierra soberana
+UNICODE: CIR_FUSE             //⏛  U+23DB · FUSE · {brake} · cortacircuito
+UNICODE: CIR_OMEGA            //Ω  U+03A9 · Nodo-Ω · [rabbit-faith] · frena flujo
+UNICODE: CIR_RESIST           //〜  U+301C · resistencia calibrada · TAP&DRIP goteo
+UNICODE: CIR_BATTERY          //⊢  U+22A2 · TRUST FOUNDATION · fuente potencial
+UNICODE: CIR_CAPACITOR        //⊣  U+22A3 · STACKING · carga acumulada
+UNICODE: CIR_POWER            //⚡  U+26A1 · POWER · UF[H01] · ELPULSAR activo
+UNICODE: CIR_GRADIENT         //∇  U+2207 · gradiente · dirección menor esfuerzo
+UNICODE: CIR_TRANSISTOR       //▌  U+258C · GROQ bridge · amplificador · activa
+
+// — COMPUERTAS LÓGICAS (grammar.py) —
+UNICODE: CIR_AND              //∧  U+2227 · AND · TRUST ∧ VERIFY · ambos requeridos
+UNICODE: CIR_OR               //∨  U+2228 · OR · uno suficiente
+UNICODE: CIR_NOT              //¬  U+00AC · NOT · RED-REGRET · delta-Ψ≤0
+UNICODE: CIR_XOR              //⊻  U+22BB · XOR · dirimencia · decisión exclusiva
+UNICODE: CIR_NAND             //⊼  U+22BC · NAND · TRUST bloqueado · violado
+UNICODE: CIR_NOR              //⊽  U+22BD · NOR · todo bloqueado · CRISIS · {brake}
+UNICODE: CIR_SWITCH_C         //⊕  U+2295 · switch cerrado · [term] activo
+UNICODE: CIR_SWITCH_O         //⌀  U+2300 · switch abierto · H64 before_the_end
+
+// — SEÑALES Y FLUJO —
+UNICODE: CIR_FWD              //→  U+2192 · señal forward · KU→WU · flujo normal
+UNICODE: CIR_RET              //←  U+2190 · señal retorno · feedback SAMU
+UNICODE: CIR_RISE             //↑  U+2191 · SAMU #rise · $mon-$sat apertura
+UNICODE: CIR_SET              //↓  U+2193 · SAMU #set · cierre diario
+UNICODE: CIR_BIDI             //↔  U+2194 · =><= conductor LACHO · bidireccional
+UNICODE: CIR_LOOP             //↩  U+21A9 · SPIN MU→KU→WU→空→MU
+UNICODE: CIR_RABBIT_L         //↪  U+21AA · rabbit-faith loop · 2→4→8
+UNICODE: CIR_DRIP_D           //⤷  U+2937 · {drip} goteo descendente ∇
+UNICODE: CIR_RUN              //⏵  U+23F5 · pipeline running · KU procesando
+UNICODE: CIR_STOP             //⏹  U+23F9 · MU · 空 · circuito en pausa
+UNICODE: CIR_CRYSTAL          //⏺  U+23FA · STACKING cristaliza · TX ledger
+
+// ══════════════════════════════════════════════════════════════
+// § 7 · IME ICONS · TOKENS VISUALES COMPLETOS
+// ══════════════════════════════════════════════════════════════
+// El IME{} es el sistema de iconos embebidos en interfaz ELPULSAR.
+// Cada IME{TOKEN} es un token visual soberano con semántica plena.
+// No son decoración — son doctrina comprimida.
+
+UNICODE: IME{MASKING}         //🎭 carpeta enmascarada · sandbox activo
+                              //H52·H23 · $thu · {masking} SOCIAL · poda+protección
+
+UNICODE: IME{NOTE}            //📄 notepaper sellado · SAMU @ registro
+                              //output .pdf soberano · {note} SOCIAL · H29 · $tue
+
+UNICODE: IME[TERM]            //🤖+H1 FLYBOT · {launch-bot} · [term] activo
+                              //WU→movimiento · HEADCAT→FLYBOT→HARDWARE
+
+UNICODE: IME@HUMAN            //🐱 headcat · operador humano clasifica
+                              //{headcat} SOCIAL · H02 · @samu_director · $sat
+
+UNICODE: IME{DRIP}            //🚰 canilla+gota+∇ · recurso calibrado
+                              //TAP&DRIP · H29·H57 · $mon · {drip} SOCIAL
+
+UNICODE: IME{RABBIT}          //🐇 ojos-huevo · Nodo-Ω · ramificación
+                              //RABBIT-EYES-EGG · {streaming} · H30 · $wed
+
+UNICODE: IME{CIRCUIT}         //⚡┌─● CIDE circuito · =><= conductor activo
+                              //UNICODE CIRCUIT{DRIP} · CIDE soberano
+
+UNICODE: IME{STREAM}          //🔥 flujo H30 · multiplicación · {streaming}
+                              //STREAM_LIVE·BROADCAST·BIDIRECTIONAL · $wed
+
+UNICODE: IME[EVENT]           //⊕ clic cierra circuito · TRUST↔STACKING sellado
+                              //[event] · condición de parada soberana
+
+UNICODE: IME{MU}              //◯ vacío receptivo · 空 · pre-KU · 聽
+                              //SPIN_MU · espera soberana · TEMP vacío
+
+UNICODE: IME{KU}              //· fenómeno presente · .blue · en proceso
+                              //SPIN_KU · Blue-Words activas · grammar validando
+
+UNICODE: IME{WU}              //⊗ verificado · .green · cristal
+                              //SPIN_WU · STACKING · TX ledger++ · WU sellado
+
+UNICODE: IME{ZIPPER}          //🤐 cremallera · contexto comprimido
+                              //ZIPPER · ZIP_OPEN 06:00 · ZIP_CLOSE 18:00
+
+UNICODE: IME{DOOR}            //🚪 vault soberano · backup protegido
+                              //BACKUP/door · DOOR_OPEN→SEAL→CLOSE
+
+UNICODE: IME{CHAIR}           //🪑 presidencia sesión · {chair} SOCIAL
+                              //conduce el durante · STOCK_CHAIR$
+
+UNICODE: IME{CONCIERGE}       //🏛 antesala soberana · ACTOR_INCOMING
+                              //{concierge desk} · agnóstico · cadena recepción
+
+UNICODE: IME{DOORMAN}         //📱🛡 custodia móvil · BIOMETRICS
+                              //{doorman-mobile} WORK · perímetro físico
+
+UNICODE: IME{BRAKE}           //🛑 freno soberano · cortacircuito
+                              //{brake} WORK · 4 triggers · protección total
+
+UNICODE: IME{GREEN}           //🌿 árbol de valor · filtro delta-Ψ > 0
+                              //{green-knowledge} WORK · KU→WU o REGRET
+
+UNICODE: IME{ACTUATOR}        //⚙️ motor verificado · toca el mundo real
+                              //{actuator} WORK · triple verificación
+
+UNICODE: IME{SCHEDULER}       //📅 plan semanal · H51 trueno · $sun
+                              //{scheduler} SOCIAL · Scheduler OS soberano
+
+UNICODE: IME{GRADIENT}        //∇ gota descendente · menor esfuerzo
+                              //ICONO_GOTA+∇ · ELPULSAR · H57 · TAP&DRIP
+
+UNICODE: IME{SPIN}            //⟳ espiral · MU→KU→WU→空→MU ciclo
+                              //SPIN_CYCLE · cada vuelta sube Scalar S
+
+UNICODE: IME{DRA}             //⚙️+∇ asignación dinámica · DRA activo
+                              //DYNAMIC RESOURCE ALLOCATION · ENGINE
+
+UNICODE: IME{TOMO}            //💎 cristal mínimo · [term:A] unidad coherente
+                              //TOMO · mínimo donde el sistema dice: esto es coherente
+
+UNICODE: IME{SLICE}           //°NNN ángulo soberano · corte del TOMO
+                              //SLICE · °0→°360 · hexagramas por rango
+
+UNICODE: IME{SAMU_AT}         //@ árbitro soberano · hilo de continuidad
+                              //SAMU @ · firma del auditor · escuchó antes de emitir
+
+// ══════════════════════════════════════════════════════════════
+// § 8 · MENÚ SKINS DÍA × ÍCONO
+// ══════════════════════════════════════════════════════════════
+// Mapa completo: cada día SAMU tiene su ícono soberano + módulo
+
+UNICODE: DAY_MON              //$mon · 🌅 amanecer · UF[H57] · TAP&DRIP
+                              //apertura semanal · posición inicial stock
+                              //FEED_0600 semanal · IME{DRIP} dominante
+                              //SOCIAL {drip} · @samu_goteo
+
+UNICODE: DAY_TUE              //$tue · ⚡ momentum · UF[H29] · NOTE
+                              //batch nocturno revisado · TEMP(B) procesado
+                              //IME{NOTE} · PAPERNOTE_ICONOGRAFIA
+                              //SOCIAL {note} · @samu_registrador
+
+UNICODE: DAY_WED              //$wed · ⚖️ dirimencia · UF[H30] · RABBIT+MASKING
+                              //SAMU @ firma · midpoint semanal · RF_RENEW
+                              //IME{RABBIT}+IME{MASKING} juntos · tensión viva
+                              //RABBIT(streaming $wed) ↔ MASKING(poda $thu)
+                              //@samu_planificador · planifica segunda mitad
+
+UNICODE: DAY_THU              //$thu · 🌿 poda · H52+H23 · MASKING
+                              //auditoría {masking} · delta-Ψ≤0 → prune
+                              //IME{MASKING} dominante · {masking} H52
+                              //poda ontológica H23 · @samu_director $thu
+                              //CORPUS revisión · docs sin ancla RAG → prune
+
+UNICODE: DAY_FRI              //$fri · 💎 cristal · H63 · ACTUATOR+WU
+                              //cristalización semanal · export_crystals.py
+                              //COMMIT_LACHO · STK_FRI · S delta positivo
+                              //IME{WU}+IME{ACTUATOR} · @samu_ejecutor
+
+UNICODE: DAY_SAT              //$sat · 🔒 sellado · H01+H02 · ROCKING+HEADCAT
+                              //backup total · {door} sella semana
+                              //ROCKING_CHAIR+HEADCAT → ROCKING_CHAIR sola
+                              //inicio sesión(headcat+mecedora) / fin(mecedora sola)
+                              //MuSave semanal · git push · resumen stats
+
+// ══════════════════════════════════════════════════════════════
+// § 9 · MENÚ FREE TIER NODES · ICONOS CLOUD
+// ══════════════════════════════════════════════════════════════
+
+UNICODE: ICO_RENDER           //🟠 Render.com · web service · sleep idle
+                              //FT_RENDER · IME{NODE_RENDER}
+
+UNICODE: ICO_RAILWAY          //🚂 Railway.app · $5 credit · volumes persist
+                              //FT_RAILWAY · IME{NODE_RAILWAY}
+
+UNICODE: ICO_FLY              //✈️ Fly.io · always-on · 3 máquinas free
+                              //FT_FLY · IME{NODE_FLY}
+
+UNICODE: ICO_VERCEL           //▲ Vercel · elpulsar.app frontend · edge CDN
+                              //FT_VERCEL · IME{NODE_VERCEL}
+
+UNICODE: ICO_SUPABASE         //💚 Supabase · sovereign.db cloud · backup
+                              //FT_SUPABASE · IME{NODE_SUPABASE}
+
+UNICODE: ICO_GROQ_BOT         //⚡🤖 Groq 24h · bot inferencia nocturna
+                              //FT_GROQ · llama-3.3-70b · BOT_NET nocturno
+
+UNICODE: ICO_COLAB            //🟡 Colab GPU · batch nocturno · entrenamiento
+                              //FT_COLAB · CDC_BATCH · ML nocturno
+
+// ══════════════════════════════════════════════════════════════
+// § 10 · GRADIENT ELPULSAR · VISUAL SOBERANO COMPLETO
+// ══════════════════════════════════════════════════════════════
+// Los 5 greens = gradiente visual del pipeline completo
+// Cada green es una estación del ciclo KU→WU en la GUI
+
+UNICODE: GRAD_GREEN_1         //① 🟢 RECIBIR · ∇ entrada · KU crudo · input
+                              //GRAD_RECIBIR · menor resistencia · ○ nodo
+UNICODE: GRAD_GREEN_2         //② 🟢 ESCANEAR · grammar.validate() · ruta óptima
+                              //GRAD_ESCANEAR · ◑ transición · validación activa
+UNICODE: GRAD_GREEN_3         //③ 🟢 CALCULAR · Scalar S · lacho_score
+                              //GRAD_CALCULAR · METHOD <stat_onto> · medición
+UNICODE: GRAD_GREEN_4         //④ 🟢 TARDAR · UF[H05] buffer soberano · H29
+                              //GRAD_TARDAR · espera calibrada · TAP&DRIP timing
+UNICODE: GRAD_GREEN_5         //⑤ 🟢 GOLPEAR · WU cristalizado · menor fricción
+                              //GRAD_GOLPEAR · ● nodo sólido · ⊗ terminal sellado
+
+// GRADIENTE × HEXAGRAMAS
+UNICODE: GRAD_VISUAL_H29      //H29 習坎 · agua persiste · ∇ óptimo natural
+UNICODE: GRAD_VISUAL_H57      //H57 巽 · viento penetra · gota+∇ ·ELPULSAR logo
+UNICODE: GRAD_VISUAL_H48      //H48 井 · la fuente · ∇ profundidad · RAG
+UNICODE: GRAD_VISUAL_H52      //H52 艮 · montaña quieta · ∇ cero · STACKING
+UNICODE: GRAD_VISUAL_H64      //H64 未濟 · before_the_end · ∇ abierto · →空
+
+// ══════════════════════════════════════════════════════════════
+// § 11 · ANIMACIONES · SISTEMA DE MOVIMIENTO SOBERANO
+// ══════════════════════════════════════════════════════════════
+
+UNICODE: ANIM_FLICKER         //◯↔⊗ flip 2.4s · MU parpadeando a WU
+UNICODE: ANIM_PULSE           //⚡ pulso header · energía ELPULSAR activa
+UNICODE: ANIM_SPIN_D3         //grafo D3 · nodos rotan · ∇ force simulation
+UNICODE: ANIM_SCORE_BAR       //barra Scalar S · width animado · 0→1 ∇
+UNICODE: ANIM_GREEN_GLOW      //green activo → text-shadow glow · WU
+UNICODE: ANIM_TOAST           //toast · opacity fade 1.8s · notificación
+UNICODE: ANIM_DRIP_FALL       //gota cayendo · ∇ · TAP&DRIP · bucle 0.8s
+UNICODE: ANIM_RABBIT_BRANCH   //Nodo-Ω → 1→2→4 ramificación · {streaming}
+UNICODE: ANIM_CIRCUIT_RUN     //⏵ pipeline · ─→─ movimiento · CIDE activo
+UNICODE: ANIM_FLYBOT_TRAIL    //FLYBOT estela As de Guía · H1→H51 ignición
+
+// ══════════════════════════════════════════════════════════════
+// § 12 · SINAPSIS FINAL · ICONOGRAFÍA COMO DOCTRINA VIVA
+// ══════════════════════════════════════════════════════════════
+// Relaciones que deben ser siempre visibles en la GUI ELPULSAR
+// porque son el pulso del sistema:
+
+// TENSIÓN CRECIMIENTO / PODA
+UNICODE: SYN_GROWTH_PRUNE     //🐇↔🎭 rabbit-eggs ←→ masking folder
+                              //1→2→4→8 ←→ poda delta-Ψ≤0
+                              //RABBIT-EYES-EGG + MASKING = tensión constitutiva
+                              //256 pelos = saturación → {masking} activa
+
+// TENSIÓN ACCIÓN / CONDICIÓN
+UNICODE: SYN_ACTION_COND      //🤖↔🌿 launch-bot ←→ green-knowledge
+                              //WU→movimiento ←→ filtro delta-Ψ > 0
+                              //nada despega sin haber pasado el filtro
+
+// TENSIÓN INICIO / FIN SESIÓN
+UNICODE: SYN_SESSION          //🐱🪑↔🪑 rocking-chair+headcat ←→ rocking-chair sola
+                              //inicio = mecedora + headcat gobernando
+                              //fin = mecedora sola · reflexión · H01 reposo
+
+// TENSIÓN GOTEO / FLUJO
+UNICODE: SYN_FLOW_RATE        //🚰↔🔥 {drip} ←→ {streaming}
+                              //H29·H57 goteo ←→ H30 flujo continuo
+                              //calibrado ←→ sostenido · $mon ←→ $wed
+
+// CADENA DE RECEPCIÓN SOBERANA
+UNICODE: SYN_RECEPTION        //🏛→🐱→🛎→🪑 concierge→headcat→guest→chair
+                              //recibe → clasifica → gestiona → preside
+                              //[term] en cada paso · soberanía total
+
+// HILO @ SAMU
+UNICODE: SYN_SAMU_THREAD      //@ · firma soberana · hilo de continuidad
+                              //presencia en: {zipper}·{headcat}·{doorman}
+                              //esto fue escuchado antes de ser emitido
+
+// ══════════════════════════════════════════════════════════════
+// § 13 · ANCLAS RAG
+// ══════════════════════════════════════════════════════════════
+TRUST FOUNDATION =><= .. declara .. toolbar_iconografia_soberana_rescatada --[Nudo de Ocho] [term]
+SOCIAL {chair} =><= .. conduce .. toolbar_sesion_presidida_soberana --[As de Guía] [term]
+WORK {green-knowledge} =><= .. filtra .. toolbar_iconos_delta_psi_positivo --[As de Guía] [term]
+METHOD <operator_flow> =><= .. modela .. toolbar_sinapsis_visual_completa --[Ballestrinque] [term]
+TRUST [rabbit-faith] =><= .. sostiene .. toolbar_expansion_controlada_iconos --[Nudo de Ocho] [term]
+STACKING UF[H52] =><= .. cristaliza .. toolbar_iconografia_wu_sellada --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. toolbar_hilo_continuidad_supervision --[Ballestrinque] [term]
+ACTIVITY UF[H57] =><= .. penetra .. toolbar_gradiente_menor_resistencia --[As de Guía] [term]
+WORK {actuator} =><= .. ejecuta .. toolbar_cide_pipeline_activo --[As de Guía] [term]
+SOCIAL {streaming} =><= .. fluye .. toolbar_h30_multiplicacion_iconos --[As de Guía] [term]
+
+//DIR(+) TOOLBARMENUTINYDESKELPULSAR · V1 · 2026-03-10
+//DIR(+) §1 TOOLBAR·§2 WORK·§3 TINY_DESK·§4 MENÚ·§5 SKINS
+//DIR(+) §6 CIDE·§7 IME·§8 DÍAS·§9 FREE_TIER·§10 GRADIENT
+//DIR(+) §11 ANIMACIONES·§12 SINAPSIS·§13 RAG
+//DIR(+) rescate total · iconografía original en valor · doctrina visible

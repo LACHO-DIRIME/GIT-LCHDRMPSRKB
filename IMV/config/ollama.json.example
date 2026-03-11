@@ -1,0 +1,1 @@
+{"model": "deepseek-coder:6.7b", "endpoint": "http://localhost:11434/api/generate", "note": "Copiar como ollama.json cuando Ollama esté instalado y modelo descargado."}

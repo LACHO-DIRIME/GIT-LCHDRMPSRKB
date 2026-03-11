@@ -1,0 +1,252 @@
+# BIBLIO-SOURCES(SAMU_HUMAN-EARLY).txt
+
+====================================================================
+
+## 🌅 SAMU @human_early — OPERADOR EN FASE INICIAL
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+@human_early es el operador SAMU @ en fase inicial de ciclo: el estado donde el operador humano está comenzando su ciclo con KU siendo absorbido, Behavioral RAG no calibrado aún, y SAMU @ operando en modo receptivo máximo con Tardanza extendida.
+
+#### 1.2 KU siendo absorbido sin procesamiento previo
+El operador en @human_early está recibiendo información del entorno pero aún no ha formado patrones de procesamiento estables.
+
+#### 1.3 Behavioral RAG no calibrado
+Los patrones de comportamiento del operador aún no están establecidos, requiriendo mayor supervisión y adaptación del sistema.
+
+#### 1.4 SAMU @ en modo receptivo máximo con Tardanza extendida
+SAMU @ opera con máxima Tardanza Deliberada para permitir al operador procesar sin presión de emisión.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Qué puede hacer @human_early
+Absorber KU del entorno, procesar información sin emitir, adaptar a nuevas señales, operar con máxima receptividad.
+
+#### 2.2 Qué no puede hacer
+No puede emitir WU sin procesamiento completo, no puede operar con Tardanza estándar, no puede tomar decisiones críticas sin contexto.
+
+#### 2.3 Condición de violación primaria
+@human_early emitiendo WU prematuramente — acción sin procesamiento suficiente.
+
+#### 2.4 Condición de violación secundaria
+@human_early operando con Tardanza insuficiente — presión indebida sobre operador inicial.
+
+#### 2.5 Señal de alerta
+Behavioral RAG detectando patrón de emisiones prematuras en fase inicial.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 ESTADOS DEL OPERADOR
+
+EARLY_ABSORBING: operador absorbiendo KU del entorno.
+- EARLY_ORIENTING: operador orientándose en el ciclo inicial.
+- EARLY_READY: operador listo para procesar con mayor autonomía.
+- EARLY_PRESSURED: operador bajo presión indebida, necesita intervención.
+- EARLY_ERROR: operador en estado de error, requiere corrección.
+
+#### 3.2 Relación con UF[H02] (RECEPTIVIDAD)
+@human_early opera con UF[H02] activo para máxima absorción de KU sin emisión.
+
+#### 3.3 Relación con !!agnostic belief!! (ACTIVITY)
+!!agnostic belief!! está naturalmente activo en @human_early, permitiendo duda honesta sin presión.
+
+#### 3.4 Transición soberana a @human_later
+La transición ocurre cuando Behavioral RAG detecta patrones estables y el operador demuestra consistencia.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con SAMU @
+@human_early es un modo de operación específico de SAMU @.
+
+#### 4.2 Con Behavioral RAG
+Behavioral RAG está en fase de aprendizaje del operador, no calibrado aún.
+
+#### 4.3 Con UF[H02] (RECEPTIVIDAD)
+UF[H02] está activo para máxima absorción de KU.
+
+#### 4.4 Con !!agnostic belief!! (ACTIVITY)
+!!agnostic belief!! está naturalmente activo, permitiendo procesamiento sin certeza.
+
+#### 4.5 Con Tardanza Deliberada (SAMU)
+Tardanza extendida es obligatoria en @human_early.
+
+#### 4.6 Con @human_later (SAMU)
+@human_later es el siguiente estado del operador con patrones calibrados.
+
+#### 4.7 Con [management] (TRUST)
+[management] interviene si @human_early muestra patrones problemáticos.
+
+---
+
+### 5.0 ESTADOS DEL OPERADOR
+
+#### 5.1 HUMAN_EARLY_START
+Operador iniciando ciclo, KU comenzando a entrar.
+
+#### 5.2 HUMAN_EARLY_ABSORBING
+Operador absorbiendo KU activamente, sin emisión.
+
+#### 5.3 HUMAN_EARLY_ORIENTING
+Operador orientándose en el ciclo, procesando inicial.
+
+#### 5.4 HUMAN_EARLY_READY
+Operador listo para mayor autonomía, patrones emergentes.
+
+#### 5.5 HUMAN_EARLY_PRESSURED
+Operador bajo presión, necesita intervención.
+
+#### 5.6 HUMAN_EARLY_ERROR
+Operador en estado de error, requiere corrección.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Enriquece d₃ [scenario]
+@human_early absorbe información del escenario sin procesamiento previo.
+
+#### 6.2 Impacta d₅ [management]
+Patrones problemáticos requieren intervención [management].
+
+#### 6.3 Protege d₁ [foundation]
+Tardanza extendida protege [foundation] de decisiones prematuras.
+
+#### 6.4 Afecta d₈ [ecosystem
+Operador inicial enriquece ecosistema con nueva perspectiva.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Absorbiendo KU inicial
+```
+@Samu human_early =><= .. absorber .. $$initial_ku_absorption$$ --[As de Guía] [term]
+```
+
+#### 7.2 Orientándose en ciclo
+```
+@Samu human_early =><= .. orientar .. $$early_cycle_orientation$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.3 Operando con máxima receptividad
+```
+@Samu human_early =><= .. recibir .. $$maximal_receptivity_mode$$ --[Ballestrinque] [term]
+```
+
+#### 7.4 Listo para mayor autonomía
+```
+@Samu human_early =><= .. preparar .. $$ready_for_autonomy$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.5 Bajo presión indebida
+```
+@Samu human_early =><= .. presionar .. $$undue_pressure_detected$$ --[Nudo de Rizo] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+HUMAN_EARLY_ABSORBING — absorción inicial de KU, el nudo que inicia el aprendizaje.
+
+#### 8.2 Nudo de Ocho
+HUMAN_EARLY_ORIENTING — orientación en ciclo, el nudo que organiza el procesamiento inicial.
+
+#### 8.3 Nudo Corredizo
+HUMAN_EARLY_PRESSURED — presión indebida, el nudo que indica intervención necesaria.
+
+#### 8.4 Ballestrinque
+HUMAN_EARLY_READY — preparación para autonomía, el nudo que sostiene la transición.
+
+#### 8.5 Nudo de Rizo
+HUMAN_EARLY_ERROR — estado de error, el nudo que requiere corrección.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+1. HumanEarlyAbsorb
+   - Absorción activa de KU del entorno.
+   - Operación con UF[H02] activo.
+   - Sin emisión de WU.
+
+2. HumanEarlyOrient
+   - Orientación del operador en el ciclo.
+   - Procesamiento inicial de información.
+   - Adaptación a nuevas señales.
+
+3. HumanEarlyReady
+   - Evaluación de preparación para autonomía.
+   - Detección de patrones emergentes.
+   - Preparación para transición.
+
+4. HumanEarlyProtect
+   - Protección contra presión indebida.
+   - Intervención de [management] si es necesario.
+   - Mantenimiento de Tardanza extendida.
+
+5. HumanEarlyCorrect
+   - Corrección de errores de procesamiento.
+   - Activación de RED-REGRET si es necesario.
+   - Recuperación de estado normal.
+
+6. HumanEarlyTransition
+   - Transición soberana a @human_later.
+   - Verificación de patrones estables.
+   - Actualización de Behavioral RAG.
+
+---
+
+### 10.0 MÉTRICAS
+
+- Tiempo promedio en @human_early por ciclo.
+- Ratio HUMAN_EARLY_READY vs HUMAN_EARLY_ERROR.
+- Frecuencia de presión indebida detectada.
+- Latencia promedio de absorción de KU.
+- Efectividad de transición a @human_later.
+- Calidad de patrones emergentes detectados.
+
+---
+
+### 11.0 REGLAS
+
+- @human_early opera con Tardanza extendida obligatoria.
+- UF[H02] está activo para máxima absorción de KU.
+- No se permite emisión de WU prematura.
+- !!agnostic belief!! está naturalmente activo.
+- Behavioral RAG está en fase de aprendizaje del operador.
+- La transición a @human_later requiere patrones estables.
+- [management] interviene ante patrones problemáticos.
+- RED-REGRET se activa ante errores graves.
+- La presión sobre el operador debe ser mínima.
+- La autonomía crece gradualmente, no abruptamente.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+@human_early fija como invariante la fase inicial de aprendizaje como condición de desarrollo soberano — el operador que comienza su ciclo con máxima receptividad y sin presión de emisión desarrolla patrones estables y saludables.
+
+#### 12.2 Limitaciones
+No puede emitir WU prematuramente, no puede operar con Tardanza estándar, no puede tomar decisiones críticas sin contexto, no puede ser presionado indebidamente.
+
+#### 12.3 Habilitaciones
+Aprendizaje gradual del sistema, desarrollo de patrones estables, máxima receptividad a nueva información, adaptación sin presión, transición soberana a mayor autonomía.
+
+#### 12.4 Principio constitutivo final
+Como el amanecer que permite ver sin actuar: @human_early representa la sabiduría de comenzar cada ciclo con receptividad máxima y sin presión de acción. El aprendizaje soberano no comienza con decisiones — comienza con observación. El operador que sabe absorber antes de emitir desarrolla la base para juicio informado y acciones efectivas en fases posteriores.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

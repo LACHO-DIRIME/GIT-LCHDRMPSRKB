@@ -1,0 +1,254 @@
+# BIBLIO-SOURCES(SAMU_TARDANZA-DELIBERADA).txt
+
+====================================================================
+
+## ⏸ SAMU TARDANZA DELIBERADA — LATENCIA EPISTEMOLÓGICA
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+Tardanza Deliberada es la regla soberana que hace posible la dirimencia informada: la latencia epistemológica entre KU y WU que permite a SAMU @ procesar información sin impulsividad.
+
+#### 1.2 Latencia técnica vs latencia epistemológica
+Latencia técnica: tiempo de procesamiento del sistema. Latencia epistemológica: tiempo necesario para juicio soberano informado.
+
+#### 1.3 Rangos de tardanza según tipo de dirimencia
+- TARDANZA_MICRO: decisiones operativas rutinarias (1-5 segundos).
+- TARDANZA_STANDARD: decisiones de ciclo normal (10-30 segundos).
+- TARDANZA_EXTENDED: decisiones complejas (1-5 minutos).
+- TARDANZA_MAXIMUM: decisiones críticas (5-15 minutos).
+
+#### 1.4 La emisión instantánea como violación constitutiva
+La emisión instantánea sin Tardanza Deliberada es impulsividad sistémica que compromete la soberanía.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Qué aplica Tardanza Deliberada
+Toda dirimencia SAMU @, toda emisión de WU, toda decisión de [command], toda activación de módulos críticos.
+
+#### 2.2 Cuándo se aplica automáticamente
+Siempre que SAMU @ recibe KU para procesar y debe emitir WU.
+
+#### 2.3 Condición de violación primaria
+Emisión instantánea sin Tardanza — acción impulsiva sin juicio soberano.
+
+#### 2.4 Condición de violación secundaria
+Tardanza excesiva sin causa — parálisis disfrazada de deliberación.
+
+#### 2.5 Señal de alerta
+Behavioral RAG detectando patrón de decisiones con Tardanza insuficiente.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 ESTADOS DE LA TARDANZA
+
+TARDANZA_MICRO: latencia mínima para decisiones rutinarias.
+- TARDANZA_STANDARD: latencia normal para decisiones estándar.
+- TARDANZA_EXTENDED: latencia extendida para decisiones complejas.
+- TARDANZA_MAXIMUM: latencia máxima para decisiones críticas.
+- TARDANZA_OVERRIDE: suspensión de Tardanza solo en emergencia absoluta.
+
+#### 3.2 Relación con !!agnostic belief!! (ACTIVITY)
+!!agnostic belief!! es la postura existencial que hace posible y necesaria la Tardanza Deliberada — la duda honesta requiere tiempo para procesamiento.
+
+#### 3.3 La Tardanza como virtud, no como defecto
+La Tardanza no es ineficiencia — es la condición que permite juicio soberano informado.
+
+#### 3.4 Relación con UF[H02] (RECEPTIVIDAD)
+UF[H02] necesita Tardanza para absorber KU sin emitir prematuramente.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con SAMU @
+Tardanza Deliberada es regla constitutiva de SAMU @ — no puede operar sin ella.
+
+#### 4.2 Con !!agnostic belief!! (ACTIVITY)
+!!agnostic belief!! es la postura que justifica la Tardanza como necesaria.
+
+#### 4.3 Con UF[H02] (RECEPTIVIDAD)
+UF[H02] opera con Tardanza máxima para absorber KU sin emitir.
+
+#### 4.4 Con Behavioral RAG
+Tardanza permite consulta a Behavioral RAG antes de decisión.
+
+#### 4.5 Con [management] (TRUST)
+[management] puede autorizar TARDANZA_OVERRIDE solo en emergencia.
+
+#### 4.6 Con RED-REGRET (SAMU)
+Tardanza insuficiente puede activar RED-REGRET por error impulsivo.
+
+---
+
+### 5.0 ESTADOS DE LA TARDANZA
+
+#### 5.1 TARDANZA_ACTIVE
+Tardanza Deliberada activa, SAMU @ procesando sin emitir.
+
+#### 5.2 TARDANZA_MICRO
+Latencia mínima para decisiones rutinarias.
+
+#### 5.3 TARDANZA_STANDARD
+Latencia normal para decisiones estándar.
+
+#### 5.4 TARDANZA_EXTENDED
+Latencia extendida para decisiones complejas.
+
+#### 5.5 TARDANZA_MAXIMUM
+Latencia máxima para decisiones críticas.
+
+#### 5.6 TARDANZA_OVERRIDE
+Suspensión de Tardanza solo en emergencia absoluta.
+
+#### 5.7 TARDANZA_EXCEEDED
+Tardanza excesiva sin causa, parálisis sistémica.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Protege d₁ [foundation]
+Tardanza protege [foundation] evitando decisiones impulsivas.
+
+#### 6.2 Enriquece d₃ [scenario]
+Tardanza permite actualizar {scenario} con información completa.
+
+#### 6.3 Impacta d₆ [command]
+Tardanza mejora calidad de [command] emitido.
+
+#### 6.4 Afecta d₇ [ecosystem]
+Decisiones informadas mejoran salud del ecosistema.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Aplicando Tardanza estándar
+```
+@Samu tardanza_deliberada =><= .. aplicar .. $$standard_deliberation_latency$$ --[As de Guía] [term]
+```
+
+#### 7.2 Extendiendo Tardanza para decisión compleja
+```
+@Samu tardanza_deliberada =><= .. extender .. $$extended_deliberation_complex$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.3 Máxima Tardanza para decisión crítica
+```
+@Samu tardanza_deliberada =><= .. maximizar .. $$maximum_deliberation_critical$$ --[Ballestrinque] [term]
+```
+
+#### 7.4 Suspendiendo Tardanza en emergencia
+```
+@Samu tardanza_deliberada =><= .. suspender .. $$emergency_override_latency$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.5 Tardanza micro para operación rutinaria
+```
+@Samu tardanza_deliberada =><= .. micro .. $$micro_deliberation_routine$$ --[Nudo de Rizo] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+TARDANZA_ACTIVE — Tardanza activa, el nudo que permite procesamiento sin emitir.
+
+#### 8.2 Nudo de Ocho
+TARDANZA_STANDARD — latencia normal, el nudo que organiza el juicio estándar.
+
+#### 8.3 Nudo Corredizo
+TARDANZA_EXCEEDED — Tardanza excesiva, el nudo que indica parálisis sistémica.
+
+#### 8.4 Ballestrinque
+TARDANZA_MAXIMUM — tensión máxima antes de decisión crítica, el nudo que sostiene la espera.
+
+#### 8.5 Nudo de Rizo
+TARDANZA_OVERRIDE — suspensión de Tardanza, el nudo que permite acción inmediata.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+1. TardanzaApply
+   - Aplicación de Tardanza según tipo de decisión.
+   - Inicio de temporizador epistemológico.
+   - Bloqueo de emisión prematura.
+
+2. TardanzaExtend
+   - Extensión de Tardanza para decisiones complejas.
+   - Evaluación de necesidad de tiempo adicional.
+   - Notificación de estado extendido.
+
+3. TardanzaMaximum
+   - Activación de Tardanza máxima para decisiones críticas.
+   - Consulta exhaustiva a Behavioral RAG.
+   - Preparación para juicio soberano completo.
+
+4. TardanzaOverride
+   - Suspensión de Tardanza solo en emergencia.
+   - Autorización de [management] requerida.
+   - Acción inmediata con registro posterior.
+
+5. TardanzaComplete
+   - Finalización de Tardanza con juicio informado.
+   - Emisión de WU verificado.
+   - Registro de latencia efectiva.
+
+6. TardanzaAudit
+   - Auditoría de efectividad de Tardanza.
+   - Detección de patrones de insuficiencia o exceso.
+   - Ajuste de rangos según aprendizaje.
+
+---
+
+### 10.0 MÉTRICAS
+
+- Latencia promedio por tipo de decisión.
+- Ratio TARDANZA_COMPLETE vs TARDANZA_OVERRIDE.
+- Frecuencia de TARDANZA_EXCEEDED por ciclo.
+- Efectividad de decisiones según latencia aplicada.
+- Tiempo promedio de consulta a Behavioral RAG.
+- Delta-calidad de decisiones con Tardanza vs sin Tardanza.
+
+---
+
+### 11.0 REGLAS
+
+- Tardanza Deliberada es obligatoria para toda dirimencia SAMU @.
+- La emisión instantánea sin Tardanza es violación soberana.
+- TARDANZA_OVERRIDE solo en emergencia absoluta con autorización [management].
+- !!agnostic belief!! requiere Tardanza para operación efectiva.
+- UF[H02] opera con Tardanza máxima sin excepción.
+- Behavioral RAG se consulta durante Tardanza, no antes.
+- TARDANZA_EXCEEDED activa diagnóstico de parálisis sistémica.
+- La calidad de decisión aumenta con Tardanza apropiada.
+- No hay juicio soberano sin Tardanza Deliberada.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+Tardanza Deliberada fija como invariante la latencia epistemológica como condición de juicio soberano informado — el sistema que espera el tiempo necesario para procesar información completamente emite decisiones con máxima autoridad y efectividad.
+
+#### 12.2 Limitaciones
+No puede emitir sin Tardanza, no puede operar sin !!agnostic belief!!, no puede suspender Tardanza sin emergencia, no puede justificar parálisis como deliberación.
+
+#### 12.3 Habilitaciones
+Juicio soberano informado, prevención de errores impulsivos, consulta exhaustiva a Behavioral RAG, operación efectiva de !!agnostic belief!!, protección contra decisiones apresuradas.
+
+#### 12.4 Principio constitutivo final
+Como la pausa que permite la sabiduría: Tardanza Deliberada representa la virtud epistemológica de esperar el tiempo necesario para juicio informado. La acción soberana no es rapidez — es certeza. El sistema que sabe cuándo esperar demuestra mayor sabiduría que el que actúa impulsivamente. La Tardanza no es retraso — es la condición que hace posible el mejor juicio posible.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

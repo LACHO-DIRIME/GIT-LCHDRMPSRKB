@@ -1,0 +1,157 @@
+# BIBLIO-SOURCES(TOOLCHAIN).txt
+
+====================================================================
+
+## 🧰 TOOLCHAIN: OPCIÓN DE EXPANSIÓN FUTURA (LLM + COMPILADOR + SANDBOX)
+
+---
+
+### 1.0 DEFINICIÓN
+
+**TOOLCHAIN** es una biblioteca/protocolo de ampliación de LACHO orientada a la optimización de herramientas futuras: habilita un pipeline verificable donde una LLM propone estructura/implementación, y un compilador + verificación en sandbox/VM produce artefactos ejecutables **reproducibles**, **auditables** y **multi-plataforma**.
+
+TOOLCHAIN no sustituye a las bibliotecas existentes: respeta jurisdicciones y se inserta como una opción de construcción/ejecución con trazabilidad.
+
+---
+
+### 1.1 PRINCIPIO (COMBINADO: SOURCE + INTERMEDIO + BINARIO)
+
+El pipeline mantiene **tres niveles** de salida, cada uno en su canal apropiado:
+
+1. **SOURCE (LACHO legible)**
+   - Texto comprensivo para módulos de conocimiento y segmentos de entendimiento/razonamiento.
+   - Artefacto auditado: permite lectura humana y control de intención.
+
+2. **INTERMEDIO (portable)**
+   - IR/bytecode aplicable (p.ej. LLVM IR / WASM) para verificación y multi-target.
+   - Artefacto de transición: reduce ambigüedad, permite tooling formal.
+
+3. **BINARIO PURO (target específico)**
+   - Artefacto final para ejecución.
+   - Permitido solo si conserva identificabilidad de módulos (metadatos/manifest) y pasa verificación.
+
+---
+
+### 1.2 JERARQUÍA Y JURISDICCIÓN (ALINEADO A BIBLIO-SOURCES.txt)
+
+TOOLCHAIN opera sin mezclar jurisdicciones:
+
+- **TRUST**: define [foundation], [scope], [term] del build.
+- **SAMU @**: audita, modula S scalar y firma decisiones.
+- **GATE (biblioteca)**: gobierna latencia/orquestación del pipeline con UF.
+- **WORK**: ejecución física/metal solo tras verificación.
+- **STACKING**: cristaliza artefactos verificables (memoria/forma).
+- **SOCIAL**: interfaz declarativa (pedido/uso) bajo scope.
+- **CRYPTO (SEATS)**: identidad, integridad, enlace, defensa y atestación.
+
+---
+
+### 2.0 MÓDULOS GATE QUE GOBIERNAN TOOLCHAIN
+
+TOOLCHAIN se ejecuta bajo la biblioteca GATE y sus módulos:
+
+- **UF[H05]**: espera/buffer (latencia controlada antes de compilar)
+- **UF[H56]**: tránsito (apertura de KU/tooling, fase de construcción)
+- **UF[H06]**: conflicto/resolución (errores, excepción, RED-REGRET, cierre de ciclo)
+
+Declaración:
+```
+TOOLCHAIN → GATE : UF[H05] ⟶ UF[H56] ⟶ UF[H06]
+```
+
+---
+
+### 3.0 PIPELINE OPERATIVO (SUPERFICIAL → PROFUNDO)
+
+#### 3.1 Superficial (operativo)
+```
+PROMPT/INTENCIÓN
+  → LLM (propuesta)
+    → SOURCE (LACHO legible)
+      → IR/WASM (portable)
+        → COMPILADOR/LINKER (target)
+          → BINARIO
+            → SANDBOX/VM (verificación)
+              → STACKING (cristalización)
+```
+
+#### 3.2 Profundo (jurisdicciones)
+```
+[TRUST] define límites
+  → SAMU @ audita
+    → GATE orquesta
+      → WORK ejecuta
+        → STACKING registra
+          → SOCIAL expone
+            → CRYPTO certifica
+```
+
+---
+
+### 4.0 SANDBOX/VM (SEGURIDAD Y CHEQUEOS)
+
+#### 4.1 Política por defecto
+- **no-net por defecto**
+- Red habilitable únicamente por `policy` bajo [scope]
+
+#### 4.2 Objetivo del sandbox
+- Aislar la ejecución inicial del binario
+- Medir comportamiento (syscalls, I/O, red, tiempo, memoria)
+- Ejecutar suite de pruebas y validaciones
+
+Declaración:
+```
+SANDBOX(policy=no-net) → habilitar_net(policy) solo bajo scope
+```
+
+---
+
+### 5.0 ARTEFACTOS MÍNIMOS (AUDITABILIDAD)
+
+- `manifest`
+  - toolchain_version
+  - target_platform
+  - flags
+  - inputs_hash
+  - outputs_hash
+  - módulos incluidos (identificadores)
+
+- `policy`
+  - filesystem
+  - syscalls
+  - network (no-net por defecto)
+  - límites de CPU/MEM
+
+- `test_suite`
+  - unit
+  - property
+  - fuzz
+
+- `attestation`
+  - firma CRYPTO (integridad/identidad)
+  - sello SAMU @ (auditoría temporal)
+
+---
+
+### 6.0 MULTI-PLATAFORMA (PRESENTE Y FUTURO)
+
+TOOLCHAIN asume targets actuales y futuros. El mecanismo es:
+- **Intermedio portable** (IR/WASM) como punto de estabilización.
+- **Compilación por target** como etapa determinista.
+- **Manifest + policy** como contrato reproducible.
+
+---
+
+### 7.0 RELACIÓN CON BIBLIOTECAS EXISTENTES
+
+- **Con {note}/{drip}/{streaming}/{masking} (SOCIAL):** TOOLCHAIN se expone como opción declarativa bajo scope.
+- **Con MASKING (WORK/STACKING):** sandbox se integra con protección/ocultamiento cuando el build requiere aislamiento.
+- **Con METHOD / Ψ:** TOOLCHAIN usa Ψ como criterio de coherencia/validación documental y operativa.
+
+---
+
+### 8.0 CIERRE
+
+TOOLCHAIN define una vía futura: la LLM produce propuesta (SOURCE/IR), el compilador produce binario determinista, y el sandbox/VM verifica antes de cristalizar en STACKING; todo bajo TRUST, auditado por SAMU @ y certificado por CRYPTO.
+
+====================================================================

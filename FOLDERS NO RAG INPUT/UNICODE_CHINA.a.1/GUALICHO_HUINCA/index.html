@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GUALICHO HUINCA</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Share+Tech+Mono&family=Noto+Serif+SC:wght@300;700&display=swap" rel="stylesheet">
+<style>
+:root{--tierra:#1c1008;--papel:#f0e8d6;--rojo:#8b1a1a;--verde:#1a4a2e;--oro:#b8860b;--ceniza:#7a6a58;--humo:rgba(28,16,8,0.06)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--papel);color:var(--tierra);font-family:'Share Tech Mono',monospace;min-height:100vh;position:relative;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 28px,var(--humo) 28px,var(--humo) 29px);pointer-events:none}
+body::after{content:'';position:fixed;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(184,134,11,0.07) 0%,transparent 60%);pointer-events:none}
+header{padding:8vw 10vw 4vw;border-bottom:3px double var(--tierra);position:relative}
+.sigil{font-family:'Noto Serif SC',serif;font-size:clamp(60px,12vw,140px);font-weight:700;line-height:1;color:var(--tierra);letter-spacing:-2px;display:block}
+.sigil em{color:var(--rojo);font-style:normal}
+.subtitle{font-size:11px;letter-spacing:5px;text-transform:uppercase;color:var(--ceniza);margin-top:12px;display:block}
+.subtitle span{color:var(--verde)}
+.corner-seal{position:absolute;top:40px;right:10vw;font-family:'Noto Serif SC',serif;font-size:42px;color:var(--rojo);opacity:0.15;line-height:1;text-align:center}
+.corner-seal small{display:block;font-size:9px;letter-spacing:3px;font-family:'Share Tech Mono',monospace;opacity:0.8;color:var(--rojo)}
+nav{padding:6vw 10vw;display:grid;grid-template-columns:1fr 1fr;gap:3px;max-width:900px}
+.nav-item{border:1px solid var(--tierra);padding:28px 24px;text-decoration:none;color:var(--tierra);position:relative;display:block;transition:background .15s}
+.nav-item:hover{background:var(--tierra);color:var(--papel)}
+.nav-item:hover .nav-num{color:var(--rojo)}
+.nav-item:hover .nav-cn{color:var(--oro)}
+.nav-num{font-size:10px;letter-spacing:3px;color:var(--ceniza);display:block;margin-bottom:10px}
+.nav-title{font-family:'Cinzel',serif;font-size:clamp(14px,2vw,20px);font-weight:700;display:block;letter-spacing:1px;margin-bottom:6px}
+.nav-cn{font-family:'Noto Serif SC',serif;font-size:22px;color:var(--rojo);display:block;margin-bottom:8px}
+.nav-desc{font-size:10px;color:var(--ceniza);letter-spacing:1px;line-height:1.6}
+.nav-item:hover .nav-desc{color:rgba(240,232,214,0.7)}
+.status-bar{padding:24px 10vw;border-top:1px solid rgba(28,16,8,0.2);display:flex;gap:40px;flex-wrap:wrap;align-items:center}
+.status-item{display:flex;flex-direction:column;gap:3px}
+.status-label{font-size:8px;letter-spacing:3px;text-transform:uppercase;color:var(--ceniza)}
+.status-val{font-size:13px;font-weight:700;color:var(--verde)}
+footer{padding:24px 10vw;border-top:2px solid var(--tierra);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.footer-seal{font-family:'Noto Serif SC',serif;font-size:13px;color:var(--rojo);letter-spacing:2px}
+.footer-sys{font-size:9px;letter-spacing:2px;color:var(--ceniza);text-align:right}
+</style>
+</head>
+<body>
+<header>
+  <span class="sigil">GUALICHO<br><em>HUINCA</em></span>
+  <span class="subtitle">EMPRESA SOBERANA · GÉNESIS LOCAL · <span>ELPULSAR.APP</span> · 2026</span>
+  <div class="corner-seal">巫客<small>SELLO</small></div>
+</header>
+<nav>
+  <a class="nav-item" href="gh_doctrina.html">
+    <span class="nav-num">01 · DOCTRINA</span>
+    <span class="nav-title">DOCTRINA SEMÁNTICA</span>
+    <span class="nav-cn">核心</span>
+    <span class="nav-desc">El Gualicho del Extranjero.<br>Tokens ZH · Discriminación Positiva.</span>
+  </a>
+  <a class="nav-item" href="gh_unidades.html">
+    <span class="nav-num">02 · OPERACIONES</span>
+    <span class="nav-title">UNIDADES DE NEGOCIO</span>
+    <span class="nav-cn">剧院</span>
+    <span class="nav-desc">Theater de Tiempos Operativos.<br>Flujos y ciclos activos.</span>
+  </a>
+  <a class="nav-item" href="gh_capital.html">
+    <span class="nav-num">03 · CAPITAL</span>
+    <span class="nav-title">CAPITAL KALIL</span>
+    <span class="nav-cn">金</span>
+    <span class="nav-desc">Nodos de Valor y Liquidación.<br>BARRIOS · CARILO · BOLIVAR.</span>
+  </a>
+  <a class="nav-item" href="gh_seguridad.html">
+    <span class="nav-num">04 · PROTECCIÓN</span>
+    <span class="nav-title">PROTECCIÓN AGÉNTICA</span>
+    <span class="nav-cn">盾</span>
+    <span class="nav-desc">Runners y Auditoría SAMU @.<br>Seal of Secrecy activo.</span>
+  </a>
+</nav>
+<div class="status-bar">
+  <div class="status-item"><span class="status-label">Sistema</span><span class="status-val">DIRIME OS</span></div>
+  <div class="status-item"><span class="status-label">Puente</span><span class="status-val">elpulsar.app</span></div>
+  <div class="status-item"><span class="status-label">Estado</span><span class="status-val">GÉNESIS · H64</span></div>
+  <div class="status-item"><span class="status-label">Scalar S</span><span class="status-val">0.844 →</span></div>
+  <div class="status-item"><span class="status-label">Doctrina</span><span class="status-val">DISCRIMINACIÓN POSITIVA</span></div>
+</div>
+<footer>
+  <span class="footer-seal">私 GUALICHO HUINCA · 未濟 H64 · [term] :: activo</span>
+  <span class="footer-sys">LACHO · DIRIME · ELPULSAR · KALIL · CHCL<br>SEAL OF SECRECY :: ACTIVO</span>
+</footer>
+</body>
+</html>

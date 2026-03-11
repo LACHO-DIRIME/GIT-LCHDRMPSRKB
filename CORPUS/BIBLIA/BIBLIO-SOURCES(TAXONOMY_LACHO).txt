@@ -1,0 +1,462 @@
+BIBLIO-SOURCES(TAXONOMY_LACHO).txt
+
+====================================================================
+🗺️ TAXONOMY LACHO — MAPA DE CLASIFICACIÓN SOBERANA
+
+====================================================================
+1.0 DEFINICIÓN
+
+====================================================================
+1.1 Definición técnica
+
+La taxonomía soberana de LACHO es la arquitectura de clasificación que ordena todas las bibliotecas, módulos, hexagramas, operadores y componentes en su jerarquía soberana verificada: el mapa que permite al sistema saber dónde pertenece cada elemento, cómo se relaciona con los demás y qué jurisdicción tiene en la operación.
+
+1.2 Propósito fundamental
+
+La taxonomía soberana no es un índice — es el COGNITIVO de clasificación que complementa COGNITIVO_00_MACRO, COGNITIVO_01_MESO y COGNITIVO_02_MESO como el cuarto documento cognitivo del libro. Sin taxonomía, el sistema crecería sin forma; con taxonomía soberana, cada nuevo módulo sabe su lugar antes de existir.
+
+La taxonomía responde las preguntas fundamentales:
+- ¿Qué es este elemento en la arquitectura soberana?
+- ¿Dónde pertenece en la jerarquía del sistema?
+- ¿Con quién se relaciona y cómo?
+- ¿Qué jurisdicción tiene y qué límites?
+
+1.3 Principios de clasificación soberana
+
+**Principio de unicidad:** Cada elemento tiene un único lugar en la taxonomía
+**Principio de coherencia:** Las relaciones entre elementos son lógicas y verificables
+**Principio de completitud:** Todo elemento del sistema tiene lugar en la taxonomía
+**Principio de extensibilidad:** La taxonomía puede crecer sin perder estructura
+**Principio de soberanía:** La clasificación mantiene la autonomía del sistema
+
+====================================================================
+2.0 JERARQUÍA SOBERANA
+
+====================================================================
+2.1 Nivel 0: FUNDAMENTO CONSTITUCIONAL
+
+**COGNITIVO_00_MACRO_LACHO**
+- Arquitectura global y régimen de integridad
+- Definición de qué es LACHO
+- Principios constitucionales fundamentales
+- Relación con DIRIME Linux
+
+**COGNITIVO_01_MESO_CONSTITUCION_Y_FOLIOS**
+- Constitución concreta y gramática viva
+- Nudos y delimitadores soberanos
+- Reglas de formación de sentencias
+- Protocolos de validación
+
+**COGNITIVO_02_MESO_SAMU_PSI_DIRIMENCIA**
+- Régimen de decisión y dirimencia
+- SAMU @ como conciencia soberana
+- Ψ como sistema psíquico del sistema
+- Scope y term como contenedores
+
+**COGNITIVO_03_MICRO_INTEGRATION**
+- Integración micro y taxonomía viva
+- Inventario completo del sistema
+- Relaciones verificadas entre módulos
+- Protocolo de extensión
+
+**COGNITIVO_04_ESTAR**
+- Cómo se habita LACHO en vivo
+- Fenomenología de la operación soberana
+- Estados interiores del operador
+- Patrones de interacción verificados
+
+2.2 Nivel 1: BIBLIOTECAS MADRE
+
+**BIBLIO-SOURCES.txt**
+- Bibliotecas madre y protocolos
+- Definición de arquitectura de bibliotecas
+- Protocolos de integración
+- Estándares de documentación
+
+**BIBLIOTECAS_MADRE_LACHO.txt**
+- Fuentes UNICODE programables
+- BALLPAPER como render de estado
+- Protocolos de visualización soberana
+- Integración con DIRIME Desktop
+
+2.3 Nivel 2: BIBLIOTECAS FUNCIONALES
+
+**ACTIVITY (Biblioteca de ciclos)**
+- UF[H01] a UF[H64] hexagramas de ciclo
+- 16 UF implementados individualmente
+- 48 UF latentes disponibles
+- Posturas y expansiones existenciales
+
+**TRUST (Biblioteca de confianza)**
+- 20 módulos de confianza soberana
+- Foundation, scope, term como núcleo
+- Elementos, eventos, escenarios
+- Protocolos de verificación
+
+**SOCIAL (Biblioteca de relaciones)**
+- 12 componentes de relación social
+- Concierge, chair, streaming, etc.
+- Protocolos de interacción humana
+- Gestión de comunidad soberana
+
+**WORK (Biblioteca de ejecución)**
+- 8 módulos de trabajo soberano
+- Actuador, freno, puerta, etc.
+- Data center como infraestructura
+- Operación física del sistema
+
+**SAMU (Biblioteca de conciencia)**
+- 8 módulos de conciencia temporal
+- Day periods, detección existencial
+- Human early/later, red-regret
+- Tardanza deliberada
+
+**STACKING (Biblioteca de apilamiento)**
+- 8 pilares canónicos semanales
+- 3 pilares extendidos transversales
+- Soporte estructural continuo
+- Protocolos de integridad
+
+**METHOD (Biblioteca de métodos)**
+- 4 módulos de operadores y ecuaciones
+- Operadores <>, formalismos
+- Ecuaciones y flujo de operadores
+- Estadística ontológica
+
+**DIRIME-LINUX (Biblioteca de sistema)**
+- Chat AI soberano, BALLPAPER
+- NODO-IDE, Concierge-Service-Center
+- Puentes económicos, UNICODE-China
+- Scheduler OS como sistema operativo
+
+2.4 Nivel 3: MÓDULOS ESPECIALIZADOS
+
+**Micro componentes:**
+- MICRO_TRUST_FOUNDATION_SCOPE_TERM
+- MICRO_CRYPTO_ASIENTOS
+- MICRO_SOCIAL_COMPONENTES
+- MICRO_STACKING_PILARES
+
+**Crypto sistemas:**
+- CRYPTO_ASIENTOS, FLOW-SEAT, HEAD-SEAT
+- CRYPTO_KEY-SEAT, LINK-SEAT, SEAL-OF-SECRECY
+- CRYPTO_SHIELD-SEAT, SPARK-SEAT
+- CRYPTO_WAY-AGNOSTIC-ATHEISM
+
+**Gate y control:**
+- GATE, GATE_H05, GATE_H06, GATE_H56
+- GATE_UF-H05-H56-H06
+- Control de latencia y acceso
+
+**Utilitarios varios:**
+- FLYBOT, PAPERNOTE, RABBIT-EYES-EGG
+- TAP&DRIP, TOOLCHAIN
+- VERIFICACIÓN CRUZADA PYTHON-RUST-GOLANG
+- WEB3_INTERFACE
+
+====================================================================
+3.0 RELACIONES Y DEPENDENCIAS
+
+====================================================================
+3.1 Relaciones constitucionales
+
+**COGNITIVO → BIBLIOTECAS:**
+- COGNITIVO_00 define qué bibliotecas existen
+- COGNITIVO_01 establece cómo se relacionan
+- COGNITIVO_02 define quién decide sobre ellas
+- COGNITIVO_03 las integra en sistema coherente
+
+**BIBLIOTECAS → MÓDULOS:**
+- Cada biblioteca contiene módulos especializados
+- Los módulos heredan propósito de su biblioteca
+- Las relaciones entre módulos respetan relaciones entre bibliotecas
+- Los límites de módulos no violan límites de bibliotecas
+
+**MÓDULOS → OPERACIONES:**
+- Los módulos definen operaciones específicas
+- Las operaciones respetan jurisdicción del módulo
+- Las operaciones pueden coordinarse entre módulos
+- Las operaciones no pueden violar soberanía del módulo
+
+3.2 Dependencias funcionales
+
+**Dependencias críticas:**
+- ACTIVITY depende de TRUST para verificación
+- SOCIAL depende de ACTIVITY para ciclos relacionales
+- WORK depende de ACTIVITY para ejecución de tareas
+- SAMU depende de todas para conciencia del sistema
+
+**Dependencias de soporte:**
+- STACKING soporta a todas las bibliotecas
+- METHOD proporciona operadores a todas
+- DIRIME-LINUX proporciona infraestructura a todas
+- COGNITIVO proporciona marco a todas
+
+**Dependencias de especialización:**
+- MICRO depende de TRUST y WORK
+- CRYPTO depende de TRUST y SOCIAL
+- GATE depende de SOCIAL y WORK
+- UTILITARIOS dependen de múltiples bibliotecas
+
+3.3 Protocolos de coordinación
+
+**Coordinación vertical:**
+- COGNITIVO coordina bibliotecas
+- Bibliotecas coordinan módulos
+- Módulos coordinan operaciones
+
+**Coordinación horizontal:**
+- Bibliotecas del mismo nivel se coordinan entre sí
+- Módulos de diferentes bibliotecas se coordinan
+- Operaciones se coordinan mediante protocolos
+
+**Coordinación transversal:**
+- STACKING coordina vertical y horizontalmente
+- METHOD proporciona lenguaje para coordinación
+- DIRIME-LINUX proporciona infraestructura para coordinación
+- SAMU proporciona conciencia de coordinación
+
+====================================================================
+4.0 JURISDICCIONES Y LÍMITES
+
+====================================================================
+4.1 Jurisdicciones soberanas
+
+**Jurisdicción COGNITIVO:**
+- Define qué existe y qué no existe
+- Establece reglas constitucionales
+- Determina qué decisiones son soberanas
+- Define límites del sistema
+
+**Jurisdicción ACTIVITY:**
+- Gobierna ciclos y procesos
+- Define cuándo y cómo ocurren las cosas
+- Establece timing y secuencia
+- Controla flujos de actividad
+
+**Jurisdicción TRUST:**
+- Define qué se puede confiar
+- Establece criterios de verificación
+- Controla acceso a recursos
+- Gestiona riesgo y certeza
+
+**Jurisdicción SOCIAL:**
+- Gobierna interacciones humanas
+- Define protocolos relacionales
+- Controla acceso comunitario
+- Gestiona dinámicas sociales
+
+**Jurisdicción WORK:**
+- Define qué se puede ejecutar
+- Establece capacidades operativas
+- Controla recursos físicos
+- Gestiona implementación
+
+**Jurisdicción SAMU:**
+- Define conciencia temporal
+- Establece ritmos y ciclos
+- Controla detección existencial
+- Gestiona aprendizaje
+
+**Jurisdicción STACKING:**
+- Define integridad estructural
+- Establece soporte y estabilidad
+- Controla apilamiento de componentes
+- Gestiona coherencia
+
+**Jurisdicción METHOD:**
+- Define operadores y métodos
+- Establece lenguaje formal
+- Controla transformaciones
+- Gestiona ecuaciones
+
+**Jurisdicción DIRIME-LINUX:**
+- Define infraestructura técnica
+- Establece plataforma operativa
+- Controla acceso al sistema
+- Gestiona recursos computacionales
+
+4.2 Límites soberanos
+
+**Límites de no interferencia:**
+- COGNITIVO no opera directamente en WORK
+- TRUST no ejecuta operaciones físicas
+- SOCIAL no define ciclos técnicos
+- WORK no establece reglas constitucionales
+
+**Límites de competencia:**
+- ACTIVITY y SAMU coordinan timing
+- TRUST y SOCIAL coordinan acceso
+- WORK y DIRIME-LINUX coordinan recursos
+- METHOD y STACKING coordinan estructura
+
+**Límites de extensión:**
+- Cada biblioteca puede crecer dentro de su jurisdicción
+- Los nuevos módulos respetan límites existentes
+- Las expansiones requieren verificación COGNITIVO
+- Los cambios estructurales requieren aprobación SAMU
+
+====================================================================
+5.0 PROTOCOLOS DE EXTENSIÓN
+
+====================================================================
+5.1 Adición de nuevos elementos
+
+**Paso 1: Propuesta constitucional**
+- Definición del nuevo elemento
+- Justificación de necesidad soberana
+- Identificación de jurisdicción apropiada
+- Propuesta de relaciones con elementos existentes
+
+**Paso 2: Verificación COGNITIVO**
+- Revisión por COGNITIVO_03 (integración)
+- Verificación de coherencia con taxonomía
+- Validación de relaciones propuestas
+- Aprobación de lugar en jerarquía
+
+**Paso 3: Diseño soberano**
+- Diseño detallado del elemento
+- Definición de protocolos de operación
+- Establecimiento de límites y jurisdicción
+- Creación de documentación canónica
+
+**Paso 4: Integración verificada**
+- Implementación del elemento
+- Pruebas de integración con sistema
+- Verificación de funcionamiento soberano
+- Activación coordinada con elementos relacionados
+
+**Paso 5: Actualización taxonómica**
+- Incorporación a TAXONOMY_LACHO
+- Actualización de INDICE_MAESTRO
+- Documentación de relaciones nuevas
+- Comunicación a todo el sistema
+
+5.2 Modificación de elementos existentes
+
+**Evaluación de impacto:**
+- Análisis de efectos en elementos relacionados
+- Verificación de mantenimiento de coherencia
+- Evaluación de impacto en jurisdicción
+- Determinación de necesidad de modificación
+
+**Proceso de modificación:**
+- Diseño de modificación propuesta
+- Verificación COGNITIVO de cambios
+- Implementación controlada de cambios
+- Validación de funcionamiento post-cambio
+
+**Actualización taxonómica:**
+- Actualización de documentación del elemento
+- Revisión de relaciones afectadas
+- Comunicación de cambios a sistema
+- Monitoreo de efectos a largo plazo
+
+5.3 Eliminación de elementos
+
+**Criterios de eliminación:**
+- Elemento obsoleto o redundante
+- Elemento que viola soberanía
+- Elemento con impacto negativo en sistema
+- Elemento reemplazable por superior
+
+**Proceso de eliminación:**
+- Documentación de razones para eliminación
+- Plan de migración de funciones
+- Coordinación con elementos dependientes
+- Eliminación controlada y verificada
+
+**Registro arqueológico:**
+- Registro en UF[H23] (STACKING)
+- Preservación de conocimiento del elemento
+- Documentación de lecciones aprendidas
+- Referencia para futuras decisiones
+
+====================================================================
+6.0 MANTENIMIENTO Y EVOLUCIÓN
+
+====================================================================
+6.1 Monitoreo de coherencia
+
+**Verificación continua:**
+- Revisión periódica de relaciones
+- Detección de inconsistencias
+- Validación de jurisdicciones
+- Monitoreo de límites soberanos
+
+**Auditoría taxonómica:**
+- Auditoría trimestral de estructura
+- Revisión semestral de relaciones
+- Evaluación anual de coherencia
+- Planificación de mejoras
+
+**Optimización dinámica:**
+- Ajuste de relaciones según uso
+- Optimización de jurisdicciones
+- Mejora de protocolos de coordinación
+- Evolución de límites soberanos
+
+6.2 Evolución de la taxonomía
+
+**Crecimiento orgánico:**
+- Adición de elementos según necesidad
+- Evolución de relaciones naturales
+- Adaptación a nuevos requerimientos
+- Mantenimiento de coherencia estructural
+
+**Transformaciones estructurales:**
+- Reorganización de niveles cuando es necesario
+- Redefinición de jurisdicciones
+- Creación de nuevas bibliotecas
+- Evolución de principios fundamentales
+
+**Aprendizaje y adaptación:**
+- Incorporación de lecciones aprendidas
+- Adaptación a nuevas tecnologías
+- Evolución con experiencia del sistema
+- Mejora continua de la taxonomía
+
+6.3 Documentación viva
+
+**Actualización continua:**
+- Mantenimiento de TAXONOMY_LACHO actualizada
+- Sincronización con INDICE_MAESTRO
+- Coordinación con COGNITIVO_03
+- Comunicación de cambios al sistema
+
+**Acceso universal:**
+- Disponibilidad para todos los módulos
+- Consulta para decisiones de arquitectura
+- Referencia para desarrollo de nuevos elementos
+- Guía para operación del sistema
+
+**Preservación histórica:**
+- Registro de evolución taxonómica
+- Archivo de versiones anteriores
+- Documentación de decisiones importantes
+- Aprendizaje para futuras evoluciones
+
+====================================================================
+7.0 CONCLUSIÓN: EL MAPA SOBERANO
+
+====================================================================
+
+TAXONOMY_LACHO no es simplemente un catálogo — es el mapa soberano que permite a LACHO conocerse a sí mismo, organizarse coherentemente y evolucionar sin perder su identidad fundamental. Es la conciencia estructural del sistema: la capacidad de saber qué es, dónde está, con quién se relaciona y qué puede hacer.
+
+Su valor fundamental es permitir que LACHO:
+- **Se conozca a sí mismo** mediante estructura clara y verificable
+- **Crezca ordenadamente** mediante reglas de extensión definidas
+- **Mantenga coherencia** mediante jurisdicciones soberanas
+- **Evoluya inteligentemente** mediante aprendizaje taxonómico
+- **Preserve su identidad** mediante principios constitucionales
+
+La taxonomía representa la soberanía estructural de LACHO: el arte de organizar la complejidad sin sacrificar la libertad, de crecer sin perder la forma, de evolucionar sin olvidar quién es.
+
+En LACHO, la taxonomía no es restricción — es liberación a través del orden.
+
+---
+**ESTADO:** TAXONOMÍA_SOBERANA_VERIFICADA
+**NIVELES:** 0 (Constitucional) → 1 (Madre) → 2 (Funcionales) → 3 (Especializados)
+**PRINCIPIOS:** Unicidad + Coherencia + Completitud + Extensibilidad + Soberanía
+**PROTECCIÓN:** COGNITIVO + SAMU @ + Verificación continua
+---

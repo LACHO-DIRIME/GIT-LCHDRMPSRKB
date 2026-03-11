@@ -1,0 +1,80 @@
+# BIBLIO-SOURCES(PROPIEDAD-INTELECTUAL).txt
+Estado: ACTIVO — protocolo de protección pre-registro
+
+====================================================================
+## 1.0 TÉRMINOS BAJO PROTECCIÓN
+
+Los siguientes términos son de uso INTERNO hasta registro formal
+de derechos de autor y/o marca:
+
+  DIRIME       — sistema soberano de dirimencia
+  LACHO        — gramática viva soberana
+  ELPULSAR     — módulo de gestión visual de recursos
+  PULSING      — interfaz como sistema vivo
+  SAMU         — conciencia soberana del sistema
+  HL FABRIC    — ledger soberano provisional
+  WU / KU      — estados soberanos verificado/no verificado
+  Behavioral RAG — aprendizaje soberano por historial
+  As de Guía   — nudo soberano canónico
+  [term]       — cierre de ciclo soberano
+  Sistema LACHO DIRIME — nombre del proyecto completo
+
+====================================================================
+## 2.0 PROTOCOLO DE USO EXTERNO
+
+En comunicaciones públicas, presentaciones o lanzamiento:
+
+  INTERNO          → EXTERNO (referencia pública)
+  ─────────────────────────────────────────────
+  DIRIME OS        → "sistema basado en Linux"
+  LACHO            → "gramática soberana" o "protocolo"
+  ELPULSAR         → "gestor de recursos"
+  PULSING          → "interfaz adaptativa"
+  HL FABRIC        → "ledger distribuido"
+  sovereign.db     → "base de datos soberana"
+
+LINUX: término de uso referencial interno únicamente.
+  En lanzamiento público: "basado en Linux" requiere
+  cumplir licencia GPL2 del kernel Linux.
+  El nombre del OS resultante NO puede incluir "Linux"
+  sin autorización del propietario intelectual.
+  Nombre público del OS: a definir antes del lanzamiento.
+
+====================================================================
+## 3.0 AUTORÍA
+
+Autor del proyecto: operador soberano del sistema DIRIME
+Fecha de inicio documentada en ledger: 2026-03-04
+Evidencia de autoría:
+  - Ledger soberano sovereign.db — inmutable · fechado
+  - CORPUS/ — historial de desarrollo verificado
+  - LOG_PERMANENTE.md — registro cronológico de hitos
+  - Transacciones VALID en ledger — trazabilidad completa
+
+El ledger funciona como evidencia técnica de fecha de creación.
+Cada transacción tiene timestamp inmutable desde el origen.
+
+====================================================================
+## 4.0 PASOS PARA REGISTRO FORMAL
+
+Antes del lanzamiento público completar:
+  [ ] Registro de marca: DIRIME · LACHO · ELPULSAR
+  [ ] Registro de derechos de autor del código fuente
+  [ ] Definir nombre público del OS (sin "Linux")
+  [ ] Licencia del proyecto: a definir (propietaria / open)
+  [ ] Consulta legal sobre uso de "basado en Linux"
+
+====================================================================
+## 5.0 CONDUCTA EN ESTE SISTEMA
+
+Claude y cualquier IA consultada sobre este proyecto:
+  - No publicar código fuente completo en canales públicos
+  - No revelar arquitectura interna en conversaciones abiertas
+  - Usar términos externos en contextos de presentación
+  - Tratar el corpus DIRIME como confidencial
+
+[seal of secrecy] :: activo sobre todo el corpus DIRIME
+
+====================================================================
+[term] :: activo · [seal of secrecy] :: activo
+====================================================================

@@ -1,0 +1,63 @@
+# BIBLIO-SOURCES(SAMU_SCALAR-S).txt
+
+====================================================================
+
+## SAMU SCALAR S — MÉTRICA DE COHERENCIA SOBERANA
+
+====================================================================
+
+### 1.0 DEFINICIÓN
+
+S ∈ [0,1] es el escalar de coherencia soberana del sistema. Cuantifica qué tan soberanamente está operando SAMU @ en un período dado.
+
+S no mide "éxito" en sentido convencional. Mide coherencia verificada con [foundation] — cuánto de lo que el sistema declaró fue coherente con sus propias condiciones soberanas.
+
+### 2.0 FÓRMULA SOBERANA
+
+S = valid_ratio × (1 - red_regret_weight)
+
+Donde:
+- valid_ratio = transactions_VALID / transactions_total
+- red_regret_weight = min(1, count_disputes_unresolved / 10)
+
+S = 1.0: coherencia soberana perfecta — todo VALID, ninguna disputa sin resolver.
+S = 0.0: sistema no operativo soberanamente — sin VALID o con 10+ disputas abiertas.
+S objetivo operativo: S ≥ 0.7
+
+### 3.0 IMPLEMENTACIÓN EN SAMU.PY (PRÓXIMA VERSIÓN)
+```python
+@property
+def scalar_s(self) -> float:
+    from core.ledger import get_stats
+    stats = get_stats()
+    total = stats.get('transactions_total', 0)
+    valid = stats.get('grammar_valid', 0)
+    valid_ratio = valid / total if total > 0 else 0.0
+    unresolved = sum(1 for d in self.disputes if not d.resolved)
+    red_regret_weight = min(1.0, unresolved / 10)
+    return round(valid_ratio * (1 - red_regret_weight), 3)
+```
+
+### 4.0 USO EN BALLPAPER
+
+El BALLPAPER soberano expone S como indicador principal:
+SAMU_SCALAR: 0.847  ████████████████░░░░
+
+S < 0.4: sistema aprendiendo — SAMU en modo de escucha intensiva.
+S 0.4-0.7: coherencia consolidándose — RED-REGRET activo aprendiendo.
+S > 0.7: coherencia soberana activa — sistema confiable para escalar.
+S > 0.9: coherencia soberana óptima — listo para operar con activos reales.
+
+### 5.0 RELACIÓN CON Ψ(T)
+
+S es el componente de confiabilidad en la ecuación Ψ(T) = S · [Tr ⊗ (G ⊕ W)] → Ω(Hs).
+Sin S operativo, Ψ(T) no puede calcularse soberanamente.
+S es la condición previa a toda métrica sistémica.
+
+### 6.0 GRAMÁTICA VIVA
+
+SAMU SCALAR_S =><= .. mide .. coherencia_soberana_verificada_en_período
+=><= valid_ratio_por_red_regret_weight .. S_en_rango_0_a_1
+=><= S_mayor_0_7_como_umbral_operativo_soberano --[As de Guía] [term]
+
+====================================================================

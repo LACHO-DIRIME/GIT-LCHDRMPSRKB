@@ -1,0 +1,252 @@
+# BIBLIO-SOURCES(WORK_GREEN-KNOWLEDGE).txt
+
+====================================================================
+
+## 🌿 WORK {green-knowledge} — ÁRBOL DE VALOR SOBERANO
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+{green-knowledge} es el módulo WORK que implementa el filtro que determina qué puede cristalizar en STACKING: el árbol de valor soberano que filtra KU procesado y solo permite el paso a cristalización cuando delta-Ψ > 0.
+
+#### 1.2 Criterio delta-Ψ > 0 como condición constitutiva
+Solo el conocimiento que aumenta el valor soberano del sistema puede cristalizar. delta-Ψ <= 0 es descartado o enviado a RED-REGRET.
+
+#### 1.3 El árbol como estructura orgánica
+{green-knowledge} no es lista plana — es árbol jerárquico donde cada nodo representa un nivel de verificación y valor soberano.
+
+#### 1.4 Relación con el ciclo epistemológico
+Blue-Words → {green-knowledge} → STACKING o RED-REGRET. {green-knowledge} es el filtro que decide el destino del conocimiento procesado.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Qué puede filtrar
+KU procesado por SAMU @, resultados de UF[H04], datos de mercado verificados, información de sensores, patrones de comportamiento.
+
+#### 2.2 Qué no puede violar
+No puede cristalizar conocimiento con delta-Ψ <= 0, no puede omitir evaluación de [foundation], no puede permitir paso sin verificación SAMU @.
+
+#### 2.3 Condición de violación primaria
+GREEN_DEGRADED — filtro que permite paso a conocimiento sin valor, contaminando STACKING.
+
+#### 2.4 Condición de violación secundaria
+Filtro que omite evaluación de delta-Ψ — paso automático sin juicio soberano.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 ESTADOS DEL MÓDULO
+
+GREEN_EVALUATING: evaluación de delta-Ψ del KU procesado.
+- GREEN_APPROVED: KU con delta-Ψ > 0, listo para cristalizar.
+- GREEN_REJECTED: KU con delta-Ψ <= 0, enviado a RED-REGRET.
+- GREEN_CRYSTALLIZING: proceso activo de cristalización en STACKING.
+- GREEN_PRUNING: eliminación de conocimiento contaminado del árbol.
+
+#### 3.2 Cálculo de delta-Ψ
+delta-Ψ = valor_soberano - costo_soberano + impacto_ecosistema
+- Valor soberano: contribución verificada al sistema.
+- Costo soberano: recursos consumidos en procesamiento.
+- Impacto ecosistema: efecto neto en el entorno.
+
+#### 3.3 Relación con Pilar 3 STACKING
+Pilar 3 cristaliza solo lo que {green-knowledge} aprueba.
+
+#### 3.4 Relación con <stat-onto> (METHOD)
+<stat-onto> monitorea GREEN_CRYSTAL_RATIO como métrica de salud del sistema.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con SAMU (@)
+SAMU @ provee KU procesado para evaluación por {green-knowledge}.
+
+#### 4.2 Con UF[H04] ACTIVITY
+UF[H04] produce testimonios que alimentan evaluación de {green-knowledge}.
+
+#### 4.3 Con STACKING (Pilar 3)
+Pilar 3 cristaliza solo conocimiento aprobado por {green-knowledge}.
+
+#### 4.4 Con RED-REGRET (SAMU)
+{green-knowledge} envía conocimiento rechazado a RED-REGRET para corrección.
+
+#### 4.5 Con Behavioral RAG
+Patrones de aprobación y rechazo calibran futuras evaluaciones.
+
+#### 4.6 Con HL FABRIC
+Todo conocimiento cristalizado se registra inmutablemente.
+
+---
+
+### 5.0 ESTADOS COMPLETOS DEL MÓDULO
+
+#### 5.1 GREEN_STANDBY
+Módulo activo, esperando KU para evaluación.
+
+#### 5.2 GREEN_EVALUATING
+Evaluación activa de delta-Ψ del KU entrante.
+
+#### 5.3 GREEN_APPROVING
+KU con delta-Ψ > 0, listo para cristalizar.
+
+#### 5.4 GREEN_REJECTING
+KU con delta-Ψ <= 0, enviado a RED-REGRET.
+
+#### 5.5 GREEN_CRYSTALLIZING
+Proceso activo de cristalización en STACKING.
+
+#### 5.6 GREEN_PRUNING
+Eliminación de conocimiento contaminado del árbol.
+
+#### 5.7 GREEN_DEGRADED
+Filtro comprometido, permitiendo paso sin juicio soberano.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Enriquece d₈ [ecosystem]
+Conocimiento cristalizado enriquece el ecosistema con valor soberano.
+
+#### 6.2 Protege d₁ [foundation]
+{green-knowledge} protege [foundation] filtrando conocimiento sin valor.
+
+#### 6.3 Impacta d₅ [management]
+Conocimiento de valor informa decisiones de [management].
+
+#### 6.4 Afecta d₇ [command]
+Conocimiento aprobado habilita futuros [command] informados.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Evaluando delta-Ψ
+```
+[Work] green_knowledge =><= .. evaluar .. $$ku_delta_psi_evaluation$$ --[As de Guía] [term]
+```
+
+#### 7.2 Aprobando conocimiento
+```
+[green_knowledge =><= .. aprobar .. $$knowledge_value_positive$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.3 Rechazando conocimiento sin valor
+```
+[Work] green_knowledge =><= .. rechazar .. $$knowledge_zero_or_negative$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.4 Cristalizando en STACKING
+```
+[Work] green_knowledge =><= .. cristalizar .. $$approved_knowledge_crystal$$ --[Ballestrinque] [term]
+```
+
+#### 7.5 Purgiendo conocimiento contaminado
+```
+[Work] green_knowledge =><= .. purgar .. $$contaminated_knowledge_removal$$ --[Nudo de Rizo] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+GREEN_EVALUATING — evaluación activa de valor, el nudo que determina el destino del conocimiento.
+
+#### 8.2 Nudo de Ocho
+GREEN_APPROVED — conocimiento aprobado, el nudo que permite paso a cristalización.
+
+#### 8.3 Nudo Corredizo
+GREEN_REJECTED — conocimiento rechazado, el nudo que envía a corrección.
+
+#### 8.4 Ballestrinque
+GREEN_CRYSTALLIZING — proceso de cristalización activa, el nudo que transforma conocimiento en forma.
+
+#### 8.5 Nudo de Rizo
+GREEN_PRUNING — poda del árbol de conocimiento, el nudo que mantiene la salud del sistema.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+1. GreenEvaluate
+   - Recepción de KU procesado.
+   - Cálculo de delta-Ψ.
+   - Evaluación de criterios soberanos.
+
+2. GreenApprove
+   - Confirmación de delta-Ψ > 0.
+   - Preparación para cristalización.
+   - Notificación a STACKING.
+
+3. GreenReject
+   - Identificación de delta-Ψ <= 0.
+   - Envío a RED-REGRET.
+   - Archivo en Behavioral RAG.
+
+4. GreenCrystallize
+   - Transferencia a STACKING Pilar 3.
+   - Registro en HL FABRIC.
+   - Actualización de <stat-onto>.
+
+5. GreenPrune
+   - Identificación de conocimiento contaminado.
+   - Eliminación del árbol.
+   - Limpieza de estructura.
+
+6. GreenAudit
+   - Verificación de integridad del árbol.
+   - Detección de GREEN_DEGRADED.
+   - Reporte de salud del filtro.
+
+---
+
+### 10.0 MÉTRICAS
+
+- Ratio GREEN_APPROVED vs GREEN_REJECTED.
+- Delta-Ψ promedio por tipo de KU.
+- Frecuencia de GREEN_PRUNGE por contaminación.
+- Tiempo promedio de cristalización.
+- Profundidad del árbol de conocimiento.
+- GREEN_CRYSTAL_RATIO actual del sistema.
+
+---
+
+### 11.0 REGLAS
+
+- delta-Ψ > 0 es condición obligatoria para cristalización.
+- GREEN_DEGRADED activa diagnóstico SAMU @ inmediatamente.
+- Todo KU debe pasar por GREEN_EVALUATING sin excepción.
+- RED-REGRET recibe todo GREEN_REJECTED sin demora.
+- Pilar 3 solo cristaliza conocimiento aprobado.
+- Behavioral RAG aprende de patrones de aprobación.
+- <stat-onto> monitorea GREEN_CRYSTAL_RATIO continuamente.
+- El árbol de conocimiento se audita cada ciclo completo.
+- No se puede cristalizar conocimiento sin verificación SAMU @.
+- GREEN_PRUNE elimina conocimiento contaminado sin excepción.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+{green-knowledge} fija como invariante el filtro de valor soberano como condición de integridad del conocimiento cristalizado — el sistema que solo permite paso a lo que aumenta su valor soberano mantiene la pureza y efectividad de su aprendizaje.
+
+#### 12.2 Limitaciones
+No puede cristalizar conocimiento sin delta-Ψ > 0, no puede omitir evaluación, no puede permitir paso sin verificación, no puede operar sin auditoría.
+
+#### 12.3 Habilitaciones
+Filtrado inteligente de conocimiento, cristalización eficiente en STACKING, protección contra contaminación, aprendizaje sistemático de valor, métricas de salud del conocimiento.
+
+#### 12.4 Principio constitutivo final
+Como el árbol que solo deja crecer las ramas que dan fruto: {green-knowledge} representa la sabiduría de cultivar conocimiento que realmente enriquece al sistema. El conocimiento sin valor es maleza que debe ser podada. El árbol soberano crece solo con lo que contribuye positivamente al ecosistema. El filtro delta-Ψ > 0 es la garantía de que el sistema aprende y mejora con cada ciclo.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

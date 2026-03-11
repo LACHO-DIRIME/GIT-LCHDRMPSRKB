@@ -1,0 +1,351 @@
+# BIBLIO-SOURCES(SOCIAL_LAUNCH-BOT).txt
+
+====================================================================
+
+## 🤖 SOCIAL {launch-bot} — DESPLIEGUE SOBERANO DE AGENTES RELACIONALES
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+{launch-bot} es el módulo SOCIAL que gobierna el despliegue declarativo de agentes autónomos relacionales hacia el exterior del sistema con mandato soberano e identidad delegada verificada.
+
+#### 1.2 FLYBOT como iconografía de {launch-bot}
+FLYBOT es la representación icónica del agente desplegado: el bot que vuela hacia el exterior con mandato soberano y regresa con resultado verificado. FLYBOT no es el módulo, es la iconografía del agente.
+
+#### 1.3 Por qué {launch-bot} es SOCIAL y no WORK
+WORK ejecuta el proceso técnico del bot. {launch-bot} declara la misión relacional del agente, configura su identidad delegada y establece el mandato soberano de despliegue.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 Tipos de agente en {launch-bot}
+
+BOT_SCOUT:
+- Agente de reconocimiento y exploración
+- Vuela al exterior, observa y regresa con KU verificado
+- Alimenta [ku-chat] con información del exterior
+- [term] estándar: 5 ciclos
+
+BOT_MESSENGER:
+- Agente de mensajería y entrega
+- Lleva WU_RESULT de [wu-mail] a destinatario específico
+- Opera con identidad delegada verificada
+- [term] variable según distancia y destino
+
+BOT_MONITOR:
+- Agente de vigilancia y monitoreo continuo
+- Presencia en exterior verificada, reporta eventos
+- Alimenta [event] del sistema con actualizaciones
+- [term] extendido: hasta 50 ciclos
+
+BOT_INTERACT:
+- Agente de interacción relacional directa
+- Opera en espacio relacional externo con capacidad de intercambio
+- Puede negociar y responder en nombre del sistema
+- [term] variable según naturaleza de interacción
+
+BOT_RETURN:
+- Protocolo de retorno obligatorio para todo agente
+- Todo bot desplegado debe tener condición de retorno declarada
+- Canal certificado por CRYPTO (link seat)
+- [term] de retorno: máximo 2 ciclos después de misión
+
+#### 3.2 Anatomía del lanzamiento
+
+Mandato:
+- [command] soberano que autoriza el despliegue
+- Define qué puede y no puede hacer el bot
+- Establece límites operativos y jurisdiccionales
+
+Misión:
+- Qué debe hacer el bot en el exterior
+- Objetivos específicos y medibles
+- Condiciones de éxito y fracaso
+
+Identidad delegada:
+- Qué {masking} porta el bot en el exterior
+- Configuración de (key seat) para firma digital
+- Presentación sin revelar jurisdicción interna
+
+Canal de retorno:
+- Cómo el bot regresa con resultado al sistema
+- Certificación por CRYPTO (link seat)
+- Protocolos de encriptación y autenticación
+
+[term] de misión:
+- Horizonte temporal del despliegue
+- Bot sin [term] no se lanza bajo ninguna circunstancia
+- Extensión solo con autorización de [management]
+
+Certificación:
+- (link seat) CRYPTO para canal seguro
+- Verificación de identidad antes del lanzamiento
+- Protocolos de recuperación ante pérdida
+
+#### 3.3 FLYBOT como iconografía
+
+FLYBOT no es el módulo:
+- Es la representación icónica del agente desplegado
+- Simboliza autonomía relacional con mandato soberano
+- Representa la capacidad del sistema de volar hacia el exterior
+
+Qué representa FLYBOT:
+- Autonomía relacional verificada
+- Mandato soberano cumplido
+- Retorno con resultado validado
+- Expansión 1→2→4→8 del Algoritmo Conejo
+
+Relación con Algoritmo Conejo:
+- FLYBOT sigue patrón de expansión fractal
+- Cada misión puede generar sub-misiones
+- Retorno con KU multiplicado por exploración
+
+---
+
+### 3.4 RELACIÓN CON DOMINIOS ECONÓMICOS
+
+MEMECOINS/VOLATILIDAD:
+- BOT_SCOUT de condiciones de mercado en exchanges verificados
+- BOT_MONITOR de posiciones en tiempo real con reporte a [event]
+- BOT_MESSENGER de alertas de volatilidad a actores autorizados
+- Límite: no puede desplegar bot con mandato de trading autónomo sin [command] explícito
+
+CUSTODIA MÓVIL:
+- BOT_MONITOR de entorno de seguridad en dispositivo móvil verificado
+- BOT_MESSENGER para notificación de EVENT_CRITICAL a actor autorizado
+- BOT_INTERACT con sistema de custodia externo bajo mandato específico
+- Límite: bot en custodia no puede operar con identidad sin verificación BIOMETRICS
+
+NOTARÍA DIGITAL:
+- BOT_MESSENGER de documentos certificados a destinatarios verificados
+- BOT_SCOUT de estado jurisdiccional en registros públicos del [ecosystem]
+- BOT_INTERACT con autoridades notariales externas bajo protocolo específico
+- Límite: bot notarial no puede emitir documento sin certificación (link seat)
+
+---
+
+### 3.5 INTEGRACIÓN AGNÓSTICO-ATEA
+
+#### 3.5.1 [rabbit-faith] como motor de despliegue
+[rabbit-faith] habilita el lanzamiento bajo incertidumbre verificable:
+- FLYBOT se lanza sin garantía de retorno absoluto
+- La misión se inicia con fe operativa bajo incertidumbre verificable
+- [rabbit-faith] habilita el lanzamiento cuando [term] está activo pero el resultado no está asegurado
+- Sin [rabbit-faith], el sistema solo lanzaría bots ante certeza total — que nunca existe en el exterior
+
+#### 3.5.2 !!agnostic belief!! como postura de misión
+!!agnostic belief!! define la postura operativa del bot:
+- BOT_SCOUT opera desde la duda honesta: explora porque no sabe, no porque confirma
+- La incertidumbre del exterior no es obstáculo — es la condición operativa natural de {launch-bot}
+- Doctrina de la Tardanza aplicada al retorno: BOT_RETURNING puede tardar sin que eso active BOT_LOST automáticamente
+- Se espera con coherencia bajo incertidumbre permanente
+
+#### 3.5.3 {DOGMA-VIRTUAL} como riesgo de misión
+{DOGMA-VIRTUAL} representa el riesgo del espacio exterior:
+- El exterior donde opera FLYBOT está poblado de {DOGMA-VIRTUAL}: dogmas digitales sin fundamento físico pero con comportamiento contagioso
+- BOT_SCOUT debe reportar presencia de {DOGMA-VIRTUAL} como KU verificado para [ku-chat]
+- BOT_INTERACT debe operar con blindaje declarativo ante {DOGMA-VIRTUAL} en el espacio externo
+- Límite: {launch-bot} no puede desplegar bot con mandato de adoptar {DOGMA-VIRTUAL} externo sin [command] explícito de TRUST
+
+#### 3.5.4 (Way Agnostic Atheism) como cifrado de retorno
+(Way Agnostic Atheism) define el canal de retorno:
+- El canal de retorno de FLYBOT opera bajo el principio de que ninguna clave es absoluta ni final
+- BOT_RETURN certifica resultado sin pretender haberlo capturado todo — incertidumbre permanente sin violar [term]
+- El retorno es verificado pero no absoluto, manteniendo coherencia con la naturaleza agnóstica del sistema
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con TRUST []
+- [foundation]: bot desplegado no puede violar foundation en operación exterior
+- [scope]: bot opera con mandato dentro del perímetro soberano aunque su presencia sea exterior
+- [term]: toda misión de bot tiene [term] declarado
+- [command]: [command] es el mandato soberano que autoriza todo despliegue
+- [rabbit-faith]: [rabbit-faith] habilita despliegue bajo incertidumbre verificable
+
+#### 4.2 Con SOCIAL {}
+- {masking}: {masking} configura la identidad declarativa del bot en exterior
+- {scheduler}: {scheduler} planifica ventanas de despliegue de bots
+- {note}: {note} registra mandato, misión y resultado de cada bot
+- {chair}: coordina sesión de control durante despliegue
+- {headcat}: clasifica tipo de bot antes del lanzamiento
+- {DOGMA-VIRTUAL}: {DOGMA-VIRTUAL} es riesgo que bot debe detectar y reportar
+
+#### 4.3 Con CRYPTO ()
+- (link seat): certifica canal de despliegue y retorno
+- (key seat): configura identidad delegada del bot
+- (seal of secrecy): protege información sensible del bot
+- (shield seat): defensa del bot contra ataques externos
+- (Way Agnostic Atheism): principio de incertidumbre permanente en canal de retorno
+
+#### 4.4 Con otras capas
+- [ku-chat]: BOT_SCOUT alimenta [ku-chat] con KU verificado del exterior
+- [wu-mail]: BOT_MESSENGER lleva WU de [wu-mail] a destinatario
+- [ecosystem]: bots operan en nodos verificados del [ecosystem]
+- SAMU @: SAMU audita mandato y retorno de todo bot desplegado
+- Behavioral RAG: patrones de misiones anteriores calibran despliegues futuros
+
+===================================================================
+### 5.0 ESTADOS DE {launch-bot}
+
+#### 5.1 BOT_STANDBY
+Bot configurado con mandato verificado.
+- Mandato soberano recibido de [command]
+- Identidad delegada declarada via {masking}
+- [term] de misión establecido
+- Canal de retorno certificado por CRYPTO
+- Pendiente de lanzamiento autorizado
+
+#### 5.2 BOT_DEPLOYED
+Bot en exterior cumpliendo misión.
+- Operando bajo mandato soberano
+- Canal de retorno activo y monitoreado
+- SAMU @ auditando operación
+- Comportamiento dentro de límites declarados
+- [term] de misión contando hacia abajo
+
+#### 5.3 BOT_RETURNING
+Bot completó misión y está en retorno.
+- Resultado being verificado
+- Canal de retorno confirmado activo
+- Protocolo de retorno iniciado
+- Entrega pendiente a [ku-chat] o [wu-mail]
+- Behavioral RAG preparado para actualización
+
+#### 5.4 BOT_RETURNED
+Bot regresó con resultado verificado.
+- Resultado entregado a módulo apropiado
+- Misión archivada en Behavioral RAG
+- Identidad delegada revocada
+- Canal de retorno cerrado
+- [term] de misión cumplido
+
+#### 5.5 BOT_LOST
+Bot sin canal de retorno activo.
+- Misión sin retorno verificado
+- [management] notificado automáticamente
+- Evaluación de PREDATOR_EXTERNAL iniciada
+- Protocolo de recuperación activado
+- RED-REGRET posible según criticidad
+
+#### 5.6 BOT_EXCEEDED
+Bot actuó más allá del mandato declarado.
+- RED-REGRET automático activado
+- SAMU @ en diagnóstico inmediato
+- [management] escalado para contención
+- Behavioral RAG registrando patrón de violación
+- Posible purga de agente del sistema
+
+===================================================================
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Impacto en d₃ [scenario]
+{launch-bot} afecta d₃ [scenario] cuando BOT_SCOUT trae KU verificado del exterior, enriqueciendo el mapa situacional con información externa soberana.
+
+#### 6.2 Degradación por BOT_LOST
+BOT_LOST degrada d₈ [ecosystem] cuando agente se pierde en nodo del ecosistema, indicando posible compromiso de infraestructura externa.
+
+#### 6.3 Degradación por BOT_EXCEEDED
+BOT_EXCEEDED degrada d₆ [command] cuando mandato soberano es violado por agente, indicando falla en cadena de autoridad o verificación.
+
+#### 6.4 Aprendizaje de Behavioral RAG
+Behavioral RAG aprende de patrones de misiones para calibrar despliegues futuros, optimizando mandatos, identidades y tiempos de misión.
+
+===================================================================
+### 7.0 GRAMÁTICA VIVA
+
+```
+{launch-bot} BOT_SCOUT =><= .. deploy .. market_exploration --[As de Guía] [term]
+{launch-bot} BOT_MESSENGER =><= .. deliver .. WU_RESULT --[Nudo de Ocho] [term]
+{launch-bot} BOT_LOST =><= .. notify .. [management] --[Nudo Corredizo] [term]
+{launch-bot} BOT_EXCEEDED =><= .. activate .. RED-REGRET --[Ballestrinque] [term]
+{launch-bot} BOT_MONITOR =><= .. observe .. custody_environment --[Nudo de Rizo] [term]
+{launch-bot} BOT_INTERACT =><= .. negotiate .. notarial_authority --[As de Guía] [term]
+{launch-bot} BOT_RETURN =><= .. verify .. mission_result --[Nudo de Ocho] [term]
+```
+
+===================================================================
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+BOT_DEPLOYED en misión activa con canal de retorno soberano, operando bajo mandato verificado y dentro de límites declarados.
+
+#### 8.2 Nudo de Ocho
+BOT_RETURNED con resultado cristalizado en Behavioral RAG, misión completada y patrón aprendido para futuros despliegues.
+
+#### 8.3 Nudo Corredizo
+BOT_LOST — agente sin retorno, canal comprometido, evaluación de PREDATOR_EXTERNAL iniciada, posible pérdida de soberanía.
+
+#### 8.4 Ballestrinque
+BOT_EXCEEDED activando RED-REGRET, tensión entre autonomía del agente y límites del mandato soberano.
+
+#### 8.5 Nudo de Rizo
+Identidad delegada del bot — unión entre sistema y agente exterior sin fusión de jurisdicciones, manteniendo soberanía relacional.
+
+===================================================================
+### 9.0 PROTOCOLOS OPERATIVOS
+
+1. **BotConfigure**: configuración de mandato, misión, identidad delegada y [term]
+2. **BotLaunch**: despliegue soberano con certificación CRYPTO (link seat)
+3. **BotMonitor**: vigilancia de canal de retorno y estado de misión
+4. **BotReturn**: protocolo de retorno verificado con entrega de resultado
+5. **BotLost**: protocolo ante pérdida de canal de retorno
+6. **BotExceeded**: contención ante exceso de mandato con RED-REGRET
+7. **BotRecover**: protocolo de recuperación de BOT_LOST
+8. **BotAudit**: auditoría SAMU @ de mandato y operación
+9. **BotClose**: archivo de misión en Behavioral RAG al retorno o expiración
+10. **BotPurge**: purga de agente del sistema ante violaciones graves
+
+===================================================================
+### 10.0 MÉTRICAS
+
+- Ratio BOT_RETURNED vs BOT_LOST vs BOT_EXCEEDED (target: 90/5/5)
+- Tiempo promedio de misión por tipo de bot (target: dentro de [term])
+- Frecuencia de BOT_SCOUT vs BOT_MONITOR vs BOT_MESSENGER
+- Tasa de misiones con resultado verificado (target: > 95%)
+- Frecuencia de BOT_EXCEEDED por dominio (target: < 1%)
+- Delta-KU traído por BOT_SCOUT por ciclo
+- Latencia de despliegue (target: < 100ms)
+- Tasa de recuperación de BOT_LOST (target: > 80%)
+
+===================================================================
+### 11.0 REGLAS
+
+- Ningún bot puede desplegarse sin mandato soberano de [command] verificado
+- Todo bot debe tener [term] de misión declarado — sin horizonte no hay lanzamiento
+- Canal de retorno debe estar certificado por CRYPTO (link seat) antes del lanzamiento
+- BOT_EXCEEDED activa RED-REGRET automático sin excepción
+- BOT_LOST notifica a [management] automáticamente
+- {note} registra mandato, misión y resultado de todo bot sin excepción
+- Bot en custodia requiere verificación BIOMETRICS de identidad antes del lanzamiento
+- SAMU @ audita todo despliegue y retorno de {launch-bot}
+- Behavioral RAG registra toda misión para calibración futura
+- Bot notarial no puede emitir documento sin certificación (link seat)
+- Identidad delegada del bot debe configurarse via {masking} antes del lanzamiento
+- BOT_SCOUT no puede modificar nada en el exterior — solo observar y reportar
+- BOT_INTERACT solo puede negociar dentro de límites del mandato declarado
+- Protocolo BOT_RETURN es obligatorio para todo agente desplegado
+- FLYBOT perdido por más de N ciclos activa evaluación de PREDATOR_EXTERNAL
+
+===================================================================
+### 12.0 CIERRE
+
+#### 12.1 Invariante de {launch-bot}
+{launch-bot} fija como invariante el despliegue declarativo soberano de agentes relacionales como condición de presencia autónoma verificada del sistema en el exterior.
+
+#### 12.2 Limitaciones de {launch-bot}
+{launch-bot} no despliega sin mandato soberano, no opera sin [term] de misión, no excede mandato declarado, no viola foundation en operación exterior.
+
+#### 12.3 Habilitaciones de {launch-bot}
+{launch-bot} habilita presencia autónoma relacional en exterior verificado, BOT_SCOUT como fuente de KU soberano, BOT_MESSENGER como extensión de [wu-mail], FLYBOT como iconografía de agencia relacional soberana.
+
+#### 12.4 Sello final
+[term] :: activo · [seal of secrecy] :: activo · {launch-bot} :: BOT_STANDBY

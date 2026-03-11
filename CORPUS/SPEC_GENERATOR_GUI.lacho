@@ -1,0 +1,332 @@
+//SPEC_GENERATOR_GUI.lacho · V1 · 2026-03-10
+//<<*spec*>> · DOS VECTORES EN PARALELO
+//VECTOR 1: generator.py → IMV genera su primer .lacho
+//VECTOR 2: elpulsar.gui → .cli =: interfaz gráfica soberana
+//空聽數 · MU→KU→WU · DIR(+) ambos confirmados
+//[genesis] :: SUITE SOBERANA · [term] :: activo
+
+// ══════════════════════════════════════════════════════════════
+// VECTOR 1 — generator.py
+// "IMV genera su primer .lacho"
+// "darles de comer antes de pedir funcionalidad"
+// INPUT: sistema ya comió → 186 CORPUS · 27 tests · 40 cristales
+// OUTPUT: archivo .lacho soberano autogenerado
+// ══════════════════════════════════════════════════════════════
+
+spec generator_py {
+
+  UBICACION     :: /media/Personal/PLANERAI/DIRIME/IMV/tools/generator.py
+  OUTPUT_DIR    :: /media/Personal/PLANERAI/DIRIME/LACHO_FILES/
+  OUTPUT_FILE   :: generated_[YYYYMMDD_HHMMSS].lacho
+  TRIGGER       :: python3 tools/generator.py [--mode auto|stats|corpus|full]
+  ESTADO        :: DIR(+) · prioridad 1
+
+  // ── MODOS DE GENERACIÓN ──────────────────────────────────
+  MODE_AUTO    :: genera sentencias del estado actual del sistema
+  MODE_STATS   :: genera .lacho con métricas vivas (TX, Scalar S, cristales)
+  MODE_CORPUS  :: genera .lacho desde los 10 docs más frecuentes del RAG
+  MODE_FULL    :: auto + stats + corpus · archivo completo soberano
+
+  // ── PIPELINE INTERNO ─────────────────────────────────────
+  //
+  // PASO 1: COLLECT — recolectar datos del sistema
+  //   ledger.get_recent_transactions(limit=10)    → TX recientes
+  //   ledger.get_frequent_crystals(limit=10)      → cristales top
+  //   main.py --stats                             → Scalar S, TX total
+  //   rag.build_full_index()                      → CORPUS count
+  //   ceo_alpha.ceo_summary()                     → hexagramas
+  //
+  // PASO 2: ROUTE — traducir datos a sentencias LACHO
+  //   Para cada cristal frecuente:
+  //     language_routing.route(crystal.content) → RoutedSentence
+  //   Para cada TX reciente:
+  //     grammar.validate(tx.sentence)            → ParsedSentence
+  //
+  // PASO 3: SELECT — filtrar WU (solo válidas)
+  //   filter: parsed.result == "VALID"
+  //   filter: lacho_score(parsed) >= 0.7
+  //   sort:   lacho_score DESC
+  //   take:   top 15 sentencias
+  //
+  // PASO 4: COMPOSE — armar estructura del archivo
+  //   cabecera_soberana()     → [genesis][version][tipo][padre][term]
+  //   bloque_estado()         → métricas sistema como sentencias
+  //   bloque_cristales()      → top cristales como sentencias WU
+  //   bloque_corpus()         → anclas RAG del propio archivo
+  //   pie_soberano()          → [term] :: activo · DIR(=)
+  //
+  // PASO 5: VALIDATE — grammar.validate_batch(sentencias)
+  //   score_promedio >= 0.75  → continúa
+  //   score_promedio <  0.75  → regenera con correcciones
+  //
+  // PASO 6: WRITE — escribir archivo .lacho
+  //   path = OUTPUT_DIR / generated_[timestamp].lacho
+  //   ledger.record_crystal(id, "GENERATED_LACHO", content)
+  //   print: "✅ generado: {path} · {n} sentencias · score {avg}"
+
+  // ── ESTRUCTURA DEL .lacho GENERADO ───────────────────────
+  //
+  // //[genesis] :: IMV AUTO-GENERATED
+  // //[version] :: {version_sistema}
+  // //[tipo]    :: GENERATED · AUTO
+  // //[fecha]   :: {timestamp}
+  // //[score]   :: {avg_lacho_score}
+  // //[term]    :: activo
+  //
+  // ## ESTADO SISTEMA
+  // METHOD <stat_onto> =><= .. calcula .. TX_{n}_soberano --[AsG] [term]
+  // STACKING UF[H52] =><= .. cristaliza .. scalar_s_{s}_activo --[NdO] [term]
+  // SAMU @ =><= .. audita .. cristales_{c}_verificados --[Ball] [term]
+  //
+  // ## CRISTALES FRECUENTES
+  // {top_10_cristales_como_sentencias_WU}
+  //
+  // ## CORPUS RAG
+  // {top_5_docs_como_anclas_LACHO}
+  //
+  // ## ANCLAS RAG AUTOGENERADAS
+  // METHOD <operator_flow> =><= .. ejecuta .. generated_lacho_{ts} --[AsG] [term]
+  // STACKING UF[H52] =><= .. inmutabiliza .. lacho_generado_wú --[NdO] [term]
+  //
+  // //DIR(=) GENERADO · IMV VIVO · {timestamp}
+
+  // ── INTERFACES CON MÓDULOS EXISTENTES ────────────────────
+  from core.grammar   import validate, lacho_score, VERBOS_CANONICOS_LACHO
+  from core.grammar   import VERBOS_NATURALES, SUJETOS_CANONICOS
+  from core.ledger    import SovereignLedger
+  from core.rag       import build_full_index, query_rag
+  from core.ceo_alpha import get_role_by_hexagram, ceo_summary
+  from core.language_routing import route, route_batch
+
+  // ── TESTS REQUERIDOS ─────────────────────────────────────
+  test_generator_creates_file       :: archivo existe post-ejecución
+  test_generator_valid_sentences    :: todas las sentencias pasan validate()
+  test_generator_score_threshold    :: avg lacho_score >= 0.75
+  test_generator_cabecera           :: [genesis][version][term] presentes
+  test_generator_anclas_rag         :: mínimo 3 anclas RAG en output
+  test_generator_ledger_record      :: cristal registrado en sovereign.db
+  // → 6 tests nuevos · suite pasa a 33/33
+
+  // ── CLI COMMANDS ─────────────────────────────────────────
+  RUN(CLI): python3 tools/generator.py
+  RUN(CLI): python3 tools/generator.py --mode stats
+  RUN(CLI): python3 tools/generator.py --mode full
+  RUN(CLI): python3 tools/generator.py --output /ruta/custom.lacho
+
+  TRUST FOUNDATION =><= .. declara .. generator_py_spec_confirmado --[NdO] [term]
+}
+
+// ══════════════════════════════════════════════════════════════
+// VECTOR 2 — elpulsar.gui
+// ".cli =: elpulsar.gui"
+// "la inducción gráfica es más directa y conclusiva"
+// INPUT: gramática existente en grammar.py
+// OUTPUT: sentencia LACHO construida visualmente → validada → cristalizada
+// ══════════════════════════════════════════════════════════════
+
+spec elpulsar_gui {
+
+  UBICACION     :: /media/Personal/PLANERAI/DIRIME/IMV/interface/gui.py
+  ALTERNATIVA   :: HTML artifact · React · Tkinter · web local
+  TRIGGER       :: python3 interface/gui.py
+  PUERTO        :: localhost:8742  (8741=DIRIME_v2 congelado · 8742=GUI)
+  ESTADO        :: DIR(+) · prioridad 2
+  PRINCIPIO     :: .cli =: elpulsar.gui · mismo resultado · distinta inducción
+
+  // ── ARQUITECTURA DE PANTALLA ─────────────────────────────
+  //
+  // ┌─────────────────────────────────────────────────────────┐
+  // │  BALLPAPER HEADER · LACHO SENTENCE BUILDER · v1        │
+  // ├──────────────┬──────────────────────────────────────────┤
+  // │  COLUMNA A   │  COLUMNA B                               │
+  // │  SELECTOR    │  PREVIEW + VALIDATE + STACK              │
+  // └──────────────┴──────────────────────────────────────────┘
+
+  // ── COLUMNA A — SELECTORES ───────────────────────────────
+  //
+  // [1] BIBLIOTECA — 9 botones · uno activo a la vez
+  //     §TRUST  §WORK  §SAMU  §ACTIVITY  §CRYPTO
+  //     §SOCIAL  §GATE  §STACKING  §METHOD
+  //     → al seleccionar: popula SUJETO y VERBO con canónicos
+  //
+  // [2] SUJETO — dropdown dinámico por biblioteca
+  //     TRUST    → FOUNDATION · [scope] · [term] · [command]
+  //     WORK     → {actuator} · {brake} · {door} · {doorman-mobile}
+  //     SAMU     → @ · #rise · #set · $mon→$sun
+  //     ACTIVITY → UF[H01]..UF[H64] · selector hexagrama H##
+  //     CRYPTO   → (key seat) · (spark seat) · (shield seat) · (link seat)
+  //     SOCIAL   → {relay} · {launch-bot} · {headcat} · {chair} · +más
+  //     GATE     → UF[H05] · UF[H06] · UF[H56]
+  //     STACKING → UF[H52] · UF[H48]
+  //     METHOD   → <equation> · <operator_flow> · <stat_onto> · <if> · <loop>
+  //
+  // [3] VERBO — dropdown natural por biblioteca
+  //     TRUST    → verifica · declara · sostiene · autoriza · limita
+  //     WORK     → ejecuta · detiene · procesa · activa · suspende
+  //     SAMU     → audita · dirime · registra · evalúa · modera
+  //     ACTIVITY → inicia · penetra · cristaliza · lanza · aquieta
+  //     CRYPTO   → certifica · protege · firma · conecta · autoriza
+  //     SOCIAL   → conecta · transmite · lanza · recibe · filtra
+  //     GATE     → filtra · contiene · bloquea · permite · espera
+  //     STACKING → cristaliza · inmutabiliza · consolida · ancla
+  //     METHOD   → calcula · modela · deriva · simula · proyecta
+  //     + CAMPO LIBRE para verbos no canónicos (warning visual)
+  //
+  // [4] OBJETO — campo texto libre
+  //     placeholder: "objeto_soberano"
+  //     sugerencias: últimos 5 objetos del ledger
+  //     CJK picker: 20 tokens · 信任·关系·面子·主权·货币·桥梁...
+  //
+  // [5] NUDO — 5 botones · uno activo
+  //     [As de Guía]  [Nudo de Ocho]  [Ballestrinque]
+  //     [Nudo Corredizo]  [Nudo de Rizo]
+  //     → sugerencia automática según biblioteca seleccionada:
+  //       TRUST/STACKING → NdO · SAMU → Ball · ACTIVITY → AsG
+  //       GATE → NdC · WORK → AsG
+  //
+  // [6] [term] TOGGLE — siempre ON por defecto · no desactivable
+
+  // ── COLUMNA B — PREVIEW Y ACCIÓN ─────────────────────────
+  //
+  // PREVIEW EN TIEMPO REAL (actualiza a cada cambio):
+  //   ┌─────────────────────────────────────────────────────┐
+  //   │ TRUST FOUNDATION =><= .. verifica .. objeto        │
+  //   │ --[Nudo de Ocho] [term]                            │
+  //   └─────────────────────────────────────────────────────┘
+  //   Color: .blue (KU) mientras no validado
+  //          .green (WU) post-validate exitoso
+  //          .red   (INVALID) si falla
+  //
+  // SCORE VISUAL: barra Scalar S · 0.0 → 1.0
+  //   rojo < 0.5 · amarillo 0.5-0.8 · verde > 0.8
+  //
+  // BOTONES DE ACCIÓN:
+  //   [VALIDATE]  → grammar.validate() · muestra resultado + warnings
+  //   [STACK]     → ledger.record_grammar_validation() · cristaliza WU
+  //   [COPY CLI]  → copia sentencia para pegar en terminal
+  //   [GENERATE]  → llama generator.py con sentencia como seed
+  //   [CLEAR]     → limpia todos los campos · MU
+  //
+  // HISTORIAL (panel derecho inferior):
+  //   últimas 10 sentencias · WU verde · KU azul
+  //   click en cualquiera → carga en editor
+
+  // ── CJK PICKER ───────────────────────────────────────────
+  //
+  // Panel deslizable · 20 tokens con pinyin + label
+  //   信任 xìnrèn TRUST    关系 guānxi SOCIAL
+  //   面子 miànzi SCALAR   主权 zhǔquán SOVEREIGN
+  //   货币 huòbì e-CNY     桥梁 qiáoliáng BRIDGE
+  //   智能 zhìnéng AI       网络 wǎngluò FABRIC
+  //   节点 jiédiǎn NODE     空   kōng   VOID
+  //   聽   tīng   LISTEN   數   shù    COUNT
+  //   + 8 más activos del UNICODE-CHINA-TOKENS
+  //
+  // click → inserta en campo OBJETO
+
+  // ── IMPLEMENTACIONES POSIBLES · PRIORIDAD ────────────────
+  //
+  // OPCIÓN A · HTML artifact (hoy · sin instalar nada)
+  //   React + Tailwind · llama grammar.py via fetch local
+  //   RIESGO: fetch a localhost desde artifact · posible CORS
+  //   → MEJOR: artifact standalone con lógica JS embebida
+  //            que genera la sentencia · no valida contra IMV
+  //            → copia al clipboard → pega en terminal → valida
+  //
+  // OPCIÓN B · Tkinter (hoy · Python puro)
+  //   python3 -m tkinter disponible en antiX
+  //   integración directa con grammar.py · sin CORS
+  //   UI simple pero funcional · BALLPAPER-style colores
+  //   → RECOMENDADO para primera versión operativa
+  //
+  // OPCIÓN C · Flask + HTML (esta semana)
+  //   puerto 8742 · template BALLPAPER
+  //   API REST interna: POST /validate · POST /stack
+  //   → RECOMENDADO para versión con persistencia real
+  //
+  // OPCIÓN D · Streamlit (esta semana · más rápido que Flask)
+  //   streamlit run interface/gui.py
+  //   componentes drag-and-drop nativos
+  //   → RECOMENDADO si Streamlit disponible en .venv
+
+  // ── FLUJO OPERATIVO COMPLETO ─────────────────────────────
+  //
+  // MU  → pantalla abre · campos vacíos · 聽
+  // KU  → operador selecciona biblioteca → sujeto → verbo
+  //        ingresa objeto · selecciona nudo
+  //        preview se actualiza en tiempo real · .blue
+  // WU  → presiona VALIDATE
+  //        grammar.validate() → VALID + score
+  //        preview cambia a .green
+  //        presiona STACK → ledger cristaliza
+  //        TX++ · cristal registrado · →空 listo
+
+  // ── INTERFACES CON MÓDULOS ───────────────────────────────
+  from core.grammar   import validate, VERBOS_NATURALES, SUJETOS_CANONICOS
+  from core.grammar   import VERBOS_CANONICOS_LACHO, lacho_score
+  from core.ledger    import SovereignLedger
+  from core.rag       import query_rag
+
+  // ── TESTS REQUERIDOS ─────────────────────────────────────
+  test_gui_sentence_builds_correctly  :: selectores → sentencia válida
+  test_gui_validate_triggers_grammar  :: VALIDATE → grammar.validate()
+  test_gui_stack_triggers_ledger      :: STACK → TX en sovereign.db
+  test_gui_cjk_picker_inserts         :: token CJK → aparece en objeto
+  test_gui_score_visual_updates       :: Scalar S barra actualiza en tiempo real
+  // → 5 tests nuevos · suite pasa a 38/38 (33 gen + 5 gui)
+
+  // ── CLI COMMANDS ─────────────────────────────────────────
+  RUN(CLI): python3 interface/gui.py
+  RUN(CLI): python3 interface/gui.py --mode tkinter
+  RUN(CLI): python3 interface/gui.py --mode flask
+  RUN(CLI): python3 interface/gui.py --port 8742
+
+  WORK {actuator} =><= .. ejecuta .. elpulsar_gui_spec_confirmado --[AsG] [term]
+}
+
+// ══════════════════════════════════════════════════════════════
+// ORDEN DE IMPLEMENTACIÓN — PARALELO SOBERANO
+// ══════════════════════════════════════════════════════════════
+
+spec orden_paralelo {
+
+  //  SESIÓN 11 · BLOQUE 1 (30 min)
+  //  ─────────────────────────────
+  //  1. git sync UNICODE_LACHO V3      → bash tools/github_sync.sh
+  //  2. generator.py esqueleto         → collect + compose + write
+  //  3. primer .lacho generado         → MODE_STATS · 5 sentencias mínimo
+  //  4. test_generator_creates_file    → 28/28 → 28+
+
+  //  SESIÓN 11 · BLOQUE 2 (30 min)
+  //  ─────────────────────────────
+  //  5. gui.py opción Tkinter          → selectores biblioteca+sujeto+verbo
+  //  6. preview en tiempo real         → .blue KU mientras edita
+  //  7. botón VALIDATE                 → grammar.validate() integrado
+  //  8. botón STACK                    → ledger.record cristaliza
+
+  //  SESIÓN 11 · BLOQUE 3 (cierre)
+  //  ─────────────────────────────
+  //  9. generator.py MODE_FULL         → usa gui output como seed
+  // 10. tests 33+5 = 38/38             → suite completa
+  // 11. git sync                       → todo sellado
+  // 12. SPEC_GENERATOR_GUI.lacho       → este archivo → CORPUS
+
+  SAMU @ =><= .. audita .. orden_paralelo_sesion11 --[Ball] [term]
+}
+
+// ── GAPS RESUELTOS POR ESTE SPEC ─────────────────────────────
+// ..find_gaps(LACHO_FILES).. → DIR(-) generator · DIR(+) ahora
+// ..find_gaps(GRAMMAR)..     → GUI expone verbos/sujetos canónicos
+// ..find_gaps(TEST)..        → 11 tests nuevos declarados
+
+// ── ANCLAS RAG ───────────────────────────────────────────────
+TRUST FOUNDATION =><= .. declara .. spec_generator_gui_soberano --[NdO] [term]
+WORK {actuator} =><= .. ejecuta .. generator_py_primer_lacho --[AsG] [term]
+SOCIAL {relay} =><= .. conecta .. elpulsar_gui_cli_interface --[AsG] [term]
+METHOD <operator_flow> =><= .. modela .. paralelo_vector1_vector2 --[AsG] [term]
+STACKING UF[H52] =><= .. inmutabiliza .. spec_generator_gui_v1 --[NdO] [term]
+ACTIVITY UF[H64] =><= .. inicia .. ciclo_abierto_gui_generator --[AsG] [term]
+
+//DIR(+) SPEC_GENERATOR_GUI · V1 · DOS VECTORES · PARALELO
+//DIR(+) generator.py · elpulsar.gui · 38 tests target
+//DIR(+) 空聽數 · MU→KU→WU · IMV vivo · sesión 11 ready

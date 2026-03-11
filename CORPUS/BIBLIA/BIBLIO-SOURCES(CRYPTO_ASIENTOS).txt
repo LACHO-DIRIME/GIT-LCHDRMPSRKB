@@ -1,0 +1,351 @@
+# BIBLIO-SOURCES(CRYPTO_ASIENTOS).txt
+
+====================================================================
+
+## 🔐 CRYPTO — SEIS ASIENTOS DE AUTORIDAD SOBERANA
+
+---
+
+### 1.0 CRYPTO COMO BIBLIOTECA DE AUTORIDAD
+
+#### 1.1 Por qué CRYPTO es autoridad y no cifrado técnico
+CRYPTO no es cifrado decorativo — es el sistema de verificación de quién tiene autoridad para qué acción. Los asientos son funciones soberanas, no técnicas.
+
+#### 1.2 Los 6 asientos como facetas inseparables de la soberanía
+Los asientos no son roles intercambiables — son funciones soberanas que no pueden delegarse ni violarse sin activar protocolos críticos del sistema.
+
+#### 1.3 (Way Agnostic Atheism) como principio rector de los asientos
+Ningún asiento puede declararse definitivo e irrevisable. Toda autoridad criptográfica tiene [term] implícito bajo (Way Agnostic Atheism).
+
+#### 1.4 Relación entre CRYPTO y TRUST
+TRUST emite [command]; CRYPTO verifica quién puede ejecutarlo. La autoridad de CRYPTO es la manifestación operativa de las condiciones de TRUST.
+
+---
+
+### 2.0 DOCUMENTO POR ASIENTO
+
+#### 2.1 (direction seat) — Autoridad de Rumbo y Propósito
+Definición técnica: Autoridad soberana sobre rumbo y propósito del sistema que valida que toda operación alinee con el propósito constitucional.
+
+Jurisdicción exclusiva:
+- Validación de propósito de operaciones.
+- Verificación de alineación constitucional.
+- Rechazo de operaciones sin propósito claro.
+
+Estados operativos:
+- DIRECTION_VALIDATING: propósito siendo validado.
+- DIRECTION_ALIGNED: operación alineada verificada.
+- DIRECTION_MISALIGNED: propósito desalineado, rechazado.
+- DIRECTION_RECALIBRATING: propósito siendo recalibrado.
+
+Condición de violación: Ejecución de operación sin validación de propósito o violación constitucional.
+
+#### 2.2 (key seat) — Autoridad de Llave e Identidad
+Definición técnica: Autoridad de identidad criptográfica que gestiona las claves que definen quién es el sistema ante el exterior.
+
+Jurisdicción exclusiva:
+- Gestión de claves criptográficas.
+- Verificación de identidad del sistema.
+- Rotación de claves bajo (Way Agnostic Atheism).
+
+Estados operativos:
+- KEY_GENERATING: nueva clave siendo generada.
+- KEY_ACTIVE: clave en uso, identidad verificada.
+- KEY_ROTATING: rotación en curso bajo [term] implícito.
+- KEY_EXPIRED: clave expirada, requiere renovación.
+
+Condición de violación: Uso de clave expirada o sin rotación programada.
+
+#### 2.3 (ignition seat) — Autoridad de Arranque y Activación
+Definición técnica: Autoridad de arranque soberano que verifica que nada puede ejecutarse sin la ignición verificada.
+
+Jurisdicción exclusiva:
+- Autorización de arranque de procesos.
+- Verificación de condiciones previas.
+- Coordinación con #rise de SAMU.
+
+Estados operativos:
+- IGNITION_READY: sistema listo para arranque.
+- IGNITION_VERIFYING: condiciones siendo verificadas.
+- IGNITION_ACTIVE: arranque autorizado y en curso.
+- IGNITION_COMPLETE: proceso iniciado exitosamente.
+
+Condición de violación: Arranque sin verificación completa o sin coordinación con SAMU.
+
+#### 2.4 (shield seat) — Autoridad de Defensa y Protección
+Definición técnica: Autoridad de defensa del perímetro criptográfico que protege al sistema de ataques externos verificados.
+
+Jurisdicción exclusiva:
+- Protección contra ataques criptográficos.
+- Verificación de integridad de canales.
+- Coordinación con {doorman-mobile} y {concierge-desk}.
+
+Estados operativos:
+- SHIELD_ACTIVE: perímetro protegido.
+- SHIELD_ALERT: ataque detectado, defensa activada.
+- SHIELD_BREACHED: perímetro violado, RED-REGRET activo.
+- SHIELD_RECOVERING: recuperación en curso.
+
+Condición de violación: Perímetro desprotegido o ataque no detectado.
+
+#### 2.5 (flow seat) — Autoridad de Caudal y Transmisión
+Definición técnica: Autoridad de transmisión soberana que gestiona el caudal de información verificada entre nodos del [ecosystem].
+
+Jurisdicción exclusiva:
+- Control de flujo de información.
+- Verificación de canales de transmisión.
+- Coordinación con {streaming} y UF[H56].
+
+Estados operativos:
+- FLOW_OPEN: canal de transmisión abierto.
+- FLOW_CONTROLLED: flujo siendo gestionado.
+- FLOW_THROTTLED: caudal limitado por seguridad.
+- FLOW_CLOSED: canal cerrado por seguridad.
+
+Condición de violación: Transmisión sin verificación de canal o fuera de límites de caudal.
+
+#### 2.6 (link seat) — Autoridad de Enlace y Certificación
+Definición técnica: Autoridad de enlace y certificación que certifica canales seguros de comunicación y documentos.
+
+Jurisdicción exclusiva:
+- Certificación de canales seguros.
+- Validación de documentos digitales.
+- Coordinación transversal con múltiples módulos.
+
+Estados operativos:
+- LINK_CERTIFYING: canal siendo certificado.
+- LINK_VERIFIED: enlace verificado y seguro.
+- LINK_ACTIVE: comunicación en curso.
+- LINK_EXPIRED: certificación expirada, requiere renovación.
+
+Condición de violación: Uso de canal no certificado o documento no validado.
+
+---
+
+### 3.0 (link seat) CON PROFUNDIDAD ESPECIAL
+
+#### 3.1 Certificación de canal de {launch-bot}
+{launch-bot} requiere (link seat) para canales de retorno. BOT_RETURN solo puede operar sobre canales certificados por (link seat).
+
+#### 3.2 Certificación de documento notarial
+Notaría digital requiere (link seat) para validez jurídica. Documentos sin certificación (link seat) no tienen validez soberana.
+
+#### 3.3 Certificación de identidad en custodia
+Custodia móvil requiere (link seat) para firma soberana. La identidad del custodio debe estar certificada continuamente.
+
+#### 3.4 Relación con (Way Agnostic Atheism)
+El link no puede declararse eterno. (link seat) opera bajo [term] implícito — toda certificación tiene vencimiento.
+
+---
+
+### 4.0 COORDINACIÓN ENTRE ASIENTOS
+
+#### 4.1 Protocolo de consenso ante decisiones múltiples
+Cuando una decisión requiere múltiples asientos:
+1. (direction seat) valida propósito.
+2. (key seat) verifica identidad.
+3. (ignition seat) autoriza ejecución.
+4. Consenso alcanzado solo con los tres activos.
+
+#### 4.2 Jerarquía de precedencia ante conflicto
+- (direction seat) tiene precedencia en conflictos de propósito.
+- (shield seat) tiene precedencia en emergencias de seguridad.
+- (link seat) tiene precedencia en certificaciones transversales.
+
+#### 4.3 SAMU @ como árbitro de conflictos
+SAMU @ resuelve conflictos entre asientos cuando no hay consenso claro. Su decisión es final y trazable.
+
+---
+
+### 5.0 RELACIONES CON OTRAS CAPAS
+
+#### 5.1 Con TRUST []
+CRYPTO ejecuta bajo condiciones de TRUST. [command] de TRUST requiere verificación de asientos CRYPTO antes de ejecución.
+
+#### 5.2 Con SAMU @
+SAMU @ coordina los asientos CRYPTO. Puede activar (Way Agnostic Atheism) ante dogmas criptográficos.
+
+#### 5.3 Con WORK
+{brake} de WORK coordina con (shield seat). {actuator} requiere (ignition seat) para ejecución.
+
+#### 5.4 Con SOCIAL {}
+{launch-bot} usa (link seat) para canales. {concierge-desk} coordina con (shield seat) para seguridad.
+
+#### 5.5 Con GATE
+UF[H06] de GATE requiere (link seat) para sellado de WU. GATE autoriza, CRYPTO certifica.
+
+---
+
+### 6.0 ESTADOS DE CRYPTO
+
+#### 6.1 CRYPTO_SOBERAN
+Todos los asientos operando bajo autoridad soberana. Sistema seguro y verificado.
+
+#### 6.2 CRYPTO_COORDINATING
+Asientos coordinándose para decisión compleja. SAMU @ mediando consenso.
+
+#### 6.3 CRYPTO_VIOLATED
+Al menos un asiento violado. RED-REGRET activo, sistema en recuperación.
+
+#### 6.4 CRYPTO_DEGRADED
+Autoridad criptográfica degradada. (Way Agnostic Atheism) activo, revisión en curso.
+
+#### 6.5 CRYPTO_RECOVERING
+Sistema recuperándose de violación. Asientos siendo restaurados a estado soberano.
+
+---
+
+### 7.0 RELACIÓN CON @trust_matrix
+
+#### 7.1 Impacto en dimensiones
+CRYPTO afecta principalmente:
+- d₁ [term]: [term] implícito en cada asiento.
+- d₆ [command]: verificación de autoridad de comandos.
+- d₈ [ecosystem]: seguridad de nodos y canales.
+
+#### 7.2 Protección de la matriz
+CRYPTO protege d₅ [foundation] al verificar autoridad antes de ejecución. Protege d₆ [command] al validar quién puede emitir comandos.
+
+#### 7.3 Aprendizaje de Behavioral RAG
+Patrones de uso exitoso de asientos calibran futuras decisiones de autoridad.
+
+---
+
+### 8.0 GRAMÁTICA VIVA
+
+#### 8.1 (direction seat) validando propósito
+```
+(Crypto) direction_seat =><= .. validate .. operation_purpose --[As de Guía] [term]
+```
+
+#### 8.2 (key seat) rotando bajo (Way Agnostic Atheism)
+```
+(Crypto) key_seat =><= .. rotate .. term_implicit --[Nudo de Ocho] [term]
+```
+
+#### 8.3 (ignition seat) autorizando arranque
+```
+(Crypto) ignition_seat =><= .. ignite .. verified_process --[Ballestrinque] [term]
+```
+
+#### 8.4 (shield seat) defendiendo perímetro
+```
+(Crypto) shield_seat =><= .. defend .. cryptographic_perimeter --[Nudo Corredizo] [term]
+```
+
+#### 8.5 (flow seat) controlando caudal
+```
+(Crypto) flow_seat =><= .. control .. information_flow --[Nudo de Rizo] [term]
+```
+
+#### 8.6 (link seat) certificando canal
+```
+(Crypto) link_seat =><= .. certify .. secure_channel --[As de Guía] [term]
+```
+
+#### 8.7 Coordinación entre asientos
+```
+(Crypto) crypto_seats =><= .. coordinate .. consensus_decision --[Ballestrinque] [term]
+```
+
+#### 8.8 (Way Agnostic Atheism) activado
+```
+(Crypto) way_agnostic_atheism =><= .. activate .. term_implicit --[Nudo Corredizo] [term]
+```
+
+---
+
+### 9.0 NUDOS ASOCIADOS
+
+#### 9.1 As de Guía
+(direction seat) en DIRECTION_ALIGNED — propósito validado, operación autorizada, dirección clara.
+
+#### 9.2 Nudo de Ocho
+(link seat) en LINK_VERIFIED — canal certificado, comunicación segura, confianza establecida.
+
+#### 9.3 Nudo Corredizo
+(shield seat) en SHIELD_BREACHED — perímetro violado, defensa activa, sistema protegido.
+
+#### 9.4 Ballestrinque
+Coordinación entre asientos — tensión entre autoridades individuales y necesidad de consenso.
+
+#### 9.5 Nudo de Rizo
+Unión entre (key seat) y (Way Agnostic Atheism) — clave con [term] implícito, autoridad revisable.
+
+---
+
+### 10.0 PROTOCOLOS OPERATIVOS
+
+1. DirectionValidate
+   - Validación de propósito de operación.
+   - Verificación de alineación constitucional.
+   - Rechazo de operaciones sin propósito.
+
+2. KeyRotate
+   - Rotación de claves bajo [term] implícito.
+   - Coordinación con (Way Agnostic Atheism).
+   - Actualización de identidad del sistema.
+
+3. IgnitionAuthorize
+   - Autorización de arranque soberano.
+   - Verificación de condiciones previas.
+   - Coordinación con #rise de SAMU.
+
+4. ShieldDefend
+   - Defensa activa del perímetro criptográfico.
+   - Detección y respuesta a ataques.
+   - Coordinación con seguridad física.
+
+5. FlowControl
+   - Gestión de caudal de información.
+   - Verificación de canales de transmisión.
+   - Limitación por seguridad cuando necesario.
+
+6. LinkCertify
+   - Certificación de canales y documentos.
+   - Validación de seguridad de enlaces.
+   - Coordinación transversal con módulos.
+
+---
+
+### 11.0 MÉTRICAS
+
+- Tiempo promedio de validación de propósito por (direction seat).
+- Frecuencia de rotación de claves por (key seat).
+- Número de arranques autorizados por (ignition seat).
+- Tasa de ataques detectados por (shield seat).
+- Caudal promedio gestionado por (flow seat).
+- Número de certificaciones emitidas por (link seat).
+- Frecuencia de activación de (Way Agnostic Atheism).
+
+---
+
+### 12.0 REGLAS
+
+- Toda ejecución requiere validación de (direction seat).
+- Las claves de (key seat) deben rotarse bajo [term] implícito.
+- (ignition seat) solo puede activarse con coordinación de SAMU.
+- (shield seat) debe proteger el perímetro continuamente.
+- (flow seat) no puede exceder caudal sin autorización.
+- (link seat) solo puede certificar canales verificados.
+- (Way Agnostic Atheism) se activa ante dogmas criptográficos.
+- Los asientos operan en consenso ante decisiones complejas.
+- SAMU @ es árbitro final de conflictos entre asientos.
+- Ningún asiento puede declararse definitivo e irrevisable.
+
+---
+
+### 13.0 CIERRE
+
+#### 13.1 Invariante
+CRYPTO fija como invariante la autoridad soberana verificada — seis facetas interdependientes que validan, protegen y certifican toda operación del sistema con responsabilidad trazable.
+
+#### 13.2 Limitaciones
+No puede operar sin validación de propósito, no puede usar claves expiradas, no puede ejecutar sin arranque verificado, no puede dejar perímetro desprotegido.
+
+#### 13.3 Habilitaciones
+Autoridad verificada para toda operación, protección criptográfica continua, coordinación soberana entre facetas, certificación transversal de canales, aprendizaje continuo via Behavioral RAG, revisión constante bajo (Way Agnostic Atheism).
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

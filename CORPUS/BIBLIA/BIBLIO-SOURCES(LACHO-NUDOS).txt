@@ -1,0 +1,46 @@
+# BIBLIO-SOURCES(LACHO-NUDOS)
+# Gramática viva LACHO — nudos canónicos y semántica soberana
+# [term] :: activo
+
+## 1.0 EL NUDO COMO ESTADO
+El nudo es el ESTADO SOBERANO en que queda el sistema
+después de la acción descripta en la sentencia.
+
+## 2.0 LOS 5 NUDOS CANÓNICOS
+
+--[As de Guía]
+  Estado: óptimo · verificado · sin tensión
+  Cuándo: acción exitosa · verificación pasada · autorización concedida
+
+--[Nudo de Ocho]
+  Estado: inmutable · cristalizado · no reversible
+  Cuándo: registro en ledger · sellado · cristal soberano
+
+--[Ballestrinque]
+  Estado: tensión activa entre fuerzas · no resuelto aún
+  Cuándo: evaluación en curso · conflicto presente
+
+--[Nudo Corredizo]
+  Estado: riesgo activo · atención soberana urgente
+  Cuándo: {brake} activado · RED-REGRET · peligro real
+
+--[Nudo de Rizo]
+  Estado: cierre que abre otro ciclo · transición de período
+  Cuándo: fin de día soberano · ciclo semanal completado
+
+## 3.0 ÁRBOL DE DECISIÓN
+
+¿Todo correcto y verificado?      → As de Guía
+¿Algo quedó fijo para siempre?    → Nudo de Ocho
+¿Hay tensión no resuelta?         → Ballestrinque
+¿Hay riesgo o algo salió mal?     → Nudo Corredizo
+¿Un ciclo termina y otro inicia?  → Nudo de Rizo
+
+## 4.0 NUDOS Y LEDGER
+As de Guía    → knowledge_state: GREEN · WU cristalizado
+Nudo de Ocho  → knowledge_state: GREEN · inmutable
+Ballestrinque → knowledge_state: BLUE · KU pendiente
+Nudo Corredizo→ knowledge_state: BLUE · requiere revisión
+Nudo de Rizo  → knowledge_state: GREEN (cierre) · nuevo ciclo BLUE
+
+[term] :: activo · [seal of secrecy] :: activo

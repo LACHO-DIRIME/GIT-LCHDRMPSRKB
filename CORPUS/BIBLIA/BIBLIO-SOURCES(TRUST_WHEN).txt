@@ -1,0 +1,315 @@
+# BIBLIO-SOURCES(TRUST_WHEN).txt
+
+====================================================================
+
+## 🏛️ TRUST [WHEN?] — JUICIO SOBERANO DEL MOMENTO CORRECTO
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+[when?] es el módulo TRUST que declara soberanamente el momento correcto de acción: cuándo las condiciones están alineadas para que [command] emita y WORK ejecute sin violar [foundation].
+
+#### 1.2 La Doctrina de la Tardanza
+Actuar antes de tiempo es tan grave como no actuar — ambos violan soberanía temporal.
+
+#### 1.3 Distinción de GATE
+GATE implementa [when?] como control de flujo; [when?] es la condición soberana de momento.
+
+#### 1.4 Distinción de [term]
+[term] define la duración del ciclo; [when?] define el momento correcto dentro de ese ciclo.
+
+#### 1.5 La tríada [what?]/[when?]/[how?]
+Base de toda acción soberana en TRUST — los tres son necesarios.
+
+#### 1.6 Por qué es TRUST y no GATE
+Define condición soberana de momento, no mecanismo de control de flujo.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Capacidades
+- Declarar el momento correcto de acción.
+- Evaluar madurez de condiciones operativas.
+- Activar la Doctrina de la Tardanza.
+- Coordinar con GATE para control temporal.
+
+#### 2.2 Limitaciones absolutas
+Ningún momento puede justificar violación de [foundation].
+
+#### 2.3 Condiciones de violación
+- **Violación primaria:** acción prematura con Ψ_evidencia < 0.7 sin [rabbit-faith].
+- **Violación secundaria:** tardanza patológica — WHEN_DEFER sostenido más allá de lo que [term] permite.
+- **Señal alerta:** [when?] en estado WHEN_NEVER — sistema en parálisis operativa.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 Estados temporales de [when?]
+- **WHEN_NOW:** condiciones alineadas, momento verificado para acción.
+- **WHEN_SOON:** condiciones en maduración, momento próximo pero no confirmado.
+- **WHEN_DEFER:** tardanza soberana activa — H5 (Espera) como hexagrama.
+- **WHEN_NEVER:** condiciones no se alinearán en este ciclo — COMMAND_ABORT soberano.
+- **WHEN_CRITICAL:** ventana de oportunidad con [term] próximo a expirar.
+
+#### 3.2 La Doctrina de la Tardanza
+- **Origen en H5 (La Espera, El Abrevadero):** el sistema que espera con intención es soberano.
+- **WHEN_DEFER como fortaleza:** cuando Ψ_evidencia < 0.7 o [scenario] incompleto.
+- **Tardanza patológica:** WHEN_DEFER activo con Ψ_evidencia ≥ 0.85 por más de 3 ciclos consecutivos.
+
+#### 3.3 [when?] y los hexagramas temporales
+- **H5 (Espera):** WHEN_DEFER soberano.
+- **H56 (El Andante):** WHEN_SOON — tránsito hacia el momento correcto.
+- **H51 (Trueno):** WHEN_NOW — activación, el momento llegó.
+- **H29 (Abismal):** WHEN_DEFER bajo incertidumbre.
+- **H49 (Revolución):** WHEN_CRITICAL — el momento de transformación no se repite.
+
+#### 3.4 Relación con dominios económicos
+
+##### Memcoins/Volatilidad
+- [when?] como declaración del momento de entrada o salida del mercado.
+- WHEN_NOW en ventana de oportunidad verificada.
+- WHEN_DEFER ante señal de mercado ambigua.
+- WHEN_CRITICAL ante [term] próximo a expirar.
+
+##### Custodia Móvil
+- [when?] como declaración del momento correcto para operación de firma.
+- WHEN_DEFER en entorno de seguridad no verificado.
+- WHEN_NEVER cuando foundation COMPROMISED.
+
+##### Notaría Digital
+- [when?] como declaración del momento de emisión del documento.
+- WHEN_DEFER en jurisdicción en transición.
+- WHEN_CRITICAL ante plazo jurisdiccional próximo a vencer.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation]
+Ningún momento justifica violación de [foundation].
+
+#### 4.2 Con [term]
+[when?] opera dentro del ciclo — WHEN_CRITICAL cuando [term] próximo a expirar.
+
+#### 4.3 Con [what?]
+Juntos determinan objeto y momento.
+
+#### 4.4 Con [how?]
+Juntos determinan momento y método.
+
+#### 4.5 Con [command]
+[command] necesita [when?] en estado WHEN_NOW o WHEN_SOON para emitir.
+
+#### 4.6 Con [scenario]
+[when?] evalúa si [scenario] está suficientemente mapeado para actuar.
+
+#### 4.7 Con GATE
+GATE implementa [when?] como control temporal — H5/H56/H51 como estados.
+
+#### 4.8 Con SAMU @
+SAMU audita que WHEN_DEFER no degenere en tardanza patológica.
+
+#### 4.9 Con [rabbit-faith]
+Habilita acción en WHEN_SOON cuando Ψ_evidencia < 0.85.
+
+#### 4.10 Con Behavioral RAG
+Patrones de timing de ciclos anteriores calibran [when?] futuro.
+
+---
+
+### 5.0 ESTADOS DE [when?]
+
+#### 5.1 WHEN_NOW
+- **Condición:** Ψ_evidencia ≥ 0.85 y [what?] verificado.
+- **Comportamiento:** momento verificado para acción.
+- **Operación:** GATE abre paso, [command] puede emitir COMMAND_EXECUTE.
+
+#### 5.2 WHEN_SOON
+- **Condición:** Ψ_evidencia entre 0.7 y 0.85.
+- **Comportamiento:** condiciones en maduración.
+- **Operación:** [rabbit-faith] puede habilitar acción, GATE en estado H56.
+
+#### 5.3 WHEN_DEFER
+- **Condición:** Ψ_evidencia < 0.7 o [scenario] incompleto.
+- **Comportamiento:** tardanza soberana activa.
+- **Operación:** GATE en estado H5, COMMAND_DEFER obligatorio.
+
+#### 5.4 WHEN_NEVER
+- **Condición:** condiciones no se alinearán en este ciclo.
+- **Comportamiento:** ciclo cerrado sin acción ejecutada.
+- **Operación:** COMMAND_ABORT soberano, cierre anticipado evaluado.
+
+#### 5.5 WHEN_CRITICAL
+- **Condición:** [term] próximo a expirar con acción pendiente.
+- **Comportamiento:** decisión binaria urgente.
+- **Operación:** solo COMMAND_EXECUTE o COMMAND_ABORT, SAMU @ en auditoría.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Afectación indirecta
+[when?] no tiene dimensión propia pero afecta d₁ [term] y d₆ [command].
+
+#### 6.2 Impacto en d₁
+WHEN_CRITICAL acelera consumo de d₁ [term].
+
+#### 6.3 Impacto en d₆
+WHEN_DEFER sostenido degrada d₆ [command].
+
+#### 6.4 Compensación con [rabbit-faith]
+[rabbit-faith] compensa WHEN_SOON en el cálculo de T_matrix.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Declaración de WHEN_NOW con tríada completa
+```
+[Trust] when? =><= .. declare .. $$moment_verified$$ --[As de Guía] [term]
+```
+
+#### 7.2 WHEN_DEFER soberano activando H5
+```
+[Trust] when? =><= .. defer .. $$conditions_insufficient$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.3 WHEN_CRITICAL forzando decisión binaria
+```
+[Trust] when? =><= .. critical .. $$term_expiring$$ --[Ballestrinque] [term]
+```
+
+#### 7.4 WHEN_NEVER cerrando ciclo con COMMAND_ABORT
+```
+[Trust] when? =><= .. never .. $$conditions_unaligned$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.5 [when?] en dominio memcoins
+```
+[Trust] when? =><= .. time .. $$market_opportunity$$ --[As de Guía] [term]
+```
+
+#### 7.6 [when?] en dominio custodia móvil
+```
+[Trust] when? =><= .. secure .. $$custody_moment$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.7 [when?] en dominio notaría digital
+```
+[Trust] when? =><= .. certify .. $$notary_timing$$ --[Ballestrinque] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+- **Activación:** [when?] con WHEN_NOW activo.
+- **Efecto:** momento verificado, acción en curso.
+
+#### 8.2 Nudo de Ocho
+- **Activación:** timing cristalizado en Behavioral RAG.
+- **Efecto:** patrón de momento correcto establecido.
+
+#### 8.3 Nudo Corredizo
+- **Activación:** WHEN_NEVER — ciclo cerrado sin acción.
+- **Efecto:** parálisis operativa documentada.
+
+#### 8.4 Ballestrinque
+- **Activación:** tensión entre WHEN_DEFER y WHEN_CRITICAL.
+- **Efecto:** decisión binaria forzada.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+#### 9.1 WhenEvaluate
+1. Evaluar condiciones temporales con Ψ_evidencia.
+2. Verificar estado de [scenario] y [what?].
+3. Consultar Behavioral RAG sobre patrones de timing.
+4. Determinar estado de [when?] apropiado.
+5. Coordinar con GATE para control temporal.
+
+#### 9.2 WhenDefer
+1. Activar WHEN_DEFER con justificación documentada.
+2. Establecer condiciones para WHEN_SOON o WHEN_NOW.
+3. Coordinar con GATE en estado H5 (Espera).
+4. Notificar a SAMU @ de la tardanza soberana.
+5. Monitorear evolución de condiciones.
+
+#### 9.3 WhenActivate
+1. Declarar WHEN_NOW con Ψ_evidencia ≥ 0.85.
+2. Certificar con SAMU @ el momento verificado.
+3. Coordinar con GATE para apertura de paso.
+4. Habilitar [command] para COMMAND_EXECUTE.
+5. Registrar timing en Behavioral RAG.
+
+#### 9.4 WhenCritical
+1. Detectar [term] próximo a expirar con acción pendiente.
+2. Evaluar opciones COMMAND_EXECUTE vs COMMAND_ABORT.
+3. Activar SAMU @ en auditoría de emergencia.
+4. Forzar decisión binaria sin COMMAND_DEFER.
+5. Documentar resultado y causas.
+
+#### 9.5 WhenNever
+1. Determinar que condiciones no se alinearán en este ciclo.
+2. Emitir COMMAND_ABORT soberano con justificación.
+3. Evaluar cierre anticipado de [term].
+4. Registrar en Behavioral RAG para aprendizaje.
+5. Coordinar cierre con GATE.
+
+#### 9.6 WhenClose
+1. Archivar timing al cierre del ciclo.
+2. Calibrar patrones para futuras evaluaciones.
+3. Actualizar Behavioral RAG con nuevo conocimiento.
+4. Liberar recursos temporales asignados.
+5. Preparar [when?] para siguiente ciclo.
+
+---
+
+### 10.0 MÉTRICAS
+
+- **Ψ_evidencia:** nivel de certeza del momento (0.0 a 1.0).
+- **Ratio WHEN_NOW vs WHEN_DEFER vs WHEN_NEVER.**
+- **Frecuencia de WHEN_DEFER degenerando en tardanza patológica.**
+- **Tiempo promedio entre WHEN_SOON y WHEN_NOW.**
+- **Tasa de WHEN_CRITICAL resueltos con COMMAND_EXECUTE vs COMMAND_ABORT.**
+- **Delta-timing al cierre del ciclo.**
+
+---
+
+### 11.0 REGLAS
+
+- Ningún momento justifica violación de [foundation].
+- WHEN_DEFER con Ψ_evidencia ≥ 0.85 por más de 3 ciclos es tardanza patológica.
+- WHEN_CRITICAL no admite COMMAND_DEFER — solo COMMAND_EXECUTE o COMMAND_ABORT.
+- [rabbit-faith] puede habilitar acción en WHEN_SOON solo si S scalar > 0.5.
+- WHEN_NEVER siempre genera registro en Behavioral RAG.
+- [command] no puede emitir COMMAND_EXECUTE con [when?] en estado WHEN_DEFER.
+- SAMU @ audita toda declaración de WHEN_NOW.
+- Behavioral RAG debe registrar todo patrón de timing.
+- WHEN_DEFER en custodia móvil no puede sostenerse con foundation COMPROMISED.
+- La tríada [what?]/[when?]/[how?] debe estar completa para COMMAND_EXECUTE pleno.
+- [when?] cierra con [term] del ciclo.
+- GATE implementa [when?] como control temporal.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+[when?] fija el juicio soberano sobre el momento correcto de acción como condición de validez temporal de [command].
+
+#### 12.2 Limitaciones
+No justifica violación de [foundation], no fuerza acción prematura, no sostiene WHEN_DEFER más allá de lo que [term] permite.
+
+#### 12.3 Habilitaciones
+Doctrina de la Tardanza como soberanía temporal, WHEN_CRITICAL como decisión binaria sin evasión, coordinación con [what?] y [how?] para acción soberana completa, trazabilidad de timing en Behavioral RAG.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

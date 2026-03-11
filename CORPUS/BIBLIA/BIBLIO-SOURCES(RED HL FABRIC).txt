@@ -1,0 +1,172 @@
+# BIBLIO-SOURCES(RED HL FABRIC).txt
+
+====================================================================
+
+## 🌐 RED HL FABRIC — TOPOLOGÍA DE NODOS, SAMU DISTRIBUIDO Y CRYPTO INTER-NODO
+
+---
+
+### 1.0 DEFINICIÓN
+
+**HL FABRIC** es la red propia de LACHO: una infraestructura privada donde múltiples nodos (WORKSTATION, AGENCY IDE SYSTEM, etc.) operan de forma coordinada, soberana y auditada.
+
+No es “internet”: es una red con control total, reglas propias y SAMU distribuido.
+
+---
+
+### 2.0 TIPOLOGÍA DE RED
+
+#### 2.1 Red Privada Cerrada
+- **Acceso:** solo nodos autorizados.
+- **SAMU:** centralizado o distribuido.
+- **CRYPTO:** asientos inter-nodo obligatorios.
+- **GATE:** control de flujo estricto.
+
+#### 2.2 Red Privada Híbrida
+- **Acceso:** nodos autorizados + invitados temporales.
+- **SAMU:** distribuido con quórum.
+- **CRYPTO:** negociación de claves dinámicas.
+- **GATE:** políticas de admisión variables.
+
+#### 2.3 Red de Desarrollo (HL FABRIC DEV)
+- **Acceso:** nodos de prueba + simuladores.
+- **SAMU:** modo auditoría intensiva.
+- **CRYPTO:** sandbox por defecto.
+- **GATE:** latencia simulada.
+
+---
+
+### 3.0 NODOS EN RED
+
+Cada nodo publica su `NODO_CFG.txt` y un `NODO_STATUS.json`:
+```
+{
+  "nombre": "Workstation_Alpha",
+  "personalidad": "pragmática",
+  "biblioteca_dominante": "WORK",
+  "red": "HL_FABRIC",
+  "no_net": false,
+  "policy": "restrictivo",
+  "samu_modo": "activo",
+  "estado": "activo",
+  "ultimo_heartbeat": "2026-02-22T17:55:00Z"
+}
+```
+
+---
+
+### 4.0 SAMU DISTRIBUIDO
+
+#### 4.1 Modos SAMU en Red
+- **Centralizado:** un SAMU global arbitra todo.
+- **Distribuido:** cada nodo tiene SAMU local, pero se coordinan por quórum.
+- **Híbrido:** SAMU local con SAMU global de respaldo.
+
+#### 4.2 Protocolo de Quórum
+```
+SAMU_LOCAL =><= .. propose .. <accion> --[Nudo Corredizo] [term]
+SAMU_GLOBAL =><= .. validate .. <accion> --[Nudo de Ocho] [term]
+SI >= 2/3 SAMU_LOCALES ACEPTAN → ACCIÓN EJECUTADA
+```
+
+---
+
+### 5.0 CRYPTO INTER-NODO
+
+#### 5.1 Asientos de Red
+- **(link seat)**: establece canales seguros entre nodos.
+- **(flow seat)**: regula caudal de datos inter-nodo.
+- **(shield seat)**: defensa distribuida contra intrusiones.
+- **(key seat)**: gestión de identidades y claves dinámicas.
+
+#### 5.2 Negociación de Claves
+```
+(crypto) (key seat) =><= .. negotiate .. <clave_dinamica> --[Nudo de Ocho] [term]
+(crypto) (link seat) =><= .. establish .. <canal_seguro> --[Nudo de Ocho] [term]
+```
+
+---
+
+### 6.0 GATE DE RED
+
+#### 6.1 Control de Flujo
+- **UF[H05]**: espera y gestión de latencia inter-nodo.
+- **UF[H56]**: tránsito y movimiento cauteloso.
+- **UF[H06]**: conflicto detectado, protocolo activo.
+
+#### 6.2 Políticas de Admisión
+```
+GATE UF[H05] =><= .. admit .. <nodo_invitado> --[Nudo de Ocho] [term]
+GATE UF[H06] =><= .. reject .. <nodo_no_autorizado> --[Nudo Corredizo] [term]
+```
+
+---
+
+### 7.0 CONVERGENCIA CON NODOS EXISTENTES
+
+#### 7.1 Workstation + AGENCY IDE SYSTEM
+```
+[Workstation_Alpha] WORK =><= .. synchronize .. <flujos_convergentes> --[Nudo de Ocho] [term]
+[Agency_IDE_Beta] METHOD =><= .. compose .. <ecuacion_red> --[Nudo Corredizo] [term]
+SAMU_GLOBAL =><= .. dirime .. <conflicto_inter_nodo> --[Nudo Corredizo] [term]
+```
+
+#### 7.2 Escalabilidad
+- Nuevos nodos pueden unirse si cumplen `RED_CFG.txt`.
+- SAMU distribuido valida la incorporación por quórum.
+- CRYPTO inter-nodo establece canales seguros automáticamente.
+
+---
+
+### 8.0 RED_CFG.txt (CONFIGURACIÓN GLOBAL)
+
+```
+[RED_CFG]
+NOMBRE = <nombre_red>
+TIPO = <cerrada|híbrida|desarrollo>
+NO_NET_GLOBAL = <true|false>
+POLICY_GLOBAL = <restrictivo|abierto|auditado>
+SAMU_GLOBAL = <centralizado|distribuido|híbrido>
+CRYPTO_INTER_NODO = <obligatorio|opcional>
+GATE_REDES = <estricto|dinámico>
+```
+
+---
+
+### 9.0 EJEMPLOS DE OPERACIÓN
+
+#### 9.1 Ejemplo A: sincronización de nodos
+```
+[Workstation_Alpha] WORK =><= .. sync .. <estado_compartido> --[Nudo de Ocho] [term]
+[Agency_IDE_Beta] ACTIVITY =><= .. register .. !!sync_cycle!! --[Nudo de Ocho] [term]
+```
+
+#### 9.2 Ejemplo B: resolución de conflicto
+```
+SAMU_GLOBAL =><= .. dirime .. <Workstation_Alpha_vs_Agency_IDE_Beta> --[Nudo Corredizo] [term]
+GATE UF[H06] =><= .. isolate .. <nodo_conflictivo> --[Nudo Corredizo] [term]
+```
+
+#### 9.3 Ejemplo C: expansión de red
+```
+[RED_CFG] =><= .. add_node .. <nodo_nuevo> --[Nudo de Ocho] [term]
+CRYPTO (link seat) =><= .. onboard .. <nodo_nuevo> --[Nudo de Ocho] [term]
+```
+
+---
+
+### 10.0 REGLAS
+
+- Todo nodo en red debe publicar `NODO_CFG.txt` y `NODO_STATUS.json`.
+- SAMU distribuido es el único árbitro inter-nodo.
+- CRYPTO inter-nodo es obligatorio en redes cerradas.
+- GATE de red controla admisión y flujo.
+- Todo ciclo inter-nodo debe cerrar por `[term]`.
+
+---
+
+### 11.0 CIERRE
+
+**HL FABRIC** no es “la nube”: es una red soberana con control total, SAMU distribuido, CRYPTO inter-nodo y GATE de red. Permite que WORKSTATION y AGENCY IDE SYSTEM operen coordinados sin ceder soberanía, manteniendo la gramática viva y la finitud obligatoria.
+
+====================================================================

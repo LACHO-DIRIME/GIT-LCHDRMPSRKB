@@ -1,0 +1,112 @@
+//[MANAGEMENT].lacho · UNICODE CIRCUIT{DRIP}
+//CIDE · editor de circuitos soberanos · ELPULSAR IDE integrado
+//nivel ALTO→INTERMEDIO · (!!ACTIVITY!!) · [rabbit-faith] fundamento
+//circuito: flujo verificable TRUST→STACKING · [event] cierra el clic
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ CIDE · CIRCUIT IDE ════════════════════════════════════════
+UNICODE: CIDE            //Circuit IDE · editor soberano · MIMEtype elpulsar-circuit
+UNICODE: CIDE .. LACHO ..         //"MICRO" contexto LACHO · sentencia como nodo de circuito
+UNICODE: CIDE#SPEC_LACHO          //"MICRO" circuito interno · bibliotecas · nudos · nodos
+UNICODE: CIDE#SPEC_DIRIME         //"MACRO" circuito THEATER · escenas · pipeline completo
+UNICODE: CIDE#SPEC_KALIL          //circuito KALIL · 6 nodos económicos · dual exterior/interior
+UNICODE: CIDE#SPEC_ELPULSAR       //circuito ELPULSAR · greens pipeline · MU→KU→WU→空
+
+// ══ TOPOLOGÍA DE CIRCUITO ═════════════════════════════════════
+// Un circuito LACHO = TRUST → GATE → WORK → STACKING
+// El =><= es el conductor · sin él SHORT-CIRCUIT · parser falla
+// [event] es el clic que cierra el circuito entre TRUST y STACKING
+// [rabbit-faith] es la fe que sostiene el circuito bajo incertidumbre
+
+UNICODE: CIR_OPEN        //circuito abierto · H64 未濟 · before_the_end · →空
+UNICODE: CIR_CLOSED      //circuito cerrado · [term] :: activo · sellado · WU
+UNICODE: CIR_SHORT       //short-circuit · =><= ausente · parser falla · RED-REGRET
+UNICODE: CIR_MINIMAL     //circuito mínimo viable · TRUST→=><= →STACKING · core completo
+UNICODE: CIR_EVENT       //[event] · clic que cierra el circuito · condición de parada
+UNICODE: CIR_CONDUCTOR   //=><= · conductor soberano · Regla 1 grammar.py · obligatorio
+UNICODE: CIR_NODE        //nodo del circuito · biblioteca activa · sujeto operativo
+UNICODE: CIR_EDGE        //arista del circuito · =><= · verbo · nudo
+UNICODE: CIR_GROUND      //[foundation] · tierra del circuito · base inamovible
+
+// ══ {DRIP} COMO CIRCUITO CALIBRADO ═══════════════════════════
+// {drip} SOCIAL · H29 agua · H57 viento · goteo preciso
+// TAP&DRIP = canilla abierta con dosificación exacta
+// GRADIENT_OPTIMIZER ∇ = dirección de menor esfuerzo
+// No es flujo pleno · es flujo MEDIDO · cada gota cuenta
+
+UNICODE: DRIP_TAP        //canilla · TAP&DRIP · fuente del goteo · recurso raíz
+UNICODE: DRIP_FLOW       //flujo calibrado · no pleno · dosificado · H29
+UNICODE: DRIP_RATE       //ratio gotas/ciclo · Scalar S determina cadencia
+UNICODE: DRIP_GRAD       //∇ en la gota · dirección menor esfuerzo · optimización
+UNICODE: DRIP_DETECT     //DETECCIÓN · recurso escaso identificado · .blue KU
+UNICODE: DRIP_CALIB      //CALIBRACIÓN · ajuste preciso del flujo · METHOD
+UNICODE: DRIP_EMIT       //GOTEO · liberación controlada · WU emitido
+UNICODE: DRIP_MONITOR    //MONITOREO · seguimiento eficiencia · SAMU @ $mon
+UNICODE: DRIP_OPTIM      //OPTIMIZACIÓN · gradiente ∇ · ajuste automático
+UNICODE: DRIP_SCARCITY   //SCARCITY_MONITOR · alerta escasez · GATE UF[H05]
+UNICODE: DRIP_CHANNEL    //CHANNEL_DRIP · canal de goteo continuo · {headcat}→{drip}
+
+// ══ RABBIT-FAITH · MOTOR DEL CIRCUITO ═════════════════════════
+// RABBIT-FAITH = fe sin fundamento absoluto · coherencia interna basta
+// Algoritmo Conejo: 2→4→8→... ramificación controlada
+// Nodos-Ω = ojos-huevo · semillas · aguardan eclosión Ψ≥0.85
+// RABBIT-EYES-EGG + TAP&DRIP = recursos calibrados para expansión
+
+UNICODE: RF_FAITH        //[rabbit-faith] · fe en coherencia del ciclo · TRUST
+UNICODE: RF_NODE_OMEGA   //Nodo-Ω · ojo-huevo · semilla · Ψ≥0.85 para eclosión
+UNICODE: RF_BRANCH       //ramificación · 2→4→8 · crecimiento controlado
+UNICODE: RF_SATURATE     //saturación · 256 pelos · {masking} se activa · poda
+UNICODE: RF_STREAM       //distribución {streaming} · H30 fuego · multiplicación
+UNICODE: RF_PRUNE        //poda · delta-Ψ≤0 → máscara permanente · RED-REGRET
+UNICODE: RF_RENEW        //renovación · ciclo recomienza · SAMU @ $wed firmó
+UNICODE: RF_CRISIS       //[rabbit-faith] en crisis · Scalar S > 0.5 · habilitar
+
+// ══ IME · ICONOS CIRCUITO ═════════════════════════════════════
+UNICODE: IME{MASKING}%PYTHON%RUST%GOLANG%JS%HTML%YAML%XML
+                         //máscaras de lenguaje · {masking} activo · sandbox soberano
+UNICODE: IME{MASKING}    //MASKING-FOLDER ICON · carpeta enmascarada · sandbox activo
+UNICODE: IME{NOTE}       //NOTEPAPER ICON · SAMU @ registro · .pdf output sellado
+UNICODE: IME[TERM]       //FLYBOT ICON · {launch-bot} · WORK lanzamiento · [term] activo
+UNICODE: IME@HUMAN       //HEADCAT ICON · operador humano · SOCIAL {headcat} · clasifica
+UNICODE: IME{DRIP}       //TAP&DRIP ICON · canilla+gota · H29 · recurso calibrado
+UNICODE: IME{RABBIT}     //RABBIT-EYES-EGG ICON · Nodo-Ω · ramificación · expansión
+UNICODE: IME{CIRCUIT}    //CIDE ICON · circuito soberano · =><= conductor activo
+UNICODE: IME{STREAM}     //STREAMING ICON · H30 fuego · multiplicación · {streaming}
+UNICODE: IME[EVENT]      //EVENT ICON · clic cierra circuito · TRUST↔STACKING sellado
+
+// ══ TOOLCHAIN · PIPELINE DEL CIRCUITO ═════════════════════════
+// METHOD describe · TOOLCHAIN construye · CRYPTO atesta · STACKING cristaliza
+// source → IR → binario bajo sandbox {masking folder}
+
+UNICODE: TC_SOURCE       //source · texto natural KU · Blue-Words · entrada
+UNICODE: TC_IR           //IR · sentencia LACHO intermedia · grammar.validate()
+UNICODE: TC_BINARY       //binario · WU verificado · ledger.record() · TX++
+UNICODE: TC_SANDBOX      //sandbox · {masking folder} · ejecución sin riesgo
+UNICODE: TC_ATTEST       //CRYPTO atesta · (key seat) firma · [Nudo de Ocho]
+UNICODE: TC_CRYSTAL      //STACKING cristaliza · WU sellado · HL FABRIC inmutable
+UNICODE: TC_PIPELINE     //pipeline completo · TC_SOURCE→IR→BINARY→CRYSTAL
+
+// ══ ESTADOS DEL CIRCUITO ═════════════════════════════════════
+UNICODE: CIR_MU          //circuito MU · 空 · campos vacíos · espera · 聽
+UNICODE: CIR_KU          //circuito KU · .blue · conductor activo · procesando
+UNICODE: CIR_WU          //circuito WU · .green · cerrado · [term] activo
+UNICODE: CIR_BREACH      //circuito comprometido · DOORMAN_BREACH · {brake}
+UNICODE: CIR_REGRET      //circuito RED-REGRET · delta-Ψ≤0 · SHORT-CIRCUIT
+
+// ══ GRAMÁTICA VIVA · CIRCUITOS ════════════════════════════════
+//WORK {actuator} =><= .. ejecuta .. circuit_cide_pipeline_soberano --[As de Guía] [term]
+//METHOD <operator_flow> =><= .. modela .. circuit_toolchain_source_ir_binary --[Ball] [term]
+//SOCIAL {drip} =><= .. calibra .. circuit_tap_drip_goteo_H29 --[As de Guía] [term]
+//TRUST [rabbit-faith] =><= .. sostiene .. circuit_fe_coherencia_interna --[NdO] [term]
+//STACKING UF[H52] =><= .. cristaliza .. circuit_event_clic_cierra --[Nudo de Ocho] [term]
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+WORK {actuator} =><= .. ejecuta .. unicode_circuit_drip_cide_pipeline --[As de Guía] [term]
+TRUST [rabbit-faith] =><= .. sostiene .. unicode_circuit_fe_sin_absoluto --[Nudo de Ocho] [term]
+SOCIAL {drip} =><= .. calibra .. unicode_circuit_tap_drip_H29_goteo --[As de Guía] [term]
+METHOD <operator_flow> =><= .. modela .. unicode_circuit_toolchain_pipeline --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_circuit_drip_wu_sellado --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. unicode_circuit_drip_v2_soberano --[Ballestrinque] [term]
+
+//DIR(+) UNICODE_CIRCUIT_DRIP · V2 · CIDE+DRIP+RABBIT+TOOLCHAIN · circuito soberano completo

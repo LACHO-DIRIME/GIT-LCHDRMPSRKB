@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BALLPAPER · ÍNDICE MAESTRO · UNICODE CHINA</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;700;900&family=Share+Tech+Mono&family=Cinzel:wght@400;700;900&display=swap');
+:root{
+  --ink:#08090e; --bg:#f2ece0; --bg2:#e8e0d0; --bg3:#ddd5c0;
+  --gold:#7a4e10; --gold-mid:#a8722a; --gold-dim:#c8a060;
+  --red:#9a1a1a; --jade:#145a38; --jade-mid:#1e8050; --jade-dim:#48b880;
+  --sep:#c0b098; --smoke:#5c5040; --blue:#1a3a7a; --blue-dim:#4060a8;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:'Share Tech Mono',monospace;font-size:12px;line-height:1.65;}
+body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 28px,rgba(120,90,40,.04) 28px,rgba(120,90,40,.04) 29px);pointer-events:none;z-index:0;}
+.page{max-width:1360px;margin:0 auto;padding:48px 32px;position:relative;z-index:1;}
+
+/* MASTHEAD */
+.mast{border-top:4px double var(--gold);border-bottom:1px solid var(--gold-dim);padding:28px 0 20px;margin-bottom:44px;display:grid;grid-template-columns:1fr auto;gap:32px;align-items:end;}
+.m-eye{font-size:9px;letter-spacing:5px;color:var(--gold-mid);text-transform:uppercase;margin-bottom:6px;}
+.m-title{font-family:'Cinzel',serif;font-size:36px;font-weight:900;color:var(--gold);letter-spacing:3px;line-height:1;}
+.m-sub{font-size:11px;color:var(--smoke);margin-top:8px;letter-spacing:2px;}
+.m-zh{font-family:'Noto Serif SC',serif;text-align:right;}
+.m-big{font-size:60px;color:var(--red);line-height:1;letter-spacing:6px;}
+.m-small{font-size:11px;color:var(--gold-mid);letter-spacing:3px;margin-top:4px;}
+
+/* METRICS */
+.metrics{display:grid;grid-template-columns:repeat(8,1fr);gap:1px;background:var(--sep);border:1px solid var(--sep);margin-bottom:40px;}
+.met{background:var(--bg);padding:16px 8px;text-align:center;}
+.met-v{font-family:'Cinzel',serif;font-size:20px;font-weight:900;display:block;color:var(--ink);}
+.met-l{font-size:7px;letter-spacing:2px;color:var(--smoke);text-transform:uppercase;margin-top:2px;display:block;}
+
+/* CARDS DE BALLPAPER */
+.bp-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border:2px solid var(--ink);margin-bottom:40px;}
+.bp-card{padding:24px 18px;border-right:1px solid var(--sep);cursor:pointer;transition:background .15s;text-decoration:none;color:inherit;display:block;}
+.bp-card:last-child{border-right:none;}
+.bp-card:hover{background:var(--bg2);}
+.bp-card.bp1{border-top:4px solid var(--gold-mid);}
+.bp-card.bp2{border-top:4px solid var(--ink);}
+.bp-card.bp3{border-top:4px solid var(--jade-mid);}
+.bp-card.bp4{border-top:4px solid var(--red);}
+.bp-card.bp5{border-top:4px solid var(--gold-dim);}
+.bpc-n{font-family:'Cinzel',serif;font-size:44px;font-weight:900;opacity:.08;line-height:1;margin-bottom:6px;}
+.bpc-tag{font-size:7px;letter-spacing:3px;text-transform:uppercase;margin-bottom:6px;}
+.bp1 .bpc-tag{color:var(--gold-mid);}
+.bp2 .bpc-tag{color:var(--smoke);}
+.bp3 .bpc-tag{color:var(--jade-mid);}
+.bp4 .bpc-tag{color:var(--red);}
+.bp5 .bpc-tag{color:var(--gold-dim);}
+.bpc-title{font-family:'Cinzel',serif;font-size:13px;font-weight:900;letter-spacing:1px;margin-bottom:8px;}
+.bpc-desc{font-size:9px;line-height:1.8;color:var(--smoke);}
+.bpc-zh{font-family:'Noto Serif SC',serif;font-size:24px;color:var(--red);opacity:.3;display:block;margin-top:10px;}
+
+/* SEC */
+.slabel{font-size:9px;letter-spacing:5px;text-transform:uppercase;color:var(--smoke);border-bottom:1px solid var(--sep);padding-bottom:6px;margin-bottom:20px;margin-top:36px;}
+
+/* CEO ALPHA JSON LIVE */
+.json-grid{display:grid;grid-template-columns:repeat(8,1fr);gap:3px;margin-bottom:20px;}
+.jc{background:var(--bg2);border:1px solid var(--sep);padding:10px 8px;text-align:center;cursor:default;transition:background .12s;}
+.jc:hover{background:white;border-color:var(--gold-mid);}
+.jc-zh{font-family:'Noto Serif SC',serif;font-size:16px;color:var(--red);display:block;line-height:1;margin-bottom:2px;}
+.jc-n{font-size:7px;color:var(--smoke);display:block;}
+.jc-lib{font-size:6px;color:var(--jade-mid);display:block;letter-spacing:1px;margin-top:2px;}
+.jc-verb{font-size:7px;color:var(--gold-mid);display:block;}
+.jc.act{background:#e8f5f0;border-color:var(--jade-dim);}
+.jc.act .jc-n{color:var(--jade);font-weight:700;}
+
+/* COHERENCIA TABLE */
+.ctable{width:100%;border-collapse:collapse;font-size:11px;margin-bottom:20px;}
+.ctable th{font-family:'Cinzel',serif;font-size:8px;letter-spacing:2px;color:var(--gold-mid);text-align:left;padding:7px 10px;border-bottom:1px solid var(--sep);background:var(--bg3);text-transform:uppercase;}
+.ctable td{padding:8px 10px;border-bottom:1px solid rgba(192,176,152,.35);vertical-align:middle;}
+.ctable tr:hover td{background:rgba(192,176,152,.15);}
+.td-zh{font-family:'Noto Serif SC',serif;font-size:20px;color:var(--red);min-width:38px;}
+.td-pin{color:var(--gold-mid);font-size:9px;}
+.td-lacho{color:var(--jade);}
+.td-hex{font-family:'Noto Serif SC',serif;color:var(--red);font-size:13px;}
+.td-verb{color:var(--jade-mid);font-size:9px;}
+.td-com{color:var(--smoke);font-size:10px;}
+.td-bp{font-size:8px;}
+.bp-pill{display:inline-block;padding:2px 7px;border:1px solid;font-size:8px;letter-spacing:1px;margin:1px;}
+.pill-1{color:var(--gold-mid);border-color:var(--gold-mid);}
+.pill-2{color:var(--smoke);border-color:var(--smoke);}
+.pill-3{color:var(--jade-mid);border-color:var(--jade-mid);}
+.pill-4{color:var(--red);border-color:var(--red);}
+.pill-5{color:var(--gold-dim);border-color:var(--gold-dim);}
+
+/* FLUJO TOTAL */
+.flujo{display:grid;grid-template-columns:repeat(9,1fr);gap:0;border:1px solid var(--sep);margin-bottom:20px;}
+.fl-node{padding:16px 10px;text-align:center;border-right:1px solid var(--sep);}
+.fl-node:last-child{border-right:none;}
+.fl-node.on{background:var(--ink);color:var(--bg);}
+.fl-node.pend{opacity:.5;}
+.fn-zh{font-family:'Noto Serif SC',serif;font-size:18px;display:block;margin-bottom:3px;}
+.fl-node.on .fn-zh{color:var(--gold-dim);}
+.fn-es{font-size:8px;letter-spacing:1px;text-transform:uppercase;}
+.fl-node.on .fn-es{color:rgba(255,255,255,.5);}
+.fl-node.pend .fn-es{color:var(--smoke);}
+
+/* ASPIR COMERCIALES */
+.asp-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:20px;}
+.asp-card{background:var(--bg2);border:1px solid var(--sep);padding:16px;border-left:4px solid;}
+.ac-notaria{border-left-color:var(--gold-mid);}
+.ac-custodia{border-left-color:var(--blue-dim);}
+.ac-memec{border-left-color:var(--red);}
+.ac-barrios{border-left-color:var(--jade-mid);}
+.ac-nora{border-left-color:var(--smoke);}
+.ac-kalil{border-left-color:var(--gold-dim);}
+.ac-lbl{font-size:8px;letter-spacing:3px;text-transform:uppercase;color:var(--smoke);margin-bottom:6px;}
+.ac-name{font-family:'Cinzel',serif;font-size:13px;font-weight:900;margin-bottom:4px;}
+.ac-zh{font-family:'Noto Serif SC',serif;font-size:20px;color:var(--red);float:right;opacity:.35;}
+.ac-desc{font-size:9px;line-height:1.8;color:var(--smoke);margin-bottom:8px;}
+.ac-token{font-size:9px;color:var(--jade-mid);}
+.ac-status{font-size:8px;padding:2px 7px;border:1px solid;display:inline-block;margin-top:6px;}
+.s-pend{color:var(--gold-mid);border-color:var(--gold-mid);}
+.s-next{color:var(--blue-dim);border-color:var(--blue-dim);}
+.s-f2{color:var(--smoke);border-color:var(--smoke);}
+
+/* SEMANA SPRINT */
+.sprint{background:var(--ink);color:var(--bg);padding:28px 32px;margin-bottom:20px;}
+.sp-title{font-family:'Cinzel',serif;font-size:10px;letter-spacing:5px;color:var(--gold-dim);margin-bottom:20px;text-transform:uppercase;}
+.sp-grid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:0;}
+.sp-day{padding:0 16px;border-right:1px solid rgba(255,255,255,.08);}
+.sp-day:first-child{padding-left:0;}
+.sp-day:last-child{border-right:none;}
+.sp-day-n{font-family:'Cinzel',serif;font-size:28px;opacity:.12;line-height:1;margin-bottom:4px;}
+.sp-day-t{font-size:8px;letter-spacing:3px;color:var(--gold-dim);margin-bottom:10px;text-transform:uppercase;}
+.sp-item{font-size:9px;line-height:2.3;border-bottom:1px solid rgba(255,255,255,.06);padding:2px 0;}
+.sp-item .si-tag{color:var(--gold-dim);font-size:8px;margin-left:4px;}
+.sp-item.hot{color:var(--jade-dim);}
+.sp-item.warm{color:rgba(255,255,255,.7);}
+.sp-item.cool{color:rgba(255,255,255,.35);}
+
+/* FOOTER */
+.footer{border-top:3px double var(--gold);padding-top:20px;margin-top:40px;display:flex;justify-content:space-between;align-items:center;font-size:10px;color:var(--smoke);}
+.f-zh{font-family:'Noto Serif SC',serif;font-size:16px;color:var(--gold-mid);}
+.seals{display:flex;gap:10px;}
+.seal{font-family:'Noto Serif SC',serif;border:2px solid var(--red);color:var(--red);padding:4px 10px;font-size:18px;font-weight:900;display:inline-block;}
+.seal:nth-child(1){transform:rotate(-5deg);}
+.seal:nth-child(2){transform:rotate(3deg);}
+.seal:nth-child(3){transform:rotate(-2deg);}
+
+@keyframes fadein{from{opacity:0;transform:translateY(4px);}to{opacity:1;transform:translateY(0);}}
+.bp-card,.asp-card{animation:fadein .35s ease both;}
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- MASTHEAD -->
+<div class="mast">
+  <div>
+    <div class="m-eye">BALLPAPER · ÍNDICE MAESTRO · 5 DASHBOARDS · UNICODE CHINA SOBERANO</div>
+    <div class="m-title">BALLPAPER</div>
+    <div class="m-sub">Núcleo de programación Unicode · coherencia lógica LACHO → KALIL · aspiraciones comerciales · labor diaria</div>
+  </div>
+  <div class="m-zh">
+    <div class="m-big">字 卦 经</div>
+    <div class="m-small">IDEOGRAMA · HEXAGRAMA · ECONOMÍA</div>
+  </div>
+</div>
+
+<!-- MÉTRICAS -->
+<div class="metrics">
+  <div class="met"><span class="met-v">1012</span><span class="met-l">TX Ledger</span></div>
+  <div class="met"><span class="met-v">40</span><span class="met-l">Cristales</span></div>
+  <div class="met"><span class="met-v">0.844</span><span class="met-l">Scalar S</span></div>
+  <div class="met"><span class="met-v">197</span><span class="met-l">Corpus</span></div>
+  <div class="met"><span class="met-v">25/25</span><span class="met-l">Tests</span></div>
+  <div class="met"><span class="met-v">20</span><span class="met-l">Tokens ZH</span></div>
+  <div class="met"><span class="met-v">33</span><span class="met-l">Hex activos</span></div>
+  <div class="met"><span class="met-v">0.2.1</span><span class="met-l">Versión</span></div>
+</div>
+
+<!-- MAPA DE LOS 5 DASHBOARDS -->
+<div class="slabel">▸ los 5 dashboards ballpaper unicode china · abrir en browser</div>
+<div class="bp-grid">
+  <a class="bp-card bp1" href="BP1_NUCLEO_UNICODE.html" target="_blank">
+    <div class="bpc-n">1</div>
+    <div class="bpc-tag">Núcleo</div>
+    <div class="bpc-title">UNICODE × LACHO<br>COHERENCIA</div>
+    <div class="bpc-desc">Mapa completo 20 tokens ideogramáticos → LACHO → hexagrama → nodo KALIL. Cadena de programación Unicode. Estado activo/pendiente por token.</div>
+    <span class="bpc-zh">核心</span>
+  </a>
+  <a class="bp-card bp2" href="BP2_CEO_ALPHA.html" target="_blank">
+    <div class="bpc-n">2</div>
+    <div class="bpc-tag">Jerarquía</div>
+    <div class="bpc-title">CEO ALPHA<br>UNICODE CHINA</div>
+    <div class="bpc-desc">3 niveles · 67 roles · 64 hexagramas I Ching. Cada rol con token Unicode chino, sentencia LACHO canónica y Scalar S umbral mínimo.</div>
+    <span class="bpc-zh">将领</span>
+  </a>
+  <a class="bp-card bp3" href="BP3_LACHO_KALIL_LABOR.html" target="_blank">
+    <div class="bpc-n">3</div>
+    <div class="bpc-tag">Labor diaria</div>
+    <div class="bpc-title">LACHO → KALIL<br>LO QUE FALTA</div>
+    <div class="bpc-desc">Ruta de 5 etapas. Dominios económicos: NOTARÍA, CUSTODIA, MEMECOINS. Backlog 13 tareas priorizadas. Prompt de arranque listo.</div>
+    <span class="bpc-zh">路径</span>
+  </a>
+  <a class="bp-card bp4" href="BP4_CHINA_DUAL.html" target="_blank">
+    <div class="bpc-n">4</div>
+    <div class="bpc-tag">Estrategia</div>
+    <div class="bpc-title">CHINA DUAL<br>PINTARSE</div>
+    <div class="bpc-desc">Exterior (crypto/Web3/diáspora) ↔ Puente ↔ Interior (e-CNY/WeChat/BSN). 6 nodos KALIL duales. Restricciones como protocolos LACHO.</div>
+    <span class="bpc-zh">双面</span>
+  </a>
+  <a class="bp-card bp5" href="BP5_IMAGEN_MENU.html" target="_blank">
+    <div class="bpc-n">5</div>
+    <div class="bpc-tag">Mapa total</div>
+    <div class="bpc-title">IMAGEN<br>GIGANTESCA</div>
+    <div class="bpc-desc">15 posibilidades reales. Memoria pequeña 6 principios. Suite soberana estado. Mapa 64 hexagramas. Roadmap 4 fases. Menú de sesión.</div>
+    <span class="bpc-zh">全图</span>
+  </a>
+</div>
+
+<!-- CEO ALPHA H64 JSON — MAPA VIVO -->
+<div class="slabel">▸ CEO alpha H64.json — mapa vivo · 33 hexagramas operativos del sistema</div>
+<div class="json-grid">
+  <div class="jc act"><span class="jc-zh">乾</span><span class="jc-n">H01</span><span class="jc-lib">ACTIVITY</span><span class="jc-verb">inicia</span></div>
+  <div class="jc"><span class="jc-zh">坤</span><span class="jc-n">H02</span><span class="jc-lib">TRUST</span><span class="jc-verb">sostiene</span></div>
+  <div class="jc"><span class="jc-zh">屯</span><span class="jc-n">H03</span><span class="jc-lib">GATE</span><span class="jc-verb">bloquea</span></div>
+  <div class="jc"><span class="jc-zh">蒙</span><span class="jc-n">H04</span><span class="jc-lib">METHOD</span><span class="jc-verb">modela</span></div>
+  <div class="jc act"><span class="jc-zh">需</span><span class="jc-n">H05</span><span class="jc-lib">GATE ✓</span><span class="jc-verb">contiene</span></div>
+  <div class="jc act"><span class="jc-zh">訟</span><span class="jc-n">H06</span><span class="jc-lib">GATE ✓</span><span class="jc-verb">filtra</span></div>
+  <div class="jc"><span class="jc-zh">師</span><span class="jc-n">H07</span><span class="jc-lib">SOCIAL</span><span class="jc-verb">planifica</span></div>
+  <div class="jc"><span class="jc-zh">比</span><span class="jc-n">H08</span><span class="jc-lib">CRYPTO</span><span class="jc-verb">valida</span></div>
+  <div class="jc"><span class="jc-zh">泰</span><span class="jc-n">H11</span><span class="jc-lib">ACTIVITY</span><span class="jc-verb">penetra</span></div>
+  <div class="jc"><span class="jc-zh">否</span><span class="jc-n">H12</span><span class="jc-lib">GATE</span><span class="jc-verb">bloquea</span></div>
+  <div class="jc"><span class="jc-zh">同人</span><span class="jc-n">H13</span><span class="jc-lib">SOCIAL</span><span class="jc-verb">conecta</span></div>
+  <div class="jc"><span class="jc-zh">大有</span><span class="jc-n">H14</span><span class="jc-lib">CRYPTO</span><span class="jc-verb">protege</span></div>
+  <div class="jc"><span class="jc-zh">謙</span><span class="jc-n">H15</span><span class="jc-lib">SAMU</span><span class="jc-verb">evalúa</span></div>
+  <div class="jc"><span class="jc-zh">豫</span><span class="jc-n">H16</span><span class="jc-lib">SAMU</span><span class="jc-verb">activa</span></div>
+  <div class="jc"><span class="jc-zh">噬嗑</span><span class="jc-n">H21</span><span class="jc-lib">SAMU</span><span class="jc-verb">dirime</span></div>
+  <div class="jc"><span class="jc-zh">賁</span><span class="jc-n">H22</span><span class="jc-lib">WORK</span><span class="jc-verb">activa</span></div>
+  <div class="jc"><span class="jc-zh">剝</span><span class="jc-n">H23</span><span class="jc-lib">STACKING</span><span class="jc-verb">consolida</span></div>
+  <div class="jc"><span class="jc-zh">復</span><span class="jc-n">H24</span><span class="jc-lib">ACTIVITY</span><span class="jc-verb">inicia</span></div>
+  <div class="jc"><span class="jc-zh">大畜</span><span class="jc-n">H26</span><span class="jc-lib">STACKING</span><span class="jc-verb">apila</span></div>
+  <div class="jc"><span class="jc-zh">大過</span><span class="jc-n">H28</span><span class="jc-lib">GATE</span><span class="jc-verb">bloquea</span></div>
+  <div class="jc act"><span class="jc-zh">習坎</span><span class="jc-n">H29</span><span class="jc-lib">CRYPTO ✓</span><span class="jc-verb">audita</span></div>
+  <div class="jc act"><span class="jc-zh">離</span><span class="jc-n">H30</span><span class="jc-lib">ACTIVITY ✓</span><span class="jc-verb">emerge</span></div>
+  <div class="jc"><span class="jc-zh">恆</span><span class="jc-n">H32</span><span class="jc-lib">SAMU</span><span class="jc-verb">registra</span></div>
+  <div class="jc act"><span class="jc-zh">益</span><span class="jc-n">H42</span><span class="jc-lib">STACKING ✓</span><span class="jc-verb">apila</span></div>
+  <div class="jc"><span class="jc-zh">升</span><span class="jc-n">H46</span><span class="jc-lib">ACTIVITY</span><span class="jc-verb">emerge</span></div>
+  <div class="jc"><span class="jc-zh">困</span><span class="jc-n">H47</span><span class="jc-lib">GATE</span><span class="jc-verb">contiene</span></div>
+  <div class="jc act"><span class="jc-zh">井</span><span class="jc-n">H48</span><span class="jc-lib">STACKING ✓</span><span class="jc-verb">ancla</span></div>
+  <div class="jc act"><span class="jc-zh">震</span><span class="jc-n">H51</span><span class="jc-lib">ACTIVITY ✓</span><span class="jc-verb">inicia</span></div>
+  <div class="jc act"><span class="jc-zh">艮</span><span class="jc-n">H52</span><span class="jc-lib">STACKING ✓</span><span class="jc-verb">inmutab.</span></div>
+  <div class="jc act"><span class="jc-zh">旅</span><span class="jc-n">H56</span><span class="jc-lib">GATE ✓</span><span class="jc-verb">permite</span></div>
+  <div class="jc act"><span class="jc-zh">巽</span><span class="jc-n">H57</span><span class="jc-lib">ACTIVITY ✓</span><span class="jc-verb">penetra</span></div>
+  <div class="jc act"><span class="jc-zh">既濟</span><span class="jc-n">H63</span><span class="jc-lib">ACTIVITY ✓</span><span class="jc-verb">completa</span></div>
+  <div class="jc act"><span class="jc-zh">未濟</span><span class="jc-n">H64</span><span class="jc-lib">ACTIVITY ✓</span><span class="jc-verb">inicia</span></div>
+</div>
+
+<!-- TABLA COHERENCIA MAESTRA -->
+<div class="slabel">▸ coherencia maestra — 20 tokens unicode → lacho → hexagrama → dominio → dashboard</div>
+<div style="overflow-x:auto;">
+<table class="ctable">
+  <thead>
+    <tr>
+      <th>汉字</th><th>Pīnyīn</th><th>Token LACHO</th><th>Hex</th><th>Verbo</th>
+      <th>Nodo KALIL</th><th>Dominio</th><th>Dashboard</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="td-zh">信任</td><td class="td-pin">xìnrèn</td><td class="td-lacho">TRUST FOUNDATION</td><td class="td-hex">乾 H01</td><td class="td-verb">verifica</td><td class="td-com">BOLIVAR · KYC</td><td class="td-com">Confianza soberana</td><td class="td-bp"><span class="bp-pill pill-1">BP1</span><span class="bp-pill pill-2">BP2</span></td></tr>
+    <tr><td class="td-zh">关系</td><td class="td-pin">guānxi</td><td class="td-lacho">SOCIAL {relay}</td><td class="td-hex">比 H08</td><td class="td-verb">conecta</td><td class="td-com">BARRIOS · guanxi</td><td class="td-com">Red relaciones</td><td class="td-bp"><span class="bp-pill pill-1">BP1</span><span class="bp-pill pill-4">BP4</span></td></tr>
+    <tr><td class="td-zh">面子</td><td class="td-pin">miànzi</td><td class="td-lacho">SAMU scalar-S</td><td class="td-hex">謙 H15</td><td class="td-verb">evalúa</td><td class="td-com">NORA · score</td><td class="td-com">Reputación digital</td><td class="td-bp"><span class="bp-pill pill-1">BP1</span><span class="bp-pill pill-2">BP2</span><span class="bp-pill pill-4">BP4</span></td></tr>
+    <tr><td class="td-zh">资本</td><td class="td-pin">zīběn</td><td class="td-lacho">STACKING UF[H48]</td><td class="td-hex">井 H48</td><td class="td-verb">apila</td><td class="td-com">CARILO · capital</td><td class="td-com">Capital · loans</td><td class="td-bp"><span class="bp-pill pill-1">BP1</span><span class="bp-pill pill-5">BP5</span></td></tr>
+    <tr><td class="td-zh">交易</td><td class="td-pin">jiāoyì</td><td class="td-lacho">WORK {actuator}</td><td class="td-hex">革 H49</td><td class="td-verb">ejecuta</td><td class="td-com">TANDIL · TX</td><td class="td-com">Transacción</td><td class="td-bp"><span class="bp-pill pill-1">BP1</span><span class="bp-pill pill-3">BP3</span></td></tr>
+    <tr><td class="td-zh">合同</td><td class="td-pin">hétong</td><td class="td-lacho">TRUST [term]</td><td class="td-hex">夬 H43</td><td class="td-verb">declara</td><td class="td-com">NOTARÍA</td><td class="td-com">Contrato soberano</td><td class="td-bp"><span class="bp-pill pill-3">BP3</span><span class="bp-pill pill-4">BP4</span></td></tr>
+    <tr><td class="td-zh">安全</td><td class="td-pin">ānquán</td><td class="td-lacho">CRYPTO (shield)</td><td class="td-hex">大有 H14</td><td class="td-verb">protege</td><td class="td-com">CUSTODIA</td><td class="td-com">Seguridad shield</td><td class="td-bp"><span class="bp-pill pill-1">BP1</span><span class="bp-pill pill-4">BP4</span></td></tr>
+    <tr><td class="td-zh">验证</td><td class="td-pin">yànzhèng</td><td class="td-lacho">TRUST FOUNDATION</td><td class="td-hex">中孚 H61</td><td class="td-verb">verifica</td><td class="td-com">BOLIVAR · KYC</td><td class="td-com">Verificación KYC</td><td class="td-bp"><span class="bp-pill pill-1">BP1</span><span class="bp-pill pill-2">BP2</span></td></tr>
+    <tr><td class="td-zh">数字</td><td class="td-pin">shùzì</td><td class="td-lacho">CRYPTO (spark)</td><td class="td-hex">離 H30</td><td class="td-verb">firma</td><td class="td-com">MEMECOINS</td><td class="td-com">Token digital</td><td class="td-bp"><span class="bp-pill pill-1">BP1</span><span class="bp-pill pill-3">BP3</span></td></tr>
+    <tr><td class="td-zh">货币</td><td class="td-pin">huòbì</td><td class="td-lacho">CRYPTO (flow)</td><td class="td-hex">兌 H58</td><td class="td-verb">valida</td><td class="td-com">e-CNY interior</td><td class="td-com">e-CNY · PBOC</td><td class="td-bp"><span class="bp-pill pill-4">BP4</span><span class="bp-pill pill-5">BP5</span></td></tr>
+    <tr><td class="td-zh">银行</td><td class="td-pin">yínháng</td><td class="td-lacho">KALIL BARRIOS</td><td class="td-hex">師 H07</td><td class="td-verb">planifica</td><td class="td-com">BARRIOS</td><td class="td-com">Banca soberana</td><td class="td-bp"><span class="bp-pill pill-3">BP3</span><span class="bp-pill pill-4">BP4</span></td></tr>
+    <tr><td class="td-zh">贷款</td><td class="td-pin">dàikuǎn</td><td class="td-lacho">METHOD &lt;equation&gt;</td><td class="td-hex">益 H42</td><td class="td-verb">calcula</td><td class="td-com">CARILO loans</td><td class="td-com">Préstamo soberano</td><td class="td-bp"><span class="bp-pill pill-3">BP3</span><span class="bp-pill pill-4">BP4</span></td></tr>
+    <tr><td class="td-zh">风险</td><td class="td-pin">fēngxiǎn</td><td class="td-lacho">GATE UF[H06]</td><td class="td-hex">訟 H06</td><td class="td-verb">filtra</td><td class="td-com">NORA · riesgo</td><td class="td-com">Riesgo · conflicto</td><td class="td-bp"><span class="bp-pill pill-1">BP1</span><span class="bp-pill pill-2">BP2</span></td></tr>
+    <tr><td class="td-zh">网络</td><td class="td-pin">wǎngluò</td><td class="td-lacho">HL FABRIC</td><td class="td-hex">比 H08</td><td class="td-verb">ancla</td><td class="td-com">HL FABRIC</td><td class="td-com">Red infraest.</td><td class="td-bp"><span class="bp-pill pill-4">BP4</span><span class="bp-pill pill-5">BP5</span></td></tr>
+    <tr><td class="td-zh">节点</td><td class="td-pin">jiédiǎn</td><td class="td-lacho">KALIL nodo</td><td class="td-hex">巽 H57</td><td class="td-verb">penetra</td><td class="td-com">KALIL kernel</td><td class="td-com">Nodo económico</td><td class="td-bp"><span class="bp-pill pill-3">BP3</span><span class="bp-pill pill-4">BP4</span></td></tr>
+    <tr><td class="td-zh">主权</td><td class="td-pin">zhǔquán</td><td class="td-lacho">TRUST [scope]</td><td class="td-hex">乾 H01</td><td class="td-verb">sostiene</td><td class="td-com">LACHO core</td><td class="td-com">Soberanía total</td><td class="td-bp"><span class="bp-pill pill-1">BP1</span><span class="bp-pill pill-2">BP2</span><span class="bp-pill pill-5">BP5</span></td></tr>
+    <tr><td class="td-zh">协议</td><td class="td-pin">xiéyì</td><td class="td-lacho">TRUST [management]</td><td class="td-hex">節 H60</td><td class="td-verb">autoriza</td><td class="td-com">LACHO proto.</td><td class="td-com">Protocolo acuerdo</td><td class="td-bp"><span class="bp-pill pill-1">BP1</span><span class="bp-pill pill-2">BP2</span></td></tr>
+    <tr><td class="td-zh">社区</td><td class="td-pin">shèqū</td><td class="td-lacho">SOCIAL {chair}</td><td class="td-hex">同人 H13</td><td class="td-verb">conecta</td><td class="td-com">BARRIOS</td><td class="td-com">Comunidad</td><td class="td-bp"><span class="bp-pill pill-1">BP1</span><span class="bp-pill pill-4">BP4</span></td></tr>
+    <tr><td class="td-zh">智能</td><td class="td-pin">zhìnéng</td><td class="td-lacho">KALIL kernel</td><td class="td-hex">鼎 H50</td><td class="td-verb">modela</td><td class="td-com">KALIL AI</td><td class="td-com">Inteligencia kernel</td><td class="td-bp"><span class="bp-pill pill-2">BP2</span><span class="bp-pill pill-3">BP3</span></td></tr>
+    <tr><td class="td-zh">桥梁</td><td class="td-pin">qiáoliáng</td><td class="td-lacho">PUENTES econ.</td><td class="td-hex">渙 H59</td><td class="td-verb">transmite</td><td class="td-com">PUENTE dual</td><td class="td-com">Puente EXT/INT</td><td class="td-bp"><span class="bp-pill pill-4">BP4</span><span class="bp-pill pill-5">BP5</span></td></tr>
+  </tbody>
+</table>
+</div>
+
+<!-- FLUJO TOTAL DEL SISTEMA -->
+<div class="slabel">▸ flujo total del sistema — de ideograma a economía soberana real</div>
+<div class="flujo">
+  <div class="fl-node on"><span class="fn-zh">字</span><span class="fn-es">Unicode<br>CJK</span></div>
+  <div class="fl-node on"><span class="fn-zh">信</span><span class="fn-es">Token<br>LACHO</span></div>
+  <div class="fl-node on"><span class="fn-zh">卦</span><span class="fn-es">Hexagrama<br>H01–H64</span></div>
+  <div class="fl-node on"><span class="fn-zh">句</span><span class="fn-es">Sentencia<br>Canónica</span></div>
+  <div class="fl-node on"><span class="fn-zh">审</span><span class="fn-es">SAMU<br>Audita</span></div>
+  <div class="fl-node on"><span class="fn-zh">晶</span><span class="fn-es">Cristal<br>Ledger</span></div>
+  <div class="fl-node pend"><span class="fn-zh">节</span><span class="fn-es">Nodo<br>KALIL</span></div>
+  <div class="fl-node pend"><span class="fn-zh">台</span><span class="fn-es">ELPULSAR<br>App</span></div>
+  <div class="fl-node pend"><span class="fn-zh">经</span><span class="fn-es">Economía<br>Soberana</span></div>
+</div>
+
+<!-- ASPIRACIONES COMERCIALES -->
+<div class="slabel">▸ aspiraciones comerciales — 6 dominios · estado actual · token unicode asociado</div>
+<div class="asp-grid">
+  <div class="asp-card ac-notaria"><span class="ac-zh">证</span><div class="ac-lbl">Dominio 1</div><div class="ac-name">NOTARÍA SOBERANA</div><div class="ac-desc">Notaría virtual + e-signature + contratos bilingües. Extended a servicios online globales. Compatible regulación china.</div><div class="ac-token">合同 H43 · TRUST [term] · BOLIVAR</div><span class="ac-status s-next">PRÓXIMO</span></div>
+  <div class="asp-card ac-custodia"><span class="ac-zh">保</span><div class="ac-lbl">Dominio 2</div><div class="ac-name">CUSTODIA DIGITAL</div><div class="ac-desc">Custodia activos digitales. Crypto exterior + e-CNY interior. BOLIVAR BSN-compatible. Shield soberano.</div><div class="ac-token">安全 H14 · CRYPTO (shield) · BOLIVAR</div><span class="ac-status s-next">PRÓXIMO</span></div>
+  <div class="asp-card ac-memec"><span class="ac-zh">币</span><div class="ac-lbl">Dominio 3</div><div class="ac-name">MEMECOINS SOBERANOS</div><div class="ac-desc">Tokens con características chinas. BSN-compatible NFTs regulados. LACHO-TOKEN como token soberano propio.</div><div class="ac-token">数字 H30 · CRYPTO (spark) · TANDIL</div><span class="ac-status s-next">PRÓXIMO</span></div>
+  <div class="asp-card ac-barrios"><span class="ac-zh">银</span><div class="ac-lbl">Dominio 4</div><div class="ac-name">BARRIOS BANCA</div><div class="ac-desc">Banca comunitaria soberana 140+ países. Diáspora china. Remesas crypto. Interior: e-CNY rural. KALIL kernel.</div><div class="ac-token">银行 H07 · SOCIAL {chair} · BARRIOS</div><span class="ac-status s-f2">FASE 1-2</span></div>
+  <div class="asp-card ac-nora"><span class="ac-zh">析</span><div class="ac-lbl">Dominio 5</div><div class="ac-name">NORA RATING</div><div class="ac-desc">Oracle de rating soberano. Compatible Sesame Credit chino. 面子 digital = NORA score. Nuevo estándar crédito.</div><div class="ac-token">面子 H15 · SAMU scalar-S · NORA</div><span class="ac-status s-f2">FASE 1-2</span></div>
+  <div class="asp-card ac-kalil"><span class="ac-zh">核</span><div class="ac-lbl">Dominio 6</div><div class="ac-name">KIT SOBERANO</div><div class="ac-desc">Empeños + trueque + crowdfunding + loans. Crypto/software/servicios/tokens/contratos. elpulsar.app + WeChat.</div><div class="ac-token">资本 H48 · STACKING · CARILO + CHALTEN</div><span class="ac-status s-f2">FASE 2-3</span></div>
+</div>
+
+<!-- SPRINT SEMANAL -->
+<div class="slabel">▸ sprint semanal — 4 bloques · labor diaria priorizada</div>
+<div class="sprint">
+  <div class="sp-title">Plan de trabajo soberano · semana en curso · LACHO → KALIL</div>
+  <div class="sp-grid">
+    <div class="sp-day">
+      <div class="sp-day-n">1</div>
+      <div class="sp-day-t">🔴 URGENTE</div>
+      <div class="sp-item hot">python3 main.py --stats <span class="si-tag">VERIFICAR</span></div>
+      <div class="sp-item hot">UNICODE-CHINA-TOKENS.txt <span class="si-tag">CORPUS</span></div>
+      <div class="sp-item hot">grammar.py is_chinese() <span class="si-tag">IMV</span></div>
+      <div class="sp-item hot">resolve_chinese_token() <span class="si-tag">IMV</span></div>
+      <div class="sp-item warm">pytest 25/25 confirmar <span class="si-tag">TEST</span></div>
+    </div>
+    <div class="sp-day">
+      <div class="sp-day-n">2</div>
+      <div class="sp-day-t">🟡 CAPA B</div>
+      <div class="sp-item warm">rag.py THEATER+AGENTS <span class="si-tag">RAG</span></div>
+      <div class="sp-item warm">GATE H03→H05→H56 <span class="si-tag">GRAMMAR</span></div>
+      <div class="sp-item warm">TAXONOMY clasificador <span class="si-tag">GRAMMAR</span></div>
+      <div class="sp-item warm">CEO_ALPHA en IMV <span class="si-tag">SISTEMA</span></div>
+      <div class="sp-item warm">ELPULSAR dashboard <span class="si-tag">UI</span></div>
+    </div>
+    <div class="sp-day">
+      <div class="sp-day-n">3</div>
+      <div class="sp-day-t">🟢 KALIL NODOS</div>
+      <div class="sp-item warm">BARRIOS sentencias <span class="si-tag">KALIL</span></div>
+      <div class="sp-item warm">NORA rating método <span class="si-tag">KALIL</span></div>
+      <div class="sp-item cool">CARILO equation <span class="si-tag">KALIL</span></div>
+      <div class="sp-item cool">FLYBOT cloud_agent <span class="si-tag">AGENT</span></div>
+      <div class="sp-item cool">github_sync.sh auto <span class="si-tag">TOOLS</span></div>
+    </div>
+    <div class="sp-day">
+      <div class="sp-day-n">4</div>
+      <div class="sp-day-t">⚪ HORIZONTE</div>
+      <div class="sp-item cool">elpulsar.app dominio <span class="si-tag">WEB</span></div>
+      <div class="sp-item cool">WeChat mini-prog <span class="si-tag">CHINA</span></div>
+      <div class="sp-item cool">e-CNY wallet test <span class="si-tag">CHINA</span></div>
+      <div class="sp-item cool">BSN testnet BOLIVAR <span class="si-tag">CHAIN</span></div>
+      <div class="sp-item cool">PC nueva · Capa C <span class="si-tag">HW</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div>BALLPAPER ÍNDICE MAESTRO · LACHO · DIRIME · ELPULSAR · KALIL · CHCL · [term] :: activo · [seal of secrecy] :: activo<br>SAMU #set =&gt;&lt;= cierra sesion_soberana_2026-03-08 --[Nudo de Rizo] [term]</div>
+  <div class="seals">
+    <span class="seal">私</span>
+    <span class="seal">道</span>
+    <span class="seal">象</span>
+  </div>
+  <div class="f-zh">全索引</div>
+</div>
+
+</div>
+</body>
+</html>

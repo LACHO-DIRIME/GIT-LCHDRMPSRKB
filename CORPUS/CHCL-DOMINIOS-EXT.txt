@@ -1,0 +1,61 @@
+# CHCL-DOMINIOS-EXT
+# CHCL extendido · dominios KALIL · portabilidad soberana
+# [term] :: activo
+
+## CHCL × KALIL — INTEGRACIÓN DOMINIOS
+
+IDENTIFICATION DIVISION.
+  PROGRAM-ID. CHCL-KALIL-INTEGRATION.
+  VERSION. 1.0.
+  EXTIENDE. LACHO + KALIL.
+
+DATA DIVISION.
+  01 KIT-EMPENOS.
+     05 empeño_crypto    PIC X(64).
+     05 empeño_software  PIC X(64).
+     05 empeño_servicios PIC X(64).
+     05 empeño_tokens    PIC X(64).
+
+  01 KIT-TRUEQUE.
+     05 trueque_digital  PIC X(64).
+     05 trueque_servicios PIC X(64).
+     05 ratio_calculo    PIC 9(6)V99.
+
+  01 KIT-CROWDFUNDING.
+     05 campana_id       PIC X(32).
+     05 meta_monto       PIC 9(10)V99.
+     05 estado           PIC X(16).
+
+  01 KIT-LOANS.
+     05 loan_crypto      PIC X(64).
+     05 loan_software    PIC X(64).
+     05 loan_contratos   PIC X(64).
+     05 tasa_riesgo      PIC 9(3)V99.
+
+PROCEDURE DIVISION.
+  EMPENOS-SOBERANO.
+    CRYPTO (spark seat) =><= .. autoriza .. empeño_crypto_activo --[As de Guía] [term]
+    METHOD <equation> =><= .. calcula .. valor_empeño_justo --[Ballestrinque] [term]
+    STACKING UF[H52] =><= .. inmutabiliza .. contrato_empeño --[Nudo de Ocho] [term]
+
+  TRUEQUE-SOBERANO.
+    METHOD <equation> =><= .. calcula .. ratio_trueque_tokens --[Ballestrinque] [term]
+    CRYPTO (key seat) =><= .. certifica .. acuerdo_trueque_valido --[As de Guía] [term]
+    STACKING UF[H52] =><= .. inmutabiliza .. registro_trueque --[Nudo de Ocho] [term]
+
+  CROWDFUNDING-SOBERANO.
+    SOCIAL {launch-bot} =><= .. lanza .. campaña_crowdfunding --[As de Guía] [term]
+    ACTIVITY UF[H01] =><= .. inicia .. ciclo_crowdfunding_activo --[As de Guía] [term]
+    METHOD <stat_onto> =><= .. calcula .. progreso_campaña --[Ballestrinque] [term]
+    STACKING UF[H52] =><= .. cristaliza .. cierre_crowdfunding --[Nudo de Ocho] [term]
+
+  LOANS-SOBERANO.
+    TRUST FOUNDATION =><= .. verifica .. condiciones_loan_activo --[Ballestrinque] [term]
+    METHOD <equation> =><= .. calcula .. tasa_riesgo_loan --[Ballestrinque] [term]
+    CRYPTO (spark seat) =><= .. autoriza .. loan_aprobado_soberano --[As de Guía] [term]
+    STACKING UF[H52] =><= .. inmutabiliza .. contrato_loan_sellado --[Nudo de Ocho] [term]
+    WORK {brake} =><= .. detiene .. loan_riesgo_critico --[Nudo Corredizo] [term]
+
+  STOP RUN.
+
+[term] :: activo · [seal of secrecy] :: activo

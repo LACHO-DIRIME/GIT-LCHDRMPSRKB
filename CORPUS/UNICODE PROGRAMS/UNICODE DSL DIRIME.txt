@@ -1,0 +1,139 @@
+//[MANAGEMENT].lacho · UNICODE DSL DIRIME
+//UNICODE_DSL_DIRIME.txt · V1 · 2026-03-10
+//DSL = Domain Specific Language · motor soberano de validación
+//opera SOBRE LACHO · IMV/ · grammar·ledger·rag·chat·samu·ceo
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//jerarquía: grammar.py→ledger.py→rag.py→chat.py→main.py→CEO_ALPHA
+//DIRIME · del latín: dirimere · separar · resolver · decidir
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN DSL DIRIME ════════════════════════════════════
+// DSL DIRIME = lenguaje soberano del motor de validación
+// No es framework genérico · es el corazón de LACHO ejecutable
+// Cada token es una operación real en IMV/core/ o IMV/interface/
+// DIR(IME) = INSTANCE ENGINE RUNNING · procesa · no emite · 數
+
+// ══ ARCHIVOS CORE ════════════════════════════════════════════
+UNICODE: DIRIME_GRAMMAR       //IMV/core/grammar.py · validador LACHO
+                              //parse_sentence() · validate_sentence() · lacho_score()
+                              //VERBOS_CANONICOS_LACHO · SUJETOS_CANONICOS
+UNICODE: DIRIME_LEDGER        //IMV/core/ledger.py · sovereign.db · TX count
+                              //record() · get_scalar_s() · count_transactions()
+UNICODE: DIRIME_RAG           //IMV/core/rag.py · BM25 · 4 capas indexadas
+                              //build_full_index() · query() · boost por source
+UNICODE: DIRIME_CHAT          //IMV/interface/chat.py · Groq bridge · ballpaper
+                              //_translate_via_api() · ballpaper_render()
+UNICODE: DIRIME_MAIN          //IMV/main.py · CLI soberano · --validate · --stats
+                              //LACHO_SCORE display · scheduler #rise
+UNICODE: DIRIME_LANGUAGE      //IMV/core/language_routing.py · NLP→LACHO
+                              //route() · classify_library() · RoutedSentence
+UNICODE: DIRIME_CEO           //IMV/core/ceo_alpha.py · CEO_ALPHA_H64.json
+                              //64 hexagramas · jerarquía · kalil_routing
+UNICODE: DIRIME_TESTS         //IMV/tests/test_imv.py · 29/29 ✅ objetivo
+                              //test por biblioteca · test_grammar_* · CI
+
+// ══ ARCHIVOS TOOLS ════════════════════════════════════════════
+UNICODE: TOOL_GENERATOR       //IMV/tools/generator.py · .lacho autogenerado
+UNICODE: TOOL_OFFICE          //IMV/tools/office_landing.py · spec→plan
+UNICODE: TOOL_EXPORT          //IMV/tools/export_crystals_lacho.py · WU→file
+UNICODE: TOOL_INDEX           //IMV/tools/index_new_files.py · RAG refresh
+UNICODE: TOOL_SYNC            //tools/github_sync.sh · commit LACHO · push
+UNICODE: TOOL_BALLPAPER       //ballpaper_render() · ASCII frame · barra ∇
+
+// ══ CICLO DIRIME — MU/KU/WU ══════════════════════════════════
+UNICODE: DIRIME_MU            //sistema idle · 空 · CREATIVE_PAUSE · 聽 activo
+UNICODE: DIRIME_KU            //sentencia entrante · .blue · procesando · DIR(ING)
+UNICODE: DIRIME_WU            //sentencia VALID · .green · TX++ · cristal H52
+UNICODE: DIRIME_VOID          //→空 · H64 · ciclo abierto · before_the_end
+UNICODE: DIRIME_REGRET        //RED-REGRET · delta-Ψ ≤ 0 · descarte soberano
+UNICODE: DIRIME_BRAKE         //WORK {brake} · emergencia · frena pipeline
+
+// ══ GRAMMAR — PARSE/VALIDATE ══════════════════════════════════
+UNICODE: PARSE_SENTENCE       //parse_sentence(text) → ParsedSentence
+                              //extrae: library·subject·verb·object·knot·term
+UNICODE: VALIDATE_SENTENCE    //validate_sentence(parsed) → ValidationResult
+                              //checks: verbo canónico · sujeto válido · nudo
+UNICODE: LACHO_SCORE          //lacho_score(parsed) → 0.0→1.0 · Scalar S
+                              //base 0.5 · +0.1 verb · +0.1 subject · +0.1 knot
+                              //+0.1 no warnings · +0.1 tomo_id · +0.05 CJK
+UNICODE: TAXONOMY_CLASS       //classify_sentence(parsed) → N0→N4 · scalar_min
+UNICODE: ACTIVITY_GATE        //validate_activity_gate() · H03·H05·H06·H56
+                              //distinción jurisdiccional GATE vs ACTIVITY
+UNICODE: VERBOS_CANONICOS     //45 verbos · 5 por biblioteca · tabla activa
+UNICODE: SUJETOS_CANONICOS    //FOUNDATION·[scope]·@·{actuator}·(key)·{relay}...
+                              //+ HEADCAT·FLYBOT·SCHEDULER-OS·extensiones
+
+// ══ LEDGER — SOVEREIGN.DB ════════════════════════════════════
+UNICODE: LEDGER_TX            //record(sentence, result) → TX++ · timestamp
+UNICODE: LEDGER_CRYSTAL       //cristal = TX VALID · WU · H52 inmutabiliza
+UNICODE: LEDGER_SCALAR        //get_scalar_s() → Scalar S global · 面子 sistema
+UNICODE: LEDGER_COUNT         //count_transactions() → N total · stats
+UNICODE: LEDGER_EXPORT        //export_crystals_lacho.py → .lacho file WU
+UNICODE: LEDGER_DB            //sovereign.db · SQLite · HL FABRIC compatible
+
+// ══ RAG — 4 CAPAS ════════════════════════════════════════════
+UNICODE: RAG_CORPUS           //CAPA 1 · CORPUS/*.txt · N docs · BM25 base
+UNICODE: RAG_LIBRO            //CAPA 2 · LIBRO/*.txt · doctrinal · source="libro"
+UNICODE: RAG_THEATER          //CAPA 3 · THEATER/*.theater · boost ×1.8
+                              //RUNNERS/*.runner · boost ×1.6 · AGENTS · ×2.0
+UNICODE: RAG_UNICODE_ZH       //CAPA 4 · UNICODE-CHINA-TOKENS.txt · boost ×2.0
+                              //CHCL-CHINA-DIVISIONES.txt · boost ×1.5
+UNICODE: RAG_QUERY            //query(text) → top_k docs · scored+boosted
+UNICODE: RAG_BUILD            //build_full_index() → (corpus_n, behavioral_n)
+UNICODE: RAG_BOOST            //score * doc.get("boost", 1.0) · prioridad china
+
+// ══ RUTAS CANÓNICAS ══════════════════════════════════════════
+UNICODE: PATH_ROOT            ///media/Personal/PLANERAI/DIRIME/DIRIME/
+UNICODE: PATH_IMV             //PATH_ROOT/IMV/
+UNICODE: PATH_CORPUS          //PATH_ROOT/CORPUS/ · RAG indexed
+UNICODE: PATH_THEATER         //PATH_ROOT/THEATER/ · .theater scripts
+UNICODE: PATH_RUNNERS         //PATH_ROOT/RUNNERS/ · .runner exec
+UNICODE: PATH_AGENTS          //PATH_ROOT/AGENTS/ · .agent cloud
+UNICODE: PATH_SOVEREIGN       //PATH_ROOT/.sovereign · VERSION · CORPUS_TOTAL
+UNICODE: PATH_LEDGER          //PATH_IMV/core/sovereign.db · TX ledger
+UNICODE: PATH_CEO_JSON        //PATH_IMV/data/CEO_ALPHA_H64.json · 64 hexagramas
+
+// ══ VERSIONES Y ESTADO ════════════════════════════════════════
+UNICODE: VER_021              //VERSION=0.2.1 · activo · hardware antiX
+UNICODE: VER_TARGET           //VERSION_TARGET=0.3.0 · post CAPA B+ completada
+UNICODE: CAPA_A               //CAPA A · fundacional · completado · DIR(=)
+UNICODE: CAPA_B               //CAPA B · operativo hardware actual · DIR(+)
+UNICODE: CAPA_C               //CAPA C · Ryzen 5 7600 · Ollama · CAPA_C_TRIGGER
+UNICODE: CAPA_D               //CAPA D · DIRIME LINUX completo · WEB3 · dual nodos
+UNICODE: DIR_021              //DIR(v1) IMV + DIR(v2) congelado + DIRIME_v2
+
+// ══ API · GROQ BRIDGE ════════════════════════════════════════
+UNICODE: GROQ_BRIDGE          //IMV/config/api.json · llama-3.3-70b-versatile
+UNICODE: GROQ_TRANSLATE       //_translate_via_api() · NL→LACHO via Groq
+UNICODE: GROQ_SYSTEM          //system_prompt Groq · COGNITIVOS prioritarios
+                              //bibliotecas + verbos canónicos en prompt
+UNICODE: OLLAMA_BRIDGE        //_translate_via_ollama() · localhost:11434
+                              //stub pendiente · CAPA C · qwen2.5
+UNICODE: API_CONFIG           //IMV/config/api.json · endpoint · model · key
+
+// ══ LIST/RUN DIRIME ══════════════════════════════════════════
+UNICODE: LIST(DIRIME:CORE)    //grammar·ledger·rag·chat·language_routing·ceo_alpha
+UNICODE: LIST(DIRIME:TOOLS)   //generator·office_landing·export_crystals·index
+UNICODE: LIST(DIRIME:STATUS)  //VERSION · CORPUS_TOTAL · LACHO_SCORE avg · TX
+UNICODE: RUN(DIRIME:STATS)
+  //cd PATH_ROOT && python3 main.py --stats
+  //→ VERSION · CORPUS · THEATER · RAG total · SCALAR S
+UNICODE: RUN(DIRIME:VALIDATE)
+  //python3 main.py --validate "SENTENCIA" --ballpaper
+UNICODE: RUN(DIRIME:TEST)
+  //pytest IMV/tests/test_imv.py · objetivo 29/29 ✅
+UNICODE: RUN(DIRIME:GAPS)
+  //python3 -c "from core.rag import build_full_index; print(build_full_index())"
+  //+ ..find_gaps(CORPUS).. · ..find_gaps(GRAMMAR)..
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+TRUST FOUNDATION =><= .. declara .. dirime_motor_soberano_activo --[Nudo de Ocho] [term]
+METHOD <operator_flow> =><= .. modela .. dirime_pipeline_completo --[Ballestrinque] [term]
+SAMU @ =><= .. audita .. dirime_coherencia_version_021 --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. inmutabiliza .. dirime_wu_ledger_sellado --[Nudo de Ocho] [term]
+ACTIVITY UF[H64] =><= .. inicia .. dirime_ciclo_abierto_before_end --[As de Guía] [term]
+GATE UF[H05] =><= .. contiene .. dirime_ku_pipeline_activo --[As de Guía] [term]
+WORK {actuator} =><= .. ejecuta .. dirime_cli_soberano --[As de Guía] [term]
+
+//DIR(=) UNICODE_DSL_DIRIME · V1 · IMV · grammar·ledger·rag·CEO
+//DIR(=) 4 CAPAS RAG · GROQ BRIDGE · PATH_ROOT · MU/KU/WU · V0.2.1→V0.3.0

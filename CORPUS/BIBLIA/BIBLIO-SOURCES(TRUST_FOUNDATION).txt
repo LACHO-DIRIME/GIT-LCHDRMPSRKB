@@ -1,0 +1,341 @@
+# BIBLIO-SOURCES(TRUST_FOUNDATION).txt
+
+====================================================================
+
+## 🏛️ TRUST [FOUNDATION] — CONDICIONES IRREDUCIBLES DE EXISTENCIA
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+[foundation] es el módulo TRUST que declara las condiciones irreducibles de existencia y operación soberana del sistema: el suelo sobre el cual todo lo demás se construye.
+
+#### 1.2 Condición previa, no módulo de ejecución
+[foundation] es la condición previa de todo módulo, no un módulo de ejecución ni control.
+
+#### 1.3 Carácter absoluto
+[foundation] no puede ser habilitado por [rabbit-faith] — único módulo de TRUST con este carácter absoluto.
+
+#### 1.4 Distinción de [scope]
+[foundation] es el suelo de existencia; [scope] es el perímetro de acción que ese suelo sostiene.
+
+#### 1.5 Distinción de [term]
+[foundation] es condición permanente dentro del ciclo; [term] es su horizonte temporal.
+
+#### 1.6 Estados posibles
+OK, DEGRADED, COMPROMISED — no hay estado intermedio entre DEGRADED y COMPROMISED.
+
+#### 1.7 Carácter de COMPROMISED
+COMPROMISED es el único estado de [foundation] que detiene todo.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Capacidades
+- Declarar condiciones irreducibles de existencia.
+- Verificar identidad operativa del sistema.
+- Validar integridad de [scope] declarado.
+- Monitorear disponibilidad mínima de recursos.
+
+#### 2.2 Limitaciones absolutas
+[foundation] no puede redefinirse durante ciclo activo para acomodar operación que no soporta.
+
+#### 2.3 Condiciones de violación
+- **Violación grave:** redefinición de [foundation] en ciclo activo para evitar RED-REGRET.
+- **Señal degradación:** condiciones parcialmente comprometidas pero sistema aún operativo.
+- **Señal compromiso:** condición irreducible violada — sistema detenido.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 Las condiciones irreducibles
+
+##### Identidad verificada
+- El sistema sabe quién es operativamente.
+- BIOMETRICS como verificación en entorno móvil.
+- (key seat) CRYPTO como certificación de identidad.
+- DEGRADED: identidad parcialmente verificada.
+- COMPROMISED: identidad no verificable.
+
+##### Integridad de scope
+- [scope] declarado coherente con capacidades reales.
+- Sin expansión silenciosa activa.
+- SAMU @ como verificador de coherencia.
+- DEGRADED: scope parcialmente incoherente.
+- COMPROMISED: scope completamente incoherente.
+
+##### Disponibilidad mínima de recursos
+- Work++ mínimo para ciclo activo.
+- Sin deuda técnica bloqueante.
+- GATE operativo en modo mínimo.
+- DEGRADED: recursos insuficientes para operación completa.
+- COMPROMISED: recursos insuficientes para operación mínima.
+
+##### Ausencia de violación activa
+- Sin RED-REGRET activo sin procesar.
+- Sin [command] en COMMAND_VOID sin resolver.
+- Sin [event] OVERFLOW sin gestionar.
+- DEGRADED: violaciones menores pendientes.
+- COMPROMISED: violaciones críticas activas.
+
+#### 3.2 Foundation y BIOMETRICS
+- **Verificador primario:** BIOMETRICS alimenta estado de [foundation] en tiempo real.
+- **Fallo de BIOMETRICS:** [foundation] → DEGRADED inmediatamente.
+- **DOORMAN-MOBILE:** guardian de [foundation] en entorno móvil.
+
+#### 3.3 Foundation y HYPERLEDGER FABRIC
+- **Registro inmutable:** HL FABRIC verifica integridad histórica.
+- **Contribución:** trazabilidad completa como suelo de confianza.
+- **Degradación:** inconsistencia en registros históricos.
+
+#### 3.4 Relación con dominios económicos
+
+##### Memcoins/Volatilidad
+- **Condiciones:** wallet verificada, exchange autenticado, [scope] de exposición declarado.
+- **DEGRADED:** operar con restricciones verificadas.
+- **COMPROMISED:** cierre inmediato de posiciones abiertas.
+
+##### Custodia Móvil
+- **Condiciones:** dispositivo verificado por BIOMETRICS, clave activa, entorno seguro mínimo.
+- **DEGRADED:** solo operaciones de lectura habilitadas.
+- **COMPROMISED:** suspensión total de operaciones de firma.
+
+##### Notaría Digital
+- **Condiciones:** autoridad verificada, jurisdicción activa, cadena sin quiebre.
+- **DEGRADED:** documentos emitidos con advertencia.
+- **COMPROMISED:** suspensión total de emisión documental.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [term]
+[foundation] sostiene [term] — si [foundation] cae, [term] se fuerza.
+
+#### 4.2 Con [scope]
+[foundation] es el suelo de [scope] — sin foundation, scope se invalida.
+
+#### 4.3 Con [scenario]
+[scenario] no puede declararse válido con foundation COMPROMISED.
+
+#### 4.4 Con [event]
+[event] no puede invalidar foundation — es condición previa.
+
+#### 4.5 Con [management]
+[management] no puede sacrificar foundation para neutralizar amenaza.
+
+#### 4.6 Con [command]
+Ningún [command] puede ordenar violación de foundation.
+
+#### 4.7 Con [rabbit-faith]
+[rabbit-faith] no puede activarse con foundation COMPROMISED — único límite absoluto.
+
+#### 4.8 Con BIOMETRICS
+Verificador primario de identidad — alimenta estado de foundation.
+
+#### 4.9 Con DOORMAN-MOBILE
+Guardian de foundation en entorno móvil.
+
+#### 4.10 Con HYPERLEDGER FABRIC
+Registro inmutable que sostiene integridad histórica.
+
+#### 4.11 Con SAMU @
+SAMU audita estado de foundation continuamente.
+
+#### 4.12 Con CRYPTO (key seat)
+Certifica identidad como condición de foundation.
+
+---
+
+### 5.0 ESTADOS DE [foundation]
+
+#### 5.1 FOUNDATION_OK
+- **Condiciones:** todas las condiciones irreducibles verificadas.
+- **Comportamiento:** sistema opera sin restricción de foundation.
+- **Operación:** todos los módulos TRUST habilitados.
+
+#### 5.2 FOUNDATION_DEGRADED
+- **Condiciones:** una o más condiciones parcialmente comprometidas.
+- **Comportamiento:** sistema opera con restricciones.
+- **Operación:** módulos críticos habilitados, complejos restringidos.
+
+#### 5.3 FOUNDATION_COMPROMISED
+- **Condiciones:** una o más condiciones irreducibles violadas.
+- **Comportamiento:** sistema detenido — sin excepción.
+- **Operación:** RED-REGRET obligatorio, [rabbit-faith] bloqueado.
+
+#### 5.4 FOUNDATION_RESTORING
+- **Condiciones:** sistema en proceso de restauración desde COMPROMISED.
+- **Comportamiento:** solo operaciones de diagnóstico habilitadas.
+- **Operación:** SAMU @ en control directo.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Condición de la matriz
+[foundation] no ocupa dimensión numérica sino que es condición de la matriz.
+
+#### 6.2 Impacto de FOUNDATION_DEGRADED
+Reduce todos los pesos contextuales proporcionalmente.
+
+#### 6.3 Impacto de FOUNDATION_COMPROMISED
+Invalida T_matrix completamente.
+
+#### 6.4 No compensable
+[foundation] no puede compensarse con ninguna otra dimensión — única condición no compensable.
+
+#### 6.5 Aprendizaje en Behavioral RAG
+Historial de estados de foundation anticipa degradaciones futuras.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Verificación de FOUNDATION_OK al inicio de ciclo
+```
+[Trust] foundation =><= .. verify .. $$conditions_ok$$ --[As de Guía] [term]
+```
+
+#### 7.2 FOUNDATION_DEGRADED con restricciones activas
+```
+[Trust] foundation =><= .. degrade .. $$conditions_partial$$ --[Ballestrinque] [term]
+```
+
+#### 7.3 FOUNDATION_COMPROMISED deteniendo todo
+```
+[Trust] foundation =><= .. compromise .. $$conditions_violated$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.4 Restauración desde FOUNDATION_COMPROMISED
+```
+[Trust] foundation =><= .. restore .. $$conditions_recovering$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.5 [foundation] en dominio memcoins
+```
+[Trust] foundation =><= .. trade .. $$market_conditions$$ --[As de Guía] [term]
+```
+
+#### 7.6 [foundation] en dominio custodia móvil
+```
+[Trust] foundation =><= .. secure .. $$custody_conditions$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.7 [foundation] en dominio notaría digital
+```
+[Trust] foundation =><= .. certify .. $$notary_conditions$$ --[Ballestrinque] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+- **Activación:** FOUNDATION_OK.
+- **Efecto:** sistema operando sobre suelo verificado.
+
+#### 8.2 Nudo de Ocho
+- **Activación:** [foundation] cristalizado en Behavioral RAG.
+- **Efecto:** patrón de suelo sólido establecido.
+
+#### 8.3 Nudo Corredizo
+- **Activación:** FOUNDATION_COMPROMISED.
+- **Efecto:** sistema detenido, suelo violado.
+
+#### 8.4 Ballestrinque
+- **Activación:** FOUNDATION_DEGRADED.
+- **Efecto:** tensión entre operación restringida y restauración.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+#### 9.1 FoundationCheck
+1. Verificación de todas las condiciones irreducibles al inicio de ciclo.
+2. Validación de identidad con BIOMETRICS y CRYPTO.
+3. Confirmación de integridad de [scope] con SAMU @.
+4. Verificación de disponibilidad mínima de recursos.
+5. Comprobación de ausencia de violaciones activas.
+
+#### 9.2 FoundationMonitor
+1. Vigilancia continua de condiciones durante ciclo activo.
+2. Monitoreo de BIOMETRICS en tiempo real.
+3. Detección de degradación de recursos.
+4. Alertas tempranas de compromisos inminentes.
+5. Registro de eventos en Behavioral RAG.
+
+#### 9.3 FoundationDegrade
+1. Detección de condición parcialmente comprometida.
+2. Activación de modo degradado con restricciones.
+3. Notificación a SAMU @ de degradación.
+4. Coordinación con [management] para gestión de restricciones.
+5. Monitoreo intensivo de evolución del estado.
+
+#### 9.4 FoundationCompromise
+1. Detección de condición irreducible violada.
+2. Detención inmediata de todo el sistema.
+3. Activación de RED-REGRET obligatorio.
+4. Bloqueo absoluto de [rabbit-faith].
+5. Inicio de FOUNDATION_RESTORING.
+
+#### 9.5 FoundationRestore
+1. Diagnóstico completo de causa de compromiso.
+2. Consulta a Behavioral RAG para patrones de restauración.
+3. Ejecución de operaciones de diagnóstico exclusivas.
+4. Verificación paso a paso de condiciones restauradas.
+5. Transición a FOUNDATION_OK solo con verificación completa.
+
+#### 9.6 FoundationClose
+1. Archivo del estado de foundation al cierre de [term].
+2. Registro de métricas de degradación/restauración.
+3. Actualización de Behavioral RAG con aprendizaje del ciclo.
+4. Preparación de foundation para siguiente ciclo.
+5. Liberación de recursos de monitoreo.
+
+---
+
+### 10.0 MÉTRICAS
+
+- **Estado de foundation:** OK/DEGRADED/COMPROMISED.
+- **Condiciones verificadas:** vs degradadas vs comprometidas.
+- **Frecuencia de FOUNDATION_DEGRADED:** por ciclo.
+- **Tiempo de restauración:** promedio desde COMPROMISED.
+- **Tasa de degradación:** por dominio económico.
+- **Delta-estado:** al cierre del ciclo.
+
+---
+
+### 11.0 REGLAS
+
+- [foundation] COMPROMISED detiene todo el sistema sin excepción.
+- [rabbit-faith] no puede activarse con foundation COMPROMISED — límite absoluto.
+- [foundation] no puede redefinirse en ciclo activo para acomodar operación que no soporta.
+- Ningún [command] puede ordenar violación de [foundation].
+- [management] no puede sacrificar [foundation] para neutralizar amenaza.
+- FOUNDATION_DEGRADED permite operación restringida con [rabbit-faith] si S scalar > 0.5.
+- FOUNDATION_RESTORING solo habilita operaciones de diagnóstico.
+- SAMU @ audita estado de [foundation] continuamente.
+- Behavioral RAG registra todo estado de [foundation] para calibración futura.
+- FOUNDATION_COMPROMISED siempre genera RED-REGRET — nunca silencioso.
+- [foundation] cierra con [term] del ciclo.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+[foundation] fija las condiciones irreducibles de existencia operativa como suelo absoluto de todo el sistema.
+
+#### 12.2 Limitaciones
+No puede redefinirse en ciclo activo, no puede ser habilitado por [rabbit-faith], no puede ser sacrificado por ningún módulo.
+
+#### 12.3 Habilitaciones
+Existencia operativa soberana, suelo verificado para [scope] y [term], validez de [scenario] y [command], activación de [rabbit-faith] cuando foundation está OK o DEGRADED con S scalar > 0.5.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

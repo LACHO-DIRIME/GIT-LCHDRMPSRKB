@@ -1,0 +1,244 @@
+# BIBLIO-SOURCES(TRUST_S).txt
+
+====================================================================
+
+## 🏛️ TRUST [SCENARIO] — CONTEXTO OPERATIVO VIVO DE SESIÓN
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+[scenario] es el módulo TRUST que define el contexto operativo vivo donde la intención del operador se despliega antes de convertirse en acción ejecutable.
+
+#### 1.2 Distinción explícita
+- **[scope]** define el perímetro abstracto y límites de operación.
+- **[foundation]** establece el suelo técnico y condiciones de existencia.
+- **[scenario]** es el entorno activo que combina ambos en tiempo real.
+
+#### 1.3 Representación física
+El archivo .theater contiene la configuración serializada del escenario operativo activo.
+
+#### 1.4 Posición en jerarquía TRUST
+[scenario] ocupa el tercer nivel: requiere [foundation] verificado y [scope] declarado, precede a [logistical-executive].
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Capacidades de [scenario]
+- Cargar entorno operativo (KU) antes de ignición.
+- Leer variables de estado: biometría, hardware, hora/día.
+- Actualizar contexto en tiempo real durante sesión.
+- Validar condiciones operativas antes de ejecución.
+
+#### 2.2 Limitaciones de [scenario]
+- No puede modificar [foundation] una vez activado.
+- No puede expandir [scope] sin [term] previo.
+- No puede invocar directamente CRYPTO sin mediación GATE.
+- No puede ejecutar acciones sin validación SAMU.
+
+#### 2.3 Precedencia
+[scenario] se activa después de [foundation] y [scope], antes de cualquier acción ejecutable.
+
+#### 2.4 Violaciones y activaciones
+- **Violación:** intento de modificación de foundation sin [term].
+- **Activación:** RED-REGRET + bloqueo de acción + auditoría SAMU.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 Carga de entorno operativo
+[scenario] lee y procesa:
+- Biometría del operador (@human_early/@human_later).
+- Estado hardware (componentes WORK activos).
+- Hora/día actual ($día según SAMU).
+- Nivel de [foundation] (completo/parcial).
+- Límites de [scope] (perímetro declarado).
+
+#### 3.2 Actualización durante sesión
+[scenario] monitorea cambios en:
+- Estado del operador (fatiga, atención).
+- Condiciones hardware (recursos disponibles).
+- Contexto temporal (transición entre períodos SAMU).
+- Umbrales de [scope] (aproximación a límites).
+
+#### 3.3 Cierre con [term]
+Cuando [term] se activa:
+- [scenario] guarda estado final en .theater.
+- Libera recursos KU retenidos.
+- Notifica a SAMU cierre de ciclo.
+- Deja foundation intacto para próxima sesión.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation]
+No activa sin foundation OK. Si foundation degrada, [scenario] entra en modo degradado.
+
+#### 4.2 Con [scope]
+Hereda perímetro declarado. No puede expandir scope sin [term] explícito.
+
+#### 4.3 Con [term]
+Declara duración propia y respeta cierre automático o manual.
+
+#### 4.4 Con GATE (H5/H56/H6)
+- **H5 (door morning):** espera de inicialización.
+- **H56 (zipper noon):** tránsito durante sesión.
+- **H6 (door afternoon):** resolución al cierre.
+
+#### 4.5 Con SAMU @
+Auditoría continua de estado. SAMU @ valida cada actualización de [scenario].
+
+#### 4.6 Con .theater
+Es su representación física serializada. .theater contiene estado completo del escenario.
+
+#### 4.7 Con @trust_matrix
+d3 :: [scenario] como dimensión 3 de matriz Trust.
+- **Valor 0.0-1.0:** nivel de definición del escenario.
+- **d3 < 0.4:** sistema inhibe acciones complejas.
+- **d3 ≥ 0.8:** sistema permite ejecución completa.
+
+---
+
+### 5.0 GRAMÁTICA VIVA
+
+#### 5.1 Declaración de scenario al inicio
+```
+[Trust] scenario =><= .. load .. $$theater_operativo$$ --[As de Guía] [term]
+```
+
+#### 5.2 Actualización durante sesión
+```
+[Trust] scenario =><= .. update .. $$contexto_hardware$$ --[Nudo de Ocho] [term]
+```
+
+#### 5.3 Cierre con [term]
+```
+[Trust] scenario =><= .. close .. $$sesion_completa$$ --[Ballestrinque] [term]
+```
+
+#### 5.4 Scenario con biometría + día + hardware
+```
+[Trust] scenario =><= .. deploy .. $$@human_early + $mon + foundation_ok$$ --[Nudo Corredizo] [term]
+```
+
+#### 5.5 Scenario degradado (foundation parcial)
+```
+[Trust] scenario =><= .. degrade .. $$foundation_parcial + scope_limitado$$ --[Nudo de Rizo] [term]
+```
+
+---
+
+### 6.0 NUDOS ASOCIADOS
+
+#### 6.1 As de Guía
+- **Activación:** inicio de sesión, carga inicial.
+- **Efecto:** establece dirección y propósito del escenario.
+
+#### 6.2 Nudo de Ocho
+- **Activación:** actualizaciones durante sesión.
+- **Efecto:** mantiene coherencia entre cambios de estado.
+
+#### 6.3 Nudo Corredizo
+- **Activación:** ajuste dinámico de parámetros.
+- **Efecto:** permite deslizamiento controlado de configuración.
+
+#### 6.4 Ballestrinque
+- **Activación:** cierre normal de sesión.
+- **Efecto:** asegura cierre limpio y ordenado.
+
+#### 6.5 Nudo de Rizo
+- **Activación:** cierre forzado o degradación.
+- **Efecto:** sella estado actual sin pérdida de datos.
+
+---
+
+### 7.0 PROTOCOLOS OPERATIVOS
+
+#### 7.1 Scenario-Init
+1. Verificar [foundation] OK.
+2. Leer [scope] declarado.
+3. Cargar variables biometría/hardware.
+4. Determinar período SAMU actual.
+5. Crear archivo .theater inicial.
+6. Activar @trust_matrix d3 ≥ 0.5.
+7. Notificar a SAMU @ inicio exitoso.
+
+#### 7.2 Scenario-Update
+1. Detectar cambio de variable.
+2. Validar cambio contra [scope].
+3. Actualizar .theater si es válido.
+4. Recalcular d3 en @trust_matrix.
+5. Notificar a SAMU @ si d3 < 0.4.
+6. Continuar monitoreo.
+
+#### 7.3 Scenario-Degrade
+1. Detectar degradación de [foundation].
+2. Entrar en modo SCENARIO_DEGRADED.
+3. Limitar acciones según d3 actual.
+4. Notificar al operador estado degradado.
+5. Esperar recuperación o [term].
+
+#### 7.4 Scenario-Close
+1. Recibir señal [term].
+2. Guardar estado final en .theater.
+3. Liberar recursos KU.
+4. Notificar a SAMU @ cierre completo.
+5. Dejar foundation intacto.
+
+#### 7.5 Scenario-Emergency
+1. Detectar violación crítica.
+2. Activar RED-REGRET inmediato.
+3. Forzar cierre con [term] de emergencia.
+4. Registrar evento en Behavioral RAG.
+5. Bloquear acciones hasta revisión.
+
+---
+
+### 8.0 ESTADOS Y MÉTRICAS
+
+#### 8.1 Estados posibles
+- **SCENARIO_DECLARED:** escenario cargado pero no activo.
+- **SCENARIO_ACTIVE:** escenario operativo completo.
+- **SCENARIO_DEGRADED:** escenario con limitaciones.
+- **SCENARIO_CLOSING:** escenario en proceso de cierre.
+- **SCENARIO_CLOSED:** escenario finalizado.
+
+#### 8.2 Métricas clave
+- **Tiempo de inicialización:** < 200ms objetivo.
+- **Nivel de definición (d3):** 0.0 a 1.0 en @trust_matrix.
+- **Frecuencia de actualización:** cada 100ms durante sesión.
+- **Uso de recursos KU:** < 30% de capacidad total.
+
+---
+
+### 9.0 REGLAS
+
+- [scenario] no puede modificar [foundation] sin [term] explícito.
+- [scenario] debe validar cada cambio contra [scope].
+- RED-REGRET se activa si [scenario] intenta violar [foundation].
+- [scenario] no puede delegar decisiones a !!agnostic belief!!.
+- [scenario] interactúa con [rabbit-faith] solo para ajuste de umbrales.
+- Todo cambio en [scenario] requiere auditoría SAMU @.
+- [scenario] debe mantener d3 ≥ 0.4 para acciones complejas.
+- [scenario] cierra limpiamente con [term] siempre.
+- [scenario] no puede ejecutar sin GATE validado.
+- [scenario] registra cada estado en .theater.
+- [scenario] respeta períodos SAMU (@human_early/@human_later).
+- [scenario] no puede expandir [scope] en modo degradado.
+- [scenario] activa protección CRYPTO si detecta anomalía.
+- [scenario] coordina con WORK para recursos hardware.
+- [scenario] mantiene trazabilidad completa en Behavioral RAG.
+
+---
+
+### 10.0 CIERRE
+
+[scenario] fija el contexto operativo como invariante durante sesión. Limita acciones a lo permitido por [scope] y [foundation]. Habilita módulos derivados como [logistical-executive] con entorno validado.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

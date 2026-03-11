@@ -1,0 +1,312 @@
+# BIBLIO-SOURCES(SOCIAL_SCHEDULER).txt
+
+====================================================================
+
+## 🪑 SOCIAL {SCHEDULER} — PLANIFICACIÓN DECLARATIVA DEL TIEMPO RELACIONAL
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+{scheduler} es el módulo SOCIAL que gobierna la planificación declarativa del tiempo relacional: cuándo ocurren los intercambios, sesiones y comunicaciones del sistema con actores externos e internos dentro del [scope] y [term] activos.
+
+#### 1.2 Por qué es SOCIAL y no SAMU
+SAMU es autoridad temporal soberana; {scheduler} es interfaz declarativa de planificación relacional.
+
+#### 1.3 Distinción de [when?]
+[when?] declara momento soberano de acción; {scheduler} planifica agenda relacional dentro de ese marco.
+
+#### 1.4 Distinción de {chair}
+{scheduler} planifica, {chair} conduce.
+
+#### 1.5 La agenda como declaración soberana
+{scheduler} no impone tiempo — declara el tiempo acordado soberanamente.
+
+#### 1.6 Relación con períodos SAMU
+@human_early, @human_later, $día como marco temporal de {scheduler}.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Capacidades
+- Planificar sesiones y comunicaciones relacionales.
+- Coordinar con períodos SAMU para optimización temporal.
+- Verificar disponibilidad de recursos antes de planificar.
+- Generar agenda formal con [term] específico.
+
+#### 2.2 Limitaciones absolutas
+{scheduler} no puede planificar más allá del horizonte de [term] de TRUST.
+
+#### 2.3 Condiciones de violación
+- **Violación primaria:** planificación que ignora períodos SAMU.
+- **Violación secundaria:** sobrecarga de agenda — más sesiones que Work++ disponible.
+- **Señal alerta:** agenda que excede d₁ [term] disponible.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 Tipos de entrada en {scheduler}
+- **SCHED_SESSION:** sesión relacional con participantes verificados y agenda declarada.
+- **SCHED_DRIP:** emisión programada de {drip} en momento específico.
+- **SCHED_STREAM:** activación programada de {streaming} en ventana temporal.
+- **SCHED_NOTIFICATION:** notificación declarativa en momento verificado.
+- **SCHED_REVIEW:** revisión periódica de estado relacional del sistema.
+
+#### 3.2 Construcción de agenda
+- **Recepción de solicitudes:** de otros módulos SOCIAL.
+- **Verificación de disponibilidad:** contra períodos SAMU y Work++.
+- **Resolución de conflictos:** priorización por urgencia y [term].
+- **Declaración formal:** agenda con [term] específico para cada entrada.
+
+#### 3.3 {scheduler} y períodos SAMU
+- **@human_early:** ventana preferente para sesiones de alta energía.
+- **@human_later:** ventana para sesiones de revisión y cierre.
+- **$día:** marco de planificación diaria.
+- **#set/#prise:** marcadores de apertura y cierre de ciclo diario.
+
+#### 3.4 Relación con dominios económicos
+
+##### Memcoins/Volatilidad
+- Planificación de sesiones de análisis de mercado en ventanas óptimas.
+- SCHED_REVIEW periódico de posiciones.
+- Límite: no puede planificar operación sin verificar [when?] de TRUST.
+
+##### Custodia Móvil
+- Planificación de sesiones de revisión de custodia en entorno verificado.
+- SCHED_NOTIFICATION para recordatorios de operaciones pendientes.
+- Límite: respeta ventanas de seguridad declaradas.
+
+##### Notaría Digital
+- Planificación de sesiones notariales con partes declarantes verificadas.
+- SCHED_SESSION con agenda formal y participantes autorizados.
+- Límite: no puede planificar sesión fuera de jurisdicción activa.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [term]
+{scheduler} no planifica más allá del horizonte de [term].
+
+#### 4.2 Con [scope]
+{scheduler} planifica dentro del perímetro soberano.
+
+#### 4.3 Con [when?]
+[when?] declara momento soberano; {scheduler} traduce en agenda.
+
+#### 4.4 Con SAMU @
+Períodos SAMU son el marco temporal de toda planificación.
+
+#### 4.5 Con {chair}
+{scheduler} entrega agenda a {chair} para conducción.
+
+#### 4.6 Con {drip}
+{scheduler} activa {drip} en momentos planificados.
+
+#### 4.7 Con {streaming}
+{scheduler} activa ventanas de {streaming}.
+
+#### 4.8 Con {note}
+{note} registra agenda declarada por {scheduler}.
+
+#### 4.9 Con [management]
+{scheduler} verifica Work++ disponible antes de planificar.
+
+#### 4.10 Con Behavioral RAG
+Patrones de agenda anteriores calibran planificación futura.
+
+---
+
+### 5.0 ESTADOS DE {scheduler}
+
+#### 5.1 SCHED_EMPTY
+- **Condición:** sin entradas planificadas.
+- **Comportamiento:** sistema en espera de solicitudes.
+- **Operación:** SAMU @ como única referencia temporal.
+
+#### 5.2 SCHED_LOADING
+- **Condición:** recibiendo y verificando solicitudes.
+- **Comportamiento:** construcción de agenda en curso.
+- **Operación:** resolución de conflictos activa.
+
+#### 5.3 SCHED_ACTIVE
+- **Condición:** agenda declarada y operativa.
+- **Comportamiento:** entradas siendo ejecutadas por módulos.
+- **Operación:** SAMU @ verificando cumplimiento temporal.
+
+#### 5.4 SCHED_OVERLOADED
+- **Condición:** agenda excede Work++ disponible.
+- **Comportamiento:** priorización soberana activa.
+- **Operación:** [management] notificado de sobrecarga.
+
+#### 5.5 SCHED_CLOSED
+- **Condición:** [term] expirado.
+- **Comportamiento:** agenda archivada en Behavioral RAG.
+- **Operación:** entradas pendientes evaluadas para siguiente ciclo.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Afectación de d₁ [term]
+{scheduler} afecta d₁ distribuyendo el horizonte temporal entre entradas.
+
+#### 6.2 Impacto de SCHED_OVERLOADED
+SCHED_OVERLOADED degrada d₁ por consumo excesivo de Work++.
+
+#### 6.3 Mejora de T_matrix
+Planificación alineada con períodos SAMU mejora calidad de T_matrix.
+
+#### 6.4 Aprendizaje en Behavioral RAG
+Patrones de agenda calibran planificación futura.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Planificación de SCHED_SESSION con agenda
+```
+{Social} scheduler =><= .. plan .. $$session_agenda$$ --[As de Guía] [term]
+```
+
+#### 7.2 SCHED_DRIP activado en momento verificado
+```
+{Social} scheduler =><= .. drip .. $$scheduled_emission$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.3 SCHED_OVERLOADED con priorización soberana
+```
+{Social} scheduler =><= .. overload .. $$agenda_exceeded$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.4 Agenda cerrada con archivo en Behavioral RAG
+```
+{Social} scheduler =><= .. close .. $$agenda_archived$$ --[Ballestrinque] [term]
+```
+
+#### 7.5 {scheduler} en dominio memcoins
+```
+{Social} scheduler =><= .. trade .. $$market_sessions$$ --[As de Guía] [term]
+```
+
+#### 7.6 {scheduler} en dominio custodia móvil
+```
+{Social} scheduler =><= .. secure .. $$custody_reviews$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.7 {scheduler} en dominio notaría digital
+```
+{Social} scheduler =><= .. certify .. $$notary_sessions$$ --[Ballestrinque] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+- **Activación:** {scheduler} en SCHED_ACTIVE.
+- **Efecto:** agenda en ejecución soberana.
+
+#### 8.2 Nudo de Ocho
+- **Activación:** agenda cristalizada en Behavioral RAG.
+- **Efecto:** patrón de planificación establecido.
+
+#### 8.3 Nudo Corredizo
+- **Activación:** SCHED_OVERLOADED.
+- **Efecto:** agenda excede capacidad disponible.
+
+#### 8.4 Ballestrinque
+- **Activación:** tensión entre múltiples solicitudes compitiendo.
+- **Efecto:** priorización activa necesaria.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+#### 9.1 SchedReceive
+1. Recepción y clasificación de solicitudes de planificación.
+2. Verificación de origen y tipo de solicitud.
+3. Consulta inicial a períodos SAMU y Work++.
+4. Transición a SchedVerify.
+
+#### 9.2 SchedVerify
+1. Verificación contra períodos SAMU disponibles.
+2. Verificación de Work++ disponible en [management].
+3. Consulta a Behavioral RAG para patrones similares.
+4. Evaluación de urgencia y prioridad.
+5. Transición a SchedBuild.
+
+#### 9.3 SchedBuild
+1. Construcción de agenda con entradas verificadas.
+2. Resolución de conflictos temporales.
+3. Asignación de [term] específico a cada entrada.
+4. Coordinación con {note} para registro preliminar.
+5. Transición a SchedActive.
+
+#### 9.4 SchedActivate
+1. Declaración formal de agenda con [term] por entrada.
+2. Notificación a módulos afectados.
+3. Inicio de ejecución según agenda.
+4. Monitoreo de cumplimiento temporal.
+5. Transición a SCHED_ACTIVE.
+
+#### 9.5 SchedOverload
+1. Detección de exceso de solicitudes vs recursos.
+2. Priorización soberana activa basada en urgencia.
+3. Notificación a [management] de sobrecarga.
+4. Replanificación de entradas de baja prioridad.
+5. Continuación con agenda priorizada.
+
+#### 9.6 SchedClose
+1. Detección de cierre de [term].
+2. Archivo de agenda en Behavioral RAG.
+3. Evaluación de entradas pendientes.
+4. Generación de reporte de ejecución.
+5. Transición a SCHED_EMPTY.
+
+---
+
+### 10.0 MÉTRICAS
+
+- **Número de entradas:** por tipo y dominio.
+- **Ratio ejecutadas vs pendientes.**
+- **Frecuencia de SCHED_OVERLOADED:** por ciclo.
+- **Alineación con períodos SAMU:** % de entradas en ventana óptima.
+- **Tiempo promedio:** entre planificación y ejecución.
+- **Delta-agenda:** al cierre del ciclo.
+
+---
+
+### 11.0 REGLAS
+
+- {scheduler} no puede planificar más allá del horizonte de [term] activo.
+- Toda entrada de agenda requiere [term] específico declarado.
+- {scheduler} verifica períodos SAMU antes de confirmar planificación.
+- SCHED_OVERLOADED notifica a [management] automáticamente.
+- {scheduler} no puede ignorar [when?] de TRUST al planificar acción soberana.
+- Entradas pendientes al cierre de [term] requieren evaluación soberana explícita.
+- SAMU @ audita toda agenda declarada por {scheduler}.
+- Behavioral RAG registra toda agenda ejecutada para calibración futura.
+- {scheduler} no puede planificar sesión notarial fuera de jurisdicción activa.
+- {scheduler} respeta ventanas de seguridad en custodia móvil.
+- {scheduler} cierra con [term] del ciclo.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+{scheduler} fija la planificación declarativa del tiempo relacional como condición de orden temporal en el intercambio soberano con el entorno.
+
+#### 12.2 Limitaciones
+No planifica más allá de [term], no ignora períodos SAMU, no excede Work++ sin notificar a [management].
+
+#### 12.3 Habilitaciones
+Agenda relacional soberana alineada con ritmo SAMU, activación ordenada de {chair}/{drip}/{streaming}, trazabilidad completa en Behavioral RAG.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

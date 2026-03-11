@@ -1,0 +1,60 @@
+# elpulsar_iconografia.theater
+# ICONOGRAFÍA SOBERANA ELPULSAR · Sistema Visual LACHO
+# Genesis: SOURCE&ASSET%WORTH.txt · [term] :: activo
+
+## CABECERA
+[genesis]     :: SUITE SOBERANA
+[version]     :: 1.0
+[extension]   :: .theater
+[tipo]        :: ICONOGRAFÍA · sistema visual · ELPULSAR
+[fuente]      :: SOURCE&ASSET%WORTH.txt
+
+## GATE — CICLO CRONOTÓPICO (3 puertas)
+gate_iconos {
+  door_morning  :: H1→H5   :: ignicion_dia   :: human_out_mañana
+  zipper_noon   :: H5→H56  :: apertura_KU    :: SAMU_@_escucha
+  door_afternoon:: H56→H6  :: WU_materializado :: nudo_ocho_sellado
+  -- "las tres puertas narran el ciclo completo de una sesión LACHO"
+}
+
+## STACKING — 8 PILARES VISUALES
+stacking_iconos {
+  rocking_chair_headcat :: H57+H52 :: auditoria_pasiva   :: ku_chat_activo
+  scheduler             :: H1      :: mapa_intencion     :: bagua_temporal
+  tap_drip              :: H29     :: flujo_calibrado    :: gradiente_descendente
+  papernote             :: H2      :: registro_pasivo    :: behavioral_rag
+  rabbit_eggs           :: H64     :: crecimiento_ramificado :: algoritmo_conejo
+}
+
+## HEADCAT — DIRECTOR DE SALIDA WU
+headcat_icono {
+  SOCIAL {headcat} =><= .. gobierna .. salida_WU_soberana --[As de Guía] [term]
+  SOCIAL {headcat} =><= .. audita .. estado_sistema_activo --[Ballestrinque] [term]
+  -- "los ojos del headcat son el [ku-chat] activo"
+  -- "mirando hacia la pantalla del operador, no hacia afuera"
+}
+
+## FLYBOT — AGENTE DE EJECUCIÓN
+flybot_icono {
+  WORK {flybot} =><= .. ejecuta .. WU_validado_en_hardware --[As de Guía] [term]
+  -- "LACHO → HEADCAT → FLYBOT → HARDWARE"
+  -- "INTENCIÓN → VALIDACIÓN → EJECUCIÓN → ACCIÓN"
+  -- Ψ(T) visible en el pecho · Nudo As de Guía en estela
+}
+
+## SAMU @ — HILO CONECTOR
+samu_iconos {
+  -- "@" aparece en: zipper · headcat · doorman-mobile
+  -- es el auditor que dice: "esto fue escuchado antes de ser emitido"
+  SAMU @ =><= .. conecta .. iconos_supervision_activos --[Ballestrinque] [term]
+}
+
+## BALLPAPER — SUPERFICIE GRÁFICA
+ballpaper {
+  -- UNICODE estándar: ①–⑳ ㉑–㊿ ● ○ ╔ ╗ ╠ ╣ ╚ ╝
+  -- función: ballpaper_render() en interface/chat.py
+  -- muestra: LACHO_SCORE · Scalar S · TX · Cristales
+  METHOD <stat_onto> =><= .. renderiza .. ballpaper_estado_vivo --[As de Guía] [term]
+}
+
+[term] :: activo · [seal of secrecy] :: activo

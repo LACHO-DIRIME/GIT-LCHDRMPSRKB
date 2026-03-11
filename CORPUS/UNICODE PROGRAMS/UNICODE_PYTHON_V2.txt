@@ -1,0 +1,179 @@
+//[MANAGEMENT]PYTHON3 de TOMO/SLICE/SEGMENT/CLUSTER/OFFSET de .os
+//UNICODE_PYTHON_V2 · DIR(+) completado · Sesión 10 · 2026-03-10
+//se interpreta en bajo nivel(WORK) y expresar en alto nivel(SAMU)
+//=: desde coherencia consolidada a expresión coherente asignada
+
+// ── MEMORIA Y VISIÓN ──────────────────────────────────────────
+UNICODE: A>   //"PEQUEÑA MEMORIA"     contexto mínimo de sesión
+UNICODE: B>   //"IMAGEN GIGANTESCA"   visión completa del sistema
+UNICODE: A>>  //"MEMORIA MEDIA"       contexto de módulo activo
+UNICODE: A>>> //"MEMORIA PROFUNDA"    contexto de corpus completo
+UNICODE: A>>>>  //"MEMORIA SOBERANA"  contexto CEO + KALIL + LACHO
+
+// ── NIVELES DE ABSTRACCIÓN ────────────────────────────────────
+UNICODE: 1.     //$(GATE)       · nivel acceso · filtro soberano
+UNICODE: 1.1.   //$(STACKING)   · nivel registro · inmutable
+UNICODE: 1.1.1. //$(WORK)       · nivel ejecución · actuador
+UNICODE: 1.1.1.1. //$(METHOD)   · nivel cálculo · ecuación
+UNICODE: 1.1.1.1.1. //$(TRUST)  · nivel contrato · fundación
+
+// ── IMPORT · cargar biblioteca LACHO ─────────────────────────
+UNICODE: IMPORT[TRUST]      //carga contratos · identidad · confianza
+UNICODE: IMPORT{SOCIAL}     //carga comunidad · relay · diaspora
+UNICODE: IMPORT@            //carga SAMU · auditoría · scalar
+UNICODE: IMPORT$            //carga STACKING · cristales · ledger
+UNICODE: IMPORT#            //carga GATE · filtros · secuencias H
+UNICODE: IMPORT*SAMU*       //carga modo auditoría completo
+UNICODE: IMPORT*CRYPTO*     //carga custodia · wallets · blockchain
+UNICODE: IMPORT*METHOD*     //carga cálculo · modelos · ecuaciones
+UNICODE: IMPORT*ACTIVITY*   //carga ciclos · hexagramas · arranque
+UNICODE: IMPORT*WORK*       //carga actuadores · bots · runners
+UNICODE: IMPORT*THEATER*    //carga macros temporales · scheduler
+UNICODE: IMPORT*KALIL*      //carga 6 nodos económicos duales
+UNICODE: IMPORT*CEO*        //carga jerarquía 64 hexagramas
+
+// ── LET · declarar estructura soberana ───────────────────────
+UNICODE: LET[]          //lista soberana · orden secuencial
+UNICODE: LET{}          //conjunto soberano · sin orden
+UNICODE: LET$           //clase soberana · objeto complejo
+UNICODE: LET#           //constante soberana · inmutable
+UNICODE: LET@           //referencia soberana · puntero SAMU
+UNICODE: LET*GATE*      //declarar filtro · secuencia H
+UNICODE: LET*STACKING*  //declarar registro · cristal
+UNICODE: LET*WORK*      //declarar actuador · proceso
+UNICODE: LET*THEATER*   //declarar macro temporal · scheduler
+UNICODE: LET[MAIN]      //punto de entrada principal
+UNICODE: LET[INDEX]     //índice soberano · RAG · corpus
+UNICODE: LET[LIST]      //lista de elementos · batch
+UNICODE: LET[DEF]       //definición de función soberana
+UNICODE: LET[SET]       //conjunto único · sin duplicados
+UNICODE: LET[DICC]      //diccionario · clave:valor soberano
+UNICODE: LET<METHOD>    //método soberano · ecuación callable
+UNICODE: LET$CLASS      //clase soberana · instanciable
+UNICODE: LET$(STACKING) //clase de registro inmutable
+UNICODE: LET$(TRUST)    //clase de contrato soberano
+UNICODE: LET$(CRYPTO)   //clase de custodia digital
+UNICODE: LET$(KALIL)    //clase de nodo económico dual
+
+// ── INPUT · entrada de datos ──────────────────────────────────
+UNICODE: INPUT<HOME>        //entrada desde directorio base
+UNICODE: INPUT<CORPUS>      //entrada desde RAG corpus
+UNICODE: INPUT<THEATER>     //entrada desde macro theater
+UNICODE: INPUT<LEDGER>      //entrada desde sovereign.db
+UNICODE: INPUT<CEO>         //entrada desde CEO_ALPHA_H64
+UNICODE: INPUT<STDIN>       //entrada desde terminal operador
+UNICODE: INPUT<API>         //entrada desde endpoint externo
+
+// ── IF · condición soberana ───────────────────────────────────
+UNICODE: IF<DEF()>      //si función definida · ejecutar
+UNICODE: IF<CAT()>      //si categoría coincide · procesar
+UNICODE: IF<DIR()>      //si directorio existe · acceder
+UNICODE: IF<VALID()>    //si sentencia LACHO válida · continuar
+UNICODE: IF<SCALAR()>   //si Scalar S >= umbral · autorizar
+UNICODE: IF<TERM()>     //si [term] presente · sellar
+UNICODE: IF<CJK()>      //si token chino detectado · modo CHINA
+UNICODE: IF<H()>        //si hexagrama activo · ejecutar rol CEO
+
+// ── IME · motor de inferencia ─────────────────────────────────
+UNICODE: IME{[(!!BALLPAPER!!)]}   //render ballpaper HTML soberano
+UNICODE: IME{[(!!GRAMMAR!!)]}     //validar sentencia LACHO
+UNICODE: IME{[(!!RAG!!)]}         //consultar corpus soberano
+UNICODE: IME{[(!!ROUTE!!)]}       //NLP → LACHO via language_routing
+UNICODE: IME{[(!!CEO!!)]}         //consultar jerarquía CEO ALPHA
+UNICODE: IME{[(!!SAMU!!)]}        //auditar coherencia soberana
+
+// ── DIR · versión y gaps ──────────────────────────────────────
+UNICODE: DIR(v2)    //DIRIME_V2 · servidor HTTP 8741 · congelado
+UNICODE: DIR(v1)    //IMV actual · operativo · producción
+UNICODE: DIR(-)     //gap detectado · pendiente de desarrollo
+UNICODE: DIR(+)     //spec confirmado · listo para implementar
+UNICODE: DIR(=)     //implementado · testeado · en repo
+
+// ── PRINT / OUTPUT ────────────────────────────────────────────
+UNICODE: PRINT$SAMU         //output auditoría SAMU · scalar
+UNICODE: PRINT$STATS        //output estadísticas ledger
+UNICODE: PRINT$GRAMMAR      //output validación sentencia
+UNICODE: PRINT$CEO          //output rol hexagrama CEO ALPHA
+UNICODE: PRINT$ROUTE        //output NLP→LACHO routing
+
+// ── LIST · enumeración soberana ───────────────────────────────
+UNICODE: LIST<METHOD>               //listar métodos disponibles
+UNICODE: LIST[TERM]                 //listar TOMOs activos
+UNICODE: LIST[LOGISTICAL-EXECUTIVE] //listar roles CEO ALPHA
+UNICODE: LIST[CORPUS]               //listar docs RAG indexados
+UNICODE: LIST[CRYSTALS]             //listar 40 cristales activos
+UNICODE: LIST[HEXAGRAMS]            //listar 64 hexagramas
+UNICODE: LIST[KALIL]                //listar 6 nodos económicos
+
+// ── WRITE · escritura soberana ────────────────────────────────
+UNICODE: WRITE!!STACKING!!  //escribir registro inmutable
+UNICODE: WRITE!!ACTIVITY!!  //escribir ciclo de actividad
+UNICODE: WRITE!!TRUST!!     //escribir contrato soberano
+UNICODE: WRITE!!LACHO!!     //escribir sentencia canónica
+UNICODE: WRITE!!JOURNAL!!   //escribir entrada de bitácora
+
+// ── SAVE_AS · persistencia ────────────────────────────────────
+UNICODE: SAVE_AS!!WORK!!        //guardar como proceso ejecutable
+UNICODE: SAVE_AS!!ACTIVITY!!    //guardar como ciclo soberano
+UNICODE: SAVE_AS$               //guardar como clase/objeto
+UNICODE: SAVE_AS[CORPUS]        //guardar en corpus RAG
+UNICODE: SAVE_AS[JOURNAL]       //guardar en bitácora
+UNICODE: SAVE_AS[THEATER]       //guardar como macro theater
+
+// ── EXPORT · formatos de salida ───────────────────────────────
+UNICODE: EXPORT[TXT]        //texto plano · legible humano
+UNICODE: EXPORT[LACHO]      //sentencias canónicas · formato .lacho
+UNICODE: EXPORT[THEATER]    //macros temporales · formato .theater
+UNICODE: EXPORT[BLUE]       //agente cloud · formato .blue
+UNICODE: EXPORT[GREEN]      //agente local · formato .green
+UNICODE: EXPORT[WORK]       //proceso ejecutable · formato .py
+UNICODE: EXPORT[STACK]      //registro inmutable · formato ledger
+UNICODE: EXPORT[RUNNER]     //runner soberano · formato .runner
+UNICODE: EXPORT[DOOR]       //filtro de acceso · formato .door
+UNICODE: EXPORT[GATE]       //secuencia H · formato gate
+UNICODE: EXPORT[CAT]        //categoría corpus · formato cat
+UNICODE: EXPORT[DB]         //base de datos · sovereign.db
+UNICODE: EXPORT[BIN]        //binario compilado · formato bin
+UNICODE: EXPORT[OS]         //sistema operativo · DIRIME OS
+UNICODE: EXPORT[HTML]       //ballpaper · render visual
+UNICODE: EXPORT[JSON]       //estructura datos · config
+UNICODE: EXPORT[MD]         //markdown · documentación
+
+// ── FLOW · control de flujo soberano ─────────────────────────
+UNICODE: LOOP*GATE*         //iterar sobre secuencia H
+UNICODE: LOOP*CORPUS*       //iterar sobre docs RAG
+UNICODE: LOOP*CRYSTALS*     //iterar sobre 40 cristales
+UNICODE: BREAK!!WORK!!      //detener proceso · WORK brake
+UNICODE: BREAK!!GATE!!      //bloquear acceso · H06
+UNICODE: PASS*SAMU*         //pasar sin disputa · SAMU idle
+UNICODE: RETURN[LACHO]      //retornar sentencia validada
+UNICODE: RETURN[SCORE]      //retornar Scalar S calculado
+UNICODE: RETURN[PLAN]       //retornar plan office_landing
+UNICODE: YIELD[CRYSTAL]     //producir cristal · ledger
+UNICODE: YIELD[TX]          //producir transacción soberana
+UNICODE: RAISE!!SAMU!!      //elevar disputa · auditoría
+UNICODE: RAISE!!GATE!!      //elevar alerta · bloqueo H06
+
+// ── DELETE / UPDATE / QUERY ───────────────────────────────────
+UNICODE: DELETE!!BLACKLIST!!    //eliminar verbo blacklist
+UNICODE: DELETE!!DISPUTE!!      //cerrar disputa SAMU
+UNICODE: UPDATE[SCALAR]         //recalcular Scalar S
+UNICODE: UPDATE[CORPUS]         //re-indexar RAG
+UNICODE: UPDATE[CEO]            //actualizar rol hexagrama
+UNICODE: QUERY<RAG>             //consultar corpus soberano
+UNICODE: QUERY<LEDGER>          //consultar sovereign.db
+UNICODE: QUERY<CEO>             //consultar CEO ALPHA H64
+
+// ── ASIGNACIÓN SOBERANA ───────────────────────────────────────
+UNICODE: =:             //desde coherencia consolidada → expresión asignada
+UNICODE: =:[LACHO]      //asignar sentencia validada
+UNICODE: =:$SCALAR      //asignar valor Scalar S
+UNICODE: =:#TERM        //asignar TOMO_ID sellado
+UNICODE: =:@SAMU        //asignar resultado auditoría
+UNICODE: =:*H*          //asignar hexagrama activo
+UNICODE: =:{KALIL}      //asignar nodo económico dual
+
+//DIR(=) UNICODE_PYTHON_V2 · gaps completados · spec soberano activo
+
+METHOD <operator_flow> =><= .. modela .. unicode_python_v2_soberano --[As de Guía] [term]
+STACKING UF[H52] =><= .. inmutabiliza .. unicode_python_keywords_sellados --[Nudo de Ocho] [term]

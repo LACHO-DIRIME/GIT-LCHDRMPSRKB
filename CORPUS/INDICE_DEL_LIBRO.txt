@@ -1,0 +1,192 @@
+INDICE_DEL_LIBRO
+LIBRO LACHO (ACOPIADO) — ÍNDICE MAESTRO DE LECTURA Y USO
+Versión: 1.0
+Estatus: INDEX_OK
+Ubicación base: /home/lacho/Documentos/PLANER AI/RESULTADO DE ANALISIS/ACOPIADO/LIBRO/
+
+====================================================================
+1) PROPÓSITO DEL ÍNDICE
+====================================================================
+
+Este índice establece:
+- El orden recomendado de lectura (macro → meso → micro).
+- El propósito de cada archivo cognitivo.
+- La regla de actualización (cómo agregar nuevos archivos sin fragmentar el libro).
+
+Este índice no reemplaza los archivos cognitivos; funciona como timón de navegación.
+
+====================================================================
+2) ORDEN RECOMENDADO DE LECTURA (PRIORIDAD)
+====================================================================
+
+LECTURA 1 — NIVEL MACRO (visión global y régimen de integridad)
+
+1) COGNITIVO_00_MACRO_LACHO.txt
+Ruta:
+/home/lacho/Documentos/PLANER AI/RESULTADO DE ANALISIS/ACOPIADO/LIBRO/COGNITIVO_00_MACRO_LACHO.txt
+Propósito:
+- Fijar la tesis global de LACHO como constitución operativa.
+- Definir línea ontológica sostenida (Ser → Hacer → Tener → Estar → Trascender).
+- Establecer principios soberanos (TRUST/foundation/scope/term/tensión).
+- Definir jurisdicciones (TRUST/GATE/WORK/STACKING/SOCIAL/CRYPTO).
+- Establecer mejores prácticas de documentación para el resto del libro.
+Salida esperada al terminar:
+- Comprender “qué es LACHO” y “qué se considera no-negociable”.
+
+LECTURA 2 — NIVEL MESO 01 (constitución concreta: folios, gramática viva, nudos)
+
+2) COGNITIVO_01_MESO_CONSTITUCION_Y_FOLIOS.txt
+Ruta:
+/home/lacho/Documentos/PLANER AI/RESULTADO DE ANALISIS/ACOPIADO/LIBRO/COGNITIVO_01_MESO_CONSTITUCION_Y_FOLIOS.txt
+Propósito:
+- Consolidar FOLIAR como cuerpo constitucional.
+- Definir el sistema de folios (00/01/02) como dispositivo de control.
+- Explicar gramática viva (sujeto/verbo/objeto) como disciplina de auditoría.
+- Explicar nudos como mecanismos de seguridad/persistencia.
+- Fijar el procedimiento de dirimencia ante contradicciones documentales.
+Salida esperada al terminar:
+- Comprender cómo la constitución obliga la forma y evita ambigüedad.
+
+LECTURA 3 — NIVEL MESO 02 (régimen de decisión: SAMU + Ψ + dirimencia + límites)
+
+3) COGNITIVO_02_MESO_SAMU_PSI_DIRIMENCIA_SCOPE_TERM.txt
+Ruta:
+/home/lacho/Documentos/PLANER AI/RESULTADO DE ANALISIS/ACOPIADO/LIBRO/COGNITIVO_02_MESO_SAMU_PSI_DIRIMENCIA_SCOPE_TERM.txt
+Propósito:
+- Integrar SAMU (tardanza, auditoría) con Ψ (verdad local verificable).
+- Definir dirimencia como evaluación formal (correcto/adecuado/legal).
+- Definir scope como frontera de honestidad.
+- Definir term como finitud anti-dogma.
+- Definir WU (salida) como acto formal y gobernado (headcat).
+- Definir sofismo por zonas y RED-REGRET como reparación.
+Salida esperada al terminar:
+- Comprender “cuándo se puede emitir” y “qué se considera verdad local” en operación.
+
+LECTURA 4 — NIVEL MESO 03 (bibliotecas como órganos y módulos como células)
+
+4) BIBLIOTECAS_MADRE_LACHO.txt
+Ruta:
+/home/lacho/Documentos/PLANER AI/RESULTADO DE ANALISIS/ACOPIADO/LIBRO/BIBLIOTECAS_MADRE_LACHO.txt
+Propósito:
+- Definir bibliotecas como órganos con jurisdicción (TRUST, CRYPTO, SOCIAL, STACKING, GATE, WORK, METHOD, ACTIVITY, SAMU).
+- Definir módulos como células con autoridad delegada.
+- Establecer protocolos de crecimiento y mantenimiento.
+- Definir tipología de archivos propios (.lacho, .teather, .py, .rs, .cat, .runner, .door, .worker, .theater, .cli, .gui, .green, .blue, .stack, .gate).
+- Definir fuentes UNICODE configurables y programables (incluyendo BALLPAPER).
+- Definir sistemas de entrada y representación (IME, MIMETYPE, UNICODE, GUI, CLI).
+Salida esperada al terminar:
+- Comprender "qué piezas existen y cómo se relacionan" en el sistema material.
+
+LECTURA 5 — NIVEL MICRO 01 (módulos soberanos de TRUST)
+
+5) MICRO_TRUST_FOUNDATION_SCOPE_TERM.txt
+Ruta:
+/home/lacho/Documentos/PLANER AI/RESULTADO DE ANALISIS/ACOPIADO/LIBRO/MICRO_TRUST_FOUNDATION_SCOPE_TERM.txt
+Propósito:
+- Definir formalmente los tres módulos soberanos de TRUST.
+- Especificar [foundation] como suelo técnico verificable.
+- Especificar [scope] como perímetro de realidad configurable.
+- Especificar [term] como finitud obligatoria.
+- Establecer protocolos de coordinación entre los tres módulos.
+Salida esperada al terminar:
+- Comprender "qué es inmutable y qué es negociable" dentro del sistema.
+
+====================================================================
+4) DOCUMENTOS RELACIONADOS (FUERA DEL LIBRO, PERO AUTORIDAD DE INSUMO)
+====================================================================
+
+Estos documentos alimentan el LIBRO pero no lo reemplazan:
+
+- Acopio por fases (línea ontológica sostenida en Markdown)
+/home/lacho/Documentos/PLANER AI/RESULTADO DE ANALISIS/ACOPIADO/ACOPIO_FASES_LACHO.md
+
+- Plan de ordenamiento de fases
+/home/lacho/Documentos/PLANER AI/PLAN_ORDENAMIENTO_FASES.md
+
+- Plan de depuración y compendio unificado
+/home/lacho/Documentos/PLANER AI/PLAN_DEPURACION_COMPENDIO.md
+
+====================================================================
+5) DOCUMENTOS DE ACOPIO Y REFERENCIA (NO SECUENCIALES)
+====================================================================
+
+Estos documentos contienen volúmenes completos para referencia:
+
+- ABC.txt (volcado de acopio + libro completo)
+/home/lacho/Documentos/PLANER AI/RESULTADO DE ANALISIS/ACOPIADO/LIBRO/ABC.txt
+
+- ANAL.txt (volcado de todos los análisis)
+/home/lacho/Documentos/PLANER AI/RESULTADO DE ANALISIS/ACOPIADO/LIBRO/ANAL.txt
+
+- SOURCE&ASSET%WORTH.txt (volcado de FUENTES PARA ESTUDIO)
+/home/lacho/Documentos/PLANER AI/RESULTADO DE ANALISIS/ACOPIADO/LIBRO/SOURCE&ASSET%WORTH.txt
+
+- LIBRO.txt (concatenación maestra de todos los archivos)
+/home/lacho/Documentos/PLANER AI/RESULTADO DE ANALISIS/ACOPIADO/LIBRO/LIBRO.txt
+
+====================================================================
+6) REGLAS PARA AGREGAR NUEVOS ARCHIVOS AL LIBRO (MEJORES PRÁCTICAS)
+====================================================================
+
+6.1 Regla de niveles
+- MACRO: define tesis global e invariantes. Debe ser único o tener versiones cuidadosamente controladas.
+- MESO: explica un dominio completo (constitución, SAMU, Ψ, bibliotecas, módulos, archivos, fuentes, sistemas de entrada).
+- MICRO: especifica módulos/protocolos concretos (condiciones, límites, sanciones, trazabilidad).
+
+6.2 Regla de unicidad definicional
+- Un término clave debe tener una definición canónica.
+- Las variantes se registran como tensión y se resuelven por dirimencia.
+
+6.3 Regla de trazabilidad
+- Toda afirmación fuerte debe anclarse en:
+  - un principio soberano, o
+  - un protocolo operativo, o
+  - una evidencia/registro.
+
+6.4 Regla de finitud documental
+- Cada archivo debe cerrar con:
+  - qué fija (invariantes)
+  - qué limita (scope/term)
+  - qué habilita (derivaciones a meso/micro)
+
+6.5 Regla anti-fragmentación
+- Derivar por especialización radial (un tema por archivo), no por repetición.
+- Evitar múltiples "introducciones" que compitan.
+
+====================================================================
+7) PRÓXIMOS MICRO-ESPECIFICACIONES SUGERIDAS
+====================================================================
+
+Basado en BIBLIOTECAS_MADRE_LACHO.txt, se sugieren las siguientes micro-especificaciones:
+
+7.1 Prioridad ALTA
+- MICRO_CRYPTO_ASIENTOS.txt: especificación de los 6 asientos de autoridad.
+- MICRO_SOCIAL_COMPONENTES.txt: catálogo de componentes de relación.
+- MICRO_STACKING_PILARES.txt: especificación de los 8 pilares de memoria.
+- MICRO_GATE_MOMENTOS.txt: especificación de momentos y control de flujo.
+- MICRO_WORK_ACTUADORES.txt: especificación de ejecución física.
+- MICRO_METHOD_FORMALISMOS.txt: especificación de ecuaciones y algoritmos.
+- MICRO_SAMU_OPERADOR.txt: especificación del operador consciente y sus protocolos.
+- MICRO_ACTIVITY_ESTADOS.txt: especificación de ciclos y estados temporales.
+
+7.2 Prioridad MEDIA
+- MICRO_FUENTES_UNICODE.txt: especificación detallada de fuentes programables.
+- MICRO_ARCHIVOS_PROPIOS.txt: especificación de tipos de archivos .lacho, .teather, etc.
+- MICRO_IME_MIMETYPE.txt: especificación de sistemas de entrada y tipos de medio.
+- MICRO_GUI_CLI.txt: especificación de interfaces gráficas y de línea de comandos.
+
+7.3 Prioridad BAJA
+- MICRO_RENDIMIENTO.txt: especificación de métricas y optimización.
+- MICRO_SEGURIDAD.txt: especificación de protocolos de auditoría y validación.
+- MICRO_ESCALABILIDAD.txt: especificación de crecimiento a 100MB+.
+
+====================================================================
+8) ESTADO ACTUAL DEL LIBRO
+====================================================================
+
+8.1 Archivos cognitivos: 5 (1 MACRO + 3 MESO + 1 MICRO)
+8.2 Archivos de acopio: 4 (ABC.txt, ANAL.txt, SOURCE&ASSET%WORTH.txt, LIBRO.txt)
+8.3 Total de líneas: ~60,000 líneas en LIBRO.txt
+8.4 Espacio para crecimiento: 40MB+ disponible para alcanzar 100MB+
+
+FIN DEL ÍNDICE

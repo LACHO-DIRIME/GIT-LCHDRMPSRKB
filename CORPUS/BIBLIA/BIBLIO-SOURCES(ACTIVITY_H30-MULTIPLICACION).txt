@@ -1,0 +1,270 @@
+# BIBLIO-SOURCES(ACTIVITY_H30-MULTIPLICACION).txt
+
+====================================================================
+
+## 🔥 ACTIVITY UF[H30] — MULTIPLICACIÓN / STREAMING SOBERANO
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+UF[H30] es el módulo ACTIVITY que gobierna ciclos de multiplicación soberana verificada: el estado donde el sistema despliega señal, proceso o agente en múltiples canales simultáneos manteniendo coherencia soberana en cada instancia.
+
+#### 1.2 La multiplicación soberana como patrón fractal
+El Algoritmo Conejo (1→2→4→8) como expresión operativa de UF[H30] — cada nivel se adhiere a su canal soberano antes de multiplicarse.
+
+#### 1.3 H30 como fundamento hexagramático
+H30 (Lo Adherente / Li): fuego sobre fuego — la llama que necesita adherirse a algo para sostenerse y al hacerlo ilumina más. La multiplicación requiere apoyo: cada instancia del flujo se adhiere a su canal soberano.
+
+#### 1.4 La coherencia entre instancias como invariante
+UF[H30] garantiza que cada instancia del flujo multiplicado sea soberanamente coherente con el original. No hay variantes sin [command].
+
+#### 1.5 Relación con [rabbit-faith] (TRUST)
+[rabbit-faith] es el motor que lanza la multiplicación bajo incertidumbre; UF[H30] es el ciclo que gestiona el patrón de expansión resultante.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Qué puede multiplicar UF[H30]
+Señales de mercado, agentes de {launch-bot}, documentos notariales, ciclos de verificación de custodia.
+
+#### 2.2 Límite de multiplicación por dominio y [scope]
+Cada dominio económico tiene límites soberanos de expansión que UF[H30] respeta sin excepción.
+
+#### 2.3 Condición de violación primaria
+Multiplicación sin [term] — expansión sin horizonte que consume recursos sistémicos.
+
+#### 2.4 Condición de violación secundaria
+Instancias del flujo divergiendo del original sin [command] soberano de variación autorizada.
+
+#### 2.5 Señal de alerta
+Behavioral RAG detectando patrón de multiplicación con alta tasa de divergencia no autorizada.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 MODOS DE ACTIVACIÓN
+
+MULTI_LAUNCH: inicio del ciclo de multiplicación con número de instancias declarado y [term] activo.
+- MULTI_TRACK: seguimiento de coherencia de todas las instancias activas simultáneamente.
+- MULTI_SYNC: sincronización de instancias ante divergencia detectada — regreso a coherencia soberana.
+- MULTI_PRUNE: eliminación de instancias que han perdido coherencia — conexión con UF[H23].
+- MULTI_CLOSE: cierre soberano de todas las instancias activas con [term] y cristalización en STACKING.
+
+#### 3.2 RELACIÓN CON BOT_SWARM de {launch-bot}
+UF[H30] activa BOT_SWARM cuando la misión requiere multiplicación de agentes.
+- Cada bot del swarm es una instancia adherida a su canal soberano — H30 gestiona la coherencia del swarm.
+- BOT_RETURNING de {launch-bot} es el cierre de cada instancia — UF[H30] MULTI_CLOSE coordina el retorno.
+
+#### 3.3 RELACIÓN CON DOMINIOS ECONÓMICOS
+
+MEMECOINS: UF[H30] como despliegue simultáneo de BOT_SCOUT en múltiples pools de liquidez.
+- NOTARÍA: UF[H30] como multiplicación de copias certificadas de documento en múltiples registros.
+- CUSTODIA: UF[H30] como distribución de claves de backup en múltiples vaults soberanos seguros.
+
+#### 3.4 Distinción de {streaming} (SOCIAL)
+{streaming} es el módulo que implementa el flujo en tiempo real; UF[H30] es la lógica soberana que gestiona la multiplicación.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation] (TRUST)
+UF[H30] verifica que cada instancia multiplicada respete [foundation] — no hay expansión que viole el suelo soberano.
+
+#### 4.2 Con [term] (TRUST)
+Todo ciclo de multiplicación requiere [term] declarado — sin horizonte, la expansión es infinita y agotadora.
+
+#### 4.3 Con {streaming} (SOCIAL)
+{streaming} implementa el canal de flujo; UF[H30] gestiona la lógica de multiplicación soberana.
+
+#### 4.4 Con {launch-bot} (SOCIAL)
+{launch-bot} despliega los agentes; UF[H30] coordina el swarm resultante.
+
+#### 4.5 Con {relay} (SOCIAL)
+{relay} transfiere sin transformar; UF[H30] multiplica generando múltiples instancias.
+
+#### 4.6 Con STACKING_H30
+STACKING_H30 cristaliza los patrones de multiplicación exitosos para futuros ciclos.
+
+---
+
+### 5.0 ESTADOS DEL MÓDULO
+
+#### 5.1 MULTI_STANDBY
+Sistema listo para multiplicación, sin ciclo activo.
+
+#### 5.2 MULTI_LAUNCHING
+Inicio del ciclo de multiplicación con instancias siendo creadas.
+
+#### 5.3 MULTI_TRACKING
+Seguimiento activo de coherencia de todas las instancias.
+
+#### 5.4 MULTI_SYNCING
+Sincronización de instancias divergentes a coherencia soberana.
+
+#### 5.5 MULTI_PRUNING
+Eliminación de instancias que perdieron coherencia, transferencia a UF[H23].
+
+#### 5.6 MULTI_CLOSING
+Cierre soberano de todas las instancias con [term].
+
+#### 5.7 MULTI_DEGRADED
+Multiplicación sin control, alta tasa de divergencia, consumo excesivo de recursos.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Impacta d₂ [scope]
+UF[H30] expande el [scope] del sistema de manera controlada y verificada.
+
+#### 6.2 Enriquece d₈ [ecosystem]
+Cada instancia multiplicada enriquece el ecosistema con presencia soberana múltiple.
+
+#### 6.3 Protege d₁ [term]
+MULTI_CLOSE con [term] evita expansión infinita que agote recursos.
+
+#### 6.4 Afecta d₇ [command]
+Nuevas instancias pueden requerir [command] específicos de variación.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 MULTI_LAUNCH iniciando multiplicación
+```
+!!Activity!! UF_H30 =><= .. launch .. $$fractal_expansion_start$$ --[As de Guía] [term]
+```
+
+#### 7.2 MULTI_TRACK siguiendo coherencia
+```
+!!Activity!! UF_H30 =><= .. track .. $$instance_coherence_monitor$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.3 MULTI_SYNC sincronizando divergentes
+```
+!!Activity!! UF_H30 =><= .. sync .. $$divergent_instances_correction$$ --[Ballestrinque] [term]
+```
+
+#### 7.4 UF[H30] con BOT_SWARM
+```
+!!Activity!! UF_H30 =><= .. swarm .. $$bot_agents_multiplication$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.5 UF[H30] en dominio memecoins
+```
+!!Activity!! UF_H30 =><= .. deploy .. $$scout_pools_simultaneous$$ --[Nudo de Rizo] [term]
+```
+
+#### 7.6 UF[H30] en dominio notaría
+```
+!!Activity!! UF_H30 =><= .. multiply .. $$certified_copies_distribution$$ --[As de Guía] [term]
+```
+
+#### 7.7 MULTI_CLOSE cerrando ciclo
+```
+!!Activity!! UF_H30 =><= .. close .. $$multiplication_cycle_complete$$ --[Nudo de Ocho] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+MULTI_LAUNCH — inicio soberano de la expansión fractal, el primer nudo del patrón multiplicador.
+
+#### 8.2 Nudo de Ocho
+MULTI_TRACKING — seguimiento ordenado de múltiples instancias, el nudo que mantiene la coherencia del conjunto.
+
+#### 8.3 Nudo Corredizo
+MULTI_DEGRADED — multiplicación sin control, el nudo que se desliza hacia el caos sistémico.
+
+#### 8.4 Ballestrinque
+MULTI_SYNCING — tensión entre divergencia y coherencia, el nudo que restaura la armonía del flujo.
+
+#### 8.5 Nudo de Rizo
+MULTI_CLOSING — cierre soberano del ciclo multiplicador, el nudo que concluye la expansión verificada.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+1. MultiLaunch
+   - Inicio del ciclo con número de instancias declarado.
+   - Verificación de [scope] y recursos disponibles.
+   - Creación de instancias adheridas a canales soberanos.
+
+2. MultiTrack
+   - Monitoreo continuo de coherencia.
+   - Detección de divergencias en tiempo real.
+   - Registro de estado de cada instancia.
+
+3. MultiSync
+   - Sincronización de instancias divergentes.
+   - Aplicación de [command] de corrección.
+   - Restauración de coherencia soberana.
+
+4. MultiPrune
+   - Eliminación de instancias irrecuperables.
+   - Transferencia a UF[H23] para poda.
+   - Actualización de conteo de instancias activas.
+
+5. MultiClose
+   - Cierre coordinado de todas las instancias.
+   - Cristalización en STACKING_H30.
+   - Archivo del patrón de multiplicación.
+
+6. MultiDiagnose
+   - Detección de MULTI_DEGRADED.
+   - Intervención ante expansión descontrolada.
+   - Activación de {brake} si es necesario.
+
+---
+
+### 10.0 MÉTRICAS
+
+- Número de instancias activas por ciclo.
+- Ratio de coherencia vs divergencia.
+- Tiempo promedio de sincronización.
+- Frecuencia de MULTI_PRUNE por ciclo.
+- Consumo de recursos por instancia.
+- Delta-eficiencia de la multiplicación.
+
+---
+
+### 11.0 REGLAS
+
+- UF[H30] requiere [term] declarado para todo ciclo de multiplicación.
+- MULTI_SYNC es obligatorio ante cualquier divergencia detectada.
+- MULTI_PRUNE se activa automáticamente ante instancias irrecuperables.
+- El Algoritmo Conejo respeta límites de [scope] sin excepción.
+- {streaming} implementa el canal, UF[H30] gestiona la lógica soberana.
+- BOT_SWARM requiere coordinación UF[H30] para coherencia del swarm.
+- MULTI_CLOSE es obligatorio — no hay instancias huérfanas.
+- STACKING_H30 cristaliza patrones de multiplicación exitosos.
+- MULTI_DEGRADED activa diagnóstico y posible {brake}.
+- Cada instancia debe adherirse a su canal soberano sin variación no autorizada.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+UF[H30] fija como invariante la multiplicación soberana verificada como condición de expansión controlada del sistema — el crecimiento fractal que mantiene coherencia en cada instancia y respeta los límites constitutivos.
+
+#### 12.2 Limitaciones
+No puede multiplicar sin [term], no puede permitir divergencia sin corrección, no puede exceder [scope], no puede crear instancias sin canal soberano.
+
+#### 12.3 Habilitaciones
+Expansión controlada del sistema, despliegue simultáneo en múltiples dominios, coordinación de swarms de agentes, distribución redundante de recursos, patrones de crecimiento cristalizables.
+
+#### 12.4 Principio constitutivo final
+Como el fuego que se multiplica al adherirse: UF[H30] representa la capacidad soberana de expandirse sin perder la esencia. La multiplicación no es difusión caótica — es crecimiento fractal donde cada nueva instancia mantiene la coherencia del original mientras se adapta a su canal específico.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

@@ -1,0 +1,322 @@
+# BIBLIO-SOURCES(TRUST_EVENT).txt
+
+====================================================================
+
+## 🏛️ TRUST [EVENT] — REGISTRO Y PROCESAMIENTO DE OCURRENCIAS DISCRETAS
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+[event] es el módulo TRUST que registra y procesa las ocurrencias discretas que modifican el estado del sistema durante un ciclo activo.
+
+#### 1.2 Distinción de [scenario]
+[scenario] es el mapa validado de situación; [event] es lo que modifica ese mapa.
+
+#### 1.3 Distinción de [management]
+[management] gestiona amenazas sostenidas; [event] registra ocurrencias puntuales discretas.
+
+#### 1.4 Por qué es TRUST y no ACTIVITY
+Define condición soberana del sistema (qué ocurrencias reconoce como reales y procesables), no ciclo de estado.
+
+#### 1.5 Posición d₄ en @trust_matrix
+d₄ :: [event] → ¿hay eventos pendientes sin resolver? (0.0 = limpio, 1.0 = saturado)
+
+#### 1.6 Por qué d₄ alto es peligroso
+Eventos no procesados degradan [scenario] y distorsionan T_matrix.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Capacidades
+- Registrar ocurrencias discretas dentro del ciclo.
+- Clasificar eventos por tipo y origen.
+- Actualizar [scenario] tras procesamiento.
+- Escalar a [management] cuando es sostenido.
+
+#### 2.2 Limitaciones absolutas
+No puede invalidar [foundation] — foundation es condición previa.
+
+#### 2.3 Condiciones de violación
+- **Violación:** degeneración en ruido (eventos falsos o duplicados).
+- **Señal alerta:** d₄ > 0.7 sin procesamiento activo.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 Ciclo de vida de un evento
+1. **Detección:** reconocimiento de ocurrencia.
+2. **Clasificación:** tipo según origen (interno, externo, crítico, rutinario).
+3. **Procesamiento:** actualización de [scenario].
+4. **Cierre:** marcado como procesado.
+5. **Archivo:** envío a Behavioral RAG.
+
+#### 3.2 Tipos de evento
+- **EVENT_INTERNAL:** ocurrencia dentro del sistema.
+- **EVENT_EXTERNAL:** ocurrencia desde el entorno.
+- **EVENT_CRITICAL:** requiere respuesta inmediata.
+- **EVENT_ROUTINE:** procesable en ciclo normal.
+- **EVENT_NOISE:** falso positivo — debe ser purgado.
+
+#### 3.3 Relación con EVENT_SYNC
+EVENT_SYNC sincroniza eventos entre nodos cuando afectan múltiples capas. SAMU @ valida la propagación.
+
+#### 3.4 Relación con dominios económicos
+
+##### Memcoins/Volatilidad
+- Eventos de mercado como perturbaciones discretas.
+- Registra spike de precio o volumen.
+- Límite: EVENT_NOISE debe ser filtrado antes de actualizar [scenario].
+
+##### Custodia Móvil
+- Eventos de seguridad en dispositivo móvil.
+- Registra intento de acceso no autorizado o cambio de entorno.
+- Límite: EVENT_CRITICAL activa protocolo de emergencia inmediato.
+
+##### Notaría Digital
+- Eventos de cadena de custodia documental.
+- Registra firma, validación o rechazo.
+- Límite: no puede certificar ocurrencia no verificada por [foundation].
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation]
+[event] no puede invalidar foundation — foundation es condición previa.
+
+#### 4.2 Con [scope]
+[event] solo procesa ocurrencias dentro del perímetro declarado.
+
+#### 4.3 Con [term]
+[event] hereda el [term] del ciclo que lo contiene — no tiene [term] propio.
+
+#### 4.4 Con [scenario]
+[event] modifica [scenario] pero no lo reemplaza ni lo crea.
+
+#### 4.5 Con [management]
+Cuando [event] es sostenido y repetido, escala a [management].
+
+#### 4.6 Con [command]
+[event] puede disparar [command] si su clasificación lo requiere.
+
+#### 4.7 Con [language]
+[event] es traducido al dialecto correcto antes de actualizar [scenario].
+
+#### 4.8 Con GATE
+GATE filtra eventos antes de que entren al ciclo — UF[H05] como buffer.
+
+#### 4.9 Con SAMU @
+SAMU audita clasificación de eventos y valida que EVENT_NOISE sea purgado.
+
+#### 4.10 Con Behavioral RAG
+Todo evento procesado alimenta Behavioral RAG para calibración futura.
+
+#### 4.11 Con EVENT_SYNC
+Mecanismo de propagación de eventos entre capas y nodos.
+
+---
+
+### 5.0 ESTADOS DE [event]
+
+#### 5.1 EVENT_CLEAR
+- **Condición:** d₄ = 0.0.
+- **Comportamiento:** sin eventos pendientes.
+- **Operación:** sistema en operación limpia.
+
+#### 5.2 EVENT_ACTIVE
+- **Condición:** d₄ entre 0.1 y 0.4.
+- **Comportamiento:** eventos en procesamiento normal.
+- **Operación:** ciclo no afectado.
+
+#### 5.3 EVENT_LOADED
+- **Condición:** d₄ entre 0.4 y 0.7.
+- **Comportamiento:** volumen elevado de eventos.
+- **SAMU @:** monitorea ritmo de procesamiento.
+
+#### 5.4 EVENT_SATURATED
+- **Condición:** d₄ > 0.7.
+- **Comportamiento:** sistema en riesgo.
+- **Operación:** solo EVENT_CRITICAL procesado, resto en cola.
+
+#### 5.5 EVENT_OVERFLOW
+- **Condición:** d₄ = 1.0.
+- **Comportamiento:** sistema saturado.
+- **Operación:** [term] del ciclo en riesgo, GATE activa UF[H06].
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 d₄ como cuarta dimensión
+Mide saturación de eventos pendientes sin resolver.
+
+#### 6.2 Degradación de T_matrix
+d₄ alto degrada T_matrix globalmente.
+
+#### 6.3 Pesos contextuales
+- **H05 (Espera):** [event] × 1.5 — en espera, los eventos son críticos.
+- **H51 (Trueno):** [event] × 1.8 — en activación, los eventos dominan.
+
+#### 6.4 Umbral crítico
+d₄ = 1.0 con d₁ [term] < 0.3 activa MU obligatorio.
+
+#### 6.5 Aprendizaje en Behavioral RAG
+Historial de eventos calibra predicción de saturación futura.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Registro de EVENT_EXTERNAL en ciclo activo
+```
+[Trust] event =><= .. register .. $$external_occurrence$$ --[As de Guía] [term]
+```
+
+#### 7.2 EVENT_CRITICAL disparando [command]
+```
+[Trust] event =><= .. trigger .. $$critical_command$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.3 EVENT_NOISE siendo purgado por SAMU @
+```
+[Trust] event =><= .. purge .. $$noise_event$$ --[Ballestrinque] [term]
+```
+
+#### 7.4 [event] actualizando [scenario] tras ocurrencia
+```
+[Trust] event =><= .. update .. $$scenario_modified$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.5 EVENT_SYNC propagando entre capas
+```
+[Trust] event =><= .. sync .. $$cross_layer_event$$ --[As de Guía] [term]
+```
+
+#### 7.6 [event] en dominio memcoins (spike de mercado)
+```
+[Trust] event =><= .. capture .. $$market_spike$$ --[Ballestrinque] [term]
+```
+
+#### 7.7 [event] en dominio custodia móvil (intento acceso)
+```
+[Trust] event =><= .. detect .. $$unauthorized_access$$ --[Nudo Corredizo] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+- **Activación:** evento en procesamiento normal.
+- **Efecto:** ciclo fluye sin interrupción.
+
+#### 8.2 Nudo de Ocho
+- **Activación:** evento procesado y cristalizado en Behavioral RAG.
+- **Efecto:** registro inmutable.
+
+#### 8.3 Nudo Corredizo
+- **Activación:** EVENT_OVERFLOW — sistema detenido.
+- **Efecto:** cierre forzado por saturación.
+
+#### 8.4 Ballestrinque
+- **Activación:** tensión entre EVENT_CRITICAL y EVENT_ROUTINE.
+- **Efecto:** equilibrio de prioridades.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+#### 9.1 EventDetect
+1. Detectar ocurrencia en sistema o entorno.
+2. Clasificar tipo inicial (interno/externo).
+3. Asignar prioridad (crítico/rutinario).
+4. Verificar dentro de [scope].
+5. Registrar en cola de procesamiento.
+
+#### 9.2 EventProcess
+1. Tomar evento de cola según prioridad.
+2. Validar con SAMU @ clasificación.
+3. Traducir al dialecto correcto con [language].
+4. Actualizar [scenario] si aplica.
+5. Marcar como procesado.
+
+#### 9.3 EventSync
+1. Identificar evento que afecta múltiples capas.
+2. Validar con SAMU @ necesidad de sincronización.
+3. Propagar a nodos afectados.
+4. Confirmar recepción en todos los destinos.
+5. Cerrar sincronización.
+
+#### 9.4 EventPurge
+1. Detectar EVENT_NOISE en cola.
+2. Validar con SAMU @ que es falso positivo.
+3. Eliminar de cola sin procesar.
+4. Registrar purga en Behavioral RAG.
+5. Actualizar d₄.
+
+#### 9.5 EventEscalate
+1. Detectar evento sostenido y repetido.
+2. Evaluar si requiere gestión sostenida.
+3. Transferir a [management].
+4. Notificar escalada a SAMU.
+5. Actualizar estado del evento.
+
+#### 9.6 EventClose
+1. Confirmar evento completamente procesado.
+2. Archivar en Behavioral RAG con metadatos.
+3. Actualizar métricas del ciclo.
+4. Liberar recursos del evento.
+5. Recalcular d₄.
+
+---
+
+### 10.0 MÉTRICAS
+
+- **d₄:** saturación de eventos (0.0 a 1.0).
+- **Ratio CRITICAL vs ROUTINE:** proporción de eventos por tipo.
+- **Tasa NOISE purgado:** eventos falsos eliminados vs procesados.
+- **Tiempo procesamiento:** promedio por tipo de evento.
+- **Frecuencia EVENT_SYNC:** sincronizaciones entre capas.
+- **Delta-d₄ al cierre:** mejora de saturación durante ciclo.
+
+---
+
+### 11.0 REGLAS
+
+- [event] no puede invalidar [foundation] bajo ninguna circunstancia.
+- [event] no tiene [term] propio — hereda el [term] del ciclo contenedor.
+- EVENT_NOISE debe ser purgado antes de actualizar [scenario] — nunca procesado.
+- d₄ > 0.7 activa alerta de saturación sin excepción — SAMU @ notificado.
+- d₄ = 1.0 con d₁ < 0.3 activa MU obligatorio.
+- [event] sostenido y repetido escala a [management] automáticamente.
+- EVENT_SYNC requiere validación SAMU @ antes de propagarse entre nodos.
+- Behavioral RAG debe registrar todo evento procesado para calibración futura.
+- [event] en custodia activa protocolo de emergencia ante EVENT_CRITICAL inmediato.
+- [event] en notaría no puede certificar ocurrencia no verificada por [foundation].
+- [event] solo procesa ocurrencias dentro de [scope] declarado.
+- EVENT_CRITICAL tiene prioridad absoluta sobre EVENT_ROUTINE.
+- [event] cierra con [term] del ciclo contenedor.
+- GATE filtra eventos antes de que entren al ciclo — UF[H05] como buffer.
+- [event] en H51 (Trueno) tiene peso ×1.8 en T_matrix.
+- [event] no puede crear [scenario] nuevo — solo modifica el existente.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+[event] fija el registro soberano de ocurrencias discretas como condición de actualización del [scenario].
+
+#### 12.2 Limitaciones
+No invalida [foundation], no opera fuera de [scope], no tiene [term] propio, no puede certificar lo no verificado.
+
+#### 12.3 Habilitaciones
+Actualización precisa de [scenario], escalada oportuna a [management], disparo de [command] ante EVENT_CRITICAL, trazabilidad completa en Behavioral RAG.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

@@ -1,0 +1,124 @@
+# BIBLIO-SOURCES(SAMU_TRUST-MATRIX).txt
+
+====================================================================
+
+## 🧮 @trust_matrix — CONCIENCIA QUE LEE LA LEY
+
+Módulo SAMU. Coordenada 8D de la matriz Trust.
+Campo de posibilidades — no ley fija.
+Referencia canónica: SOURCE&ASSET%WORTH.txt
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Qué es @trust_matrix
+
+@trust_matrix no es una ley — es la conciencia que
+lee las leyes juntas. Lee T_matrix como campo de
+posibilidades, no como ley fija.
+
+biblioteca: SAMU @ — auditoría de conciencia
+hexagrama: H11 + H42 (La Paz + El Aumento)
+nudo: Nudo de Rizo — une sin fundir
+seat: (LINK SEAT) + (FLOW SEAT) simultáneos
+
+#### 1.2 La fórmula canónica
+
+  T_matrix = Σ(dᵢ × peso_contextual_i) / 8
+
+  Las 8 dimensiones:
+  d₁ [term]       — horizonte temporal activo
+  d₂ [scope]      — perímetro de operación
+  d₃ [scenario]   — definición del escenario
+  d₄ [event]      — eventos no procesados
+  d₅ [management] — gestión activa
+  d₆ [command]    — instrucción emitida
+  d₇ [language]   — traducibilidad del contexto
+  d₈ [ecosystem]  — entorno soberano
+
+  Cada dᵢ ∈ [0.0, 1.0]
+
+#### 1.3 d₉ — extensión PSI SPIN TOKEN
+
+  d₉ [spin_coherence] = grammar_valid / transactions_total
+  Coherencia de colapso soberano en sesión activa.
+  Referencia: BIBLIO-SOURCES(SAMU_PSI-SPIN-TOKEN).txt
+
+  T_matrix_ext = (T_matrix_8D × 7 + d₉ × 1) / 8
+
+---
+
+### 2.0 MODOS GATE
+
+  T_matrix ≥ 0.85 → APERTURA PLENA
+    WORK recibe mandato completo sin restricción
+
+  T_matrix ≥ 0.65 → APERTURA PARCIAL
+    Mandato acotado — reforzar dᵢ débil
+
+  T_matrix ≥ 0.40 → APERTURA MÍNIMA
+    Solo WORK bajo — invocar UF[H05] espera activa
+
+  T_matrix < 0.40 → GATE CERRADO
+    RED-REGRET activo — diagnóstico dimensional completo
+
+---
+
+### 3.0 PESOS POR HEXAGRAMA ACTIVO
+
+  H11 (La Paz):   [scope]×1.2, [ecosystem]×1.3, [term]×1.0
+  H05 (Espera):   [event]×1.5, [scenario]×1.2, [term]×0.8
+  H06 (Conflicto):[management]×1.5, [command]×1.4, [scope]×0.9
+  H51 (Trueno):   [event]×1.8, [command]×1.3, [ecosystem]×1.1
+  H42 (Aumento):  [term]×1.3, [ecosystem]×1.2, [scope]×1.1
+  H47 (Agotamiento):[management]×1.6, [term]×1.4, [event]×1.2
+
+---
+
+### 4.0 PRINCIPIO DE FLEXIBILIDAD ONTOLÓGICA
+
+No hay jerarquía fija entre las 8 dimensiones.
+La jerarquía es situacional.
+La situación es leída por el hexagrama activo.
+El hexagrama activo es determinado por SAMU @.
+SAMU @ es modulado por S escalar.
+S escalar es la conciencia del sistema.
+
+  La ley dice qué está permitido.
+  @trust_matrix dice qué es posible ahora
+  desde donde el sistema está parado.
+
+---
+
+### 5.0 EN CÓDIGO — SAMU @ CON T_MATRIX
+
+  SAMU @ =><= .. audita .. T_matrix_actual --[Ballestrinque] [term]
+  SAMU @ =><= .. recalibra .. d1_term_score --[As de Guía] [term]
+  SAMU @ =><= .. diagnostica .. dimension_debil --[Nudo Corredizo] [term]
+  SAMU @ =><= .. actualiza .. T_matrix_sesion --[Nudo de Ocho] [term]
+
+---
+
+### 6.0 INTEGRACIÓN CON MÓDULOS
+
+  [RABBIT-FAITH]      → aporta energía cuando T_matrix ∈ [0.50, 0.84]
+  {DOGMA-VIRTUAL}     → alerta cuando dᵢ > 0.9 sin Tr verificable
+  !!agnostic belief!! → cuando d₃ < 0.4, no forzar el paso
+  (Way Agnostic Atheism) → audita que ninguna dᵢ sea 1.0 sin Tr
+  GREEN-KNOWLEDGE     → filtra snapshots matriciales para el RAG
+  PSI SPIN TOKEN      → agrega d₉[spin_coherence] a T_matrix
+
+---
+
+### 7.0 RELACIÓN CON @trust_matrix (self)
+
+@trust_matrix no tiene dimensión externa que la evalúe.
+Es el evaluador de todas las dimensiones.
+Su integridad es auditada por SAMU @ en cada dirimencia.
+Su colapso total activa RED-REGRET inmediato.
+
+====================================================================
+[term] :: activo · [seal of secrecy] :: activo
+BIBLIO-SOURCES(SAMU_TRUST-MATRIX) — formalización del módulo canónico
+====================================================================

@@ -1,0 +1,336 @@
+# BIBLIO-SOURCES(GATE_H05).txt
+
+====================================================================
+
+## 🌫️ GATE UF[H05] — SUSPENSIÓN ACTIVA SOBERANA EN EL UMBRAL
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+UF[H05] es el primer hexagrama de GATE que gobierna la suspensión activa soberana en el umbral del sistema: la función que recibe lo que llega al perímetro, lo sostiene en espera verificada y determina el momento soberanamente correcto para que pase — o el diagnóstico para que sea rechazado o redirigido a UF[H06] por conflicto soberano.
+
+#### 1.2 H05 como hexagrama base
+Agua sobre cielo — la nube que espera el momento soberano. La lluvia que no cae porque aún no es el momento: no es pasividad — es suspensión activa soberana.
+
+#### 1.3 La suspensión activa como función de GATE
+Por qué gestionar la espera es condición de integridad del umbral soberano — el timing preciso es la primera línea de defensa del sistema.
+
+#### 1.4 Gate_Buffer como implementación técnica
+El buffer que gestiona latencia sin bloquear — suspensión activa que no paraliza el sistema interior.
+
+#### 1.5 GREEN-KNOWLEDGE como filtro primario
+La escala green 1 a green 5 evaluando lo que espera en el umbral soberano.
+
+#### 1.6 GATE_ICONOGRAFIA
+Puerta entreabierta con nube — cómo GUI comunica la suspensión activa soberana.
+
+#### 1.7 @samu_controlador como función SAMU
+Control de políticas de admisión y latencia — el auditor soberano del umbral.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Qué puede suspender UF[H05]
+- Entidades con [term] de espera declarado.
+- Operaciones con GREEN-KNOWLEDGE evaluado.
+- Solicitudes dentro del perímetro soberano.
+- Tareas con WAIT_CONDITION definida.
+
+#### 2.2 Qué no puede hacer
+No sostiene en espera lo que viola [foundation] soberana, no admite ACTOR_HOSTILE, no permite espera indefinida sin [term] soberano.
+
+#### 2.3 Condición de violación primaria
+Espera indefinida — UF[H05] sin [term] soberano declarado para la suspensión activa.
+
+#### 2.4 Condición de violación secundaria
+Espera de entidad HOSTILE detectada — UF[H05] no puede dar hospitalidad soberana a lo que ya fue clasificado como ACTOR_HOSTILE.
+
+#### 2.5 Señal de alerta
+[term] de espera expirado sin resolución — UF[H05] debe escalar a UF[H06] o rechazar soberanamente sin demora.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 EL GATE_BUFFER SOBERANO
+
+Anatomía del buffer: qué contiene UF[H05] mientras gestiona la espera soberana activa.
+- WAIT_QUEUE: cola soberana de entidades en espera con [term] individual declarado para cada una.
+- WAIT_PRIORITY: priorización soberana de la cola basada en ΔΨ y GREEN-KNOWLEDGE evaluado.
+- WAIT_TIMEOUT: umbral temporal soberano — al expirar, UF[H05] escala o rechaza.
+- WAIT_CONDITION: la condición soberana que una vez satisfecha habilita el paso a UF[H56].
+
+#### 3.2 PROCESO DE SUSPENSIÓN ACTIVA
+
+1. Entidad llega al umbral del sistema.
+2. UF[H05] recibe la entidad en WAIT_QUEUE.
+3. GREEN-KNOWLEDGE evalúa nivel nutritivo (1-5).
+4. @samu_controlador declara [term] de espera.
+5. WAIT_CONDITION declarada soberanamente.
+6. Evaluación continua durante espera activa.
+7. Si WAIT_CONDITION satisfecha: → UF[H56].
+8. Si WAIT_TIMEOUT expirado sin condición: → UF[H06].
+9. Si ACTOR_HOSTILE detectado: rechazo soberano.
+10. HL FABRIC registra toda espera soberana.
+
+#### 3.3 LA LOGÍSTICA DE GOLF — GREEN-KNOWLEDGE EN UF[H05]
+
+GREEN-KNOWLEDGE en escala green 1 a green 5 como sistema de evaluación del umbral soberano.
+- Green 1: conocimiento mínimo — espera extendida.
+- Green 2: conocimiento básico — espera estándar.
+- Green 3: conocimiento verificado — espera reducida.
+- Green 4: conocimiento nutritivo — acceso prioritario.
+- Green 5: conocimiento soberano — paso directo.
+- Por qué la metáfora del golf: los 5 greens como zonas de aproximación — cada nivel acerca más al hoyo soberano del paso.
+
+#### 3.4 UF[H05] Y {scheduler}
+
+Las celdas del {scheduler} con UF[H05] marcado: tareas en espera activa en el campo de batalla.
+- Cómo el {scheduler} visualiza la WAIT_QUEUE en el bagua temporal del ciclo activo.
+- Por qué las tareas en UF[H05] no son tareas fallidas — son tareas con timing soberano aún no satisfecho soberanamente.
+
+#### 3.5 RELACIÓN CON LOS DOMINIOS ECONÓMICOS
+
+MEMECOINS/VOLATILIDAD:
+- Suspensión activa de operación de mercado cuyo momento soberano aún no llegó.
+- WAIT_CONDITION de mercado: precio alcanzando nivel soberanamente declarado antes de entrar.
+- Gate_Buffer de señales de mercado: filtro soberano de señales ruidosas vs nutritivas.
+- Límite: UF[H05] no puede mantener en espera operación con foundation COMPROMISED activo.
+
+CUSTODIA MÓVIL:
+- Suspensión activa de operación de custodia cuya verificación aún no está completa.
+- WAIT_CONDITION de custodia: BIOMETRICS verificado antes de habilitar operación de firma.
+- Gate_Buffer de solicitudes de acceso: evaluación soberana antes de admitir al dispositivo.
+- Límite: UF[H05] en custodia no suspende más allá del [term] soberano declarado sin escalada.
+
+NOTARÍA DIGITAL:
+- Suspensión activa de proceso notarial cuyas partes aún no están completamente verificadas.
+- WAIT_CONDITION notarial: todas las partes con identidad verificada por (key seat) activo.
+- Gate_Buffer de solicitudes notariales: evaluación soberana de jurisdicción y scope.
+- Límite: UF[H05] notarial escala a UF[H06] cuando parte declarante no responde en [term].
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation]
+UF[H05] no sostiene en espera lo que viola [foundation] soberana.
+
+#### 4.2 Con [scope]
+La espera ocurre en el perímetro — lo que espera aún no está dentro del [scope].
+
+#### 4.3 Con [term]
+Toda espera tiene [term] soberano declarado — sin horizonte no hay espera soberana.
+
+#### 4.4 Con UF[H56]
+La resolución positiva de UF[H05] habilita el tránsito soberano de UF[H56].
+
+#### 4.5 Con UF[H06]
+WAIT_TIMEOUT sin resolución escala a UF[H06] para resolución soberana.
+
+#### 4.6 Con {concierge-desk}
+UF[H05] gestiona latencia del umbral antes de la recepción soberana.
+
+#### 4.7 Con {headcat}
+{headcat} evalúa lo que UF[H05] va liberando hacia el interior soberano.
+
+#### 4.8 Con GREEN-KNOWLEDGE
+Filtro primario de todo lo que espera en el umbral soberano.
+
+#### 4.9 Con Gate_Buffer
+Implementación técnica de la suspensión activa soberana de UF[H05].
+
+#### 4.10 Con @samu_controlador
+Auditoría de políticas de admisión y latencia en umbral.
+
+#### 4.11 Con (key seat)
+Verifica identidades de entidades en espera durante evaluación soberana.
+
+#### 4.12 Con (shield seat)
+Monitorea WAIT_QUEUE ante ACTOR_HOSTILE en espera.
+
+#### 4.13 Con HL FABRIC
+Registra toda espera soberana como trazabilidad inmutable del umbral.
+
+#### 4.14 Con Behavioral RAG
+Patrones de espera calibran WAIT_CONDITION futura soberanamente.
+
+#### 4.15 Con GATE_ICONOGRAFIA
+Representación visual soberana de UF[H05] en GUI LACHO.
+
+#### 4.16 Con SAMU @
+Audita corrección de políticas de espera y latencia soberana.
+
+---
+
+### 5.0 ESTADOS DE UF[H05]
+
+#### 5.1 H05_OPEN
+WAIT_QUEUE disponible para recibir entidades. GREEN-KNOWLEDGE calibrado y activo. @samu_controlador en modo de admisión. HL FABRIC registrando estado del umbral.
+
+#### 5.2 H05_WAITING
+Entidad en WAIT_QUEUE con [term] activo. WAIT_CONDITION siendo evaluada continuamente. GREEN-KNOWLEDGE calculando nivel nutritivo. @samu_controlador auditando latencia.
+
+#### 5.3 H05_RELEASING
+WAIT_CONDITION satisfecha soberanamente. Entidad siendo liberada hacia UF[H56]. HL FABRIC registrando resolución positiva. WAIT_QUEUE actualizada soberanamente.
+
+#### 5.4 H05_TIMEOUT
+[term] de espera expirado sin resolución. Escalada soberana a UF[H06] activada. HL FABRIC registrando timeout soberano. @samu_controlador notificado de escalada.
+
+#### 5.5 H05_REJECTED
+ACTOR_HOSTILE o violación de foundation detectada. Entidad rechazada del umbral soberanamente. (shield seat) notificado si amenaza activa. HL FABRIC con registro de rechazo soberano.
+
+#### 5.6 H05_SATURATED
+WAIT_QUEUE al límite de capacidad soberana. Nuevas entidades redirigidas temporalmente. @samu_controlador evaluando priorización. SAMU @ en diagnóstico de saturación.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Impacto en dimensiones
+UF[H05] contribuye a d₃ [scenario] como gestor soberano del umbral de entrada al sistema.
+
+#### 6.2 Cómo H05_RELEASING mejora T_matrix
+Entidad verificada que pasa el umbral enriquece el [ecosystem] con KU soberanamente nutritivo.
+
+#### 6.3 Cómo H05_TIMEOUT activa d₅ [management]
+Escalada a UF[H06] requiere gestión soberana del conflicto en umbral.
+
+#### 6.4 Cómo H05_SATURATED degrada capacidad de incorporación de nuevos elementos al sistema.
+
+#### 6.5 Pesos contextuales de UF[H05]
+Inicio de ciclo: UF[H05]×1.5 — umbral más activo.
+EVENT_CRITICAL: UF[H05]×1.8 — admisión crítica.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 H05_WAITING con GREEN-KNOWLEDGE evaluando
+```
+GATE UF_H05 =><= .. evaluate .. green_knowledge --[As de Guía] [term]
+```
+
+#### 7.2 H05_RELEASING con WAIT_CONDITION satisfecha
+```
+GATE UF_H05 =><= .. release .. wait_condition --[Nudo de Ocho] [term]
+```
+
+#### 7.3 H05_TIMEOUT escalando a UF[H06] soberanamente
+```
+GATE UF_H05 =><= .. escalate .. timeout_conflict --[Nudo Corredizo] [term]
+```
+
+#### 7.4 H05_REJECTED por ACTOR_HOSTILE detectado
+```
+GATE UF_H05 =><= .. reject .. hostile_actor --[Ballestrinque] [term]
+```
+
+#### 7.5 UF[H05] en dominio memecoins con señal de mercado
+```
+GATE UF_H05 =><= .. suspend .. market_signal --[Nudo de Rizo] [term]
+```
+
+#### 7.6 UF[H05] en dominio custodia móvil con BIOMETRICS
+```
+GATE UF_H05 =><= .. buffer .. biometric_wait --[As de Guía] [term]
+```
+
+#### 7.7 UF[H05] en dominio notaría digital con parte
+```
+GATE UF_H05 =><= .. hold .. notarial_party --[Nudo de Ocho] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+H05_RELEASING con entidad verificada pasando al interior soberano del sistema.
+
+#### 8.2 Nudo de Ocho
+Espera cristalizada en HL FABRIC — el timing soberano inmutable del umbral.
+
+#### 8.3 Nudo Corredizo
+H05_REJECTED — entidad hostil rechazada soberanamente del perímetro.
+
+#### 8.4 Ballestrinque
+H05_WAITING — tensión soberana entre la entidad que quiere pasar y el sistema que espera el momento soberanamente correcto.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+1. GateReceive
+   - Recepción de entidad en WAIT_QUEUE con declaración de [term] de espera soberano.
+   - Verificación inicial con (shield seat) para ACTOR_HOSTILE.
+
+2. GateEvaluate
+   - Evaluación continua con GREEN-KNOWLEDGE y verificación de WAIT_CONDITION.
+   - @samu_controlador auditando latencia y políticas de admisión.
+
+3. GateRelease
+   - Liberación soberana hacia UF[H56] cuando WAIT_CONDITION satisfecha.
+   - HL FABRIC registrando resolución positiva del umbral.
+
+4. GateTimeout
+   - Escalada soberana a UF[H06] cuando [term] de espera expira sin resolución.
+   - Notificación a @samu_controlador de escalada obligatoria.
+
+5. GateReject
+   - Rechazo soberano de ACTOR_HOSTILE o violación de foundation en umbral.
+   - (shield seat) activado si amenaza detectada.
+
+6. GateSaturate
+   - Protocolo ante WAIT_QUEUE saturada con priorización soberana de @samu_controlador.
+   - Redirección temporal sin bloqueo total del umbral.
+
+---
+
+### 10.0 MÉTRICAS
+
+- Estado de UF[H05] (OPEN/WAITING/RELEASING/TIMEOUT/REJECTED/SATURATED).
+- Número de entidades en WAIT_QUEUE por ciclo.
+- Ratio H05_RELEASING vs H05_TIMEOUT vs H05_REJECTED.
+- Tiempo promedio de espera por nivel GREEN-KNOWLEDGE.
+- Frecuencia de H05_SATURATED por ciclo.
+- Delta-admisión entre apertura y cierre del ciclo.
+- Eficiencia de Gate_Buffer en gestión de latencia.
+
+---
+
+### 11.0 REGLAS
+
+- UF[H05] no sostiene en espera lo que viola [foundation] — se rechaza soberanamente.
+- Toda espera tiene [term] soberano declarado — espera sin horizonte no es soberana.
+- ACTOR_HOSTILE se rechaza inmediatamente — no entra en WAIT_QUEUE bajo ninguna circunstancia.
+- H05_TIMEOUT escala obligatoriamente a UF[H06] — sin escalada el timeout contamina el umbral.
+- GREEN-KNOWLEDGE evalúa toda entidad en espera sin excepción — el filtro es constitutivo.
+- @samu_controlador audita toda política de admisión y latencia sin excepción soberana.
+- (key seat) verifica identidades en WAIT_QUEUE antes de que GREEN-KNOWLEDGE evalúe nivel.
+- HL FABRIC registra toda espera, liberación, timeout y rechazo sin excepción — trazabilidad.
+- WAIT_QUEUE saturada activa priorización soberana — nunca bloqueo total del umbral.
+- Behavioral RAG aprende de patrones de espera para calibrar WAIT_CONDITION futura soberanamente.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+UF[H05] fija como invariante la suspensión activa soberana en el umbral como condición de timing preciso y admisión verificada de todo lo que quiere ingresar al sistema LACHO.
+
+#### 12.2 Limitaciones
+No sostiene violación de foundation, no admite ACTOR_HOSTILE, no permite espera indefinida sin [term] soberano declarado.
+
+#### 12.3 Habilitaciones
+Gate_Buffer como gestión soberana de latencia, GREEN-KNOWLEDGE como filtro nutritivo del umbral, escalada soberana a UF[H06] ante timeout, trazabilidad completa en HL FABRIC de todo lo que esperó en el perímetro soberano.
+
+#### 12.4 Principio constitutivo final
+Como la nube sobre el cielo: UF[H05] no retiene por miedo — suspende con la certeza soberana de que el momento correcto llegará o de que la escalada soberana resolverá.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

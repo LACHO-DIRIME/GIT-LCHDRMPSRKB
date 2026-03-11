@@ -1,0 +1,106 @@
+# BIBLIO-SOURCES(DIRIME-IMV_PARADIGM).txt
+
+====================================================================
+
+## PARADIGMAS POR BIBLIOTECA — RÉGIMEN DE VALIDACIÓN DIFERENCIADA
+
+====================================================================
+
+### 1.0 PROBLEMA CONSTITUCIONAL
+
+El validador actual (grammar.py v0.1.0) aplica las mismas 5 reglas a todas las bibliotecas. Esto es correcto para la forma superficial de la sentencia pero omite que cada biblioteca tiene un régimen de validación diferenciado: no solo delimitadores distintos, sino lógica de construcción diferente.
+
+### 2.0 MAPA COMPLETO: BIBLIOTECA → PARADIGMA
+
+| Biblioteca | Paradigma | Descripción soberana |
+|---|---|---|
+| TRUST | Imperativo | Declara condición irrefutable — no describe, ordena. [comando] ejecuta sin negociación |
+| SOCIAL | Declarativo | Describe estado relacional — {componente} reporta, no ejecuta directamente |
+| SAMU | Alto nivel | Abstracción máxima — @ dirime sin especificar implementación |
+| CRYPTO | Funcional | Transforma entrada en salida verificada — (seat) aplica función pura con firma |
+| STACKING | Orientado a objetos | Cada UF[H##] es un objeto con estado propio — cristaliza, persiste, hereda ciclo |
+| GATE | Scripts | Orquesta secuencia de estados — H05→H56→H06 es el script canónico |
+| WORK | Bajo nivel | Toca hardware/OS — {módulo} ejecuta en metal soberano sin abstracción |
+| METHOD | Enumerables | Operadores formales enumerables — <> delimita relación lógica verificable |
+| ACTIVITY | Nivel medio | Ciclos UF[H##] de estado — puente entre WORK (bajo) y SAMU (alto) |
+
+### 3.0 CONSECUENCIAS PARA GRAMMAR.PY (PRÓXIMA VERSIÓN)
+
+La implementación de _validate_by_paradigm() en grammar.py v0.2.0:
+```python
+PARADIGM_RULES = {
+    Library.TRUST:    {"mode": "imperative",   "requires_command": True},
+    Library.SOCIAL:   {"mode": "declarative",  "forbidden_verbs": ["ignite","commit","purge"]},
+    Library.CRYPTO:   {"mode": "functional",   "requires_seat_subject": True},
+    Library.WORK:     {"mode": "low_level",    "requires_concrete_object": True},
+    Library.GATE:     {"mode": "script",       "valid_hexagrams": ["H05","H56","H06"]},
+    Library.METHOD:   {"mode": "enumerable",   "requires_operator": True},
+    Library.ACTIVITY: {"mode": "mid_level",    "requires_uf_subject": True},
+    Library.SAMU:     {"mode": "high_level",   "requires_at_subject": True},
+    Library.STACKING: {"mode": "object",       "requires_uf_h_range": True},
+}
+```
+
+### 4.0 REGLAS ESPECÍFICAS POR PARADIGMA
+
+**TRUST (imperativo):**
+- Verbos válidos: verifica, declara, ordena, autoriza, revoca, cierra, activa.
+- Sujeto típico: FOUNDATION, [management], [command].
+- Objeto típico: [módulo], $$objeto_protegido$$.
+- No admite verbos condicionales o descriptivos.
+
+**SOCIAL (declarativo):**
+- Verbos válidos: declara, reporta, notifica, describe, registra, observa.
+- Verbos prohibidos: ignite, commit, purge, detiene, bloquea (son de WORK/CRYPTO).
+- Sujeto: {componente} con llaves.
+- Describe estado — no ejecuta acción de hardware.
+
+**CRYPTO (funcional):**
+- Sujeto debe ser (seat) con paréntesis.
+- Función pura: misma entrada → misma salida verificada.
+- Verbos: firma, cifra, verifica, protege, autoriza, rotaciona.
+
+**GATE (scripts):**
+- Hexagramas válidos como sujeto: UF[H05], UF[H56], UF[H06] solamente.
+- Secuencia canónica: H05 (espera) → H56 (tránsito) → H06 (resolución).
+- Orquesta sin ejecutar directamente.
+
+**WORK (bajo nivel):**
+- Objeto debe ser concreto — no abstracciones.
+- "{doorman-mobile} .. custodia .. activo_soberano" ✓
+- "{doorman-mobile} .. custodia .. tension_abstracta" ✗
+- Verbos de acción directa: ejecuta, custodia, detiene, sella, purga.
+
+**METHOD (enumerables):**
+- Sujeto con <> delimitadores.
+- Operadores válidos del set: >> << |> <| <> >< >= <=
+- Expresa relación formal, no acción.
+
+**ACTIVITY (nivel medio):**
+- Sujeto debe ser UF[H##] del rango H01-H64.
+- Puente entre WORK y SAMU — puede delegar hacia arriba o ejecutar hacia abajo.
+
+**SAMU (alto nivel):**
+- Sujeto debe ser @ (auditor) o $day/$set/#rise.
+- Abstracción máxima — dirime sin detallar implementación.
+- Verbos: dirime, audita, aprende, resuelve, delibera.
+
+**STACKING (orientado a objetos):**
+- UF[H##] como objeto con estado propio.
+- Operaciones: cristaliza, persiste, hereda, actualiza_frecuencia.
+- Pilares verificados: H01, H02, H04, H23, H29, H30, H48, H51, H52, H57, H58.
+
+### 5.0 ESTADO ACTUAL Y ROADMAP
+
+ESTADO IMV v0.1.0: gramática valida forma superficial — reglas 1-5 iguales para todas.
+ESTADO IMV v0.2.0 (NEXT): _validate_by_paradigm() activo — reglas diferenciadas por biblioteca.
+
+La distinción de paradigmas no es cosmética. TRUST imperativo que acepta verbos descriptivos de SOCIAL produce sentencias gramaticalmente válidas pero semánticamente contradictorias con el corpus constitucional.
+
+### 6.0 GRAMÁTICA VIVA
+
+PARADIGM_RULES =><= .. diferencia .. régimen_de_cada_biblioteca_soberanamente
+=><= TRUST_imperativo .. SOCIAL_declarativo .. CRYPTO_funcional
+=><= GATE_script .. WORK_bajo_nivel .. SAMU_alto_nivel --[Nudo de Ocho] [term]
+
+====================================================================

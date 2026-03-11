@@ -1,0 +1,54 @@
+# BIBLIO-SOURCES(CHINA-ESTRATEGIA).txt
+# LACHO × CHINA — Estrategia Dual Soberana
+# Decisión: "pintarse de chino" · dual · fluido · soberano
+# [term] :: activo
+
+## VISIÓN DUAL
+AFUERA :: adaptados a Occidente · crypto · Web3 · diáspora china
+ADENTRO :: e-CNY · WeChat · BSN · regulación PBOC · guanxi digital
+PUENTE :: LACHO lengua franca · UNICODE-CHINA traductor soberano
+
+## KALIL NODOS DUALES
+BARRIOS  :: exterior=diáspora+remesas · interior=banca rural e-CNY
+NORA     :: exterior=rating crypto · interior=Sesame Credit compatible
+BOLIVAR  :: exterior=Ethereum/DeFi · interior=BSN permisionado
+CARILO   :: exterior=loans USDT · interior=loans e-CNY tasa PBOC
+CHALTEN  :: exterior=DEX global · interior=exchange regulado PBOC
+
+## RESTRICCIONES COMO PROTOCOLO
+crypto especulativa ban  → e-CNY interior · crypto solo exterior
+Gran Firewall            → operar nativo · no bypass
+ICO prohibidas           → tokens auditables registrados STACKING
+datos locales            → servidor chino capa interior
+control de cambios       → PUENTE BANCARIO con SAFE approval
+
+## UNICODE-CHINA TOKENS BASE
+信任 → TRUST        关系 → guanxi=infraestructura   面子 → reputación=SCALAR S
+资本 → capital      交易 → transacción               合同 → contrato=[term]
+安全 → (shield)     验证 → TRUST FOUNDATION          数字 → token digital
+货币 → e-CNY        银行 → BARRIOS                   贷款 → CARILO
+风险 → riesgo       网络 → HL FABRIC                 节点 → KALIL nodo
+主权 → soberanía    协议 → protocolo LACHO            社区 → SOCIAL
+智能 → KALIL kernel 桥梁 → PUENTES ECONÓMICOS
+
+## ELPULSAR.APP DUAL
+GLOBAL  :: Web3 · multi-idioma · crypto · KYC occidental
+CHINA   :: mini-programa WeChat · e-CNY · BSN · KYC PBOC
+NÚCLEO :: misma gramática LACHO · RAG bilingüe · SAMU @ audita ambos
+
+## ROADMAP
+FASE 0 :: documentar · UNICODE tokens · KALIL dual declarado ← ACTUAL
+FASE 1 :: elpulsar.app global · BARRIOS diáspora · KALIL exterior
+FASE 2 :: WeChat mini-prog test · e-CNY wallet · BSN testnet
+FASE 3 :: empresa China WFOE/JV · producción · interior operativo
+
+## SENTENCIAS CANÓNICAS
+TRUST FOUNDATION =><= .. verifica .. alineacion_regulatoria_PBOC --[Ballestrinque] [term]
+CRYPTO (key seat) =><= .. certifica .. transaccion_e-CNY_soberana --[As de Guía] [term]
+SOCIAL {relay} =><= .. conecta .. wechat_alipay_nativo_china --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. registro_BSN_inmutable --[Nudo de Ocho] [term]
+WORK {flybot} =><= .. ejecuta .. bridge_exterior_interior_china --[As de Guía] [term]
+SAMU @ =><= .. audita .. contenido_pre_publicacion_china --[Ballestrinque] [term]
+WORK {brake} =><= .. detiene .. operacion_fuera_regulacion_china --[Nudo Corredizo] [term]
+
+[term] :: activo · [seal of secrecy] :: activo

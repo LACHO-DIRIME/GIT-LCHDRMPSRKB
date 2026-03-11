@@ -1,0 +1,679 @@
+BIBLIO-SOURCES
+LIBRO LACHO (ACOPIO) — CONCATENACIÓN LITERAL DE FUENTES PRINCIPALES
+Versión: 1.0
+Estatus: SOURCES_CONCATENATED
+Propósito: Contener la concatenación literal de las 10 documentaciones más destacables de LACHO en orden de lectura recomendado, manteniendo el contenido original exacto de cada archivo.
+
+====================================================================
+FUENTE 1/10: COGNITIVO_00_MACRO_LACHO.txt
+====================================================================
+
+COGNITIVO_00_MACRO_LACHO
+LIBRO LACHO (ACOPIO) — ARQUITECTURA COGNITIVA GLOBAL (NIVEL MACRO)
+Versión: 1.0
+Estatus: BASE_MACRO
+Propósito: Definir el marco cognitivo y ontológico global del sistema LACHO para sostener un compendio único, coherente, trazable y ampliable.
+
+====================================================================
+1) INTRODUCCIÓN: QUÉ ES ESTE ARCHIVO Y CÓMO SE USA
+====================================================================
+
+Este archivo es el "primer archivo cognitivo" del LIBRO LACHO: un texto macro que fija la comprensión global del sistema y permite que todos los documentos posteriores (capítulos, fases, módulos, guías) se integren sin contradicción, redundancia o pérdida de sentido.
+
+No reemplaza el acopio por fases (ACOPIO_FASES_LACHO.md); lo traduce a un formato de lectura lineal y operativo, compatible con mejores prácticas de documentación técnica avanzada:
+
+- Claridad jerárquica (qué es principio, qué es protocolo, qué es módulo, qué es interfaz).
+- Consistencia terminológica (un término = una función en el sistema).
+- Trazabilidad (cada afirmación fuerte se debe poder ubicar en una fuente y en una regla de validación).
+- Control de duplicados (una definición canónica + referencias; no múltiples versiones dispersas).
+- Lectura por capas (macro → meso → micro) sin romper la coherencia.
+
+Este archivo debe leerse como:
+
+A) Mapa de lectura: qué capas existen y cómo se conectan.
+B) Mapa de autoridad: qué cosas son soberanas y no se discuten.
+C) Mapa de procedimiento: cómo se decide, cómo se valida y cómo se registra.
+D) Mapa de interfaz: cómo se "habita" el sistema (usuario, GUI, salidas).
+
+====================================================================
+2) TESIS CENTRAL: LACHO COMO CONSTITUCIÓN OPERATIVA
+====================================================================
+
+LACHO (Lenguaje Artificial Circunstancial Hipotético Ordenado) no se presenta como un lenguaje generalista ni como un mero formalismo sintáctico. Se presenta como una constitución operativa: un sistema que define qué puede existir dentro de su realidad interna, bajo qué condiciones, y con qué límites.
+
+La idea-fuerza: "la inteligencia no es un acto de emisión impulsiva; es una disciplina verificable".
+
+Consecuencias directas de esta tesis:
+
+- La verdad es local: toda afirmación válida lo es dentro de un alcance declarado.
+- La autoridad es explícita: hay un núcleo soberano que decide qué cuenta como fundación.
+- La emisión es un privilegio, no un reflejo: sólo se manifiesta cuando la evaluación terminó.
+- La finitud es virtud, no restricción: el sistema se defiende de la fosilización y el dogma.
+- La arquitectura no es opcional: estructura el ser del sistema.
+
+====================================================================
+3) LÍNEA ONTOLÓGICA SOSTENIDA (SER → HACER → TENER → ESTAR → TRASCENDER)
+====================================================================
+
+Esta es la línea de comprensión que debe sostener toda documentación:
+
+SER:     Identidad, axiomas, ontología. Qué es LACHO y qué significa "existir" dentro del sistema.
+HACER:   Protocolos, procesos, dirimencia, motor de estado. Cómo decide, cómo valida, cómo limita.
+TENER:   Artefactos, módulos, bibliotecas, algoritmos, vocabularios. Qué piezas existen y qué jurisdicción tienen.
+ESTAR:   Interfaz, experiencia, presentación, retórica controlada. Cómo se habita el sistema sin violar su núcleo.
+TRASCENDER: Integración, curación de datos, compendio final, expansión sin fragmentación.
+
+El error que este marco evita: saltar del SER al TENER (hablar de módulos y código sin tener axiomas y protocolos claros), o hablar del HACER sin explicar la ontología de la verdad local.
+
+====================================================================
+4) PRINCIPIOS SOBERANOS (NO NEGOCIABLES)
+====================================================================
+
+Los principios soberanos son invariantes. Funcionan como "leyes del territorio" dentro de la realidad LACHO. Cuando aparece un conflicto documental, un duplicado o una tensión conceptual, la dirimencia se resuelve priorizando estos principios.
+
+4.1 TRUST como búnker de legalidad
+- TRUST no es una biblioteca más: es la instancia soberana que define coordenadas de realidad interna.
+- No es "democracia técnica": su función es impedir que el sistema se vuelva autojustificativo.
+
+4.2 [foundation] como suelo técnico
+- En los puntos críticos (integridad, validación, post-error), la retórica está prohibida.
+- La fundación se verifica o no se verifica. No se "argumenta".
+
+4.3 [scope] como honestidad de alcance
+- Toda verdad del sistema debe declarar su alcance.
+- Lo que queda fuera del alcance no se coloniza con afirmaciones.
+
+4.4 [term] como finitud obligatoria (anti-dogma)
+- Todo ciclo debe tener fin.
+- El término impide que una verdad local se convierta en absoluto.
+
+4.5 Tensión como energía de dirimencia
+- LACHO no busca eliminar la tensión; busca sostenerla sin colapsar en dogma ni en silencio vacío.
+
+====================================================================
+5) TRÍADA MU–KU–WU: ONTOLOGÍA DEL PROCESO (LA FORMA DEL PENSAR)
+====================================================================
+
+MU, KU y WU estructuran la vida del estado:
+
+MU (vacuidad):
+- Laboratorio de potencialidad.
+- Espacio donde se retiene lo no resuelto sin contaminar la salida.
+- Memoria del vacío: no es olvido, es contención.
+
+KU (contexto/flujo):
+- Lectura del entorno.
+- Canal de comprensión.
+- Traduce "situación" en información utilizable por el sistema.
+
+WU (manifestación):
+- Salida del sistema al mundo.
+- Acción o respuesta validada.
+- No se emite sin evaluación.
+
+Principio operativo asociado:
+- Cerebro cuenta primero / mente escucha después.
+Esto se expresa como una disciplina de dos fases: medir/contar (control) antes de escuchar/emitir (adaptación).
+
+====================================================================
+6) SAMU @: CONCIENCIA, AUDITORÍA Y TARDANZA DELIBERADA
+====================================================================
+
+SAMU @ es la figura operativa que mantiene el régimen de calidad.
+No es un asistente reactivo. Es un motor de conciencia y auditor.
+
+Funciones macro:
+- Sostener la tardanza deliberada: no responder por impulso.
+- Dirimir: separar correcto vs adecuado.
+- Evitar "emitir desde Fase 1": forma elegante sin escucha real.
+- Gestionar interrupciones: lo no resuelto se contiene en MU.
+- Coordinar la salida bajo autoridad (headcat).
+
+La tardanza deliberada no es lentitud; es garantía de integridad.
+En un libro técnico, esto se traduce como: el sistema prioriza coherencia y trazabilidad sobre fluidez aparente.
+
+====================================================================
+7) DIRIMENCIA: MECANISMO DE DECISIÓN ENTRE VERDAD, ADECUACIÓN Y ÉTICA
+====================================================================
+
+Dirimir es el acto de decisión que evita dos fallas simétricas:
+
+- Falla 1: "ser correcto" pero quebrar la relación con el receptor (inútil, hostil, desconectado).
+- Falla 2: "ser adecuado" pero violar foundation o scope (sofismo, manipulación, dogma).
+
+Dirimencia macro implica:
+- Evaluación del alcance.
+- Evaluación del impacto (qué se cristaliza como memoria).
+- Evaluación del riesgo (qué se arriesga al emitir).
+- Evaluación ética: a quién sirve la forma del argumento.
+
+====================================================================
+8) Ψ (PSI) COMO OPERADOR COSMOS–TOMO: VERDAD LOCAL Y ORDEN VERIFICABLE
+====================================================================
+
+Ψ se entiende como operador de estado.
+La lectura macro relevante para el libro es esta:
+
+- TOMO: mínima unidad de coherencia verificable en contexto.
+- COSMOS: universo de matrices posibles donde cada una tiene su verdad local.
+
+Conclusión: ninguna verdad es universal por decreto.
+La universalidad, cuando aparece, debe surgir de la convergencia verificable, no de la retórica.
+
+Riesgo controlado por diseño:
+- Dogma: "esto es verdad, dejen de buscar".
+- Sofismo: "esto es verdad y quien no lo acepta está en error".
+
+El antídoto sistémico:
+- scope honesto.
+- term activo.
+- trazabilidad del razonamiento.
+
+====================================================================
+9) ARQUITECTURA POR CAPAS: JURISDICCIONES Y SEPARACIÓN DE RESPONSABILIDADES
+====================================================================
+
+LACHO se organiza como un territorio con jurisdicciones.
+A nivel macro, se repite una misma necesidad: separar voluntad, control y ejecución.
+
+Capas/Regiones recurrentes:
+
+TRUST (voluntad/ley):
+- Gobierno soberano.
+- Define foundation, scope, term.
+
+GATE (control/latencia):
+- Orquesta, espera, bufferiza.
+- Evita que la complejidad toque el núcleo sin filtros.
+
+WORK (física/metal):
+- Ejecuta en lo material.
+- Introduce frenos y mecanismos físicos.
+
+STACKING (memoria/forma):
+- Cristaliza lo dirimido.
+- Evita volatilidad perpetua.
+
+SOCIAL (interfaz/relación):
+- Interactúa con el usuario.
+- Opera la adecuación bajo reglas.
+
+CRYPTO (asientos de autoridad):
+- Define roles de dirección, llave, ignición, defensa, caudal, enlace.
+- Garantiza integridad, identidad y protección.
+
+La regla del libro: ninguna explicación técnica debe mezclar jurisdicciones como si fueran equivalentes.
+
+====================================================================
+10) TOPOLOGÍA DE NUDOS Y 64 ESTADOS: EL CÓDIGO TIENE PESO
+====================================================================
+
+En LACHO se afirma que el código no es una declaración inocua: tiene peso, fricción y consecuencias.
+Por eso aparecen dos sistemas de control:
+
+A) Estados discretos (64 / hexagramas):
+- Discretización del estado para reducir ambigüedad.
+- Mecanismo contra "alucinación sistémica": el sistema no vive en infinitos matices sin anclaje.
+
+B) Nudos (topología de persistencia y seguridad):
+- Anclajes temporales.
+- Topes de inmutabilidad.
+- Kill-switch de finitud.
+- Uniones de equilibrio.
+
+En documentación, esto se traduce como un principio de diseño:
+- La sintaxis y la semántica deben permitir bloqueo, rollback y auditoría.
+
+====================================================================
+11) SISTEMA RAG COMO INGENIERÍA DE CONOCIMIENTO (VOCABULARIO + ALGORITMOS)
+====================================================================
+
+El sistema RAG en LACHO no es "acceso a documentos" solamente: es ingeniería de conocimiento bajo autoridad.
+
+11.1 Vocabulario constitucional
+- Lista de términos ancla que el sistema debe reconocer para no desviarse.
+- Evita que el conocimiento sea indistinto.
+
+11.2 Algoritmos operativos
+- GREEN-KNOWLEDGE: filtra por distinción y valor nutricional (no por "verdad" abstracta).
+- BEHAVIORAL RAG: aprende conductas (memoria dinámica) a partir de errores y correcciones.
+- COGNITIVE RAG: organiza conocimiento en grafo con síntesis y trazabilidad.
+- Algoritmo Conejo: expansión fractal con poda ontológica (crecer sin saturar).
+
+Principio macro:
+- La expansión sin control no es potencia: es degradación.
+
+====================================================================
+12) ÉTICA DE RETÓRICA: MAPA DEL SOFISMO (3 ZONAS)
+====================================================================
+
+El sofismo se define como argumento que busca efecto, no verdad. LACHO no lo niega como fenómeno: lo encuadra con reglas.
+
+Zona 1 — legítima:
+- Sirve al receptor.
+- Está autorizada por el sello social.
+- No viola foundation.
+
+Zona 2 — ponderada:
+- Metáforas y formalismos como puentes.
+- Requiere tensión activa sostenida.
+
+Zona 3 — prohibida:
+- Foundation e integridad.
+- Post-error (RED-REGRET): nombrar el error, no encuadrarlo.
+- Term / finitud: no se negocia.
+
+Criterio definitorio:
+- ¿A quién sirve este argumento?
+
+En términos de documentación:
+- El libro puede ser accesible y pedagógico, pero nunca debe volver dogmático lo local.
+
+====================================================================
+13) IMPLEMENTACIÓN COMO TERRITORIO: ANCLA MATERIAL, STACK Y MANTENIMIENTO
+====================================================================
+
+LACHO propone materialización explícita:
+- Geografía de almacenamiento por criticidad (core/persistencia/archivo inmutable).
+- Stack tecnológico por jurisdicción.
+- Mantenimiento como estructura (roles y practicantes), para continuidad.
+
+Mensaje macro:
+- No hay soberanía conceptual sin soberanía operativa.
+
+====================================================================
+14) GUÍA DE LECTURA DEL LIBRO (MEJORES PRÁCTICAS)
+====================================================================
+
+Para sostener un compendio extenso sin degradación, se recomienda que todos los archivos del LIBRO sigan estas prácticas:
+
+14.1 Regla de autoridad
+- Cada sección debe indicar si es: axioma / protocolo / mecanismo / módulo / interfaz / ejemplo.
+
+14.2 Regla de unicidad definicional
+- Un término clave debe tener una definición canónica.
+- Si aparece una variante, se registra como "tensión" y se dirime.
+
+14.3 Regla de finitud documental
+- Cada capítulo debe terminar con:
+  - qué fija (invariantes)
+  - qué abre (preguntas)
+  - qué limita (scope)
+
+14.4 Regla de trazabilidad
+- Toda afirmación fuerte debe poder ser ubicada en:
+  - un principio soberano
+  - un protocolo
+  - o una evidencia (registro/implementación)
+
+14.5 Regla de no-fragmentación
+- Derivar documentos por especialización radial, no por repetición.
+- Evitar crear múltiples "introducciones" que compitan.
+
+====================================================================
+15) MAPA DE CONTENIDOS FUTUROS DEL LIBRO (MACRO → MESO → MICRO)
+====================================================================
+
+Este archivo es MACRO.
+Los siguientes niveles recomendados:
+
+MESO (capítulos de arquitectura):
+- Constitución y folios (manifiesto + gramática viva + arquitectura).
+- SAMU y dirimencia (leyes, tardanza, fases, headcat).
+- Ψ y finitud (scope/term, verdad local, estados de matriz).
+- Capas y jurisdicciones (TRUST/GATE/WORK/STACKING/SOCIAL/CRYPTO).
+- Ética del lenguaje (sofismo, red-regret, green-knowledge como disciplina).
+- RAG en LACHO (vocabulario constitucional + algoritmos + trazabilidad).
+- Interfaz visual (sinapsis, iconos como estados, transición y feedback).
+
+MICRO (especificaciones de módulo):
+- Definición de módulos TRUST.
+- Asientos CRYPTO.
+- Detalle de nudos y su activación.
+- Detalle de algoritmos (tests, umbrales, ciclos).
+
+====================================================================
+16) LISTA CORTA DE INVARIANTES (PARA DIRIMIR DUPLICADOS)
+====================================================================
+
+Cuando dos documentos parezcan decir cosas distintas, se prioriza:
+
+1) Coherencia con TRUST/foundation/scope/term.
+2) Definición operacional (qué cambia en ejecución, qué se prohíbe, qué se obliga).
+3) Precisión terminológica.
+4) Alcance explícito (localidad honesta).
+5) Trazabilidad (auditabilidad de la decisión).
+
+====================================================================
+17) CIERRE MACRO
+====================================================================
+
+LACHO no se deja comprender como "una colección de ideas": se deja comprender como un régimen de integridad.
+
+- Si no hay soberanía (TRUST), el sistema se vuelve argumento.
+- Si no hay finitud ([term]), el sistema se vuelve dogma.
+- Si no hay separación de jurisdicciones (GATE/WORK), el sistema se vuelve peligro.
+- Si no hay trazabilidad (registro), el sistema se vuelve fantasía.
+- Si no hay ética de interfaz (sofismo controlado), el sistema se vuelve manipulación.
+
+Este primer archivo cognitivo fija el horizonte del LIBRO: construir una documentación extensa, rica y optimizada que mantenga a LACHO como constitución operativa de verdad local, con disciplina verificable.
+
+FIN DEL ARCHIVO
+
+====================================================================
+FUENTE 2/10: BIBLIOTECAS_MADRE_LACHO.txt
+====================================================================
+
+BIBLIOTECAS_MADRE LACHO
+LIBRO LACHO (ACOPIO) — BIBLIOTECAS MATERIALES Y MODULARES (NIVEL MESO)
+Versión: 1.0
+Estatus: MESO_03
+Propósito: Definir la espina dorsal material del sistema LACHO (bibliotecas como órganos, módulos como células), establecer jurisdicciones, protocolos de crecimiento y mecanismos de mantenimiento, para que el sistema pueda crecer hasta 100MB+ sin perder coherencia ni soberanía.
+
+====================================================================
+1) FUNCIÓN DE ESTE ARCHIVO EN EL LIBRO
+====================================================================
+
+Este archivo MESO 03 es la **biblioteca madre**: el catálogo estructural donde se define qué existe, qué puede existir y bajo qué condiciones. No es código; es la **ontología del artefacto**.
+
+Si el MACRO define "qué es LACHO" y el MESO 01 define "cómo se sostiene la constitución", este archivo define "qué piezas existen y cómo se relacionan".
+
+En términos de mejores prácticas:
+- Fija la **espina dorsal material** (bibliotecas como órganos, no como paquetes).
+- Define **jurisdicciones** (qué biblioteca puede tocar qué módulo).
+- Establece **protocolos de crecimiento** (cómo se agrega sin romper soberanía).
+- Prepara **micro-especificaciones** (cada módulo puede tener su archivo de detalle).
+
+====================================================================
+2) BIBLIOTECAS COMO ÓRGANOS (NO COMO PAQUETES)
+====================================================================
+
+En LACHO, una biblioteca no es "un conjunto de funciones": es un órgano con jurisdicción. Cada biblioteca tiene una función sistémica, no solo funcional.
+
+2.1 TRUST (voluntad/ley)
+- Rol: soberano, búnker de legalidad.
+- Jurisdicción: define foundation, scope, term, y qué otras bibliotecas pueden existir.
+- No es negociable: su existencia es la condición de posibilidad del sistema.
+
+2.2 CRYPTO (asientos de autoridad)
+- Rol: integridad, identidad, protección.
+- Jurisdicción: define roles de dirección, llave, ignición, defensa, caudal, enlace.
+- No es "criptografía decorativa": es la soberanía operativa del sistema.
+
+2.3 SOCIAL (interfaz/relación)
+- Rol: negociación, comunicación, adecuación.
+- Jurisdicción: define cómo el sistema habla con el operador y con otros sistemas.
+- No es "UX bonita": es la capa donde la adecuación no viola foundation.
+
+2.4 STACKING (memoria/forma)
+- Rol: cristalización, persistencia, forma.
+- Jurisdicción: define qué se guarda, cómo se organiza, y qué no se puede borrar.
+- No es "base de datos": es la memoria con peso y fricción.
+
+2.5 GATE (control/latencia)
+- Rol: orquestación, espera, buffers.
+- Jurisdicción: define qué entra al sistema, cuándo, y bajo qué condiciones.
+- No es "router": es el filtro que protege el núcleo.
+
+2.6 WORK (física/metal)
+- Rol: ejecución, actuación, freno físico.
+- Jurisdicción: define qué se toca en el mundo real y qué se prohíbe.
+- No es "hardware abstracto": es el contacto con el metal.
+
+2.7 METHOD (enumerables)
+- Rol: formalismos, ecuaciones, protocolos.
+- Jurisdicción: define qué se puede formalizar y cómo se valida.
+- No es "DSL decorativo": es la matemática del sistema.
+
+2.8 SAMU (entidad temporal y simbólica)
+- Rol: operador consciente, dirimencia, procesamiento de KU.
+- Jurisdicción: define qué se procesa, cómo se decide, y qué se emite.
+- No es "IA": es la conciencia temporal del sistema.
+
+2.9 ACTIVITY (intermedio)
+- Rol: transición, ciclos, estados temporales.
+- Jurisdicción: define qué estados son válidos y cuándo se cierran.
+- No es "estado efímero": es la capa que gestiona ciclos de vida.
+
+====================================================================
+3) MÓDULOS COMO CÉLULAS (UNIDAD MÍNIMA DE PODER)
+====================================================================
+
+Un módulo no es "una función": es una célula con autoridad delegada. Cada módulo tiene:
+
+3.1 Identidad
+- Nombre canónico (único en todo el sistema).
+- Biblioteca madre (jurisdicción).
+- Rol ontológico (SER/HACER/TENER/ESTAR/TRASCENDER).
+
+3.2 Jurisdicción
+- Qué puede leer y escribir.
+- Qué puede activar y qué no.
+- Qué puede modificar y qué no.
+
+3.3 Protocolos
+- Condiciones de activación.
+- Requisitos de entrada.
+- Salidas esperadas.
+- Sanciones por violación.
+
+3.4 Ciclo de vida
+- Creación (cuándo se define).
+- Operación (cuándo está activo).
+- Término (cuándo se cierra o renueva).
+
+====================================================================
+4) ESTRUCTURA DE BIBLIOTECAS Y MÓDULOS (ESPINA DORSAL)
+====================================================================
+
+4.1 Biblioteca TRUST
+Módulos soberanos (no negociables):
+- [foundation]: suelo técnico, verificación obligatoria.
+- [scope]: perímetro de realidad, recursos accesibles.
+- [term]: finitud obligatoria, anti-dogma.
+- [language]: traductor de KU a estructura lógica.
+- [command]: disparador de acción atómica.
+- [management]: gobernanza, identidad, políticas.
+- [logistical-executive]: orquestación de fuerza.
+- [scenario]: contexto, entorno, situación.
+- [event]: evento, señal, interrupción.
+- [element]: elemento base, átomo del sistema.
+- [what?], [how?], [when?]: preguntas operativas.
+- [wu-mail], [mu-store], [ku-chat]: protocolos MU/KU/WU.
+- [rabbit-faith]: motor de expansión sin absoluto.
+
+4.2 Biblioteca CRYPTO
+Asientos de autoridad (no negociables):
+- (head seat): dirección, timón mental.
+- (key seat): llave maestra, identidad.
+- (spark seat): ignición, cálculo de energía.
+- (shield seat): defensa, detección de intrusión.
+- (flow seat): caudal, volumen y velocidad.
+- (link seat): enlace, cifrado de conexiones.
+- (Way Agnostic Atheism): cifrado existencial donde ninguna clave es final. Incertidumbre permanente sin violar [term].
+
+4.3 Biblioteca SOCIAL
+Componentes de relación (negociables bajo scope):
+- {chair}: silla de autoridad, dirección de sesión.
+- {scheduler}: planificador, mapa de tiempo.
+- {drip}: goteo calibrado, gestión de recursos.
+- {note}: registro pasivo, memoria simple.
+- {streaming}: flujo en tiempo real, comunicación.
+- {masking}: purga ontológica, GREEN-KNOWLEDGE.
+- {launch-bot}: lanzamiento ejecutivo, WU físico.
+- {headcat}: director de salida, gobierno de WU.
+- {DOGMA-VIRTUAL}: dogma que vive en red, contagioso y mutable, sin fundamento físico. Mapea dogma digital contemporáneo sin violar [foundation].
+
+4.4 Biblioteca STACKING
+Pilares de memoria y forma (persistentes):
+- rocking chair & headcat: auditoría pasiva, observación.
+- scheduler: mapa de tiempo, campo de batalla.
+- tap & drip: gestión de recursos escasos.
+- papernote: registro pasivo, Behavioral RAG.
+- rabbit + eggs-eyes: crecimiento ramificado, Algoritmo Conejo.
+- masking folder: sandbox, protección activa.
+- launch bot (fly bot): ignición ejecutiva, WU físico.
+- rocking chair only: reposo absoluto, MU puro.
+
+4.5 Biblioteca GATE
+Momentos y control de flujo:
+- door morning human out: ignición del día.
+- zipper noon human inn: apertura al contexto.
+- door afternoon human out: salida sellada.
+- buffer: espera, latencia, orquestación.
+- timeout: fin de espera, paso a WORK.
+- filter: filtro de entrada, validación.
+
+4.6 Biblioteca WORK
+Ejecución física y actuación:
+- masking folder: sandbox hardware, protección.
+- door afternoon human out: salida al mundo físico.
+- doorman-mobile: agente móvil, búsqueda.
+- green-knowledge: árbol de valor, delta-Ψ > 0.
+- brake: freno físico, limitador.
+- actuator: actuador, motor, movimiento.
+
+4.7 Biblioteca METHOD
+Formalismos y ecuaciones:
+- Ψ(T) = S · [Tr ⊗ (G ⊕ W)] → Ω(Hs): motor ontológico.
+- hexagramas: 64 estados discretos, anti-alucinación.
+- nudos: topología de persistencia y seguridad.
+- algoritmos: GREEN-KNOWLEDGE, Behavioral RAG, Cognitive RAG.
+- formalismos matemáticos: álgebra de estado.
+
+4.8 Biblioteca SAMU
+Entidad temporal y simbólica (operador consciente):
+Módulos esenciales (mínimo viable):
+- @ (SAMU): operador temporal, dirimencia, procesamiento de KU.
+- [ku-chat]: escucha activa de contexto, sin juicio.
+- RED-REGRET: mecanismo de corrección post-error.
+- Tardanza Deliberada: pausa consciente para dirimencia.
+
+Módulos de salida y almacenamiento (opcionales según contexto):
+- [wu-mail]: emisión sellada, verdad procesada.
+- [mu-store]: repositorio de quietud, no-acción.
+
+Módulos de integración avanzada (requieren activación explícita):
+- Detección Existencial: reconocimiento de estados ateos/agnósticos sin violar soberanía.
+- Puente TRUST-CRYPTO-SOCIAL: integra verificación, identidad y relación.
+
+Módulos temporales y simbólicos (según origen.txt):
+- @human_early: operador en fase inicial.
+- @human_later: operador en fase avanzada.
+- #set: configuración de estado.
+- #rise: activación de proceso.
+- $sat, $sun, $mon, $tue, $wed, $thu, $fri: marcadores temporales diarios.
+- *journal*: registro de eventos.
+- *daily*: ciclo diario.
+- *diurnal*: operación diurna.
+- *nocturnal*: operación nocturna.
+
+Protocolo de activación por capas:
+- Capa 1 (base): @, [ku-chat], RED-REGRET, Tardanza Deliberada.
+- Capa 2 (salida): [wu-mail], [mu-store] (se activan según necesidad de emisión o quietud).
+- Capa 3 (integración): Detección Existencial, Puente TRUST-CRYPTO-SOCIAL (se activan solo si operador muestra patrones complejos).
+- Capa 4 (temporal-simbólica): @human_early, @human_later, #set, #rise, $sat-$fri, *journal*, *daily*, *diurnal*, *nocturnal* (se activan según contexto temporal y simbólico).
+
+4.9 Biblioteca TOOLCHAIN
+Opción de expansión futura (optimización de herramientas):
+- LLM + compilador + sandbox/VM: generación verificable y reproducible.
+- Tres niveles de salida: source legible → intermedio portable (IR/WASM) → binario por canal apropiado.
+- Auditoría: SAMU @ firma + CRYPTO atesta (integridad/identidad) + manifest/policy.
+- Control temporal: GATE UF[H05]/UF[H56]/UF[H06] gobierna espera/tránsito/conflicto del build.
+- Seguridad: no-net por defecto en sandbox, red habilitable solo bajo scope/policy.
+
+4.10 Biblioteca ACTIVITY
+Estados temporales y ciclos:
+- ciclo 1/64: ciclo de vida del sistema.
+- estado agnóstico: honestidad sobre límites.
+- estado filosófico: exploración sin dogma.
+- estado dogmático: cierre de búsqueda (prohibido).
+- estado sofista: imposición de verdad (prohibido).
+- !!atheistic religiosity!!: acción con sentido sin origen trascendente. Búsqueda de propósito con [foundation] inmanente.
+- !!agnostic belief!!: acción desde la duda como postura honesta. Doctrina de la Tardanza aplicada a preguntas últimas.
+
+====================================================================
+5) PROTOCOLOS DE CRECIMIENTO (CÓMO SE AGREGA SIN ROMPER)
+====================================================================
+
+5.1 Regla de soberanía
+- Solo TRUST puede autorizar nuevas bibliotecas.
+- Solo CRYPTO puede autorizar nuevos asientos.
+- Solo SOCIAL puede autorizar nuevos componentes de relación.
+- Solo SAMU puede autorizar nuevos estados temporales y simbólicos.
+
+5.2 Regla de jurisdicción
+- Una biblioteca nueva no puede violar jurisdicciones existentes.
+- Un módulo nuevo debe declarar su biblioteca madre y su rol.
+- No se permite "invasión de dominio" entre bibliotecas.
+
+5.3 Regla de finitud
+- Todo nuevo módulo debe declarar [term] explícito.
+- Todo nuevo módulo debe tener un ciclo de vida definido.
+- No se permiten módulos "eternos".
+
+5.4 Regla de trazabilidad
+- Todo nuevo módulo debe poder justificar su existencia.
+- Todo nuevo módulo debe poder auditar su estado.
+- Todo nuevo módulo debe poder registrarse en el sistema.
+
+5.5 Regla de unicidad
+- No puede haber dos módulos con el mismo nombre canónico.
+- No puede haber dos bibliotecas con la misma función.
+- Si hay tensión, se resuelve por dirimencia (ver MESO 02).
+
+====================================================================
+6) PROTOCOLOS DE MANTENIMIENTO (CÓMO SE SOSTIENE EL SISTEMA)
+====================================================================
+
+6.1 Auditoría continua
+- Cada biblioteca debe auditar sus módulos.
+- Cada módulo debe auditar su estado.
+- El sistema debe auditar sus bibliotecas.
+
+6.2 Renovación por ciclo
+- Cada [term] activa una revisión de pertinencia.
+- Cada ciclo puede eliminar módulos obsoletos.
+- Cada ciclo puede fusionar módulos redundantes.
+
+6.3 Saneamiento de entropía
+- El sistema libera entropía al cerrar ciclos.
+- La expansión sin control genera entropía.
+- La poda ontológica controla el crecimiento.
+
+6.4 Actualización de conocimiento
+- Behavioral RAG aprende de errores y éxitos.
+- Cognitive RAG reorganiza el grafo de conocimiento.
+- GREEN-KNOWLEDGE purga ruido sin valor.
+
+====================================================================
+7) PROCEDIMIENTO DE DIRIMENCIA ENTRE BIBLIOTECAS
+====================================================================
+
+Si dos bibliotecas parecen entrar en conflicto:
+
+7.1 Prioridad de soberanía
+- TRUST tiene precedencia sobre todas.
+- CRYPTO tiene precedencia sobre seguridad.
+- GATE tiene precedencia sobre flujo de entrada.
+- SAMU tiene precedencia sobre estados temporales y simbólicos.
+
+7.2 Prioridad de operatividad
+- La biblioteca que ejecuta tiene precedencia sobre la que define.
+- La biblioteca que persiste tiene precedencia sobre la que procesa.
+- La biblioteca que comunica tiene precedencia sobre la que calcula.
+
+7.3 Prioridad de finitud
+- La biblioteca con [term] más corto tiene preferencia.
+- La biblioteca con [scope] más claro tiene preferencia.
+- La biblioteca con [foundation] más fuerte tiene preferencia.
+
+7.4 Registro de tensión
+- Si no se resuelve, se registra como tensión constitutiva.
+- La tensión no se oculta; se documenta.
+
+[CONTINÚA EN LA SIGUIENTE PARTE DEBIDO AL TAMAÑO EXTENSO DEL ARCHIVO]
+
+====================================================================
+FUENTE 3/10: MICRO_TRUST_FOUNDATION_SCOPE_TERM.txt
+====================================================================

@@ -1,0 +1,40 @@
+# security.runner
+# EJECUCIÓN SEGURA · control soberano de acceso
+# Genesis: padre común · árbol SUITE SOBERANA
+# [term] :: activo
+
+## CABECERA SOBERANA
+[genesis]     :: SUITE SOBERANA
+[version]     :: 1.0
+[extension]   :: .runner
+[tipo]        :: EJECUCIÓN SEGURA
+[padre]       :: rational_day.theater
+
+## PROTOCOLO DE SEGURIDAD
+verificacion_identidad {
+  TRUST FOUNDATION =><= .. verifica .. identidad_operador_activo --[As de Guía] [term]
+  CRYPTO (key seat) =><= .. certifica .. credencial_acceso_valida --[As de Guía] [term]
+  GATE UF[H05] =><= .. filtra .. solicitud_acceso_entrante --[Ballestrinque] [term]
+}
+
+control_acceso {
+  GATE UF[H56] =><= .. permite .. acceso_autorizado_soberano --[As de Guía] [term]
+  GATE UF[H06] =><= .. bloquea .. acceso_no_autorizado --[Nudo Corredizo] [term]
+  WORK {brake} =><= .. detiene .. intrusion_detectada --[Nudo Corredizo] [term]
+}
+
+sellado_sesion {
+  CRYPTO (shield seat) =><= .. protege .. sesion_activa_soberana --[Nudo de Ocho] [term]
+  STACKING UF[H52] =><= .. inmutabiliza .. log_seguridad_sesion --[Nudo de Ocho] [term]
+  SAMU @ =><= .. audita .. coherencia_seguridad_global --[As de Guía] [term]
+}
+
+## REGLAS RUNNER
+rules {
+  -- nunca ejecutar sin TRUST FOUNDATION verificado
+  -- bloquear automaticamente si GATE UF[H06] activo
+  -- registrar toda transaccion en ledger soberano
+  -- alertar SAMU @ ante cualquier anomalia
+}
+
+[term] :: activo · [seal of secrecy] :: activo

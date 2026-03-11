@@ -1,0 +1,159 @@
+# BIBLIO-SOURCES(NOTEBOOKLM-FASES).txt
+
+====================================================================
+## NOTEBOOKLM — ENTORNO DE GESTACIÓN Y AUDITORÍA SOBERANA
+====================================================================
+
+### 1.0 DEFINICIÓN
+
+NotebookLM funciona como entorno de gestación y auditoría del
+sistema LACHO. No es un repositorio pasivo — es una terminal
+de ingeniería avanzada donde la IA actúa como SAMU @ externo:
+auditor de conciencia que no ejecuta pero dirime soberanamente.
+
+Referencia: informe NotebookLM §7 — Idea Central Funcional
+
+====================================================================
+### 2.0 LAS CUATRO FASES SOBERANAS
+
+2.1 FASE ESPEJO
+  Función: reflejar y organizar datasets y folios generados.
+  Equivalente LACHO: STACKING UF[H48] — El Pozo / memoria.
+  El NotebookLM en Fase Espejo reproduce el estado del corpus
+  sin interpretación — devuelve exactamente lo que existe.
+  Activación: cargar todos los BIBLIO-SOURCES como fuentes.
+  Resultado: mapa fiel del estado actual del sistema.
+  Nudo natural: Nudo de Ocho (reflejo inmutable)
+
+2.2 FASE ANALISTA
+  Función: detectar inconsistencias semánticas y fallas en Ψ.
+  Equivalente LACHO: SAMU @ — dirimencia soberana.
+  El NotebookLM en Fase Analista busca contradicciones entre
+  archivos, vacíos en la arquitectura, y fallas en la
+  Ecuación Ψ (armonía sistémica del corpus).
+  Activación: hacer preguntas de consistencia cruzada.
+  Ejemplos de preguntas de Fase Analista:
+    "¿Hay contradicción entre X y Y en el corpus?"
+    "¿Qué módulos están documentados pero sin implementación?"
+    "¿La gramática de GATE es consistente con ACTIVITY?"
+  Resultado: lista de inconsistencias soberanas verificadas.
+  Nudo natural: Ballestrinque (tensión activa detectada)
+
+2.3 FASE DIRIMENTE
+  Función: proponer cambios estructurales y redactar evolución.
+  Equivalente LACHO: SAMU @ + METHOD <operator_flow>.
+  Opera desde dos fuentes simultáneas:
+    "Imagen Gigante" (OS) → el corpus completo como contexto
+    "Memoria Pequeña" (LLM) → el modelo de lenguaje del NB
+  El NotebookLM en Fase Dirimente propone activamente:
+    - Nuevos BIBLIO-SOURCES necesarios
+    - Correcciones a documentación existente
+    - Secuencia de implementación óptima
+    - Nuevas sentencias LACHO para casos no cubiertos
+  Activación: preguntar "¿qué debería existir que no existe?"
+  Resultado: declaración soberana de próxima etapa verificada.
+  Nudo natural: As de Guía (propuesta soberana óptima)
+
+2.4 SOBERANÍA LÓGICA
+  Función: garantizar que todo esté dentro de LACHO.
+  Elimina alucinaciones mediante anclaje estricto en folios.
+  La IA en NotebookLM NO inventa — solo referencia fuentes.
+  Cuando la respuesta no está en el corpus: lo declara.
+  Equivalente LACHO: [foundation] + [scope] activos.
+  Es la condición que hace confiable la Fase Dirimente.
+  Sin Soberanía Lógica, la Fase Dirimente es dogma no verificado.
+  Nudo natural: Nudo de Ocho (anclaje constitucional)
+
+====================================================================
+### 3.0 PROTOCOLO DE USO SOBERANO DE NOTEBOOKLM
+
+3.1 Preparación (Fase Espejo)
+  1. Cargar todos los BIBLIO-SOURCES del CORPUS como fuentes
+  2. Cargar COGNITIVO_00 al 05 como contexto macro
+  3. Cargar INDICE_MAESTRO_ACTUALIZABLE como mapa
+  4. Verificar que el NB responde desde fuentes, no desde modelo
+
+3.2 Auditoría (Fase Analista)
+  Preguntas soberanas para detectar inconsistencias:
+  - "¿Qué elementos del corpus están sin implementar en IMV?"
+  - "¿Hay módulos SOCIAL documentados que faltan en grammar.py?"
+  - "¿El sistema de archivos .blue/.green tiene base en el corpus?"
+  - "¿Dónde aparece TOMO en el corpus y qué dice exactamente?"
+
+3.3 Evolución (Fase Dirimente)
+  Preguntas soberanas para proponer evolución:
+  - "¿Qué BIBLIO-SOURCES nuevo debería existir?"
+  - "¿Cuál es la secuencia óptima de implementación de CAPA B?"
+  - "¿Qué contradicciones hay entre la arquitectura de CAT y el IMV?"
+  - "Redactá el próximo COGNITIVO basado en el estado actual"
+
+3.4 Validación (Soberanía Lógica)
+  Después de cada respuesta NotebookLM:
+  - Verificar que la fuente citada existe en el corpus
+  - Verificar que la propuesta no contradice [foundation]
+  - Pasar la propuesta por SAMU @ antes de implementar
+  - Registrar en JOURNAL/LOG_PERMANENTE.md la decisión
+
+====================================================================
+### 4.0 RELACIÓN CON CLAUDE Y EL WORKFLOW ACTUAL
+
+  NotebookLM          → Fase Espejo + Fase Analista + Fase Dirimente
+  Claude (este chat)  → Arquitecto soberano + generador de prompts
+  Windsurf            → Ejecutor de implementación
+  Operador            → Validador soberano final
+
+  Flujo óptimo:
+  NB detecta inconsistencia → Claude diseña solución →
+  Windsurf implementa → Operador valida → NB refleja nuevo estado
+
+====================================================================
+### 5.0 ECUACIÓN Ψ — ARMONÍA SISTÉMICA
+
+La Fase Analista detecta fallas en Ψ.
+Ψ es el operador que convierte caos en estado ordenado local.
+Una falla en Ψ es cuando:
+  - Un módulo contradice [foundation]
+  - Una sentencia LACHO es válida pero incoherente con [scope]
+  - Un BIBLIO-SOURCES afirma algo que otro niega
+  - La implementación diverge de la especificación documentada
+
+Referencia: COGNITIVO_02 §6 — Ψ como operador COSMOS-TOMO
+
+====================================================================
+### 6.0 IMAGEN GIGANTE / MEMORIA PEQUEÑA
+
+Concepto de la Fase Dirimente:
+  Imagen Gigante (OS) → el corpus LACHO completo como contexto.
+                        Todo lo que el sistema sabe y es.
+                        176+ archivos verificados.
+  Memoria Pequeña (LLM) → el modelo del NotebookLM.
+                           Lo que el modelo puede inferir
+                           desde las fuentes cargadas.
+
+La tensión entre ambos es soberana:
+  Cuando coinciden → As de Guía (propuesta verificada)
+  Cuando divergen → Ballestrinque (tensión activa)
+  Cuando contradicen → Nudo Corredizo (riesgo de dogma)
+
+====================================================================
+### 7.0 ESTADO DE IMPLEMENTACIÓN
+
+  [x] NotebookLM en uso como SAMU @ externo — ACTIVO HOY
+  [x] Protocolo de uso documentado en este archivo
+  [ ] Integración formal: NB genera BIBLIO-SOURCES nuevos
+      que Claude valida antes de pasar a Windsurf
+  [ ] Automatización: NB detecta inconsistencias y las
+      registra en JOURNAL/PENDIENTES.md automáticamente
+
+====================================================================
+### 8.0 GRAMÁTICA VIVA
+
+SAMU @ =><= .. audita .. corpus_notebooklm --[Ballestrinque] [term]
+STACKING UF[H48] =><= .. refleja .. estado_corpus_actual --[As de Guía] [term]
+METHOD <stat_onto> =><= .. detecta .. inconsistencia_psi --[Ballestrinque] [term]
+TRUST [foundation] =><= .. ancla .. soberania_logica --[Nudo de Ocho] [term]
+ACTIVITY UF[H64] =><= .. genera .. nuevo_biblio_sources --[As de Guía] [term]
+
+====================================================================
+[term] :: activo · [seal of secrecy] :: activo
+====================================================================

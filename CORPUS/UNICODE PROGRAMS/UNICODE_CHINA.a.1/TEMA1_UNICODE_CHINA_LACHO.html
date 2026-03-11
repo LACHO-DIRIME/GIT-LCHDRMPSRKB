@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TEMA 1 — UNICODE-CHINA × LACHO</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;700&family=Share+Tech+Mono&family=Cinzel:wght@400;700&display=swap');
+
+  :root {
+    --gold: #7a4e10;
+    --gold-mid: #a8722a;
+    --gold-dim: #c8a060;
+    --red: #9a1a1a;
+    --jade: #145a38;
+    --jade-mid: #1e8050;
+    --jade-dim: #48b880;
+    --bg:    #f2ece0;
+    --bg2:   #e8e0d0;
+    --bg3:   #ddd5c0;
+    --bg4:   #d0c8b0;
+    --ink:   #22180a;
+    --ink2:  #3a2c18;
+    --smoke: #5c5040;
+    --blue:  #1a3a7a;
+    --blue-dim: #4060a8;
+    --sep: #c0b098;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+    line-height: 1.65;
+  }
+
+  /* PAPER TEXTURE */
+  body::after {
+    content:'';
+    position:fixed;
+    inset:0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 28px,
+      rgba(120,90,40,0.04) 28px,
+      rgba(120,90,40,0.04) 29px
+    );
+    pointer-events:none;
+    z-index:0;
+  }
+
+  .page {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 48px 32px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ── MASTHEAD ── */
+  .mast {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 32px;
+    align-items: end;
+    border-top: 4px solid var(--gold);
+    border-bottom: 1px solid var(--gold-dim);
+    padding: 28px 0 20px;
+    margin-bottom: 52px;
+  }
+
+  .mast-eyebrow {
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: var(--gold-mid);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .mast-title {
+    font-family: 'Cinzel', serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--gold);
+    letter-spacing: 1px;
+    line-height: 1.1;
+  }
+
+  .mast-sub {
+    font-size: 11px;
+    color: var(--smoke);
+    margin-top: 7px;
+    letter-spacing: 2px;
+  }
+
+  .mast-zh {
+    text-align: right;
+    font-family: 'Noto Serif SC', serif;
+  }
+
+  .mast-zh-big {
+    font-size: 52px;
+    color: var(--red);
+    line-height: 1;
+    letter-spacing: 6px;
+  }
+
+  .mast-zh-small {
+    font-size: 13px;
+    color: var(--gold-mid);
+    letter-spacing: 3px;
+    margin-top: 4px;
+  }
+
+  /* ── ALGORITHM BLOCK ── */
+  .algo {
+    margin-bottom: 52px;
+  }
+
+  .algo-header {
+    display: grid;
+    grid-template-columns: 64px 1fr auto;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid var(--sep);
+    margin-bottom: 24px;
+  }
+
+  .algo-num {
+    font-family: 'Cinzel', serif;
+    font-size: 44px;
+    color: var(--gold-dim);
+    font-weight: 700;
+    line-height: 1;
+    opacity: 0.6;
+  }
+
+  .algo-title {
+    font-family: 'Cinzel', serif;
+    font-size: 16px;
+    color: var(--gold);
+    letter-spacing: 2px;
+  }
+
+  .algo-sub {
+    font-size: 10px;
+    color: var(--smoke);
+    margin-top: 4px;
+    letter-spacing: 1px;
+  }
+
+  .algo-hex {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 40px;
+    color: var(--red);
+    text-align: right;
+    line-height: 1;
+  }
+
+  .algo-hex small {
+    display: block;
+    font-size: 10px;
+    color: var(--gold-mid);
+    font-family: 'Share Tech Mono', monospace;
+    letter-spacing: 2px;
+  }
+
+  /* ── GRIDS ── */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+  .grid-4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; }
+  .grid-5 { display: grid; grid-template-columns: repeat(5,1fr); gap: 8px; }
+  .col-span-2 { grid-column: span 2; }
+
+  /* ── PANEL ── */
+  .panel {
+    background: var(--bg2);
+    border: 1px solid var(--sep);
+    padding: 16px;
+    position: relative;
+  }
+
+  .panel::before {
+    content:'';
+    position:absolute;
+    top:0; left:0; right:0;
+    height: 3px;
+  }
+
+  .p-gold::before   { background: var(--gold-mid); }
+  .p-red::before    { background: var(--red); }
+  .p-jade::before   { background: var(--jade-mid); }
+  .p-blue::before   { background: var(--blue-dim); }
+  .p-smoke::before  { background: var(--smoke); }
+  .p-multi::before  { background: linear-gradient(90deg, var(--gold-mid), var(--red), var(--jade-mid)); }
+
+  .panel-label {
+    font-size: 9px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--smoke);
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--sep);
+  }
+
+  /* ── TOKEN MAP TABLE ── */
+  .token-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+  }
+
+  .token-table th {
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: var(--gold-mid);
+    text-align: left;
+    padding: 6px 10px;
+    border-bottom: 1px solid var(--sep);
+    background: var(--bg3);
+    text-transform: uppercase;
+  }
+
+  .token-table td {
+    padding: 7px 10px;
+    border-bottom: 1px solid rgba(192,176,152,0.4);
+    vertical-align: top;
+  }
+
+  .token-table tr:hover td { background: rgba(192,176,152,0.2); }
+
+  .td-zh {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 22px;
+    color: var(--red);
+    line-height: 1;
+    min-width: 40px;
+  }
+
+  .td-pinyin { color: var(--gold-mid); font-size: 10px; }
+  .td-lacho  { color: var(--jade); }
+  .td-hex    { font-family:'Noto Serif SC',serif; color: var(--red); font-size:16px; }
+  .td-domain { color: var(--smoke); font-size:10px; }
+  .td-sent   { color: var(--ink2); font-size:10px; line-height:1.5; max-width:280px; }
+
+  /* ── CODE BLOCK ── */
+  .code-block {
+    background: var(--bg3);
+    border: 1px solid var(--sep);
+    border-left: 3px solid var(--gold-mid);
+    padding: 14px 16px;
+    font-size: 11px;
+    line-height: 1.8;
+    color: var(--ink2);
+    white-space: pre;
+    overflow-x: auto;
+  }
+
+  .c-zh    { color: var(--red); font-family:'Noto Serif SC',serif; font-size:14px; }
+  .c-kw    { color: var(--gold); font-weight:bold; }
+  .c-verb  { color: var(--jade); }
+  .c-obj   { color: var(--blue); }
+  .c-knot  { color: var(--smoke); }
+  .c-term  { color: var(--gold-mid); }
+  .c-com   { color: var(--sep); }
+
+  /* ── SENTENCE CARD ── */
+  .sent-card {
+    background: var(--bg2);
+    border: 1px solid var(--sep);
+    border-left: 4px solid var(--gold-mid);
+    padding: 14px 16px;
+    margin-bottom: 10px;
+  }
+
+  .sent-card-label {
+    font-size: 9px;
+    letter-spacing: 3px;
+    color: var(--smoke);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .sent-card-zh {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 20px;
+    color: var(--red);
+    letter-spacing: 3px;
+    margin-bottom: 4px;
+  }
+
+  .sent-card-lacho {
+    font-size: 11px;
+    color: var(--ink2);
+    line-height: 1.7;
+    margin-bottom: 6px;
+  }
+
+  .sent-card-result {
+    font-size: 10px;
+    color: var(--jade);
+    padding: 3px 8px;
+    border: 1px solid var(--jade-dim);
+    display: inline-block;
+  }
+
+  /* ── TAG ── */
+  .tag {
+    display: inline-block;
+    font-size: 9px;
+    padding: 2px 8px;
+    border: 1px solid currentColor;
+    letter-spacing: 1px;
+    margin: 2px 2px 2px 0;
+  }
+
+  .tag-gold  { color: var(--gold-mid); }
+  .tag-red   { color: var(--red); }
+  .tag-jade  { color: var(--jade-mid); }
+  .tag-blue  { color: var(--blue-dim); }
+  .tag-smoke { color: var(--smoke); }
+
+  /* ── FLOW ── */
+  .flow-row {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    margin-bottom: 10px;
+  }
+
+  .flow-box {
+    flex: 1;
+    background: var(--bg2);
+    border: 1px solid var(--sep);
+    padding: 12px;
+    text-align: center;
+    position: relative;
+  }
+
+  .flow-box-zh {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 28px;
+    color: var(--red);
+    display: block;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .flow-box-label {
+    font-size: 9px;
+    color: var(--smoke);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .flow-box-lacho {
+    font-size: 10px;
+    color: var(--jade);
+    margin-top: 4px;
+  }
+
+  .flow-arrow {
+    display: flex;
+    align-items: center;
+    padding: 0 4px;
+    color: var(--gold-dim);
+    font-size: 18px;
+    background: transparent;
+    border: none;
+  }
+
+  /* ── RAG LAYER ── */
+  .rag-layer {
+    border: 1px solid var(--sep);
+    background: var(--bg2);
+    margin-bottom: 8px;
+    display: grid;
+    grid-template-columns: 120px 1fr auto;
+    align-items: center;
+  }
+
+  .rag-layer-label {
+    background: var(--bg3);
+    padding: 10px 14px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--smoke);
+    border-right: 1px solid var(--sep);
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rag-layer-content {
+    padding: 10px 16px;
+    font-size: 11px;
+    color: var(--ink2);
+    line-height: 1.5;
+  }
+
+  .rag-layer-stat {
+    padding: 10px 16px;
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+    color: var(--gold);
+    text-align: right;
+    border-left: 1px solid var(--sep);
+    white-space: nowrap;
+  }
+
+  /* ── DIVIDER ── */
+  hr.div {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold-dim), transparent);
+    margin: 48px 0;
+  }
+
+  /* ── PROMPT BOX ── */
+  .prompt-box {
+    background: var(--bg3);
+    border: 2px solid var(--gold-mid);
+    padding: 20px 24px;
+    margin-top: 16px;
+  }
+
+  .prompt-box-title {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--gold);
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--gold-dim);
+    text-transform: uppercase;
+  }
+
+  .prompt-box code {
+    display: block;
+    font-size: 11px;
+    line-height: 1.9;
+    color: var(--ink2);
+    white-space: pre-wrap;
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    border-top: 1px solid var(--sep);
+    margin-top: 48px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    color: var(--smoke);
+  }
+
+  .footer-zh {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 18px;
+    color: var(--gold-mid);
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- MASTHEAD -->
+  <div class="mast">
+    <div>
+      <div class="mast-eyebrow">DIRIME v0.2.1 · TEMA 1 DE 3 · PRIORIDAD CHINA</div>
+      <div class="mast-title">UNICODE-CHINA × LACHO<br>5 ALGORITMOS SOBERANOS</div>
+      <div class="mast-sub">NÚCLEO SEMÁNTICO CHINO · TOKENS IDEOGRAMÁTICOS · GRAMÁTICA BILINGÜE · RAG DOCTRINAL</div>
+    </div>
+    <div class="mast-zh">
+      <div class="mast-zh-big">中文 ䷜</div>
+      <div class="mast-zh-small">UNICODE PROGRAMABLE · 语义主权</div>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- ALGORITMO 1 — MAPEO 20 TOKENS IDEOGRAMÁTICOS → LACHO     -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+
+  <div class="algo">
+    <div class="algo-header">
+      <div class="algo-num">1</div>
+      <div>
+        <div class="algo-title">MAPEO 20 TOKENS IDEOGRAMÁTICOS → LACHO</div>
+        <div class="algo-sub">UNICODE-CHINA-TOKENS.txt · dominios financiero · bancario · contratos · confianza · soberanía</div>
+      </div>
+      <div class="algo-hex">習坎 ䷜<small>H29 · ABISMO DOBLE</small></div>
+    </div>
+
+    <div style="overflow-x:auto; margin-bottom:16px;">
+      <table class="token-table">
+        <thead>
+          <tr>
+            <th>汉字</th>
+            <th>Pīnyīn</th>
+            <th>Token LACHO</th>
+            <th>Hexagrama</th>
+            <th>Dominio</th>
+            <th>Sentencia canónica</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="td-zh">信任</td>
+            <td class="td-pinyin">xìnrèn</td>
+            <td class="td-lacho">TRUST FOUNDATION</td>
+            <td class="td-hex">乾 H01</td>
+            <td class="td-domain">Confianza soberana</td>
+            <td class="td-sent">TRUST FOUNDATION =&gt;&lt;= .. verifica .. 信任_soberana --[As de Guía] [term]</td>
+          </tr>
+          <tr>
+            <td class="td-zh">关系</td>
+            <td class="td-pinyin">guānxi</td>
+            <td class="td-lacho">SOCIAL {relay}</td>
+            <td class="td-hex">比 H08</td>
+            <td class="td-domain">Red de relaciones</td>
+            <td class="td-sent">SOCIAL {relay} =&gt;&lt;= .. conecta .. 关系_digital --[As de Guía] [term]</td>
+          </tr>
+          <tr>
+            <td class="td-zh">面子</td>
+            <td class="td-pinyin">miànzi</td>
+            <td class="td-lacho">SAMU @ scalar-S</td>
+            <td class="td-hex">謙 H15</td>
+            <td class="td-domain">Reputación · SCALAR S</td>
+            <td class="td-sent">SAMU @ =&gt;&lt;= .. evalúa .. 面子_reputacion --[Ballestrinque] [term]</td>
+          </tr>
+          <tr>
+            <td class="td-zh">资本</td>
+            <td class="td-pinyin">zīběn</td>
+            <td class="td-lacho">STACKING UF[H48]</td>
+            <td class="td-hex">井 H48</td>
+            <td class="td-domain">Capital · KALIL</td>
+            <td class="td-sent">STACKING UF[H48] =&gt;&lt;= .. apila .. 资本_soberano --[Nudo de Ocho] [term]</td>
+          </tr>
+          <tr>
+            <td class="td-zh">交易</td>
+            <td class="td-pinyin">jiāoyì</td>
+            <td class="td-lacho">WORK {actuator}</td>
+            <td class="td-hex">革 H49</td>
+            <td class="td-domain">Transacción</td>
+            <td class="td-sent">WORK {actuator} =&gt;&lt;= .. ejecuta .. 交易_verificada --[As de Guía] [term]</td>
+          </tr>
+          <tr>
+            <td class="td-zh">合同</td>
+            <td class="td-pinyin">hétong</td>
+            <td class="td-lacho">TRUST [term]</td>
+            <td class="td-hex">夬 H43</td>
+            <td class="td-domain">Contrato soberano</td>
+            <td class="td-sent">TRUST [term] =&gt;&lt;= .. declara .. 合同_soberano --[Nudo de Ocho] [term]</td>
+          </tr>
+          <tr>
+            <td class="td-zh">安全</td>
+            <td class="td-pinyin">ānquán</td>
+            <td class="td-lacho">CRYPTO (shield seat)</td>
+            <td class="td-hex">大有 H14</td>
+            <td class="td-domain">Seguridad · custodia</td>
+            <td class="td-sent">CRYPTO (shield seat) =&gt;&lt;= .. protege .. 安全_activo --[As de Guía] [term]</td>
+          </tr>
+          <tr>
+            <td class="td-zh">验证</td>
+            <td class="td-pinyin">yànzhèng</td>
+            <td class="td-lacho">TRUST FOUNDATION</td>
+            <td class="td-hex">中孚 H61</td>
+            <td class="td-domain">Verificación · KYC</td>
+            <td class="td-sent">TRUST FOUNDATION =&gt;&lt;= .. verifica .. 验证_kyc --[As de Guía] [term]</td>
+          </tr>
+          <tr>
+            <td class="td-zh">数字</td>
+            <td class="td-pinyin">shùzì</td>
+            <td class="td-lacho">CRYPTO (spark seat)</td>
+            <td class="td-hex">離 H30</td>
+            <td class="td-domain">Token digital</td>
+            <td class="td-sent">CRYPTO (spark seat) =&gt;&lt;= .. firma .. 数字_token --[As de Guía] [term]</td>
+          </tr>
+          <tr>
+            <td class="td-zh">货币</td>
+            <td class="td-pinyin">huòbì</td>
+            <td class="td-lacho">CRYPTO (flow seat)</td>
+            <td class="td-hex">兌 H58</td>
+            <td class="td-domain">e-CNY · moneda</td>
+            <td class="td-sent">CRYPTO (flow seat) =&gt;&lt;= .. valida .. 货币_ecny --[Nudo de Rizo] [term]</td>
+          </tr>
+          <tr>
+            <td class="td-zh">银行</td>
+            <td class="td-pinyin">yínháng</td>
+            <td class="td-lacho">KALIL BARRIOS</td>
+            <td class="td-hex">師 H07</td>
+            <td class="td-domain">Banca soberana</td>
+            <td class="td-sent">SOCIAL {chair} =&gt;&lt;= .. planifica .. 银行_barrios --[As de Guía] [term]</td>
+          </tr>
+          <tr>
+            <td class="td-zh">贷款</td>
+            <td class="td-pinyin">dàikuǎn</td>
+            <td class="td-lacho">KALIL CARILO</td>
+            <td class="td-hex">益 H42</td>
+            <td class="td-domain">Préstamo soberano</td>
+            <td class="td-sent">METHOD &lt;equation&gt; =&gt;&lt;= .. calcula .. 贷款_tasa --[Ballestrinque] [term]</td>
+          </tr>
+          <tr>
+            <td class="td-zh">风险</td>
+            <td class="td-pinyin">fēngxiǎn</td>
+            <td class="td-lacho">GATE UF[H06]</td>
+            <td class="td-hex">訟 H06</td>
+            <td class="td-domain">Riesgo · conflicto</td>
+            <td class="td-sent">GATE UF[H06] =&gt;&lt;= .. filtra .. 风险_detectado --[Nudo Corredizo] [term]</td>
+          </tr>
+          <tr>
+            <td class="td-zh">网络</td>
+            <td class="td-pinyin">wǎngluò</td>
+            <td class="td-lacho">HL FABRIC</td>
+            <td class="td-hex">比 H08</td>
+            <td class="td-domain">Red · infraestructura</td>
+            <td class="td-sent">STACKING UF[H52] =&gt;&lt;= .. ancla .. 网络_fabric --[Nudo de Ocho] [term]</td>
+          </tr>
+          <tr>
+            <td class="td-zh">节点</td>
+            <td class="td-pinyin">jiédiǎn</td>
+            <td class="td-lacho">KALIL nodo</td>
+            <td class="td-hex">巽 H57</td>
+            <td class="td-domain">Nodo económico</td>
+            <td class="td-sent">ACTIVITY UF[H57] =&gt;&lt;= .. penetra .. 节点_kalil --[As de Guía] [term]</td>
+          </tr>
+          <tr>
+            <td class="td-zh">主权</td>
+            <td class="td-pinyin">zhǔquán</td>
+            <td class="td-lacho">TRUST [scope]</td>
+            <td class="td-hex">乾 H01</td>
+            <td class="td-domain">Soberanía total</td>
+            <td class="td-sent">TRUST [scope] =&gt;&lt;= .. sostiene .. 主权_soberana --[Nudo de Ocho] [term]</td>
+          </tr>
+          <tr>
+            <td class="td-zh">协议</td>
+            <td class="td-pinyin">xiéyì</td>
+            <td class="td-lacho">TRUST [management]</td>
+            <td class="td-hex">節 H60</td>
+            <td class="td-domain">Protocolo · acuerdo</td>
+            <td class="td-sent">TRUST [management] =&gt;&lt;= .. autoriza .. 协议_lacho --[Ballestrinque] [term]</td>
+          </tr>
+          <tr>
+            <td class="td-zh">社区</td>
+            <td class="td-pinyin">shèqū</td>
+            <td class="td-lacho">SOCIAL {chair}</td>
+            <td class="td-hex">同人 H13</td>
+            <td class="td-domain">Comunidad · BARRIOS</td>
+            <td class="td-sent">SOCIAL {chair} =&gt;&lt;= .. conecta .. 社区_soberana --[As de Guía] [term]</td>
+          </tr>
+          <tr>
+            <td class="td-zh">智能</td>
+            <td class="td-pinyin">zhìnéng</td>
+            <td class="td-lacho">KALIL kernel</td>
+            <td class="td-hex">鼎 H50</td>
+            <td class="td-domain">Inteligencia · KALIL</td>
+            <td class="td-sent">METHOD &lt;equation&gt; =&gt;&lt;= .. modela .. 智能_kernel --[Ballestrinque] [term]</td>
+          </tr>
+          <tr>
+            <td class="td-zh">桥梁</td>
+            <td class="td-pinyin">qiáoliáng</td>
+            <td class="td-lacho">PUENTES económicos</td>
+            <td class="td-hex">渙 H59</td>
+            <td class="td-domain">Puente dual</td>
+            <td class="td-sent">SOCIAL {relay} =&gt;&lt;= .. transmite .. 桥梁_dual --[As de Guía] [term]</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="prompt-box">
+      <div class="prompt-box-title">PROMPT WINDSURF — crear CORPUS/UNICODE-CHINA-TOKENS.txt</div>
+      <code>Crear archivo /media/Personal/PLANERAI/DIRIME/DIRIME/CORPUS/UNICODE-CHINA-TOKENS.txt
+Contenido: tabla de 20 tokens con estructura:
+
+[TOKEN_ZH]
+HANZI=信任
+PINYIN=xìnrèn
+LACHO_TOKEN=TRUST FOUNDATION
+HEXAGRAMA=H01·乾
+DOMINIO=confianza_soberana
+SENTENCIA=TRUST FOUNDATION =><= .. verifica .. 信任_soberana --[As de Guía] [term]
+DUAL=exterior:crypto_trust · interior:e-CNY_confianza
+---
+[repetir para los 20 tokens del mapeo]
+
+Al final del archivo agregar:
+TOTAL_TOKENS=20
+ESTADO=UNICODE_CHINA_FASE0_COMPLETO
+[term] :: activo</code>
+    </div>
+  </div>
+
+  <hr class="div">
+
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- ALGORITMO 2 — GRAMMAR.PY IDEOGRAMAS COMO SUJETOS/OBJETOS  -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+
+  <div class="algo">
+    <div class="algo-header">
+      <div class="algo-num">2</div>
+      <div>
+        <div class="algo-title">GRAMMAR.PY — IDEOGRAMAS COMO SUJETOS Y OBJETOS VÁLIDOS</div>
+        <div class="algo-sub">Extensión del validador LACHO · detección Unicode CJK · mapeo semántico soberano</div>
+      </div>
+      <div class="algo-hex">離 ䷝<small>H30 · CLARIDAD</small></div>
+    </div>
+
+    <div class="grid-2" style="margin-bottom:16px;">
+      <div>
+        <div class="panel p-gold" style="margin-bottom:12px;">
+          <div class="panel-label">RANGO UNICODE CJK A DETECTAR</div>
+          <div class="code-block" style="font-size:11px;">U+4E00 → U+9FFF   # CJK Unified Ideographs
+U+3400 → U+4DBF   # CJK Extension A
+U+F900 → U+FAFF   # CJK Compatibility
+U+2E80 → U+2EFF   # CJK Radicals
+U+3200 → U+32FF   # Enclosed CJK
+# Hexagramas I Ching (ya activos):
+U+4DC0 → U+4DFF   # ䷀ → ䷿</div>
+        </div>
+
+        <div class="panel p-jade">
+          <div class="panel-label">FUNCIÓN is_chinese(text) — agregar a grammar.py</div>
+          <div class="code-block" style="font-size:11px;"><span class="c-com"># IMV/core/grammar.py — agregar después de imports</span>
+
+<span class="c-kw">def</span> is_chinese(text: str) -> bool:
+    <span class="c-com">"""True si text contiene ideogramas CJK."""</span>
+    <span class="c-kw">return</span> any(
+        '\u4e00' <= ch <= '\u9fff' or
+        '\u3400' <= ch <= '\u4dbf' or
+        '\uf900' <= ch <= '\ufaff'
+        <span class="c-kw">for</span> ch in text
+    )
+
+<span class="c-kw">def</span> resolve_chinese_token(zh: str) -> dict:
+    <span class="c-com">"""Resuelve ideograma → token LACHO canónico."""</span>
+    <span class="c-kw">from</span> .rag <span class="c-kw">import</span> query_rag
+    result = query_rag(f"UNICODE-CHINA {zh}")
+    <span class="c-kw">return</span> {
+        "zh": zh,
+        "lacho_token": result.get("LACHO_TOKEN", zh),
+        "hexagrama": result.get("HEXAGRAMA", "H01"),
+        "dominio": result.get("DOMINIO", "soberano")
+    }</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="panel p-red" style="margin-bottom:12px;">
+          <div class="panel-label">EXTENSIÓN parse_sentence() — sujetos chinos</div>
+          <div class="code-block" style="font-size:11px;"><span class="c-com"># En parse_sentence(), sección de sujetos:</span>
+<span class="c-com"># Después de validar UF[H##] y sujetos canónicos</span>
+
+<span class="c-kw">if</span> parsed.subject <span class="c-kw">and</span> is_chinese(parsed.subject):
+    token = resolve_chinese_token(parsed.subject)
+    parsed.chinese_subject = {
+        "hanzi": token["zh"],
+        "lacho": token["lacho_token"],
+        "hex":   token["hexagrama"]
+    }
+    <span class="c-com"># No emitir warning — ideograma es sujeto válido</span>
+    parsed.subject_valid = True
+    parsed.unicode_mode = "CHINA"
+
+<span class="c-com"># Objetos chinos — en sección de objetos:</span>
+<span class="c-kw">if</span> parsed.object_ <span class="c-kw">and</span> is_chinese(parsed.object_):
+    parsed.chinese_object = parsed.object_
+    parsed.object_valid = True</div>
+        </div>
+
+        <div class="panel p-blue">
+          <div class="panel-label">SENTENCIAS QUE GRAMMAR.PY DEBE ACEPTAR</div>
+          <div style="font-size:11px; line-height:2; color:var(--ink2);">
+            <span class="c-kw">TRUST</span> FOUNDATION =&gt;&lt;= .. verifica .. <span class="c-zh">信任</span> --[As de Guía] [term]<br>
+            <span class="c-kw">SOCIAL</span> {relay} =&gt;&lt;= .. conecta .. <span class="c-zh">关系</span>_digital --[As de Guía] [term]<br>
+            <span class="c-kw">CRYPTO</span> (shield seat) =&gt;&lt;= .. protege .. <span class="c-zh">安全</span>_activo --[As de Guía] [term]<br>
+            <span class="c-kw">STACKING</span> UF[H48] =&gt;&lt;= .. apila .. <span class="c-zh">资本</span>_soberano --[Nudo de Ocho] [term]<br>
+            <span class="c-kw">WORK</span> {actuator} =&gt;&lt;= .. ejecuta .. <span class="c-zh">交易</span>_verificada --[As de Guía] [term]<br>
+            <span class="c-kw">METHOD</span> &lt;equation&gt; =&gt;&lt;= .. calcula .. <span class="c-zh">贷款</span>_tasa --[Ballestrinque] [term]<br>
+            <span class="c-zh">信任</span> 基础 =&gt;&lt;= .. sostiene .. <span class="c-zh">主权</span>_soberana --[Nudo de Ocho] [term]
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="prompt-box">
+      <div class="prompt-box-title">PROMPT WINDSURF — extender IMV/core/grammar.py</div>
+      <code>Editar /media/Personal/PLANERAI/DIRIME/DIRIME/IMV/core/grammar.py
+
+1. Agregar función is_chinese(text: str) -> bool después de los imports.
+   Detecta rangos CJK: U+4E00-U+9FFF, U+3400-U+4DBF, U+F900-U+FAFF.
+
+2. Agregar función resolve_chinese_token(zh: str) -> dict.
+   Consulta RAG con query "UNICODE-CHINA {zh}".
+   Retorna dict con keys: zh, lacho_token, hexagrama, dominio.
+   Fallback: {"zh": zh, "lacho_token": zh, "hexagrama": "H01", "dominio": "soberano"}.
+
+3. En parse_sentence(), sección de validación de sujeto:
+   Si parsed.subject contiene CJK → llamar resolve_chinese_token().
+   Guardar en parsed.chinese_subject = {hanzi, lacho, hex}.
+   NO emitir warning de sujeto inválido.
+   Agregar parsed.unicode_mode = "CHINA".
+
+4. En parse_sentence(), sección de validación de objeto:
+   Si el objeto contiene CJK → marcarlo como válido directamente.
+   Guardar en parsed.chinese_object = parsed.object_.
+
+5. En lacho_score(): si parsed.unicode_mode == "CHINA" agregar +0.05 al score
+   (bonus semántico por uso de ideograma verificado).
+
+Ejecutar pytest IMV/tests/test_imv.py al finalizar — deben pasar 25/25.</code>
+    </div>
+  </div>
+
+  <hr class="div">
+
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- ALGORITMO 3 — SENTENCIAS BILINGÜES CANÓNICAS              -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+
+  <div class="algo">
+    <div class="algo-header">
+      <div class="algo-num">3</div>
+      <div>
+        <div class="algo-title">SENTENCIAS BILINGÜES CANÓNICAS — ESPAÑOL ↔ 中文</div>
+        <div class="algo-sub">12 sentencias maestras · 4 dominios económicos · TRUST·CRYPTO·SOCIAL·METHOD · ideograma como sujeto y objeto</div>
+      </div>
+      <div class="algo-hex">中孚 ䷼<small>H61 · VERDAD INTERIOR</small></div>
+    </div>
+
+    <div class="grid-2">
+      <div>
+        <div class="sent-card">
+          <div class="sent-card-label">DOMINIO TRUST · 信任 CONFIANZA</div>
+          <div class="sent-card-zh">信任 基础</div>
+          <div class="sent-card-lacho">
+            TRUST FOUNDATION =&gt;&lt;= .. verifica .. <strong>信任_soberana</strong> --[As de Guía] [term:ZH01]<br>
+            <span style="color:var(--smoke)">// 信任 = TRUST · 基础 = FOUNDATION · H01 乾</span>
+          </div>
+          <span class="sent-card-result">→ Confianza soberana verificada en ledger</span>
+        </div>
+
+        <div class="sent-card">
+          <div class="sent-card-label">DOMINIO TRUST · 合同 CONTRATO</div>
+          <div class="sent-card-zh">合同 声明</div>
+          <div class="sent-card-lacho">
+            TRUST [term] =&gt;&lt;= .. declara .. <strong>合同_notarial</strong> --[Nudo de Ocho] [term:ZH02]<br>
+            <span style="color:var(--smoke)">// 合同 = contrato · 声明 = declaración · H43 夬</span>
+          </div>
+          <span class="sent-card-result">→ Acto notarial digital soberano</span>
+        </div>
+
+        <div class="sent-card">
+          <div class="sent-card-label">DOMINIO CRYPTO · 安全 SEGURIDAD</div>
+          <div class="sent-card-zh">安全 保管</div>
+          <div class="sent-card-lacho">
+            CRYPTO (shield seat) =&gt;&lt;= .. protege .. <strong>安全_custodia</strong> --[As de Guía] [term:ZH03]<br>
+            <span style="color:var(--smoke)">// 安全 = seguro · 保管 = custodia · H14 大有</span>
+          </div>
+          <span class="sent-card-result">→ (shield seat) activo sobre activo chino</span>
+        </div>
+
+        <div class="sent-card">
+          <div class="sent-card-label">DOMINIO CRYPTO · 数字货币 E-CNY</div>
+          <div class="sent-card-zh">数字 货币</div>
+          <div class="sent-card-lacho">
+            CRYPTO (flow seat) =&gt;&lt;= .. valida .. <strong>货币_ecny_interior</strong> --[Nudo de Rizo] [term:ZH04]<br>
+            <span style="color:var(--smoke)">// 数字货币 = e-CNY · regulado PBOC · H58 兌</span>
+          </div>
+          <span class="sent-card-result">→ e-CNY validado en canal interior China</span>
+        </div>
+
+        <div class="sent-card">
+          <div class="sent-card-label">DOMINIO SOCIAL · 关系 GUANXI</div>
+          <div class="sent-card-zh">关系 连接</div>
+          <div class="sent-card-lacho">
+            SOCIAL {relay} =&gt;&lt;= .. conecta .. <strong>关系_guanxi_digital</strong> --[As de Guía] [term:ZH05]<br>
+            <span style="color:var(--smoke)">// 关系 = guanxi · 连接 = conexión · H08 比</span>
+          </div>
+          <span class="sent-card-result">→ Red de confianza digital soberana</span>
+        </div>
+
+        <div class="sent-card">
+          <div class="sent-card-label">DOMINIO SOCIAL · 社区 COMUNIDAD</div>
+          <div class="sent-card-zh">社区 银行</div>
+          <div class="sent-card-lacho">
+            SOCIAL {chair} =&gt;&lt;= .. planifica .. <strong>社区_barrios_china</strong> --[As de Guía] [term:ZH06]<br>
+            <span style="color:var(--smoke)">// 社区银行 = banca comunitaria · BARRIOS · H07 師</span>
+          </div>
+          <span class="sent-card-result">→ KALIL/BARRIOS activado en China</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="sent-card">
+          <div class="sent-card-label">DOMINIO METHOD · 贷款 PRÉSTAMO</div>
+          <div class="sent-card-zh">贷款 计算</div>
+          <div class="sent-card-lacho">
+            METHOD &lt;equation&gt; =&gt;&lt;= .. calcula .. <strong>贷款_tasa_pboc</strong> --[Ballestrinque] [term:ZH07]<br>
+            <span style="color:var(--smoke)">// 贷款 = préstamo · 计算 = calcular · H42 益 · CARILO</span>
+          </div>
+          <span class="sent-card-result">→ Tasa PBOC calculada soberanamente</span>
+        </div>
+
+        <div class="sent-card">
+          <div class="sent-card-label">DOMINIO METHOD · 智能 KALIL</div>
+          <div class="sent-card-zh">智能 核心</div>
+          <div class="sent-card-lacho">
+            METHOD &lt;operator_flow&gt; =&gt;&lt;= .. modela .. <strong>智能_kalil_kernel</strong> --[Ballestrinque] [term:ZH08]<br>
+            <span style="color:var(--smoke)">// 智能 = inteligencia · 核心 = kernel · H50 鼎</span>
+          </div>
+          <span class="sent-card-result">→ KALIL kernel activado sobre semántica china</span>
+        </div>
+
+        <div class="sent-card">
+          <div class="sent-card-label">STACKING · 主权 SOBERANÍA</div>
+          <div class="sent-card-zh">主权 固定</div>
+          <div class="sent-card-lacho">
+            STACKING UF[H52] =&gt;&lt;= .. inmutabiliza .. <strong>主权_soberana</strong> --[Nudo de Ocho] [term:ZH09]<br>
+            <span style="color:var(--smoke)">// 主权 = soberanía · 固定 = fijar · H52 艮</span>
+          </div>
+          <span class="sent-card-result">→ Soberanía inmutabilizada en HL FABRIC</span>
+        </div>
+
+        <div class="sent-card">
+          <div class="sent-card-label">SAMU · 面子 REPUTACIÓN</div>
+          <div class="sent-card-zh">面子 审计</div>
+          <div class="sent-card-lacho">
+            SAMU @ =&gt;&lt;= .. evalúa .. <strong>面子_scalar_s</strong> --[Ballestrinque] [term:ZH10]<br>
+            <span style="color:var(--smoke)">// 面子 = reputación · 审计 = auditar · H15 謙 · SCALAR S</span>
+          </div>
+          <span class="sent-card-result">→ SCALAR S incluye reputación china</span>
+        </div>
+
+        <div class="sent-card">
+          <div class="sent-card-label">GATE · 风险 RIESGO</div>
+          <div class="sent-card-zh">风险 过滤</div>
+          <div class="sent-card-lacho">
+            GATE UF[H06] =&gt;&lt;= .. filtra .. <strong>风险_regulatorio_pboc</strong> --[Nudo Corredizo] [term:ZH11]<br>
+            <span style="color:var(--smoke)">// 风险 = riesgo · 过滤 = filtrar · H06 訟</span>
+          </div>
+          <span class="sent-card-result">→ Cumplimiento PBOC verificado</span>
+        </div>
+
+        <div class="sent-card">
+          <div class="sent-card-label">PUENTES · 桥梁 DUAL</div>
+          <div class="sent-card-zh">桥梁 双重</div>
+          <div class="sent-card-lacho">
+            SOCIAL {relay} =&gt;&lt;= .. transmite .. <strong>桥梁_exterior_interior</strong> --[As de Guía] [term:ZH12]<br>
+            <span style="color:var(--smoke)">// 桥梁 = puente · 双重 = dual · H59 渙 · PUENTES ECONÓMICOS</span>
+          </div>
+          <span class="sent-card-result">→ Canal dual crypto↔e-CNY activo</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="prompt-box" style="margin-top:16px;">
+      <div class="prompt-box-title">PROMPT WINDSURF — crear PRACTICE-CHINA-BILINGUE.lacho</div>
+      <code>Crear archivo /media/Personal/PLANERAI/DIRIME/DIRIME/IMV/data/PRACTICE-CHINA-BILINGUE.lacho
+
+Contenido: las 12 sentencias bilingües en formato .lacho canónico.
+Cada sentencia con:
+  TOMO_ID: ZH01 ... ZH12
+  BIBLIOTECA: la correspondiente
+  SENTENCIA: exactamente como se documenta en el algoritmo 3
+  ZH_SUBJECT: hanzi del sujeto
+  ZH_OBJECT: hanzi del objeto si aplica
+
+Al final ejecutar:
+  python3 main.py --validate IMV/data/PRACTICE-CHINA-BILINGUE.lacho
+  → objetivo: 12/12 VALID · LACHO_SCORE promedio ≥ 0.85</code>
+    </div>
+  </div>
+
+  <hr class="div">
+
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- ALGORITMO 4 — CHCL × CHINA · DIVISIÓN ECONÓMICA           -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+
+  <div class="algo">
+    <div class="algo-header">
+      <div class="algo-num">4</div>
+      <div>
+        <div class="algo-title">CHCL × CHINA — DIVISIÓN ECONÓMICA SOBERANA</div>
+        <div class="algo-sub">COBOL + ideogramas · dominios 公证·保管·代币 · estética COBOL con semántica china nativa</div>
+      </div>
+      <div class="algo-hex">鼎 ䷱<small>H50 · CALDERO</small></div>
+    </div>
+
+    <div class="grid-3" style="margin-bottom:16px;">
+
+      <div class="panel p-gold">
+        <div class="panel-label">DIVISION NOTARÍA · 公证 GŌNGZHÈNG</div>
+        <div class="code-block" style="font-size:10px; line-height:1.9;">       IDENTIFICATION DIVISION.
+           PROGRAM-ID.    公证-NOTARIA-001.
+           DOMAIN.        公证_NOTARIA.
+           TOMO-ID.       [term:ZH02].
+           HEXAGRAMA.     夬 ䷪ H43.
+
+       DATA DIVISION.
+           合同   PIC X(40) VALUE "contrato_soberano".
+           当事人 PIC X(40) VALUE "parte_verificada".
+           印章   PIC X(10) VALUE "SEAL_ACTIVE".
+
+       PROCEDURE DIVISION.
+       TRUST-BLOCK.
+           <span class="c-kw">TRUST</span> FOUNDATION =&gt;&lt;=
+           .. autoriza .. <span class="c-zh">合同</span>_notarial
+           --[Nudo de Ocho] [term:ZH02].
+       CRYPTO-BLOCK.
+           <span class="c-kw">CRYPTO</span> (seal of secrecy) =&gt;&lt;=
+           .. firma .. <span class="c-zh">印章</span>_digital
+           --[As de Guía] [term:ZH02].
+       STOP SOVEREIGN.</div>
+      </div>
+
+      <div class="panel p-jade">
+        <div class="panel-label">DIVISION CUSTODIA · 保管 BǍOGUǍN</div>
+        <div class="code-block" style="font-size:10px; line-height:1.9;">       IDENTIFICATION DIVISION.
+           PROGRAM-ID.    保管-CUSTODIA-001.
+           DOMAIN.        保管_CUSTODIA.
+           TOMO-ID.       [term:ZH03].
+           HEXAGRAMA.     大有 ䷍ H14.
+
+       DATA DIVISION.
+           资产   PIC 9(12) VALUE 000000100000.
+           钱包   PIC X(40) VALUE "wallet_shield".
+           状态   PIC X(10) VALUE "VERIFIED".
+
+       PROCEDURE DIVISION.
+       CRYPTO-BLOCK.
+           <span class="c-kw">CRYPTO</span> (shield seat) =&gt;&lt;=
+           .. protege .. <span class="c-zh">资产</span>_custodia
+           --[As de Guía] [term:ZH03].
+       STACKING-BLOCK.
+           <span class="c-kw">STACKING</span> UF[H52] =&gt;&lt;=
+           .. inmutabiliza .. <span class="c-zh">保管</span>_registro
+           --[Nudo de Ocho] [term:ZH03].
+       STOP SOVEREIGN.</div>
+      </div>
+
+      <div class="panel p-red">
+        <div class="panel-label">DIVISION MEMECOINS · 代币 DÀIBÌ</div>
+        <div class="code-block" style="font-size:10px; line-height:1.9;">       IDENTIFICATION DIVISION.
+           PROGRAM-ID.    代币-MEMECOINS-001.
+           DOMAIN.        代币_MEMECOINS.
+           TOMO-ID.       [term:ZH13].
+           HEXAGRAMA.     震 ䷲ H51.
+
+       DATA DIVISION.
+           代币名  PIC X(20) VALUE "token_soberano".
+           供应量  PIC 9(15) VALUE 000001000000000.
+           市场    PIC X(10) VALUE "EXTERIOR".
+
+       PROCEDURE DIVISION.
+       SOCIAL-BLOCK.
+           <span class="c-kw">SOCIAL</span> {launch-bot} =&gt;&lt;=
+           .. lanza .. <span class="c-zh">代币</span>_exterior
+           --[As de Guía] [term:ZH13].
+       CRYPTO-BLOCK.
+           <span class="c-kw">CRYPTO</span> (spark seat) =&gt;&lt;=
+           .. firma .. <span class="c-zh">数字</span>_token_emitido
+           --[As de Guía] [term:ZH13].
+       STOP SOVEREIGN.</div>
+      </div>
+    </div>
+
+    <div class="panel p-multi">
+      <div class="panel-label">CHCL DIVISION CHINA — ESTRUCTURA MAESTRA COMPLETA</div>
+      <div class="code-block" style="font-size:10px; line-height:1.9;">      *================================================================
+      * CHCL-CHINA v0.1 · DIVISION SOBERANA COMPLETA
+      * Referencia: BIBLIO-SOURCES(CHINA-ESTRATEGIA) · KALIL
+      * Estado: DECLARADO · Activación: FASE 1
+      *================================================================
+       CHINA DIVISION.
+           EXTERIOR-SCOPE.  crypto · Web3 · diáspora · KYC_occidental.
+           INTERIOR-SCOPE.  e-CNY · WeChat · BSN · regulacion_PBOC.
+           BRIDGE.          LACHO_lingua_franca · UNICODE-CHINA_traductor.
+           DUAL-MODE.       AFUERA: adaptado_occidente.
+                            ADENTRO: nativo_regulado.
+
+       KALIL NODES DIVISION.
+           银行 BARRIOS    =&gt;&lt;= exterior:diaspora+remesas.
+                              interior:banca_rural_ecny.
+           评级 NORA       =&gt;&lt;= exterior:rating_crypto.
+                              interior:sesame_credit_compatible.
+           区块 BOLIVAR    =&gt;&lt;= exterior:Ethereum_DeFi.
+                              interior:BSN_permisionado.
+           贷款 CARILO     =&gt;&lt;= exterior:loans_USDT.
+                              interior:loans_ecny_tasa_PBOC.
+           交易 CHALTEN    =&gt;&lt;= exterior:DEX_global.
+                              interior:exchange_regulado_PBOC.
+
+       UNICODE ACTIVE DIVISION.
+           信任=TRUST · 关系=guanxi · 面子=scalar_s.
+           资本=capital · 合同=term · 安全=shield.
+           主权=sovereignty · 协议=protocol · 社区=social.
+      *================================================================</div>
+    </div>
+
+    <div class="prompt-box" style="margin-top:16px;">
+      <div class="prompt-box-title">PROMPT WINDSURF — crear CHCL-CHINA-DIVISIONES.txt en CORPUS</div>
+      <code>Crear archivo /media/Personal/PLANERAI/DIRIME/DIRIME/CORPUS/CHCL-CHINA-DIVISIONES.txt
+
+Contenido: las 3 divisiones CHCL (公证·保管·代币) más la CHINA DIVISION maestra.
+Formato COBOL + ideogramas exactamente como en el algoritmo 4.
+Agregar al inicio:
+  # CHCL-CHINA-DIVISIONES.txt
+  # CHCL × CHINA — Divisiones económicas soberanas
+  # Estado: DECLARADO · CHCL_STATUS=stub_china_activo
+  # Referencia: BIBLIO-SOURCES(CHINA-ESTRATEGIA) · KALIL-NODOS-LACHO
+
+Agregar al final:
+  TOTAL_DIVISIONES=3
+  DOMINIOS=公证·保管·代币
+  CHCL_CHINA_STATUS=DECLARADO
+  [term] :: activo · [seal of secrecy] :: activo</code>
+    </div>
+  </div>
+
+  <hr class="div">
+
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- ALGORITMO 5 — RAG BILINGÜE · INDEXACIÓN IDEOGRAMÁTICA     -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+
+  <div class="algo">
+    <div class="algo-header">
+      <div class="algo-num">5</div>
+      <div>
+        <div class="algo-title">RAG BILINGÜE — INDEXACIÓN IDEOGRAMÁTICA EN CORPUS</div>
+        <div class="algo-sub">rag.py extendido · BM25 sobre CJK · consulta español↔中文 · boost semántico ideogramático</div>
+      </div>
+      <div class="algo-hex">井 ䷯<small>H48 · EL POZO</small></div>
+    </div>
+
+    <div class="grid-2" style="margin-bottom:16px;">
+      <div>
+        <!-- LAYERS -->
+        <div style="margin-bottom:12px;">
+          <div style="font-size:9px; letter-spacing:3px; color:var(--smoke); text-transform:uppercase; margin-bottom:8px;">CAPAS DEL RAG BILINGÜE</div>
+
+          <div class="rag-layer">
+            <div class="rag-layer-label">CAPA 1<br>CORPUS ES</div>
+            <div class="rag-layer-content">51 archivos BIBLIO-SOURCES + COGNITIVOS en español<br><span style="color:var(--smoke); font-size:10px;">BM25 estándar · ya activo</span></div>
+            <div class="rag-layer-stat" style="color:var(--gold);">51 docs</div>
+          </div>
+
+          <div class="rag-layer">
+            <div class="rag-layer-label">CAPA 2<br>LIBRO</div>
+            <div class="rag-layer-content">174 archivos doctrinales · fuente de verdad<br><span style="color:var(--smoke); font-size:10px;">BM25 + source tag "libro" · ya activo</span></div>
+            <div class="rag-layer-stat" style="color:var(--gold);">174 docs</div>
+          </div>
+
+          <div class="rag-layer" style="border-color:var(--red);">
+            <div class="rag-layer-label" style="background:rgba(154,26,26,0.08); color:var(--red);">CAPA 3<br>UNICODE ZH ★</div>
+            <div class="rag-layer-content"><strong>NUEVO:</strong> UNICODE-CHINA-TOKENS.txt + CHCL-CHINA-DIVISIONES.txt<br>Tokenización CJK · n-gramas ideogramáticos · mapeo semántico</div>
+            <div class="rag-layer-stat" style="color:var(--red);">+2 docs<br>20 tokens</div>
+          </div>
+
+          <div class="rag-layer" style="border-color:var(--jade);">
+            <div class="rag-layer-label" style="background:rgba(20,90,56,0.08); color:var(--jade);">CAPA 4<br>BOOST ZH ★</div>
+            <div class="rag-layer-content"><strong>NUEVO:</strong> Boost ×2.0 para docs con source="unicode_china"<br>Prioridad en queries con ideogramas · resolución semántica</div>
+            <div class="rag-layer-stat" style="color:var(--jade);">×2.0 boost</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="panel p-jade" style="margin-bottom:12px;">
+          <div class="panel-label">EXTENSIÓN build_rag_index() — capa china</div>
+          <div class="code-block" style="font-size:10px; line-height:1.8;"><span class="c-com"># En IMV/core/rag.py — agregar después del loop LIBRO</span>
+
+<span class="c-com"># CAPA 3: UNICODE-CHINA — tokenización ideogramática</span>
+_CHINA_TOKENS = _CORPUS_DIR / "UNICODE-CHINA-TOKENS.txt"
+<span class="c-kw">if</span> _CHINA_TOKENS.exists():
+    text = _CHINA_TOKENS.read_text(encoding="utf-8")
+    <span class="c-com"># extraer pares HANZI=xxx → indexar como tokens CJK</span>
+    tokens_zh = re.findall(r'HANZI=(\S+)', text)
+    <span class="c-kw">for</span> zh in tokens_zh:
+        docs.append({
+            "id": f"zh_{zh}",
+            "text": text,
+            "source": "unicode_china",
+            "zh_token": zh,
+            "boost": 2.0   <span class="c-com"># ×2 en scoring</span>
+        })
+
+<span class="c-com"># En query() — boost para resultados china:</span>
+scored = [(doc, score * doc.get("boost", 1.0))
+          <span class="c-kw">for</span> doc, score in raw_results]</div>
+        </div>
+
+        <div class="panel p-blue">
+          <div class="panel-label">CONSULTAS QUE EL RAG BILINGÜE RESOLVERÁ</div>
+          <div style="font-size:11px; line-height:2.1; color:var(--ink2);">
+            <code style="color:var(--red); font-family:'Noto Serif SC',serif;">信任</code> → TRUST FOUNDATION · H01 · [term] · confianza<br>
+            <code>trust china</code> → 信任 · 验证 · 关系 · H01·H61·H08<br>
+            <code style="color:var(--red); font-family:'Noto Serif SC',serif;">安全保管</code> → CRYPTO (shield seat) · H14 · custodia<br>
+            <code>e-CNY canal</code> → 货币 · 数字 · H58 · PBOC · CARILO<br>
+            <code style="color:var(--red); font-family:'Noto Serif SC',serif;">风险过滤</code> → GATE UF[H06] · brake · RED-REGRET<br>
+            <code>barrios china</code> → 社区 · 银行 · KALIL · H07 · BARRIOS<br>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FLOW: NL → RAG → LACHO -->
+    <div style="margin-bottom:16px;">
+      <div style="font-size:9px; letter-spacing:3px; color:var(--smoke); text-transform:uppercase; margin-bottom:10px;">FLUJO CONSULTA BILINGÜE</div>
+      <div class="flow-row">
+        <div class="flow-box">
+          <span class="flow-box-zh">问</span>
+          <span class="flow-box-label">INPUT</span>
+          <div class="flow-box-lacho">"信任 contrato chino"</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box">
+          <span class="flow-box-zh">检</span>
+          <span class="flow-box-label">DETECT CJK</span>
+          <div class="flow-box-lacho">is_chinese() → True</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box">
+          <span class="flow-box-zh">查</span>
+          <span class="flow-box-label">RAG QUERY</span>
+          <div class="flow-box-lacho">BM25 + boost ×2.0</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box">
+          <span class="flow-box-zh">映</span>
+          <span class="flow-box-label">RESOLVE TOKEN</span>
+          <div class="flow-box-lacho">信任 → TRUST·H01</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box">
+          <span class="flow-box-zh">译</span>
+          <span class="flow-box-label">LACHO OUTPUT</span>
+          <div class="flow-box-lacho">TRUST FOUNDATION =&gt;&lt;= ..</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box" style="background:var(--bg3); border-color:var(--gold-mid);">
+          <span class="flow-box-zh">晶</span>
+          <span class="flow-box-label">CRISTAL</span>
+          <div class="flow-box-lacho" style="color:var(--gold-mid);">ledger + HL FABRIC</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="prompt-box">
+      <div class="prompt-box-title">PROMPT WINDSURF — extender IMV/core/rag.py · capa china</div>
+      <code>Editar /media/Personal/PLANERAI/DIRIME/DIRIME/IMV/core/rag.py
+
+1. Agregar import re si no está presente.
+
+2. En build_rag_index(), después del loop _LIBRO_DIR, agregar CAPA 3:
+   - Leer CORPUS/UNICODE-CHINA-TOKENS.txt si existe
+   - Extraer todos los valores de HANZI=xxx con regex
+   - Agregar cada token como doc con source="unicode_china" y boost=2.0
+   - Leer también CHCL-CHINA-DIVISIONES.txt con source="chcl_china" boost=1.5
+
+3. En la función query() o _search():
+   - Después del scoring BM25, multiplicar score por doc.get("boost", 1.0)
+   - Esto da prioridad a docs de unicode_china en queries con ideogramas
+
+4. Agregar función query_chinese(hanzi: str) -> dict:
+   - Busca en el índice por zh_token == hanzi
+   - Retorna el doc completo con lacho_token, hexagrama, dominio
+   - Fallback: {"zh_token": hanzi, "lacho_token": hanzi, "hexagrama": "H01"}
+
+5. En el print de arranque (main.py o donde se muestre el índice):
+   china_n = sum(1 for d in _INDEX if d.get("source") in ["unicode_china","chcl_china"])
+   Agregar al print: f"· {china_n} UNICODE-ZH"
+
+Ejecutar python3 main.py --stats al finalizar.
+Verificar que el output muestre: "RAG — N CORPUS · N LIBRO · N UNICODE-ZH"</code>
+    </div>
+  </div>
+
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-zh">中文 ䷜ 语义主权</div>
+    <div>TEMA 1/3 · UNICODE-CHINA × LACHO · 5 ALGORITMOS · [term] :: activo</div>
+    <div>DIRIME v0.2.1 · PRIORIDAD CHINA · VERSION_TARGET=0.3.0</div>
+  </div>
+
+</div>
+</body>
+</html>

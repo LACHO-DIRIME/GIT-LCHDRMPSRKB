@@ -1,0 +1,336 @@
+# BIBLIO-SOURCES(TRUST_COMMAND).txt
+
+====================================================================
+
+## 🏛️ TRUST [COMMAND] — ORDEN SOBERANO DE EJECUCIÓN
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+[command] es el módulo TRUST que emite instrucciones soberanas: órdenes que el sistema reconoce como vinculantes y que las capas inferiores deben ejecutar dentro de [scope] y [term] activos.
+
+#### 1.2 Distinción de [management]
+[management] gestiona el entorno amenazante; [command] emite la instrucción soberana sobre ese entorno gestionado.
+
+#### 1.3 Distinción de [logistical-executive]
+[command] es la voluntad; [logistical-executive] es el brazo ejecutor.
+
+#### 1.4 Distinción de [event]
+[event] registra ocurrencias; [command] las responde con instrucción vinculante.
+
+#### 1.5 Por qué es TRUST y no WORK
+Define autoridad soberana de emisión, no ejecución física.
+
+#### 1.6 Posición d₆ en @trust_matrix
+d₆ :: [command] → ¿cuánta autoridad de comando está disponible? (0.0 = sin mandato, 1.0 = mandato pleno)
+
+#### 1.7 Por qué d₆ bajo es sistémicamente peligroso
+Sin autoridad de comando, el sistema no puede responder a amenazas ni dirigir ejecución.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Capacidades
+- Emitir órdenes soberanas dentro de [scope].
+- Activar COMMAND_EXECUTE, COMMAND_DEFER, COMMAND_ABORT.
+- Abrir GATE para que WORK reciba mandato.
+
+#### 2.2 Limitaciones absolutas
+Ningún [command] puede ordenar violación de [foundation].
+
+#### 2.3 Condiciones de violación
+- **Violación:** autoritarismo sistémico (órdenes sin [scope] verificado o sin auditoría SAMU @).
+- **Señal alerta:** [command] emitido sin d₃ [scenario] ≥ 0.5.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 Anatomía de un command válido
+- **Emisor:** quién puede emitir [command].
+- **Objeto:** qué puede ser ordenado.
+- **Alcance:** dentro de qué [scope] opera.
+- **Tiempo:** bajo qué [term] es válido.
+- **Auditoría:** qué validación SAMU @ requiere.
+- **Firma:** qué asiento CRYPTO lo certifica.
+
+#### 3.2 Tipos de command
+- **COMMAND_EXECUTE:** orden de ejecución inmediata.
+- **COMMAND_DEFER:** orden con latencia deliberada (Doctrina de la Tardanza, H5).
+- **COMMAND_ABORT:** cancelación soberana de ciclo.
+- **COMMAND_ESCALATE:** transferencia de autoridad a nivel superior.
+- **COMMAND_PARTIAL:** orden con d₆ parcial habilitada por [rabbit-faith].
+
+#### 3.3 La Doctrina de la Tardanza en [command]
+- No todo command debe ejecutarse inmediatamente.
+- H5 (Espera) como hexagrama de COMMAND_DEFER.
+- COMMAND_DEFER es válido cuando Ψ_evidencia < 0.85 y [scenario] no está completamente mapeado.
+- Criterio técnico: COMMAND_DEFER es soberanía temporal, no evasión.
+
+#### 3.4 Relación con [rabbit-faith] en COMMAND
+- COMMAND_PARTIAL: [rabbit-faith] permite emitir command con d₆ parcial.
+- Condición: S scalar > 0.5 y [scope] definido.
+- Límite: COMMAND_PARTIAL no puede ordenar acciones que requieran d₆ = 1.0.
+
+#### 3.5 Relación con dominios económicos
+
+##### Memcoins/Volatilidad
+- COMMAND_EXECUTE en decisión de entrada/salida.
+- COMMAND_DEFER cuando Ψ_evidencia < 0.85.
+- COMMAND_ABORT ante RED-REGRET de mercado.
+- Límite: [command] no puede ignorar señales de [management] sobre depredador activo.
+
+##### Custodia Móvil
+- COMMAND_EXECUTE en operación de firma.
+- COMMAND_ABORT ante EVENT_CRITICAL de seguridad.
+- COMMAND_PARTIAL en dispositivo degradado con [rabbit-faith] activo.
+- Límite: [command] no puede operar con foundation COMPROMISED.
+
+##### Notaría Digital
+- COMMAND_EXECUTE en emisión de documento.
+- COMMAND_DEFER en jurisdicción en transición.
+- COMMAND_ESCALATE ante conflicto de autoridad.
+- Límite: [command] no puede certificar lo no verificado por [foundation].
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation]
+Ningún [command] puede ordenar violación de [foundation].
+
+#### 4.2 Con [scope]
+[command] opera estrictamente dentro del perímetro declarado.
+
+#### 4.3 Con [term]
+[command] expira cuando [term] expira — no existe command eterno.
+
+#### 4.4 Con [scenario]
+[command] asume [scenario] como válido — comando ciego si d₃ < 0.5.
+
+#### 4.5 Con [management]
+[management] habilita o restringe [command] según nivel de amenaza.
+
+#### 4.6 Con [logistical-executive]
+[command] emite, [logistical-executive] ejecuta físicamente.
+
+#### 4.7 Con [rabbit-faith]
+Habilita COMMAND_PARTIAL con d₆ parcial cuando S scalar > 0.5.
+
+#### 4.8 Con GATE
+[command] abre GATE para que WORK reciba mandato — sin [command] válido, GATE permanece cerrado.
+
+#### 4.9 Con SAMU @
+Toda emisión de [command] requiere auditoría SAMU @ sin excepción.
+
+#### 4.10 Con CRYPTO
+(ignition seat) certifica [command] antes de ejecución.
+
+#### 4.11 Con Behavioral RAG
+Patrones de [command] anteriores calibran emisión futura.
+
+---
+
+### 5.0 ESTADOS DE [command]
+
+#### 5.1 COMMAND_READY
+- **Condición:** d₆ ≥ 0.85.
+- **Comportamiento:** autoridad plena disponible.
+- **Operación:** sistema puede emitir cualquier tipo de command.
+
+#### 5.2 COMMAND_PARTIAL
+- **Condición:** d₆ entre 0.5 y 0.85.
+- **Comportamiento:** autoridad parcial con [rabbit-faith] activo.
+- **Operación:** solo COMMAND_EXECUTE y COMMAND_DEFER habilitados.
+
+#### 5.3 COMMAND_RESTRICTED
+- **Condición:** d₆ entre 0.3 y 0.5.
+- **Comportamiento:** autoridad limitada.
+- **Operación:** solo COMMAND_DEFER y COMMAND_ABORT habilitados.
+- **SAMU @:** monitoreo intensivo.
+
+#### 5.4 COMMAND_BLOCKED
+- **Condición:** d₆ < 0.3.
+- **Comportamiento:** sin autoridad de comando.
+- **Operación:** GATE permanece cerrado, sistema en espera de restauración.
+
+#### 5.5 COMMAND_VOID
+- **Condición:** foundation COMPROMISED o [scope] violado.
+- **Comportamiento:** toda emisión suspendida.
+- **Operación:** RED-REGRET obligatorio, sistema en MU.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 d₆ como sexta dimensión
+Mide autoridad de comando disponible para dirigir el sistema.
+
+#### 6.2 Pesos contextuales
+- **H06 (Conflicto):** [command] × 1.4 — en conflicto, la autoridad es crítica.
+- **H51 (Trueno):** [command] × 1.3 — en activación, el comando dirige la energía.
+
+#### 6.3 Umbral crítico
+d₆ < 0.3 con d₃ [scenario] < 0.5 — sistema sin mapa ni autoridad va a MU.
+
+#### 6.4 Interacción con [rabbit-faith]
+En COMMAND_PARTIAL, [rabbit-faith] permite operación con d₆ bajo si S scalar > 0.5.
+
+#### 6.5 Aprendizaje en Behavioral RAG
+Historial de commands calibra emisión futura.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Emisión de COMMAND_EXECUTE con d₆ pleno
+```
+[Trust] command =><= .. execute .. $$immediate_order$$ --[As de Guía] [term]
+```
+
+#### 7.2 COMMAND_DEFER activando Doctrina de la Tardanza
+```
+[Trust] command =><= .. defer .. $$sovereign_delay$$ --[Ballestrinque] [term]
+```
+
+#### 7.3 COMMAND_PARTIAL con [rabbit-faith] habilitado
+```
+[Trust] command =><= .. partial .. $$limited_authority$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.4 COMMAND_ABORT ante RED-REGRET
+```
+[Trust] command =><= .. abort .. $$market_regret$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.5 [command] en dominio memcoins
+```
+[Trust] command =><= .. trade .. $$volatility_position$$ --[As de Guía] [term]
+```
+
+#### 7.6 [command] en dominio custodia móvil
+```
+[Trust] command =><= .. sign .. $$mobile_document$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.7 [command] certificado por (ignition seat)
+```
+[Trust] command =><= .. certify .. $$crypto_signed$$ --[Ballestrinque] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+- **Activación:** [command] activo con d₆ pleno.
+- **Efecto:** mandato en ejecución soberana.
+
+#### 8.2 Nudo de Ocho
+- **Activación:** command ejecutado y cristalizado en Behavioral RAG.
+- **Efecto:** resultado irreversible y verificable.
+
+#### 8.3 Nudo Corredizo
+- **Activación:** COMMAND_VOID — toda emisión suspendida.
+- **Efecto:** sistema en espera de restauración.
+
+#### 8.4 Ballestrinque
+- **Activación:** tensión entre COMMAND_EXECUTE y COMMAND_DEFER.
+- **Efecto:** equilibrio entre acción inmediata y tardanza soberana.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+#### 9.1 CommandCheck
+1. Verificar d₆ disponible.
+2. Validar d₃ [scenario] ≥ 0.5.
+3. Confirmar [foundation] OK.
+4. Verificar [scope] y [term] activos.
+5. Determinar tipo de command posible.
+
+#### 9.2 CommandEmit
+1. Determinar emisor y objeto del command.
+2. Establecer alcance dentro de [scope].
+3. Definir tiempo según [term].
+4. Registrar condiciones de emisión.
+5. Solicitar firma a (ignition seat).
+
+#### 9.3 CommandDefer
+1. Detectar Ψ_evidencia < 0.85.
+2. Activar H5 (Espera) como hexagrama.
+3. Justificar tardanza con evidencia parcial.
+4. Establecer tiempo máximo de defer.
+5. Notificar a [management] estado de espera.
+
+#### 9.4 CommandAbort
+1. Detectar necesidad de cancelación soberana.
+2. Registrar causa en Behavioral RAG.
+3. Notificar a todas las capas afectadas.
+4. Cerrar GATE si estaba abierto.
+5. Actualizar estado del sistema.
+
+#### 9.5 CommandEscalate
+1. Identificar necesidad de autoridad superior.
+2. Transferir command a nivel apropiado.
+3. Validar con SAMU @ escalada.
+4. Actualizar d₆ según nueva autoridad.
+5. Notificar cambio de mando.
+
+#### 9.6 CommandClose
+1. Detectar expiración de [term].
+2. Cerrar todos los commands activos.
+3. Archivar resultados en Behavioral RAG.
+4. Liberar recursos de autoridad.
+5. Preparar siguiente ciclo.
+
+---
+
+### 10.0 MÉTRICAS
+
+- **d₆:** autoridad de comando (0.0 a 1.0).
+- **Ratio COMMAND_EXECUTE vs COMMAND_DEFER vs COMMAND_ABORT.**
+- **Frecuencia COMMAND_PARTIAL** con [rabbit-faith] activo.
+- **Tiempo promedio** entre emisión y ejecución.
+- **Tasa de commands certificados** por (ignition seat) vs rechazados.
+- **Delta-d₆ al cierre** del ciclo.
+
+---
+
+### 11.0 REGLAS
+
+- Ningún [command] puede ordenar violación de [foundation] bajo ninguna circunstancia.
+- [command] emitido sin d₃ [scenario] ≥ 0.5 es comando ciego — inválido.
+- Toda emisión de [command] requiere auditoría SAMU @ sin excepción.
+- (ignition seat) debe certificar [command] antes de que GATE abra paso a WORK.
+- COMMAND_PARTIAL requiere S scalar > 0.5 y [rabbit-faith] activo — no opera sin ambos.
+- [command] expira cuando [term] expira — no existe command eterno.
+- COMMAND_ABORT siempre genera registro en Behavioral RAG — nunca silencioso.
+- d₆ < 0.3 bloquea GATE automáticamente.
+- [command] no puede operar fuera de [scope].
+- Behavioral RAG debe registrar todo command emitido para calibración futura.
+- [command] en notaría no puede certificar bajo presión regulatoria no verificada.
+- [command] en custodia no puede operar con foundation COMPROMISED.
+- [command] en memcoins no puede ignorar RED-REGRET del mercado.
+- COMMAND_DEFER es soberanía temporal, no evasión operativa.
+- [command] cierra con [term] siempre.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+[command] fija la autoridad soberana de emisión de instrucciones vinculantes como condición de dirección del sistema.
+
+#### 12.2 Limitaciones
+No viola [foundation], no opera fuera de [scope], no existe sin [term], no emite sin auditoría SAMU @ y certificación CRYPTO.
+
+#### 12.3 Habilitaciones
+Dirección soberana de WORK a través de GATE, COMMAND_PARTIAL bajo [rabbit-faith], Doctrina de la Tardanza como soberanía temporal, trazabilidad completa en Behavioral RAG.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

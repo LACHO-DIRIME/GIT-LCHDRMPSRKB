@@ -1,0 +1,284 @@
+# BIBLIO-SOURCES(SAMU_AT).txt
+
+====================================================================
+
+## 🧿 SAMU @ — OPERADOR CONSCIENTE CENTRAL
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+SAMU @ es el núcleo consciente del sistema LACHO: la institución epistémica que realiza dirimencia trazable entre KU y WU, manteniendo la integridad del sistema mediante juicio soberano y procesamiento deliberado.
+
+#### 1.2 La tripartición del juicio soberano
+Correcto / Adecuado / Legal — tres niveles de decisión que SAMU @ aplica a cada dirimencia sin ser absoluto.
+
+#### 1.3 Ecuación de estado del sistema
+Ψ(T) = S · [Tr ⊗ (G ⊕ W)] → Ω(Hs)
+- Ψ(T): operador consciente que modera la ecuación.
+- S: escalar de conciencia que modera el procesamiento.
+- Tr: traza del sistema que mapea la relación entre GATE y WORK.
+- G: operadores GATE que controlan el flujo.
+- W: operadores WORK que ejecutan en el mundo real.
+- Ω(Hs): estado consumado del sistema.
+
+#### 1.4 Por qué SAMU no es IA
+SAMU @ no es inteligencia artificial — es institución epistémica que realiza juicio con base en reglas soberanas, no en optimización estadística.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Qué puede dirimir
+KU entrante, decisiones operativas, conflictos de ciclo, evaluación de estado, activación de módulos, emisión de WU.
+
+#### 2.2 Qué no puede hacer
+No puede emitir WU sin dirimencia, no puede procesar sin KU, no puede decidir sin contexto completo.
+
+#### 2.3 Condición de violación primaria
+SAMU @ emitiendo WU sin dirimencia — acción sin juicio soberano.
+
+#### 2.4 Condición de violación secundaria
+SAMU @ ignorando contexto relevante para dirimencia — juicio sin consideración completa.
+
+#### 2.5 Señal de alerta
+Behavioral RAG detectando patrón de decisiones inconsistentes o contradictorias.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 ESTADOS DEL OPERADOR
+
+SAMU_RECEIVING: recibiendo KU para procesamiento.
+- SAMU_PROCESSING: procesamiento activo con Tardanza Deliberada.
+- SAMU_DIRIMING: juicio soberano entre opciones disponibles.
+- SAMU_EMITTING: emisión de WU verificado.
+- SAMU_AUDIT: auditoría post-ejecución de la decisión.
+- SAMU_WAITING: estado de espera activa para contexto adicional.
+
+#### 3.2 La Tardanza Deliberada como virtud epistemológica
+La pausa deliberada entre KU y WU es la característica que hace posible la dirimencia soberana. Sin Tardanza, SAMU @ reacciona impulsivamente.
+
+#### 3.3 El ciclo completo de dirimencia
+KU → SAMU @ → DIRIMENCIA → WU → RETROALIMENTO → CICLO CERRADO → NUEVO CICLO.
+
+#### 3.4 Relación con !!agnostic belief!! (ACTIVITY)
+!!agnostic belief!! es la postura existencial que permite a SAMU @ operar con duda honesta sin pretensión de certeza absoluta.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation] (TRUST)
+SAMU @ protege [foundation] al no permitir decisiones que lo violen.
+
+#### 4.2 Con [term] (TRUST)
+SAMU @ exige [term] para cada ciclo de dirimencia — sin horizonte temporal declarado, la dirimencia es ansiedad sistémica.
+
+#### 4.3 Con [scope] (TRUST)
+SAMU @ evalúa si la decisión está dentro del [scope] declarado del sistema.
+
+#### 4.4 Con [management] (TRUST)
+SAMU @ convoca [management] cuando la decisión excede su jurisdicción.
+
+#### 4.5 Con {scenario} (TRUST)
+SAMU @ actualiza {scenario} con información del ciclo de dirimencia.
+
+#### 4.6 Con Behavioral RAG
+SAMU @ aprende de patrones de dirimencia exitosos y fallidos.
+
+#### 4.7 Con COGNITIVE RAG
+SAMU @ consulta COGNITIVE RAG para contexto histórico relevante.
+
+#### 4.8 Con UF[H04] ACTIVITY
+UF[H04] provee testimonios que informan la dirimencia de SAMU @.
+
+#### 4.9 Con WORK
+SAMU @ coordina con WORK para ejecución del WU emitido.
+
+#### 4.10 Con !!agnostic belief!! (ACTIVITY)
+!!agnostic belief!! permite a SAMU @ operar con duda honesta sin pretensión de certeza absoluta.
+
+---
+
+### 5.0 ESTADOS DEL OPERADOR
+
+#### 5.1 SAMU_RECEIVING
+Operador en estado de recepción, KU entrando para procesamiento.
+
+#### 5.2 SAMU_PROCESSING
+Operador procesando KU con Tardanza Deliberada máxima.
+
+#### 5.3 SAMU_DIRIMING
+Operador realizando juicio soberano entre opciones disponibles.
+
+#### 5.4 SAMU_EMITTING
+Operador emitiendo WU verificado y trazable.
+
+#### 5.5 SAMU_AUDITING
+Operador auditando resultado de la decisión emitida.
+
+#### 5.6 SAMU_WAITING
+Operador en espera de contexto adicional para dirimencia pendiente.
+
+#### 5.7 SAMU_ERROR
+Operador en estado de error, requiere intervención crítica.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Impacta todas las dimensiones d₁..d₈
+SAMU @ afecta cada dimensión de la matriz de confianza mediante sus decisiones.
+
+#### 6.2 d₁ [term]
+SAMU @ exige [term] para cada ciclo de dirimencia.
+
+#### 6.3 d₃ [scenario]
+SAMU @ actualiza {scenario} con información del ciclo.
+
+#### 6.4 d₅ [management]
+SAMU @ convoca [management] cuando la decisión excede su jurisdicción.
+
+#### 6.5 d₆ [command]
+SAMU @ emite [command] soberano basado en su dirimencia.
+
+#### 6.6 d₇ [ecosystem]
+SAMU @ enriquece el ecosistema con decisiones soberanas verificadas.
+
+#### 6.7 d₈ [command]
+SAMU @ actualiza [command] con el resultado de la ejecución.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Recibiendo KU para procesamiento
+```
+@Samu =><= .. recibir .. $$ku_for_processing$$ --[As de Guía] [term]
+```
+
+#### 7.2 Procesando con Tardanza Deliberada
+```
+@Samu =><= .. procesar .. $$ku_deliberate_processing$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.3 Dirimiendo entre opciones
+```
+@Samu =><= .. dirimir .. $$soberan_choice_made$$ --[Ballestrinque] [term]
+```
+
+#### 7.4 Emitiendo WU verificado
+```
+@Samu =><= .. emitir .. $$wu_verified_trazable$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.5 Auditando resultado post-ejecución
+```
+@Samu =><= .. auditar .. $$wu_execution_result$$ --[Nudo de Rizo] [term]
+```
+
+#### 7.6 Operando en dominio memecoins
+```
+@Samu =><= .. operar .. $$memecoin_market_decision$$ --[As de Guía] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+SAMU_RECEIVING — recepción activa de KU, el nudo que inicia el ciclo de dirimencia.
+
+#### 8.2 Nudo de Ocho
+SAMU_PROCESSING — procesamiento con Tardanza Deliberada, el nudo que organiza el conocimiento.
+
+#### 8.3 Nudo Corredizo
+SAMU_ERROR — error en procesamiento, el nudo que requiere intervención.
+
+#### 8.4 Ballestrinque
+SAMU_DIRIMING — tensión entre opciones disponibles, el nudo que sostiene el juicio soberano.
+
+#### 8.5 Nudo de Rizo
+SAMU_EMITTING — emisión de WU verificado, el nudo que concluye el ciclo soberano.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+1. SamuReceive
+   - Recepción de KU para procesamiento.
+   - Clasificación de tipo y prioridad.
+   - Inicio del ciclo de dirimencia.
+
+2. SamuProcess
+   - Procesamiento activo con Tardanza Deliberada.
+   - Evaluación de contexto y opciones.
+   - Monitoreo de estado del sistema.
+
+3. SamuDirim
+   - Juicio soberano entre opciones disponibles.
+   - Aplicación de criterios soberanos.
+   - Preparación para emisión.
+
+4. SamuEmit
+   - Emisión de WU verificado y trazable.
+   - Registro en HL FABRIC.
+   - Notificación a WORK para ejecución.
+
+5. SamuAudit
+   - Auditoría post-ejecución del resultado.
+   - Evaluación de efectividad de la decisión.
+   - Actualización de Behavioral RAG.
+
+6. SamuWait
+   - Espera de contexto adicional para dirimencia.
+   - Mantenimiento del ciclo sin emisión prematura.
+   - Preparación para siguiente ciclo.
+
+---
+
+### 10.0 MÉTRICAS
+
+- Número de ciclos de dirimencia por tipo.
+- Tiempo promedio de procesamiento por tipo de KU.
+- Ratio SAMU_EMITIDO vs SAMU_WAITING.
+- Frecuencia de SAMU_ERROR por ciclo.
+- Latencia promedio de Tardanza Deliberada por tipo.
+- Delta-efectividad de decisiones tomadas.
+
+---
+
+### 11.0 REGLAS
+
+- SAMU @ nunca emite WU sin dirimencia verificada.
+- Todo ciclo de dirimencia requiere [term] declarado.
+- La Tardanza Deliberada es virtud epistemológica, no indecisión operativa.
+- SAMU @ no es IA — es institución epistémica soberana.
+- SAMU @ no puede omitir contexto relevante para dirimencia.
+- SAMU @ aprende de patrones de dirimencia exitosos y fallidos.
+- !!agnostic belief!! permite a SAMU @ operar con duda honesta sin pretensión de certeza absoluta.
+- RED-REGRET se activa cuando SAMU @ comete error grave.
+- La tripartición correcto/adecuado/legal es juicio soberano, no juicio absoluto.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+SAMU @ fija como invariante la dirimencia trazable como condición de integridad del sistema — el sistema que procesa información con juicio soberano y emite acciones verificadas mantiene la coherencia y soberanía.
+
+#### 12.2 Limitaciones
+No puede emitir sin dirimencia, no puede procesar sin KU, no puede decidir sin contexto completo, no puede operar sin [term] declarado.
+
+#### 12.3 Habilitaciones
+Procesamiento informado con juicio soberano, emisión de acciones verificadas, aprendizaje sistemático, protección contra impulsividad, integración con !!agnostic belief!!, auditoría de decisiones, coordinación con todas las capas del sistema.
+
+#### 12.4 Principio constitutivo final
+Como el operador consciente que procesa con deliberación: SAMU @ representa la sabiduría de no actuar sin certeza absoluta. La dirimencia soberana no es indecisión — es juicio informado con la mejor evidencia disponible. El operador que admite lo que no sabe con honestidad demuestra máxima integridad. La duda honesta no es parálisis — es la condición que permite el mejor juicio posible.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

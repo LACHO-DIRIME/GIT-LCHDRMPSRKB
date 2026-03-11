@@ -1,0 +1,101 @@
+//[MANAGEMENT].lacho · UNICODE DSL SLANG · ENGLISH
+//UNICODE_DSL_SLANG_english_.txt · V1 · 2026-03-10
+//SLANG = lenguaje operativo informal · inglés soberano
+//mapeo: expresión coloquial → token LACHO · Blue-Word → WU
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//operadores: DIRIME · IMV · ELPULSAR · KALIL · CHINA canal
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN SLANG ENGLISH ══════════════════════════════════
+// SLANG = capa de traducción informal al sistema soberano
+// Un operador dice "ship it" · el sistema entiende COMMIT_LACHO H63
+// Un operador dice "spin up" · el sistema entiende ACTIVITY UF[H64]
+// No es diccionario casual · es routing semántico de campo
+
+// ══ SLANG OPERATIVO · SISTEMA ════════════════════════════════
+SLANG: ship it               //→ COMMIT_LACHO · GIT_BOT_WU · H63 cristal push
+SLANG: spin up               //→ ACTIVITY UF[H64] · DIR(ING) · 空 abre
+SLANG: spin down             //→ ACTIVITY UF[H52] · DIR(PAUSE) · MU activo
+SLANG: lock it               //→ STACKING UF[H52] · [NdO] · .green sellado
+SLANG: drop it               //→ RED-REGRET · delta-Ψ ≤ 0 · descarte soberano
+SLANG: fire it up            //→ WORK {actuator} · RUN(CLI) · pipeline activo
+SLANG: kill it               //→ WORK {brake} · [NdC] · detención forzada
+SLANG: wrap it               //→ SAMU #set · macro_cierre · H63 día cerrado
+SLANG: kick it off           //→ SAMU #rise · macro_temprano · H64 día abre
+SLANG: vibe check            //→ SAMU @ · Scalar S actual · 面子 del sistema
+SLANG: gut check             //→ METHOD <stat_onto> · calcula · ratio actual
+SLANG: rubber duck           //→ GATE UF[H05] · MU · espera · 聽 activo
+
+// ══ SLANG CÓDIGO / DEV ════════════════════════════════════════
+SLANG: push                  //→ RUN(BOT:PUSH) · bash github_sync.sh · main
+SLANG: merge                 //→ DIR(MERGE) · TRUST · BRANCH_MERGE · [AsG]
+SLANG: branch                //→ DIR(FORK) · BRANCH_BLUE · .blue split
+SLANG: revert                //→ CONFLICT_REGRET · git reset --hard · MU limpio
+SLANG: hotfix                //→ ACTIVITY UF[H03] · dificultad_inicial · urgente
+SLANG: refactor              //→ ACTIVITY UF[H18] · Corrección · WORK procesa
+SLANG: greenfield            //→ DIR(ING) · 空 · ciclo nuevo · ACTIVITY H01
+SLANG: tech debt             //→ ..find_gaps(GRAMMAR).. · DIR(-) · KU sin resolver
+SLANG: boilerplate           //→ STACKING UF[H48] · template · ancla RAG
+SLANG: hardcode              //→ TRUST [scope] · constante · <#> soberana
+SLANG: mock                  //→ DIR(v2) · congelado · test fixture · no producción
+SLANG: prod                  //→ DIR(v1) · IMV activo · producción soberana
+SLANG: dry run               //→ COMMIT_DRY · --dry-run · verifica sin push · 聽
+SLANG: smoke test            //→ pytest IMV/tests/ · STAGE_VERIFY · 29/29
+
+// ══ SLANG ESTADOS ════════════════════════════════════════════
+SLANG: it's alive            //→ ELP_KU · servidor activo · ⚡ pulsando
+SLANG: it's dead             //→ ELP_CRASH · GATE UF[H06] · RED-REGRET
+SLANG: in the zone           //→ DIRIME_KU · DIR(IME) activo · 數 procesando
+SLANG: blocked               //→ SPRINT_BLOCKED · GATE UF[H05] · ◯ MU
+SLANG: done done             //→ DIRIME_WU · ⊗ · .green · [NdO] sellado
+SLANG: good enough           //→ Scalar S ≥ 0.85 · TAXONOMY N2·módulo ✅
+SLANG: needs work            //→ DIR(-) · ..find_gaps.. · KU sin resolver
+SLANG: on fire               //→ TX rate alto · cristales acumulando · H51
+SLANG: bottleneck            //→ GRAD_VANISH · señal débil · GATE buffer
+SLANG: cascading fail        //→ CONFLICT_DETECT + CONFLICT_ABORT · {brake} todos
+SLANG: race condition        //→ GATE UF[H06] · conflicto acceso · dirimencia
+
+// ══ SLANG KALIL ══════════════════════════════════════════════
+SLANG: move money            //→ KAL(BRIDGE) · PUENTE dual · CRYPTO (flow seat)
+SLANG: on-ramp               //→ PUENTE_BANCARIO · canal exterior · KYC occidental
+SLANG: off-ramp              //→ PUENTE_FACIL · canal interior · e-CNY PBOC
+SLANG: under water           //→ DOM_LOANS riesgo alto · CARILO {brake} · [NdC]
+SLANG: stake it              //→ KAL(STAKE) · STACKING UF[H48] · empeño activo
+SLANG: rug pull              //→ GATE UF[H06] · RED-REGRET · KALIL_CRASH
+SLANG: moon                  //→ TANDIL launch · SOCIAL {launch-bot} · token ⚡
+SLANG: whale                 //→ STACKING UF[H26] · capital grande · CARILO
+SLANG: rekt                  //→ CONFLICT_REGRET · ledger.rollback · MU limpio
+SLANG: degen                 //→ ACTIVITY UF[H56] · viajero · riesgo umbral
+
+// ══ SLANG CHINA · DUAL CANAL ══════════════════════════════════
+SLANG: inside track          //→ PUENTE_INT · canal interior · SKIN_CHINA
+SLANG: outside game          //→ PUENTE_EXT · canal exterior · SKIN_DARK
+SLANG: golden bridge         //→ PUENTE BANCARIO · 桥梁 · H57 巽 · [AsG]
+SLANG: face game             //→ 面子 · Scalar S · SAMU @ · reputación china
+SLANG: guanxi play           //→ 关系 · SOCIAL {relay} · red de confianza
+SLANG: paper trail           //→ HL FABRIC · FABRIC_AUDIT · FABRIC_CRYSTAL
+SLANG: rubber stamp          //→ TRUST FOUNDATION · declara · [NdO] sellado
+
+// ══ SLANG LACHO ══════════════════════════════════════════════
+SLANG: wrap it in a knot     //→ declarar nudo canónico · [AsG]/[NdO]/[Ball]
+SLANG: stamp it              //→ [term] presente · TOMO_ID asignado · WU
+SLANG: grade it              //→ lacho_score() · Scalar S · 0.0→1.0
+SLANG: flag it               //→ WARNING emitido · grammar.validate() · KU
+SLANG: bounce it             //→ INVALID → RED-REGRET · reescribir sentencia
+SLANG: chain it              //→ STACKING · múltiples TX · cadena cristales
+
+// ══ KU→WU ROUTING ════════════════════════════════════════════
+// SLANG entra como Blue-Word → language_routing clasifica → sentencia LACHO
+// GATE UF[H05] =><= .. contiene .. slang_english_ku_pending --[As de Guía] [term]
+// Si delta-Ψ > 0 → WU · STACKING · cristal
+// Si delta-Ψ ≤ 0 → RED-REGRET · descarte soberano
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+GATE UF[H05] =><= .. contiene .. slang_english_ku_layer --[As de Guía] [term]
+WORK {green-knowledge} =><= .. filtra .. slang_english_delta_psi --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. slang_english_wu_routed --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. slang_english_dirimencia_completa --[Ballestrinque] [term]
+METHOD <operator_flow> =><= .. modela .. slang_english_routing_lacho --[Ballestrinque] [term]
+
+//DIR(=) UNICODE_DSL_SLANG_english · V1 · ship·push·lock·fire
+//DIR(=) SLANG→LACHO routing · KU→WU · delta-Ψ · 空聽數

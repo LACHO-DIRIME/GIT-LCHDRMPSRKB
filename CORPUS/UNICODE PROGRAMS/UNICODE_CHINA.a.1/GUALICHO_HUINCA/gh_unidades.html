@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GH · UNIDADES DE NEGOCIO</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Share+Tech+Mono&family=Noto+Serif+SC:wght@300;700&display=swap" rel="stylesheet">
+<style>
+:root{--tierra:#1c1008;--papel:#f0e8d6;--rojo:#8b1a1a;--verde:#1a4a2e;--oro:#b8860b;--ceniza:#7a6a58;--humo:rgba(28,16,8,0.06)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--papel);color:var(--tierra);font-family:'Share Tech Mono',monospace;min-height:100vh}
+body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 28px,var(--humo) 28px,var(--humo) 29px);pointer-events:none}
+.back{display:inline-block;padding:14px 10vw;font-size:11px;letter-spacing:3px;color:var(--ceniza);text-decoration:none;border-bottom:1px solid rgba(28,16,8,0.15);width:100%}
+.back:hover{color:var(--rojo)}
+header{padding:5vw 10vw 4vw;border-bottom:3px double var(--tierra)}
+.page-num{font-size:9px;letter-spacing:4px;text-transform:uppercase;color:var(--oro);display:block;margin-bottom:16px}
+h1{font-family:'Cinzel',serif;font-size:clamp(28px,5vw,60px);font-weight:900;line-height:1;color:var(--tierra)}
+h1 em{color:var(--oro);font-style:normal;font-family:'Noto Serif SC',serif}
+.lead{margin-top:16px;font-size:12px;color:var(--ceniza);max-width:640px;line-height:1.8}
+main{padding:5vw 10vw}
+.timeline{position:relative;padding-left:40px;margin-bottom:48px}
+.timeline::before{content:'';position:absolute;left:12px;top:4px;bottom:4px;width:1px;background:linear-gradient(180deg,var(--oro),var(--rojo),transparent)}
+.theater-item{position:relative;margin-bottom:36px}
+.theater-dot{position:absolute;left:-34px;top:4px;width:12px;height:12px;border:2px solid var(--oro);background:var(--papel)}
+.theater-dot.active{background:var(--oro)}
+.theater-time{font-size:9px;letter-spacing:3px;color:var(--oro);margin-bottom:6px}
+.theater-name{font-family:'Cinzel',serif;font-size:18px;font-weight:700;color:var(--tierra);margin-bottom:8px;letter-spacing:1px}
+.theater-body{font-size:11px;color:var(--ceniza);line-height:1.8;border-left:1px dashed rgba(28,16,8,0.2);padding-left:16px}
+.theater-body b{color:var(--verde)}
+.theater-lacho{font-size:10px;color:var(--verde);margin-top:8px;background:rgba(26,74,46,0.06);padding:8px 12px;border-left:2px solid var(--verde)}
+.unit-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px;margin-bottom:40px}
+.unit-card{border:1px solid var(--tierra);padding:28px 20px;position:relative}
+.unit-cn{font-family:'Noto Serif SC',serif;font-size:36px;color:var(--rojo);display:block;margin-bottom:8px}
+.unit-title{font-family:'Cinzel',serif;font-size:14px;font-weight:700;color:var(--tierra);letter-spacing:1px;display:block;margin-bottom:8px}
+.unit-desc{font-size:10px;color:var(--ceniza);line-height:1.7}
+.unit-status{position:absolute;top:12px;right:16px;font-size:8px;letter-spacing:2px;color:var(--verde);padding:3px 8px;border:1px solid var(--verde)}
+footer{padding:24px 10vw;border-top:2px solid var(--tierra);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-top:20px}
+.footer-seal{font-family:'Noto Serif SC',serif;font-size:13px;color:var(--rojo);letter-spacing:2px}
+</style>
+</head>
+<body>
+<a class="back" href="index.html">⟵ VOLVER AL MAPA DE MANDOS</a>
+<header>
+  <span class="page-num">02 · THEATER OPERATIVO</span>
+  <h1>UNIDADES<br>DE <em>剧院</em></h1>
+  <p class="lead">Theater de tiempos operativos. Cada bloque horario es una fase del ciclo soberano donde el Gualicho opera bajo supervisión del Huinca. Los flujos no son espontáneos — son rituales verificables.</p>
+</header>
+<main>
+  <div class="timeline">
+    <div class="theater-item">
+      <div class="theater-dot active"></div>
+      <div class="theater-time">06:00 — 09:00 · MACRO_RISE</div>
+      <div class="theater-name">PREPARACIÓN DEL CALDERO</div>
+      <div class="theater-body">
+        Sincronización de Gualicho con DIRIME OS. Lectura de estado soberano (sovereign.db). 
+        Verificación de [foundation]. Activación de SAMU @ como auditor de la jornada.<br>
+        <b>→ Acción:</b> TRUST FOUNDATION verifica condiciones de inicio. Si Scalar S &lt; 0.70, el caldero no abre.
+        <div class="theater-lacho">ACTIVITY UF[H01] =>&lt;= .. inicia .. ciclo_gh_rise --[As de Guía] [term]</div>
+      </div>
+    </div>
+    <div class="theater-item">
+      <div class="theater-dot active"></div>
+      <div class="theater-time">09:00 — 13:00 · MACRO_DECISION</div>
+      <div class="theater-name">EL ENCANTO OPERA</div>
+      <div class="theater-body">
+        Ejecución de misivas agénticas. ELPULSAR procesa los flujos entrantes. 
+        GATE H06 filtra cada integración externa antes de ser absorbida. 
+        <b>→ Acción:</b> Los 6 nodos KALIL reciben instrucciones en gramática LACHO. Doble carril activo.
+        <div class="theater-lacho">WORK {actuator} =>&lt;= .. materializa .. flujo_decision_gh --[As de Guía] [term]</div>
+      </div>
+    </div>
+    <div class="theater-item">
+      <div class="theater-dot"></div>
+      <div class="theater-time">13:00 — 15:00 · MACRO_AUDIT</div>
+      <div class="theater-name">AUDITORÍA SAMU @</div>
+      <div class="theater-body">
+        Revisión de cristales generados en la mañana. SAMU @ calcula Scalar S del ciclo parcial.
+        Red Regret revisado. Correcciones antes del cierre.
+        <b>→ Acción:</b> Si hay desviaciones, se activa GATE H06 para contención.
+        <div class="theater-lacho">SAMU @ =>&lt;= .. audita .. coherencia_gh_mediodia --[Ballestrinque] [term]</div>
+      </div>
+    </div>
+    <div class="theater-item">
+      <div class="theater-dot"></div>
+      <div class="theater-time">15:00 — 18:00 · MACRO_STACKING</div>
+      <div class="theater-name">CRISTALIZACIÓN</div>
+      <div class="theater-body">
+        Los procesos verificados se cristalizan en STACKING. Los ciclos completos reciben [term].
+        Los incompletos quedan en MU (vacuidad) para el día siguiente.
+        <b>→ Acción:</b> Exportación a crystals_export.lacho. Actualización del ledger soberano.
+        <div class="theater-lacho">STACKING UF[H52] =>&lt;= .. cristaliza .. jornada_gh_sellada --[Nudo de Ocho] [term]</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="unit-grid">
+    <div class="unit-card">
+      <span class="unit-status">ACTIVO</span>
+      <span class="unit-cn">公证</span>
+      <span class="unit-title">NOTARÍA DIGITAL</span>
+      <div class="unit-desc">Certifica, sella e inmutabiliza documentos en blockchain dual (ETH exterior / BSN interior). PRACTICE-NOTARIA-V2 operativo en IMV.</div>
+    </div>
+    <div class="unit-card">
+      <span class="unit-status">ACTIVO</span>
+      <span class="unit-cn">保管</span>
+      <span class="unit-title">CUSTODIA MÓVIL</span>
+      <div class="unit-desc">Protege, verifica y libera activos digitales soberanos. PRACTICE-CUSTODIA-V2 implementado. Shield seat crypto + PBOC.</div>
+    </div>
+    <div class="unit-card">
+      <span class="unit-status">BETA</span>
+      <span class="unit-cn">汇款</span>
+      <span class="unit-title">REMESAS DIÁSPORA</span>
+      <div class="unit-desc">USDT exterior → e-CNY interior via nodo CHALTEN. Sirve a la diáspora china en LATAM. BARRIOS como motor de onboarding.</div>
+    </div>
+    <div class="unit-card">
+      <span class="unit-status">EMBRIÓN</span>
+      <span class="unit-cn">评分</span>
+      <span class="unit-title">ORACLE NORA</span>
+      <div class="unit-desc">Rating bicultural: DeFi score (exterior) + 面子/Sesame Credit (interior). El producto SaaS B2B más diferenciado de la suite.</div>
+    </div>
+  </div>
+</main>
+<footer>
+  <span class="footer-seal">私 GUALICHO HUINCA · 剧院 THEATER · [term] :: activo</span>
+  <span style="font-size:9px;letter-spacing:2px;color:var(--ceniza)">MU · KU · WU :: CICLO SOBERANO</span>
+</footer>
+</body>
+</html>

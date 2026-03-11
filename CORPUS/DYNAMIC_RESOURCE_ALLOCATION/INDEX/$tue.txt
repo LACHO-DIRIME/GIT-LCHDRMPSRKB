@@ -1,0 +1,16 @@
+//[MANAGEMENT].lacho · DRA/INDEX/$tue
+//INDEX $tue · martes soberano · momentum activo
+//INDEX_$tue.txt · V1 · 2026-03-10
+//[term] :: activo
+
+// ══ $tue · MARTES ═════════════════════════════════════════════
+UNICODE: IDX_TUE_RISE         //SAMU #rise $tue · 06:00 · FEED_0600 martes
+UNICODE: IDX_TUE_BATCH        //batch nocturno lun→mar · revisar TEMP(B)
+UNICODE: IDX_TUE_ENGINE       //ENGINE avance · TOMO(A) °45-°90
+UNICODE: IDX_TUE_KALIL        //KALIL update · nodos estado · sentencias
+UNICODE: IDX_TUE_INDEX        //index_new_files.py · RAG delta martes
+UNICODE: IDX_TUE_AGENCY       //AGENCY_IDE gaps actualización · DIR(-)
+UNICODE: IDX_TUE_SET          //SAMU #set $tue · 18:00 · cierre día 2
+
+//WORK {actuator} =><= .. ejecuta .. index_tue_batch_momentum --[As de Guía] [term]
+//DIR(+) DRA/INDEX/$tue · V1 · momentum · batch lun→mar · RAG delta

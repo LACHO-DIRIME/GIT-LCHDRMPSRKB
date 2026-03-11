@@ -1,0 +1,22 @@
+# DIRIME IMV — dependencias soberanas verificadas
+# No instalar nada fuera de esta lista sin dirimencia soberana
+
+# ── ACTIVO HOY (IMV niveles 0 y 1) ─────────────────────────────
+# Core Python — sin dependencias externas para ciclo soberano base
+python>=3.10
+# sqlite3 viene con Python — no requiere instalación
+
+# Utilidades de interfaz
+rich>=13.0.0            # output de terminal con estado soberano
+pydantic>=2.0.0         # validación de modelos de datos soberana
+
+# ── PENDIENTE: NIVEL 2 — API externa ────────────────────────────
+# Descomentar cuando se implemente _translate_via_api()
+# Requiere: clave API configurada en IMV/config/api.json (NO commitear)
+# openai>=1.0.0         # compatible con OpenAI, Claude vía proxy, Groq
+
+# ── PENDIENTE: NIVEL 3 — modelo local ───────────────────────────
+# Descomentar cuando hardware soberano esté disponible
+# Requiere: Ollama instalado, modelo descargado, 8GB+ RAM libre
+# ollama (instalación separada: curl -fsSL https://ollama.ai/install.sh | sh)
+# Modelos verificados: deepseek-coder:6.7b, mistral:7b, llama3:8b

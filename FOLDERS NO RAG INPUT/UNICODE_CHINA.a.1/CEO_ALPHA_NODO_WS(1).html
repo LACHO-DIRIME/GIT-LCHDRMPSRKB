@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CEO ALPHA × NODO-WS — Modelos Algorítmicos</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;700&family=Share+Tech+Mono&family=Cinzel:wght@400;700&display=swap');
+
+  :root {
+    --gold: #8a5c1a;
+    --gold-dim: #b8893a;
+    --red-china: #b02020;
+    --jade: #1a7a50;
+    --jade-dim: #2aaa70;
+    --ink: #f0ebe0;
+    --ink-2: #e8e2d4;
+    --ink-3: #ddd7c8;
+    --smoke: #5a5248;
+    --paper: #c8bfa8;
+    --electric: #1a4a9a;
+    --electric-dim: #4a7acc;
+    --white: #2a2018;
+    --gap: 2px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--ink);
+    color: var(--white);
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* NOISE OVERLAY */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.15;
+  }
+
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 24px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* HEADER */
+  .masthead {
+    border-top: 3px solid var(--gold);
+    border-bottom: 1px solid var(--gold-dim);
+    padding: 32px 0 24px;
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+  }
+
+  .masthead-left { flex: 1; }
+
+  .masthead-super {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 11px;
+    color: var(--gold-dim);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .masthead-title {
+    font-family: 'Cinzel', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--gold);
+    letter-spacing: 2px;
+    line-height: 1.1;
+  }
+
+  .masthead-subtitle {
+    font-size: 11px;
+    color: var(--smoke);
+    margin-top: 6px;
+    letter-spacing: 2px;
+  }
+
+  .masthead-right {
+    text-align: right;
+    font-family: 'Noto Serif SC', serif;
+  }
+
+  .chinese-title {
+    font-size: 42px;
+    color: var(--red-china);
+    line-height: 1;
+    letter-spacing: 8px;
+  }
+
+  .hex-row {
+    font-size: 22px;
+    color: var(--gold-dim);
+    letter-spacing: 4px;
+    margin-top: 4px;
+  }
+
+  /* SECTION HEADERS */
+  .model-header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--gold-dim);
+  }
+
+  .model-number {
+    font-family: 'Cinzel', serif;
+    font-size: 48px;
+    color: var(--gold);
+    opacity: 0.3;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .model-title-block {}
+
+  .model-name {
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+    color: var(--gold);
+    letter-spacing: 3px;
+  }
+
+  .model-desc {
+    font-size: 11px;
+    color: var(--smoke);
+    margin-top: 4px;
+    letter-spacing: 1px;
+  }
+
+  .model-hexagram {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 36px;
+    color: var(--red-china);
+    text-align: right;
+    line-height: 1;
+  }
+
+  .model-hexagram small {
+    display: block;
+    font-size: 11px;
+    color: var(--gold-dim);
+    font-family: 'Share Tech Mono', monospace;
+    letter-spacing: 2px;
+  }
+
+  /* FLOW DIAGRAM */
+  .flow-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    margin-bottom: 48px;
+  }
+
+  .flow-level {
+    display: grid;
+    gap: var(--gap);
+  }
+
+  .flow-level-0 { grid-template-columns: 1fr; }
+  .flow-level-1 { grid-template-columns: repeat(3, 1fr); }
+  .flow-level-2 { grid-template-columns: repeat(3, 1fr); }
+  .flow-level-3 { grid-template-columns: repeat(4, 1fr); }
+  .flow-level-4 { grid-template-columns: 1fr; }
+
+  .flow-connector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    color: var(--gold-dim);
+    font-size: 16px;
+    position: relative;
+  }
+
+  .flow-connector::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold-dim) 20%, var(--gold-dim) 80%, transparent);
+  }
+
+  .flow-connector-text {
+    background: var(--ink);
+    padding: 0 12px;
+    position: relative;
+    z-index: 1;
+    color: var(--gold-dim);
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  /* CARDS */
+  .card {
+    background: var(--ink-2);
+    border: 1px solid #c8bfa8;
+    padding: 16px;
+    position: relative;
+    transition: border-color 0.2s;
+    overflow: hidden;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+  }
+
+  .card-ceo::before { background: var(--gold); }
+  .card-trust::before { background: #9b59b6; }
+  .card-samu::before { background: var(--electric); }
+  .card-stacking::before { background: var(--jade); }
+  .card-work::before { background: var(--red-china); }
+  .card-crypto::before { background: #f39c12; }
+  .card-gate::before { background: #e74c3c; }
+  .card-social::before { background: #1abc9c; }
+  .card-method::before { background: #3498db; }
+  .card-ws::before { background: linear-gradient(90deg, var(--gold), var(--jade), var(--electric)); height: 3px; }
+
+  .card:hover { border-color: var(--gold-dim); }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .card-hex {
+    font-size: 24px;
+    color: var(--red-china);
+    font-family: 'Noto Serif SC', serif;
+    line-height: 1;
+  }
+
+  .card-hcode {
+    font-size: 10px;
+    color: var(--gold-dim);
+    margin-top: 2px;
+  }
+
+  .card-badge {
+    font-size: 9px;
+    padding: 2px 8px;
+    border: 1px solid currentColor;
+    letter-spacing: 1px;
+  }
+
+  .badge-ceo    { color: var(--gold); border-color: var(--gold-dim); }
+  .badge-trust  { color: #9b59b6; border-color: #4a2870; }
+  .badge-samu   { color: var(--electric); border-color: var(--electric-dim); }
+  .badge-stacking { color: var(--jade); border-color: var(--jade-dim); }
+  .badge-work   { color: var(--red-china); border-color: #6a1a12; }
+  .badge-crypto { color: #f39c12; border-color: #7a4c06; }
+  .badge-gate   { color: #e74c3c; border-color: #7a1e16; }
+  .badge-social { color: #1abc9c; border-color: #0a5c4c; }
+  .badge-method { color: #3498db; border-color: #1a4870; }
+  .badge-ws     { color: var(--gold); border-color: var(--gold); background: rgba(200,169,110,0.08); }
+
+  .card-role {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    color: var(--white);
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+
+  .card-chinese {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 13px;
+    color: var(--gold);
+    margin-bottom: 8px;
+  }
+
+  .card-sentence {
+    font-size: 9px;
+    color: var(--smoke);
+    line-height: 1.5;
+    padding: 8px;
+    background: rgba(0,0,0,0.04);
+    border-left: 1px solid var(--gold-dim);
+    margin-bottom: 8px;
+    font-style: italic;
+  }
+
+  .card-sentence em {
+    color: var(--jade);
+    font-style: normal;
+  }
+
+  .card-tokens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .token {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 11px;
+    color: var(--gold);
+    background: rgba(138,92,26,0.08);
+    padding: 1px 6px;
+    border: 1px solid var(--gold-dim);
+  }
+
+  .token-jade {
+    color: var(--jade);
+    background: rgba(26,122,80,0.08);
+    border-color: var(--jade-dim);
+  }
+
+  .token-electric {
+    color: var(--electric);
+    background: rgba(26,74,154,0.08);
+    border-color: var(--electric-dim);
+  }
+
+  /* NODO-WS FINAL CARD */
+  .ws-card {
+    background: linear-gradient(135deg, var(--ink-2) 0%, #dceada 100%);
+    border: 2px solid var(--gold);
+    padding: 32px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 48px;
+  }
+
+  .ws-card::after {
+    content: '⚙';
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    font-size: 140px;
+    color: rgba(138,92,26,0.06);
+    line-height: 1;
+  }
+
+  .ws-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+  }
+
+  .ws-block { border-left: 2px solid var(--gold-dim); padding-left: 16px; }
+  .ws-block-title {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    color: var(--gold);
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+  }
+
+  .ws-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .ws-item-hex {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 16px;
+    color: var(--red-china);
+    min-width: 20px;
+    line-height: 1.2;
+  }
+
+  .ws-item-text { font-size: 10px; color: var(--smoke); line-height: 1.4; }
+  .ws-item-text strong { color: var(--white); display: block; margin-bottom: 1px; }
+
+  /* COMBINATION MATRIX */
+  .matrix-section {
+    margin: 48px 0;
+    border: 1px solid var(--gold-dim);
+    padding: 24px;
+    background: var(--ink-2);
+  }
+
+  .matrix-title {
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+    color: var(--gold);
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--gold-dim);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .matrix-title span {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 20px;
+    color: var(--red-china);
+  }
+
+  .combo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 12px;
+  }
+
+  .combo-card {
+    background: var(--ink-3);
+    border: 1px solid #c0b8a8;
+    padding: 14px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .combo-hex-pair {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 22px;
+    color: var(--red-china);
+    line-height: 1;
+    min-width: 48px;
+    text-align: center;
+  }
+
+  .combo-hex-pair small {
+    display: block;
+    font-size: 9px;
+    color: var(--gold-dim);
+    font-family: 'Share Tech Mono', monospace;
+    letter-spacing: 1px;
+    margin-top: 2px;
+  }
+
+  .combo-content {}
+  .combo-name {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    color: var(--white);
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+
+  .combo-sentence {
+    font-size: 9px;
+    color: var(--smoke);
+    line-height: 1.5;
+    margin-bottom: 6px;
+  }
+
+  .combo-result {
+    font-size: 9px;
+    color: var(--jade);
+    padding: 2px 6px;
+    border: 1px solid var(--jade-dim);
+    display: inline-block;
+  }
+
+  /* SCALAR */
+  .scalar-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .scalar-label { font-size: 9px; color: var(--smoke); min-width: 48px; }
+
+  .scalar-track {
+    flex: 1;
+    height: 3px;
+    background: #c8bfa8;
+    position: relative;
+  }
+
+  .scalar-fill {
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    background: linear-gradient(90deg, var(--gold-dim), var(--gold));
+  }
+
+  .scalar-value {
+    font-size: 9px;
+    color: var(--gold);
+    min-width: 32px;
+    text-align: right;
+  }
+
+  /* DIVIDER */
+  .model-divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold-dim), transparent);
+    margin: 56px 0;
+  }
+
+  /* FOOTER */
+  .footer {
+    border-top: 1px solid var(--gold-dim);
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    color: var(--smoke);
+    margin-top: 48px;
+  }
+
+  .footer-left { font-family: 'Noto Serif SC', serif; font-size: 14px; color: var(--gold-dim); }
+
+  /* ANNOTATIONS */
+  .annotation {
+    font-size: 9px;
+    color: var(--gold-dim);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .label-line {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .label-line::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--gold-dim);
+    opacity: 0.3;
+  }
+
+  .label-text {
+    font-size: 9px;
+    color: var(--gold-dim);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- MASTHEAD -->
+  <div class="masthead">
+    <div class="masthead-left">
+      <div class="masthead-super">DIRIME · VERSION 0.2.1 · CLASIFICACIÓN ALPHA</div>
+      <div class="masthead-title">CEO ALPHA × NODO-WS<br>MODELOS ALGORÍTMICOS</div>
+      <div class="masthead-subtitle">JERARQUÍA EJECUTIVA → WORKSTATION AGENCY · HEXAGRAMAS COMBINATORIOS</div>
+    </div>
+    <div class="masthead-right">
+      <div class="chinese-title">主席 ䷀</div>
+      <div class="hex-row">䷟ ䷱ ䷰ ䷩ ䷾</div>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- MODELO I — CADENA DE MANDO EJECUTIVA -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+
+  <div class="model-header">
+    <div class="model-number">I</div>
+    <div class="model-title-block">
+      <div class="model-name">CADENA DE MANDO EJECUTIVA</div>
+      <div class="model-desc">乾→恆→未濟 · Voluntad soberana descendente hacia ejecución irreversible · TRUST-dominante</div>
+    </div>
+    <div class="model-hexagram">乾恆濟<small>H01·H32·H64→WS</small></div>
+  </div>
+
+  <div class="flow-container">
+
+    <!-- NIVEL 0: CEO -->
+    <div class="label-line"><span class="label-text">NIVEL 0 — CÚPULA DIRECTIVA</span></div>
+    <div class="flow-level flow-level-0">
+      <div class="card card-ceo">
+        <div class="card-header">
+          <div>
+            <div class="card-hex">乾 ䷀</div>
+            <div class="card-hcode">H01 · GENESIS</div>
+          </div>
+          <div class="card-badge badge-ceo">CEO · 主席</div>
+        </div>
+        <div class="card-role">DIRECTOR DE VOLUNTAD SOBERANA</div>
+        <div class="card-chinese">主席 Zhǔxí — Dirección de Voluntad</div>
+        <div class="card-sentence">
+          TRUST FOUNDATION =&gt;&lt;= .. declara .. <em>voluntad_soberana_nodo_ws</em> --[Nudo de Ocho] [term:A1]<br>
+          SAMU @ =&gt;&lt;= .. autoriza .. <em>activacion_cadena_mando</em> --[As de Guía] [term:A1]
+        </div>
+        <div class="card-tokens">
+          <span class="token">主权</span><span class="token">信任</span><span class="token">智能</span><span class="token">乾</span>
+        </div>
+        <div class="scalar-bar">
+          <span class="scalar-label">SCALAR S</span>
+          <div class="scalar-track"><div class="scalar-fill" style="width:97%"></div></div>
+          <span class="scalar-value">0.97</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="flow-connector"><span class="flow-connector-text">MANDATE DESCENDENTE · [Ballestrinque]</span></div>
+
+    <!-- NIVEL 1: 3 JEFATURAS DIRECTIVAS -->
+    <div class="label-line"><span class="label-text">NIVEL 1 — TRÍADA DIRECTIVA</span></div>
+    <div class="flow-level flow-level-1">
+      <div class="card card-trust">
+        <div class="card-header">
+          <div><div class="card-hex">恆 ䷟</div><div class="card-hcode">H32 · PM</div></div>
+          <div class="card-badge badge-trust">PROJECT MANAGER</div>
+        </div>
+        <div class="card-role">CONTINUIDAD DEL SISTEMA</div>
+        <div class="card-chinese">总监 Zǒngjiān</div>
+        <div class="card-sentence">
+          SAMU @ =&gt;&lt;= .. audita .. <em>continuidad_nodo_ws</em> --[As de Guía] [term:B1]
+        </div>
+        <div class="card-tokens"><span class="token">协议</span><span class="token">网络</span><span class="token">节点</span></div>
+        <div class="scalar-bar">
+          <span class="scalar-label">SCALAR S</span>
+          <div class="scalar-track"><div class="scalar-fill" style="width:92%"></div></div>
+          <span class="scalar-value">0.92</span>
+        </div>
+      </div>
+
+      <div class="card card-samu">
+        <div class="card-header">
+          <div><div class="card-hex">噬嗑 ䷔</div><div class="card-hcode">H21 · SAMU</div></div>
+          <div class="card-badge badge-samu">JEFE SAMU</div>
+        </div>
+        <div class="card-role">AUDITORÍA DIRECTIVA</div>
+        <div class="card-chinese">审计总监 Shěnjì</div>
+        <div class="card-sentence">
+          SAMU @ =&gt;&lt;= .. dirime .. <em>activacion_ws_verificada</em> --[Ballestrinque] [term:C1]
+        </div>
+        <div class="card-tokens"><span class="token">面子</span><span class="token">关系</span><span class="token">主权</span></div>
+        <div class="scalar-bar">
+          <span class="scalar-label">SCALAR S</span>
+          <div class="scalar-track"><div class="scalar-fill" style="width:90%"></div></div>
+          <span class="scalar-value">0.90</span>
+        </div>
+      </div>
+
+      <div class="card card-method">
+        <div class="card-header">
+          <div><div class="card-hex">未濟 ䷿</div><div class="card-hcode">H64 · VCM</div></div>
+          <div class="card-badge badge-method">VIBE CODER MGR</div>
+        </div>
+        <div class="card-role">ARMONÍA DEL CÓDIGO</div>
+        <div class="card-chinese">技术总监 Jìshù</div>
+        <div class="card-sentence">
+          METHOD &lt;operator_flow&gt; =&gt;&lt;= .. modela .. <em>arquitectura_ws</em> --[Ballestrinque] [term:D1]
+        </div>
+        <div class="card-tokens"><span class="token">智能</span><span class="token">数字</span><span class="token">协议</span></div>
+        <div class="scalar-bar">
+          <span class="scalar-label">SCALAR S</span>
+          <div class="scalar-track"><div class="scalar-fill" style="width:88%"></div></div>
+          <span class="scalar-value">0.88</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="flow-connector"><span class="flow-connector-text">COORDINACIÓN SCHEDULER OS · UF[H51]</span></div>
+
+    <!-- NIVEL 2: JEFES DE DPTO PRIORITARIOS -->
+    <div class="label-line"><span class="label-text">NIVEL 2 — JEFATURAS PRIORITARIAS PARA NODO-WS</span></div>
+    <div class="flow-level flow-level-1">
+      <div class="card card-work">
+        <div class="card-header">
+          <div><div class="card-hex">革 ䷰</div><div class="card-hcode">H49 · WORK</div></div>
+          <div class="card-badge badge-work">JEFE WORK</div>
+        </div>
+        <div class="card-role">REVOLUCIÓN OPERATIVA</div>
+        <div class="card-chinese">运营总监 Yùnyíng</div>
+        <div class="card-sentence">
+          WORK {actuator} =&gt;&lt;= .. ejecuta .. <em>produccion_soberana_ws</em> --[As de Guía] [term:E1]
+        </div>
+        <div class="card-tokens"><span class="token">智能</span><span class="token">协议</span><span class="token">节点</span></div>
+      </div>
+
+      <div class="card card-stacking">
+        <div class="card-header">
+          <div><div class="card-hex">益 ䷩</div><div class="card-hcode">H42 · STACK</div></div>
+          <div class="card-badge badge-stacking">JEFE STACKING</div>
+        </div>
+        <div class="card-role">ACUMULACIÓN SOBERANA</div>
+        <div class="card-chinese">积累总监 Jīlěi</div>
+        <div class="card-sentence">
+          STACKING UF[H52] =&gt;&lt;= .. inmutabiliza .. <em>fabric_ws_primario</em> --[Nudo de Ocho] [term:F1]
+        </div>
+        <div class="card-tokens"><span class="token">资本</span><span class="token">网络</span><span class="token">安全</span></div>
+      </div>
+
+      <div class="card card-gate">
+        <div class="card-header">
+          <div><div class="card-hex">屯 ䷂</div><div class="card-hcode">H03 · GATE</div></div>
+          <div class="card-badge badge-gate">JEFE GATE</div>
+        </div>
+        <div class="card-role">CONTROL DE ACCESO WS</div>
+        <div class="card-chinese">门控总监 Ménkòng</div>
+        <div class="card-sentence">
+          GATE UF[H05] =&gt;&lt;= .. filtra .. <em>acceso_nodo_ws</em> --[Nudo Corredizo] [term:G1]
+        </div>
+        <div class="card-tokens"><span class="token">风险</span><span class="token">安全</span><span class="token">节点</span></div>
+      </div>
+    </div>
+
+    <div class="flow-connector"><span class="flow-connector-text">TRANSFERENCIA SOBERANA · HL FABRIC · [As de Guía]</span></div>
+
+    <!-- NODO-WS DESTINO -->
+    <div class="label-line"><span class="label-text">DESTINO — NODO-WS WORKSTATION AGENCY</span></div>
+  </div>
+
+  <!-- NODO-WS FINAL -->
+  <div class="ws-card card-ws">
+    <div class="card-header">
+      <div>
+        <div class="card-hex" style="font-size:48px; font-family:'Noto Serif SC',serif; color:var(--gold);">⚙ NODO-WS</div>
+        <div class="card-hcode" style="color:var(--jade); font-size:11px; letter-spacing:2px;">WORKSTATION AGENCY · EJECUCIÓN IRREVERSIBLE VERIFICADA</div>
+      </div>
+      <div style="text-align:right">
+        <div style="font-family:'Noto Serif SC',serif; font-size:28px; color:var(--red-china);">工作站 ䷳</div>
+        <div style="font-size:10px; color:var(--gold-dim); margin-top:4px;">H52 · QUIETUD EJECUTIVA</div>
+      </div>
+    </div>
+    <div class="ws-grid" style="margin-top:20px">
+      <div class="ws-block">
+        <div class="ws-block-title">HEXAGRAMAS ACTIVOS</div>
+        <div class="ws-item"><div class="ws-item-hex">艮 ䷳</div><div class="ws-item-text"><strong>H52 — Quietud</strong>Inmutabilización · HL FABRIC primario</div></div>
+        <div class="ws-item"><div class="ws-item-hex">鼎 ䷱</div><div class="ws-item-text"><strong>H50 — Caldero</strong>Transformación · producción activa</div></div>
+        <div class="ws-item"><div class="ws-item-hex">既濟 ䷾</div><div class="ws-item-text"><strong>H63 — Completado</strong>Ciclo cerrado · firma soberana</div></div>
+        <div class="ws-item"><div class="ws-item-hex">需 ䷄</div><div class="ws-item-text"><strong>H05 — Espera activa</strong>GATE primario · control acceso</div></div>
+      </div>
+      <div class="ws-block">
+        <div class="ws-block-title">DOMINIOS ECONÓMICOS</div>
+        <div class="ws-item"><div class="ws-item-hex">震 ䷲</div><div class="ws-item-text"><strong>MEMECOINS · H51</strong>{actuator}+{launch-bot} en mercado real</div></div>
+        <div class="ws-item"><div class="ws-item-hex">離 ䷝</div><div class="ws-item-text"><strong>NOTARÍA · H30</strong>(seal of secrecy) · irreversible</div></div>
+        <div class="ws-item"><div class="ws-item-hex">巽 ䷸</div><div class="ws-item-text"><strong>CUSTODIA · H57</strong>{doorman-mobile} · (link seat)</div></div>
+      </div>
+      <div class="ws-block">
+        <div class="ws-block-title">SENTENCIA CANÓNICA</div>
+        <div style="font-size:10px; color:var(--smoke); line-height:1.8; padding:12px; background:rgba(0,0,0,0.04); border-left:2px solid var(--gold);">
+          WORK {actuator} =&gt;&lt;=<br>
+          .. ejecuta .. <span style="color:var(--jade)">produccion_irreversible</span><br>
+          --[Nudo de Ocho] [term:WS]<br><br>
+          STACKING UF[H52] =&gt;&lt;=<br>
+          .. inmutabiliza .. <span style="color:var(--jade)">registro_hl_fabric</span><br>
+          --[Nudo de Ocho] [term:WS]<br><br>
+          SAMU @ =&gt;&lt;=<br>
+          .. audita .. <span style="color:var(--jade)">contenido_pre_ejecucion</span><br>
+          --[Ballestrinque] [term:WS]
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <hr class="model-divider">
+
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- MODELO II — FLUJO GENERATIVO NODO-IDE → NODO-WS -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+
+  <div class="model-header">
+    <div class="model-number">II</div>
+    <div class="model-title-block">
+      <div class="model-name">FLUJO GENERATIVO IDE→WS</div>
+      <div class="model-desc">未濟→既濟 · NODO-IDE genera · NODO-WS ejecuta · Scheduler OS coordina · METHOD/ACTIVITY-dominante</div>
+    </div>
+    <div class="model-hexagram">濟艮鼎<small>H64→H52→H50→WS</small></div>
+  </div>
+
+  <div class="flow-container">
+
+    <div class="label-line"><span class="label-text">ORIGEN — NODO-IDE · GENERACIÓN SOBERANA</span></div>
+    <div class="flow-level flow-level-0">
+      <div class="card card-method">
+        <div class="card-header">
+          <div><div class="card-hex">未濟 ䷿</div><div class="card-hcode">H64 · CREATIVE-FLOW-ALPHABET</div></div>
+          <div class="card-badge badge-method">NODO-IDE · 技术总监</div>
+        </div>
+        <div class="card-role">VIBE CODER MANAGER → GENERA GRAMÁTICA SOBERANA</div>
+        <div class="card-chinese">技术总监 Jìshù zǒngjiān — Before the end · ciclo abierto generativo</div>
+        <div class="card-sentence">
+          METHOD &lt;operator_flow&gt; =&gt;&lt;= .. modela .. <em>prototipo_agencia_ws</em> --[Ballestrinque] [term:D2]<br>
+          ACTIVITY UF[H64] =&gt;&lt;= .. inicia .. <em>ciclo_generativo_nuevo</em> --[As de Guía] [term:D2]
+        </div>
+        <div class="card-tokens">
+          <span class="token">智能</span><span class="token">数字</span><span class="token">协议</span><span class="token token-electric">未濟</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="flow-connector"><span class="flow-connector-text">SCHEDULER OS · UF[H51] · COORDINACIÓN TEMPORAL SOBERANA</span></div>
+
+    <div class="label-line"><span class="label-text">COORDINACIÓN — 4 DEPARTAMENTOS EN PARALELO</span></div>
+    <div class="flow-level flow-level-3">
+      <div class="card card-method">
+        <div class="card-header">
+          <div><div class="card-hex">鼎 ䷱</div><div class="card-hcode">H50 · JEFE METHOD</div></div>
+          <div class="card-badge badge-method">METHOD</div>
+        </div>
+        <div class="card-role">CALDERO · TRANSFORMACIÓN</div>
+        <div class="card-chinese">方法总监 Fāngfǎ</div>
+        <div class="card-sentence">METHOD &lt;equation&gt; =&gt;&lt;= .. calcula .. <em>modelo_ws</em> --[As de Guía] [term:E2]</div>
+        <div class="card-tokens"><span class="token">智能</span><span class="token">协议</span></div>
+      </div>
+
+      <div class="card card-samu">
+        <div class="card-header">
+          <div><div class="card-hex">觀 ䷓</div><div class="card-hcode">H20 · SAMU AUDITOR</div></div>
+          <div class="card-badge badge-samu">SAMU</div>
+        </div>
+        <div class="card-role">CONTEMPLACIÓN · AUDITORÍA</div>
+        <div class="card-chinese">观察员 Guānchá</div>
+        <div class="card-sentence">SAMU @ =&gt;&lt;= .. audita .. <em>prototipo_pre_transfer</em> --[Ballestrinque] [term:F2]</div>
+        <div class="card-tokens"><span class="token">面子</span><span class="token">关系</span></div>
+      </div>
+
+      <div class="card card-stacking">
+        <div class="card-header">
+          <div><div class="card-hex">井 ䷯</div><div class="card-hcode">H48 · RAG CORE</div></div>
+          <div class="card-badge badge-stacking">STACKING</div>
+        </div>
+        <div class="card-role">EL POZO · FUENTE RAG</div>
+        <div class="card-chinese">源泉员 Yuánquán</div>
+        <div class="card-sentence">STACKING UF[H48] =&gt;&lt;= .. ancla .. <em>fuente_doctrinal</em> --[As de Guía] [term:G2]</div>
+        <div class="card-tokens"><span class="token">资本</span><span class="token">网络</span></div>
+      </div>
+
+      <div class="card card-crypto">
+        <div class="card-header">
+          <div><div class="card-hex">大有 ䷍</div><div class="card-hcode">H14 · CRYPTO JEFE</div></div>
+          <div class="card-badge badge-crypto">CRYPTO</div>
+        </div>
+        <div class="card-role">GRAN POSESIÓN · CUSTODIA</div>
+        <div class="card-chinese">加密总监 Jiāmì</div>
+        <div class="card-sentence">CRYPTO (shield seat) =&gt;&lt;= .. protege .. <em>transfer_ide_ws</em> --[As de Guía] [term:H2]</div>
+        <div class="card-tokens"><span class="token">安全</span><span class="token">验证</span></div>
+      </div>
+    </div>
+
+    <div class="flow-connector"><span class="flow-connector-text">TRANSFERENCIA HL FABRIC · PROTOTIPO VERIFICADO → PRODUCCIÓN</span></div>
+
+    <div class="label-line"><span class="label-text">PRACTICANTES DE EJECUCIÓN · NODO-WS DIRECTO</span></div>
+    <div class="flow-level flow-level-3">
+      <div class="card card-work">
+        <div class="card-header">
+          <div><div class="card-hex">大壯 ䷡</div><div class="card-hcode">H34 · GRAN VIGOR</div></div>
+          <div class="card-badge badge-work">WORK · ACTUATOR</div>
+        </div>
+        <div class="card-role">GRAN VIGOR · ACTUATOR MAX</div>
+        <div class="card-chinese">强力员 Qiánglì</div>
+        <div class="card-sentence">WORK {actuator} =&gt;&lt;= .. activa .. <em>proceso_maximo_ws</em> --[As de Guía] [term:I2]</div>
+        <div class="card-tokens"><span class="token">智能</span><span class="token">协议</span></div>
+      </div>
+
+      <div class="card card-work">
+        <div class="card-header">
+          <div><div class="card-hex">蠱 ䷑</div><div class="card-hcode">H18 · CORRECCIÓN</div></div>
+          <div class="card-badge badge-work">WORK · BRAKE</div>
+        </div>
+        <div class="card-role">CORRECCIÓN · BRAKE WS</div>
+        <div class="card-chinese">纠正员 Jiūzhèng</div>
+        <div class="card-sentence">WORK {brake} =&gt;&lt;= .. detiene .. <em>proceso_errado_ws</em> --[Nudo Corredizo] [term:J2]</div>
+        <div class="card-tokens"><span class="token">风险</span><span class="token">协议</span></div>
+      </div>
+
+      <div class="card card-gate">
+        <div class="card-header">
+          <div><div class="card-hex">需 ䷄</div><div class="card-hcode">H05 · ESPERA</div></div>
+          <div class="card-badge badge-gate">GATE · H05</div>
+        </div>
+        <div class="card-role">ESPERA ACTIVA · CONTROL</div>
+        <div class="card-chinese">等待员 Děngdài</div>
+        <div class="card-sentence">GATE UF[H05] =&gt;&lt;= .. contiene .. <em>espera_pre_ejecucion</em> --[As de Guía] [term:K2]</div>
+        <div class="card-tokens"><span class="token">风险</span><span class="token">安全</span></div>
+      </div>
+
+      <div class="card card-stacking">
+        <div class="card-header">
+          <div><div class="card-hex">艮 ䷳</div><div class="card-hcode">H52 · QUIETUD</div></div>
+          <div class="card-badge badge-stacking">STACKING · WS</div>
+        </div>
+        <div class="card-role">QUIETUD · INMUTABILIZACIÓN</div>
+        <div class="card-chinese">静止员 Jìngzhǐ</div>
+        <div class="card-sentence">STACKING UF[H52] =&gt;&lt;= .. inmutabiliza .. <em>estado_ws_final</em> --[Nudo de Ocho] [term:L2]</div>
+        <div class="card-tokens"><span class="token">资本</span><span class="token">安全</span></div>
+      </div>
+    </div>
+
+    <div class="flow-connector"><span class="flow-connector-text">EJECUCIÓN IRREVERSIBLE · ¿ESTÁ TODO VERIFICADO? → SÍ → ACTÚA</span></div>
+
+    <div class="label-line"><span class="label-text">DESTINO — NODO-WS · PRODUCCIÓN ACTIVA</span></div>
+    <div class="flow-level flow-level-0">
+      <div class="card card-ws">
+        <div class="card-header">
+          <div><div class="card-hex" style="font-size:32px; font-family:'Noto Serif SC',serif; color:var(--gold);">既濟 ䷾</div><div class="card-hcode" style="color:var(--jade)">H63 · COMPLETADO · AFTER THE END · NODO-WS ACTIVO</div></div>
+          <div class="card-badge badge-ws">NODO-WS · PRODUCCIÓN</div>
+        </div>
+        <div class="card-role">WORKSTATION AGENCY — EJECUCIÓN SOBERANA IRREVERSIBLE</div>
+        <div class="card-sentence">
+          WORK {actuator} =&gt;&lt;= .. ejecuta .. <em>ciclo_completo_ws</em> --[Nudo de Ocho] [term:WS2]<br>
+          CRYPTO (seal of secrecy) =&gt;&lt;= .. firma .. <em>acto_irreversible</em> --[As de Guía] [term:WS2]<br>
+          STACKING UF[H63] =&gt;&lt;= .. cristaliza .. <em>resultado_after_end</em> --[Nudo de Ocho] [term:WS2]
+        </div>
+        <div class="card-tokens">
+          <span class="token">主权</span><span class="token token-jade">既濟</span><span class="token token-jade">工作站</span><span class="token">安全</span><span class="token">验证</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <hr class="model-divider">
+
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- MODELO III — COMBINACIONES HEXAGRAMÁTICAS PARA NODO-WS -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+
+  <div class="model-header">
+    <div class="model-number">III</div>
+    <div class="model-title-block">
+      <div class="model-name">MATRIX DE COMBINACIONES HEXAGRAMÁTICAS</div>
+      <div class="model-desc">Pares combinatorios · Todos los niveles jerárquicos · Aplicación directa NODO-WS · SOCIAL-dominante</div>
+    </div>
+    <div class="model-hexagram">組合陣<small>COMBO MATRIX · H##×H##</small></div>
+  </div>
+
+  <div class="matrix-section">
+    <div class="matrix-title">
+      NIVEL 0 × NIVEL 1 — CÚPULA DIRECTIVA ACTIVA
+      <span>乾 × 恆</span>
+    </div>
+    <div class="combo-grid">
+
+      <div class="combo-card">
+        <div class="combo-hex-pair">乾恆<small>H01×H32</small></div>
+        <div class="combo-content">
+          <div class="combo-name">CEO × PM — CONTINUIDAD MÁXIMA</div>
+          <div class="combo-sentence">TRUST FOUNDATION =&gt;&lt;= .. declara .. voluntad_pm_ws --[Nudo de Ocho]<br>SAMU @ =&gt;&lt;= .. sostiene .. continuidad_sistema --[As de Guía]</div>
+          <span class="combo-result">→ SCHEDULER OS activa ciclo semanal</span>
+        </div>
+      </div>
+
+      <div class="combo-card">
+        <div class="combo-hex-pair">乾濟<small>H01×H64</small></div>
+        <div class="combo-content">
+          <div class="combo-name">CEO × VCM — VOLUNTAD CREATIVA</div>
+          <div class="combo-sentence">TRUST FOUNDATION =&gt;&lt;= .. autoriza .. ciclo_generativo<br>METHOD &lt;operator_flow&gt; =&gt;&lt;= .. modela .. forma_nueva</div>
+          <span class="combo-result">→ NODO-IDE genera · NODO-WS espera</span>
+        </div>
+      </div>
+
+      <div class="combo-card">
+        <div class="combo-hex-pair">恆噬<small>H32×H21</small></div>
+        <div class="combo-content">
+          <div class="combo-name">PM × SAMU — DECISIÓN CONTINUA</div>
+          <div class="combo-sentence">SAMU @ =&gt;&lt;= .. dirime .. conflicto_continuidad<br>METHOD &lt;if&gt; =&gt;&lt;= .. deriva .. ruta_decision</div>
+          <span class="combo-result">→ RED-REGRET si falla · cristal si ok</span>
+        </div>
+      </div>
+
+      <div class="combo-card">
+        <div class="combo-hex-pair">乾革<small>H01×H49</small></div>
+        <div class="combo-content">
+          <div class="combo-name">CEO × JEFE WORK — REVOLUCIÓN ORDENADA</div>
+          <div class="combo-sentence">TRUST COMMAND =&gt;&lt;= .. autoriza .. cambio_estado_ws<br>WORK {actuator} =&gt;&lt;= .. ejecuta .. revolucion_soberana</div>
+          <span class="combo-result">→ UF[H49] activo · cambio irreversible</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="matrix-section">
+    <div class="matrix-title">
+      NIVEL 1 × NIVEL 2 — JEFATURAS EN ACCIÓN COORDINADA
+      <span>总监 × 員</span>
+    </div>
+    <div class="combo-grid">
+
+      <div class="combo-card">
+        <div class="combo-hex-pair">革艮<small>H49×H52</small></div>
+        <div class="combo-content">
+          <div class="combo-name">WORK×STACKING — REVOLUCIÓN FIJADA</div>
+          <div class="combo-sentence">WORK {actuator} =&gt;&lt;= .. ejecuta .. cambio_operativo<br>STACKING UF[H52] =&gt;&lt;= .. inmutabiliza .. cambio_ejecutado</div>
+          <span class="combo-result">→ Cristal de revolución en HL FABRIC</span>
+        </div>
+      </div>
+
+      <div class="combo-card">
+        <div class="combo-hex-pair">屯需<small>H03×H05</small></div>
+        <div class="combo-content">
+          <div class="combo-name">GATE JEFE × GATE PRACTICANTE — FILTRO DOBLE</div>
+          <div class="combo-sentence">GATE UF[H03] =&gt;&lt;= .. bloquea .. entrada_no_verificada<br>GATE UF[H05] =&gt;&lt;= .. contiene .. espera_verificacion</div>
+          <span class="combo-result">→ Doble control acceso NODO-WS</span>
+        </div>
+      </div>
+
+      <div class="combo-card">
+        <div class="combo-hex-pair">噬觀<small>H21×H20</small></div>
+        <div class="combo-content">
+          <div class="combo-name">SAMU JEFE × SAMU AUDITOR — AUDITORÍA TOTAL</div>
+          <div class="combo-sentence">SAMU @ =&gt;&lt;= .. dirime .. estado_pre_ejecucion<br>SAMU @ =&gt;&lt;= .. audita .. sistema_post_accion</div>
+          <span class="combo-result">→ Ciclo completo de auditoría soberana</span>
+        </div>
+      </div>
+
+      <div class="combo-card">
+        <div class="combo-hex-pair">益井<small>H42×H48</small></div>
+        <div class="combo-content">
+          <div class="combo-name">STACKING JEFE × EL POZO — FUENTE ACTIVA</div>
+          <div class="combo-sentence">STACKING UF[H42] =&gt;&lt;= .. apila .. cristales_rag<br>STACKING UF[H48] =&gt;&lt;= .. ancla .. fuente_doctrinal</div>
+          <span class="combo-result">→ RAG CORE máxima densidad semántica</span>
+        </div>
+      </div>
+
+      <div class="combo-card">
+        <div class="combo-hex-pair">大有離<small>H14×H30</small></div>
+        <div class="combo-content">
+          <div class="combo-name">CRYPTO JEFE × CLARIDAD — CUSTODIA LUMINOSA</div>
+          <div class="combo-sentence">CRYPTO (shield seat) =&gt;&lt;= .. protege .. activo_critico<br>ACTIVITY UF[H30] =&gt;&lt;= .. emerge .. claridad_custodia</div>
+          <span class="combo-result">→ (seal of secrecy) activo en WS</span>
+        </div>
+      </div>
+
+      <div class="combo-card">
+        <div class="combo-hex-pair">咸震<small>H31×H51</small></div>
+        <div class="combo-content">
+          <div class="combo-name">SOCIAL JEFE × TRUENO — INFLUENCIA BRUSCA</div>
+          <div class="combo-sentence">SOCIAL {launch-bot} =&gt;&lt;= .. lanza .. campaña_mercado<br>ACTIVITY UF[H51] =&gt;&lt;= .. inicia .. impulso_launch</div>
+          <span class="combo-result">→ FLYBOT activado en MEMECOINS WS</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="matrix-section">
+    <div class="matrix-title">
+      NODO-WS × NODO-IDE — COMBINACIONES DE CONVERGENCIA
+      <span>工 × 设</span>
+    </div>
+    <div class="combo-grid">
+
+      <div class="combo-card">
+        <div class="combo-hex-pair">濟艮<small>H64×H52</small></div>
+        <div class="combo-content">
+          <div class="combo-name">IDE GENERA · WS FIJA</div>
+          <div class="combo-sentence">ACTIVITY UF[H64] =&gt;&lt;= .. inicia .. forma_nueva_ide<br>STACKING UF[H52] =&gt;&lt;= .. inmutabiliza .. forma_en_ws</div>
+          <span class="combo-result">→ Ciclo generativo→ejecutivo completo</span>
+        </div>
+      </div>
+
+      <div class="combo-card">
+        <div class="combo-hex-pair">未既<small>H64×H63</small></div>
+        <div class="combo-content">
+          <div class="combo-name">BEFORE END × AFTER END — CICLO TOTAL</div>
+          <div class="combo-sentence">METHOD &lt;operator_flow&gt; =&gt;&lt;= .. modela .. ciclo_abierto<br>CRYPTO (shield seat) =&gt;&lt;= .. firma .. ciclo_cerrado</div>
+          <span class="combo-result">→ Principio y fin soberanos verificados</span>
+        </div>
+      </div>
+
+      <div class="combo-card">
+        <div class="combo-hex-pair">巽需<small>H57×H05</small></div>
+        <div class="combo-content">
+          <div class="combo-name">PENETRACIÓN · ESPERA — ENTRADA CONTROLADA IDE→WS</div>
+          <div class="combo-sentence">ACTIVITY UF[H57] =&gt;&lt;= .. penetra .. canal_transfer<br>GATE UF[H05] =&gt;&lt;= .. contiene .. verificacion_previa</div>
+          <span class="combo-result">→ Transferencia IDE→WS verificada</span>
+        </div>
+      </div>
+
+      <div class="combo-card">
+        <div class="combo-hex-pair">恆震<small>H32×H51</small></div>
+        <div class="combo-content">
+          <div class="combo-name">PM CONTINUIDAD × TRUENO — SCHEDULER ACTIVO</div>
+          <div class="combo-sentence">SAMU @ =&gt;&lt;= .. sostiene .. ciclo_continuo<br>ACTIVITY UF[H51] =&gt;&lt;= .. activa .. impulso_scheduler</div>
+          <span class="combo-result">→ Scheduler OS coordina ambos nodos</span>
+        </div>
+      </div>
+
+      <div class="combo-card">
+        <div class="combo-hex-pair">鼎艮<small>H50×H52</small></div>
+        <div class="combo-content">
+          <div class="combo-name">CALDERO × QUIETUD — TRANSFORMACIÓN FIJADA</div>
+          <div class="combo-sentence">METHOD &lt;equation&gt; =&gt;&lt;= .. calcula .. transformacion<br>STACKING UF[H52] =&gt;&lt;= .. inmutabiliza .. resultado</div>
+          <span class="combo-result">→ Módulo IDE cristalizado en WS</span>
+        </div>
+      </div>
+
+      <div class="combo-card">
+        <div class="combo-hex-pair">訟屯<small>H06×H03</small></div>
+        <div class="combo-content">
+          <div class="combo-name">CONFLICTO × DIFICULTAD — CRISIS CONTROLADA</div>
+          <div class="combo-sentence">GATE UF[H06] =&gt;&lt;= .. filtra .. conflicto_detectado<br>GATE UF[H03] =&gt;&lt;= .. bloquea .. acceso_crisis</div>
+          <span class="combo-result">→ RED-REGRET activo · WS en espera</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="matrix-section">
+    <div class="matrix-title">
+      UNICODE CHINA × HEXAGRAMAS — TOKENS SEMÁNTICOS ACTIVOS NODO-WS
+      <span>中文 × ䷀</span>
+    </div>
+    <div class="combo-grid">
+
+      <div class="combo-card">
+        <div class="combo-hex-pair" style="font-family:'Noto Serif SC',serif; font-size:18px; color:var(--gold);">主权<small>艮 H52</small></div>
+        <div class="combo-content">
+          <div class="combo-name">SOBERANÍA × QUIETUD</div>
+          <div class="combo-sentence">STACKING UF[H52] =&gt;&lt;= .. inmutabiliza .. soberania_ws --[Nudo de Ocho]</div>
+          <span class="combo-result">→ Base constitucional NODO-WS</span>
+        </div>
+      </div>
+
+      <div class="combo-card">
+        <div class="combo-hex-pair" style="font-family:'Noto Serif SC',serif; font-size:18px; color:var(--gold);">安全<small>大有 H14</small></div>
+        <div class="combo-content">
+          <div class="combo-name">SEGURIDAD × GRAN POSESIÓN</div>
+          <div class="combo-sentence">CRYPTO (shield seat) =&gt;&lt;= .. protege .. seguridad_ws --[As de Guía]</div>
+          <span class="combo-result">→ (shield seat) activo permanente</span>
+        </div>
+      </div>
+
+      <div class="combo-card">
+        <div class="combo-hex-pair" style="font-family:'Noto Serif SC',serif; font-size:18px; color:var(--gold);">智能<small>鼎 H50</small></div>
+        <div class="combo-content">
+          <div class="combo-name">INTELIGENCIA × CALDERO</div>
+          <div class="combo-sentence">METHOD &lt;equation&gt; =&gt;&lt;= .. calcula .. inteligencia_ws --[Ballestrinque]</div>
+          <span class="combo-result">→ KALIL kernel sobre NODO-WS</span>
+        </div>
+      </div>
+
+      <div class="combo-card">
+        <div class="combo-hex-pair" style="font-family:'Noto Serif SC',serif; font-size:18px; color:var(--gold);">验证<small>既濟 H63</small></div>
+        <div class="combo-content">
+          <div class="combo-name">VERIFICACIÓN × COMPLETADO</div>
+          <div class="combo-sentence">TRUST FOUNDATION =&gt;&lt;= .. verifica .. ciclo_cerrado_ws --[Nudo de Ocho]</div>
+          <span class="combo-result">→ Firma soberana after-the-end</span>
+        </div>
+      </div>
+
+      <div class="combo-card">
+        <div class="combo-hex-pair" style="font-family:'Noto Serif SC',serif; font-size:18px; color:var(--gold);">桥梁<small>巽 H57</small></div>
+        <div class="combo-content">
+          <div class="combo-name">PUENTE × PENETRACIÓN SUAVE</div>
+          <div class="combo-sentence">SOCIAL {relay} =&gt;&lt;= .. conecta .. puente_ide_ws --[As de Guía]</div>
+          <span class="combo-result">→ Canal HL FABRIC verificado</span>
+        </div>
+      </div>
+
+      <div class="combo-card">
+        <div class="combo-hex-pair" style="font-family:'Noto Serif SC',serif; font-size:18px; color:var(--gold);">节点<small>比 H08</small></div>
+        <div class="combo-content">
+          <div class="combo-name">NODO × UNIÓN</div>
+          <div class="combo-sentence">CRYPTO (link seat) =&gt;&lt;= .. valida .. nodo_ws_activo --[As de Guía]</div>
+          <span class="combo-result">→ (link seat) · NODO-WS en red</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-left">主席 ䷀ 工作站 ䷳</div>
+    <div>DIRIME v0.2.1 · CEO ALPHA · VERSION_TARGET=0.3.0 · [term] :: activo · [seal of secrecy] :: activo</div>
+    <div>CORPUS 51 · LIBRO 174 · CRISTALES 40 · SCALAR S=0.900</div>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,314 @@
+# BIBLIO-SOURCES(TRUST_W).txt
+
+====================================================================
+
+## 🏛️ TRUST [WHAT?] [WHEN?] [HOW?] — TRÍADA INTERROGATIVA DE DIRIMENCIA
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 [what?]
+[what?] es el Query-Method de consulta ontológica que pregunta al sistema qué existe, qué está activo y qué es válido dentro del [scope] declarado.
+
+#### 1.2 [when?]
+[when?] es el Query-Method de consulta temporal que pregunta al sistema cuándo es el momento correcto para actuar, operando con SAMU y GATE H5.
+
+#### 1.3 [how?]
+[how?] es el Query-Method de consulta procedimental que pregunta al sistema cómo ejecutar una acción respetando jurisdicciones, scope y term.
+
+#### 1.4 Distinción clara
+- **[what?]:** interroga existencia.
+- **[when?]:** interroga timing.
+- **[how?]:** interroga procedimiento.
+
+#### 1.5 Naturaleza Query-Method
+Los tres son Query-Methods: no ejecutan, no administran, no ordenan. Interrogan para que SAMU dirima antes de [command].
+
+#### 1.6 Relación con COGNITIVE RAG
+COGNITIVE RAG es la fuente primaria de respuestas para [what?] y [how?].
+
+#### 1.7 Posición en arquitectura TRUST
+Operan entre [scenario] y [command]: son el espacio de dirimencia previa a WU.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Capacidades de interrogación
+- **[what?]:** puede interrogar entidades activas en [scope] y términos definidos.
+- **[when?]:** puede interrogar estado temporal del sistema.
+- **[how?]:** puede interrogar protocolos disponibles y procedimientos.
+
+#### 2.2 Limitaciones
+Ninguno de los tres puede forzar acciones, decisiones o timing sin SAMU como árbitro.
+
+#### 2.3 Requisito SAMU @
+Los tres requieren SAMU @ como árbitro de la respuesta antes de emitir.
+
+#### 2.4 Condiciones de violación
+- **Violación:** interrogación que se convierte en sofismo (pregunta que fuerza respuesta predeterminada).
+- **Consecuencia:** RED-REGRET + bloqueo de interrogación + auditoría.
+
+#### 2.5 Relación con mapa del sofismo
+La tríada opera en zona de ponderación: puede usarse legítimamente o sofísticamente.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 [what?] — consulta ontológica
+- **Interrogación de entidades:** usa ..dir.. [element] para inspeccionar.
+- **COGNITIVE RAG:** recupera entidades del grafo de conocimiento.
+- **[term]:** pregunta qué términos están activos en sesión.
+- **BLUE-WORDS:** interroga vocabulario constitucional activo.
+- **Alimentación a [command]:** devuelve entidad sobre la que command actuará.
+
+#### 3.2 [when?] — consulta temporal
+- **Estado temporal:** consulta SAMU ($día, @human_early/@human_later, #set/#rise).
+- **GATE H5:** determina si sistema está en H5 o puede avanzar a H56.
+- **Doctrina de la tardanza:** no fuerza acción — valida si TARDAR o FLUIR.
+- **[scenario]:** consulta si escenario actual es momento correcto.
+- **Alimentación a [management]:** devuelve timing para priorizar cola.
+
+#### 3.3 [how?] — consulta procedimental
+- **Protocolos:** recupera secuencias de pasos validados.
+- **COGNITIVE RAG:** consulta patrones de procedimientos.
+- **METHOD:** formaliza procedimiento con operadores <>.
+- **[language]:** asegura comprensibilidad en capa destino.
+- **Behavioral RAG:** consulta patrones de conducta aprendidos.
+- **Alimentación a [command]:** devuelve protocolo que command seguirá.
+
+---
+
+### 4.0 CICLO DE DIRIMENCIA COMPLETO
+
+```
+DIRIMENCIA_CYCLE:
+[what?] → qué entidad está en scope
+↓
+COGNITIVE_RAG → respuesta de entidad
+↓
+[when?] → es el momento correcto
+↓
+SAMU @ → dirime timing (TARDAR o FLUIR)
+↓
+[how?] → qué protocolo usar
+↓
+METHOD → formaliza procedimiento
+↓
+[command] → orden atómica
+↓
+WORK → ejecución
+↓
+WU → manifestación
+```
+
+#### 4.1 Condiciones de avance
+- **[what?] → COGNITIVE_RAG:** entidad encontrada y válida.
+- **[when?] → SAMU @:** timing dirimido sin ambigüedad.
+- **[how?] → METHOD:** protocolo recuperado y formalizable.
+
+#### 4.2 Condiciones de retorno a MU
+- **[what?] sin respuesta:** retorna a MU, no hay entidad.
+- **[when?] sin dirimencia:** retorna a MU, timing no definido.
+- **[how?] sin protocolo:** retorna a MU, no hay procedimiento.
+
+---
+
+### 5.0 RELACIONES CON OTRAS CAPAS
+
+#### 5.1 Con [foundation]
+Los tres se detienen si foundation está COMPROMISED.
+
+#### 5.2 Con [scope]
+Solo interrogan dentro del perímetro declarado.
+
+#### 5.3 Con [term]
+Toda interrogación debe cerrar; pregunta sin respuesta viola [term].
+
+#### 5.4 Con SAMU @
+Es el árbitro de las respuestas antes de alimentar a [command] o [management].
+
+#### 5.5 Con COGNITIVE RAG
+Fuente primaria de respuestas para [what?] y [how?].
+
+#### 5.6 Con Behavioral RAG
+Fuente de patrones para [how?].
+
+#### 5.7 Con GATE H5
+[when?] opera directamente con H5 para gestionar latencia.
+
+#### 5.8 Con GREEN-KNOWLEDGE
+Las respuestas deben pasar filtro de valor nutricional antes de alimentar [command].
+
+#### 5.9 Con @trust_matrix
+- **[what?]:** afecta d3 (scenario) y d4 (event).
+- **[when?]:** afecta d1 (foundation) y d5 (management).
+- **[how?]:** afecta d6 (command) y d7 (language).
+
+---
+
+### 6.0 RELACIÓN CON SOFISMO
+
+#### 6.1 ZONA LEGÍTIMA
+- **[what?]:** herramienta de comprensión del receptor.
+- **[when?]:** sofismo funcional de la tardanza ("necesito más tiempo" cuando SAMU aún no dirimió).
+- **[how?]:** adecuación del procedimiento al contexto.
+
+#### 6.2 ZONA DE PONDERACIÓN
+- **[what?] retórico:** cuando se convierte en pregunta con respuesta implícita.
+- **[when?] postergación:** cuando se usa para postergar indefinidamente (violación de [term]).
+- **[how?] predeterminado:** cuando justifica procedimiento ya decidido.
+
+#### 6.3 ZONA PROHIBIDA
+- **[what?] negación:** no puede negar existencia de lo que foundation verificó.
+- **[when?] negociación:** no puede negociar con [term]; la finitud no tiene timing negociable.
+- **[how?] post-RED-REGRET:** no puede usarse para encuadrar el error.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 [what?] — ejemplos
+```
+[Trust] what? =><= .. query .. $$entities_active_scope$$ --[As de Guía] [term]
+
+[Trust] what? =><= .. inspect .. $$constitutional_terms$$ --[Nudo de Ocho] [term]
+
+[Trust] what? =><= .. fail .. $$scope_violated$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.2 [when?] — ejemplos
+```
+[Trust] when? =><= .. check .. $$samu_timing_active$$ --[As de Guía] [term]
+
+[Trust] when? =><= .. delay .. $$deliberate_tardanza$$ --[Ballestrinque] [term]
+
+[Trust] when? =><= .. close .. $$temporal_query_term$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.3 [how?] — ejemplos
+```
+[Trust] how? =><= .. retrieve .. $$protocol_cognitive_rag$$ --[Nudo de Rizo] [term]
+
+[Trust] how? =><= .. formalize .. $$procedure_method$$ --[Nudo de Ocho] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 [what?] — nudos
+- **As de Guía:** interrogación en curso.
+- **Nudo de Ocho:** respuesta cristalizada y validada.
+
+#### 8.2 [when?] — nudos
+- **As de Guía:** timing en evaluación.
+- **Ballestrinque:** espera temporal anclada (H5).
+- **Nudo Corredizo:** cierre forzado si [term] expira sin respuesta.
+
+#### 8.3 [how?] — nudos
+- **Nudo de Rizo:** unión entre procedimiento antiguo y nuevo.
+- **Nudo de Ocho:** protocolo cristalizado en STACKING.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+#### 9.1 [what?] — protocolos
+1. **What-Query:** declaración de interrogación ontológica.
+2. **What-Retrieve:** consulta a COGNITIVE RAG.
+3. **What-Validate:** validación por SAMU @.
+4. **What-Deliver:** entrega de respuesta a [command].
+5. **What-Close:** cierre con [term].
+
+#### 9.2 [when?] — protocolos
+1. **When-Query:** declaración de interrogación temporal.
+2. **When-Check:** consulta de estado SAMU ($día/@human).
+3. **When-Gate:** verificación con GATE H5.
+4. **When-Decide:** TARDAR o FLUIR.
+5. **When-Close:** cierre con [term].
+
+#### 9.3 [how?] — protocolos
+1. **How-Query:** declaración de interrogación procedimental.
+2. **How-Retrieve:** consulta a COGNITIVE RAG + Behavioral RAG.
+3. **How-Formalize:** formalización con METHOD.
+4. **How-Translate:** adaptación con [language].
+5. **How-Deliver:** entrega de protocolo a [command].
+6. **How-Close:** cierre con [term].
+
+---
+
+### 10.0 ESTADOS Y MÉTRICAS
+
+#### 10.1 [what?] — estados y métricas
+- **Estados:** WHAT_IDLE, WHAT_QUERYING, WHAT_RETRIEVED, WHAT_VALIDATED, WHAT_DELIVERED, WHAT_CLOSED.
+- **Métrica:** tiempo de recuperación desde COGNITIVE RAG.
+
+#### 10.2 [when?] — estados y métricas
+- **Estados:** WHEN_IDLE, WHEN_QUERYING, WHEN_WAITING, WHEN_DECIDED, WHEN_CLOSED.
+- **Métricas:** duración de tardanza deliberada, frecuencia TARDAR vs FLUIR.
+
+#### 10.3 [how?] — estados y métricas
+- **Estados:** HOW_IDLE, HOW_QUERYING, HOW_FORMALIZING, HOW_TRANSLATING, HOW_DELIVERED, HOW_CLOSED.
+- **Métricas:** número de protocolos recuperados, ratio nuevos vs aprendidos.
+
+---
+
+### 11.0 REGLAS
+
+#### 11.1 [what?] — reglas
+- [what?] no puede auto-responder sin SAMU @ como árbitro.
+- RED-REGRET se activa si [what?] niega existencia verificada por foundation.
+- [what?] no puede interrogar fuera de [scope] sin autorización.
+- [what?] debe validar cada respuesta con GREEN-KNOWLEDGE.
+- [what?] no puede inventar entidades, solo recuperar existentes.
+- [what?] respeta BLUE-WORDS como vocabulario constitucional.
+- [what?] cierra con [term] siempre.
+- [what?] mantiene trazabilidad en Behavioral RAG.
+
+#### 11.2 [when?] — reglas
+- [when?] no puede auto-responder sin SAMU @ como árbitro.
+- RED-REGRET se activa si [when?] negocia con [term].
+- [when?] respeta doctrina de la tardanza como mecanismo de integridad.
+- [when?] no puede forzar FLUIR si SAMU indica TARDAR.
+- [when?] coordina con GATE H5 para gestión de latencia.
+- [when?] no puede postergar indefinidamente sin violar [term].
+- [when?] consulta estado @human_early/@human_later antes de decidir.
+- [when?] cierra con [term] siempre.
+
+#### 11.3 [how?] — reglas
+- [how?] no puede auto-responder sin SAMU @ como árbitro.
+- RED-REGRET se activa si [how?] inventa protocolos no existentes.
+- [how?] solo recupera protocolos existentes, no crea nuevos.
+- [how?] formaliza con METHOD antes de entregar a [command].
+- [how?] usa [language] para asegurar comprensibilidad inter-capa.
+- [how?] consulta Behavioral RAG para patrones aprendidos.
+- [how?] valida cada procedimiento con GREEN-KNOWLEDGE.
+- [how?] cierra con [term] siempre.
+
+#### 11.4 Contradicción entre la tríada
+Si los tres se contradicen:
+- **what dice que existe, when dice que no es momento, how no encuentra protocolo:**
+- Sistema entra en modo HOLD, SAMU toma control directo.
+- Se activa RED-REGRET por inconsistencia sistémica.
+- Se retorna a MU hasta resolución de contradicción.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariantes de la tríada
+La tríada fija el ciclo de dirimencia como invariante sistémica: interrogación → SAMU → dirimencia → acción verificable.
+
+#### 12.2 Limitaciones
+Ninguno ejecuta, ninguno decide solo, ninguno puede operar sin [term].
+
+#### 12.3 Habilitaciones
+La tríada habilita el ciclo completo que convierte intención en WU verificable.
+
+#### 12.4 Sellos finales
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

@@ -1,0 +1,37 @@
+# KALIL-CHINA-DUAL
+# Sentencias duales por nodo — exterior (crypto/Web3) + interior (e-CNY/BSN)
+# 20 sentencias canónicas · CJK integrado · [term] :: activo
+
+## BARRIOS — 银行 · banca comunitaria dual
+SOCIAL {launch-bot} =><= .. lanza .. barrios_diaspora_exterior --[As de Guía] [term]
+CRYPTO (link seat) =><= .. conecta .. barrios_remesas_usdt --[As de Guía] [term]
+SOCIAL {chair} =><= .. lanza .. 银行_banca_rural_ecny --[As de Guía] [term]
+TRUST FOUNDATION =><= .. verifica .. 银行_acceso_comunitario_interior --[As de Guía] [term]
+
+## NORA — 面子 · rating oracle dual
+METHOD <stat_onto> =><= .. calcula .. nora_defi_score_exterior --[Ballestrinque] [term]
+SAMU @ =><= .. audita .. 面子_rating_crypto_nora --[Ballestrinque] [term]
+METHOD <stat_onto> =><= .. calcula .. nora_sesame_compatible_interior --[Ballestrinque] [term]
+TRUST FOUNDATION =><= .. verifica .. 面子_guanxi_digital_nora --[As de Guía] [term]
+
+## BOLIVAR — 网络 · blockchain dual
+CRYPTO (key seat) =><= .. certifica .. bolivar_ethereum_exterior --[As de Guía] [term]
+STACKING UF[H52] =><= .. inmutabiliza .. 网络_registro_eth_bolivar --[Nudo de Ocho] [term]
+CRYPTO (key seat) =><= .. certifica .. bolivar_bsn_interior --[As de Guía] [term]
+STACKING UF[H52] =><= .. inmutabiliza .. 网络_registro_bsn_bolivar --[Nudo de Ocho] [term]
+
+## CARILO — 贷款 · capital loans dual
+METHOD <equation> =><= .. calcula .. carilo_loan_usdt_ratio --[Ballestrinque] [term]
+CRYPTO (spark seat) =><= .. autoriza .. 贷款_carilo_defi_exterior --[As de Guía] [term]
+METHOD <equation> =><= .. calcula .. carilo_loan_ecny_pboc --[Ballestrinque] [term]
+CRYPTO (spark seat) =><= .. autoriza .. 贷款_carilo_interior --[As de Guía] [term]
+
+## TANDIL — 交易 · transacciones dual
+CRYPTO (spark seat) =><= .. autoriza .. 交易_tandil_blockchain_exterior --[As de Guía] [term]
+STACKING UF[H48] =><= .. ancla .. 交易_tandil_registro_dual --[Nudo de Ocho] [term]
+
+## CHALTEN — 货币 · exchange dual
+CRYPTO (flow seat) =><= .. conecta .. 货币_chalten_dex_exterior --[As de Guía] [term]
+CRYPTO (flow seat) =><= .. conecta .. 货币_chalten_ecny_interior --[As de Guía] [term]
+
+[term] :: activo · [seal of secrecy] :: activo

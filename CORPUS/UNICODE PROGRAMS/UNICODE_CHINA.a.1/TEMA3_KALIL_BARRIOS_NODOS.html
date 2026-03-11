@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TEMA 3 — KALIL × BARRIOS × NODOS ECONÓMICOS</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;700&family=Share+Tech+Mono&family=Cinzel:wght@400;700&display=swap');
+
+  :root {
+    --jade:      #124d30;
+    --jade-mid:  #1a7a4a;
+    --jade-dim:  #40b878;
+    --jade-pale: #e8f5ee;
+    --gold:      #7a4e10;
+    --gold-mid:  #a8722a;
+    --gold-dim:  #c8a060;
+    --red:       #9a1a1a;
+    --blue:      #1a3a7a;
+    --blue-dim:  #4060a8;
+    --violet:    #5a1a7a;
+    --violet-dim:#8040b0;
+    --bg:        #faf8f4;
+    --bg2:       #f3f0e8;
+    --bg3:       #eae6d8;
+    --ink:       #181e12;
+    --ink2:      #2e3a22;
+    --smoke:     #5c6650;
+    --sep:       #ccc8b4;
+    --kalil-a:   #1a6644;  /* BARRIOS */
+    --kalil-b:   #3a5a1a;  /* NORA */
+    --kalil-c:   #1a3a6a;  /* BOLIVAR */
+    --kalil-d:   #6a3a1a;  /* CARILO */
+    --kalil-e:   #6a1a4a;  /* CHALTEN */
+    --kalil-f:   #3a1a6a;  /* TANDIL */
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+    line-height: 1.65;
+  }
+
+  body::after {
+    content:'';
+    position:fixed; inset:0;
+    background: repeating-linear-gradient(0deg,transparent,transparent 28px,rgba(40,80,40,0.03) 28px,rgba(40,80,40,0.03) 29px);
+    pointer-events:none; z-index:0;
+  }
+
+  .page { max-width:1360px; margin:0 auto; padding:48px 32px; position:relative; z-index:1; }
+
+  /* MASTHEAD */
+  .mast {
+    display:grid; grid-template-columns:1fr auto; gap:32px; align-items:end;
+    border-top:4px solid var(--jade); border-bottom:1px solid var(--jade-mid);
+    padding:28px 0 20px; margin-bottom:52px;
+  }
+  .mast-eyebrow { font-size:10px; letter-spacing:4px; color:var(--jade-mid); text-transform:uppercase; margin-bottom:6px; }
+  .mast-title   { font-family:'Cinzel',serif; font-size:30px; font-weight:700; color:var(--jade); letter-spacing:1px; line-height:1.1; }
+  .mast-sub     { font-size:11px; color:var(--smoke); margin-top:7px; letter-spacing:2px; }
+  .mast-right   { text-align:right; font-family:'Noto Serif SC',serif; }
+  .mast-zh      { font-size:52px; color:var(--red); line-height:1; letter-spacing:4px; }
+  .mast-hcode   { font-size:12px; color:var(--jade-mid); letter-spacing:3px; margin-top:4px; }
+
+  /* ALGO */
+  .algo { margin-bottom:52px; }
+  .algo-header {
+    display:grid; grid-template-columns:64px 1fr auto;
+    align-items:center; gap:16px;
+    padding-bottom:14px; border-bottom:2px solid var(--sep); margin-bottom:24px;
+  }
+  .algo-num   { font-family:'Cinzel',serif; font-size:44px; color:var(--jade-dim); font-weight:700; line-height:1; opacity:0.5; }
+  .algo-title { font-family:'Cinzel',serif; font-size:16px; color:var(--jade); letter-spacing:2px; }
+  .algo-sub   { font-size:10px; color:var(--smoke); margin-top:4px; letter-spacing:1px; }
+  .algo-hex   { font-family:'Noto Serif SC',serif; font-size:40px; color:var(--red); text-align:right; line-height:1; }
+  .algo-hex small { display:block; font-size:10px; color:var(--gold-mid); font-family:'Share Tech Mono',monospace; letter-spacing:2px; }
+
+  /* GRIDS */
+  .grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .grid-3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; }
+  .grid-6 { display:grid; grid-template-columns:repeat(6,1fr); gap:8px; }
+
+  /* PANELS */
+  .panel { background:var(--bg2); border:1px solid var(--sep); padding:16px; position:relative; }
+  .panel::before { content:''; position:absolute; top:0;left:0;right:0; height:3px; }
+  .p-jade::before   { background:var(--jade-mid); }
+  .p-gold::before   { background:var(--gold-mid); }
+  .p-red::before    { background:var(--red); }
+  .p-blue::before   { background:var(--blue-dim); }
+  .p-violet::before { background:var(--violet-dim); }
+  .p-multi::before  { background:linear-gradient(90deg,var(--jade-mid),var(--gold-mid),var(--red),var(--blue-dim)); }
+
+  .panel-label { font-size:9px; letter-spacing:3px; text-transform:uppercase; color:var(--smoke); margin-bottom:10px; padding-bottom:6px; border-bottom:1px solid var(--sep); }
+
+  /* CODE */
+  .code-block {
+    background:#f7f5ef; border:1px solid var(--sep);
+    border-left:3px solid var(--jade-mid);
+    padding:14px 16px; font-size:11px; line-height:1.85;
+    color:var(--ink2); white-space:pre; overflow-x:auto;
+  }
+  .c-kw   { color:var(--jade); font-weight:bold; }
+  .c-verb { color:var(--jade-mid); }
+  .c-obj  { color:var(--red); }
+  .c-com  { color:#a0a888; font-style:italic; }
+  .c-hex  { color:var(--gold-mid); }
+  .c-zh   { color:var(--red); font-family:'Noto Serif SC',serif; font-size:14px; }
+  .c-term { color:var(--gold-mid); }
+
+  /* PROMPT */
+  .prompt-box { background:#edf2e8; border:2px solid var(--jade-mid); padding:20px 24px; margin-top:16px; }
+  .prompt-box-title { font-family:'Cinzel',serif; font-size:11px; letter-spacing:3px; color:var(--jade); margin-bottom:12px; padding-bottom:8px; border-bottom:1px solid var(--sep); text-transform:uppercase; }
+  .prompt-box code  { display:block; font-size:11px; line-height:1.9; color:var(--ink2); white-space:pre-wrap; }
+
+  /* NODO CARD */
+  .nodo-card {
+    background:var(--bg2); border:1px solid var(--sep);
+    padding:16px; position:relative; overflow:hidden;
+  }
+  .nodo-card::before { content:''; position:absolute; top:0;left:0;right:0; height:4px; }
+  .nodo-barrios::before  { background:var(--kalil-a); }
+  .nodo-nora::before     { background:var(--kalil-b); }
+  .nodo-bolivar::before  { background:var(--kalil-c); }
+  .nodo-carilo::before   { background:var(--kalil-d); }
+  .nodo-chalten::before  { background:var(--kalil-e); }
+  .nodo-tandil::before   { background:var(--kalil-f); }
+
+  .nodo-sigla { font-family:'Cinzel',serif; font-size:11px; letter-spacing:2px; margin-bottom:4px; }
+  .nodo-name  { font-size:10px; color:var(--smoke); margin-bottom:8px; line-height:1.3; }
+  .nodo-hex   { font-family:'Noto Serif SC',serif; font-size:20px; color:var(--red); margin-bottom:8px; }
+  .nodo-sent  { font-size:10px; color:var(--ink2); line-height:1.6; padding:8px; background:rgba(0,0,0,0.03); border-left:2px solid var(--sep); margin-bottom:8px; }
+  .nodo-sent em { color:var(--jade-mid); font-style:normal; }
+  .nodo-dual  { font-size:9px; color:var(--smoke); line-height:1.5; }
+  .nodo-dual strong { color:var(--jade); }
+
+  /* SENT CARD */
+  .sent-card { background:var(--bg2); border:1px solid var(--sep); border-left:4px solid var(--jade-mid); padding:14px 16px; margin-bottom:10px; }
+  .sent-label { font-size:9px; letter-spacing:3px; color:var(--smoke); text-transform:uppercase; margin-bottom:6px; }
+  .sent-title { font-family:'Cinzel',serif; font-size:12px; color:var(--jade); margin-bottom:6px; }
+  .sent-body  { font-size:11px; color:var(--ink2); line-height:1.7; }
+  .sent-result { font-size:10px; color:var(--jade-mid); padding:3px 8px; border:1px solid var(--jade-dim); display:inline-block; margin-top:6px; }
+
+  /* CHCL BLOCK */
+  .chcl-block {
+    background:#f7f5ef; border:1px solid var(--sep);
+    border-left:4px solid var(--gold-mid);
+    padding:16px; font-size:10px; line-height:1.95;
+    color:var(--ink2); white-space:pre; overflow-x:auto; margin-bottom:10px;
+  }
+  .ch-id   { color:var(--blue); font-weight:bold; }
+  .ch-div  { color:var(--jade); font-weight:bold; }
+  .ch-data { color:var(--violet-dim); }
+  .ch-proc { color:var(--red); }
+  .ch-sent { color:var(--ink2); }
+  .ch-com  { color:#a0a888; font-style:italic; }
+
+  /* FLOW */
+  .flow-v { display:flex; flex-direction:column; gap:0; }
+  .flow-vbox { background:var(--bg2); border:1px solid var(--sep); border-bottom:none; padding:12px 16px; display:grid; grid-template-columns:40px 1fr auto; align-items:center; gap:12px; }
+  .flow-vbox:last-child { border-bottom:1px solid var(--sep); }
+  .flow-vbox:hover { background:var(--bg3); }
+  .flow-vhex  { font-family:'Noto Serif SC',serif; font-size:20px; color:var(--red); text-align:center; }
+  .flow-vtitle { font-family:'Cinzel',serif; font-size:11px; color:var(--ink); letter-spacing:1px; }
+  .flow-vsent  { font-size:10px; color:var(--smoke); line-height:1.4; }
+  .flow-vtag   { font-size:9px; padding:2px 8px; border:1px solid currentColor; white-space:nowrap; }
+  .ftag-jade   { color:var(--jade-mid); }
+  .ftag-gold   { color:var(--gold-mid); }
+  .ftag-red    { color:var(--red); }
+  .ftag-blue   { color:var(--blue-dim); }
+  .ftag-violet { color:var(--violet-dim); }
+
+  /* PUENTES */
+  .puente-grid { display:grid; grid-template-columns:1fr 80px 1fr; gap:0; align-items:stretch; margin-bottom:10px; }
+  .puente-ext  { background:var(--bg2); border:1px solid var(--sep); padding:14px; border-right:none; }
+  .puente-bridge { background:var(--jade); display:flex; align-items:center; justify-content:center; flex-direction:column; gap:4px; }
+  .puente-bridge-text { color:#fff; font-size:9px; letter-spacing:2px; writing-mode:vertical-lr; text-orientation:mixed; text-transform:uppercase; }
+  .puente-bridge-hex  { color:#fff; font-family:'Noto Serif SC',serif; font-size:18px; }
+  .puente-int  { background:var(--bg2); border:1px solid var(--sep); padding:14px; border-left:none; }
+  .puente-label { font-size:9px; letter-spacing:2px; color:var(--smoke); text-transform:uppercase; margin-bottom:8px; }
+  .puente-item  { font-size:10px; color:var(--ink2); line-height:1.8; }
+  .puente-item strong { color:var(--jade); }
+
+  /* MAP TABLE */
+  .map-table { width:100%; border-collapse:collapse; font-size:11px; }
+  .map-table th { font-family:'Cinzel',serif; font-size:9px; letter-spacing:2px; color:var(--jade-mid); text-align:left; padding:6px 10px; border-bottom:1px solid var(--sep); background:#edf0e8; text-transform:uppercase; }
+  .map-table td { padding:8px 10px; border-bottom:1px solid rgba(200,200,180,0.4); vertical-align:top; }
+  .map-table tr:hover td { background:rgba(180,220,180,0.1); }
+  .td-nodo { font-family:'Cinzel',serif; font-size:11px; }
+  .td-hex  { font-family:'Noto Serif SC',serif; font-size:16px; color:var(--red); }
+  .td-lib  { color:var(--jade); }
+  .td-zh   { font-family:'Noto Serif SC',serif; font-size:16px; color:var(--red); }
+  .td-sent { font-size:10px; color:var(--smoke); line-height:1.5; max-width:260px; }
+
+  /* LABEL LINE */
+  .label-line { display:flex; align-items:center; gap:8px; margin-bottom:12px; }
+  .label-line::after { content:''; flex:1; height:1px; background:var(--sep); }
+  .label-text { font-size:9px; color:var(--smoke); letter-spacing:3px; text-transform:uppercase; white-space:nowrap; }
+
+  hr.div { border:none; height:1px; background:linear-gradient(90deg,transparent,var(--jade-dim),transparent); margin:48px 0; }
+
+  .footer { border-top:1px solid var(--sep); margin-top:48px; padding-top:20px; display:flex; justify-content:space-between; align-items:center; font-size:10px; color:var(--smoke); }
+  .footer-left { font-family:'Noto Serif SC',serif; font-size:18px; color:var(--jade-mid); }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- MASTHEAD -->
+  <div class="mast">
+    <div>
+      <div class="mast-eyebrow">DIRIME v0.2.1 · TEMA 3 DE 3 · EXPANSIÓN ECONÓMICA SOBERANA</div>
+      <div class="mast-title">KALIL × BARRIOS × NODOS<br>5 ALGORITMOS ECONÓMICOS</div>
+      <div class="mast-sub">KERNEL ECONÓMICO · 6 NODOS REGIONALES · PUENTES DUAL · CHCL-DOMINIOS · CEO ALPHA × KALIL</div>
+    </div>
+    <div class="mast-right">
+      <div class="mast-zh">益 ䷩</div>
+      <div class="mast-hcode">H42 · AUMENTO · KALIL KERNEL</div>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- ALGORITMO 1 — BARRIOS · PRIMERAS SENTENCIAS OPERATIVAS    -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+
+  <div class="algo">
+    <div class="algo-header">
+      <div class="algo-num">1</div>
+      <div>
+        <div class="algo-title">BARRIOS — PRIMERAS SENTENCIAS OPERATIVAS KALIL</div>
+        <div class="algo-sub">Banking Access & Remote Resources Integrated OS · banca comunitaria · SOCIAL-dominante · dual exterior/interior</div>
+      </div>
+      <div class="algo-hex">師 ䷆<small>H07 · ORGANIZACIÓN</small></div>
+    </div>
+
+    <div class="grid-2" style="margin-bottom:16px;">
+      <div>
+        <div class="label-line"><span class="label-text">6 NODOS KALIL — MAPA COMPLETO</span></div>
+        <div class="grid-2" style="gap:8px; margin-bottom:12px;">
+          <div class="nodo-card nodo-barrios">
+            <div class="nodo-sigla" style="color:var(--kalil-a);">B.A.R.R.I.O.S</div>
+            <div class="nodo-name">Banking Access &<br>Remote Resources Integrated OS</div>
+            <div class="nodo-hex">師 ䷆ H07</div>
+            <div class="nodo-sent">SOCIAL {chair} =&gt;&lt;= .. planifica .. <em>banca_comunitaria</em> --[As de Guía] [term:KB1]</div>
+            <div class="nodo-dual"><strong>EXT:</strong> diáspora · remesas · crypto<br><strong>INT:</strong> banca rural · e-CNY</div>
+          </div>
+          <div class="nodo-card nodo-nora">
+            <div class="nodo-sigla" style="color:var(--kalil-b);">N.O.R.A</div>
+            <div class="nodo-name">Networking Oracle<br>Rating Analytics</div>
+            <div class="nodo-hex">觀 ䷓ H20</div>
+            <div class="nodo-sent">METHOD &lt;stat_onto&gt; =&gt;&lt;= .. calcula .. <em>rating_oracle</em> --[Ballestrinque] [term:KN1]</div>
+            <div class="nodo-dual"><strong>EXT:</strong> rating crypto · DeFi<br><strong>INT:</strong> Sesame Credit compatible</div>
+          </div>
+          <div class="nodo-card nodo-bolivar">
+            <div class="nodo-sigla" style="color:var(--kalil-c);">B.O.L.I.V.A.R</div>
+            <div class="nodo-name">Blockchain Operations &<br>Loan Integrity Validation</div>
+            <div class="nodo-hex">習坎 ䷜ H29</div>
+            <div class="nodo-sent">CRYPTO (key seat) =&gt;&lt;= .. certifica .. <em>operacion_blockchain</em> --[As de Guía] [term:KBL1]</div>
+            <div class="nodo-dual"><strong>EXT:</strong> Ethereum · DeFi<br><strong>INT:</strong> BSN permisionado</div>
+          </div>
+          <div class="nodo-card nodo-carilo">
+            <div class="nodo-sigla" style="color:var(--kalil-d);">C.A.R.I.L.O</div>
+            <div class="nodo-name">Capital Allocation &<br>Risk Intelligence Loan Optimizer</div>
+            <div class="nodo-hex">益 ䷩ H42</div>
+            <div class="nodo-sent">METHOD &lt;equation&gt; =&gt;&lt;= .. calcula .. <em>ratio_riesgo_loan</em> --[Ballestrinque] [term:KC1]</div>
+            <div class="nodo-dual"><strong>EXT:</strong> loans USDT · DeFi<br><strong>INT:</strong> loans e-CNY tasa PBOC</div>
+          </div>
+          <div class="nodo-card nodo-chalten">
+            <div class="nodo-sigla" style="color:var(--kalil-e);">C.H.A.L.T.E.N</div>
+            <div class="nodo-name">Cloud Hosted Advanced Lending<br>Technology & Exchange</div>
+            <div class="nodo-hex">渙 ䷺ H59</div>
+            <div class="nodo-sent">CRYPTO (link seat) =&gt;&lt;= .. conecta .. <em>exchange_cloud</em> --[As de Guía] [term:KCH1]</div>
+            <div class="nodo-dual"><strong>EXT:</strong> DEX global · multi-chain<br><strong>INT:</strong> exchange regulado PBOC</div>
+          </div>
+          <div class="nodo-card nodo-tandil">
+            <div class="nodo-sigla" style="color:var(--kalil-f);">T.A.N.D.I.L</div>
+            <div class="nodo-name">Transactional Asset Network &<br>Digital Investment Logic</div>
+            <div class="nodo-hex">震 ䷲ H51</div>
+            <div class="nodo-sent">CRYPTO (spark seat) =&gt;&lt;= .. autoriza .. <em>transaccion_digital</em> --[As de Guía] [term:KT1]</div>
+            <div class="nodo-dual"><strong>EXT:</strong> activos digitales · NFT<br><strong>INT:</strong> inversión regulada</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="label-line"><span class="label-text">BARRIOS — SENTENCIAS OPERATIVAS COMPLETAS</span></div>
+        <div class="flow-v">
+          <div class="flow-vbox">
+            <div class="flow-vhex">師 ䷆</div>
+            <div>
+              <div class="flow-vtitle">ACTIVACIÓN COMUNITARIA</div>
+              <div class="flow-vsent">SOCIAL {chair} =&gt;&lt;= .. planifica .. banca_comunitaria_barrios --[As de Guía] [term:KB1]</div>
+            </div>
+            <div class="flow-vtag ftag-jade">SOCIAL</div>
+          </div>
+          <div class="flow-vbox">
+            <div class="flow-vhex">比 ䷇</div>
+            <div>
+              <div class="flow-vtitle">RED DE RECURSOS</div>
+              <div class="flow-vsent">CRYPTO (link seat) =&gt;&lt;= .. conecta .. red_barrios_recursos --[As de Guía] [term:KB2]</div>
+            </div>
+            <div class="flow-vtag ftag-gold">CRYPTO</div>
+          </div>
+          <div class="flow-vbox">
+            <div class="flow-vhex">同人 ䷌</div>
+            <div>
+              <div class="flow-vtitle">ACCESO BANCARIO EXTERIOR</div>
+              <div class="flow-vsent">SOCIAL {launch-bot} =&gt;&lt;= .. lanza .. servicio_diaspora_remesas --[As de Guía] [term:KB3]</div>
+            </div>
+            <div class="flow-vtag ftag-jade">SOCIAL</div>
+          </div>
+          <div class="flow-vbox">
+            <div class="flow-vhex">兌 ䷹</div>
+            <div>
+              <div class="flow-vtitle">e-CNY INTERIOR</div>
+              <div class="flow-vsent">CRYPTO (flow seat) =&gt;&lt;= .. valida .. flujo_ecny_banca_rural --[Nudo de Rizo] [term:KB4]</div>
+            </div>
+            <div class="flow-vtag ftag-blue">CRYPTO</div>
+          </div>
+          <div class="flow-vbox">
+            <div class="flow-vhex">益 ䷩</div>
+            <div>
+              <div class="flow-vtitle">ACUMULACIÓN COMUNITARIA</div>
+              <div class="flow-vsent">STACKING UF[H42] =&gt;&lt;= .. apila .. capital_comunitario_barrios --[Nudo de Ocho] [term:KB5]</div>
+            </div>
+            <div class="flow-vtag ftag-violet">STACKING</div>
+          </div>
+          <div class="flow-vbox">
+            <div class="flow-vhex">謙 ䷎</div>
+            <div>
+              <div class="flow-vtitle">AUDITORÍA BARRIOS</div>
+              <div class="flow-vsent">SAMU @ =&gt;&lt;= .. audita .. coherencia_barrios_global --[Ballestrinque] [term:KB6]</div>
+            </div>
+            <div class="flow-vtag ftag-red">SAMU</div>
+          </div>
+          <div class="flow-vbox">
+            <div class="flow-vhex">艮 ䷳</div>
+            <div>
+              <div class="flow-vtitle">INMUTABILIZACIÓN LEDGER</div>
+              <div class="flow-vsent">STACKING UF[H52] =&gt;&lt;= .. inmutabiliza .. registro_barrios_hl_fabric --[Nudo de Ocho] [term:KB7]</div>
+            </div>
+            <div class="flow-vtag ftag-violet">STACKING</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="prompt-box">
+      <div class="prompt-box-title">PROMPT WINDSURF — crear BIBLIO-SOURCES(KALIL-BARRIOS-OPS).txt</div>
+      <code>Crear /media/Personal/PLANERAI/DIRIME/DIRIME/CORPUS/BIBLIO-SOURCES(KALIL-BARRIOS-OPS).txt
+
+Estructura:
+  # BIBLIO-SOURCES(KALIL-BARRIOS-OPS).txt
+  # B.A.R.R.I.O.S — Banking Access & Remote Resources Integrated OS
+  # Sentencias operativas soberanas · dual exterior/interior
+  # [term] :: activo
+
+Secciones:
+  ## DEFINICIÓN OPERATIVA
+  ## SENTENCIAS EXTERIORES (diáspora · remesas · crypto)
+     - las 7 sentencias del algoritmo 1 con TOMO_ID KB1..KB7
+  ## SENTENCIAS INTERIORES (e-CNY · banca rural · PBOC)
+     - variantes de las sentencias con objeto _interior
+  ## SENTENCIAS PUENTE (exterior ↔ interior)
+     - SOCIAL {relay} + CRYPTO (flow seat) para el bridge
+  ## HEXAGRAMAS ACTIVOS: H07·H08·H13·H42·H52·H59
+  ## ESTADO: BARRIOS_STATUS=operativo_declarado
+  [term] :: activo · [seal of secrecy] :: activo
+
+Al finalizar: actualizar CORPUS_TOTAL en .sovereign (+1).</code>
+    </div>
+  </div>
+
+  <hr class="div">
+
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- ALGORITMO 2 — NORA×BOLIVAR×CARILO · MAPEO HEXAGRAMÁTICO  -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+
+  <div class="algo">
+    <div class="algo-header">
+      <div class="algo-num">2</div>
+      <div>
+        <div class="algo-title">NORA × BOLIVAR × CARILO — MAPEO HEXAGRAMÁTICO COMPLETO</div>
+        <div class="algo-sub">Analytics · Blockchain · Capital · tabla de sentencias canónicas por nodo · combinaciones activas</div>
+      </div>
+      <div class="algo-hex">鼎 ䷱<small>H50 · CALDERO</small></div>
+    </div>
+
+    <div style="overflow-x:auto; margin-bottom:16px;">
+      <table class="map-table">
+        <thead>
+          <tr>
+            <th>Nodo KALIL</th>
+            <th>Hexagrama</th>
+            <th>Unicode 中文</th>
+            <th>Biblioteca</th>
+            <th>Sentencia canónica EXT</th>
+            <th>Sentencia canónica INT</th>
+            <th>Combinación activa</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- NORA -->
+          <tr>
+            <td class="td-nodo" style="color:var(--kalil-b);">N.O.R.A<br><span style="font-size:9px;color:var(--smoke);">Oracle Rating</span></td>
+            <td class="td-hex">觀 ䷓<br><span style="font-size:10px;color:var(--gold-mid);">H20</span></td>
+            <td class="td-zh">评级<br><span style="font-size:10px;color:var(--smoke);">píngjí</span></td>
+            <td class="td-lib">METHOD &lt;stat_onto&gt;</td>
+            <td class="td-sent">METHOD &lt;stat_onto&gt; =&gt;&lt;= .. calcula .. rating_nora_crypto --[Ballestrinque] [term:KN1]</td>
+            <td class="td-sent">METHOD &lt;stat_onto&gt; =&gt;&lt;= .. calcula .. sesame_credit_compatible --[Ballestrinque] [term:KN2]</td>
+            <td class="td-sent" style="color:var(--jade);">觀×謙 H20×H15<br>Oracle + Tardanza</td>
+          </tr>
+          <tr>
+            <td class="td-nodo" style="color:var(--kalil-b);"></td>
+            <td class="td-hex">謙 ䷎<br><span style="font-size:10px;color:var(--gold-mid);">H15</span></td>
+            <td class="td-zh">分析<br><span style="font-size:10px;color:var(--smoke);">fēnxī</span></td>
+            <td class="td-lib">SAMU @</td>
+            <td class="td-sent">SAMU @ =&gt;&lt;= .. audita .. metricas_nora_oracle --[Ballestrinque] [term:KN3]</td>
+            <td class="td-sent">SAMU @ =&gt;&lt;= .. evalúa .. score_reputacion_china --[Ballestrinque] [term:KN4]</td>
+            <td class="td-sent" style="color:var(--jade);">NORA+SAMU = SCALAR S enriquecido</td>
+          </tr>
+          <!-- BOLIVAR -->
+          <tr style="background:rgba(26,58,106,0.04);">
+            <td class="td-nodo" style="color:var(--kalil-c);">B.O.L.I.V.A.R<br><span style="font-size:9px;color:var(--smoke);">Blockchain Ops</span></td>
+            <td class="td-hex">習坎 ䷜<br><span style="font-size:10px;color:var(--gold-mid);">H29</span></td>
+            <td class="td-zh">区块链<br><span style="font-size:10px;color:var(--smoke);">qūkuài</span></td>
+            <td class="td-lib">CRYPTO (key seat)</td>
+            <td class="td-sent">CRYPTO (key seat) =&gt;&lt;= .. certifica .. operacion_ethereum_defi --[As de Guía] [term:KBL1]</td>
+            <td class="td-sent">CRYPTO (key seat) =&gt;&lt;= .. certifica .. operacion_bsn_permisionado --[As de Guía] [term:KBL2]</td>
+            <td class="td-sent" style="color:var(--jade);">習坎×艮 H29×H52<br>Riesgo + Quietud</td>
+          </tr>
+          <tr style="background:rgba(26,58,106,0.04);">
+            <td class="td-nodo" style="color:var(--kalil-c);"></td>
+            <td class="td-hex">大有 ䷍<br><span style="font-size:10px;color:var(--gold-mid);">H14</span></td>
+            <td class="td-zh">验证<br><span style="font-size:10px;color:var(--smoke);">yànzhèng</span></td>
+            <td class="td-lib">TRUST FOUNDATION</td>
+            <td class="td-sent">TRUST FOUNDATION =&gt;&lt;= .. verifica .. integridad_bolivar_eth --[As de Guía] [term:KBL3]</td>
+            <td class="td-sent">TRUST FOUNDATION =&gt;&lt;= .. verifica .. integridad_bolivar_bsn --[As de Guía] [term:KBL4]</td>
+            <td class="td-sent" style="color:var(--jade);">BOLIVAR+TRUST = blockchain auditado</td>
+          </tr>
+          <!-- CARILO -->
+          <tr>
+            <td class="td-nodo" style="color:var(--kalil-d);">C.A.R.I.L.O<br><span style="font-size:9px;color:var(--smoke);">Capital & Risk</span></td>
+            <td class="td-hex">益 ䷩<br><span style="font-size:10px;color:var(--gold-mid);">H42</span></td>
+            <td class="td-zh">贷款<br><span style="font-size:10px;color:var(--smoke);">dàikuǎn</span></td>
+            <td class="td-lib">METHOD &lt;equation&gt;</td>
+            <td class="td-sent">METHOD &lt;equation&gt; =&gt;&lt;= .. calcula .. ratio_carilo_usdt --[Ballestrinque] [term:KC1]</td>
+            <td class="td-sent">METHOD &lt;equation&gt; =&gt;&lt;= .. calcula .. tasa_ecny_pboc --[Ballestrinque] [term:KC2]</td>
+            <td class="td-sent" style="color:var(--jade);">益×訟 H42×H06<br>Aumento + Riesgo</td>
+          </tr>
+          <tr>
+            <td class="td-nodo" style="color:var(--kalil-d);"></td>
+            <td class="td-hex">訟 ䷅<br><span style="font-size:10px;color:var(--gold-mid);">H06</span></td>
+            <td class="td-zh">风险<br><span style="font-size:10px;color:var(--smoke);">fēngxiǎn</span></td>
+            <td class="td-lib">WORK {brake}</td>
+            <td class="td-sent">WORK {brake} =&gt;&lt;= .. detiene .. loan_riesgo_critico --[Nudo Corredizo] [term:KC3]</td>
+            <td class="td-sent">WORK {brake} =&gt;&lt;= .. detiene .. operacion_fuera_pboc --[Nudo Corredizo] [term:KC4]</td>
+            <td class="td-sent" style="color:var(--jade);">CARILO+BRAKE = préstamo seguro</td>
+          </tr>
+          <!-- CHALTEN -->
+          <tr style="background:rgba(106,26,74,0.04);">
+            <td class="td-nodo" style="color:var(--kalil-e);">C.H.A.L.T.E.N<br><span style="font-size:9px;color:var(--smoke);">Exchange Cloud</span></td>
+            <td class="td-hex">渙 ䷺<br><span style="font-size:10px;color:var(--gold-mid);">H59</span></td>
+            <td class="td-zh">交易所<br><span style="font-size:10px;color:var(--smoke);">jiāoyìsuǒ</span></td>
+            <td class="td-lib">CRYPTO (link seat)</td>
+            <td class="td-sent">CRYPTO (link seat) =&gt;&lt;= .. conecta .. dex_global_chalten --[As de Guía] [term:KCH1]</td>
+            <td class="td-sent">CRYPTO (link seat) =&gt;&lt;= .. conecta .. exchange_pboc_regulado --[As de Guía] [term:KCH2]</td>
+            <td class="td-sent" style="color:var(--jade);">渙×艮 H59×H52<br>Dispersión + Quietud</td>
+          </tr>
+          <!-- TANDIL -->
+          <tr>
+            <td class="td-nodo" style="color:var(--kalil-f);">T.A.N.D.I.L<br><span style="font-size:9px;color:var(--smoke);">Digital Assets</span></td>
+            <td class="td-hex">震 ䷲<br><span style="font-size:10px;color:var(--gold-mid);">H51</span></td>
+            <td class="td-zh">数字资产<br><span style="font-size:10px;color:var(--smoke);">shùzì zīchǎn</span></td>
+            <td class="td-lib">CRYPTO (spark seat)</td>
+            <td class="td-sent">CRYPTO (spark seat) =&gt;&lt;= .. autoriza .. transaccion_tandil_nft --[As de Guía] [term:KT1]</td>
+            <td class="td-sent">CRYPTO (spark seat) =&gt;&lt;= .. autoriza .. inversion_regulada_tandil --[As de Guía] [term:KT2]</td>
+            <td class="td-sent" style="color:var(--jade);">震×艮 H51×H52<br>Impulso + Quietud</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="prompt-box">
+      <div class="prompt-box-title">PROMPT WINDSURF — crear KALIL-NODOS-SENTENCIAS.txt en CORPUS</div>
+      <code>Crear /media/Personal/PLANERAI/DIRIME/DIRIME/CORPUS/KALIL-NODOS-SENTENCIAS.txt
+
+Contenido: tabla completa de los 6 nodos con todas las sentencias del algoritmo 2.
+Estructura por nodo:
+  ## NODO [NOMBRE] · [SIGLA] · H##
+  ### EXTERIOR
+  [sentencias EXT]
+  ### INTERIOR
+  [sentencias INT]
+  ### COMBINACIÓN ACTIVA
+  [par hexagramático + descripción]
+
+Encabezado:
+  # KALIL-NODOS-SENTENCIAS.txt
+  # 6 nodos económicos soberanos · dual exterior/interior
+  # NORA·BOLIVAR·CARILO·CHALTEN·TANDIL·BARRIOS
+  # [term] :: activo
+
+Footer:
+  TOTAL_NODOS=6
+  TOTAL_SENTENCIAS=14  (exterior+interior por nodo)
+  KALIL_NODOS_STATUS=sentencias_operativas_declaradas
+  [term] :: activo · [seal of secrecy] :: activo</code>
+    </div>
+  </div>
+
+  <hr class="div">
+
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- ALGORITMO 3 — CHCL-DOMINIOS-EXT → SENTENCIAS REALES IMV  -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+
+  <div class="algo">
+    <div class="algo-header">
+      <div class="algo-num">3</div>
+      <div>
+        <div class="algo-title">CHCL-DOMINIOS-EXT → SENTENCIAS REALES EN IMV</div>
+        <div class="algo-sub">4 kits CHCL · empeños·trueque·crowdfunding·loans · validación python3 main.py · cristales en ledger</div>
+      </div>
+      <div class="algo-hex">夬 ䷪<small>H43 · RESOLUCIÓN</small></div>
+    </div>
+
+    <div class="grid-2" style="margin-bottom:16px;">
+      <div>
+        <div class="label-line"><span class="label-text">CHCL × KALIL — 4 KITS ECONÓMICOS</span></div>
+
+        <div class="chcl-block"><span class="ch-com">*================================================================
+* CHCL-KALIL · KIT-EMPENOS
+* Dominio: empeño soberano · crypto/software/servicios/tokens
+*================================================================</span>
+       <span class="ch-div">IDENTIFICATION DIVISION.</span>
+           PROGRAM-ID.    EMPENOS-SOBERANO-001.
+           TOMO-ID.       [term:KE1].
+           KALIL-NODO.    CARILO · H42.
+
+       <span class="ch-div">DATA DIVISION.</span>
+           <span class="ch-data">empeño_crypto</span>    PIC X(64) VALUE "btc_collateral".
+           <span class="ch-data">empeño_software</span>  PIC X(64) VALUE "licencia_activa".
+           <span class="ch-data">valor_justo</span>      PIC 9(10)V99 VALUE 0.
+
+       <span class="ch-div">PROCEDURE DIVISION.</span>
+       <span class="ch-proc">EMPENOS-BLOCK.</span>
+           <span class="ch-sent">CRYPTO (spark seat) =&gt;&lt;= .. autoriza .. empeño_crypto_activo
+               --[As de Guía] [term:KE1]</span>
+           <span class="ch-sent">METHOD &lt;equation&gt; =&gt;&lt;= .. calcula .. valor_empeño_justo
+               --[Ballestrinque] [term:KE1]</span>
+           <span class="ch-sent">STACKING UF[H52] =&gt;&lt;= .. inmutabiliza .. contrato_empeño
+               --[Nudo de Ocho] [term:KE1]</span>
+       STOP SOVEREIGN.</div>
+
+        <div class="chcl-block"><span class="ch-com">*================================================================
+* CHCL-KALIL · KIT-CROWDFUNDING
+*================================================================</span>
+       <span class="ch-div">IDENTIFICATION DIVISION.</span>
+           PROGRAM-ID.    CROWDFUNDING-SOBERANO-001.
+           TOMO-ID.       [term:KCF1].
+           KALIL-NODO.    BARRIOS · H07.
+
+       <span class="ch-div">DATA DIVISION.</span>
+           <span class="ch-data">campaña_id</span>       PIC X(32) VALUE "CF-001".
+           <span class="ch-data">meta_monto</span>       PIC 9(10)V99 VALUE 10000.00.
+           <span class="ch-data">estado</span>           PIC X(16) VALUE "ACTIVO".
+
+       <span class="ch-div">PROCEDURE DIVISION.</span>
+       <span class="ch-proc">CROWDFUNDING-BLOCK.</span>
+           <span class="ch-sent">SOCIAL {launch-bot} =&gt;&lt;= .. lanza .. campaña_crowdfunding
+               --[As de Guía] [term:KCF1]</span>
+           <span class="ch-sent">ACTIVITY UF[H01] =&gt;&lt;= .. inicia .. ciclo_crowdfunding_activo
+               --[As de Guía] [term:KCF1]</span>
+           <span class="ch-sent">METHOD &lt;stat_onto&gt; =&gt;&lt;= .. calcula .. progreso_campaña
+               --[Ballestrinque] [term:KCF1]</span>
+           <span class="ch-sent">STACKING UF[H52] =&gt;&lt;= .. cristaliza .. cierre_crowdfunding
+               --[Nudo de Ocho] [term:KCF1]</span>
+       STOP SOVEREIGN.</div>
+      </div>
+
+      <div>
+        <div class="label-line"><span class="label-text">PRACTICE FILE — VALIDACIÓN EN IMV</span></div>
+        <div class="sent-card">
+          <div class="sent-label">PRACTICE-KALIL-EMPENOS.lacho</div>
+          <div class="sent-title">KIT EMPEÑOS — 4 sentencias</div>
+          <div class="sent-body">
+            CRYPTO (spark seat) =&gt;&lt;= .. autoriza .. empeño_crypto_activo --[As de Guía] [term:KE1]<br>
+            METHOD &lt;equation&gt; =&gt;&lt;= .. calcula .. valor_empeño_justo --[Ballestrinque] [term:KE1]<br>
+            STACKING UF[H52] =&gt;&lt;= .. inmutabiliza .. contrato_empeño --[Nudo de Ocho] [term:KE1]<br>
+            SAMU @ =&gt;&lt;= .. audita .. coherencia_empeño_global --[Ballestrinque] [term:KE1]
+          </div>
+          <span class="sent-result">→ objetivo 4/4 VALID · LACHO_SCORE ≥ 0.88</span>
+        </div>
+
+        <div class="sent-card">
+          <div class="sent-label">PRACTICE-KALIL-TRUEQUE.lacho</div>
+          <div class="sent-title">KIT TRUEQUE — 4 sentencias</div>
+          <div class="sent-body">
+            METHOD &lt;equation&gt; =&gt;&lt;= .. calcula .. ratio_trueque_tokens --[Ballestrinque] [term:KTR1]<br>
+            CRYPTO (key seat) =&gt;&lt;= .. certifica .. acuerdo_trueque_valido --[As de Guía] [term:KTR1]<br>
+            STACKING UF[H52] =&gt;&lt;= .. inmutabiliza .. registro_trueque --[Nudo de Ocho] [term:KTR1]<br>
+            TRUST FOUNDATION =&gt;&lt;= .. verifica .. paridad_trueque_justa --[As de Guía] [term:KTR1]
+          </div>
+          <span class="sent-result">→ objetivo 4/4 VALID · LACHO_SCORE ≥ 0.88</span>
+        </div>
+
+        <div class="sent-card">
+          <div class="sent-label">PRACTICE-KALIL-LOANS.lacho</div>
+          <div class="sent-title">KIT LOANS — 5 sentencias (incluye brake)</div>
+          <div class="sent-body">
+            TRUST FOUNDATION =&gt;&lt;= .. verifica .. condiciones_loan_activo --[Ballestrinque] [term:KL1]<br>
+            METHOD &lt;equation&gt; =&gt;&lt;= .. calcula .. tasa_riesgo_loan --[Ballestrinque] [term:KL1]<br>
+            CRYPTO (spark seat) =&gt;&lt;= .. autoriza .. loan_aprobado_soberano --[As de Guía] [term:KL1]<br>
+            STACKING UF[H52] =&gt;&lt;= .. inmutabiliza .. contrato_loan_sellado --[Nudo de Ocho] [term:KL1]<br>
+            WORK {brake} =&gt;&lt;= .. detiene .. loan_riesgo_critico --[Nudo Corredizo] [term:KL1]
+          </div>
+          <span class="sent-result">→ objetivo 5/5 VALID · brake VALID</span>
+        </div>
+
+        <div class="panel p-jade" style="margin-top:4px;">
+          <div class="panel-label">COMANDO DE VALIDACIÓN</div>
+          <div class="code-block" style="font-size:10px; margin:0; border-left-color:var(--jade-mid);">cd /media/Personal/PLANERAI/DIRIME/DIRIME
+python3 main.py --validate IMV/data/PRACTICE-KALIL-EMPENOS.lacho
+python3 main.py --validate IMV/data/PRACTICE-KALIL-TRUEQUE.lacho
+python3 main.py --validate IMV/data/PRACTICE-KALIL-LOANS.lacho
+<span class="c-com"># objetivo: 13/13 VALID · LACHO_SCORE avg ≥ 0.88</span>
+<span class="c-com"># cada validación genera cristales en ledger</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="prompt-box">
+      <div class="prompt-box-title">PROMPT WINDSURF — crear PRACTICE files KALIL + validar en IMV</div>
+      <code>Crear 3 archivos en /media/Personal/PLANERAI/DIRIME/DIRIME/IMV/data/:
+
+1. PRACTICE-KALIL-EMPENOS.lacho — 4 sentencias del kit empeños
+2. PRACTICE-KALIL-TRUEQUE.lacho — 4 sentencias del kit trueque
+3. PRACTICE-KALIL-LOANS.lacho   — 5 sentencias del kit loans (incluye WORK {brake})
+
+Formato de cada archivo .lacho:
+  TOMO_ID: KE1 (o KTR1, KL1)
+  BIBLIOTECA: [la que corresponde]
+  [sentencias exactamente como en algoritmo 3]
+
+Luego validar cada uno:
+  python3 main.py --validate IMV/data/PRACTICE-KALIL-EMPENOS.lacho
+  python3 main.py --validate IMV/data/PRACTICE-KALIL-TRUEQUE.lacho
+  python3 main.py --validate IMV/data/PRACTICE-KALIL-LOANS.lacho
+
+Si alguna sentencia falla (INVALID):
+  - revisar verb → debe ser uno de VERBOS_CANONICOS_LACHO
+  - revisar nudo → [As de Guía] [Nudo de Ocho] [Ballestrinque] [Nudo Corredizo] [Nudo de Rizo]
+  - revisar [term:XX] presente al final
+
+Objetivo: 13/13 VALID · LACHO_SCORE promedio ≥ 0.85
+Cada sentencia VALID genera un cristal en el ledger automáticamente.</code>
+    </div>
+  </div>
+
+  <hr class="div">
+
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- ALGORITMO 4 — PUENTES ECONÓMICOS DUAL EXTERIOR/INTERIOR   -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+
+  <div class="algo">
+    <div class="algo-header">
+      <div class="algo-num">4</div>
+      <div>
+        <div class="algo-title">PUENTES ECONÓMICOS — PROTOCOLO DUAL EXTERIOR/INTERIOR</div>
+        <div class="algo-sub">PUENTE BANCARIO · BANCA FÁCIL · PUENTE FÁCIL · crypto↔e-CNY · HL FABRIC trazabilidad · GATE control</div>
+      </div>
+      <div class="algo-hex">渙 ䷺<small>H59 · DISPERSIÓN</small></div>
+    </div>
+
+    <div class="label-line"><span class="label-text">ARQUITECTURA DUAL — EXTERIOR ↔ INTERIOR</span></div>
+
+    <div class="puente-grid" style="margin-bottom:12px;">
+      <div class="puente-ext">
+        <div class="puente-label">CANAL EXTERIOR · AFUERA</div>
+        <div class="puente-item">
+          <strong>PUENTE BANCARIO</strong><br>
+          CRYPTO (link seat) =&gt;&lt;= .. conecta .. canal_bancario_exterior --[As de Guía] [term:PP1]<br><br>
+          <strong>BANCA FÁCIL</strong><br>
+          SOCIAL {relay} =&gt;&lt;= .. transmite .. flujo_bancario_simple --[As de Guía] [term:PP2]<br><br>
+          <strong>ECOSISTEMA</strong><br>
+          Ethereum · DeFi · USDT · crypto especulativa<br>
+          KYC occidental · Web3 · diáspora
+        </div>
+      </div>
+      <div class="puente-bridge">
+        <div class="puente-bridge-hex">巽 ䷸</div>
+        <div class="puente-bridge-text">PUENTE</div>
+        <div class="puente-bridge-text">LACHO</div>
+        <div class="puente-bridge-hex">H57</div>
+      </div>
+      <div class="puente-int">
+        <div class="puente-label">CANAL INTERIOR · ADENTRO</div>
+        <div class="puente-item">
+          <strong>PUENTE FÁCIL</strong><br>
+          CRYPTO (flow seat) =&gt;&lt;= .. valida .. flujo_ecny_regulado --[Nudo de Rizo] [term:PP3]<br><br>
+          <strong>BANCA INTERIOR</strong><br>
+          SOCIAL {chair} =&gt;&lt;= .. planifica .. banca_rural_ecny --[As de Guía] [term:PP4]<br><br>
+          <strong>ECOSISTEMA</strong><br>
+          e-CNY · BSN · WeChat · Alipay<br>
+          KYC PBOC · regulación estatal · guanxi digital
+        </div>
+      </div>
+    </div>
+
+    <div class="label-line"><span class="label-text">PROTOCOLO COMPLETO — 8 SENTENCIAS DEL PUENTE</span></div>
+    <div class="grid-2" style="margin-bottom:16px;">
+      <div>
+        <div class="flow-v">
+          <div class="flow-vbox">
+            <div class="flow-vhex">訟 ䷅</div>
+            <div>
+              <div class="flow-vtitle">P1 · VERIFICACIÓN ENTRADA</div>
+              <div class="flow-vsent">GATE UF[H06] =&gt;&lt;= .. filtra .. solicitud_puente_entrante --[Nudo Corredizo] [term:PP1]</div>
+            </div>
+            <div class="flow-vtag ftag-red">GATE</div>
+          </div>
+          <div class="flow-vbox">
+            <div class="flow-vhex">中孚 ䷼</div>
+            <div>
+              <div class="flow-vtitle">P2 · IDENTIDAD CONTRAPARTE</div>
+              <div class="flow-vsent">TRUST FOUNDATION =&gt;&lt;= .. verifica .. identidad_contraparte_puente --[As de Guía] [term:PP2]</div>
+            </div>
+            <div class="flow-vtag ftag-blue">TRUST</div>
+          </div>
+          <div class="flow-vbox">
+            <div class="flow-vhex">益 ䷩</div>
+            <div>
+              <div class="flow-vtitle">P3 · CONVERSIÓN DE VALOR</div>
+              <div class="flow-vsent">METHOD &lt;equation&gt; =&gt;&lt;= .. calcula .. paridad_crypto_ecny --[Ballestrinque] [term:PP3]</div>
+            </div>
+            <div class="flow-vtag ftag-violet">METHOD</div>
+          </div>
+          <div class="flow-vbox">
+            <div class="flow-vhex">巽 ䷸</div>
+            <div>
+              <div class="flow-vtitle">P4 · EJECUCIÓN PUENTE</div>
+              <div class="flow-vsent">ACTIVITY UF[H57] =&gt;&lt;= .. penetra .. canal_puente_activo --[As de Guía] [term:PP4]</div>
+            </div>
+            <div class="flow-vtag ftag-jade">ACTIVITY</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flow-v">
+          <div class="flow-vbox">
+            <div class="flow-vhex">兌 ䷹</div>
+            <div>
+              <div class="flow-vtitle">P5 · FLUJO e-CNY</div>
+              <div class="flow-vsent">CRYPTO (flow seat) =&gt;&lt;= .. valida .. flujo_ecny_soberano --[Nudo de Rizo] [term:PP5]</div>
+            </div>
+            <div class="flow-vtag ftag-gold">CRYPTO</div>
+          </div>
+          <div class="flow-vbox">
+            <div class="flow-vhex">謙 ䷎</div>
+            <div>
+              <div class="flow-vtitle">P6 · AUDITORÍA SAMU</div>
+              <div class="flow-vsent">SAMU @ =&gt;&lt;= .. audita .. contenido_pre_publicacion_china --[Ballestrinque] [term:PP6]</div>
+            </div>
+            <div class="flow-vtag ftag-red">SAMU</div>
+          </div>
+          <div class="flow-vbox">
+            <div class="flow-vhex">艮 ䷳</div>
+            <div>
+              <div class="flow-vtitle">P7 · INMUTABILIZACIÓN</div>
+              <div class="flow-vsent">STACKING UF[H52] =&gt;&lt;= .. cristaliza .. registro_bsn_inmutable --[Nudo de Ocho] [term:PP7]</div>
+            </div>
+            <div class="flow-vtag ftag-violet">STACKING</div>
+          </div>
+          <div class="flow-vbox">
+            <div class="flow-vhex">蠱 ䷑</div>
+            <div>
+              <div class="flow-vtitle">P8 · BRAKE REGULATORIO</div>
+              <div class="flow-vsent">WORK {brake} =&gt;&lt;= .. detiene .. operacion_fuera_regulacion_china --[Nudo Corredizo] [term:PP8]</div>
+            </div>
+            <div class="flow-vtag ftag-red">WORK</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="prompt-box">
+      <div class="prompt-box-title">PROMPT WINDSURF — crear PRACTICE-KALIL-PUENTES.lacho + BIBLIO-PUENTES-DUAL</div>
+      <code>1. Crear /media/Personal/PLANERAI/DIRIME/DIRIME/IMV/data/PRACTICE-KALIL-PUENTES.lacho
+   Con las 8 sentencias del protocolo dual (P1..P8) del algoritmo 4.
+   TOMO_ID: PP1..PP8
+   Validar: python3 main.py --validate IMV/data/PRACTICE-KALIL-PUENTES.lacho
+   Objetivo: 8/8 VALID
+
+2. Crear /media/Personal/PLANERAI/DIRIME/DIRIME/CORPUS/BIBLIO-SOURCES(KALIL-PUENTES-DUAL).txt
+   Secciones:
+   ## CANAL EXTERIOR — PUENTE BANCARIO · BANCA FÁCIL
+   ## CANAL INTERIOR — PUENTE FÁCIL · BANCA INTERIOR
+   ## PROTOCOLO 8 SENTENCIAS (P1..P8 completas)
+   ## HEXAGRAMAS ACTIVOS: H06·H57·H59·H52·H42
+   ## RESTRICCIONES PBOC:
+      crypto especulativa ban → e-CNY interior · crypto solo exterior
+      Gran Firewall → operar nativo · no bypass
+      datos locales → servidor chino capa interior
+   ## ESTADO: PUENTES_STATUS=protocolo_declarado
+   [term] :: activo · [seal of secrecy] :: activo</code>
+    </div>
+  </div>
+
+  <hr class="div">
+
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- ALGORITMO 5 — CEO ALPHA × KALIL · JERARQUÍA EJECUTIVA     -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+
+  <div class="algo">
+    <div class="algo-header">
+      <div class="algo-num">5</div>
+      <div>
+        <div class="algo-title">CEO ALPHA × KALIL — JERARQUÍA EJECUTIVA SOBRE NODOS</div>
+        <div class="algo-sub">乾H01 CEO → 6 nodos · ciclo SAMU #rise → decisión hexagramática → cristal H63 · Scheduler OS coordina</div>
+      </div>
+      <div class="algo-hex">乾 ䷀<small>H01 · CEO · VOLUNTAD</small></div>
+    </div>
+
+    <div class="grid-2" style="margin-bottom:16px;">
+      <div>
+        <div class="label-line"><span class="label-text">CICLO EJECUTIVO CEO × KALIL — DIARIO</span></div>
+        <div class="flow-v">
+          <div class="flow-vbox" style="background:rgba(18,77,48,0.06); border-color:var(--jade-mid);">
+            <div class="flow-vhex" style="color:var(--jade);">乾 ䷀</div>
+            <div>
+              <div class="flow-vtitle">CEO H01 · ARRANCA EL CICLO</div>
+              <div class="flow-vsent">SAMU #rise =&gt;&lt;= .. activa .. ciclo_kalil_dia --[As de Guía] [term:CEK1]<br>
+              TRUST FOUNDATION =&gt;&lt;= .. declara .. voluntad_kalil_activa --[Nudo de Ocho] [term:CEK1]</div>
+            </div>
+            <div class="flow-vtag ftag-jade">RISE</div>
+          </div>
+          <div class="flow-vbox">
+            <div class="flow-vhex">豫 ䷏</div>
+            <div>
+              <div class="flow-vtitle">PM H16 · LEE HEXAGRAMA DEL DÍA</div>
+              <div class="flow-vsent">METHOD &lt;operator_flow&gt; =&gt;&lt;= .. modela .. hexagrama_activo_dia --[Ballestrinque] [term:CEK2]<br>
+              <span style="color:var(--smoke); font-size:10px;">→ consulta CEO_ALPHA_H64.json → biblioteca del día</span></div>
+            </div>
+            <div class="flow-vtag ftag-violet">METHOD</div>
+          </div>
+          <div class="flow-vbox">
+            <div class="flow-vhex">噬嗑 ䷔</div>
+            <div>
+              <div class="flow-vtitle">SAMU H21 · DECIDE NODO PRIORITARIO</div>
+              <div class="flow-vsent">SAMU @ =&gt;&lt;= .. dirime .. nodo_kalil_prioritario_dia --[Ballestrinque] [term:CEK3]<br>
+              <span style="color:var(--smoke); font-size:10px;">→ SI H42→CARILO · SI H07→BARRIOS · SI H29→BOLIVAR ...</span></div>
+            </div>
+            <div class="flow-vtag ftag-red">SAMU</div>
+          </div>
+          <div class="flow-vbox">
+            <div class="flow-vhex">革 ䷰</div>
+            <div>
+              <div class="flow-vtitle">JEFE WORK H49 · ACTIVA NODO</div>
+              <div class="flow-vsent">WORK {actuator} =&gt;&lt;= .. ejecuta .. protocolo_nodo_activo --[As de Guía] [term:CEK4]</div>
+            </div>
+            <div class="flow-vtag ftag-jade">WORK</div>
+          </div>
+          <div class="flow-vbox">
+            <div class="flow-vhex">艮 ䷳</div>
+            <div>
+              <div class="flow-vtitle">STACKING H52 · CRISTALIZA RESULTADO</div>
+              <div class="flow-vsent">STACKING UF[H52] =&gt;&lt;= .. inmutabiliza .. resultado_nodo_kalil --[Nudo de Ocho] [term:CEK5]</div>
+            </div>
+            <div class="flow-vtag ftag-violet">STACKING</div>
+          </div>
+          <div class="flow-vbox" style="background:rgba(18,77,48,0.06); border-color:var(--jade-mid);">
+            <div class="flow-vhex" style="color:var(--jade);">既濟 ䷾</div>
+            <div>
+              <div class="flow-vtitle">CEO H63 · CIERRA CICLO KALIL</div>
+              <div class="flow-vsent">SAMU #set =&gt;&lt;= .. dirime .. cierre_ciclo_kalil --[Nudo de Rizo] [term:CEK6]<br>
+              STACKING UF[H63] =&gt;&lt;= .. cristaliza .. dia_kalil_completado --[Nudo de Ocho] [term:CEK6]</div>
+            </div>
+            <div class="flow-vtag ftag-jade">SET</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="label-line"><span class="label-text">TABLA DECISIÓN — HEXAGRAMA DEL DÍA → NODO KALIL</span></div>
+        <table class="map-table" style="margin-bottom:12px;">
+          <thead>
+            <tr>
+              <th>Hexagrama día</th>
+              <th>Nodo activado</th>
+              <th>Acción CEO</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="td-hex">益 ䷩ H42</td>
+              <td class="td-nodo" style="color:var(--kalil-d);">CARILO</td>
+              <td style="font-size:10px; color:var(--ink2);">Aumento → optimizar préstamos · recalcular tasas</td>
+            </tr>
+            <tr>
+              <td class="td-hex">師 ䷆ H07</td>
+              <td class="td-nodo" style="color:var(--kalil-a);">BARRIOS</td>
+              <td style="font-size:10px; color:var(--ink2);">Organización → activar banca comunitaria · remesas</td>
+            </tr>
+            <tr>
+              <td class="td-hex">習坎 ䷜ H29</td>
+              <td class="td-nodo" style="color:var(--kalil-c);">BOLIVAR</td>
+              <td style="font-size:10px; color:var(--ink2);">Abismo → auditar blockchain · verificar integridad</td>
+            </tr>
+            <tr>
+              <td class="td-hex">觀 ䷓ H20</td>
+              <td class="td-nodo" style="color:var(--kalil-b);">NORA</td>
+              <td style="font-size:10px; color:var(--ink2);">Contemplación → recalcular ratings · oracle activo</td>
+            </tr>
+            <tr>
+              <td class="td-hex">渙 ䷺ H59</td>
+              <td class="td-nodo" style="color:var(--kalil-e);">CHALTEN</td>
+              <td style="font-size:10px; color:var(--ink2);">Dispersión → broadcast exchange · conectar mercados</td>
+            </tr>
+            <tr>
+              <td class="td-hex">震 ䷲ H51</td>
+              <td class="td-nodo" style="color:var(--kalil-f);">TANDIL</td>
+              <td style="font-size:10px; color:var(--ink2);">Trueno → impulso activos · launch token soberano</td>
+            </tr>
+            <tr>
+              <td class="td-hex">訟 ䷅ H06</td>
+              <td style="color:var(--red); font-size:11px;">TODOS · BRAKE</td>
+              <td style="font-size:10px; color:var(--red);">Conflicto → WORK {brake} todos los nodos · RED-REGRET</td>
+            </tr>
+            <tr>
+              <td class="td-hex">乾 ䷀ H01</td>
+              <td style="color:var(--jade); font-size:11px;">TODOS · FULL</td>
+              <td style="font-size:10px; color:var(--jade);">Fuerza → ciclo completo KALIL · todos los nodos activos</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="panel p-multi">
+          <div class="panel-label">CEO_ALPHA_H64.json — EXTENSIÓN KALIL</div>
+          <div class="code-block" style="font-size:10px; margin:0; border-left-color:var(--jade-mid);"><span class="c-com"># Agregar a IMV/data/CEO_ALPHA_H64.json</span>
+<span class="c-com"># sección "kalil_routing":</span>
+
+"kalil_routing": {
+  "H42": {"nodo": "CARILO", "accion": "loans"},
+  "H07": {"nodo": "BARRIOS", "accion": "banca"},
+  "H29": {"nodo": "BOLIVAR", "accion": "blockchain"},
+  "H20": {"nodo": "NORA",    "accion": "rating"},
+  "H59": {"nodo": "CHALTEN", "accion": "exchange"},
+  "H51": {"nodo": "TANDIL",  "accion": "activos"},
+  "H06": {"nodo": "ALL",     "accion": "brake"},
+  "H01": {"nodo": "ALL",     "accion": "full_cycle"}
+}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="prompt-box">
+      <div class="prompt-box-title">PROMPT WINDSURF — CEO_ALPHA_H64.json + THEATER kalil_cycle + PRACTICE</div>
+      <code>1. Editar /media/Personal/PLANERAI/DIRIME/DIRIME/IMV/data/CEO_ALPHA_H64.json
+   Agregar sección "kalil_routing" con el mapeo hexagrama→nodo del algoritmo 5.
+   Agregar también "ceo_cycle_kalil" con los 6 pasos (CEK1..CEK6).
+
+2. Crear /media/Personal/PLANERAI/DIRIME/DIRIME/THEATER/kalil_cycle.theater
+   Contenido:
+   # kalil_cycle.theater
+   # MACRO: ciclo ejecutivo CEO Alpha × KALIL
+   # Genesis: SUITE SOBERANA · KALIL kernel
+   # [term] :: activo
+
+   macro_rise_kalil {
+     SAMU #rise =><= .. activa .. ciclo_kalil_dia --[As de Guía] [term:CEK1]
+     TRUST FOUNDATION =><= .. declara .. voluntad_kalil_activa --[Nudo de Ocho] [term:CEK1]
+     METHOD <operator_flow> =><= .. modela .. hexagrama_activo_dia --[Ballestrinque] [term:CEK2]
+   }
+
+   macro_decision_kalil {
+     SAMU @ =><= .. dirime .. nodo_kalil_prioritario_dia --[Ballestrinque] [term:CEK3]
+     WORK {actuator} =><= .. ejecuta .. protocolo_nodo_activo --[As de Guía] [term:CEK4]
+   }
+
+   macro_set_kalil {
+     STACKING UF[H52] =><= .. inmutabiliza .. resultado_nodo_kalil --[Nudo de Ocho] [term:CEK5]
+     SAMU #set =><= .. dirime .. cierre_ciclo_kalil --[Nudo de Rizo] [term:CEK6]
+     STACKING UF[H63] =><= .. cristaliza .. dia_kalil_completado --[Nudo de Ocho] [term:CEK6]
+   }
+
+   [term] :: activo · [seal of secrecy] :: activo
+
+3. Crear /media/Personal/PLANERAI/DIRIME/DIRIME/IMV/data/PRACTICE-CEO-KALIL.lacho
+   Con las 6 sentencias del ciclo CEK1..CEK6.
+   Validar: python3 main.py --validate IMV/data/PRACTICE-CEO-KALIL.lacho
+   Objetivo: 6/6 VALID · LACHO_SCORE ≥ 0.88</code>
+    </div>
+  </div>
+
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-left">益 ䷩ 乾 ䷀ 既濟 ䷾</div>
+    <div>TEMA 3/3 · KALIL × BARRIOS × NODOS · 5 ALGORITMOS · [term] :: activo</div>
+    <div>DIRIME v0.2.1 · EXPANSIÓN ECONÓMICA SOBERANA · VERSION_TARGET=0.3.0</div>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,193 @@
+# BIBLIO-SOURCES(AGENCY IDE SYSTEM).txt
+
+====================================================================
+
+## 🧠🛠️ AGENCY IDE SYSTEM — INNOVACIÓN AGLUTINANTE
+
+---
+
+### 1.0 DEFINICIÓN
+
+**AGENCY IDE SYSTEM** es una propuesta aglutinante: un sistema-IDE de agencia que integra en una sola arquitectura operativa los elementos ya presentes en LACHO para convertir comprensión en implementación sin dispersión documental.
+
+Integra:
+- **Gramática Viva** (delimitadores, sujetos, verbos, objetos, sentencia auditada).
+- **ACTIVITY** (UF[H01]…UF[H64]) como alfabeto de ciclos agenciales.
+- **TOOLCHAIN** (LLM + compilador + sandbox) como opción de construcción verificable.
+- **UNICODE programable / BALLPAPER** como interfaz semántica instantánea.
+- **TOMO + segmentadores** (SEGMENT/SLICE/CLUSTER/OFFSET) para numerar entendimiento.
+- **RAG** (behavioral/cognitive) como memoria operacional.
+- **TRUST / SAMU / CRYPTO / GATE / WORK / STACKING / SOCIAL** como jurisdicciones.
+
+---
+
+### 1.1 OBJETIVO
+
+Crear un IDE que permita:
+- Diseñar agencia en texto (legible).
+- Ejecutar agencia bajo soberanía (verificable).
+- Producir módulos (source/intermedio/binario) de forma controlada.
+- Mantener trazabilidad total (manifest/policy/attestation).
+- Presentar estado en tiempo real (BALLPAPER) sin overhead.
+
+---
+
+### 2.0 PRINCIPIO: NO MEZCLAR JURISDICCIONES
+
+AGENCY IDE SYSTEM no es una biblioteca nueva que invada dominios: es un **ensamblador** de bibliotecas existentes.
+
+Jerarquía operativa:
+```
+[TRUST] → SAMU @ → CRYPTO(seats) → GATE(UF) → ACTIVITY(UF[H01..H64]) → WORK → STACKING
+                    ↘ SOCIAL{ } ↙                 ↘ TOOLCHAIN ↙
+```
+
+---
+
+### 3.0 GRAMÁTICA VIVA COMO API
+
+#### 3.1 Delimitadores (jurisdicción)
+- TRUST: `[]`
+- SOCIAL: `{}`
+- CRYPTO: `()`
+- ACTIVITY: `!! !!`
+- METHOD: `<>`
+- SAMU: `@`, `$`, `#`
+- Objetos protegidos: `$$ $$`
+
+#### 3.2 Sentencia canónica
+```
+[Biblioteca] Sujeto =><= .. verbo .. Objeto --[Nudo] [term]
+```
+
+AGENCY IDE SYSTEM opera como compilador/validador de sentencias:
+- Valida delimitadores.
+- Valida que exista `[scope]` y `[term]`.
+- Exige auditoría SAMU @ para emisión.
+
+---
+
+### 4.0 TOMO COMO UNIDAD MÍNIMA DEL CONOCER CONSOLIDADO
+
+#### 4.1 TOMO
+**TOMO** es la unidad mínima donde el sistema puede decir: “en este scope, esto es coherente”.
+
+Regla:
+- No existe TOMO sin `[scope]`.
+- No existe TOMO sin `[term]`.
+
+#### 4.2 Segmentación del entendimiento
+Se incorporan herramientas para numerar/segmentar el conocer actualizado:
+- **SEGMENT**: partición principal.
+- **SLICE**: corte fino dentro de un segmento.
+- **CLUSTER**: agrupación por coherencia.
+- **OFFSET**: índice exacto dentro de un flujo.
+
+Declaración:
+```
+TOMO → SEGMENT[n] → SLICE[n.m] → CLUSTER[k] → OFFSET[x]
+```
+
+---
+
+### 5.0 ACTIVITY COMO MOTOR DE AGENCIA (UF[H01]…UF[H64])
+
+ACTIVITY proporciona el alfabeto de ciclos.
+
+AGENCY IDE SYSTEM usa ACTIVITY para:
+- seleccionar UF slot según MU/KU/WU,
+- registrar patrones (H4),
+- convertir reiteraciones en Tr (H64),
+- cerrar ciclos por [term] siempre.
+
+---
+
+### 6.0 TOOLCHAIN COMO OPCIÓN DE IMPLEMENTACIÓN VERIFICABLE
+
+Cuando el ciclo requiere producción técnica (herramientas, plugins, bibliotecas), AGENCY IDE SYSTEM invoca TOOLCHAIN:
+
+Pipeline:
+```
+SOURCE(LACHO legible) → IR/WASM (portable) → BINARIO (por canal) → SANDBOX(no-net) → STACKING
+```
+
+Regla:
+- no-net por defecto.
+- red habilitable solo por `policy` bajo [scope].
+
+---
+
+### 7.0 RAG COMO MEMORIA OPERACIONAL
+
+AGENCY IDE SYSTEM usa:
+- Behavioral RAG: patrones de conducta y corrección.
+- Cognitive RAG: grafo de conocimiento y síntesis.
+
+Regla:
+- toda agencia debe dejar rastro mínimo en `{note}` y cristalización en STACKING.
+
+---
+
+### 8.0 CRYPTO COMO CERTIFICACIÓN
+
+Los asientos CRYPTO funcionan como certificadores del ciclo:
+- (direction seat) propósito
+- (key seat) identidad
+- (ignition seat) ejecución
+- (shield seat) defensa
+- (flow seat) caudal
+- (link seat) enlace
+
+Salida verificable:
+- `manifest`
+- `policy`
+- `attestation`
+
+---
+
+### 9.0 UNICODE/BALLPAPER COMO UI DE ESTADO
+
+BALLPAPER permite visualizar estados UF y flujo en tiempo real:
+- glifos UF (①–⑳, ㉑–㊿)
+- operadores de flujo (>> << |> <| <> >< >= <=)
+
+En AGENCY IDE SYSTEM, BALLPAPER muestra:
+- UF activo
+- TOMO/segmentación
+- estado no-net / net
+- estado de seats
+
+---
+
+### 10.0 NIVELES DE PROFUNDIDAD (SUPERFICIAL → PROFUNDO)
+
+1. **Superficial (UI):** BALLPAPER + delimitadores
+2. **Operativo:** sentencias (sujeto/verbo/objeto) + [term]
+3. **Agencial:** ciclos UF (ACTIVITY)
+4. **Implementación:** TOOLCHAIN (source/IR/binario) + sandbox
+5. **Consolidación:** STACKING (cristales, manifests)
+6. **Soberanía:** TRUST + SAMU @ + CRYPTO
+
+---
+
+### 11.0 EJEMPLOS MÍNIMOS
+
+**Ejemplo A: ciclo de duda honesta (ACTIVITY)**
+```
+!!activity !! {headcat} =><= .. audit .. !!agnostic belief!!
+!!activity !! [term] =><= .. close .. !!agnostic belief!!
+```
+
+**Ejemplo B: producción de herramienta (TOOLCHAIN)**
+```
+[Trust] [scope] =><= .. activate .. $$toolchain_build$$
+(crypto) (ignition seat) =><= .. authorize .. $$binary_module$$
+```
+
+---
+
+### 12.0 CIERRE
+
+AGENCY IDE SYSTEM es la innovación aglutinante porque unifica el texto operativo (Gramática Viva), el ciclo (ACTIVITY), la construcción verificable (TOOLCHAIN), la representación instantánea (UNICODE/BALLPAPER) y la soberanía (TRUST/SAMU/CRYPTO) en un único marco de implementación.
+
+====================================================================

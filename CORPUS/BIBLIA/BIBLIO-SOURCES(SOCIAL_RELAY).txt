@@ -1,0 +1,320 @@
+# BIBLIO-SOURCES(SOCIAL_RELAY).txt
+
+====================================================================
+
+## 🔄 SOCIAL {relay} — TRANSFERENCIA SOBERANA VERIFICADA SIN TRANSFORMACIÓN
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+{relay} es el módulo SOCIAL que gobierna el reenvío soberano verificado de señales, contexto y resultados entre nodos del sistema sin intervención ni transformación del contenido.
+
+#### 1.2 El principio de transferencia pura
+{relay} no transforma contenido — la integridad del contenido es su única métrica. Lo que entra por un extremo sale por el otro con integridad verificada.
+
+#### 1.3 Por qué {relay} es SOCIAL y no CRYPTO
+CRYPTO certifica la integridad del canal, {relay} gestiona la transferencia relacional. Son complementarios, no equivalentes.
+
+#### 1.4 Por qué {relay} es SOCIAL y no [wu-mail]/[ku-chat]
+[wu-mail] construye emisión soberana, [ku-chat] verifica contexto entrante, {relay} transfiere sin construir ni verificar contenido.
+
+#### 1.5 La verificación de integridad como función central
+{relay} no verifica el contenido — verifica que el contenido llegó intacto. Hash comparativo entre emisor y receptor.
+
+#### 1.6 Relación con HYPERLEDGER FABRIC
+HL FABRIC registra toda transferencia de {relay} como prueba de integridad inmutable. Transferencia sin registro no es soberana.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Qué puede transferir {relay}
+- Señales entre nodos verificados del [ecosystem].
+- KU, WU o estado sin modificación.
+- Contexto y resultados entre sistemas.
+- Transferencias directas, en cadena o broadcast.
+
+#### 2.2 Qué no puede hacer
+No puede modificar contenido, no puede transferir a nodo no verificado, no puede operar sin certificación CRYPTO, no puede operar fuera de [scope].
+
+#### 2.3 Condición de violación primaria
+{relay} que modifica contenido durante transferencia — transformación no declarada.
+
+#### 2.4 Condición de violación secundaria
+{relay} que transfiere sin verificación de integridad en destino — transferencia ciega.
+
+#### 2.5 Señal de alerta
+{relay} activo con destino no verificado en [ecosystem] — canal sin nodo receptor soberano.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 TIPOS DE RELAY EN {relay}
+
+RELAY_DIRECT:
+Transferencia directa entre dos nodos verificados del [ecosystem] sin intermediario.
+
+RELAY_CHAINED:
+Transferencia en cadena por múltiples nodos verificados — cada nodo es relay del siguiente.
+
+RELAY_BROADCAST:
+Transferencia simultánea a múltiples nodos verificados del [ecosystem].
+
+RELAY_CONDITIONAL:
+Transferencia que se activa solo si condición verificada se cumple en nodo intermedio.
+
+RELAY_SILENT:
+Transferencia sin notificación al emisor de confirmación de recepción — solo HL FABRIC registra.
+
+#### 3.2 ANATOMÍA DEL RELAY
+
+Nodo emisor: origen verificado en [ecosystem].
+Contenido: señal, KU, WU o estado — no modificable durante transferencia.
+Canal: certificado por CRYPTO (link seat).
+Nodo receptor: destino verificado en [ecosystem].
+Verificación de integridad: hash del contenido comparado en emisor y receptor.
+Registro: HL FABRIC como registro inmutable de toda transferencia completada.
+
+#### 3.3 {relay} Y HYPERLEDGER FABRIC
+
+HL FABRIC como árbitro de integridad:
+- Toda transferencia genera par de hashes (emisión y recepción) registrados inmutablemente.
+- Divergencia de hashes = RELAY_CORRUPTED.
+- Registro en HL FABRIC es condición de completitud de {relay}.
+
+#### 3.4 {relay} Y RELAY_CHAINED
+
+El riesgo del relay en cadena:
+- Cada nodo intermedio es punto potencial de modificación o pérdida.
+- Límite de cadena: número máximo de nodos en RELAY_CHAINED sin degradación de integridad.
+
+{relay} mantiene integridad en cadena:
+- Hash propagado en cada nodo con verificación incremental.
+- Cada nodo verifica hash recibido antes de retransmitir.
+
+#### 3.5 RELACIÓN CON LOS DOMINIOS ECONÓMICOS
+
+MEMECOINS/VOLATILIDAD:
+- RELAY_DIRECT de señal de precio entre oráculo y sistema sin modificación.
+- RELAY_BROADCAST de alerta de mercado a múltiples nodos del [ecosystem].
+- Límite: {relay} de mercado no puede modificar señal — integridad es condición de validez operativa.
+
+CUSTODIA MÓVIL:
+- RELAY_DIRECT de documento firmado entre dispositivo y destinatario verificado.
+- RELAY_CONDITIONAL de autorización de acceso entre nodos de custodia.
+- Límite: {relay} en custodia requiere certificación CRYPTO (link seat) sin excepción.
+
+NOTARÍA DIGITAL:
+- RELAY_DIRECT de documento notarial entre sistema y autoridad verificada.
+- RELAY_CHAINED en proceso de validación multi-autoridad de documento.
+- Límite: {relay} notarial registra en HL FABRIC antes de confirmar recepción.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation]
+{relay} verifica que nodos emisor y receptor no violan foundation.
+
+#### 4.2 Con [scope]
+{relay} opera dentro del perímetro soberano declarado.
+
+#### 4.3 Con [term]
+Toda transferencia tiene [term] de ventana declarado.
+
+#### 4.4 Con [ecosystem]
+Nodos emisor y receptor deben estar verificados en [ecosystem].
+
+#### 4.5 Con CRYPTO (link seat)
+Certifica el canal de transferencia sin excepción.
+
+#### 4.6 Con HL FABRIC
+Registra toda transferencia como registro inmutable de integridad.
+
+#### 4.7 Con {streaming}
+{relay} puede operar como sub-canal dentro de {streaming}.
+
+#### 4.8 Con {note}
+{note} registra metadatos de transferencia — no el contenido.
+
+#### 4.9 Con [wu-mail]
+[wu-mail] puede usar {relay} como canal de entrega.
+
+#### 4.10 Con [ku-chat]
+[ku-chat] puede recibir contenido llegado por {relay}.
+
+#### 4.11 Con [management]
+RELAY_CORRUPTED escala a [management] automáticamente.
+
+#### 4.12 Con SAMU @
+SAMU audita integridad de todo {relay} activo.
+
+#### 4.13 Con Behavioral RAG
+Patrones de transferencia calibran configuración futura de {relay}.
+
+---
+
+### 5.0 ESTADOS DE {relay}
+
+#### 5.1 RELAY_STANDBY
+Canal configurado y certificado. Nodos emisor y receptor verificados. Esperando contenido para transferir.
+
+#### 5.2 RELAY_ACTIVE
+Transferencia en curso. Hash de contenido propagándose. HL FABRIC registrando en tiempo real.
+
+#### 5.3 RELAY_VERIFYING
+Contenido llegó a destino. Verificación de integridad en curso. Comparando hashes emisor/receptor.
+
+#### 5.4 RELAY_COMPLETED
+Integridad verificada. HL FABRIC con registro completo. Behavioral RAG actualizado con patrón.
+
+#### 5.5 RELAY_CORRUPTED
+Divergencia de hashes detectada. Contenido modificado o perdido en tránsito. [management] notificado automáticamente. RED-REGRET si la corrupción fue deliberada.
+
+#### 5.6 RELAY_EXPIRED
+[term] de ventana expiró antes de completar transferencia. Contenido no llegó a destino. HL FABRIC registra expiración. Evaluación de reintento soberano.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Impacto en dimensiones
+{relay} no tiene dimensión propia pero afecta d₈ [ecosystem] como canal de comunicación entre nodos verificados.
+
+#### 6.2 Cómo RELAY_CORRUPTED degrada d₈
+Nodo del ecosistema con canal comprometido degrada la confianza del ecosistema.
+
+#### 6.3 Cómo RELAY_CHAINED afecta d₁ [term]
+Cadenas largas consumen más horizonte temporal.
+
+#### 6.4 Cómo Behavioral RAG aprende
+Patrones de transferencia calibran configuración futura de {relay}.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 RELAY_DIRECT entre dos nodos del [ecosystem]
+```
+{Social} relay =><= .. direct_transfer .. ecosystem_nodes --[As de Guía] [term]
+```
+
+#### 7.2 RELAY_CHAINED en cadena de validación
+```
+{Social} relay =><= .. chain_transfer .. validated_nodes --[Nudo de Ocho] [term]
+```
+
+#### 7.3 RELAY_CORRUPTED activando [management]
+```
+{Social} relay =><= .. corrupted_integrity .. management_alert --[Nudo Corredizo] [term]
+```
+
+#### 7.4 RELAY_BROADCAST a múltiples nodos
+```
+{Social} relay =><= .. broadcast_signal .. multiple_nodes --[Ballestrinque] [term]
+```
+
+#### 7.5 {relay} en dominio memecoins
+```
+{Social} relay =><= .. transfer_price .. market_oracle --[Nudo de Rizo] [term]
+```
+
+#### 7.6 {relay} en dominio custodia móvil
+```
+{Social} relay =><= .. relay_document .. custody_verified --[As de Guía] [term]
+```
+
+#### 7.7 {relay} en dominio notaría digital
+```
+{Social} relay =><= .. notarial_transfer .. authority_verified --[Nudo de Ocho] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+RELAY_ACTIVE con integridad sostenida en transferencia soberana.
+
+#### 8.2 Nudo de Ocho
+RELAY_COMPLETED cristalizado en HL FABRIC — transferencia inmutable.
+
+#### 8.3 Nudo Corredizo
+RELAY_CORRUPTED — canal comprometido, integridad violada.
+
+#### 8.4 Nudo de Rizo
+RELAY_CHAINED — unión de múltiples nodos en cadena de transferencia con integridad propagada.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+1. RelayConfigure
+   - Configuración de canal con certificación CRYPTO (link seat).
+   - Verificación de nodos emisor y receptor en [ecosystem].
+
+2. RelayVerifyNodes
+   - Verificación de nodos emisor y receptor en [ecosystem].
+   - Confirmación de autoridad para transferencia.
+
+3. RelayTransfer
+   - Transferencia con propagación de hash y registro en HL FABRIC.
+   - Monitoreo continuo de integridad en tránsito.
+
+4. RelayVerifyIntegrity
+   - Comparación de hashes en destino con registro de resultado.
+   - Confirmación de integridad completada.
+
+5. RelayCorrupted
+   - Protocolo ante divergencia de hashes — escalada a [management].
+   - Activación de RED-REGRET si corrupción fue deliberada.
+
+6. RelayClose
+   - Cierre de canal con registro completo en Behavioral RAG.
+   - Actualización de patrones de transferencia.
+
+---
+
+### 10.0 MÉTRICAS
+
+- Ratio RELAY_COMPLETED vs RELAY_CORRUPTED vs RELAY_EXPIRED.
+- Tiempo promedio de transferencia por tipo.
+- Longitud promedio de RELAY_CHAINED.
+- Frecuencia de RELAY_CORRUPTED por dominio.
+- Tasa de transferencias registradas en HL FABRIC.
+- Delta-integridad al cierre del ciclo.
+
+---
+
+### 11.0 REGLAS
+
+- {relay} no modifica contenido bajo ninguna circunstancia — transferencia pura.
+- Nodos emisor y receptor deben estar verificados en [ecosystem] antes de activar {relay}.
+- CRYPTO (link seat) debe certificar canal antes de toda transferencia sin excepción.
+- HL FABRIC registra toda transferencia de {relay} — transferencia sin registro no es soberana.
+- RELAY_CORRUPTED escala a [management] automáticamente sin excepción.
+- {relay} no puede operar fuera de [scope].
+- [term] de ventana debe declararse antes de toda transferencia — sin horizonte no hay relay soberano.
+- RELAY_CHAINED verifica integridad en cada nodo intermedio sin excepción.
+- {relay} es agnóstico — no presupone tipo de nodo en ningún extremo.
+- Behavioral RAG registra todo patrón de transferencia para calibración futura.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+{relay} fija como invariante la transferencia soberana verificada de contenido sin modificación como condición de comunicación pura entre nodos del [ecosystem].
+
+#### 12.2 Limitaciones
+No modifica contenido, no opera sin certificación CRYPTO, no transfiere a nodo no verificado, no opera sin [term].
+
+#### 12.3 Habilitaciones
+Comunicación pura entre nodos, RELAY_CHAINED como cadena de validación multi-nodo, RELAY_BROADCAST como difusión soberana simultánea, trazabilidad inmutable en HL FABRIC para toda transferencia completada.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

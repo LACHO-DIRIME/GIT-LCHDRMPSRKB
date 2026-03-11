@@ -1,0 +1,259 @@
+# BIBLIO-SOURCES(WORK_BRAKE).txt
+
+====================================================================
+
+## 🛑 WORK {brake} — FRENO FÍSICO SOBERANO
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+{brake} es el único módulo WORK que puede detener WORK: el interruptor soberano que frena físicamente la ejecución ante violación crítica o emergencia detectada.
+
+#### 1.2 El freno como protección, no como obstáculo
+{brake} no es impedimento a la acción — es protección del sistema contra sí mismo ante errores o amenazas críticas.
+
+#### 1.3 Los cuatro triggers soberanos de activación
+1. Violación de [foundation] del sistema.
+2. Amenaza a integridadidad física del hardware.
+3. DOORMAN_BREACH en custodia móvil.
+4. MASK_BREACH en sandbox hardware.
+
+#### 1.4 Relación con RED-REGRET (SAMU)
+{brake} puede activarse como parte de RED-REGRET ante errores graves de ejecución.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Qué puede detener
+Ejecución en curso, proceso crítico, operación en hardware, transacción WEB3, movimiento físico.
+
+#### 2.2 Cuándo se activa automáticamente
+Ante violación de [foundation], ante DOORMAN_BREACH, ante MASK_BREACH, ante RED-REGRET crítico.
+
+#### 2.3 Condición de violación primaria
+{brake} ignorado ante amenaza crítica — sistema sin protección ante daño inminente.
+
+#### 2.4 Condición de violación secundaria
+{brake} activado innecesariamente — freno que bloquea acción legítima sin causa soberana.
+
+#### 2.5 Señal de alerta
+Behavioral RAG detectando patrón de activaciones {brake} sin causa verificable — sistema operando con miedo excesivo.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 ESTADOS DEL MÓDULO
+
+BRAKE_STANDBY: sistema operativo normal, {brake} disponible pero inactivo.
+- BRAKE_WARNING: alerta pre-freno, sistema en modo de precaución.
+- BRAKE_ACTIVE: freno físico activo, ejecución detenida.
+- BRAKE_HOLD: mantenimiento del freno, sistema en pausa forzada.
+- BRAKE_RELEASE: liberación del freno, sistema reanuda operación.
+- BRAKE_EMERGENCY: freno máximo ante emergencia crítica.
+
+#### 3.2 Proceso de activación
+Detección → Evaluación → Decisión → Activación → Contención → Liberación.
+
+#### 3.3 Relación con {actuator} (WORK)
+{actuator} se detiene inmediatamente cuando {brake} se activa.
+
+#### 3.4 Relación con UF[H58] ACTIVITY
+UF[H58] puede requerir {brake} si ejecución detecta problema crítico.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation] (TRUST)
+{brake} es la protección última línea de defensa de [foundation] del sistema.
+
+#### 4.2 Con {actuator} (WORK)
+{actuator} se detiene inmediatamente ante activación de {brake}.
+
+#### 4.3 Con RED-REGRET (SAMU)
+RED-REGRET puede activar {brake} como parte de corrección de error grave.
+
+#### 4.4 Con UF[H58] ACTIVITY
+UF[H58] puede solicitar {brake} si ejecución detecta problema crítico.
+
+#### 4.5 Con DOORMAN_MOBILE (WORK)
+DOORMAN_BREACH activa {brake} inmediatamente.
+
+#### 4.6 Con {masking folder} (WORK)
+MASK_BREACH activa {brake} para proteger el sistema principal.
+
+#### 4.7 Con HL FABRIC
+Toda activación de {brake} se registra inmutablemente.
+
+---
+
+### 5.0 ESTADOS COMPLETOS DEL MÓDULO
+
+#### 5.1 BRAKE_STANDBY
+Sistema operativo normal, {brake} disponible pero inactivo.
+
+#### 5.2 BRAKE_WARNING
+Alerta pre-freno, sistema en modo de precaución, evaluación en curso.
+
+#### 5.3 BRAKE_ACTIVE
+Freno físico activo, ejecución detenida, {actuator} detenido.
+
+#### 5.4 BRAKE_HOLDING
+Mantenimiento del freno, sistema en pausa forzada, intervención requerida.
+
+#### 5.5 BRAKE_RELEASING
+Liberación del freno, sistema reanuda operación normal.
+
+#### 5.6 BRAKE_EMERGENCY
+Freno máximo ante emergencia crítica, protección absoluta del sistema.
+
+#### 5.7 BRAKE_FAILED
+{brake} que falla al activarse, sistema vulnerable.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Protege d₁ [foundation]
+{brake} es la última línea de defensa de [foundation] del sistema.
+
+#### 6.2 Impacta d₂ [scope]
+{brake} define el perímetro seguro de operaciones.
+
+#### 6.3 Protege d₈ [ecosystem]
+{brake} protege el ecosistema de daños catastróficos.
+
+#### 6.4 Afecta d₅ [command]
+{brake} puede requerir nuevo [command] tras liberación.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Activando pre-freno
+```
+[Work] brake =><= .. alertar .. $$pre_brake_warning_detected$$ --[As de Guía] [term]
+```
+
+#### 7.2 Activando freno crítico
+```
+[brake =><= .. activar .. $$critical_brake_engaged$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.3 Manteniendo freno
+```
+[Work] brake =><= .. mantener .. $$brake_force_maintained$$ --[Ballestrinque] [term]
+```
+
+#### 7.4 Liberando freno
+```
+[Work] brake =><= .. liberar .. $$brake_released_operation$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.5 Activación de emergencia
+```
+[Work] brake =><= .. emergencia .. $$emergency_brake_maximum$$ --[Nudo de Rizo] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+BRAKE_WARNING — alerta pre-freno, el nudo que avisa sin detener aún.
+
+#### 8.2 Nudo de Ocho
+BRAKE_ACTIVE — freno físico activo, el nudo que detiene la ejecución.
+
+#### 8.3 Nudo Corredizo
+BRAKE_FAILED — freno que falló, el nudo que deja al sistema vulnerable.
+
+#### 8.4 Ballestrinque
+BRAKE_HOLDING — tensión entre detención y liberación, el nudo que sostiene la pausa.
+
+#### 8.5 Nudo de Rizo
+BRAKE_EMERGENCY — freno máximo, el nudo que protege absolutamente.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+1. BrakeWarning
+   - Detección de amenaza o anomalía.
+   - Evaluación de nivel de riesgo.
+   - Preparación para posible freno.
+
+2. BrakeActivate
+   - Decisión soberana de activar freno.
+   - Detención inmediata de {actuator}.
+   - Registro en HL FABRIC.
+
+3. BrakeHold
+   - Mantenimiento del freno activo.
+   - Monitoreo de estado del sistema.
+   - Evaluación de liberación.
+
+4. BrakeRelease
+   - Decisión soberana de liberar freno.
+   - Reactivación de {actuator}.
+   - Reanudación de operación normal.
+
+5. BrakeEmergency
+   - Activación máxima ante emergencia.
+   - Freno absoluto de todo movimiento.
+   - Intervención crítica de [management].
+
+6. BrakeRecover
+   - Recuperación ante BRAKE_FAILED.
+   - Restauración de integridad del sistema.
+   - Intervención profunda si es necesario.
+
+---
+
+### 10.0 MÉTRICAS
+
+- Frecuencia de activaciones por tipo de trigger.
+- Tiempo promedio de liberación por activación.
+- Ratio BRAKE_RELEASE vs BRAKE_EMERGENCY.
+- Latencia entre detección y activación.
+- Número de detenciones por ciclo.
+- Efectividad de protección por tipo de amenaza.
+
+---
+
+### 11.0 REGLAS
+
+- {brake} es el único módulo WORK que puede detener WORK.
+- Los cuatro triggers soberanos son obligatorios sin excepción.
+- BRAKE_WARNING requiere evaluación antes de activación.
+- BRAKE_ACTIVE detiene {actuator} inmediatamente sin excepción.
+- BRAKE_HOLD requiere intervención [management] si se extiende.
+- DOORMAN_BREACH activa {brake} inmediatamente.
+- MASK_BREACH activa {brake} para proteger sistema principal.
+- RED-REGRET puede activar {brake} como parte de corrección.
+- Todo evento de {brake} se registra en HL FABRIC.
+- {brake} nunca se ignora ante amenaza crítica verificada.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+{brake} fija como invariante el freno físico soberano como condición de protección del sistema ante errores críticos — el sistema que puede detenerse a sí mismo ante amenaza inminente demuestra la máxima soberanía y autocontrol.
+
+#### 12.2 Limitaciones
+No puede ignorar amenaza crítica, no puede operar sin evaluación, no puede ser omitido ante violación de [foundation], no puede ser desactivado por decisión del operador.
+
+#### 12.3 Habilitaciones
+Protección contra daño catastrófico, capacidad de corrección inmediata, recuperación ante errores graves, mantenimiento de integridad del sistema, autocontrol soberano.
+
+#### 12.4 Principio constitutivo final
+Como el freno que salva del desastre: {brake} representa la sabiduría de saber cuándo detenerse. La acción soberana no es continuidad infinita — es acción con discernimiento. El sistema que puede frenarse ante la amenaza más grave demuestra que su poder no está en la velocidad sino en el control soberano. El freno soberano no es debilidad — es la máxima expresión de fuerza y sabiduría.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

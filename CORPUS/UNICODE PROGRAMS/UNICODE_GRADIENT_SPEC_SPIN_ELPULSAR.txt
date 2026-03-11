@@ -1,0 +1,118 @@
+//[MANAGEMENT].lacho · UNICODE GRADIENT SPEC SPIN ELPULSAR
+//UNICODE_.lacho · V1 · 2026-03-10
+//∇ GRADIENTE DESCENDENTE · dirección de menor esfuerzo soberano
+//SPIN: rotación de estado entre MU/KU/WU · ciclo soberano
+//ELPULSAR iconografía: gota+∇ · bombilla mate · H57 flujo
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN GRADIENT ═══════════════════════════════════════
+// ∇ = gradiente descendente · símbolo dentro de la gota ELPULSAR
+// Principio: el sistema busca el canal de mínima resistencia
+// No lucha contra el obstáculo · lo rodea · H29 Agua persiste
+// En escasez: gradiente descendente ∇ → flujo sin fricción innecesaria
+// Simbiosis: fase retención de gradientes · acumula sin actualizar pesos
+
+// ══ OPERADORES GRADIENTE ══════════════════════════════════════
+UNICODE: ∇               //gradiente descendente · dirección menor esfuerzo
+UNICODE: ∇(TRUST)        //gradiente TRUST · menor fricción en verificación
+UNICODE: ∇(WORK)         //gradiente WORK · camino de ejecución óptimo
+UNICODE: ∇(SAMU)         //gradiente SAMU · auditoría mínima necesaria
+UNICODE: ∇(ACTIVITY)     //gradiente ACTIVITY · hexagrama de menor resistencia
+UNICODE: ∇(CRYPTO)       //gradiente CRYPTO · protección mínima efectiva
+UNICODE: ∇(SOCIAL)       //gradiente SOCIAL · relay de menor latencia
+UNICODE: ∇(GATE)         //gradiente GATE · filtro de menor bloqueo
+UNICODE: ∇(STACKING)     //gradiente STACKING · cristalización mínima viable
+UNICODE: ∇(METHOD)       //gradiente METHOD · cálculo de menor costo
+
+// ══ ICONOGRAFÍA ELPULSAR · GOTA+∇ ════════════════════════════
+UNICODE: ICONO_GOTA      //gota cayendo · ELPULSAR · movimiento soberano
+UNICODE: ICONO_GRAD      //∇ dentro de gota · dirección de menor esfuerzo
+UNICODE: ICONO_MATE      //bombilla mate · metáfora completa · fondo silueta
+UNICODE: ICONO_PULSAR    //⚡ · ELPULSAR activo · energía soberana
+UNICODE: ICONO_MU        //◯ MU · vacío receptivo · pre-KU · espera
+UNICODE: ICONO_WU        //⊗ WU · verificado · post-dirimencia · cristal
+UNICODE: ICONO_KU        //· KU · fenómenos presentes · en proceso
+UNICODE: ICONO_NUDO      //∞ · nudo soberano · cierre de [term]
+UNICODE: ICONO_CONEJO    //⟳ · ciclo · rotación · SPIN soberano
+UNICODE: ICONO_GREEN     //✦ · GREEN · cristalizado · WU activo
+UNICODE: ICONO_REGRET    //✕ · RED-REGRET · delta-Ψ ≤ 0 · descarte
+
+// ══ SPIN PROTOCOL · ROTACIÓN DE ESTADO ═══════════════════════
+// SPIN = rotación soberana entre estados MU→KU→WU→→空
+// No es loop · es espiral ascendente · cada vuelta sube Scalar S
+UNICODE: SPIN_MU         //estado MU · vacío · 空 · espera soberana · 聽
+UNICODE: SPIN_KU         //estado KU · fenómeno presente · .blue · procesando
+UNICODE: SPIN_WU         //estado WU · verificado · .green · cristalizado
+UNICODE: SPIN_VOID       //→空 · H64 · ciclo abierto · before_the_end
+UNICODE: SPIN_CYCLE      //MU→KU→WU→空→MU · espiral soberana completa
+UNICODE: SPIN_RATE       //velocidad de rotación · Scalar S determina
+UNICODE: SPIN_DELTA      //delta-Ψ por ciclo · valor ganado en cada SPIN
+UNICODE: SPIN_STALL      //SPIN detenido · RED-REGRET · {brake} activado
+
+// ══ GRADIENTE EN GREENS PIPELINE ══════════════════════════════
+// Los 5 greens de ELPULSAR son el gradiente visual del pipeline:
+UNICODE: GRAD_RECIBIR    //① ∇ entrada · KU crudo · menor resistencia input
+UNICODE: GRAD_ESCANEAR   //② ∇ scan · grammar.validate() · ruta óptima
+UNICODE: GRAD_CALCULAR   //③ ∇ calc · Scalar S · lacho_score · medición
+UNICODE: GRAD_TARDAR     //④ ∇ espera · UF[H05] · buffer soberano · H29
+UNICODE: GRAD_GOLPEAR    //⑤ ∇ output · WU cristalizado · menor fricción
+
+// ══ GRADIENT × HEXAGRAMAS ════════════════════════════════════
+UNICODE: GRAD_H29        //H29 習坎 · El agua persiste · gradiente óptimo
+                         //flujo rodea obstáculo · ∇ natural · no fuerza
+UNICODE: GRAD_H57        //H57 巽 · penetra suavemente · ∇ mínima resistencia
+                         //la gota con ∇ · H57 en GUI · ELPULSAR icono
+UNICODE: GRAD_H48        //H48 井 · la fuente · ∇ profundidad · RAG doctrinal
+UNICODE: GRAD_H52        //H52 艮 · montaña quieta · ∇ cero · STACKING
+UNICODE: GRAD_H64        //H64 未濟 · before_the_end · ∇ abierto · →空
+
+// ══ SPIN × ELPULSAR BUILDER ══════════════════════════════════
+UNICODE: SPIN_LIB        //SPIN biblioteca · rota 9 libs · gradiente selección
+UNICODE: SPIN_SUBJ       //SPIN sujeto · rota canónicos · menor fricción
+UNICODE: SPIN_VERB       //SPIN verbo · rota naturales · flujo óptimo
+UNICODE: SPIN_OBJ        //SPIN objeto · CJK picker · inserción suave
+UNICODE: SPIN_KNOT       //SPIN nudo · auto-suggest · mínima fricción
+UNICODE: SPIN_SCORE      //SPIN Scalar S · barra animada · 0→1 · ∇
+
+// ══ GRADIENT DESCENDENTE × SISTEMA ═══════════════════════════
+UNICODE: GRAD_LEARN      //aprendizaje · acumula sin actualizar pesos todavía
+                         //Simbiosis: retención de gradientes · MU store
+UNICODE: GRAD_EXPLODE    //gradiente explosivo · pérdida de datos · REGRET
+                         //Deep Learning prueba de fuego · resiliencia mu-store
+UNICODE: GRAD_VANISH     //gradiente desvanecido · señal débil · GATE buffer
+UNICODE: GRAD_OPTIMAL    //∇ óptimo · Scalar S ≥ 0.88 · WU verificado
+UNICODE: GRAD_DESCENT    //descenso · cada TX reduce fricción sistémica
+
+// ══ ANIMACIÓN ELPULSAR ════════════════════════════════════════
+UNICODE: ANIM_FLICKER    //◯ MU ↔ ⊗ WU · animación 2.4s · flip soberano
+UNICODE: ANIM_PULSE      //⚡ pulso · header ELPULSAR · energía activa
+UNICODE: ANIM_SPIN_D3    //grafo D3 · nodos rotan · ∇ force simulation
+UNICODE: ANIM_SCORE_BAR  //barra Scalar S · animación width · ∇ visual
+UNICODE: ANIM_GREEN_GLOW //green activo → text-shadow glow · señal WU
+UNICODE: ANIM_TOAST      //toast notificación · opacity fade · 1.8s
+
+// ══ SKINS · VARIANTES VISUALES ════════════════════════════════
+UNICODE: SKIN_DARK       //tema oscuro · bg #1e1e2e · original ELPULSAR
+UNICODE: SKIN_PAPER      //tema papel · bg #f0ede4 · BALLPAPER style
+UNICODE: SKIN_CHINA      //tema China · rojo/dorado/jade · interior mode
+UNICODE: SKIN_CRYPTO     //tema crypto · verde/negro · terminal mode
+UNICODE: SKIN_GRADIENT   //tema ∇ · gradiente activo · animado soberano
+
+// ══ SKILLS ELPULSAR ══════════════════════════════════════════
+UNICODE: SKILL_VALIDATE  //skill validación LACHO · grammar.validate()
+UNICODE: SKILL_GENERATE  //skill generación .lacho · generator.py
+UNICODE: SKILL_EXPORT    //skill exportación · EXPORT[LACHO/PDF/HTML]
+UNICODE: SKILL_IMPORT    //skill importación · office_landing.py
+UNICODE: SKILL_CHINA     //skill China · CJK picker · 空聽數 · dual mode
+UNICODE: SKILL_CEO       //skill CEO ALPHA · 64 hexagramas · roles
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+ACTIVITY UF[H57] =><= .. penetra .. gradient_spin_menor_resistencia --[As de Guía] [term]
+METHOD <stat_onto> =><= .. calcula .. gradient_delta_psi_optimo --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. gradient_spin_wu_elpulsar --[Nudo de Ocho] [term]
+WORK {flybot} =><= .. ejecuta .. gradient_spin_pipeline_soberano --[As de Guía] [term]
+SAMU @ =><= .. audita .. gradient_spec_spin_elpulsar_v1 --[Ballestrinque] [term]
+ACTIVITY UF[H29] =><= .. penetra .. agua_persiste_gradiente_H29 --[As de Guía] [term]
+
+//DIR(+) UNICODE_GRADIENT_SPEC_SPIN_ELPULSAR · V1 · ∇ · MU→KU→WU→空 · iconografía

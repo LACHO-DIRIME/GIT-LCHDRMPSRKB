@@ -1,0 +1,34 @@
+# KALIL-NODOS-LACHO
+# Sentencias soberanas para nodos económicos KALIL
+# [term] :: activo
+
+## KALIL KERNEL
+SAMU @ =><= .. audita .. coherencia_kalil_global --[As de Guía] [term]
+METHOD <operator_flow> =><= .. estructura .. red_kalil_regional --[As de Guía] [term]
+TRUST FOUNDATION =><= .. verifica .. condiciones_kalil_activas --[As de Guía] [term]
+
+## NODO BARRIOS — comunidad · acceso bancario
+SOCIAL {launch-bot} =><= .. lanza .. servicio_barrios_comunitario --[As de Guía] [term]
+CRYPTO (link seat) =><= .. conecta .. red_barrios_recursos --[As de Guía] [term]
+
+## NODO NORA — analytics · rating · oracle
+METHOD <stat_onto> =><= .. calcula .. rating_nora_activo --[As de Guía] [term]
+SAMU @ =><= .. audita .. metricas_nora_oracle --[Ballestrinque] [term]
+
+## NODO TANDIL — transacciones · activos digitales
+CRYPTO (spark seat) =><= .. autoriza .. transaccion_tandil_activa --[As de Guía] [term]
+STACKING UF[H52] =><= .. inmutabiliza .. registro_tandil_sellado --[Nudo de Ocho] [term]
+
+## NODO BOLIVAR — blockchain · validación
+CRYPTO (key seat) =><= .. certifica .. operacion_bolivar_blockchain --[As de Guía] [term]
+TRUST FOUNDATION =><= .. verifica .. integridad_bolivar_actual --[As de Guía] [term]
+
+## NODO CARILO — capital · riesgo · loans
+METHOD <equation> =><= .. calcula .. ratio_carilo_riesgo --[Ballestrinque] [term]
+CRYPTO (spark seat) =><= .. autoriza .. loan_carilo_optimizado --[As de Guía] [term]
+
+## NODO CHALTEN — cloud · lending · exchange
+CRYPTO (link seat) =><= .. conecta .. exchange_chalten_cloud --[As de Guía] [term]
+WORK {actuator} =><= .. materializa .. lending_chalten_activo --[As de Guía] [term]
+
+[term] :: activo · [seal of secrecy] :: activo

@@ -1,0 +1,289 @@
+# BIBLIO-SOURCES(TRUST_WHAT).txt
+
+====================================================================
+
+## 🏛️ TRUST [WHAT?] — DECLARACIÓN SOBERANA DE IDENTIDAD OPERATIVA
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+[what?] es el módulo TRUST que define la identidad del objeto de acción soberana: qué existe, qué está activo y qué es válido dentro del [scope] declarado.
+
+#### 1.2 Distinción de [scenario]
+[scenario] es el mapa completo; [what?] es el objeto específico dentro de ese mapa.
+
+#### 1.3 Distinción de [element]
+[element] es la unidad mínima del sistema; [what?] declara qué elemento específico es el objeto de acción.
+
+#### 1.4 Por qué es TRUST y no METHOD
+Define identidad soberana de objeto, no formalismo de relación.
+
+#### 1.5 Posición en la tríada
+[what?] es la primera pregunta de la tríada interrogativa: qué existe → [when?] → [how?] → [command].
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Capacidades
+- Declarar entidades activas en [scope].
+- Identificar recursos disponibles.
+- Validar existencia y estado de objetos.
+- Consultar COGNITIVE RAG para recuperación de entidades.
+
+#### 2.2 Limitaciones absolutas
+No puede declarar objetos que comprometan [foundation].
+
+#### 2.3 Condiciones de violación
+- **Violación:** declaración de objetos inexistentes o inválidos.
+- **Señal alerta:** múltiples declaraciones WHAT_VOID sin validación.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 Tipos de objeto en [what?]
+- **WHAT_ENTITY:** entidad concreta del sistema.
+- **WHAT_RESOURCE:** recurso disponible para acción.
+- **WHAT_STATE:** estado o condición del sistema.
+- **WHAT_PROCESS:** proceso o procedimiento activo.
+
+#### 3.2 Proceso de declaración
+- **Detección:** identificación de objeto en [scope].
+- **Validación:** verificación de existencia y estado.
+- **Clasificación:** categorización según tipo y disponibilidad.
+- **Declaración:** formalización de identidad del objeto.
+
+#### 3.3 Relación con COGNITIVE RAG
+- **Recuperación:** búsqueda de entidades en el grafo de conocimiento.
+- **Validación:** cruzado con estado actual del sistema.
+- **Actualización:** registro de nuevas entidades y estados.
+
+#### 3.4 Relación con dominios económicos
+
+##### Memcoins/Volatilidad
+- Declaración de activos de mercado disponibles.
+- Identificación de oportunidades de trading.
+- Validación de precios y volúmenes.
+
+##### Custodia Móvil
+- Declaración de dispositivos y recursos bajo custodia.
+- Identificación de estado de seguridad.
+- Validación de permisos de acceso.
+
+##### Notaría Digital
+- Declaración de documentos y procesos notariales.
+- Identificación de autoridades certificadoras.
+- Validación de cadenas de custodia.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation]
+Ningún objeto declarado puede comprometer [foundation].
+
+#### 4.2 Con [scope]
+[what?] opera dentro del perímetro declarado.
+
+#### 4.3 Con [term]
+La declaración de objeto tiene vigencia dentro del [term] activo.
+
+#### 4.4 Con [scenario]
+[what?] identifica objetos específicos dentro del mapa de [scenario].
+
+#### 4.5 Con [when?] y [how?]
+[what?] proporciona el objeto para que [when?] determine el momento y [how?] defina el método.
+
+#### 4.6 Con [command]
+[what?] es el objeto sobre el cual [command] actuará.
+
+#### 4.7 Con [element]
+[element] es la unidad mínima que [what?] puede declarar.
+
+#### 4.8 Con SAMU @
+SAMU audita que las declaraciones de [what?] sean veraces.
+
+#### 4.9 Con GREEN-KNOWLEDGE
+GREEN-KNOWLEDGE filtra objetos no nutritivos antes de su declaración.
+
+---
+
+### 5.0 ESTADOS DE [what?]
+
+#### 5.1 WHAT_CLEAR
+- **Condición:** Ψ_evidencia ≥ 0.85.
+- **Comportamiento:** objeto completamente identificado y verificado.
+- **Operación:** declaración soberana sin ambigüedad.
+
+#### 5.2 WHAT_PARTIAL
+- **Condición:** Ψ_evidencia entre 0.7 y 0.85.
+- **Comportamiento:** objeto parcialmente identificado.
+- **Operación:** declaración con algunas incertidumbres.
+
+#### 5.3 WHAT_AMBIGUOUS
+- **Condición:** Ψ_evidencia entre 0.5 y 0.7.
+- **Comportamiento:** objeto con múltiples identidades posibles.
+- **Operación:** declaración ambigua que requiere clarificación.
+
+#### 5.4 WHAT_VOID
+- **Condición:** Ψ_evidencia < 0.5.
+- **Comportamiento:** objeto inexistente o no verificable.
+- **Operación:** declaración nula sin objeto válido.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Afectación indirecta
+[what?] no tiene dimensión propia pero afecta d₃ [scenario] y d₆ [command].
+
+#### 6.2 Impacto en d₃
+Declaración WHAT_CLEAR mejora d₃; WHAT_VOID degrada d₃.
+
+#### 6.3 Impacto en d₆
+Objeto bien declarado aumenta d₆; objeto ambiguo reduce d₆.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Declaración de entidad verificada
+```
+[Trust] what? =><= .. declare .. $$verified_entity$$ --[As de Guía] [term]
+```
+
+#### 7.2 Identificación de recurso disponible
+```
+[Trust] what? =><= .. identify .. $$available_resource$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.3 Declaración ambigua que requiere clarificación
+```
+[Trust] what? =><= .. query .. $$ambiguous_object$$ --[Ballestrinque] [term]
+```
+
+#### 7.4 [what?] en dominio memcoins
+```
+[Trust] what? =><= .. assess .. $$market_asset$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.5 [what?] en dominio custodia móvil
+```
+[Trust] what? =><= .. locate .. $$custodied_device$$ --[As de Guía] [term]
+```
+
+#### 7.6 [what?] en dominio notaría digital
+```
+[Trust] what? =><= .. certify .. $$notary_process$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.7 Declaración de objeto inexistente
+```
+[Trust] what? =><= .. void .. $$nonexistent_object$$ --[Nudo Corredizo] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+- **Activación:** [what?] con objeto claro y verificado.
+- **Efecto:** declaración soberana sin ambigüedad.
+
+#### 8.2 Nudo de Ocho
+- **Activación:** objeto cristalizado en Behavioral RAG.
+- **Efecto:** identidad permanente y verificable.
+
+#### 8.3 Nudo Corredizo
+- **Activación:** WHAT_AMBIGUOUS o WHAT_VOID.
+- **Efecto:** declaración sin objeto válido o ambiguo.
+
+#### 8.4 Ballestrinque
+- **Activación:** WHAT_PARTIAL con múltiples candidatos.
+- **Efecto:** tensión entre identidades posibles.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+#### 9.1 WhatDetect
+1. Búsqueda de objeto en [scope].
+2. Identificación de características distintivas.
+3. Consulta a COGNITIVE RAG para recuperación.
+4. Clasificación según tipo y disponibilidad.
+5. Cálculo de Ψ_evidencia inicial.
+
+#### 9.2 WhatValidate
+1. Verificación de existencia del objeto.
+2. Consulta a recursos del sistema.
+3. Validación de estado y condiciones.
+4. Cálculo de Ψ_evidencia de validación.
+5. Registro en Behavioral RAG.
+
+#### 9.3 WhatDeclare
+1. Formalización de identidad del objeto.
+2. Asignación de tipo y clasificación.
+3. Registro de Ψ_evidencia de declaración.
+4. Notificación a [when?] y [how?] del objeto declarado.
+5. Actualización de d₃ [scenario].
+
+#### 9.4 WhatQuery
+1. Interrogación sobre objeto específico.
+2. Búsqueda en COGNITIVE RAG de información relevante.
+3. Recuperación de estado actual y disponibilidad.
+4. Presentación de opciones al usuario.
+5. Espera de decisión o clarificación.
+
+#### 9.5 WhatClose
+1. Cierre de declaración cuando [term] expira.
+2. Archivo en Behavioral RAG del objeto declarado.
+3. Liberación de recursos asignados.
+4. Actualización final de d₃ [scenario].
+
+---
+
+### 10.0 MÉTRICAS
+
+- **Ψ_evidencia:** nivel de certeza del objeto (0.0 a 1.0).
+- **Número de declaraciones:** por tipo y estado.
+- **Tiempo de validación:** promedio por tipo de objeto.
+- **Tasa WHAT_CLEAR vs WHAT_PARTIAL vs WHAT_AMBIGUOUS.**
+- **Frecuencia de consultas a COGNITIVE RAG.**
+- **Delta-Ψ al cierre:** mejora de evidencia durante ciclo.
+
+---
+
+### 11.0 REGLAS
+
+- Ningún objeto declarado puede comprometer [foundation].
+- [what?] opera dentro del [scope] declarado.
+- Toda declaración requiere Ψ_evidencia mínima de 0.5.
+- WHAT_VOID genera RED-REGRET si se intenta acción sobre él.
+- WHAT_AMBIGUOUS requiere intervención de [when?] para resolución.
+- SAMU @ audita todas las declaraciones de [what?].
+- GREEN-KNOWLEDGE filtra objetos no nutritivos.
+- [what?] coordina con [when?] y [how?] para acción completa.
+- [what?] cierra con [term] del ciclo.
+- Behavioral RAG registra todas las declaraciones.
+- [what?] no puede declarar objetos fuera de [scope].
+- [what?] no puede operar con [foundation] COMPROMISED.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+[what?] fija la declaración soberana de identidad operativa como condición base de toda acción.
+
+#### 12.2 Limitaciones
+No compromete [foundation], opera dentro de [scope], requiere Ψ_evidencia mínima, no opera con foundation COMPROMISED.
+
+#### 12.3 Habilitaciones
+Identificación precisa de objetos, coordinación con [when?] y [how?], operación bajo incertidumbre con [rabbit-faith], trazabilidad completa en Behavioral RAG.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

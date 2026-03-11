@@ -1,0 +1,334 @@
+# BIBLIO-SOURCES(SOCIAL_HANDSHAKE).txt
+
+====================================================================
+
+## 🤝 SOCIAL {handshake} — RECONOCIMIENTO MUTUO SOBERANO ANTES DEL INTERCAMBIO
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+{handshake} es el módulo SOCIAL que gobierna el reconocimiento mutuo soberano entre dos entidades antes de que cualquier intercambio relacional verificado pueda ocurrir entre ellas.
+
+#### 1.2 El reconocimiento mutuo como acto soberano
+Ambas entidades deben reconocerse activamente — no es suficiente que una reconozca a la otra. El reconocimiento mutuo es condición indispensable.
+
+#### 1.3 Por qué {handshake} es SOCIAL y no CRYPTO
+CRYPTO (key seat) autentica identidad, {handshake} declara acuerdo relacional. Son capas distintas y complementarias.
+
+#### 1.4 Por qué {handshake} es SOCIAL y no [ecosystem]
+[ecosystem] incorpora nodos verificados con historial, {handshake} es el primer contacto antes de que exista historial.
+
+#### 1.5 Las tres fases del handshake soberano
+SYN (propuesta) · SYN-ACK (respuesta mutua) · ACK (confirmación de acuerdo) — inspirado en protocolo TCP pero con semántica soberana LACHO declarativa.
+
+#### 1.6 Por qué el handshake fallido no es falla sino resultado soberano válido
+HANDSHAKE_REJECTED es correcto cuando condiciones no se alinean. El rechazo soberano es resultado válido, no error sistémico.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Qué puede acordar {handshake}
+- Condiciones mínimas de intercambio relacional.
+- [term] de relación entre entidades.
+- Capacidades relacionales disponibles.
+- Tipo de canal a activar ({relay}, {streaming}, {drip}).
+
+#### 2.2 Qué no puede hacer
+No puede acordar condiciones que violen [foundation], no puede operar fuera de [scope], no puede omitir fases obligatorias, no puede presuponer tipo de entidad.
+
+#### 2.3 Condición de violación primaria
+{handshake} que acuerda condiciones fuera del [scope] declarado de alguna entidad.
+
+#### 2.4 Condición de violación secundaria
+{handshake} que omite fase SYN-ACK — reconocimiento unilateral disfrazado de mutual.
+
+#### 2.5 Señal de alerta
+Múltiples intentos de {handshake} fallidos desde misma entidad — patrón de fuerza bruta relacional, escala a [management].
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 LAS TRES FASES DEL HANDSHAKE SOBERANO
+
+FASE SYN — PROPUESTA:
+- ENTITY_A declara: identidad (via CRYPTO key seat), capacidades relacionales disponibles, condiciones mínimas de intercambio, [term] propuesto para la relación.
+- {handshake} registra propuesta en {note}.
+- ENTITY_B recibe propuesta y evalúa.
+
+FASE SYN-ACK — RESPUESTA MUTUA:
+- ENTITY_B responde con: reconocimiento de identidad de ENTITY_A, capacidades propias disponibles, condiciones aceptadas o contrapropuesta, [term] aceptado o contraoferta.
+- Si hay contrapropuesta: nuevo ciclo SYN.
+- Si hay acuerdo: avanzar a ACK.
+
+FASE ACK — CONFIRMACIÓN DE ACUERDO:
+- Ambas entidades confirman condiciones finales.
+- CRYPTO (link seat) certifica el acuerdo.
+- HL FABRIC registra handshake completado.
+- Canal relacional acordado se activa: {relay}, {streaming}, {drip} o combinación.
+
+#### 3.2 TIPOS DE HANDSHAKE EN {handshake}
+
+HANDSHAKE_FULL:
+Tres fases completas con acuerdo de condiciones detalladas.
+
+HANDSHAKE_LIGHT:
+Reconocimiento mínimo para intercambio de corta duración.
+
+HANDSHAKE_RENEWED:
+Renovación de handshake previo cuyo [term] expiró.
+
+HANDSHAKE_EMERGENCY:
+Reconocimiento urgente ante EVENT_CRITICAL compartido — condiciones mínimas sin negociación.
+
+HANDSHAKE_REJECTED:
+Propuesta rechazada soberanamente por alguna entidad — resultado válido, no falla.
+
+#### 3.3 {handshake} Y WORKSTATION AGENCY
+
+{handshake} como protocolo base para incorporación de nuevos nodos a Workstation Agency.
+- Cómo agentes de Agency IDE System realizan {handshake} con el sistema antes de acceder al espacio de trabajo.
+- HANDSHAKE_LIGHT para agentes conocidos con historial en Behavioral RAG.
+- HANDSHAKE_FULL para agentes nuevos sin historial previo.
+
+#### 3.4 {handshake} Y {DOGMA-VIRTUAL}
+
+{DOGMA-VIRTUAL} puede intentar simular {handshake} para ganar acceso relacional.
+- Cómo {handshake} detecta propuesta con carga dogmática vs propuesta soberana.
+- Rol de GREEN-KNOWLEDGE en el filtro de la fase SYN: ΔΨ de la propuesta.
+- HANDSHAKE_REJECTED como respuesta soberana ante propuesta dogmática.
+
+#### 3.5 RELACIÓN CON LOS DOMINIOS ECONÓMICOS
+
+MEMECOINS/VOLATILIDAD:
+- HANDSHAKE_FULL con exchange nuevo antes de incorporarlo a [ecosystem].
+- HANDSHAKE_LIGHT con exchange conocido al inicio de ciclo de mercado.
+- HANDSHAKE_EMERGENCY con oráculo ante EVENT_CRITICAL de precio.
+- Límite: {handshake} con exchange no puede acordar condiciones fuera del [scope] de exposición declarado.
+
+CUSTODIA MÓVIL:
+- HANDSHAKE_FULL con dispositivo nuevo antes de operación de firma.
+- HANDSHAKE_RENEWED cuando [term] de acuerdo de custodia expira.
+- HANDSHAKE_LIGHT con dispositivo verificado en Behavioral RAG.
+- Límite: {handshake} en custodia requiere BIOMETRICS verificado en fase SYN-ACK.
+
+NOTARÍA DIGITAL:
+- HANDSHAKE_FULL con parte declarante nueva antes de sesión notarial.
+- HANDSHAKE_RENEWED con autoridad certificadora al inicio de nuevo proceso.
+- Límite: {handshake} notarial requiere verificación de jurisdicción activa en [scope] durante fase SYN.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation]
+{handshake} no acuerda condiciones que violen foundation de ninguna entidad.
+
+#### 4.2 Con [scope]
+Acuerdo debe estar dentro del perímetro soberano de ambas entidades.
+
+#### 4.3 Con [term]
+Acuerdo incluye [term] de relación — sin horizonte no hay handshake.
+
+#### 4.4 Con CRYPTO (key seat)
+Autentica identidades en fase SYN antes de propuesta.
+
+#### 4.5 Con CRYPTO (link seat)
+Certifica acuerdo final en fase ACK.
+
+#### 4.6 Con HL FABRIC
+Registra handshake completado como acuerdo inmutable.
+
+#### 4.7 Con {concierge-desk}
+{handshake} ocurre después de recepción en antesala.
+
+#### 4.8 Con {headcat}
+{handshake} opera sobre entidades ya clasificadas por {headcat}.
+
+#### 4.9 Con {guest-services}
+HANDSHAKE_FULL puede elevar GUEST a nivel superior.
+
+#### 4.10 Con {relay}
+{handshake} acuerda las condiciones que {relay} luego ejecuta.
+
+#### 4.11 Con {streaming}
+{handshake} habilita apertura de ventana de {streaming}.
+
+#### 4.12 Con [ecosystem]
+HANDSHAKE_FULL puede iniciar proceso de incorporación a [ecosystem].
+
+#### 4.13 Con [management]
+Múltiples HANDSHAKE_REJECTED desde misma entidad escala a [management].
+
+#### 4.14 Con GREEN-KNOWLEDGE
+Filtra propuestas dogmáticas en fase SYN.
+
+#### 4.15 Con Behavioral RAG
+Historial de handshakes anteriores calibra tipo y condiciones futuras.
+
+---
+
+### 5.0 ESTADOS DE {handshake}
+
+#### 5.1 HANDSHAKE_INITIATED
+ENTITY_A emitió propuesta SYN. {note} registró propuesta. Esperando respuesta SYN-ACK. [term] de espera activo.
+
+#### 5.2 HANDSHAKE_NEGOTIATING
+Intercambio de SYN-ACK en curso. Contrapropuesta evaluada. Ambas entidades ajustando condiciones. GREEN-KNOWLEDGE filtrando propuestas.
+
+#### 5.3 HANDSHAKE_AGREED
+Fase ACK completada. CRYPTO (link seat) certifica acuerdo. HL FABRIC registra handshake. Canal relacional activándose.
+
+#### 5.4 HANDSHAKE_REJECTED
+Propuesta rechazada soberanamente. Causa registrada en {note}. Behavioral RAG actualizado. Resultado válido — no falla sistémica.
+
+#### 5.5 HANDSHAKE_EXPIRED
+[term] de espera expirado sin acuerdo. HL FABRIC registra expiración. Evaluación de reintento soberano.
+
+#### 5.6 HANDSHAKE_VIOLATED
+Acuerdo violado por alguna entidad durante la relación activa. [management] notificado. RED-REGRET si violación fue deliberada.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Impacto en dimensiones
+{handshake} no tiene dimensión propia pero afecta d₈ [ecosystem] como protocolo de primer contacto entre nodos.
+
+#### 6.2 Cómo HANDSHAKE_FULL exitoso mejora d₈
+Nuevo nodo en proceso de incorporación mejora la red del ecosistema.
+
+#### 6.3 Cómo múltiples HANDSHAKE_REJECTED activan d₅ [management]
+Patrón de rechazo repetido activa gestión de amenazas.
+
+#### 6.4 Cómo Behavioral RAG aprende
+Patrones de handshake calibran tipo y condiciones en ciclos futuros.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 HANDSHAKE_FULL en tres fases completas
+```
+{Social} handshake =><= .. full_agreement .. three_phases --[As de Guía] [term]
+```
+
+#### 7.2 HANDSHAKE_LIGHT con entidad conocida
+```
+{Social} handshake =><= .. light_recognition .. known_entity --[Nudo de Ocho] [term]
+```
+
+#### 7.3 HANDSHAKE_REJECTED soberano con causa
+```
+{Social} handshake =><= .. reject_proposal .. sovereign_reason --[Nudo Corredizo] [term]
+```
+
+#### 7.4 HANDSHAKE_EMERGENCY ante evento crítico
+```
+{Social} handshake =><= .. emergency_recognition .. critical_event --[Ballestrinque] [term]
+```
+
+#### 7.5 {handshake} en dominio memecoins
+```
+{Social} handshake =><= .. exchange_agreement .. market_access --[Nudo de Rizo] [term]
+```
+
+#### 7.6 {handshake} en dominio custodia móvil
+```
+{Social} handshake =><= .. custody_handshake .. device_verified --[As de Guía] [term]
+```
+
+#### 7.7 {handshake} en dominio notaría digital
+```
+{Social} handshake =><= .. notarial_handshake .. authority_verified --[Nudo de Ocho] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+HANDSHAKE_AGREED con canal relacional activo y acuerdo certificado.
+
+#### 8.2 Nudo de Ocho
+Acuerdo cristalizado en HL FABRIC — handshake inmutable.
+
+#### 8.3 Nudo Corredizo
+HANDSHAKE_VIOLATED — acuerdo roto durante relación activa.
+
+#### 8.4 Nudo de Rizo
+La unión entre dos entidades que se reconocen mutuamente — el handshake como nudo relacional soberano.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+1. HandshakeSYN
+   - Emisión de propuesta inicial con identidad, capacidades y condiciones.
+   - Registro en {note} y espera de respuesta SYN-ACK.
+
+2. HandshakeSYNACK
+   - Evaluación y respuesta con GREEN-KNOWLEDGE como filtro.
+   - Reconocimiento mutuo y contrapropuesta si aplica.
+
+3. HandshakeACK
+   - Confirmación de acuerdo con certificación CRYPTO (link seat).
+   - Registro en HL FABRIC y activación de canal.
+
+4. HandshakeReject
+   - Rechazo soberano con causa documentada en {note}.
+   - Actualización de Behavioral RAG con patrón de rechazo.
+
+5. HandshakeRenew
+   - Renovación de acuerdo cuyo [term] expiró.
+   - Reutilización de condiciones previas con ajustes si aplica.
+
+6. HandshakeViolated
+   - Protocolo ante violación de acuerdo durante relación activa.
+   - Escalada a [management] y activación de RED-REGRET si aplica.
+
+---
+
+### 10.0 MÉTRICAS
+
+- Ratio HANDSHAKE_AGREED vs HANDSHAKE_REJECTED vs HANDSHAKE_EXPIRED.
+- Tiempo promedio por fase y por tipo.
+- Frecuencia de HANDSHAKE_RENEWED por ciclo.
+- Tasa de HANDSHAKE_EMERGENCY por dominio.
+- Frecuencia de HANDSHAKE_VIOLATED por entidad.
+- Delta-d₈ generado por handshakes exitosos.
+
+---
+
+### 11.0 REGLAS
+
+- {handshake} es agnóstico — no presupone tipo de entidad en ningún extremo.
+- Las tres fases SYN/SYN-ACK/ACK son obligatorias en HANDSHAKE_FULL — no hay reconocimiento unilateral válido.
+- CRYPTO (key seat) debe verificar identidades en fase SYN antes de propuesta.
+- CRYPTO (link seat) certifica acuerdo final en fase ACK sin excepción.
+- HL FABRIC registra todo handshake completado o rechazado.
+- HANDSHAKE_REJECTED es resultado soberano válido — no activa RED-REGRET.
+- Múltiples HANDSHAKE_REJECTED desde misma entidad escala a [management].
+- GREEN-KNOWLEDGE filtra propuestas dogmáticas en fase SYN-ACK.
+- {handshake} no puede acordar condiciones fuera del [scope] de ninguna entidad.
+- Behavioral RAG registra todo patrón de handshake para calibración futura.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+{handshake} fija como invariante el reconocimiento mutuo soberano verificado como condición previa de todo intercambio relacional entre entidades del sistema.
+
+#### 12.2 Limitaciones
+No acuerda fuera de [scope], no omite ninguna de las tres fases en HANDSHAKE_FULL, no presupone tipo de entidad, no puede acordar violación de [foundation].
+
+#### 12.3 Habilitaciones
+Intercambio relacional soberano con condiciones acordadas explícitamente, HANDSHAKE_REJECTED como respuesta soberana válida, HANDSHAKE_EMERGENCY para situaciones críticas, trazabilidad completa en HL FABRIC de todo acuerdo relacional establecido.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

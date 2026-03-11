@@ -1,0 +1,92 @@
+# BIBLIO-SOURCES(DIRIME-IMV_SAMU).txt
+
+====================================================================
+
+## SAMU.PY — DIRIMENCIA SOBERANA MÍNIMA IMV
+
+====================================================================
+
+### 1.0 PROPÓSITO
+
+samu.py es IMV-3: el auditor soberano mínimo. SAMU no es IA — SAMU dirime por coherencia con [foundation]. La diferencia es epistemológica: IA busca óptimo, SAMU busca coherencia soberana verificada.
+
+Referencia canónica: BIBLIO-SOURCES(SAMU_AT).txt · BIBLIO-SOURCES(SAMU_TARDANZA-DELIBERADA).txt · BIBLIO-SOURCES(SAMU_RED-REGRET).txt
+
+### 2.0 CLASES SOBERANAS
+
+**SamuState (Enum):**
+IDLE — SAMU @ en reposo, disponible para nueva dirimencia.
+DELIBERATING — Tardanza deliberada activa: el espacio MU entre KU y WU.
+RESOLVING — Dirimiendo activamente con [foundation] como referencia.
+RED_REGRET — Error verificado: aprendiendo del ciclo fallido.
+
+**DisputeType (Enum):**
+FOUNDATION — violación del invariante soberano.
+SCOPE — operación fuera del perímetro declarado.
+TERM — horizonte temporal vencido.
+GRAMMAR — sentencia no válida en gramática viva LACHO.
+COHERENCE — incoherencia interna verificada (no es error de forma, es contradicción).
+
+**Dispute (dataclass):**
+type, description, context, resolution, timestamp, resolved.
+Una disputa es el registro soberano de una incoherencia detectada.
+Inmutable por diseño: no se modifica después de resolverse — solo se lee.
+
+### 3.0 CLASE SAMU
+
+**deliberate(dispute):**
+Tardanza deliberada conceptual. En IMV no hay delay real — el concepto existe en arquitectura.
+En producción con Behavioral RAG activo: la tardanza calibrará según historial de S.
+
+**resolve_dispute(dispute):**
+Dirime por tipo. Retorna sentencia LACHO canónica de resolución:
+FOUNDATION → SAMU @ =><= .. detiene .. sistema --[Nudo Corredizo] [term]
+SCOPE      → SAMU @ =><= .. rechaza .. operacion_fuera_scope --[Ballestrinque] [term]
+TERM       → SAMU @ =><= .. cierra .. ciclo_term_expirado --[Nudo de Ocho] [term]
+GRAMMAR    → SAMU @ =><= .. corrige .. gramatica_invalida --[As de Guía] [term]
+COHERENCE  → SAMU @ =><= .. verifica .. coherencia_interna --[Nudo de Rizo] [term]
+
+**red_regret(error_description):**
+Pipeline de corrección mínimo. Registra Dispute tipo COHERENCE con estado resolved=True.
+El aprendizaje real (Behavioral RAG) ocurre cuando el ledger tiene suficiente historial.
+En IMV mínimo: registra + notifica + vuelve a IDLE.
+
+**audit_grammar(sentence: ParsedSentence):**
+Punto de entrada para el ciclo chat→grammar→samu.
+Si VALID → None (sin disputa).
+Si errors → Dispute GRAMMAR.
+Si solo warnings → Dispute COHERENCE.
+Resetea last_resolution en cada llamada: evaluaciones independientes.
+
+**verify_sovereign_coherence(module):**
+Verifica [foundation][scope][term] para un módulo dado.
+Si alguno falla → Dispute del tipo correspondiente.
+Retorna bool para uso rápido en verify_coherence() pública.
+
+### 4.0 API PÚBLICA
+
+audit(sentence) → Optional[Dispute] — punto de entrada desde chat.py
+verify_coherence(module) → bool — para verificaciones rápidas
+red_regret(error) → None — registra error verificado
+get_status() → str — "SAMU @ [STATE] - N disputas procesadas"
+
+### 5.0 RELACIÓN CON SCALAR S
+
+El Scalar S (BIBLIO-SOURCES(SAMU_SCALAR-S).txt) usa disputes de esta instancia:
+unresolved = sum(1 for d in _samu.disputes if not d.resolved)
+Un RED_REGRET siempre crea Dispute con resolved=True — no penaliza S indefinidamente.
+Una Dispute no resuelta (resolved=False) sí penaliza S hasta que se cierra.
+
+### 6.0 TARDANZA DELIBERADA — ESTADO EN IMV
+
+La tardanza deliberada es constitutiva de SAMU. En IMV v0.1.0: arquitectural sin delay real.
+El método deliberate() existe y se llama — prepara la estructura para cuando el delay sea calibrado por Behavioral RAG según S del operador específico.
+Referencia completa: BIBLIO-SOURCES(SAMU_TARDANZA-DELIBERADA).txt
+
+### 7.0 GRAMÁTICA VIVA
+
+SAMU IMV-3 =><= .. dirime .. incoherencia_con_foundation_soberanamente
+=><= deliberate_antes_resolver .. RED-REGRET_para_aprender
+=><= audit_grammar_como_puerta_entre_chat_y_ledger --[Ballestrinque] [term]
+
+====================================================================

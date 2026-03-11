@@ -1,0 +1,330 @@
+# BIBLIO-SOURCES(CRYPTO_KEY-SEAT).txt
+
+====================================================================
+
+## 🔑 CRYPTO (key seat) — AUTORIDAD SOBERANA SOBRE IDENTIDAD Y ACCESO
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+(key seat) es el asiento de CRYPTO que gobierna la autoridad soberana sobre identidades y accesos: el guardián de que solo entidades con identidad verificada y autorización soberana puedan acceder a recursos, operaciones y espacios relacionales dentro del sistema.
+
+#### 1.2 La llave como función criptográfica soberana
+(key seat) no es gestión de accesos ni firewall — es la función criptográfica que certifica quién es quién en el universo LACHO y qué puede hacer con esa identidad verificada.
+
+#### 1.3 Por qué (key seat) es CRYPTO y no TRUST
+TRUST declara [foundation] y [scope], (key seat) certifica que quien opera dentro de ellos es quien dice ser.
+
+#### 1.4 Por qué (key seat) es el primer asiento en activarse
+Sin identidad verificada no hay operación soberana. (key seat) es la llave que abre o cierra el acceso soberano.
+
+#### 1.5 Distinción entre identidad y autorización
+(key seat) certifica ambas pero son funciones separadas — ser quien eres no equivale a poder hacer lo que quieres.
+
+#### 1.6 Relación con BIOMETRICS
+BIOMETRICS como verificador físico primario que (key seat) certifica como válido para el sistema.
+
+#### 1.7 Relación con MU_IDENTITY
+MU_IDENTITY es preservado y certificado por (key seat) entre ciclos.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Qué puede certificar (key seat)
+- Identidad soberana de entidades en el universo LACHO.
+- Autorización de acceso según ID_ROLE y ID_SCOPE.
+- Preservación de MU_IDENTITY entre ciclos.
+- Integración de BIOMETRICS como ancla física.
+
+#### 2.2 Qué no puede hacer
+No puede certificar identidad cuya presencia viola [foundation], no puede autorizar acceso fuera de [scope], no puede operar con [term] expirado.
+
+#### 2.3 Condición de violación primaria
+Acceso con identidad no verificada — operación bajo identidad suplantada o asumida.
+
+#### 2.4 Condición de violación secundaria
+(key seat) que certifica más autorización de la que [scope] permite — elevación de privilegios no soberana.
+
+#### 2.5 Señal de alerta
+Múltiples intentos de verificación fallidos desde misma entidad — posible ataque de suplantación de identidad.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 COMPONENTES DE LA IDENTIDAD VERIFICADA
+
+ID_CORE:
+Identificador único e irrepetible de la entidad en el universo LACHO.
+
+ID_ROLE:
+Rol declarado de la entidad en el contexto de operación actual.
+
+ID_SCOPE:
+Perímetro de autorización — qué puede hacer esta entidad dentro de [scope].
+
+ID_TERM:
+Vigencia de la identidad certificada — expira con [term] activo.
+
+ID_SIGNATURE:
+Firma criptográfica que vincula ID_CORE con ID_ROLE, ID_SCOPE y ID_TERM.
+
+#### 3.2 PROCESO DE CERTIFICACIÓN DE IDENTIDAD
+
+1. Entidad presenta credenciales soberanas.
+2. (key seat) verifica ID_CORE contra registro.
+3. BIOMETRICS confirma identidad física si aplica.
+4. (key seat) evalúa ID_ROLE contra [scope] activo.
+5. Construye ID_SIGNATURE como hash del conjunto.
+6. Registra en HL FABRIC como certificación activa.
+7. Emite token de identidad verificada al sistema.
+
+#### 3.3 PROCESO DE AUTORIZACIÓN DE ACCESO
+
+1. Entidad con identidad verificada solicita acceso.
+2. (key seat) evalúa ID_SCOPE contra recurso solicitado.
+3. Verifica que [term] de identidad está vigente.
+4. Verifica que recurso está dentro de [scope] activo.
+5. Si todo válido: emite autorización soberana.
+6. Si violación: rechaza y registra en HL FABRIC.
+
+#### 3.4 (key seat) Y BIOMETRICS
+
+BIOMETRICS como capa física de verificación que (key seat) integra en ID_SIGNATURE.
+- Por qué BIOMETRICS sin (key seat) es verificación física sin certificación soberana.
+- Por qué (key seat) sin BIOMETRICS en entorno móvil es certificación sin ancla física.
+- Cómo (key seat) gestiona fallo de BIOMETRICS: ID_SIGNATURE se degrada — acceso restringido.
+
+#### 3.5 (key seat) Y MU_IDENTITY
+
+MU_IDENTITY como preservación de identidad soberana entre ciclos — certificada por (key seat).
+- Cómo (key seat) verifica MU_IDENTITY al inicio de nuevo [term].
+- Qué ocurre cuando MU_IDENTITY está CORRUPTED: (key seat) bloquea acceso hasta restauración verificada.
+
+#### 3.6 RELACIÓN CON LOS DOMINIOS ECONÓMICOS
+
+MEMECOINS/VOLATILIDAD:
+- Certificación de identidad soberana de wallet, exchange y oráculo en operación.
+- ID_SCOPE de operación de mercado: qué puede hacer esta identidad en mercado.
+- Límite: (key seat) no puede certificar identidad de exchange no verificado en [ecosystem].
+
+CUSTODIA MÓVIL:
+- Certificación de identidad de dispositivo, usuario y operación de firma.
+- BIOMETRICS como componente obligatorio de ID_SIGNATURE en custodia.
+- Límite: (key seat) en custodia degrada automáticamente si BIOMETRICS falla — solo operaciones de lectura habilitadas.
+
+NOTARÍA DIGITAL:
+- Certificación de identidad de partes declarantes, autoridades y documentos.
+- ID_ROLE como declaración de capacidad notarial verificada de cada parte.
+- Límite: (key seat) no puede certificar rol notarial en jurisdicción fuera de [scope].
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation]
+(key seat) no certifica identidad cuya presencia viola [foundation].
+
+#### 4.2 Con [scope]
+ID_SCOPE está acotado al perímetro soberano declarado.
+
+#### 4.3 Con [term]
+ID_SIGNATURE expira con [term] — nueva certificación requerida en nuevo ciclo.
+
+#### 4.4 Con (seal of secrecy)
+(key seat) certifica quién emite [command] antes de que (seal of secrecy) certifique su dirección.
+
+#### 4.5 Con (shield seat)
+(shield seat) provee lista de identidades verificadas que (shield seat) usa para distinguir amenaza.
+
+#### 4.6 Con (link seat)
+(link seat) usa identidades certificadas por (key seat) para establecer canales seguros entre ellas.
+
+#### 4.7 Con BIOMETRICS
+Verificador físico primario integrado en ID_SIGNATURE.
+
+#### 4.8 Con DOORMAN-MOBILE
+DOORMAN-MOBILE consulta (key seat) antes de permitir acceso en entorno móvil.
+
+#### 4.9 Con {handshake}
+{handshake} usa (key seat) en fase SYN para verificar identidades.
+
+#### 4.10 Con [mu-store]
+MU_IDENTITY certificado y preservado por (key seat) entre ciclos.
+
+#### 4.11 Con HL FABRIC
+Registra toda certificación de identidad como registro inmutable.
+
+#### 4.12 Con SAMU @
+SAMU audita que operaciones se realicen bajo identidad certificada.
+
+#### 4.13 Con Behavioral RAG
+Patrones de acceso calibran detección de anomalías futuras.
+
+---
+
+### 5.0 ESTADOS DE (key seat)
+
+#### 5.1 KEY_ACTIVE
+Identidades certificadas y vigentes. Accesos autorizados operativos. HL FABRIC con registro actualizado. BIOMETRICS verificado si aplica.
+
+#### 5.2 KEY_VERIFYING
+Proceso de certificación en curso. Credenciales siendo evaluadas. BIOMETRICS siendo consultado. Resultado pendiente.
+
+#### 5.3 KEY_RESTRICTED
+Identidad certificada pero con acceso reducido por degradación de componente. BIOMETRICS fallido en entorno móvil. Solo operaciones de solo lectura habilitadas.
+
+#### 5.4 KEY_REJECTED
+Certificación rechazada. Identidad no verificable o suplantada. Registro en HL FABRIC con causa. [management] notificado si patrón repetido.
+
+#### 5.5 KEY_EXPIRED
+ID_SIGNATURE expiró con [term]. Recertificación requerida. Acceso suspendido hasta renovación.
+
+#### 5.6 KEY_COMPROMISED
+Identidad soberana suplantada o violada. foundation COMPROMISED activado. RED-REGRET obligatorio. Sistema en diagnóstico intensivo.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Impacto en dimensiones
+(key seat) no tiene dimensión propia en @trust_matrix pero es condición previa de toda operación soberana en la matriz.
+
+#### 6.2 Cómo KEY_RESTRICTED degrada capacidad operativa de todos los módulos TRUST
+Acceso restringido afecta todas las dimensiones al limitar operaciones posibles.
+
+#### 6.3 Cómo KEY_COMPROMISED invalida T_matrix
+Si no se sabe quién opera, la matriz no tiene sujeto soberano verificado.
+
+#### 6.4 Cómo Behavioral RAG aprende de patrones de acceso
+Patrones de acceso calibran detección futura y ajustan umbrales de verificación.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Certificación de identidad al inicio de ciclo
+```
+(Crypto) key_seat =><= .. certify .. entity_identity --[As de Guía] [term]
+```
+
+#### 7.2 KEY_RESTRICTED por fallo de BIOMETRICS
+```
+(Crypto) key_seat =><= .. restrict .. biometric_failure --[Nudo de Ocho] [term]
+```
+
+#### 7.3 KEY_REJECTED ante suplantación detectada
+```
+(Crypto) key_seat =><= .. reject .. identity_spoofing --[Nudo Corredizo] [term]
+```
+
+#### 7.4 KEY_COMPROMISED activando detención total
+```
+(Crypto) key_seat =><= .. compromise .. foundation_breached --[Ballestrinque] [term]
+```
+
+#### 7.5 (key seat) en dominio memecoins
+```
+(Crypto) key_seat =><= .. verify .. market_identity --[Nudo de Rizo] [term]
+```
+
+#### 7.6 (key seat) en dominio custodia móvil
+```
+(Crypto) key_seat =><= .. certify .. custody_identity --[As de Guía] [term]
+```
+
+#### 7.7 (key seat) en dominio notaría digital
+```
+(Crypto) key_seat =><= .. authorize .. notarial_role --[Nudo de Ocho] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+KEY_ACTIVE con identidades certificadas y accesos operativos soberanos.
+
+#### 8.2 Nudo de Ocho
+ID_SIGNATURE cristalizada en HL FABRIC — identidad verificada inmutable.
+
+#### 8.3 Nudo Corredizo
+KEY_COMPROMISED — identidad soberana violada, sistema detenido.
+
+#### 8.4 Ballestrinque
+KEY_RESTRICTED — tensión entre identidad parcialmente verificada y operación restringida necesaria.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+1. KeyVerify
+   - Verificación de credenciales con integración de BIOMETRICS si aplica.
+   - Construcción de ID_SIGNATURE con registro en HL FABRIC.
+
+2. KeyCertify
+   - Construcción de ID_SIGNATURE con registro en HL FABRIC.
+   - Emisión de token de identidad verificada al sistema.
+
+3. KeyAuthorize
+   - Evaluación de ID_SCOPE contra recurso solicitado.
+   - Emisión de autorización soberana si todo válido.
+
+4. KeyRestrict
+   - Degradación de acceso ante fallo parcial de componente de identidad.
+   - Habilitación solo de operaciones de lectura.
+
+5. KeyExpire
+   - Expiración de ID_SIGNATURE al cierre de [term] con suspensión de acceso.
+   - Preparación para recertificación en nuevo ciclo.
+
+6. KeyCompromise
+   - Protocolo ante suplantación de identidad — detención total y RED-REGRET.
+   - Activación de foundation COMPROMISED.
+
+---
+
+### 10.0 MÉTRICAS
+
+- Estado de (key seat) (ACTIVE/VERIFYING/RESTRICTED/REJECTED/EXPIRED/COMPROMISED).
+- Número de identidades certificadas activas.
+- Ratio KEY_VERIFIED vs KEY_REJECTED.
+- Frecuencia de KEY_RESTRICTED por dominio.
+- Tiempo promedio de certificación por tipo.
+- Tasa de KEY_COMPROMISED detectados.
+- Frecuencia de fallos de BIOMETRICS por entorno.
+
+---
+
+### 11.0 REGLAS
+
+- Toda operación soberana requiere identidad certificada por (key seat) sin excepción.
+- (key seat) no puede certificar identidad cuya presencia viola [foundation].
+- ID_SIGNATURE expira con [term] — todo ciclo nuevo requiere recertificación.
+- BIOMETRICS es componente obligatorio de ID_SIGNATURE en entorno de custodia móvil.
+- KEY_COMPROMISED detiene el sistema completamente sin excepción.
+- KEY_RESTRICTED permite solo operaciones de lectura — nunca escritura ni firma.
+- HL FABRIC registra toda certificación y rechazo de identidad sin excepción.
+- Múltiples KEY_REJECTED desde misma entidad escala a [management] automáticamente.
+- MU_IDENTITY debe ser verificado por (key seat) al inicio de todo nuevo [term].
+- Behavioral RAG registra patrones de acceso para calibración de detección futura.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+(key seat) fija como invariante la certificación soberana de identidad y autorización como condición de toda operación verificada en el universo LACHO.
+
+#### 12.2 Limitaciones
+No certifica identidad que viola [foundation], no autoriza acceso fuera de [scope], no opera con [term] expirado, no permite KEY_COMPROMISED sin detención total.
+
+#### 12.3 Habilitaciones
+Operación soberana bajo identidad verificada, integración de BIOMETRICS como ancla física de certificación, preservación de MU_IDENTITY entre ciclos, trazabilidad completa en HL FABRIC de toda identidad certificada y todo acceso autorizado o rechazado.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

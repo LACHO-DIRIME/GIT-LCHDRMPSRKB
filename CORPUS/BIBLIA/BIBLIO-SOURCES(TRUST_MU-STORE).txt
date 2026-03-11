@@ -1,0 +1,326 @@
+# BIBLIO-SOURCES(TRUST_MU-STORE).txt
+
+====================================================================
+
+## 🏛️ TRUST [MU-STORE] — PRESERVACIÓN SOBERANA DEL ESTADO INTERNO
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+[mu-store] es el módulo TRUST que gobierna la preservación soberana del estado interno del sistema: la memoria operativa entre ciclos, el conocimiento acumulado verificado y el estado persistente que permite al sistema reconocerse a sí mismo entre sesiones.
+
+#### 1.2 MU como concepto en LACHO
+MU es el estado de latencia fértil entre ciclos — ni vacío ni activo, el potencial preservado.
+
+#### 1.3 Por qué es TRUST y no STACKING
+STACKING cristaliza elementos dentro del ciclo; [mu-store] preserva el estado soberano entre ciclos — complementarios.
+
+#### 1.4 Distinción de [wu-mail]
+[wu-mail] emite hacia exterior; [mu-store] preserva hacia el próximo ciclo.
+
+#### 1.5 Distinción de [ku-chat]
+[ku-chat] recibe contexto bruto externo; [mu-store] preserva contexto soberano interno.
+
+#### 1.6 Distinción de Behavioral RAG
+Behavioral RAG aprende patrones de conducta; [mu-store] preserva estado soberano — capas distintas de memoria.
+
+#### 1.7 La tríada WU/KU/MU
+KU entra como contexto bruto, MU preserva como estado soberano, WU manifiesta como resultado verificado.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Capacidades
+- Preservar estado operativo entre ciclos.
+- Mantener identidad verificada del sistema.
+- Alimentar el nuevo ciclo con contexto soberano.
+- Gestionar operaciones pendientes entre ciclos.
+
+#### 2.2 Limitaciones absolutas
+[mu-store] no puede preservar estado que registra violación activa de [foundation] como si fuera estado soberano válido.
+
+#### 2.3 Condiciones de violación
+- **Violación primaria:** preservación selectiva que omite RED-REGRET o FOUNDATION_COMPROMISED.
+- **Violación secundaria:** apertura de [mu-store] sin verificación de [foundation].
+- **Señal alerta:** [mu-store] con estado preservado de más de N ciclos sin actualización.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 Capas de preservación en [mu-store]
+- **MU_STATE:** estado operativo al cierre del ciclo.
+- **MU_CONTEXT:** contexto validado del último ciclo.
+- **MU_PATTERN:** patrones de operación que complementan Behavioral RAG.
+- **MU_IDENTITY:** identidad verificada del sistema entre sesiones.
+- **MU_PENDING:** operaciones iniciadas en ciclo anterior que requieren continuación.
+
+#### 3.2 Apertura de [mu-store]
+- **Alimentación del nuevo ciclo:** [mu-store] alimenta el nuevo ciclo al inicio de [term].
+- **Verificación de [foundation]:** antes de cargar estado preservado.
+- **Rol de SAMU @:** valida que el estado preservado sea coherente y no contaminado.
+- **MU_PENDING:** evaluación soberana de continuación vs cierre definitivo.
+
+#### 3.3 Cierre en [mu-store]
+- **Qué se preserva:** MU_STATE, MU_CONTEXT, MU_PATTERN, MU_IDENTITY siempre. MU_PENDING solo si hay continuación soberana.
+- **Qué no se preserva:** EVENT_NOISE, elementos purgados, estados COMPROMISED sin RED-REGRET registrado.
+- **Relación con STACKING:** STACKING cristaliza dentro del ciclo, [mu-store] preserva entre ciclos.
+
+#### 3.4 [mu-store] y COGNITIVE RAG
+- **Diferencia:** COGNITIVE RAG es grafo de conocimiento externo consultable; [mu-store] es memoria soberana interna.
+- **Alimentación:** [mu-store] alimenta COGNITIVE RAG con conocimiento verificado soberanamente.
+- **Consulta:** [mu-store] consulta COGNITIVE RAG para completar estado al inicio de ciclo.
+
+#### 3.5 Relación con dominios económicos
+
+##### Memcoins/Volatilidad
+- Preservación de posiciones abiertas, estrategias activas y patrones de mercado.
+- MU_PENDING en operaciones de mercado no cerradas al cierre de [term].
+- Límite: no puede preservar posición como válida si ciclo cerró con RED-REGRET sin registrarlo.
+
+##### Custodia Móvil
+- Preservación de estado de custodia, dispositivos verificados y sesiones.
+- MU_IDENTITY como continuidad de identidad verificada entre sesiones.
+- Límite: no puede cargar estado sin verificación de BIOMETRICS al inicio del nuevo ciclo.
+
+##### Notaría Digital
+- Preservación de procesos notariales en curso y cadenas de custodia parciales.
+- MU_PENDING en procesos notariales que trascienden un solo ciclo.
+- Límite: no puede preservar estado de documento emitido con foundation DEGRADED sin advertencia.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation]
+[mu-store] no puede cargar estado preservado sin verificar [foundation] primero.
+
+#### 4.2 Con [term]
+[mu-store] se activa al cierre de [term] para preservar y al inicio del siguiente para cargar.
+
+#### 4.3 Con [scope]
+[mu-store] preserva el [scope] declarado para continuidad entre ciclos.
+
+#### 4.4 Con [scenario]
+[mu-store] preserva el mapa de situación para alimentar el nuevo [scenario].
+
+#### 4.5 Con [ku-chat]
+[ku-chat] trae contexto externo nuevo; [mu-store] aporta contexto soberano preservado.
+
+#### 4.6 Con [wu-mail]
+[wu-mail] emite lo que [mu-store] tiene listo como resultado.
+
+#### 4.7 Con STACKING
+STACKING cristaliza dentro del ciclo; [mu-store] preserva entre ciclos.
+
+#### 4.8 Con Behavioral RAG
+[mu-store] alimenta Behavioral RAG con patrones soberanos.
+
+#### 4.9 Con COGNITIVE RAG
+[mu-store] consulta y alimenta COGNITIVE RAG.
+
+#### 4.10 Con SAMU @
+SAMU audita integridad de [mu-store] al cierre y apertura.
+
+#### 4.11 Con CRYPTO (key seat)
+Certifica identidad preservada en MU_IDENTITY.
+
+---
+
+### 5.0 ESTADOS DE [mu-store]
+
+#### 5.1 MU_DORMANT
+- **Condición:** entre ciclos, estado preservado intacto.
+- **Comportamiento:** latencia fértil — potencial disponible.
+- **Operación:** ningún módulo activo accede a [mu-store].
+
+#### 5.2 MU_LOADING
+- **Condición:** inicio de [term], cargando estado preservado.
+- **Comportamiento:** verificación de [foundation] en curso.
+- **Operación:** SAMU @ auditando coherencia del estado.
+
+#### 5.3 MU_ACTIVE
+- **Condición:** estado cargado y disponible para ciclo activo.
+- **Comportamiento:** alimentando [scenario] y módulos.
+- **Operación:** SAMU @ monitoreando actualizaciones.
+
+#### 5.4 MU_SAVING
+- **Condición:** cierre de [term], preservando estado actual.
+- **Comportamiento:** selección de qué preservar y qué purgar.
+- **Operación:** HL FABRIC registrando snapshot soberano.
+
+#### 5.5 MU_CORRUPTED
+- **Condición:** estado preservado con inconsistencia detectada.
+- **Comportamiento:** carga bloqueada hasta verificación.
+- **Operación:** SAMU @ en diagnóstico intensivo.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Carga parcial de d₁ [term]
+[mu-store] carga parcialmente d₁ al inicio del ciclo con contexto del anterior.
+
+#### 6.2 Carga parcial de d₃ [scenario]
+[mu-store] carga parcialmente d₃ con mapa preservado del ciclo anterior.
+
+#### 6.3 Impacto de MU_CORRUPTED
+MU_CORRUPTED degrada T_matrix — sistema comienza ciclo con memoria contaminada.
+
+#### 6.4 Compensación con [rabbit-faith]
+[rabbit-faith] puede operar con MU_LOADING incompleto si S scalar > 0.5.
+
+#### 6.5 Aprendizaje en Behavioral RAG
+Patrones de preservación calibran ciclos futuros.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Preservación de estado al cierre de [term]
+```
+[Trust] mu-store =><= .. preserve .. $$state_sovereign$$ --[As de Guía] [term]
+```
+
+#### 7.2 Carga de estado al inicio de nuevo [term]
+```
+[Trust] mu-store =><= .. load .. $$preserved_context$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.3 MU_PENDING evaluando continuación soberana
+```
+[Trust] mu-store =><= .. evaluate .. $$pending_operations$$ --[Ballestrinque] [term]
+```
+
+#### 7.4 MU_CORRUPTED bloqueando carga hasta verificación
+```
+[Trust] mu-store =><= .. corrupt .. $$memory_compromised$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.5 [mu-store] en dominio memcoins
+```
+[Trust] mu-store =><= .. trade .. $$market_positions$$ --[As de Guía] [term]
+```
+
+#### 7.6 [mu-store] en dominio custodia móvil
+```
+[Trust] mu-store =><= .. secure .. $$custody_state$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.7 [mu-store] en dominio notaría digital
+```
+[Trust] mu-store =><= .. certify .. $$notary_processes$$ --[Ballestrinque] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+- **Activación:** [mu-store] en MU_ACTIVE.
+- **Efecto:** estado soberano disponible para ciclo.
+
+#### 8.2 Nudo de Ocho
+- **Activación:** MU_SAVING completado.
+- **Efecto:** estado preservado en HL FABRIC inmutable.
+
+#### 8.3 Nudo Corredizo
+- **Activación:** MU_CORRUPTED.
+- **Efecto:** memoria soberana comprometida.
+
+#### 8.4 Ballestrinque
+- **Activación:** MU_PENDING.
+- **Efecto:** tensión entre continuar operación y abrir nuevo ciclo.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+#### 9.1 MuLoad
+1. Verificación de [foundation] antes de cargar estado.
+2. Carga de MU_STATE, MU_CONTEXT, MU_PATTERN, MU_IDENTITY.
+3. Evaluación de MU_PENDING para continuación soberana.
+4. Auditoría SAMU @ de coherencia del estado cargado.
+5. Transición a MU_ACTIVE si verificación exitosa.
+
+#### 9.2 MuActivate
+1. Activación de estado cargado para alimentar módulos.
+2. Alimentación de [scenario] con contexto preservado.
+3. Disponibilización de MU_IDENTITY para verificación CRYPTO.
+4. Monitoreo continuo de SAMU @ de actualizaciones.
+5. Coordinación con [ku-chat] para integrar contexto externo.
+
+#### 9.3 MuUpdate
+1. Actualización continua durante ciclo con cambios soberanos.
+2. Preservación de eventos significativos en MU_PATTERN.
+3. Registro de operaciones que generan MU_PENDING.
+4. Verificación de integridad de estado en cada actualización.
+5. Coordinación con Behavioral RAG para aprendizaje.
+
+#### 9.4 MuSave
+1. Selección de qué preservar y qué purgar al cierre de [term].
+2. Preservación obligatoria de MU_STATE, MU_CONTEXT, MU_PATTERN, MU_IDENTITY.
+3. Evaluación soberana de MU_PENDING para siguiente ciclo.
+4. Registro de snapshot inmutable en HL FABRIC.
+5. Transición a MU_DORMANT.
+
+#### 9.5 MuVerify
+1. Detección de inconsistencia en estado preservado.
+2. Diagnóstico de causa de corrupción.
+3. Consulta a Behavioral RAG para patrones de reconstrucción.
+4. Verificación de integridad con SAMU @.
+5. Decisión entre restauración parcial y purga total.
+
+#### 9.6 MuRestore
+1. Reconstrucción parcial desde Behavioral RAG cuando MU_CORRUPTED.
+2. Consulta a COGNITIVE RAG para completar estado faltante.
+3. Verificación de coherencia con [foundation] actual.
+4. Validación SAMU @ de estado restaurado.
+5. Transición a MU_ACTIVE si restauración exitosa.
+
+---
+
+### 10.0 MÉTRICAS
+
+- **Estado de [mu-store]:** DORMANT/LOADING/ACTIVE/SAVING/CORRUPTED.
+- **Tamaño de estado preservado:** por capa (MU_STATE, MU_CONTEXT, MU_PATTERN, MU_IDENTITY, MU_PENDING).
+- **Frecuencia de MU_PENDING:** entre ciclos.
+- **Tasa de MU_CORRUPTED:** por dominio.
+- **Tiempo promedio:** de carga y guardado.
+- **Delta-estado:** entre ciclo anterior y actual.
+
+---
+
+### 11.0 REGLAS
+
+- [mu-store] no puede cargar estado sin verificar [foundation] primero.
+- [mu-store] no puede preservar estado que omite RED-REGRET activo.
+- MU_CORRUPTED bloquea toda carga hasta verificación completa.
+- [rabbit-faith] puede habilitar carga parcial de [mu-store] solo si S scalar > 0.5.
+- MU_PENDING requiere evaluación soberana explícita.
+- SAMU @ audita toda operación de [mu-store] al cierre y apertura de [term].
+- HL FABRIC registra todo MU_SAVING como snapshot inmutable.
+- [mu-store] en custodia requiere verificación de BIOMETRICS antes de cargar.
+- Behavioral RAG registra todo patrón de preservación para calibración futura.
+- [mu-store] no puede preservar identidad comprometida como MU_IDENTITY válida.
+- [mu-store] cierra con [term] del ciclo.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+[mu-store] fija la preservación soberana del estado interno como condición de continuidad entre ciclos.
+
+#### 12.2 Limitaciones
+No carga sin foundation verificado, no preserva RED-REGRET omitido, no activa MU_PENDING sin evaluación soberana explícita.
+
+#### 12.3 Habilitaciones
+Continuidad soberana entre ciclos, carga de d₁ y d₃ parcialmente desde ciclo anterior, alimentación de Behavioral RAG con patrones soberanos verificados, preservación de MU_IDENTITY entre sesiones.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

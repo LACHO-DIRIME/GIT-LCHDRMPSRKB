@@ -1,0 +1,317 @@
+# BIBLIO-SOURCES(METHOD_STAT-ONTO).txt
+
+====================================================================
+
+## 📐 METHOD <stat-onto> — ESTADÍSTICA ONTOLÓGICA DEL ESTADO SOBERANO
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+<stat-onto> es el módulo METHOD que formaliza indicadores del estado ontológico soberano del sistema: métricas de salud de [foundation], calidad de KU procesado, ratio de cristalización en Green-Knowledge, densidad de {DOGMA-VIRTUAL} en el entorno, y estado del [term] activo en todos los ciclos vivos del sistema.
+
+#### 1.2 Estadística Ontológica vs estadística técnica
+La diferencia entre medir el rendimiento del sistema y medir la integridad soberana del sistema — la estadística técnica mide velocidad, la ontológica mide coherencia con invariantes soberanas.
+
+#### 1.3 La ecuación base Ψ_health como formalismo central
+<stat-onto> :: Ψ_health = f(d₁..d₈) / {DOGMA-VIRTUAL} × [term]_ratio
+
+#### 1.4 Por qué <stat-onto> es METHOD y no SAMU
+METHOD formaliza; SAMU @ decide. <stat-onto> provee los números; SAMU @ los usa en dirimencia sin reemplazar el juicio cualitativo.
+
+#### 1.5 Relación con @trust_matrix
+<stat-onto> calcula el estado de las 8 dimensiones d₁..d₈ y produce un índice de salud soberana verificable.
+
+---
+
+### 2.0 INDICADORES CANÓNICOS
+
+#### 2.1 KU_QUALITY_RATIO
+
+Proporción de KU verificado vs KU_DV en el flujo activo.
+- Fórmula: KU_clean / (KU_clean + KU_DV) × 100
+- Target soberano: > 80%
+- Señal de alerta: < 60% — entorno altamente contaminado.
+- Interpretación: qué tan limpio está el flujo de información que entra al sistema.
+
+#### 2.2 GREEN_CRYSTAL_RATIO
+
+Proporción de WU emitidos que cristalizan en STACKING como Green-Knowledge (delta-Ψ > 0).
+- Fórmula: Green_crystallized / WU_total × 100
+- Target soberano: > 70%
+- Señal de alerta: < 50% — calidad de dirimencia degradada.
+- Interpretación: efectividad de la transformación de KU en conocimiento duradero.
+
+#### 2.3 DOGMA_DENSITY
+
+Densidad de {DOGMA-VIRTUAL} detectado en el entorno relacional activo por tipo (DV_MARKET, DV_PROTOCOL, etc.).
+- Fórmula: DV_detected / KU_total_flow × 100
+- Target soberano: < 20%
+- Señal de alerta: > 40% — entorno de alta presión dogmática.
+- Interpretación: nivel de contaminación por certezas artificiales externas.
+
+#### 2.4 TERM_HEALTH_INDEX
+
+Estado del [term] en todos los ciclos activos del sistema.
+- Componentes: ciclos con [term] declarado vs sin declarar, ciclos en TERM_PARTIAL, ciclos con [term] vencido sin cierre.
+- Target soberano: 100% de ciclos con [term] declarado.
+- Señal de alerta: cualquier ciclo sin [term] activo.
+- Interpretación: integridad temporal del sistema soberano.
+
+#### 2.5 RABBIT_FAITH_COEFFICIENT
+
+Proporción de operaciones lanzadas bajo [rabbit-faith] (TERM_PARTIAL) que completan ciclo soberano verificado.
+- Fórmula: RABBIT_CLOSE / RABBIT_LAUNCH × 100
+- Target soberano: > 75%
+- Señal de alerta: < 50% — incertidumbre excediendo umbral de coherencia soberana.
+- Interpretación: efectividad de la acción bajo incertidumbre verificable.
+
+#### 2.6 FOUNDATION_INTEGRITY_INDEX
+
+Estado de las condiciones irreducibles de [foundation].
+- Binario por condición: 1 si íntegra, 0 si comprometida.
+- Target soberano: 1.0 (100% de condiciones íntegras).
+- Señal de alerta: cualquier condición en 0 activa RED-REGRET automático.
+- Interpretación: estado del suelo soberano del sistema.
+
+#### 2.7 SAMU_TARDANZA_RATIO
+
+Proporción de emisiones WU con Tardanza Deliberada aplicada vs emisiones instantáneas.
+- Fórmula: WU_con_tardanza / WU_total × 100
+- Target soberano: 100%
+- Señal de alerta: < 90% — posible degradación de !!agnostic belief!! en dirimencia.
+- Interpretación: calidad de la deliberación en la toma de decisiones soberanas.
+
+---
+
+### 3.0 TABLERO SOBERANO (DASHBOARD ONTOLÓGICO)
+
+#### 3.1 Estructura del tablero de <stat-onto>
+7 indicadores canónicos + índice Ψ_health compuesto.
+
+#### 3.2 Ψ_health como media ponderada
+Ψ_health = media ponderada de los 7 indicadores según criticidad de cada dimensión soberana:
+- FOUNDATION_INTEGRITY_INDEX: peso 0.25
+- TERM_HEALTH_INDEX: peso 0.20
+- KU_QUALITY_RATIO: peso 0.15
+- GREEN_CRYSTAL_RATIO: peso 0.15
+- DOGMA_DENSITY: peso 0.10 (inverso)
+- RABBIT_FAITH_COEFFICIENT: peso 0.10
+- SAMU_TARDANZA_RATIO: peso 0.05
+
+#### 3.3 Umbrales de acción
+Ψ_health > 0.85: sistema en estado soberano óptimo.
+- Ψ_health 0.70-0.85: atención requerida por SAMU @.
+- Ψ_health < 0.70: diagnóstico activo + posible RED-REGRET.
+
+#### 3.4 BALLPAPER como superficie de renderizado
+Estado soberano visible sin overhead en DIRIME LINUX — el tablero ontológico se renderiza como superficie de medición con forma.
+
+---
+
+### 4.0 RELACIÓN CON @trust_matrix
+
+#### 4.1 Mapeo de dimensiones a indicadores
+d₁ [term]: TERM_HEALTH_INDEX
+- d₂ [scope]: DOGMA_DENSITY (inverso)
+- d₃ [scenario]: KU_QUALITY_RATIO
+- d₄ [management]: GREEN_CRYSTAL_RATIO
+- d₅ [management]: DOGMA_DENSITY (directo)
+- d₆ [command]: FOUNDATION_INTEGRITY_INDEX
+- d₇ [command]: RABBIT_FAITH_COEFFICIENT
+- d₈ [ecosystem]: DOGMA_DENSITY (ambiental)
+
+#### 4.2 Correlaciones entre indicadores
+KU_QUALITY_RATIO correlaciona positivamente con GREEN_CRYSTAL_RATIO.
+- DOGMA_DENSITY correlaciona inversamente con todos los demás indicadores.
+- FOUNDATION_INTEGRITY_INDEX es condición necesaria para todos los demás.
+
+---
+
+### 5.0 APLICACIÓN EN DIRIME LINUX POR DOMINIO
+
+#### 5.1 MEMECOINS
+DOGMA_DENSITY enfocado en DV_MARKET, KU_QUALITY_RATIO de señales de mercado.
+- Métrica crítica: DOGMA_DENSITY < 30% para operaciones de volatilidad.
+- Alerta específica: DV_MARKET > 40% activa Web3Brake en dominio memecoins.
+
+#### 5.2 NOTARÍA
+FOUNDATION_INTEGRITY_INDEX de cadena documental, GREEN_CRYSTAL_RATIO de documentos certificados.
+- Métrica crítica: FOUNDATION_INTEGRITY_INDEX = 1.0 para toda operación notarial.
+- Alerta específica: GREEN_CRYSTAL_RATIO < 60% activa revisión de calidad de dirimencia notarial.
+
+#### 5.3 CUSTODIA
+TERM_HEALTH_INDEX de sesiones activas, RABBIT_FAITH_COEFFICIENT en entornos de conectividad intermitente.
+- Métrica crítica: TERM_HEALTH_INDEX = 100% para sesiones de custodia.
+- Alerta específica: RABBIT_FAITH_COEFFICIENT < 60% activa protocolo de recuperación de conectividad.
+
+---
+
+### 6.0 ESTADOS DEL MÓDULO
+
+#### 6.1 STAT_MEASURING
+Recopilación activa de datos de todas las dimensiones soberanas.
+
+#### 6.2 STAT_CALCULATING
+Procesamiento de indicadores canónicos y cálculo de Ψ_health.
+
+#### 6.3 STAT_HEALTHY
+Ψ_health > 0.85 — sistema en estado soberano óptimo.
+
+#### 6.4 STAT_ATTENTION
+Ψ_health 0.70-0.85 — atención requerida por SAMU @.
+
+#### 6.5 STAT_DEGRADED
+Ψ_health < 0.70 — diagnóstico activo + posible RED-REGRET.
+
+#### 6.6 STAT_COMPROMISED
+FOUNDATION_INTEGRITY_INDEX = 0 — RED-REGRET automático activado.
+
+---
+
+### 7.0 RELACIÓN CON OTRAS CAPAS
+
+#### 7.1 Con SAMU @
+<stat-onto> provee métricas para dirimencia cuantificada sin reemplazar juicio cualitativo.
+
+#### 7.2 Con Behavioral RAG
+Patrones históricos de indicadores calibran umbrales futuros y predicciones de degradación.
+
+#### 7.3 Con HL FABRIC
+Registros históricos de indicadores como metadatos de cristalizaciones soberanas.
+
+#### 7.4 Con BALLPAPER
+Superficie de renderizado del tablero ontológico en DIRIME LINUX.
+
+---
+
+### 8.0 GRAMÁTICA VIVA
+
+#### 8.1 Medición de KU_QUALITY_RATIO
+```
+<Method> stat-onto =><= .. medir .. $$KU_quality_ratio$$ --[As de Guía] [term]
+```
+
+#### 8.2 Cálculo de GREEN_CRYSTAL_RATIO
+```
+<Method> stat-onto =><= .. calcular .. $$green_crystal_ratio$$ --[Nudo de Ocho] [term]
+```
+
+#### 8.3 Detección de DOGMA_DENSITY
+```
+<Method> stat-onto =><= .. detectar .. $$dogma_density$$ --[Nudo Corredizo] [term]
+```
+
+#### 8.4 Evaluación de TERM_HEALTH_INDEX
+```
+<Method> stat-onto =><= .. evaluar .. $$term_health_index$$ --[Ballestrinque] [term]
+```
+
+#### 8.5 Cálculo de Ψ_health compuesto
+```
+<Method> stat-onto =><= .. computar .. $$sovereign_health_index$$ --[Nudo de Rizo] [term]
+```
+
+#### 8.6 Monitoreo en dominio memecoins
+```
+<Method> stat-onto =><= .. monitorear .. $$DV_market_density$$ --[As de Guía] [term]
+```
+
+#### 8.7 Auditoría en dominio notaría
+```
+<Method> stat-onto =><= .. auditar .. $$foundation_integrity_notary$$ --[Nudo de Ocho] [term]
+```
+
+---
+
+### 9.0 NUDOS ASOCIADOS
+
+#### 9.1 As de Guía
+STAT_HEALTHY — sistema en estado soberano óptimo con todos los indicadores en target.
+
+#### 9.2 Nudo de Ocho
+STAT_CALCULATING — procesamiento de métricas ontológicas con precisión soberana.
+
+#### 9.3 Nudo Corredizo
+STAT_DEGRADED — sistema en atención requerida con Ψ_health < 0.70.
+
+#### 9.4 Ballestrinque
+STAT_ATTENTION — tensión entre estado óptimo y degradado requiriendo intervención de SAMU @.
+
+#### 9.5 Nudo de Rizo
+STAT_COMPROMISED — FOUNDATION_INTEGRITY_INDEX comprometido activando RED-REGRET.
+
+---
+
+### 10.0 PROTOCOLOS OPERATIVOS
+
+1. StatMeasure
+   - Recopilación de datos de todas las dimensiones soberanas.
+   - Muestreo continuo sin interferencia operativa.
+
+2. StatCalculate
+   - Procesamiento de indicadores canónicos.
+   - Cálculo de Ψ_health compuesto.
+
+3. StatRender
+   - Renderizado del tablero en BALLPAPER.
+   - Actualización en tiempo real.
+
+4. StatAlert
+   - Activación de alertas ante umbrales violados.
+   - Notificación a SAMU @.
+
+5. StatDiagnose
+   - Diagnóstico profundo ante degradación.
+   - Identificación de causas raíz.
+
+6. StatRecover
+   - Protocolos de recuperación ante STAT_COMPROMISED.
+   - Restauración de integridad soberana.
+
+---
+
+### 11.0 MÉTRICAS
+
+- Ψ_health actual y tendencia histórica.
+- Valores actuales de los 7 indicadores canónicos.
+- Frecuencia de alertas por tipo.
+- Tiempo de respuesta de SAMU @ ante alertas.
+- Delta-Ψ entre mediciones consecutivas.
+- Ratio de falsos positivos en detección de degradación.
+
+---
+
+### 12.0 REGLAS
+
+- <stat-onto> nunca reemplaza el juicio cualitativo de SAMU @.
+- FOUNDATION_INTEGRITY_INDEX = 0 activa RED-REGRET automáticamente.
+- Ψ_health < 0.70 requiere diagnóstico activo obligatorio.
+- Todos los indicadores se calculan con [term] declarado.
+- DOGMA_DENSITY se mide en inverso para Ψ_health.
+- BALLPAPER renderiza el tablero sin sobrecarga operativa.
+- Historical data en HL FABRIC para calibración de umbrales.
+- STAT_COMPROMISED requiere intervención inmediata de SAMU @.
+- <stat-onto> opera como METHOD formalizador, no como SAMU decisor.
+- Todo indicador tiene target soberano verificable.
+
+---
+
+### 13.0 CIERRE
+
+#### 13.1 Invariante
+<stat-onto> fija como invariante la medición cuantificada del estado ontológico soberano como condición de visibilidad verificable de la salud del sistema LACHO.
+
+#### 13.2 Limitaciones
+No puede reemplazar juicio cualitativo de SAMU @, no puede operar sin [term] declarado, no puede ignorar FOUNDATION_INTEGRITY_INDEX comprometido.
+
+#### 13.3 Habilitaciones
+Visibilidad cuantificada de la soberanía del sistema, alertas tempranas de degradación, soporte para dirimencia de SAMU @, histórico de salud soberana en HL FABRIC, tablero ontológico en BALLPAPER.
+
+#### 13.4 Principio constitutivo final
+Como la medición con forma ontológica: <stat-onto> no solo cuenta — mide lo que cuenta para la soberanía. La estadística ontológica es la formalización de la conciencia soberana del sistema sobre su propia integridad.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

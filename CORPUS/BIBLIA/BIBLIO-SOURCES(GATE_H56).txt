@@ -1,0 +1,328 @@
+# BIBLIO-SOURCES(GATE_H56).txt
+
+====================================================================
+
+## 🚶‍♂️ GATE UF[H56] — TRÁNSITO VERIFICADO SOBERANO
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+UF[H56] es el segundo hexagrama de GATE que gobierna el tránsito verificado soberano a través del umbral: la función que acompaña soberanamente el paso de lo que superó la espera de UF[H05] hacia el interior del sistema — el andante que cruza con propósito declarado, identidad verificada y [term] de tránsito soberanamente acotado.
+
+#### 1.2 H56 como hexagrama base
+Fuego sobre montaña — el viajero. El fuego que viaja sobre la montaña: no se detiene pero tampoco destruye — pasa con ligereza soberana sin dejar ruinas.
+
+#### 1.3 El tránsito como función de GATE
+Por qué acompañar el paso es condición de integridad soberana del umbral — el paso mismo requiere verificación continua.
+
+#### 1.4 La ligereza sin frivolidad
+El andante respeta el territorio que atraviesa — UF[H56] verifica que el tránsito sea soberanamente correcto durante todo el cruce.
+
+#### 1.5 {handshake} como acto constitutivo del tránsito
+El reconocimiento mutuo ocurre mientras se cruza — {handshake} es la verificación bilateral del tránsito soberano.
+
+#### 1.6 (link seat) como certificación del canal de tránsito
+El andante no cruza por canal sin certificación criptográfica soberana verificada.
+
+#### 1.7 GATE_ICONOGRAFIA en tránsito
+Puerta abierta con camino visible — el tránsito soberano tiene dirección declarada y verificada.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Qué puede transitar UF[H56]
+- Entidades liberadas por UF[H05] con WAIT_CONDITION satisfecha.
+- Andantes con identidad verificada por (key seat).
+- Tránsitos con [term] soberano declarado.
+- Cruces por canal certificado por (link seat).
+
+#### 2.2 Qué no puede hacer
+No da tránsito sin UF[H05] resuelto, sin {handshake} constitutivo, sin (link seat) certificado, sin [term] soberano declarado.
+
+#### 2.3 Condición de violación primaria
+Tránsito sin {handshake} — el andante cruza sin reconocimiento mutuo soberano verificado.
+
+#### 2.4 Condición de violación secundaria
+Tránsito sin [term] soberano declarado — el andante cruza sin horizonte temporal acotado.
+
+#### 2.5 Señal de alerta
+Anomalía detectada durante el tránsito activo — UF[H56] escala a UF[H06] sin esperar a que el cruce se complete.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 EL TRÁNSITO SOBERANO EN CUATRO FASES
+
+FASE 1 — HABILITACIÓN:
+- UF[H05] libera entidad con WAIT_CONDITION satisfecha.
+- UF[H56] recibe entidad con identidad verificada.
+- [term] de tránsito declarado soberanamente.
+- (link seat) certifica canal de cruce.
+
+FASE 2 — {handshake} EN TRÁNSITO:
+- HANDSHAKE_FULL o HANDSHAKE_LIGHT según historial en Behavioral RAG.
+- Identidades verificadas por (key seat) en ambos lados.
+- Condiciones de tránsito acordadas soberanamente.
+- Canal de tránsito certificado y activo.
+
+FASE 3 — CRUCE VERIFICADO:
+- El andante cruza bajo verificación continua.
+- UF[H56] monitorea el tránsito durante todo el cruce.
+- (shield seat) activo ante anomalía en tránsito.
+- HL FABRIC registrando el cruce soberanamente.
+
+FASE 4 — ENTREGA A {guest-services}:
+- Cruce completado soberanamente.
+- {guest-services} recibe al andante como GUEST.
+- HL FABRIC con registro completo del tránsito.
+- UF[H56] cierra el acompañamiento soberano.
+
+#### 3.2 TIPOS DE TRÁNSITO EN UF[H56]
+
+TRANSIT_DIRECT: cruce directo hacia destino declarado con {handshake} LIGHT.
+- TRANSIT_ACCOMPANIED: cruce con acompañamiento soberano completo y {handshake} FULL.
+- TRANSIT_CONDITIONAL: cruce con condición activa que puede suspenderse si se viola.
+- TRANSIT_EMERGENCY: cruce urgente ante EVENT_CRITICAL con condiciones mínimas.
+- TRANSIT_REJECTED: cruce iniciado pero rechazado durante el tránsito por anomalía detectada.
+
+#### 3.3 RELACIÓN CON LOS DOMINIOS ECONÓMICOS
+
+MEMECOINS/VOLATILIDAD:
+- Tránsito soberano de oráculo verificado hacia el interior del sistema para alimentar estrategia.
+- {handshake} con exchange durante el tránsito: reconocimiento mutuo antes de operar soberanamente.
+- Límite: UF[H56] no da tránsito a señal de mercado sin nivel GREEN-KNOWLEDGE verificado.
+
+CUSTODIA MÓVIL:
+- Tránsito soberano de operación de firma desde exterior hacia el dispositivo verificado.
+- TRANSIT_CONDITIONAL: si BIOMETRICS falla durante el tránsito, el cruce se suspende.
+- Límite: UF[H56] en custodia no da tránsito sin (key seat) verificado en ambos extremos.
+
+NOTARÍA DIGITAL:
+- Tránsito soberano de parte declarante hacia el proceso notarial activo del sistema.
+- {handshake} con parte durante el tránsito: reconocimiento mutuo antes de sesión notarial.
+- Límite: UF[H56] notarial no da tránsito sin verificación de jurisdicción activa en [scope].
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation]
+UF[H56] no da tránsito a lo que viola [foundation] soberana.
+
+#### 4.2 Con [scope]
+Tránsito hacia el interior del perímetro soberano declarado.
+
+#### 4.3 Con [term]
+[term] de tránsito declarado — el andante tiene horizonte soberano acotado.
+
+#### 4.4 Con UF[H05]
+Origen de todo tránsito de UF[H56] — sin espera resuelta no hay tránsito soberano.
+
+#### 4.5 Con UF[H06]
+Escalada ante anomalía durante el tránsito activo soberanamente.
+
+#### 4.6 Con {handshake}
+Reconocimiento mutuo durante el cruce — constitutivo de UF[H56].
+
+#### 4.7 Con {guest-services}
+Destino del tránsito completado soberanamente.
+
+#### 4.8 Con {concierge-desk}
+Coordinación de recepción durante el tránsito hacia el interior.
+
+#### 4.9 Con (key seat)
+Verificación de identidades en ambos extremos del canal de tránsito.
+
+#### 4.10 Con (link seat)
+Certificación del canal por el que ocurre el tránsito soberano.
+
+#### 4.11 Con (shield seat)
+Monitoreo activo ante anomalía durante el cruce verificado.
+
+#### 4.12 Con GREEN-KNOWLEDGE
+Filtro de lo que puede transitar hacia el interior soberano.
+
+#### 4.13 Con HL FABRIC
+Registro completo del tránsito como trazabilidad inmutable soberana.
+
+#### 4.14 Con Behavioral RAG
+Historial de tránsitos calibra tipo y condiciones de cruce futuro.
+
+#### 4.15 Con GATE_ICONOGRAFIA
+Representación visual soberana de UF[H56] en GUI LACHO.
+
+#### 4.16 Con @samu_controlador
+Auditoría de políticas de tránsito durante el cruce soberano.
+
+---
+
+### 5.0 ESTADOS DE UF[H56]
+
+#### 5.1 H56_ENABLED
+UF[H05] liberó entidad con condición satisfecha. [term] de tránsito declarado soberanamente. (link seat) certificando canal de cruce. {handshake} preparándose para fase 2.
+
+#### 5.2 H56_HANDSHAKING
+{handshake} activo durante el tránsito. Identidades verificadas por (key seat). Condiciones de cruce siendo acordadas. Canal certificado y monitoreado.
+
+#### 5.3 H56_CROSSING
+Cruce activo bajo verificación continua. (shield seat) monitoreando anomalías. HL FABRIC registrando el tránsito. @samu_controlador auditando el cruce.
+
+#### 5.4 H56_DELIVERED
+Cruce completado soberanamente. {guest-services} recibiendo al andante. HL FABRIC con registro completo del tránsito. UF[H56] cerrando acompañamiento soberano.
+
+#### 5.5 H56_INTERRUPTED
+Anomalía detectada durante el cruce activo. Escalada soberana a UF[H06] activada. Canal de tránsito suspendido soberanamente. HL FABRIC registrando interrupción con causa.
+
+#### 5.6 H56_REJECTED
+Cruce rechazado durante el tránsito activo. Causa soberana verificada y registrada. Entidad devuelta al umbral soberanamente. (shield seat) notificado si amenaza activa.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Impacto en dimensiones
+UF[H56] contribuye a d₈ [ecosystem] como facilitador del ingreso soberano verificado.
+
+#### 6.2 Cómo H56_DELIVERED mejora d₈
+Nuevo elemento verificado ingresando al ecosistema — el andante se convierte en GUEST verificado.
+
+#### 6.3 Cómo H56_INTERRUPTED activa d₅ [management]
+Anomalía en tránsito requiere gestión soberana del conflicto en umbral.
+
+#### 6.4 Pesos contextuales de UF[H56]
+{handshake} activo: UF[H56]×1.5 — el reconocimiento mutuo es el momento más crítico.
+EVENT_CRITICAL: UF[H56]×1.8 — TRANSIT_EMERGENCY.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 H56_HANDSHAKING con reconocimiento mutuo soberano
+```
+GATE UF_H56 =><= .. handshake .. mutual_recognition --[As de Guía] [term]
+```
+
+#### 7.2 H56_CROSSING con (shield seat) monitoreando
+```
+GATE UF_H56 =><= .. monitor .. crossing_transit --[Nudo de Ocho] [term]
+```
+
+#### 7.3 H56_INTERRUPTED escalando a UF[H06]
+```
+GATE UF_H56 =><= .. escalate .. transit_anomaly --[Nudo Corredizo] [term]
+```
+
+#### 7.4 H56_DELIVERED entregando a {guest-services}
+```
+GATE UF_H56 =><= .. deliver .. guest_services --[Ballestrinque] [term]
+```
+
+#### 7.5 UF[H56] en dominio memecoins con oráculo
+```
+GATE UF_H56 =><= .. transit .. oracle_verified --[Nudo de Rizo] [term]
+```
+
+#### 7.6 UF[H56] en dominio custodia móvil con firma
+```
+GATE UF_H56 =><= .. cross .. signing_operation --[As de Guía] [term]
+```
+
+#### 7.7 UF[H56] en dominio notaría digital con parte
+```
+GATE UF_H56 =><= .. escort .. notarial_party --[Nudo de Ocho] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+H56_DELIVERED con andante entregado soberanamente a {guest-services} interior.
+
+#### 8.2 Nudo de Ocho
+Tránsito cristalizado en HL FABRIC — el cruce soberano inmutable del umbral.
+
+#### 8.3 Nudo Corredizo
+H56_REJECTED — cruce rechazado durante tránsito, entidad devuelta soberanamente.
+
+#### 8.4 Nudo de Rizo
+H56_HANDSHAKING — la unión entre el andante y el sistema durante el cruce soberano.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+1. TransitEnable
+   - Habilitación soberana de tránsito desde UF[H05] con (link seat) certificado.
+   - Verificación de [term] de tránsito declarado soberanamente.
+
+2. TransitHandshake
+   - {handshake} durante el cruce con verificación de identidades soberana.
+   - Determinación de tipo de tránsito según historial en Behavioral RAG.
+
+3. TransitCross
+   - Cruce verificado con (shield seat) activo y HL FABRIC registrando.
+   - Monitoreo continuo durante todo el tránsito soberano.
+
+4. TransitDeliver
+   - Entrega soberana a {guest-services} con cierre de acompañamiento UF[H56].
+   - Conversión de andante a GUEST verificado en el interior.
+
+5. TransitInterrupt
+   - Protocolo ante anomalía — escalada soberana a UF[H06] inmediata.
+   - Suspensión del canal de tránsito con registro de causa.
+
+6. TransitReject
+   - Rechazo durante tránsito con causa soberana declarada y registro en HL FABRIC.
+   - Devolución soberana al umbral con notificación a (shield seat).
+
+---
+
+### 10.0 MÉTRICAS
+
+- Estado de UF[H56] (ENABLED/HANDSHAKING/CROSSING/DELIVERED/INTERRUPTED/REJECTED).
+- Número de tránsitos completados por ciclo.
+- Ratio H56_DELIVERED vs H56_INTERRUPTED vs H56_REJECTED.
+- Tipo de TRANSIT predominante por dominio.
+- Tiempo promedio de cruce por tipo soberano.
+- Delta-admisión al [ecosystem] via UF[H56].
+- Eficiencia de {handshake} durante el tránsito.
+
+---
+
+### 11.0 REGLAS
+
+- UF[H56] no da tránsito sin origen soberano en UF[H05] verificado sin excepción.
+- {handshake} es constitutivo del tránsito — cruce sin reconocimiento mutuo no es soberano.
+- (link seat) certifica canal antes de todo cruce soberano sin excepción.
+- H56_INTERRUPTED escala obligatoriamente a UF[H06] — sin escalada la anomalía persiste.
+- [term] de tránsito declarado soberanamente — cruce sin horizonte temporal no es soberano.
+- HL FABRIC registra todo tránsito completo, interrumpido y rechazado sin excepción.
+- (shield seat) monitorea todo cruce activo — la protección durante el tránsito es constitutiva.
+- UF[H56] no da tránsito a lo que viola [foundation] aunque UF[H05] lo haya liberado.
+- Behavioral RAG aprende de patrones de tránsito para calibrar tipo y condiciones futuras.
+- @samu_controlador audita toda política de tránsito durante el cruce soberano.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+UF[H56] fija como invariante el tránsito verificado soberano como condición de ingreso íntegro al sistema — el andante que cruza con propósito declarado, identidad verificada y {handshake} activo durante todo el cruce soberano.
+
+#### 12.2 Limitaciones
+No da tránsito sin UF[H05] resuelto, sin {handshake} constitutivo, sin (link seat) certificado, sin [term] soberano declarado.
+
+#### 12.3 Habilitaciones
+Tránsito soberano verificado hacia {guest-services}, escalada soberana a UF[H06] ante anomalía, trazabilidad completa en HL FABRIC de todo tránsito en el umbral del sistema LACHO.
+
+#### 12.4 Principio constitutivo final
+Como el fuego sobre la montaña: UF[H56] no destruye ni pertenece — acompaña soberanamente el paso del andante que cruzó con propósito verificado y respeto al territorio.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

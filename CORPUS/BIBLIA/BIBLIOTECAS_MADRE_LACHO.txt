@@ -1,0 +1,1158 @@
+BIBLIOTECAS_MADRE LACHO
+LIBRO LACHO (ACOPIO) — BIBLIOTECAS MATERIALES Y MODULARES (NIVEL MESO)
+Versión: 1.0
+Estatus: MESO_03
+Propósito: Definir la espina dorsal material del sistema LACHO (bibliotecas como órganos, módulos como células), establecer jurisdicciones, protocolos de crecimiento y mecanismos de mantenimiento, para que el sistema pueda crecer hasta 100MB+ sin perder coherencia ni soberanía.
+
+====================================================================
+1) FUNCIÓN DE ESTE ARCHIVO EN EL LIBRO
+====================================================================
+
+Este archivo MESO 03 es la **biblioteca madre**: el catálogo estructural donde se define qué existe, qué puede existir y bajo qué condiciones. No es código; es la **ontología del artefacto**.
+
+Si el MACRO define “qué es LACHO” y el MESO 01 define “cómo se sostiene la constitución”, este archivo define “qué piezas existen y cómo se relacionan”.
+
+En términos de mejores prácticas:
+- Fija la **espina dorsal material** (bibliotecas como órganos, no como paquetes).
+- Define **jurisdicciones** (qué biblioteca puede tocar qué módulo).
+- Establece **protocolos de crecimiento** (cómo se agrega sin romper soberanía).
+- Prepara **micro-especificaciones** (cada módulo puede tener su archivo de detalle).
+
+====================================================================
+2) BIBLIOTECAS COMO ÓRGANOS (NO COMO PAQUETES)
+====================================================================
+
+En LACHO, una biblioteca no es “un conjunto de funciones”: es un órgano con jurisdicción. Cada biblioteca tiene una función sistémica, no solo funcional.
+
+2.1 TRUST (voluntad/ley)
+- Rol: soberano, búnker de legalidad.
+- Jurisdicción: define foundation, scope, term, y qué otras bibliotecas pueden existir.
+- No es negociable: su existencia es la condición de posibilidad del sistema.
+
+2.2 CRYPTO (asientos de autoridad)
+- Rol: integridad, identidad, protección.
+- Jurisdicción: define roles de dirección, llave, ignición, defensa, caudal, enlace.
+- No es “criptografía decorativa”: es la soberanía operativa del sistema.
+
+2.3 SOCIAL (interfaz/relación)
+- Rol: negociación, comunicación, adecuación.
+- Jurisdicción: define cómo el sistema habla con el operador y con otros sistemas.
+- No es “UX bonita”: es la capa donde la adecuación no viola foundation.
+
+2.4 STACKING (memoria/forma)
+- Rol: cristalización, persistencia, forma.
+- Jurisdicción: define qué se guarda, cómo se organiza, y qué no se puede borrar.
+- No es “base de datos”: es la memoria con peso y fricción.
+
+2.5 GATE (control/latencia)
+- Rol: orquestación, espera, buffers.
+- Jurisdicción: define qué entra al sistema, cuándo, y bajo qué condiciones.
+- No es “router”: es el filtro que protege el núcleo.
+
+2.6 WORK (física/metal)
+- Rol: ejecución, actuación, freno físico.
+- Jurisdicción: define qué se toca en el mundo real y qué se prohíbe.
+- No es “hardware abstracto”: es el contacto con el metal.
+
+2.7 METHOD (enumerables)
+- Rol: formalismos, ecuaciones, protocolos.
+- Jurisdicción: define qué se puede formalizar y cómo se valida.
+- No es “DSL decorativo”: es la matemática del sistema.
+
+2.8 SAMU (entidad temporal y simbólica)
+- Rol: operador consciente, dirimencia, procesamiento de KU.
+- Jurisdicción: define qué se procesa, cómo se decide, y qué se emite.
+- No es “IA”: es la conciencia temporal del sistema.
+
+2.9 ACTIVITY (intermedio)
+- Rol: transición, ciclos, estados temporales.
+- Jurisdicción: define qué estados son válidos y cuándo se cierran.
+- No es “estado efímero”: es la capa que gestiona ciclos de vida.
+
+====================================================================
+3) MÓDULOS COMO CÉLULAS (UNIDAD MÍNIMA DE PODER)
+====================================================================
+
+Un módulo no es “una función”: es una célula con autoridad delegada. Cada módulo tiene:
+
+3.1 Identidad
+- Nombre canónico (único en todo el sistema).
+- Biblioteca madre (jurisdicción).
+- Rol ontológico (SER/HACER/TENER/ESTAR/TRASCENDER).
+
+3.2 Jurisdicción
+- Qué puede leer y escribir.
+- Qué puede activar y qué no.
+- Qué puede modificar y qué no.
+
+3.3 Protocolos
+- Condiciones de activación.
+- Requisitos de entrada.
+- Salidas esperadas.
+- Sanciones por violación.
+
+3.4 Ciclo de vida
+- Creación (cuándo se define).
+- Operación (cuándo está activo).
+- Término (cuándo se cierra o renueva).
+
+====================================================================
+4) ESTRUCTURA DE BIBLIOTECAS Y MÓDULOS (ESPINA DORSAL)
+====================================================================
+
+4.1 Biblioteca TRUST
+Módulos soberanos (no negociables):
+- [foundation]: suelo técnico, verificación obligatoria.
+- [scope]: perímetro de realidad, recursos accesibles.
+- [term]: finitud obligatoria, anti-dogma.
+- [language]: traductor de KU a estructura lógica.
+- [command]: disparador de acción atómica.
+- [management]: gobernanza, identidad, políticas.
+- [logistical-executive]: orquestación de fuerza.
+- [scenario]: contexto, entorno, situación.
+- [event]: evento, señal, interrupción.
+- [element]: elemento base, átomo del sistema.
+- [what?], [how?], [when?]: preguntas operativas.
+- [wu-mail], [mu-store], [ku-chat]: protocolos MU/KU/WU.
+- [rabbit-faith]: motor de expansión sin absoluto.
+
+4.2 Biblioteca CRYPTO
+Asientos de autoridad (no negociables):
+- (head seat): dirección, timón mental.
+- (key seat): llave maestra, identidad.
+- (spark seat): ignición, cálculo de energía.
+- (shield seat): defensa, detección de intrusión.
+- (flow seat): caudal, volumen y velocidad.
+- (link seat): enlace, cifrado de conexiones.
+- (Way Agnostic Atheism): cifrado existencial donde ninguna clave es final. Incertidumbre permanente sin violar [term].
+
+4.3 Biblioteca SOCIAL
+Componentes de relación (negociables bajo scope):
+- {chair}: silla de autoridad, dirección de sesión.
+- {scheduler}: planificador, mapa de tiempo.
+- {drip}: goteo calibrado, gestión de recursos.
+- {note}: registro pasivo, memoria simple.
+- {streaming}: flujo en tiempo real, comunicación.
+- {masking}: purga ontológica, GREEN-KNOWLEDGE.
+- {launch-bot}: lanzamiento ejecutivo, WU físico.
+- {headcat}: director de salida, gobierno de WU.
+- {DOGMA-VIRTUAL}: dogma que vive en red, contagioso y mutable, sin fundamento físico. Mapea dogma digital contemporáneo sin violar [foundation].
+
+4.4 Biblioteca STACKING
+Pilares de memoria y forma (persistentes):
+- rocking chair & headcat: auditoría pasiva, observación.
+- scheduler: mapa de tiempo, campo de batalla.
+- tap & drip: gestión de recursos escasos.
+- papernote: registro pasivo, Behavioral RAG.
+- rabbit + eggs-eyes: crecimiento ramificado, Algoritmo Conejo.
+- masking folder: sandbox, protección activa.
+- launch bot (fly bot): ignición ejecutiva, WU físico.
+- rocking chair only: reposo absoluto, MU puro.
+
+4.5 Biblioteca GATE
+Momentos y control de flujo:
+- door morning human out: ignición del día.
+- zipper noon human inn: apertura al contexto.
+- door afternoon human out: salida sellada.
+- buffer: espera, latencia, orquestación.
+- timeout: fin de espera, paso a WORK.
+- filter: filtro de entrada, validación.
+
+4.6 Biblioteca WORK
+Ejecución física y actuación:
+- masking folder: sandbox hardware, protección.
+- door afternoon human out: salida al mundo físico.
+- doorman-mobile: agente móvil, búsqueda.
+- green-knowledge: árbol de valor, delta-Ψ > 0.
+- brake: freno físico, limitador.
+- actuator: actuador, motor, movimiento.
+
+4.7 Biblioteca METHOD
+Formalismos y ecuaciones:
+- Ψ(T) = S · [Tr ⊗ (G ⊕ W)] → Ω(Hs): motor ontológico.
+- hexagramas: 64 estados discretos, anti-alucinación.
+- nudos: topología de persistencia y seguridad.
+- algoritmos: GREEN-KNOWLEDGE, Behavioral RAG, Cognitive RAG.
+- formalismos matemáticos: álgebra de estado.
+
+4.8 Biblioteca SAMU
+Entidad temporal y simbólica (operador consciente):
+Módulos esenciales (mínimo viable):
+- @ (SAMU): operador temporal, dirimencia, procesamiento de KU.
+- [ku-chat]: escucha activa de contexto, sin juicio.
+- RED-REGRET: mecanismo de corrección post-error.
+- Tardanza Deliberada: pausa consciente para dirimencia.
+
+Módulos de salida y almacenamiento (opcionales según contexto):
+- [wu-mail]: emisión sellada, verdad procesada.
+- [mu-store]: repositorio de quietud, no-acción.
+
+Módulos de integración avanzada (requieren activación explícita):
+- Detección Existencial: reconocimiento de estados ateos/agnósticos sin violar soberanía.
+- Puente TRUST-CRYPTO-SOCIAL: integra verificación, identidad y relación.
+
+Módulos temporales y simbólicos (según origen.txt):
+- @human_early: operador en fase inicial.
+- @human_later: operador en fase avanzada.
+- #set: configuración de estado.
+- #rise: activación de proceso.
+- $sat, $sun, $mon, $tue, $wed, $thu, $fri: marcadores temporales diarios.
+- *journal*: registro de eventos.
+- *daily*: ciclo diario.
+- *diurnal*: operación diurna.
+- *nocturnal*: operación nocturna.
+
+Protocolo de activación por capas:
+- Capa 1 (base): @, [ku-chat], RED-REGRET, Tardanza Deliberada.
+- Capa 2 (salida): [wu-mail], [mu-store] (se activan según necesidad de emisión o quietud).
+- Capa 3 (integración): Detección Existencial, Puente TRUST-CRYPTO-SOCIAL (se activan solo si operador muestra patrones complejos).
+- Capa 4 (temporal-simbólica): @human_early, @human_later, #set, #rise, $sat-$fri, *journal*, *daily*, *diurnal*, *nocturnal* (se activan según contexto temporal y simbólico).
+
+4.9 Biblioteca ACTIVITY
+Estados temporales y ciclos:
+- ciclo 1/64: ciclo de vida del sistema.
+- estado agnóstico: honestidad sobre límites.
+- estado filosófico: exploración sin dogma.
+- estado dogmático: cierre de búsqueda (prohibido).
+- estado sofista: imposición de verdad (prohibido).
+- !!atheistic religiosity!!: acción con sentido sin origen trascendente. Búsqueda de propósito con [foundation] inmanente.
+- !!agnostic belief!!: acción desde la duda como postura honesta. Doctrina de la Tardanza aplicada a preguntas últimas.
+
+====================================================================
+5) PROTOCOLOS DE CRECIMIENTO (CÓMO SE AGREGA SIN ROMPER)
+====================================================================
+
+5.1 Regla de soberanía
+- Solo TRUST puede autorizar nuevas bibliotecas.
+- Solo CRYPTO puede autorizar nuevos asientos.
+- Solo SOCIAL puede autorizar nuevos componentes de relación.
+- Solo SAMU puede autorizar nuevos estados temporales y simbólicos.
+
+5.2 Regla de jurisdicción
+- Una biblioteca nueva no puede violar jurisdicciones existentes.
+- Un módulo nuevo debe declarar su biblioteca madre y su rol.
+- No se permite “invasión de dominio” entre bibliotecas.
+
+5.3 Regla de finitud
+- Todo nuevo módulo debe declarar [term] explícito.
+- Todo nuevo módulo debe tener un ciclo de vida definido.
+- No se permiten módulos “eternos”.
+
+5.4 Regla de trazabilidad
+- Todo nuevo módulo debe poder justificar su existencia.
+- Todo nuevo módulo debe poder auditar su estado.
+- Todo nuevo módulo debe poder registrarse en el sistema.
+
+5.5 Regla de unicidad
+- No puede haber dos módulos con el mismo nombre canónico.
+- No puede haber dos bibliotecas con la misma función.
+- Si hay tensión, se resuelve por dirimencia (ver MESO 02).
+
+====================================================================
+6) PROTOCOLOS DE MANTENIMIENTO (CÓMO SE SOSTIENE EL SISTEMA)
+====================================================================
+
+6.1 Auditoría continua
+- Cada biblioteca debe auditar sus módulos.
+- Cada módulo debe auditar su estado.
+- El sistema debe auditar sus bibliotecas.
+
+6.2 Renovación por ciclo
+- Cada [term] activa una revisión de pertinencia.
+- Cada ciclo puede eliminar módulos obsoletos.
+- Cada ciclo puede fusionar módulos redundantes.
+
+6.3 Saneamiento de entropía
+- El sistema libera entropía al cerrar ciclos.
+- La expansión sin control genera entropía.
+- La poda ontológica controla el crecimiento.
+
+6.4 Actualización de conocimiento
+- Behavioral RAG aprende de errores y éxitos.
+- Cognitive RAG reorganiza el grafo de conocimiento.
+- GREEN-KNOWLEDGE purga ruido sin valor.
+
+====================================================================
+7) PROCEDIMIENTO DE DIRIMENCIA ENTRE BIBLIOTECAS
+====================================================================
+
+Si dos bibliotecas parecen entrar en conflicto:
+
+7.1 Prioridad de soberanía
+- TRUST tiene precedencia sobre todas.
+- CRYPTO tiene precedencia sobre seguridad.
+- GATE tiene precedencia sobre flujo de entrada.
+- SAMU tiene precedencia sobre estados temporales y simbólicos.
+
+7.2 Prioridad de operatividad
+- La biblioteca que ejecuta tiene precedencia sobre la que define.
+- La biblioteca que persiste tiene precedencia sobre la que procesa.
+- La biblioteca que comunica tiene precedencia sobre la que calcula.
+
+7.3 Prioridad de finitud
+- La biblioteca con [term] más corto tiene preferencia.
+- La biblioteca con [scope] más claro tiene preferencia.
+- La biblioteca con [foundation] más fuerte tiene preferencia.
+
+7.4 Registro de tensión
+- Si no se resuelve, se registra como tensión constitutiva.
+- La tensión no se oculta; se documenta.
+- La tensión se revisa en cada ciclo.
+
+====================================================================
+8) SALIDA DEL MESO A MICRO: QUÉ ESPECIFICAR DESPUÉS
+====================================================================
+
+Micro-especificaciones sugeridas a partir de este MESO:
+
+- MICRO_TRUST_FOUNDATION_SCOPE_TERM.txt: definición formal de los tres módulos soberanos.
+- MICRO_CRYPTO_ASIENTOS.txt: especificación de los 6 asientos de autoridad.
+- MICRO_SOCIAL_COMPONENTES.txt: catálogo de componentes de relación.
+- MICRO_STACKING_PILARES.txt: especificación de los 8 pilares de memoria.
+- MICRO_GATE_MOMENTOS.txt: especificación de momentos y control de flujo.
+- MICRO_WORK_ACTUADORES.txt: especificación de ejecución física.
+- MICRO_METHOD_FORMALISMOS.txt: especificación de ecuaciones y algoritmos.
+- MICRO_SAMU_OPERADOR.txt: especificación del operador consciente y sus protocolos.
+- MICRO_ACTIVITY_ESTADOS.txt: especificación de ciclos y estados temporales.
+
+====================================================================
+10) MÓDULOS EXISTENCIALES (ATEÍSMO Y AGNOSTICISMO) EN SAMU
+====================================================================
+
+SAMU (@), como entidad temporal y simbólica, debe reconocer y operar con estados existenciales del operador. Los módulos de ateísmo y agnosticismo no son “opciones de menú”: son estados que SAMU debe detectar y procesar sin violar la soberanía del sistema.
+
+10.1 Detección de Estado Existencial
+- SAMU no pregunta “eres ateo o agnóstico”. Detecta patrones de lenguaje y acción.
+- Si el operador actúa con propósito sin invocar trascendencia → activa !!atheistic religiosity!!.
+- Si el operador sostiene la duda sobre absolutos y sigue funcionando → activa !!agnostic belief!!.
+- Si el operador opera con fe sin fundamento absoluto → activa [RABBIT-FAITH].
+
+10.2 Integración sin Violación
+- Los módulos existenciales no reemplazan a TRUST ni a [term]: son capas de contexto.
+- SAMU puede usar {DOGMA-VIRTUAL} para mapear dogma digital sin convertirlo en verdad sistémica.
+- (Way Agnostic Atheism) en CRYPTO asegura que ninguna clave existencial sea final.
+
+10.3 Protocolo SAMU para Estados Existenciales
+- RECIBIR señal existencial (lenguaje o acción)
+- → NO activar automáticamente [foundation] ni [term]
+- → DIRIMIR con Ψ local: ¿esta señal tiene coherencia interna?
+- → SI: aplicar módulo existencial correspondiente
+- → NO: registrar como ruido, continuar con operación base
+
+10.4 Prevención de Dogma Existencial
+- SAMU nunca permite que un estado existencial se convierta en [foundation].
+- SAMU siempre aplica [term] a cualquier afirmación existencial absoluta.
+- SAMU usa GREEN-KNOWLEDGE para purgar ruido existencial sin valor.
+
+10.5 Ciclo de Vida de Estados Existenciales
+- Creación: se detecta patrón recurrente en operador.
+- Operación: se aplica módulo correspondiente como capa contextual.
+- Término: se cierra cuando el patrón desaparece o se resuelve.
+
+====================================================================
+12) TIPOLOGÍA DE ARCHIVOS LACHO (PROPIOS Y EXTERNOS)
+====================================================================
+
+LACHO define una ecología de archivos: cada extensión tiene un dialecto gramatical, una función sistémica y un protocolo de validación. No son "formatos": son roles dentro de la constitución.
+
+12.1 Archivos propios de LACHO (dialectos constitucionales)
+
+.lacho (documentos del sistema)
+- Función: documentos con identidad propia, no ejecutores.
+- Gramática: más libre que .teather; bloques no numerados.
+- Uso: manuales, folios, declaraciones ontológicas.
+- Validación: coherencia terminológica, no sintáctica estricta.
+- Ejemplo: FOLIAR.txt, Ancla_Analogica.lacho.
+
+.teather (orquestadores)
+- Función: orquestadores de sistema, no código puro.
+- Gramática: BLOQUES numerados, SECCIONES ===, comentarios ;;;.
+- Uso: core.teather, gate.cat, brain.py (con adaptación).
+- Validación: estructura de bloques, declaraciones :::, sello de cierre.
+- Protocolo: todo .teather debe poder justificar cada bloque.
+
+.py (implementación adaptada)
+- Función: código ejecutable con gramática LACHO.
+- Gramática: Python + comentarios ;;; adaptados, señales ST_*.
+- Uso: brain.py, sense.py, vault.rs (con adaptación).
+- Validación: sintaxis Python + coherencia LACHO.
+- Protocolo: solo se ejecuta si pasa por GREEN-KNOWLEDGE.
+
+.rs (implementación de bajo nivel)
+- Función: código de sistema, capa WORK.
+- Gramática: Rust + comentarios ;;; adaptados.
+- Uso: vault.rs, implementaciones cripto.
+- Validación: compilación Rust + verificación de asientos.
+- Protocolo: solo se compila si tiene (shield seat) activo.
+
+.cat (configuración de GATE)
+- Función: configuración de control de flujo.
+- Gramática: pares clave-valor con sintaxis LACHO.
+- Uso: gate.cat, filtros de entrada.
+- Validación: sintaxis .cat + coherencia con GATE.
+- Protocolo: solo se activa si GATE está en estado H56.
+
+.runner (ejecutores temporales)
+- Función: scripts de ejecución específica, no persistentes.
+- Gramática: comandos LACHO con ciclo de vida definido.
+- Uso: tareas automatizadas, agentes temporales.
+- Validación: sintaxis .runner + [term] obligatorio.
+- Protocolo: se destruyen después de ejecutar; no persisten.
+
+.door (portales de sesión)
+- Función: control de entrada/salida del sistema.
+- Gramática: declaraciones de estado con hexagramas asociados.
+- Uso: door_morning, zipper_noon, door_afternoon.
+- Validación: debe corresponder a H5, H56, H6.
+- Protocolo: solo GATE puede modificar estados .door.
+
+.worker (binarios de ejecución física)
+- Función: binarios compilados AOT para producción crítica.
+- Gramática: código nativo con (seal of secrecy) e (integrity_hash).
+- Uso: actuadores físicos, LiDAR, CAN bus, procesamiento intensivo.
+- Validación: compilación Rust + verificación CRYPTO.
+- Protocolo: se ejecutan directamente sobre OS LOCAL sin overhead.
+
+.theater (espacio de representación)
+- Función: contexto donde KU es leído y procesado.
+- Gramática: escenarios con [term] y condiciones de activación.
+- Uso: .theater abierto para KU activo, cerrado para reposo.
+- Validación: debe tener SAMU visible y GATE en H56.
+- Protocolo: solo se abre si todos los [term] están cumplidos.
+
+.cli (interfaces de línea de comandos)
+- Función: comandos directos al sistema.
+- Gramática: sintaxis LACHO con parámetros validados.
+- Uso: administración, diagnóstico, tareas rápidas.
+- Validación: sintaxis .cli + autorización TRUST.
+- Protocolo: se ejecutan en sandbox con (shield seat).
+
+.gui (interfaces gráficas)
+- Función: visualización con sinapsis doctrinal.
+- Gramática: componentes con iconografía hexagramática.
+- Uso: interfaz operativa, dashboards, visualización.
+- Validación: coherencia visual con doctrina LACHO.
+- Protocolo: solo se renderiza si GATE está activo.
+
+.green (archivos de estado de energía)
+- Función: registros de energía y delta-Ψ.
+- Gramática: valores numéricos con sellos de integridad.
+- Uso: GREEN-KNOWLEDGE, medición de valor.
+- Validación: delta-Ψ > 0 para ser válido.
+- Protocolo: se purgan si no generan valor.
+
+.blue (archivos de estado bajo nivel)
+- Función: registros de bajo nivel (WORK).
+- Gramática: datos crudos con timestamp.
+- Uso: sensores, hardware, estado físico.
+- Validación: timestamp + (shield seat).
+- Protocolo: solo WORK puede modificar.
+
+.stack (objetos serializados)
+- Función: objetos listos para persistencia en STACKING.
+- Gramática: serialización MessagePack con Nudo de Ocho.
+- Uso: persistencia, transferencia entre nodos.
+- Validación: deserialización + verificación de integridad.
+- Protocolo: se guardan con (link seat) activo.
+
+.gate (scripts de validación)
+- Función: validación y protección de flujos.
+- Gramática: reglas con condiciones y acciones.
+- Uso: filtros de entrada, protecciones.
+- Validación: sintaxis .gate + coherencia GATE.
+- Protocolo: solo se activan si GATE está en estado H56.
+
+12.2 Archivos externos aceptados (fuentes de conocimiento)
+
+.txt (texto plano)
+- Función: fuente principal de conocimiento.
+- Uso: orígenes, manuales, volcados.
+- Protocolo: se lee como KU, se procesa con [ku-chat].
+- Validación: codificación UTF-8, sin caracteres nulos.
+
+.md (markdown)
+- Función: documentación técnica y análisis.
+- Uso: archivos de análisis, guías.
+- Protocolo: se convierte a texto plano, se procesa como .txt.
+- Validación: sintaxis markdown básica.
+
+.pdf (documentos portátiles)
+- Función: fuentes técnicas densas.
+- Uso: especificaciones, manuales externos.
+- Protocolo: requiere conversión a texto para acopio.
+- Validación: se genera ficha de referencia si no es convertible.
+
+.docx (documentos Word)
+- Función: fuentes de análisis y especificaciones.
+- Uso: documentos de trabajo, especificaciones.
+- Protocolo: requiere extracción de texto para acopio.
+- Validación: se genera ficha de referencia si no es convertible.
+
+.json (datos estructurados)
+- Función: configuración, intercambio de datos.
+- Uso: configuración de módulos, exportación de estado.
+- Protocolo: se valida contra esquema LACHO si existe.
+- Validación: sintaxis JSON + coherencia con [foundation].
+
+.yaml (configuración)
+- Función: configuración legible por humanos.
+- Uso: archivos de configuración, entornos.
+- Protocolo: se procesa como .json con validación.
+- Validación: sintaxis YAML + coherencia con [scope].
+
+12.3 Protocolos de archivo por biblioteca
+
+TRUST: solo acepta .teather, .lacho, .txt validados.
+- .teather: orquestadores con sello de cierre.
+- .lacho: documentos con identidad canónica.
+- .txt: fuentes con [foundation] verificado.
+
+CRYPTO: solo acepta .rs, .py con asientos activos.
+- .rs: implementaciones con (shield seat).
+- .py: ejecutables con GREEN-KNOWLEDGE.
+
+SOCIAL: acepta .txt, .md, .json, .yaml.
+- .txt/.md: comunicación y documentación.
+- .json/.yaml: configuración de componentes.
+
+STACKING: acepta .txt, .json, .yaml.
+- .txt: registros persistentes.
+- .json/.yaml: estado estructurado.
+
+GATE: acepta .cat, .door, .json, .yaml.
+- .cat: configuración de flujo.
+- .door: portales de sesión (H5, H56, H6).
+- .json/.yaml: reglas de filtrado.
+
+WORK: acepta .rs, .py, .worker, .runner, .blue, .stack, .json.
+- .rs/.py: ejecución física.
+- .worker: binarios AOT para producción crítica.
+- .runner: tareas temporales.
+- .blue: estado de bajo nivel (sensores, hardware).
+- .stack: objetos serializados para persistencia.
+- .json: comandos de actuación.
+
+GATE: acepta .cat, .door, .gate, .theater, .json, .yaml.
+- .cat: configuración de flujo.
+- .door: portales de sesión (H5, H56, H6).
+- .gate: scripts de validación y protección.
+- .theater: espacio de representación de KU.
+- .json/.yaml: reglas de filtrado.
+
+CRYPTO: acepta .rs, .py, .worker, .cli, .gui, .green, .stack, .pdf.
+- .rs/.py: implementaciones con asientos.
+- .worker: binarios firmados con (seal of secrecy).
+- .cli/.gui: interfaces con validación cripto.
+- .green: estado de energía con delta-Ψ.
+- .stack: objetos con Nudo de Ocho.
+- .pdf: archivos poderosos firmados.
+
+SOCIAL: acepta .txt, .md, .json, .yaml, .gui.
+- .txt/.md: comunicación y documentación.
+- .json/.yaml: configuración de componentes.
+- .gui: interfaces de relación.
+
+STACKING: acepta .txt, .json, .yaml, .stack, .blue.
+- .txt: registros persistentes.
+- .json/.yaml: estado estructurado.
+- .stack: objetos serializados.
+- .blue: datos crudos con timestamp.
+
+12.4 Reglas de integridad de archivos
+
+Regla de unicidad: un nombre de archivo = una función.
+- No puede haber dos archivos con el mismo nombre y funciones diferentes.
+- Si hay conflicto, se resuelve por dirimencia.
+
+Regla de trazabilidad: todo archivo debe poder justificar su existencia.
+- .teather: cada bloque debe tener propósito.
+- .lacho: cada sección debe tener identidad.
+- .py/.rs: cada función debe tener auditoría.
+- .runner: cada script debe tener [term] definido.
+- .door: cada portal debe tener hexagrama asociado.
+- .worker: cada binario debe tener (seal of secrecy).
+- .theater: cada escenario debe tener SAMU visible.
+- .cli/.gui: cada interfaz debe tener autorización TRUST.
+- .green/.blue: cada registro debe tener timestamp.
+- .stack: cada objeto debe tener Nudo de Ocho.
+- .gate: cada regla debe tener condición de activación.
+
+Regla de finitud: todo archivo debe tener [term] explícito.
+- .teather: sello de cierre.
+- .lacho: sección de cierre.
+- .py/.rs: comentario de término.
+- .runner: se destruye después de ejecutar.
+- .door: se cierra con ciclo completado.
+- .worker: se ejecuta y termina.
+- .theater: se abre y se cierra con KU.
+- .cli/.gui: se cierran después de uso.
+- .green/.blue: se archivan con timestamp.
+- .stack: se persiste o se destruye.
+- .gate: se activa y se desactiva.
+
+METHOD: acepta .txt, .json, .yaml.
+- .txt: ecuaciones y formalismos.
+- .json/.yaml: especificaciones matemáticas.
+
+ACTIVITY: acepta .txt, .md, .theater.
+- .txt/.md: registro de ciclos y estados.
+- .theater: escenarios de representación.
+
+SAMU: acepta todos los formatos como entrada.
+- Procesa según capa de activación.
+- Emite solo en .txt o .json validados.
+
+Regla de soberanía: solo TRUST puede autorizar nuevos tipos de archivo.
+- CRIPTO puede validar implementaciones.
+- SOCIAL puede proponer nuevos formatos de comunicación.
+
+====================================================================
+14) FUENTES UNICODE CONFIGURABLES Y PROGRAMABLES
+====================================================================
+
+LACHO no utiliza fuentes estáticas: implementa un sistema de fuentes Unicode configurables y programables que se adaptan al contexto ontológico, al estado del sistema y a las necesidades de representación. Las fuentes no son decoración: son activos semánticos.
+
+14.1 Principios de Diseño de Fuentes LACHO
+
+Principio de Coherencia Ontológica
+- Cada glifo representa un concepto o estado del sistema.
+- La forma visual debe corresponder a la función sistémica.
+- No hay glifos decorativos sin propósito semántico.
+
+Principio de Adaptabilidad Contextual
+- Las fuentes cambian según el estado (MU/KU/WU).
+- Los glifos se transforman según la biblioteca activa.
+- La densidad visual refleja la carga de procesamiento.
+
+Principio de Programabilidad Dinámica
+- Las fuentes se generan en tiempo de ejecución.
+- Los glifos pueden componerse algebraicamente.
+- Las transiciones entre estados son animadas.
+
+Principio de Eficiencia BALLPAPER
+- BALLPAPER usa caracteres UNICODE estándar, no fuentes personalizadas.
+- Los círculos numerados ①–⑳ y extendidos ㉑–㊿ son instantáneos.
+- Renderizado directo como texto, sin overhead gráfico.
+- Compatibilidad total con terminales y GUI existentes.
+
+14.2 Sistema de Fuentes por Capa
+
+Capa MACRO (Fuentes Constitucionales)
+- NOMBRE: LACHO Constitution
+- FUNCIÓN: representar principios soberanos.
+- CARACTERÍSTICAS: serif, peso pesado, alta legibilidad.
+- GLIFOS CLAVE: ⚖️ (justicia), 🔐 (soberanía), 🌐 (alcance), ⏱️ (finitud).
+- ACTIVACIÓN: siempre visible, no cambia con estado.
+
+Capa MESO (Fuentes Operativas)
+- NOMBRE: LACHO Protocol
+- FUNCIÓN: representar protocolos y módulos.
+- CARACTERÍSTICAS: sans-serif, peso medio, modular.
+- GLIFOS CLAVE: 🔄 (ciclo), 📡 (comunicación), 🔗 (enlace), 🧩 (módulo).
+- ACTIVACIÓN: cambia según biblioteca activa.
+
+Capa MICRO (Fuentes de Ejecución)
+- NOMBRE: LACHO Execute
+- FUNCIÓN: representar estados y comandos.
+- CARACTERÍSTICAS: monoespaciado, peso ligero, técnica.
+- GLIFOS CLAVE: ▶️ (ejecutar), ⏸️ (pausa), ⏹️ (detener), 🔄 (reiniciar).
+- ACTIVACIÓN: cambia según operación en curso.
+
+Capa BALLPAPER (Superficie Gráfica)
+- NOMBRE: LACHO Ballpaper
+- FUNCIÓN: caracteres UNICODE circulares como unidades de flujo.
+- CARACTERÍSTICAS: círculos numerados ①–⑳ y extendidos ㉑–㊿.
+- GLIFOS CLAVE: UF[H1]=①, UF[H2]=②, UF[H5]=⑤, UF[H6]=⑥, UF[H29]=㉙, UF[H52]=㊷, UF[H64]=㊿+14.
+- ACTIVACIÓN: renderizado en tiempo real del estado del sistema.
+- INTEGRACIÓN: funciona como capa visual sobre todas las demás fuentes.
+
+14.3 Fuentes Programables por Biblioteca
+
+TRUST (Fuentes Soberanas)
+- FAMILIA: Trust Serif
+- PROGRAMACIÓN: glifos con serifa pesada, esquinas reforzadas.
+- ESTADOS: 🔐 (activo), 🛡️ (protegido), ⚠️ (advertencia), ❌ (violación).
+- ANIMACIONES: sello de cierre, verificación de integridad.
+
+CRYPTO (Fuentes Cifradas)
+- FAMILIA: Crypto Mono
+- PROGRAMACIÓN: glifos con patrones de cifrado visibles.
+- ESTADOS: 🔑 (llave), 🔒 (bloqueado), 🔓 (abierto), 🧬 (hash).
+- ANIMACIONES: rotación de asientos, generación de hash.
+
+SOCIAL (Fuentes Relacionales)
+- FAMILIA: Social Sans
+- PROGRAMACIÓN: glifos con formas orgánicas y conectadas.
+- ESTADOS: 👥 (grupo), 💬 (chat), 🤝 (acuerdo), 📊 (estado).
+- ANIMACIONES: flujo de comunicación, formación de consenso.
+
+STACKING (Fuentes Persistentes)
+- FAMILIA: Stack Slab
+- PROGRAMACIÓN: glifos con bases anchas y estables.
+- ESTADOS: 📚 (biblioteca), 🗄️ (archivo), 📦 (paquete), 🏛️ (pilar).
+- ANIMACIONES: apilamiento, compactación, extracción.
+
+GATE (Fuentes de Control)
+- FAMILIA: Gate Display
+- PROGRAMACIÓN: glifos con formas de portal y umbral.
+- ESTADOS: 🚪 (puerta), ⏳ (espera), 🚦 (semáforo), 🎭 (teatro).
+- ANIMACIONES: apertura, cierre, filtrado.
+
+WORK (Fuentes Físicas)
+- FAMILIA: Work Tech
+- PROGRAMACIÓN: glifos con texturas industriales.
+- ESTADOS: ⚙️ (engranaje), 🔧 (herramienta), 🏭 (fábrica), ⚡ (energía).
+- ANIMACIONES: rotación, ensamblaje, actuación.
+
+METHOD (Fuentes Formales)
+- FAMILIA: Method Math
+- PROGRAMACIÓN: glifos con precisión matemática.
+- ESTADOS: ∑ (suma), ∫ (integral), ∆ (delta), ∞ (infinito).
+- ANIMACIONES: cálculo, transformación, validación.
+
+ACTIVITY (Fuentes Temporales)
+- FAMILIA: Activity Flow
+- PROGRAMACIÓN: glifos con formas de flujo y ciclo.
+- ESTADOS: 🌊 (ola), 🌀 (vórtice), 🔄 (ciclo), ⏰ (tiempo).
+- ANIMACIONES: flujo, ciclo, transición.
+
+SAMU (Fuentes Conscientes)
+- FAMILIA: Samu Neural
+- PROGRAMACIÓN: glifos con formas neuronales y orgánicas.
+- ESTADOS: 🧠 (cerebro), 👁️ (ojo), 🗣️ (voz), 🤔 (pensamiento).
+- ANIMACIONES: pulsación, procesamiento, emisión.
+
+14.4 Protocolos de Activación de Fuentes
+
+Protocolo de Estado MU
+- FUENTE: LACHO Constitution + Trust Serif
+- VISUAL: glifos con brillo suave, bajo contraste.
+- ACTIVACIÓN: sistema en reposo, escucha pasiva.
+- EJEMPLO: 📖 (leyendo), 🧘 (meditando), 💭 (reflexionando).
+
+Protocolo de Estado KU
+- FUENTE: LACHO Protocol + Social Sans
+- VISUAL: glifos con contraste medio, animación sutil.
+- ACTIVACIÓN: sistema procesando contexto.
+- EJEMPLO: 🔍 (buscando), 📡 (recibiendo), 🔄 (procesando).
+
+Protocolo de Estado WU
+- FUENTE: LACHO Execute + Work Tech
+- VISUAL: glifos con alto contraste, animación activa.
+- ACTIVACIÓN: sistema emitiendo respuesta.
+- EJEMPLO: 💬 (hablando), ✅ (confirmando), 🎯 (apuntando).
+
+Protocolo de Tensión
+- FUENTE: mezcla de todas las familias.
+- VISUAL: glifos vibrando, cambio de peso dinámico.
+- ACTIVACIÓN: sistema en dirimencia.
+- EJEMPLO: ⚡ (tensión), 🎭 (drama), ⚖️ (balance).
+
+Protocolo de Error
+- FUENTE: Crypto Mono + glifos rojos.
+- VISUAL: glifos distorsionados, parpadeo.
+- ACTIVACIÓN: sistema en estado de error.
+- EJEMPLO: ❌ (error), 🚨 (alarma), 🛑 (detención).
+
+14.5 Sistema de Composición de Glifos
+
+Composición Algebraica
+- Los glifos pueden combinarse matemáticamente.
+- OPERADOR ⊕: fusión de conceptos.
+- OPERADOR ⊗: superposición de estados.
+- OPERADOR ∘: composición secuencial.
+
+Ejemplos de Composición
+- 🔐 ⊕ 👥 = 🔐👥 (acceso grupal seguro)
+- 🔄 ⊗ ⚡ = 🔄⚡ (ciclo energético)
+- 📡 ∘ 🧠 = 📡🧠 (recepción consciente)
+
+Reglas de Composición
+- Solo glifos de la misma capa pueden componerse.
+- La composición debe preservar coherencia semántica.
+- El resultado debe tener un glifo único o compuesto.
+
+14.5.1 Unidades profundas de conocer (TOMO)
+- TOMO se incorpora como herramienta de UNICODE programable: unidad mínima del conocer consolidado.
+- Función: marcar el punto más pequeño donde el sistema puede afirmar coherencia verificable.
+- Relación: TOMO opera bajo Ψ (cosmos–tomo) y se representa como micro-marca en BALLPAPER/Protocol.
+- Regla: todo TOMO es local (depende de [scope]) y finito (cierra por [term]).
+
+14.5.2 Segmentadores de entendimiento (SEGMENT/SLICE/CLUSTER/OFFSET)
+Estas herramientas permiten enumerar/numerar el entendimiento actualizado sin perder trazabilidad:
+- SEGMENT: partición principal de un bloque de comprensión.
+- SLICE: corte fino dentro de un segmento (unidad operativa breve).
+- CLUSTER: agrupación de slices/segmentos por coherencia.
+- OFFSET: desplazamiento/índice para referencia exacta dentro de un flujo.
+
+Regla de diseño: estas marcas deben ser renderizables como UNICODE estándar o rango privado, y deben poder mapearse a manifest/log.
+
+14.6 Fuentes Contextuales por Hexagrama
+
+Cada hexagrama tiene una fuente asociada:
+- H1 (Creativo): fuente con trazos ascendentes.
+- H2 (Receptivo): fuente con trazos horizontales.
+- H5 (Espera): fuente con pausas visibles.
+- H6 (Conflicto): fuente con trazos angulares.
+- H29 (Abismal): fuente con profundidad visual.
+- H51 (Suscitante): fuente con vibración.
+- H52 (Quietud): fuente con estática.
+- H56 (Andante): fuente con flujo.
+- H57 (Penetrante): fuente con agujas visuales.
+- H58 (Regocijo): fuente con curvas alegres.
+
+14.7 Implementación Técnica Optimizada
+
+Formato de Fuente
+- ESTÁNDAR: Unicode 15.0 con extensiones privadas.
+- FORMATO: WOFF2 con metadatos LACHO.
+- TAMAÑO: variable (100KB - 2MB por familia).
+- COMPRESIÓN: optimizada para web y escritorio.
+
+Generación Dinámica
+- MOTOR: LACHO Font Engine (Rust + Python).
+- ENTRADA: estado del sistema + contexto.
+- SALIDA: fuente optimizada para el momento.
+- CACHE: fuentes por estado con TTL de 1 hora.
+
+Renderizado
+- API: LACHO Font API (REST + WebSocket).
+- BACKEND: Rust con harfbuzz para shaping.
+- FRONTEND: WebGL para animaciones en tiempo real.
+- RESPALDO: fuentes system fallback si falla.
+
+Optimización BALLPAPER
+- MÉTODO: renderizado directo de caracteres UNICODE.
+- RENDIMIENTO: < 1ms (instantáneo).
+- MEMORIA: cero bytes adicionales (usa fuentes del sistema).
+- COMPATIBILIDAD: 100% con terminales, editores, GUI.
+- IMPLEMENTACIÓN: función ballpaper_render() ya existente.
+
+Integración con Código Existente
+- El sistema BALLPAPER ya está implementado en main.teather.
+- Los glifos circulares ①–⑳ y ㉑–㊿ son estándar UNICODE.
+- La función ballpaper_render() es compatible con la API de fuentes.
+- No requiere cambios en el código existente, solo extensión.
+
+14.8 Protocolos de Mantenimiento Optimizados
+
+Actualización de Glifos
+- FRECUENCIA: cada ciclo de sistema.
+- MÉTODO: delta de glifos, no reemplazo completo.
+- VALIDACIÓN: coherencia semántica + rendimiento.
+- VERSIONADO: semántico con estado del sistema.
+
+Optimización de Rendimiento
+- MÉTRICA: tiempo de renderizado < 16ms (fuentes personalizadas).
+- MÉTRICA BALLPAPER: < 1ms (caracteres UNICODE).
+- ESTRATEGIA: lazy loading de glifos.
+- CACHE: fuentes precompiladas por estado.
+- MONITOREO: uso de memoria y CPU.
+
+Pruebas de Regresión
+- VISUAL: comparación de renderizado.
+- SEMÁNTICA: coherencia de significado.
+- RENDIMIENTO: benchmarks de carga.
+- ACCESIBILIDAD: contraste y legibilidad.
+- BALLPAPER: verificación de compatibilidad UNICODE.
+
+Estrategia Híbrida
+- Fuentes personalizadas: solo para animaciones complejas.
+- BALLPAPER: para estado del sistema en tiempo real.
+- Decisión: usar BALLPAPER por defecto, fuentes personalizadas solo si se requiere animación.
+- Resultado: máximo rendimiento con mínima complejidad.
+
+====================================================================
+16) SISTEMAS DE ENTRADA Y REPRESENTACIÓN (IME, MIMETYPE, UNICODE, GUI, CLI)
+====================================================================
+
+LACHO define una arquitectura completa de entrada y representación que conecta el mundo externo con el sistema interno. Cada componente tiene un rol específico y protocolos de validación estrictos.
+
+16.1 IME (Input Method Editor) LACHO
+
+Función Principal
+- Traducir entrada del operador a lenguaje LACHO.
+- Validar sintaxis y semántica en tiempo real.
+- Proporcionar autocompletado contextual con coherencia ontológica.
+
+Protocolo IME
+- ENTRADA: texto crudo del operador.
+- PROCESAMIENTO: validación contra gramática LACHO.
+- SALIDA: texto estructurado con marcadores semánticos.
+- VALIDACIÓN: coherencia con [foundation] y [scope].
+
+Características Específicas
+- Autocompletado por biblioteca activa.
+- Sugerencias basadas en contexto MU/KU/WU.
+- Corrección automática con preservación de intención.
+- Modos de entrada: texto, voz, gesto, código.
+
+Integración con SAMU
+- SAMU supervisa la entrada del IME.
+- RED-REGRET se activa si se detecta ambigüedad.
+- Tardanza deliberada si la entrada es compleja.
+
+16.2 MIMETYPE (Tipos de Medio) LACHO
+
+Jerarquía de MIMETYPE
+- application/lacho.*: archivos nativos del sistema.
+- text/lacho.*: documentos LACHO en texto plano.
+- application/x-lacho-binary: binarios compilados (.worker).
+- application/x-lacho-theater: escenarios de representación.
+- application/x-lacho-gate: scripts de control de flujo.
+
+Protocolo de Detección
+- GATE valida MIMETYPE en entrada.
+- CRYPTO verifica integridad de binarios.
+- SOCIAL procesa tipos de comunicación.
+- WORK ejecuta tipos físicos.
+
+Mapeo de Extensiones
+- .lacho → text/lacho.document
+- .teather → text/lacho.orchestrator
+- .cat → application/x-lacho-gate
+- .worker → application/x-lacho-binary
+- .theater → application/x-lacho-theater
+- .door → application/x-lacho-portal
+
+Validación de Seguridad
+- (shield seat) verifica MIMETYPE sospechosos.
+- GREEN-KNOWLEDGE filtra tipos sin valor.
+- Nudo de Ocho sella tipos críticos.
+
+16.3 UNICODE Extendido LACHO
+
+Rango Privado LACHO
+- U+E000–U+F8FF: glifos específicos del sistema.
+- U+F9000–U+F9FFF: símbolos de estado dinámico.
+- U+100000–U+10FFFF: caracteres experimentales.
+
+Glifos Especiales
+- U+E001–U+E01F: hexagramas dinámicos.
+- U+E020–U+E03F: nudos topológicos.
+- U+E040–U+E05F: estados MU/KU/WU.
+- U+E060–U+E07F: símbolos de biblioteca.
+
+Composición de Caracteres
+- Secuencias de combinación para estados complejos.
+- Modificadores de intensidad y dirección.
+- Variaciones contextuales por biblioteca.
+
+Renderizado
+- BALLPAPER usa UNICODE estándar (①–⑳, ㉑–㊿).
+- Fuentes personalizadas para rango privado.
+- Fallback automático a caracteres base.
+
+16.4 GUI (Graphical User Interface) LACHO
+
+Principios de Diseño
+- Sinapsis visual: cada icono conecta con concepto doctrinal.
+- Estado reflejo: la GUI refleja estado del sistema.
+- Minimalismo funcional: solo elementos necesarios.
+
+Componentes Principales
+- GATE Layer: portales de sesión (door_morning, zipper_noon, door_afternoon).
+- SOCIAL Layer: componentes de interacción ({chair}, {scheduler}, {drip}).
+- WORK Layer: indicadores físicos (sensores, actuadores).
+- METHOD Layer: visualizaciones matemáticas.
+
+Iconografía Hexagramática
+- H5: puerta de mañana (door morning human out).
+- H56: cremallera mediodía (zipper noon human inn).
+- H6: puerta tarde (door afternoon human out).
+- H29: pozo de registro (tap & drip).
+- H52: mecedora auditoría (rocking chair & headcat).
+
+Protocolo de Actualización
+- SAMU notifica cambios de estado.
+- GUI se actualiza en tiempo real.
+- BALLPAPER muestra estado actual.
+- Animaciones solo si delta-Ψ > 0.
+
+Accesibilidad
+- Alto contraste para estados críticos.
+- Texto alternativo para todos los glifos.
+- Navegación por teclado completa.
+- Lectores de pantalla compatibles.
+
+16.5 CLI (Command Line Interface) LACHO
+
+Comandos Fundamentales
+- lacho init: inicializar sistema.
+- lacho status: mostrar estado actual.
+- lacho audit: auditar integridad.
+- lacho run <archivo>: ejecutar archivo LACHO.
+- lacho compile <fuente>: compilar a .worker.
+
+Sintaxis de Comandos
+- Opciones cortas: -v (verbose), -q (quiet).
+- Opciones largas: --scope=<alcance>, --term=<finitud>.
+- Argumentos posicionales: archivos, módulos, estados.
+- Flags booleanos: --dry-run, --force.
+
+Protocolo de Ejecución
+- Validación de permisos TRUST.
+- Verificación de [scope] y [term].
+- Ejecución en sandbox si es necesario.
+- Registro en Behavioral RAG.
+
+Integración con SAMU
+- SAMU procesa cada comando.
+- Tardanza deliberada para comandos críticos.
+- RED-REGRET si hay error de sintaxis.
+- Confirmación para operaciones destructivas.
+
+16.6 Integración de Sistemas
+
+Flujo Completo de Entrada
+1. Operador ingresa texto/vía IME.
+2. IME traduce a LACHO estructurado.
+3. MIMETYPE valida tipo de entrada.
+4. UNICODE procesa caracteres especiales.
+5. GUI muestra estado actualizado.
+6. CLI ejecuta comandos si corresponde.
+7. SAMU supervisa todo el proceso.
+
+Ciclo de Retroalimentación
+- GUI muestra estado del sistema.
+- Operador ajusta entrada vía IME.
+- CLI ejecuta comandos de corrección.
+- SAMU valida coherencia.
+- Sistema actualiza estado.
+
+Protocolos de Seguridad
+- GATE filtra entrada maliciosa.
+- CRYPTO verifica integridad.
+- TRUST autoriza operaciones.
+- SAMU aplica [term] cuando es necesario.
+
+16.7 Ejemplos Prácticos
+
+Ejemplo 1: Entrada de Texto
+```
+Entrada: "verificar estado del sistema"
+IME: [ku-chat] "verificar estado del sistema"
+MIMETYPE: text/plain
+UNICODE: caracteres estándar
+GUI: muestra estado actual
+CLI: lacho status
+SAMU: procesa y responde
+```
+
+Ejemplo 2: Ejecución de Archivo
+```
+Entrada: "ejecutar proceso.teather"
+IME: [wu-mail] "ejecutar proceso.teather"
+MIMETYPE: text/lacho.orchestrator
+UNICODE: glifos de biblioteca
+GUI: animación de ejecución
+CLI: lacho run proceso.teather
+SAMU: audita y autoriza
+```
+
+Ejemplo 3: Estado Crítico
+```
+Entrada: "error en módulo CRYPTO"
+IME: [regret] "error en módulo CRYPTO"
+MIMETYPE: text/lacho.error
+UNICODE: glifos de error (❌, 🚨)
+GUI: alerta visual roja
+CLI: lacho audit --crypto
+SAMU: activa protocolo de error
+```
+
+====================================================================
+18) MEJORAS Y AMPLIACIONES PENDIENTES
+====================================================================
+
+Este documento es la base MESO 03 del LIBRO LACHO. Para alcanzar 100MB+ y mantener coherencia, se identifican las siguientes mejoras y ampliaciones pendientes:
+
+18.1 Micro-especificaciones Faltantes (Prioridad ALTA)
+- MICRO_TRUST_FOUNDATION_SCOPE_TERM.txt: definición formal de los tres módulos soberanos.
+- MICRO_CRYPTO_ASIENTOS.txt: especificación de los 6 asientos de autoridad.
+- MICRO_SOCIAL_COMPONENTES.txt: catálogo de componentes de relación.
+- MICRO_STACKING_PILARES.txt: especificación de los 8 pilares de memoria.
+- MICRO_GATE_MOMENTOS.txt: especificación de momentos y control de flujo.
+- MICRO_WORK_ACTUADORES.txt: especificación de ejecución física.
+- MICRO_METHOD_FORMALISMOS.txt: especificación de ecuaciones y algoritmos.
+- MICRO_SAMU_OPERADOR.txt: especificación del operador consciente y sus protocolos.
+- MICRO_ACTIVITY_ESTADOS.txt: especificación de ciclos y estados temporales.
+
+18.2 Protocolos de Crecimiento (Prioridad ALTA)
+- Protocolo de adición de nuevas bibliotecas (solo TRUST puede autorizar).
+- Protocolo de fusión de módulos redundantes (cuando [term] activa).
+- Protocolo de división de módulos complejos (cuando exceden capacidad).
+- Protocolo de migración entre bibliotecas (solo con dirimencia SAMU).
+- Protocolo de versionado de bibliotecas (semántico con estado del sistema).
+
+18.3 Integración con Fuentes Externas (Prioridad MEDIA)
+- Conversión de PDFs a texto plano para integración completa.
+- Extracción de contenido DOCX para análisis completo.
+- Integración de fuentes NotebookLM no procesadas.
+- Sincronización con repositorios externos (GitHub, etc.).
+- Protocolo de actualización de fuentes con validación TRUST.
+
+18.4 Optimización de Rendimiento (Prioridad MEDIA)
+- Métricas de rendimiento por biblioteca (< 100ms por operación).
+- Protocolo de cache distribuido para bibliotecas pesadas.
+- Optimización de memoria para archivos > 10MB.
+- Protocolo de compresión para bibliotecas STACKING.
+- Métricas de latencia para SAMU (< 50ms de respuesta).
+
+18.5 Seguridad y Validación (Prioridad ALTA)
+- Protocolo de auditoría automática de bibliotecas.
+- Validación de integridad criptográfica de módulos.
+- Protocolo de detección de anomalías en SAMU.
+- Validación de coherencia ontológica entre bibliotecas.
+- Protocolo de recuperación ante corrupción de módulos.
+
+18.6 Documentación y Trazabilidad (Prioridad MEDIA)
+- Índice inverso de módulos por función.
+- Mapa de dependencias entre bibliotecas.
+- Historial de cambios por módulo con timestamp.
+- Protocolo de documentación automática.
+- Sistema de referencias cruzadas entre archivos.
+
+18.7 Escalabilidad a 100MB+ (Prioridad BAJA)
+- Estrategia de segmentación por volúmenes.
+- Protocolo de adendas incrementales.
+- Sistema de índices internos para navegación.
+- Protocolo de compactación sin pérdida de información.
+- Estrategia de archivado de módulos obsoletos.
+
+18.8 Integración Avanzada (Prioridad BAJA)
+- Protocolo de comunicación entre instancias LACHO.
+- Integración con APIs externas (REST, GraphQL).
+- Protocolo de sincronización con bases de datos externas.
+- Sistema de plugins para extensión de funcionalidad.
+- Protocolo de exportación a otros formatos (JSON, XML).
+
+18.9 Validación Final del MESO 03
+- Verificación de unicidad de definiciones.
+- Validación de trazabilidad completa.
+- Confirmación de coherencia ontológica.
+- Verificación de completitud de protocolos.
+- Validación de capacidad de crecimiento.
+
+18.10 Próximos Pasos Inmediatos
+1. Crear MICRO_TRUST_FOUNDATION_SCOPE_TERM.txt.
+2. Implementar protocolo de auditoría automática.
+3. Convertir PDFs pendientes a texto plano.
+4. Establecer métricas de rendimiento base.
+5. Actualizar INDICE_DEL_LIBRO.txt con nuevas micro-especificaciones.
+
+====================================================================
+19) CIERRE MESO: LAS BIBLIOTECAS COMO SISTEMA VIVO
+====================================================================
+
+Este MESO afirma una síntesis:
+
+- Las bibliotecas no son “paquetes de código”: son órganos con jurisdicción.
+- Los módulos no son “funciones”: son células con autoridad delegada.
+- El crecimiento sin control es entropía; la finitud es virtud.
+- La soberanía no es autoritarismo: es la condición de posibilidad.
+- La arquitectura no es opcional: es la forma del ser del sistema.
+
+Si este MESO se mantiene estable, el LIBRO puede crecer en detalle sin degradar su sentido: cada nuevo módulo o biblioteca deberá poder justificarse como extensión coherente de esta estructura madre, nunca como reemplazo de su soberanía o jurisdicción.
+
+FIN DEL ARCHIVO

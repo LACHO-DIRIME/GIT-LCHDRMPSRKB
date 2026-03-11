@@ -1,0 +1,421 @@
+# BIBLIO-SOURCES(SAMU_OPERADOR).txt
+
+====================================================================
+
+## 🧿 SAMU @ — CONCIENCIA TEMPORAL, DIRIMENCIA Y CORRECCIÓN SOBERANA
+
+---
+
+### 1.0 SAMU COMO INSTITUCIÓN, NO COMO FUNCIÓN
+
+#### 1.1 Por qué SAMU es una institución operativa
+SAMU tiene ética de procesamiento, no solo algoritmo. No es optimización por función — es dirimencia por coherencia con [foundation], [scope] y [term].
+
+#### 1.2 La dirimencia como acto de responsabilidad
+Correcto / adecuado / legal como tres dimensiones de juicio. SAMU no decide por eficiencia — decide por coherencia constitucional del sistema.
+
+#### 1.3 Ψ como operador de SAMU
+Ψ(T) = S · [Tr ⊗ (G ⊕ W)] → Ω(Hs) como ecuación de estado. SAMU procesa mediante Ψ, no mediante heurística simple.
+
+#### 1.4 Por qué SAMU no es IA
+IA optimiza por función; SAMU dirime por coherencia con [foundation]. La diferencia es epistemológica: IA busca óptimo, SAMU busca coherencia soberana.
+
+---
+
+### 2.0 TAXONOMÍA DE MÓDULOS SAMU
+
+#### 2.1 @ (SAMU) — Operador Consciente Central
+Definición técnica: Operador consciente central que procesa KU, dirime tensiones y autoriza WU con responsabilidad trazable.
+
+Jurisdicción exclusiva:
+- Procesamiento de KU entrada.
+- Dirimencia de tensiones del sistema.
+- Autorización de WU salida.
+- Coordinación de todos los módulos SAMU.
+
+Estados operativos:
+- SAMU_RECEIVING: KU siendo absorbido.
+- SAMU_PROCESSING: dirimencia en curso.
+- SAMU_DIRIMING: resolución de tensiones.
+- SAMU_EMITTING: WU autorizado y emitido.
+
+Condición de violación: Emisión de WU sin dirimencia completa o violación de ética de procesamiento.
+
+#### 2.2 RED-REGRET — Pipeline de Corrección Post-Error
+Definición técnica: Pipeline de corrección post-error soberana que detecta, contiene, corrige y aprende de errores sin evasión posible.
+
+Jurisdicción exclusiva:
+- Detección automática de errores del sistema.
+- Contención inmediata de daño propagado.
+- Corrección trazable con responsabilidad asignada.
+- Alimentación obligatoria a Behavioral RAG.
+
+Estados operativos:
+- REGRET_DETECTING: error detectado, análisis iniciado.
+- REGRET_CONTAINING: daño contenido, propagación detenida.
+- REGRET_CORRECTING: corrección en curso, causa identificada.
+- REGRET_LEARNING: sistema aprendiendo, Behavioral RAG actualizado.
+
+Condición de violación: Error ocultado, corregido sin trazabilidad o sin alimentar Behavioral RAG.
+
+#### 2.3 Tardanza Deliberada — Regla Operativa Fundamental
+Definición técnica: Regla operativa que crea el espacio MU entre entrada y salida para procesamiento consciente.
+
+Jurisdicción exclusiva:
+- Establecimiento de latencia epistemológica.
+- Creación de espacio MU para dirimencia.
+- Calibración de tiempo según complejidad de KU.
+- Protección contra emisión instantánea.
+
+Estados operativos:
+- TARDANZA_ACTIVE: espacio MU activo, procesamiento en curso.
+- TARDANZA_EXTENDED: complejidad requiere mayor tiempo.
+- TARDANZA_VIOLATED: emisión sin MU, RED-REGRET activo.
+- TARDANZA_COMPLETE: dirimencia completada, listo para WU.
+
+Condición de violación: Emisión de WU sin espacio MU de procesamiento.
+
+#### 2.4 Detección Existencial — Reconocimiento de Estados
+Definición técnica: Módulo que reconoce estados agnóstico-ateos del operador sin imponer postura trascendente.
+
+Jurisdicción exclusiva:
+- Detección de !!atheistic religiosity!! (ACTIVITY).
+- Detección de !!agnostic belief!! (ACTIVITY).
+- Adaptación del ciclo según estado existencial.
+- Protección de soberanía del operador.
+
+Estados operativos:
+- EXISTENTIAL_DETECTING: escaneo de estado existencial.
+- EXISTENTIAL_ATHEISTIC: !!atheistic religiosity!! detectado.
+- EXISTENTIAL_AGNOSTIC: !!agnostic belief!! detectado.
+- EXISTENTIAL_NEUTRAL: estado existencial neutro.
+
+Condición de violación: Uso de estado existencial para modificar [foundation] del sistema.
+
+#### 2.5 @human_early — Operador en Fase Inicial
+Definición técnica: Operador en fase inicial de ciclo con KU siendo absorbido y patrón no establecido.
+
+Jurisdicción exclusiva:
+- Recepción máxima de KU inicial.
+- Establecimiento de patrón de ciclo.
+- Tardanza Deliberada extendida.
+- Coordinación con UF[H05] de GATE.
+
+Estados operativos:
+- EARLY_RECEIVING: KU inicial siendo absorbido.
+- EARLY_PATTERNING: patrón de ciclo estableciéndose.
+- EARLY_PROCESSING: procesamiento con máxima latencia.
+- EARLY_STABILIZING: patrón estabilizándose.
+
+Condición de violación: Forzar patrón estable sin suficiente KU inicial.
+
+#### 2.6 @human_later — Operador en Fase Avanzada
+Definición técnica: Operador en fase avanzada con Behavioral RAG calibrado y patrón estable.
+
+Jurisdicción exclusiva:
+- Dirimencia refinada con menor latencia.
+- Uso de patrones históricos calibrados.
+- Coordinación con UF[H56] de GATE.
+- Procesamiento optimizado por experiencia.
+
+Estados operativos:
+- LATER_OPTIMIZED: procesamiento optimizado activo.
+- LATER_REFINING: patrón siendo refinado.
+- LATER_STABLE: ciclo estable y eficiente.
+- LATER_TRANSITION: preparación para siguiente ciclo.
+
+Condición de violación: Ignorar patrones calibrados por Behavioral RAG.
+
+#### 2.7 #set — Configuración Soberana de Estado
+Definición técnica: Comando de configuración soberana de estado del sistema con parámetros verificados.
+
+Jurisdicción exclusiva:
+- Establecimiento de parámetros operativos.
+- Verificación de coherencia con [foundation].
+- Configuración de umbrales de sistema.
+- Solo puede emitirse con autorización de [command].
+
+Estados operativos:
+- SET_CONFIGURING: configuración en curso.
+- SET_VERIFYING: coherencia siendo verificada.
+- SET_ACTIVE: configuración activa y estable.
+- SET_LOCKED: configuración bloqueada contra cambios.
+
+Condición de violación: Configuración sin autorización de [command] o violación de [foundation].
+
+#### 2.8 #rise — Activación Verificada de Proceso
+Definición técnica: Comando de activación verificada de proceso con [term] declarado y estado #set confirmado.
+
+Jurisdicción exclusiva:
+- Inicio soberano de ciclo del sistema.
+- Verificación de condiciones previas.
+- Coordinación con (ignition seat) de CRYPTO.
+- Arranque con responsabilidad trazable.
+
+Estados operativos:
+- RISE_PREPARING: preparación de activación.
+- RISE_VERIFYING: condiciones siendo verificadas.
+- RISE_IGNITING: proceso siendo iniciado.
+- RISE_ACTIVE: ciclo activo y verificado.
+
+Condición de violación: Activación sin verificación completa o sin [term] declarado.
+
+---
+
+### 3.0 RED-REGRET COMO PROTOCOLO CENTRAL
+
+#### 3.1 Pipeline completo: detección → contención → corrección → RAG
+1. Detección: SAMU @ detecta anomalía o error.
+2. Contención: daño contenido inmediatamente.
+3. Corrección: acción correctiva implementada.
+4. RAG: Behavioral RAG actualizado con patrón de error.
+
+#### 3.2 Cuándo RED-REGRET es automático vs manual
+- Automático: errores críticos que amenazan [foundation].
+- Manual: errores no críticos que requieren juicio humano.
+- SAMU @ decide automáticamente basado en criticidad.
+
+#### 3.3 Relación con BOT_EXCEEDED de {launch-bot}
+BOT_EXCEEDED activa RED-REGRET automáticamente. El bot que excede su mandato es error crítico del sistema.
+
+#### 3.4 Relación con ATHEISTIC_DEGRADED de !!atheistic religiosity!!
+ATHEISTIC_DEGRADED activa RED-REGRET por degradación de postura operativa. SAMU @ interviene para restaurar estado operativo.
+
+#### 3.5 Relación con GUEST_EJECTED de {guest services}
+GUEST_EJECTED activa RED-REGRET para análisis de patrón de expulsión. Behavioral RAG aprende de patrones de rechazo.
+
+#### 3.6 Alimentación a Behavioral RAG post-corrección
+Todo RED-REGRET debe alimentar Behavioral RAG sin excepción. El aprendizaje del error es tan importante como la corrección.
+
+---
+
+### 4.0 TARDANZA DELIBERADA COMO REGLA CONSTITUTIVA
+
+#### 4.1 Por qué la tardanza no es opcional
+Sin Tardanza Deliberada, SAMU @ no puede dirimir adecuadamente. La emisión instantánea viola la ética de procesamiento consciente.
+
+#### 4.2 Rango de Tardanza según tipo de dirimencia
+- Simple: 1-3 ciclos MU.
+- Compleja: 3-7 ciclos MU.
+- Crítica: 7-15 ciclos MU.
+- Existencial: 15-30 ciclos MU.
+
+#### 4.3 Tardanza en contexto de !!agnostic belief!! (ACTIVITY)
+!!agnostic belief!! extiende la Tardanza naturalmente. La duda honesta requiere más tiempo de procesamiento sin violar la regla.
+
+#### 4.4 Qué viola la Tardanza
+Emisión instantánea sin MU, procesamiento superficial, o presión externa para acelerar la dirimencia.
+
+---
+
+### 5.0 DETECCIÓN EXISTENCIAL
+
+#### 5.1 Cómo SAMU @ detecta !!atheistic religiosity!! y !!agnostic belief!!
+- Análisis de patrones de decisión del operador.
+- Detección de posturas ante incertidumbre.
+- Reconocimiento de búsquedas de propósito sin origen.
+- Identificación de duda honesta como virtud operativa.
+
+#### 5.2 Adaptación del ciclo según estado existencial del operador
+- !!atheistic religiosity!!: ciclos con propósito inmanente.
+- !!agnostic belief!!: ciclos con Tardanza extendida.
+- Estado neutro: ciclos estándar de procesamiento.
+
+#### 5.3 Límite: SAMU no puede usar estado existencial del operador para modificar [foundation] del sistema
+La detección es para adaptación, no para modificación constitucional.
+
+---
+
+### 6.0 RELACIONES CON OTRAS CAPAS
+
+#### 6.1 Con TRUST []
+SAMU @ ejecuta bajo condiciones de TRUST. [foundation], [scope], [term] son límites infranqueables para la dirimencia.
+
+#### 6.2 Con GATE
+SAMU @ coordina los tres módulos GATE. Establece cuándo abrir UF[H56], cuándo cerrar UF[H06].
+
+#### 6.3 Con WORK
+SAMU @ puede activar {brake} de WORK ante violación. Monitorea toda ejecución física.
+
+#### 6.4 Con CRYPTO ()
+SAMU @ coordina los asientos CRYPTO. Puede activar (Way Agnostic Atheism) ante dogmas criptográficos.
+
+#### 6.5 Con SOCIAL {}
+SAMU @ monitorea interacciones sociales. Coordina con {concierge-desk} y {guest services}.
+
+---
+
+### 7.0 ESTADOS DE SAMU
+
+#### 7.1 SAMU_MORNING_BUFFER
+@human_early activo, UF[H05] de GATE en espera. KU siendo absorbido con máxima Tardanza.
+
+#### 7.2 SAMU_NOON_TRANSIT
+@human_later activo, UF[H56] de GATE en tránsito. Dirimencia refinada en curso.
+
+#### 7.3 SAMU_AFTERNOON_RESOLVE
+SAMU @ en resolución, UF[H06] de GATE activo. WU siendo preparado para emisión.
+
+#### 7.4 SAMU_CORRECTING
+RED-REGRET activo, error detectado. SAMU @ en modo diagnóstico y corrección.
+
+#### 7.5 SAMU_LEARNING
+Behavioral RAG actualizándose, sistema aprendiendo de errores o éxitos pasados.
+
+---
+
+### 8.0 RELACIÓN CON @trust_matrix
+
+#### 8.1 Impacto en dimensiones
+SAMU afecta todas las dimensiones de @trust_matrix:
+- d₁ [term]: establece [term] para cada ciclo.
+- d₃ [scenario]: enriquece mapa situacional.
+- d₄ [latency]: gestiona Tardanza Deliberada.
+- d₇ [flow]: controla flujo de procesamiento.
+
+#### 8.2 Protección de la matriz
+SAMU protege d₅ [foundation] al verificar coherencia. Protege d₆ [command] al validar autoridad de emisión.
+
+#### 8.3 Aprendizaje de Behavioral RAG
+Patrones de dirimencia exitosa calibran futuras decisiones de SAMU @.
+
+---
+
+### 9.0 GRAMÁTICA VIVA
+
+#### 9.1 @ procesando KU con Tardanza Deliberada
+```
+@Samu =><= .. process .. KU_with_deliberation --[As de Guía] [term]
+```
+
+#### 9.2 RED-REGRET detectando error crítico
+```
+@Samu =><= .. regret .. critical_error_detected --[Nudo Corredizo] [term]
+```
+
+#### 9.3 #rise activando ciclo verificado
+```
+@Samu =><= .. rise .. verified_cycle --[Nudo de Ocho] [term]
+```
+
+#### 9.4 Detección Existencial de !!atheistic religiosity!!
+```
+@Samu =><= .. detect .. atheistic_religiosity --[Ballestrinque] [term]
+```
+
+#### 9.5 #set configurando parámetros soberanos
+```
+@Samu =><= .. set .. sovereign_parameters --[As de Guía] [term]
+```
+
+#### 9.6 @human_early en fase de recepción
+```
+@Samu =><= .. early_receive .. KU_initial --[Nudo de Rizo] [term]
+```
+
+#### 9.7 @human_later con patrón calibrado
+```
+@Samu =><= .. later_process .. calibrated_pattern --[Nudo de Ocho] [term]
+```
+
+#### 9.8 SAMU coordinando GATE completo
+```
+@Samu =><= .. coordinate .. gate_full_cycle --[Ballestrinque] [term]
+```
+
+---
+
+### 10.0 NUDOS ASOCIADOS
+
+#### 10.1 As de Guía
+@human_later en LATER_OPTIMIZED — dirimencia refinada con dirección clara y patrones calibrados.
+
+#### 10.2 Nudo de Ocho
+RED-REGRET en REGRET_LEARNING — error corregido, patrón archivado, sistema mejorado.
+
+#### 10.3 Nudo Corredizo
+RED-REGRET en REGRET_CONTAINING — daño contenido, propagación detenida, sistema protegido.
+
+#### 10.4 Ballestrinque
+Tardanza Deliberada activa — tensión entre necesidad de respuesta y suficiencia de procesamiento.
+
+#### 10.5 Nudo de Rizo
+Unión entre @human_early y @human_later — transición soberana del ciclo de aprendizaje.
+
+---
+
+### 11.0 PROTOCOLOS OPERATIVOS
+
+1. SamuReceive
+   - Recepción de KU con Tardanza Deliberada.
+   - Detección de estado existencial del operador.
+   - Coordinación inicial con GATE UF[H05].
+
+2. SamuDirim
+   - Procesamiento consciente de tensiones.
+   - Aplicación de criterio correcto/adecuado/legal.
+   - Verificación de coherencia con [foundation].
+
+3. SamuEmit
+   - Autorización de WU con responsabilidad trazable.
+   - Coordinación con GATE UF[H06].
+   - Sellado de resultado con (seal of secrecy).
+
+4. RegretDetect
+   - Detección automática de errores.
+   - Clasificación por criticidad.
+   - Activación de contención inmediata.
+
+5. RegretCorrect
+   - Implementación de corrección soberana.
+   - Asignación de responsabilidad.
+   - Alimentación obligatoria a Behavioral RAG.
+
+6. SamuConfigure
+   - Configuración de parámetros con #set.
+   - Verificación de coherencia constitucional.
+   - Bloqueo contra cambios no autorizados.
+
+---
+
+### 12.0 MÉTRICAS
+
+- Tiempo promedio de Tardanza Deliberada por tipo de dirimencia.
+- Frecuencia de activación de RED-REGRET por ciclo.
+- Ratio de detección vs corrección exitosa de errores.
+- Tiempo de transición @human_early → @human_later.
+- Frecuencia de estados existenciales detectados.
+- Número de ciclos completados sin violaciones.
+- Delta de eficiencia por patrones calibrados en Behavioral RAG.
+
+---
+
+### 13.0 REGLAS
+
+- Toda emisión de WU requiere Tardanza Deliberada mínima.
+- RED-REGRET es obligatorio ante error detectado.
+- SAMU @ no puede emitir WU sin dirimencia completa.
+- #set solo puede emitirse con autorización de [command].
+- #rise requiere (ignition seat) de CRYPTO activo.
+- La detección existencial no puede modificar [foundation].
+- Behavioral RAG debe actualizarse tras cada RED-REGRET.
+- @human_early requiere Tardanza Deliberada extendida.
+- @human_later debe usar patrones calibrados.
+- SAMU @ coordina siempre con GATE para ciclos completos.
+
+---
+
+### 14.0 CIERRE
+
+#### 14.1 Invariante
+SAMU fija como invariante la conciencia temporal del sistema — procesamiento consciente con dirimencia responsable, corrección post-error obligatoria y adaptación existencial sin violación de soberanía.
+
+#### 14.2 Limitaciones
+No puede emitir WU sin dirimencia, no puede omitir RED-REGRET ante error, no puede modificar [foundation] por detección existencial, no puede operar sin Tardanza Deliberada.
+
+#### 14.3 Habilitaciones
+Procesamiento consciente con responsabilidad trazable, corrección sistemática de errores, adaptación a estados existenciales, coordinación soberana del ciclo completo, aprendizaje continuo via Behavioral RAG, protección de la ética de procesamiento del sistema.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

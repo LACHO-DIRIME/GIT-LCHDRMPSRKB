@@ -1,0 +1,308 @@
+# BIBLIO-SOURCES(TRUST_SCENARIO).txt
+
+====================================================================
+
+## 🏛️ TRUST [SCENARIO] — MAPA DE SITUACIÓN ACTIVA
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+[scenario] es el módulo TRUST que define el mapa de situación activa: conjunto de condiciones, actores, recursos y restricciones que el sistema reconoce como reales en un momento dado.
+
+#### 1.2 Distinción KU vs [scenario]
+KU es el contexto bruto que llega al sistema; [scenario] es la versión validada de KU que TRUST acepta como operativa.
+
+#### 1.3 Por qué es TRUST y no SAMU ni GATE
+Define condición soberana del sistema (qué reconoce como real), no función de auditoría (SAMU) ni control de flujo (GATE).
+
+#### 1.4 Posición d₃ en @trust_matrix
+d₃ :: [scenario] → ¿qué tan definido está el escenario? (0.0 = caos, 1.0 = mapa completo)
+
+#### 1.5 Relación con [scope]
+[scope] define el perímetro; [scenario] define lo que existe dentro de ese perímetro.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Capacidades
+- Definir mapa de situación activa desde KU.
+- Validar condiciones, actores, recursos, restricciones.
+- Modificar mapa cuando [event] ocurre.
+
+#### 2.2 Limitaciones absolutas
+No puede operar si [foundation] está COMPROMISED.
+
+#### 2.3 Condiciones de violación
+- **Violación:** degeneración en ilusión operativa.
+- **Señal alerta:** [scenario] no coincide con lecturas SAMU por 2+ ciclos.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 Construcción del escenario
+- **Proceso:** KU → validación SAMU → [scenario].
+- **Elementos:** actores, recursos, restricciones, hexagrama activo.
+- **Umbral mínimo:** d₃ ≥ 0.5 para viabilidad.
+- **d₃ < 0.5:** modo degradado, solo Work++ habilitado.
+
+#### 3.2 Escenario y hexagramas
+- **H11 (Paz):** escenario de flujo, d₃ → 1.0.
+- **H06 (Conflicto):** escenario de tensión, d₃ alto con restricciones severas.
+- **H29 (Abismal):** escenario de incertidumbre, d₃ bajo, !!agnostic belief!! activo.
+- **H49 (Revolución):** escenario en transformación, d₃ inestable, [language] peso elevado.
+
+#### 3.3 Relación con dominios económicos
+
+##### Memecoins/Volatilidad
+- Definición de [scenario] en mercado volátil.
+- PATTERN-WITNESS (H4) alimenta [scenario].
+- Límite: no puede ignorar señales RED-REGRET del mercado.
+
+##### Custodia Móvil
+- [scenario] en dispositivo degradado o entorno seguridad parcial.
+- Define operaciones viables según entorno físico.
+- Límite: foundation COMPROMISED no puede declararse operativo.
+
+##### Notaría Digital
+- [scenario] en jurisdicción en transición.
+- Define cadena de custodia disponible.
+- Límite: no puede certificar lo no verificado por foundation.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation]
+Condición previa absoluta.
+
+#### 4.2 Con [scope]
+[scenario] vive dentro de [scope].
+
+#### 4.3 Con [term]
+Todo [scenario] tiene duración; cuando [term] expira, [scenario] se cierra.
+
+#### 4.4 Con [event]
+[event] ocurre dentro de [scenario] activo y lo modifica.
+
+#### 4.5 Con [management]
+[management] opera sobre [scenario] para gestionar amenazas.
+
+#### 4.6 Con [command]
+[command] emite instrucciones que asumen [scenario] como válido.
+
+#### 4.7 Con [language]
+[language] traduce [scenario] al dialecto correcto según componente.
+
+#### 4.8 Con SAMU @
+Audita que [scenario] corresponda a KU real, no a ilusión operativa.
+
+#### 4.9 Con GREEN-KNOWLEDGE
+Filtra qué elementos de KU entran al [scenario].
+
+#### 4.10 Con Behavioral RAG
+Patrones de [scenario] anteriores calibran construcción del actual.
+
+---
+
+### 5.0 ESTADOS DE [scenario]
+
+#### 5.1 SCENARIO_MAPPED
+- **Condición:** d₃ ≥ 0.85.
+- **Comportamiento:** mapa completo y validado.
+- **Operación:** plena conciencia situacional.
+
+#### 5.2 SCENARIO_PARTIAL
+- **Condición:** d₃ entre 0.5 y 0.85.
+- **Comportamiento:** mapa suficiente para operar.
+- **SAMU @:** monitorea elementos no mapeados.
+
+#### 5.3 SCENARIO_DEGRADED
+- **Condición:** d₃ entre 0.3 y 0.5.
+- **Comportamiento:** mapa insuficiente.
+- **Operación:** solo críticas habilitadas, !!agnostic belief!! activo.
+
+#### 5.4 SCENARIO_UNKNOWN
+- **Condición:** d₃ < 0.3.
+- **Comportamiento:** sistema sin mapa operativo.
+- **Operación:** MU activo, GATE bloqueado, SAMU auditoría intensiva.
+
+#### 5.5 SCENARIO_COMPROMISED
+- **Condición:** foundation COMPROMISED o [scenario] no coincide con KU.
+- **Comportamiento:** sistema detiene operación no crítica.
+- **Acción:** RED-REGRET obligatorio.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 d₃ como tercera dimensión
+Mide qué tan definido está el escenario para cálculo de T_matrix.
+
+#### 6.2 Afectación del cálculo
+d₃ bajo reduce pesos contextuales en T_matrix.
+
+#### 6.3 Pesos contextuales
+- **H05 (Espera):** [scenario] × 1.2 — en espera, el mapa es crítico.
+
+#### 6.4 Umbral crítico
+Si d₃ < 0.3 y d₁ < 0.5, sistema va a MU.
+
+#### 6.5 Aprendizaje en Behavioral RAG
+Historial de [scenario] calibra futuros mapas.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Declaración de [scenario] desde KU validado
+```
+[Trust] scenario =><= .. declare .. $$ku_validated_scenario$$ --[As de Guía] [term]
+```
+
+#### 7.2 [scenario] en modo DEGRADED con !!agnostic belief!!
+```
+[Trust] scenario =><= .. degrade .. $$agnostic_belief_active$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.3 [scenario] recibiendo modificación por [event]
+```
+[Trust] scenario =><= .. update .. $$event_modified_map$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.4 [scenario] en dominio memcoins
+```
+[Trust] scenario =><= .. define .. $$memcoins_volatility$$ --[Ballestrinque] [term]
+```
+
+#### 7.5 [scenario] en dominio custodia móvil
+```
+[Trust] scenario =><= .. assess .. $$mobile_custody_degraded$$ --[As de Guía] [term]
+```
+
+#### 7.6 [scenario] en dominio notaría digital
+```
+[Trust] scenario =><= .. establish .. $$digital_notary_transition$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.7 Cierre de [scenario] cuando [term] expira
+```
+[Trust] scenario =><= .. close .. $$term_expired_scenario$$ --[Ballestrinque] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+- **Activación:** [scenario] activo y mapeado.
+- **Efecto:** ciclo en operación plena.
+
+#### 8.2 Nudo de Ocho
+- **Activación:** [scenario] cristalizado en STACKING.
+- **Efecto:** resultado permanente del mapa.
+
+#### 8.3 Nudo Corredizo
+- **Activación:** [scenario] COMPROMISED o UNKNOWN.
+- **Efecto:** sistema detenido.
+
+#### 8.4 Ballestrinque
+- **Activación:** tensión entre [scenario] declarado y KU real.
+- **Efecto:** auditoría SAMU activa.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+#### 9.1 ScenarioMap
+1. Recibir KU bruto del sistema.
+2. Validar con SAMU @ correspondencia realidad.
+3. Construir mapa de actores, recursos, restricciones.
+4. Calcular d₃ inicial.
+5. Declarar [scenario] si d₃ ≥ 0.5.
+
+#### 9.2 ScenarioUpdate
+1. Detectar [event] modificando condiciones.
+2. Evaluar impacto en mapa actual.
+3. Actualizar elementos afectados.
+4. Recalcular d₃.
+5. Notificar cambios a componentes dependientes.
+
+#### 9.3 ScenarioDegrade
+1. Detectar d₃ cayendo durante ciclo activo.
+2. Identificar causa (KU cambiado, foundation afectado).
+3. Activar modo degradado apropiado.
+4. Restringir operaciones no críticas.
+5. Notificar degradación a SAMU.
+
+#### 9.4 ScenarioRecover
+1. Evaluar causa de degradación previa.
+2. Reconstruir elementos perdidos del mapa.
+3. Validar con SAMU @ nuevo mapa.
+4. Verificar d₃ ≥ 0.5 antes de reactivar.
+5. Confirmar recuperación completa.
+
+#### 9.5 ScenarioClose
+1. Detectar expiración de [term].
+2. Cristalizar mapa final en STACKING.
+3. Registrar métricas del ciclo en Behavioral RAG.
+4. Liberar recursos del [scenario].
+5. Transicionar a estado inactivo.
+
+#### 9.6 ScenarioBlock
+1. Detectar [scenario] COMPROMISED.
+2. Detener toda operación no crítica.
+3. Activar RED-REGRET obligatorio.
+4. Forzar auditoría intensiva de SAMU.
+5. Preparar reconstrucción desde foundation.
+
+---
+
+### 10.0 MÉTRICAS
+
+- **d₃:** definición del escenario (0.0 a 1.0).
+- **Tiempo construcción:** KU → [scenario] validado.
+- **Coincidencia SAMU:** [scenario] declarado vs lecturas reales.
+- **Frecuencia DEGRADED:** por dominio (memcoins vs custodia vs notaría).
+- **Delta-d₃ al cierre:** mejora del mapa durante ciclo.
+
+---
+
+### 11.0 REGLAS
+
+- [scenario] no puede declararse válido con foundation COMPROMISED.
+- [scenario] no puede extenderse fuera de [scope].
+- Todo [scenario] tiene [term] — no existe escenario permanente.
+- SAMU @ debe validar toda transición KU → [scenario] sin excepción.
+- Si [scenario] no coincide con KU real por 2+ ciclos, activar RED-REGRET.
+- d₃ < 0.3 activa modo UNKNOWN con MU obligatorio.
+- [event] siempre modifica [scenario] activo.
+- [scenario] en dominio notaría no puede certificar lo no verificado.
+- [scenario] en dominio memcoins no puede ignorar señales RED-REGRET.
+- Behavioral RAG debe registrar todo ciclo de [scenario].
+- GREEN-KNOWLEDGE filtra elementos de KU antes de entrar a [scenario].
+- [scenario] cierra con [term] siempre.
+- [scenario] en H49 (Revolución) tiene prioridad sobre otras dimensiones.
+- [scenario] en H29 (Abismal) activa !!agnostic belief!! automáticamente.
+- [scenario] en H11 (Paz) permite operación con d₃ ≥ 0.3 (relajación temporal).
+- [scenario] no puede operar sin hexagrama activo definido.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+[scenario] fija el mapa de situación activa como condición soberana de operación del sistema.
+
+#### 12.2 Limitaciones
+No opera con foundation COMPROMISED, no extiende fuera de [scope], no existe sin [term].
+
+#### 12.3 Habilitaciones
+Reconocimiento soberano de la realidad, operación basada en mapa validado, gestión de dominios económicos con conciencia situacional.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

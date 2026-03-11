@@ -1,0 +1,59 @@
+# BIBLIO-SOURCES(DIRIME-IMV_MAIN).txt
+
+====================================================================
+
+## MAIN.PY — SOVEREIGN SYSTEM: ORQUESTADOR SOBERANO IMV
+
+====================================================================
+
+### 1.0 PROPÓSITO
+
+main.py es IMV-0: el punto de entrada soberano que orquesta todos los módulos. SovereignSystem es la clase que inicializa, verifica y coordina el ciclo completo.
+
+### 2.0 SOVEREIGN SYSTEM
+python main.py                    # modo interactivo
+python main.py --validate "texto" # validación directa
+python main.py --stats            # estadísticas
+
+Secuencia de arranque soberano:
+1. init_config_defaults() — crea config/*.json si no existen.
+2. verify_sovereign_conditions("main") — verifica [foundation][scope][term].
+3. verify_ledger() — integridad del HL FABRIC SQLite.
+4. Sistema listo — inicia modo según argumento.
+
+### 3.0 TRES MODOS
+
+**Modo interactivo (default):**
+Loop soberano: input("DIRIME> ") → chat(user_input) → display resultado.
+Salida: quit / exit / salir / Ctrl+C / EOF.
+
+**Modo --validate:**
+Valida sentencia directa + auditoría SAMU @.
+No registra en ledger (modo de prueba soberano).
+Útil para verificar gramática sin efectos en el ledger.
+
+**Modo --stats:**
+get_stats() + get_status() + get_summary().
+Snapshot soberano del sistema en ese momento.
+BALLPAPER mínimo por terminal.
+
+### 4.0 SOVEREIGN SYSTEM COMO ARQUITECTURA FUTURA
+
+SovereignSystem hoy: orquesta 5 módulos (foundation, grammar, samu, ledger, chat).
+SovereignSystem en DIRIME completo: orquesta todos los módulos declarados en el corpus.
+La clase ya tiene la estructura correcta — cada nuevo módulo se suma sin cambiar el contrato.
+
+### 5.0 --SHORT FLAG (PENDIENTE)
+
+Flag pendiente de implementación para output conciso:
+python main.py --short "texto"
+Output: 2-3 líneas — resultado + verbo + nudo. Sin formato extendido.
+Referencia: roadmap REPORTE_MAESTRO §1.7.
+
+### 6.0 GRAMÁTICA VIVA
+
+MAIN IMV-0 =><= .. orquesta .. todos_módulos_soberanos_en_secuencia
+=><= init_verify_ready .. tres_modos_de_operación_soberana
+=><= punto_de_entrada_que_sostiene_el_ciclo_completo --[As de Guía] [term]
+
+====================================================================

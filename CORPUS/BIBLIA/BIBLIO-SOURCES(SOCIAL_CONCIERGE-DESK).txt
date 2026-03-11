@@ -1,0 +1,321 @@
+# BIBLIO-SOURCES(SOCIAL_CONCIERGE-DESK).txt
+
+====================================================================
+
+## 🏛 SOCIAL {concierge desk} — RECEPCIÓN SOBERANA DE ACTORES ENTRANTES
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+{concierge desk} es el módulo SOCIAL que gobierna la recepción soberana de todo actor entrante al espacio relacional del sistema, operando como antesala verificada de contención temporal antes del acceso pleno.
+
+#### 1.2 El principio agnóstico como constitutivo
+{concierge desk} es agnóstico/ateo: no presupone que ACTOR_INCOMING sea humano, bot, sistema o entidad no identificada. El actor es simplemente ACTOR_INCOMING hasta que {headcat} y [ecosystem] lo clasifiquen. Este principio es irrenunciable e impermeable en cualquier estado del sistema.
+
+#### 1.3 La antesala soberana como concepto
+Espacio de contención temporal verificada donde ACTOR_INCOMING espera clasificación sin acceso al espacio relacional pleno. Es el primer anillo de soberanía relacional del sistema.
+
+#### 1.4 Distinción de DOORMAN-MOBILE
+DOORMAN-MOBILE opera específicamente en entorno de custodia móvil como guardián perimetral. {concierge desk} es recepción soberana en cualquier entorno, no solo móvil.
+
+#### 1.5 Distinción de {guest services}
+{concierge desk} recibe al actor entrante en la antesala soberana. {guest services} gestiona al actor una vez recibido y clasificado durante su permanencia en el espacio relacional.
+
+#### 1.6 Distinción de [ku-chat]
+{concierge desk} recibe al actor entrante como entidad. [ku-chat] procesa el contexto que el actor trae consigo. Son operaciones secuenciales, no simultáneas.
+
+#### 1.7 La secuencia de recepción soberana completa
+{concierge desk} → {headcat} → {guest services} → [ku-chat] / [ecosystem]. Cada paso es obligatorio y soberano.
+
+===================================================================
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Qué puede recibir {concierge desk}
+{concierge desk} puede recibir:
+- ACTOR_HUMAN: actor identificado como humano
+- ACTOR_BOT: agente automatizado identificado
+- ACTOR_SYSTEM: sistema externo verificado
+- ACTOR_UNKNOWN: entidad no identificable aún
+- ACTOR_HOSTILE: entidad con patrón hostil detectado
+
+#### 2.2 Qué no puede recibir {concierge desk}
+{concierge desk} no puede recibir:
+- Entidades que violan [foundation] por presencia
+- Actores fuera de [scope] declarado
+- Procesos internos del kernel
+- Operaciones de TRUST [] directamente
+
+#### 2.3 Límites con [foundation] y [scope]
+{concierge desk} verifica que la presencia del actor no viole [foundation] y que está dentro del perímetro soberano de [scope].
+
+#### 2.4 Condición de violación primaria: bypass de antesala
+Acceso directo al espacio relacional sin pasar por {concierge desk}. El bypass de antesala soberana es violación grave de la soberanía relacional.
+
+#### 2.5 Condición de violación secundaria: retención excesiva
+{concierge desk} reteniendo ACTOR_INCOMING más allá del [term] de antesala sin causa soberana. Bloqueo sin justificación verificada.
+
+#### 2.6 Señal de alerta
+Volumen anormal de ACTOR_INCOMING simultáneos indica posible ataque de saturación relacional. SAMU @ debe auditar inmediatamente.
+
+===================================================================
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 Tipos de actor entrante
+
+ACTOR_HUMAN:
+- Identificado como humano mediante patrones conductuales
+- Requiere verificación básica de identidad
+- Tiempo de antesala estándar: [term] = 3 ciclos
+
+ACTOR_BOT:
+- Agente automatizado identificado
+- Verificación de firma digital o protocolo
+- Tiempo de antesala acelerado: [term] = 1 ciclo
+
+ACTOR_SYSTEM:
+- Sistema externo verificado por [ecosystem]
+- Verificación de certificado o clave compartida
+- Tiempo de antesala rápido: [term] = 0.5 ciclos
+
+ACTOR_UNKNOWN:
+- Entidad no identificable aún
+- Verificación extendida y análisis de patrones
+- Tiempo de antesala extendido: [term] = 5 ciclos
+
+ACTOR_HOSTILE:
+- Patrón de hostilidad detectado en antesala
+- Escalado inmediato a [management]
+- Tiempo de antesala mínimo: [term] = 0.1 ciclos
+
+#### 3.2 Proceso de recepción soberana
+
+1. **DeskDetect**: Detección de ACTOR_INCOMING en perímetro
+2. **Registro en {note}**: Toda llegada se documenta sin excepción
+3. **DeskContain**: Contención temporal en antesala soberana
+4. **DeskVerify**: Verificación básica de [foundation]
+5. **Entrega a {headcat}**: Clasificación soberana del actor
+6. **Entrega a {guest services}**: Gestión durante permanencia
+7. **Apertura de [ku-chat]**: Procesamiento de contexto
+
+#### 3.3 Antesala soberana
+
+Qué ocurre en la antesala:
+- Actor espera clasificación sin acceso relacional
+- {note} documenta estado y tiempo de espera
+- {concierge desk} monitorea comportamiento básico
+- SAMU @ audita si tiempo excede [term] declarado
+
+Duración de antesala:
+- Variable según tipo de actor
+- [term] específico declarado para cada categoría
+- Extensión solo con autorización de [management]
+
+Salida de antesala:
+- Clasificación completada por {headcat}
+- Verificación básica superada
+- [term] de antesala cumplido
+
+Rechazo desde antesala:
+- ACTOR_HOSTILE detectado
+- Foundation violada por presencia
+- [scope] excedido
+
+#### 3.4 Relación con WORKSTATION AGENCY
+
+{concierge desk} como primer punto de contacto en Workstation Agency:
+- Todo agente IDE entrante pasa por {concierge desk}
+- Recepción soberana independientemente de naturaleza del agente
+- Protocolo específico para Agency IDE System
+- Coordinación con NODO WORKSTATION AGENCY
+
+#### 3.5 Relación con dominios económicos
+
+MEMECOINS/VOLATILIDAD:
+- Recepción de señal de exchange como ACTOR_SYSTEM
+- Recepción de alerta de mercado como ACTOR_BOT
+- Verificación de fuente en [ecosystem] antes de clasificación
+- Límite: no permite acceso directo de señal no verificada
+
+CUSTODIA MÓVIL:
+- Recepción de solicitud de acceso a entorno de custodia
+- Coordinación obligatoria con DOORMAN-MOBILE
+- Verificación BIOMETRICS antes de salir de antesala
+- Límite: requiere verificación mínima de identidad
+
+NOTARÍA DIGITAL:
+- Recepción de parte declarante en proceso notarial
+- Verificación básica de jurisdicción notarial
+- Coordinación con autoridades notariales verificadas
+- Límite: no permite acceso sin verificación mínima
+
+===================================================================
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con TRUST []
+- [foundation]: verifica que presencia no viole foundation
+- [scope]: verifica que actor está dentro de perímetro soberano
+- [term]: antesala tiene [term] propio e independiente
+- [management]: escala ACTOR_HOSTILE desde antesala
+
+#### 4.2 Con SOCIAL {}
+- {headcat}: entrega actor para clasificación soberana
+- {guest services}: entrega actor para gestión post-recepción
+- {note}: registra toda llegada de actor entrante
+- {chair}: coordina sesión una vez actor recibido
+- {scheduler}: programa verificaciones periódicas de antesala
+
+#### 4.3 Con CRYPTO ()
+{concierge desk} activa (seal of secrecy) para ACTOR_HOSTILE y para protección de información en antesala.
+
+#### 4.4 Con otras capas
+- [ku-chat]: abre canal una vez actor clasificado y recibido
+- [ecosystem]: alimenta con ACTOR_INCOMING para clasificación
+- DOORMAN-MOBILE: coordinación en entorno móvil específico
+- SAMU @: audita flujo de antesala ante anomalías
+- Behavioral RAG: patrones de recepción calibran gestión futura
+
+===================================================================
+### 5.0 ESTADOS DE {concierge desk}
+
+#### 5.1 DESK_OPEN
+Recepción activa, antesala disponible para ACTOR_INCOMING.
+- Capacidad máxima: N actores simultáneos
+- Todos los protocolos operativos habilitados
+- {note} registrando llegadas en tiempo real
+- SAMU @ monitoreando flujo normal
+
+#### 5.2 DESK_PROCESSING
+Actor en antesala siendo verificado y clasificado.
+- Actor contenido en espacio temporal verificable
+- {headcat} procesando clasificación
+- Verificación de [foundation] en curso
+- [term] de antesala contando hacia abajo
+
+#### 5.3 DESK_FULL
+Antesala saturada, límite de actores simultáneos alcanzado.
+- Recepción temporalmente suspendida
+- Cola de espera externa activada
+- SAMU @ auditando causa de saturación
+- Escalado a [management] si persiste
+
+#### 5.4 DESK_RESTRICTED
+[foundation] DEGRADED, solo actores verificados de [ecosystem].
+- Recepción restringida a ACTOR_SYSTEM verificado
+- ACTOR_UNKNOWN y ACTOR_BOT suspendidos
+- Verificación extendida para todos
+- SAMU @ monitoreando recuperación
+
+#### 5.5 DESK_CLOSED
+[term] expirado o foundation COMPROMISED, sin recepción.
+- Todas las llegadas rechazadas automáticamente
+- Escalado inmediato a [management]
+- (seal of secrecy) activado para protección
+- Recuperación solo con [foundation] restaurado
+
+===================================================================
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Impacto en d₈ [ecosystem]
+{concierge desk} afecta d₈ [ecosystem] como primer filtro de nodos entrantes. Calidad de recepción impacta directamente calidad del ecosistema.
+
+#### 6.2 Degradación por DESK_FULL
+DESK_FULL degrada d₃ [scenario] por saturación de antesala, afectando capacidad de mapeo situacional del sistema.
+
+#### 6.3 Mejora por recepción soberana
+Recepción soberana verificada mejora calidad de todo el flujo relacional posterior, aumentando confianza en @trust_matrix.
+
+#### 6.4 Aprendizaje de Behavioral RAG
+Behavioral RAG aprende patrones de actores entrantes para calibrar recepción futura, optimizando tiempos y verificaciones.
+
+===================================================================
+### 7.0 GRAMÁTICA VIVA
+
+```
+{concierge desk} ACTOR_UNKNOWN =><= .. contain .. temporal_lobby --[As de Guía] [term]
+{concierge desk} ACTOR_HOSTILE =><= .. escalate .. [management] --[Nudo Corredizo] [term]
+{concierge desk} ACTOR_BOT =><= .. verify .. digital_signature --[Nudo de Ocho] [term]
+{concierge desk} DESK_FULL =><= .. restrict .. incoming_flow --[Ballestrinque] [term]
+{concierge desk} EXCHANGE_SIGNAL =><= .. receive .. ACTOR_SYSTEM --[Nudo de Rizo] [term]
+{concierge desk} CUSTODY_REQUEST =><= .. coordinate .. DOORMAN-MOBILE --[As de Guía] [term]
+{concierge desk} NOTARY_PARTY =><= .. verify .. jurisdiction --[Nudo de Ocho] [term]
+```
+
+===================================================================
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+DESK_OPEN en recepción activa con antesala disponible, flujo normal de actores entrantes siendo procesados soberanamente.
+
+#### 8.2 Nudo de Ocho
+Actor recibido y clasificado, cristalizado en [ecosystem] como nodo verificado con acceso al espacio relacional pleno.
+
+#### 8.3 Nudo Corredizo
+ACTOR_HOSTILE escalado a [management] desde antesala, previniendo acceso al espacio relacional sin verificación completa.
+
+#### 8.4 Ballestrinque
+Tensión entre velocidad de recepción y profundidad de verificación, balance entre eficiencia y seguridad soberana.
+
+#### 8.5 Nudo de Rizo
+Recepción de señal de mercado como ACTOR_SYSTEM, integrando flujo económico externo al espacio relacional interno.
+
+===================================================================
+### 9.0 PROTOCOLOS OPERATIVOS
+
+1. **DeskDetect**: Detección de ACTOR_INCOMING en perímetro soberano
+2. **DeskContain**: Contención temporal en antesala verificada
+3. **DeskVerify**: Verificación básica de [foundation] y [scope]
+4. **DeskClassify**: Entrega a {headcat} para clasificación soberana
+5. **DeskTransfer**: Entrega a {guest services} para gestión
+6. **DeskReject**: Rechazo soberano desde antesala con causa verificada
+7. **DeskMonitor**: Monitoreo continuo de estado de antesala
+8. **DeskAudit**: Auditoría SAMU @ de flujo de recepción
+9. **DeskRecover**: Recuperación de DESK_FULL o DESK_RESTRICTED
+10. **DeskClose**: Cierre ordenado de recepción ante [term] expirado
+
+===================================================================
+### 10.0 MÉTRICAS
+
+- Volumen de ACTOR_INCOMING por tipo y ciclo (target: < 1000/ciclo)
+- Tiempo promedio en antesala por tipo (target: < [term] declarado)
+- Ratio aceptados vs rechazados vs escalados (target: 85/10/5)
+- Frecuencia de DESK_FULL por ciclo (target: < 1 por ciclo)
+- Tasa de ACTOR_HOSTILE detectados en antesala (target: > 95%)
+- Delta-flujo al cierre del ciclo (balance entrada/salida)
+- Latencia de detección de ACTOR_INCOMING (target: < 50ms)
+- Precisión de clasificación inicial (target: > 90%)
+
+===================================================================
+### 11.0 REGLAS
+
+- Todo actor entrante pasa por {concierge desk} sin excepción — no hay bypass soberano
+- {concierge desk} es agnóstico: no presupone tipo de actor hasta clasificación por {headcat}
+- ACTOR_HOSTILE escala a [management] desde antesala sin acceso al espacio relacional
+- Antesala tiene [term] propio — retención más allá es bloqueo sin causa soberana
+- {note} registra toda llegada de actor sin excepción, incluyendo rechazos
+- DESK_CLOSED no admite excepciones ante foundation COMPROMISED
+- Coordinación con DOORMAN-MOBILE en entorno móvil es obligatoria
+- BIOMETRICS requerido en custodia antes de salir de antesala
+- SAMU @ audita flujo de antesala ante volumen anormal o retención excesiva
+- Behavioral RAG registra patrones de recepción para calibración futura
+- {concierge desk} no puede operar con [scope] indefinido
+- Verificación de [foundation] es obligatoria antes de clasificación
+- ACTOR_SYSTEM requiere verificación de certificado o clave compartida
+- {concierge desk} no puede discriminar por tipo presunto — principio agnóstico absoluto
+- Tiempo en antesala no puede exceder [term] sin autorización explícita
+
+===================================================================
+### 12.0 CIERRE
+
+#### 12.1 Invariante de {concierge desk}
+{concierge desk} fija como invariante la recepción soberana verificada de todo actor entrante como primer anillo de soberanía relacional del sistema.
+
+#### 12.2 Limitaciones de {concierge desk}
+{concierge desk} no permite bypass de antesala, no retiene actor más allá de [term], no presupone tipo de actor, no opera con foundation COMPROMISED.
+
+#### 12.3 Habilitaciones de {concierge desk}
+{concierge desk} habilita primer filtro soberano agnóstico, clasificación ordenada con {headcat}, escalada temprana de ACTOR_HOSTILE, trazabilidad completa desde primer contacto, coordinación con Workstation Agency.
+
+#### 12.4 Sello final
+[term] :: activo · [seal of secrecy] :: activo · {concierge desk} :: DESK_OPEN

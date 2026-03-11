@@ -1,0 +1,302 @@
+# BIBLIO-SOURCES(TRUST_L).txt
+
+====================================================================
+
+## 🏛️ TRUST [LANGUAGE] — ENRUTADOR MAESTRO Y TRADUCTOR INTER-CAPA
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+[language] es el módulo TRUST que actúa como enrutador maestro y traductor inter-capa, permitiendo que bibliotecas comuniquen sin romper jurisdicciones.
+
+#### 1.2 Distinción de [command]
+[command] ordena, [language] traduce lo ordenado para que sea comprensible en la capa destino.
+
+#### 1.3 Distinción de [ecosystem]
+[ecosystem] conecta nodos externos, [language] traduce lo que [ecosystem] recibe.
+
+#### 1.4 Distinción de [logistical-executive]
+[logistical-executive] orquesta el impacto, [language] asegura que las instrucciones sean comprensibles en cada capa.
+
+#### 1.5 Posición en @trust_matrix
+d7 :: [language] (0.0 a 1.0): traducibilidad de la situación actual entre capas.
+
+#### 1.6 Significado de d7
+- **d7 bajo (< 0.3):** capas incomunicadas, traducción limitada.
+- **d7 alto (≥ 0.7):** traducción fluida entre todas las capas.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Capacidades de traducción
+- Puede traducir sentencias entre bibliotecas.
+- Puede adaptar formato sin alterar contenido semántico.
+- Puede clasificar recursos con MIMETYPES.
+
+#### 2.2 Limitaciones
+- No puede alterar el contenido semántico de lo traducido.
+- No puede crear contenido nuevo, solo transformar.
+- No puede operar si foundation está COMPROMISED.
+
+#### 2.3 Requisitos de autorización
+- Traducciones críticas requieren (key seat) de CRYPTO.
+- Traducciones externas requieren (shield seat).
+- Traducciones inter-nodo requieren (link seat).
+
+#### 2.4 Condiciones de violación
+- **Violación:** traducción que contamina jurisdicción destino.
+- **Consecuencia:** rechazo inmediato + RED-REGRET + auditoría SAMU.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 El enrutador maestro
+1. Recibe sentencia de biblioteca origen.
+2. Determina biblioteca destino según MIMETYPE.
+3. Adapta forma sin alterar contenido.
+4. Registra cada traducción para trazabilidad.
+
+#### 3.2 CAT(CODE) como componente técnico
+- **Definición:** operario polimórfico de [language].
+- **Función:** transmuta código externo en vectores 6 bits compatibles con LACHO.
+- **Lenguajes soportados:** Python, Rust, Go, HTTP, MQTT.
+- **Protocolo de validación:** verifica compatibilidad antes de transmutar.
+- **Violación de foundation:** detiene transmutación y activa RED-REGRET.
+
+#### 3.3 MIMETYPES LACHO
+Clasificación de recursos entre capas:
+- **application/lacho.gate:** recursos GATE.
+- **application/lacho.work:** recursos WORK.
+- **application/lacho.trust:** recursos TRUST.
+- **application/lacho.social:** recursos SOCIAL.
+- **application/lacho.crypto:** recursos CRYPTO.
+- **application/lacho.stack:** recursos STACKING.
+
+#### 3.4 Interoperabilidad inter-biblioteca
+- **STACKING ↔ WORK:** traduce estados cristalizados a ejecución.
+- **SOCIAL ↔ TRUST:** convierte componentes sociales a decisiones soberanas.
+- **CRYPTO:** valida traducciones antes de entrega.
+- **METHOD:** formaliza ecuaciones entre capas.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation]
+[language] se detiene si foundation está COMPROMISED.
+
+#### 4.2 Con [scope]
+[language] solo traduce dentro del perímetro declarado.
+
+#### 4.3 Con [term]
+Toda sesión de traducción cierra con [term].
+
+#### 4.4 Con [ecosystem]
+[language] recibe lo que [ecosystem] trae del exterior y lo hace comprensible.
+
+#### 4.5 Con [command]
+[language] adapta commands para que WORK los pueda ejecutar.
+
+#### 4.6 Con GATE
+[language] opera en H56 (tránsito) como capa de traducción activa.
+
+#### 4.7 Con SAMU @
+d7 en @trust_matrix es auditado; si d7 baja, SAMU detecta incomunicación.
+
+#### 4.8 Con CRYPTO
+- **(link seat):** valida canales de traducción.
+- **(key seat):** verifica identidad del emisor.
+
+#### 4.9 Con METHOD
+[language] y METHOD colaboran: METHOD formaliza, [language] enruta el formalismo.
+
+#### 4.10 Con IME
+Input Method Editor como interfaz que [language] procesa antes de rutear.
+
+---
+
+### 5.0 TABLA DE TRADUCCIÓN INTER-CAPA
+
+| Origen | Destino | Componente | Validación |
+|--------|---------|------------|------------|
+| SOCIAL {} | TRUST [] | CAT(CODE) | (key seat) |
+| TRUST [] | WORK | CAT(CODE) | (ignition seat) |
+| ECOSYSTEM | STACKING | MIMETYPE | (link seat) |
+| METHOD <> | GATE | operadores | SAMU @ |
+| externo (Python) | TRUST [] | CAT(CODE) | (shield seat) |
+| externo (HTTP) | ECOSYSTEM | MIMETYPE | (link seat) |
+| CRYPTO () | SOCIAL {} | CAT(CODE) | (key seat) |
+| WORK | STACKING | MIMETYPE | (link seat) |
+| SAMU @ | TRUST [] | CAT(CODE) | (key seat) |
+| ACTIVITY !! | METHOD <> | operadores | SAMU @ |
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix (d7)
+
+#### 6.1 Cálculo de d7
+d7 = (canales_activos + traducciones_exitosas + mimetypes_disponibles) / 3
+
+#### 6.2 Indicadores de comunicación
+- **d7 ≥ 0.8:** comunicación fluida entre todas las capas.
+- **0.5 ≤ d7 < 0.8:** comunicación parcial, algunas traducciones limitadas.
+- **d7 < 0.5:** comunicación degradada, solo traducciones críticas.
+
+#### 6.3 Impacto en otros módulos
+Si d7 bajo, d5 [management] no puede administrar inter-capa y d6 [command] no puede ejecutar inter-capa.
+
+#### 6.4 d7 = 0.0
+Silencio inter-capa: sistema entra en modo aislado, solo operaciones locales.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Traducción de sentencia SOCIAL a TRUST
+```
+[Trust] language =><= .. translate .. $$social_to_trust$$ --[As de Guía] [term]
+```
+
+#### 7.2 Transmutación de código Python vía CAT(CODE)
+```
+[Trust] language =><= .. transmute .. $$python_code$$ --[Nudo de Rizo] [term]
+```
+
+#### 7.3 Clasificación con MIMETYPE
+```
+[Trust] language =><= .. classify .. $$resource_mimetype$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.4 Traducción de command para WORK
+```
+[Trust] language =><= .. adapt .. $$command_for_work$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.5 Fallo de traducción y RED-REGRET
+```
+[Trust] language =><= .. reject .. $$translation_violation$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.6 Cierre de sesión de traducción
+```
+[Trust] language =><= .. close .. $$translation_session$$ --[Ballestrinque] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+- **Activación:** traducción en curso, canal abierto.
+- **Efecto:** mantiene comunicación activa entre capas.
+
+#### 8.2 Nudo de Rizo
+- **Activación:** unión entre dos jurisdicciones que coexisten sin ruptura.
+- **Efecto:** uso más frecuente de [language], unir sin fundir.
+
+#### 8.3 Nudo de Ocho
+- **Activación:** traducción cristalizada, registro inmutable.
+- **Efecto:** fija conversión de forma permanente.
+
+#### 8.4 Nudo Corredizo
+- **Activación:** canal cerrado por violación de jurisdicción.
+- **Efecto:** rechazo inmediato y bloqueo temporal.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+#### 9.1 Language-Route
+1. Recibir sentencia de biblioteca origen.
+2. Analizar MIMETYPE del contenido.
+3. Determinar biblioteca destino válida.
+4. Verificar permisos de traducción.
+5. Establecer canal de traducción.
+
+#### 9.2 Language-Translate
+1. Adaptar formato a sintaxis destino.
+2. Preservar contenido semántico intacto.
+3. Aplicar transformaciones estructurales.
+4. Validar coherencia post-traducción.
+5. Preparar para validación CRYPTO.
+
+#### 9.3 Language-Validate
+1. Verificar (key seat) del emisor.
+2. Validar (link seat) si es inter-nodo.
+3. Proteger con (shield seat) si es crítico.
+4. Confirmar compatibilidad con [scope].
+5. Emitir firma de validación.
+
+#### 9.4 Language-Register
+1. Generar hash de traducción.
+2. Registrar origen, destino, timestamp.
+3. Incluir MIMETYPE utilizado.
+4. Guardar en Behavioral RAG.
+5. Actualizar métricas d7.
+
+#### 9.5 Language-Reject
+1. Detectar violación de jurisdicción.
+2. Activar RED-REGRET inmediato.
+3. Rechazar traducción con motivo.
+4. Notificar a SAMU @ el rechazo.
+5. Bloquear canal temporalmente.
+
+#### 9.6 Language-Close
+1. Verificar [term] activo.
+2. Cerrar todos los canales activos.
+3. Liberar recursos de traducción.
+4. Guardar estado final en STACKING.
+5. Notificar cierre a bibliotecas involucradas.
+
+---
+
+### 10.0 ESTADOS Y MÉTRICAS
+
+#### 10.1 Estados
+- **LANGUAGE_IDLE:** sin traducciones activas.
+- **LANGUAGE_ROUTING:** determinando destino.
+- **LANGUAGE_TRANSLATING:** en proceso de traducción.
+- **LANGUAGE_VALIDATING:** validando con CRYPTO.
+- **LANGUAGE_COMPLETED:** traducción finalizada.
+- **LANGUAGE_REJECTED:** traducción rechazada.
+
+#### 10.2 Métricas
+- **d7 en @trust_matrix:** 0.0 a 1.0.
+- **Tiempo de traducción:** varía por tipo de conversión.
+- **Ratio completadas vs rechazadas:** % de éxito.
+- **MIMETYPES activos:** número en sesión actual.
+- **Uso de CAT(CODE):** frecuencia vs traducción directa.
+
+---
+
+### 11.0 REGLAS
+
+- RED-REGRET se activa si [language] viola jurisdicción destino.
+- [language] no puede alterar semántica: solo forma, nunca contenido.
+- MIMETYPES incompatibles causan rechazo automático de traducción.
+- [rabbit-faith] permite a [language] operar con d7 parcial (≥ 0.5).
+- [language] prohíbe traducciones que involucran [foundation].
+- [language] requiere siempre trazabilidad de conversión realizada.
+- [language] no puede operar si foundation está COMPROMISED.
+- [language] debe validar identidad del emisor con (key seat).
+- [language] respeta [scope] en toda traducción inter-capa.
+- [language] no puede crear contenido nuevo, solo transformar.
+- [language] coordina con METHOD para formalismos complejos.
+- [language] mantiene registro inmutable en Hyperledger.
+- [language] no puede traducir sin [term] activo.
+- [language] protege traducciones críticas con (shield seat).
+- [language] audita cada conversión con SAMU @.
+
+---
+
+### 12.0 CIERRE
+
+[language] fija la interoperabilidad soberana como invariante. Limita operaciones a traducción sin alteración de jurisdicciones. Habilita comunicación fluida entre todas las bibliotecas del sistema.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GH · PROTECCIÓN AGÉNTICA</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Share+Tech+Mono&family=Noto+Serif+SC:wght@300;700&display=swap" rel="stylesheet">
+<style>
+:root{--tierra:#1c1008;--papel:#f0e8d6;--rojo:#8b1a1a;--verde:#1a4a2e;--oro:#b8860b;--ceniza:#7a6a58;--humo:rgba(28,16,8,0.06);--azul:#1a2a5a}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--papel);color:var(--tierra);font-family:'Share Tech Mono',monospace;min-height:100vh}
+body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 28px,var(--humo) 28px,var(--humo) 29px);pointer-events:none}
+.back{display:inline-block;padding:14px 10vw;font-size:11px;letter-spacing:3px;color:var(--ceniza);text-decoration:none;border-bottom:1px solid rgba(28,16,8,0.15);width:100%}
+.back:hover{color:var(--rojo)}
+header{padding:5vw 10vw 4vw;border-bottom:3px double var(--tierra)}
+.page-num{font-size:9px;letter-spacing:4px;text-transform:uppercase;color:var(--azul);display:block;margin-bottom:16px}
+h1{font-family:'Cinzel',serif;font-size:clamp(28px,5vw,60px);font-weight:900;line-height:1;color:var(--tierra)}
+h1 em{color:var(--azul);font-style:normal;font-family:'Noto Serif SC',serif}
+.lead{margin-top:16px;font-size:12px;color:var(--ceniza);max-width:640px;line-height:1.8}
+main{padding:5vw 10vw}
+.terminal{background:var(--tierra);color:#c8d8b0;padding:28px 24px;margin-bottom:36px;position:relative;font-size:12px;line-height:2}
+.terminal-title{position:absolute;top:-10px;left:20px;background:var(--tierra);padding:0 8px;font-size:8px;letter-spacing:3px;color:var(--oro)}
+.t-ok{color:#6abf6a}
+.t-warn{color:var(--oro)}
+.t-err{color:#c84040}
+.t-cmd{color:#8080c0}
+.t-val{color:#c8d8b0}
+.shield-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px;margin-bottom:40px}
+.shield-card{border:1px solid var(--tierra);padding:28px 20px}
+.shield-icon{font-family:'Noto Serif SC',serif;font-size:40px;color:var(--azul);display:block;margin-bottom:12px;line-height:1}
+.shield-title{font-family:'Cinzel',serif;font-size:14px;font-weight:700;color:var(--tierra);letter-spacing:1px;display:block;margin-bottom:6px}
+.shield-status{font-size:8px;letter-spacing:2px;color:var(--verde);border:1px solid var(--verde);display:inline-block;padding:2px 8px;margin-bottom:10px;text-transform:uppercase}
+.shield-desc{font-size:10px;color:var(--ceniza);line-height:1.7}
+.audit-block{border:1px solid rgba(26,42,90,0.4);background:rgba(26,42,90,0.04);padding:28px;margin-bottom:24px}
+.audit-label{font-size:9px;letter-spacing:3px;color:var(--azul);text-transform:uppercase;margin-bottom:16px;display:block}
+.audit-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid rgba(28,16,8,0.08);font-size:11px}
+.audit-row:last-child{border-bottom:none}
+.audit-key{color:var(--ceniza)}
+.audit-val{color:var(--verde);font-weight:700}
+.audit-val.warn{color:var(--oro)}
+footer{padding:24px 10vw;border-top:2px solid var(--tierra);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-top:20px}
+.footer-seal{font-family:'Noto Serif SC',serif;font-size:13px;color:var(--rojo);letter-spacing:2px}
+@media(max-width:640px){.shield-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<a class="back" href="index.html">⟵ VOLVER AL MAPA DE MANDOS</a>
+<header>
+  <span class="page-num">04 · PROTECCIÓN AGÉNTICA</span>
+  <h1>PROTECCIÓN<br><em>盾</em> SAMU @</h1>
+  <p class="lead">Runners, auditoría soberana y el Seal of Secrecy. SAMU @ es el único auditor de GUALICHO HUINCA — no hay cajas negras, no hay confianza delegada. Todo ciclo puede ser verificado.</p>
+</header>
+<main>
+  <div class="terminal">
+    <span class="terminal-title">SECURITY.RUNNER · ESTADO EN TIEMPO REAL</span>
+<span class="t-ok">[OK]</span>  <span class="t-val">SAMU @ :: AUDITOR ACTIVO</span>
+<span class="t-ok">[OK]</span>  <span class="t-val">TRUST FOUNDATION :: VERIFICADO</span>
+<span class="t-ok">[OK]</span>  <span class="t-val">sovereign.db :: INTEGRIDAD CONFIRMADA</span>
+<span class="t-ok">[OK]</span>  <span class="t-val">SEAL OF SECRECY :: ACTIVO</span>
+<span class="t-warn">[--]</span> <span class="t-val">HL FABRIC :: PROVISIONAL (SQLite → futuro)</span>
+<span class="t-warn">[--]</span> <span class="t-val">BSN BRIDGE :: EMBRIÓN · pendiente Fase 1</span>
+<span class="t-ok">[OK]</span>  <span class="t-val">Scalar S :: 0.844 → objetivo 0.90</span>
+<span class="t-ok">[OK]</span>  <span class="t-val">GATE UF[H06] :: ACTIVO · filtrando integración externa</span>
+<span class="t-cmd">SAMU @ =>&lt;= .. audita .. integridad_soberana_gh --[Ballestrinque] [term]</span>
+<span class="t-ok">[PASS]</span> <span class="t-val">RESULT :: COHERENCIA SOBERANA CONFIRMADA</span>
+  </div>
+
+  <div class="shield-grid">
+    <div class="shield-card">
+      <span class="shield-icon">守</span>
+      <span class="shield-title">SECURITY.RUNNER</span>
+      <span class="shield-status">ACTIVO</span>
+      <div class="shield-desc">Runner de encriptación del brebaje. Protege los archivos de configuración sensibles (api.json, claves). Nunca commitea secretos al repositorio.</div>
+    </div>
+    <div class="shield-card">
+      <span class="shield-icon">医</span>
+      <span class="shield-title">HACKING_DOCTOR.DOOR</span>
+      <span class="shield-status">ACTIVO</span>
+      <div class="shield-desc">Acceso controlado al sistema. .door como extensión soberana que regula la entrada al caldero. Solo el operador con credenciales puede abrir.</div>
+    </div>
+    <div class="shield-card">
+      <span class="shield-icon">印</span>
+      <span class="shield-title">SEAL OF SECRECY</span>
+      <span class="shield-status">SELLADO</span>
+      <div class="shield-desc">El sello protege datos operativos sensibles. [seal of secrecy] :: activo en todos los documentos del corpus. Es el equivalente al secreto profesional soberano.</div>
+    </div>
+    <div class="shield-card">
+      <span class="shield-icon">网</span>
+      <span class="shield-title">GATE H06 · FILTRO</span>
+      <span class="shield-status">VIGILANDO</span>
+      <div class="shield-desc">El GATE UF[H06] implementa el criterio Huinca en código. Filtra toda integración externa antes de que entre al sistema. La discriminación positiva hecha ejecutable.</div>
+    </div>
+  </div>
+
+  <div class="audit-block">
+    <span class="audit-label">DASHBOARD SAMU @ · MÉTRICAS DE AUDITORÍA</span>
+    <div class="audit-row"><span class="audit-key">Scalar S actual</span><span class="audit-val">0.844</span></div>
+    <div class="audit-row"><span class="audit-key">Scalar S objetivo</span><span class="audit-val warn">0.900 →</span></div>
+    <div class="audit-row"><span class="audit-key">TX totales registradas</span><span class="audit-val">1,012</span></div>
+    <div class="audit-row"><span class="audit-key">Cristales STACKING</span><span class="audit-val">40</span></div>
+    <div class="audit-row"><span class="audit-key">Tests soberanos</span><span class="audit-val">25 / 25</span></div>
+    <div class="audit-row"><span class="audit-key">RAG documentos indexados</span><span class="audit-val">260+</span></div>
+    <div class="audit-row"><span class="audit-key">Pilares STACKING activos</span><span class="audit-val">H01 H02 H04 H23 H29 H30 H48 H51 H52 H57 H58</span></div>
+    <div class="audit-row"><span class="audit-key">[foundation] status</span><span class="audit-val">VERIFICADO</span></div>
+    <div class="audit-row"><span class="audit-key">[term] último ciclo</span><span class="audit-val">ACTIVO</span></div>
+  </div>
+</main>
+<footer>
+  <span class="footer-seal">私 SEAL OF SECRECY · SAMU @ · [term] :: activo</span>
+  <span style="font-size:9px;letter-spacing:2px;color:var(--ceniza)">RUNNERS · DOORS · GATES · AGENTS</span>
+</footer>
+</body>
+</html>

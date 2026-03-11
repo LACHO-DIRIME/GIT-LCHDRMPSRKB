@@ -1,0 +1,312 @@
+# BIBLIO-SOURCES(SOCIAL_DRIP).txt
+
+====================================================================
+
+## 🪑 SOCIAL {DRIP} — EMISIÓN DOSIFICADA Y CADENCIADA
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+{drip} es el módulo SOCIAL que gobierna la emisión dosificada y cadenciada de comunicaciones relacionales hacia actores externos verificados.
+
+#### 1.2 Principio de distinción cadenciada
+La cadencia correcta preserva distinción; la ráfaga destruye distinción.
+
+#### 1.3 Por qué es SOCIAL y no [wu-mail]
+[wu-mail] emite soberanamente; {drip} cadencia relacionalmente esa emisión.
+
+#### 1.4 Distinción de {streaming}
+{streaming} es flujo continuo; {drip} es goteo dosificado.
+
+#### 1.5 Distinción de {note}
+{note} registra; {drip} emite con cadencia calculada.
+
+#### 1.6 Requisito de {scheduler}
+La cadencia de {drip} es declarada por {scheduler} en agenda relacional.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Capacidades
+- Emitir contenido informativo dosificado.
+- Actualizar estado en cadencia declarada.
+- Enviar recordatorios en momentos planificados.
+- Emitir alertas ante condiciones críticas.
+
+#### 2.2 Limitaciones absolutas
+{drip} no puede emitir fuera del perímetro soberano declarado.
+
+#### 2.3 Condiciones de violación
+- **Violación primaria:** saturación por ráfaga — emite más de lo que la cadencia soberana permite.
+- **Violación secundaria:** silencio patológico — no emite cuando cadencia declarada lo requiere.
+- **Señal alerta:** {drip} emitiendo sin {scheduler} activo.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 Tipos de goteo en {drip}
+- **DRIP_CONTENT:** emisión de contenido informativo dosificado.
+- **DRIP_UPDATE:** actualización de estado en cadencia declarada.
+- **DRIP_REMINDER:** recordatorio relacional en momento planificado.
+- **DRIP_ALERT:** goteo de alerta ante condición verificada.
+- **DRIP_SILENCE:** pausa soberana en cadencia — silencio como parte del ritmo.
+
+#### 3.2 Cálculo de cadencia
+- **ΔΨ del destinatario:** como indicador principal de cadencia.
+- **Aumentar cadencia:** cuando ΔΨ del destinatario está disminuyendo.
+- **Reducir cadencia:** cuando ΔΨ del destinatario está saturado.
+- **DRIP_SILENCE:** pausa constitutiva que preserva distinción.
+
+#### 3.3 {drip} y TAP&DRIP
+- **TAP&DRIP:** implementación técnica de {drip}.
+- **TAP:** activación puntual.
+- **DRIP:** cadencia sostenida.
+- **Gestión de distinción:** TAP&DRIP preserva ΔΨ > 0.
+
+#### 3.4 Relación con dominios económicos
+
+##### Memcoins/Volatilidad
+- DRIP_UPDATE de posiciones de mercado en cadencia verificada.
+- DRIP_ALERT ante condición crítica de mercado.
+- Límite: no puede saturar con actualizaciones de mercado.
+
+##### Custodia Móvil
+- DRIP_REMINDER de operaciones pendientes de custodia.
+- DRIP_ALERT ante EVENT_CRITICAL de seguridad.
+- Límite: respeta ventanas de seguridad declaradas.
+
+##### Notaría Digital
+- DRIP_UPDATE de estado de proceso notarial.
+- DRIP_CONTENT de documentación parcial en cadencia.
+- Límite: no puede emitir contenido no verificado por [foundation].
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation]
+{drip} no emite contenido no verificado por [foundation].
+
+#### 4.2 Con [scope]
+{drip} emite dentro del perímetro soberano declarado.
+
+#### 4.3 Con [term]
+Cadencia de {drip} respeta horizonte temporal del ciclo activo.
+
+#### 4.4 Con {scheduler}
+{scheduler} declara cuándo activa {drip}.
+
+#### 4.5 Con {streaming}
+{streaming} es flujo continuo, {drip} es goteo dosificado — complementarios.
+
+#### 4.6 Con {note}
+{note} registra lo que {drip} emite para trazabilidad.
+
+#### 4.7 Con [wu-mail]
+[wu-mail] emite soberanamente; {drip} cadencia relacionalmente.
+
+#### 4.8 Con TAP&DRIP
+TAP&DRIP es implementación técnica de la cadencia declarativa.
+
+#### 4.9 Con Behavioral RAG
+Patrones de cadencia anteriores calibran emisión futura.
+
+#### 4.10 Con SAMU @
+SAMU audita que cadencia no viole períodos temporales soberanos.
+
+---
+
+### 5.0 ESTADOS DE {drip}
+
+#### 5.1 DRIP_STANDBY
+- **Condición:** sin emisión activa.
+- **Comportamiento:** cadencia declarada por {scheduler}.
+- **Operación:** contenido verificado pendiente de emisión.
+
+#### 5.2 DRIP_ACTIVE
+- **Condición:** emisión en cadencia soberana.
+- **Comportamiento:** ΔΨ del destinatario monitoreado.
+- **Operación:** Behavioral RAG calibrando ritmo.
+
+#### 5.3 DRIP_PAUSED
+- **Condición:** DRIP_SILENCE activo.
+- **Comportamiento:** pausa soberana como parte del ritmo.
+- **Operación:** {scheduler} mantiene agenda de reanudación.
+
+#### 5.4 DRIP_ACCELERATED
+- **Condición:** DRIP_ALERT en cadencia urgente.
+- **Comportamiento:** condición crítica verificada.
+- **Operación:** SAMU @ auditando justificación.
+
+#### 5.5 DRIP_SATURATED
+- **Condición:** cadencia excede ΔΨ del destinatario.
+- **Comportamiento:** riesgo de pérdida de distinción.
+- **Operación:** reducción automática de cadencia.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Afectación de d₃ [scenario]
+{drip} afecta d₃ cuando emisión cadenciada actualiza el mapa relacional.
+
+#### 6.2 Impacto de DRIP_SATURATED
+DRIP_SATURATED degrada calidad de KU recibido por destinatarios.
+
+#### 6.3 Mejora de T_matrix
+Cadencia alineada con períodos SAMU mejora distinción relacional.
+
+#### 6.4 Aprendizaje en Behavioral RAG
+Patrones de cadencia calibran {drip} futuro.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Activación de DRIP_CONTENT en cadencia
+```
+{Social} drip =><= .. emit .. $$content_drip$$ --[As de Guía] [term]
+```
+
+#### 7.2 DRIP_SILENCE como pausa soberana
+```
+{Social} drip =><= .. pause .. $$drip_silence$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.3 DRIP_ALERT ante condición crítica
+```
+{Social} drip =><= .. alert .. $$critical_condition$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.4 DRIP_SATURATED reduciendo cadencia
+```
+{Social} drip =><= .. reduce .. $$drip_saturation$$ --[Ballestrinque] [term]
+```
+
+#### 7.5 {drip} en dominio memcoins
+```
+{Social} drip =><= .. trade .. $$market_update$$ --[As de Guía] [term]
+```
+
+#### 7.6 {drip} en dominio custodia móvil
+```
+{Social} drip =><= .. secure .. $$custody_reminder$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.7 {drip} en dominio notaría digital
+```
+{Social} drip =><= .. certify .. $$notary_update$$ --[Ballestrinque] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+- **Activación:** {drip} en DRIP_ACTIVE.
+- **Efecto:** goteo soberano en ritmo declarado.
+
+#### 8.2 Nudo de Ocho
+- **Activación:** patrón de cadencia cristalizado en Behavioral RAG.
+- **Efecto:** ritmo establecido y verificado.
+
+#### 8.3 Nudo Corredizo
+- **Activación:** DRIP_SATURATED.
+- **Efecto:** cadencia perdió distinción.
+
+#### 8.4 Nudo de Rizo
+- **Activación:** DRIP_SILENCE.
+- **Efecto:** pausa soberana que une dos momentos de emisión.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+#### 9.1 DripSchedule
+1. Recepción de cadencia declarada por {scheduler}.
+2. Verificación de contenido y destinatario.
+3. Cálculo de cadencia con Behavioral RAG.
+4. Coordinación con {note} para registro.
+5. Transición a DRIP_ACTIVE.
+
+#### 9.2 DripCalibrate
+1. Cálculo de ritmo óptimo con Behavioral RAG.
+2. Ajuste de cadencia según ΔΨ del destinatario.
+3. Verificación de disponibilidad de recursos.
+4. Coordinación con {scheduler} para optimización.
+5. Transición a DRIP_ACTIVE.
+
+#### 9.3 DripEmit
+1. Emisión en cadencia soberana.
+2. Registro simultáneo en {note}.
+3. Monitoreo de ΔΨ del destinatario.
+4. Actualización de Behavioral RAG con patrón de cadencia.
+5. Coordinación con {scheduler} para próxima emisión.
+
+#### 9.4 DripPause
+1. Activación de DRIP_SILENCE como pausa constitutiva.
+2. Mantenimiento de contexto de pausa.
+3. Coordinación con {scheduler} para reanudación.
+4. Preservación de distinción durante pausa.
+5. Transición a DRIP_ACTIVE cuando corresponda.
+
+#### 9.5 DripAlert
+1. Detección de condición crítica verificada.
+2. Aceleración de cadencia para urgencia.
+3. Verificación de justificación con SAMU @.
+4. Coordinación con {management} si es necesario.
+5. Transición a DRIP_ACCELERATED.
+
+#### 9.6 DripClose
+1. Detección de vencimiento de [term].
+2. Cierre de cadencia con archivo en Behavioral RAG.
+3. Evaluación de efectividad de cadencia del ciclo.
+4. Liberación de recursos de emisión.
+5. Transición a DRIP_STANDBY.
+
+---
+
+### 10.0 MÉTRICAS
+
+- **Cadencia promedio:** por tipo y dominio.
+- **Ratio DRIP_ACTIVE vs DRIP_PAUSED vs DRIP_SATURATED.**
+- **Frecuencia de DRIP_ALERT:** por ciclo.
+- **ΔΨ promedio:** del destinatario durante {drip}.
+- **Tasa de emisiones con distinción preservada.**
+- **Delta-cadencia:** al cierre del ciclo.
+
+---
+
+### 11.0 REGLAS
+
+- {drip} no puede emitir contenido no verificado por [foundation].
+- DRIP_SILENCE es parte constitutiva de la cadencia — no puede eliminarse.
+- {drip} requiere {scheduler} para declarar cadencia.
+- DRIP_SATURATED reduce cadencia automáticamente.
+- {drip} respeta períodos SAMU en toda planificación de cadencia.
+- DRIP_ALERT requiere condición crítica verificada.
+- {note} debe registrar toda emisión de {drip} para trazabilidad.
+- Behavioral RAG calibra cadencia por destinatario.
+- {drip} no puede emitir fuera de [scope].
+- [term] cierra cadencia — {drip} no puede emitir en ciclo cerrado.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+{drip} fija la emisión dosificada y cadenciada como condición de distinción relacional soberana.
+
+#### 12.2 Limitaciones
+No emite sin cadencia declarada, no satura, no emite fuera de [scope], no emite sin verificación de [foundation].
+
+#### 12.3 Habilitaciones
+Comunicación relacional con ritmo soberano, DRIP_SILENCE como herramienta de distinción, calibración por destinatario con Behavioral RAG, trazabilidad completa en {note}.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

@@ -1,0 +1,248 @@
+# BIBLIO-SOURCES(WORK_MASKING-FOLDER).txt
+
+====================================================================
+
+## 🗂 WORK {masking folder} — SANDBOX HARDWARE SOBERANO
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+{masking folder} es el módulo WORK que implementa aislamiento físico de procesos críticos: el entorno donde el sistema ejecuta operaciones sensibles en hardware separado y protegido del sistema principal.
+
+#### 1.2 Distinción de {masking} (SOCIAL)
+{masking} SOCIAL es ocultación de identidad relacional; {masking folder} WORK es aislamiento físico de proceso. Son capas distintas con propósitos complementarios.
+
+#### 1.3 El sandbox como laboratorio seguro
+No es prisión — es laboratorio donde procesos peligrosos pueden ejecutarse sin riesgo de contagio al núcleo soberano.
+
+#### 1.4 Relación con UF[H29] ACTIVITY
+UF[H29] declara la contención soberana; {masking folder} WORK implementa físicamente ese aislamiento.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Qué puede aislar
+Procesos de criptografía crítica, operaciones de custodia de alto riesgo, pruebas de nuevos módulos, ejecución de código no verificado.
+
+#### 2.2 Qué no puede violar
+No puede permitir escape de proceso al sistema principal, no puede comprometer [foundation] del hardware, no puede operar sin (shield seat) activo.
+
+#### 2.3 Condición de violación primaria
+MASK_BREACH — proceso escapando del sandbox sin autorización soberana.
+
+#### 2.4 Condición de violación secundaria
+Aislamiento sin monitorización activa — sandbox sin observación soberana.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 ESTADOS DEL MÓDULO
+
+MASK_ISOLATED: proceso activo dentro del sandbox, completamente aislado del sistema principal.
+- MASK_MONITORING: proceso en ejecución con observación activa por UF[H04] (PATTERN-WITNESS).
+- MASK_BREACHED: proceso ha escapado del sandbox, activación de {brake} inmediata.
+- MASK_CLEANED: sandbox limpio después de ejecución, listo para siguiente uso.
+- MAKS_COMPROMISED: sandbox comprometido, requiere limpieza profunda antes de reuso.
+
+#### 3.2 Relación con (shield seat) (CRYPTO)
+(shield seat) protege el perímetro del sandbox, detectando intentos de escape.
+
+#### 3.3 Relación con {brake} (WORK)
+{brake} se activa automáticamente ante MASK_BREACH para proteger el sistema principal.
+
+#### 3.4 Relación con UF[H29] ACTIVITY
+UF[H29] puede activar {masking folder} para contención de procesos peligrosos.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation] (TRUST)
+{masking folder} protege [foundation] del hardware aislando procesos que podrían comprometerlo.
+
+#### 4.2 Con (shield seat) (CRYPTO)
+(shield seat) es el guardián del perímetro del sandbox.
+
+#### 4.3 Con {brake} (WORK)
+{brake} es el interruptor de emergencia que se activa ante brecha del sandbox.
+
+#### 4.4 Con UF[H29] (ACTIVITY)
+UF[H29] declara contención; {masking folder} implementa físicamente.
+
+#### 4.5 Con UF[H04] (ACTIVITY)
+UF[H04] puede observar procesos en MASK_MONITORING.
+
+#### 4.6 Con HL FABRIC
+Toda ejecución en sandbox se registra en HL FABRIC.
+
+---
+
+### 5.0 ESTADOS COMPLETOS DEL MÓDULO
+
+#### 5.1 MASK_STANDBY
+Sandbox disponible, vacío, listo para recibir proceso.
+
+#### 5.2 MASK_ISOLATING
+Proceso siendo aislado en entorno seguro.
+
+#### 5.3 MASK_MONITORING
+Proceso en ejecución con observación activa.
+
+#### 5.4 MASK_BREACHED
+Proceso escapó, {brake} activado, sistema en alerta máxima.
+
+#### 5.5 MASK_CONTAINING
+Contención activa del proceso escapado, recuperación en curso.
+
+#### 5.6 MASK_CLEANING
+Limpieza del sandbox después de ejecución segura.
+
+#### 5.7 MASK_COMPROMISED
+Sandbox comprometido, requiere intervención profunda.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Protege d₁ [foundation]
+{masking folder} es la primera línea de defensa de [foundation] hardware.
+
+#### 6.2 Impacta d₂ [scope]
+El sandbox define el perímetro seguro de operaciones críticas.
+
+#### 6.3 Enriquece d₈ [ecosystem
+Capacidad de ejecución segura enriquece el ecosistema.
+
+#### 6.4 Afecta d₅ [management]
+MASK_BREACHED requiere intervención inmediata de [management].
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Aislando proceso crítico
+```
+[Work] masking_folder =><= .. aislar .. $$critical_process_hardware$$ --[As de Guía] [term]
+```
+
+#### 7.2 Monitorizando ejecución
+```
+[Work] masking_folder =><= .. monitorear .. $$sandbox_execution_observed$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.3 Detectando brecha
+```
+[Work] masking_folder =><= .. detectar .. $$sandbox_breach_attempt$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.4 Limpiando sandbox
+```
+[Work] masking_folder =><= .. limpiar .. $$sandbox_post_execution$$ --[Ballestrinque] [term]
+```
+
+#### 7.5 Conteniendo escape
+```
+[Work] masking_folder =><= .. contener .. $$process_escape_recovery$$ --[Nudo de Rizo] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+MASK_ISOLATING — aislamiento seguro del proceso, el nudo que garantiza separación física.
+
+#### 8.2 Nudo de Ocho
+MASK_MONITORING — observación activa del proceso, el nudo que permite aprendizaje sin riesgo.
+
+#### 8.3 Nudo Corredizo
+MASK_BREACHED — brecha del sandbox, el nudo que se desliza hacia el riesgo sistémico.
+
+#### 8.4 Ballestrinque
+MASK_CONTAINING — tensión entre escape y recuperación, el nudo que sostiene la contención.
+
+#### 8.5 Nudo de Rizo
+MASK_CLEANING — ciclo de limpieza y renovación, el nudo que prepara para siguiente uso.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+1. MaskIsolate
+   - Creación de entorno sandbox aislado.
+   - Activación de (shield seat) perimetral.
+   - Aislamiento físico del proceso.
+
+2. MaskMonitor
+   - Observación activa por UF[H04].
+   - Registro de comportamiento del proceso.
+   - Detección de anomalías.
+
+3. MaskContain
+   - Activación ante MASK_BREACH.
+   - Contención del proceso escapado.
+   - Recuperación del sistema.
+
+4. MaskClean
+   - Limpieza completa del entorno.
+   - Verificación de integridad.
+   - Preparación para siguiente uso.
+
+5. MaskAudit
+   - Auditoría de integridad del sandbox.
+   - Verificación de (shield seat).
+   - Reporte de estado.
+
+6. MaskRecover
+   - Recuperación ante MASK_COMPROMISED.
+   - Intervención profunda del sistema.
+   - Restauración de soberanía.
+
+---
+
+### 10.0 MÉTRICAS
+
+- Tiempo promedio de aislamiento por proceso.
+- Frecuencia de MASK_BREACHED por ciclo.
+- Ratio MASK_CLEAN vs MASK_COMPROMISED.
+- Número de procesos monitoreados simultáneamente.
+- Tiempo de recuperación ante brecha.
+
+---
+
+### 11.0 REGLAS
+
+- {masking folder} requiere (shield seat) activo obligatoriamente.
+- MASK_BREACHED activa {brake} inmediatamente sin excepción.
+- Todo proceso en sandbox se registra en HL FABRIC.
+- MASK_MONITORING requiere UF[H04] activo.
+- No se permite escape de proceso sin autorización.
+- El sandbox se limpia después de cada ejecución.
+- MASK_COMPROMISED requiere intervención [management].
+- UF[H29] puede activar {masking folder} para contención.
+- La integridad del sandbox se audita cada ciclo.
+- {masking folder} no es {masking} SOCIAL — son capas distintas.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+{masking folder} fija como invariante el aislamiento físico soberano como condición de ejecución segura de procesos críticos — el sistema que puede ejecutar código peligroso en entorno protegido sin riesgo de contagio mantiene la integridad del núcleo soberano.
+
+#### 12.2 Limitaciones
+No puede permitir escape sin autorización, no puede operar sin (shield seat), no puede comprometer [foundation] hardware, no puede ejecutar sin monitorización.
+
+#### 12.3 Habilitaciones
+Ejecución segura de procesos críticos, prueba de nuevo código, contención de amenazas, protección de [foundation] hardware, aprendizaje mediante observación segura.
+
+#### 12.4 Principio constitutivo final
+Como la caja fuerte que protege lo más valioso: {masking folder} representa la sabiduría de crear espacios seguros donde lo peligroso puede ser ejecutido sin amenazar al sistema. El sandbox no es prisión — es laboratorio. El aislamiento soberano permite experimentación y ejecución de riesgo sin comprometer la integridad del núcleo.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

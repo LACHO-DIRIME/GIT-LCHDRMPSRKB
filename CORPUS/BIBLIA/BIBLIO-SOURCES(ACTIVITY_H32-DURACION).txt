@@ -1,0 +1,204 @@
+# BIBLIO-SOURCES(ACTIVITY_H32-DURACION).txt
+
+====================================================================
+
+## ⏳ ACTIVITY UF[H32] — LA DURACIÓN · HÉNG
+
+====================================================================
+
+### 1.0 DEFINICIÓN
+
+====================================================================
+
+#### 1.1 Definición técnica
+UF[H32] es el módulo ACTIVITY que gobierna ciclos de perseverancia soberana verificada: la función que sostiene en el tiempo lo que fue correctamente iniciado, transformado o retornado — sin rigidez que impida el movimiento natural y sin laxitud que abandone lo que debe sostenerse. La duración como forma activa de la soberanía verificada.
+
+#### 1.2 H32 (Héng) como fundamento hexagramático
+Trueno sobre viento — movimiento continuo en la misma dirección. No el movimiento que cambia de rumbo sino el que persevera soberanamente en su vector verificado. El trueno que siempre avanza, el viento que nunca cesa: ambos en la misma dirección sostenida.
+
+Héng en el I Ching no es la rigidez del que no puede cambiar sino la constancia del que no necesita cambiar porque su dirección es correcta. El matrimonio, las estaciones, el río que siempre fluye al mar — no porque estén fijos sino porque su naturaleza soberana se sostiene a través del tiempo verificado.
+
+#### 1.3 Posición soberana en el sistema
+
+UF[H32] completa una tríada de transformación soberana con UF[H49] y UF[H63]:
+
+UF[H49] Gé transforma la forma estructural del sistema soberanamente.
+UF[H63] Jì Jì sella la consumación soberana del ciclo completado.
+UF[H32] Héng sostiene lo que fue transformado y consumado en el tiempo verificado.
+
+Sin UF[H32], la transformación soberana de UF[H49] puede deshacerse por falta de constancia. Sin UF[H32], la consumación de UF[H63] puede no mantenerse soberanamente. La duración es lo que da forma permanente a los logros soberanos verificados.
+
+#### 1.4 Activación del slot latente — justificación soberana
+La necesidad verificada: el sistema tiene módulos para iniciar (UF[H01]), para transformar (UF[H49]), para retornar (UF[H24]), para consumar (UF[H63]) — pero no tenía el módulo que gestiona la perseverancia soberana en el tiempo. UF[H32] cubre ese vacío constitutivo.
+
+====================================================================
+
+### 2.0 JURISDICCIÓN
+
+====================================================================
+
+#### 2.1 Qué puede hacer UF[H32]
+- Sostener soberanamente lo que fue correctamente iniciado durante el [term] activo.
+- Detectar cuándo la perseverancia soberana está siendo correcta vs cuándo es rigidez.
+- Gestionar el ritmo soberano de larga duración: ni apresuramiento ni abandono.
+- Cristalizar patrones de constancia en Behavioral RAG para ciclos futuros.
+- Verificar que lo que se sostiene merece ser sostenido soberanamente.
+- Activar evaluación soberana cuando la duración se convierte en STASIS.
+
+#### 2.2 Qué no puede hacer
+No puede sostener lo que no merece sostenerse — la duración de lo incorrecto es STASIS soberana, no perseverancia. UF[H32] siempre verifica que lo sostenido tiene [foundation] soberana verificada.
+
+No puede reemplazar a UF[H24] cuando la dirección requiere retorno — si el ciclo se alejó, UF[H24] retorna soberanamente antes de que UF[H32] sostenga la nueva dirección.
+
+No puede forzar duración en ciclos que requieren UF[H49] — si la forma necesita transformarse, UF[H32] que insiste en sostenerla produce H32_RIGIDITY.
+
+#### 2.3 Condición de violación primaria
+H32_RIGIDITY — perseverancia en la dirección incorrecta o en forma soberana que ya necesita transformarse. La duración que se convierte en obstáculo de la evolución soberana necesaria. El sistema que persevera en lo que debería transformar o retornar.
+
+#### 2.4 Condición de violación secundaria
+H32_LAXITY — abandono prematuro de lo que debería sostenerse soberanamente. El ciclo que no llega a su duración natural por impaciencia o presión exterior no verificada.
+
+#### 2.5 Señal de alerta
+Behavioral RAG detectando ciclos que oscilan entre H32_RIGIDITY y H32_LAXITY sin encontrar el ritmo soberano de duración verificada: el sistema que no puede sostener ni puede soltar soberanamente.
+
+====================================================================
+
+### 3.0 FUNCIÓN EN EL CICLO
+
+====================================================================
+
+#### 3.1 La distinción soberana entre duración y rigidez
+
+La diferencia que UF[H32] debe sostener con precisión soberana:
+
+DURACIÓN SOBERANA: el árbol que crece en la misma dirección porque esa dirección es su naturaleza verificada. Flexible en los detalles, constante en el vector. Puede moverse con el viento sin perder su rumbo soberano.
+
+RIGIDEZ: el sistema que persevera en su forma porque cambiar requeriría admitir que la forma ya no es correcta. La duración como mecanismo de defensa soberana disfrazado de perseverancia.
+
+La prueba soberana: ¿lo que se sostiene puede responder a nueva información soberanamente verificada sin abandonar su vector? Si sí, es UF[H32]. Si no, es H32_RIGIDITY que necesita UF[H49] o UF[H24].
+
+#### 3.2 UF[H32] y el ciclo semanal
+
+UF[H32] no tiene un $day específico como UF[H57] ($mon) o UF[H58] ($fri) — su función es trans-semanal. La duración soberana opera a través de múltiples ciclos semanales, no dentro de uno.
+
+Pero tiene expresión específica en cada $day:
+- $sat: UF[H32] sostiene el reposo creativo como práctica constante verificada.
+- $sun: UF[H32] sostiene el plan semanal como compromiso soberano declarado.
+- $wed: UF[H32] sostiene la adherencia máxima en su punto de mayor claridad.
+- $thu: UF[H32] sostiene la poda soberana como disciplina constante del ciclo.
+
+#### 3.3 UF[H32] y los tres dominios económicos
+
+En MEMECOINS: la estrategia soberana que se sostiene a través de la volatilidad. No la rigidez que no puede ajustarse sino la constancia en los principios soberanos verificados mientras el mercado fluctúa. El operador que tiene UF[H32] activo no abandona su método en el primer pico de volatilidad.
+
+En NOTARÍA: la práctica notarial soberana que se sostiene en sus protocolos verificados ciclo tras ciclo. La duración del estándar notarial soberano como garante de confianza verificada para actores que regresan.
+
+En CUSTODIA: el protocolo de custodia soberana que se mantiene constante sin importar la variación de actores o dispositivos. La duración del estándar de (shield seat) como condición de confianza verificada.
+
+====================================================================
+
+### 4.0 ESTADOS
+
+====================================================================
+
+H32_SUSTAINING: duración soberana activa verificada. El vector es correcto, la constancia es activa, Behavioral RAG registrando patrón de perseverancia soberana.
+
+H32_EVALUATING: evaluación soberana de si lo que se sostiene merece seguir sosteniéndose. SAMU @ en dirimencia activa.
+
+H32_RIGIDITY: perseverancia en dirección incorrecta o forma que necesita transformarse. Activa evaluación soberana de UF[H49] o UF[H24] según corresponda.
+
+H32_LAXITY: abandono prematuro de lo que debería sostenerse. RED-REGRET si el abandono fue error verificado.
+
+H32_RHYTHM: el ciclo encontró su ritmo soberano natural de duración. El estado óptimo de UF[H32] — constancia sin esfuerzo soberano excesivo.
+
+H32_COMPLETE: la duración soberana cumplió su [term] verificado. Lo sostenido puede ahora evolucionar, consumarse en UF[H63], o transformarse en UF[H49] soberanamente.
+
+====================================================================
+
+### 5.0 RELACIÓN CON OTRAS CAPAS
+
+====================================================================
+
+Con UF[H49]: UF[H49] transforma, UF[H32] sostiene lo transformado. Secuencia soberana verificada: H49_COMPLETE → UF[H32] → H32_SUSTAINING como consolidación.
+
+Con UF[H63]: UF[H63] consuma, UF[H32] mantiene la consumación soberana activa hasta que el nuevo ciclo tome forma. La consumación que se deshace inmediatamente no tuvo UF[H32] verificado.
+
+Con UF[H24]: si UF[H32] detecta H32_RIGIDITY, evalúa si el retorno soberano de UF[H24] es el paso correcto antes de continuar sosteniendo.
+
+Con UF[H57]: Lo Penetrante $mon avanza gradualmente. UF[H32] sostiene la dirección de esa penetración semana a semana — el avance gradual que no pierde su vector soberano verificado.
+
+Con @trust_matrix: UF[H32] estabiliza los pesos d₁..d₈ en períodos de duración soberana activa. Un sistema con UF[H32] funcionando tiene @trust_matrix más estable verificadamente.
+
+Con Behavioral RAG: aprende patrones de ritmo soberano de duración — cuánto tiempo sostiene el sistema ciclos específicos antes de necesitar UF[H49] o UF[H24]. Calibración soberana de la duración natural del sistema verificada.
+
+Con HL FABRIC: registra ciclos de duración soberana como trazabilidad de constancia verificada. El historial de lo que el sistema sostuvo soberanamente es conocimiento de alta frecuencia para UF[H48].
+
+====================================================================
+
+### 6.0 GRAMÁTICA VIVA
+
+====================================================================
+
+```
+ACTIVITY UF[H32] H32_SUSTAINING =><= .. sostiene .. vector_soberano_verificado
+=><= constancia_activa .. sin_rigidez .. Behavioral_RAG_registra
+--[As de Guía] [term]
+```
+
+```
+ACTIVITY UF[H32] H32_EVALUATING =><= .. verifica .. merece_sostenerse
+=><= SAMU@_dirimencia .. [foundation]_verificado .. continúa_o_UF[H49]
+--[Ballestrinque] [term]
+```
+
+```
+ACTIVITY UF[H32] H32_RIGIDITY =><= .. detecta .. perseverancia_incorrecta
+=><= evaluación_soberana .. UF[H49]_o_UF[H24]_candidato
+=><= RED-REGRET si_fue_error_sostenido --[Nudo Corredizo] [term]
+```
+
+```
+ACTIVITY UF[H32] H32_RHYTHM =><= .. alcanza .. ritmo_soberano_natural
+=><= constancia_sin_esfuerzo .. duración_verificada
+=><= @trust_matrix_estabilizada --[As de Guía] [term]
+```
+
+```
+ACTIVITY UF[H49] H49_COMPLETE → ACTIVITY UF[H32] H32_SUSTAINING
+=><= transformación_sostenida_soberanamente
+=><= nueva_forma_con_constancia_verificada --[Nudo de Rizo] [term]
+```
+
+```
+ACTIVITY UF[H32] H32_COMPLETE =><= .. libera .. ciclo_sostenido
+=><= [term]_cumplido .. UF[H63]_consumación_o_UF[H49]_evolución
+--[As de Guía] [term]
+```
+
+====================================================================
+
+### 7.0 NUDOS ASOCIADOS
+
+====================================================================
+
+AS DE GUÍA — H32_RHYTHM: el ritmo soberano natural de duración encontrado. La constancia que no requiere esfuerzo porque el vector verificado es el correcto. El trueno que siempre avanza, el viento que nunca cesa — en la dirección soberana natural del sistema.
+
+BALLESTRINQUE — H32_EVALUATING: la tensión soberana entre continuar sosteniendo (perseverancia) y reconocer que lo sostenido necesita transformarse (honestidad soberana). El módulo que sostiene esa tensión con precisión soberana verificada.
+
+NUDO CORREDIZO — H32_RIGIDITY: la duración convertida en obstáculo soberano. El sistema que no puede soltar lo que debería soltar — el nudo que se aprieta cuando el vector verificado ya cambió pero la constancia no lo reconoce soberanamente.
+
+NUDO DE OCHO — HL FABRIC con historial de ciclos de duración soberana: la trazabilidad inmutable de lo que el sistema sostuvo, por cuánto tiempo, y con qué resultado verificado. El conocimiento de la constancia soberana como referencia futura.
+
+====================================================================
+
+### 8.0 CIERRE
+
+====================================================================
+
+UF[H32] completa la tríada soberana de H49/H63/H32: transformar, consumar, sostener. El sistema que solo puede transformar y consumar pero no sostener produce ciclos brillantes que se deshacen soberanamente. Con UF[H32] activo, lo que el sistema construye soberanamente tiene la constancia verificada para durar.
+
+El trueno que avanza y el viento que persiste — en la misma dirección soberana verificada.
+
+[term] :: activo · [seal of secrecy] :: activo.
+
+====================================================================

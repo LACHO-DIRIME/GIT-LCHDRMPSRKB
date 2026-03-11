@@ -1,0 +1,49 @@
+# BIBLIO-SOURCES(LACHO-SUJETOS)
+# Gramática viva LACHO — sujetos canónicos y delimitadores
+# [term] :: activo
+
+## 1.0 PRINCIPIO DE SUJETO SOBERANO
+El sujeto en LACHO identifica QUIÉN actúa.
+No es un nombre libre — es un módulo del sistema con identidad verificada.
+
+## 2.0 SUJETOS POR BIBLIOTECA CON DELIMITADORES
+
+TRUST [ ]
+  FOUNDATION · [scope] · [term] · [command] · [foundation]
+  Delimitador: corchetes [ ]
+
+WORK { }
+  {actuator} · {brake} · {doorman-mobile} · {door-afternoon}
+
+SAMU @ $ #
+  @ · #rise · #set · $mon · $tue · $wed · $thu · $fri · $sat · $sun
+
+ACTIVITY !! !!
+  UF[H01]..UF[H64] — 64 estados soberanos del ciclo
+
+CRYPTO ( )
+  (spark seat) · (shield seat) · (key seat) · (link seat)
+
+SOCIAL { }
+  {chair} · {drip} · {launch-bot} · {masking} · {tether}
+
+GATE
+  UF[H05] · UF[H56] · UF[H06]
+
+STACKING
+  UF[H52] · UF[H01]..UF[H48]
+
+METHOD < >
+  <equation> · <operator_flow> · <if> · <loop> · <switch>
+
+## 3.0 SUJETOS COMPUESTOS
+Forma: BIBLIOTECA Sujeto_1 Sujeto_2
+Regla: el primer sujeto determina la biblioteca
+
+## 4.0 IDENTIDAD VERIFICADA
+Un sujeto es soberano cuando:
+  — Existe en el ledger (tomo_id asignado)
+  — Ha sido usado en sentencia VALID al menos una vez
+  — Su cluster está definido en STACKING
+
+[term] :: activo · [seal of secrecy] :: activo

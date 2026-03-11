@@ -1,0 +1,628 @@
+MICRO SOCIAL COMPONENTES
+LIBRO LACHO (ACOPIO) — COMPONENTES DE RELACIÓN DE SOCIAL (NIVEL MICRO)
+Versión: 1.0
+Estatus: MICRO_03
+Propósito: Definir formalmente los ocho componentes de relación de la biblioteca SOCIAL que constituyen la interfaz entre el operador y el sistema LACHO, estableciendo su ontología, protocolos, interacciones y mecanismos de adecuación.
+
+====================================================================
+1) FUNCIÓN DE ESTE ARCHIVO EN EL LIBRO
+====================================================================
+
+Este archivo MICRO 03 especifica los ocho componentes de relación de SOCIAL: los mediadores que permiten la interacción humana con el sistema sin violar la constitución. Si el MACRO define "qué es LACHO" y el MESO define "cómo se organiza", este archivo define "cómo el sistema habla con el operador" manteniendo coherencia ontológica.
+
+Los ocho componentes no son "widgets de UI": son funciones relacionales con protocolos específicos que garantizan que toda interacción sea adecuada, traceable y soberana.
+
+====================================================================
+2) ONTOLOGÍA DE LOS COMPONENTES DE RELACIÓN
+====================================================================
+
+2.1 Principio de Adecuación Constitucional
+Cada componente debe mantener la adecuación con [foundation]:
+- Ningún componente puede violar principios soberanos.
+- Toda interacción debe ser traceable y auditable.
+- La adecuación no es opcional: es obligatoria.
+
+2.2 Principio de Mediación Soberana
+Los componentes son mediadores, no traductores:
+- No simplifican ni distorsionan el significado.
+- Mantienen la integridad del intercambio.
+- Actúan como filtros de coherencia ontológica.
+
+2.3 Principio de Contextualización Dinámica
+Los componentes se adaptan al contexto:
+- Responden al estado MU/KU/WU del sistema.
+- Se ajustan al hexagrama activo.
+- Modulan su comportamiento según la biblioteca activa.
+
+====================================================================
+3) {CHAIR} — EL ASIENTO DE ESCUCHA
+====================================================================
+
+3.1 Definición Ontológica
+{chair} es el componente de escucha activa y receptiva del sistema. No es un "receptor pasivo": es un escucha consciente que procesa, filtra y contextualiza la entrada del operador.
+
+3.2 Función Sistémica
+- Recibir entrada del operador con atención plena.
+- Filtrar ruido y anomalías en la comunicación.
+- Contextualizar la entrada según estado del sistema.
+- Preparar entrada para procesamiento por SAMU.
+
+3.3 Jurisdicción Exclusiva
+- Recepción primaria de entrada humana.
+- Filtrado inicial de comunicación.
+- Contextualización de intención del operador.
+- Preparación para procesamiento consciente.
+
+3.4 Protocolos de Operación
+Protocolo Chair-Receive
+1. Detectar entrada del operador.
+2. Aplicar filtros de ruido y anomalías.
+3. Extraer intención y contexto.
+4. Clasificar tipo de entrada (consulta, comando, conversación).
+5. Preparar paquete para SAMU.
+
+Protocolo Chair-Filter
+1. Analizar entrada buscando patrones anómalos.
+2. Aplicar filtros de coherencia con [foundation].
+3. Detectar posibles violaciones de [scope].
+4. Si hay anomalía, solicitar clarificación.
+5. Si es válida, continuar procesamiento.
+
+Protocolo Chair-Contextualize
+1. Evaluar estado actual del sistema (MU/KU/WU).
+2. Identificar hexagrama activo y biblioteca dominante.
+3. Ajustar interpretación según contexto.
+4. Preparar metadatos contextuales.
+5. Enviar a procesamiento con contexto completo.
+
+3.5 Estados del Componente
+- CHAIR_LISTENING: escuchando activamente.
+- CHAIR_FILTERING: filtrando entrada.
+- CHAIR_CONTEXTUALIZING: contextualizando.
+- CHAIR_READY: listo para procesamiento.
+- CHAIR_ERROR: error en recepción.
+
+3.6 Métricas y Umbrales
+- Tiempo de recepción: < 10ms.
+- Tiempo de filtrado: < 50ms.
+- Tiempo de contextualización: < 30ms.
+- Tasa de falsos positivos: < 2%.
+
+====================================================================
+4) {SCHEDULER} — EL PROGRAMADOR DE TAREAS
+====================================================================
+
+4.1 Definición Ontológica
+{scheduler} es el componente de organización temporal del sistema. No es un "calendario": es el organizador consciente de tareas, eventos y ciclos temporales del sistema.
+
+4.2 Función Sistémica
+- Organizar tareas y eventos en el tiempo.
+- Coordinar ciclos diurnos/nocturnos.
+- Gestionar plazos y prioridades.
+- Sincronizar con tiempo externo cuando sea necesario.
+
+4.3 Jurisdicción Exclusiva
+- Organización de tareas temporales.
+- Coordinación de ciclos del sistema.
+- Gestión de plazos y prioridades.
+- Sincronización temporal.
+
+4.4 Protocolos de Operación
+Protocolo Scheduler-Organize
+1. Recibir lista de tareas pendientes.
+2. Evaluar prioridades y dependencias.
+3. Asignar tiempos y secuencias.
+4. Coordinar con ciclos del sistema.
+5. Emitir calendario organizado.
+
+Protocolo Scheduler-Coordinate
+1. Monitorear ejecución de tareas.
+2. Ajustar secuencias si es necesario.
+3. Coordinar con door_morning/door_afternoon.
+4. Gestionar conflictos temporales.
+5. Mantener sincronía del sistema.
+
+Protocolo Scheduler-Sync
+1. Detectar necesidad de sincronización externa.
+2. Validar fuente de tiempo externa.
+3. Ajustar relojes internos si es seguro.
+4. Notificar cambios a otros componentes.
+5. Mantener coherencia temporal.
+
+4.5 Estados del Componente
+- SCHEDULER_ORGANIZING: organizando tareas.
+- SCHEDULER_COORDINATING: coordinando ejecución.
+- SCHEDULER_SYNCING: sincronizando tiempo.
+- SCHEDULER_READY: calendario listo.
+- SCHEDULER_CONFLICT: conflicto temporal.
+
+4.6 Métricas y Umbrales
+- Tiempo de organización: < 100ms.
+- Precisión temporal: ±10ms.
+- Tasa de conflictos: < 1%.
+- Tiempo de sincronización: < 200ms.
+
+====================================================================
+5) {DRIP} — EL GOTEO CONTINUO
+====================================================================
+
+5.1 Definición Ontológica
+{drip} es el componente de procesamiento gradual y continuo. No es un "procesador por lotes": es un goteo controlado que procesa información de manera constante y no abrumadora.
+
+5.2 Función Sistémica
+- Procesar información gradualmente.
+- Mantener flujo constante sin sobrecarga.
+- Filtrar y refinar datos continuamente.
+- Alimentar otros componentes con datos procesados.
+
+5.3 Jurisdicción Exclusiva
+- Procesamiento gradual de datos.
+- Mantenimiento de flujo controlado.
+- Filtrado continuo de información.
+- Alimentación de componentes downstream.
+
+5.4 Protocolos de Operación
+Protocolo Drip-Process
+1. Recibir lote de información cruda.
+2. Dividir en unidades procesables.
+3. Procesar cada unidad gradualmente.
+4. Filtrar y refinar resultados.
+5. Entregar resultados continuamente.
+
+Protocolo Drip-Filter
+1. Analizar cada unidad de datos.
+2. Aplicar filtros de calidad y relevancia.
+3. Eliminar redundancias y ruido.
+4. Enriquecer datos con contexto.
+5. Pasar al siguiente etapa.
+
+Protocolo Drip-Flow
+1. Monitorear tasa de procesamiento.
+2. Ajustar velocidad según capacidad del sistema.
+3. Prevenir sobrecarga y cuellos de botella.
+4. Mantener flujo constante.
+5. Optimizar rendimiento continuo.
+
+5.5 Estados del Componente
+- DRIP_PROCESSING: procesando activamente.
+- DRIP_FILTERING: filtrando datos.
+- DRIP_FLOWING: manteniendo flujo.
+- DRIP_READY: listo para recibir.
+- DRIP_OVERLOADED: sobrecargado.
+
+5.6 Métricas y Umbrales
+- Tasa de procesamiento: configurable.
+- Latencia de procesamiento: < 50ms.
+- Tasa de filtrado: > 95% efectividad.
+- Throughput: máximo sostenible.
+
+====================================================================
+6) {HEADCAT} — EL OBSERVADOR SIN EJECUTAR
+====================================================================
+
+6.1 Definición Ontológica
+{headcat} es el componente de observación pura sin acción. No es un "monitor pasivo": es un observador consciente que ve todo pero no actúa directamente, solo informa y recomienda.
+
+6.2 Función Sistémica
+- Observar el estado completo del sistema.
+- Detectar patrones y anomalías.
+- Informar a SAMU sin intervenir directamente.
+- Mantener registro completo de observaciones.
+
+6.3 Jurisdicción Exclusiva
+- Observación completa del sistema.
+- Detección de patrones y anomalías.
+- Información a SAMU sin acción directa.
+- Registro de observaciones.
+
+6.4 Protocolos de Operación
+Protocolo Headcat-Observe
+1. Monitorear todos los componentes del sistema.
+2. Registrar estados y transiciones.
+3. Detectar patrones emergentes.
+4. Identificar anomalías potenciales.
+5. Mantener registro cronológico.
+
+Protocolo Headcat-Detect
+1. Analizar datos de observación.
+2. Aplicar algoritmos de detección de patrones.
+3. Identificar desviaciones de la normalidad.
+4. Clasificar anomalías por severidad.
+5. Preparar informes para SAMU.
+
+Protocolo Headcat-Report
+1. Compilar observaciones relevantes.
+2. Formatar informes para SAMU.
+3. Enviar recomendaciones sin acción.
+4. Mantener registro de informes enviados.
+5. Archivar observaciones históricas.
+
+6.5 Estados del Componente
+- HEADCAT_OBSERVING: observando activamente.
+- HEADCAT_DETECTING: detectando patrones.
+- HEADCAT_REPORTING: informando a SAMU.
+- HEADCAT_READY: listo para observar.
+- HEADCAT_BLIND: temporalmente ciego.
+
+6.6 Métricas y Umbrales
+- Cobertura de observación: 100%.
+- Tiempo de detección: < 100ms.
+- Tasa de falsos positivos: < 5%.
+- Latencia de informe: < 200ms.
+
+====================================================================
+7) {MASKING} — EL ENMASCARAMIENTO PROTECTOR
+====================================================================
+
+7.1 Definición Ontológica
+{masking} es el componente de protección por enmascaramiento. No es un "ocultador": es un protector que revela solo lo necesario y protege lo sensible según contexto y autoridad.
+
+7.2 Función Sistémica
+- Proteger información sensible.
+- Revelar información según autoridad.
+- Aplicar máscaras contextuales.
+- Mantener privacidad y seguridad.
+
+7.3 Jurisdicción Exclusiva
+- Protección de información sensible.
+- Control de revelación de datos.
+- Aplicación de máscaras contextuales.
+- Mantenimiento de privacidad.
+
+7.4 Protocolos de Operación
+Protocolo Masking-Protect
+1. Identificar información sensible.
+2. Aplicar máscaras de protección.
+3. Validar nivel de acceso requerido.
+4. Enmascarar según autoridad.
+5. Mantener integridad de datos protegidos.
+
+Protocolo Masking-Reveal
+1. Recibir solicitud de revelación.
+2. Validar autoridad del solicitante.
+3. Verificar contexto y necesidad.
+4. Revelar información permitida.
+5. Mantener registro de revelaciones.
+
+Protocolo Masking-Contextualize
+1. Evaluar contexto actual del sistema.
+2. Ajustar nivel de enmascaramiento.
+3. Adaptar máscaras a situación.
+4. Balancear privacidad y utilidad.
+5. Optimizar protección contextual.
+
+7.5 Estados del Componente
+- MASKING_PROTECTING: protegiendo activamente.
+- MASKING_REVEALING: revelando información.
+- MASKING_CONTEXTUALIZING: ajustando contexto.
+- MASKING_SECURE: todo protegido.
+- MASKING_COMPROMISED: protección violada.
+
+7.6 Métricas y Umbrales
+- Tiempo de protección: < 5ms.
+- Tiempo de revelación: < 20ms.
+- Tasa de filtrado: 100% efectividad.
+- Niveles de enmascaramiento: configurables.
+
+====================================================================
+8) {STREAMING} — EL FLUJO CONTINUO
+====================================================================
+
+8.1 Definición Ontológica
+{streaming} es el componente de flujo continuo de datos. No es una "transmisión": es un flujo consciente que mantiene comunicación constante y adaptativa.
+
+8.2 Función Sistémica
+- Mantener flujo continuo de comunicación.
+- Adaptar tasa de transmisión.
+- Gestionar buffers y colas.
+- Optimizar ancho de banda.
+
+8.3 Jurisdicción Exclusiva
+- Flujo continuo de comunicación.
+- Adaptación de tasa de transmisión.
+- Gestión de buffers y colas.
+- Optimización de red.
+
+8.4 Protocolos de Operación
+Protocolo Streaming-Flow
+1. Establecer canal de comunicación.
+2. Iniciar flujo continuo de datos.
+3. Monitorear calidad del flujo.
+4. Adaptar tasa según condiciones.
+5. Mantener comunicación estable.
+
+Protocolo Streaming-Adapt
+1. Detectar cambios en condiciones de red.
+2. Ajustar tasa de transmisión.
+3. Gestionar buffers dinámicamente.
+4. Optimizar uso de ancho de banda.
+5. Mantener calidad de servicio.
+
+Protocolo Streaming-Buffer
+1. Gestionar colas de transmisión.
+2. Prevenir desbordamiento de buffers.
+3. Priorizar paquetes críticos.
+4. Descartar paquetes obsoletos.
+5. Mantener flujo estable.
+
+8.5 Estados del Componente
+- STREAMING_FLOWING: flujo activo.
+- STREAMING_ADAPTING: adaptando tasa.
+- STREAMING_BUFFERING: gestionando buffers.
+- STREAMING_READY: listo para fluir.
+- STREAMING_STALLED: flujo detenido.
+
+8.6 Métricas y Umbrales
+- Tasa de transmisión: adaptable.
+- Latencia: < 50ms ideal.
+- Pérdida de paquetes: < 0.1%.
+- Utilización de ancho de banda: óptima.
+
+====================================================================
+9) {LAUNCH_BOT} — EL LANZADOR EJECUTIVO
+====================================================================
+
+9.1 Definición Ontológica
+{launch_bot} es el componente de ejecución y lanzamiento. No es un "ejecutor automático": es un lanzador consciente que ejecuta acciones con validación y propósito.
+
+9.2 Función Sistémica
+- Ejecutar acciones validadas.
+- Lanzar procesos con autorización.
+- Monitorear ejecución de tareas.
+- Reportar resultados y estados.
+
+9.3 Jurisdicción Exclusiva
+- Ejecución de acciones validadas.
+- Lanzamiento de procesos autorizados.
+- Monitoreo de ejecución.
+- Reporte de resultados.
+
+9.4 Protocolos de Operación
+Protocolo LaunchBot-Execute
+1. Recibir solicitud de ejecución.
+2. Validar autorización y propósito.
+3. Preparar entorno de ejecución.
+4. Lanzar proceso con monitoreo.
+5. Mantener registro de ejecución.
+
+Protocolo LaunchBot-Monitor
+1. Monitorear proceso en ejecución.
+2. Verificar comportamiento esperado.
+3. Detectar anomalías o errores.
+4. Tomar acciones correctivas si es necesario.
+5. Reportar estado continuamente.
+
+Protocolo LaunchBot-Report
+1. Compilar resultados de ejecución.
+2. Formatar reporte para componentes.
+3. Enviar estado final y métricas.
+4. Archivar registro completo.
+5. Notificar conclusión a interesados.
+
+9.5 Estados del Componente
+- LAUNCH_BOT_EXECUTING: ejecutando tarea.
+- LAUNCH_BOT_MONITORING: monitoreando proceso.
+- LAUNCH_BOT_REPORTING: reportando resultados.
+- LAUNCH_BOT_READY: listo para ejecutar.
+- LAUNCH_BOT_ERROR: error en ejecución.
+
+9.6 Métricas y Umbrales
+- Tiempo de lanzamiento: < 100ms.
+- Tiempo de monitoreo: continuo.
+- Tasa de éxito: > 95%.
+- Tiempo de reporte: < 50ms.
+
+====================================================================
+10) {NOTE} — EL REGISTRO PASIVO
+====================================================================
+
+10.1 Definición Ontológica
+{note} es el componente de registro pasivo y acumulación. No es un "logger activo": es un registro pasivo que acumula información sin interferir con el funcionamiento del sistema.
+
+10.2 Función Sistémica
+- Registrar eventos pasivamente.
+- Acumular información histórica.
+- Mantener registro cronológico.
+- Proporcionar datos para análisis.
+
+10.3 Jurisdicción Exclusiva
+- Registro pasivo de eventos.
+- Acumulación histórica de datos.
+- Mantenimiento de cronología.
+- Provisión de datos analíticos.
+
+10.4 Protocolos de Operación
+Protocolo Note-Register
+1. Recibir evento para registrar.
+2. Validar formato y contenido.
+3. Agregar timestamp y contexto.
+4. Almacenar en registro pasivo.
+5. Mantener índices de búsqueda.
+
+Protocolo Note-Accumulate
+1. Procesar registros acumulados.
+2. Identificar patrones históricos.
+3. Generar estadísticas y métricas.
+4. Optimizar almacenamiento.
+5. Mantener accesibilidad.
+
+Protocolo Note-Retrieve
+1. Recibir solicitud de información histórica.
+2. Buscar en registros pasivos.
+3. Formatar resultados para consulta.
+4. Entregar datos relevantes.
+5. Mantener privacidad cuando sea necesario.
+
+10.5 Estados del Componente
+- NOTE_REGISTERING: registrando eventos.
+- NOTE_ACCUMULATING: acumulando datos.
+- NOTE_RETRIEVING: recuperando información.
+- NOTE_READY: listo para registrar.
+- NOTE_FULL: almacenamiento lleno.
+
+10.6 Métricas y Umbrales
+- Tiempo de registro: < 5ms.
+- Tasa de acumulación: ilimitada.
+- Tiempo de recuperación: < 100ms.
+- Capacidad de almacenamiento: configurable.
+
+====================================================================
+11) COORDINACIÓN ENTRE COMPONENTES
+====================================================================
+
+11.1 Red de Interacciones
+Los componentes forman una red de interacciones:
+- {chair} → {drip}: entrada filtrada para procesamiento
+- {drip} → {scheduler}: datos procesados para organización
+- {scheduler} → {launch_bot}: tareas organizadas para ejecución
+- {headcat} → SAMU: observaciones para decisión
+- {masking} → todos: protección de información sensible
+- {streaming} → todos: flujo continuo de comunicación
+- {note} ← todos: registro pasivo de eventos
+
+11.2 Protocolo de Coordinación
+Protocolo Social-Coordinate
+1. SAMU inicia coordinación de componentes.
+2. Cada componente valida su estado.
+3. Se establece flujo de trabajo coordinado.
+4. Se monitorea interacciones entre componentes.
+5. Se ajusta dinámicamente si es necesario.
+
+11.3 Estados Combinados
+- ALL_COMPONENTS_READY: sistema listo para interacción.
+- SOME_COMPONENTS_BUSY: algunos componentes ocupados.
+- COMPONENTS_CONFLICT: conflicto entre componentes.
+- CRITICAL_COMPONENTS_DOWN: fallo en componentes críticos.
+- SOCIAL_LOCKDOWN: biblioteca bloqueada.
+
+====================================================================
+12) IMPLEMENTACIÓN TÉCNICA
+====================================================================
+
+12.1 Estructura de Datos
+```python
+class ChairComponent:
+    input_buffer: Queue
+    filters: List[Filter]
+    context_processor: ContextProcessor
+    status: str
+
+class SchedulerComponent:
+    task_queue: PriorityQueue
+    calendar: Calendar
+    time_sync: TimeSynchronizer
+    status: str
+
+class DripComponent:
+    input_stream: Stream
+    processors: List[Processor]
+    output_stream: Stream
+    status: str
+
+class HeadcatComponent:
+    observer: Observer
+    pattern_detector: PatternDetector
+    report_generator: ReportGenerator
+    status: str
+
+class MaskingComponent:
+    protected_data: Dict[str, Data]
+    access_controls: Dict[str, AccessControl]
+    context_masks: Dict[str, Mask]
+    status: str
+
+class StreamingComponent:
+    channels: Dict[str, Channel]
+    flow_controller: FlowController
+    buffer_manager: BufferManager
+    status: str
+
+class LaunchBotComponent:
+    executor: Executor
+    monitor: ProcessMonitor
+    reporter: ResultReporter
+    status: str
+
+class NoteComponent:
+    event_log: EventLog
+    historical_data: HistoricalData
+    indexer: Indexer
+    status: str
+```
+
+12.2 API de Coordinación
+```python
+def coordinate_social_components() -> CoordinationResult:
+    """Coordinar todos los componentes sociales."""
+    pass
+
+def validate_component_interaction(comp1: str, comp2: str) -> ValidationResult:
+    """Validar interacción entre componentes."""
+    pass
+
+def get_social_system_status() -> SystemStatus:
+    """Obtener estado completo del sistema social."""
+    pass
+```
+
+====================================================================
+13) EJEMPLOS PRÁCTICOS
+====================================================================
+
+13.1 Ejemplo 1: Interacción Normal
+```
+{chair}: recibe consulta del operador
+{drip}: procesa gradualmente la consulta
+{scheduler}: organiza tarea de procesamiento
+{headcat}: observa patrón en consulta
+{launch_bot}: ejecuta procesamiento
+{note}: registra resultado
+{masking}: protege datos sensibles
+{streaming}: mantiene flujo de comunicación
+Resultado: Consulta procesada y respondida
+```
+
+13.2 Ejemplo 2: Detección de Anomalía
+```
+{chair}: recibe entrada inusual
+{headcat}: detecta patrón anómalo
+{masking}: protege información sensible
+{scheduler}: prioriza análisis de anomalía
+{launch_bot}: ejecuta análisis de seguridad
+{note}: registra evento de seguridad
+{drip}: procesa datos de análisis
+{streaming}: comunica estado de alerta
+Resultado: Anomalía detectada y manejada
+```
+
+13.3 Ejemplo 3: Flujo Intenso
+```
+{chair}: recibe múltiples entradas
+{drip}: procesa gradualmente sin sobrecarga
+{streaming}: mantiene flujo continuo
+{scheduler}: organiza tareas por prioridad
+{launch_bot}: ejecuta en paralelo
+{headcat}: monitorea sistema sobrecargado
+{note}: registra eventos intensivos
+{masking}: protege datos concurrentes
+Resultado: Sistema maneja carga intensiva
+```
+
+====================================================================
+14) CIERRE MICRO: LA INTERFAZ HUMANO-SISTEMA
+====================================================================
+
+Los ocho componentes de relación de SOCIAL no son independientes: forman una ecosistema de mediación que permite la interacción humana con LACHO manteniendo soberanía, coherencia y adecuación constitucional.
+
+{chair} escucha con atención.
+{scheduler} organiza con propósito.
+{drip} procesa gradualmente.
+{headcat} observa sin actuar.
+{masking} protege con sabiduría.
+{streaming} fluye continuamente.
+{launch_bot} ejecuta con validez.
+{note} registra pasivamente.
+
+Sin cualquiera de los ocho, la interacción humano-sistema sería incompleta o insegura. Con los ocho activos y coordinados, LACHO puede interactuar con el operador de manera soberana, adecuada y traceable.
+
+FIN DEL ARCHIVO

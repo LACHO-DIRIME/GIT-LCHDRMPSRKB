@@ -1,0 +1,330 @@
+# BIBLIO-SOURCES(SOCIAL_DOGMA-VIRTUAL).txt
+
+====================================================================
+
+## 🌐 SOCIAL {DOGMA-VIRTUAL} — INTELIGENCIA RELACIONAL ANTE EL DOGMA DIGITAL
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+{DOGMA-VIRTUAL} es el módulo SOCIAL que detecta, clasifica y gestiona el dogma digital: creencia sin fundamento físico verificable que se comporta como dogma — cierra debate, exige adhesión, se propaga por contagio en red — pero carece de institución sostenedora, texto estable y autor soberano.
+
+#### 1.2 Las 5 características constitutivas de {DOGMA-VIRTUAL}
+- Sin fundamento físico verificable.
+- Comportamiento de dogma (cierra debate, exige adhesión).
+- Origen difuso o colectivo — sin autor soberano identificable.
+- Mutabilidad por contagio viral — se transforma al propagarse.
+- Persistencia sin institución sostenedora.
+
+#### 1.3 {DOGMA-VIRTUAL} como vector de contagio epistémico
+No contamina por fuerza sino por resonancia relacional. Operación sin coerción: el sistema adopta DV por resonancia, no por imposición directa.
+
+#### 1.4 Por qué es SOCIAL y no TRUST
+Opera en la interfaz relacional externa, no en la capa de condiciones soberanas internas. Mapea fenómeno, no emite condición.
+
+#### 1.5 Por qué es SOCIAL y no ACTIVITY
+No es un estado del operador — es un fenómeno del entorno que el operador encuentra al relacionarse con el exterior.
+
+#### 1.6 Relación con la capa Agnóstico-Atea
+{DOGMA-VIRTUAL} es el vector que !!atheistic religiosity!! resiste, que !!agnostic belief!! detecta por la duda, y que [rabbit-faith] no confunde con fe operativa honesta.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Qué puede hacer {DOGMA-VIRTUAL} como módulo
+Detectar, clasificar, cartografiar, reportar y blindar al sistema ante fenómenos de dogma digital en el exterior.
+
+#### 2.2 Qué no puede hacer
+No adopta contenido del DV como verdad sistémica, no emite juicio soberano sobre el contenido del dogma, no opera fuera de [scope] declarado, no puede ser invocado para justificar [command].
+
+#### 2.3 Los 5 tipos de DV clasificables
+- DV_MARKET: narrativas virales de mercado sin fundamento técnico.
+- DV_PROTOCOL: dogma de que cierto estándar digital es correcto por naturaleza o consenso, sin verificación soberana.
+- DV_SOCIAL: "todos piensan así" — consenso de red como verdad.
+- DV_IDENTITY: definición viral de identidad impuesta por red.
+- DV_SECURITY: "este método es inviolable por definición" — certeza de seguridad sin verificación técnica.
+
+#### 2.4 Condición de violación primaria
+Sistema que adopta {DOGMA-VIRTUAL} como [foundation] sin proceso soberano de verificación.
+
+#### 2.5 Condición de violación secundaria
+{launch-bot} desplegando bot con mandato de propagar {DOGMA-VIRTUAL} sin [command] explícito de TRUST.
+
+#### 2.6 Señal de alerta
+[ku-chat] alimentado con KU proveniente de {DOGMA-VIRTUAL} no clasificado como KU_DV — contaminación silenciosa.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 MODOS DE OPERACIÓN
+
+DOGMA_DETECT:
+Escaneo activo de flujos de KU del exterior. Identifica estructura dogmática sin prejuzgar contenido.
+
+DOGMA_CLASSIFY:
+Clasificación por tipo (DV_MARKET, DV_PROTOCOL, DV_SOCIAL, DV_IDENTITY, DV_SECURITY). Etiqueta KU como KU_DV.
+
+DOGMA_MAP:
+Cartografía de {DOGMA-VIRTUAL} activos en el entorno del [ecosystem]. Visibilidad sin adopción.
+
+DOGMA_SHIELD:
+Blindaje declarativo del sistema ante presión de penetración dogmática en el espacio relacional.
+
+DOGMA_REPORT:
+Reporte verificado a [ku-chat] con KU_DV etiquetado para procesamiento consciente por SAMU @.
+
+DOGMA_ARCHIVE:
+Archivo de patrón en Behavioral RAG para calibración de resistencia futura.
+
+#### 3.2 RELACIÓN CON DOMINIOS ECONÓMICOS
+
+MEMECOINS/VOLATILIDAD:
+DV_MARKET es el tipo más frecuente en este dominio: narrativas virales que mueven mercados por contagio relacional sin fundamento en datos verificables.
+BOT_SCOUT de {launch-bot} reporta DV_MARKET detectado como KU_DV crítico para decisiones soberanas en [ku-chat].
+Límite: {DOGMA-VIRTUAL} detectado no puede ser fuente primaria de KU para decisión soberana sin clasificación explícita.
+
+CUSTODIA MÓVIL:
+DV_SECURITY es el tipo crítico en custodia: creencia viral de que cierto método o dispositivo es inviolable — sin verificación técnica que lo sostenga.
+BOT_MONITOR de {launch-bot} reporta DV_SECURITY en entorno de custodia como EVENT_CRITICAL.
+Límite: ninguna decisión de custodia puede basarse en DV_SECURITY sin verificación técnica soberana independiente.
+
+NOTARÍA DIGITAL:
+DV_PROTOCOL es el tipo crítico en notaría: dogma de que cierto estándar digital o blockchain es jurídicamente válido "por consenso de red" sin verificación jurisdiccional soberana.
+BOT_MESSENGER de {launch-bot} clasifica si destinatario opera bajo DV_PROTOCOL antes de entregar documento certificado.
+Límite: (link seat) de CRYPTO no certifica documentos cuya validez depende de DV_PROTOCOL sin respaldo jurisdiccional.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation] (TRUST)
+[foundation] es el antídoto soberano — lo que el sistema no puede adoptar sin proceso verificado.
+
+#### 4.2 Con [scope] (TRUST)
+{DOGMA-VIRTUAL} operando fuera de [scope] es KU_DV ignorable; dentro de [scope] es KU_DV crítico.
+
+#### 4.3 Con [ku-chat] (TRUST)
+Todo KU contaminado por {DOGMA-VIRTUAL} debe ingresar etiquetado como KU_DV, no como KU limpio.
+
+#### 4.4 Con [command] (TRUST)
+Ningún [command] soberano puede fundarse en {DOGMA-VIRTUAL} sin dirimencia verificada de SAMU @.
+
+#### 4.5 Con {launch-bot} (SOCIAL)
+BOT_SCOUT es el detector primario de {DOGMA-VIRTUAL} en el exterior; BOT_INTERACT opera con blindaje declarativo ante DV en el espacio relacional externo.
+
+#### 4.6 Con {masking} (SOCIAL)
+{masking} protege al sistema de construir identidad delegada sobre {DOGMA-VIRTUAL} externo.
+
+#### 4.7 Con {headcat} (SOCIAL)
+{headcat} clasifica si ACTOR_INCOMING porta {DOGMA-VIRTUAL} antes de acceso relacional pleno.
+
+#### 4.8 Con {chair} (SOCIAL)
+{chair} puede conducir sesiones donde {DOGMA-VIRTUAL} es el tema relacional explícito — con moderación activa y sin adopción del DV como verdad.
+
+#### 4.9 Con {note} (SOCIAL)
+{note} registra toda detección de {DOGMA-VIRTUAL} sin emitir juicio sobre su contenido.
+
+#### 4.10 Con !!atheistic religiosity!! (ACTIVITY)
+Postura interna que habilita resistencia activa a {DOGMA-VIRTUAL} externo.
+
+#### 4.11 Con !!agnostic belief!! (ACTIVITY)
+La duda honesta como primer detector de estructura dogmática en el entorno.
+
+#### 4.12 Con [rabbit-faith] (TRUST)
+Distinción operativa fundamental — [rabbit-faith] es fe honesta bajo incertidumbre; {DOGMA-VIRTUAL} es certeza artificial sin honestidad verificable.
+
+#### 4.13 Con (Way Agnostic Atheism) (CRYPTO)
+Principio criptográfico de que ninguna clave es absoluta — blindaje técnico ante las certezas absolutas que {DOGMA-VIRTUAL} impone.
+
+#### 4.14 Con SAMU @
+SAMU audita que ninguna decisión soberana esté fundada en {DOGMA-VIRTUAL} sin clasificación verificada.
+
+#### 4.15 Con Behavioral RAG
+Patrones de DV detectados calibran resistencia futura y sensibilidad de detección del sistema.
+
+---
+
+### 5.0 ESTADOS DE {DOGMA-VIRTUAL}
+
+#### 5.1 DOGMA_STANDBY
+Módulo activo sin {DOGMA-VIRTUAL} detectado en flujos actuales.
+Behavioral RAG con patrones previos cargados.
+Monitoreo pasivo del exterior relacional.
+
+#### 5.2 DOGMA_ALERT
+{DOGMA-VIRTUAL} detectado en flujo de KU entrante.
+Clasificación en curso por tipo de DV.
+Canal a [ku-chat] en espera de etiquetado.
+
+#### 5.3 DOGMA_MAPPED
+{DOGMA-VIRTUAL} clasificado, cartografiado y etiquetado.
+KU_DV reportado a [ku-chat] con tipo declarado.
+[management] notificado según criticidad del tipo.
+
+#### 5.4 DOGMA_SHIELDED
+Sistema en modo blindaje activo ante presión dogmática alta.
+{masking} coordinado para no revelar vulnerabilidades.
+SAMU @ en estado de diagnóstico preventivo.
+
+#### 5.5 DOGMA_ARCHIVED
+Ciclo de {DOGMA-VIRTUAL} cerrado con [term] declarado.
+Patrón archivado en Behavioral RAG.
+Sensibilidad de detección actualizada.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Impacto en dimensiones
+{DOGMA-VIRTUAL} no tiene dimensión propia en @trust_matrix pero afecta críticamente varias dimensiones:
+- Degrada d₃ [scenario] cuando KU_DV contamina el mapa situacional del sistema sin clasificación visible.
+- Degrada d₈ [ecosystem] cuando nodos externos del [ecosystem] operan bajo {DOGMA-VIRTUAL} activo no cartografiado.
+- Protege d₁ [term] cuando evita que el sistema adopte {DOGMA-VIRTUAL} que clausura el horizonte temporal.
+- Protege d₆ [command] cuando bloquea que [command] soberano se funde en DV sin verificación de SAMU @.
+
+#### 6.2 Cómo Behavioral RAG aprende
+Patrones de DV detectados calibran umbrales de detección y resistencia futura.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Detección de DV_MARKET por BOT_SCOUT
+```
+{Social} DOGMA_VIRTUAL =><= .. detect .. DV_MARKET_meme_signal --[As de Guía] [term]
+```
+
+#### 7.2 Clasificación de KU_DV en [ku-chat]
+```
+{Social} DOGMA_VIRTUAL =><= .. classify .. KU_DV_protocol_type --[Nudo de Ocho] [term]
+```
+
+#### 7.3 DOGMA_SHIELD ante penetración de DV_SOCIAL
+```
+{Social} DOGMA_VIRTUAL =><= .. shield .. DV_SOCIAL_pressure --[Nudo Corredizo] [term]
+```
+
+#### 7.4 {DOGMA-VIRTUAL} en dominio memecoins (DV_MARKET)
+```
+{Social} DOGMA_VIRTUAL =><= .. map .. DV_MARKET_memecoins --[Ballestrinque] [term]
+```
+
+#### 7.5 {DOGMA-VIRTUAL} en dominio custodia (DV_SECURITY)
+```
+{Social} DOGMA_VIRTUAL =><= .. isolate .. DV_SECURITY_custody --[Nudo de Ocho] [term]
+```
+
+#### 7.6 {DOGMA-VIRTUAL} en dominio notaría (DV_PROTOCOL)
+```
+{Social} DOGMA_VIRTUAL =><= .. report .. DV_PROTOCOL_notarial --[As de Guía] [term]
+```
+
+#### 7.7 {chair} conduciendo sesión con {DOGMA-VIRTUAL} como tema
+```
+{Social} DOGMA_VIRTUAL =><= .. moderate .. DV_session_chair --[Nudo de Rizo] [term]
+```
+
+#### 7.8 Archivo en Behavioral RAG de patrón DV detectado
+```
+{Social} DOGMA_VIRTUAL =><= .. archive .. DV_pattern_behavioral --[Nudo de Ocho] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+DOGMA_DETECT activo — detección soberana con dirección clara, sin adopción.
+
+#### 8.2 Nudo de Ocho
+DOGMA_ARCHIVED — patrón DV cristalizado en Behavioral RAG, ciclo cerrado.
+
+#### 8.3 Nudo Corredizo
+DOGMA_SHIELDED — presión dogmática alta, sistema en blindaje activo.
+
+#### 8.4 Ballestrinque
+Tensión entre KU externo contaminado y KU verificado — sin fusión, con clasificación obligatoria.
+
+#### 8.5 Nudo de Rizo
+Distinción operativa [rabbit-faith] vs {DOGMA-VIRTUAL}: fe honesta bajo incertidumbre vs certeza artificial impuesta.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+1. DogmaDetect
+   - Escaneo de flujos de KU externos.
+   - Identificación de estructura dogmática sin prejuicio de contenido.
+   - Registro inicial en {note}.
+
+2. DogmaClassify
+   - Clasificación por tipo DV y etiquetado como KU_DV.
+   - Asignación de criticidad según tipo y dominio.
+   - Notificación a módulos relevantes.
+
+3. DogmaMap
+   - Cartografía de {DOGMA-VIRTUAL} activos en [ecosystem].
+   - Visualización de densidad y vectores de propagación.
+   - Actualización continua de mapa relacional.
+
+4. DogmaShield
+   - Blindaje declarativo del sistema ante presión alta.
+   - Coordinación con {masking} para protección de identidad.
+   - Activación de SAMU @ en modo preventivo.
+
+5. DogmaReport
+   - Reporte a [ku-chat] con KU_DV etiquetado y tipado.
+   - Inclusión de contexto de origen y vector.
+   - Archivo simultáneo en Behavioral RAG.
+
+6. DogmaArchive
+   - Archivo de patrón en Behavioral RAG con [term].
+   - Actualización de sensibilidad de detección.
+   - Cierre de ciclo con registro completo.
+
+---
+
+### 10.0 MÉTRICAS
+
+- Frecuencia de detección por tipo de DV por ciclo.
+- Ratio KU_DV vs KU_VERIFIED en flujos externos.
+- Tiempo promedio de clasificación desde detección.
+- Tasa de KU_DV que penetró sin clasificación (target: 0%).
+- Frecuencia de DOGMA_SHIELDED por dominio económico.
+- Delta-resistencia generado por Behavioral RAG entre ciclos.
+
+---
+
+### 11.0 REGLAS
+
+- Todo KU proveniente de entorno con {DOGMA-VIRTUAL} activo debe ingresar como KU_DV — nunca como KU limpio.
+- {DOGMA-VIRTUAL} detectado no puede adoptarse como [foundation] sin proceso soberano de verificación de SAMU @.
+- SAMU @ audita que ninguna decisión soberana esté fundada en {DOGMA-VIRTUAL} sin clasificación verificada.
+- {launch-bot} no puede desplegar bot con mandato de propagar {DOGMA-VIRTUAL} sin [command] explícito de TRUST.
+- {note} registra toda detección de {DOGMA-VIRTUAL} sin emitir juicio sobre el contenido del dogma.
+- {masking} no puede construir identidad del sistema sobre {DOGMA-VIRTUAL} externo sin verificación de [foundation].
+- [command] de TRUST no puede fundarse en DV_MARKET, DV_PROTOCOL ni ningún tipo DV sin dirimencia de SAMU @.
+- DOGMA_SHIELDED no puede cerrarse sin [term] del ciclo declarado.
+- (Way Agnostic Atheism) es el principio CRYPTO de blindaje ante certezas absolutas que {DOGMA-VIRTUAL} impone.
+- Behavioral RAG registra todo patrón de DV para calibración de detección futura — sin excepción por tipo o dominio.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+{DOGMA-VIRTUAL} fija como invariante la capacidad del sistema de detectar, clasificar y gestionar dogma digital externo sin adoptarlo como suelo soberano — inteligencia relacional ante el contagio epistémico en red.
+
+#### 12.2 Limitaciones
+No adopta DV como [foundation], no permite KU_DV sin clasificación, no emite juicio soberano sobre el contenido del dogma, no opera sin [term] de ciclo declarado.
+
+#### 12.3 Habilitaciones
+Resistencia sistémica verificable al contagio dogmático digital, KU soberano del exterior libre de contaminación no declarada, calibración progresiva de detección via Behavioral RAG, distinción operativa sostenida entre [rabbit-faith] y {DOGMA-VIRTUAL} en toda la arquitectura.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

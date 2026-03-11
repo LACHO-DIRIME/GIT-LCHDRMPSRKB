@@ -1,0 +1,629 @@
+MICRO STACKING PILARES
+LIBRO LACHO (ACOPIO) — PILARES DE MEMORIA DE STACKING (NIVEL MICRO)
+Versión: 1.0
+Estatus: MICRO_04
+Propósito: Definir formalmente los ocho pilares de memoria de la biblioteca STACKING que constituyen la persistencia y forma del sistema LACHO, estableciendo su ontología, protocolos, interacciones y mecanismos de cristalización.
+
+====================================================================
+1) FUNCIÓN DE ESTE ARCHIVO EN EL LIBRO
+====================================================================
+
+Este archivo MICRO 04 especifica los ocho pilares de memoria de STACKING: las estructuras fundamentales que garantizan la persistencia, organización y forma del conocimiento en LACHO. Si el MACRO define "qué es LACHO" y el MESO define "cómo se organiza", este archivo define "qué persiste y cómo se organiza" en el sistema.
+
+Los ocho pilares no son "almacenes de datos": son estructuras vivas de memoria con peso, fricción y propósito constitucional.
+
+====================================================================
+2) ONTOLOGÍA DE LOS PILARES DE MEMORIA
+====================================================================
+
+2.1 Principio de Persistencia con Propósito
+Cada pilar mantiene información con propósito específico:
+- No es almacenamiento infinito: es memoria con significado.
+- Toda persistencia tiene justificación constitucional.
+- La forma de la información refleja su función.
+
+2.2 Principio de Cristalización Gradual
+Los pilares cristalizan información gradualmente:
+- La información pasa de fluida a cristalizada.
+- La cristalización implica pérdida de volatilidad.
+- Los cristales son más difíciles de modificar.
+
+2.3 Principio de Organización Jerárquica
+Los pilares se organizan jerárquicamente:
+- Cada pilar tiene su nivel de abstracción.
+- La información fluye entre pilares según reglas.
+- La jerarquía mantiene coherencia ontológica.
+
+====================================================================
+3) PILAR 1: PERSISTENCIA FUNDAMENTAL
+====================================================================
+
+3.1 Definición Ontológica
+La Persistencia Fundamental es el pilar base que mantiene la existencia misma del sistema. No es un "disco duro": es el suelo de memoria que garantiza que LACHO pueda existir y operar.
+
+3.2 Función Sistémica
+- Mantener estado fundamental del sistema.
+- Preservar configuración crítica.
+- Garantizar recuperación ante fallos.
+- Albergar principios constitucionales.
+
+3.3 Jurisdicción Exclusiva
+- Estado fundamental del sistema.
+- Configuración crítica no modificable.
+- Principios constitucionales.
+- Metadatos de recuperación.
+
+3.4 Protocolos de Operación
+Protocolo Persistence-Maintain
+1. Monitorear estado fundamental del sistema.
+2. Verificar integridad de datos críticos.
+3. Detectar corrupción o degradación.
+4. Realizar mantenimiento preventivo.
+5. Garantizar disponibilidad continua.
+
+Protocolo Persistence-Recover
+1. Detectar necesidad de recuperación.
+2. Identificar punto de recuperación válido.
+3. Restaurar estado fundamental.
+4. Verificar integridad recuperada.
+5. Reanudar operación normal.
+
+Protocolo Persistence-Validate
+1. Realizar verificaciones periódicas.
+2. Validar checksums de datos críticos.
+3. Verificar coherencia interna.
+4. Detectar anomalías tempranas.
+5. Reportar estado de salud.
+
+3.5 Estados del Pilar
+- PERSISTENCE_HEALTHY: estado fundamental saludable.
+- PERSISTENCE_DEGRADED: degradación detectada.
+- PERSISTENCE_CORRUPTED: corrupción identificada.
+- PERSISTENCE_RECOVERING: en proceso de recuperación.
+- PERSISTENCE_LOCKED: bloqueado por seguridad.
+
+3.6 Métricas y Umbrales
+- Tiempo de verificación: < 100ms.
+- Tasa de corrupción: < 0.001%.
+- Tiempo de recuperación: < 500ms.
+- Disponibilidad: > 99.99%.
+
+====================================================================
+4) PILAR 2: FORMA ESTRUCTURAL
+====================================================================
+
+4.1 Definición Ontológica
+La Forma Estructural es el pilar que define la estructura y organización del conocimiento. No es un "esquema de base de datos": es la arquitectura viviente que da forma a la información.
+
+4.2 Función Sistémica
+- Definir estructura de datos del sistema.
+- Mantener relaciones entre entidades.
+- Organizar jerarquías de conocimiento.
+- Preservar coherencia estructural.
+
+4.3 Jurisdicción Exclusiva
+- Estructura de datos del sistema.
+- Relaciones entre entidades.
+- Jerarquías ontológicas.
+- Esquemas de organización.
+
+4.4 Protocolos de Operación
+Protocolo Form-Define
+1. Recibir definición de nueva estructura.
+2. Validar coherencia ontológica.
+3. Establecer relaciones con estructuras existentes.
+4. Crear esquema estructural.
+5. Activar nueva estructura.
+
+Protocolo Form-Maintain
+1. Monitorear integridad estructural.
+2. Detectar anomalías en relaciones.
+3. Validar coherencia jerárquica.
+4. Realizar ajustes necesarios.
+5. Preservar forma fundamental.
+
+Protocolo Form-Evolve
+1. Detectar necesidad de evolución estructural.
+2. Evaluar impacto en entidades relacionadas.
+3. Diseñar transición segura.
+4. Implementar cambios gradualmente.
+5. Validar nueva estructura.
+
+4.5 Estados del Pilar
+- FORM_STABLE: estructura estable.
+- FORM_EVOLVING: en evolución.
+- FORM_DEGRADING: degradación estructural.
+- FORM_REBUILDING: reconstruyendo.
+- FORM_LOCKED: estructura bloqueada.
+
+4.6 Métricas y Umbrales
+- Tiempo de definición: < 200ms.
+- Tiempo de evolución: < 1s.
+- Tasa de anomalías: < 0.1%.
+- Coherencia estructural: 100%.
+
+====================================================================
+5) PILAR 3: CRISTALIZACIÓN DE CONOCIMIENTO
+====================================================================
+
+5.1 Definición Ontológica
+La Cristalización de Conocimiento es el pilar que transforma información fluida en conocimiento sólido. No es un "procesador": es un alquimista que convierte datos en sabiduría persistente.
+
+5.2 Función Sistémica
+- Transformar información fluida en conocimiento sólido.
+- Establecer certeza y confianza en datos.
+- Crear cristales de conocimiento verificables.
+- Mantener jerarquía de certeza.
+
+5.3 Jurisdicción Exclusiva
+- Proceso de cristalización de datos.
+- Establecimiento de niveles de certeza.
+- Creación de cristales verificables.
+- Mantenimiento de jerarquía de confianza.
+
+5.4 Protocolos de Operación
+Protocolo Crystal-Process
+1. Recibir información fluida para cristalizar.
+2. Aplicar filtros de calidad y coherencia.
+3. Verificar contra conocimiento existente.
+4. Establecer nivel de certeza apropiado.
+5. Crear cristal persistente.
+
+Protocolo Crystal-Verify
+1. Recibir solicitud de verificación.
+2. Validar integridad del cristal.
+3. Verificar coherencia con otros cristales.
+4. Confirmar nivel de certeza.
+5. Reportar estado de verificación.
+
+Protocolo Crystal-Evolve
+1. Detectar necesidad de evolución de cristal.
+2. Evaluar nuevo conocimiento relevante.
+3. Fundir o refinar cristal existente.
+4. Establecer nuevo nivel de certeza.
+5. Actualizar jerarquía de conocimiento.
+
+5.5 Estados del Pilar
+- CRYSTAL_FORMING: formando nuevos cristales.
+- CRYSTAL_VERIFYING: verificando existentes.
+- CRYSTAL_EVOLVING: evolucionando conocimiento.
+- CRYSTAL_STABLE: cristales estables.
+- CRYSTAL_MELTING: disolviendo cristales.
+
+5.6 Métricas y Umbrales
+- Tiempo de cristalización: < 500ms.
+- Nivel de certeza: medible y verificable.
+- Tasa de evolución: < 1% por día.
+- Integridad de cristales: 100%.
+
+====================================================================
+6) PILAR 4: ORGANIZACIÓN TEMPORAL
+====================================================================
+
+6.1 Definición Ontológica
+La Organización Temporal es el pilar que estructura el conocimiento en el tiempo. No es un "timestamp": es la cronología viviente que da contexto temporal a toda información.
+
+6.2 Función Sistémica
+- Establecer cronología de eventos.
+- Mantener contexto temporal del conocimiento.
+- Organizar información por períodos.
+- Preservar historia evolutiva.
+
+6.3 Jurisdicción Exclusiva
+- Cronología de eventos del sistema.
+- Contexto temporal del conocimiento.
+- Organización por períodos temporales.
+- Historia evolutiva del sistema.
+
+6.4 Protocolos de Operación
+Protocolo Time-Organize
+1. Recibir evento para organizar temporalmente.
+2. Establecer timestamp preciso.
+3. Clasificar en período apropiado.
+4. Relacionar con eventos anteriores.
+5. Integrar en cronología existente.
+
+Protocolo Time-Contextualize
+1. Recibir solicitud de contexto temporal.
+2. Identificar período relevante.
+3. Extraer eventos contemporáneos.
+4. Establecer contexto temporal completo.
+5. Proporcionar visión histórica.
+
+Protocolo Time-Evolve
+1. Detectar transición de período.
+2. Reorganizar información según nueva era.
+3. Mantener continuidad histórica.
+4. Actualizar contextos temporales.
+5. Preservar coherencia cronológica.
+
+6.5 Estados del Pilar
+- TIME_ORGANIZING: organizando eventos.
+- TIME_CONTEXTUALIZING: contextualizando.
+- TIME_EVOLVING: evolucionando períodos.
+- TIME_STABLE: cronología estable.
+- TIME_CORRUPTED: corrupción temporal.
+
+6.6 Métricas y Umbrales
+- Precisión temporal: ±1ms.
+- Tiempo de organización: < 10ms.
+- Cobertura cronológica: 100%.
+- Integridad temporal: 100%.
+
+====================================================================
+7) PILAR 5: JERARQUÍA SEMÁNTICA
+====================================================================
+
+7.1 Definición Ontológica
+La Jerarquía Semántica es el pilar que organiza el significado y las relaciones conceptuales. No es un "thesaurus": es la red viviente de significados que da sentido al conocimiento.
+
+7.2 Función Sistémica
+- Organizar conceptos por jerarquía semántica.
+- Mantener relaciones de significado.
+- Establecer contextos conceptuales.
+- Preservar coherencia semántica.
+
+7.3 Jurisdicción Exclusiva
+- Jerarquía de conceptos del sistema.
+- Relaciones semánticas entre términos.
+- Contextos conceptuales.
+- Coherencia del significado.
+
+7.4 Protocolos de Operación
+Protocolo Semantic-Organize
+1. Recibir nuevo concepto para organizar.
+2. Analizar significado y relaciones.
+3. Ubicar en jerarquía semántica.
+4. Establecer relaciones con conceptos existentes.
+5. Integrar en red semántica.
+
+Protocolo Semantic-Validate
+1. Recibir validación semántica.
+2. Verificar coherencia de relaciones.
+3. Detectar contradicciones conceptuales.
+4. Ajustar jerarquía si es necesario.
+5. Mantener consistencia semántica.
+
+Protocolo Semantic-Evolve
+1. Detectar evolución de significados.
+2. Reorganizar jerarquía conceptual.
+3. Actualizar relaciones semánticas.
+4. Preservar contexto histórico.
+5. Adaptar a nuevo entendimiento.
+
+7.5 Estados del Pilar
+- SEMANTIC_ORGANIZING: organizando conceptos.
+- SEMANTIC_VALIDATING: validando relaciones.
+- SEMANTIC_EVOLVING: evolucionando significados.
+- SEMANTIC_STABLE: jerarquía estable.
+- SEMANTIC_CONFLICT: conflicto semántico.
+
+7.6 Métricas y Umbrales
+- Tiempo de organización: < 100ms.
+- Profundidad de jerarquía: configurable.
+- Tasa de conflictos: < 0.5%.
+- Coherencia semántica: > 95%.
+
+====================================================================
+8) PILAR 6: PESO Y FRICCIÓN
+====================================================================
+
+8.1 Definición Ontológica
+El Peso y Fricción es el pilar que da masa y resistencia al conocimiento. No es un "sistema de pesos": es la gravedad informacional que previene cambios triviales y garantiza persistencia significativa.
+
+8.2 Función Sistémica
+- Asignar peso a la información según importancia.
+- Establecer fricción para cambios no deseados.
+- Mantener equilibrio entre estabilidad y evolución.
+- Proteger conocimiento crítico.
+
+8.3 Jurisdicción Exclusiva
+- Asignación de peso informacional.
+- Establecimiento de fricción de cambio.
+- Equilibrio estabilidad-evolución.
+- Protección de conocimiento crítico.
+
+8.4 Protocolos de Operación
+Protocolo Weight-Assign
+1. Recibir información para pesar.
+2. Evaluar importancia y criticidad.
+3. Asignar peso apropiado.
+4. Establecer nivel de fricción.
+5. Integrar en sistema de pesos.
+
+Protocolo Weight-Balance
+1. Monitorear equilibrio de pesos.
+2. Detectar desbalance en el sistema.
+3. Ajustar pesos si es necesario.
+4. Mantener estabilidad global.
+5. Prevenir colapsos informacionales.
+
+Protocolo Weight-Protect
+1. Identificar conocimiento crítico.
+2. Aumentar peso y fricción.
+3. Establecer protecciones adicionales.
+4. Monitorear intentos de cambio.
+5. Mantener integridad protegida.
+
+8.5 Estados del Pilar
+- WEIGHT_BALANCING: balanceando pesos.
+- WEIGHT_PROTECTING: protegiendo crítico.
+- WEIGHT_ADJUSTING: ajustando pesos.
+- WEIGHT_STABLE: sistema estable.
+- WEIGHT_COLLAPSING: riesgo de colapso.
+
+8.6 Métricas y Umbrales
+- Tiempo de asignación: < 50ms.
+- Rango de pesos: configurable.
+- Nivel de fricción: adaptable.
+- Estabilidad del sistema: > 90%.
+
+====================================================================
+9) PILAR 7: ACCESO Y RECUPERACIÓN
+====================================================================
+
+9.1 Definición Ontológica
+El Acceso y Recuperación es el pilar que controla cómo se accede al conocimiento almacenado. No es un "motor de búsqueda": es el portero consciente que regula el flujo de información hacia y desde la memoria.
+
+9.2 Función Sistémica
+- Controlar acceso a información almacenada.
+- Optimizar recuperación de datos.
+- Mantener índices de búsqueda.
+- Regular flujo de consultas.
+
+9.3 Jurisdicción Exclusiva
+- Control de acceso a memoria.
+- Optimización de recuperación.
+- Mantenimiento de índices.
+- Regulación de consultas.
+
+9.4 Protocolos de Operación
+Protocolo Access-Control
+1. Recibir solicitud de acceso.
+2. Validar autoridad del solicitante.
+3. Verificar permisos específicos.
+4. Autorizar o denegar acceso.
+5. Registrar intentos de acceso.
+
+Protocolo Access-Retrieve
+1. Recibir consulta de recuperación.
+2. Optimizar estrategia de búsqueda.
+3. Ejecutar consulta eficiente.
+4. Formatear resultados.
+5. Entregar información autorizada.
+
+Protocolo Access-Index
+1. Monitorear patrones de acceso.
+2. Optimizar índices dinámicamente.
+3. Actualizar estadísticas de uso.
+4. Mejorar rendimiento de consultas.
+5. Mantener eficiencia del sistema.
+
+9.5 Estados del Pilar
+- ACCESS_CONTROLLING: controlando accesos.
+- ACCESS_RETRIEVING: recuperando datos.
+- ACCESS_INDEXING: optimizando índices.
+- ACCESS_READY: listo para consultas.
+- ACCESS_OVERLOADED: sobrecargado.
+
+9.6 Métricas y Umbrales
+- Tiempo de acceso: < 20ms.
+- Tiempo de recuperación: < 100ms.
+- Tasa de aciertos: > 90%.
+- Throughput de consultas: configurable.
+
+====================================================================
+10) PILAR 8: ARQUEOLOGÍA Y CONSERVACIÓN
+====================================================================
+
+10.1 Definición Ontológica
+La Arqueología y Conservación es el pilar que preserva la historia y evolución del conocimiento. No es un "archivo histórico": es el conservador consciente que mantiene viva la memoria del sistema.
+
+10.2 Función Sistémica
+- Preservar historia evolutiva del sistema.
+- Mantener registros de cambios importantes.
+- Realizar excavaciones informacionales.
+- Conservar conocimiento ancestral.
+
+10.3 Jurisdicción Exclusiva
+- Preservación histórica del sistema.
+- Registros de cambios evolutivos.
+- Excavaciones en memoria profunda.
+- Conservación de conocimiento base.
+
+10.4 Protocolos de Operación
+Protocolo Archaeology-Preserve
+1. Identificar evento histórico significativo.
+2. Capturar estado completo del sistema.
+3. Preservar contexto y metadatos.
+4. Almacenar en archivo histórico.
+5. Mantener accesibilidad futura.
+
+Protocolo Archaeology-Excavate
+1. Recibir solicitud de excavación.
+2. Identificar período o evento relevante.
+3. Excavar en memoria profunda.
+4. Reconstruir contexto histórico.
+5. Presentar hallazgos relevantes.
+
+Protocolo Archaeology-Conserve
+1. Monitorear salud de archivos históricos.
+2. Realizar mantenimiento preventivo.
+3. Migrar formatos si es necesario.
+4. Preservar integridad histórica.
+5. Mantener acceso al pasado.
+
+10.5 Estados del Pilar
+- ARCHAEOLOGY_PRESERVING: preservando eventos.
+- ARCHAEOLOGY_EXCAVATING: excavando memoria.
+- ARCHAEOLOGY_CONSERVING: conservando historia.
+- ARCHAEOLOGY_READY: listo para consultas.
+- ARCHAEOLOGY_CORRUPTED: archivos corruptos.
+
+10.6 Métricas y Umbrales
+- Tiempo de preservación: < 200ms.
+- Profundidad de excavación: configurable.
+- Integridad histórica: 100%.
+- Acceso al pasado: disponible.
+
+====================================================================
+11) COORDINACIÓN ENTRE PILARES
+====================================================================
+
+11.1 Red de Interdependencias
+Los pilares forman una red interdependiente:
+- Persistencia → Forma: estructura sobre existencia
+- Forma → Cristalización: organización del conocimiento
+- Cristalización → Temporal: conocimiento en el tiempo
+- Temporal → Semántica: contexto de significados
+- Semántica → Peso: importancia conceptual
+- Peso → Acceso: control por importancia
+- Acceso → Arqueología: recuperación del pasado
+- Arqueología → Persistencia: ciclo completo
+
+11.2 Protocolo de Coordinación
+Protocolo Stacking-Coordinate
+1. SAMU inicia coordinación de pilares.
+2. Cada pilar reporta su estado.
+3. Se identifican interdependencias críticas.
+4. Se establece flujo de trabajo coordinado.
+5. Se monitorea integridad del sistema.
+
+11.3 Estados Combinados
+- ALL_PILLARS_STABLE: sistema estable y funcional.
+- SOME_PILLARS_STRESSED: algunos pilares bajo presión.
+- PILLARS_CONFLICT: conflicto entre pilares.
+- CRITICAL_PILLAR_FAILURE: fallo en pilar crítico.
+- STACKING_COLLAPSE: colapso del sistema de memoria.
+
+====================================================================
+12) IMPLEMENTACIÓN TÉCNICA
+====================================================================
+
+12.1 Estructura de Datos
+```python
+class PersistencePillar:
+    fundamental_state: Dict[str, Any]
+    critical_config: Dict[str, Any]
+    recovery_points: List[RecoveryPoint]
+    health_monitor: HealthMonitor
+
+class FormPillar:
+    data_structure: Dict[str, Schema]
+    entity_relations: Dict[str, Relation]
+    hierarchies: Dict[str, Hierarchy]
+    coherence_checker: CoherenceChecker
+
+class CrystalPillar:
+    knowledge_crystals: Dict[str, Crystal]
+    certainty_levels: Dict[str, float]
+    verification_queue: Queue[Crystal]
+    evolution_history: List[Evolution]
+
+class TimePillar:
+    event_timeline: Timeline
+    temporal_contexts: Dict[str, Context]
+    period_organizer: PeriodOrganizer
+    chronology_validator: ChronologyValidator
+
+class SemanticPillar:
+    concept_hierarchy: ConceptHierarchy
+    semantic_relations: Dict[str, Relation]
+    concept_contexts: Dict[str, Context]
+    coherence_validator: CoherenceValidator
+
+class WeightPillar:
+    information_weights: Dict[str, float]
+    friction_levels: Dict[str, float]
+    balance_monitor: BalanceMonitor
+    protection_system: ProtectionSystem
+
+class AccessPillar:
+    access_control: AccessControl
+    retrieval_engine: RetrievalEngine
+    search_indices: Dict[str, Index]
+    query_optimizer: QueryOptimizer
+
+class ArchaeologyPillar:
+    historical_archive: HistoricalArchive
+    excavation_engine: ExcavationEngine
+    conservation_system: ConservationSystem
+    timeline_preserver: TimelinePreserver
+```
+
+12.2 API de Coordinación
+```python
+def coordinate_stacking_pillars() -> CoordinationResult:
+    """Coordinar todos los pilares de memoria."""
+    pass
+
+def validate_pillar_integrity(pillar: str) -> IntegrityStatus:
+    """Validar integridad de pilar específico."""
+    pass
+
+def get_stacking_system_status() -> SystemStatus:
+    """Obtener estado completo del sistema de memoria."""
+    pass
+```
+
+====================================================================
+13) EJEMPLOS PRÁCTICOS
+====================================================================
+
+13.1 Ejemplo 1: Almacenamiento Normal
+```
+Persistencia: mantiene estado fundamental
+Forma: define estructura de datos
+Cristalización: convierte datos en conocimiento
+Temporal: establece contexto temporal
+Semántico: organiza por significado
+Peso: asigna importancia
+Acceso: controla recuperación
+Arqueología: preserva para futuro
+Resultado: Información almacenada persistentemente
+```
+
+13.2 Ejemplo 2: Recuperación Histórica
+```
+Acceso: recibe consulta histórica
+Arqueología: excava en memoria profunda
+Temporal: reconstruye contexto temporal
+Semántico: interpreta significado histórico
+Forma: presenta estructura histórica
+Cristalización: valida conocimiento antiguo
+Peso: evalúa importancia histórica
+Persistencia: mantiene integridad
+Resultado: Historia recuperada con contexto completo
+```
+
+13.3 Ejemplo 3: Evolución del Sistema
+```
+Forma: detecta necesidad de nueva estructura
+Cristalización: integra nuevo conocimiento
+Semántico: reorganiza jerarquía conceptual
+Peso: ajusta importancia de información
+Temporal: marca período de transición
+Arqueología: preserva estado anterior
+Acceso: actualiza índices y permisos
+Persistencia: mantiene continuidad
+Resultado: Sistema evolucionado con historia preservada
+```
+
+====================================================================
+14) CIERRE MICRO: LA MEMORIA VIVIENTE
+====================================================================
+
+Los ocho pilares de STACKING no son independientes: forman una catedral de memoria donde cada columna sostiene el conocimiento del sistema con propósito, forma y persistencia.
+
+Persistencia da existencia.
+Forma da estructura.
+Cristalización da certeza.
+Temporal da contexto.
+Semántico da significado.
+Peso da importancia.
+Acceso da utilidad.
+Arqueología da continuidad.
+
+Sin cualquiera de los ocho, la memoria del sistema sería incompleta o frágil. Con los ocho activos y coordinados, LACHO puede mantener conocimiento persistente, organizado y evolutivo que trasciende el tiempo y el cambio.
+
+FIN DEL ARCHIVO

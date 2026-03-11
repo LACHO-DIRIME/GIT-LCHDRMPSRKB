@@ -1,0 +1,241 @@
+<!DOCTYPE html><html lang="es"><head>
+<meta charset="utf-8"><title>ELPULSAR</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#1a1a2e;color:#eaeaea;font-family:monospace;font-size:13px;display:flex;flex-direction:column;height:100vh}
+header{background:#0f3460;padding:.5rem 1rem;display:flex;align-items:center;gap:.75rem}
+header h1{color:#e94560;font-size:.95rem;letter-spacing:.1em}
+#greens{display:flex;gap:.3rem;padding:.2rem .5rem;background:#0d0d1a;border-bottom:1px solid #222}
+.green{font-size:.7rem;padding:.15rem .4rem;border:1px solid #333;color:#444;transition:all .3s}
+.green.active{border-color:#4ade80;color:#4ade80;background:#0a2a0a;text-shadow:0 0 6px #4ade80}
+.pulse-wrap{margin-left:auto;font-size:.7rem;color:#333;position:relative;width:40px}
+@keyframes f1{0%,49%{opacity:1}50%,100%{opacity:0}}
+@keyframes f2{0%,49%{opacity:0}50%,100%{opacity:1}}
+.pf1{animation:f1 2s infinite;position:absolute}
+.pf2{animation:f2 2s infinite;position:absolute}
+main{display:flex;flex:1;overflow:hidden}
+.btn{background:#1a1a2e;color:#eaeaea;border:1px solid #333;padding:.2rem .5rem;cursor:pointer;font-family:monospace;font-size:12px}
+.btn:hover,.btn.active{border-color:#e94560;color:#e94560}
+#key-panel{width:190px;background:#0d0d1a;border-right:1px solid #222;overflow-y:auto;padding:.5rem;transition:width .15s}
+#key-panel.collapsed{width:0;padding:0;overflow:hidden}
+#table-panel{flex:1;overflow:auto;padding:.5rem}
+#paper-panel{width:260px;background:#0d0d1a;border-left:1px solid #222;overflow-y:auto;transition:width .15s}
+#paper-panel.collapsed{width:0;overflow:hidden}
+#graph-panel{position:absolute;inset:0;background:#1a1a2e;display:none;z-index:10}
+#graph-panel.visible{display:block}
+.pt{color:#e94560;font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;padding:.3rem 0;border-bottom:1px solid #222;margin-bottom:.4rem}
+table{width:100%;border-collapse:collapse}
+th{background:#0f3460;padding:.3rem .4rem;text-align:left;font-size:.72rem;position:sticky;top:0}
+td{padding:.22rem .4rem;border-bottom:1px solid #111;cursor:pointer}
+tr:hover td{background:#0f3460}
+tr.verified td{color:#4ade80}
+.sb{font-size:.62rem;padding:.1rem .25rem;border-radius:2px}
+.sP{background:#1a472a;color:#4ade80}
+.sA{background:#312107;color:#f59e0b}
+.sI{background:#1e3a5f;color:#60a5fa}
+.sE{background:#3b1f2b;color:#f472b6}
+.ki{padding:.22rem;cursor:pointer;border-bottom:1px solid #111;font-size:.78rem}
+.ki:hover{background:#0f3460}
+.ks{color:#e94560;font-size:.65rem;margin-top:.35rem;text-transform:uppercase}
+#add-form{display:none;flex-direction:column;gap:.25rem;padding:.4rem;background:#0d0d1a;border-bottom:1px solid #222}
+#add-form input,#add-form select{background:#1a1a2e;color:#eaeaea;border:1px solid #333;padding:.22rem;font-family:monospace;font-size:12px}
+#add-form input:focus{border-color:#e94560;outline:none}
+#status{padding:.2rem .5rem;background:#0d0d1a;border-top:1px solid #222;font-size:.72rem;color:#555}
+#paper-content{padding:.5rem;font-size:.78rem}
+</style></head><body>
+
+<header>
+  <h1>⚡ ELPULSAR</h1>
+  <button class="btn active" onclick="togglePanel('key')">🚪 KEY</button>
+  <button class="btn active" id="bt" onclick="showTable()">📅 TABLE</button>
+  <button class="btn" id="bg" onclick="showGraph()">💧 RED</button>
+  <button class="btn active" onclick="togglePanel('paper')">📄 PAPER</button>
+  <button class="btn" onclick="toggleAdd()">+ REC</button>
+</header>
+
+<div id="greens">
+  <span class="green" id="g1">① RECIBIR</span>
+  <span class="green" id="g2">② ESCANEAR</span>
+  <span class="green" id="g3">③ CALCULAR</span>
+  <span class="green" id="g4">④ TARDAR</span>
+  <span class="green" id="g5">⑤ GOLPEAR</span>
+  <div class="pulse-wrap">
+    <span class="pf1">◯ MU</span>
+    <span class="pf2">⊗ WU</span>
+  </div>
+</div>
+
+<div id="add-form">
+  <input id="ft" placeholder="título">
+  <select id="fy"><option>DATA</option><option>LACHO</option>
+    <option>REF</option><option>CODE</option><option>LINK</option></select>
+  <select id="fs"><option>PROPIO</option><option>AJENO</option>
+    <option>INTERNO</option><option>EXTERNO</option></select>
+  <select id="fc"><option>#CORE</option><option>#MERCADO</option>
+    <option>#NOTARIA</option><option>#CUSTODIA</option>
+    <option>#CICLO</option><option>#FABRIC</option></select>
+  <input id="fn" placeholder="contenido (opcional)">
+  <button class="btn" onclick="addRes()">CREAR</button>
+</div>
+
+<main>
+  <div id="key-panel">
+    <div class="pt">KEY</div>
+    <div id="key-content"></div>
+  </div>
+  <div id="table-panel">
+    <div class="pt">TABLE</div>
+    <table><thead><tr>
+      <th>V</th><th>ID</th><th>Título</th>
+      <th>Tipo</th><th>Scope</th><th>Cluster</th><th>Contenido</th>
+    </tr></thead><tbody id="tb"></tbody></table>
+  </div>
+  <div id="paper-panel">
+    <div class="pt" style="padding:.5rem">PAPER</div>
+    <div id="paper-content"></div>
+  </div>
+  <div id="graph-panel">
+    <button class="btn" style="position:absolute;top:.5rem;right:.5rem;z-index:11"
+      onclick="showTable()">← TABLE</button>
+    <svg id="gs" width="100%" height="100%"></svg>
+  </div>
+</main>
+<div id="status">ELPULSAR · iniciando…</div>
+
+<script>
+const A="http://localhost:8741/api"
+let R=[],G=null
+
+async function load(){
+  sg(1); R=await fetch(A+"/resources").then(r=>r.json()).catch(()=>[])
+  sg(2); renderTable(); renderKey()
+  sg(3); renderPaper()
+  sg(5); setStatus(`${R.length} recursos · ${R.filter(r=>r.verified).length} verificados`)
+  setTimeout(clg,700)
+}
+
+function renderTable(){
+  document.getElementById("tb").innerHTML=R.map(r=>`
+    <tr class="${r.verified?'verified':''}" onclick="selRow('${r.id}')">
+      <td>${r.verified?"✅":"○"}</td>
+      <td style="color:#444">${r.id}</td>
+      <td>${r.title}</td><td>${r.type}</td>
+      <td><span class="sb s${r.scope[0]}">${r.scope}</span></td>
+      <td>${r.cluster||""}</td>
+      <td style="color:#444">${(r.content||"").slice(0,35)}</td>
+    </tr>`).join("")
+}
+
+function renderKey(){
+  const by={}; R.forEach(r=>{if(!by[r.scope])by[r.scope]=[];by[r.scope].push(r)})
+  document.getElementById("key-content").innerHTML=
+    Object.entries(by).map(([s,items])=>
+      `<div class="ks">${s}</div>`+
+      items.map(r=>`<div class="ki" onclick="selRow('${r.id}')">`+
+        `${r.verified?"✅":"○"} ${r.title.slice(0,20)}</div>`).join("")
+    ).join("")
+}
+
+function renderPaper(){
+  document.getElementById("paper-content").innerHTML=R.map(r=>`
+    <div style="padding:.25rem 0;border-bottom:1px solid #1a1a2e;
+      ${r.verified?'color:#4ade80':''}">
+      <div style="font-weight:bold">${r.title}</div>
+      <div style="color:#555;font-size:.72rem">
+        ${r.type} · ${r.scope} · ${r.cluster||""}</div>
+      ${r.content?`<div style="margin-top:.15rem">${r.content.slice(0,60)}</div>`:""}
+    </div>`).join("")
+}
+
+async function selRow(id){
+  const r=R.find(x=>x.id===id); if(!r) return
+  if(!r.verified){
+    sg(4)
+    await fetch(A+"/verify",{method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({id})})
+    await load()
+  }
+  setStatus(`KEY: ${r.title} · ${r.scope} · ${r.type}`)
+}
+
+async function addRes(){
+  const body={title:document.getElementById("ft").value,
+    type:document.getElementById("fy").value,
+    scope:document.getElementById("fs").value,
+    cluster:document.getElementById("fc").value,
+    content:document.getElementById("fn").value}
+  if(!body.title) return
+  sg(4)
+  await fetch(A+"/resources",{method:"POST",
+    headers:{"Content-Type":"application/json"},
+    body:JSON.stringify(body)})
+  document.getElementById("add-form").style.display="none"
+  document.getElementById("ft").value=""
+  await load()
+}
+
+async function showGraph(){
+  document.getElementById("graph-panel").classList.add("visible")
+  document.getElementById("bg").classList.add("active")
+  document.getElementById("bt").classList.remove("active")
+  if(!G) G=await fetch(A+"/graph").then(r=>r.json())
+    .catch(()=>({nodes:[],links:[]}))
+  renderGraph()
+}
+
+function showTable(){
+  document.getElementById("graph-panel").classList.remove("visible")
+  document.getElementById("bt").classList.add("active")
+  document.getElementById("bg").classList.remove("active")
+}
+
+function renderGraph(){
+  const svg=d3.select("#gs"); svg.selectAll("*").remove()
+  const w=svg.node().clientWidth, h=svg.node().clientHeight
+  const g=svg.append("g")
+  svg.call(d3.zoom().on("zoom",e=>g.attr("transform",e.transform)))
+  const col={"PROPIO":"#4ade80","AJENO":"#f59e0b",
+              "INTERNO":"#60a5fa","EXTERNO":"#f472b6"}
+  const sim=d3.forceSimulation(G.nodes)
+    .force("link",d3.forceLink(G.links).id(d=>d.id).distance(80))
+    .force("charge",d3.forceManyBody().strength(-120))
+    .force("center",d3.forceCenter(w/2,h/2))
+  const link=g.append("g").selectAll("line")
+    .data(G.links).join("line")
+    .attr("stroke","#333").attr("stroke-width",1.5)
+  const node=g.append("g").selectAll("circle")
+    .data(G.nodes).join("circle").attr("r",8)
+    .attr("fill",d=>col[d.scope]||"#666")
+    .attr("stroke",d=>d.verified?"#fff":"none")
+    .call(d3.drag()
+      .on("start",(e,d)=>{if(!e.active)sim.alphaTarget(.3).restart();d.fx=d.x;d.fy=d.y})
+      .on("drag",(e,d)=>{d.fx=e.x;d.fy=e.y})
+      .on("end",(e,d)=>{if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null}))
+    .on("click",(e,d)=>setStatus(`${d.title} · ${d.scope}`))
+  const lbl=g.append("g").selectAll("text")
+    .data(G.nodes).join("text")
+    .attr("dx",10).attr("dy",4).attr("fill","#aaa")
+    .attr("font-size","10px").text(d=>d.title.slice(0,14))
+  sim.on("tick",()=>{
+    link.attr("x1",d=>d.source.x).attr("y1",d=>d.source.y)
+        .attr("x2",d=>d.target.x).attr("y2",d=>d.target.y)
+    node.attr("cx",d=>d.x).attr("cy",d=>d.y)
+    lbl.attr("x",d=>d.x).attr("y",d=>d.y)
+  })
+}
+
+function togglePanel(p){
+  document.getElementById(p+"-panel").classList.toggle("collapsed")}
+function toggleAdd(){
+  const f=document.getElementById("add-form")
+  f.style.display=f.style.display==="none"||!f.style.display?"flex":"none"}
+function sg(n){clg();document.getElementById("g"+n)?.classList.add("active")}
+function clg(){for(let i=1;i<=5;i++)document.getElementById("g"+i)?.classList.remove("active")}
+function setStatus(m){document.getElementById("status").textContent="ELPULSAR · "+m}
+
+load()
+setInterval(load,10000)
+</script>
+</body></html>

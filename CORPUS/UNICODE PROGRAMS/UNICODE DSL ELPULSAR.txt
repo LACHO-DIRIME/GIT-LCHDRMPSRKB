@@ -1,0 +1,152 @@
+//[MANAGEMENT].lacho · UNICODE DSL ELPULSAR
+//UNICODE_DSL_ELPULSAR.txt · V1 · 2026-03-10
+//DSL = Domain Specific Language · interfaz visual soberana
+//opera SOBRE DIRIME_v2 · elpulsar.py · port 8741
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//jerarquía: elpulsar.py→sprint.py→resources.py→neural_net.py→gui
+//⚡ ELPULSAR · gota+∇ · bombilla mate · H57 flujo · SPIN soberano
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN DSL ELPULSAR ═══════════════════════════════════
+// DSL ELPULSAR = lenguaje soberano de interfaz · visualización activa
+// No es frontend genérico · es la capa visual de LACHO/KALIL/DIRIME
+// Cada panel, métrica, skin, animación tiene token UNICODE soberano
+// ∇ gradiente · ⟳ spin · ⚡ pulso · ◯ MU · ⊗ WU · · KU
+
+// ══ KERNEL ELPULSAR ═══════════════════════════════════════════
+UNICODE: ELP                  //kernel ELPULSAR · elpulsar.py · port 8741
+UNICODE: ELP_VERSION          //v1.1 · DIRIME_v2/elpulsar/ · activo
+UNICODE: ELP_PORT             //8741 · http://localhost:8741 · GUI soberana
+UNICODE: ELP_MU               //servidor idle · 空 · espera requests
+UNICODE: ELP_KU               //request entrante · .blue · procesando
+UNICODE: ELP_WU               //response renderizado · .green · panel activo
+UNICODE: ELP_CRASH            //GATE UF[H06] · servidor caído · {brake}
+
+// ══ ARCHIVOS ELPULSAR ══════════════════════════════════════════
+UNICODE: ELP_FILE_MAIN        //elpulsar.py · servidor Flask/FastAPI · rutas API
+UNICODE: ELP_FILE_SPRINT      //sprint.py · dashboard 16/8/4 · clusters
+UNICODE: ELP_FILE_RESOURCES   //resources.py · sync_from_ledger() · line 138
+UNICODE: ELP_FILE_NEURAL      //neural_net.py · grafo D3 · nodos relaciones
+UNICODE: ELP_FILE_INDEX       //ui/index.html · GUI soberana · carga panels
+UNICODE: ELP_FILE_KEY         //tools/key.py · gestión llaves · CRYPTO
+UNICODE: ELP_FILE_PAPER       //tools/paper.py · export PDF · (seal)
+UNICODE: ELP_FILE_TABLE       //tools/table.py · tablas soberanas · .registry
+
+// ══ ENDPOINTS API ═════════════════════════════════════════════
+UNICODE: API_SPRINT           //GET /api/sprint · dashboard 16/8/4 · sprint.py
+                              //retorna: progreso LACHO·DIRIME·ELPULSAR clusters
+UNICODE: API_SYNC             //GET /api/sync · sync_from_ledger() · cristales
+                              //lee sovereign.db → TABLE · scheduler → DATA
+UNICODE: API_RESOURCES        //GET /api/resources · lista completa filtrable
+                              //parámetros: cluster= · scope= · status=
+UNICODE: API_GRAPH            //GET /api/graph · neural_net.py · JSON D3
+                              //nodos = resources · edges = relaciones
+UNICODE: API_VALIDATE         //POST /api/validate · grammar.validate() · KU→WU
+                              //body: {"sentence": "TRUST FOUNDATION =><= .."}
+UNICODE: API_EXPORT           //GET /api/export · EXPORT[LACHO/PDF/HTML]
+                              //tools/export_crystals_lacho.py · WU
+UNICODE: API_BALLPAPER        //GET /api/ballpaper · HTML render soberano
+                              //ballpaper_render() · SKIN_PAPER · [term]
+
+// ══ DASHBOARD 16/8/4 ══════════════════════════════════════════
+// Sprint schema: 16 LACHO · 8 DIRIME · 4 ELPULSAR
+UNICODE: SPRINT_16            //16 prompts LACHO · 9 bibliotecas · TRUST→METHOD
+UNICODE: SPRINT_8             //8 prompts DIRIME · grammar·ledger·rag·chat·...
+UNICODE: SPRINT_4             //4 prompts ELPULSAR · resources·sprint·endpoints·sync
+UNICODE: SPRINT_CLUSTER       //agrupación lógica · sprint.py calcula progreso
+UNICODE: SPRINT_VERIFIED      //KU→WU · tarea completada · ✦ green
+UNICODE: SPRINT_PENDING       //KU activo · en curso · · punto
+UNICODE: SPRINT_BLOCKED       //MU · bloqueado · ◯ · GATE UF[H05]
+
+// ══ PANELS SOBERANOS ══════════════════════════════════════════
+UNICODE: PANEL_LEDGER         //TX count · cristales · Scalar S · barra ∇
+UNICODE: PANEL_RAG            //CORPUS·LIBRO·THEATER·UNICODE-ZH · capas activas
+UNICODE: PANEL_KALIL          //6 nodos · status KU/WU/MU · routing CEO
+UNICODE: PANEL_SPRINT         //dashboard 16/8/4 · progreso visual · ∇
+UNICODE: PANEL_CRYSTALS       //40 cristales · export disponible · ⊗ WU
+UNICODE: PANEL_TESTS          //suite tests · 25/25 · KU→WU · verde
+UNICODE: PANEL_CHINA          //CJK tokens · modo dual · 中文 activo
+UNICODE: PANEL_TIMELINE       //historial TX · últimos commits · FABRIC_LOG
+
+// ══ MÉTRICAS SOBERANAS ════════════════════════════════════════
+UNICODE: METRIC_SCALAR        //Scalar S · 0.000→1.000 · barra ∇ animada
+UNICODE: METRIC_TX            //TX count · ledger total · incrementa WU
+UNICODE: METRIC_CRYSTALS      //cristales · H52 inmutabilizados · export
+UNICODE: METRIC_CORPUS        //N docs · CORPUS+LIBRO+THEATER+ZH · RAG total
+UNICODE: METRIC_TESTS         //N/N passing · pytest · KU→WU suite
+UNICODE: METRIC_SCORE_AVG     //LACHO_SCORE promedio · sesión · [Ball]
+UNICODE: METRIC_VERSION       //VERSION=0.2.1 · .sovereign · header panel
+
+// ══ SKINS ═════════════════════════════════════════════════════
+UNICODE: SKIN_DARK            //bg #1e1e2e · texto claro · ELPULSAR original
+UNICODE: SKIN_PAPER           //bg #faf8f4 · crema · BALLPAPER style · [NdO]
+UNICODE: SKIN_CHINA           //rojo #9a1a1a · dorado · jade · interior mode
+UNICODE: SKIN_CRYPTO          //verde/negro · terminal mode · CAT(OS)
+UNICODE: SKIN_GRADIENT        //∇ gradiente animado · SPIN visual · ⚡
+UNICODE: SKIN_AUTO            //detecta canal · exterior→DARK · interior→CHINA
+
+// ══ GREENS PIPELINE ═══════════════════════════════════════════
+// 5 pasos del pipeline ELPULSAR · gradiente ∇ visual
+UNICODE: GREEN_1_RECIBIR      //① input soberano · KU crudo · 聽 primero
+UNICODE: GREEN_2_ESCANEAR     //② grammar.validate() · ruta óptima · ∇
+UNICODE: GREEN_3_CALCULAR     //③ Scalar S · lacho_score · medición · ∇
+UNICODE: GREEN_4_TARDAR       //④ UF[H05] · buffer · timing · H29 agua
+UNICODE: GREEN_5_GOLPEAR      //⑤ WU cristalizado · output · ⊗ · menor fricción
+UNICODE: GREEN_PIPELINE       //① → ② → ③ → ④ → ⑤ · completo · H63
+
+// ══ ANIMACIONES ═══════════════════════════════════════════════
+UNICODE: ANIM_PULSE           //⚡ header · latido · 2.4s · ELP_KU activo
+UNICODE: ANIM_FLIP            //◯ MU ↔ ⊗ WU · toggle soberano · flip
+UNICODE: ANIM_SCORE           //barra Scalar S · width animado · ∇ visual
+UNICODE: ANIM_GRAPH           //D3 force · nodos flotan · SPIN soberano
+UNICODE: ANIM_TOAST           //notificación · opacity fade · 1.8s · WU
+UNICODE: ANIM_GLOW            //green activo · text-shadow · señal ⊗
+
+// ══ BALLPAPER RENDER ══════════════════════════════════════════
+// ballpaper_render() · chat.py · ASCII soberano
+UNICODE: BPAPER_RENDER        //función ballpaper_render(result) → str
+UNICODE: BPAPER_BAR           //barra ASCII · █░ · Scalar S visual
+UNICODE: BPAPER_FRAME         //┌─ BALLPAPER ─┐ · marco soberano
+UNICODE: BPAPER_VALID         //✅ VALID · WU confirmado · [AsG]
+UNICODE: BPAPER_INVALID       //❌ INVALID · KU no resuelto · [NdC]
+UNICODE: BPAPER_TAX           //TAXONOMY: N#·clase · nivel en jerarquía
+UNICODE: BPAPER_FLAG          //--ballpaper · flag argparse · activación
+
+// ══ SYNC × ELPULSAR ═══════════════════════════════════════════
+UNICODE: SYNC_LEDGER          //sync_from_ledger() · cristales → TABLE
+UNICODE: SYNC_CORPUS          //tools/index_new_files.py · RAG refresh
+UNICODE: SYNC_GITHUB          //GIT_BOT_PUSH → ELP panel actualiza hash
+UNICODE: SYNC_SCHEDULER       //scheduler tether → ELP timeline actualiza
+UNICODE: SYNC_KALIL           //nodo KALIL WU → PANEL_KALIL verde
+
+// ══ LIST/RUN ELPULSAR ══════════════════════════════════════════
+UNICODE: LIST(ELP:ENDPOINTS)  //sprint·sync·resources·graph·validate·export
+UNICODE: LIST(ELP:PANELS)     //ledger·rag·kalil·sprint·crystals·tests·china
+UNICODE: LIST(ELP:SKINS)      //dark·paper·china·crypto·gradient
+UNICODE: RUN(ELP:START)
+  //cd DIRIME_v2/elpulsar && python3 elpulsar.py
+  //→ http://localhost:8741
+UNICODE: RUN(ELP:SYNC)
+  //curl http://localhost:8741/api/sync
+  //→ retorna N cristales · N tareas scheduler
+UNICODE: RUN(ELP:SPRINT)
+  //curl http://localhost:8741/api/sprint
+  //→ retorna progreso 16/8/4 por cluster
+UNICODE: RUN(ELP:VALIDATE)
+  //POST /api/validate body={sentence}
+  //→ grammar.validate() · BPAPER_RENDER activo
+UNICODE: RUN(ELP:BALLPAPER)
+  //GET /api/ballpaper → HTML SKIN_PAPER
+  //python3 main.py --validate "{sent}" --ballpaper
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+ACTIVITY UF[H57] =><= .. penetra .. gradient_elpulsar_flujo_activo --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. panel_wu_elpulsar_sellado --[Nudo de Ocho] [term]
+METHOD <stat_onto> =><= .. calcula .. scalar_s_metric_dashboard --[Ballestrinque] [term]
+WORK {flybot} =><= .. ejecuta .. sprint_pipeline_soberano --[As de Guía] [term]
+SAMU @ =><= .. audita .. coherencia_elpulsar_global --[Ballestrinque] [term]
+SOCIAL {relay} =><= .. conecta .. sync_ledger_panel_activo --[As de Guía] [term]
+TRUST FOUNDATION =><= .. declara .. api_endpoints_soberanos --[Nudo de Ocho] [term]
+
+//DIR(=) UNICODE_DSL_ELPULSAR · V1 · ⚡∇⟳ · 16/8/4 · PANELS
+//DIR(=) API_ENDPOINTS · SKINS · GREENS_PIPELINE · BALLPAPER · MU→WU

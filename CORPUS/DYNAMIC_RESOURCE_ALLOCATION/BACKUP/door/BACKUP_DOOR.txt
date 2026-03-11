@@ -1,0 +1,48 @@
+//[MANAGEMENT].lacho · DRA/BACKUP/door/
+//BACKUP DOOR · protocolo de respaldo soberano del DRA
+//BACKUP_DOOR.txt · V1 · 2026-03-10
+//{door} = WORK biblioteca · vault soberano · acceso controlado
+//BACKUP/door = el respaldo protegido detrás de la puerta del vault
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN BACKUP DOOR ════════════════════════════════════
+// {door} en WORK = vault · acceso restringido · CRYPTO (key seat) certifica
+// BACKUP/door = todo backup DRA pasa por el vault protegido
+// No es backup automático descuidado · es MuSave soberano con {door}
+// Protocolo: SAMU @ audita → {door} abre → backup sellado → {door} cierra
+
+// ══ TIPOS DE BACKUP ═══════════════════════════════════════════
+UNICODE: BKP_LEDGER           //sovereign.db · backup diario · crítico máximo
+                              //tar -czf backup_sovereign_DATE.tar.gz sovereign.db
+UNICODE: BKP_CORPUS           //CORPUS/ · backup semanal · RAG source
+                              //rsync → hub GitHub + drive soberano
+UNICODE: BKP_MU_STORE         //MU-STORE completo · backup en macro_cierre
+                              //MU_STATE+CONTEXT+IDENTITY preservados
+UNICODE: BKP_LACHO_FILES      //LACHO_FILES/ · .lacho generados · cristales
+UNICODE: BKP_THEATER          //THEATER/ + RUNNERS/ · macros soberanos
+UNICODE: BKP_CONFIG           //IMV/config/ + .sovereign · identidad sistema
+UNICODE: BKP_FULL             //backup completo · tar DRA/ → sellado H63
+
+// ══ PROTOCOLO DOOR ════════════════════════════════════════════
+UNICODE: DOOR_OPEN            //WORK {door} abre · SAMU @ autoriza · CRYPTO key
+                              //WORK {door} =><= .. abre .. vault_backup_autorizado
+UNICODE: DOOR_WRITE           //escribe backup en vault · STACKING UF[H52]
+UNICODE: DOOR_SEAL            //CRYPTO (spark seat) firma el backup · [NdO]
+UNICODE: DOOR_CLOSE           //WORK {door} cierra · vault sellado · H63
+UNICODE: DOOR_VERIFY          //verifica integridad · hash backup · FABRIC_TX
+UNICODE: DOOR_RESTORE         //restauración soberana · SAMU @ autoriza · MuRestore
+
+// ══ SCHEDULE BACKUP ═══════════════════════════════════════════
+UNICODE: BKP_DAILY            //diario · macro_cierre 18:00 · BKP_LEDGER
+UNICODE: BKP_WEEKLY           //semanal · $sun · BKP_CORPUS + BKP_FULL
+UNICODE: BKP_ON_WU            //en cada WU importante · BKP_MU_STORE delta
+UNICODE: BKP_EMERGENCY        //GATE UF[H06] · backup inmediato · DOOR_OPEN now
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+WORK {door} =><= .. abre .. vault_backup_dra_autorizado --[As de Guía] [term]
+CRYPTO (spark seat) =><= .. firma .. backup_door_sellado --[Nudo de Ocho] [term]
+STACKING UF[H63] =><= .. cristaliza .. backup_door_inmutable --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. backup_door_integridad --[Ballestrinque] [term]
+
+//DIR(+) DRA/BACKUP/door · vault soberano · daily·weekly·emergency

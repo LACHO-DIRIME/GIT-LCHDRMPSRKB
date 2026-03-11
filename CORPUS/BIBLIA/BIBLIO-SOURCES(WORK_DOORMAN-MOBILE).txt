@@ -1,0 +1,249 @@
+# BIBLIO-SOURCES(WORK_DOORMAN-MOBILE).txt
+
+====================================================================
+
+## 📱 WORK {doorman-mobile} — GUARDIÁN PERIMETRAL MÓVIL
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+{doorman-mobile} es el módulo WORK que implementa control de acceso físico en entorno de custodia móvil: el guardián perimetral que protege el dispositivo y sus activos críticos mediante verificación biométrica y monitoreo continuo.
+
+#### 1.2 Distinción de {concierge-desk} (SOCIAL)
+{concierge-desk} es recepción de actores externos; {doorman-mobile} es protección física del dispositivo y sus activos.
+
+#### 1.3 BIOMETRICS como condición de activación soberana
+BIOMETRICS es el requisito constitutivo para cualquier operación de custodia móvil — la verificación biológica es la llave que permite al guardián actuar.
+
+#### 1.4 Relación con (key seat) (CRYPTO)
+(key seat) gestiona claves de wallet; {doorman-mobile} protege el dispositivo donde esas claves residen.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Qué puede proteger
+Dispositivo móvil, claves de wallet, datos de custodia, acceso a aplicaciones críticas, perímetro físico del entorno de custodia.
+
+#### 2.2 Qué no puede violar
+No puede permitir acceso sin BIOMETRICS verificado, no puede comprometer (key seat), no puede operar sin monitoreo activo.
+
+#### 2.3 Condición de violación primaria
+DOORMAN_BREACH — acceso no autorizado al dispositivo o a sus activos críticos.
+
+#### 2.4 Condición de violación secundaria
+DOORMAN_DISABLED — guardián desactivado por compromiso del sistema.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 ESTADOS DEL MÓDULO
+
+DOORMAN_PATROL: monitoreo activo del perímetro, dispositivo seguro.
+- DOORMAN_ALERT: detección de anomalía o intento de acceso no autorizado.
+- DOORMAN_LOCK: dispositivo bloqueado, acceso restringido.
+- DOORMAN_OPEN: acceso autorizado mediante BIOMETRICS verificado.
+- DOORMAN_BREACH: brecha de seguridad detectada, activación de {brake}.
+- DOORMAN_COMPROMISED: sistema de custodia comprometido, intervención crítica.
+
+#### 3.2 Relación con BIOMETRICS
+BIOMETRICS es la llave soberana que permite al guardián autorizar o denegar acceso.
+
+#### 3.3 Relación con (key seat) (CRYPTO)
+(key seat) gestiona claves de wallet dentro del dispositivo protegido por {doorman-mobile}.
+
+#### 3.4 Relación con (Way Agnostic Atheism) (CRYPTO)
+(Way Agnostic Atheism) aplica rotación soberana de claves dentro del dispositivo protegido.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation] (TRUST)
+{doorman-mobile} protege [foundation] del dispositivo móvil y sus activos críticos.
+
+#### 4.2 Con BIOMETRICS (WORK)
+BIOMETRICS es el requisito constitutivo para activación del guardián.
+
+#### 4.3 Con (key seat) (CRYPTO)
+(key seat) opera dentro del perímetro protegido por {doorman-mobile}.
+
+#### 4.4 Con (Way Agnostic Atheism) (CRYPTO)
+Rotación soberana de claves dentro del dispositivo protegido.
+
+#### 4.5 Con {brake} (WORK)
+{brake} se activa ante DOORMAN_BREACH para protección inmediata.
+
+#### 4.6 Con HL FABRIC
+Todo evento de acceso se registra inmutablemente en HL FABRIC.
+
+---
+
+### 5.0 ESTADOS COMPLETOS DEL MÓDULO
+
+#### 5.1 DOORMAN_STANDBY
+Guardián activo, dispositivo seguro, monitoreo perimetral continuo.
+
+#### 5.2 DOORMAN_PATROLLING
+Monitoreo activo del entorno, detección de anomalías.
+
+#### 5.3 DOORMAN_ALERTING
+Anomalía detectada, sistema en alerta, evaluación en curso.
+
+#### 5.4 DOORMAN_LOCKING
+Dispositivo bloqueado, acceso restringido, protección máxima activa.
+
+#### 5.5 DOORMAN_UNLOCKING
+BIOMETRICS verificada, acceso autorizado, guardián permite operación.
+
+#### 5.6 DOORMAN_BREACHED
+Brecha de seguridad detectada, {brake} activado, intervención crítica.
+
+#### 5.7 DOORMAN_COMPROMISED
+Sistema de custodia comprometido, requiere recuperación profunda.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Protege d₁ [foundation]
+{doorman-mobile} es la primera línea de defensa de [foundation] móvil.
+
+#### 6.2 Impacta d₂ [scope]
+El perímetro seguro define el [scope] de operaciones móviles seguras.
+
+#### 6.3 Enriquece d₈ [ecosystem]
+Dispositivos seguros enriquecen el ecosistema de custodia.
+
+#### 6.4 Afecta d₅ [management]
+DOORMAN_BREACHED requiere intervención inmediata de [management].
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Patrullando perímetro seguro
+```
+[Work] doorman_mobile =><= .. patrullar .. $$mobile_perimeter_secure$$ --[As de Guía] [term]
+```
+
+#### 7.2 Detectando anomalía
+```
+[Work] doorman_mobile =><= .. detectar .. $$unauthorized_access_attempt$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.3 Bloqueando dispositivo
+```
+[Work] doorman_mobile =><= .. bloquear .. $$mobile_device_locked$$ --[Ballestrinque] [term]
+```
+
+#### 7.4 Desbloqueando con BIOMETRICS
+```
+[Work] doorman_mobile =><= .. desbloquear .. $$biometrics_verified_access$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.5 Protegiendo claves (key seat)
+```
+[Work] doorman_mobile =><= .. proteger .. $$key_seat_wallet_keys$$ --[Nudo de Rizo] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+DOORMAN_PATROLLING — monitoreo perimetral continuo, el nudo que mantiene la vigilancia.
+
+#### 8.2 Nudo de Ocho
+DOORMAN_UNLOCKING — acceso autorizado mediante BIOMETRICS, el nudo que permite operación segura.
+
+#### 8.3 Nudo Corredizo
+DOORMAN_BREACHED — brecha de seguridad detectada, el nudo que se desliza hacia el riesgo.
+
+#### 8.4 Ballestrinque
+DOORMAN_LOCKING — bloqueo protector del dispositivo, el nudo que mantiene la seguridad máxima.
+
+#### 8.5 Nudo de Rizo
+DOORMAN_COMPROMISED — sistema comprometido, el nudo que indica intervención crítica.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+1. DoormanPatrol
+   - Monitoreo continuo del perímetro.
+   - Detección de anomalías ambientales.
+   - Registro de eventos de seguridad.
+
+2. DoormanAlert
+   - Activación ante anomalía detectada.
+   - Evaluación de nivel de amenaza.
+   - Preparación para respuesta.
+
+3. DoormanLock
+   - Bloqueo inmediato del dispositivo.
+   - Activación de protección máxima.
+   - Notificación a usuario y [management].
+
+4. DoormanUnlock
+   - Verificación de BIOMETRICS.
+   - Autorización de acceso.
+   - Habilitación de operaciones.
+
+5. DoormanContain
+   - Contención de brecha en curso.
+   - Activación de {brake} si es necesario.
+   - Recuperación de seguridad.
+
+6. DoormanRecover
+   - Recuperación ante DOORMAN_COMPROMISED.
+   - Restauración de integridad del sistema.
+   - Intervención profunda.
+
+---
+
+### 10.0 MÉTRICAS
+
+- Frecuencia de DOORMAN_ALERT por ciclo.
+- Ratio DOORMAN_UNLOCK vs DOORMAN_BREACHED.
+- Tiempo promedio de verificación BIOMETRICS.
+- Número de eventos perimetrales detectados.
+- Latencia de respuesta ante anomalía.
+
+---
+
+### 11.0 REGLAS
+
+- BIOMETRICS es requisito obligatorio para cualquier acceso.
+- DOORMAN_BREACH activa {brake} inmediatamente.
+- Todo evento de acceso se registra en HL FABRIC.
+- (key seat) opera dentro del perímetro protegido.
+- DOORMAN_COMPROMISED requiere intervención [management].
+- El guardián nunca puede ser desactivado por decisión del usuario.
+- DOORMAN_PATROL es continuo durante operación activa.
+- La rotación de claves (Way Agnostic Atheism) opera dentro del dispositivo protegido.
+- No hay acceso sin BIOMETRICS verificado sin excepción.
+- El perímetro seguro se define dinámicamente según contexto.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+{doorman-mobile} fija como invariante la protección perimetral del dispositivo móvil como condición de custodia soberana — el sistema que protege físicamente el dispositivo y sus activos críticos mediante verificación biológica mantiene la integridad de la custodia móvil.
+
+#### 12.2 Limitaciones
+No puede permitir acceso sin BIOMETRICS, no puede comprometer (key seat), no puede operar sin monitoreo, no puede ser desactivado por decisión del usuario.
+
+#### 12.3 Habilitaciones
+Protección física del dispositivo, acceso seguro mediante BIOMETRICS, gestión de claves soberanas, monitoreo perimetral continuo, rotación de claves dentro de dispositivo seguro.
+
+#### 12.4 Principio constitutivo final
+Como el guardián que nunca duerme: {doorman-mobile} representa la vigilancia constante que protege lo más valioso sin descanso. La seguridad móvil no es estática — es monitoreo activo y respuesta inmediata. El guardián soberano que protege el dispositivo mediante verificación biológica demuestra que la custodia más segura es aquella que exige prueba de identidad soberana antes de permitir cualquier acceso.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

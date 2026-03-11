@@ -1,0 +1,82 @@
+# BIBLIO-SOURCES(KALIL).txt
+# Kernel AI Logic & Information Learning
+# Dominio: económico soberano — extensión de LACHO
+
+====================================================================
+## KALIL — DEFINICIÓN
+====================================================================
+
+KALIL es el núcleo de inteligencia económica del ecosistema DIRIME.
+Extiende la gramática LACHO hacia dominios financieros soberanos.
+
+Posición arquitectural:
+  LACHO → gramática base
+  DIRIME → validador e intérprete
+  KALIL → kernel económico sobre LACHO+DIRIME
+  ELPULSAR → interfaz visual de recursos KALIL
+
+====================================================================
+## MÓDULOS KALIL (declarados — implementación futura)
+====================================================================
+
+K.A.L.I.L.  → Kernel AI Logic & Information Learning (núcleo)
+B.A.R.R.I.O.S → Banking Access & Remote Resources Integrated OS
+N.O.R.A.    → Networking Oracle Rating Analytics
+T.A.N.D.I.L → Transactional Asset Network & Digital Investment Logic
+B.O.L.I.V.A.R → Blockchain Operations & Loan Integrity Validation
+C.A.R.I.L.O → Capital Allocation & Risk Intelligence Loan Optimizer
+C.H.A.L.T.E.N → Cloud Hosted Advanced Lending Technology & Exchange
+
+====================================================================
+## DOMINIOS ECONÓMICOS LACHO ↔ KALIL
+====================================================================
+
+NOTARÍA     → TRUST FOUNDATION =><= .. autoriza .. contrato_soberano
+MEMECOINS   → SOCIAL {launch-bot} =><= .. lanza .. token_soberano
+CUSTODIA    → CRYPTO (shield seat) =><= .. protege .. activo_kalil
+LOANS       → METHOD <operator_flow> =><= .. calcula .. tasa_soberana
+TRUEQUE     → STACKING UF[H48] =><= .. consolida .. intercambio_par
+CROWDFUNDING → SOCIAL {relay} =><= .. conecta .. red_financiadora
+TOKENS      → CRYPTO (spark seat) =><= .. firma .. token_emitido
+CONTRATOS   → TRUST [term] =><= .. declara .. contrato_kalil
+
+====================================================================
+## ESTADO
+====================================================================
+
+KALIL_STATUS=stub_declarado
+KALIL_TRIGGER=DIRIME_v3_activo
+IMPLEMENTACION=post_capa_c
+
+====================================================================
+## KALIL × CHINA — MARCO OPERATIVO
+====================================================================
+
+MODELO_CHINO_CLAVE {
+  guanxi    :: relaciones como infraestructura → TRUST FOUNDATION
+  mianzi    :: reputación como activo → SCALAR S · LACHO_SCORE
+  e-CNY     :: Digital Yuan → token base KALIL China
+  BSN       :: Blockchain Service Network → compatible HL FABRIC
+  WeChat    :: ecosistema todo-en-uno → modelo elpulsar.app
+  Firewall  :: operar nativo dentro · no bypass
+}
+
+RESTRICCIONES_COMO_PROTOCOLO {
+  -- crypto especulativa: NO · valor digital soberano: SÍ
+  -- exchanges extranjeros: NO · e-CNY + BSN: SÍ
+  -- bypass firewall: NO · integración nativa WeChat/Alipay: SÍ
+  -- ICO opaca: NO · token con características chinas auditables: SÍ
+}
+
+OPORTUNIDADES_REALES {
+  BARRIOS   :: comunidades chinas en exterior · Belt & Road · 140 países
+  BOLIVAR   :: compatible BSN · blockchain permissionada estatal
+  UNICODE   :: densidad semántica · LACHO piensa en chino nativo
+  ELPULSAR  :: modelo WeChat soberano · todo-en-uno verificable
+  KALIL     :: Digital Yuan como unidad base · trazable · soberano
+}
+
+TRUST FOUNDATION =><= .. verifica .. alineacion_politica_china --[Ballestrinque] [term]
+CRYPTO (key seat) =><= .. certifica .. operacion_e-CNY_soberana --[As de Guía] [term]
+SOCIAL {relay} =><= .. conecta .. ecosistema_wechat_alipay --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. registro_BSN_inmutable --[Nudo de Ocho] [term]

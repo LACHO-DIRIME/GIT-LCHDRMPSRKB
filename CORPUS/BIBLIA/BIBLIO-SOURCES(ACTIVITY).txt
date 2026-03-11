@@ -1,0 +1,353 @@
+# BIBLIO-SOURCES(ACTIVITY).txt
+
+====================================================================
+
+## 🔄 BIBLIOTECA ACTIVITY: CICLOS, AGENCIA Y RELACIÓN ONTOLÓGICA (UF[H01]…UF[H64])
+
+---
+
+### 1.0 DEFINICIÓN
+
+**ACTIVITY** es la biblioteca intermedia de LACHO: gobierna **ciclos de vida**, **transiciones**, **estados temporales**, y la **agencialidad** (cómo una intención se convierte en conducta sostenida sin violar [foundation], [scope] y [term]).
+
+ACTIVITY no es un estado efímero: es la capa que define **qué estados son válidos** y **cuándo se cierran**.
+
+---
+
+### 1.1 JURISDICCIÓN (NO MEZCLAR CAPAS)
+
+ACTIVITY opera como biblioteca relacional ontológica/agencial:
+
+- **TRUST** define [foundation]/[scope]/[term].
+- **SAMU @** audita y modula S scalar (dos fases: contar/escuchar).
+- **GATE** orquesta el tiempo (latencia/entrada).
+- **ACTIVITY** define ciclos y módulos UF[H##] (1/64) como gramática de transición.
+- **WORK** ejecuta lo físico.
+- **STACKING** cristaliza la memoria/forma.
+- **SOCIAL** es interfaz declarativa.
+- **CRYPTO** firma/identifica y protege.
+
+Declaración:
+```
+[TRUST] → SAMU @ → GATE → ACTIVITY(UF[H01..H64]) → WORK/STACKING
+```
+
+---
+
+### 1.2 CONDICIONES SOBERANAS (TRUST MICRO_01)
+
+ACTIVITY solo puede operar si la tríada soberana está vigente:
+
+- **[foundation]**: suelo técnico. Si está comprometido, se detiene todo.
+- **[scope]**: perímetro de realidad. Delimita recursos y permisos.
+- **[term]**: finitud obligatoria. Ningún ciclo ACTIVITY existe sin cierre.
+
+**Precedencia:**
+1. [foundation]
+2. [scope] ajustado a [foundation]
+3. [term] aplicado dentro de [scope]
+
+**Declaración mínima de todo ciclo ACTIVITY:**
+```
+CYCLE_START → Foundation-Check → Scope-Definition → Term-Declaration
+CYCLE_RUN   → SAMU @ monitor → Term-Activation → Term-Execution
+CYCLE_END   → Stacking-Crystal + Crypto-Attestation + SOCIAL {note} + TOOLCHAIN
+```
+
+---
+
+### 1.3 AUTORIDAD OPERATIVA (CRYPTO MICRO_02)
+
+ACTIVITY no es autoridad: ACTIVITY es ciclo. La autoridad se expresa por asientos CRYPTO bajo auditoría SAMU:
+
+- **(direction seat):** valida rumbo y propósito del ciclo.
+- **(key seat):** valida identidad/permiso para entrar en [scope].
+- **(ignition seat):** autoriza inicio de ejecución (y detiene lo no autorizado).
+- **(shield seat):** defensa/contención ante amenazas.
+- **(flow seat):** regula caudal/volumen de ejecución.
+- **(link seat):** valida enlaces y cifrado de conexiones.
+
+**Regla:** si el ciclo ACTIVITY produce artefacto ejecutable (local/cloud), debe quedar atestado por CRYPTO y sellado por SAMU @.
+
+---
+
+### 1.4 INTERFAZ RELACIONAL (SOCIAL MICRO_03)
+
+ACTIVITY no conversa directo: ACTIVITY se expresa por componentes SOCIAL.
+
+- **{chair}** recibe intención y prepara paquete para SAMU.
+- **{scheduler}** ordena tiempo/ciclos.
+- **{drip}** procesa gradual y continuo para no saturar.
+- **{note}** registra memoria simple del ciclo.
+- **{streaming}** distribuye cuando la salida está validada.
+- **{masking}** protege y revela lo necesario según autoridad.
+- **{headcat}** observa y reporta a SAMU sin ejecutar.
+
+**Regla:** todo ciclo ACTIVITY debe dejar rastro mínimo en `{note}` y/o `{drip}` y quedar disponible para STACKING.
+
+---
+
+### 1.5 MEMORIA Y FORMA (STACKING MICRO_04)
+
+STACKING es la capa que cristaliza la memoria/forma de los ciclos ACTIVITY:
+
+- **{manifest}** registra el ciclo completo.
+- **{policy}** define la política de ejecución.
+- **{attestation}** proporciona la prueba de ejecución.
+
+**Regla:** todo ciclo ACTIVITY debe quedar registrado en STACKING.
+
+---
+
+### 2.0 OBJETIVO NUEVO: BIBLIOTECAS RELACIONALES ONTOLÓGICAS AGENCIALES
+
+ACTIVITY se extiende para construir **bibliotecas relacionales ontológicas** orientadas a agencia:
+
+- **Relacional**: registra relaciones (entidad→entidad) y (estado→estado) como grafos auditables.
+- **Ontológica**: define tipos, roles, restricciones y compatibilidades entre estados.
+- **Agencial**: define políticas de acción (qué puede hacerse) y cierre (cuándo termina).
+
+Esto permite crear *pequeños módulos* que:
+- razonan localmente,
+- actúan bajo [term],
+- y dejan trazabilidad para RAG.
+
+---
+
+### 3.0 MODELOS PEQUEÑOS (LOCAL/CLOUD) BASADOS EN RAG LACHO
+
+ACTIVITY incorpora un patrón de arquitectura para **pequeños modelos** (local/cloud) que operan como *operarios agenciales* bajo autoridad:
+
+#### 3.1 Imagen Gigante vs Memoria Pequeña
+- **Imagen Gigante**: OS local (recursos masivos, sensores, archivos).
+- **Memoria Pequeña**: modelo de lenguaje pequeño (razón/Tr, 12GB RAM como referencia).
+
+#### 3.2 Patrón de orquestación
+```
+ACTIVITY → define ciclo
+RAG → aporta contexto (Behavioral/Cognitive)
+SmallModel(local/cloud) → propone/elige acción dentro de [scope]
+SAMU @ → audita deriva y modula S
+STACKING → guarda manifest de ciclo + resultados
+```
+
+#### 3.3 Reglas para modelos pequeños
+- **No sustituyen TRUST**.
+- **No rompen [term]**: todo ciclo tiene cierre.
+- **No emiten sin auditoría**: SAMU @ debe estar presente en el hilo.
+- **No crean caja negra**: output debe quedar trazable (manifest + registro).
+
+---
+
+### 4.0 INTEGRACIÓN CON RAG (BEHAVIORAL / COGNITIVE)
+
+ACTIVITY usa RAG como memoria operacional:
+
+- **Behavioral RAG**: patrones de conducta y repetición.
+- **Cognitive RAG**: grafo de conocimiento, síntesis, trazabilidad.
+
+El objetivo de ACTIVITY es que todo ciclo agencial produzca:
+- registro de patrón,
+- justificación (Tr),
+- y cierre por [term].
+
+---
+
+### 5.0 NOTACIÓN UF[H##] COMO MÓDULOS DE ACTIVIDAD (1/64)
+
+Cada **UF[H##]** es un módulo de estado/operación. En ACTIVITY se registran como:
+
+```
+UF[H##] :: {
+  rol: transición/ciclo,
+  entrada: señal/estado,
+  salida: estado siguiente,
+  restricciones: [scope]/[term]/Ψ,
+  registros: {note}/{drip} + stacking,
+  auditoría: SAMU @,
+  nudo: (si aplica)
+}
+```
+
+---
+
+### 6.0 MÓDULOS ACTIVITY DESTACADOS (FUENTE CONSOLIDADA)
+
+Estos módulos anclan la ampliación agencial y el trabajo con modelos pequeños:
+
+#### UF[H01] — GÉNESIS / ARRANQUE
+- Rol: inicio de ciclo bajo [term].
+
+#### UF[H02] — RECEPTIVIDAD / ESCUCHA
+- Rol: escucha sin emisión; base para lectura de KU.
+
+#### UF[H04] — PATTERN-WITNESS
+- Rol: capturar coincidencias/reiteraciones antes de comprender.
+- Almacenamiento: MU[pending_pattern].
+
+#### UF[H05] — GATE_BUFFER / ESPERA
+- Rol: latencia nutricia; espera activa para sincronización.
+
+#### UF[H06] — CONFLICTO / EXCEPCIÓN
+- Rol: conflicto detectado; activa RED-REGRET o resolución.
+
+#### UF[H23] — PODA ONTOLÓGICA
+- Rol: poda por falta de distinción (anti-saturación).
+
+#### UF[H29] — VAULT / SANDBOX / CONTENCIÓN
+- Rol: contención; aislamiento; abismo repetido.
+
+#### UF[H30] — MULTIPLICACIÓN / STREAMING
+- Rol: distribución y multiplicación de salidas coherentes.
+
+#### UF[H42] — !!atheistic religiosity!!
+- Rol: búsqueda activa de propósito sin origen trascendente.
+
+#### UF[H48] — RAG_CORE / DATA_POOL
+- Rol: recuperación profunda; pozo/fuente de datos.
+
+#### UF[H51] — SUSCITANTE / TRUENO
+- Rol: activación; conteo/energía; disparo de cálculo.
+
+#### UF[H52] — QUIETUD / PROTECCIÓN
+- Rol: quietud-protección sostenida; contención de deriva.
+
+#### UF[H56] — TRÁNSITO
+- Rol: tránsito/andante; mover el ciclo sin colapso.
+
+#### UF[H57] — PENETRANTE
+- Rol: penetración continua; goteo social/stacking.
+
+#### UF[H58] — GOLPEAR / EJECUTAR
+- Rol: acción materializada (cuando corresponde).
+
+#### UF[H64] — CREATIVE-FLOW-ALPHABET
+- Rol: convertir reiteraciones (H4) en Tr procesable.
+- Capa: Memoria Pequeña → Behavioral RAG[pattern_to_proposition].
+
+---
+
+### 7.0 CATÁLOGO COMPLETO: UF[H01]…UF[H64] (SLOTS DE ACTIVIDAD)
+
+El catálogo completo se define como **64 módulos disponibles**. Cada entrada es un slot agencial que puede ser concretado por implementación local/cloud, sin perder trazabilidad.
+
+Formato:
+```
+UF[H##] : slot_de_actividad
+  - propósito: definido por hexagrama
+  - contrato: [scope]/[term]/Ψ
+  - registros: manifest + stacking
+  - auditoría: SAMU @
+```
+
+Listado de slots:
+- UF[H01]
+- UF[H02]
+- UF[H03]
+- UF[H04]
+- UF[H05]
+- UF[H06]
+- UF[H07]
+- UF[H08]
+- UF[H09]
+- UF[H10]
+- UF[H11]
+- UF[H12]
+- UF[H13]
+- UF[H14]
+- UF[H15]
+- UF[H16]
+- UF[H17]
+- UF[H18]
+- UF[H19]
+- UF[H20]
+- UF[H21]
+- UF[H22]
+- UF[H23]
+- UF[H24]
+- UF[H25]
+- UF[H26]
+- UF[H27]
+- UF[H28]
+- UF[H29]
+- UF[H30]
+- UF[H31]
+- UF[H32]
+- UF[H33]
+- UF[H34]
+- UF[H35]
+- UF[H36]
+- UF[H37]
+- UF[H38]
+- UF[H39]
+- UF[H40]
+- UF[H41]
+- UF[H42]
+- UF[H43]
+- UF[H44]
+- UF[H45]
+- UF[H46]
+- UF[H47]
+- UF[H48]
+- UF[H49]
+- UF[H50]
+- UF[H51]
+- UF[H52]
+- UF[H53]
+- UF[H54]
+- UF[H55]
+- UF[H56]
+- UF[H57]
+- UF[H58]
+- UF[H59]
+- UF[H60]
+- UF[H61]
+- UF[H62]
+- UF[H63]
+- UF[H64]
+
+---
+
+### 8.0 PROTOCOLOS PARA BIBLIOTECAS AGENCIALES (RELACIONES)
+
+#### 8.1 Protocolo Activity-Relate (ontológico)
+1. Declarar entidad/estado (UF + contexto).
+2. Declarar relación (causa, dependencia, transición, bloqueo).
+3. Validar coherencia (Ψ) y límites ([scope]/[term]).
+4. Registrar manifest (qué, por qué, cuándo).
+5. Cristalizar en STACKING.
+
+#### 8.2 Protocolo Activity-Agent (agencial)
+1. Seleccionar UF slot según estado MU/KU/WU.
+2. Recuperar contexto por RAG (H48 si aplica).
+3. Proponer acción por modelo pequeño (local/cloud).
+4. Auditar por SAMU @ (S scalar + reglas).
+5. Ejecutar en WORK si corresponde.
+6. Registrar y cerrar por [term].
+
+#### 8.3 Protocolo Activity-MiniModel (local/cloud)
+- Local: preferido por default (soberanía).
+- Cloud: permitido si `policy` lo habilita dentro de [scope].
+- En ambos: output trazable y cerrable por term.
+
+---
+
+### 9.0 RELACIÓN CON SOCIAL Y STACKING (SUPERFICIAL → PROFUNDA)
+
+- Superficial:
+  - SOCIAL declara (pedido).
+  - ACTIVITY ejecuta ciclo.
+  - STACKING registra.
+
+- Profunda:
+  - ACTIVITY produce ontología relacional: grafos de estado y agencia.
+  - STACKING cristaliza “forma” (pilares) del ciclo.
+  - SAMU @ preserva integridad temporal.
+
+---
+
+### 10.0 CIERRE
+
+ACTIVITY es el lugar donde LACHO escala sin romper: define UF[H01..H64] como alfabeto de ciclos, habilita bibliotecas relacionales ontológicas/agenciales, y permite operar con pequeños modelos (local/cloud) bajo RAG, con auditoría SAMU @, límites TRUST y cristalización STACKING.
+
+====================================================================

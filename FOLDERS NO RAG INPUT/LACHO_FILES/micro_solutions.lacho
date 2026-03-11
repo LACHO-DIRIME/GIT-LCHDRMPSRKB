@@ -1,0 +1,54 @@
+# micro_solutions.lacho
+# MICRO: soluciones operativas locales
+# Genesis: padre común · árbol SUITE SOBERANA
+# [term] :: activo
+
+## CABECERA SOBERANA
+[genesis]     :: SUITE SOBERANA
+[version]     :: 1.0
+[extension]   :: .lacho
+[tipo]        :: MICRO · rutinas · soluciones locales
+[padre]       :: rational_day.theater
+
+## RUTINAS MICRO
+
+rutina_verificacion {
+  TRUST FOUNDATION =><= .. verifica .. condicion_soberana --[As de Guía] [term]
+  TRUST FOUNDATION =><= .. declara .. scope_activo_verificado --[As de Guía] [term]
+}
+
+rutina_ejecucion {
+  WORK {actuator} =><= .. materializa .. tarea_micro_activa --[As de Guía] [term]
+  WORK {actuator} =><= .. ejecuta .. solucion_local_definida --[As de Guía] [term]
+}
+
+rutina_riesgo {
+  WORK {brake} =><= .. detiene .. proceso_riesgoso_detectado --[Nudo Corredizo] [term]
+  SAMU @ =><= .. dirime .. conflicto_micro_activo --[Ballestrinque] [term]
+}
+
+rutina_cristalizacion {
+  STACKING UF[H52] =><= .. inmutabiliza .. solucion_verificada --[Nudo de Ocho] [term]
+  STACKING UF[H48] =><= .. preserva .. rutina_completada --[Nudo de Ocho] [term]
+}
+
+## ALGORITMOS ENDPOINTS
+endpoint_validar {
+  input  :: sentencia_lacho
+  output :: VALID · WARNING · INVALID
+  ruta   :: python3 main.py --validate {sentencia}
+}
+
+endpoint_traducir {
+  input  :: texto_natural
+  output :: sentencia_lacho_valida
+  ruta   :: python3 main.py {texto}
+}
+
+endpoint_stats {
+  input  :: null
+  output :: lacho_score · scalar_s · tx_total
+  ruta   :: python3 main.py --stats
+}
+
+[term] :: activo · [seal of secrecy] :: activo

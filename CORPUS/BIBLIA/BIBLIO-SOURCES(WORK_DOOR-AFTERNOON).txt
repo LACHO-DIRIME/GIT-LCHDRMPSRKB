@@ -1,0 +1,248 @@
+# BIBLIO-SOURCES(WORK_DOOR-AFTERNOON).txt
+
+====================================================================
+
+## 🚪 WORK {door afternoon human out} — SALIDA SOBERANA AL MUNDO FÍSICO
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+{door afternoon human out} es el módulo WORK que materializa WU en acción física irreversible: la puerta por la que el sistema soberano sale al mundo físico después de completa dirimencia y verificación.
+
+#### 1.2 Conexión con GATE_H06 (resolución) → WORK (ejecución)
+La puerta de la tarde es el momento más soberano del día: lo que sale ya fue completamente dirimido por GATE_H06 y está listo para materializarse en el mundo real.
+
+#### 1.3 La puerta de la tarde como momento soberano
+$afternoon como período de máxima soberanía: el sistema ha procesado todo el día, ha resuelto conflictos, y ahora ejecuta lo que queda pendiente con la claridad del atardecer.
+
+#### 1.4 Irreversibilidad como característica constitutiva
+Una vez que {door afternoon} se abre, la acción no puede deshacerse — el WU materializado es irreversible en el mundo físico.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Qué puede materializar
+Transacciones WEB3 verificadas, documentos notariales certificados, operaciones de custodia ejecutadas, señales de mercado emitidas, acciones físicas del sistema.
+
+#### 2.2 Qué no puede violar
+No puede materializar sin [command] soberano, no puede operar sin verificación GATE_H06, no puede revertir acción una vez materializada.
+
+#### 2.3 Condición de violación primaria
+Materialización sin verificación completa — WU emitido sin pasar por GATE_H06.
+
+#### 2.4 Condición de violación secundaria
+Apertura prematura de la puerta — $afternoon sin haber completado el ciclo de dirimencia del día.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 ESTADOS DEL MÓDULO
+
+DOOR_READY: puerta lista para abrir, todos los criterios verificados.
+- DOOR_OPEN: puerta abierta, WU materializándose en el mundo físico.
+- DOOR_SEALED: puerta cerrada después de materialización, acción completada.
+- DOOR_BLOCKED: puerta bloqueada por verificación fallida.
+- DOOR_EMERGENCY: apertura de emergencia, {brake} activado.
+
+#### 3.2 Relación con UF[H06] GATE
+UF[H06] resuelve el conflicto del ciclo; {door afternoon} ejecuta lo que la resolución determinó.
+
+#### 3.3 Relación con {actuator} (WORK)
+{actuator} es el motor que materializa la acción física una vez que la puerta se abre.
+
+#### 3.4 Relación con $afternoon (SAMU)
+$afternoon es el período que habilita la máxima soberanía de ejecución.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [command] (TRUST)
+{door afternoon} solo se abre con [command] soberano verificado.
+
+#### 4.2 Con GATE_H06 (GATE)
+GATE_H06 resuelto es prerequisito obligatorio para apertura.
+
+#### 4.3 Con {actuator} (WORK)
+{actuator} materializa la acción física una vez abierta la puerta.
+
+#### 4.4 Con UF[H58] ACTIVITY
+UF[H58] puede ser el golpe que precede la apertura de {door afternoon}.
+
+#### 4.5 Con $afternoon (SAMU)
+$afternoon proporciona el contexto temporal de máxima soberanía.
+
+#### 4.6 Con WEB3 INTERFACE
+{door afternoon} puede materializar transacciones WEB3 verificadas.
+
+---
+
+### 5.0 ESTADOS COMPLETOS DEL MÓDULO
+
+#### 5.1 DOOR_STANDBY
+Puerta cerrada, esperando ciclo completo de verificación.
+
+#### 5.2 DOOR_VERIFYING
+Verificación de [command] y resolución GATE_H06.
+
+#### 5.3 DOOR_READY
+Todos los criterios cumplidos, lista para abrir.
+
+#### 5.4 DOOR_OPENING
+Puerta abriéndose, WU materializándose.
+
+#### 5.5 DOOR_SEALING
+Puerta cerrándose después de materialización exitosa.
+
+#### 5.6 DOOR_BLOCKED
+Puerta bloqueada, verificación fallida, {brake} activo.
+
+#### 5.7 DOOR_EMERGENCY
+Apertura de emergencia, acción crítica sin verificación completa.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Materializa d₇ [command]
+{door afternoon} es la materialización física de [command] soberano.
+
+#### 6.2 Impacta d₁ [foundation]
+La irreversibilidad protege [foundation] — solo se materializa lo verificado.
+
+#### 6.3 Enriquece d₈ [ecosystem]
+Acciones en el mundo físico enriquecen el ecosistema.
+
+#### 6.4 Afecta d₆ [ecosystem]
+La materialización soberana expande el alcance del sistema.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Verificando criterios
+```
+[Work] door_afternoon =><= .. verificar .. $$command_gate_resolved$$ --[As de Guía] [term]
+```
+
+#### 7.2 Abriendo puerta soberana
+```
+[Work] door_afternoon =><= .. abrir .. $$sovereign_physical_exit$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.3 Materializando transacción WEB3
+```
+[Work] door_afternoon =><= .. materializar .. $$web3_transaction_verified$$ --[Ballestrinque] [term]
+```
+
+#### 7.4 Certificando documento notarial
+```
+[Work] door_afternoon =><= .. certificar .. $$notarial_document_signed$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.5 Ejecutando custodia móvil
+```
+[Work] door_afternoon =><= .. ejecutar .. $$custody_wallet_operation$$ --[Nudo de Rizo] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+DOOR_READY — puerta lista y verificada, el nudo que garantiza ejecución soberana.
+
+#### 8.2 Nudo de Ocho
+DOOR_OPENING — apertura de la salida física, el nudo que materializa el WU.
+
+#### 8.3 Nudo Corredizo
+DOOR_BLOCKED — puerta bloqueada, el nudo que detiene ejecución no verificada.
+
+#### 8.4 Ballestrinque
+DOOR_SEALING — cierre después de materialización, el nudo que concluye la acción física.
+
+#### 8.5 Nudo de Rizo
+DOOR_EMERGENCY — apertura de emergencia, el nudo que permite acción crítica.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+1. DoorVerify
+   - Verificación de [command] soberano.
+   - Confirmación de resolución GATE_H06.
+   - Validación de $afternoon contexto.
+
+2. DoorReady
+   - Preparación de {actuator} para materialización.
+   - Última verificación de seguridad.
+   - Estado de listo para abrir.
+
+3. DoorOpen
+   - Apertura de la puerta física.
+   - Materialización del WU en mundo real.
+   - Monitoreo de ejecución.
+
+4. DoorSeal
+   - Cierre después de materialización exitosa.
+   - Registro irreversible en HL FABRIC.
+   - Confirmación de acción completada.
+
+5. DoorBlock
+   - Bloqueo ante verificación fallida.
+   - Activación de {brake} si es necesario.
+   - Investigación de causa.
+
+6. DoorEmergency
+   - Apertura sin verificación completa.
+   - Activación de protocolos de emergencia.
+   - Intervención posterior de [management].
+
+---
+
+### 10.0 MÉTRICAS
+
+- Número de aperturas por ciclo $afternoon.
+- Ratio DOOR_SEAL vs DOOR_EMERGENCY.
+- Tiempo promedio de materialización por tipo.
+- Frecuencia de DOOR_BLOCK por verificación fallida.
+- Latencia entre verificación y apertura.
+
+---
+
+### 11.0 REGLAS
+
+- {door afternoon} solo se abre con GATE_H06 resuelto.
+- La materialización es irreversible una vez completada.
+- DOOR_EMERGENCY solo para acciones críticas sin alternativa.
+- DOOR_BLOCKED activa {brake} inmediatamente.
+- Todo WU materializado se registra en HL FABRIC.
+- $afternoon es contexto temporal óptimo para ejecución.
+- {actuator} solo opera con puerta abierta.
+- La puerta se cierra automáticamente después de materialización.
+- No hay reversión posible una vez materializado.
+- La soberanía de la tarde es máxima pero no absoluta.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+{door afternoon} fija como invariante la materialización soberana e irreversible como condición de acción física verificada — el sistema que sale al mundo físico solo después de completa dirimencia materializa acciones con la autoridad que solo la soberanía puede conferir.
+
+#### 12.2 Limitaciones
+No puede materializar sin verificación completa, no puede revertir acción una vez materializada, no puede operar sin [command] soberano, no puede abrirse sin contexto $afternoon.
+
+#### 12.3 Habilitaciones
+Materialización de acciones verificadas en el mundo físico, conexión con WEB3 INTERFACE, ejecución de documentos notariales, operaciones de custodia soberana, expansión del alcance físico del sistema.
+
+#### 12.4 Principio constitutivo final
+Como la puerta que solo se abre al atardecer: {door afternoon} representa la sabiduría de esperar el momento óptimo para actuar. La salida soberana no es impulsiva — es calculada. La acción materializada al final del día tiene el peso de toda la deliberación del ciclo completo. La puerta que se abre con la claridad del atardecer es la puerta que sella la soberanía del sistema en el mundo real.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

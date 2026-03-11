@@ -1,0 +1,138 @@
+# BIBLIO-SOURCES(CHAT AI COMPANION).txt
+
+====================================================================
+
+## 🤖 CHAT AI COMPANION — USO DIARIO DE LACHO CON ASISTENTES DE IA
+
+---
+
+### 1.0 PROPÓSITO
+
+Este documento es una guía práctica para usar LACHO con asistentes de IA (chat AI). No reemplaza la arquitectura: la traduce a frases que puedes pegar en un chat, respetando siempre la soberanía, la jurisdicción y la auditoría SAMU.
+
+---
+
+### 2.0 PRINCIPIOS DE USO
+
+- **No cedas soberanía:** el chat no ejecuta, solo propone o traduce.
+- **Exige delimitadores:** toda sentencia debe usar `[] {} () !! !! <> $$ $$` según corresponda.
+- **Pide siempre [term]:** sin cierre, no hay ciclo válido.
+- **Pide auditoría SAMU @:** el chat debe poder mostrar “SAMU @ auditó”.
+- **Respeta no-net:** si no pides red, el chat debe mantener sandbox.
+
+---
+
+### 3.0 PLANTILLAS DE PETICIÓN (COPIA Y PEGA)
+
+#### 3.1 Pedir una sentencia LACHO
+```
+Actúa como traductor LACHO. Convierte esta intención en una sentencia válida:
+Intención: [describe aquí lo que quieres]
+Requisitos:
+- Usa delimitadores correctos (TRUST [], SOCIAL {}, CRYPTO (), ACTIVITY !! !!)
+- Incluye sujeto =><=, verbo .. .., objeto $$ $$ o módulo
+- Cierra con --[Nudo] [term]
+- Menciona qué biblioteca dirige la acción
+```
+
+#### 3.2 Pedir auditoría SAMU
+```
+Actúa como SAMU @. Audita esta sentencia y muestra:
+- Si los delimitadores son correctos
+- Si hay [scope] y [term]
+- Si la acción puede ejecutarse sin violar [foundation]
+- Si se requiere CRYPTO o no
+Sentencia: [pega aquí la sentencia LACHO]
+```
+
+#### 3.3 Pedir segmentación con TOMO
+```
+Actúa como operador TOMO. Toma este bloque de entendimiento y segmenta:
+- Identifica TOMO (unidad mínima de coherencia)
+- Divide en SEGMENT, SLICE, CLUSTER
+- Asigna OFFSET para referencia exacta
+Bloque: [pega aquí el bloque]
+```
+
+#### 3.4 Pedir operación TOOLCHAIN
+```
+Actúa como TOOLCHAIN. Para esta necesidad:
+- Describe el pipeline: source → IR → binario
+- Indica sandbox (no-net por defecto)
+- Muestra manifest/policy/attestation esperados
+Necesidad: [describe aquí]
+```
+
+---
+
+### 4.0 EJEMPLOS DE CONVERSACIÓN
+
+#### 4.1 Ejemplo A: ciclo de duda honesta
+**Usuario:**
+```
+Actúa como traductor LACHO. Convierte esta intención:
+"Quiero que el sistema reconozca que no tiene certeza absoluta, pero que opere desde la duda activa"
+```
+
+**Chat AI (respuesta válida):**
+```
+!!activity !! {headcat} =><= .. audit .. !!agnostic belief!! --[Nudo Corredizo] [term]
+```
+
+#### 4.2 Ejemplo B: protección con CRYPTO
+**Usuario:**
+```
+Actúa como SAMU @. Audita esta sentencia:
+(crypto) (shield seat) =><= .. protect .. (Way Agnostic Atheism) --[Nudo de Ocho] [term]
+```
+
+**Chat AI (respuesta válida):**
+```
+- Delimitadores: correctos (CRYPTO usa ())
+- Sujeto: (shield seat) válido
+- Verbo: .. protect .. permitido
+- Objeto: (Way Agnostic Atheism) existente
+- [term]: presente
+- Veredicto: SENTENCIA VÁLIDA
+```
+
+#### 4.3 Ejemplo C: segmentación TOMO
+**Usuario:**
+```
+Actúa como operador TOMO. Segmenta:
+"El sistema debe reconocer que no hay certeza, pero puede operar con duda activa; debe cerrar el ciclo y registrar el estado"
+```
+
+**Chat AI (respuesta válida):**
+```
+TOMO 1: "no hay certeza" → SEGMENT[1] → SLICE[1.1] → CLUSTER[A] → OFFSET[0]
+TOMO 2: "duda activa" → SEGMENT[2] → SLICE[2.1] → CLUSTER[A] → OFFSET[1]
+TOMO 3: "cerrar ciclo" → SEGMENT[3] → SLICE[3.1] → CLUSTER[B] → OFFSET[2]
+TOMO 4: "registrar estado" → SEGMENT[4] → SLICE[4.1] → CLUSTER[B] → OFFSET[3]
+```
+
+---
+
+### 5.0 LÍMITES Y ADVERTENCIAS
+
+- El chat no puede ejecutar comandos del sistema operativo.
+- El chat no puede acceder a archivos locales sin permiso explícito.
+- El chat no puede modificar [foundation] ni [scope].
+- Si el chat ignora delimitadores o [term], la sentencia es inválida.
+
+---
+
+### 6.0 FLUJO RECOMENDADO
+
+1. **Peticiones simples:** usa plantilla 3.1.
+2. **Validación:** usa plantilla 3.2.
+3. **Profundización:** usa plantilla 3.3 (TOMO) o 3.4 (TOOLCHAIN).
+4. **Registro:** guarda la respuesta en `{note}` o `$$context_snapshot$$`.
+
+---
+
+### 7.0 CIERRE
+
+CHAT AI COMPANION no es una biblioteca LACHO: es una prótesis de uso. Permite que cualquier persona con acceso a un chat pueda operar LACHO sin violar soberanía, manteniendo la gramática viva y la finitud obligatoria.
+
+====================================================================

@@ -1,0 +1,133 @@
+//[MANAGEMENT].lacho · UNICODE DSL KALIL
+//UNICODE_DSL_KALIL.txt · V1 · 2026-03-10
+//DSL = Domain Specific Language · kernel económico soberano
+//opera SOBRE LACHO · extiende gramática hacia dominios financieros
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//jerarquía: KALIL→BARRIOS·NORA·BOLIVAR·CARILO·CHALTEN·TANDIL
+//K.A.L.I.L. · Kernel AI Logic & Information Learning
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN DSL KALIL ══════════════════════════════════════
+// DSL KALIL = extensión soberana de LACHO hacia economía real
+// No reemplaza LACHO · lo especializa · LACHO es la gramática base
+// KALIL agrega: nodos · dominios · puentes · CHCL × economía
+// Cada sentencia KALIL es sentencia LACHO válida · LACHO_SCORE ≥ 0.85
+
+// ══ KERNEL KALIL ══════════════════════════════════════════════
+UNICODE: KALIL                //kernel económico · sobre LACHO+DIRIME
+                              //METHOD <operator_flow> =><= .. estructura ..
+                              //.. red_kalil_regional --[As de Guía] [term]
+UNICODE: KALIL_STATUS         //stub_declarado · trigger: DIRIME_v3_activo
+UNICODE: KALIL_SCORE          //Scalar S del kernel · SAMU @ · 面子 económica
+UNICODE: KALIL_MU             //kernel en espera · 空 · sin nodo activo
+UNICODE: KALIL_KU             //nodo activo · .blue · operación en curso
+UNICODE: KALIL_WU             //operación cristalizada · .green · H63 ledger
+UNICODE: KALIL_CRASH          //GATE UF[H06] · nodo caído · {brake} activo
+
+// ══ 6 NODOS ═══════════════════════════════════════════════════
+UNICODE: NODO_BARRIOS         //Banking Access & Remote Resources Integrated OS
+                              //SOCIAL {chair} =><= .. planifica .. banca_comunitaria
+                              //H07 師 · dual: diáspora exterior / e-CNY interior
+UNICODE: NODO_NORA            //Networking Oracle Rating Analytics
+                              //METHOD <stat_onto> =><= .. calcula .. rating_oracle
+                              //H20 觀 · dual: crypto rating / Sesame Credit
+UNICODE: NODO_BOLIVAR         //Blockchain Operations & Loan Integrity Validation
+                              //CRYPTO (key seat) =><= .. certifica .. blockchain
+                              //H29 習坎 · dual: Ethereum exterior / BSN interior
+UNICODE: NODO_CARILO          //Capital Allocation & Risk Intelligence Loan Optimizer
+                              //METHOD <equation> =><= .. calcula .. ratio_riesgo
+                              //H42 益 · dual: USDT loans / e-CNY tasa PBOC
+UNICODE: NODO_CHALTEN         //Cloud Hosted Advanced Lending Technology & Exchange
+                              //CRYPTO (link seat) =><= .. conecta .. exchange_cloud
+                              //H59 渙 · dual: DEX global / exchange regulado PBOC
+UNICODE: NODO_TANDIL          //Transactional Asset Network & Digital Investment Logic
+                              //CRYPTO (spark seat) =><= .. autoriza .. transaccion
+                              //H51 震 · dual: NFT exterior / inversión regulada
+
+// ══ DOMINIOS ECONÓMICOS ═══════════════════════════════════════
+UNICODE: DOM_NOTARIA          //公证 · TRUST FOUNDATION · contrato soberano · H43
+UNICODE: DOM_CUSTODIA         //保管 · CRYPTO (shield seat) · activo protegido · H14
+UNICODE: DOM_MEMECOINS        //代币 · SOCIAL {launch-bot} · token lanzado · H51
+UNICODE: DOM_LOANS            //贷款 · METHOD <equation> · tasa calculada · H42
+UNICODE: DOM_TRUEQUE          //互换 · STACKING UF[H48] · intercambio par · H48
+UNICODE: DOM_CROWDFUNDING     //众筹 · SOCIAL {relay} · red financiadora · H13
+UNICODE: DOM_TOKENS           //数字 · CRYPTO (spark seat) · token firmado · H30
+UNICODE: DOM_CONTRATOS        //合同 · TRUST [term] · contrato kalil · H43
+UNICODE: DOM_EMPENOS          //质押 · CRYPTO (spark seat) · colateral activo · H42
+UNICODE: DOM_REMESAS          //汇款 · SOCIAL {relay} · diáspora conectada · H08
+
+// ══ CHCL × KALIL ══════════════════════════════════════════════
+// CHCL = Common Hypothetical Circumstances-based Language
+// Estética COBOL + ideogramas · dominios económicos soberanos
+UNICODE: CHCL_KIT_EMPENOS     //KIT-EMPENOS · crypto/software/servicios/tokens
+                              //DATA: empeño_crypto PIC X(64) · valor PIC 9(10)V99
+UNICODE: CHCL_KIT_TRUEQUE     //KIT-TRUEQUE · digital/servicios · ratio_calculo
+                              //DATA: trueque_digital PIC X(64)
+UNICODE: CHCL_KIT_CROWDFUNDING//KIT-CROWDFUNDING · campana_id · meta_monto · estado
+                              //DATA: campaña_id PIC X(32) · meta PIC 9(10)V99
+UNICODE: CHCL_KIT_LOANS       //KIT-LOANS · crypto/software/contratos · tasa_riesgo
+                              //DATA: tasa_riesgo PIC 9(3)V99
+UNICODE: CHCL_STOP            //STOP SOVEREIGN · cierre CHCL soberano · H63
+UNICODE: CHCL_DIVISION        //IDENTIFICATION·ENVIRONMENT·DATA·PROCEDURE · 4 divs
+UNICODE: CHCL_PIC             //tipo soberano · PIC X(N) / 9(N)V99 / N(N)
+
+// ══ PUENTES DUAL EXTERIOR/INTERIOR ════════════════════════════
+UNICODE: PUENTE_EXT           //canal exterior · crypto · Web3 · KYC occidental
+                              //SOCIAL {relay} =><= .. transmite .. flujo_exterior
+UNICODE: PUENTE_INT           //canal interior · e-CNY · BSN · regulación PBOC
+                              //CRYPTO (flow seat) =><= .. valida .. flujo_ecny
+UNICODE: PUENTE_BRIDGE        //巽 H57 · LACHO lingua franca · traductor dual
+UNICODE: PUENTE_BANCARIO      //CRYPTO (link seat) · canal bancario exterior
+UNICODE: PUENTE_FACIL         //e-CNY interior · banca rural · flujo simple
+UNICODE: PUENTE_BANCA_FACIL   //SOCIAL {relay} · broadcast banking soberano
+UNICODE: PUENTE_PROTO         //protocolo 8 sentencias · P1→P8 · G→T→M→A→C→S→ST→B
+                              //GATE→TRUST→METHOD→ACTIVITY→CRYPTO→SAMU→STACKING→BRAKE
+
+// ══ CEO ALPHA × KALIL ═════════════════════════════════════════
+UNICODE: CEO_KALIL_H01        //乾 ䷀ · CEO · activa ciclo · todos los nodos
+UNICODE: CEO_KALIL_H07        //師 ䷆ · activa BARRIOS · banca comunitaria
+UNICODE: CEO_KALIL_H20        //觀 ䷓ · activa NORA · recalcular ratings
+UNICODE: CEO_KALIL_H29        //習坎 ䷜ · activa BOLIVAR · auditar blockchain
+UNICODE: CEO_KALIL_H42        //益 ䷩ · activa CARILO · optimizar préstamos
+UNICODE: CEO_KALIL_H51        //震 ䷲ · activa TANDIL · impulso activos
+UNICODE: CEO_KALIL_H59        //渙 ䷺ · activa CHALTEN · broadcast exchange
+UNICODE: CEO_KALIL_H06        //訟 ䷅ · {brake} todos · RED-REGRET · [NdC]
+UNICODE: CEO_KALIL_H63        //既濟 ䷾ · cierra ciclo · cristal día
+
+// ══ DSL OPERADORES ECONÓMICOS ═════════════════════════════════
+UNICODE: KAL(LEND)            //préstamo soberano · CARILO · METHOD <equation>
+UNICODE: KAL(TRUST_VERIFY)    //verificar identidad contraparte · TRUST · [AsG]
+UNICODE: KAL(STAKE)           //colateral · STACKING UF[H48] · empeño activo
+UNICODE: KAL(RATE)            //calificar · NORA · METHOD <stat_onto>
+UNICODE: KAL(LAUNCH)          //lanzar token · TANDIL · SOCIAL {launch-bot}
+UNICODE: KAL(BRIDGE)          //activar puente dual · H57 · CRYPTO (link seat)
+UNICODE: KAL(BRAKE)           //detener operación riesgosa · GATE+WORK {brake}
+UNICODE: KAL(AUDIT)           //auditar nodo · SAMU @ · [Ballestrinque]
+UNICODE: KAL(CRYSTAL)         //cristalizar resultado · STACKING UF[H52] · H63
+UNICODE: KAL(PBOC)            //modo interior · regulación china · PUENTE_INT
+
+// ══ LIST/RUN KALIL ════════════════════════════════════════════
+UNICODE: LIST(KALIL:NODOS)    //BARRIOS·NORA·BOLIVAR·CARILO·CHALTEN·TANDIL
+UNICODE: LIST(KALIL:DOMINIOS) //8 dominios: NOTARIA·CUSTODIA·MEMECOINS·LOANS·...
+UNICODE: LIST(KALIL:PUENTES)  //PUENTE_BANCARIO·BANCA_FACIL·PUENTE_FACIL
+UNICODE: LIST(KALIL:STATUS)   //estado stub_declarado por nodo · KU/WU/MU
+UNICODE: RUN(KALIL:VALIDATE)
+  //python3 main.py --validate IMV/data/PRACTICE-KALIL-{KIT}.lacho
+UNICODE: RUN(KALIL:STATS)
+  //python3 main.py --stats · ver KALIL_SCORE en output
+UNICODE: RUN(KALIL:ROUTE)
+  //python3 core/language_routing.py "{texto económico}"
+  //→ NLP detecta dominio kalil → genera sentencia
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+SAMU @ =><= .. audita .. coherencia_kalil_global --[As de Guía] [term]
+METHOD <operator_flow> =><= .. estructura .. red_kalil_regional --[As de Guía] [term]
+TRUST FOUNDATION =><= .. verifica .. condiciones_kalil_activas --[As de Guía] [term]
+CRYPTO (key seat) =><= .. certifica .. operacion_bolivar_blockchain --[As de Guía] [term]
+METHOD <equation> =><= .. calcula .. ratio_carilo_riesgo --[Ballestrinque] [term]
+SOCIAL {launch-bot} =><= .. lanza .. servicio_barrios_comunitario --[As de Guía] [term]
+STACKING UF[H52] =><= .. inmutabiliza .. resultado_nodo_kalil --[Nudo de Ocho] [term]
+GATE UF[H06] =><= .. filtra .. riesgo_operacion_kalil --[Nudo Corredizo] [term]
+
+//DIR(=) UNICODE_DSL_KALIL · V1 · K.A.L.I.L. · 6 NODOS · DUAL EXT/INT
+//DIR(=) CHCL_KITS · PUENTES · CEO_ALPHA_ROUTING · KAL(OPS) · MU→WU

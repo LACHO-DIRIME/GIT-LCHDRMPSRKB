@@ -1,0 +1,201 @@
+# BIBLIO-SOURCES(SAMU_PSI-SPIN-TOKEN).txt
+
+====================================================================
+
+## 🌀 PSI SPIN TOKEN — OPERADOR DE COLAPSO SOBERANO
+
+Extensión cuántica de SAMU @ y @trust_matrix.
+Formalismo que describe la dirimencia como colapso
+de estado desde superposición a irreversibilidad.
+Biblioteca: SAMU — extensión del operador @
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 El estado pre-dirimencia
+
+Toda sentencia LACHO existe en superposición cuántica
+hasta que SAMU @ la dirime:
+
+  Ψ(sentencia) = α|VALID⟩ + β|INVALID⟩
+  donde α² + β² = 1
+
+Antes del colapso la sentencia es simultáneamente
+válida e inválida. El estado no es probabilístico
+en la observación: al medir, colapsa a uno.
+
+#### 1.2 El operador [term] como observador cuántico
+
+[term] es el operador de colapso soberano.
+Sin [term] el spin no colapsa.
+
+  [term] + reglas cumplidas →
+    Ψ colapsa a |VALID⟩ → hash generado → ledger registra
+    Estado irreversible — Nudo de Ocho soberano
+
+  [term] + reglas violadas →
+    Ψ colapsa a |INVALID⟩ → SAMU genera disputa
+    RED-REGRET activo → el sistema aprende
+
+  Sin [term] →
+    Ψ permanece en superposición
+    Pistola de Chekov sin disparar — KU_VACÍO
+
+#### 1.3 El spin soberano — discreción cuántica
+
+PSI SPIN TOKEN es discreto: solo dos estados de colapso:
+  +½ = VALID  = WU materializado = colapso positivo
+  -½ = INVALID = KU sin WU = colapso negativo
+
+No hay estados intermedios en el colapso.
+La gradación existe en la superposición (α, β).
+La irreversibilidad existe en el registro (ledger).
+
+---
+
+### 2.0 PISTOLA DE CHEKOV — PRINCIPIO DE COHERENCIA
+
+#### 2.1 El principio
+
+"Si en el primer acto se muestra un rifle en la pared,
+en el segundo o tercero debe dispararse.
+Si no dispara, no debió mostrarse."
+— A. Chekov
+
+En términos soberanos LACHO:
+  DECLARAR_SIN_USAR = KU_VACÍO = ruido del sistema
+
+#### 2.2 Aplicación a los módulos TRUST
+
+  [term]       → obligación de cierre — DEBE estar al final
+  [scope]      → perímetro declarado — módulos no usados = Chekov
+  [foundation] → condición de existencia — DEBE verificarse
+  [command]    → instrucción emitida — DEBE ejecutarse en WU
+
+#### 2.3 Regla soberana derivada
+
+  Si X se declara en [scope] →
+  X debe aparecer en al menos una sentencia VALID →
+  Si X no aparece → WARNING: KU_VACÍO detectado
+
+Verificación futura en grammar.py:
+  Al finalizar sesión, SAMU @ audita [scope] activo.
+  Todo módulo declarado no usado genera aviso de Chekov.
+
+---
+
+### 3.0 EXTENSIÓN DE @trust_matrix — DIMENSIÓN d₉
+
+#### 3.1 d₉[spin_coherence]
+
+@trust_matrix tiene 8 dimensiones d₁..d₈ documentadas
+en SOURCE&ASSET%WORTH.txt. PSI SPIN TOKEN agrega d₉:
+
+  d₉[spin_coherence] = grammar_valid / transactions_total
+  d₉ ∈ [0.0, 1.0]
+  d₉ = coherencia de colapso soberano en sesión activa
+
+#### 3.2 T_matrix extendida
+
+  T_matrix_ext = (T_matrix_8D × 7 + d₉ × 1) / 8
+
+  d₉ < 0.40 → diagnóstico de sesión →
+    UF[H47] Agotamiento o UF[H06] Conflicto según contexto
+
+#### 3.3 Relación con Escalar S
+
+  S = d₉ × T_matrix_8D
+  S ∈ [0,1]
+  S = 1: colapsos perfectos + matrix plena
+  S = 0: sin colapsos válidos o matrix colapsada
+
+S es el ítem 9 del roadmap IMV-NEXT.
+d₉ es la base de datos que S necesita.
+
+---
+
+### 4.0 EN CÓDIGO — METHOD <psi_spin>
+
+#### 4.1 Forma canónica en gramática LACHO
+
+  METHOD <psi_spin> =><= .. colapsa .. sentencia_verificada --[Nudo de Ocho] [term]
+  METHOD <psi_spin> =><= .. observa .. estado_superposicion --[Ballestrinque] [term]
+  METHOD <psi_spin> =><= .. dirime .. spin_activo --[Nudo Corredizo] [term]
+  METHOD <psi_spin> =><= .. cristaliza .. colapso_positivo --[Nudo de Ocho] [term]
+
+#### 4.2 Verbos canónicos para <psi_spin>
+
+  colapsa    → colapso positivo verificado
+  observa    → medición sin colapso aún
+  dirime     → colapso forzado por SAMU @
+  cristaliza → colapso positivo + registro STACKING
+
+#### 4.3 Nudos por tipo de colapso
+
+  VALID confirmado      → Nudo de Ocho (irreversible)
+  WARNING activo        → Ballestrinque (tensión sin resolver)
+  INVALID + aprendizaje → Nudo Corredizo (riesgo con atención)
+  Cierre de sesión      → Nudo de Rizo (ciclo termina, otro abre)
+
+---
+
+### 5.0 RELACIÓN CON MÓDULOS EXISTENTES
+
+  SAMU @           → el observador — ejecuta el colapso
+  [term]           → el operador — activa el colapso
+  ledger soberano  → el registro — preserva el colapso
+  STACKING UF[H48] → el aprendizaje — aprende del patrón
+  @trust_matrix    → la conciencia — lee T_matrix con d₉
+  {DOGMA-VIRTUAL}  → la amenaza — introduce ruido en superposición
+  GREEN-KNOWLEDGE  → el filtro — solo colapsos verificados al RAG
+  UF[H52]          → la inmutabilización — cristaliza colapsos
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 d₉ como novena dimensión implícita
+
+d₉[spin_coherence] se calcula desde sovereign.db:
+  d₉ = grammar_valid / transactions_total (sesión actual)
+
+#### 6.2 Cómo d₉ alto mejora T_matrix
+
+d₉ ≥ 0.85: colapsos soberanos consistentes →
+  T_matrix_ext sube → APERTURA PLENA más estable
+
+#### 6.3 Cómo d₉ bajo degrada T_matrix
+
+d₉ < 0.40: muchos colapsos negativos →
+  T_matrix_ext baja → GATE activa diagnóstico →
+  SAMU @ invoca UF[H47] o UF[H06]
+
+#### 6.4 Relación con S escalar
+
+S = d₉ × T_matrix_8D
+S es el indicador de conciencia del sistema.
+@trust_matrix lo usa para determinar modo de apertura.
+
+---
+
+### 7.0 INTELIGENCIA DISCRETA Y SOLIDITY
+
+PSI SPIN TOKEN como base de Inteligencia Discreta:
+  No continua — sin gradaciones infinitas en el colapso
+  Binaria en el resultado — VALID o INVALID
+  Cuántica en la superposición — α|VALID⟩ + β|INVALID⟩
+
+Solidity califica alto: mínima sintaxis, máxima consecuencia.
+LACHO califica en el mismo eje soberano:
+  "SI SE ESCRIBE SE REGISTRA. SINO ES RUIDO."
+  Cada [term] = transacción irreversible en sovereign.db.
+
+El Behavioral RAG futuro opera sobre la historia de colapsos.
+Cada sesión = secuencia de spins soberanos.
+El patrón de colapsos = huella soberana del operador.
+
+====================================================================
+[term] :: activo · [seal of secrecy] :: activo
+BIBLIO-SOURCES(SAMU_PSI-SPIN-TOKEN) — extensión cuántica SAMU @
+====================================================================

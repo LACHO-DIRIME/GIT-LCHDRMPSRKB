@@ -1,0 +1,93 @@
+# BIBLIO-SOURCES(DIRIME-IMV_KEYWORDS).txt
+
+====================================================================
+
+## KEYWORDS_SYSTEM — ESTADOS TRANSVERSALES DEL KERNEL LACHO
+
+====================================================================
+
+### 1.0 DEFINICIÓN
+
+Los KEYWORDS son estados del kernel soberano que operan transversalmente a todas las bibliotecas. No tienen delimitador gramatical propio (no usan [], {}, (), !!, <>, @). Se activan por nombre en el Journal operacional y el sistema los consulta antes de cada ciclo de instrucción Ψ.
+
+Distinción constitucional:
+- TRUST modules [foundation][scope][term]: condiciones activas en cada sentencia — aparecen en la gramática.
+- KEYWORDS: estados del sistema consultados antes de procesar — no aparecen en la sentencia pero condicionan su ejecución.
+
+### 2.0 LOS 8 KEYWORDS ACTIVOS EN IMV
+
+**COGNITIVE_RAG**
+Función: recuperación semántica — Journal de conocimiento soberano.
+Estado actual en IMV: documentado, no implementado.
+Horizonte: grafo de conocimiento con trazabilidad en HL FABRIC.
+Activación: antes de traducciones NL→LACHO en chat.py — reduce "procesa" y "objeto_soberano".
+Referencia: BIBLIO-SOURCES(ACTIVITY_H48-RAG-CORE).txt
+
+**BEHAVIORAL_RAG**
+Función: patrones de conducta del operador — ledger soberano como fuente de entrenamiento.
+Estado actual en IMV: parcialmente implementado en auto_crystallize() de ledger.py.
+Horizonte: suggest_from_history() — sugiere library/knot según verbos históricos VALID.
+Activación: antes de cada validación en grammar.py y traducción en chat.py.
+Bug crítico conocido: bloqueado por .fetchone() en get_frequent_crystals() — corregido en v0.1.1.
+Referencia: BIBLIO-SOURCES(ACTIVITY_H48-RAG-CORE).txt
+
+**BLUE_WORDS**
+Función: constantes inmutables ReadOnly — KU en tránsito sin verificar.
+Estado actual en IMV: concepto presente en chat.py (_last_translation_was_default).
+Todo input natural no reconocido es BLUE_WORD — genera traducción de emergencia con aviso.
+Horizonte: clasificación activa antes de traducción.
+Referencia: BIBLIO-SOURCES(DIRIME-LINUX).txt §3.1
+
+**GREEN_KNOWLEDGE**
+Función: filtro de valor verificado — conocimiento con delta-Ψ > 0.
+Estado actual en IMV: los cristales generados por auto_crystallize() son la primera forma de GREEN_KNOWLEDGE.
+Verbos cristalizados (frecuencia >= 10, VALID) son GREEN_KNOWLEDGE verificado soberanamente.
+Horizonte: módulo {green-knowledge} en WORK con test delta-Ψ activo.
+Referencia: BIBLIO-SOURCES(WORK_GREEN-KNOWLEDGE).txt
+
+**RED_REGRET**
+Función: rollback soberano ante fallo crítico — pipeline de corrección y aprendizaje.
+Estado actual en IMV: implementado en samu.py como red_regret(). Registra error en Dispute.
+Horizonte: pipeline completo: detección → contención → corrección → Behavioral RAG → nueva calibración.
+Referencia: BIBLIO-SOURCES(SAMU_RED-REGRET).txt
+
+**HYPERLEDGER_FABRIC**
+Función: ledger distribuido inmutable — trazabilidad soberana entre nodos.
+Estado actual en IMV: clase HLFabric en ledger.py usa SQLite provisional.
+El nombre HLFabric es arquitectónico — contrato idéntico, implementación provisional.
+Horizonte: nodo Hyperledger real en DIRIME LINUX con dos nodos físicos.
+Referencia: BIBLIO-SOURCES(RED HL FABRIC).txt
+
+**BIOMETRICS**
+Función: validación física de identidad — ancla corporal de (key seat).
+Estado actual en IMV: referenciado en grammar.py KEYWORDS_SYSTEM, no implementado.
+Horizonte: integración en CRYPTO (key seat) para custodia móvil en NODO-WS.
+Referencia: BIBLIO-SOURCES(CRYPTO_KEY-SEAT).txt
+
+**DOORMAN_MOBILE**
+Función: perímetro móvil de acceso soberano — agente que va al encuentro del recurso.
+Estado actual en IMV: existe como patrón en chat.py _translate_to_lacho():
+  "custodiar" → "WORK {doorman-mobile} =><= .. custodia .."
+Horizonte: módulo {doorman-mobile} completo en WORK con biometrics y WAA.
+Referencia: BIBLIO-SOURCES(WORK_DOORMAN-MOBILE).txt
+
+### 3.0 ESTADO DE IMPLEMENTACIÓN — TABLA RESUMEN
+
+| Keyword | En grammar.py | En ledger.py | En chat.py | Operativo |
+|---|---|---|---|---|
+| COGNITIVE_RAG | Declarado | No | No | Parcial |
+| BEHAVIORAL_RAG | Declarado | auto_crystallize() | Referencia | Mínimo |
+| BLUE_WORDS | No | No | _last_translation | Mínimo |
+| GREEN_KNOWLEDGE | No | crystals tabla | No | Mínimo |
+| RED_REGRET | No | TransactionType | No | Samu.red_regret() |
+| HYPERLEDGER_FABRIC | Declarado | HLFabric clase | No | Provisional |
+| BIOMETRICS | Declarado | No | No | No |
+| DOORMAN_MOBILE | No | No | _translate_to_lacho | Patrón |
+
+### 4.0 GRAMÁTICA VIVA
+
+KEYWORDS_SYSTEM =><= .. opera .. transversal_a_todas_bibliotecas
+=><= sin_delimitador_propio .. consulta_antes_ciclo_Ψ
+=><= Journal_operacional_como_activador --[Nudo de Rizo] [term]
+
+====================================================================

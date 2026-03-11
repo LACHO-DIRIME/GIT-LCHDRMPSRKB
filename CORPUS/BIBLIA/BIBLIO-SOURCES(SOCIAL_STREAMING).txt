@@ -1,0 +1,333 @@
+# BIBLIO-SOURCES(SOCIAL_STREAMING).txt
+
+====================================================================
+
+## 🪑 SOCIAL {STREAMING} — FLUJO CONTINUO Y SOSTENIDO
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+{streaming} es el módulo SOCIAL que gobierna el flujo continuo y sostenido de comunicación relacional entre el sistema y actores externos verificados durante ventanas temporales declaradas.
+
+#### 1.2 Por qué es SOCIAL y no [wu-mail]
+[wu-mail] emite soberanamente resultado puntual; {streaming} mantiene flujo relacional continuo.
+
+#### 1.3 Distinción de {drip}
+{drip} es cadencia dosificada; {streaming} es flujo continuo sostenido.
+
+#### 1.4 Ventana temporal de streaming
+{streaming} opera en ventanas declaradas por {scheduler} — no es canal permanente.
+
+#### 1.5 Relación con H30
+H30 (Lo Adherente) como hexagrama de {streaming} — el fuego que se adhiere y sostiene mientras hay combustible.
+
+#### 1.6 Requisito de recursos
+{streaming} requiere más Work++ que {drip}: flujo continuo consume más recursos que goteo dosificado.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Capacidades
+- Mantener flujo continuo de comunicación relacional.
+- Operar en ventanas temporales declaradas.
+- Soportar transmisión bidireccional.
+- Registrar en paralelo con {note}.
+
+#### 2.2 Limitaciones absolutas
+{streaming} no puede transmitir fuera del perímetro soberano ni contenido no verificado.
+
+#### 2.3 Condiciones de violación
+- **Violación primaria:** {streaming} activo sin ventana temporal declarada.
+- **Violación secundaria:** transmisión de contenido que viola [foundation] en flujo continuo.
+- **Señal alerta:** consumo de Work++ por encima de d₅ [management] disponible.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 Tipos de flujo en {streaming}
+- **STREAM_LIVE:** transmisión en tiempo real de estado del sistema.
+- **STREAM_BROADCAST:** flujo a múltiples destinatarios simultáneos.
+- **STREAM_BIDIRECTIONAL:** flujo de doble sentido — sistema recibe y emite simultáneamente.
+- **STREAM_ARCHIVE:** flujo con registro paralelo en {note}.
+- **STREAM_SILENT:** ventana abierta sin transmisión activa — presencia soberana sin emisión.
+
+#### 3.2 Gestión de ventana temporal
+- **Declaración:** {scheduler} declara ventana de {streaming}.
+- **Apertura soberana:** verificación de Work++ disponible.
+- **Monitoreo:** consumo durante ventana activa.
+- **Cierre soberano:** cuando [term] de ventana expira o Work++ cae bajo umbral.
+
+#### 3.3 {streaming} y H30
+- **H30 como base:** el fuego se adhiere a su soporte — {streaming} se adhiere a su ventana temporal.
+- **Apagado soberano:** cuando Work++ falla, el fuego ({streaming}) se apaga.
+
+#### 3.4 {streaming} y RABBIT-EYES-EGG
+- **Base ontológica:** RABBIT-EYES-EGG estructura la expansión de {streaming}.
+- **Algoritmo Conejo:** 1→2→4→8 organiza crecimiento del flujo.
+- **Límite de saturación:** 256 nodos activos con MASKING activa.
+
+#### 3.5 Relación con dominios económicos
+
+##### Memcoins/Volatilidad
+- STREAM_LIVE de datos de mercado en ventana de análisis activo.
+- STREAM_BIDIRECTIONAL con exchange verificado durante operación.
+- Límite: cierra ante EVENT_CRITICAL de seguridad.
+
+##### Custodia Móvil
+- STREAM_SILENT de monitoreo de entorno de custodia en tiempo real.
+- STREAM_BIDIRECTIONAL en operación de firma con parte autorizada.
+- Límite: requiere BIOMETRICS verificado durante ventana.
+
+##### Notaría Digital
+- STREAM_BIDIRECTIONAL en sesión notarial con partes declarantes verificadas.
+- STREAM_ARCHIVE para registro completo en {note}.
+- Límite: no puede activarse sin {chair} conduciendo sesión.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con [foundation]
+{streaming} cierra inmediatamente ante foundation COMPROMISED.
+
+#### 4.2 Con [scope]
+{streaming} opera dentro del perímetro soberano declarado.
+
+#### 4.3 Con [term]
+Ventana de {streaming} tiene [term] propio declarado por {scheduler}.
+
+#### 4.4 Con {scheduler}
+{scheduler} declara ventanas de {streaming}.
+
+#### 4.5 Con {chair}
+{streaming} puede ser el canal de sesión conducida por {chair}.
+
+#### 4.6 Con {drip}
+Complementarios — {drip} dosifica, {streaming} fluye.
+
+#### 4.7 Con {note}
+{note} registra lo producido en ventana de {streaming}.
+
+#### 4.8 Con {masking}
+{masking} protege contenido sensible en flujo de {streaming}.
+
+#### 4.9 Con [ku-chat]
+STREAM_BIDIRECTIONAL activa [ku-chat] en recepción simultánea.
+
+#### 4.10 Con [wu-mail]
+{streaming} puede ser el canal de entrega de [wu-mail].
+
+#### 4.11 Con RABBIT-EYES-EGG
+Base ontológica del flujo continuo.
+
+#### 4.12 Con SAMU @
+SAMU audita ventanas de {streaming} y consumo de Work++.
+
+#### 4.13 Con Behavioral RAG
+Patrones de ventanas anteriores calibran apertura futura.
+
+---
+
+### 5.0 ESTADOS DE {streaming}
+
+#### 5.1 STREAM_STANDBY
+- **Condición:** sin ventana activa.
+- **Comportamiento:** agenda recibida de {scheduler}.
+- **Operación:** Work++ verificado disponible.
+
+#### 5.2 STREAM_OPENING
+- **Condición:** apertura de ventana en curso.
+- **Comportamiento:** verificación de destinatarios y canal.
+- **Operación:** CRYPTO (link seat) certificando conexión.
+
+#### 5.3 STREAM_ACTIVE
+- **Condición:** flujo continuo sostenido en ventana.
+- **Comportamiento:** Work++ monitoreado continuamente.
+- **Operación:** {note} registrando en paralelo si STREAM_ARCHIVE activo.
+
+#### 5.4 STREAM_DEGRADED
+- **Condición:** Work++ cayendo durante ventana activa.
+- **Comportamiento:** reducción de calidad de flujo soberana.
+- **Operación:** evaluación de cierre anticipado.
+
+#### 5.5 STREAM_CLOSING
+- **Condición:** ventana en cierre soberano.
+- **Comportamiento:** flujo reduciéndose ordenadamente.
+- **Operación:** {note} completando registro.
+
+#### 5.6 STREAM_CLOSED
+- **Condición:** ventana cerrada con [term] expirado.
+- **Comportamiento:** Behavioral RAG actualizado.
+- **Operación:** recursos liberados.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Afectación de d₃ [scenario]
+{streaming} afecta d₃ cuando flujo actualiza mapa de situación en tiempo real.
+
+#### 6.2 Impacto en d₁ [term]
+STREAM_DEGRADED consume d₁ por ineficiencia de recursos.
+
+#### 6.3 Afectación de d₄ [event]
+STREAM_BIDIRECTIONAL genera flujo continuo de eventos.
+
+#### 6.4 Pesos contextuales
+H30 (Lo Adherente) como hexagrama de {streaming} — flujo que se adhiere a su soporte.
+
+#### 6.5 Aprendizaje en Behavioral RAG
+Patrones de ventanas calibran {streaming} futuro.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Apertura de STREAM_LIVE en ventana declarada
+```
+{Social} streaming =><= .. open .. $$live_window$$ --[As de Guía] [term]
+```
+
+#### 7.2 STREAM_BIDIRECTIONAL en sesión activa
+```
+{Social} streaming =><= .. bidirectional .. $$active_session$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.3 STREAM_DEGRADED evaluando cierre anticipado
+```
+{Social} streaming =><= .. degrade .. $$insufficient_resources$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.4 STREAM_SILENT como presencia soberana
+```
+{Social} streaming =><= .. silent .. $$presence_only$$ --[Ballestrinque] [term]
+```
+
+#### 7.5 {streaming} en dominio memcoins
+```
+{Social} streaming =><= .. trade .. $$market_stream$$ --[As de Guía] [term]
+```
+
+#### 7.6 {streaming} en dominio custodia móvil
+```
+{Social} streaming =><= .. secure .. $$custody_monitor$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.7 {streaming} en dominio notaría digital
+```
+{Social} streaming =><= .. certify .. $$notary_session$$ --[Ballestrinque] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+- **Activación:** {streaming} en STREAM_ACTIVE.
+- **Efecto:** flujo continuo sostenido en ventana soberana.
+
+#### 8.2 Nudo de Ocho
+- **Activación:** ventana cristalizada en Behavioral RAG.
+- **Efecto:** patrón de flujo exitoso establecido.
+
+#### 8.3 Nudo Corredizo
+- **Activación:** cierre forzado ante foundation COMPROMISED o Work++ agotado.
+- **Efecto:** interrupción soberana necesaria.
+
+#### 8.4 Nudo de Rizo
+- **Activación:** STREAM_BIDIRECTIONAL.
+- **Efecto:** unión sostenida entre sistema y actor externo.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+#### 9.1 StreamSchedule
+1. Recepción de ventana temporal de {scheduler}.
+2. Verificación de Work++ disponible.
+3. Consulta a Behavioral RAG para patrones similares.
+4. Coordinación con {masking} si contenido sensible.
+5. Transición a STREAM_OPENING.
+
+#### 9.2 StreamOpen
+1. Apertura soberana con certificación CRYPTO (link seat).
+2. Verificación de destinatarios y canal.
+3. Activación de {note} si STREAM_ARCHIVE requerido.
+4. Monitoreo inicial de Work++.
+5. Transición a STREAM_ACTIVE.
+
+#### 9.3 StreamMonitor
+1. Vigilancia continua de Work++ y calidad de flujo.
+2. Detección de degradación de recursos.
+3. Coordinación con SAMU @ para auditoría.
+4. Ajuste dinámico de flujo según disponibilidad.
+5. Transición a STREAM_DEGRADED si necesario.
+
+#### 9.4 StreamDegrade
+1. Detección de Work++ insuficiente.
+2. Reducción soberana de calidad de flujo.
+3. Evaluación de cierre anticipado vs continuación degradada.
+4. Notificación a {scheduler} de condición.
+5. Transición a STREAM_CLOSING si necesario.
+
+#### 9.5 StreamClose
+1. Cierre ordenado con archivo en {note}.
+2. Actualización de Behavioral RAG con patrón de ventana.
+3. Liberación de recursos y canales.
+4. Coordinación con {scheduler} para próxima ventana.
+5. Transición a STREAM_STANDBY.
+
+#### 9.6 StreamForce
+1. Detección de foundation COMPROMISED.
+2. Cierre forzado inmediato sin excepción.
+3. Notificación a [management] y SAMU @.
+4. Registro de causa en Behavioral RAG.
+5. Transición a STREAM_STANDBY.
+
+---
+
+### 10.0 MÉTRICAS
+
+- **Duración promedio de ventana:** por tipo.
+- **Ratio STREAM_ACTIVE vs STREAM_DEGRADED.**
+- **Consumo promedio de Work++:** por ventana.
+- **Frecuencia de cierre forzado vs soberano.**
+- **Tasa de STREAM_BIDIRECTIONAL vs STREAM_LIVE.**
+- **Delta-Work++:** al cierre de ventana.
+
+---
+
+### 11.0 REGLAS
+
+- {streaming} no puede activarse sin ventana temporal declarada por {scheduler}.
+- {streaming} cierra inmediatamente ante foundation COMPROMISED.
+- Work++ bajo umbral mínimo activa STREAM_DEGRADED automáticamente.
+- STREAM_BIDIRECTIONAL requiere certificación CRYPTO (link seat).
+- {masking} debe estar activo en {streaming} con contenido sensible.
+- {note} debe registrar toda ventana de {streaming} con STREAM_ARCHIVE activo.
+- {streaming} no puede operar fuera de [scope].
+- Límite de 256 nodos activa MASKING automáticamente.
+- SAMU @ audita toda ventana de {streaming}.
+- Behavioral RAG registra todo patrón de ventana para calibración futura.
+- {streaming} cierra con [term] del ciclo.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+{streaming} fija el flujo continuo sostenido como condición de presencia relacional activa del sistema.
+
+#### 12.2 Limitaciones
+No opera sin ventana declarada, no continúa con Work++ insuficiente, no transmite fuera de [scope] ni contenido no verificado.
+
+#### 12.3 Habilitaciones
+Presencia relacional continua en ventanas soberanas, STREAM_BIDIRECTIONAL como canal de intercambio en tiempo real, STREAM_SILENT como presencia soberana de bajo consumo, trazabilidad en {note}.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

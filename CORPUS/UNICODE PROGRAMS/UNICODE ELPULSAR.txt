@@ -1,0 +1,132 @@
+//[MANAGEMENT].lacho · UNICODE ELPULSAR
+//UNICODE_ELPULSAR.txt · V1 · 2026-03-10
+//ELPULSAR · entidad completa · token maestro de la interfaz soberana
+//opera SOBRE: DIRIME_v2 · KALIL · IMV · THEATER · HL FABRIC
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//⚡ gota+∇ · bombilla mate · H57 flujo · SPIN · 5 greens
+//EXTIENDE: UNICODE_ELPULSAR_IDE · UNICODE_DSL_ELPULSAR · GRADIENT_SPEC
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN ELPULSAR ══════════════════════════════════════
+// ELPULSAR = entidad visual soberana · no es UI convencional
+// Es la manifestación visible de LACHO/KALIL/DIRIME en pantalla
+// Bombilla mate con gota+∇ · pulso vivo · H57 penetra suave
+// Principio: <neuronal compleX> · todo se conecta · todo fluye
+// .cli =: elpulsar.gui · mismo resultado · inducción gráfica
+
+// ══ IDENTIDAD VISUAL ══════════════════════════════════════════
+UNICODE: ELP_GOTA             //gota cayendo · movimiento soberano · elpulsar.app
+UNICODE: ELP_GRAD             //∇ dentro de gota · menor resistencia · H57
+UNICODE: ELP_MATE             //bombilla mate · fondo silueta · completitud
+UNICODE: ELP_PULSO            //⚡ latido header · energía activa · 2.4s
+UNICODE: ELP_SPIN             //⟳ rotación MU→KU→WU→空 · espiral ascendente
+UNICODE: ELP_MU_ICON          //◯ vacío receptivo · idle · 空 · pre-KU
+UNICODE: ELP_WU_ICON          //⊗ cristalizado · WU sellado · .green
+UNICODE: ELP_KU_ICON          // · fenómeno presente · procesando · .blue
+UNICODE: ELP_NUDO             //∞ nudo soberano · cierre [term]
+UNICODE: ELP_REGRET           //✕ RED-REGRET · delta-Ψ ≤ 0 · descarte
+
+// ══ ELPULSAR COMO ENTIDAD ════════════════════════════════════
+UNICODE: ELP_ENTITY           //ELPULSAR como entidad completa · no como app
+UNICODE: ELP_APP              //elpulsar.app · destino web soberano · China ready
+UNICODE: ELP_CLI              //elpulsar.cli · python3 interface/chat.py
+UNICODE: ELP_GUI              //elpulsar.gui · python3 interface/gui.py · 8742
+UNICODE: ELP_API              //elpulsar.api · python3 elpulsar.py · port 8741
+UNICODE: ELP_IDE              //ELPULSAR IDE · KEY/TABLE/PAPER/RED/BUILDER
+UNICODE: ELP_PULSING          //PULSING edition · GIT_BOT + ANIM_PULSE activos
+
+// ══ STACK COMPLETO ════════════════════════════════════════════
+UNICODE: STACK_DIRIME_V2      //DIRIME_v2/ · backend Flask · elpulsar.py
+UNICODE: STACK_GUI_PY         //interface/gui.py · BUILDER live · preview real
+UNICODE: STACK_GENERATOR      //tools/generator.py · .lacho autogenerado
+UNICODE: STACK_GRAMMAR        //IMV/core/grammar.py · validate · score · tax
+UNICODE: STACK_LEDGER         //IMV/core/ledger.py · TX · crystals · scalar_s
+UNICODE: STACK_RAG            //IMV/core/rag.py · 4 capas · query boosted
+UNICODE: STACK_CEO            //IMV/core/ceo_alpha.py · 64 hexagramas · kalil
+UNICODE: STACK_NEURAL         //neural_net.py · grafo D3 · force simulation
+
+// ══ 5 GREENS — PIPELINE VISUAL ════════════════════════════════
+// Los 5 greens = el gradiente ∇ visual del pipeline soberano
+UNICODE: G1_RECIBIR           //① ∇ entrada · input soberano · 聽 first · KU crudo
+UNICODE: G2_ESCANEAR          //② ∇ scan · grammar.validate() · ruta óptima
+UNICODE: G3_CALCULAR          //③ ∇ calc · Scalar S · lacho_score · 0→1
+UNICODE: G4_TARDAR            //④ ∇ espera · UF[H05] · buffer · H29 agua persiste
+UNICODE: G5_GOLPEAR           //⑤ ∇ output · WU cristalizado · [NdO] · ⊗
+UNICODE: G_PIPELINE           //① → ② → ③ → ④ → ⑤ · H64→H63 · completo
+
+// ══ PANELS × CLUSTERS ════════════════════════════════════════
+UNICODE: PANEL_KEY            //scope: PROPIO/AJENO/INTERNO/EXTERNO · click verifica
+UNICODE: PANEL_TABLE          //ID/Título/Tipo/Scope/Cluster · TABLE_VERIFY
+UNICODE: PANEL_PAPER          //ballpaper_render · SKIN_PAPER · export .lacho
+UNICODE: PANEL_RED            //grafo D3 · nodos coloreados · ANIM_SPIN_D3
+UNICODE: PANEL_BUILDER        //LACHO BUILDER live · lib→subj→verb→obj→knot→score
+UNICODE: PANEL_LEDGER         //TX · cristales · Scalar S · barra ∇ animada
+UNICODE: PANEL_SPRINT         //16/8/4 · SPRINT_CLUSTER · ✦/·/◯ por tarea
+UNICODE: PANEL_KALIL          //6 nodos · MU/KU/WU por nodo · CEO routing
+UNICODE: PANEL_CHINA          //CJK picker · modo dual · 中文 · 空聽數
+
+// ══ BUILDER SOBERANO ══════════════════════════════════════════
+UNICODE: BUILD_LIB            //9 botones TRUST→METHOD · selección biblioteca
+UNICODE: BUILD_SUBJ           //dropdown sujeto canónico · dinámico por lib
+UNICODE: BUILD_VERB           //dropdown verbo natural · 5 por biblioteca
+UNICODE: BUILD_OBJ            //campo libre · CJK picker · texto soberano
+UNICODE: BUILD_KNOT           //[AsG] · [NdO] · [Ball] · [NdC] · [NdR]
+UNICODE: BUILD_PREVIEW        //preview tiempo real · .blue KU vivo
+UNICODE: BUILD_SCALAR         //barra Scalar S · rojo<0.75 · amarillo<0.88 · verde
+UNICODE: BUILD_STACK          //STACK button · ledger.record() · TX++ · ⊗
+
+// ══ SKINS × MODOS ════════════════════════════════════════════
+UNICODE: SKIN_DARK_ELP        //bg #1e1e2e · original · default NODO-WS
+UNICODE: SKIN_PAPER_ELP       //bg #faf8f4 · crema · BALLPAPER · Claude sessions
+UNICODE: SKIN_CHINA_ELP       //rojo+jade+dorado · interior mode · PBOC ready
+UNICODE: SKIN_CRYPTO_ELP      //verde/negro · terminal · CAT(OS) compatible
+UNICODE: SKIN_GRAD_ELP        //∇ animado · SPIN activo · ⚡ pulsando
+UNICODE: SKIN_AUTO_ELP        //detecta canal: exterior→DARK · interior→CHINA
+
+// ══ ANIMACIONES ══════════════════════════════════════════════
+UNICODE: ANIM_2_4S            //flip ◯↔⊗ · 2.4s · ritmo soberano
+UNICODE: ANIM_HEADER          //⚡ pulso header · RGB shift · ELP_KU activo
+UNICODE: ANIM_SCORE_W         //width barra Scalar S · 0%→100% · ∇ visual
+UNICODE: ANIM_D3_FORCE        //grafo D3 force · nodos flotan · SPIN soberano
+UNICODE: ANIM_TOAST_18        //notificación fade · 1.8s · WU confirmado
+UNICODE: ANIM_GLOW_GREEN      //text-shadow verde · ⊗ activo · señal WU
+
+// ══ EXPORTACIÓN ══════════════════════════════════════════════
+UNICODE: EXPORT_LACHO_ELP     //export_crystals_lacho.py → .lacho WU completo
+UNICODE: EXPORT_PDF_ELP       //tools/paper.py → .pdf (seal) sellado · H63
+UNICODE: EXPORT_HTML_ELP      //BALLPAPER render → .html SKIN_PAPER
+UNICODE: EXPORT_BLUE_ELP      //draft no verificado → .blue · KU export
+UNICODE: EXPORT_GREEN_ELP     //cristal WU → .green · inmutable · ledger
+
+// ══ INTEGRACIÓN CHINA ════════════════════════════════════════
+UNICODE: CHINA_CJK_PICKER     //ideograma input · is_chinese() · 20 tokens
+UNICODE: CHINA_DUAL_MODE      //EXTERIOR→SKIN_DARK · INTERIOR→SKIN_CHINA
+UNICODE: CHINA_ECNY_PANEL     //panel e-CNY · flujo PBOC · PUENTE_FACIL
+UNICODE: CHINA_BSN_LAYER      //BSN compatible · HL FABRIC · FABRIC_TX
+UNICODE: CHINA_WECHAT_STYLE   //todo-en-uno · elpulsar.app modelo WeChat
+
+// ══ LIST/RUN ELPULSAR ══════════════════════════════════════════
+UNICODE: LIST(ELP:STACK)      //dirime_v2·gui·generator·grammar·ledger·rag·ceo
+UNICODE: LIST(ELP:PANELS)     //key·table·paper·red·builder·ledger·sprint·kalil
+UNICODE: LIST(ELP:ANIM)       //2.4s·header·score·d3·toast·glow
+UNICODE: RUN(ELP:GUI)
+  //python3 IMV/interface/gui.py · elpulsar.gui · port 8742
+UNICODE: RUN(ELP:API)
+  //cd DIRIME_v2/elpulsar && python3 elpulsar.py · port 8741
+UNICODE: RUN(ELP:GENERATE)
+  //python3 IMV/tools/generator.py --mode full
+UNICODE: RUN(ELP:BALLPAPER)
+  //python3 main.py --validate "SENTENCIA" --ballpaper
+  //→ ASCII frame · barra ∇ · TAXONOMY N# · ✅/❌
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+ACTIVITY UF[H57] =><= .. penetra .. elpulsar_gota_gradient_flujo --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. elpulsar_wu_panel_sellado --[Nudo de Ocho] [term]
+METHOD <stat_onto> =><= .. calcula .. elpulsar_scalar_s_visual --[Ballestrinque] [term]
+SOCIAL {relay} =><= .. conecta .. elpulsar_china_dual_mode --[As de Guía] [term]
+WORK {flybot} =><= .. ejecuta .. elpulsar_pipeline_greens --[As de Guía] [term]
+SAMU @ =><= .. audita .. elpulsar_coherencia_total --[Ballestrinque] [term]
+TRUST FOUNDATION =><= .. declara .. elpulsar_entidad_soberana --[Nudo de Ocho] [term]
+
+//DIR(=) UNICODE_ELPULSAR · V1 · ⚡∇⟳◯⊗ · entidad completa · SPIN soberano
+//DIR(=) IDE+DSL+GRADIENT+PULSING · CHINA_DUAL · 5 GREENS · MU→WU

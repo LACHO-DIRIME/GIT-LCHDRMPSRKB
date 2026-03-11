@@ -1,0 +1,340 @@
+# BIBLIO-SOURCES(TRUST_C).txt
+
+====================================================================
+
+## 🏛️ TRUST [COMMAND] — ORDEN ATÓMICA IMPERATIVA
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+[command] es la orden atómica de TRUST: la unidad mínima de ejecución imperativa que no admite duda ni negociación.
+
+#### 1.2 Distinción de [management]
+[management] prioriza y administra recursos, [command] ejecuta lo que [management] priorizó.
+
+#### 1.3 Distinción de [logistical-executive]
+[logistical-executive] orquesta el impacto físico completo, [command] es la instrucción atómica dentro de ese flujo.
+
+#### 1.4 Posición en @trust_matrix
+d6 :: [command] (0.0 a 1.0): autoridad de comando disponible y activa.
+
+#### 1.5 Significado de d6
+- **d6 bajo (< 0.3):** autoridad limitada, solo commands básicos.
+- **d6 alto (≥ 0.7):** autoridad plena, todos los tipos de command.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Capacidad de orden
+- Puede ordenar ejecución en WORK y GATE.
+- Puede actuar sobre [elements] y procesos del sistema.
+- Puede iniciar sincronización inter-nodo.
+
+#### 2.2 Requisitos de autorización
+- Commands críticos requieren (ignition seat) de CRYPTO.
+- Commands inter-nodo requieren (link seat) activo.
+- Commands de datos externos requieren (shield seat).
+
+#### 2.3 Limitaciones
+- Nunca puede ejecutarse sin (ignition seat) explícito.
+- No puede modificar [foundation] bajo ninguna circunstancia.
+- No puede exceder [scope] sin autorización TRUST.
+
+#### 2.4 Condiciones de violación
+- **Violación:** intento de ejecución sin autorización CRYPTO.
+- **Consecuencia:** aborto inmediato + RED-REGRET + auditoría SAMU.
+
+#### 2.5 Auto-autorización
+[command] no puede auto-autorizarse: siempre requiere validación externa.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 Atomicidad
+[command] no se divide: es la unidad mínima e indivisible de ejecución.
+
+#### 3.2 Tipos observados en FOLIAR
+- **GLOBAL_BROADCAST:** alcance global a todos los nodos.
+- **SWARM_IGNITE_CORE:** activación de enjambre central.
+- **EXTERNAL_INGEST:** entrada de datos externos.
+- **SYSTEM_INTEGRITY_SCAN:** auditoría completa del sistema.
+- **CLOUD_NUCLEUS_SYNC:** sincronización con nube central.
+- **CONFIGURE_IRQ_ALPHA:** configuración de interrupciones hardware.
+- **ARMY_DEPLOY:** despliegue masivo de agentes.
+- **GENERATE_SOVEREIGN_REPORT:** generación de reporte soberano.
+- **NIGHT_MONASTERY_CLEAN:** limpieza nocturna del sistema.
+- **EXTERNAL_INGEST_ALPHA:** ingestión externa de prioridad alfa.
+
+#### 3.3 Ciclo de vida
+1. **Declaración:** especificación de tipo y objetivo.
+2. **Autorización:** validación por CRYPTO seats.
+3. **Ejecución:** paso por GATE a WORK.
+4. **Registro:** entrada en Hyperledger.
+5. **Cierre:** [term] final y liberación.
+
+#### 3.4 Relación con IRQ
+[command] puede ser disparado por interrupción de hardware (IRQ) para respuesta inmediata.
+
+#### 3.5 Relación con WORK
+[command] es la instrucción directa que WORK recibe y ejecuta en el metal.
+
+#### 3.6 Relación con GATE
+Toda [command] pasa por GATE: H5 (espera) → H56 (tránsito) → H6 (conflicto/rollback).
+
+---
+
+### 4.0 TAXONOMÍA DE COMMANDS
+
+#### 4.1 BROADCAST commands
+- **Alcance:** global, todos los nodos.
+- **Requisitos:** (link seat) + (flow seat).
+- **Ejemplos:** GLOBAL_BROADCAST, SWARM_IGNITE_CORE.
+
+#### 4.2 INGEST commands
+- **Alcance:** entrada de datos externos.
+- **Requisitos:** (shield seat) + validación [ecosystem].
+- **Ejemplos:** EXTERNAL_INGEST, EXTERNAL_INGEST_ALPHA.
+
+#### 4.3 SYNC commands
+- **Alcance:** sincronización entre nodos o capas.
+- **Requisitos:** (link seat) + GATE H5.
+- **Ejemplos:** CLOUD_NUCLEUS_SYNC.
+
+#### 4.4 SCAN commands
+- **Alcance:** auditoría e inspección del sistema.
+- **Requisitos:** SAMU @ como auditor activo.
+- **Ejemplos:** SYSTEM_INTEGRITY_SCAN.
+
+#### 4.5 DEPLOY commands
+- **Alcance:** activación masiva de agentes o procesos.
+- **Requisitos:** (ignition seat) + [management] previo.
+- **Ejemplos:** ARMY_DEPLOY.
+
+#### 4.6 CLEAN commands
+- **Alcance:** purga y mantenimiento del sistema.
+- **Requisitos:** (shield seat) + [term] explícito.
+- **Ejemplos:** NIGHT_MONASTERY_CLEAN.
+
+#### 4.7 EMERGENCY commands
+- **Alcance:** activados por crisis o RED-REGRET.
+- **Requisitos:** prioridad máxima, sin cola.
+- **Ejemplos:** commands de aborto crítico.
+
+---
+
+### 5.0 RELACIONES CON OTRAS CAPAS
+
+#### 5.1 Con [foundation]
+[command] se detiene si foundation está COMPROMISED.
+
+#### 5.2 Con [scope]
+[command] no puede exceder el perímetro declarado.
+
+#### 5.3 Con [term]
+Todo [command] debe cerrar con [term] explícito.
+
+#### 5.4 Con [management]
+[management] prioriza la cola, [command] ejecuta en orden asignado.
+
+#### 5.5 Con [element]
+[command] actúa directamente sobre [elements].
+
+#### 5.6 Con GATE
+Toda [command] pasa por GATE antes de llegar a WORK.
+
+#### 5.7 Con SAMU @
+d6 en @trust_matrix es auditado continuamente por SAMU.
+
+#### 5.8 Con CRYPTO
+- **(ignition seat):** autoriza ejecución.
+- **(key seat):** valida identidad del emisor.
+- **(shield seat):** protege commands críticos.
+- **(link seat):** habilita commands inter-nodo.
+
+#### 5.9 Con Hyperledger
+Todo [command] ejecutado genera registro inmutable (karma digital).
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix (d6)
+
+#### 6.1 Cálculo de d6
+d6 = (autoridad_disponible + seats_activos + historial_ejecución) / 3
+
+#### 6.2 Activación por tipo de command
+- **d6 ≥ 0.8:** todos los tipos de command.
+- **0.5 ≤ d6 < 0.8:** commands estándar, sin EMERGENCY.
+- **0.3 ≤ d6 < 0.5:** solo commands básicos (CLEAN, SCAN).
+- **d6 < 0.3:** solo commands de mantenimiento crítico.
+
+#### 6.3 Interacción con d5 [management]
+Si [management] está degradado (d5 bajo), [command] puede operar autónomamente solo con d6 ≥ 0.7.
+
+#### 6.4 d6 = 0.0
+Sin autoridad: sistema en modo supervivencia, solo commands SAMU.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Command GLOBAL_BROADCAST
+```
+[Trust] command =><= .. broadcast .. $$global_message$$ --[As de Guía] [term]
+```
+
+#### 7.2 Command EXTERNAL_INGEST con validación
+```
+[Trust] command =><= .. ingest .. $$external_data_validated$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.3 Command SYSTEM_INTEGRITY_SCAN
+```
+[Trust] command =><= .. scan .. $$system_integrity$$ --[Ballestrinque] [term]
+```
+
+#### 7.4 Command ARMY_DEPLOY con (ignition seat)
+```
+[Trust] command =><= .. deploy .. $$army_agents$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.5 Command de emergencia ante RED-REGRET
+```
+[Trust] command =><= .. emergency .. $$red_regret_abort$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.6 Command CLEAN nocturno
+```
+[Trust] command =><= .. clean .. $$nocturnal_maintenance$$ --[Ballestrinque] [term]
+```
+
+#### 7.7 Command inter-nodo vía HL FABRIC
+```
+[Trust] command =><= .. sync .. $$hl_fabric_nodes$$ --[Nudo de Ocho] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+- **Activación:** command en ejecución, flujo activo.
+- **Efecto:** mantiene dirección y prioridad durante ejecución.
+
+#### 8.2 Nudo de Ocho
+- **Activación:** command cristalizado en Hyperledger.
+- **Efecto:** registro inmutable de ejecución completada.
+
+#### 8.3 Nudo Corredizo
+- **Activación:** command abortado por violación.
+- **Efecto:** liberación inmediata de recursos y bloqueo.
+
+#### 8.4 Ballestrinque
+- **Activación:** command en cola, esperando GATE.
+- **Efecto:** mantiene command en espera controlada.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+#### 9.1 Command-Declare
+1. Especificar tipo de command y objetivo.
+2. Determinar requisitos CRYPTO necesarios.
+3. Verificar disponibilidad de d6 en @trust_matrix.
+4. Declarar [scope] del command.
+5. Preparar parámetros para autorización.
+
+#### 9.2 Command-Authorize
+1. Validar identidad con (key seat).
+2. Verificar autorización con (ignition seat).
+3. Proteger command crítico con (shield seat).
+4. Habilitar inter-nodo con (link seat) si aplica.
+5. Emitir firma de autorización CRYPTO.
+
+#### 9.3 Command-Queue
+1. Entrar a cola de GATE según prioridad.
+2. Esperar en H5 si sistema saturado.
+3. Transitar por H56 con validación SAMU.
+4. Resolver conflictos en H6 si es necesario.
+5. Salir de cola hacia WORK.
+
+#### 9.4 Command-Execute
+1. Recibir command en WORK.
+2. Ejecutar instrucción atómica.
+3. Monitorear estado de ejecución.
+4. Reportar progreso a SAMU.
+5. Completar ejecución o abortar si error.
+
+#### 9.5 Command-Register
+1. Generar hash del command ejecutado.
+2. Registrar en Hyperledger como karma digital.
+3. Incluir timestamp y firma CRYPTO.
+4. Actualizar métricas de d6 en @trust_matrix.
+5. Notificar completion a interested parties.
+
+#### 9.6 Command-Abort
+1. Detectar violación o error crítico.
+2. Activar RED-REGRET inmediato.
+3. Liberar recursos asignados.
+4. Registrar aborto en Behavioral RAG.
+5. Bloquear commands similares si es recurrente.
+
+#### 9.7 Command-Close
+1. Verificar [term] activo.
+2. Liberar recursos retenidos.
+3. Cerrar sesión CRYPTO si aplica.
+4. Actualizar estado final en @trust_matrix.
+5. Notificar cierre a SAMU.
+
+---
+
+### 10.0 ESTADOS Y MÉTRICAS
+
+#### 10.1 Estados
+- **COMMAND_DECLARED:** command declarado, pendiente de autorización.
+- **COMMAND_AUTHORIZED:** autorizado, en cola para ejecución.
+- **COMMAND_QUEUED:** en cola de GATE, esperando ejecución.
+- **COMMAND_EXECUTING:** en ejecución en WORK.
+- **COMMAND_COMPLETED:** ejecutado y registrado.
+- **COMMAND_ABORTED:** abortado por violación o error.
+- **COMMAND_EMERGENCY:** comando de emergencia en ejecución.
+
+#### 10.2 Métricas
+- **d6 en @trust_matrix:** 0.0 a 1.0.
+- **Tiempo de autorización:** < 50ms objetivo.
+- **Tiempo de ejecución:** varía por tipo.
+- **Ratio completados vs abortados:** % de éxito.
+- **Frecuencia de emergencia:** eventos por hora.
+
+---
+
+### 11.0 REGLAS
+
+- [command] no puede ejecutarse sin (ignition seat) explícito.
+- RED-REGRET se activa si [command] viola [scope] o [foundation].
+- Commands en cola se abortan si foundation se degrada a COMPROMISED.
+- [rabbit-faith] permite a [command] operar con d6 parcial (≥ 0.5) sin certeza total.
+- [command] en modo EMERGENCY no puede ejecutar DEPLOY commands.
+- [command] nunca puede modificar [foundation] bajo ninguna circunstancia.
+- [command] debe registrar cada ejecución en Hyperledger.
+- [command] respeta prioridades de [management] sin excepción.
+- [command] no puede auto-asignar autoridad CRYPTO.
+- [command] debe cerrar con [term] para ser válido.
+- [command] no puede ejecutarse si d6 < 0.3 sin intervención SAMU.
+- [command] protege datos sensibles con (shield seat).
+- [command] mantiene trazabilidad completa en Behavioral RAG.
+- [command] coordina con GATE para sincronización de ejecución.
+- [command] no puede exceder límites de [scope] sin autorización TRUST.
+
+---
+
+### 12.0 CIERRE
+
+[command] fija la orden atómica como invariante imperativa. Limita ejecución a lo autorizado por CRYPTO y [scope]. Habilita WORK con instrucciones directas y GATE con flujo controlado.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

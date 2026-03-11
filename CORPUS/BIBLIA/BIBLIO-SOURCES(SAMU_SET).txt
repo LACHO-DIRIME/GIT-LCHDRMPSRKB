@@ -1,0 +1,252 @@
+# BIBLIO-SOURCES(SAMU_SET).txt
+
+====================================================================
+
+## ⚙️ SAMU #set — CONFIGURACIÓN SOBERANA DE ESTADO
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+#set es el comando SAMU que prepara el sistema antes del #rise: la configuración soberana de estado que establece las condiciones iniciales para un ciclo operativo completo y verificable.
+
+#### 1.2 La secuencia obligatoria: #set completo → #rise verificado
+Sin #set completo y verificado, no puede haber #rise soberano — el sistema no puede arrancar sin configuración previa.
+
+#### 1.3 Qué configura #set
+Parámetros operativos, límites de seguridad, estado de módulos, configuración de nodos, umbrales de alerta, modo de operación inicial.
+
+#### 1.4 Qué no puede modificar #set
+[foundation] del sistema, principios soberanos, estructura de bibliotecas, delimitadores canónicos.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Qué puede configurar #set
+Estado inicial de módulos WORK, parámetros de seguridad, límites operativos, configuración de comunicación inter-nodos, umbrales de alerta.
+
+#### 2.2 Cuándo se aplica #set
+Antes de cada #rise, al inicio de ciclo operativo, ante cambios sistémicos importantes, después de mantenimiento.
+
+#### 2.3 Condición de violación primaria
+#set incompleto o incorrecto — configuración que no prepara adecuadamente el sistema.
+
+#### 2.4 Condición de violación secundaria
+#set intentando modificar [foundation] — configuración que viola principios soberanos.
+
+#### 2.5 Señal de alerta
+Behavioral RAG detectando patrón de #set fallidos o incompletos.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 ESTADOS DE CONFIGURACIÓN
+
+SET_PENDING: configuración pendiente de ejecución.
+- SET_ACTIVE: configuración en curso de aplicación.
+- SET_CONFIRMED: configuración completada y verificada.
+- SET_INVALID: configuración inválida o incompleta.
+- SET_ROLLBACK: reversión a configuración anterior.
+
+#### 3.2 La secuencia soberana
+#set → verificación → confirmación → #rise → ciclo operativo.
+
+#### 3.3 Relación con #rise (SAMU)
+#set prepara el sistema; #rise activa el ciclo operativo.
+
+#### 3.4 Relación con [management] (TRUST)
+[management] autoriza #set para cambios sistémicos importantes.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+#### 4.1 Con SAMU @
+#set es comando específico de SAMU @ para configuración.
+
+#### 4.2 Con #rise (SAMU)
+#set es prerequisito obligatorio para #rise.
+
+#### 4.3 Con [management] (TRUST)
+[management] autoriza #set para cambios importantes.
+
+#### 4.4 Con WORK
+#set configura estado inicial de módulos WORK.
+
+#### 4.5 Con Behavioral RAG
+Patrones de #set exitosos se aprenden en Behavioral RAG.
+
+#### 4.6 Con HL FABRIC
+Todo #set se registra inmutablemente en HL FABRIC.
+
+#### 4.7 Con DIRIME LINUX
+#set configura ambos nodos del sistema DIRIME.
+
+---
+
+### 5.0 ESTADOS DE CONFIGURACIÓN
+
+#### 5.1 SET_STANDBY
+Sistema listo para nueva configuración.
+
+#### 5.2 SET_PENDING
+Configuración pendiente de ejecución.
+
+#### 5.3 SET_ACTIVE
+Configuración en curso de aplicación.
+
+#### 5.4 SET_CONFIRMED
+Configuración completada y verificada.
+
+#### 5.5 SET_INVALID
+Configuración inválida o incompleta.
+
+#### 5.6 SET_ROLLING_BACK
+Reversión a configuración anterior.
+
+---
+
+### 6.0 RELACIÓN CON @trust_matrix
+
+#### 6.1 Protege d₁ [foundation]
+#set nunca puede modificar [foundation].
+
+#### 6.2 Impacta d₂ [scope]
+#set define el [scope] operativo del sistema.
+
+#### 6.3 Enriquece d₅ [management]
+Configuraciones complejas requieren autorización [management].
+
+#### 6.4 Afecta d₇ [ecosystem
+Configuración óptima mejora salud del ecosistema.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+#### 7.1 Configurando estado inicial
+```
+@Samu #set =><= .. configurar .. $$initial_state_setup$$ --[As de Guía] [term]
+```
+
+#### 7.2 Estableciendo límites de seguridad
+```
+@Samu #set =><= .. establecer .. $$security_limits_set$$ --[Nudo de Ocho] [term]
+```
+
+#### 7.3 Configurando módulos WORK
+```
+@Samu #set =><= .. configurar .. $$work_modules_state$$ --[Ballestrinque] [term]
+```
+
+#### 7.4 Verificando configuración
+```
+@Samu #set =><= .. verificar .. $$configuration_verification$$ --[Nudo Corredizo] [term]
+```
+
+#### 7.5 Rollback a configuración anterior
+```
+@Samu #set =><= .. revertir .. $$rollback_previous_config$$ --[Nudo de Rizo] [term]
+```
+
+---
+
+### 8.0 NUDOS ASOCIADOS
+
+#### 8.1 As de Guía
+SET_PENDING — configuración pendiente, el nudo que inicia la preparación.
+
+#### 8.2 Nudo de Ocho
+SET_ACTIVE — configuración en curso, el nudo que organiza el cambio.
+
+#### 8.3 Nudo Corredizo
+SET_INVALID — configuración inválida, el nudo que requiere corrección.
+
+#### 8.4 Ballestrinque
+SET_CONFIRMED — configuración verificada, el nudo que garantiza preparación.
+
+#### 8.5 Nudo de Rizo
+SET_ROLLBACK — reversión de configuración, el nudo que restaura estado anterior.
+
+---
+
+### 9.0 PROTOCOLOS OPERATIVOS
+
+1. SetPrepare
+   - Preparación de parámetros de configuración.
+   - Verificación de compatibilidad.
+   - Autorización de [management] si es necesario.
+
+2. SetExecute
+   - Aplicación de configuración al sistema.
+   - Monitoreo de cambios en tiempo real.
+   - Verificación de integridad.
+
+3. SetVerify
+   - Verificación completa de configuración aplicada.
+   - Prueba de funcionalidad del sistema.
+   - Confirmación de estado listo.
+
+4. SetConfirm
+   - Confirmación final de configuración.
+   - Registro en HL FABRIC.
+   - Preparación para #rise.
+
+5. SetRollback
+   - Reversión a configuración anterior.
+   - Restauración de estado previo.
+   - Análisis de causa de fallo.
+
+6. SetAudit
+   - Auditoría de efectividad de configuración.
+   - Detección de problemas potenciales.
+   - Actualización de Behavioral RAG.
+
+---
+
+### 10.0 MÉTRICAS
+
+- Tiempo promedio de configuración por tipo.
+- Ratio SET_CONFIRMED vs SET_INVALID.
+- Frecuencia de SET_ROLLBACK por ciclo.
+- Latencia entre #set y #rise.
+- Efectividad de configuración en operación.
+- Número de parámetros configurados por ciclo.
+
+---
+
+### 11.0 REGLAS
+
+- #set es obligatorio antes de cada #rise.
+- #set nunca puede modificar [foundation].
+- [management] autoriza #set para cambios sistémicos.
+- Todo #set se registra en HL FABRIC.
+- SET_INVALID requiere corrección antes de #rise.
+- La secuencia #set → #rise es inalterable.
+- Behavioral RAG aprende de patrones de #set exitosos.
+- SET_ROLLBACK se activa automáticamente ante fallo.
+- La configuración debe ser verificada antes de confirmación.
+- No hay #rise soberano sin #set completo.
+
+---
+
+### 12.0 CIERRE
+
+#### 12.1 Invariante
+#set fija como invariante la configuración soberana de estado como condición de arranque verificable — el sistema que se prepara completamente antes de operar demuestra máxima responsabilidad y previsión.
+
+#### 12.2 Limitaciones
+No puede modificar [foundation], no puede operar sin verificación, no puede omitir pasos obligatorios, no puede arrancar sin configuración completa.
+
+#### 12.3 Habilitaciones
+Preparación sistemática para operación, configuración de módulos WORK, establecimiento de límites de seguridad, coordinación inter-nodos, verificación de estado del sistema.
+
+#### 12.4 Principio constitutivo final
+Como la preparación antes del viaje: #set representa la sabiduría de preparar completamente antes de actuar. La configuración soberana no es burocracia — es la condición necesaria para operación segura y efectiva. El sistema que se prepara meticulosamente antes de arrancar demuestra que la soberanía no está en la acción impulsiva, sino en la preparación consciente y verificada.
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

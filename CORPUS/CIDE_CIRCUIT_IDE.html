@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CIDE · Circuit IDE · ELPULSAR</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&family=Noto+Serif+SC:wght@400;700;900&display=swap');
+
+:root {
+  --paper:   #f0ede4;
+  --cream:   #e8e0d0;
+  --ink:     #09090e;
+  --dim:     #28283a;
+  --red:     #9b1f1f;
+  --gold:    #a07820;
+  --jade:    #1a5c48;
+  --mist:    #7a8a94;
+  --blue-ku: #1a3a6c;
+  --green-wu:#1a5c30;
+  --mark:    #c8a030;
+  --wire:    #28283a;
+  --wire-ku: #1a3a6c;
+  --wire-wu: #1a5c30;
+  --panel-w: 200px;
+  --stock-w: 220px;
+  --builder-h: 110px;
+  --prim-h: 48px;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 12px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ── PAPER LINES ── */
+body::before {
+  content:'';
+  position:fixed; inset:0;
+  background-image: repeating-linear-gradient(
+    0deg, transparent, transparent 23px,
+    rgba(0,0,0,.03) 23px, rgba(0,0,0,.03) 24px
+  );
+  pointer-events:none; z-index:0;
+}
+
+/* ══ TOPBAR ══ */
+.topbar {
+  position:relative; z-index:10;
+  border-bottom: 2px solid var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+  padding: 6px 14px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+.topbar-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px; font-weight: 600;
+  letter-spacing: 8px;
+}
+.topbar-sub {
+  font-size: 8px; letter-spacing: 3px;
+  color: rgba(255,255,255,.45);
+}
+.topbar-spacer { flex:1; }
+.state-btn {
+  border: 1px solid rgba(255,255,255,.3);
+  background: transparent;
+  color: var(--paper);
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 9px; letter-spacing: 2px;
+  padding: 3px 8px; cursor: pointer;
+  transition: all .15s;
+}
+.state-btn:hover { background: rgba(255,255,255,.1); }
+.state-btn.active-mu { border-color: var(--mist); color: var(--mist); }
+.state-btn.active-ku { border-color: #6a9fd8; color: #6a9fd8; }
+.state-btn.active-wu { border-color: #5aad78; color: #5aad78; }
+.circuit-state {
+  font-size: 9px; letter-spacing: 3px;
+  padding: 3px 10px;
+  border: 1px solid var(--mark);
+  color: var(--mark);
+}
+
+/* ══ MAIN LAYOUT ══ */
+.main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: var(--panel-w) 1fr var(--stock-w);
+  grid-template-rows: 1fr var(--prim-h) var(--builder-h);
+  overflow: hidden;
+  position: relative; z-index:1;
+}
+
+/* ══ IMPORT PANEL (LEFT) ══ */
+.import-panel {
+  grid-row: 1 / 3;
+  border-right: 1px solid rgba(0,0,0,.15);
+  background: var(--cream);
+  overflow-y: auto;
+  padding: 10px 8px;
+}
+.import-panel::-webkit-scrollbar { width:4px; }
+.import-panel::-webkit-scrollbar-thumb { background: rgba(0,0,0,.15); }
+
+.panel-hd {
+  font-size: 7px; letter-spacing: 4px; text-transform: uppercase;
+  color: var(--mist); border-bottom: 1px solid rgba(0,0,0,.1);
+  padding-bottom: 5px; margin-bottom: 8px;
+}
+.lib-group { margin-bottom: 12px; }
+.lib-label {
+  font-size: 7px; letter-spacing: 3px; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 4px; display:block;
+}
+.lib-btn {
+  display: block; width: 100%;
+  text-align: left;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 10px;
+  padding: 4px 6px;
+  margin-bottom: 2px;
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  transition: all .1s;
+  color: var(--ink);
+}
+.lib-btn:hover {
+  border-color: rgba(0,0,0,.2);
+  background: rgba(255,255,255,.5);
+}
+.lib-btn.dragging {
+  border-color: var(--gold);
+  background: rgba(160,120,32,.08);
+}
+.lb-TRUST  { border-left: 2px solid #8B4513; }
+.lb-WORK   { border-left: 2px solid var(--jade); }
+.lb-SAMU   { border-left: 2px solid var(--mist); }
+.lb-CRYPTO { border-left: 2px solid #c8a030; }
+.lb-GATE   { border-left: 2px solid var(--red); }
+.lb-SOCIAL { border-left: 2px solid #4a7ab5; }
+.lb-STACK  { border-left: 2px solid #6a4a8c; }
+.lb-METHOD { border-left: 2px solid #4a8c6a; }
+.lb-CJK    { border-left: 2px solid var(--red); font-family: 'Noto Serif SC', serif; font-size: 11px; }
+.lb-CIRCUIT{ border-left: 2px solid var(--ink); }
+
+/* ══ CANVAS (CENTER) ══ */
+.canvas-wrap {
+  grid-row: 1 / 2;
+  position: relative;
+  overflow: hidden;
+  background: var(--paper);
+}
+.canvas-bg {
+  position:absolute; inset:0;
+  background-image:
+    linear-gradient(rgba(0,0,0,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+#circuit-canvas {
+  width:100%; height:100%;
+  position:relative; z-index:2;
+  overflow: hidden;
+}
+.canvas-hint {
+  position:absolute;
+  top:50%; left:50%;
+  transform: translate(-50%,-50%);
+  text-align:center;
+  pointer-events:none;
+  z-index:1;
+  opacity:.35;
+}
+.canvas-hint .ch-big {
+  font-family:'Cormorant Garamond',serif;
+  font-size:48px; font-weight:300;
+  color: var(--mist);
+  display:block; line-height:1;
+}
+.canvas-hint .ch-sub {
+  font-size:8px; letter-spacing:4px;
+  color:var(--mist); display:block;
+  margin-top:6px;
+}
+
+/* Nodos en canvas */
+.c-node {
+  position:absolute;
+  cursor:move;
+  user-select:none;
+  display:flex; flex-direction:column;
+  align-items:center; gap:2px;
+  z-index:5;
+}
+.c-node-body {
+  padding: 5px 8px;
+  border: 1px solid var(--ink);
+  background: white;
+  font-size: 10px;
+  white-space: nowrap;
+  position:relative;
+}
+.c-node-body.ku  { border-color: var(--blue-ku); background:#f0f4ff; }
+.c-node-body.wu  { border-color: var(--green-wu); background:#f0fff4; }
+.c-node-sym {
+  font-size:14px; line-height:1;
+  position:absolute; top:-8px; left:50%;
+  transform:translateX(-50%);
+  background:white; padding:0 2px;
+}
+.c-node-lbl {
+  font-size:7px; letter-spacing:2px;
+  color:var(--mist); text-transform:uppercase;
+}
+.c-port {
+  width:8px; height:8px;
+  border-radius:50%;
+  border:1px solid var(--ink);
+  background:white; cursor:crosshair;
+  position:absolute;
+}
+.c-port.left  { left:-4px; top:50%; transform:translateY(-50%); }
+.c-port.right { right:-4px; top:50%; transform:translateY(-50%); }
+.c-port.ku    { background:var(--blue-ku); border-color:var(--blue-ku); }
+.c-port.wu    { background:var(--green-wu); border-color:var(--green-wu); }
+
+/* SVG wires */
+#wire-layer {
+  position:absolute; inset:0;
+  pointer-events:none; z-index:3;
+  overflow:visible;
+}
+
+/* ══ PRIMITIVES BAR ══ */
+.prim-bar {
+  grid-column: 2 / 3;
+  border-top: 1px solid rgba(0,0,0,.12);
+  border-bottom: 1px solid rgba(0,0,0,.12);
+  background: var(--cream);
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 4px 8px;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+.prim-bar::-webkit-scrollbar { height:3px; }
+.prim-bar::-webkit-scrollbar-thumb { background:rgba(0,0,0,.15); }
+.prim-label {
+  font-size:7px; letter-spacing:3px; color:var(--mist);
+  white-space:nowrap; margin-right:4px;
+}
+.prim-sep { width:1px; height:28px; background:rgba(0,0,0,.12); margin:0 4px; }
+
+.prim-tok {
+  font-family:'Share Tech Mono',monospace;
+  font-size:16px; line-height:1;
+  padding: 4px 6px;
+  border: 1px solid transparent;
+  cursor:pointer;
+  border-radius:2px;
+  transition: all .1s;
+  white-space:nowrap;
+  background:white;
+  color:var(--ink);
+  min-width:30px; text-align:center;
+  user-select:none;
+}
+.prim-tok:hover {
+  border-color:var(--gold);
+  background:rgba(160,120,32,.06);
+}
+.prim-tok.selected {
+  border-color:var(--ink);
+  background:var(--ink);
+  color:var(--paper);
+}
+.prim-tok.cat-wire  { color: var(--wire); }
+.prim-tok.cat-corner{ color: var(--jade); }
+.prim-tok.cat-node  { color: var(--red); }
+.prim-tok.cat-comp  { color: #8B4513; }
+.prim-tok.cat-gate  { color: var(--blue-ku); }
+.prim-tok.cat-signal{ color: #4a7ab5; }
+.prim-tok.cat-cjk   { font-family:'Noto Serif SC',serif; font-size:13px; color:var(--red); }
+.prim-tok.cat-state { color: var(--mist); }
+
+/* ══ STOCK PANEL (RIGHT) ══ */
+.stock-panel {
+  grid-row: 1 / 3;
+  border-left: 1px solid rgba(0,0,0,.15);
+  background: var(--cream);
+  overflow-y:auto;
+  padding:10px 8px;
+}
+.stock-panel::-webkit-scrollbar { width:4px; }
+.stock-panel::-webkit-scrollbar-thumb { background:rgba(0,0,0,.15); }
+.stock-file {
+  margin-bottom: 12px;
+}
+.stock-fn {
+  font-size:7px; letter-spacing:2px; color:var(--mist);
+  text-transform:uppercase;
+  border-bottom:1px dotted rgba(0,0,0,.12);
+  padding-bottom:3px; margin-bottom:5px;
+}
+.stock-token {
+  font-size:9px; line-height:2;
+  display:flex; gap:4px; align-items:center;
+  cursor:pointer; padding:1px 3px;
+  border-radius:2px;
+  transition:background .1s;
+}
+.stock-token:hover { background:rgba(0,0,0,.05); }
+.stock-tok-char {
+  font-size:13px; min-width:18px; text-align:center;
+  color:var(--red);
+}
+.stock-tok-name { color:var(--dim); font-size:9px; }
+.stock-tok-hint { color:var(--mist); font-size:8px; margin-left:auto; }
+
+/* ══ BUILDER ══ */
+.builder {
+  grid-column: 1 / 4;
+  border-top: 2px solid var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+  padding: 8px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.builder-row {
+  display:flex; gap:8px; align-items:center;
+}
+.builder-hd {
+  font-size:7px; letter-spacing:4px; color:var(--mark);
+  text-transform:uppercase; margin-bottom:2px;
+}
+.b-select {
+  font-family:'Share Tech Mono',monospace;
+  font-size:10px;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.2);
+  color:var(--paper);
+  padding:4px 6px;
+  cursor:pointer;
+}
+.b-select option { background:#1a1a2e; }
+.b-input {
+  font-family:'Share Tech Mono',monospace;
+  font-size:10px;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.2);
+  color:var(--paper);
+  padding:4px 6px;
+  flex:1;
+}
+.b-input::placeholder { color:rgba(255,255,255,.25); }
+.b-connector {
+  font-size:11px; color:var(--mark);
+  letter-spacing:1px;
+}
+.b-btn {
+  font-family:'Share Tech Mono',monospace;
+  font-size:9px; letter-spacing:2px;
+  padding:4px 10px;
+  border:1px solid;
+  cursor:pointer;
+  transition: all .15s;
+}
+.b-btn-validate { border-color:var(--gold); color:var(--gold); background:transparent; }
+.b-btn-validate:hover { background:rgba(160,120,32,.15); }
+.b-btn-stack    { border-color:#5aad78; color:#5aad78; background:transparent; }
+.b-btn-stack:hover { background:rgba(90,173,120,.15); }
+.b-btn-circuit  { border-color:var(--mist); color:var(--mist); background:transparent; }
+.b-btn-circuit:hover { background:rgba(122,138,148,.15); }
+.b-btn-clear    { border-color:rgba(255,255,255,.2); color:rgba(255,255,255,.4); background:transparent; }
+.builder-output {
+  font-size:10px;
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.1);
+  padding:4px 8px;
+  min-height:22px;
+  font-family:'Share Tech Mono',monospace;
+}
+.bo-lib   { color:#8dd; }
+.bo-conn  { color:var(--mark); }
+.bo-verb  { color:#8d8; }
+.bo-obj   { color:#ddd; }
+.bo-knot  { color:var(--gold); }
+.bo-circuit { color:rgba(255,255,255,.35); font-size:9px; margin-left:8px; }
+
+/* circuit state indicator */
+.circ-indicator {
+  display:flex; align-items:center; gap:6px;
+  margin-left:auto;
+}
+.ci-open  { color:var(--mist); }
+.ci-closed{ color:#5aad78; }
+.ci-short { color:var(--red); }
+
+/* Tooltip */
+.tooltip {
+  position:fixed; z-index:100;
+  background:var(--ink); color:var(--paper);
+  font-size:9px; padding:4px 8px;
+  pointer-events:none; opacity:0;
+  transition:opacity .1s;
+  border:1px solid var(--gold);
+  letter-spacing:1px;
+  white-space:nowrap;
+}
+.tooltip.show { opacity:1; }
+
+/* scroll hint on canvas */
+.canvas-zoom {
+  position:absolute; bottom:8px; right:8px; z-index:10;
+  font-size:8px; color:var(--mist); letter-spacing:2px;
+  pointer-events:none;
+}
+</style>
+</head>
+<body>
+
+<!-- ══ TOPBAR ══ -->
+<div class="topbar">
+  <div>
+    <div class="topbar-title">CIDE</div>
+    <div class="topbar-sub">CIRCUIT IDE · ELPULSAR · LACHO</div>
+  </div>
+  <div style="width:1px;height:30px;background:rgba(255,255,255,.15)"></div>
+  <button class="state-btn active-mu" id="btn-mu" onclick="setState('MU')">⏹ MU · 空</button>
+  <button class="state-btn" id="btn-ku" onclick="setState('KU')">⏵ KU · .blue</button>
+  <button class="state-btn" id="btn-wu" onclick="setState('WU')">⊗ WU · .green</button>
+  <div class="topbar-spacer"></div>
+  <div id="circuit-indicator" class="circuit-state">⌀ OPEN · H64</div>
+  <button class="state-btn" onclick="addTemplate('minimal')" style="border-color:var(--gold);color:var(--gold)">╔⊗╝ MINIMAL</button>
+  <button class="state-btn" onclick="addTemplate('drip')" style="border-color:#6a9fd8;color:#6a9fd8">⊢〜⤷∇ DRIP</button>
+  <button class="state-btn" onclick="addTemplate('full')" style="border-color:#5aad78;color:#5aad78">⚡FULL</button>
+  <button class="state-btn" onclick="clearCanvas()" style="border-color:var(--red);color:var(--red)">╳ CLEAR</button>
+</div>
+
+<!-- ══ MAIN ══ -->
+<div class="main">
+
+  <!-- IMPORT PANEL -->
+  <div class="import-panel">
+    <div class="panel-hd">▸ IMPORT · LIBRARIES</div>
+
+    <div class="lib-group">
+      <span class="lib-label">TRUST</span>
+      <button class="lib-btn lb-TRUST" draggable="true" data-sym="⊢" data-lib="TRUST" data-label="FOUNDATION" onclick="addNode('⊢','TRUST FOUNDATION','TRUST')">⊢ FOUNDATION</button>
+      <button class="lib-btn lb-TRUST" draggable="true" data-sym="⊗" data-lib="TRUST" data-label="[term]" onclick="addNode('⊗','[term]','TRUST')">⊗ [term]</button>
+      <button class="lib-btn lb-TRUST" draggable="true" data-sym="◆" data-lib="TRUST" data-label="[scope]" onclick="addNode('◆','[scope]','TRUST')">◆ [scope]</button>
+      <button class="lib-btn lb-TRUST" draggable="true" data-sym="⊕" data-lib="TRUST" data-label="[rabbit-faith]" onclick="addNode('⊕','[rabbit-faith]','TRUST')">⊕ [rabbit-faith]</button>
+    </div>
+
+    <div class="lib-group">
+      <span class="lib-label">WORK</span>
+      <button class="lib-btn lb-WORK" draggable="true" data-sym="▌" data-lib="WORK" data-label="{actuator}" onclick="addNode('▌','{actuator}','WORK')">▌ {actuator}</button>
+      <button class="lib-btn lb-WORK" draggable="true" data-sym="⏛" data-lib="WORK" data-label="{brake}" onclick="addNode('⏛','{brake}','WORK')">⏛ {brake}</button>
+      <button class="lib-btn lb-WORK" draggable="true" data-sym="⏵" data-lib="WORK" data-label="{doorman}" onclick="addNode('⏵','{doorman-mobile}','WORK')">⏵ {doorman}</button>
+      <button class="lib-btn lb-WORK" draggable="true" data-sym="⤷" data-lib="WORK" data-label="{drip}" onclick="addNode('⤷','{drip}','WORK')">⤷ {drip} ∇</button>
+    </div>
+
+    <div class="lib-group">
+      <span class="lib-label">SAMU</span>
+      <button class="lib-btn lb-SAMU" draggable="true" data-sym="⏺" data-lib="SAMU" data-label="@ audit" onclick="addNode('⏺','SAMU @','SAMU')">⏺ @ audit</button>
+      <button class="lib-btn lb-SAMU" draggable="true" data-sym="⊛" data-lib="SAMU" data-label="@ clock" onclick="addNode('⊛','SAMU $mon','SAMU')">⊛ $mon clock</button>
+    </div>
+
+    <div class="lib-group">
+      <span class="lib-label">CRYPTO</span>
+      <button class="lib-btn lb-CRYPTO" draggable="true" data-sym="●" data-lib="CRYPTO" data-label="(key seat)" onclick="addNode('●','(key seat)','CRYPTO')">● (key seat)</button>
+      <button class="lib-btn lb-CRYPTO" draggable="true" data-sym="⊙" data-lib="CRYPTO" data-label="(shield)" onclick="addNode('⊙','(shield seat)','CRYPTO')">⊙ (shield)</button>
+      <button class="lib-btn lb-CRYPTO" draggable="true" data-sym="≡" data-lib="CRYPTO" data-label="HL FABRIC" onclick="addNode('≡','HL FABRIC','CRYPTO')">≡ HL FABRIC</button>
+    </div>
+
+    <div class="lib-group">
+      <span class="lib-label">GATE</span>
+      <button class="lib-btn lb-GATE" draggable="true" data-sym="⌀" data-lib="GATE" data-label="UF[H05]" onclick="addNode('⌀','GATE UF[H05]','GATE')">⌀ UF[H05]</button>
+      <button class="lib-btn lb-GATE" draggable="true" data-sym="◆" data-lib="GATE" data-label="UF[H06]" onclick="addNode('◆','GATE UF[H06]','GATE')">◆ UF[H06]</button>
+    </div>
+
+    <div class="lib-group">
+      <span class="lib-label">ACTIVITY</span>
+      <button class="lib-btn lb-STACK" draggable="true" data-sym="⚡" data-lib="ACTIVITY" data-label="UF[H01]" onclick="addNode('⚡','UF[H01]','ACTIVITY')">⚡ UF[H01]</button>
+      <button class="lib-btn lb-STACK" draggable="true" data-sym="⟳" data-lib="ACTIVITY" data-label="UF[H64]" onclick="addNode('⟳','UF[H64]','ACTIVITY')">⟳ UF[H64]</button>
+      <button class="lib-btn lb-STACK" draggable="true" data-sym="⏹" data-lib="ACTIVITY" data-label="UF[H52]" onclick="addNode('⏹','UF[H52]','ACTIVITY')">⏹ UF[H52]</button>
+    </div>
+
+    <div class="lib-group">
+      <span class="lib-label">STACKING</span>
+      <button class="lib-btn lb-STACK" draggable="true" data-sym="⊣" data-lib="STACKING" data-label="STACKING" onclick="addNode('⊣','STACKING','STACKING')">⊣ STACKING</button>
+      <button class="lib-btn lb-STACK" draggable="true" data-sym="∞" data-lib="STACKING" data-label="CRYSTAL" onclick="addNode('∞','CRYSTAL WU','STACKING')">∞ CRYSTAL</button>
+    </div>
+
+    <div class="lib-group">
+      <span class="lib-label">METHOD</span>
+      <button class="lib-btn lb-METHOD" draggable="true" data-sym="∇" data-lib="METHOD" data-label="&lt;equation&gt;" onclick="addNode('∇','<equation>','METHOD')">∇ &lt;equation&gt;</button>
+      <button class="lib-btn lb-METHOD" draggable="true" data-sym="≈" data-lib="METHOD" data-label="Scalar S" onclick="addNode('≈','Scalar S','METHOD')">≈ Scalar S</button>
+    </div>
+
+    <div class="lib-group">
+      <span class="lib-label">CJK · 中文</span>
+      <button class="lib-btn lb-CJK" onclick="addNode('信任','信任 TRUST','CJK')">信任 xìnrèn</button>
+      <button class="lib-btn lb-CJK" onclick="addNode('风险','风险 GATE','CJK')">风险 fēngxiǎn</button>
+      <button class="lib-btn lb-CJK" onclick="addNode('网络','网络 FABRIC','CJK')">网络 wǎngluò</button>
+      <button class="lib-btn lb-CJK" onclick="addNode('主权','主权 SCOPE','CJK')">主权 zhǔquán</button>
+      <button class="lib-btn lb-CJK" onclick="addNode('合同','合同 TERM','CJK')">合同 hétong</button>
+      <button class="lib-btn lb-CJK" onclick="addNode('货币','货币 e-CNY','CJK')">货币 huòbì</button>
+      <button class="lib-btn lb-CJK" onclick="addNode('社区','社区 SOCIAL','CJK')">社区 shèqū</button>
+      <button class="lib-btn lb-CJK" onclick="addNode('空','空 VOID','CJK')">空 kōng</button>
+      <button class="lib-btn lb-CJK" onclick="addNode('聽','聽 LISTEN','CJK')">聽 tīng</button>
+    </div>
+  </div>
+
+  <!-- CIRCUIT CANVAS -->
+  <div class="canvas-wrap" id="canvas-wrap">
+    <div class="canvas-bg"></div>
+    <div class="canvas-hint" id="canvas-hint">
+      <span class="ch-big">空</span>
+      <span class="ch-sub">DRAG NODES · CLICK PRIMITIVES · DROP HERE</span>
+    </div>
+    <div id="circuit-canvas">
+      <svg id="wire-layer" width="100%" height="100%">
+        <defs>
+          <marker id="arr-ku" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L6,3 z" fill="#1a3a6c" opacity=".7"/>
+          </marker>
+          <marker id="arr-wu" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L6,3 z" fill="#1a5c30" opacity=".7"/>
+          </marker>
+          <marker id="arr-ink" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L6,3 z" fill="#28283a" opacity=".7"/>
+          </marker>
+        </defs>
+      </svg>
+    </div>
+    <div class="canvas-zoom">╔═══╗ drag to place · click ports to connect</div>
+  </div>
+
+  <!-- PRIMITIVES BAR -->
+  <div class="prim-bar">
+    <span class="prim-label">WIRE</span>
+    <div class="prim-tok cat-wire" title="conductor H" onclick="selectPrim('─','wire')">─</div>
+    <div class="prim-tok cat-wire" title="conductor V" onclick="selectPrim('│','wire')">│</div>
+    <div class="prim-tok cat-wire" title="doble H · bus" onclick="selectPrim('═','wire')">═</div>
+    <div class="prim-tok cat-wire" title="doble V · bus" onclick="selectPrim('║','wire')">║</div>
+    <div class="prim-tok cat-wire" title="bus triple datos" onclick="selectPrim('≡','wire')">≡</div>
+    <div class="prim-tok cat-wire" title="onda AC analógica" onclick="selectPrim('∿','wire')">∿</div>
+    <div class="prim-sep"></div>
+    <span class="prim-label">CORNER</span>
+    <div class="prim-tok cat-corner" title="TL rounded ·circuito suave" onclick="selectPrim('╭','corner')">╭</div>
+    <div class="prim-tok cat-corner" title="TR rounded" onclick="selectPrim('╮','corner')">╮</div>
+    <div class="prim-tok cat-corner" title="BR rounded · cierre suave" onclick="selectPrim('╯','corner')">╯</div>
+    <div class="prim-tok cat-corner" title="BL rounded" onclick="selectPrim('╰','corner')">╰</div>
+    <div class="prim-tok cat-corner" title="TL doble · circuito poder" onclick="selectPrim('╔','corner')">╔</div>
+    <div class="prim-tok cat-corner" title="TR doble" onclick="selectPrim('╗','corner')">╗</div>
+    <div class="prim-tok cat-corner" title="BL doble" onclick="selectPrim('╚','corner')">╚</div>
+    <div class="prim-tok cat-corner" title="BR doble · CIERRE FUERTE" onclick="selectPrim('╝','corner')">╝</div>
+    <div class="prim-tok cat-corner" title="cruce simple" onclick="selectPrim('┼','corner')">┼</div>
+    <div class="prim-tok cat-corner" title="cruce doble · bus" onclick="selectPrim('╬','corner')">╬</div>
+    <div class="prim-tok cat-corner" title="T bifurcación" onclick="selectPrim('┬','corner')">┬</div>
+    <div class="prim-tok cat-corner" title="T merge" onclick="selectPrim('┴','corner')">┴</div>
+    <div class="prim-tok cat-corner" title="SHORT-CIRCUIT ERROR" onclick="selectPrim('╳','corner')">╳</div>
+    <div class="prim-sep"></div>
+    <span class="prim-label">NODE</span>
+    <div class="prim-tok cat-node" title="nodo WU sólido" onclick="selectPrim('●','node')">●</div>
+    <div class="prim-tok cat-node" title="nodo KU abierto" onclick="selectPrim('○','node')">○</div>
+    <div class="prim-tok cat-node" title="junction soberana" onclick="selectPrim('⊙','node')">⊙</div>
+    <div class="prim-tok cat-node" title="terminal [term]" onclick="selectPrim('⊗','node')">⊗</div>
+    <div class="prim-tok cat-node" title="switch cerrado · [term]activo" onclick="selectPrim('⊕','node')">⊕</div>
+    <div class="prim-tok cat-node" title="switch abierto · H64" onclick="selectPrim('⌀','node')">⌀</div>
+    <div class="prim-tok cat-node" title="GATE decisión" onclick="selectPrim('◆','node')">◆</div>
+    <div class="prim-tok cat-node" title="nodo KU/WU frontera" onclick="selectPrim('◑','node')">◑</div>
+    <div class="prim-tok cat-node" title="núcleo CEO H01" onclick="selectPrim('⨀','node')">⨀</div>
+    <div class="prim-sep"></div>
+    <span class="prim-label">COMP</span>
+    <div class="prim-tok cat-comp" title="GROUND · [foundation]" onclick="selectPrim('⏚','comp')">⏚</div>
+    <div class="prim-tok cat-comp" title="FUSE · {brake}" onclick="selectPrim('⏛','comp')">⏛</div>
+    <div class="prim-tok cat-comp" title="RESISTOR Ω · Nodo-Ω" onclick="selectPrim('Ω','comp')">Ω</div>
+    <div class="prim-tok cat-comp" title="RESISTOR zigzag · TAP&DRIP" onclick="selectPrim('〜','comp')">〜</div>
+    <div class="prim-tok cat-comp" title="BATTERY · TRUST source" onclick="selectPrim('⊢','comp')">⊢</div>
+    <div class="prim-tok cat-comp" title="CAPACITOR · STACKING" onclick="selectPrim('⊣','comp')">⊣</div>
+    <div class="prim-tok cat-comp" title="POWER · UF[H01]" onclick="selectPrim('⚡','comp')">⚡</div>
+    <div class="prim-tok cat-comp" title="GRADIENT ∇ menor esfuerzo" onclick="selectPrim('∇','comp')">∇</div>
+    <div class="prim-tok cat-comp" title="TRANSISTOR amplificador" onclick="selectPrim('▌','comp')">▌</div>
+    <div class="prim-sep"></div>
+    <span class="prim-label">GATE</span>
+    <div class="prim-tok cat-gate" title="AND · ambos requeridos" onclick="selectPrim('∧','gate')">∧</div>
+    <div class="prim-tok cat-gate" title="OR · uno suficiente" onclick="selectPrim('∨','gate')">∨</div>
+    <div class="prim-tok cat-gate" title="NOT · negación" onclick="selectPrim('¬','gate')">¬</div>
+    <div class="prim-tok cat-gate" title="XOR · dirimencia" onclick="selectPrim('⊻','gate')">⊻</div>
+    <div class="prim-tok cat-gate" title="NAND · TRUST bloqueado" onclick="selectPrim('⊼','gate')">⊼</div>
+    <div class="prim-tok cat-gate" title="NOR · CRISIS total" onclick="selectPrim('⊽','gate')">⊽</div>
+    <div class="prim-sep"></div>
+    <span class="prim-label">SIGNAL</span>
+    <div class="prim-tok cat-signal" title="→ flujo normal KU→WU" onclick="selectPrim('→','signal')">→</div>
+    <div class="prim-tok cat-signal" title="← retorno feedback" onclick="selectPrim('←','signal')">←</div>
+    <div class="prim-tok cat-signal" title="⇒ WU emitido fuerte" onclick="selectPrim('⇒','signal')">⇒</div>
+    <div class="prim-tok cat-signal" title="⇔ sincronismo completo" onclick="selectPrim('⇔','signal')">⇔</div>
+    <div class="prim-tok cat-signal" title="↩ loop SPIN" onclick="selectPrim('↩','signal')">↩</div>
+    <div class="prim-tok cat-signal" title="⟳ ciclo SPIN soberano" onclick="selectPrim('⟳','signal')">⟳</div>
+    <div class="prim-tok cat-signal" title="⤷ drip ∇ descendente" onclick="selectPrim('⤷','signal')">⤷</div>
+    <div class="prim-tok cat-signal" title="⏵ pipeline activo KU" onclick="selectPrim('⏵','signal')">⏵</div>
+    <div class="prim-tok cat-signal" title="⏹ MU · stop · 空" onclick="selectPrim('⏹','signal')">⏹</div>
+    <div class="prim-tok cat-signal" title="⏺ STACKING cristaliza" onclick="selectPrim('⏺','signal')">⏺</div>
+    <div class="prim-sep"></div>
+    <span class="prim-label">CJK</span>
+    <div class="prim-tok cat-cjk" title="TRUST" onclick="selectPrim('信','cjk')">信</div>
+    <div class="prim-tok cat-cjk" title="GATE风险" onclick="selectPrim('险','cjk')">险</div>
+    <div class="prim-tok cat-cjk" title="VOID 空" onclick="selectPrim('空','cjk')">空</div>
+    <div class="prim-tok cat-cjk" title="LISTEN 聽" onclick="selectPrim('聽','cjk')">聽</div>
+    <div class="prim-tok cat-cjk" title="COUNT 數" onclick="selectPrim('數','cjk')">數</div>
+    <div class="prim-tok cat-cjk" title="SOVEREIGN 主" onclick="selectPrim('主','cjk')">主</div>
+    <div class="prim-tok cat-cjk" title="BRIDGE 桥" onclick="selectPrim('桥','cjk')">桥</div>
+    <div class="prim-sep"></div>
+    <span class="prim-label">STATE</span>
+    <div class="prim-tok cat-state" title="MU vacío 空" onclick="selectPrim('⏹●⏹','state')">⏹●</div>
+    <div class="prim-tok cat-state" title="KU activo" onclick="selectPrim('⏵○','state')">⏵○</div>
+    <div class="prim-tok cat-state" title="WU sellado" onclick="selectPrim('⇒⊗','state')">⇒⊗</div>
+    <div class="prim-tok cat-state" title="RED-REGRET" onclick="selectPrim('╳⏛','state')">╳⏛</div>
+  </div>
+
+  <!-- STOCK PANEL -->
+  <div class="stock-panel">
+    <div class="panel-hd">▸ UNICODE STOCK</div>
+
+    <div class="stock-file">
+      <div class="stock-fn">CIRCUIT_DRIP · V3</div>
+      <div class="stock-token" onclick="insertPrim('╔═●═╗\n║→WU→║\n╚═⊗═╝')"><span class="stock-tok-char">╔╝</span><span class="stock-tok-name">circuit closed</span><span class="stock-tok-hint">WU</span></div>
+      <div class="stock-token" onclick="insertPrim('⊢─〜─⤷─●\n      ∇\n      ⏚')"><span class="stock-tok-char">⤷∇</span><span class="stock-tok-name">drip circuit</span><span class="stock-tok-hint">H29</span></div>
+      <div class="stock-token" onclick="insertPrim('╳⏛⏚')"><span class="stock-tok-char">╳⏛</span><span class="stock-tok-name">short-circuit</span><span class="stock-tok-hint">REGRET</span></div>
+    </div>
+
+    <div class="stock-file">
+      <div class="stock-fn">LACHO_V3 · 空聽數</div>
+      <div class="stock-token" onclick="insertPrim('空')"><span class="stock-tok-char">空</span><span class="stock-tok-name">VOID · MU</span><span class="stock-tok-hint">H64</span></div>
+      <div class="stock-token" onclick="insertPrim('聽')"><span class="stock-tok-char">聽</span><span class="stock-tok-name">LISTEN</span><span class="stock-tok-hint">SWF</span></div>
+      <div class="stock-token" onclick="insertPrim('數')"><span class="stock-tok-char">數</span><span class="stock-tok-name">COUNT</span><span class="stock-tok-hint">DIR(IME)</span></div>
+      <div class="stock-token" onclick="insertPrim('MU→KU→WU→空')"><span class="stock-tok-char">⟳</span><span class="stock-tok-name">SPIN cycle</span><span class="stock-tok-hint">full</span></div>
+    </div>
+
+    <div class="stock-file">
+      <div class="stock-fn">CHINA TOKENS · CJK</div>
+      <div class="stock-token" onclick="insertPrim('信任')"><span class="stock-tok-char" style="font-family:'Noto Serif SC',serif">信任</span><span class="stock-tok-name">TRUST</span><span class="stock-tok-hint">H01</span></div>
+      <div class="stock-token" onclick="insertPrim('风险')"><span class="stock-tok-char" style="font-family:'Noto Serif SC',serif">风险</span><span class="stock-tok-name">GATE risk</span><span class="stock-tok-hint">H06</span></div>
+      <div class="stock-token" onclick="insertPrim('网络')"><span class="stock-tok-char" style="font-family:'Noto Serif SC',serif">网络</span><span class="stock-tok-name">HL FABRIC</span><span class="stock-tok-hint">H52</span></div>
+      <div class="stock-token" onclick="insertPrim('主权')"><span class="stock-tok-char" style="font-family:'Noto Serif SC',serif">主权</span><span class="stock-tok-name">SOVEREIGN</span><span class="stock-tok-hint">H01</span></div>
+      <div class="stock-token" onclick="insertPrim('合同')"><span class="stock-tok-char" style="font-family:'Noto Serif SC',serif">合同</span><span class="stock-tok-name">[term]</span><span class="stock-tok-hint">H43</span></div>
+    </div>
+
+    <div class="stock-file">
+      <div class="stock-fn">PYTHON_V2 · IMPORT</div>
+      <div class="stock-token" onclick="insertPrim('IMPORT[TRUST]')"><span class="stock-tok-char">[]</span><span class="stock-tok-name">IMPORT TRUST</span></div>
+      <div class="stock-token" onclick="insertPrim('IMPORT*CRYPTO*')"><span class="stock-tok-char">**</span><span class="stock-tok-name">IMPORT CRYPTO</span></div>
+      <div class="stock-token" onclick="insertPrim('IF<VALID()>')"><span class="stock-tok-char">◆</span><span class="stock-tok-name">IF VALID</span></div>
+      <div class="stock-token" onclick="insertPrim('EXPORT[LACHO]')"><span class="stock-tok-char">⇒</span><span class="stock-tok-name">EXPORT LACHO</span></div>
+      <div class="stock-token" onclick="insertPrim('=:[LACHO]')"><span class="stock-tok-char">=:</span><span class="stock-tok-name">ASSIGN LACHO</span></div>
+    </div>
+
+    <div class="stock-file">
+      <div class="stock-fn">GRADIENT · SPIN</div>
+      <div class="stock-token" onclick="insertPrim('∇')"><span class="stock-tok-char">∇</span><span class="stock-tok-name">gradient</span><span class="stock-tok-hint">min effort</span></div>
+      <div class="stock-token" onclick="insertPrim('∇(TRUST)')"><span class="stock-tok-char">∇T</span><span class="stock-tok-name">∇ TRUST</span></div>
+      <div class="stock-token" onclick="insertPrim('SPIN_MU→KU→WU→空→MU')"><span class="stock-tok-char">↩</span><span class="stock-tok-name">SPIN full</span></div>
+    </div>
+
+    <div class="stock-file">
+      <div class="stock-fn">NLP VECTORS</div>
+      <div class="stock-token" onclick="insertPrim('VEC_TRUST→[信任]')"><span class="stock-tok-char">→</span><span class="stock-tok-name">VEC TRUST</span></div>
+      <div class="stock-token" onclick="insertPrim('IME{ROUTE}')"><span class="stock-tok-char">IME</span><span class="stock-tok-name">NLP ROUTE</span></div>
+      <div class="stock-token" onclick="insertPrim('THR_VALID≥0.75')"><span class="stock-tok-char">◑</span><span class="stock-tok-name">threshold</span><span class="stock-tok-hint">0.75</span></div>
+    </div>
+
+    <div class="stock-file">
+      <div class="stock-fn">DOORMAN · 守门人</div>
+      <div class="stock-token" onclick="insertPrim('守卫_巡逻 ⏵')"><span class="stock-tok-char">⏵</span><span class="stock-tok-name">守卫_巡逻</span></div>
+      <div class="stock-token" onclick="insertPrim('守卫_锁定 ⏛[⊼]')"><span class="stock-tok-char">⏛</span><span class="stock-tok-name">守卫_锁定</span></div>
+      <div class="stock-token" onclick="insertPrim('守卫_解锁 ⊕[∧]')"><span class="stock-tok-char">⊕</span><span class="stock-tok-name">守卫_解锁</span></div>
+    </div>
+
+    <div class="stock-file">
+      <div class="stock-fn">BLUE-WORDS · KU</div>
+      <div class="stock-token" onclick="insertPrim('○─ verify KU')"><span class="stock-tok-char">○</span><span class="stock-tok-name">verify .blue</span></div>
+      <div class="stock-token" onclick="insertPrim('●─ crystallize WU')"><span class="stock-tok-char">●</span><span class="stock-tok-name">crystal .green</span></div>
+      <div class="stock-token" onclick="insertPrim('空 · 聽 · void')"><span class="stock-tok-char">空</span><span class="stock-tok-name">void KU</span></div>
+    </div>
+  </div>
+
+  <!-- BUILDER -->
+  <div class="builder">
+    <div class="builder-hd">▸ LACHO BUILDER · =><= · CIRCUIT OUTPUT</div>
+    <div class="builder-row">
+      <select class="b-select" id="b-lib" onchange="updateBuilder()">
+        <option value="TRUST FOUNDATION">TRUST FOUNDATION</option>
+        <option value="WORK {actuator}">WORK {actuator}</option>
+        <option value="WORK {drip}">WORK {drip}</option>
+        <option value="SAMU @">SAMU @</option>
+        <option value="CRYPTO (key seat)">CRYPTO (key seat)</option>
+        <option value="GATE UF[H05]">GATE UF[H05]</option>
+        <option value="STACKING UF[H52]">STACKING UF[H52]</option>
+        <option value="ACTIVITY UF[H01]">ACTIVITY UF[H01]</option>
+        <option value="METHOD &lt;equation&gt;">METHOD &lt;equation&gt;</option>
+        <option value="SOCIAL {relay}">SOCIAL {relay}</option>
+      </select>
+      <span class="b-connector">=&gt;&lt;=</span>
+      <span class="b-connector">..</span>
+      <select class="b-select" id="b-verb" onchange="updateBuilder()">
+        <option value="verifica">verifica</option>
+        <option value="declara">declara</option>
+        <option value="ejecuta">ejecuta</option>
+        <option value="audita">audita</option>
+        <option value="cristaliza">cristaliza</option>
+        <option value="filtra">filtra</option>
+        <option value="calibra">calibra</option>
+        <option value="certifica">certifica</option>
+        <option value="modela">modela</option>
+        <option value="conecta">conecta</option>
+      </select>
+      <span class="b-connector">..</span>
+      <input class="b-input" id="b-obj" placeholder="objeto · 信任 · pipeline · circuit_node" oninput="updateBuilder()">
+      <select class="b-select" id="b-knot" onchange="updateBuilder()">
+        <option value="[As de Guía]">[AsG]</option>
+        <option value="[Nudo de Ocho]">[NdO]</option>
+        <option value="[Ballestrinque]">[Ball]</option>
+        <option value="[Nudo Corredizo]">[NdC]</option>
+        <option value="[Nudo de Rizo]">[NdR]</option>
+      </select>
+      <button class="b-btn b-btn-validate" onclick="validateSentence()">VALIDATE</button>
+      <button class="b-btn b-btn-stack" onclick="stackSentence()">STACK ⏺</button>
+      <button class="b-btn b-btn-circuit" onclick="toCircuit()">→CIRCUIT</button>
+      <button class="b-btn b-btn-clear" onclick="clearBuilder()">⌀ CLEAR</button>
+      <div class="circ-indicator" id="circ-indicator">
+        <span class="ci-open">⌀ OPEN · H64 before_the_end</span>
+      </div>
+    </div>
+    <div class="builder-output" id="builder-output">
+      <span class="bo-lib">TRUST FOUNDATION</span>
+      <span class="bo-conn"> =&gt;&lt;= .. </span>
+      <span class="bo-verb">verifica</span>
+      <span class="bo-conn"> .. </span>
+      <span class="bo-obj">objeto_soberano</span>
+      <span class="bo-conn"> --</span>
+      <span class="bo-knot">[As de Guía]</span>
+      <span class="bo-conn"> [term]</span>
+      <span class="bo-circuit">  ╭─⊢─∧─●─⊗─╯</span>
+    </div>
+  </div>
+
+</div>
+
+<div class="tooltip" id="tooltip"></div>
+
+<script>
+// ══ STATE ══
+let currentState = 'MU';
+let selectedPrim = null;
+let nodes = [];
+let nodeId = 0;
+let wires = [];
+let connectingPort = null;
+let txCount = 0;
+let stackedSentences = [];
+
+// ══ UNICODE STOCK ══
+const UNICODE_STOCK = {
+  CIRCUIT_DRIP_V3: {
+    conductors: ['─','│','═','║','≡','∿'],
+    corners_simple: ['┌','┐','└','┘','┼','┬','┴','├','┤'],
+    corners_round: ['╭','╮','╯','╰'],
+    corners_double: ['╔','╗','╚','╝','╬'],
+    nodes: ['●','○','⊙','⊗','⊕','⌀','◆','◑','⨀','⊛'],
+    components: ['⏚','⏛','Ω','〜','⊢','⊣','⚡','∇','μ','▌','▐'],
+    gates: ['∧','∨','¬','⊻','⊼','⊽'],
+    signals: ['→','←','↑','↓','↔','⇒','⇐','⇔','↩','↪','⤷','⏵','⏹','⏺','⟳'],
+    error: ['╳','╱','╲'],
+  },
+  LACHO_V3: {
+    listen: ['空','聽','數','→空'],
+    states: ['MU','KU','WU','MU→KU','KU→WU'],
+    symbols: ['Ψ','⊛','⟳'],
+  },
+  CJK: {
+    tokens: ['信任','关系','面子','主权','货币','桥梁','合同','验证','节点','智能','安全','风险','社区','数字','协议','网络','资本','银行','贷款','空','聽','數'],
+    hex: ['乾','坤','需','恆','未濟','既濟'],
+  }
+};
+
+// ══ PRIMITIVES PALETTE ══
+const CIRCUIT_CHARS = {
+  closed: { open:'╔', tr:'╗', bl:'╚', close:'╝', h:'═', v:'║', node:'●', term:'⊗' },
+  soft:   { open:'╭', tr:'╮', bl:'╰', close:'╯', h:'─', v:'│', node:'○', term:'⊕' },
+  drip:   { src:'⊢', res:'〜', drop:'⤷', grad:'∇', gnd:'⏚', node:'●' },
+};
+
+// ══ ESTADO ══
+function setState(s) {
+  currentState = s;
+  document.querySelectorAll('.state-btn').forEach(b => {
+    b.className = b.className.replace(/active-\w+/,'').trim();
+  });
+  document.getElementById('btn-'+s.toLowerCase()).classList.add('active-'+s.toLowerCase());
+  updateCircuitIndicator();
+}
+
+function updateCircuitIndicator() {
+  const ci = document.getElementById('circuit-indicator');
+  const ind = document.getElementById('circ-indicator');
+  if (currentState === 'WU') {
+    ci.textContent = '╝ CLOSED · [term] :: activo';
+    ci.style.borderColor = '#5aad78'; ci.style.color = '#5aad78';
+    ind.innerHTML = '<span class="ci-closed">╝ CLOSED · WU · [term] :: activo</span>';
+  } else if (currentState === 'KU') {
+    ci.textContent = '⏵ ACTIVE · KU · .blue';
+    ci.style.borderColor = '#6a9fd8'; ci.style.color = '#6a9fd8';
+    ind.innerHTML = '<span class="ci-open" style="color:#6a9fd8">⏵ ACTIVE · KU · =><= conductor</span>';
+  } else {
+    ci.textContent = '⌀ OPEN · H64';
+    ci.style.borderColor = 'var(--mark)'; ci.style.color = 'var(--mark)';
+    ind.innerHTML = '<span class="ci-open">⌀ OPEN · H64 before_the_end</span>';
+  }
+}
+
+// ══ PRIMITIVES ══
+function selectPrim(char, cat) {
+  selectedPrim = char;
+  document.querySelectorAll('.prim-tok').forEach(t => t.classList.remove('selected'));
+  event.target.classList.add('selected');
+  showTooltip(event, `SELECTED: ${char} · ${cat}`);
+}
+
+function insertPrim(str) {
+  const obj = document.getElementById('b-obj');
+  obj.value += str;
+  updateBuilder();
+}
+
+// ══ NODES ══
+function addNode(sym, label, lib) {
+  const canvas = document.getElementById('circuit-canvas');
+  const hint = document.getElementById('canvas-hint');
+  hint.style.display = 'none';
+
+  const id = 'node-' + (++nodeId);
+  const x = 60 + Math.random() * (canvas.offsetWidth - 160);
+  const y = 30 + Math.random() * (canvas.offsetHeight - 80);
+
+  const stateClass = currentState === 'WU' ? 'wu' : currentState === 'KU' ? 'ku' : '';
+
+  const div = document.createElement('div');
+  div.className = 'c-node';
+  div.id = id;
+  div.style.left = x + 'px';
+  div.style.top  = y + 'px';
+  div.dataset.lib = lib;
+  div.dataset.sym = sym;
+
+  div.innerHTML = `
+    <div class="c-node-body ${stateClass}">
+      <span class="c-node-sym">${sym}</span>
+      <span style="font-size:9px;letter-spacing:1px;color:var(--mist)">${lib}</span>
+      <span class="c-port left" data-node="${id}" data-side="left"></span>
+      <span class="c-port right ${stateClass}" data-node="${id}" data-side="right"></span>
+    </div>
+    <div class="c-node-lbl">${label}</div>
+  `;
+
+  // drag
+  div.addEventListener('mousedown', startDrag);
+
+  // port click for wiring
+  div.querySelectorAll('.c-port').forEach(p => {
+    p.addEventListener('mousedown', (e) => {
+      e.stopPropagation();
+      handlePortClick(e, id);
+    });
+  });
+
+  canvas.appendChild(div);
+  nodes.push({ id, x, y, sym, label, lib, state: currentState });
+  setState(nodes.length > 1 ? 'KU' : currentState);
+}
+
+// ══ DRAG ══
+let dragging = null, dragOX=0, dragOY=0;
+function startDrag(e) {
+  if (e.target.classList.contains('c-port')) return;
+  dragging = e.currentTarget;
+  const r = dragging.getBoundingClientRect();
+  const cr = document.getElementById('circuit-canvas').getBoundingClientRect();
+  dragOX = e.clientX - (r.left - cr.left);
+  dragOY = e.clientY - (r.top - cr.top);
+  e.preventDefault();
+}
+document.addEventListener('mousemove', e => {
+  if (!dragging) return;
+  const cr = document.getElementById('circuit-canvas').getBoundingClientRect();
+  const x = e.clientX - cr.left - dragOX;
+  const y = e.clientY - cr.top - dragOY;
+  dragging.style.left = Math.max(0, x) + 'px';
+  dragging.style.top  = Math.max(0, y) + 'px';
+  const nid = dragging.id;
+  const n = nodes.find(n => n.id === nid);
+  if (n) { n.x = x; n.y = y; }
+  redrawWires();
+});
+document.addEventListener('mouseup', () => { dragging = null; });
+
+// ══ WIRING ══
+function handlePortClick(e, nodeId) {
+  e.stopPropagation();
+  if (!connectingPort) {
+    connectingPort = { nodeId, side: e.target.dataset.side };
+    e.target.style.background = 'var(--mark)';
+    e.target.style.borderColor = 'var(--mark)';
+  } else {
+    if (connectingPort.nodeId !== nodeId) {
+      addWire(connectingPort.nodeId, connectingPort.side, nodeId, e.target.dataset.side);
+      setState('KU');
+    }
+    document.querySelectorAll('.c-port').forEach(p => {
+      p.style.background = '';
+      p.style.borderColor = '';
+    });
+    connectingPort = null;
+  }
+}
+
+function getPortPos(nodeId, side) {
+  const el = document.getElementById(nodeId);
+  if (!el) return {x:0,y:0};
+  const canvas = document.getElementById('circuit-canvas').getBoundingClientRect();
+  const body = el.querySelector('.c-node-body');
+  const port = el.querySelector(`.c-port.${side}`);
+  if (!port) return {x:0,y:0};
+  const pr = port.getBoundingClientRect();
+  return {
+    x: pr.left - canvas.left + pr.width/2,
+    y: pr.top  - canvas.top  + pr.height/2
+  };
+}
+
+function addWire(fromId, fromSide, toId, toSide) {
+  const wireId = `wire-${fromId}-${toId}`;
+  wires.push({ id: wireId, fromId, fromSide, toId, toSide, state: currentState });
+  redrawWires();
+
+  // auto-close check
+  if (wires.length >= 2) {
+    const hasReturn = wires.some(w =>
+      w.fromId !== fromId && w.toId === fromId
+    );
+    if (hasReturn) setState('WU');
+  }
+}
+
+function redrawWires() {
+  const svg = document.getElementById('wire-layer');
+  // remove old paths
+  svg.querySelectorAll('.wire-path').forEach(p => p.remove());
+
+  wires.forEach(w => {
+    const from = getPortPos(w.fromId, w.fromSide);
+    const to   = getPortPos(w.toId, w.toSide);
+    if (!from || !to) return;
+
+    const dx = (to.x - from.x) * 0.5;
+    const color = w.state === 'WU' ? 'var(--wire-wu)' :
+                  w.state === 'KU' ? 'var(--wire-ku)' : 'var(--wire)';
+    const marker = w.state === 'WU' ? 'url(#arr-wu)' :
+                   w.state === 'KU' ? 'url(#arr-ku)' : 'url(#arr-ink)';
+
+    const path = document.createElementNS('http://www.w3.org/2000/svg','path');
+    path.classList.add('wire-path');
+    path.setAttribute('d', `M ${from.x} ${from.y} C ${from.x+dx} ${from.y} ${to.x-dx} ${to.y} ${to.x} ${to.y}`);
+    path.setAttribute('stroke', color);
+    path.setAttribute('stroke-width', w.state === 'WU' ? '1.5' : '1');
+    path.setAttribute('fill', 'none');
+    path.setAttribute('stroke-dasharray', w.state === 'KU' ? '4 2' : 'none');
+    path.setAttribute('marker-end', marker);
+    path.setAttribute('opacity', '0.8');
+    svg.appendChild(path);
+  });
+}
+
+// ══ TEMPLATES ══
+function addTemplate(type) {
+  clearCanvas();
+  document.getElementById('canvas-hint').style.display = 'none';
+  const canvas = document.getElementById('circuit-canvas');
+  const cx = canvas.offsetWidth / 2;
+  const cy = canvas.offsetHeight / 2;
+
+  if (type === 'minimal') {
+    // ╔═══●═══╗ / ║→WU→║ / ╚═══⊗═══╝
+    addNodeAt('⊢', 'TRUST SOURCE', 'TRUST', cx-160, cy-20);
+    addNodeAt('∧', 'AND gate', 'GATE', cx-60, cy-20);
+    addNodeAt('●', 'node WU', 'ACTIVITY', cx+30, cy-20);
+    addNodeAt('⊗', '[term]', 'TRUST', cx+120, cy-20);
+    addNodeAt('⏚', '[foundation]', 'TRUST', cx+120, cy+50);
+    setState('WU');
+  } else if (type === 'drip') {
+    // ⊢─〜─⤷─●─⊗ / ∇ / ⏚
+    addNodeAt('⚡', 'POWER H01', 'ACTIVITY', cx-200, cy-10);
+    addNodeAt('⊢', 'TRUST', 'TRUST', cx-120, cy-10);
+    addNodeAt('〜', 'RESISTOR TAP', 'WORK', cx-40, cy-10);
+    addNodeAt('⤷', '{drip} ∇', 'WORK', cx+40, cy-10);
+    addNodeAt('●', 'node', 'ACTIVITY', cx+110, cy-10);
+    addNodeAt('⊗', '[term]', 'TRUST', cx+170, cy-10);
+    addNodeAt('∇', '∇ gradient', 'METHOD', cx+40, cy+55);
+    addNodeAt('⏚', '[foundation]', 'TRUST', cx+40, cy+105);
+    setState('KU');
+  } else if (type === 'full') {
+    // LACHO completo
+    addNodeAt('⚡', 'UF[H01]', 'ACTIVITY', cx-230, cy);
+    addNodeAt('⊢', 'TRUST FOUNDATION', 'TRUST', cx-145, cy);
+    addNodeAt('∧', 'TRUST ∧ VERIFY', 'GATE', cx-60, cy);
+    addNodeAt('◆', 'GATE UF[H06]', 'GATE', cx+20, cy);
+    addNodeAt('⊣', 'STACKING', 'STACKING', cx+100, cy);
+    addNodeAt('⏺', 'SAMU @', 'SAMU', cx+60, cy+70);
+    addNodeAt('⊗', '[term]', 'TRUST', cx+180, cy);
+    addNodeAt('⏚', '[foundation]', 'TRUST', cx+180, cy+70);
+    setState('KU');
+  }
+}
+
+function addNodeAt(sym, label, lib, x, y) {
+  const canvas = document.getElementById('circuit-canvas');
+  const id = 'node-' + (++nodeId);
+  const stateClass = currentState === 'WU' ? 'wu' : currentState === 'KU' ? 'ku' : '';
+  const div = document.createElement('div');
+  div.className = 'c-node';
+  div.id = id;
+  div.style.left = x + 'px';
+  div.style.top  = y + 'px';
+  div.dataset.lib = lib;
+  div.dataset.sym = sym;
+  div.innerHTML = `
+    <div class="c-node-body ${stateClass}">
+      <span class="c-node-sym">${sym}</span>
+      <span style="font-size:8px;letter-spacing:1px;color:var(--mist)">${lib}</span>
+      <span class="c-port left" data-node="${id}" data-side="left"></span>
+      <span class="c-port right ${stateClass}" data-node="${id}" data-side="right"></span>
+    </div>
+    <div class="c-node-lbl">${label}</div>
+  `;
+  div.addEventListener('mousedown', startDrag);
+  div.querySelectorAll('.c-port').forEach(p => {
+    p.addEventListener('mousedown', (e) => { e.stopPropagation(); handlePortClick(e, id); });
+  });
+  canvas.appendChild(div);
+  nodes.push({ id, x, y, sym, label, lib, state: currentState });
+}
+
+function clearCanvas() {
+  const canvas = document.getElementById('circuit-canvas');
+  canvas.querySelectorAll('.c-node').forEach(n => n.remove());
+  document.getElementById('wire-layer').querySelectorAll('.wire-path').forEach(p => p.remove());
+  nodes = []; wires = [];
+  document.getElementById('canvas-hint').style.display = 'block';
+  setState('MU');
+}
+
+// ══ BUILDER ══
+function updateBuilder() {
+  const lib  = document.getElementById('b-lib').value;
+  const verb = document.getElementById('b-verb').value;
+  const obj  = document.getElementById('b-obj').value || 'objeto_soberano';
+  const knot = document.getElementById('b-knot').value;
+
+  // circuit signature
+  const libSigs = {
+    'TRUST FOUNDATION': '╭─⊢─∧─',
+    'WORK {actuator}':  '╭─▌─⏵─',
+    'WORK {drip}':      '╭─〜─⤷─',
+    'SAMU @':           '╭─⏺─⊛─',
+    'CRYPTO (key seat)':'╭─●─≡─',
+    'GATE UF[H05]':     '╭─⌀─◆─',
+    'STACKING UF[H52]': '╭─⊣─∞─',
+    'ACTIVITY UF[H01]': '╭─⚡─⟳─',
+    'METHOD <equation>':'╭─∇─≈─',
+    'SOCIAL {relay}':   '╭─↩─⟳─',
+  };
+  const sig = (libSigs[lib] || '╭─') + '⊗─╯';
+  const stateChar = currentState==='WU'?'╝':currentState==='KU'?'⏵':'⌀';
+
+  document.getElementById('builder-output').innerHTML = `
+    <span class="bo-lib">${lib}</span>
+    <span class="bo-conn"> =&gt;&lt;= .. </span>
+    <span class="bo-verb">${verb}</span>
+    <span class="bo-conn"> .. </span>
+    <span class="bo-obj">${obj}</span>
+    <span class="bo-conn"> --</span>
+    <span class="bo-knot">${knot}</span>
+    <span class="bo-conn"> [term]</span>
+    <span class="bo-circuit">  ${sig} ${stateChar}</span>
+  `;
+}
+
+function validateSentence() {
+  const obj = document.getElementById('b-obj').value;
+  if (!obj) {
+    document.getElementById('builder-output').innerHTML += ' <span style="color:var(--red)">· ⚠ INVALID · objeto vacío</span>';
+    return;
+  }
+  setState('KU');
+  document.getElementById('builder-output').innerHTML += ' <span style="color:#6a9fd8">· ✓ VALID · Scalar S ~0.82</span>';
+}
+
+function stackSentence() {
+  validateSentence();
+  txCount++;
+  setState('WU');
+  document.getElementById('builder-output').innerHTML += ` <span style="color:#5aad78">· ⏺ TX${txCount} STACKED · .green · ╝ CLOSED</span>`;
+  updateCircuitIndicator();
+}
+
+function toCircuit() {
+  const lib  = document.getElementById('b-lib').value;
+  const obj  = document.getElementById('b-obj').value || 'node';
+  const sym = lib.includes('TRUST')?'⊢': lib.includes('WORK')?'▌':
+              lib.includes('SAMU')?'⏺': lib.includes('CRYPTO')?'●':
+              lib.includes('GATE')?'◆': lib.includes('STACK')?'⊣':
+              lib.includes('ACTIV')?'⚡': lib.includes('METH')?'∇': '⊙';
+  addNode(sym, obj.substring(0,12), lib.split(' ')[0]);
+  setState('KU');
+}
+
+function clearBuilder() {
+  document.getElementById('b-obj').value = '';
+  setState('MU');
+  updateBuilder();
+}
+
+// ══ TOOLTIP ══
+function showTooltip(e, text) {
+  const t = document.getElementById('tooltip');
+  t.textContent = text;
+  t.style.left = e.clientX + 12 + 'px';
+  t.style.top  = e.clientY - 8 + 'px';
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 1200);
+}
+
+document.querySelectorAll('.prim-tok').forEach(el => {
+  el.addEventListener('mouseenter', e => {
+    showTooltip(e, el.title || el.textContent);
+  });
+});
+
+// ══ INIT ══
+updateBuilder();
+updateCircuitIndicator();
+</script>
+</body>
+</html>

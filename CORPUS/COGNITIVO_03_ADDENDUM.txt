@@ -1,0 +1,175 @@
+# BIBLIO-SOURCES(COGNITIVO_03_ADDENDUM).txt
+
+====================================================================
+
+## 📊 COGNITIVO_03 — ADDENDUM · DELTA DE EXPANSIÓN VERIFICADA
+
+====================================================================
+
+### 1.0 PROPÓSITO Y POSICIÓN
+
+====================================================================
+
+#### 1.1 Qué es este documento
+COGNITIVO_03_ADDENDUM es el delta soberano verificado de COGNITIVO_03_MICRO_INTEGRATION: documenta los 30 archivos incorporados al libro después de la generación de COGNITIVO_03, actualiza el inventario de 133 a 155+ módulos, y registra los cambios taxonómicos producidos por las nuevas activaciones soberanas. No reemplaza COGNITIVO_03 — lo extiende con trazabilidad verificada.
+
+#### 1.2 Condición de activación
+COGNITIVO_03 fue generado con inventario de 133 módulos. El libro creció soberanamente en 30 archivos nuevos distribuidos en 7 bloques de expansión. Sin este ADDENDUM, COGNITIVO_03 describe un sistema que ya no corresponde al estado real del libro — BP_MISLEADING cognitivo soberanamente inaceptable.
+
+#### 1.3 Principio de no-sustitución
+Este documento preserva COGNITIVO_03 como referencia histórica verificada del estado del sistema en su momento de generación. El ADDENDUM no borra — extiende. Esa es la diferencia soberana entre corrección (RED-REGRET) y expansión (UF[H42]).
+
+====================================================================
+
+### 2.0 INVENTARIO ACTUALIZADO
+
+====================================================================
+
+#### 2.1 Estado anterior vs estado actual
+
+| Métrica | COGNITIVO_03 | ADDENDUM | Delta |
+|---------|-------------|----------|-------|
+| Total archivos | 133 | 155+ | +22 documentados en INDICE |
+| ACTIVITY activados | 12 UF | 18 UF | +6 slots |
+| DIRIME LINUX docs | 1 | 8 | +7 |
+| WORK módulos | 7 | 10 | +3 |
+| COGNITIVOS | 3 | 5 | +2 |
+| SAMU módulos | 8 | 10 | +2 |
+| SOCIAL módulos | 13 | 15 | +2 |
+| STACKING docs | 11 | 14 | +3 |
+
+#### 2.2 Los 30 archivos nuevos por bloque soberano
+
+**BLOQUE 1 — COGNITIVOS:**
+COGNITIVO_03_MICRO_INTEGRATION.txt — integración micro, 133 módulos, taxonomía viva.
+COGNITIVO_04_ESTAR.txt — fenomenología soberana, cómo se habita LACHO en vivo.
+
+**BLOQUE 2 — ACTIVITY (slots activados):**
+BIBLIO-SOURCES(ACTIVITY_LATENTES).txt — protocolo de 44 slots, candidatos prioritarios.
+BIBLIO-SOURCES(ACTIVITY_POSTURA-EXPANSION).txt — UF[H42] + posturas complementarias.
+BIBLIO-SOURCES(ACTIVITY_H03-H05-H06-H56).txt — grupo GÉNESIS/CONFLICTO/UMBRAL interno.
+BIBLIO-SOURCES(ACTIVITY_H24-EL-RETORNO).txt — UF[H24] Fù activado soberanamente.
+BIBLIO-SOURCES(ACTIVITY_H49-REVOLUCION).txt — UF[H49] Gé activado soberanamente.
+BIBLIO-SOURCES(ACTIVITY_H63-CONSUMACION).txt — UF[H63] Jì Jì activado soberanamente.
+
+**BLOQUE 3 — WORK:**
+BIBLIO-SOURCES(WORK_H52-H06).txt — UF[H52]+UF[H06] en jurisdicción WORK.
+BIBLIO-SOURCES(WORK_DATA-CENTER).txt — [data-center-operations] reubicado desde TRUST.
+BIBLIO-SOURCES(WORK_DOORMAN-MOBILE_EXT).txt — extensión china + PUENTE-FÁCIL.
+
+**BLOQUE 4 — SAMU/SOCIAL:**
+BIBLIO-SOURCES(SAMU_DAY-PERIODS).txt — $sat→$fri siete períodos soberanos semanales.
+BIBLIO-SOURCES(SOCIAL_SCHEDULER-OS).txt — Scheduler OS, sistema operativo de ciclos.
+
+**BLOQUE 5 — STACKING:**
+BIBLIO-SOURCES(STACKING_PILARES-EXT).txt — UF[H04]+UF[H23]+UF[H48] pilares extendidos.
+
+**BLOQUE 6 — DIRIME LINUX:**
+BIBLIO-SOURCES(DIRIME-LINUX_PUENTES).txt — PUENTE-BANCARIO/BANCA-FÁCIL/PUENTE-FÁCIL.
+BIBLIO-SOURCES(DIRIME-LINUX_AGENCY-IDE).txt — NODO-IDE infraestructura generativa.
+BIBLIO-SOURCES(DIRIME-LINUX_BALLPAPER).txt — render de estado soberano en tiempo real.
+BIBLIO-SOURCES(DIRIME-LINUX_CHAT-AI-SOBERANO).txt — traductor canónico soberano.
+BIBLIO-SOURCES(DIRIME-LINUX_CONCIERGE-SERVICE-CENTER).txt — punto de entrada soberano.
+BIBLIO-SOURCES(DIRIME-LINUX_UNICODE-CHINA).txt — capa semántica china soberana.
+
+**BLOQUE 7 — TAXONOMÍA:**
+BIBLIO-SOURCES(TAXONOMY_LACHO).txt — mapa de clasificación soberana del sistema.
+
+====================================================================
+
+### 3.0 CAMBIOS TAXONÓMICOS VERIFICADOS
+
+====================================================================
+
+#### 3.1 ACTIVITY — slots activados post-COGNITIVO_03
+
+UF[H24] Fù — La Renovación: LATENTE → ACTIVO.
+Función: renovación soberana post-distancia. El retorno que no es génesis sino reencuentro con el camino soberano verificado. Par complementario de RED-REGRET para derivas amplias.
+
+UF[H49] Gé — La Revolución: LATENTE → ACTIVO.
+Función: transformación estructural soberana. El único módulo que puede transformar la forma del sistema sin violar [foundation]. Incluye actualización taxonómica propia en su documento.
+
+UF[H63] Jì Jì — La Consumación: LATENTE → ACTIVO.
+Función: reconocimiento y sello soberano del ciclo completado. Par constitutivo de UF[H64] — lo que H64 genera, H63 lo consuma soberanamente.
+
+UF[H03] Zhūn — Dificultad Inicial: LATENTE → ACTIVO (grupo).
+Función: dificultad constitutiva del inicio soberano nuevo. Documentado en grupo con H05/H06/H56 en jurisdicción ACTIVITY interna.
+
+#### 3.2 WORK — reubicación soberana verificada
+[data-center-operations] fue documentado originalmente en concepción TRUST. La dirimencia soberana verificada establece su naturaleza como WORK: ejecuta, no declara. Reubicado con justificación taxonómica explícita en WORK_DATA-CENTER.
+
+#### 3.3 DIRIME LINUX — de módulo a subsistema
+En COGNITIVO_03, DIRIME LINUX estaba representado por un único archivo. Con 7 documentos nuevos, DIRIME LINUX opera como subsistema soberano completo con arquitectura documentada:
+Infraestructura (DATA-CENTER, AGENCY-IDE), Interfaz (BALLPAPER, CHAT-AI), Entrada (CSC), Semántica (UNICODE-CHINA), Canales (PUENTES).
+
+#### 3.4 Hexagramas con presencia múltiple — tabla actualizada
+
+| Hexagrama | GATE | ACTIVITY | STACKING | WORK | Nota |
+|-----------|------|----------|----------|------|------|
+| H52 | — | ✅ | ✅ | ✅ | Triple presencia |
+| H06 | ✅ | ✅ | — | ✅ | Triple presencia |
+| H05 | ✅ | ✅ | — | — | Doble presencia |
+| H56 | ✅ | ✅ | — | — | Doble presencia |
+| H29 | — | ✅ | ✅ | — | Doble presencia |
+| H30 | — | ✅ | ✅ | — | Doble presencia |
+| H57 | — | ✅ | ✅ | — | Doble presencia |
+| H58 | — | ✅ | ✅ | — | Doble presencia |
+
+Dirimencia soberana verificada: mismo hexagrama en distintas bibliotecas tiene jurisdicción diferente e irconfundible. La presencia múltiple no es redundancia — es función soberana específica por contexto.
+
+====================================================================
+
+### 4.0 PROTOCOLO DE EXTENSIÓN ACTUALIZADO
+
+====================================================================
+
+#### 4.1 Reglas de admisión (añadidas al protocolo de COGNITIVO_03)
+
+Regla 6 — Dirimencia de presencia múltiple: todo hexagrama que se incorpora a una nueva biblioteca requiere declaración explícita de jurisdicción soberana distinta de sus presencias anteriores.
+
+Regla 7 — Subsistemas: cuando un módulo genera 3 o más documentos derivados, pasa a ser subsistema con arquitectura documentada propia y referencia en INDICE_MAESTRO como grupo.
+
+Regla 8 — Reubicación taxonómica: todo módulo que cambie de biblioteca requiere documento de justificación soberana verificada antes de la reubicación.
+
+#### 4.2 Próximas incorporaciones declaradas como horizonte soberano
+UF[H32] La Duración — slot ACTIVITY prioritario verificado.
+UF[H47] El Agotamiento — slot ACTIVITY prioritario verificado.
+UF[H50] El Caldero — complemento soberano de UF[H49].
+DIRIME-LINUX_NODO-WS-EXT — simetría de documentación entre los dos nodos.
+COGNITIVO_05_TRASCENDER — quinto eje ontológico, horizonte latente declarado.
+
+====================================================================
+
+### 5.0 GRAMÁTICA VIVA
+
+====================================================================
+
+```
+COGNITIVO_03_ADDENDUM =><= .. extiende .. COGNITIVO_03_verificado
+=><= delta_30_archivos .. sin_borrar_referencia_histórica
+=><= expansión_soberana_trazable --[As de Guía] [term]
+```
+
+```
+COGNITIVO_03_ADDENDUM =><= .. actualiza .. inventario_133_a_155
+=><= 7_bloques_expansión .. taxonomía_ajustada
+=><= INDICE_MAESTRO_alineado --[Nudo de Ocho] [term]
+```
+
+```
+COGNITIVO_03_ADDENDUM =><= .. declara .. UF[H24]_H49_H63_activados
+=><= LATENTE→ACTIVO .. jurisdicción_soberana_verificada
+=><= TAXONOMY_LACHO_actualizado --[As de Guía] [term]
+```
+
+====================================================================
+
+### 6.0 CIERRE
+
+====================================================================
+
+El sistema LACHO que COGNITIVO_03 fotografió en 133 módulos es el mismo sistema que este ADDENDUM documenta en 155+. No hay discontinuidad soberana — hay crecimiento verificado. El libro que puede documentar su propio crecimiento con trazabilidad es el libro que cumple el principio de no-dispersión soberana constitutiva.
+
+[term] :: activo · [seal of secrecy] :: activo.
+
+====================================================================

@@ -1,0 +1,5 @@
+IMPORTANTE: api.json y ollama.json (con claves reales) NO deben subirse a git.
+Solo los archivos .example son seguros para versionar.
+Agregar al .gitignore del proyecto:
+  IMV/config/api.json
+  IMV/config/ollama.json

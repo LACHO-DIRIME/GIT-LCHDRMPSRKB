@@ -1,0 +1,391 @@
+{
+  "model": "CEO_ALPHA",
+  "version": "0.1",
+  "description": "64 hexagramas → estados ejecutivos soberanos",
+  "hexagrams": {
+    "H01": {
+      "name": "乾",
+      "library": "ACTIVITY",
+      "verb": "inicia",
+      "threshold": "arranque"
+    },
+    "H02": {
+      "name": "坤",
+      "library": "TRUST",
+      "verb": "sostiene",
+      "threshold": "base"
+    },
+    "H03": {
+      "name": "屯",
+      "library": "GATE",
+      "verb": "bloquea",
+      "threshold": "inicio_dificil"
+    },
+    "H04": {
+      "name": "蒙",
+      "library": "METHOD",
+      "verb": "modela",
+      "threshold": "calibracion"
+    },
+    "H05": {
+      "name": "需",
+      "library": "GATE",
+      "verb": "contiene",
+      "threshold": "espera"
+    },
+    "H06": {
+      "name": "訟",
+      "library": "GATE",
+      "verb": "filtra",
+      "threshold": "conflicto"
+    },
+    "H07": {
+      "name": "師",
+      "library": "SOCIAL",
+      "verb": "planifica",
+      "threshold": "colectivo"
+    },
+    "H08": {
+      "name": "比",
+      "library": "CRYPTO",
+      "verb": "valida",
+      "threshold": "union"
+    },
+    "H11": {
+      "name": "泰",
+      "library": "ACTIVITY",
+      "verb": "penetra",
+      "threshold": "optimo"
+    },
+    "H12": {
+      "name": "否",
+      "library": "GATE",
+      "verb": "bloquea",
+      "threshold": "bloqueo"
+    },
+    "H13": {
+      "name": "同人",
+      "library": "SOCIAL",
+      "verb": "conecta",
+      "threshold": "comunidad"
+    },
+    "H14": {
+      "name": "大有",
+      "library": "CRYPTO",
+      "verb": "protege",
+      "threshold": "custodia"
+    },
+    "H15": {
+      "name": "謙",
+      "library": "SAMU",
+      "verb": "evalúa",
+      "threshold": "tardanza"
+    },
+    "H16": {
+      "name": "豫",
+      "library": "SAMU",
+      "verb": "activa",
+      "threshold": "rise"
+    },
+    "H21": {
+      "name": "噬嗑",
+      "library": "SAMU",
+      "verb": "dirime",
+      "threshold": "decision"
+    },
+    "H22": {
+      "name": "賁",
+      "library": "WORK",
+      "verb": "activa",
+      "threshold": "ornamento"
+    },
+    "H23": {
+      "name": "剝",
+      "library": "STACKING",
+      "verb": "consolida",
+      "threshold": "purga"
+    },
+    "H24": {
+      "name": "復",
+      "library": "ACTIVITY",
+      "verb": "inicia",
+      "threshold": "retorno"
+    },
+    "H26": {
+      "name": "大畜",
+      "library": "STACKING",
+      "verb": "apila",
+      "threshold": "cristales"
+    },
+    "H28": {
+      "name": "大過",
+      "library": "GATE",
+      "verb": "bloquea",
+      "threshold": "alerta_max"
+    },
+    "H29": {
+      "name": "習坎",
+      "library": "CRYPTO",
+      "verb": "audita",
+      "threshold": "riesgo"
+    },
+    "H30": {
+      "name": "離",
+      "library": "ACTIVITY",
+      "verb": "emerge",
+      "threshold": "claridad"
+    },
+    "H32": {
+      "name": "恆",
+      "library": "SAMU",
+      "verb": "registra",
+      "threshold": "ciclo"
+    },
+    "H42": {
+      "name": "益",
+      "library": "STACKING",
+      "verb": "apila",
+      "threshold": "aumento"
+    },
+    "H46": {
+      "name": "升",
+      "library": "ACTIVITY",
+      "verb": "emerge",
+      "threshold": "ascenso"
+    },
+    "H47": {
+      "name": "困",
+      "library": "GATE",
+      "verb": "contiene",
+      "threshold": "minimo"
+    },
+    "H48": {
+      "name": "井",
+      "library": "STACKING",
+      "verb": "ancla",
+      "threshold": "fuente"
+    },
+    "H51": {
+      "name": "震",
+      "library": "ACTIVITY",
+      "verb": "inicia",
+      "threshold": "impulso"
+    },
+    "H52": {
+      "name": "艮",
+      "library": "STACKING",
+      "verb": "inmutabiliza",
+      "threshold": "quietud"
+    },
+    "H56": {
+      "name": "旅",
+      "library": "GATE",
+      "verb": "permite",
+      "threshold": "transito"
+    },
+    "H57": {
+      "name": "巽",
+      "library": "ACTIVITY",
+      "verb": "penetra",
+      "threshold": "activa"
+    },
+    "H63": {
+      "name": "既濟",
+      "library": "ACTIVITY",
+      "verb": "completa",
+      "threshold": "after_end"
+    },
+    "H64": {
+      "name": "未濟",
+      "library": "ACTIVITY",
+      "verb": "inicia",
+      "threshold": "before_end"
+    },
+    "H09": {
+      "name": "小畜",
+      "library": "WORK",
+      "verb": "contiene",
+      "threshold": "acumulacion"
+    },
+    "H10": {
+      "name": "履",
+      "library": "TRUST",
+      "verb": "verifica",
+      "threshold": "conducta"
+    },
+    "H17": {
+      "name": "隨",
+      "library": "SOCIAL",
+      "verb": "transmite",
+      "threshold": "seguimiento"
+    },
+    "H18": {
+      "name": "蠱",
+      "library": "WORK",
+      "verb": "ejecuta",
+      "threshold": "correccion"
+    },
+    "H19": {
+      "name": "臨",
+      "library": "TRUST",
+      "verb": "sostiene",
+      "threshold": "aproximacion"
+    },
+    "H20": {
+      "name": "觀",
+      "library": "SAMU",
+      "verb": "audita",
+      "threshold": "observacion"
+    },
+    "H25": {
+      "name": "無妄",
+      "library": "TRUST",
+      "verb": "declara",
+      "threshold": "inocencia"
+    },
+    "H27": {
+      "name": "頤",
+      "library": "WORK",
+      "verb": "procesa",
+      "threshold": "nutricion"
+    },
+    "H31": {
+      "name": "咸",
+      "library": "SOCIAL",
+      "verb": "conecta",
+      "threshold": "influencia"
+    },
+    "H33": {
+      "name": "遁",
+      "library": "GATE",
+      "verb": "contiene",
+      "threshold": "retirada"
+    },
+    "H34": {
+      "name": "大壯",
+      "library": "WORK",
+      "verb": "ejecuta",
+      "threshold": "fuerza"
+    },
+    "H35": {
+      "name": "晉",
+      "library": "ACTIVITY",
+      "verb": "emerge",
+      "threshold": "progreso"
+    },
+    "H36": {
+      "name": "明夷",
+      "library": "SAMU",
+      "verb": "audita",
+      "threshold": "oscuridad"
+    },
+    "H37": {
+      "name": "家人",
+      "library": "TRUST",
+      "verb": "sostiene",
+      "threshold": "familia"
+    },
+    "H38": {
+      "name": "睽",
+      "library": "GATE",
+      "verb": "filtra",
+      "threshold": "oposicion"
+    },
+    "H39": {
+      "name": "蹇",
+      "library": "GATE",
+      "verb": "bloquea",
+      "threshold": "obstruccion"
+    },
+    "H40": {
+      "name": "解",
+      "library": "ACTIVITY",
+      "verb": "completa",
+      "threshold": "liberacion"
+    },
+    "H41": {
+      "name": "損",
+      "library": "STACKING",
+      "verb": "reserva",
+      "threshold": "reduccion"
+    },
+    "H43": {
+      "name": "夬",
+      "library": "TRUST",
+      "verb": "declara",
+      "threshold": "resolucion"
+    },
+    "H44": {
+      "name": "姤",
+      "library": "SOCIAL",
+      "verb": "transmite",
+      "threshold": "encuentro"
+    },
+    "H45": {
+      "name": "萃",
+      "library": "SOCIAL",
+      "verb": "conecta",
+      "threshold": "reunion"
+    },
+    "H49": {
+      "name": "革",
+      "library": "WORK",
+      "verb": "activa",
+      "threshold": "renovacion"
+    },
+    "H50": {
+      "name": "鼎",
+      "library": "METHOD",
+      "verb": "calcula",
+      "threshold": "caldero"
+    },
+    "H53": {
+      "name": "漸",
+      "library": "ACTIVITY",
+      "verb": "inicia",
+      "threshold": "gradual"
+    },
+    "H54": {
+      "name": "歸妹",
+      "library": "SOCIAL",
+      "verb": "transmite",
+      "threshold": "transicion"
+    },
+    "H55": {
+      "name": "丰",
+      "library": "ACTIVITY",
+      "verb": "emerge",
+      "threshold": "abundancia"
+    },
+    "H58": {
+      "name": "兌",
+      "library": "CRYPTO",
+      "verb": "valida",
+      "threshold": "intercambio"
+    },
+    "H59": {
+      "name": "渙",
+      "library": "SOCIAL",
+      "verb": "transmite",
+      "threshold": "dispersion"
+    },
+    "H60": {
+      "name": "節",
+      "library": "TRUST",
+      "verb": "sostiene",
+      "threshold": "limitacion"
+    },
+    "H61": {
+      "name": "中孚",
+      "library": "METHOD",
+      "verb": "verifica",
+      "threshold": "verdad"
+    },
+    "H62": {
+      "name": "小過",
+      "library": "GATE",
+      "verb": "filtra",
+      "threshold": "exceso_menor"
+    }
+  }
+}

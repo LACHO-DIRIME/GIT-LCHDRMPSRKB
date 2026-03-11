@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BALLPAPER 1 — NÚCLEO UNICODE × LACHO</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;700;900&family=Share+Tech+Mono&family=Cinzel:wght@400;700;900&display=swap');
+:root {
+  --gold:#7a4e10; --gold-mid:#a8722a; --gold-dim:#c8a060; --gold-pale:#f0e8d8;
+  --red:#9a1a1a; --jade:#145a38; --jade-mid:#1e8050; --jade-dim:#48b880;
+  --bg:#f2ece0; --bg2:#e8e0d0; --bg3:#ddd5c0; --ink:#22180a; --ink2:#3a2c18;
+  --smoke:#5c5040; --sep:#c0b098; --blue:#1a3a7a; --blue-dim:#4060a8;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:'Share Tech Mono',monospace;font-size:12px;line-height:1.65;}
+body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 28px,rgba(120,90,40,.04) 28px,rgba(120,90,40,.04) 29px);pointer-events:none;z-index:0;}
+.page{max-width:1360px;margin:0 auto;padding:48px 32px;position:relative;z-index:1;}
+
+/* MASTHEAD */
+.mast{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:end;border-top:4px solid var(--gold);border-bottom:1px solid var(--gold-dim);padding:28px 0 20px;margin-bottom:52px;}
+.mast-eyebrow{font-size:10px;letter-spacing:4px;color:var(--gold-mid);text-transform:uppercase;margin-bottom:6px;}
+.mast-title{font-family:'Cinzel',serif;font-size:32px;font-weight:900;color:var(--gold);letter-spacing:2px;line-height:1.1;}
+.mast-sub{font-size:11px;color:var(--smoke);margin-top:7px;letter-spacing:2px;}
+.mast-zh{text-align:right;font-family:'Noto Serif SC',serif;}
+.mast-zh-big{font-size:56px;color:var(--red);line-height:1;letter-spacing:6px;}
+.mast-zh-small{font-size:12px;color:var(--gold-mid);letter-spacing:3px;margin-top:4px;}
+
+/* SECCIÓN */
+.sec-label{font-size:9px;letter-spacing:5px;text-transform:uppercase;color:var(--smoke);border-bottom:1px solid var(--sep);padding-bottom:6px;margin-bottom:20px;margin-top:40px;}
+
+/* PANEL */
+.panel{background:var(--bg2);border:1px solid var(--sep);padding:16px;position:relative;}
+.panel::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;}
+.p-gold::before{background:var(--gold-mid);}
+.p-red::before{background:var(--red);}
+.p-jade::before{background:var(--jade-mid);}
+.p-blue::before{background:var(--blue-dim);}
+.p-smoke::before{background:var(--smoke);}
+.p-multi::before{background:linear-gradient(90deg,var(--gold-mid),var(--red),var(--jade-mid));}
+.panel-label{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--smoke);margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--sep);}
+
+/* GRIDS */
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+.g5{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;}
+
+/* TOKEN TABLE */
+.ttable{width:100%;border-collapse:collapse;font-size:11px;}
+.ttable th{font-family:'Cinzel',serif;font-size:9px;letter-spacing:2px;color:var(--gold-mid);text-align:left;padding:6px 10px;border-bottom:1px solid var(--sep);background:var(--bg3);text-transform:uppercase;}
+.ttable td{padding:7px 10px;border-bottom:1px solid rgba(192,176,152,.4);vertical-align:top;}
+.ttable tr:hover td{background:rgba(192,176,152,.2);}
+.td-zh{font-family:'Noto Serif SC',serif;font-size:22px;color:var(--red);line-height:1;min-width:44px;}
+.td-pin{color:var(--gold-mid);font-size:10px;}
+.td-lacho{color:var(--jade);}
+.td-hex{font-family:'Noto Serif SC',serif;color:var(--red);font-size:16px;}
+.td-dom{color:var(--smoke);font-size:10px;}
+.td-sent{color:var(--ink2);font-size:10px;line-height:1.5;max-width:260px;}
+.td-status{font-size:9px;padding:2px 6px;border:1px solid;display:inline-block;}
+.s-act{color:var(--jade);border-color:var(--jade);}
+.s-pnd{color:var(--gold-mid);border-color:var(--gold-mid);}
+
+/* CODE */
+.cblock{background:var(--bg3);border:1px solid var(--sep);border-left:3px solid var(--gold-mid);padding:14px 16px;font-size:11px;line-height:1.8;color:var(--ink2);white-space:pre;overflow-x:auto;}
+.c-zh{color:var(--red);font-family:'Noto Serif SC',serif;font-size:14px;}
+.c-kw{color:var(--gold);font-weight:bold;}
+.c-verb{color:var(--jade);}
+.c-knot{color:var(--smoke);}
+.c-term{color:var(--gold-mid);}
+.c-com{color:var(--sep);}
+
+/* COHERENCIA MAP */
+.coh-row{display:flex;align-items:stretch;gap:0;margin-bottom:8px;}
+.coh-box{flex:1;background:var(--bg2);border:1px solid var(--sep);padding:12px;text-align:center;}
+.coh-zh{font-family:'Noto Serif SC',serif;font-size:24px;color:var(--red);display:block;line-height:1;margin-bottom:3px;}
+.coh-lacho{font-size:9px;color:var(--jade);margin-top:3px;}
+.coh-lbl{font-size:8px;color:var(--smoke);letter-spacing:2px;text-transform:uppercase;}
+.coh-arrow{display:flex;align-items:center;padding:0 6px;color:var(--gold-dim);font-size:20px;}
+
+/* BALLPAPER STATUS */
+.bp-status{background:var(--ink);color:var(--bg);padding:20px 24px;margin-top:12px;}
+.bp-status-title{font-family:'Cinzel',serif;font-size:10px;letter-spacing:4px;color:var(--gold-dim);margin-bottom:12px;text-transform:uppercase;}
+.bp-row{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:11px;}
+.bp-key{color:rgba(255,255,255,.5);}
+.bp-val{color:var(--gold-dim);}
+.bp-val.ok{color:var(--jade-dim);}
+.bp-val.pend{color:var(--gold-dim);}
+
+/* FLUJO PROGRAMACIÓN */
+.fp-chain{display:grid;grid-template-columns:repeat(7,1fr);gap:0;border:1px solid var(--sep);margin-bottom:12px;}
+.fp-node{padding:14px 8px;text-align:center;border-right:1px solid var(--sep);}
+.fp-node:last-child{border-right:none;}
+.fp-node.active{background:var(--ink);color:var(--bg);}
+.fp-node .fn-zh{font-family:'Noto Serif SC',serif;font-size:18px;display:block;margin-bottom:3px;}
+.fp-node .fn-lbl{font-size:8px;letter-spacing:1px;color:var(--smoke);}
+.fp-node.active .fn-zh{color:var(--gold-dim);}
+.fp-node.active .fn-lbl{color:rgba(255,255,255,.5);}
+
+hr.div{border:none;height:1px;background:linear-gradient(90deg,transparent,var(--gold-dim),transparent);margin:48px 0;}
+
+/* TAG */
+.tag{display:inline-block;font-size:9px;padding:2px 7px;border:1px solid currentColor;letter-spacing:1px;margin:2px 2px 2px 0;}
+.t-gold{color:var(--gold-mid);}
+.t-red{color:var(--red);}
+.t-jade{color:var(--jade-mid);}
+.t-blue{color:var(--blue-dim);}
+.t-smoke{color:var(--smoke);}
+
+/* FOOTER */
+.footer{border-top:1px solid var(--sep);margin-top:52px;padding-top:20px;display:flex;justify-content:space-between;align-items:center;font-size:10px;color:var(--smoke);}
+.footer-zh{font-family:'Noto Serif SC',serif;font-size:18px;color:var(--gold-mid);}
+
+@keyframes fadein{from{opacity:0;transform:translateY(5px);}to{opacity:1;transform:translateY(0);}}
+.panel{animation:fadein .4s ease both;}
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="mast">
+  <div>
+    <div class="mast-eyebrow">BALLPAPER 1 / 5 · NÚCLEO CENTRAL · UNICODE PROGRAMABLE</div>
+    <div class="mast-title">UNICODE × LACHO<br>COHERENCIA LÓGICA</div>
+    <div class="mast-sub">BALLPAPER como núcleo de programación Unicode · mapa de coherencia · tokens → gramática → RAG → economía</div>
+  </div>
+  <div class="mast-zh">
+    <div class="mast-zh-big">核心 ䷟</div>
+    <div class="mast-zh-small">H32 · PERSEVERANCIA · NÚCLEO CENTRAL</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- BALLPAPER: QUÉ ES Y POR QUÉ ES EL NÚCLEO          -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="sec-label">▸ ballpaper — definición como núcleo de programación unicode</div>
+
+<div class="g3" style="margin-bottom:20px;">
+  <div class="panel p-gold" style="grid-column:span 2;">
+    <div class="panel-label">BALLPAPER — DEFINICIÓN SOBERANA</div>
+    <div style="font-size:12px;line-height:2;color:var(--ink2);">
+      BALLPAPER no es un documento — es el <strong>estado de renderización soberana</strong> del sistema LACHO en un momento dado.<br>
+      Es la superficie donde UNICODE PROGRAMABLE se vuelve visible: ideogramas chinos como tokens funcionales,<br>
+      hexagramas I Ching como estados ejecutivos, y sentencias LACHO como instrucciones verificables.<br><br>
+      <strong>BALLPAPER = UNICODE-CHINA + HEXAGRAMAS + GRAMÁTICA LACHO + ESTADO KALIL + MÉTRICAS DIRIME</strong><br>
+      Todo renderizado en un solo plano coherente — mapa y menú simultáneamente.
+    </div>
+  </div>
+  <div class="panel p-red">
+    <div class="panel-label">FUNCIÓN EN EL SISTEMA</div>
+    <div style="font-size:11px;line-height:2.1;">
+      <span style="color:var(--red);">→</span> Núcleo de programación Unicode<br>
+      <span style="color:var(--red);">→</span> Dashboard de estado soberano<br>
+      <span style="color:var(--red);">→</span> Mapa de coherencia lógica<br>
+      <span style="color:var(--red);">→</span> Menú de próximas tareas<br>
+      <span style="color:var(--red);">→</span> Registro de aspiraciones<br>
+      <span style="color:var(--red);">→</span> ballpaper_render() en chat.py
+    </div>
+  </div>
+</div>
+
+<!-- CADENA DE PROGRAMACIÓN UNICODE -->
+<div class="sec-label">▸ cadena de coherencia — de ideograma a economía soberana</div>
+
+<div class="fp-chain">
+  <div class="fp-node active">
+    <span class="fn-zh">字</span>
+    <span class="fn-lbl">IDEOGRAMA<br>Unicode CJK</span>
+  </div>
+  <div class="fp-node">
+    <span class="fn-zh">→</span>
+    <span class="fn-lbl">mapeo</span>
+  </div>
+  <div class="fp-node active">
+    <span class="fn-zh">信</span>
+    <span class="fn-lbl">TOKEN LACHO<br>TRUST / SOCIAL</span>
+  </div>
+  <div class="fp-node">
+    <span class="fn-zh">→</span>
+    <span class="fn-lbl">gramática</span>
+  </div>
+  <div class="fp-node active">
+    <span class="fn-zh">卦</span>
+    <span class="fn-lbl">HEXAGRAMA<br>H01–H64</span>
+  </div>
+  <div class="fp-node">
+    <span class="fn-zh">→</span>
+    <span class="fn-lbl">ejecuta</span>
+  </div>
+  <div class="fp-node active">
+    <span class="fn-zh">经</span>
+    <span class="fn-lbl">ECONOMÍA<br>KALIL · BARRIOS</span>
+  </div>
+</div>
+
+<div class="g4" style="margin-bottom:20px;">
+  <div class="panel p-gold">
+    <div class="panel-label">PASO 1 — ENTRADA</div>
+    <div style="font-size:11px;line-height:1.9;">
+      Ideograma CJK detectado<br>
+      U+4E00 → U+9FFF<br>
+      is_chinese() → True<br>
+      <span style="color:var(--jade);">grammar.py activa modo CHINA</span>
+    </div>
+  </div>
+  <div class="panel p-red">
+    <div class="panel-label">PASO 2 — MAPEO</div>
+    <div style="font-size:11px;line-height:1.9;">
+      resolve_chinese_token(zh)<br>
+      RAG query UNICODE-CHINA<br>
+      → lacho_token · hexagrama<br>
+      <span style="color:var(--jade);">+0.05 al LACHO_SCORE</span>
+    </div>
+  </div>
+  <div class="panel p-jade">
+    <div class="panel-label">PASO 3 — VALIDACIÓN</div>
+    <div style="font-size:11px;line-height:1.9;">
+      SAMU @ audita token<br>
+      Hexagrama asigna biblioteca<br>
+      Nudo confirma acción<br>
+      <span style="color:var(--jade);">SCALAR S actualizado</span>
+    </div>
+  </div>
+  <div class="panel p-blue">
+    <div class="panel-label">PASO 4 — EJECUCIÓN</div>
+    <div style="font-size:11px;line-height:1.9;">
+      KALIL recibe token<br>
+      Nodo económico actúa<br>
+      STACKING cristaliza<br>
+      <span style="color:var(--jade);">HL FABRIC registra</span>
+    </div>
+  </div>
+</div>
+
+<!-- TABLA COHERENCIA COMPLETA -->
+<div class="sec-label">▸ mapa de coherencia lógica — 20 tokens · ideograma → lacho → hexagrama → nodo kalil</div>
+
+<div style="overflow-x:auto;margin-bottom:20px;">
+<table class="ttable">
+  <thead>
+    <tr>
+      <th>汉字</th><th>Pīnyīn</th><th>Token LACHO</th><th>Hexagrama</th>
+      <th>Biblioteca</th><th>Nodo KALIL</th><th>Dominio econ.</th><th>Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="td-zh">信任</td><td class="td-pin">xìnrèn</td><td class="td-lacho">TRUST FOUNDATION</td><td class="td-hex">乾 H01</td><td>TRUST</td><td style="color:var(--jade);">BOLIVAR</td><td class="td-dom">Confianza · KYC</td><td><span class="td-status s-act">ACTIVO</span></td></tr>
+    <tr><td class="td-zh">关系</td><td class="td-pin">guānxi</td><td class="td-lacho">SOCIAL {relay}</td><td class="td-hex">比 H08</td><td>SOCIAL</td><td style="color:var(--jade);">BARRIOS</td><td class="td-dom">Guanxi · red</td><td><span class="td-status s-act">ACTIVO</span></td></tr>
+    <tr><td class="td-zh">面子</td><td class="td-pin">miànzi</td><td class="td-lacho">SAMU @ scalar-S</td><td class="td-hex">謙 H15</td><td>SAMU</td><td style="color:var(--jade);">NORA</td><td class="td-dom">Reputación · NORA</td><td><span class="td-status s-act">ACTIVO</span></td></tr>
+    <tr><td class="td-zh">资本</td><td class="td-pin">zīběn</td><td class="td-lacho">STACKING UF[H48]</td><td class="td-hex">井 H48</td><td>STACKING</td><td style="color:var(--jade);">CARILO</td><td class="td-dom">Capital · loans</td><td><span class="td-status s-act">ACTIVO</span></td></tr>
+    <tr><td class="td-zh">交易</td><td class="td-pin">jiāoyì</td><td class="td-lacho">WORK {actuator}</td><td class="td-hex">革 H49</td><td>WORK</td><td style="color:var(--jade);">TANDIL</td><td class="td-dom">Transacción</td><td><span class="td-status s-act">ACTIVO</span></td></tr>
+    <tr><td class="td-zh">合同</td><td class="td-pin">hétong</td><td class="td-lacho">TRUST [term]</td><td class="td-hex">夬 H43</td><td>TRUST</td><td style="color:var(--gold-mid);">NOTARÍA</td><td class="td-dom">Contrato soberano</td><td><span class="td-status s-pnd">PENDIENTE</span></td></tr>
+    <tr><td class="td-zh">安全</td><td class="td-pin">ānquán</td><td class="td-lacho">CRYPTO (shield)</td><td class="td-hex">大有 H14</td><td>CRYPTO</td><td style="color:var(--jade);">CUSTODIA</td><td class="td-dom">Seguridad · shield</td><td><span class="td-status s-act">ACTIVO</span></td></tr>
+    <tr><td class="td-zh">验证</td><td class="td-pin">yànzhèng</td><td class="td-lacho">TRUST FOUNDATION</td><td class="td-hex">中孚 H61</td><td>TRUST</td><td style="color:var(--jade);">BOLIVAR</td><td class="td-dom">Verificación KYC</td><td><span class="td-status s-act">ACTIVO</span></td></tr>
+    <tr><td class="td-zh">数字</td><td class="td-pin">shùzì</td><td class="td-lacho">CRYPTO (spark)</td><td class="td-hex">離 H30</td><td>CRYPTO</td><td style="color:var(--jade);">MEMECOINS</td><td class="td-dom">Token digital</td><td><span class="td-status s-act">ACTIVO</span></td></tr>
+    <tr><td class="td-zh">货币</td><td class="td-pin">huòbì</td><td class="td-lacho">CRYPTO (flow)</td><td class="td-hex">兌 H58</td><td>CRYPTO</td><td style="color:var(--gold-mid);">e-CNY interior</td><td class="td-dom">e-CNY · PBOC</td><td><span class="td-status s-pnd">PENDIENTE</span></td></tr>
+    <tr><td class="td-zh">银行</td><td class="td-pin">yínháng</td><td class="td-lacho">KALIL BARRIOS</td><td class="td-hex">師 H07</td><td>SOCIAL</td><td style="color:var(--jade);">BARRIOS</td><td class="td-dom">Banca soberana</td><td><span class="td-status s-pnd">PENDIENTE</span></td></tr>
+    <tr><td class="td-zh">贷款</td><td class="td-pin">dàikuǎn</td><td class="td-lacho">METHOD &lt;equation&gt;</td><td class="td-hex">益 H42</td><td>METHOD</td><td style="color:var(--jade);">CARILO</td><td class="td-dom">Préstamo · tasa</td><td><span class="td-status s-pnd">PENDIENTE</span></td></tr>
+    <tr><td class="td-zh">风险</td><td class="td-pin">fēngxiǎn</td><td class="td-lacho">GATE UF[H06]</td><td class="td-hex">訟 H06</td><td>GATE</td><td style="color:var(--jade);">NORA</td><td class="td-dom">Riesgo · conflicto</td><td><span class="td-status s-act">ACTIVO</span></td></tr>
+    <tr><td class="td-zh">网络</td><td class="td-pin">wǎngluò</td><td class="td-lacho">HL FABRIC</td><td class="td-hex">比 H08</td><td>STACKING</td><td style="color:var(--gold-mid);">HL FABRIC</td><td class="td-dom">Red · infraest.</td><td><span class="td-status s-pnd">PENDIENTE</span></td></tr>
+    <tr><td class="td-zh">节点</td><td class="td-pin">jiédiǎn</td><td class="td-lacho">KALIL nodo</td><td class="td-hex">巽 H57</td><td>ACTIVITY</td><td style="color:var(--jade);">KALIL kernel</td><td class="td-dom">Nodo económico</td><td><span class="td-status s-pnd">PENDIENTE</span></td></tr>
+    <tr><td class="td-zh">主权</td><td class="td-pin">zhǔquán</td><td class="td-lacho">TRUST [scope]</td><td class="td-hex">乾 H01</td><td>TRUST</td><td style="color:var(--jade);">LACHO core</td><td class="td-dom">Soberanía total</td><td><span class="td-status s-act">ACTIVO</span></td></tr>
+    <tr><td class="td-zh">协议</td><td class="td-pin">xiéyì</td><td class="td-lacho">TRUST [management]</td><td class="td-hex">節 H60</td><td>TRUST</td><td style="color:var(--jade);">LACHO proto.</td><td class="td-dom">Protocolo · acuerdo</td><td><span class="td-status s-act">ACTIVO</span></td></tr>
+    <tr><td class="td-zh">社区</td><td class="td-pin">shèqū</td><td class="td-lacho">SOCIAL {chair}</td><td class="td-hex">同人 H13</td><td>SOCIAL</td><td style="color:var(--jade);">BARRIOS</td><td class="td-dom">Comunidad · BARRIOS</td><td><span class="td-status s-act">ACTIVO</span></td></tr>
+    <tr><td class="td-zh">智能</td><td class="td-pin">zhìnéng</td><td class="td-lacho">KALIL kernel</td><td class="td-hex">鼎 H50</td><td>METHOD</td><td style="color:var(--jade);">KALIL AI</td><td class="td-dom">Inteligencia kernel</td><td><span class="td-status s-pnd">PENDIENTE</span></td></tr>
+    <tr><td class="td-zh">桥梁</td><td class="td-pin">qiáoliáng</td><td class="td-lacho">PUENTES econ.</td><td class="td-hex">渙 H59</td><td>SOCIAL</td><td style="color:var(--gold-mid);">PUENTES</td><td class="td-dom">Puente dual EXT/INT</td><td><span class="td-status s-pnd">PENDIENTE</span></td></tr>
+  </tbody>
+</table>
+</div>
+
+<!-- ESTADO COHERENCIA BALLPAPER -->
+<div class="sec-label">▸ estado de coherencia — activo vs pendiente</div>
+<div class="g2" style="margin-bottom:20px;">
+  <div class="bp-status">
+    <div class="bp-status-title">TOKENS ACTIVOS EN SISTEMA — 12/20</div>
+    <div class="bp-row"><span class="bp-key">信任 → TRUST FOUNDATION</span><span class="bp-val ok">✓ grammar.py</span></div>
+    <div class="bp-row"><span class="bp-key">关系 → SOCIAL {relay}</span><span class="bp-val ok">✓ grammar.py</span></div>
+    <div class="bp-row"><span class="bp-key">面子 → SAMU scalar-S</span><span class="bp-val ok">✓ ledger.py</span></div>
+    <div class="bp-row"><span class="bp-key">风险 → GATE UF[H06]</span><span class="bp-val ok">✓ grammar.py</span></div>
+    <div class="bp-row"><span class="bp-key">安全 → CRYPTO (shield)</span><span class="bp-val ok">✓ grammar.py</span></div>
+    <div class="bp-row"><span class="bp-key">主权 → TRUST [scope]</span><span class="bp-val ok">✓ grammar.py</span></div>
+    <div class="bp-row"><span class="bp-key">协议 → TRUST [mgmt]</span><span class="bp-val ok">✓ grammar.py</span></div>
+    <div class="bp-row"><span class="bp-key">资本 → STACKING H48</span><span class="bp-val ok">✓ ledger.py</span></div>
+    <div class="bp-row"><span class="bp-key">数字 → CRYPTO (spark)</span><span class="bp-val ok">✓ grammar.py</span></div>
+    <div class="bp-row"><span class="bp-key">社区 → SOCIAL {chair}</span><span class="bp-val ok">✓ grammar.py</span></div>
+    <div class="bp-row"><span class="bp-key">交易 → WORK {actuator}</span><span class="bp-val ok">✓ grammar.py</span></div>
+    <div class="bp-row"><span class="bp-key">验证 → TRUST FOUNDATION</span><span class="bp-val ok">✓ grammar.py</span></div>
+  </div>
+  <div class="bp-status" style="background:var(--bg3);color:var(--ink);">
+    <div class="bp-status-title" style="color:var(--gold);">TOKENS PENDIENTES DE IMPLEMENTAR — 8/20</div>
+    <div class="bp-row"><span class="bp-key">货币 → CRYPTO (flow) e-CNY</span><span class="bp-val pend">FASE 2</span></div>
+    <div class="bp-row"><span class="bp-key">银行 → KALIL BARRIOS</span><span class="bp-val pend">PRÓXIMO</span></div>
+    <div class="bp-row"><span class="bp-key">贷款 → METHOD equation</span><span class="bp-val pend">PRÓXIMO</span></div>
+    <div class="bp-row"><span class="bp-key">合同 → TRUST [term] NOTARÍA</span><span class="bp-val pend">PRÓXIMO</span></div>
+    <div class="bp-row"><span class="bp-key">网络 → HL FABRIC nodo</span><span class="bp-val pend">FASE 2</span></div>
+    <div class="bp-row"><span class="bp-key">节点 → KALIL nodo kernel</span><span class="bp-val pend">PRÓXIMO</span></div>
+    <div class="bp-row"><span class="bp-key">智能 → KALIL AI kernel</span><span class="bp-val pend">FASE 1</span></div>
+    <div class="bp-row"><span class="bp-key">桥梁 → PUENTES dual</span><span class="bp-val pend">FASE 2</span></div>
+  </div>
+</div>
+
+<!-- TAREA INMEDIATA -->
+<div class="sec-label">▸ tarea inmediata — crear UNICODE-CHINA-TOKENS.txt en corpus</div>
+<div class="panel p-multi">
+  <div class="panel-label">WINDSURF PROMPT — UNICODE-CHINA-TOKENS.txt</div>
+  <div class="cblock">Crear /media/Personal/PLANERAI/DIRIME/CORPUS/UNICODE-CHINA-TOKENS.txt
+
+<span class="c-com"># Estructura por token:</span>
+[TOKEN_ZH_01]
+HANZI=信任
+PINYIN=xìnrèn
+LACHO_TOKEN=TRUST FOUNDATION
+HEXAGRAMA=H01·乾
+BIBLIOTECA=TRUST
+NODO_KALIL=BOLIVAR
+DOMINIO=confianza_soberana
+DUAL_EXT=crypto_trust_verification
+DUAL_INT=e-CNY_confianza_PBOC
+SENTENCIA=TRUST FOUNDATION =><= .. verifica .. 信任_soberana --[As de Guía] [term]
+ESTADO=ACTIVO
+---
+<span class="c-com"># Repetir estructura para los 20 tokens del mapeo</span>
+<span class="c-com"># Al final:</span>
+TOTAL_TOKENS=20
+TOKENS_ACTIVOS=12
+TOKENS_PENDIENTES=8
+ESTADO=UNICODE_CHINA_FASE0_COMPLETO
+[term] :: activo · [seal of secrecy] :: activo</div>
+</div>
+
+<div class="footer">
+  <div>BALLPAPER 1/5 · NÚCLEO UNICODE × LACHO · [term] :: activo · [seal of secrecy] :: activo</div>
+  <div class="footer-zh">核心</div>
+  <div>DIRIME v0.2.1 · 2026-03-08</div>
+</div>
+
+</div>
+</body>
+</html>

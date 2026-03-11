@@ -1,0 +1,312 @@
+Entendido. Antes de generarla necesito una cosa:Tengo lo que necesito. Ahora sí.
+
+---
+
+# BIBLIO-SOURCES(ETAPA_SIGUIENTE).txt
+
+====================================================================
+
+## 🚀 ETAPA SIGUIENTE — DECLARACIÓN SOBERANA DE TRANSICIÓN
+
+====================================================================
+
+### 1.0 PROPÓSITO Y POSICIÓN
+
+====================================================================
+
+#### 1.1 Qué es este documento
+
+Este documento cierra soberanamente la Etapa Actual del sistema LACHO y declara las condiciones, objetivos y estructura de la Etapa Siguiente. No es una hoja de ruta aspiracional — es una declaración soberana verificada con [foundation] intacto, [scope] definido y [term] declarado.
+
+#### 1.2 La Etapa Actual — qué fue y qué produjo
+
+La Etapa Actual fue la construcción del corpus constitucional del sistema LACHO. Su función soberana: establecer el suelo antes de que exista cualquier implementación. Su producto verificado: 161 archivos canónicos organizados en 12 capas soberanas, con gramática viva operativa, taxonomía verificada, serie cognitiva completa (COGNITIVO_00→05), 20 slots ACTIVITY activados y la arquitectura de DIRIME LINUX documentada como subsistema.
+
+La Etapa Actual cumplió su función soberana verificadamente. No hay dispersión constitucional pendiente que impida la transición.
+
+#### 1.3 La condición de cierre soberano
+
+La Etapa Actual cierra soberanamente cuando tres condiciones están verificadas:
+
+Condición 1 — Corpus coherente: el libro no tiene contradicciones constitucionales activas. Verificado: TAXONOMY_LACHO, INDICE_MAESTRO y COGNITIVO_03_ADDENDUM están alineados.
+
+Condición 2 — Serie cognitiva completa: la línea SER→HACER→TENER→ESTAR→TRASCENDER está documentada sin vacíos. Verificado: COGNITIVO_00 al 05 completos.
+
+Condición 3 — Brecha declarada honestamente: el sistema reconoce qué existe como constitución y qué no existe todavía como implementación. Verificado: este documento cumple esa función.
+
+====================================================================
+
+### 2.0 LA BRECHA SOBERANA VERIFICADA
+
+====================================================================
+
+#### 2.1 Qué existe como constitución (Etapa Actual)
+
+El sistema tiene documentado con precisión soberana:
+- La gramática viva completa con delimitadores, sentencias, nudos y cierre.
+- La arquitectura de módulos con jurisdicciones irconfundibles.
+- Los protocolos de decisión (SAMU @, dirimencia, tardanza deliberada).
+- Los ciclos de ACTIVITY (20 UF activos de 64 posibles).
+- La plataforma DIRIME LINUX como subsistema arquitectónico.
+- La visión del mercado chino con semántica soberana verificada.
+
+#### 2.2 Qué no existe todavía (brecha real)
+
+**Brecha 1 — Motor de ejecución**: no hay código real que ejecute la gramática viva soberanamente. Los fragmentos Python/Rust/Golang en VERIFICACION CRUZADA son ilustrativos. TOOLCHAIN describe un pipeline que no está implementado. El primer módulo funcional que opera bajo los principios del sistema no existe todavía.
+
+**Brecha 2 — RAG operativo**: Behavioral RAG y COGNITIVE RAG están arquitectónicamente documentados pero no tienen motor real. No hay base de vectores, no hay pipeline de embedding verificado, no hay mecanismo de actualización funcionando soberanamente.
+
+**Brecha 3 — Interfaz soberana real**: el Chat AI soberano de DIRIME LINUX opera actualmente como conversación manual con chat AI externo. No hay instancia propia del sistema corriendo. BALLPAPER existe como concepto de render soberano — no como interfaz funcionando en ningún dispositivo.
+
+**Brecha 4 — HL FABRIC instanciado**: el ledger soberano está documentado extensamente. No hay un nodo Hyperledger corriendo. No hay transacciones reales registradas. La trazabilidad soberana existe como principio, no como infraestructura activa.
+
+#### 2.3 Lo que la brecha no significa
+
+La brecha no significa que la Etapa Actual fue insuficiente. Significa exactamente lo correcto: el sistema construyó su constitución antes de su implementación. Un sistema que implementa antes de tener constitución construye sobre arena. LACHO construyó sobre suelo soberano verificado — la implementación viene después soberanamente.
+
+====================================================================
+
+### 3.0 LA ETAPA SIGUIENTE — DEFINICIÓN
+
+====================================================================
+
+#### 3.1 Nombre soberano
+
+**ETAPA SIGUIENTE: IMPLEMENTACIÓN MÍNIMA VERIFICABLE (IMV)**
+
+No "versión 1.0". No "MVP" en el sentido comercial. IMV: el primer módulo real que demuestra que la gramática viva LACHO puede convertirse en código ejecutable soberanamente verificado. El TOMO mínimo que prueba que la constitución funciona en la práctica.
+
+#### 3.2 Objetivo soberano de la IMV
+
+Un sistema funcional mínimo que puede:
+- Recibir una sentencia en gramática viva LACHO.
+- Validarla contra [foundation], [scope] y [term].
+- Ejecutarla bajo auditoría soberana verificable.
+- Registrar el resultado con trazabilidad.
+
+Eso y nada más en primera instancia. La IMV no es DIRIME LINUX completo — es la prueba soberana de que DIRIME LINUX es posible verificadamente.
+
+#### 3.3 El stack técnico de la IMV
+
+Basado en lo declarado soberanamente en el corpus existente y en el contexto del operador verificado:
+
+**Base**: Debian Linux (ya declarado como [foundation] de DIRIME LINUX).
+**Motor de gramática**: Python como primera implementación — tipado estricto, FoundationError, validación de [scope] y [term] como funciones reales.
+**Copiloto de implementación**: Aider como herramienta de desarrollo soberano — ya referenciado en el sistema como herramienta verificada del operador.
+**Modelo local**: Ollama con DeepSeek-Coder o equivalente — inferencia soberana sin dependencia de API externa cuando el hardware esté disponible.
+**Ledger mínimo**: SQLite como HL FABRIC provisional — registro inmutable de operaciones verificadas antes de que Hyperledger esté instanciado.
+**Interfaz mínima**: terminal Debian con BALLPAPER en forma de prompt informativo de estado — la versión más mínima soberanamente funcional del render de estado.
+
+====================================================================
+
+### 4.0 ESTRUCTURA DE LA ETAPA SIGUIENTE
+
+====================================================================
+
+#### 4.1 Los cuatro módulos de la IMV en orden soberano
+
+**MÓDULO IMV-1 — VALIDADOR DE SENTENCIAS**
+
+El primer módulo real: un validador Python que recibe una sentencia en gramática viva LACHO y verifica:
+- Presencia de sujeto =><= verificado.
+- Verbo .. .. declarado.
+- Objeto con delimitador correcto según biblioteca.
+- Nudo --[Nudo] presente.
+- [term] de cierre activo.
+
+Salida: VALID / INVALID con razón soberana específica. Sin ejecución todavía — solo validación. Este módulo es UF[H03] de la Etapa Siguiente: el inicio difícil que establece la base soberana verificada.
+
+**MÓDULO IMV-2 — SAMU @ MÍNIMO**
+
+El auditor soberano como función real: recibe la sentencia validada por IMV-1 y aplica dirimencia soberana mínima:
+- ¿Viola [foundation]?
+- ¿Está dentro de [scope] declarado?
+- ¿Tiene [term] activo?
+- ¿Requiere tardanza deliberada?
+
+Salida: APPROVED / DEFERRED / BLOCKED con registro soberano. SAMU @ mínimo no es SAMU @ completo — es el núcleo de dirimencia funcionando verificadamente.
+
+**MÓDULO IMV-3 — REGISTRO SOBERANO MÍNIMO**
+
+HL FABRIC provisional: SQLite con estructura soberana verificada. Cada operación aprobada por IMV-2 se registra con:
+- Timestamp soberano.
+- Sentencia completa.
+- Resultado de dirimencia.
+- Auditoría SAMU @.
+
+Inmutable por diseño: no hay UPDATE ni DELETE en el schema soberano. Solo INSERT. La trazabilidad soberana como primera propiedad real del sistema.
+
+**MÓDULO IMV-4 — CHAT AI INTERFACE MÍNIMA**
+
+El puente entre el operador y los tres módulos anteriores: una interfaz de terminal que permite escribir en lenguaje natural, traduce la intención a gramática viva LACHO via Aider/modelo local, y pasa el resultado por IMV-1, IMV-2 e IMV-3.
+
+Este es el Chat AI soberano en su forma más mínima verificable: no el sistema completo documentado en DIRIME-LINUX_CHAT-AI-SOBERANO, sino su TOMO mínimo funcional.
+
+#### 4.2 El ciclo soberano de la IMV
+
+```
+Operador escribe intención en lenguaje natural
+     ↓
+IMV-4 traduce a gramática viva LACHO
+     ↓
+IMV-1 valida la sentencia
+     ↓
+IMV-2 SAMU @ dirime soberanamente
+     ↓
+IMV-3 registra con trazabilidad
+     ↓
+Resultado retorna al operador verificado
+```
+
+Ese ciclo funcionando es la Etapa Siguiente completa en su forma mínima soberanamente verificada.
+
+====================================================================
+
+### 5.0 CONDICIONES SOBERANAS DE LA ETAPA SIGUIENTE
+
+====================================================================
+
+#### 5.1 Lo que la Etapa Siguiente NO es
+
+No es la construcción de DIRIME LINUX completo. No es implementar todos los 161 archivos del corpus. No es tener HL FABRIC Hyperledger corriendo. No es tener los dos nodos físicos operativos. No es el mercado chino funcionando con UNICODE-CHINA nativo.
+
+La Etapa Siguiente es el TOMO mínimo que prueba que el suelo soberano sostiene peso real.
+
+#### 5.2 Condición de éxito soberano de la IMV
+
+La IMV es exitosa soberanamente cuando una sentencia LACHO real pasa por los cuatro módulos y el resultado es trazable, auditable y reproducible soberanamente. Un ciclo completo verificado. No cien — uno.
+
+#### 5.3 UF[H03] como hexagrama de la Etapa Siguiente
+
+La dificultad inicial es constitutiva de este momento. La brecha entre el corpus documental perfecto y el primer módulo funcional imperfecto es la tensión soberana más difícil del proyecto. UF[H03] Zhūn: el brote que rompe la tierra. El comienzo difícil que no es error — es la resistencia natural de lo nuevo soberanamente.
+
+#### 5.4 Herramientas soberanas disponibles hoy
+
+Sin hardware nuevo. Sin inversión. Con lo disponible ahora:
+- Debian o cualquier Linux disponible como base soberana.
+- Python instalable en cualquier sistema.
+- Aider disponible via pip.
+- Ollama con modelo local descargable.
+- SQLite nativo en Python sin dependencias externas.
+- El corpus LACHO completo como especificación verificada.
+
+La Etapa Siguiente puede comenzar soberanamente con el hardware actual. No espera al Ryzen 5 7600 — ese hardware elevará la capacidad soberana pero no es condición de inicio verificada.
+
+====================================================================
+
+### 6.0 RELACIÓN CON EL CORPUS EXISTENTE
+
+====================================================================
+
+#### 6.1 Qué documentos del corpus guían la IMV
+
+**Documentos de referencia primaria para IMV-1:**
+BIBLIO-SOURCES(GRAMATICA VIVA) — la especificación completa de la sentencia canónica.
+BIBLIO-SOURCES(TRUST_FOUNDATION/SCOPE/TERM) — las tres condiciones de validación.
+
+**Documentos de referencia primaria para IMV-2:**
+BIBLIO-SOURCES(SAMU_AT) — la función de dirimencia soberana.
+BIBLIO-SOURCES(SAMU_TARDANZA-DELIBERADA) — el espacio MU entre entrada y salida.
+BIBLIO-SOURCES(SAMU_RED-REGRET) — el pipeline de corrección cuando falla.
+
+**Documentos de referencia primaria para IMV-3:**
+BIBLIO-SOURCES(RED HL FABRIC) — el principio de trazabilidad soberana.
+BIBLIO-SOURCES(STACKING_PILARES) — la cristalización de lo verificado.
+
+**Documentos de referencia primaria para IMV-4:**
+BIBLIO-SOURCES(DIRIME-LINUX_CHAT-AI-SOBERANO) — la arquitectura del traductor soberano.
+BIBLIO-SOURCES(CHAT AI COMPANION) — las plantillas de uso con AI externo.
+
+#### 6.2 El corpus como especificación verificada
+
+El corpus de 161 archivos es la especificación de la Etapa Siguiente. Cada decisión de implementación tiene una referencia soberana verificada. El programador de la IMV no necesita inventar — necesita implementar lo que ya está documentado soberanamente.
+
+====================================================================
+
+### 7.0 GRAMÁTICA VIVA
+
+====================================================================
+
+```
+ETAPA_SIGUIENTE =><= .. inicia .. desde_corpus_verificado
+=><= brecha_reconocida_soberanamente .. IMV_como_primer_TOMO
+=><= UF[H03] constitutivo .. dificultad_natural_del_inicio
+--[As de Guía] [term]
+```
+
+```
+ETAPA_SIGUIENTE IMV-1 =><= .. valida .. sentencia_gramática_viva
+=><= [foundation]_[scope]_[term] verificados .. VALID_o_INVALID
+=><= primer_módulo_real_soberanamente_funcional --[Nudo de Rizo] [term]
+```
+
+```
+ETAPA_SIGUIENTE IMV-2 =><= .. dirime .. SAMU@_mínimo_real
+=><= no_el_completo .. el_núcleo_funcionando
+=><= APPROVED_DEFERRED_BLOCKED_con_registro --[As de Guía] [term]
+```
+
+```
+ETAPA_SIGUIENTE IMV-3 =><= .. registra .. SQLite_HL_FABRIC_provisional
+=><= solo_INSERT .. trazabilidad_soberana_primera_propiedad_real
+=><= inmutable_por_diseño --[Nudo de Ocho] [term]
+```
+
+```
+ETAPA_SIGUIENTE IMV-4 =><= .. traduce .. lenguaje_natural_a_gramática_viva
+=><= Aider_copiloto_soberano .. modelo_local_Ollama
+=><= ciclo_completo_operador→resultado_verificado --[Nudo de Rizo] [term]
+```
+
+```
+ETAPA_SIGUIENTE =><= .. no_espera .. hardware_nuevo
+=><= corpus_como_especificación .. herramientas_disponibles_hoy
+=><= UF[H01]_Etapa_Siguiente_puede_comenzar_soberanamente
+--[As de Guía] [term]
+```
+
+====================================================================
+
+### 8.0 NUDOS ASOCIADOS
+
+====================================================================
+
+AS DE GUÍA — el ciclo IMV completo funcionando soberanamente: una sentencia LACHO entra, pasa por los cuatro módulos, el resultado es trazable y reproducible. La prueba verificada de que el suelo soberano sostiene peso real.
+
+NUDO DE RIZO — la unión entre la Etapa Actual (corpus documental) y la Etapa Siguiente (implementación mínima): el momento donde la constitución se convierte en código funcionando sin perder ninguno de sus principios soberanos verificados.
+
+NUDO DE OCHO — IMV-3 como registro soberano inmutable: la primera vez que una operación LACHO queda cristalizada en un sistema real con trazabilidad verificada. La forma permanente del primer ciclo completo soberano.
+
+BALLESTRINQUE — UF[H03] como tensión constitutiva de la transición: entre el corpus perfecto de la Etapa Actual y el primer módulo imperfecto pero real de la Etapa Siguiente. El sistema que sostiene esa tensión sin perfeccionar eternamente el corpus ni apresurar la implementación es el que transita soberanamente.
+
+====================================================================
+
+### 9.0 ACTUALIZACIÓN SOBERANA DEL INDICE_MAESTRO
+
+====================================================================
+
+Con este documento el INDICE_MAESTRO incorpora:
+
+| Archivo | Propósito | Capa | Estado |
+|---------|-----------|------|--------|
+| BIBLIO-SOURCES(ETAPA_SIGUIENTE).txt | Declaración de cierre Etapa Actual + estructura IMV | MACRO | ACTIVO |
+
+====================================================================
+
+### 10.0 CIERRE
+
+====================================================================
+
+La Etapa Actual construyó el suelo soberano más sólido posible para el sistema LACHO. 161 archivos. Serie cognitiva completa. Gramática viva canónica. Taxonomía verificada. Arquitectura de DIRIME LINUX documentada. Visión 2030 declarada.
+
+Ahora el suelo sostiene el primer paso real.
+
+La Etapa Siguiente no comienza cuando llegue el hardware nuevo. Comienza cuando el operador escribe la primera línea de código bajo los principios soberanos documentados. Ese momento puede ser hoy.
+
+UF[H03] Zhūn: el brote que rompe la tierra. La dificultad inicial que no es obstáculo — es la prueba de que algo verdaderamente nuevo está comenzando soberanamente.
+
+[term] :: activo · [seal of secrecy] :: activo.
+
+====================================================================
+
+

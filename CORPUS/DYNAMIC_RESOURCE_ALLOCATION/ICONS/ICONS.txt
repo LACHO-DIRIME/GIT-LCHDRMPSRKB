@@ -1,0 +1,61 @@
+//[MANAGEMENT].lacho · DRA/ICONS/
+//ICONS · iconografía soberana del DRA
+//ICONS.txt · V1 · 2026-03-10
+//ICONS = tokens visuales IME{} · extensión de la iconografía ELPULSAR
+//cada ícono es un token UNICODE con semántica LACHO soberana
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN ICONS DRA ══════════════════════════════════════
+// ICONS = representación visual comprimida de estados/entidades DRA
+// IME{ICONO} = token visual en interfaz ELPULSAR · GUI soberana
+// Cada ícono tiene: nombre · semántica · hexagrama · estado MU/KU/WU
+// Iconografía extiende: ICONO_GOTA+∇ · IME{MASKING} · IME{RABBIT}
+
+// ══ ÍCONOS DE ESTADO DRA ══════════════════════════════════════
+UNICODE: ICO_DRA              //IME{DRA} · engranaje+∇ · asignación dinámica
+UNICODE: ICO_ENGINE           //IME{ENGINE} · motor ⚙️ · procesamiento activo
+UNICODE: ICO_TOMO             //IME{TOMO} · cristal · unidad mínima coherente
+UNICODE: ICO_SLICE            //IME{SLICE} · ángulo °NNN · corte del tomo
+UNICODE: ICO_SEGMENT          //IME{SEGMENT} · partición §I · comprensión
+UNICODE: ICO_CLUSTER          //IME{CLUSTER} · nube #NOMBRE · agrupación
+UNICODE: ICO_OFFSET           //IME{OFFSET} · puntero @0xNN · trazabilidad
+
+// ══ ÍCONOS DE ENTIDADES ═══════════════════════════════════════
+UNICODE: ICO_ZIPPER           //IME{ZIPPER} · cremallera · comprime contexto
+UNICODE: ICO_HUMAN            //IME{HUMAN} · persona diurna · 06:00→18:00
+UNICODE: ICO_BOT              //IME{BOT} · robot · nocturno · 18:00→06:00
+UNICODE: ICO_FEED             //IME{FEED} · antena · FEED_0600/FEED_1800
+UNICODE: ICO_STOCK            //IME{STOCK} · inventario $ · posición soberana
+UNICODE: ICO_CHAIR            //IME{CHAIR} · silla 🪑 · {chair} preside
+UNICODE: ICO_DOOR             //IME{DOOR} · puerta 🚪 · vault BACKUP
+UNICODE: ICO_DOUBLE_ENV       //IME{DOUBLE_ENV} · espejo · staging/prod
+
+// ══ ÍCONOS DE CICLO ═══════════════════════════════════════════
+UNICODE: ICO_MU_DRA           //IME{MU_DRA} · ◯ vacío · TEMP vacío · espera
+UNICODE: ICO_KU_DRA           //IME{KU_DRA} ·  punto · TEMP activo · .blue
+UNICODE: ICO_WU_DRA           //IME{WU_DRA} · ⊗ cristal · ENGINE WU · .green
+UNICODE: ICO_SPIN_DRA         //IME{SPIN_DRA} · ⟳ espiral · ciclo 24h DRA
+
+// ══ ÍCONOS DÍAS SAMU ══════════════════════════════════════════
+UNICODE: ICO_MON              //IME{$mon} · 🌅 amanecer · apertura semanal
+UNICODE: ICO_TUE              //IME{$tue} · ⚡ momentum · batch activo
+UNICODE: ICO_WED              //IME{$wed} · ⚖️ balanza · dirimencia SAMU
+UNICODE: ICO_THU              //IME{$thu} · 🌿 poda · {masking} activo
+UNICODE: ICO_FRI              //IME{$fri} · 💎 cristal · WU semanal
+UNICODE: ICO_SAT              //IME{$sat} · 🔒 candado · {door} sellado
+
+// ══ ÍCONOS FREE TIER NODES ════════════════════════════════════
+UNICODE: ICO_RENDER           //IME{RENDER} · nube naranja · sleep idle
+UNICODE: ICO_RAILWAY          //IME{RAILWAY} · tren · Railway.app
+UNICODE: ICO_FLY              //IME{FLY} · avión · Fly.io always-on
+UNICODE: ICO_VERCEL           //IME{VERCEL} · triángulo ▲ · elpulsar.app
+UNICODE: ICO_SUPABASE         //IME{SUPABASE} · base datos verde · sovereign.db
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+SOCIAL {relay} =><= .. conecta .. icons_dra_iconografia_soberana --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. icons_dra_ime_tokens_wu --[Nudo de Ocho] [term]
+WORK {flybot} =><= .. ejecuta .. icons_dra_visual_pipeline --[As de Guía] [term]
+
+//DIR(+) DRA/ICONS · V1 · IME{} tokens · estados·entidades·ciclo·días
+//DIR(+) ICO_ZIPPER·HUMAN·BOT·FEED · elpulsar.app iconografía DRA

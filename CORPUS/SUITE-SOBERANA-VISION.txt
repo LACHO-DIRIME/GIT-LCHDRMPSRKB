@@ -1,0 +1,24 @@
+# SUITE SOBERANA — VISIÓN Y ARQUITECTURA
+# Estado: IMV alineándose con MVP · [term] :: activo
+
+## SUITE (orden soberano)
+1. LACHO      → lenguaje base · gramática · ledger
+2. DIRIME+IMV → motor decisión · validación · auditoría  
+3. ELPULSAR   → procesamiento agéntico · dashboard
+4. KALIL      → kernel inteligencia · nodos económicos
+5. CHCL       → portabilidad · CEO de LACHO
+
+## EXTENSIONES SOBERANAS
+.theater → macro · contexto/entorno
+.lacho   → micro · rutinas · soluciones
+.runner  → ejecución segura
+.door    → acceso controlado
+.blue    → agente cloud
+.green   → agente asistente
+.gate    → control red/archivos
+
+## CONDICIÓN DE GUARDADO
+IMV alineado con MVP ganador.
+Suite nítida, sin ruidos, instrumentos bajo control.
+
+[term] :: activo · [seal of secrecy] :: activo
