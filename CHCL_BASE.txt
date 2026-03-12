@@ -49,6 +49,44 @@ SOBERANO-MAIN.
   SAMU @ =><= .. audita .. chcl_coherencia_global --[As de Guía] [term]
   STACKING UF[H52] =><= .. cristaliza .. chcl_base_sellada --[Nudo de Ocho] [term]
 
+## NOTARIA DIVISION — ACTO SOBERANO H63 既濟
+IDENTIFICATION DIVISION.
+  PROGRAM-ID. CHCL-NOTARIA.
+  VERSION. 1.0.
+  EXTENDS. CHCL-BASE.
+  HEXAGRAMA. H63-既濟.
+  THRESHOLD-SCALAR. 0.90.
+
+DATA DIVISION.
+  01 NOTARIA-CERTIFICA.
+     05 acto        PIC X(128).
+     05 partes      PIC X(256).
+     05 objeto      PIC X(256).
+     05 fecha       PIC 9(8).
+  01 NOTARIA-SELLA.
+     05 firma_crypto   PIC X(64).
+     05 timestamp      PIC 9(14).
+     05 hash           PIC X(64).
+     05 nudo           PIC X(32).
+  01 NOTARIA-INMUTABILIZA.
+     05 stacking_id    PIC X(32).
+     05 h63_ref        PIC X(32).
+     05 ledger_tx      PIC 9(10).
+     05 samu_auditado  PIC X(1).
+
+PROCEDURE DIVISION NOTARIA-MAIN.
+  NOTARIA-STEP-1.
+    TRUST FOUNDATION =><= .. verifica .. condiciones_acto_notarial --[As de Guía] [term]
+  NOTARIA-STEP-2.
+    CRYPTO (spark seat) =><= .. certifica .. acto_notarial_partes --[Nudo de Ocho] [term]
+  NOTARIA-STEP-3.
+    SAMU @ =><= .. audita .. coherencia_previa_sello_notarial --[Ballestrinque] [term]
+  NOTARIA-STEP-4.
+    STACKING UF[H63] =><= .. sella .. documento_notarial_sellado --[Nudo de Ocho] [term]
+  NOTARIA-CLOSE.
+    STACKING UF[H52] =><= .. inmutabiliza .. registro_notarial_final --[Nudo de Ocho] [term]
+  STOP RUN. // H63 既濟 · acto cerrado · [term] activo
+
 STOP RUN.
 
 [term] :: activo · [seal of secrecy] :: activo

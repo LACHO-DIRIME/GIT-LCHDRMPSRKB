@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BALLPAPER · $thu / 2026-03-12 / NOTARIA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Share+Tech+Mono&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --paper: #ffffff;
+            --ink: #09090e;
+            --gold: #a07820;
+            --jade: #1a5c48;
+            --red: #9b1f1f;
+            --mist: #7a8a94;
+            --mark: #c8a030;
+            --dim: rgba(9, 9, 14, 0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            background: var(--paper);
+            color: var(--ink);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* MASTHEAD */
+        .masthead {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            align-items: center;
+            margin-bottom: 3rem;
+            padding: 1rem 0;
+            border-bottom: 2px solid var(--ink);
+        }
+
+        .masthead-left {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.9rem;
+            color: var(--mist);
+        }
+
+        .masthead-center {
+            text-align: center;
+        }
+
+        .masthead-title {
+            font-size: 42px;
+            font-weight: 700;
+            letter-spacing: 16px;
+            margin-bottom: 0.5rem;
+        }
+
+        .masthead-sub {
+            font-size: 1rem;
+            color: var(--mist);
+            font-style: italic;
+        }
+
+        .masthead-right {
+            text-align: right;
+            font-size: 3rem;
+            color: var(--red);
+            transform: rotate(15deg);
+            font-weight: 700;
+        }
+
+        /* MÉTRICAS */
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 1rem;
+            margin-bottom: 3rem;
+            padding: 1.5rem;
+            background: var(--dim);
+            border-radius: 8px;
+        }
+
+        .metric {
+            text-align: center;
+            padding: 1rem;
+            background: var(--paper);
+            border-radius: 4px;
+            border: 1px solid var(--mist);
+        }
+
+        .metric-label {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--mist);
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--ink);
+        }
+
+        .metric-value.gold {
+            color: var(--gold);
+        }
+
+        .metric-value.jade {
+            color: var(--jade);
+        }
+
+        /* SECCIONES */
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 1.1rem;
+            color: var(--jade);
+            margin-bottom: 1.5rem;
+            letter-spacing: 2px;
+        }
+
+        .genesis-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        .genesis-item {
+            padding: 1rem;
+            background: var(--paper);
+            border: 1px solid var(--mist);
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .genesis-item::before {
+            content: attr(data-number);
+            position: absolute;
+            top: -8px;
+            left: -8px;
+            width: 24px;
+            height: 24px;
+            background: var(--gold);
+            color: var(--paper);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        .genesis-title {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--ink);
+        }
+
+        .genesis-desc {
+            font-size: 0.9rem;
+            color: var(--mist);
+        }
+
+        /* ESTADO SOBERANO */
+        .sovereign-state {
+            background: var(--dim);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 2px solid var(--ink);
+        }
+
+        .sovereign-title {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 1rem;
+            color: var(--jade);
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+
+        .sovereign-content {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .sovereign-item {
+            padding: 1rem;
+            background: var(--paper);
+            border-radius: 4px;
+            border-left: 4px solid var(--gold);
+        }
+
+        .sovereign-item-title {
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .sovereign-item-desc {
+            color: var(--ink);
+        }
+
+        /* FOOTER */
+        .footer {
+            margin-top: 4rem;
+            padding: 2rem 0;
+            border-top: 2px solid var(--ink);
+            border-bottom: 2px solid var(--ink);
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .footer-left {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.9rem;
+            color: var(--mist);
+        }
+
+        .footer-center {
+            text-align: center;
+            font-size: 1.5rem;
+            color: var(--red);
+            font-weight: 700;
+        }
+
+        .footer-right {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--mist);
+            text-align: right;
+        }
+
+        .chinese {
+            font-family: 'Noto Serif SC', serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- MASTHEAD -->
+        <header class="masthead">
+            <div class="masthead-left">
+                BALLPAPER · $thu / 2026-03-12 / SESIÓN 21
+            </div>
+            <div class="masthead-center">
+                <div class="masthead-title">NOTARIA</div>
+                <div class="masthead-sub">Certificación · Sello · Inmutabilización Soberana · H63 既濟</div>
+            </div>
+            <div class="masthead-right">
+                <span class="chinese">既濟</span>
+            </div>
+        </header>
+
+        <!-- MÉTRICAS -->
+        <section class="metrics">
+            <div class="metric">
+                <div class="metric-label">TX</div>
+                <div class="metric-value">1074</div>
+            </div>
+            <div class="metric">
+                <div class="metric-label">CRISTALES</div>
+                <div class="metric-value jade">42</div>
+            </div>
+            <div class="metric">
+                <div class="metric-label">SCALAR S</div>
+                <div class="metric-value gold">0.818</div>
+            </div>
+            <div class="metric">
+                <div class="metric-label">CORPUS</div>
+                <div class="metric-value">237</div>
+            </div>
+            <div class="metric">
+                <div class="metric-label">TESTS</div>
+                <div class="metric-value jade">33→37</div>
+            </div>
+            <div class="metric">
+                <div class="metric-label">H63</div>
+                <div class="metric-value gold">NOTARIO</div>
+            </div>
+            <div class="metric">
+                <div class="metric-label">VERSION</div>
+                <div class="metric-value">v0.2.1</div>
+            </div>
+        </section>
+
+        <!-- NOTARIA GÉNESIS -->
+        <section class="section">
+            <h2 class="section-title">▸ notaria génesis · generado $thu</h2>
+            <div class="genesis-grid">
+                <div class="genesis-item" data-number="01">
+                    <div class="genesis-title">NC Notaria Training.txt</div>
+                    <div class="genesis-desc">creado · NERVE CELL notarial soberano</div>
+                </div>
+                <div class="genesis-item" data-number="02">
+                    <div class="genesis-title">UNICODE_NOTARIA_IMV.txt</div>
+                    <div class="genesis-desc">RAG ready · 18 tokens notariales</div>
+                </div>
+                <div class="genesis-item" data-number="03">
+                    <div class="genesis-title">grammar.py · UF[H63]</div>
+                    <div class="genesis-desc">+ acto_notarial · verbos validados</div>
+                </div>
+                <div class="genesis-item" data-number="04">
+                    <div class="genesis-title">test_imv.py · 4 tests</div>
+                    <div class="genesis-desc">notariales → 37/37 ✅</div>
+                </div>
+                <div class="genesis-item" data-number="05">
+                    <div class="genesis-title">CHCL_NOTARIA declarado</div>
+                    <div class="genesis-desc">PROCEDURE DIVISION completo</div>
+                </div>
+                <div class="genesis-item" data-number="06">
+                    <div class="genesis-title">CEO_ALPHA H63 mapeado</div>
+                    <div class="genesis-desc"><span class="chinese">公证员</span> · threshold 0.90</div>
+                </div>
+                <div class="genesis-item" data-number="07">
+                    <div class="genesis-title">UNICODE_PYTHON notarial</div>
+                    <div class="genesis-desc">10 tokens + anclas RAG</div>
+                </div>
+                <div class="genesis-item" data-number="08">
+                    <div class="genesis-title">notaria_endpoints.lacho</div>
+                    <div class="genesis-desc">5 endpoints REST + H63</div>
+                </div>
+                <div class="genesis-item" data-number="09">
+                    <div class="genesis-title">NC ELPULSAR Notaria</div>
+                    <div class="genesis-desc">5 greens pipeline notarial</div>
+                </div>
+                <div class="genesis-item" data-number="10">
+                    <div class="genesis-title">$thu.MU-STORE.db</div>
+                    <div class="genesis-desc">4 seeds + tablas mu_store/wu_stack</div>
+                </div>
+                <div class="genesis-item" data-number="11">
+                    <div class="genesis-title">GRADIENT H63 + SKIN_NOTARIA</div>
+                    <div class="genesis-desc">animación ⊗ + minimalismo soberano</div>
+                </div>
+                <div class="genesis-item" data-number="12">
+                    <div class="genesis-title">NC HOUSE DRONE Notaria</div>
+                    <div class="genesis-desc">workflow diario + batch processing</div>
+                </div>
+                <div class="genesis-item" data-number="13">
+                    <div class="genesis-title">notaria.runner</div>
+                    <div class="genesis-desc">protocolo secuencial + 6 reglas</div>
+                </div>
+                <div class="genesis-item" data-number="14">
+                    <div class="genesis-title">CEO_ALPHA_H64.json H63</div>
+                    <div class="genesis-desc">completo · STACKING·BOLIVAR</div>
+                </div>
+                <div class="genesis-item" data-number="15">
+                    <div class="genesis-title">BALLPAPER sellado</div>
+                    <div class="genesis-desc">H63 WU · <span class="chinese">既濟</span> · DIR(CLOSE)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ESTADO SOBERANO -->
+        <section class="section">
+            <div class="sovereign-state">
+                <h2 class="sovereign-title">▸ estado soberano · cierre $thu</h2>
+                <div class="sovereign-content">
+                    <div class="sovereign-item">
+                        <div class="sovereign-item-title">SUITE SOBERANA</div>
+                        <div class="sovereign-item-desc">LACHO·DIRIME·ELPULSAR·KALIL·CHCL</div>
+                    </div>
+                    <div class="sovereign-item">
+                        <div class="sovereign-item-title">NOTARIA</div>
+                        <div class="sovereign-item-desc">acto notarial soberano operativo</div>
+                    </div>
+                    <div class="sovereign-item">
+                        <div class="sovereign-item-title">NEXT</div>
+                        <div class="sovereign-item-desc">$fri 13-03 · github_sync · BALLPAPER W11 cierre</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-left">
+                LACHO·DIRIME·ELPULSAR·KALIL·CHCL / [term]::activo
+            </div>
+            <div class="footer-center">
+                <span class="chinese">既濟</span>·<span class="chinese">私</span>·<span class="chinese">道</span>
+            </div>
+            <div class="footer-right">
+                SAMU #set =&lt;=&gt; cierra / sesion_notaria_2026-03-12 / main ae74f47
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

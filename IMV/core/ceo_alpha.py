@@ -22,6 +22,8 @@ def load_ceo_alpha() -> dict:
 
 
 def get_role_by_hexagram(h_num: str) -> dict | None:
+    # H63 既濟 NOTARIO 公证员 · $thu 2026-03-12
+    # acto notarial = DIR(CLOSE) soberano · Scalar S ≥ 0.90
     data = load_ceo_alpha()
     hexagrams = data.get("hexagrams", {})
     entry = hexagrams.get(h_num)

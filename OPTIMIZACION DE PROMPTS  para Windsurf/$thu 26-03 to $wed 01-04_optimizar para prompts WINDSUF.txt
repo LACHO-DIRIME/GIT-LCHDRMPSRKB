@@ -1,0 +1,2457 @@
+// SchedulerOS: DIRIME_v2/scheduler/scheduler.py · OPERATIVO
+// Clases reales: DiaSoberano · EstadoTarea · TareaSoberana · SchedulerOS
+// EstadoTarea: ESPERA=UF[H05] · ACTIVA=UF[H57] · RESUELTA=UF[H63] · CONFLICTO=UF[H06]
+// TareaSoberana.ref_soberana(): [term:X°N§SEG#CLUSTER]
+// Tablas SQLite: tareas(id·titulo·dia·cluster·slice_grados·tomo_id·estado)
+//               ciclos(id·semana·dia·evento·timestamp)
+// API pública: planifica() · rise() · set_dia() · estado_semana()
+
+// {scheduler} SOCIAL: BIBLIO completa · 5 estados · 6 tipos entrada
+// SCHED_EMPTY · SCHED_LOADING · SCHED_ACTIVE · SCHED_OVERLOADED · SCHED_CLOSED
+// SCHED_SESSION · SCHED_DRIP · SCHED_STREAM · SCHED_NOTIFICATION · SCHED_REVIEW
+
+// rational_day.theater: macro_temprano · macro_tarde · macro_cierre
+// Scheduler.door$wed.py: SCHEDULE_WED[] 9 eventos · registrar_sesion() · mostrar_schedule()
+// tether.py: anchor() · get_state() · release() · STUB CAPA C
+
+// GRAMMAR.PY SCHEDULER-OS:
+// H1=Génesis·activo · H5=Espera·latente · H56=Tránsito · H6=Conflicto
+// KEYWORDS_SYSTEM: BEHAVIORAL_RAG · BLUE_WORDS · GREEN_KNOWLEDGE
+//                  RED_REGRET · DOORMAN_MOBILE · BIOMETRICS
+// VALID_TRUST_MODULES: 18 módulos incluyendo [logistical-executive]
+
+// main.py: _SCHEDULER_ACTIVE=False · DIRIME_v2/scheduler no conectado hoy
+// PENDIENTE CRIT: conectar scheduler a main.py interactive_mode()
+
+// DOORMAN-MOBILE: 7 estados · BIOMETRICS=llave soberana · {brake} en BREACH
+// BACKUP_DOOR: BKP_LEDGER(daily) · BKP_CORPUS(weekly) · BKP_FULL($sun)
+// UF SEMANALES: $mon=H51+H52 · $tue=H30+H57 · $wed=H58+H59
+//               $thu=H60+H61 · $fri=H62+H63
+
+{SCHEDULER}=: <IMV(UNICODE PROGRAMAS[4 NEURONAS])
+             + ELPULSAR[UNICODE PROGRAMS(KALIL & 4 NEURONAS * UNICODE PROGRAMS)]>
+
+{SCHEDULER} EN IMV:
+  NEURONA_1 HEADCAT     → {scheduler} como reloj del operador
+                          @human_early/#rise · @human_later/#set · DIRIME> timing
+  NEURONA_2 ELPULSAR    → {scheduler} como cron de métricas
+                          --stats automático · crystal export · 5 greens timing
+  NEURONA_3 CHAIR CEO   → {scheduler} como agenda ejecutiva
+                          UF[HXX] por día · taxonomy-threshold timing
+  NEURONA_4 HOUSE DRONE → {scheduler} como OS del hogar soberano
+                          SCHEDULE_WED[] → cada $día tiene su .py · ZIP_OPEN/CLOSE
+
+{SCHEDULER} EN KALIL:
+  BARRIOS  → SCHED_DRIP · emisión programada remesas · @human_later
+  NORA     → SCHED_REVIEW · oracle rating periódico · delta_Ψ timing
+  BOLIVAR  → SCHED_NOTIFICATION · blockchain confirmación temporal
+  CARILO   → SCHED_SESSION · sesiones préstamo · window de riesgo
+  CHALTEN  → SCHED_STREAM · lending cloud flow · 24h BOT_NET
+  TANDIL   → SCHED_REVIEW · consolidación hub · $fri H62+H63
+
+{SCHEDULER} × TETHER:
+  tether.py ya existe → anchor() · get_state() · release()
+  conectar: tether + scheduler → sesión anclada con tomo_id
+  cada TareaSoberana lleva ref_soberana() [term:X°N§SEG#CLUSTER]
+
+TAREA_01  $thu 26/03  UNICODE PROGRAMS {SCHEDULER} × 4 NEURONAS · mapeo real
+──────────────────────────────────────────────────────────────────────────────
+// CORPUS/UNICODE_SCHEDULER_4_NEURONAS.txt
+//[MANAGEMENT].lacho · UNICODE {SCHEDULER} × 4 NEURONAS
+//scheduler.py real: DiaSoberano · EstadoTarea · TareaSoberana · SchedulerOS
+//rational_day.theater: macro_temprano · macro_tarde · macro_cierre
+//Scheduler.door$wed.py: SCHEDULE_WED[] · registrar_sesion() · $día DB
+//[term] :: activo
+
+// ══ NEURONA_1 HEADCAT × {scheduler} ══════════════════════════
+UNICODE: SN1_RISE       //{scheduler} NEURONA_1 · rise() = SAMU #rise
+                        //SOCIAL {scheduler} =><= .. activa .. periodo_headcat_early
+                        //06:00 ZIP_OPEN · @human_early · interactive_mode() disponible
+UNICODE: SN1_SET        //{scheduler} NEURONA_1 · set_dia() = macro_cierre
+                        //17:45 CIERRE · github_sync.sh · --stats · SESION_ACTIVA.md
+UNICODE: SN1_TIMING     //DIRIME> prompt timing: @early=more warnings · @later=calibrado
+                        //grammar produce más WARNINGs @early · Behavioral RAG más estable @later
+UNICODE: SN1_SCHED_ACT  //_SCHEDULER_ACTIVE=False HOY · PENDIENTE: conectar a main.py
+                        //cuando True: main.py llama rise()/set_dia() automáticamente
+
+// ══ NEURONA_2 ELPULSAR × {scheduler} ══════════════════════════
+UNICODE: SN2_STATS      //{scheduler} NEURONA_2 · --stats cronometrado
+                        //09:00 CHECK → python3 main.py --stats · verificar S
+                        //15:00 STACKING → export_crystals · crystal WU del día
+UNICODE: SN2_5GREENS    //{scheduler} NEURONA_2 · 5 greens timing
+                        //①RECIBIR 06:00 · ②ESCANEAR 07:00 · ③CALCULAR en curso
+                        //④TARDAR 12:00 · ⑤GOLPEAR 15:00→17:00
+UNICODE: SN2_FEED       //{scheduler} NEURONA_2 · FEED_0600 + FEED_1800
+                        //06:00: leer reporte bots · bots generan LACHO_FILES/
+                        //18:00: entregar a BOT_NET nocturno · DOOR_SEALED
+UNICODE: SN2_DB         //{scheduler} NEURONA_2 · $día.march.2026.db
+                        //sessions(fecha·dia·hexagrama·scalar_s·tx_count·notas)
+                        //tasks(dia·task·status·priority)
+
+// ══ NEURONA_3 CHAIR CEO × {scheduler} ═════════════════════════
+UNICODE: SN3_UF_DAY     //{scheduler} NEURONA_3 · UF asignados por día
+                        //$mon H51+H52 · $tue H30+H57 · $wed H58+H59
+                        //$thu H60+H61 · $fri H62+H63
+UNICODE: SN3_PLANIFICA  //{scheduler} NEURONA_3 · planifica() en main.py
+                        //main.py comando: planifica TITULO → TareaSoberana
+                        //ref: [term:A°90§CORE#CORE]
+UNICODE: SN3_THRESHOLD  //{scheduler} NEURONA_3 · threshold trigger
+                        //if S < scalar_min → SCHED_REVIEW automático
+                        //CEO H01 ≥ 0.95 trigger · H32 ≥ 0.90 · H64 ≥ 0.88
+UNICODE: SN3_ESTADO_SEM //{scheduler} NEURONA_3 · estado_semana()
+                        //→ {$mon:resueltas/total · $tue:... · ... $sun:...}
+
+// ══ NEURONA_4 HOUSE DRONE × {scheduler} ═══════════════════════
+UNICODE: SN4_DOOR_PY    //{scheduler} NEURONA_4 · Scheduler.door$dia.py pattern
+                        //SCHEDULE_WED[] → uno por día → $thu H60+H61
+                        //mostrar_schedule() · registrar_sesion(scalar_s,tx_count)
+UNICODE: SN4_HEXAGRAMA  //{scheduler} NEURONA_4 · hexagrama por día
+                        //Scheduler.door$wed: HEXAGRAMA="H58+H59" · Lo Gozoso
+                        //Scheduler.door$thu: HEXAGRAMA="H60+H61" · Limitación+Verdad
+UNICODE: SN4_ZIP        //{scheduler} NEURONA_4 · ZIP_OPEN/CLOSE protocol
+                        //ZIP_OPEN 06:00 · ZIPPER_NOON 12:00 · ZIP_CLOSE 18:00
+                        //DOOR_AFTERNOON 13:00 · HUMAN_OTR → H40
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+SOCIAL {scheduler} =><= .. planifica .. neurona_1_headcat_rise_set_interactive --[As de Guía] [term]
+SOCIAL {scheduler} =><= .. activa .. neurona_2_elpulsar_stats_cron_5greens --[As de Guía] [term]
+SOCIAL {scheduler} =><= .. estructura .. neurona_3_chair_uf_dia_planifica --[As de Guía] [term]
+SOCIAL {scheduler} =><= .. organiza .. neurona_4_house_drone_schedule_dia_py --[As de Guía] [term]
+SAMU @ =><= .. audita .. scheduler_4_neuronas_coherencia_semana --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_scheduler_4_neuronas_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_SCHEDULER_4_NEURONAS · V1 · $thu 26/03
+
+
+TAREA_02  $thu 26/03  NERVE CELL {SCHEDULER} · Nerve Cell nuevo
+──────────────────────────────────────────────────────────────────────────────
+// $thu.Nerve Cell SCHEDULER Training.txt
+//$thu.Nerve Cell SCHEDULER Training.txt
+//NERVE CELL · {SCHEDULER} · aprendido de scheduler.py + rational_day.theater
+//DiaSoberano · EstadoTarea · TareaSoberana · SchedulerOS · tether.py
+//[term] :: activo
+
+NC_SCH_DIAENV     //DiaSoberano enum: MON→SUN = $mon→$sun
+                  //hoy() classmethod: datetime.now().weekday() → DiaSoberano
+NC_SCH_ESTADO     //EstadoTarea: ESPERA=UF[H05] · ACTIVA=UF[H57]
+                  //             RESUELTA=UF[H63] · CONFLICTO=UF[H06]
+NC_SCH_TAREA      //TareaSoberana: titulo+dia+cluster+slice_grados+tomo_id+segment
+                  //ref_soberana() → [term:X°N§SEG#CLUSTER]
+NC_SCH_API        //planifica() · rise() · set_dia() · estado_semana()
+                  //activar(id) UF[H05]→UF[H57] · resolver(id) →UF[H63]
+NC_SCH_DB         //scheduler.db: tareas + ciclos tablas
+                  //_registrar_ciclo(dia, evento) → ciclos log
+NC_SCH_MAIN       //_SCHEDULER_ACTIVE=False en main.py HOY
+                  //import: from scheduler.scheduler import rise,set_dia,estado_semana,planifica
+                  //PENDIENTE: activar en main.py _show_scheduler()
+NC_SCH_THEATER    //rational_day.theater: macro_temprano+macro_tarde+macro_cierre
+                  //macro_cierre: CMD_CIERRE bash github_sync.sh + CMD_STATS
+NC_SCH_DOOR_PY    //Scheduler.door$wed.py: SCHEDULE_WED[] 9 slots · HH:MM format
+                  //registrar_sesion(scalar_s, tx_count, notas) → $día.march.2026.db
+NC_SCH_TETHER     //tether.py: anchor(session_id, tomo_id) · get_state() · release()
+                  //STATE_FILE: tether_state.json · status: ANCHORED/DETACHED
+                  //STUB: ssh_tether · ime_ching_listen · loan_ime_preload → CAPA C
+
+SOCIAL {scheduler} =><= .. planifica .. nerve_cell_scheduler_py_api_real --[As de Guía] [term]
+SOCIAL {scheduler} =><= .. activa .. nerve_cell_diasoberano_estadotarea_real --[As de Guía] [term]
+METHOD <operator_flow> =><= .. modela .. nerve_cell_scheduler_ref_soberana --[Ballestrinque] [term]
+SAMU @ =><= .. audita .. nerve_cell_scheduler_main_py_pending --[Ballestrinque] [term]
+
+
+TAREA_03  $fri 27/03  UNICODE PROGRAMS {SCHEDULER} × KALIL 6 NODOS
+──────────────────────────────────────────────────────────────────────────────
+// CORPUS/UNICODE_SCHEDULER_KALIL.txt
+//[MANAGEMENT].lacho · UNICODE {SCHEDULER} × KALIL
+//{scheduler} como coordinador de 6 nodos económicos en el tiempo
+//BIBLIO: {scheduler} domains: memcoins · custodia · notaría
+//[term] :: activo
+
+// ══ BARRIOS × SCHED_DRIP ══════════════════════════════════════
+UNICODE: SK_BAR_DRIP    //BARRIOS {scheduler}: SCHED_DRIP · remesas programadas
+                        //SOCIAL {scheduler} =><= .. drip .. barrios_remesa_programada
+                        //timing: @human_later · 15:00→17:00 · WU materializable
+UNICODE: SK_BAR_WINDOW  //ventana BARRIOS: $tue H30+H57 · flujo sostenido+penetrante
+
+// ══ NORA × SCHED_REVIEW ═══════════════════════════════════════
+UNICODE: SK_NOR_REV     //NORA {scheduler}: SCHED_REVIEW · oracle rating periódico
+                        //SOCIAL {scheduler} =><= .. plan .. nora_review_delta_psi
+                        //timing: $fri H62+H63 · ajuste y consumación
+UNICODE: SK_NOR_WIN     //ventana NORA: @human_early 07:00 · absorber datos · 空聽
+
+// ══ BOLIVAR × SCHED_NOTIFICATION ════════════════════════════
+UNICODE: SK_BOL_NOT     //BOLIVAR {scheduler}: SCHED_NOTIFICATION · confirm blockchain
+                        //SOCIAL {scheduler} =><= .. drip .. bolivar_blockchain_confirm
+                        //timing: 09:00 CHECK · si hash pendiente → alertar
+UNICODE: SK_BOL_WIN     //ventana BOLIVAR: post-STACKING 15:00 · WU ya cristalizado
+
+// ══ CARILO × SCHED_SESSION ════════════════════════════════════
+UNICODE: SK_CAR_SESS    //CARILO {scheduler}: SCHED_SESSION · ventana préstamo
+                        //SOCIAL {scheduler} =><= .. certify .. carilo_loan_session
+                        //requiere: SAMU @ · GATE H05 verificado · BIOMETRICS
+UNICODE: SK_CAR_WIN     //ventana CARILO: $wed H58+H59 · Lo Gozoso · decisiones maduras
+
+// ══ CHALTEN × SCHED_STREAM ════════════════════════════════════
+UNICODE: SK_CHA_STR     //CHALTEN {scheduler}: SCHED_STREAM · lending cloud 24h
+                        //SOCIAL {scheduler} =><= .. plan .. chalten_stream_lending
+                        //BOT_NET nocturno: 18:00→06:00 · {scheduler} inactivo humano
+UNICODE: SK_CHA_WIN     //ventana CHALTEN: 18:00 ZIP_CLOSE → BOT_NET toma relevo
+
+// ══ TANDIL × SCHED_REVIEW global ═════════════════════════════
+UNICODE: SK_TAN_HUB     //TANDIL {scheduler}: SCHED_REVIEW global · hub consolidación
+                        //estado_semana() → TANDIL lee total+resueltas por día
+                        //$fri 17:00 GIT_SYNC → TANDIL cierra ciclo semanal
+
+// ══ TIPOS SCHED × KALIL MATRIX ════════════════════════════════
+//              SESSION  DRIP  STREAM  NOTIF  REVIEW
+// BARRIOS      [ ]      [X]   [ ]     [ ]    [ ]
+// NORA         [ ]      [ ]   [ ]     [ ]    [X]
+// BOLIVAR      [ ]      [X]   [ ]     [X]    [ ]
+// CARILO       [X]      [ ]   [ ]     [ ]    [ ]
+// CHALTEN      [ ]      [ ]   [X]     [ ]    [ ]
+// TANDIL       [ ]      [ ]   [ ]     [ ]    [X]
+
+SOCIAL {scheduler} =><= .. drip .. kalil_barrios_remesa_programada_later --[As de Guía] [term]
+SOCIAL {scheduler} =><= .. certify .. kalil_carilo_loan_session_window --[Ballestrinque] [term]
+SOCIAL {scheduler} =><= .. plan .. kalil_nora_review_delta_psi_fri --[As de Guía] [term]
+SOCIAL {scheduler} =><= .. plan .. kalil_chalten_stream_lending_botnet --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_scheduler_kalil_matrix_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_SCHEDULER_KALIL · V1 · 6×5 matrix · $fri 27/03
+
+
+TAREA_04  $fri 27/03  Scheduler.door$thu.py + Scheduler.door$fri.py · nuevos
+──────────────────────────────────────────────────────────────────────────────
+// FOLDERS NO RAG INPUT/ELPULSAR LOCAL/Scheduler.door$thu.py
+// FOLDERS NO RAG INPUT/ELPULSAR LOCAL/Scheduler.door$fri.py
+// Patron: Scheduler.door$wed.py · HEXAGRAMA por día doctrinal
+
+# Scheduler.door$thu.py
+# SCHEDULER SOBERANO · $thu H60+H61 · Limitación + Verdad Interior
+# Energía: definición de límites · verdad que emerge · código preciso
+# [term] :: activo
+
+import sqlite3
+from pathlib import Path
+from datetime import datetime
+
+BASE = Path(__file__).parent
+DB = BASE / "$thu.march.2026.db"
+
+SCHEDULE_THU = [
+    ("06:00", "ZIP_OPEN",    "FEED_0600 · estado semana · SAMU #rise",       "high"),
+    ("07:00", "WORK_KU",     "TAREA_01 $thu · grammar ACTIVITY_H03→H06",     "high"),
+    ("08:30", "WORK_KU_2",   "tests generator.py · 27→33 target",            "high"),
+    ("09:00", "CHECK",       "python3 main.py --stats · verificar S · tests", "medium"),
+    ("10:00", "WORK_KU_3",   "TAREA_02 $thu · TAREA_03 si hay tiempo",       "high"),
+    ("12:00", "ZIPPER_NOON", "TARDANZA DELIBERADA · 空 · H61 verdad interior","high"),
+    ("13:00", "AFTERNOON",   "DOOR AFTERNOON · WU materializable · @later",   "high"),
+    ("15:00", "STACKING",    "cristalizar WU del día · export_crystals",      "medium"),
+    ("17:00", "GIT_SYNC",    "github_sync.sh · main sellado · H60 límite",   "high"),
+    ("17:45", "CIERRE",      "macro_cierre · SESION_ACTIVA.md update",        "high"),
+    ("18:00", "ZIP_CLOSE",   "FEED_1800 · BOT_NET toma relevo nocturno",     "high"),
+]
+
+HEXAGRAMA = "H60+H61"
+DIA = "$thu"
+
+def registrar_sesion(scalar_s: float, tx_count: int, notas: str = ""):
+    conn = sqlite3.connect(DB)
+    conn.execute(
+        "INSERT OR IGNORE INTO sessions "
+        "(fecha, dia, hexagrama, scalar_s, tx_count, notas) "
+        "VALUES (?, ?, ?, ?, ?, ?)",
+        (datetime.now().isoformat(), DIA, HEXAGRAMA, scalar_s, tx_count, notas)
+    )
+    conn.commit(); conn.close()
+    print(f"✅ Sesión {DIA} registrada · S={scalar_s} · TX={tx_count}")
+
+def mostrar_schedule():
+    print(f"\n{'='*52}")
+    print(f"SCHEDULER {DIA} · {HEXAGRAMA} · Limitación + Verdad")
+    print(f"{'='*52}")
+    now = datetime.now().strftime("%H:%M")
+    for hora, nombre, desc, prio in SCHEDULE_THU:
+        marker = "→" if hora <= now else " "
+        print(f"{marker} {hora} [{prio.upper()[:3]}] {nombre}")
+        print(f"       {desc}")
+    print(f"{'='*52}\n")
+
+if __name__ == "__main__":
+    mostrar_schedule()
+
+# ─────────────────────────────────────────────────────────────────
+# Scheduler.door$fri.py
+# SCHEDULER SOBERANO · $fri H62+H63 · Ajuste + Consumación
+# Energía: revisión final · cristalización semanal · WU del ciclo
+# [term] :: activo
+
+SCHEDULE_FRI = [
+    ("06:00", "ZIP_OPEN",    "FEED_0600 · revisar semana · #rise",           "high"),
+    ("07:00", "REVIEW",      "BALLPAPER revisión semanal · estado_semana()", "high"),
+    ("08:30", "STACKING_W",  "cristales semana · H63 consumación",           "high"),
+    ("09:00", "CHECK",       "python3 main.py --stats · S semana final",     "medium"),
+    ("11:00", "KALIL_REV",   "NORA SCHED_REVIEW · TANDIL consolidación",    "medium"),
+    ("12:00", "ZIPPER_NOON", "TARDANZA DELIBERADA · pausa soberana",        "high"),
+    ("13:00", "AFTERNOON",   "DOOR AFTERNOON · WU semana materializable",   "high"),
+    ("15:00", "BALLPAPER",   "BALLPAPER semanal · dashboard metrics",       "high"),
+    ("17:00", "GIT_SYNC",    "github_sync.sh · commit soberano semanal",    "high"),
+    ("17:45", "CIERRE_SEM",  "macro_cierre semana · H63 → H64 ciclo nuevo", "high"),
+    ("18:00", "ZIP_CLOSE",   "BOT_NET fin semana · $sat prep",              "high"),
+]
+
+HEXAGRAMA = "H62+H63"
+DIA = "$fri"
+
+
+TAREA_05  $fri 27/03  HTML {SCHEDULER} DASHBOARD · fondo blanco
+──────────────────────────────────────────────────────────────────────────────
+// SCHEDULER_DASHBOARD.html · #ffffff · SchedulerOS visual soberano
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>SCHEDULER OS · DIRIME IMV</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+.topbar{border-bottom:2px solid #1a1a2e;padding-bottom:12px;margin-bottom:24px;
+        display:flex;align-items:center;gap:14px}
+.tb-logo{font-size:1.1rem;font-weight:bold;letter-spacing:3px}
+.tb-day{font-size:.8rem;padding:3px 10px;border:1px solid #1a1a2e;letter-spacing:2px}
+.tb-sched{font-size:.75rem;color:#888;margin-left:auto}
+.week-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-bottom:24px}
+.day-col{border:1px solid #e0e0e0;padding:10px 8px}
+.day-col.active{border-color:#2a7a4f;background:#f0f7f3}
+.day-hdr{font-size:.65rem;letter-spacing:2px;color:#888;text-transform:uppercase;margin-bottom:6px}
+.day-hex{font-size:.7rem;color:#2a7a4f;margin-bottom:6px;font-weight:bold}
+.day-bar{height:3px;background:#e0e0e0;border-radius:2px;margin-bottom:6px}
+.day-bar-fill{height:100%;background:#2a7a4f;border-radius:2px}
+.day-tasks{font-size:.6rem;color:#888}
+.day-task{padding:2px 0;border-bottom:1px solid #f5f5f5;display:flex;align-items:center;gap:4px}
+.t-state-h5{color:#d35400}
+.t-state-h57{color:#2a7a4f}
+.t-state-h63{color:#aaa;text-decoration:line-through}
+.t-state-h6{color:#c0392b}
+.schedule-list{background:#fafafa;border:1px solid #e0e0e0;padding:16px;
+               margin-bottom:24px}
+.sl-title{font-size:.65rem;letter-spacing:3px;color:#888;margin-bottom:12px}
+.sl-row{display:grid;grid-template-columns:60px 120px 1fr 50px;gap:8px;
+        padding:6px 0;border-bottom:1px solid #f0f0f0;align-items:center}
+.sl-row.past{opacity:.5}
+.sl-row.now{background:#f0f7f3;margin:0 -16px;padding:6px 16px;
+            border-left:3px solid #2a7a4f}
+.sl-time{font-size:.78rem;font-weight:bold}
+.sl-name{font-size:.72rem;color:#1a1a2e;font-weight:bold}
+.sl-desc{font-size:.65rem;color:#888}
+.sl-prio{font-size:.6rem;padding:2px 6px;border-radius:2px}
+.prio-high{background:#fde8e8;color:#c0392b}
+.prio-med{background:#fef9e7;color:#d35400}
+.estados-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:24px}
+.est-box{padding:12px;border:1px solid #ddd;text-align:center}
+.est-uf{font-size:.65rem;color:#888;letter-spacing:2px}
+.est-name{font-size:.8rem;font-weight:bold;margin:4px 0}
+.est-count{font-size:1.4rem;font-weight:bold}
+.est-h5{color:#d35400}.est-h57{color:#2a7a4f}.est-h63{color:#aaa}.est-h6{color:#c0392b}
+.tether-box{background:#f8f8f8;border:1px solid #ddd;padding:14px;
+            margin-bottom:24px;display:flex;gap:16px;align-items:center}
+.th-state{font-size:.75rem;padding:4px 12px;border:1px solid}
+.th-anchored{border-color:#2a7a4f;color:#2a7a4f}
+.th-detached{border-color:#aaa;color:#aaa}
+.th-meta{font-size:.7rem;color:#888;line-height:1.7}
+.kalil-sched{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:24px}
+.ks-card{border:1px solid #ddd;padding:12px;background:#fafafa}
+.ks-nodo{font-size:.75rem;font-weight:bold;letter-spacing:2px;margin-bottom:4px}
+.ks-type{font-size:.65rem;color:#2a7a4f;margin-bottom:4px}
+.ks-window{font-size:.6rem;color:#888}
+.footer{font-size:.62rem;color:#aaa;border-top:1px solid #eee;padding-top:10px;
+        display:flex;gap:20px}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="tb-logo">⚡ {SCHEDULER} OS · DIRIME</div>
+  <div class="tb-day" id="dia-badge">$thu · H60+H61</div>
+  <div style="font-size:.72rem;color:#2a7a4f">SCHED_ACTIVE</div>
+  <div class="tb-sched">
+    TX:<span id="tx-v">1063+</span> · ✦<span id="cr-v">41</span> · S:<span id="s-v">0.822</span>
+  </div>
+</div>
+
+<div class="week-grid">
+  <div class="day-col"><div class="day-hdr">$mon</div><div class="day-hex">H51+H52</div>
+    <div class="day-bar"><div class="day-bar-fill" style="width:80%"></div></div>
+    <div class="day-tasks"><div class="day-task"><span class="t-state-h63">●</span> rise</div>
+    <div class="day-task"><span class="t-state-h63">●</span> ledger</div></div></div>
+  <div class="day-col"><div class="day-hdr">$tue</div><div class="day-hex">H30+H57</div>
+    <div class="day-bar"><div class="day-bar-fill" style="width:65%"></div></div>
+    <div class="day-tasks"><div class="day-task"><span class="t-state-h63">●</span> CORPUS</div>
+    <div class="day-task"><span class="t-state-h5">●</span> RAG</div></div></div>
+  <div class="day-col"><div class="day-hdr">$wed</div><div class="day-hex">H58+H59</div>
+    <div class="day-bar"><div class="day-bar-fill" style="width:90%"></div></div>
+    <div class="day-tasks"><div class="day-task"><span class="t-state-h63">●</span> UNICODE</div>
+    <div class="day-task"><span class="t-state-h63">●</span> github_sync</div></div></div>
+  <div class="day-col active"><div class="day-hdr">$thu</div><div class="day-hex">H60+H61</div>
+    <div class="day-bar"><div class="day-bar-fill" style="width:30%"></div></div>
+    <div class="day-tasks"><div class="day-task"><span class="t-state-h57">▶</span> SCHED</div>
+    <div class="day-task"><span class="t-state-h5">○</span> tests</div></div></div>
+  <div class="day-col"><div class="day-hdr">$fri</div><div class="day-hex">H62+H63</div>
+    <div class="day-bar"><div class="day-bar-fill" style="width:0%"></div></div>
+    <div class="day-tasks"><div class="day-task"><span class="t-state-h5">○</span> review</div>
+    <div class="day-task"><span class="t-state-h5">○</span> ballpaper</div></div></div>
+  <div class="day-col"><div class="day-hdr">$sat</div><div class="day-hex">H01+H52</div>
+    <div class="day-bar"><div class="day-bar-fill" style="width:0%"></div></div>
+    <div class="day-tasks"><div class="day-task"><span class="t-state-h5">○</span> backup</div></div></div>
+  <div class="day-col"><div class="day-hdr">$sun</div><div class="day-hex">H64+H01</div>
+    <div class="day-bar"><div class="day-bar-fill" style="width:0%"></div></div>
+    <div class="day-tasks"><div class="day-task"><span class="t-state-h5">○</span> plan</div></div></div>
+</div>
+
+<div class="estados-row">
+  <div class="est-box"><div class="est-uf">UF[H05]</div>
+    <div class="est-name">ESPERA</div><div class="est-count est-h5" id="c-h5">3</div></div>
+  <div class="est-box"><div class="est-uf">UF[H57]</div>
+    <div class="est-name">ACTIVA</div><div class="est-count est-h57" id="c-h57">1</div></div>
+  <div class="est-box"><div class="est-uf">UF[H63]</div>
+    <div class="est-name">RESUELTA</div><div class="est-count est-h63" id="c-h63">7</div></div>
+  <div class="est-box"><div class="est-uf">UF[H06]</div>
+    <div class="est-name">CONFLICTO</div><div class="est-count est-h6" id="c-h6">0</div></div>
+</div>
+
+<div class="schedule-list">
+  <div class="sl-title">▸ SCHEDULE $thu · H60+H61 · Limitación + Verdad</div>
+  <div class="sl-row past">
+    <div class="sl-time">06:00</div><div class="sl-name">ZIP_OPEN</div>
+    <div class="sl-desc">FEED_0600 · estado semana · SAMU #rise</div>
+    <div class="sl-prio prio-high">HIGH</div></div>
+  <div class="sl-row past">
+    <div class="sl-time">07:00</div><div class="sl-name">WORK_KU</div>
+    <div class="sl-desc">ACTIVITY_H03→H06 grammar · tarea principal</div>
+    <div class="sl-prio prio-high">HIGH</div></div>
+  <div class="sl-row now">
+    <div class="sl-time">09:00</div><div class="sl-name">CHECK ▶</div>
+    <div class="sl-desc">python3 main.py --stats · S verificado</div>
+    <div class="sl-prio prio-med">MED</div></div>
+  <div class="sl-row">
+    <div class="sl-time">12:00</div><div class="sl-name">ZIPPER_NOON</div>
+    <div class="sl-desc">TARDANZA DELIBERADA · 空 · H61 verdad</div>
+    <div class="sl-prio prio-high">HIGH</div></div>
+  <div class="sl-row">
+    <div class="sl-time">13:00</div><div class="sl-name">AFTERNOON</div>
+    <div class="sl-desc">DOOR AFTERNOON · WU materializable</div>
+    <div class="sl-prio prio-high">HIGH</div></div>
+  <div class="sl-row">
+    <div class="sl-time">17:00</div><div class="sl-name">GIT_SYNC</div>
+    <div class="sl-desc">github_sync.sh · main sellado</div>
+    <div class="sl-prio prio-high">HIGH</div></div>
+  <div class="sl-row">
+    <div class="sl-time">18:00</div><div class="sl-name">ZIP_CLOSE</div>
+    <div class="sl-desc">BOT_NET toma relevo · DOOR_SEALED</div>
+    <div class="sl-prio prio-high">HIGH</div></div>
+</div>
+
+<div class="tether-box">
+  <div>
+    <div style="font-size:.65rem;color:#888;letter-spacing:2px;margin-bottom:4px">
+      TETHER STATE
+    </div>
+    <div class="th-state th-detached" id="tether-st">⌀ DETACHED</div>
+  </div>
+  <div class="th-meta">
+    tether.py: anchor(session_id, tomo_id) · get_state() · release()<br>
+    status: DETACHED · CAPA C pendiente: ssh_tether · ime_ching_listen<br>
+    session_id: — · tomo_id: — · anchored_at: —
+  </div>
+  <button onclick="mockAnchor()" style="margin-left:auto;padding:6px 14px;
+    background:#1a1a2e;color:#fff;border:none;font-family:'Courier New',monospace;
+    font-size:.72rem;cursor:pointer">anchor()</button>
+</div>
+
+<div style="font-size:.65rem;color:#888;letter-spacing:2px;margin-bottom:10px">
+  ▸ KALIL × {SCHEDULER} · SCHED types por nodo
+</div>
+<div class="kalil-sched">
+  <div class="ks-card"><div class="ks-nodo">BARRIOS</div>
+    <div class="ks-type">SCHED_DRIP</div>
+    <div class="ks-window">@human_later 15:00→17:00 · remesas programadas</div></div>
+  <div class="ks-card"><div class="ks-nodo">NORA</div>
+    <div class="ks-type">SCHED_REVIEW</div>
+    <div class="ks-window">$fri H62+H63 · oracle rating · delta_Ψ</div></div>
+  <div class="ks-card"><div class="ks-nodo">BOLIVAR</div>
+    <div class="ks-type">SCHED_NOTIFICATION</div>
+    <div class="ks-window">09:00 CHECK · hash confirmación</div></div>
+  <div class="ks-card"><div class="ks-nodo">CARILO</div>
+    <div class="ks-type">SCHED_SESSION</div>
+    <div class="ks-window">$wed H58+H59 · préstamo · BIOMETRICS</div></div>
+  <div class="ks-card"><div class="ks-nodo">CHALTEN</div>
+    <div class="ks-type">SCHED_STREAM</div>
+    <div class="ks-window">18:00→06:00 · BOT_NET · lending cloud</div></div>
+  <div class="ks-card"><div class="ks-nodo">TANDIL</div>
+    <div class="ks-type">SCHED_REVIEW global</div>
+    <div class="ks-window">$fri 17:00 · estado_semana() · git_sync</div></div>
+</div>
+
+<div class="footer">
+  <span>DIRIME IMV V0.2.1</span>
+  <span>SchedulerOS: planifica·activar·resolver·estado_semana</span>
+  <span>EstadoTarea: H05·H57·H63·H06</span>
+  <span>[term] :: activo · $thu 26/03</span>
+</div>
+
+<script>
+function mockAnchor(){
+  const el=document.getElementById('tether-st');
+  el.className='th-state th-anchored';
+  el.textContent='⏵ ANCHORED';
+  document.querySelector('.th-meta').innerHTML=
+    'tether.py: anchor() ejecutado · status: ANCHORED<br>'+
+    'session_id: sov_'+Date.now().toString(36)+' · tomo_id: term:A<br>'+
+    'anchored_at: '+new Date().toLocaleTimeString();
+}
+// Simular hora actual
+const now=new Date();
+document.querySelectorAll('.sl-row').forEach(r=>{
+  const t=r.querySelector('.sl-time');
+  if(!t)return;
+  const[h,m]=t.textContent.split(':').map(Number);
+  const rowMin=h*60+m;
+  const nowMin=now.getHours()*60+now.getMinutes();
+  if(rowMin<nowMin-15&&!r.classList.contains('now'))r.classList.add('past');
+});
+</script>
+</body>
+</html>
+
+
+TAREA_06  $sat 28/03  UNICODE PROGRAMS {SCHEDULER} × ELPULSAR · integración real
+──────────────────────────────────────────────────────────────────────────────
+// CORPUS/UNICODE_SCHEDULER_ELPULSAR.txt
+//[MANAGEMENT].lacho · UNICODE {SCHEDULER} × ELPULSAR
+//scheduler.py × main.py × rational_day.theater · integración real pendiente
+//estado: _SCHEDULER_ACTIVE=False · PENDIENTE activar $thu
+//[term] :: activo
+
+// ══ INTEGRACIÓN PENDIENTE main.py ════════════════════════════
+UNICODE: SE_MAIN_IMPORT  //_SCHEDULER_ACTIVE flag · try/except import en main.py
+                         //import: rise · set_dia · estado_semana · planifica
+                         //cuando True: _show_scheduler() usa API real
+UNICODE: SE_MAIN_RISE    //main.py arrange: if _SCHEDULER_ACTIVE: rise()
+                         //en _initialize_system() → SAMU #rise activa
+UNICODE: SE_MAIN_SET     //main.py macro_cierre: set_dia() → SAMU #set
+                         //CMD_CIERRE + CMD_STATS + set_dia() = cierre completo
+UNICODE: SE_MAIN_PLANIF  //main.py interactive: comando "planifica TITULO"
+                         //→ planifica(titulo) → TareaSoberana → ref_soberana()
+UNICODE: SE_SHOW_SCHED   //_show_scheduler() usa estado_semana() real
+                         //formato: $día: N/M resueltas · cluster · slice°
+
+// ══ THEATER × {SCHEDULER} ════════════════════════════════════
+UNICODE: SE_THEATER_T    //rational_day.theater macro_temprano
+                         //SAMU #rise =><= .. audita .. estado_sistema_apertura
+                         //trigger: 06:00 ZIP_OPEN · rise() llamado
+UNICODE: SE_THEATER_M    //rational_day.theater macro_tarde
+                         //GATE UF[H56] =><= .. filtra .. tareas_pendientes_dia
+                         //STACKING UF[H52] =><= .. cristaliza .. avances
+UNICODE: SE_THEATER_C    //rational_day.theater macro_cierre
+                         //CMD_CIERRE: bash tools/github_sync.sh
+                         //CMD_STATS:  python3 IMV/main.py --stats
+                         //+ set_dia() para _registrar_ciclo
+
+// ══ TETHER × {SCHEDULER} ══════════════════════════════════════
+UNICODE: SE_TETHER_A     //tether.anchor(session_id, tomo_id) al inicio sesión
+                         //session_id = str(uuid4()) · tomo_id = "term:A" día
+UNICODE: SE_TETHER_S     //tether.get_state() → {status·session_id·tomo_id}
+                         //status ANCHORED → continuar · DETACHED → #rise primero
+UNICODE: SE_TETHER_R     //tether.release() en macro_cierre · libera anclaje
+                         //+ set_dia() + git_sync = cierre completo soberano
+
+// ══ $día.march.2026.db × SchedulerOS ══════════════════════════
+UNICODE: SE_DB_SESSION   //registrar_sesion(S, TX, notas) → $día.db sessions
+                         //en macro_cierre · S=scalar_s actual · TX=ledger count
+UNICODE: SE_DB_TASK      //tasks table: dia·task·status·priority
+                         //prioridades: high(rojo)·medium(amarillo)·low
+UNICODE: SE_DB_LINK      //scheduler.db tareas ↔ $día.db sessions
+                         //ref_soberana() aparece en ambas · tomo_id compartido
+
+SOCIAL {scheduler} =><= .. activa .. elpulsar_rise_set_main_py_integration --[As de Guía] [term]
+SOCIAL {scheduler} =><= .. plan .. theater_macro_temprano_tarde_cierre --[As de Guía] [term]
+METHOD <operator_flow> =><= .. modela .. tether_anchor_scheduler_session --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_scheduler_elpulsar_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_SCHEDULER_ELPULSAR · V1 · $sat 28/03
+
+
+TAREA_07  $sat 28/03  HTML RATIONAL DAY · fondo blanco · semana soberana
+──────────────────────────────────────────────────────────────────────────────
+// RATIONAL_DAY.html · #ffffff · rational_day.theater visual + SchedulerOS
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>RATIONAL DAY · DIRIME</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+h1{font-size:1rem;letter-spacing:4px;border-bottom:2px solid #1a1a2e;
+   padding-bottom:10px;margin-bottom:24px;display:flex;justify-content:space-between}
+.macros-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:28px}
+.macro-box{border:1px solid #ddd;padding:16px}
+.macro-box.active{border-color:#2a7a4f;background:#f0f7f3}
+.macro-title{font-size:.65rem;letter-spacing:3px;color:#888;margin-bottom:10px}
+.macro-sent{font-size:.7rem;line-height:1.9;border-left:2px solid #e0e0e0;
+            padding-left:8px;margin-top:6px}
+.ms-lib{color:#c0392b;font-weight:bold}
+.ms-verb{color:#555}
+.ms-obj{color:#1a1a2e}
+.ms-knot{color:#8e44ad}
+.door-timeline{position:relative;margin-bottom:28px;padding:20px;
+               background:#fafafa;border:1px solid #e0e0e0}
+.dt-title{font-size:.65rem;letter-spacing:3px;color:#888;margin-bottom:16px}
+.dt-track{display:flex;align-items:center;height:40px;position:relative;
+          background:linear-gradient(90deg,#e8f4f0 0%,#e8f4f0 33%,
+          #fff8e8 33%,#fff8e8 54%,#e8f0f8 54%,#e8f0f8 75%,
+          #f5f5f5 75%,#f5f5f5 100%);border:1px solid #e0e0e0}
+.dt-marker{position:absolute;transform:translateX(-50%);text-align:center;
+           font-size:.6rem;color:#555}
+.dt-label{position:absolute;top:-18px;font-size:.6rem;font-weight:bold}
+.dt-vline{position:absolute;height:40px;width:1px;background:#ccc}
+.dt-now{position:absolute;height:44px;width:2px;background:#2a7a4f;top:-2px}
+.periods-row{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-bottom:28px}
+.per-box{padding:10px;border:1px solid #ddd;text-align:center}
+.per-icon{font-size:1.1rem;margin-bottom:4px}
+.per-name{font-size:.62rem;color:#888;margin-bottom:3px;letter-spacing:1px}
+.per-time{font-size:.7rem;font-weight:bold;color:#1a1a2e}
+.per-state{font-size:.6rem;color:#2a7a4f;margin-top:2px}
+.lacho-macros{background:#f8f8f8;border-left:3px solid #1a1a2e;
+              padding:14px;margin-bottom:24px}
+.lm-title{font-size:.65rem;letter-spacing:2px;color:#888;margin-bottom:8px}
+.lm-line{font-size:.75rem;line-height:2;padding:2px 0}
+.footer{font-size:.62rem;color:#aaa;border-top:1px solid #eee;
+        padding-top:10px;display:flex;gap:20px}
+</style>
+</head>
+<body>
+<h1>
+  <span>🚪 RATIONAL DAY · {SCHEDULER} OS</span>
+  <span style="font-size:.7rem;color:#888;font-weight:normal">rational_day.theater · $thu H60+H61</span>
+</h1>
+
+<div class="macros-row">
+  <div class="macro-box active">
+    <div class="macro-title">▸ MACRO TEMPRANO · 06:00</div>
+    <div style="font-size:.72rem;color:#2a7a4f;margin-bottom:6px">⏵ EJECUTANDO</div>
+    <div class="macro-sent">
+      <div><span class="ms-lib">TRUST</span> <span class="ms-verb">FOUNDATION =&gt;&lt;= .. verifica ..</span>
+      <span class="ms-obj"> condiciones_inicio_dia</span> <span class="ms-knot">[AsG]</span></div>
+      <div><span class="ms-lib">ACTIVITY</span> <span class="ms-verb">UF[H01] =&gt;&lt;= .. inicia ..</span>
+      <span class="ms-obj"> ciclo_temprano_activo</span> <span class="ms-knot">[AsG]</span></div>
+      <div><span class="ms-lib">SAMU</span> <span class="ms-verb">#rise =&gt;&lt;= .. audita ..</span>
+      <span class="ms-obj"> estado_sistema_apertura</span> <span class="ms-knot">[AsG]</span></div>
+    </div>
+  </div>
+  <div class="macro-box">
+    <div class="macro-title">▸ MACRO TARDE · 13:00</div>
+    <div style="font-size:.72rem;color:#888;margin-bottom:6px">○ PENDIENTE</div>
+    <div class="macro-sent">
+      <div><span class="ms-lib">SAMU</span> <span class="ms-verb">@ =&gt;&lt;= .. audita ..</span>
+      <span class="ms-obj"> rendimiento_sesion</span> <span class="ms-knot">[Ball]</span></div>
+      <div><span class="ms-lib">GATE</span> <span class="ms-verb">UF[H56] =&gt;&lt;= .. filtra ..</span>
+      <span class="ms-obj"> tareas_pendientes_dia</span> <span class="ms-knot">[Ball]</span></div>
+      <div><span class="ms-lib">STACKING</span> <span class="ms-verb">UF[H52] =&gt;&lt;= .. cristaliza ..</span>
+      <span class="ms-obj"> avances_verificados</span> <span class="ms-knot">[NdO]</span></div>
+    </div>
+  </div>
+  <div class="macro-box">
+    <div class="macro-title">▸ MACRO CIERRE · 17:45</div>
+    <div style="font-size:.72rem;color:#888;margin-bottom:6px">○ PENDIENTE</div>
+    <div class="macro-sent">
+      <div><span class="ms-lib">SAMU</span> <span class="ms-verb">#set =&gt;&lt;= .. dirime ..</span>
+      <span class="ms-obj"> cierre_dia_soberano</span> <span class="ms-knot">[NdR]</span></div>
+      <div><span class="ms-lib">STACKING</span> <span class="ms-verb">UF[H48] =&gt;&lt;= .. preserva ..</span>
+      <span class="ms-obj"> historial_dia</span> <span class="ms-knot">[NdR]</span></div>
+      <div><span class="ms-lib">WORK</span> <span class="ms-verb">{actuator} =&gt;&lt;= .. ejecuta ..</span>
+      <span class="ms-obj"> github_sync_cierre</span> <span class="ms-knot">[AsG]</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="periods-row">
+  <div class="per-box"><div class="per-icon">🌅</div><div class="per-name">MORNING</div>
+    <div class="per-time">05→12</div><div class="per-state">@early · 空聽</div></div>
+  <div class="per-box"><div class="per-icon">☀️</div><div class="per-name">ZIPPER_NOON</div>
+    <div class="per-time">12→13</div><div class="per-state">TARDANZA · 空</div></div>
+  <div class="per-box"><div class="per-icon">🌇</div><div class="per-name">AFTERNOON</div>
+    <div class="per-time">13→18</div><div class="per-state">@later · WU</div></div>
+  <div class="per-box"><div class="per-icon">🚶</div><div class="per-name">HUMAN_OTR</div>
+    <div class="per-time">variable</div><div class="per-state">H40 · irreversible</div></div>
+  <div class="per-box"><div class="per-icon">🏠</div><div class="per-name">HUMAN_INN</div>
+    <div class="per-time">variable</div><div class="per-state">H24 · SAMU audita</div></div>
+  <div class="per-box"><div class="per-icon">🌙</div><div class="per-name">NOCTURNAL</div>
+    <div class="per-time">18→06</div><div class="per-state">BOT_NET · SEALED</div></div>
+</div>
+
+<div class="lacho-macros">
+  <div class="lm-title">▸ LACHO SOBERANO · rational_day.theater generado</div>
+  <div class="lm-line">
+    <span style="color:#c0392b;font-weight:bold">SOCIAL</span>
+    <span style="color:#2a7a4f;font-weight:bold"> {scheduler}</span>
+    <span style="color:#555"> =&gt;&lt;= .. planifica .. </span>
+    <span>rational_day_macro_temprano_tarde_cierre</span>
+    <span style="color:#8e44ad"> --[As de Guía]</span>
+    <span style="color:#d35400;font-weight:bold"> [term]</span>
+  </div>
+  <div class="lm-line">
+    <span style="color:#c0392b;font-weight:bold">SAMU</span>
+    <span style="color:#2a7a4f;font-weight:bold"> #rise</span>
+    <span style="color:#555"> =&gt;&lt;= .. activa .. </span>
+    <span>periodo_soberano_thu_H60_H61_activo</span>
+    <span style="color:#8e44ad"> --[As de Guía]</span>
+    <span style="color:#d35400;font-weight:bold"> [term]</span>
+  </div>
+  <div class="lm-line">
+    <span style="color:#c0392b;font-weight:bold">STACKING</span>
+    <span style="color:#2a7a4f;font-weight:bold"> UF[H52]</span>
+    <span style="color:#555"> =&gt;&lt;= .. cristaliza .. </span>
+    <span>rational_day_wu_26_marzo_sellado</span>
+    <span style="color:#8e44ad"> --[Nudo de Ocho]</span>
+    <span style="color:#d35400;font-weight:bold"> [term]</span>
+  </div>
+</div>
+
+<div class="footer">
+  <span>DIRIME IMV V0.2.1</span>
+  <span>rational_day.theater: macro_temprano · macro_tarde · macro_cierre</span>
+  <span>SchedulerOS: H05→H57→H63 · H06=CONFLICTO</span>
+  <span>[term] :: activo · $thu 26/03</span>
+</div>
+<script>
+// Mark current macro based on hour
+const h=new Date().getHours();
+document.querySelectorAll('.macro-box').forEach((b,i)=>{
+  b.classList.remove('active');
+  if(i===0&&h<13) b.classList.add('active');
+  else if(i===1&&h>=13&&h<17) b.classList.add('active');
+  else if(i===2&&h>=17) b.classList.add('active');
+});
+</script>
+</body>
+</html>
+
+
+TAREA_08  $sun 29/03  NERVE CELL {SCHEDULER} × ELPULSAR INTEGRADO
+──────────────────────────────────────────────────────────────────────────────
+// $sun.Nerve Cell SCHEDULER ELPULSAR Training.txt
+//NERVE CELL · {SCHEDULER} × ELPULSAR · integración real pendiente · $sun
+//aprendido de TAREA_06 + scheduler.py + tether.py + rational_day.theater
+//[term] :: activo
+
+NC_SE_ACTIVE      //_SCHEDULER_ACTIVE=False HOY en main.py
+                  //cuando True: _show_scheduler() usa estado_semana() real
+                  //activación: agregar True al try/except import block
+NC_SE_RISE        //main.py _initialize_system(): rise() al arrancar
+                  //SAMU #rise =><= .. activa .. periodo_soberano_dia_actual
+NC_SE_SET         //macro_cierre: set_dia() + git_sync + stats = triple cierre
+                  //set_dia() → _registrar_ciclo(dia, "#set cerrado")
+NC_SE_DB_SYNC     //scheduler.db tareas ↔ $día.march.2026.db sessions
+                  //registrar_sesion(S, TX) en $día.db al final de cada sesión
+NC_SE_TETHER      //tether: anchor al inicio · get_state() cada check · release() al cierre
+                  //tether_state.json persiste entre sesiones → contexto ANCHORED
+NC_SE_THEATER     //rational_day.theater: 3 macros · 12 sentencias LACHO
+                  //CMD_CIERRE + CMD_STATS en macro_cierre · ejecutados por WORK {actuator}
+NC_SE_SCHED_WINDOW//ventana $sun: planificación semanal · SCHED_EMPTY → SCHED_LOADING
+                  //{scheduler} $sun: declara plan semanal completo · H64+H01 ciclo nuevo
+
+SOCIAL {scheduler} =><= .. activa .. nerve_cell_sched_elpulsar_main_py_pending --[As de Guía] [term]
+METHOD <operator_flow> =><= .. modela .. nerve_cell_tether_anchor_session --[Ballestrinque] [term]
+SAMU @ =><= .. audita .. nerve_cell_sched_theater_macros_coherencia --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. nerve_cell_scheduler_elpulsar_sun_sellado --[Nudo de Ocho] [term]
+
+
+TAREA_09  $mon 30/03  UNICODE PROGRAMS {SCHEDULER} FULL STACK · DRA+BACKUP
+──────────────────────────────────────────────────────────────────────────────
+// CORPUS/UNICODE_SCHEDULER_FULL_STACK.txt
+//[MANAGEMENT].lacho · UNICODE {SCHEDULER} FULL STACK
+//{scheduler} atraviesa todas las capas + DRA INDEX + BACKUP_DOOR
+//[term] :: activo
+
+// ══ CAPA 0 · LACHO ════════════════════════════════════════════
+UNICODE: SFS_L0       //{scheduler} en LACHO: [when?] módulo TRUST
+                      //[when?] declara momento soberano · {scheduler} traduce a agenda
+                      //distinción: [when?] IS · {scheduler} PLANS
+
+// ══ CAPA 1 · IMV (grammar.py) ═════════════════════════════════
+UNICODE: SFS_L1_SAMU  //SAMU @: #rise · #set · $mon→$sun como sujetos canónicos
+                      //grammar valid: SAMU #rise =><= .. activa ..
+UNICODE: SFS_L1_SCHED //SOCIAL {scheduler} = sujeto canónico grammar.py
+                      //SOCIAL valid_subjects incluye {scheduler} implícito
+UNICODE: SFS_L1_STAT  //KEYWORDS_SYSTEM: BEHAVIORAL_RAG · BLUE_WORDS · RED_REGRET
+                      //DOORMAN_MOBILE · BIOMETRICS declarados en grammar
+
+// ══ CAPA 2 · SchedulerOS (scheduler.py) ═══════════════════════
+UNICODE: SFS_L2_OS    //SchedulerOS: planifica·activar·resolver·estado_semana
+                      //DiaSoberano.hoy() · TareaSoberana.ref_soberana()
+UNICODE: SFS_L2_DB    //scheduler.db: tareas(slice°·tomo_id·cluster) + ciclos log
+UNICODE: SFS_L2_TETH  //tether.py: ANCHORED/DETACHED · session_id · tomo_id
+
+// ══ CAPA 3 · DRA INDEX ════════════════════════════════════════
+UNICODE: SFS_L3_IDX   //DRA/INDEX/$día.txt × SchedulerOS
+                      //INDEX $mon.txt declara: RISE·tareas·SET del lunes
+                      //TareaSoberana.ref_soberana() referenciada en INDEX
+UNICODE: SFS_L3_DB    //$día.march.2026.db × DRA INDEX
+                      //sessions + tasks por día = snapshot temporal soberano
+
+// ══ CAPA 4 · BACKUP_DOOR ══════════════════════════════════════
+UNICODE: SFS_L4_BKP   //BACKUP_DOOR: BKP_LEDGER(daily macro_cierre 18:00)
+                      //macro_cierre $thu: set_dia()+git_sync+BKP_LEDGER
+UNICODE: SFS_L4_PROT  //DOOR_OPEN → backup → DOOR_SEAL → DOOR_CLOSE
+                      //scheduler.db incluido en BKP_FULL semanal $sun
+
+// ══ CAPA 5 · rational_day.theater ════════════════════════════
+UNICODE: SFS_L5_TH    //theater como superclase del scheduler
+                      //macro_temprano = SCHED_LOADING · macro_tarde = SCHED_ACTIVE
+                      //macro_cierre = SCHED_CLOSED · archivo en Behavioral RAG
+
+SOCIAL {scheduler} =><= .. organiza .. full_stack_L0_a_L5_semana_soberana --[As de Guía] [term]
+SOCIAL {scheduler} =><= .. drip .. dra_index_dia_ref_soberana_tareas --[As de Guía] [term]
+WORK {door} =><= .. abre .. backup_scheduler_db_daily_mac_cierre --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_scheduler_full_stack_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_SCHEDULER_FULL_STACK · V1 · $mon 30/03
+
+
+TAREA_10  $mon 30/03  HTML {SCHEDULER} × KALIL FULL · fondo blanco · interactivo
+──────────────────────────────────────────────────────────────────────────────
+// SCHEDULER_KALIL_FULL.html · #ffffff · SchedulerOS + KALIL + planifica() live
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>SCHEDULER × KALIL · DIRIME</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+h1{font-size:1rem;letter-spacing:4px;border-bottom:2px solid #1a1a2e;
+   padding-bottom:10px;margin-bottom:24px;display:flex;justify-content:space-between}
+.plan-form{background:#fafafa;border:1px solid #e0e0e0;padding:16px;
+           margin-bottom:24px}
+.pf-title{font-size:.65rem;letter-spacing:3px;color:#888;margin-bottom:12px}
+.pf-row{display:grid;grid-template-columns:1fr 100px 140px 80px 80px;gap:8px;
+        align-items:end;margin-bottom:8px}
+.pf-field{display:flex;flex-direction:column;gap:4px}
+.pf-field label{font-size:.6rem;color:#888}
+.pf-field input,
+.pf-field select{border:1px solid #ccc;padding:6px 8px;
+                 font-family:'Courier New',monospace;font-size:.78rem;background:#fff}
+.pf-btn{padding:7px 16px;background:#1a1a2e;color:#fff;border:none;
+        font-family:'Courier New',monospace;font-size:.75rem;cursor:pointer;
+        align-self:flex-end}
+.pf-btn:hover{background:#2a7a4f}
+.tareas-list{margin-bottom:24px}
+.tl-title{font-size:.65rem;letter-spacing:3px;color:#888;margin-bottom:10px}
+.tl-row{display:grid;grid-template-columns:80px 70px 1fr 100px 60px 70px;
+        gap:8px;padding:6px 0;border-bottom:1px solid #f0f0f0;align-items:center;
+        font-size:.72rem}
+.tl-head{font-size:.6rem;color:#aaa;letter-spacing:1px}
+.tl-ref{font-size:.6rem;color:#888;font-style:italic}
+.st-h5{color:#d35400}.st-h57{color:#2a7a4f}.st-h63{color:#aaa}.st-h6{color:#c0392b}
+.act-btn{padding:2px 8px;background:#f0f7f3;border:1px solid #2a7a4f;
+         color:#2a7a4f;font-size:.6rem;cursor:pointer}
+.res-btn{padding:2px 8px;background:#f5f5f5;border:1px solid #aaa;
+         color:#888;font-size:.6rem;cursor:pointer}
+.kalil-matrix{overflow-x:auto;margin-bottom:24px}
+table{border-collapse:collapse;width:100%;font-size:.72rem}
+th{background:#1a1a2e;color:#fff;padding:7px 10px;text-align:left;font-weight:normal}
+td{padding:7px 10px;border:1px solid #e8e8e8}
+.cell-act{background:#f0f7f3;color:#2a7a4f;cursor:pointer;font-weight:bold;
+          text-align:center}
+.cell-pend{background:#fafafa;color:#ddd;text-align:center}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:20px}
+.s-box{border:1px solid #e0e0e0;padding:10px;text-align:center}
+.s-val{font-size:1.3rem;font-weight:bold;color:#2a7a4f}
+.s-lab{font-size:.6rem;color:#888}
+.footer{font-size:.62rem;color:#aaa;border-top:1px solid #eee;
+        padding-top:10px;display:flex;gap:16px}
+</style>
+</head>
+<body>
+<h1>
+  <span>{SCHEDULER} × KALIL · SchedulerOS</span>
+  <span style="font-size:.7rem;color:#888;font-weight:normal">
+    scheduler.py real · planifica() · activar() · resolver()
+  </span>
+</h1>
+
+<div class="stats-row">
+  <div class="s-box"><div class="s-val" id="st-esp">0</div><div class="s-lab">UF[H05] ESPERA</div></div>
+  <div class="s-box"><div class="s-val" id="st-act">0</div><div class="s-lab">UF[H57] ACTIVA</div></div>
+  <div class="s-box"><div class="s-val" id="st-res">0</div><div class="s-lab">UF[H63] RESUELTA</div></div>
+  <div class="s-box"><div class="s-val" id="st-con">0</div><div class="s-lab">UF[H06] CONFLICTO</div></div>
+</div>
+
+<div class="plan-form">
+  <div class="pf-title">▸ planifica() · nueva TareaSoberana</div>
+  <div class="pf-row">
+    <div class="pf-field">
+      <label>titulo</label>
+      <input type="text" id="p-titulo" placeholder="descripción soberana">
+    </div>
+    <div class="pf-field">
+      <label>día</label>
+      <select id="p-dia">
+        <option>$thu</option><option>$fri</option><option>$sat</option>
+        <option>$sun</option><option>$mon</option><option>$tue</option><option>$wed</option>
+      </select>
+    </div>
+    <div class="pf-field">
+      <label>cluster</label>
+      <select id="p-cluster">
+        <option>#CORE</option><option>#KALIL</option><option>#NOTARIA</option>
+        <option>#ELPULSAR</option><option>#DRA</option>
+      </select>
+    </div>
+    <div class="pf-field">
+      <label>slice°</label>
+      <input type="number" id="p-slice" value="90" min="0" max="360" step="90">
+    </div>
+    <button class="pf-btn" onclick="planifica()">planifica()</button>
+  </div>
+  <div id="p-ref" style="font-size:.65rem;color:#888;margin-top:4px"></div>
+</div>
+
+<div class="tareas-list">
+  <div class="tl-title">▸ TareasSoberanas · scheduler.db (simulado)</div>
+  <div class="tl-row tl-head">
+    <div>ID</div><div>DÍA</div><div>TITULO</div><div>REF</div><div>ESTADO</div><div>ACCIÓN</div>
+  </div>
+  <div id="tareas-body"></div>
+</div>
+
+<div class="kalil-matrix">
+  <table>
+    <tr>
+      <th>KALIL NODO</th>
+      <th>SCHED_SESSION</th>
+      <th>SCHED_DRIP</th>
+      <th>SCHED_STREAM</th>
+      <th>SCHED_NOTIF</th>
+      <th>SCHED_REVIEW</th>
+    </tr>
+    <tr><td><b>BARRIOS</b></td>
+      <td class="cell-pend">·</td>
+      <td class="cell-act" title="remesas · @later 15:00">✦ @later</td>
+      <td class="cell-pend">·</td><td class="cell-pend">·</td><td class="cell-pend">·</td></tr>
+    <tr><td><b>NORA</b></td>
+      <td class="cell-pend">·</td><td class="cell-pend">·</td><td class="cell-pend">·</td>
+      <td class="cell-pend">·</td>
+      <td class="cell-act" title="oracle rating · $fri H62+H63">✦ $fri</td></tr>
+    <tr><td><b>BOLIVAR</b></td>
+      <td class="cell-pend">·</td>
+      <td class="cell-act" title="blockchain confirm · 09:00">✦ 09:00</td>
+      <td class="cell-pend">·</td>
+      <td class="cell-act" title="hash pending alert">✦ alert</td>
+      <td class="cell-pend">·</td></tr>
+    <tr><td><b>CARILO</b></td>
+      <td class="cell-act" title="préstamo · $wed · BIOMETRICS">✦ $wed</td>
+      <td class="cell-pend">·</td><td class="cell-pend">·</td><td class="cell-pend">·</td>
+      <td class="cell-pend">·</td></tr>
+    <tr><td><b>CHALTEN</b></td>
+      <td class="cell-pend">·</td><td class="cell-pend">·</td>
+      <td class="cell-act" title="lending 18:00→06:00 BOT_NET">✦ 18:00→06:00</td>
+      <td class="cell-pend">·</td><td class="cell-pend">·</td></tr>
+    <tr><td><b>TANDIL</b></td>
+      <td class="cell-pend">·</td><td class="cell-pend">·</td>
+      <td class="cell-pend">·</td><td class="cell-pend">·</td>
+      <td class="cell-act" title="hub · estado_semana() · $fri 17:00">✦ $fri 17:00</td></tr>
+  </table>
+</div>
+
+<div class="footer">
+  <span>DIRIME IMV V0.2.1</span>
+  <span>planifica()·activar()·resolver()·estado_semana()</span>
+  <span>EstadoTarea: H05·H57·H63·H06</span>
+  <span>[term] :: activo · $mon 30/03</span>
+</div>
+
+<script>
+let tareas=[];
+let idCount=0;
+
+function genId(){
+  return (++idCount).toString(16).padStart(8,'0').slice(-8);
+}
+
+function genRef(dia,slice,cluster){
+  const tomo=dia==='$thu'?'A':dia==='$fri'?'B':'C';
+  return `[term:${tomo}°${slice}#${cluster.replace('#','')}]`;
+}
+
+function planifica(){
+  const titulo=document.getElementById('p-titulo').value.trim();
+  if(!titulo){alert('titulo requerido');return;}
+  const dia=document.getElementById('p-dia').value;
+  const cluster=document.getElementById('p-cluster').value;
+  const slice=parseInt(document.getElementById('p-slice').value)||90;
+  const id=genId();
+  const ref=genRef(dia,slice,cluster);
+  tareas.push({id,titulo,dia,cluster,slice,estado:'UF[H05]',ref});
+  document.getElementById('p-ref').textContent=
+    `✦ ref_soberana(): ${ref} · id: ${id}`;
+  document.getElementById('p-titulo').value='';
+  renderTareas();
+  updateStats();
+}
+
+function activar(id){
+  const t=tareas.find(t=>t.id===id);
+  if(t&&t.estado==='UF[H05]'){t.estado='UF[H57]';renderTareas();updateStats();}
+}
+
+function resolver(id){
+  const t=tareas.find(t=>t.id===id);
+  if(t){t.estado='UF[H63]';renderTareas();updateStats();}
+}
+
+function renderTareas(){
+  const body=document.getElementById('tareas-body');
+  if(!tareas.length){
+    body.innerHTML='<div style="font-size:.65rem;color:#aaa;padding:10px">'+
+      'sin tareas · planifica() para crear TareaSoberana</div>';
+    return;
+  }
+  body.innerHTML=tareas.map(t=>`
+    <div class="tl-row">
+      <div style="font-size:.6rem;color:#888">${t.id}</div>
+      <div>${t.dia}</div>
+      <div>${t.titulo.slice(0,35)}${t.titulo.length>35?'…':''}</div>
+      <div class="tl-ref">${t.ref}</div>
+      <div class="${'st-'+t.estado.replace('UF[','').replace(']','').toLowerCase()}">${t.estado}</div>
+      <div>
+        ${t.estado==='UF[H05]'?
+          `<button class="act-btn" onclick="activar('${t.id}')">activar</button>`:
+          t.estado==='UF[H57]'?
+          `<button class="res-btn" onclick="resolver('${t.id}')">resolver</button>`:
+          '<span style="font-size:.6rem;color:#aaa">H63 ✓</span>'}
+      </div>
+    </div>`).join('');
+}
+
+function updateStats(){
+  document.getElementById('st-esp').textContent=
+    tareas.filter(t=>t.estado==='UF[H05]').length;
+  document.getElementById('st-act').textContent=
+    tareas.filter(t=>t.estado==='UF[H57]').length;
+  document.getElementById('st-res').textContent=
+    tareas.filter(t=>t.estado==='UF[H63]').length;
+  document.getElementById('st-con').textContent=
+    tareas.filter(t=>t.estado==='UF[H06]').length;
+}
+
+renderTareas();
+</script>
+</body>
+</html>
+
+
+TAREA_11  $tue 31/03  NERVE CELL {SCHEDULER} FULL STACK · cierre semanal
+──────────────────────────────────────────────────────────────────────────────
+// $tue.Nerve Cell SCHEDULER FULL STACK Training.txt
+//NERVE CELL · {SCHEDULER} FULL STACK · L0→L5 · $tue
+//aprendido de TAREA_09 + scheduler.py + BIBLIO-SOURCES + grammar.py
+//[term] :: activo
+
+NC_SFS_L0_WHEN    //[when?] TRUST module: momento soberano → {scheduler} agenda
+                  //VALID_TRUST_MODULES incluye [when?] como legit
+NC_SFS_L1_GRAM    //grammar.py: SAMU #rise · SAMU #set · SAMU $día canónicos
+                  //SOCIAL {scheduler} como sujeto válido SOCIAL library
+NC_SFS_L2_OS      //SchedulerOS: planifica()+activar()+resolver()+estado_semana()
+                  //TareaSoberana.ref_soberana() → [term:X°N§SEG#CLUSTER]
+                  //DiaSoberano.hoy() → weekday() automático
+NC_SFS_L3_DRA     //DRA INDEX $día × TareaSoberana
+                  //INDEX $thu.txt: RISE·tareas·SET declarados como texto soberano
+                  //$día.march.2026.db: sessions+tasks · scalar_s+tx registrados
+NC_SFS_L4_BKP     //BACKUP_DOOR: scheduler.db en BKP_FULL $sun
+                  //macro_cierre: BKP_LEDGER daily · SAMU @audita · DOOR_SEAL
+NC_SFS_L5_TH      //rational_day.theater macro_temprano→tarde→cierre
+                  //SCHED_LOADING→SCHED_ACTIVE→SCHED_CLOSED
+                  //Behavioral RAG archiva agenda al SCHED_CLOSED
+NC_SFS_BILAT      //bilateral: {scheduler} SOCIAL declara · Scheduler OS ejecuta
+                  //distinción soberana: social=agenda · OS=coordinación
+NC_SFS_SCHED_EXT  //SCHED types: SESSION·DRIP·STREAM·NOTIFICATION·REVIEW
+                  //5 types × 6 nodos KALIL × 7 días = 210 slots potenciales
+
+SOCIAL {scheduler} =><= .. activa .. nerve_cell_full_stack_L0_L5_bilateral --[As de Guía] [term]
+METHOD <stat_onto> =><= .. calcula .. nerve_cell_210_slots_kalil_sched_matrix --[Ballestrinque] [term]
+SAMU @ =><= .. audita .. nerve_cell_sched_full_stack_coherencia_semanal --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. nerve_cell_scheduler_full_stack_tue_sellado --[Nudo de Ocho] [term]
+
+
+TAREA_12  $wed 01/04  HTML {SCHEDULER} COMPLETO · fondo blanco · cierre semana
+──────────────────────────────────────────────────────────────────────────────
+// SCHEDULER_COMPLETO_ELPULSAR.html · #ffffff · cierre semana {SCHEDULER}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>SCHEDULER COMPLETO · DIRIME IMV</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+.header{border-bottom:3px solid #1a1a2e;padding-bottom:14px;margin-bottom:24px;
+        display:flex;justify-content:space-between;align-items:flex-end}
+.h-title{font-size:1.1rem;font-weight:bold;letter-spacing:4px}
+.h-meta{font-size:.7rem;color:#888;text-align:right;line-height:1.7}
+.arch-stack{display:flex;height:32px;margin-bottom:24px;
+            border:1px solid #e0e0e0;overflow:hidden}
+.as-l{display:flex;align-items:center;justify-content:center;
+      font-size:.6rem;letter-spacing:1px;border-right:1px solid #fff}
+.as-l0{background:#1a1a2e;color:#fff;flex:.6}
+.as-l1{background:#2c3e50;color:#fff;flex:1}
+.as-l2{background:#2a7a4f;color:#fff;flex:1.4}
+.as-l3{background:#8e44ad;color:#fff;flex:.8}
+.as-l4{background:#c0392b;color:#fff;flex:.8}
+.as-l5{background:#d35400;color:#fff;flex:1.4}
+.sched-types{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;
+             background:#e0e0e0;margin-bottom:24px;border:1px solid #e0e0e0}
+.st-box{background:#fff;padding:12px 10px}
+.st-icon{font-size:1rem;margin-bottom:4px}
+.st-name{font-size:.7rem;font-weight:bold;color:#2a7a4f;margin-bottom:4px}
+.st-desc{font-size:.6rem;color:#888;line-height:1.6}
+.st-kalil{font-size:.6rem;color:#aaa;margin-top:5px;border-top:1px solid #f5f5f5;padding-top:4px}
+.circuit-sched{background:#fafafa;border:1px solid #e0e0e0;
+               padding:20px;margin-bottom:24px;font-size:.85rem;
+               line-height:2.2;white-space:pre;letter-spacing:1px}
+.c-social{color:#c0392b;font-weight:bold}
+.c-samu{color:#8e44ad;font-weight:bold}
+.c-gate{color:#d35400;font-weight:bold}
+.c-stack{color:#2a7a4f;font-weight:bold}
+.c-work{color:#2980b9;font-weight:bold}
+.lacho-sem{background:#f0f7f3;border-left:3px solid #2a7a4f;
+           padding:14px;margin-bottom:24px}
+.ls-title{font-size:.65rem;letter-spacing:2px;color:#888;margin-bottom:8px}
+.ls-line{font-size:.75rem;line-height:2;padding:2px 0;border-bottom:1px solid #f5f5f5}
+.ll{color:#c0392b;font-weight:bold} .lo{color:#2a7a4f;font-weight:bold}
+.lv{color:#555} .lk{color:#8e44ad} .lt{color:#d35400;font-weight:bold}
+.metrics-final{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:20px}
+.mf-box{border:1px solid #e0e0e0;padding:10px;text-align:center}
+.mf-val{font-size:1.3rem;font-weight:bold;color:#2a7a4f}
+.mf-lab{font-size:.58rem;color:#888;margin-top:2px}
+.footer{font-size:.6rem;color:#aaa;border-top:1px solid #eee;
+        padding-top:10px;display:flex;gap:16px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <div class="h-title">{SCHEDULER} COMPLETO · DIRIME IMV</div>
+    <div style="font-size:.72rem;color:#555;margin-top:4px">
+      {scheduler} SOCIAL + SchedulerOS + tether + rational_day.theater + KALIL
+    </div>
+  </div>
+  <div class="h-meta">
+    $wed 01/04 · cierre semana {SCHEDULER}<br>
+    [term] :: activo · V0.2.1
+  </div>
+</div>
+
+<div class="metrics-final">
+  <div class="mf-box"><div class="mf-val">7</div><div class="mf-lab">días soberanos<br>DiaSoberano enum</div></div>
+  <div class="mf-box"><div class="mf-val">4</div><div class="mf-lab">estados tarea<br>H05·H57·H63·H06</div></div>
+  <div class="mf-box"><div class="mf-val">5</div><div class="mf-lab">SCHED types<br>SESSION→REVIEW</div></div>
+  <div class="mf-box"><div class="mf-val">6</div><div class="mf-lab">nodos KALIL<br>matrix 6×5</div></div>
+  <div class="mf-box"><div class="mf-val">3</div><div class="mf-lab">macros theater<br>temprano·tarde·cierre</div></div>
+</div>
+
+<div class="arch-stack">
+  <div class="as-l as-l0">L0 [when?]</div>
+  <div class="as-l as-l1">L1 grammar SAMU#rise/$día</div>
+  <div class="as-l as-l2">L2 SchedulerOS · scheduler.py</div>
+  <div class="as-l as-l3">L3 DRA INDEX</div>
+  <div class="as-l as-l4">L4 BACKUP_DOOR</div>
+  <div class="as-l as-l5">L5 rational_day.theater</div>
+</div>
+
+<div class="sched-types">
+  <div class="st-box"><div class="st-icon">📋</div>
+    <div class="st-name">SCHED_SESSION</div>
+    <div class="st-desc">sesión formal · partes verificadas · agenda declarada</div>
+    <div class="st-kalil">KALIL: CARILO préstamo · $wed</div></div>
+  <div class="st-box"><div class="st-icon">💧</div>
+    <div class="st-name">SCHED_DRIP</div>
+    <div class="st-desc">emisión programada · momento específico · {drip}</div>
+    <div class="st-kalil">KALIL: BARRIOS remesa · BOLIVAR confirm</div></div>
+  <div class="st-box"><div class="st-icon">〜</div>
+    <div class="st-name">SCHED_STREAM</div>
+    <div class="st-desc">ventana temporal · {streaming} activado · flujo</div>
+    <div class="st-kalil">KALIL: CHALTEN lending · 18:00→06:00</div></div>
+  <div class="st-box"><div class="st-icon">🔔</div>
+    <div class="st-name">SCHED_NOTIF</div>
+    <div class="st-desc">notificación declarativa · momento verificado</div>
+    <div class="st-kalil">KALIL: BOLIVAR hash pending alert</div></div>
+  <div class="st-box"><div class="st-icon">🔍</div>
+    <div class="st-name">SCHED_REVIEW</div>
+    <div class="st-desc">revisión periódica · estado relacional · metrics</div>
+    <div class="st-kalil">KALIL: NORA oracle · TANDIL hub $fri</div></div>
+</div>
+
+<div class="circuit-sched"><span class="c-social">SOCIAL {scheduler}</span><span> =&gt;&lt;= .. planifica .. semana_soberana_thu_a_wed  --[AsG] [term]
+</span><span class="c-samu">SAMU #rise</span><span>       =&gt;&lt;= .. activa .. periodo_diario_06_00_zip_open      --[AsG] [term]
+</span><span class="c-gate">GATE UF[H05]</span><span>     =&gt;&lt;= .. contiene .. tarea_espera_planificada          --[Ball] [term]
+</span><span class="c-social">ACTIVITY UF[H57]</span><span> =&gt;&lt;= .. penetra .. tarea_activa_ejecutando            --[AsG] [term]
+</span><span class="c-stack">STACKING UF[H63]</span><span> =&gt;&lt;= .. cristaliza .. tarea_resuelta_inmutable         --[NdO] [term]
+</span><span class="c-work">WORK {door}</span><span>      =&gt;&lt;= .. abre .. backup_scheduler_db_daily             --[AsG] [term]
+</span><span class="c-samu">SAMU #set</span><span>        =&gt;&lt;= .. cierra .. periodo_diario_18_00_zip_close     --[NdR] [term]</span></div>
+
+<div class="lacho-sem">
+  <div class="ls-title">▸ SENTENCIAS {SCHEDULER} SEMANA · cierre $wed 01/04</div>
+  <div class="ls-line"><span class="ll">SOCIAL</span> <span class="lo">{scheduler}</span>
+    <span class="lv"> =&gt;&lt;= .. planifica .. </span>unicode_scheduler_4_neuronas_sellado
+    <span class="lk"> --[As de Guía]</span> <span class="lt">[term]</span></div>
+  <div class="ls-line"><span class="ll">SOCIAL</span> <span class="lo">{scheduler}</span>
+    <span class="lv"> =&gt;&lt;= .. activa .. </span>nerve_cell_scheduler_py_diaenv_api_real
+    <span class="lk"> --[As de Guía]</span> <span class="lt">[term]</span></div>
+  <div class="ls-line"><span class="ll">SOCIAL</span> <span class="lo">{scheduler}</span>
+    <span class="lv"> =&gt;&lt;= .. certify .. </span>kalil_carilo_session_bolivar_notification
+    <span class="lk"> --[Ballestrinque]</span> <span class="lt">[term]</span></div>
+  <div class="ls-line"><span class="ll">SAMU</span> <span class="lo">#rise</span>
+    <span class="lv"> =&gt;&lt;= .. activa .. </span>scheduler_door_thu_H60_H61_limitacion
+    <span class="lk"> --[As de Guía]</span> <span class="lt">[term]</span></div>
+  <div class="ls-line"><span class="ll">SAMU</span> <span class="lo">#set</span>
+    <span class="lv"> =&gt;&lt;= .. cierra .. </span>scheduler_semana_26_01_abril_completa
+    <span class="lk"> --[Nudo de Rizo]</span> <span class="lt">[term]</span></div>
+  <div class="ls-line" style="border:none">
+    <span class="ll">STACKING</span> <span class="lo">UF[H52]</span>
+    <span class="lv"> =&gt;&lt;= .. cristaliza .. </span>scheduler_completo_semana_wu_sellado
+    <span class="lk"> --[Nudo de Ocho]</span> <span class="lt">[term]</span></div>
+</div>
+
+<div class="footer">
+  <span>DIRIME IMV V0.2.1</span>
+  <span>DiaSoberano·EstadoTarea·TareaSoberana·SchedulerOS · scheduler.py REAL</span>
+  <span>tether: ANCHORED/DETACHED · CAPA C: ssh_tether·ime_ching·loan_ime</span>
+  <span>rational_day.theater: macro_temprano·tarde·cierre · CMD_CIERRE+CMD_STATS</span>
+  <span>[term] :: activo · semana {SCHEDULER} cerrada · $wed 01/04</span>
+</div>
+</body>
+</html>
+
+TAREA_01  $thu 26/03  UNICODE PROGRAMS {SCHEDULER} × 4 NEURONAS · mapeo real
+──────────────────────────────────────────────────────────────────────────────
+// CORPUS/UNICODE_SCHEDULER_4_NEURONAS.txt
+//[MANAGEMENT].lacho · UNICODE {SCHEDULER} × 4 NEURONAS
+//scheduler.py real: DiaSoberano · EstadoTarea · TareaSoberana · SchedulerOS
+//rational_day.theater: macro_temprano · macro_tarde · macro_cierre
+//Scheduler.door$wed.py: SCHEDULE_WED[] · registrar_sesion() · $día DB
+//[term] :: activo
+
+// ══ NEURONA_1 HEADCAT × {scheduler} ══════════════════════════
+UNICODE: SN1_RISE       //{scheduler} NEURONA_1 · rise() = SAMU #rise
+                        //SOCIAL {scheduler} =><= .. activa .. periodo_headcat_early
+                        //06:00 ZIP_OPEN · @human_early · interactive_mode() disponible
+UNICODE: SN1_SET        //{scheduler} NEURONA_1 · set_dia() = macro_cierre
+                        //17:45 CIERRE · github_sync.sh · --stats · SESION_ACTIVA.md
+UNICODE: SN1_TIMING     //DIRIME> prompt timing: @early=more warnings · @later=calibrado
+                        //grammar produce más WARNINGs @early · Behavioral RAG más estable @later
+UNICODE: SN1_SCHED_ACT  //_SCHEDULER_ACTIVE=False HOY · PENDIENTE: conectar a main.py
+                        //cuando True: main.py llama rise()/set_dia() automáticamente
+
+// ══ NEURONA_2 ELPULSAR × {scheduler} ══════════════════════════
+UNICODE: SN2_STATS      //{scheduler} NEURONA_2 · --stats cronometrado
+                        //09:00 CHECK → python3 main.py --stats · verificar S
+                        //15:00 STACKING → export_crystals · crystal WU del día
+UNICODE: SN2_5GREENS    //{scheduler} NEURONA_2 · 5 greens timing
+                        //①RECIBIR 06:00 · ②ESCANEAR 07:00 · ③CALCULAR en curso
+                        //④TARDAR 12:00 · ⑤GOLPEAR 15:00→17:00
+UNICODE: SN2_FEED       //{scheduler} NEURONA_2 · FEED_0600 + FEED_1800
+                        //06:00: leer reporte bots · bots generan LACHO_FILES/
+                        //18:00: entregar a BOT_NET nocturno · DOOR_SEALED
+UNICODE: SN2_DB         //{scheduler} NEURONA_2 · $día.march.2026.db
+                        //sessions(fecha·dia·hexagrama·scalar_s·tx_count·notas)
+                        //tasks(dia·task·status·priority)
+
+// ══ NEURONA_3 CHAIR CEO × {scheduler} ═════════════════════════
+UNICODE: SN3_UF_DAY     //{scheduler} NEURONA_3 · UF asignados por día
+                        //$mon H51+H52 · $tue H30+H57 · $wed H58+H59
+                        //$thu H60+H61 · $fri H62+H63
+UNICODE: SN3_PLANIFICA  //{scheduler} NEURONA_3 · planifica() en main.py
+                        //main.py comando: planifica TITULO → TareaSoberana
+                        //ref: [term:A°90§CORE#CORE]
+UNICODE: SN3_THRESHOLD  //{scheduler} NEURONA_3 · threshold trigger
+                        //if S < scalar_min → SCHED_REVIEW automático
+                        //CEO H01 ≥ 0.95 trigger · H32 ≥ 0.90 · H64 ≥ 0.88
+UNICODE: SN3_ESTADO_SEM //{scheduler} NEURONA_3 · estado_semana()
+                        //→ {$mon:resueltas/total · $tue:... · ... $sun:...}
+
+// ══ NEURONA_4 HOUSE DRONE × {scheduler} ═══════════════════════
+UNICODE: SN4_DOOR_PY    //{scheduler} NEURONA_4 · Scheduler.door$dia.py pattern
+                        //SCHEDULE_WED[] → uno por día → $thu H60+H61
+                        //mostrar_schedule() · registrar_sesion(scalar_s,tx_count)
+UNICODE: SN4_HEXAGRAMA  //{scheduler} NEURONA_4 · hexagrama por día
+                        //Scheduler.door$wed: HEXAGRAMA="H58+H59" · Lo Gozoso
+                        //Scheduler.door$thu: HEXAGRAMA="H60+H61" · Limitación+Verdad
+UNICODE: SN4_ZIP        //{scheduler} NEURONA_4 · ZIP_OPEN/CLOSE protocol
+                        //ZIP_OPEN 06:00 · ZIPPER_NOON 12:00 · ZIP_CLOSE 18:00
+                        //DOOR_AFTERNOON 13:00 · HUMAN_OTR → H40
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+SOCIAL {scheduler} =><= .. planifica .. neurona_1_headcat_rise_set_interactive --[As de Guía] [term]
+SOCIAL {scheduler} =><= .. activa .. neurona_2_elpulsar_stats_cron_5greens --[As de Guía] [term]
+SOCIAL {scheduler} =><= .. estructura .. neurona_3_chair_uf_dia_planifica --[As de Guía] [term]
+SOCIAL {scheduler} =><= .. organiza .. neurona_4_house_drone_schedule_dia_py --[As de Guía] [term]
+SAMU @ =><= .. audita .. scheduler_4_neuronas_coherencia_semana --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_scheduler_4_neuronas_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_SCHEDULER_4_NEURONAS · V1 · $thu 26/03
+
+
+TAREA_02  $thu 26/03  NERVE CELL {SCHEDULER} · Nerve Cell nuevo
+──────────────────────────────────────────────────────────────────────────────
+// $thu.Nerve Cell SCHEDULER Training.txt
+//$thu.Nerve Cell SCHEDULER Training.txt
+//NERVE CELL · {SCHEDULER} · aprendido de scheduler.py + rational_day.theater
+//DiaSoberano · EstadoTarea · TareaSoberana · SchedulerOS · tether.py
+//[term] :: activo
+
+NC_SCH_DIAENV     //DiaSoberano enum: MON→SUN = $mon→$sun
+                  //hoy() classmethod: datetime.now().weekday() → DiaSoberano
+NC_SCH_ESTADO     //EstadoTarea: ESPERA=UF[H05] · ACTIVA=UF[H57]
+                  //             RESUELTA=UF[H63] · CONFLICTO=UF[H06]
+NC_SCH_TAREA      //TareaSoberana: titulo+dia+cluster+slice_grados+tomo_id+segment
+                  //ref_soberana() → [term:X°N§SEG#CLUSTER]
+NC_SCH_API        //planifica() · rise() · set_dia() · estado_semana()
+                  //activar(id) UF[H05]→UF[H57] · resolver(id) →UF[H63]
+NC_SCH_DB         //scheduler.db: tareas + ciclos tablas
+                  //_registrar_ciclo(dia, evento) → ciclos log
+NC_SCH_MAIN       //_SCHEDULER_ACTIVE=False en main.py HOY
+                  //import: from scheduler.scheduler import rise,set_dia,estado_semana,planifica
+                  //PENDIENTE: activar en main.py _show_scheduler()
+NC_SCH_THEATER    //rational_day.theater: macro_temprano+macro_tarde+macro_cierre
+                  //macro_cierre: CMD_CIERRE bash github_sync.sh + CMD_STATS
+NC_SCH_DOOR_PY    //Scheduler.door$wed.py: SCHEDULE_WED[] 9 slots · HH:MM format
+                  //registrar_sesion(scalar_s, tx_count, notas) → $día.march.2026.db
+NC_SCH_TETHER     //tether.py: anchor(session_id, tomo_id) · get_state() · release()
+                  //STATE_FILE: tether_state.json · status: ANCHORED/DETACHED
+                  //STUB: ssh_tether · ime_ching_listen · loan_ime_preload → CAPA C
+
+SOCIAL {scheduler} =><= .. planifica .. nerve_cell_scheduler_py_api_real --[As de Guía] [term]
+SOCIAL {scheduler} =><= .. activa .. nerve_cell_diasoberano_estadotarea_real --[As de Guía] [term]
+METHOD <operator_flow> =><= .. modela .. nerve_cell_scheduler_ref_soberana --[Ballestrinque] [term]
+SAMU @ =><= .. audita .. nerve_cell_scheduler_main_py_pending --[Ballestrinque] [term]
+
+
+TAREA_03  $fri 27/03  UNICODE PROGRAMS {SCHEDULER} × KALIL 6 NODOS
+──────────────────────────────────────────────────────────────────────────────
+// CORPUS/UNICODE_SCHEDULER_KALIL.txt
+//[MANAGEMENT].lacho · UNICODE {SCHEDULER} × KALIL
+//{scheduler} como coordinador de 6 nodos económicos en el tiempo
+//BIBLIO: {scheduler} domains: memcoins · custodia · notaría
+//[term] :: activo
+
+// ══ BARRIOS × SCHED_DRIP ══════════════════════════════════════
+UNICODE: SK_BAR_DRIP    //BARRIOS {scheduler}: SCHED_DRIP · remesas programadas
+                        //SOCIAL {scheduler} =><= .. drip .. barrios_remesa_programada
+                        //timing: @human_later · 15:00→17:00 · WU materializable
+UNICODE: SK_BAR_WINDOW  //ventana BARRIOS: $tue H30+H57 · flujo sostenido+penetrante
+
+// ══ NORA × SCHED_REVIEW ═══════════════════════════════════════
+UNICODE: SK_NOR_REV     //NORA {scheduler}: SCHED_REVIEW · oracle rating periódico
+                        //SOCIAL {scheduler} =><= .. plan .. nora_review_delta_psi
+                        //timing: $fri H62+H63 · ajuste y consumación
+UNICODE: SK_NOR_WIN     //ventana NORA: @human_early 07:00 · absorber datos · 空聽
+
+// ══ BOLIVAR × SCHED_NOTIFICATION ════════════════════════════
+UNICODE: SK_BOL_NOT     //BOLIVAR {scheduler}: SCHED_NOTIFICATION · confirm blockchain
+                        //SOCIAL {scheduler} =><= .. drip .. bolivar_blockchain_confirm
+                        //timing: 09:00 CHECK · si hash pendiente → alertar
+UNICODE: SK_BOL_WIN     //ventana BOLIVAR: post-STACKING 15:00 · WU ya cristalizado
+
+// ══ CARILO × SCHED_SESSION ════════════════════════════════════
+UNICODE: SK_CAR_SESS    //CARILO {scheduler}: SCHED_SESSION · ventana préstamo
+                        //SOCIAL {scheduler} =><= .. certify .. carilo_loan_session
+                        //requiere: SAMU @ · GATE H05 verificado · BIOMETRICS
+UNICODE: SK_CAR_WIN     //ventana CARILO: $wed H58+H59 · Lo Gozoso · decisiones maduras
+
+// ══ CHALTEN × SCHED_STREAM ════════════════════════════════════
+UNICODE: SK_CHA_STR     //CHALTEN {scheduler}: SCHED_STREAM · lending cloud 24h
+                        //SOCIAL {scheduler} =><= .. plan .. chalten_stream_lending
+                        //BOT_NET nocturno: 18:00→06:00 · {scheduler} inactivo humano
+UNICODE: SK_CHA_WIN     //ventana CHALTEN: 18:00 ZIP_CLOSE → BOT_NET toma relevo
+
+// ══ TANDIL × SCHED_REVIEW global ═════════════════════════════
+UNICODE: SK_TAN_HUB     //TANDIL {scheduler}: SCHED_REVIEW global · hub consolidación
+                        //estado_semana() → TANDIL lee total+resueltas por día
+                        //$fri 17:00 GIT_SYNC → TANDIL cierra ciclo semanal
+
+// ══ TIPOS SCHED × KALIL MATRIX ════════════════════════════════
+//              SESSION  DRIP  STREAM  NOTIF  REVIEW
+// BARRIOS      [ ]      [X]   [ ]     [ ]    [ ]
+// NORA         [ ]      [ ]   [ ]     [ ]    [X]
+// BOLIVAR      [ ]      [X]   [ ]     [X]    [ ]
+// CARILO       [X]      [ ]   [ ]     [ ]    [ ]
+// CHALTEN      [ ]      [ ]   [X]     [ ]    [ ]
+// TANDIL       [ ]      [ ]   [ ]     [ ]    [X]
+
+SOCIAL {scheduler} =><= .. drip .. kalil_barrios_remesa_programada_later --[As de Guía] [term]
+SOCIAL {scheduler} =><= .. certify .. kalil_carilo_loan_session_window --[Ballestrinque] [term]
+SOCIAL {scheduler} =><= .. plan .. kalil_nora_review_delta_psi_fri --[As de Guía] [term]
+SOCIAL {scheduler} =><= .. plan .. kalil_chalten_stream_lending_botnet --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_scheduler_kalil_matrix_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_SCHEDULER_KALIL · V1 · 6×5 matrix · $fri 27/03
+
+
+TAREA_04  $fri 27/03  Scheduler.door$thu.py + Scheduler.door$fri.py · nuevos
+──────────────────────────────────────────────────────────────────────────────
+// FOLDERS NO RAG INPUT/ELPULSAR LOCAL/Scheduler.door$thu.py
+// FOLDERS NO RAG INPUT/ELPULSAR LOCAL/Scheduler.door$fri.py
+// Patron: Scheduler.door$wed.py · HEXAGRAMA por día doctrinal
+
+# Scheduler.door$thu.py
+# SCHEDULER SOBERANO · $thu H60+H61 · Limitación + Verdad Interior
+# Energía: definición de límites · verdad que emerge · código preciso
+# [term] :: activo
+
+import sqlite3
+from pathlib import Path
+from datetime import datetime
+
+BASE = Path(__file__).parent
+DB = BASE / "$thu.march.2026.db"
+
+SCHEDULE_THU = [
+    ("06:00", "ZIP_OPEN",    "FEED_0600 · estado semana · SAMU #rise",       "high"),
+    ("07:00", "WORK_KU",     "TAREA_01 $thu · grammar ACTIVITY_H03→H06",     "high"),
+    ("08:30", "WORK_KU_2",   "tests generator.py · 27→33 target",            "high"),
+    ("09:00", "CHECK",       "python3 main.py --stats · verificar S · tests", "medium"),
+    ("10:00", "WORK_KU_3",   "TAREA_02 $thu · TAREA_03 si hay tiempo",       "high"),
+    ("12:00", "ZIPPER_NOON", "TARDANZA DELIBERADA · 空 · H61 verdad interior","high"),
+    ("13:00", "AFTERNOON",   "DOOR AFTERNOON · WU materializable · @later",   "high"),
+    ("15:00", "STACKING",    "cristalizar WU del día · export_crystals",      "medium"),
+    ("17:00", "GIT_SYNC",    "github_sync.sh · main sellado · H60 límite",   "high"),
+    ("17:45", "CIERRE",      "macro_cierre · SESION_ACTIVA.md update",        "high"),
+    ("18:00", "ZIP_CLOSE",   "FEED_1800 · BOT_NET toma relevo nocturno",     "high"),
+]
+
+HEXAGRAMA = "H60+H61"
+DIA = "$thu"
+
+def registrar_sesion(scalar_s: float, tx_count: int, notas: str = ""):
+    conn = sqlite3.connect(DB)
+    conn.execute(
+        "INSERT OR IGNORE INTO sessions "
+        "(fecha, dia, hexagrama, scalar_s, tx_count, notas) "
+        "VALUES (?, ?, ?, ?, ?, ?)",
+        (datetime.now().isoformat(), DIA, HEXAGRAMA, scalar_s, tx_count, notas)
+    )
+    conn.commit(); conn.close()
+    print(f"✅ Sesión {DIA} registrada · S={scalar_s} · TX={tx_count}")
+
+def mostrar_schedule():
+    print(f"\n{'='*52}")
+    print(f"SCHEDULER {DIA} · {HEXAGRAMA} · Limitación + Verdad")
+    print(f"{'='*52}")
+    now = datetime.now().strftime("%H:%M")
+    for hora, nombre, desc, prio in SCHEDULE_THU:
+        marker = "→" if hora <= now else " "
+        print(f"{marker} {hora} [{prio.upper()[:3]}] {nombre}")
+        print(f"       {desc}")
+    print(f"{'='*52}\n")
+
+if __name__ == "__main__":
+    mostrar_schedule()
+
+# ─────────────────────────────────────────────────────────────────
+# Scheduler.door$fri.py
+# SCHEDULER SOBERANO · $fri H62+H63 · Ajuste + Consumación
+# Energía: revisión final · cristalización semanal · WU del ciclo
+# [term] :: activo
+
+SCHEDULE_FRI = [
+    ("06:00", "ZIP_OPEN",    "FEED_0600 · revisar semana · #rise",           "high"),
+    ("07:00", "REVIEW",      "BALLPAPER revisión semanal · estado_semana()", "high"),
+    ("08:30", "STACKING_W",  "cristales semana · H63 consumación",           "high"),
+    ("09:00", "CHECK",       "python3 main.py --stats · S semana final",     "medium"),
+    ("11:00", "KALIL_REV",   "NORA SCHED_REVIEW · TANDIL consolidación",    "medium"),
+    ("12:00", "ZIPPER_NOON", "TARDANZA DELIBERADA · pausa soberana",        "high"),
+    ("13:00", "AFTERNOON",   "DOOR AFTERNOON · WU semana materializable",   "high"),
+    ("15:00", "BALLPAPER",   "BALLPAPER semanal · dashboard metrics",       "high"),
+    ("17:00", "GIT_SYNC",    "github_sync.sh · commit soberano semanal",    "high"),
+    ("17:45", "CIERRE_SEM",  "macro_cierre semana · H63 → H64 ciclo nuevo", "high"),
+    ("18:00", "ZIP_CLOSE",   "BOT_NET fin semana · $sat prep",              "high"),
+]
+
+HEXAGRAMA = "H62+H63"
+DIA = "$fri"
+
+
+TAREA_05  $fri 27/03  HTML {SCHEDULER} DASHBOARD · fondo blanco
+──────────────────────────────────────────────────────────────────────────────
+// SCHEDULER_DASHBOARD.html · #ffffff · SchedulerOS visual soberano
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>SCHEDULER OS · DIRIME IMV</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+.topbar{border-bottom:2px solid #1a1a2e;padding-bottom:12px;margin-bottom:24px;
+        display:flex;align-items:center;gap:14px}
+.tb-logo{font-size:1.1rem;font-weight:bold;letter-spacing:3px}
+.tb-day{font-size:.8rem;padding:3px 10px;border:1px solid #1a1a2e;letter-spacing:2px}
+.tb-sched{font-size:.75rem;color:#888;margin-left:auto}
+.week-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-bottom:24px}
+.day-col{border:1px solid #e0e0e0;padding:10px 8px}
+.day-col.active{border-color:#2a7a4f;background:#f0f7f3}
+.day-hdr{font-size:.65rem;letter-spacing:2px;color:#888;text-transform:uppercase;margin-bottom:6px}
+.day-hex{font-size:.7rem;color:#2a7a4f;margin-bottom:6px;font-weight:bold}
+.day-bar{height:3px;background:#e0e0e0;border-radius:2px;margin-bottom:6px}
+.day-bar-fill{height:100%;background:#2a7a4f;border-radius:2px}
+.day-tasks{font-size:.6rem;color:#888}
+.day-task{padding:2px 0;border-bottom:1px solid #f5f5f5;display:flex;align-items:center;gap:4px}
+.t-state-h5{color:#d35400}
+.t-state-h57{color:#2a7a4f}
+.t-state-h63{color:#aaa;text-decoration:line-through}
+.t-state-h6{color:#c0392b}
+.schedule-list{background:#fafafa;border:1px solid #e0e0e0;padding:16px;
+               margin-bottom:24px}
+.sl-title{font-size:.65rem;letter-spacing:3px;color:#888;margin-bottom:12px}
+.sl-row{display:grid;grid-template-columns:60px 120px 1fr 50px;gap:8px;
+        padding:6px 0;border-bottom:1px solid #f0f0f0;align-items:center}
+.sl-row.past{opacity:.5}
+.sl-row.now{background:#f0f7f3;margin:0 -16px;padding:6px 16px;
+            border-left:3px solid #2a7a4f}
+.sl-time{font-size:.78rem;font-weight:bold}
+.sl-name{font-size:.72rem;color:#1a1a2e;font-weight:bold}
+.sl-desc{font-size:.65rem;color:#888}
+.sl-prio{font-size:.6rem;padding:2px 6px;border-radius:2px}
+.prio-high{background:#fde8e8;color:#c0392b}
+.prio-med{background:#fef9e7;color:#d35400}
+.estados-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:24px}
+.est-box{padding:12px;border:1px solid #ddd;text-align:center}
+.est-uf{font-size:.65rem;color:#888;letter-spacing:2px}
+.est-name{font-size:.8rem;font-weight:bold;margin:4px 0}
+.est-count{font-size:1.4rem;font-weight:bold}
+.est-h5{color:#d35400}.est-h57{color:#2a7a4f}.est-h63{color:#aaa}.est-h6{color:#c0392b}
+.tether-box{background:#f8f8f8;border:1px solid #ddd;padding:14px;
+            margin-bottom:24px;display:flex;gap:16px;align-items:center}
+.th-state{font-size:.75rem;padding:4px 12px;border:1px solid}
+.th-anchored{border-color:#2a7a4f;color:#2a7a4f}
+.th-detached{border-color:#aaa;color:#aaa}
+.th-meta{font-size:.7rem;color:#888;line-height:1.7}
+.kalil-sched{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:24px}
+.ks-card{border:1px solid #ddd;padding:12px;background:#fafafa}
+.ks-nodo{font-size:.75rem;font-weight:bold;letter-spacing:2px;margin-bottom:4px}
+.ks-type{font-size:.65rem;color:#2a7a4f;margin-bottom:4px}
+.ks-window{font-size:.6rem;color:#888}
+.footer{font-size:.62rem;color:#aaa;border-top:1px solid #eee;padding-top:10px;
+        display:flex;gap:20px}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="tb-logo">⚡ {SCHEDULER} OS · DIRIME</div>
+  <div class="tb-day" id="dia-badge">$thu · H60+H61</div>
+  <div style="font-size:.72rem;color:#2a7a4f">SCHED_ACTIVE</div>
+  <div class="tb-sched">
+    TX:<span id="tx-v">1063+</span> · ✦<span id="cr-v">41</span> · S:<span id="s-v">0.822</span>
+  </div>
+</div>
+
+<div class="week-grid">
+  <div class="day-col"><div class="day-hdr">$mon</div><div class="day-hex">H51+H52</div>
+    <div class="day-bar"><div class="day-bar-fill" style="width:80%"></div></div>
+    <div class="day-tasks"><div class="day-task"><span class="t-state-h63">●</span> rise</div>
+    <div class="day-task"><span class="t-state-h63">●</span> ledger</div></div></div>
+  <div class="day-col"><div class="day-hdr">$tue</div><div class="day-hex">H30+H57</div>
+    <div class="day-bar"><div class="day-bar-fill" style="width:65%"></div></div>
+    <div class="day-tasks"><div class="day-task"><span class="t-state-h63">●</span> CORPUS</div>
+    <div class="day-task"><span class="t-state-h5">●</span> RAG</div></div></div>
+  <div class="day-col"><div class="day-hdr">$wed</div><div class="day-hex">H58+H59</div>
+    <div class="day-bar"><div class="day-bar-fill" style="width:90%"></div></div>
+    <div class="day-tasks"><div class="day-task"><span class="t-state-h63">●</span> UNICODE</div>
+    <div class="day-task"><span class="t-state-h63">●</span> github_sync</div></div></div>
+  <div class="day-col active"><div class="day-hdr">$thu</div><div class="day-hex">H60+H61</div>
+    <div class="day-bar"><div class="day-bar-fill" style="width:30%"></div></div>
+    <div class="day-tasks"><div class="day-task"><span class="t-state-h57">▶</span> SCHED</div>
+    <div class="day-task"><span class="t-state-h5">○</span> tests</div></div></div>
+  <div class="day-col"><div class="day-hdr">$fri</div><div class="day-hex">H62+H63</div>
+    <div class="day-bar"><div class="day-bar-fill" style="width:0%"></div></div>
+    <div class="day-tasks"><div class="day-task"><span class="t-state-h5">○</span> review</div>
+    <div class="day-task"><span class="t-state-h5">○</span> ballpaper</div></div></div>
+  <div class="day-col"><div class="day-hdr">$sat</div><div class="day-hex">H01+H52</div>
+    <div class="day-bar"><div class="day-bar-fill" style="width:0%"></div></div>
+    <div class="day-tasks"><div class="day-task"><span class="t-state-h5">○</span> backup</div></div></div>
+  <div class="day-col"><div class="day-hdr">$sun</div><div class="day-hex">H64+H01</div>
+    <div class="day-bar"><div class="day-bar-fill" style="width:0%"></div></div>
+    <div class="day-tasks"><div class="day-task"><span class="t-state-h5">○</span> plan</div></div></div>
+</div>
+
+<div class="estados-row">
+  <div class="est-box"><div class="est-uf">UF[H05]</div>
+    <div class="est-name">ESPERA</div><div class="est-count est-h5" id="c-h5">3</div></div>
+  <div class="est-box"><div class="est-uf">UF[H57]</div>
+    <div class="est-name">ACTIVA</div><div class="est-count est-h57" id="c-h57">1</div></div>
+  <div class="est-box"><div class="est-uf">UF[H63]</div>
+    <div class="est-name">RESUELTA</div><div class="est-count est-h63" id="c-h63">7</div></div>
+  <div class="est-box"><div class="est-uf">UF[H06]</div>
+    <div class="est-name">CONFLICTO</div><div class="est-count est-h6" id="c-h6">0</div></div>
+</div>
+
+<div class="schedule-list">
+  <div class="sl-title">▸ SCHEDULE $thu · H60+H61 · Limitación + Verdad</div>
+  <div class="sl-row past">
+    <div class="sl-time">06:00</div><div class="sl-name">ZIP_OPEN</div>
+    <div class="sl-desc">FEED_0600 · estado semana · SAMU #rise</div>
+    <div class="sl-prio prio-high">HIGH</div></div>
+  <div class="sl-row past">
+    <div class="sl-time">07:00</div><div class="sl-name">WORK_KU</div>
+    <div class="sl-desc">ACTIVITY_H03→H06 grammar · tarea principal</div>
+    <div class="sl-prio prio-high">HIGH</div></div>
+  <div class="sl-row now">
+    <div class="sl-time">09:00</div><div class="sl-name">CHECK ▶</div>
+    <div class="sl-desc">python3 main.py --stats · S verificado</div>
+    <div class="sl-prio prio-med">MED</div></div>
+  <div class="sl-row">
+    <div class="sl-time">12:00</div><div class="sl-name">ZIPPER_NOON</div>
+    <div class="sl-desc">TARDANZA DELIBERADA · 空 · H61 verdad</div>
+    <div class="sl-prio prio-high">HIGH</div></div>
+  <div class="sl-row">
+    <div class="sl-time">13:00</div><div class="sl-name">AFTERNOON</div>
+    <div class="sl-desc">DOOR AFTERNOON · WU materializable</div>
+    <div class="sl-prio prio-high">HIGH</div></div>
+  <div class="sl-row">
+    <div class="sl-time">17:00</div><div class="sl-name">GIT_SYNC</div>
+    <div class="sl-desc">github_sync.sh · main sellado</div>
+    <div class="sl-prio prio-high">HIGH</div></div>
+  <div class="sl-row">
+    <div class="sl-time">18:00</div><div class="sl-name">ZIP_CLOSE</div>
+    <div class="sl-desc">BOT_NET toma relevo · DOOR_SEALED</div>
+    <div class="sl-prio prio-high">HIGH</div></div>
+</div>
+
+<div class="tether-box">
+  <div>
+    <div style="font-size:.65rem;color:#888;letter-spacing:2px;margin-bottom:4px">
+      TETHER STATE
+    </div>
+    <div class="th-state th-detached" id="tether-st">⌀ DETACHED</div>
+  </div>
+  <div class="th-meta">
+    tether.py: anchor(session_id, tomo_id) · get_state() · release()<br>
+    status: DETACHED · CAPA C pendiente: ssh_tether · ime_ching_listen<br>
+    session_id: — · tomo_id: — · anchored_at: —
+  </div>
+  <button onclick="mockAnchor()" style="margin-left:auto;padding:6px 14px;
+    background:#1a1a2e;color:#fff;border:none;font-family:'Courier New',monospace;
+    font-size:.72rem;cursor:pointer">anchor()</button>
+</div>
+
+<div style="font-size:.65rem;color:#888;letter-spacing:2px;margin-bottom:10px">
+  ▸ KALIL × {SCHEDULER} · SCHED types por nodo
+</div>
+<div class="kalil-sched">
+  <div class="ks-card"><div class="ks-nodo">BARRIOS</div>
+    <div class="ks-type">SCHED_DRIP</div>
+    <div class="ks-window">@human_later 15:00→17:00 · remesas programadas</div></div>
+  <div class="ks-card"><div class="ks-nodo">NORA</div>
+    <div class="ks-type">SCHED_REVIEW</div>
+    <div class="ks-window">$fri H62+H63 · oracle rating · delta_Ψ</div></div>
+  <div class="ks-card"><div class="ks-nodo">BOLIVAR</div>
+    <div class="ks-type">SCHED_NOTIFICATION</div>
+    <div class="ks-window">09:00 CHECK · hash confirmación</div></div>
+  <div class="ks-card"><div class="ks-nodo">CARILO</div>
+    <div class="ks-type">SCHED_SESSION</div>
+    <div class="ks-window">$wed H58+H59 · préstamo · BIOMETRICS</div></div>
+  <div class="ks-card"><div class="ks-nodo">CHALTEN</div>
+    <div class="ks-type">SCHED_STREAM</div>
+    <div class="ks-window">18:00→06:00 · BOT_NET · lending cloud</div></div>
+  <div class="ks-card"><div class="ks-nodo">TANDIL</div>
+    <div class="ks-type">SCHED_REVIEW global</div>
+    <div class="ks-window">$fri 17:00 · estado_semana() · git_sync</div></div>
+</div>
+
+<div class="footer">
+  <span>DIRIME IMV V0.2.1</span>
+  <span>SchedulerOS: planifica·activar·resolver·estado_semana</span>
+  <span>EstadoTarea: H05·H57·H63·H06</span>
+  <span>[term] :: activo · $thu 26/03</span>
+</div>
+
+<script>
+function mockAnchor(){
+  const el=document.getElementById('tether-st');
+  el.className='th-state th-anchored';
+  el.textContent='⏵ ANCHORED';
+  document.querySelector('.th-meta').innerHTML=
+    'tether.py: anchor() ejecutado · status: ANCHORED<br>'+
+    'session_id: sov_'+Date.now().toString(36)+' · tomo_id: term:A<br>'+
+    'anchored_at: '+new Date().toLocaleTimeString();
+}
+// Simular hora actual
+const now=new Date();
+document.querySelectorAll('.sl-row').forEach(r=>{
+  const t=r.querySelector('.sl-time');
+  if(!t)return;
+  const[h,m]=t.textContent.split(':').map(Number);
+  const rowMin=h*60+m;
+  const nowMin=now.getHours()*60+now.getMinutes();
+  if(rowMin<nowMin-15&&!r.classList.contains('now'))r.classList.add('past');
+});
+</script>
+</body>
+</html>
+
+
+TAREA_06  $sat 28/03  UNICODE PROGRAMS {SCHEDULER} × ELPULSAR · integración real
+──────────────────────────────────────────────────────────────────────────────
+// CORPUS/UNICODE_SCHEDULER_ELPULSAR.txt
+//[MANAGEMENT].lacho · UNICODE {SCHEDULER} × ELPULSAR
+//scheduler.py × main.py × rational_day.theater · integración real pendiente
+//estado: _SCHEDULER_ACTIVE=False · PENDIENTE activar $thu
+//[term] :: activo
+
+// ══ INTEGRACIÓN PENDIENTE main.py ════════════════════════════
+UNICODE: SE_MAIN_IMPORT  //_SCHEDULER_ACTIVE flag · try/except import en main.py
+                         //import: rise · set_dia · estado_semana · planifica
+                         //cuando True: _show_scheduler() usa API real
+UNICODE: SE_MAIN_RISE    //main.py arrange: if _SCHEDULER_ACTIVE: rise()
+                         //en _initialize_system() → SAMU #rise activa
+UNICODE: SE_MAIN_SET     //main.py macro_cierre: set_dia() → SAMU #set
+                         //CMD_CIERRE + CMD_STATS + set_dia() = cierre completo
+UNICODE: SE_MAIN_PLANIF  //main.py interactive: comando "planifica TITULO"
+                         //→ planifica(titulo) → TareaSoberana → ref_soberana()
+UNICODE: SE_SHOW_SCHED   //_show_scheduler() usa estado_semana() real
+                         //formato: $día: N/M resueltas · cluster · slice°
+
+// ══ THEATER × {SCHEDULER} ════════════════════════════════════
+UNICODE: SE_THEATER_T    //rational_day.theater macro_temprano
+                         //SAMU #rise =><= .. audita .. estado_sistema_apertura
+                         //trigger: 06:00 ZIP_OPEN · rise() llamado
+UNICODE: SE_THEATER_M    //rational_day.theater macro_tarde
+                         //GATE UF[H56] =><= .. filtra .. tareas_pendientes_dia
+                         //STACKING UF[H52] =><= .. cristaliza .. avances
+UNICODE: SE_THEATER_C    //rational_day.theater macro_cierre
+                         //CMD_CIERRE: bash tools/github_sync.sh
+                         //CMD_STATS:  python3 IMV/main.py --stats
+                         //+ set_dia() para _registrar_ciclo
+
+// ══ TETHER × {SCHEDULER} ══════════════════════════════════════
+UNICODE: SE_TETHER_A     //tether.anchor(session_id, tomo_id) al inicio sesión
+                         //session_id = str(uuid4()) · tomo_id = "term:A" día
+UNICODE: SE_TETHER_S     //tether.get_state() → {status·session_id·tomo_id}
+                         //status ANCHORED → continuar · DETACHED → #rise primero
+UNICODE: SE_TETHER_R     //tether.release() en macro_cierre · libera anclaje
+                         //+ set_dia() + git_sync = cierre completo soberano
+
+// ══ $día.march.2026.db × SchedulerOS ══════════════════════════
+UNICODE: SE_DB_SESSION   //registrar_sesion(S, TX, notas) → $día.db sessions
+                         //en macro_cierre · S=scalar_s actual · TX=ledger count
+UNICODE: SE_DB_TASK      //tasks table: dia·task·status·priority
+                         //prioridades: high(rojo)·medium(amarillo)·low
+UNICODE: SE_DB_LINK      //scheduler.db tareas ↔ $día.db sessions
+                         //ref_soberana() aparece en ambas · tomo_id compartido
+
+SOCIAL {scheduler} =><= .. activa .. elpulsar_rise_set_main_py_integration --[As de Guía] [term]
+SOCIAL {scheduler} =><= .. plan .. theater_macro_temprano_tarde_cierre --[As de Guía] [term]
+METHOD <operator_flow> =><= .. modela .. tether_anchor_scheduler_session --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_scheduler_elpulsar_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_SCHEDULER_ELPULSAR · V1 · $sat 28/03
+
+
+TAREA_07  $sat 28/03  HTML RATIONAL DAY · fondo blanco · semana soberana
+──────────────────────────────────────────────────────────────────────────────
+// RATIONAL_DAY.html · #ffffff · rational_day.theater visual + SchedulerOS
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>RATIONAL DAY · DIRIME</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+h1{font-size:1rem;letter-spacing:4px;border-bottom:2px solid #1a1a2e;
+   padding-bottom:10px;margin-bottom:24px;display:flex;justify-content:space-between}
+.macros-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:28px}
+.macro-box{border:1px solid #ddd;padding:16px}
+.macro-box.active{border-color:#2a7a4f;background:#f0f7f3}
+.macro-title{font-size:.65rem;letter-spacing:3px;color:#888;margin-bottom:10px}
+.macro-sent{font-size:.7rem;line-height:1.9;border-left:2px solid #e0e0e0;
+            padding-left:8px;margin-top:6px}
+.ms-lib{color:#c0392b;font-weight:bold}
+.ms-verb{color:#555}
+.ms-obj{color:#1a1a2e}
+.ms-knot{color:#8e44ad}
+.door-timeline{position:relative;margin-bottom:28px;padding:20px;
+               background:#fafafa;border:1px solid #e0e0e0}
+.dt-title{font-size:.65rem;letter-spacing:3px;color:#888;margin-bottom:16px}
+.dt-track{display:flex;align-items:center;height:40px;position:relative;
+          background:linear-gradient(90deg,#e8f4f0 0%,#e8f4f0 33%,
+          #fff8e8 33%,#fff8e8 54%,#e8f0f8 54%,#e8f0f8 75%,
+          #f5f5f5 75%,#f5f5f5 100%);border:1px solid #e0e0e0}
+.dt-marker{position:absolute;transform:translateX(-50%);text-align:center;
+           font-size:.6rem;color:#555}
+.dt-label{position:absolute;top:-18px;font-size:.6rem;font-weight:bold}
+.dt-vline{position:absolute;height:40px;width:1px;background:#ccc}
+.dt-now{position:absolute;height:44px;width:2px;background:#2a7a4f;top:-2px}
+.periods-row{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-bottom:28px}
+.per-box{padding:10px;border:1px solid #ddd;text-align:center}
+.per-icon{font-size:1.1rem;margin-bottom:4px}
+.per-name{font-size:.62rem;color:#888;margin-bottom:3px;letter-spacing:1px}
+.per-time{font-size:.7rem;font-weight:bold;color:#1a1a2e}
+.per-state{font-size:.6rem;color:#2a7a4f;margin-top:2px}
+.lacho-macros{background:#f8f8f8;border-left:3px solid #1a1a2e;
+              padding:14px;margin-bottom:24px}
+.lm-title{font-size:.65rem;letter-spacing:2px;color:#888;margin-bottom:8px}
+.lm-line{font-size:.75rem;line-height:2;padding:2px 0}
+.footer{font-size:.62rem;color:#aaa;border-top:1px solid #eee;
+        padding-top:10px;display:flex;gap:20px}
+</style>
+</head>
+<body>
+<h1>
+  <span>🚪 RATIONAL DAY · {SCHEDULER} OS</span>
+  <span style="font-size:.7rem;color:#888;font-weight:normal">rational_day.theater · $thu H60+H61</span>
+</h1>
+
+<div class="macros-row">
+  <div class="macro-box active">
+    <div class="macro-title">▸ MACRO TEMPRANO · 06:00</div>
+    <div style="font-size:.72rem;color:#2a7a4f;margin-bottom:6px">⏵ EJECUTANDO</div>
+    <div class="macro-sent">
+      <div><span class="ms-lib">TRUST</span> <span class="ms-verb">FOUNDATION =&gt;&lt;= .. verifica ..</span>
+      <span class="ms-obj"> condiciones_inicio_dia</span> <span class="ms-knot">[AsG]</span></div>
+      <div><span class="ms-lib">ACTIVITY</span> <span class="ms-verb">UF[H01] =&gt;&lt;= .. inicia ..</span>
+      <span class="ms-obj"> ciclo_temprano_activo</span> <span class="ms-knot">[AsG]</span></div>
+      <div><span class="ms-lib">SAMU</span> <span class="ms-verb">#rise =&gt;&lt;= .. audita ..</span>
+      <span class="ms-obj"> estado_sistema_apertura</span> <span class="ms-knot">[AsG]</span></div>
+    </div>
+  </div>
+  <div class="macro-box">
+    <div class="macro-title">▸ MACRO TARDE · 13:00</div>
+    <div style="font-size:.72rem;color:#888;margin-bottom:6px">○ PENDIENTE</div>
+    <div class="macro-sent">
+      <div><span class="ms-lib">SAMU</span> <span class="ms-verb">@ =&gt;&lt;= .. audita ..</span>
+      <span class="ms-obj"> rendimiento_sesion</span> <span class="ms-knot">[Ball]</span></div>
+      <div><span class="ms-lib">GATE</span> <span class="ms-verb">UF[H56] =&gt;&lt;= .. filtra ..</span>
+      <span class="ms-obj"> tareas_pendientes_dia</span> <span class="ms-knot">[Ball]</span></div>
+      <div><span class="ms-lib">STACKING</span> <span class="ms-verb">UF[H52] =&gt;&lt;= .. cristaliza ..</span>
+      <span class="ms-obj"> avances_verificados</span> <span class="ms-knot">[NdO]</span></div>
+    </div>
+  </div>
+  <div class="macro-box">
+    <div class="macro-title">▸ MACRO CIERRE · 17:45</div>
+    <div style="font-size:.72rem;color:#888;margin-bottom:6px">○ PENDIENTE</div>
+    <div class="macro-sent">
+      <div><span class="ms-lib">SAMU</span> <span class="ms-verb">#set =&gt;&lt;= .. dirime ..</span>
+      <span class="ms-obj"> cierre_dia_soberano</span> <span class="ms-knot">[NdR]</span></div>
+      <div><span class="ms-lib">STACKING</span> <span class="ms-verb">UF[H48] =&gt;&lt;= .. preserva ..</span>
+      <span class="ms-obj"> historial_dia</span> <span class="ms-knot">[NdR]</span></div>
+      <div><span class="ms-lib">WORK</span> <span class="ms-verb">{actuator} =&gt;&lt;= .. ejecuta ..</span>
+      <span class="ms-obj"> github_sync_cierre</span> <span class="ms-knot">[AsG]</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="periods-row">
+  <div class="per-box"><div class="per-icon">🌅</div><div class="per-name">MORNING</div>
+    <div class="per-time">05→12</div><div class="per-state">@early · 空聽</div></div>
+  <div class="per-box"><div class="per-icon">☀️</div><div class="per-name">ZIPPER_NOON</div>
+    <div class="per-time">12→13</div><div class="per-state">TARDANZA · 空</div></div>
+  <div class="per-box"><div class="per-icon">🌇</div><div class="per-name">AFTERNOON</div>
+    <div class="per-time">13→18</div><div class="per-state">@later · WU</div></div>
+  <div class="per-box"><div class="per-icon">🚶</div><div class="per-name">HUMAN_OTR</div>
+    <div class="per-time">variable</div><div class="per-state">H40 · irreversible</div></div>
+  <div class="per-box"><div class="per-icon">🏠</div><div class="per-name">HUMAN_INN</div>
+    <div class="per-time">variable</div><div class="per-state">H24 · SAMU audita</div></div>
+  <div class="per-box"><div class="per-icon">🌙</div><div class="per-name">NOCTURNAL</div>
+    <div class="per-time">18→06</div><div class="per-state">BOT_NET · SEALED</div></div>
+</div>
+
+<div class="lacho-macros">
+  <div class="lm-title">▸ LACHO SOBERANO · rational_day.theater generado</div>
+  <div class="lm-line">
+    <span style="color:#c0392b;font-weight:bold">SOCIAL</span>
+    <span style="color:#2a7a4f;font-weight:bold"> {scheduler}</span>
+    <span style="color:#555"> =&gt;&lt;= .. planifica .. </span>
+    <span>rational_day_macro_temprano_tarde_cierre</span>
+    <span style="color:#8e44ad"> --[As de Guía]</span>
+    <span style="color:#d35400;font-weight:bold"> [term]</span>
+  </div>
+  <div class="lm-line">
+    <span style="color:#c0392b;font-weight:bold">SAMU</span>
+    <span style="color:#2a7a4f;font-weight:bold"> #rise</span>
+    <span style="color:#555"> =&gt;&lt;= .. activa .. </span>
+    <span>periodo_soberano_thu_H60_H61_activo</span>
+    <span style="color:#8e44ad"> --[As de Guía]</span>
+    <span style="color:#d35400;font-weight:bold"> [term]</span>
+  </div>
+  <div class="lm-line">
+    <span style="color:#c0392b;font-weight:bold">STACKING</span>
+    <span style="color:#2a7a4f;font-weight:bold"> UF[H52]</span>
+    <span style="color:#555"> =&gt;&lt;= .. cristaliza .. </span>
+    <span>rational_day_wu_26_marzo_sellado</span>
+    <span style="color:#8e44ad"> --[Nudo de Ocho]</span>
+    <span style="color:#d35400;font-weight:bold"> [term]</span>
+  </div>
+</div>
+
+<div class="footer">
+  <span>DIRIME IMV V0.2.1</span>
+  <span>rational_day.theater: macro_temprano · macro_tarde · macro_cierre</span>
+  <span>SchedulerOS: H05→H57→H63 · H06=CONFLICTO</span>
+  <span>[term] :: activo · $thu 26/03</span>
+</div>
+<script>
+// Mark current macro based on hour
+const h=new Date().getHours();
+document.querySelectorAll('.macro-box').forEach((b,i)=>{
+  b.classList.remove('active');
+  if(i===0&&h<13) b.classList.add('active');
+  else if(i===1&&h>=13&&h<17) b.classList.add('active');
+  else if(i===2&&h>=17) b.classList.add('active');
+});
+</script>
+</body>
+</html>
+
+
+TAREA_08  $sun 29/03  NERVE CELL {SCHEDULER} × ELPULSAR INTEGRADO
+──────────────────────────────────────────────────────────────────────────────
+// $sun.Nerve Cell SCHEDULER ELPULSAR Training.txt
+//NERVE CELL · {SCHEDULER} × ELPULSAR · integración real pendiente · $sun
+//aprendido de TAREA_06 + scheduler.py + tether.py + rational_day.theater
+//[term] :: activo
+
+NC_SE_ACTIVE      //_SCHEDULER_ACTIVE=False HOY en main.py
+                  //cuando True: _show_scheduler() usa estado_semana() real
+                  //activación: agregar True al try/except import block
+NC_SE_RISE        //main.py _initialize_system(): rise() al arrancar
+                  //SAMU #rise =><= .. activa .. periodo_soberano_dia_actual
+NC_SE_SET         //macro_cierre: set_dia() + git_sync + stats = triple cierre
+                  //set_dia() → _registrar_ciclo(dia, "#set cerrado")
+NC_SE_DB_SYNC     //scheduler.db tareas ↔ $día.march.2026.db sessions
+                  //registrar_sesion(S, TX) en $día.db al final de cada sesión
+NC_SE_TETHER      //tether: anchor al inicio · get_state() cada check · release() al cierre
+                  //tether_state.json persiste entre sesiones → contexto ANCHORED
+NC_SE_THEATER     //rational_day.theater: 3 macros · 12 sentencias LACHO
+                  //CMD_CIERRE + CMD_STATS en macro_cierre · ejecutados por WORK {actuator}
+NC_SE_SCHED_WINDOW//ventana $sun: planificación semanal · SCHED_EMPTY → SCHED_LOADING
+                  //{scheduler} $sun: declara plan semanal completo · H64+H01 ciclo nuevo
+
+SOCIAL {scheduler} =><= .. activa .. nerve_cell_sched_elpulsar_main_py_pending --[As de Guía] [term]
+METHOD <operator_flow> =><= .. modela .. nerve_cell_tether_anchor_session --[Ballestrinque] [term]
+SAMU @ =><= .. audita .. nerve_cell_sched_theater_macros_coherencia --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. nerve_cell_scheduler_elpulsar_sun_sellado --[Nudo de Ocho] [term]
+
+
+TAREA_09  $mon 30/03  UNICODE PROGRAMS {SCHEDULER} FULL STACK · DRA+BACKUP
+──────────────────────────────────────────────────────────────────────────────
+// CORPUS/UNICODE_SCHEDULER_FULL_STACK.txt
+//[MANAGEMENT].lacho · UNICODE {SCHEDULER} FULL STACK
+//{scheduler} atraviesa todas las capas + DRA INDEX + BACKUP_DOOR
+//[term] :: activo
+
+// ══ CAPA 0 · LACHO ════════════════════════════════════════════
+UNICODE: SFS_L0       //{scheduler} en LACHO: [when?] módulo TRUST
+                      //[when?] declara momento soberano · {scheduler} traduce a agenda
+                      //distinción: [when?] IS · {scheduler} PLANS
+
+// ══ CAPA 1 · IMV (grammar.py) ═════════════════════════════════
+UNICODE: SFS_L1_SAMU  //SAMU @: #rise · #set · $mon→$sun como sujetos canónicos
+                      //grammar valid: SAMU #rise =><= .. activa ..
+UNICODE: SFS_L1_SCHED //SOCIAL {scheduler} = sujeto canónico grammar.py
+                      //SOCIAL valid_subjects incluye {scheduler} implícito
+UNICODE: SFS_L1_STAT  //KEYWORDS_SYSTEM: BEHAVIORAL_RAG · BLUE_WORDS · RED_REGRET
+                      //DOORMAN_MOBILE · BIOMETRICS declarados en grammar
+
+// ══ CAPA 2 · SchedulerOS (scheduler.py) ═══════════════════════
+UNICODE: SFS_L2_OS    //SchedulerOS: planifica·activar·resolver·estado_semana
+                      //DiaSoberano.hoy() · TareaSoberana.ref_soberana()
+UNICODE: SFS_L2_DB    //scheduler.db: tareas(slice°·tomo_id·cluster) + ciclos log
+UNICODE: SFS_L2_TETH  //tether.py: ANCHORED/DETACHED · session_id · tomo_id
+
+// ══ CAPA 3 · DRA INDEX ════════════════════════════════════════
+UNICODE: SFS_L3_IDX   //DRA/INDEX/$día.txt × SchedulerOS
+                      //INDEX $mon.txt declara: RISE·tareas·SET del lunes
+                      //TareaSoberana.ref_soberana() referenciada en INDEX
+UNICODE: SFS_L3_DB    //$día.march.2026.db × DRA INDEX
+                      //sessions + tasks por día = snapshot temporal soberano
+
+// ══ CAPA 4 · BACKUP_DOOR ══════════════════════════════════════
+UNICODE: SFS_L4_BKP   //BACKUP_DOOR: BKP_LEDGER(daily macro_cierre 18:00)
+                      //macro_cierre $thu: set_dia()+git_sync+BKP_LEDGER
+UNICODE: SFS_L4_PROT  //DOOR_OPEN → backup → DOOR_SEAL → DOOR_CLOSE
+                      //scheduler.db incluido en BKP_FULL semanal $sun
+
+// ══ CAPA 5 · rational_day.theater ════════════════════════════
+UNICODE: SFS_L5_TH    //theater como superclase del scheduler
+                      //macro_temprano = SCHED_LOADING · macro_tarde = SCHED_ACTIVE
+                      //macro_cierre = SCHED_CLOSED · archivo en Behavioral RAG
+
+SOCIAL {scheduler} =><= .. organiza .. full_stack_L0_a_L5_semana_soberana --[As de Guía] [term]
+SOCIAL {scheduler} =><= .. drip .. dra_index_dia_ref_soberana_tareas --[As de Guía] [term]
+WORK {door} =><= .. abre .. backup_scheduler_db_daily_mac_cierre --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_scheduler_full_stack_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_SCHEDULER_FULL_STACK · V1 · $mon 30/03
+
+
+TAREA_10  $mon 30/03  HTML {SCHEDULER} × KALIL FULL · fondo blanco · interactivo
+──────────────────────────────────────────────────────────────────────────────
+// SCHEDULER_KALIL_FULL.html · #ffffff · SchedulerOS + KALIL + planifica() live
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>SCHEDULER × KALIL · DIRIME</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+h1{font-size:1rem;letter-spacing:4px;border-bottom:2px solid #1a1a2e;
+   padding-bottom:10px;margin-bottom:24px;display:flex;justify-content:space-between}
+.plan-form{background:#fafafa;border:1px solid #e0e0e0;padding:16px;
+           margin-bottom:24px}
+.pf-title{font-size:.65rem;letter-spacing:3px;color:#888;margin-bottom:12px}
+.pf-row{display:grid;grid-template-columns:1fr 100px 140px 80px 80px;gap:8px;
+        align-items:end;margin-bottom:8px}
+.pf-field{display:flex;flex-direction:column;gap:4px}
+.pf-field label{font-size:.6rem;color:#888}
+.pf-field input,
+.pf-field select{border:1px solid #ccc;padding:6px 8px;
+                 font-family:'Courier New',monospace;font-size:.78rem;background:#fff}
+.pf-btn{padding:7px 16px;background:#1a1a2e;color:#fff;border:none;
+        font-family:'Courier New',monospace;font-size:.75rem;cursor:pointer;
+        align-self:flex-end}
+.pf-btn:hover{background:#2a7a4f}
+.tareas-list{margin-bottom:24px}
+.tl-title{font-size:.65rem;letter-spacing:3px;color:#888;margin-bottom:10px}
+.tl-row{display:grid;grid-template-columns:80px 70px 1fr 100px 60px 70px;
+        gap:8px;padding:6px 0;border-bottom:1px solid #f0f0f0;align-items:center;
+        font-size:.72rem}
+.tl-head{font-size:.6rem;color:#aaa;letter-spacing:1px}
+.tl-ref{font-size:.6rem;color:#888;font-style:italic}
+.st-h5{color:#d35400}.st-h57{color:#2a7a4f}.st-h63{color:#aaa}.st-h6{color:#c0392b}
+.act-btn{padding:2px 8px;background:#f0f7f3;border:1px solid #2a7a4f;
+         color:#2a7a4f;font-size:.6rem;cursor:pointer}
+.res-btn{padding:2px 8px;background:#f5f5f5;border:1px solid #aaa;
+         color:#888;font-size:.6rem;cursor:pointer}
+.kalil-matrix{overflow-x:auto;margin-bottom:24px}
+table{border-collapse:collapse;width:100%;font-size:.72rem}
+th{background:#1a1a2e;color:#fff;padding:7px 10px;text-align:left;font-weight:normal}
+td{padding:7px 10px;border:1px solid #e8e8e8}
+.cell-act{background:#f0f7f3;color:#2a7a4f;cursor:pointer;font-weight:bold;
+          text-align:center}
+.cell-pend{background:#fafafa;color:#ddd;text-align:center}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:20px}
+.s-box{border:1px solid #e0e0e0;padding:10px;text-align:center}
+.s-val{font-size:1.3rem;font-weight:bold;color:#2a7a4f}
+.s-lab{font-size:.6rem;color:#888}
+.footer{font-size:.62rem;color:#aaa;border-top:1px solid #eee;
+        padding-top:10px;display:flex;gap:16px}
+</style>
+</head>
+<body>
+<h1>
+  <span>{SCHEDULER} × KALIL · SchedulerOS</span>
+  <span style="font-size:.7rem;color:#888;font-weight:normal">
+    scheduler.py real · planifica() · activar() · resolver()
+  </span>
+</h1>
+
+<div class="stats-row">
+  <div class="s-box"><div class="s-val" id="st-esp">0</div><div class="s-lab">UF[H05] ESPERA</div></div>
+  <div class="s-box"><div class="s-val" id="st-act">0</div><div class="s-lab">UF[H57] ACTIVA</div></div>
+  <div class="s-box"><div class="s-val" id="st-res">0</div><div class="s-lab">UF[H63] RESUELTA</div></div>
+  <div class="s-box"><div class="s-val" id="st-con">0</div><div class="s-lab">UF[H06] CONFLICTO</div></div>
+</div>
+
+<div class="plan-form">
+  <div class="pf-title">▸ planifica() · nueva TareaSoberana</div>
+  <div class="pf-row">
+    <div class="pf-field">
+      <label>titulo</label>
+      <input type="text" id="p-titulo" placeholder="descripción soberana">
+    </div>
+    <div class="pf-field">
+      <label>día</label>
+      <select id="p-dia">
+        <option>$thu</option><option>$fri</option><option>$sat</option>
+        <option>$sun</option><option>$mon</option><option>$tue</option><option>$wed</option>
+      </select>
+    </div>
+    <div class="pf-field">
+      <label>cluster</label>
+      <select id="p-cluster">
+        <option>#CORE</option><option>#KALIL</option><option>#NOTARIA</option>
+        <option>#ELPULSAR</option><option>#DRA</option>
+      </select>
+    </div>
+    <div class="pf-field">
+      <label>slice°</label>
+      <input type="number" id="p-slice" value="90" min="0" max="360" step="90">
+    </div>
+    <button class="pf-btn" onclick="planifica()">planifica()</button>
+  </div>
+  <div id="p-ref" style="font-size:.65rem;color:#888;margin-top:4px"></div>
+</div>
+
+<div class="tareas-list">
+  <div class="tl-title">▸ TareasSoberanas · scheduler.db (simulado)</div>
+  <div class="tl-row tl-head">
+    <div>ID</div><div>DÍA</div><div>TITULO</div><div>REF</div><div>ESTADO</div><div>ACCIÓN</div>
+  </div>
+  <div id="tareas-body"></div>
+</div>
+
+<div class="kalil-matrix">
+  <table>
+    <tr>
+      <th>KALIL NODO</th>
+      <th>SCHED_SESSION</th>
+      <th>SCHED_DRIP</th>
+      <th>SCHED_STREAM</th>
+      <th>SCHED_NOTIF</th>
+      <th>SCHED_REVIEW</th>
+    </tr>
+    <tr><td><b>BARRIOS</b></td>
+      <td class="cell-pend">·</td>
+      <td class="cell-act" title="remesas · @later 15:00">✦ @later</td>
+      <td class="cell-pend">·</td><td class="cell-pend">·</td><td class="cell-pend">·</td></tr>
+    <tr><td><b>NORA</b></td>
+      <td class="cell-pend">·</td><td class="cell-pend">·</td><td class="cell-pend">·</td>
+      <td class="cell-pend">·</td>
+      <td class="cell-act" title="oracle rating · $fri H62+H63">✦ $fri</td></tr>
+    <tr><td><b>BOLIVAR</b></td>
+      <td class="cell-pend">·</td>
+      <td class="cell-act" title="blockchain confirm · 09:00">✦ 09:00</td>
+      <td class="cell-pend">·</td>
+      <td class="cell-act" title="hash pending alert">✦ alert</td>
+      <td class="cell-pend">·</td></tr>
+    <tr><td><b>CARILO</b></td>
+      <td class="cell-act" title="préstamo · $wed · BIOMETRICS">✦ $wed</td>
+      <td class="cell-pend">·</td><td class="cell-pend">·</td><td class="cell-pend">·</td>
+      <td class="cell-pend">·</td></tr>
+    <tr><td><b>CHALTEN</b></td>
+      <td class="cell-pend">·</td><td class="cell-pend">·</td>
+      <td class="cell-act" title="lending 18:00→06:00 BOT_NET">✦ 18:00→06:00</td>
+      <td class="cell-pend">·</td><td class="cell-pend">·</td></tr>
+    <tr><td><b>TANDIL</b></td>
+      <td class="cell-pend">·</td><td class="cell-pend">·</td>
+      <td class="cell-pend">·</td><td class="cell-pend">·</td>
+      <td class="cell-act" title="hub · estado_semana() · $fri 17:00">✦ $fri 17:00</td></tr>
+  </table>
+</div>
+
+<div class="footer">
+  <span>DIRIME IMV V0.2.1</span>
+  <span>planifica()·activar()·resolver()·estado_semana()</span>
+  <span>EstadoTarea: H05·H57·H63·H06</span>
+  <span>[term] :: activo · $mon 30/03</span>
+</div>
+
+<script>
+let tareas=[];
+let idCount=0;
+
+function genId(){
+  return (++idCount).toString(16).padStart(8,'0').slice(-8);
+}
+
+function genRef(dia,slice,cluster){
+  const tomo=dia==='$thu'?'A':dia==='$fri'?'B':'C';
+  return `[term:${tomo}°${slice}#${cluster.replace('#','')}]`;
+}
+
+function planifica(){
+  const titulo=document.getElementById('p-titulo').value.trim();
+  if(!titulo){alert('titulo requerido');return;}
+  const dia=document.getElementById('p-dia').value;
+  const cluster=document.getElementById('p-cluster').value;
+  const slice=parseInt(document.getElementById('p-slice').value)||90;
+  const id=genId();
+  const ref=genRef(dia,slice,cluster);
+  tareas.push({id,titulo,dia,cluster,slice,estado:'UF[H05]',ref});
+  document.getElementById('p-ref').textContent=
+    `✦ ref_soberana(): ${ref} · id: ${id}`;
+  document.getElementById('p-titulo').value='';
+  renderTareas();
+  updateStats();
+}
+
+function activar(id){
+  const t=tareas.find(t=>t.id===id);
+  if(t&&t.estado==='UF[H05]'){t.estado='UF[H57]';renderTareas();updateStats();}
+}
+
+function resolver(id){
+  const t=tareas.find(t=>t.id===id);
+  if(t){t.estado='UF[H63]';renderTareas();updateStats();}
+}
+
+function renderTareas(){
+  const body=document.getElementById('tareas-body');
+  if(!tareas.length){
+    body.innerHTML='<div style="font-size:.65rem;color:#aaa;padding:10px">'+
+      'sin tareas · planifica() para crear TareaSoberana</div>';
+    return;
+  }
+  body.innerHTML=tareas.map(t=>`
+    <div class="tl-row">
+      <div style="font-size:.6rem;color:#888">${t.id}</div>
+      <div>${t.dia}</div>
+      <div>${t.titulo.slice(0,35)}${t.titulo.length>35?'…':''}</div>
+      <div class="tl-ref">${t.ref}</div>
+      <div class="${'st-'+t.estado.replace('UF[','').replace(']','').toLowerCase()}">${t.estado}</div>
+      <div>
+        ${t.estado==='UF[H05]'?
+          `<button class="act-btn" onclick="activar('${t.id}')">activar</button>`:
+          t.estado==='UF[H57]'?
+          `<button class="res-btn" onclick="resolver('${t.id}')">resolver</button>`:
+          '<span style="font-size:.6rem;color:#aaa">H63 ✓</span>'}
+      </div>
+    </div>`).join('');
+}
+
+function updateStats(){
+  document.getElementById('st-esp').textContent=
+    tareas.filter(t=>t.estado==='UF[H05]').length;
+  document.getElementById('st-act').textContent=
+    tareas.filter(t=>t.estado==='UF[H57]').length;
+  document.getElementById('st-res').textContent=
+    tareas.filter(t=>t.estado==='UF[H63]').length;
+  document.getElementById('st-con').textContent=
+    tareas.filter(t=>t.estado==='UF[H06]').length;
+}
+
+renderTareas();
+</script>
+</body>
+</html>
+
+
+TAREA_11  $tue 31/03  NERVE CELL {SCHEDULER} FULL STACK · cierre semanal
+──────────────────────────────────────────────────────────────────────────────
+// $tue.Nerve Cell SCHEDULER FULL STACK Training.txt
+//NERVE CELL · {SCHEDULER} FULL STACK · L0→L5 · $tue
+//aprendido de TAREA_09 + scheduler.py + BIBLIO-SOURCES + grammar.py
+//[term] :: activo
+
+NC_SFS_L0_WHEN    //[when?] TRUST module: momento soberano → {scheduler} agenda
+                  //VALID_TRUST_MODULES incluye [when?] como legit
+NC_SFS_L1_GRAM    //grammar.py: SAMU #rise · SAMU #set · SAMU $día canónicos
+                  //SOCIAL {scheduler} como sujeto válido SOCIAL library
+NC_SFS_L2_OS      //SchedulerOS: planifica()+activar()+resolver()+estado_semana()
+                  //TareaSoberana.ref_soberana() → [term:X°N§SEG#CLUSTER]
+                  //DiaSoberano.hoy() → weekday() automático
+NC_SFS_L3_DRA     //DRA INDEX $día × TareaSoberana
+                  //INDEX $thu.txt: RISE·tareas·SET declarados como texto soberano
+                  //$día.march.2026.db: sessions+tasks · scalar_s+tx registrados
+NC_SFS_L4_BKP     //BACKUP_DOOR: scheduler.db en BKP_FULL $sun
+                  //macro_cierre: BKP_LEDGER daily · SAMU @audita · DOOR_SEAL
+NC_SFS_L5_TH      //rational_day.theater macro_temprano→tarde→cierre
+                  //SCHED_LOADING→SCHED_ACTIVE→SCHED_CLOSED
+                  //Behavioral RAG archiva agenda al SCHED_CLOSED
+NC_SFS_BILAT      //bilateral: {scheduler} SOCIAL declara · Scheduler OS ejecuta
+                  //distinción soberana: social=agenda · OS=coordinación
+NC_SFS_SCHED_EXT  //SCHED types: SESSION·DRIP·STREAM·NOTIFICATION·REVIEW
+                  //5 types × 6 nodos KALIL × 7 días = 210 slots potenciales
+
+SOCIAL {scheduler} =><= .. activa .. nerve_cell_full_stack_L0_L5_bilateral --[As de Guía] [term]
+METHOD <stat_onto> =><= .. calcula .. nerve_cell_210_slots_kalil_sched_matrix --[Ballestrinque] [term]
+SAMU @ =><= .. audita .. nerve_cell_sched_full_stack_coherencia_semanal --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. nerve_cell_scheduler_full_stack_tue_sellado --[Nudo de Ocho] [term]
+
+
+TAREA_12  $wed 01/04  HTML {SCHEDULER} COMPLETO · fondo blanco · cierre semana
+──────────────────────────────────────────────────────────────────────────────
+// SCHEDULER_COMPLETO_ELPULSAR.html · #ffffff · cierre semana {SCHEDULER}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>SCHEDULER COMPLETO · DIRIME IMV</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+.header{border-bottom:3px solid #1a1a2e;padding-bottom:14px;margin-bottom:24px;
+        display:flex;justify-content:space-between;align-items:flex-end}
+.h-title{font-size:1.1rem;font-weight:bold;letter-spacing:4px}
+.h-meta{font-size:.7rem;color:#888;text-align:right;line-height:1.7}
+.arch-stack{display:flex;height:32px;margin-bottom:24px;
+            border:1px solid #e0e0e0;overflow:hidden}
+.as-l{display:flex;align-items:center;justify-content:center;
+      font-size:.6rem;letter-spacing:1px;border-right:1px solid #fff}
+.as-l0{background:#1a1a2e;color:#fff;flex:.6}
+.as-l1{background:#2c3e50;color:#fff;flex:1}
+.as-l2{background:#2a7a4f;color:#fff;flex:1.4}
+.as-l3{background:#8e44ad;color:#fff;flex:.8}
+.as-l4{background:#c0392b;color:#fff;flex:.8}
+.as-l5{background:#d35400;color:#fff;flex:1.4}
+.sched-types{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;
+             background:#e0e0e0;margin-bottom:24px;border:1px solid #e0e0e0}
+.st-box{background:#fff;padding:12px 10px}
+.st-icon{font-size:1rem;margin-bottom:4px}
+.st-name{font-size:.7rem;font-weight:bold;color:#2a7a4f;margin-bottom:4px}
+.st-desc{font-size:.6rem;color:#888;line-height:1.6}
+.st-kalil{font-size:.6rem;color:#aaa;margin-top:5px;border-top:1px solid #f5f5f5;padding-top:4px}
+.circuit-sched{background:#fafafa;border:1px solid #e0e0e0;
+               padding:20px;margin-bottom:24px;font-size:.85rem;
+               line-height:2.2;white-space:pre;letter-spacing:1px}
+.c-social{color:#c0392b;font-weight:bold}
+.c-samu{color:#8e44ad;font-weight:bold}
+.c-gate{color:#d35400;font-weight:bold}
+.c-stack{color:#2a7a4f;font-weight:bold}
+.c-work{color:#2980b9;font-weight:bold}
+.lacho-sem{background:#f0f7f3;border-left:3px solid #2a7a4f;
+           padding:14px;margin-bottom:24px}
+.ls-title{font-size:.65rem;letter-spacing:2px;color:#888;margin-bottom:8px}
+.ls-line{font-size:.75rem;line-height:2;padding:2px 0;border-bottom:1px solid #f5f5f5}
+.ll{color:#c0392b;font-weight:bold} .lo{color:#2a7a4f;font-weight:bold}
+.lv{color:#555} .lk{color:#8e44ad} .lt{color:#d35400;font-weight:bold}
+.metrics-final{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:20px}
+.mf-box{border:1px solid #e0e0e0;padding:10px;text-align:center}
+.mf-val{font-size:1.3rem;font-weight:bold;color:#2a7a4f}
+.mf-lab{font-size:.58rem;color:#888;margin-top:2px}
+.footer{font-size:.6rem;color:#aaa;border-top:1px solid #eee;
+        padding-top:10px;display:flex;gap:16px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <div class="h-title">{SCHEDULER} COMPLETO · DIRIME IMV</div>
+    <div style="font-size:.72rem;color:#555;margin-top:4px">
+      {scheduler} SOCIAL + SchedulerOS + tether + rational_day.theater + KALIL
+    </div>
+  </div>
+  <div class="h-meta">
+    $wed 01/04 · cierre semana {SCHEDULER}<br>
+    [term] :: activo · V0.2.1
+  </div>
+</div>
+
+<div class="metrics-final">
+  <div class="mf-box"><div class="mf-val">7</div><div class="mf-lab">días soberanos<br>DiaSoberano enum</div></div>
+  <div class="mf-box"><div class="mf-val">4</div><div class="mf-lab">estados tarea<br>H05·H57·H63·H06</div></div>
+  <div class="mf-box"><div class="mf-val">5</div><div class="mf-lab">SCHED types<br>SESSION→REVIEW</div></div>
+  <div class="mf-box"><div class="mf-val">6</div><div class="mf-lab">nodos KALIL<br>matrix 6×5</div></div>
+  <div class="mf-box"><div class="mf-val">3</div><div class="mf-lab">macros theater<br>temprano·tarde·cierre</div></div>
+</div>
+
+<div class="arch-stack">
+  <div class="as-l as-l0">L0 [when?]</div>
+  <div class="as-l as-l1">L1 grammar SAMU#rise/$día</div>
+  <div class="as-l as-l2">L2 SchedulerOS · scheduler.py</div>
+  <div class="as-l as-l3">L3 DRA INDEX</div>
+  <div class="as-l as-l4">L4 BACKUP_DOOR</div>
+  <div class="as-l as-l5">L5 rational_day.theater</div>
+</div>
+
+<div class="sched-types">
+  <div class="st-box"><div class="st-icon">📋</div>
+    <div class="st-name">SCHED_SESSION</div>
+    <div class="st-desc">sesión formal · partes verificadas · agenda declarada</div>
+    <div class="st-kalil">KALIL: CARILO préstamo · $wed</div></div>
+  <div class="st-box"><div class="st-icon">💧</div>
+    <div class="st-name">SCHED_DRIP</div>
+    <div class="st-desc">emisión programada · momento específico · {drip}</div>
+    <div class="st-kalil">KALIL: BARRIOS remesa · BOLIVAR confirm</div></div>
+  <div class="st-box"><div class="st-icon">〜</div>
+    <div class="st-name">SCHED_STREAM</div>
+    <div class="st-desc">ventana temporal · {streaming} activado · flujo</div>
+    <div class="st-kalil">KALIL: CHALTEN lending · 18:00→06:00</div></div>
+  <div class="st-box"><div class="st-icon">🔔</div>
+    <div class="st-name">SCHED_NOTIF</div>
+    <div class="st-desc">notificación declarativa · momento verificado</div>
+    <div class="st-kalil">KALIL: BOLIVAR hash pending alert</div></div>
+  <div class="st-box"><div class="st-icon">🔍</div>
+    <div class="st-name">SCHED_REVIEW</div>
+    <div class="st-desc">revisión periódica · estado relacional · metrics</div>
+    <div class="st-kalil">KALIL: NORA oracle · TANDIL hub $fri</div></div>
+</div>
+
+<div class="circuit-sched"><span class="c-social">SOCIAL {scheduler}</span><span> =&gt;&lt;= .. planifica .. semana_soberana_thu_a_wed  --[AsG] [term]
+</span><span class="c-samu">SAMU #rise</span><span>       =&gt;&lt;= .. activa .. periodo_diario_06_00_zip_open      --[AsG] [term]
+</span><span class="c-gate">GATE UF[H05]</span><span>     =&gt;&lt;= .. contiene .. tarea_espera_planificada          --[Ball] [term]
+</span><span class="c-social">ACTIVITY UF[H57]</span><span> =&gt;&lt;= .. penetra .. tarea_activa_ejecutando            --[AsG] [term]
+</span><span class="c-stack">STACKING UF[H63]</span><span> =&gt;&lt;= .. cristaliza .. tarea_resuelta_inmutable         --[NdO] [term]
+</span><span class="c-work">WORK {door}</span><span>      =&gt;&lt;= .. abre .. backup_scheduler_db_daily             --[AsG] [term]
+</span><span class="c-samu">SAMU #set</span><span>        =&gt;&lt;= .. cierra .. periodo_diario_18_00_zip_close     --[NdR] [term]</span></div>
+
+<div class="lacho-sem">
+  <div class="ls-title">▸ SENTENCIAS {SCHEDULER} SEMANA · cierre $wed 01/04</div>
+  <div class="ls-line"><span class="ll">SOCIAL</span> <span class="lo">{scheduler}</span>
+    <span class="lv"> =&gt;&lt;= .. planifica .. </span>unicode_scheduler_4_neuronas_sellado
+    <span class="lk"> --[As de Guía]</span> <span class="lt">[term]</span></div>
+  <div class="ls-line"><span class="ll">SOCIAL</span> <span class="lo">{scheduler}</span>
+    <span class="lv"> =&gt;&lt;= .. activa .. </span>nerve_cell_scheduler_py_diaenv_api_real
+    <span class="lk"> --[As de Guía]</span> <span class="lt">[term]</span></div>
+  <div class="ls-line"><span class="ll">SOCIAL</span> <span class="lo">{scheduler}</span>
+    <span class="lv"> =&gt;&lt;= .. certify .. </span>kalil_carilo_session_bolivar_notification
+    <span class="lk"> --[Ballestrinque]</span> <span class="lt">[term]</span></div>
+  <div class="ls-line"><span class="ll">SAMU</span> <span class="lo">#rise</span>
+    <span class="lv"> =&gt;&lt;= .. activa .. </span>scheduler_door_thu_H60_H61_limitacion
+    <span class="lk"> --[As de Guía]</span> <span class="lt">[term]</span></div>
+  <div class="ls-line"><span class="ll">SAMU</span> <span class="lo">#set</span>
+    <span class="lv"> =&gt;&lt;= .. cierra .. </span>scheduler_semana_26_01_abril_completa
+    <span class="lk"> --[Nudo de Rizo]</span> <span class="lt">[term]</span></div>
+  <div class="ls-line" style="border:none">
+    <span class="ll">STACKING</span> <span class="lo">UF[H52]</span>
+    <span class="lv"> =&gt;&lt;= .. cristaliza .. </span>scheduler_completo_semana_wu_sellado
+    <span class="lk"> --[Nudo de Ocho]</span> <span class="lt">[term]</span></div>
+</div>
+
+<div class="footer">
+  <span>DIRIME IMV V0.2.1</span>
+  <span>DiaSoberano·EstadoTarea·TareaSoberana·SchedulerOS · scheduler.py REAL</span>
+  <span>tether: ANCHORED/DETACHED · CAPA C: ssh_tether·ime_ching·loan_ime</span>
+  <span>rational_day.theater: macro_temprano·tarde·cierre · CMD_CIERRE+CMD_STATS</span>
+  <span>[term] :: activo · semana {SCHEDULER} cerrada · $wed 01/04</span>
+</div>
+</body>
+</html>
+
+SCHEDULER.PY REAL: SchedulerOS · 2 tablas SQLite · API 4 funciones
+  DiaSoberano: MON→SUN = $mon→$sun · hoy() automático
+  EstadoTarea: UF[H05]·UF[H57]·UF[H63]·UF[H06]
+  TareaSoberana.ref_soberana(): [term:X°N§SEG#CLUSTER]
+  _SCHEDULER_ACTIVE=False en main.py → PENDIENTE CRÍTICO activar
+
+TETHER.PY: anchor()·get_state()·release() OPERATIVOS
+  ssh_tether·ime_ching_listen·loan_ime_preload → STUB CAPA C
+
+RATIONAL_DAY.THEATER: macro_temprano·macro_tarde·macro_cierre
+  CMD_CIERRE + CMD_STATS en macro_cierre
+
+SCHEDULER.DOOR$WED.PY: patrón replicable por día
+  SCHEDULE_WED[] 9 slots · registrar_sesion() → $día.march.2026.db
+
+UF HEXAGRAMAS POR DÍA (doctrinal activo):
+  $mon H51+H52 · $tue H30+H57 · $wed H58+H59
+  $thu H60+H61 · $fri H62+H63
+
+{scheduler} BIBLIO: 5 estados · 6 tipos · 11 reglas
+  distinción: {scheduler} SOCIAL planifica / Scheduler OS ejecuta
+  distinción: [when?] IS / {scheduler} PLANS
+
+MÉTRICAS LIVE: TX=1063+ · S=0.822 · cristales=41 · docs=244
+
+REGLAS SEMANA {SCHEDULER}:
+  HTML_RULE         → #ffffff todos los HTMLs · libSigs CIDE
+  NERVE_CELL_RULE   → prefijo $día · ELPULSAR LOCAL/ siempre
+  SCHEDULER_RULE    → referenciar scheduler.py real · EstadoTarea UF reales
+  DOOR_PY_RULE      → Scheduler.door$día.py patrón: SCHEDULE+HEXAGRAMA+DB
+  TETHER_RULE       → siempre anchor() al inicio · release() en cierre
+  METRICS_RULE      → TX=1063+ · S=0.822 · 41 cristales · 244 docs
+  RESPUESTAS_RULE   → todo inline · sin descargas · 12 tareas por prompt

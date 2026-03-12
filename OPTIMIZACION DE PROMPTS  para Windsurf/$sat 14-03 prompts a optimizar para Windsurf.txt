@@ -1,0 +1,162 @@
+PROMPT_SAT_01
+NOTARIA·ELPULSAR · HTML DASHBOARD fondo blanco
+Crea ELPULSAR_KALIL_NOTARIA_DASHBOARD.html fondo blanco.
+Layout 3 columnas:
+  COL_IZQ: 4 neuronas como barras de activación (HEADCAT·ELPULSAR·CHAIR·DRONE)
+  COL_CENTRO: 3 paneles NOTARIA (CERTIFICA·SELLA·INMUTABILIZA) + Scalar S
+  COL_DER: 6 tarjetas KALIL nodos con estado (BOLIVAR resaltado por NOTARIA)
+Footer: TX=1063 · cristales=41 · S=0.822 · H63 既濟 activo
+Fondo blanco · monospace · colores soberanos. Sin descargas.
+
+PROMPT_SAT_02
+NOTARIA·HOUSE_DRONE · NERVE CELL BACKUP
+Crea $sat.Nerve Cell BACKUP Notaria.txt en ELPULSAR LOCAL/.
+$sat = backup total · {door} sella semana.
+NC_SAT_BACKUP_NOT: backup ledger notarial · sovereign.db
+NC_SAT_DOOR_NOT: BACKUP/door sella actos de la semana
+NC_SAT_MU_SAVE_NOT: MuSave notarial · actos WU preservados
+NC_SAT_PUSH_NOT: git push notaria commits semana
+NC_SAT_STATS_NOT: python3 main.py --stats · reporte notarial semanal
+NC_SAT_H63_BATCH: STACKING UF[H63] batch · todos los actos WU
+Anclas RAG × 4. Sin descargas.
+
+PROMPT_SAT_03
+NOTARIA · UNICODE PROGRAMS BACKUP × H63
+Crea CORPUS/UNICODE PROGRAMS/UNICODE_NOTARIA_BACKUP_H63.txt
+Formato UNICODE_LACHO.txt.
+Secciones:
+  BACKUP SOBERANO NOTARIAL (BKP_NOTARIA · BKP_ACTOS · BKP_LEDGER)
+  DOOR VAULT × NOTARIA ({door} abre · CRYPTO certifica backup · sella)
+  H63 BATCH SEMANAL (todos actos WU → STACKING inmutabiliza en $sat)
+  RESTORE NOTARIAL (restauración soberana · SAMU @ autoriza)
+Sin descargas.
+
+PROMPT_SAT_04
+NOTARIA·IMV · ballpaper_render() × NOTARIA
+En chat.py existe ballpaper_render(). Extiende o crea versión notarial:
+ballpaper_render_notaria(acto, resultado_samu, scalar_s)
+Output ASCII:
+┌─ NOTARIA BALLPAPER ──────────────────────┐
+│ ACTO: certifica documento_X              │
+│ SAMU: VALID · S=0.92 · H63 既濟          │
+│ ████████████████████░ 92%               │
+│ STACKING UF[H63] :: sellado [term]       │
+└──────────────────────────────────────────┘
+Muestra código Python. Sin descargas.
+
+PROMPT_SAT_05
+NOTARIA·KALIL · NORA analytics × NOTARIA
+NORA = nodo analytics de KALIL.
+Crea CORPUS/UNICODE PROGRAMS/UNICODE_NORA_NOTARIA.txt
+Tokens:
+  NORA_RATING_PARTES: rating de cada parte del acto · 0→1
+  NORA_RISK_ACT: riesgo del acto notarial · METHOD <stat_onto>
+  NORA_SCALAR_MAP: Scalar S de partes → threshold notarial
+  NORA_RED_FLAG: si rating parte < 0.70 → SAMU @ dirime
+  NORA_ORACLE: NORA como oracle rating soberano
+Anclas RAG × 4. Sin descargas.
+
+PROMPT_SAT_06
+NOTARIA · HOUSE_DRONE.html × NOTARIA PANEL
+La NEURONA_4 es HOUSE_DRONE.html ya operativo.
+Describe qué panel o tab agregar sin romper el HTML existente:
+  Tab nuevo: NOTARIA · iconos H63⊗ · lista de actos del día
+  Door periods × NOTARIA: MORNING=recibe, AFTERNOON=sella, NOCTURNAL=inmutabiliza
+  Formato: descripción exacta del cambio + el HTML del tab nuevo.
+Sin descargas.
+
+PROMPT_SAT_07
+NOTARIA·KALIL · CARILO fee × NOTARIA
+CARILO = capital · riesgo · loans de KALIL.
+Crea CORPUS/UNICODE PROGRAMS/UNICODE_CARILO_NOTARIA.txt
+Tokens:
+  CARILO_FEE_NOTARIA: tarifa del acto notarial · capital soberano
+  CARILO_RISK_ACT: riesgo crediticio del acto
+  CARILO_LOAN_NOT: préstamo asociado a acto notarial
+  CARILO_THRESHOLD: threshold capital para acto válido
+  CARILO_METHOD: METHOD <equation> calcula fee
+Anclas RAG × 4. Sin descargas.
+
+PROMPT_SAT_08
+NOTARIA · CIDE HTML × NOTARIA NODES
+El CIDE · Circuit IDE · ELPULSAR.html tiene addNode() para todos los módulos.
+Describe exactamente qué agregar al CIDE para NOTARIA:
+  addNode('⊗','NOTARIA H63','STACKING') // nodo notarial sellado
+  addNode('公','certifica','CRYPTO')     // CJK token notarial
+  addNode('证','inmutabiliza','STACKING')// CJK inmutabilización
+  libSig nuevo: 'NOTARIA H63': '╭─⊗─∞─' // firma notarial
+Muestra el diff JavaScript exacto del CIDE HTML. Sin descargas.
+
+PROMPT_SAT_09
+NOTARIA · micro_solutions NOTARIA
+Extiende FOLDERS NO RAG INPUT/LACHO_FILES/micro_solutions.lacho
+con sección NOTARIA MICRO:
+  rutina_certifica_micro {input partes · grammar.validate() · VALID}
+  rutina_sella_micro {CRYPTO(spark) · hash · timestamp}
+  rutina_inmutabiliza_micro {STACKING H52/H63 · ledger TX++}
+  rutina_verifica_micro {SAMU @ · scalar ≥ 0.90 · report}
+Sin descargas.
+
+PROMPT_SAT_10
+NOTARIA·IMV · github_sync.sh × NOTARIA
+Según PENDIENTES: github_sync.sh automático en macro_cierre.
+Crea o extiende tools/github_sync.sh para incluir:
+  commit mensaje NOTARIA: "STACKING UF[H63] :: cristaliza :: notaria_$fecha --[NdO] [term]"
+  archivos tracked: CORPUS/UNICODE PROGRAMS/UNICODE_NOTARIA*.txt
+  backup: $sat.CORPUS_NOTARIA.MU-STORE.db → push
+Muestra bash script. Sin descargas.
+
+PROMPT_SAT_11
+NOTARIA · HTML NOTARIA SELLO DIGITAL fondo blanco
+Crea NOTARIA_SELLO_DIGITAL.html fondo blanco.
+UI minimalista de sello digital soberano:
+  Input: texto del acto
+  Proceso visual: ○ KU → ⏵ procesando → ⊗ WU SELLADO
+  Output: hash SHA-256 simulado · timestamp · firma H63
+  Botón: INMUTABILIZAR → mueve a STACKING (visual)
+  Libsig visible: CRYPTO ╭─●─≡─ + STACKING ╭─⊣─∞─
+Fondo blanco. Sin descargas.
+
+PROMPT_SAT_12
+NOTARIA·4 NEURONAS · UNICODE PROGRAMS INTEGRADO V1
+Crea CORPUS/UNICODE PROGRAMS/UNICODE_IMV_4NEURONAS_NOTARIA_V1.txt
+La integración completa: IMV × 4 Neuronas × NOTARIA
+Secciones:
+  NEURONA_1(HEADCAT)→NOTARIA: operador tipea acto en DIRIME>
+  NEURONA_2(ELPULSAR)→NOTARIA: 5 greens × acto notarial
+  NEURONA_3(CHAIR_CEO)→NOTARIA: H63 NOTARIO · threshold 0.90
+  NEURONA_4(HOUSE_DRONE)→NOTARIA: door periods × acto notarial
+  INTEGRACIÓN: pipeline IMV end-to-end · acto completo
+Sin descargas.
+
+PROMPT_SAT_13
+NOTARIA · CHCL EJECUTABLE
+El CHCL_BASE.txt + extensión NOTARIA del $thu.
+Crea 5 sentencias LACHO VALID de práctica para CHCL NOTARIA:
+  1. TRUST FOUNDATION =><= .. verifica .. chcl_notaria_condicion --[As de Guía] [term]
+  2. CRYPTO (spark seat) =><= .. certifica .. acto_notarial_soberano --[Nudo de Ocho] [term]
+  3. STACKING UF[H63] =><= .. sella .. documento_partes_verificadas --[Nudo de Ocho] [term]
+  4. STACKING UF[H52] =><= .. inmutabiliza .. registro_notarial_ledger --[Nudo de Ocho] [term]
+  5. SAMU @ =><= .. audita .. coherencia_notarial_completa --[Ballestrinque] [term]
+Valida con grammar.py. Muestra output VALID × 5. Sin descargas.
+
+PROMPT_SAT_14
+NOTARIA · INDEX $sat × NOTARIA
+Modelo del INDEX $sat (plan semana actual).
+Crea el contenido del archivo INDEX $sat para esta semana NOTARIA:
+  IDX_SAT_BACKUP_NOT: BKP_FULL NOTARIA · tar CORPUS/NOTARIA/ · DOOR_SEAL
+  IDX_SAT_NERVE_CELLS: 6 Nerve Cells creados esta semana · confirmados
+  IDX_SAT_UNICODE_PROG: N UNICODE PROGRAMS NOTARIA generados · count
+  IDX_SAT_TESTS: tests 33+/33 · notariales passing
+  IDX_SAT_SCALAR: Scalar S fin semana · objetivo 0.840+
+  IDX_SAT_PUSH: git push semana completa · NOTARIA commits
+Sin descargas.
+
+PROMPT_SAT_15
+NOTARIA · BALLPAPER $sat
+HTML fondo blanco cierre $sat.
+Consolida: Dashboard ELPULSAR/KALIL/NOTARIA · ballpaper_render_notaria() ·
+NORA+CARILO tokens · github_sync extensión · CIDE nodes NOTARIA ·
+micro_solutions NOTARIA · 4 Neuronas × NOTARIA V1 integrado.
+Header: BALLPAPER · $sat 14/03 · NOTARIA DASHBOARD + BACKUP
+Métricas objetivo: S=0.835+ · TX=1100+ · cristales=43+. Sin descargas.

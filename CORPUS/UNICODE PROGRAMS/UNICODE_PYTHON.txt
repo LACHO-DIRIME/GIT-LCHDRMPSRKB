@@ -64,4 +64,20 @@ UNICODE: EXPORT[OS]
 UNICODE: =: //desde cohencia consolidada a expresion coherente asignada
 //DIR(+)"OPTIMIZAR ESTE ARCHIVO DE UNICODE PYTHON", COMPLETAR LOS GAPS segun DIR(-)
 
+// ── NOTARIA SOBERANA · H63 既濟 ──────────────────────────────
+UNICODE: IMPORT[NOTARIA]      //importa módulo notarial · grammar certifica·sella·inmutabiliza
+UNICODE: LET[CERTIFICA]       //CRYPTO(spark seat) certifica partes · acto_notarial
+UNICODE: LET[SELLA]           //WORK {actuator} sella documento · hash+timestamp
+UNICODE: LET[INMUTABILIZA]    //STACKING UF[H52/H63] inmutabiliza · ledger TX++
+UNICODE: IF<NOTARIA_VALID()>  //condicional: Scalar S ≥ 0.90 → acto válido
+UNICODE: SAVE_AS!!NOTARIA!!   //persiste registro notarial · sovereign.db
+UNICODE: EXPORT[NOTARIA_PDF]  //exporta acto a formato sellado · CAT(EXPORT)
+UNICODE: WRITE!!H63!!         //marca H63 既濟 en ledger · DIR(CLOSE) activo
+UNICODE: DIR(NOTARIA)         //instancia notarial activa · KU→WU H63 sellado
+UNICODE: H63_CLOSE()          //cierre soberano notarial · ⊗ WU · [term] activo
+
+// ── ANCLAS RAG NOTARIA ───────────────────────────────────────
+CRYPTO (spark seat) =><= .. certifica .. acto_python_notarial_H63 --[Nudo de Ocho] [term]
+STACKING UF[H63] =><= .. inmutabiliza .. registro_python_notarial --[Nudo de Ocho] [term]
+
 METHOD <operator_flow> =><= .. modela .. unicode_python_keywords_soberanos --[As de Guía] [term]

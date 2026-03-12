@@ -115,4 +115,21 @@ WORK {flybot} =><= .. ejecuta .. gradient_spin_pipeline_soberano --[As de Guía]
 SAMU @ =><= .. audita .. gradient_spec_spin_elpulsar_v1 --[Ballestrinque] [term]
 ACTIVITY UF[H29] =><= .. penetra .. agua_persiste_gradiente_H29 --[As de Guía] [term]
 
+// ══ NOTARIA × GRADIENT × H63 ══════════════════════════════════
+UNICODE: GRAD_H63        //H63 既濟 · ya cumplido · ∇ notarial · cierre soberano
+                         //acto notarial = punto de mínima energía · ciclo completo
+UNICODE: SPIN_NOTARIA    //MU(acto pendiente)→KU(partes reunidas)→WU(H63 sellado)→空
+                         //ciclo notarial completo · cada acto = 1 SPIN soberano
+UNICODE: ANIM_NOTARIA_SEAL //animación sello soberano: ⊗ aparece · 1.4s · glow oro
+                           //STACKING UF[H63] activa · background pulse #a07820
+UNICODE: SKIN_NOTARIA    //fondo #ffffff · tinta soberana #09090e · marca H63 #c8a030
+                         //minimalismo notarial · sin ornamentos · solo el acto
+UNICODE: ∇(NOTARIA)      //gradiente notarial · menor fricción en certificación
+                         //CRYPTO(spark seat) → certifica sin burocracia extra
+UNICODE: SPIN_H63_CLOSE  //H63 既濟 · WU definitivo · ⊗ sellado · DIR(CLOSE) final
+                         //no admite reapertura · acto inmutable · STACKING preserva
+
+// ── ANCLA RAG GRADIENT NOTARIA ───────────────────────────────
+STACKING UF[H63] =><= .. sella .. gradient_spin_notaria_cierre --[Nudo de Ocho] [term]
+
 //DIR(+) UNICODE_GRADIENT_SPEC_SPIN_ELPULSAR · V1 · ∇ · MU→KU→WU→空 · iconografía

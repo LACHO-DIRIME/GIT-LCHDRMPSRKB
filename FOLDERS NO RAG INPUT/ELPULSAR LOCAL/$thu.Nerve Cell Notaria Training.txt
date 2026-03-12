@@ -1,0 +1,40 @@
+//$thu.Nerve Cell Notaria Training.txt
+//NERVE CELL · NOTARIA SOBERANA · aprendido de grammar.py + ceo_alpha + CHCL_BASE
+//H63 · 既濟 Lo ya Cumplido · acto notarial = ciclo cerrado soberano
+//[term] :: activo
+
+// ══ QUÉ APRENDE ESTA CELDA ════════════════════════════════════
+// Notaria vive en IMV/core/grammar.py (certifica·sella·inmutabiliza)
+// + CHCL_BASE.txt NOTARIA-DIGITAL + ceo_alpha H63 + STACKING UF[H63]
+// Acto notarial = DIR(CLOSE) soberano: KU→WU·H63·[term]
+
+// ══ VERBOS NOTARIALES × GRAMMAR ══════════════════════════════════
+NC_NOT_CERTIFICA     //CRYPTO (spark seat) certifica · grammar VALID ✅
+NC_NOT_SELLA         //WORK {actuator} sella · grammar VALID ✅
+NC_NOT_INMUTABILIZA  //STACKING UF[H52/H63] inmutabiliza · grammar VALID ✅
+
+// ══ SUJETOS NOTARIALES CANÓNICOS ══════════════════════════════════
+NC_NOT_SUJETOS       //CRYPTO(spark seat)·STACKING UF[H63]·TRUST[term]·WORK{actuator}
+NC_NOT_H63           //STACKING UF[H63]=既濟·acto cerrado·WU sellado·DIR(CLOSE)
+NC_NOT_CHCL_LINK     //CHCL_BASE.txt → NOTARIA-DIGITAL: certifica·sella·inmutabiliza
+
+// ══ SCALAR NOTARIAL ══════════════════════════════════════════════
+NC_NOT_SCALAR_THRESHOLD  //acto notarial requiere Scalar S ≥ 0.90 · más alto que default 0.88
+NC_NOT_SAMU_NOTARIO      //SAMU @ audita ANTES del sello · es paso obligatorio
+
+// ══ ESTADOS NOTARIALES ════════════════════════════════════════════
+NC_NOT_KU_PENDIENTE  //KU: partes reunidas · grammar validate() en curso · .blue
+NC_NOT_WU_SELLADO    //WU: acto certificado · [term] activo · .green · H63
+NC_NOT_INMUTABLE     //H63 既濟: registro final · STACKING UF[H63] · TX++
+
+// ══ CRYPTO SPARK × NOTARIA ══════════════════════════════════════
+NC_NOT_CRYPTO_SPARK  //CRYPTO (spark seat) es el asiento notarial activo
+                     //(spark seat) valida identidad + certifica en un paso
+NC_NOT_KALIL_BOLIVAR //nodo BOLIVAR gestiona contratos notariales blockchain
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+CRYPTO (spark seat) =><= .. certifica .. acto_notarial_soberano_H63 --[Nudo de Ocho] [term]
+STACKING UF[H63] =><= .. sella .. documento_notarial_inmutable --[Nudo de Ocho] [term]
+STACKING UF[H52] =><= .. inmutabiliza .. registro_notarial_ledger --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. coherencia_notarial_previa_al_sello --[Ballestrinque] [term]
+TRUST FOUNDATION =><= .. verifica .. condiciones_acto_notarial --[As de Guía] [term]

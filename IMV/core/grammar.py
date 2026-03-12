@@ -281,9 +281,12 @@ SUJETOS_CANONICOS = {
     "CRYPTO":   ["(spark seat)", "(shield seat)", "(key seat)", "(link seat)"],
     "SOCIAL":   ["{chair}", "{drip}", "{launch-bot}", "{masking}", "{tether}", "{scheduler}", "{relay}", "{headcat}", "{concierge-desk}", "{rocking-chair}", "{streaming}", "{handshake}", "{guest-services}"],
     "GATE":     ["UF[H03]", "UF[H05]", "UF[H56]", "UF[H06]"],
-    "STACKING": ["UF[H52]", "UF[H01]", "UF[H48]"],
+    "STACKING": ["UF[H52]", "UF[H01]", "UF[H48]", "UF[H63]"],
     "METHOD":   ["<equation>", "<operator_flow>", "<if>", "<loop>", "<stat_onto>"],
 }
+# NOTARIA GÉNESIS · $thu 2026-03-12 · H63 既濟
+# acto_notarial: objeto válido CRYPTO·STACKING·TRUST
+# UF[H63]: STACKING inmutabiliza acto cerrado
 
 @dataclass
 class ParsedSentence:

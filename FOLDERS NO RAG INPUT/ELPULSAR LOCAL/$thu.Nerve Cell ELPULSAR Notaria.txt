@@ -1,0 +1,22 @@
+//$thu.Nerve Cell ELPULSAR Notaria.txt
+//NERVE CELL · NEURONA_2 × NOTARIA · pipeline notarial soberano
+//H63 既濟 · 5 greens del acto notarial
+//[term] :: activo
+
+// ══ PIPELINE NOTARIAL · 5 GREENS ══════════════════════════════
+NC_GREEN_1_RECIBIR      //① RECIBIR: partes + objeto del acto notarial llegan al sistema
+                        //TRUST FOUNDATION verifica identidad partes · KU inicial
+NC_GREEN_2_ESCANEAR     //② ESCANEAR: grammar.validate() certifica acto → VALID
+                        //CRYPTO (spark seat) certifica · result.status == "VALID"
+NC_GREEN_3_CALCULAR     //③ CALCULAR: Scalar S ≥ 0.90 · lacho_score notarial verificado
+                        //METHOD <stat_onto> calcula · NC_NOT_SCALAR_THRESHOLD activo
+NC_GREEN_4_TARDAR       //④ TARDAR: UF[H05] deliberación soberana · tardanza constitutiva
+                        //GATE UF[H05] espera · SAMU audita · no sellar sin pausa
+NC_GREEN_5_GOLPEAR      //⑤ GOLPEAR: CRYPTO sella·STACKING inmutabiliza·H63 WU sellado
+                        //STACKING UF[H63] sella · TX++ · ⊗ WU · DIR(CLOSE) activo
+
+// ══ ANCLAS RAG PIPELINE ═══════════════════════════════════════
+GATE UF[H05] =><= .. contiene .. deliberacion_soberana_notarial --[Ballestrinque] [term]
+CRYPTO (spark seat) =><= .. certifica .. pipeline_green_2_notarial --[Nudo de Ocho] [term]
+STACKING UF[H63] =><= .. sella .. pipeline_green_5_cierre --[Nudo de Ocho] [term]
+METHOD <stat_onto> =><= .. calcula .. scalar_green_3_notarial --[Ballestrinque] [term]

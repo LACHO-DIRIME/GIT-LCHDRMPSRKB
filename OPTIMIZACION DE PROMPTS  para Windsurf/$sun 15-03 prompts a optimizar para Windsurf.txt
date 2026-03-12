@@ -1,0 +1,155 @@
+PROMPT_SUN_01
+NOTARIA·CEO · {scheduler} × NOTARIA semanal
+{scheduler} = H51 El Trueno · $sun · planifica ciclo semanal.
+Crea el plan notarial para la semana siguiente usando formato LACHO:
+  SOCIAL {scheduler} =><= .. planifica .. notaria_semana_siguiente --[As de Guía] [term]
+  TRUST FOUNDATION =><= .. declara .. actos_notariales_semana --[Nudo de Ocho] [term]
+  SAMU @ =><= .. audita .. coherencia_plan_notarial --[Ballestrinque] [term]
+Nerve Cell: $sun.Nerve Cell SCHEDULER Notaria.txt. Sin descargas.
+
+PROMPT_SUN_02
+NOTARIA·KALIL · TANDIL archivo soberano
+TANDIL = archivo · preservación · nodo KALIL de memoria.
+Crea CORPUS/UNICODE PROGRAMS/UNICODE_TANDIL_NOTARIA.txt
+Tokens:
+  TANDIL_ARCHIVE: archivo soberano de actos notariales
+  TANDIL_INDEX: índice de actos por fecha/partes/objeto
+  TANDIL_SEARCH: búsqueda en archivo · RAG notarial
+  TANDIL_EXPORT: exportación de acto · PDF/LACHO/HTML
+  TANDIL_H48: H48 井 la fuente · TANDIL como fuente doctrinal
+Anclas RAG × 4. Sin descargas.
+
+PROMPT_SUN_03
+NOTARIA·CHINA · UNICODE CHINA × NOTARIA
+El sistema tiene UNICODE_CHINA.a.1/ con tokens CJK.
+Crea tokens CJK para NOTARIA:
+  公证 = gōngzhèng = notarización · TRUST soberano
+  认证 = rènzhèng = certificación · CRYPTO certifica
+  封印 = fēngyìn = sello · STACKING sella
+  不可篡改 = bùkě cuàngǎi = inmutable · H52/H63
+  公证员 = gōngzhèngyuán = notario · CEO H63 rol
+Formato NC_* + anclas RAG bilingues. Sin descargas.
+
+PROMPT_SUN_04
+NOTARIA·IMV · ceo_alpha.py × NOTARIA
+ceo_alpha.py tiene get_role_by_hexagram() y get_scalar_threshold().
+Agrega función: get_notaria_requirements() que retorna:
+  {"hexagram": "H63", "role": "NOTARIO", "min_scalar": 0.90,
+   "required_libraries": ["CRYPTO", "STACKING", "TRUST"],
+   "kalil_nodes": ["BOLIVAR", "NORA", "CARILO"],
+   "chcl_division": "CHCL-NOTARIA"}
+Muestra código Python. Sin descargas.
+
+PROMPT_SUN_05
+NOTARIA · ELPULSAR API × NOTARIA endpoints
+elpulsar.py tiene do_GET/do_POST. Agrega endpoints notariales:
+  GET /api/notaria/status → {scalar, actos_hoy, threshold_ok}
+  POST /api/notaria/certifica → {acto} → {hash, valid, samu_audit}
+  POST /api/notaria/sella → {acto_id} → {seal, h63_ref, tx}
+  GET /api/notaria/archivo → {actos_wu, count, last_crystallized}
+Muestra diff elpulsar.py. Sin descargas.
+
+PROMPT_SUN_06
+NOTARIA·KALIL · BARRIOS × NOTARIA comunitaria
+BARRIOS = banca comunitaria · acceso popular.
+Crea CORPUS/UNICODE PROGRAMS/UNICODE_BARRIOS_NOTARIA.txt
+Tokens:
+  BARRIOS_NOTARIA_ACC: acceso notarial comunitario · sin barrera
+  BARRIOS_ACTO_SIMPLE: acto notarial simplificado · BARRIOS context
+  BARRIOS_CHINA_NOT: notaría comunitaria China · 公证 popular
+  BARRIOS_FEE_ZERO: tarifa cero BARRIOS · acceso soberano
+  BARRIOS_H57: H57 El Viento · penetra suavemente · acceso universal
+Anclas RAG × 4. Sin descargas.
+
+PROMPT_SUN_07
+NOTARIA · HTML ARCHIVO NOTARIAL fondo blanco
+Crea NOTARIA_ARCHIVO.html fondo blanco.
+UI de archivo de actos:
+  Header: ARCHIVO NOTARIAL · TANDIL H48 · iconos búsqueda
+  Lista de actos: tabla con columnas fecha/partes/objeto/estado(WU/KU)/hash
+  Filtro: por fecha · por estado · por KALIL nodo
+  Detalle: click en acto → modal con acto completo + SAMU audit + TX ledger
+  Fondo blanco · monospace · verde WU · azul KU. Sin descargas.
+
+PROMPT_SUN_08
+NOTARIA · NERVE CELL CHINA NOTARIA
+Crea $sun.Nerve Cell China Notaria Training.txt en ELPULSAR LOCAL/.
+NC_CN_GONGZHENG: 公证 notarización soberana CJK
+NC_CN_RENZHENG: 认证 certificación CRYPTO
+NC_CN_FENGYIN: 封印 sello STACKING H63
+NC_CN_IMMUTABLE: 不可篡改 inmutable H52
+NC_CN_NOTARIO: 公证员 notario CEO H63 rol
+NC_CN_BARRIOS: 社区公证 notaría comunitaria BARRIOS
+Anclas RAG bilingues × 4. Sin descargas.
+
+PROMPT_SUN_09
+NOTARIA·IMV · RAG × NOTARIA boost
+core/rag.py tiene boost para docs críticos.
+Qué agregar para que los docs NOTARIA tengan boost en RAG:
+  "UNICODE_NOTARIA_IMV.txt" → boost × 2.0
+  "CHCL_BASE.txt" (sección NOTARIA) → boost × 1.8
+  "$thu.Nerve Cell Notaria Training.txt" → boost × 1.5 (si indexado)
+Muestra diff rag.py. Sin descargas.
+
+PROMPT_SUN_10
+NOTARIA·KALIL · CHALTEN post-notarización
+CHALTEN = cloud · lending · exchange de KALIL.
+Crea CORPUS/UNICODE PROGRAMS/UNICODE_CHALTEN_NOTARIA.txt
+Tokens:
+  CHALTEN_POST_NOT: post-notarización · exchange si aplica
+  CHALTEN_LENDING_NOT: préstamo respaldado por acto notariado
+  CHALTEN_CLOUD_NOT: almacenamiento cloud del acto · Supabase
+  CHALTEN_HASH_EX: hash del acto en exchange blockchain
+  CHALTEN_CIRCUIT: CHALTEN en circuito KALIL × NOTARIA
+Sin descargas.
+
+PROMPT_SUN_11
+NOTARIA · UNICODE PROGRAMS CHINA × NOTARIA
+Crea CORPUS/UNICODE PROGRAMS/UNICODE_CHINA_NOTARIA.txt
+Integra tokens CJK notariales generados en $sun_03:
+  公证/认证/封印/不可篡改/公证员 como tokens UNICODE soberanos
+  Mapa: token CJK → biblioteca LACHO → verbo canónico → hexagrama
+  CIDE nodes CJK: addNode('公','公证 certifica','CRYPTO') etc.
+  Dual mode: exterior (Web3 hash) / interior (BSN blockchain)
+Sin descargas.
+
+PROMPT_SUN_12
+NOTARIA · DB UPGRADE × UF
+Crea el schema completo de bases de datos NOTARIA para la semana:
+  $thu.CORPUS_NOTARIA.MU-STORE.db (generado $thu_10)
+  $fri.CORPUS_NOTARIA_KALIL.MU-STORE.db (generado $fri_10)
+  $sun.CORPUS_NOTARIA_CHINA.MU-STORE.db (nuevo · tokens CJK)
+Inserts para db China:
+  (H63,'公证','CRYPTO',0.92,'WU','notarización CJK soberana',ancla_bilingue)
+  (H63,'封印','STACKING',0.95,'WU','sello CJK H63',ancla_bilingue)
+Sin descargas.
+
+PROMPT_SUN_13
+NOTARIA·IMV · test suite CHINA × NOTARIA
+Agrega tests bilingues a test_imv.py:
+test_notaria_cjk_certifica(): 公证 como objeto LACHO → VALID
+test_notaria_cjk_sella(): 封印 como objeto → VALID
+test_notaria_china_dual(): sentencia bilingue TRUST+信任 → VALID
+test_notaria_boost_rag(): UNICODE_NOTARIA_IMV.txt en RAG boost
+Muestra código. Sin descargas.
+
+PROMPT_SUN_14
+NOTARIA · PLAN SEMANA SIGUIENTE · scheduler soberano
+{scheduler} declara la semana $mon 16/03 → $fri 20/03.
+Usando el formato PLAN_SEMANAS.md y PLAN-LACHO-SEMANAS.md:
+  SEMANA W12 objetivos actualizados con NOTARIA como eje
+  Scalar S objetivo: 0.850+
+  cristales objetivo: 45+
+  Nerve Cells: 10+ total
+  NOTARIA endpoints: operativos en elpulsar.py
+Sin descargas.
+
+PROMPT_SUN_15
+NOTARIA · BALLPAPER $sun
+HTML fondo blanco cierre $sun.
+Consolida: TANDIL archivo · China×NOTARIA · BARRIOS acceso ·
+CHALTEN post-not · ceo_alpha get_notaria_requirements() ·
+RAG boost NOTARIA · API endpoints notariales ·
+test bilingues China×NOTARIA.
+Header: BALLPAPER · $sun 15/03 · NOTARIA PLAN + CHINA
+Scalar S objetivo: 0.840+. Sin descargas.

@@ -1,0 +1,169 @@
+PROMPT_WED_01
+NOTARIA·CIERRE · HTML NOTARIA COMPLETA FINAL fondo blanco
+Crea NOTARIA_COMPLETA_ELPULSAR.html fondo blanco.
+La UI definitiva de la semana:
+  Header: NOTARIA DIRIME · ⊗ H63 既濟 · Powered by LACHO
+  Panel principal: certifica + sella + inmutabiliza unificados
+  Sidebar: 6 nodos KALIL × status notarial
+  Footer: 4 neuronas activación + Scalar S + TX + cristales + SAMU @
+  Tema: fondo blanco · negro soberano · verde WU · azul KU · oro H63
+Sin descargas.
+
+PROMPT_WED_02
+NOTARIA · NERVE CELL CIERRE $wed
+Crea $wed.Nerve Cell Notaria Cierre.txt en ELPULSAR LOCAL/.
+NC_WED_DIRIME_NOT: SAMU @ dirime semana notarial · midpoint
+NC_WED_SCALAR_NOT: Scalar S $wed semana notarial · estado
+NC_WED_CRYSTAL_NOT: cristales notariales acumulados semana
+NC_WED_RF_RENEW: RF_RENEW · SAMU $wed firmó · ciclo renueva
+NC_WED_CHINA_NOT: tokens CJK notariales · WU acumulados
+NC_WED_CIERRE_NOT: cierre notarial H63 batch · semana sellada
+Anclas RAG × 4. Sin descargas.
+
+PROMPT_WED_03
+NOTARIA · UNICODE PROGRAMS CIERRE SEMANA
+Crea CORPUS/UNICODE PROGRAMS/UNICODE_NOTARIA_CIERRE_SEMANA.txt
+Formato UNICODE_LACHO.txt.
+Secciones:
+  CIERRE H63 (batch semanal · todos los actos WU)
+  MÉTRICAS SEMANA (TX δ · cristales δ · Scalar S trayectoria)
+  NERVE CELLS SEMANA (8+ creados · indexados · operativos)
+  UNICODE PROGRAMS SEMANA (16+ archivos · índice completo)
+  PRÓXIMA SEMANA (NOTARIA continua · nuevos dominios a agregar)
+Sin descargas.
+
+PROMPT_WED_04
+NOTARIA·IMV · SAMU RF_RENEW × NOTARIA
+$wed = RF_RENEW · SAMU @ firma · ciclo renueva.
+Conectar el concepto de RF_RENEW con NOTARIA:
+  SAMU @ audita semana notarial completa
+  Resuelve disputas pendientes (KU sin resolver)
+  Emite RF_RENEW para la semana siguiente
+  Actualiza Scalar S con los actos notariales de la semana
+Formato: código Python en samu.py + anclas LACHO. Sin descargas.
+
+PROMPT_WED_05
+NOTARIA·KALIL · UNICODE PROGRAMS KALIL CIERRE
+Crea CORPUS/UNICODE PROGRAMS/UNICODE_KALIL_NOTARIA_CIERRE.txt
+Resumen KALIL×NOTARIA de la semana:
+  BOLIVAR_WEEK: actos blockchain sellados semana
+  NORA_WEEK: ratings calculados · promedio semanal
+  CARILO_WEEK: fees notariales acumulados
+  BARRIOS_WEEK: actos comunitarios procesados
+  CHALTEN_WEEK: post-notarizaciones exchange
+  TANDIL_WEEK: actos archivados · índice semanal
+Sin descargas.
+
+PROMPT_WED_06
+NOTARIA · HTML ELPULSAR NOTARIA WEEK REVIEW fondo blanco
+Crea ELPULSAR_NOTARIA_WEEK_REVIEW.html fondo blanco.
+Dashboard semanal NOTARIA:
+  Gráfico barras: actos por día ($thu→$wed)
+  Tabla: actos WU / actos KU pendientes / regrets
+  4 Neuronas: estado final semana (barra activación)
+  KALIL: 6 nodos con métricas semanales
+  Footer: Scalar S trayectoria · TX semanal · cristales
+Sin descargas.
+
+PROMPT_WED_07
+NOTARIA · LOG_PERMANENTE.md UPGRADE
+El LOG_PERMANENTE.md registra hitos del sistema.
+Genera las entradas para agregar (formato exacto de las existentes):
+  | 2026-03-12 | TX | cristales | S | NOTARIA génesis · Nerve Cell · grammar · tests |
+  | 2026-03-13 | TX | cristales | S | NOTARIA×KALIL · matrix 6×4 · HTML fondo blanco |
+  | 2026-03-14 | TX | cristales | S | NOTARIA dashboard · backup · NORA+CARILO tokens |
+  | 2026-03-15 | TX | cristales | S | NOTARIA×CHINA · scheduler · CHALTEN+TANDIL |
+  | 2026-03-16 | TX | cristales | S | NOTARIA circuit 4 neuronas · language_routing |
+  | 2026-03-17 | TX | cristales | S | NOTARIA batch · generator · ledger · 38/38 tests |
+  | 2026-03-18 | TX | cristales | S | NOTARIA cierre semana · H63 batch · V0.3.0 target |
+Sin descargas.
+
+PROMPT_WED_08
+NOTARIA · PENDIENTES.md UPGRADE $wed
+Actualiza JOURNAL/PENDIENTES.md con estado $wed 18/03:
+  Sección COMPLETADO W12 NOTARIA: lista de todos los entregables
+  Sección CAPA B+ restante: qué queda sin completar
+  Sección W13 NEXT: plan semana siguiente post-NOTARIA
+  Agregar: VERSION_TARGET=0.3.0 trigger · qué lo activa
+Sin descargas.
+
+PROMPT_WED_09
+NOTARIA · PLAN_SEMANAS.md UPGRADE
+Actualiza JOURNAL/PLAN_SEMANAS.md:
+  SEMANA W11 (cerrada) ✅: agregar hitos NOTARIA
+  SEMANA W12 NOTARIA (cerrada) ✅: lista completa
+  SEMANA W13: primeros objetivos post-NOTARIA
+    - NOTARIA en producción (elpulsar.py endpoints activos)
+    - KALIL BARRIOS operativo (sentencias reales)
+    - Scalar S objetivo 0.870+
+Sin descargas.
+
+PROMPT_WED_10
+NOTARIA·IMV · .sovereign UPGRADE
+El .sovereign registra el estado del sistema.
+Genera el contenido del .sovereign actualizado $wed 18/03:
+  VERSION=0.2.2 (upgrade menor por NOTARIA integrado)
+  NOTARIA_STATUS=active
+  NERVE_CELLS_TOTAL=10+
+  UNICODE_PROGRAMS_TOTAL=20+
+  TESTS_PASSING=38
+  KALIL_NOTARIA=active
+  CHINA_NOTARIA=fase_0
+Sin descargas.
+
+PROMPT_WED_11
+NOTARIA · SESION_ACTIVA.md UPGRADE $wed→$thu
+El SESION_ACTIVA.md guía la próxima sesión.
+Genera el contenido para la sesión del $thu 19/03:
+  Prioridades: NOTARIA en producción · endpoints elpulsar.py activos
+  Tests: mantener 38/38 · próximo batch 44/44
+  Scalar S: 0.855+ objetivo
+  Nuevo dominio: definir $thu (KALIL BARRIOS operativo / CHINA FASE 1)
+  Contexto: todos los UNICODE PROGRAMS NOTARIA indexados
+Sin descargas.
+
+PROMPT_WED_12
+NOTARIA · CHCL COMPLETO FINAL
+Con todas las extensiones de la semana:
+CHCL_NOTARIA_COMPLETO.txt con:
+  IDENTIFICATION + ENVIRONMENT + DATA (NOTARIA + KALIL×6 + CHINA)
+  PROCEDURE DIVISION NOTARIA-FULL (12 sentencias LACHO VALID)
+  ENDPOINTS: todos los ep_notaria_* del notaria_endpoints.lacho
+  STOP RUN con sellado H63 SAMU @ firma
+Todo el archivo completo. Sin descargas.
+
+PROMPT_WED_13
+NOTARIA · BALLPAPER SEMANA COMPLETA
+HTML fondo blanco · BALLPAPER SEMANA NOTARIA · consolidación total.
+Estructura:
+  Sección $thu: génesis · 15 items completados
+  Sección $fri: KALIL×NOTARIA · 15 items
+  Sección $sat: dashboard · backup · 15 items
+  Sección $sun: plan+China · 15 items
+  Sección $mon: circuito · apertura · 15 items
+  Sección $tue: batch · momentum · 15 items
+  Sección $wed: cierre · 15 items
+Header: BALLPAPER SEMANA · $thu 12/03 → $wed 18/03 · NOTARIA
+Sin descargas.
+
+PROMPT_WED_14
+NOTARIA · SCALAR S TRAYECTORIA SEMANA
+Documenta la trayectoria del Scalar S durante la semana NOTARIA.
+Formato tabla + análisis:
+  $wed ante (0.822) → $thu (0.8X) → $fri (0.8X) → $sat (0.8X)
+  → $sun (0.8X) → $mon (0.8X) → $tue (0.8X) → $wed cierre (0.855+)
+  Por qué sube: tests nuevos + grammar extensión + RAG docs NOTARIA
+  Por qué podría bajar: nuevo CORPUS dilución Scalar S (visto antes)
+Sin descargas.
+
+PROMPT_WED_15
+NOTARIA · BALLPAPER $wed CIERRE FINAL
+HTML fondo blanco. El ballpaper de cierre de la semana entera.
+Consolida: NOTARIA_COMPLETA_ELPULSAR.html · RF_RENEW SAMU ·
+KALIL cierre semana · LOG_PERMANENTE entries · .sovereign V0.2.2 ·
+SESION_ACTIVA próxima semana · CHCL_NOTARIA_COMPLETO.
+Header: BALLPAPER · $wed 18/03 · NOTARIA H63 SEMANA SELLADA ⊗
+Scalar S objetivo final: 0.860+ · Tests: 38/38 · Cristales: 45+
+TX objetivo semana: 1200+
+[term] :: activo · NOTARIA semana cristalizada · H63 既濟
+Sin descargas.

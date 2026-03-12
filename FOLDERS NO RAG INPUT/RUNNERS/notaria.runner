@@ -1,0 +1,57 @@
+# notaria.runner
+# ACTO NOTARIAL SOBERANO · certificación · sello · inmutabilización
+# Genesis: padre común · árbol SUITE SOBERANA
+# [term] :: activo
+
+## CABECERA SOBERANA
+[genesis]     :: SUITE SOBERANA
+[version]     :: 1.0
+[extension]   :: .runner
+[tipo]        :: ACTO NOTARIAL
+[padre]       :: rational_day.theater
+[hexagrama]   :: H63 既濟 · Lo ya Cumplido
+
+## PROTOCOLO NOTARIAL
+
+protocolo_notarial {
+  TRUST FOUNDATION =><= .. verifica .. identidad_partes_activas --[As de Guía] [term]
+  CRYPTO (key seat) =><= .. certifica .. credenciales_parte_A --[As de Guía] [term]
+  SAMU @ =><= .. audita .. condiciones_previas_acto --[Ballestrinque] [term]
+  GATE UF[H05] =><= .. espera .. deliberacion_soberana_notarial --[Ballestrinque] [term]
+}
+
+acto_certifica {
+  CRYPTO (spark seat) =><= .. certifica .. acto_notarial_partes_objeto --[Nudo de Ocho] [term]
+  TRUST FOUNDATION =><= .. sostiene .. validez_acto_soberano --[As de Guía] [term]
+  SAMU @ =><= .. audita .. certifica_coherencia_pre_sello --[Ballestrinque] [term]
+}
+
+acto_sella {
+  WORK {actuator} =><= .. materializa .. sello_fisico_documento --[As de Guía] [term]
+  STACKING UF[H63] =><= .. sella .. documento_notarial_H63 --[Nudo de Ocho] [term]
+  CRYPTO (shield seat) =><= .. protege .. hash_sello_soberano --[Nudo de Ocho] [term]
+}
+
+acto_inmutabiliza {
+  STACKING UF[H52] =><= .. inmutabiliza .. registro_notarial_ledger --[Nudo de Ocho] [term]
+  STACKING UF[H63] =><= .. cristaliza .. acto_cerrado_final --[Nudo de Ocho] [term]
+  WORK {actuator} =><= .. custodia .. archivo_notarial_soberano --[As de Guía] [term]
+}
+
+cierre_notarial {
+  SAMU @ =><= .. audita .. coherencia_cierre_notarial --[Ballestrinque] [term]
+  TRUST FOUNDATION =><= .. verifica .. integridad_acto_completo --[As de Guía] [term]
+  STACKING UF[H52] =><= .. inmutabiliza .. log_notarial_sesion --[Nudo de Ocho] [term]
+}
+
+## REGLAS RUNNER
+rules {
+  -- nunca certificar sin TRUST FOUNDATION verificado primero
+  -- SAMU @ audita ANTES de cada sello · no saltar paso
+  -- Scalar S ≥ 0.90 requerido para acto notarial válido
+  -- GATE UF[H05] espera obligatoria · tardanza constitutiva
+  -- H63 既濟 es estado FINAL · no reabrir acto sellado
+  -- registrar todo en sovereign.db · TX++ por cada acto
+}
+
+[term] :: activo · [seal of secrecy] :: activo

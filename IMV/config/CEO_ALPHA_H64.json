@@ -190,10 +190,16 @@
       "threshold": "activa"
     },
     "H63": {
-      "name": "既濟",
-      "library": "ACTIVITY",
-      "verb": "completa",
-      "threshold": "after_end"
+      "library":          "STACKING",
+      "role":             "NOTARIO",
+      "name":             "既濟 H63 公证员 NOTARIO",
+      "cn":               "公证员",
+      "scalar_threshold": 0.90,
+      "kalil_node":       "BOLIVAR",
+      "action":           "sella_acto_soberano",
+      "hexagrama":        "既濟",
+      "unicode_sym":      "䷾",
+      "description":      "Lo ya Cumplido · acto notarial cerrado · DIR(CLOSE)"
     },
     "H64": {
       "name": "未濟",

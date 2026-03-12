@@ -1,0 +1,32 @@
+//$thu.Nerve Cell HOUSE DRONE Notaria.txt
+//NERVE CELL · HOUSE DRONE × NOTARIA · períodos del día × workflow notarial
+//NEURONA_4: HOUSE_DRONE.html mapea períodos SAMU al pipeline notarial
+//H63 既濟 · [term] :: activo
+
+// ══ HOUSE DRONE × NOTARIA WORKFLOW ════════════════════════════
+NC_HD_MORNING_NOTARIA    //HD_MORNING 06:00→12:00 · recibe actos del día
+                         //FEED_0600: partes llegan · TRUST verifica identidad
+                         //GATE UF[H05] espera · KU_PENDIENTE activos
+
+NC_HD_NOON_NOTARIA       //HD_NOON 12:00→13:00 · ZIP NOON · tardanza deliberada
+                         //TARDANZA_CONSTITUTIVA: SAMU audita cada acto pendiente
+                         //UF[H05] espera soberana · revisión partes · no sellar aún
+
+NC_HD_AFTERNOON_NOTARIA  //HD_AFTERNOON 13:00→18:00 · WU notarial del día
+                         //CRYPTO(spark seat) certifica batch tarde
+                         //STACKING UF[H63] sella batch · H63 WU·TX++ x N actos
+
+NC_HD_NOCTURNAL_NOTARIA  //HD_NOCTURNAL 18:00→06:00 · batch nocturno soberano
+                         //STACKING UF[H52] inmutabiliza todos los sellos del día
+                         //BOT_NET notarial · sovereign.db TX++ · ledger cierre
+
+// ══ DOOR × NOTARIA ════════════════════════════════════════════
+NC_HD_DOOR_NOTARIAL      //DOOR activo → actos pueden entrar al sistema
+                         //DOOR cerrado → solo inmutabilización nocturna
+NC_HD_SAMU_BATCH         //SAMU @ audita coherencia batch al final del día
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+GATE UF[H05] =><= .. espera .. actos_notariales_mañana_HDDRONE --[Ballestrinque] [term]
+SAMU @ =><= .. audita .. coherencia_notarial_HDDRONE_noon --[Ballestrinque] [term]
+STACKING UF[H63] =><= .. sella .. batch_notarial_tarde_HDDRONE --[Nudo de Ocho] [term]
+STACKING UF[H52] =><= .. inmutabiliza .. batch_nocturno_notarial --[Nudo de Ocho] [term]

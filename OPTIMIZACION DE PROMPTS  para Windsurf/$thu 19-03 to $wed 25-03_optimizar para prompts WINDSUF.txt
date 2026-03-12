@@ -1,0 +1,1158 @@
+<METHOD>=: <IMV(UNICODE PROGRAMAS[4 NEURONAS])
+          + ELPULSAR[UNICODE PROGRAMS(KALIL & 4 NEURONAS * UNICODE PROGRAMS)]>
+"valid_operators": [
+    "<equation>",       # cálculo · ratio · score · proyección
+    "<if>",             # bifurcación lógica · condición soberana
+    "<operator_flow>",  # flujo operativo · pipeline · routing
+    "<stat_onto>",      # estadística ontológica · Scalar S · delta-Ψ
+    "<psi_spin>",       # Ψ rotación · SPIN MU→KU→WU · ciclo completo
+]
+
+# Verbos canónicos METHOD:
+"define", "formaliza", "opera", "calcula", "estructura"
+
+# Sujetos canónicos METHOD:
+"<equation>", "<operator_flow>", "<if>", "<loop>", "<stat_onto>"
+
+# En TAXONOMY: level=1 · scalar_min=0.88 · class="biblioteca"
+# En language_routing INTENT_MAP:
+"calcular","modelar","proyectar","simular","ecuación",
+"derivar","ratio","métrica","formula","algoritmo"
+```
+
+**`<METHOD>` × 4 NEURONAS** = cada Nerve Cell tiene su operador METHOD dominante:
+```
+NEURONA_1 HEADCAT     → <operator_flow>  (flujo del operador en main.py)
+NEURONA_2 ELPULSAR    → <stat_onto>      (Scalar S · lacho_score · métricas)
+NEURONA_3 CHAIR CEO   → <equation>       (threshold × hexagrama × rol)
+NEURONA_4 HOUSE DRONE → <psi_spin>       (SPIN door periods · MU→KU→WU por hora)
+```
+
+**`<METHOD>` en KALIL** → `贷款→<equation>` · `智能→<operator_flow>` ya mapeados en `CJK_TOKEN_MAP`. Los 6 nodos KALIL tienen su ecuación nativa.
+
+**`<METHOD>` pendiente de implementar** (en `PENDIENTES.md` y `SESION_ACTIVA.md`):
+- `ACTIVITY_H03-H05-H06-H56` → secuencia GATE en grammar.py
+- `TAXONOMY_LACHO` en validador → `classify_sentence()` ya existe pero no integrada al output
+- `generator.py 6 tests` → de 27 a 33 tests
+
+---
+
+### 12 TAREAS — $thu 19/03 → $wed 25/03
+```
+TAREA_01  $thu 19/03  UNICODE PROGRAMS <METHOD> × 4 NEURONAS · mapeo operadores
+─────────────────────────────────────────────────────────────────
+// CORPUS/UNICODE_METHOD_4_NEURONAS.txt
+//[MANAGEMENT].lacho · UNICODE METHOD × 4 NEURONAS
+//METHOD como biblioteca formal × Nerve Cells existentes
+//operator_flow·stat_onto·equation·psi_spin × HEADCAT·ELPULSAR·CHAIR·DRONE
+//[term] :: activo
+
+// ══ <equation> × NEURONA_3 CHAIR CEO ═════════════════════════
+UNICODE: MN_EQ_H01    //<equation> H01 · Scalar_S(TRUST) ≥ 0.95 · núcleo
+UNICODE: MN_EQ_H32    //<equation> H32 · Scalar_S(SAMU) ≥ 0.90 · continuidad
+UNICODE: MN_EQ_H64    //<equation> H64 · Scalar_S(METHOD) ≥ 0.88 · ciclo abierto
+UNICODE: MN_EQ_THRESH //<equation> threshold(H) = CEO_ALPHA_H64.json[h]["scalar_threshold"]
+UNICODE: MN_EQ_KALIL  //<equation> 贷款 · ratio_riesgo_carilo · H42 · KALIL CARILO
+
+// ══ <operator_flow> × NEURONA_1 HEADCAT ══════════════════════
+UNICODE: MN_OF_EARLY  //<operator_flow> @human_early · pipeline absorbente · 空
+UNICODE: MN_OF_LATER  //<operator_flow> @human_later · pipeline ejecutivo · WU
+UNICODE: MN_OF_MAIN   //<operator_flow> main.py → chat() → validate() → record()
+UNICODE: MN_OF_ROUTE  //<operator_flow> language_routing.route() → INTENT_MAP → lib
+UNICODE: MN_OF_ZHI    //<operator_flow> 智能 → H50 · routing NLP chino activo
+
+// ══ <stat_onto> × NEURONA_2 ELPULSAR ══════════════════════════
+UNICODE: MN_SO_SCALAR //<stat_onto> Scalar_S = valid/total × (1-unresolved/10)
+UNICODE: MN_SO_LSCORE //<stat_onto> lacho_score = verde×0.5 + valid×0.3 + nudos×0.2
+UNICODE: MN_SO_DELTA  //<stat_onto> delta_Ψ = valor_soberano - costo + impacto
+UNICODE: MN_SO_CORPUS //<stat_onto> docs_244 · boost_crit×2.5 · BM25 query
+UNICODE: MN_SO_TESTS  //<stat_onto> 27/27 actual · target 33/33 post $thu
+
+// ══ <psi_spin> × NEURONA_4 HOUSE DRONE ═══════════════════════
+UNICODE: MN_PS_MU     //<psi_spin> MU · 05:00→06:00 · antes del ZIP_OPEN · 空聽
+UNICODE: MN_PS_KU_E   //<psi_spin> KU_EARLY · 06:00→09:00 · absorber · no emitir
+UNICODE: MN_PS_KU_N   //<psi_spin> KU_NOON · 12:00→13:00 · TARDANZA · pausa
+UNICODE: MN_PS_WU     //<psi_spin> WU · 13:00→18:00 · decisiones materializables
+UNICODE: MN_PS_VOID   //<psi_spin> →空 · 18:00→05:00 · BOTS · DOOR_SEALED
+
+// ══ LIBSIGS CIDE × METHOD ══════════════════════════════════════
+UNICODE: MN_LIBSIG_EQ   //METHOD <equation>   → ╭─∇─≈─ · gradiente+aproximación
+UNICODE: MN_LIBSIG_OF   //METHOD <operator_flow> → ╭─∇─⏵─ · gradiente+running
+UNICODE: MN_LIBSIG_SO   //METHOD <stat_onto>  → ╭─∇─⊛─ · gradiente+clock
+UNICODE: MN_LIBSIG_PS   //METHOD <psi_spin>   → ╭─∇─⟳─ · gradiente+rotación
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+METHOD <equation> =><= .. calcula .. threshold_ceo_alpha_por_hexagrama --[Ballestrinque] [term]
+METHOD <operator_flow> =><= .. modela .. headcat_pipeline_main_py_real --[Ballestrinque] [term]
+METHOD <stat_onto> =><= .. calcula .. scalar_s_lacho_score_elpulsar_244 --[Ballestrinque] [term]
+METHOD <psi_spin> =><= .. rota .. house_drone_mu_ku_wu_door_periods --[As de Guía] [term]
+SAMU @ =><= .. audita .. method_4_neuronas_threshold_coherencia --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_method_4_neuronas_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_METHOD_4_NEURONAS · V1 · $thu 19/03
+
+
+TAREA_02  $thu 19/03  NERVE CELL METHOD · nuevo Nerve Cell por operador
+─────────────────────────────────────────────────────────────────
+// $thu.Nerve Cell METHOD Training.txt
+//$thu.Nerve Cell METHOD Training.txt
+//NERVE CELL · METHOD · formalización soberana · aprendido de grammar.py
+//5 operadores: equation·if·operator_flow·stat_onto·psi_spin
+//[term] :: activo
+
+NC_METHOD_GRAMMAR   //grammar.py: Library.METHOD · mode=enumerable
+                    //valid_operators = 5 · delimitadores < >
+                    //Prioridad 0 en parser: detectado antes que otros
+NC_METHOD_EQ        //<equation> · cálculo formal · ratio · score · proyección
+                    //贷款→H42 · CARILO ratio_riesgo · threshold CEO
+NC_METHOD_OF        //<operator_flow> · pipeline · routing · flujo operativo
+                    //language_routing DEFAULT_SUBJECT = "<equation>"
+                    //智能→H50 · NORA oracle · main.py pipeline
+NC_METHOD_SO        //<stat_onto> · estadística ontológica · Scalar S
+                    //delta_Ψ fórmula · lacho_score breakdown
+                    //classify_sentence() → taxonomy_level+scalar_min
+NC_METHOD_IF        //<if> · bifurcación soberana · condición verificable
+                    //GATE H03→H05→H56→H06 secuencia · condición de ACTIVITY
+NC_METHOD_PS        //<psi_spin> · Ψ rotación · SPIN soberano
+                    //SPIN_CYCLE MU→KU→WU→空→MU · Scalar S rate
+NC_METHOD_VERB      //verbos canónicos: define·formaliza·opera·calcula·estructura
+NC_METHOD_INTENT    //INTENT_MAP METHOD: calcular·modelar·proyectar·simular·
+                    //ecuación·derivar·ratio·métrica·formula·algoritmo
+NC_METHOD_TAXONOMY  //TAXONOMY: level=1 · scalar_min=0.88 · class=biblioteca
+                    //classify_sentence() score: base+verb+sujeto+nudo+warnings
+
+METHOD <operator_flow> =><= .. modela .. nerve_cell_method_grammar_real --[Ballestrinque] [term]
+METHOD <stat_onto> =><= .. calcula .. nerve_cell_method_taxonomy_score --[Ballestrinque] [term]
+METHOD <equation> =><= .. calcula .. nerve_cell_method_threshold_0_88 --[As de Guía] [term]
+SAMU @ =><= .. audita .. nerve_cell_method_5_operadores_validos --[Ballestrinque] [term]
+
+
+TAREA_03  $fri 20/03  UNICODE PROGRAMS <METHOD> × KALIL 6 NODOS
+─────────────────────────────────────────────────────────────────
+// CORPUS/UNICODE_METHOD_KALIL.txt
+//[MANAGEMENT].lacho · UNICODE METHOD × KALIL 6 NODOS
+//cada nodo KALIL tiene su operador METHOD dominante + ecuación nativa
+//贷款→<equation> · 智能→<operator_flow> ya en CJK_TOKEN_MAP
+//[term] :: activo
+
+// ══ BARRIOS × <operator_flow> ════════════════════════════════
+UNICODE: MK_BAR_OF    //BARRIOS <operator_flow> · flujo banca comunitaria
+                      //Banking Access Remote Resources · routing diáspora
+UNICODE: MK_BAR_PIPE  //pipeline: remesa→BARRIOS→{actuator}→ledger
+UNICODE: MK_BAR_ZH    //社区→H13 · {chair} · comunidad soberana
+
+// ══ NORA × <stat_onto> ════════════════════════════════════════
+UNICODE: MK_NOR_SO    //NORA <stat_onto> · oracle rating · Scalar S por contraparte
+UNICODE: MK_NOR_DELTA //delta_Ψ_NORA = rating_actual - rating_baseline + impacto_mercado
+UNICODE: MK_NOR_ZH    //智能→H50 · <operator_flow> · analítica inteligente
+
+// ══ BOLIVAR × <if> ════════════════════════════════════════════
+UNICODE: MK_BOL_IF    //BOLIVAR <if> · bifurcación blockchain · VALID/FAIL hash
+UNICODE: MK_BOL_COND  //<if> hash_verificado: → CRYPTO (key seat) certifica
+                      //<if> hash_fallido:    → GATE UF[H06] bloquea
+UNICODE: MK_BOL_HL    //HL FABRIC compatible · CRYPTO (shield seat) protege
+
+// ══ CARILO × <equation> ═══════════════════════════════════════
+UNICODE: MK_CAR_EQ    //CARILO <equation> · ratio_riesgo · score_prestamo
+UNICODE: MK_CAR_FORM  //equation: R = (capital × plazo) / (score_NORA × garantia)
+UNICODE: MK_CAR_ZH    //贷款→H42 · <equation> · préstamo calculado soberano
+
+// ══ CHALTEN × <psi_spin> ══════════════════════════════════════
+UNICODE: MK_CHA_PS    //CHALTEN <psi_spin> · lending cloud · exchange spin
+UNICODE: MK_CHA_CYCLE //SPIN: deposito(KU)→verificacion(SAMU)→prestamo(WU)→repago(空)
+UNICODE: MK_CHA_TIER  //FT_ROTATE aplicado · Railway+Fly+Supabase · cloud lending
+
+// ══ TANDIL × <operator_flow> + <stat_onto> ════════════════════
+UNICODE: MK_TAN_OF    //TANDIL <operator_flow> · nodo de consolidación · hub
+UNICODE: MK_TAN_SO    //TANDIL <stat_onto> · métricas globales KALIL · dashboard
+UNICODE: MK_TAN_NET   //neural_net.py build_graph() · TANDIL como hub cluster
+
+// ══ MATRIX 6×5 KALIL × METHOD ═════════════════════════════════
+//          <eq>   <if>   <of>   <so>   <ps>
+// BARRIOS  [ ]   [ ]    [X]    [ ]    [ ]
+// NORA     [ ]   [ ]    [X]    [X]    [ ]
+// BOLIVAR  [ ]   [X]    [ ]    [ ]    [ ]
+// CARILO   [X]   [ ]    [ ]    [ ]    [ ]
+// CHALTEN  [ ]   [ ]    [ ]    [ ]    [X]
+// TANDIL   [ ]   [ ]    [X]    [X]    [ ]
+
+METHOD <equation> =><= .. calcula .. kalil_carilo_ratio_riesgo_prestamo --[Ballestrinque] [term]
+METHOD <operator_flow> =><= .. modela .. kalil_barrios_flujo_banca_comunitaria --[Ballestrinque] [term]
+METHOD <if> =><= .. bifurca .. kalil_bolivar_hash_valido_invalido --[As de Guía] [term]
+METHOD <stat_onto> =><= .. calcula .. kalil_nora_oracle_rating_delta --[Ballestrinque] [term]
+METHOD <psi_spin> =><= .. rota .. kalil_chalten_lending_cloud_ciclo --[As de Guía] [term]
+
+//DIR(+) UNICODE_METHOD_KALIL · V1 · 6×5 matrix · $fri 20/03
+
+
+TAREA_04  $fri 20/03  NERVE CELL METHOD × KALIL · nuevo Nerve Cell
+─────────────────────────────────────────────────────────────────
+// $fri.Nerve Cell METHOD KALIL Training.txt
+//NERVE CELL · METHOD × KALIL · operadores formales × nodos económicos
+//aprendido de TAREA_03 + cloud_agent.blue KALIL section + grammar.py CJK_TOKEN_MAP
+//[term] :: activo
+
+NC_MK_CJK_MAP   //CJK_TOKEN_MAP activo en grammar.py:
+                //贷款→(METHOD,<equation>,H42) · 智能→(METHOD,<operator_flow>,H50)
+                //风险→(GATE,UF[H06]) · 银行→(SOCIAL,{launch-bot},H07)
+NC_MK_CARILO    //CARILO <equation> · ratio_riesgo · R=(capital×plazo)/(score×garantia)
+                //primer nodo con ecuación nativa declarada
+NC_MK_NORA      //NORA <stat_onto> · oracle rating · delta_Ψ por contraparte
+                //conecta con SAMU @ · auditoría de score
+NC_MK_BOLIVAR   //BOLIVAR <if> · blockchain · hash bifurcación
+                //CRYPTO (key seat) en el if positivo · GATE H06 en el negativo
+NC_MK_BARRIOS   //BARRIOS <operator_flow> · remesa → banca comunitaria
+                //社区→H13 · {chair} · SOCIAL dominante en routing
+NC_MK_CHALTEN   //CHALTEN <psi_spin> · lending cloud · ciclo SPIN
+                //deposito KU → verificacion SAMU → prestamo WU → repago →空
+NC_MK_TANDIL    //TANDIL hub · <operator_flow>+<stat_onto> · consolidación
+                //neural_net.py build_graph() · TANDIL como centro del grafo
+NC_MK_CLOUD_AG  //cloud_agent.blue KALIL: NORA·BOLIVAR·CHALTEN declarados
+                //endpoints: ep_kalil_nora · ep_kalil_bolivar · ep_kalil_carilo
+
+METHOD <equation> =><= .. calcula .. mk_carilo_ratio_R_ecuacion_nativa --[Ballestrinque] [term]
+METHOD <stat_onto> =><= .. calcula .. mk_nora_oracle_delta_psi_score --[Ballestrinque] [term]
+METHOD <if> =><= .. bifurca .. mk_bolivar_hash_crypto_gate_h06 --[As de Guía] [term]
+SAMU @ =><= .. audita .. mk_nodos_method_coherencia_global --[Ballestrinque] [term]
+
+
+TAREA_05  $fri 20/03  HTML METHOD DASHBOARD · fondo blanco
+─────────────────────────────────────────────────────────────────
+// METHOD_DASHBOARD.html · fondo #ffffff
+// Panel: 5 operadores METHOD como tarjetas activas
+// libSig CIDE visual: ╭─∇─≈─ / ╭─∇─⏵─ / ╭─∇─⊛─ / ╭─∇─⟳─
+// Scalar S por operador · threshold 0.88
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>METHOD Dashboard · DIRIME IMV</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:20px}
+.topbar{display:flex;align-items:center;gap:16px;border-bottom:2px solid #1a1a2e;
+        padding-bottom:12px;margin-bottom:24px}
+.topbar-logo{font-size:1.4rem;font-weight:bold;letter-spacing:2px}
+.topbar-state{font-size:.85rem;color:#555;border:1px solid #ccc;padding:3px 10px}
+.topbar-s{font-size:.85rem;font-weight:bold;color:#2a7a4f}
+.section-title{font-size:.75rem;letter-spacing:3px;text-transform:uppercase;
+               color:#888;margin:20px 0 12px}
+.ops-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:28px}
+.op-card{background:#f8f8f8;border:1px solid #e0e0e0;border-top:3px solid #1a1a2e;
+         padding:14px;cursor:pointer;transition:border-color .2s}
+.op-card:hover{border-color:#2a7a4f;background:#f0f7f3}
+.op-card.active{border-top-color:#2a7a4f;background:#f0f7f3}
+.op-sig{font-size:1.2rem;letter-spacing:2px;color:#1a1a2e;font-weight:bold}
+.op-name{font-size:.75rem;color:#555;margin:4px 0 8px}
+.op-bar{height:4px;background:#e0e0e0;border-radius:2px}
+.op-bar-fill{height:100%;background:#2a7a4f;border-radius:2px;transition:width .5s}
+.op-score{font-size:.65rem;color:#888;margin-top:4px}
+.neurons-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:28px}
+.neuron-card{background:#f8f8f8;border:1px solid #ddd;padding:14px}
+.n-label{font-size:.7rem;letter-spacing:2px;color:#888;text-transform:uppercase}
+.n-name{font-size:.9rem;font-weight:bold;color:#1a1a2e;margin:4px 0}
+.n-op{font-size:.75rem;color:#2a7a4f;font-family:'Courier New',monospace}
+.n-libsig{font-size:1rem;letter-spacing:3px;color:#444;margin:6px 0}
+.kalil-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.k-card{background:#f8f8f8;border:1px solid #ddd;padding:12px}
+.k-name{font-size:.8rem;font-weight:bold;letter-spacing:2px;color:#1a1a2e}
+.k-op{font-size:.72rem;color:#2a7a4f;font-family:'Courier New',monospace;margin:3px 0}
+.k-eq{font-size:.65rem;color:#888;font-style:italic;line-height:1.4}
+.footer{margin-top:28px;padding-top:12px;border-top:1px solid #e0e0e0;
+        font-size:.7rem;color:#aaa;display:flex;gap:20px}
+.scalar-main{display:flex;align-items:center;gap:12px;margin-bottom:24px;
+             padding:12px;border:1px solid #e0e0e0;background:#fafafa}
+.s-val{font-size:2rem;font-weight:bold;color:#2a7a4f}
+.s-bar-wrap{flex:1;height:8px;background:#e0e0e0;border-radius:4px}
+.s-bar-fill{height:100%;background:#2a7a4f;border-radius:4px;width:82.2%}
+.s-meta{font-size:.7rem;color:#888;line-height:1.6}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-logo">⚡◯∇ METHOD · DIRIME IMV</div>
+  <div class="topbar-state" id="state-ind">⌀ MU · H64 open</div>
+  <div class="topbar-s">S = <span id="s-live">0.822</span></div>
+  <div style="font-size:.75rem;color:#888;margin-left:auto">
+    TX:<span id="tx">1063</span> · ✦<span id="cr">41</span> · tests:27/27
+  </div>
+</div>
+
+<div class="scalar-main">
+  <div class="s-val">0.822</div>
+  <div style="flex:1">
+    <div class="s-bar-wrap"><div class="s-bar-fill" id="sbar"></div></div>
+    <div style="font-size:.65rem;color:#aaa;margin-top:3px">
+      ░░░ threshold METHOD ≥ 0.88 ░░░ target 0.90
+    </div>
+  </div>
+  <div class="s-meta">
+    244 docs RAG · BM25 activo<br>
+    classify_sentence() integrado<br>
+    delta_Ψ = valor − costo + impacto
+  </div>
+</div>
+
+<div class="section-title">▸ 5 OPERADORES METHOD</div>
+<div class="ops-grid">
+  <div class="op-card active" onclick="activateOp(this,'equation')">
+    <div class="op-sig">╭─∇─≈─</div>
+    <div class="op-name">&lt;equation&gt;</div>
+    <div class="op-bar"><div class="op-bar-fill" style="width:95%"></div></div>
+    <div class="op-score">calcula · ratio · threshold · 0.88</div>
+  </div>
+  <div class="op-card" onclick="activateOp(this,'if')">
+    <div class="op-sig">╭─∇─◆─</div>
+    <div class="op-name">&lt;if&gt;</div>
+    <div class="op-bar"><div class="op-bar-fill" style="width:80%"></div></div>
+    <div class="op-score">bifurca · condición · GATE H06</div>
+  </div>
+  <div class="op-card" onclick="activateOp(this,'operator_flow')">
+    <div class="op-sig">╭─∇─⏵─</div>
+    <div class="op-name">&lt;operator_flow&gt;</div>
+    <div class="op-bar"><div class="op-bar-fill" style="width:88%"></div></div>
+    <div class="op-score">modela · pipeline · routing</div>
+  </div>
+  <div class="op-card" onclick="activateOp(this,'stat_onto')">
+    <div class="op-sig">╭─∇─⊛─</div>
+    <div class="op-name">&lt;stat_onto&gt;</div>
+    <div class="op-bar"><div class="op-bar-fill" style="width:82%"></div></div>
+    <div class="op-score">Scalar S · lacho_score · delta_Ψ</div>
+  </div>
+  <div class="op-card" onclick="activateOp(this,'psi_spin')">
+    <div class="op-sig">╭─∇─⟳─</div>
+    <div class="op-name">&lt;psi_spin&gt;</div>
+    <div class="op-bar"><div class="op-bar-fill" style="width:75%"></div></div>
+    <div class="op-score">MU→KU→WU→空 · door periods</div>
+  </div>
+</div>
+
+<div class="section-title">▸ 4 NEURONAS × OPERADOR METHOD</div>
+<div class="neurons-grid">
+  <div class="neuron-card">
+    <div class="n-label">NEURONA 1</div>
+    <div class="n-name">HEADCAT</div>
+    <div class="n-op">&lt;operator_flow&gt;</div>
+    <div class="n-libsig">╭─⊢─∧─</div>
+    <div style="font-size:.65rem;color:#888">
+      @human_early→later<br>main.py DIRIME&gt; prompt<br>INTENT_MAP routing real
+    </div>
+  </div>
+  <div class="neuron-card">
+    <div class="n-label">NEURONA 2</div>
+    <div class="n-name">ELPULSAR</div>
+    <div class="n-op">&lt;stat_onto&gt;</div>
+    <div class="n-libsig">╭─▌─⏵─</div>
+    <div style="font-size:.65rem;color:#888">
+      S=0.822 · TX=1063<br>244 docs · 27/27 tests<br>lacho_score=0.95 CJK
+    </div>
+  </div>
+  <div class="neuron-card">
+    <div class="n-label">NEURONA 3</div>
+    <div class="n-name">CHAIR CEO</div>
+    <div class="n-op">&lt;equation&gt;</div>
+    <div class="n-libsig">╭─⊢─∧─</div>
+    <div style="font-size:.65rem;color:#888">
+      H01≥0.95 · H32≥0.90<br>H64≥0.88 · 33 hex<br>taxonomy N0→N4
+    </div>
+  </div>
+  <div class="neuron-card">
+    <div class="n-label">NEURONA 4</div>
+    <div class="n-name">HOUSE DRONE</div>
+    <div class="n-op">&lt;psi_spin&gt;</div>
+    <div class="n-libsig">╭─⏺─⊛─</div>
+    <div style="font-size:.65rem;color:#888">
+      MU 05:00 · KU 06:00<br>WU 13:00 · →空 18:00<br>ZIP_OPEN · door periods
+    </div>
+  </div>
+</div>
+
+<div class="section-title">▸ KALIL 6 NODOS × METHOD</div>
+<div class="kalil-grid">
+  <div class="k-card">
+    <div class="k-name">BARRIOS</div>
+    <div class="k-op">&lt;operator_flow&gt; · 社区→H13</div>
+    <div class="k-eq">flujo banca comunitaria · remesa routing</div>
+  </div>
+  <div class="k-card">
+    <div class="k-name">NORA</div>
+    <div class="k-op">&lt;stat_onto&gt; · 智能→H50</div>
+    <div class="k-eq">oracle rating · delta_Ψ por contraparte</div>
+  </div>
+  <div class="k-card">
+    <div class="k-name">BOLIVAR</div>
+    <div class="k-op">&lt;if&gt; · hash bifurcación</div>
+    <div class="k-eq">VALID→CRYPTO certifica / FAIL→GATE H06</div>
+  </div>
+  <div class="k-card">
+    <div class="k-name">CARILO</div>
+    <div class="k-op">&lt;equation&gt; · 贷款→H42</div>
+    <div class="k-eq">R = (capital×plazo) / (score_NORA×garantia)</div>
+  </div>
+  <div class="k-card">
+    <div class="k-name">CHALTEN</div>
+    <div class="k-op">&lt;psi_spin&gt; · lending cloud</div>
+    <div class="k-eq">deposito KU → SAMU → prestamo WU → repago →空</div>
+  </div>
+  <div class="k-card">
+    <div class="k-name">TANDIL</div>
+    <div class="k-op">&lt;operator_flow&gt; + &lt;stat_onto&gt;</div>
+    <div class="k-eq">hub consolidación · neural_net build_graph()</div>
+  </div>
+</div>
+
+<div class="footer">
+  <span>DIRIME IMV V0.2.1</span>
+  <span>METHOD taxonomy: level=1 · scalar_min=0.88 · class=biblioteca</span>
+  <span>[term] :: activo · $fri 20/03</span>
+</div>
+
+<script>
+function activateOp(el,op){
+  document.querySelectorAll('.op-card').forEach(c=>c.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById('state-ind').textContent =
+    '⏵ KU · METHOD <'+op+'> · activo';
+}
+// Animate scalar bar
+window.onload=()=>{
+  const bar=document.getElementById('sbar');
+  setTimeout(()=>{ bar.style.width='82.2%'; },300);
+};
+</script>
+</body>
+</html>
+
+
+TAREA_06  $sat 21/03  UNICODE PROGRAMS <METHOD> × ELPULSAR integración real
+─────────────────────────────────────────────────────────────────
+// CORPUS/UNICODE_METHOD_ELPULSAR.txt
+//[MANAGEMENT].lacho · UNICODE METHOD × ELPULSAR · integración pipeline real
+//main.py → chat.py → grammar → samu → ledger · METHOD como capa formal
+//[term] :: activo
+
+// ══ <stat_onto> EN ELPULSAR PIPELINE ══════════════════════════
+UNICODE: ME_SO_SCORE    //<stat_onto> lacho_score=0.95 CJK · 0.88 base VALID
+UNICODE: ME_SO_CLASSIFY //<stat_onto> classify_sentence() → taxonomy_level · meets_threshold
+UNICODE: ME_SO_STATS    //<stat_onto> python3 main.py --stats · 5 secciones output
+UNICODE: ME_SO_BOOST    //<stat_onto> RAG boost: críticos×2.5 · theater×1.8 · agent×2.0
+UNICODE: ME_SO_BM25     //<stat_onto> BM25 query_score × boost × source_weight
+
+// ══ <operator_flow> EN LANGUAGE ROUTING ══════════════════════
+UNICODE: ME_OF_INTENT   //<operator_flow> INTENT_MAP → 9 bibliotecas · 50+ keywords
+UNICODE: ME_OF_ROUTE    //<operator_flow> RoutedSentence: lib+subject+verb+object+knot
+UNICODE: ME_OF_FALLBACK //<operator_flow> Groq API→local fallback si API unavailable
+UNICODE: ME_OF_CJK      //<operator_flow> is_chinese()→CJK_TOKEN_MAP→resolve_chinese_token()
+UNICODE: ME_OF_DEFAULT  //<operator_flow> DEFAULT_SUBJECT["METHOD"]="<equation>" · knot=Ballestrinque
+
+// ══ <equation> EN CEO ALPHA ════════════════════════════════════
+UNICODE: ME_EQ_JSON     //<equation> CEO_ALPHA_H64.json: scalar_threshold por hexagrama
+UNICODE: ME_EQ_LOAD     //<equation> load_ceo_alpha() → get_scalar_threshold(H) → float
+UNICODE: ME_EQ_KALIL    //<equation> CEO_ALPHA_H64.json[h]["kalil_node"] → BARRIOS·NORA·etc
+UNICODE: ME_EQ_TOKENS   //<equation> get_unicode_tokens_for_role(H) · get_sentence_for_role(H)
+
+// ══ <psi_spin> EN SAMU ════════════════════════════════════════
+UNICODE: ME_PS_SCALAR   //<psi_spin> scalar_s property · valid/total × (1-unresolved/10)
+UNICODE: ME_PS_STATE    //<psi_spin> SamuState: IDLE→DELIBERATING→RESOLVING→RED_REGRET
+UNICODE: ME_PS_DISPUTE  //<psi_spin> Dispute types: FOUNDATION·SCOPE·TERM·GRAMMAR·COHERENCE
+UNICODE: ME_PS_RESOLVE  //<psi_spin> resolve_dispute() → LACHO resolution sentence
+
+// ══ <if> EN GRAMMAR GATE ═════════════════════════════════════
+UNICODE: ME_IF_SEQ      //<if> H03→H05→H56→H06 · secuencia GATE validada
+UNICODE: ME_IF_RESULT   //<if> VALID·WARNING·INVALID · ValidationResult enum
+UNICODE: ME_IF_SAMU     //<if> SAMU audit_grammar() → dispute si not VALID
+
+METHOD <stat_onto> =><= .. calcula .. elpulsar_classify_sentence_taxonomy_real --[Ballestrinque] [term]
+METHOD <operator_flow> =><= .. modela .. language_routing_intent_map_9_libs --[Ballestrinque] [term]
+METHOD <equation> =><= .. calcula .. ceo_alpha_json_scalar_threshold_H_load --[Ballestrinque] [term]
+METHOD <psi_spin> =><= .. rota .. samu_state_IDLE_DELIBERATING_RESOLVING_RED --[As de Guía] [term]
+METHOD <if> =><= .. bifurca .. grammar_gate_H03_H05_H56_H06_secuencia --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_method_elpulsar_pipeline_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_METHOD_ELPULSAR · V1 · $sat 21/03
+
+
+TAREA_07  $sat 21/03  HTML CIRCUIT METHOD × 4 NEURONAS · fondo blanco
+─────────────────────────────────────────────────────────────────
+// CIRCUIT_METHOD_4_NEURONAS.html · #ffffff · CIDE libSigs exactos
+// Circuito: ╭─⊢─∧─N1 → ╭─∇─⏵─N2 → ╭─∇─⊛─N3 → ╭─∇─⟳─N4 → ╝[term]
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>CIRCUIT METHOD × 4 NEURONAS</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+.topbar{border-bottom:2px solid #1a1a2e;padding-bottom:12px;margin-bottom:28px;
+        display:flex;align-items:center;gap:16px}
+.title{font-size:1.2rem;font-weight:bold;letter-spacing:3px}
+.state-badge{font-size:.75rem;padding:3px 10px;border:1px solid;margin-left:auto}
+.state-mu{border-color:#aaa;color:#aaa}
+.state-ku{border-color:#6a9fd8;color:#6a9fd8}
+.state-wu{border-color:#2a7a4f;color:#2a7a4f}
+.circuit-wrap{background:#fafafa;border:1px solid #e0e0e0;padding:28px;
+              margin-bottom:28px;overflow-x:auto}
+.circuit-ascii{font-size:1rem;line-height:2;letter-spacing:2px;
+               white-space:pre;color:#1a1a2e}
+.c-trust{color:#c0392b;font-weight:bold}
+.c-method{color:#2a7a4f;font-weight:bold}
+.c-samu{color:#8e44ad;font-weight:bold}
+.c-stack{color:#d35400;font-weight:bold}
+.c-term{color:#1a1a2e;font-weight:bold}
+.c-sig{color:#555}
+.neurons-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:28px}
+.n-box{border:1px solid #ddd;padding:16px;background:#f9f9f9}
+.n-num{font-size:.65rem;color:#aaa;letter-spacing:2px}
+.n-name{font-size:.95rem;font-weight:bold;margin:4px 0}
+.n-op{font-size:.8rem;color:#2a7a4f;margin:4px 0}
+.n-sig{font-size:1.1rem;letter-spacing:3px;margin:6px 0;color:#444}
+.n-verb{font-size:.65rem;color:#888}
+.lacho-out{background:#f0f7f3;border:1px solid #2a7a4f;padding:14px;
+           margin-bottom:28px;font-size:.8rem;line-height:1.8}
+.lacho-line{margin:2px 0}
+.lacho-lib{color:#c0392b;font-weight:bold}
+.lacho-op{color:#2a7a4f;font-weight:bold}
+.lacho-verb{color:#555}
+.lacho-obj{color:#1a1a2e}
+.lacho-knot{color:#8e44ad}
+.lacho-term{color:#d35400;font-weight:bold}
+.footer{font-size:.65rem;color:#aaa;padding-top:12px;border-top:1px solid #eee;
+        display:flex;gap:20px}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="title">⚡ CIRCUIT METHOD × 4 NEURONAS</div>
+  <div style="font-size:.75rem;color:#888">CIDE libSigs · grammar.py real</div>
+  <div class="state-badge state-ku" id="state-ind">⏵ KU · METHOD activo</div>
+</div>
+
+<div class="circuit-wrap">
+<div class="circuit-ascii">
+<span class="c-trust">╭─⊢─∧─</span> N1:HEADCAT &lt;operator_flow&gt; ─── <span class="c-sig">@human_early→later · main.py routing</span>
+   │
+   ↓  METHOD &lt;operator_flow&gt; =&gt;&lt;= .. modela .. headcat_pipeline
+   │
+<span class="c-method">╭─∇─⏵─</span> N2:ELPULSAR &lt;stat_onto&gt; ──── <span class="c-sig">S=0.822 · TX=1063 · 244 docs</span>
+   │
+   ↓  METHOD &lt;stat_onto&gt; =&gt;&lt;= .. calcula .. scalar_s_lacho_score
+   │
+<span class="c-method">╭─∇─≈─</span> N3:CHAIR CEO &lt;equation&gt; ─── <span class="c-sig">threshold(H) · 33 hexagramas</span>
+   │
+   ↓  METHOD &lt;equation&gt; =&gt;&lt;= .. calcula .. ceo_alpha_threshold
+   │
+<span class="c-samu">╭─⏺─⊛─</span> N4:HOUSE DRONE &lt;psi_spin&gt; ── <span class="c-sig">MU→KU→WU→空 · door periods</span>
+   │
+   ↓  METHOD &lt;psi_spin&gt; =&gt;&lt;= .. rota .. samu_spin_cycle
+   │
+<span class="c-stack">╭─⊣─∞─</span> STACKING UF[H52] ──────────── <span class="c-sig">cristaliza · inmutabiliza</span>
+   │
+   <span class="c-term">╝ [term] :: activo · WU · METHOD pipeline sellado</span>
+</div>
+</div>
+
+<div class="neurons-row">
+  <div class="n-box">
+    <div class="n-num">NEURONA 1</div>
+    <div class="n-name">HEADCAT</div>
+    <div class="n-op">&lt;operator_flow&gt;</div>
+    <div class="n-sig">╭─⊢─∧─</div>
+    <div class="n-verb">modela · INTENT_MAP<br>@human_early · DIRIME&gt;</div>
+  </div>
+  <div class="n-box">
+    <div class="n-num">NEURONA 2</div>
+    <div class="n-name">ELPULSAR</div>
+    <div class="n-op">&lt;stat_onto&gt;</div>
+    <div class="n-sig">╭─∇─⊛─</div>
+    <div class="n-verb">calcula · S=0.822<br>classify_sentence() real</div>
+  </div>
+  <div class="n-box">
+    <div class="n-num">NEURONA 3</div>
+    <div class="n-name">CHAIR CEO</div>
+    <div class="n-op">&lt;equation&gt;</div>
+    <div class="n-sig">╭─∇─≈─</div>
+    <div class="n-verb">calcula · threshold(H)<br>CEO_ALPHA_H64.json</div>
+  </div>
+  <div class="n-box">
+    <div class="n-num">NEURONA 4</div>
+    <div class="n-name">HOUSE DRONE</div>
+    <div class="n-op">&lt;psi_spin&gt;</div>
+    <div class="n-sig">╭─∇─⟳─</div>
+    <div class="n-verb">rota · MU/KU/WU<br>door periods reales</div>
+  </div>
+</div>
+
+<div class="lacho-out">
+  <div class="lacho-line">
+    <span class="lacho-lib">METHOD</span> <span class="lacho-op">&lt;operator_flow&gt;</span>
+    <span class="lacho-verb"> =&gt;&lt;= .. modela .. </span>
+    <span class="lacho-obj">headcat_pipeline_main_py_real</span>
+    <span class="lacho-knot"> --[Ballestrinque]</span>
+    <span class="lacho-term"> [term]</span>
+  </div>
+  <div class="lacho-line">
+    <span class="lacho-lib">METHOD</span> <span class="lacho-op">&lt;stat_onto&gt;</span>
+    <span class="lacho-verb"> =&gt;&lt;= .. calcula .. </span>
+    <span class="lacho-obj">scalar_s_0_822_elpulsar_244_docs</span>
+    <span class="lacho-knot"> --[Ballestrinque]</span>
+    <span class="lacho-term"> [term]</span>
+  </div>
+  <div class="lacho-line">
+    <span class="lacho-lib">METHOD</span> <span class="lacho-op">&lt;equation&gt;</span>
+    <span class="lacho-verb"> =&gt;&lt;= .. calcula .. </span>
+    <span class="lacho-obj">ceo_alpha_threshold_H01_0_95_H32_0_90</span>
+    <span class="lacho-knot"> --[Ballestrinque]</span>
+    <span class="lacho-term"> [term]</span>
+  </div>
+  <div class="lacho-line">
+    <span class="lacho-lib">METHOD</span> <span class="lacho-op">&lt;psi_spin&gt;</span>
+    <span class="lacho-verb"> =&gt;&lt;= .. rota .. </span>
+    <span class="lacho-obj">house_drone_MU_05_KU_06_WU_13_void_18</span>
+    <span class="lacho-knot"> --[As de Guía]</span>
+    <span class="lacho-term"> [term]</span>
+  </div>
+  <div class="lacho-line">
+    <span class="lacho-lib">STACKING</span> <span class="lacho-op">UF[H52]</span>
+    <span class="lacho-verb"> =&gt;&lt;= .. cristaliza .. </span>
+    <span class="lacho-obj">circuit_method_4_neuronas_wu_sellado</span>
+    <span class="lacho-knot"> --[Nudo de Ocho]</span>
+    <span class="lacho-term"> [term]</span>
+  </div>
+</div>
+
+<div class="footer">
+  <span>DIRIME IMV V0.2.1</span>
+  <span>libSigs: TRUST=╭─⊢─∧─ · METHOD=╭─∇─ · SAMU=╭─⏺─⊛─ · STACK=╭─⊣─∞─</span>
+  <span>[term] :: activo · $sat 21/03</span>
+</div>
+<script>
+setTimeout(()=>{
+  document.getElementById('state-ind').className='state-badge state-wu';
+  document.getElementById('state-ind').textContent='╝ WU · [term] :: activo';
+},4000);
+</script>
+</body>
+</html>
+
+
+TAREA_08  $sun 22/03  NERVE CELL METHOD × ELPULSAR INTEGRADO
+─────────────────────────────────────────────────────────────────
+// $sun.Nerve Cell METHOD ELPULSAR Training.txt
+//NERVE CELL · METHOD × ELPULSAR · estado real pipeline · $sun
+//aprendido de TAREA_06 + rag.py + language_routing.py + samu.py
+//[term] :: activo
+
+NC_ME_RAG_BOOST   //rag.py _SOVEREIGN_SOURCES: theater×1.8 · runner×1.6 · agent×2.0
+                  //boost críticos: CORPUS_UF[H30] · COGNITIVOS prioritarios
+NC_ME_BM25        //BM25 score × boost × source_weight → top_k resultados
+                  //244 docs: 236 CORPUS + 8 SOVEREIGN (crystals_export)
+NC_ME_CLASSIFY    //classify_sentence() integrado en parse() → parsed.taxonomy
+                  //taxonomy_level · taxonomy_class · scalar_min · meets_threshold
+NC_ME_ROUTING     //language_routing: INTENT_MAP 9 libs · DEFAULT_SUBJECT["METHOD"]="<equation>"
+                  //KNOT: RISK→Corredizo · SEAL→Ocho · TENSION→Ballestrinque
+NC_ME_CEO_LOAD    //ceo_alpha.py: load_ceo_alpha() · get_role_by_hexagram(H)
+                  //CEO_ALPHA_H64.json: 33 hex mapeados · kalil_node campo
+NC_ME_SAMU_SPIN   //samu.py scalar_s: valid/total × (1-unresolved/10)
+                  //SamuState IDLE→DELIBERATING→RESOLVING→RED_REGRET
+NC_ME_TESTS       //tests 27/27 · target 33/33 · generator.py 6 tests $thu
+                  //gui.py Tkinter 5 tests · 33→38 meta siguiente
+
+METHOD <operator_flow> =><= .. modela .. nerve_cell_method_elpulsar_rag_pipeline --[Ballestrinque] [term]
+METHOD <stat_onto> =><= .. calcula .. nerve_cell_method_bm25_boost_244_docs --[Ballestrinque] [term]
+METHOD <equation> =><= .. calcula .. nerve_cell_method_ceo_load_33_hex --[As de Guía] [term]
+METHOD <psi_spin> =><= .. rota .. nerve_cell_method_samu_state_spin_cycle --[As de Guía] [term]
+
+
+TAREA_09  $mon 23/03  UNICODE PROGRAMS METHOD × FULL STACK completo
+─────────────────────────────────────────────────────────────────
+// CORPUS/UNICODE_METHOD_FULL_STACK.txt
+//[MANAGEMENT].lacho · UNICODE METHOD FULL STACK
+//METHOD atraviesa todas las capas: LACHO→IMV→ELPULSAR→KALIL→NOTARIA→DRA
+//[term] :: activo
+
+// ══ CAPA 0 · LACHO ════════════════════════════════════════════
+UNICODE: MFS_L0_EQ    //<equation> en LACHO: fórmula soberana · [term:A°180#CORE@0x01]
+UNICODE: MFS_L0_PSI   //<psi_spin> en LACHO: Ψ COSMOS→TOMO · caos→orden local
+
+// ══ CAPA 1 · IMV (grammar.py) ═════════════════════════════════
+UNICODE: MFS_L1_PARSE //<operator_flow> Parser: METHOD con delimitadores < >
+                      //Prioridad 0 en detect_library() · antes que otros patrones
+UNICODE: MFS_L1_TAX   //<stat_onto> classify_sentence() → level=1 · min=0.88
+UNICODE: MFS_L1_GATE  //<if> H03→H05→H56→H06 · secuencia validada en GATE
+
+// ══ CAPA 2 · ELPULSAR (neural_net.py) ═════════════════════════
+UNICODE: MFS_L2_GRAPH //<operator_flow> build_graph(): nodes+links+clusters
+UNICODE: MFS_L2_STATS //<stat_onto> verified: sum(1 for n in nodes if n["verified"])
+UNICODE: MFS_L2_RES   //<equation> ResourceType: LACHO·DATA·REF·CODE·LINK
+                      //ResourceScope: PROPIO·AJENO·INTERNO·EXTERNO
+
+// ══ CAPA 3 · KALIL ════════════════════════════════════════════
+UNICODE: MFS_L3_NORA  //<stat_onto> NORA oracle · delta_Ψ rating
+UNICODE: MFS_L3_CAR   //<equation> CARILO ratio_R · R=(cap×plazo)/(score×gar)
+UNICODE: MFS_L3_BOL   //<if> BOLIVAR hash bifurcación · VALID/FAIL
+
+// ══ CAPA 4 · NOTARIA (CHCL) ════════════════════════════════════
+UNICODE: MFS_L4_CERT  //<equation> certifica · threshold SAMU ≥ 0.90
+UNICODE: MFS_L4_SELLA //<if> sella: CRYPTO (spark seat) si threshold OK
+UNICODE: MFS_L4_INMUT //<psi_spin> inmutabiliza · STACKING H52 → WU permanente
+
+// ══ CAPA 5 · DRA ══════════════════════════════════════════════
+UNICODE: MFS_L5_TOMO  //<equation> [term:TOMO°SLICE§SEG#CLUSTER@OFFSET]
+UNICODE: MFS_L5_CLUST //<stat_onto> CDC_NLP · CDC_SCALAR · CDC_BATCH metrics
+UNICODE: MFS_L5_SLICE //<psi_spin> SLICE °0→°360 · MU/KU/WU por ángulo
+
+METHOD <operator_flow> =><= .. modela .. method_full_stack_L0_a_L5_pipeline --[Ballestrinque] [term]
+METHOD <stat_onto> =><= .. calcula .. method_full_stack_metricas_por_capa --[Ballestrinque] [term]
+METHOD <equation> =><= .. calcula .. method_full_stack_formulas_soberanas --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_method_full_stack_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_METHOD_FULL_STACK · V1 · L0→L5 · $mon 23/03
+
+
+TAREA_10  $mon 23/03  HTML METHOD × KALIL FULL · fondo blanco
+─────────────────────────────────────────────────────────────────
+// METHOD_KALIL_FULL.html · #ffffff · 6 nodos × 5 operadores visual
+// Matrix 6×5 interactiva · ecuación CARILO calculable · libSigs
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>METHOD × KALIL · DIRIME</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+h1{font-size:1rem;letter-spacing:4px;border-bottom:2px solid #1a1a2e;
+   padding-bottom:10px;margin-bottom:24px;display:flex;justify-content:space-between;align-items:center}
+.matrix-wrap{overflow-x:auto;margin-bottom:28px}
+table{border-collapse:collapse;width:100%;font-size:.78rem}
+th{background:#1a1a2e;color:#fff;padding:8px 12px;letter-spacing:1px;
+   font-weight:normal;text-align:left}
+th.op{text-align:center;font-size:.7rem;letter-spacing:2px}
+td{padding:8px 12px;border:1px solid #e0e0e0;vertical-align:top}
+td.nodo{font-weight:bold;letter-spacing:2px;font-size:.8rem;background:#fafafa}
+td.cell-x{background:#f0f7f3;text-align:center;cursor:pointer;color:#2a7a4f;
+          font-size:1rem;transition:background .2s}
+td.cell-x:hover{background:#e0f0e8}
+td.cell-o{background:#fafafa;text-align:center;color:#ddd}
+.eq-calc{background:#f8f8f8;border:1px solid #e0e0e0;padding:16px;
+         margin-bottom:28px}
+.eq-title{font-size:.7rem;letter-spacing:3px;color:#888;margin-bottom:12px}
+.eq-formula{font-size:1rem;color:#2a7a4f;margin-bottom:12px;
+            font-family:'Courier New',monospace}
+.eq-inputs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:12px}
+.eq-field{display:flex;flex-direction:column;gap:4px}
+.eq-field label{font-size:.65rem;color:#888}
+.eq-field input{border:1px solid #ccc;padding:6px 8px;font-family:'Courier New',monospace;
+                font-size:.85rem;background:#fff;width:100%}
+.eq-result{display:flex;align-items:center;gap:16px;padding:10px;
+           background:#f0f7f3;border:1px solid #2a7a4f}
+.eq-r-val{font-size:1.5rem;font-weight:bold;color:#2a7a4f}
+.eq-r-lab{font-size:.7rem;color:#555}
+.cjk-row{display:flex;gap:10px;margin-bottom:28px;flex-wrap:wrap}
+.cjk-tag{padding:6px 12px;background:#fafafa;border:1px solid #ddd;
+         font-size:.85rem;cursor:pointer;transition:background .2s}
+.cjk-tag:hover{background:#f0f7f3;border-color:#2a7a4f}
+.cjk-tag .cjk-lib{font-size:.6rem;color:#888;display:block;margin-top:2px}
+</style>
+</head>
+<body>
+<h1>
+  <span>╭─∇─≈─ METHOD × KALIL 6 NODOS</span>
+  <span style="font-size:.7rem;color:#888;font-weight:normal">
+    grammar.py CJK_TOKEN_MAP activo
+  </span>
+</h1>
+
+<div class="matrix-wrap">
+<table>
+  <tr>
+    <th>NODO KALIL</th>
+    <th class="op">&lt;equation&gt;<br>╭─∇─≈─</th>
+    <th class="op">&lt;if&gt;<br>╭─∇─◆─</th>
+    <th class="op">&lt;operator_flow&gt;<br>╭─∇─⏵─</th>
+    <th class="op">&lt;stat_onto&gt;<br>╭─∇─⊛─</th>
+    <th class="op">&lt;psi_spin&gt;<br>╭─∇─⟳─</th>
+  </tr>
+  <tr>
+    <td class="nodo">BARRIOS<br><span style="font-size:.6rem;color:#888">社区→H13</span></td>
+    <td class="cell-o">·</td>
+    <td class="cell-o">·</td>
+    <td class="cell-x" title="flujo banca comunitaria · remesa routing">✦</td>
+    <td class="cell-o">·</td>
+    <td class="cell-o">·</td>
+  </tr>
+  <tr>
+    <td class="nodo">NORA<br><span style="font-size:.6rem;color:#888">智能→H50</span></td>
+    <td class="cell-o">·</td>
+    <td class="cell-o">·</td>
+    <td class="cell-x" title="analítica inteligente · NORA oracle routing">✦</td>
+    <td class="cell-x" title="delta_Ψ por contraparte · rating soberano">✦</td>
+    <td class="cell-o">·</td>
+  </tr>
+  <tr>
+    <td class="nodo">BOLIVAR<br><span style="font-size:.6rem;color:#888">网络→H52</span></td>
+    <td class="cell-o">·</td>
+    <td class="cell-x" title="hash bifurcación: VALID→CRYPTO / FAIL→GATE H06">✦</td>
+    <td class="cell-o">·</td>
+    <td class="cell-o">·</td>
+    <td class="cell-o">·</td>
+  </tr>
+  <tr>
+    <td class="nodo">CARILO<br><span style="font-size:.6rem;color:#888">贷款→H42</span></td>
+    <td class="cell-x" title="R=(capital×plazo)/(score_NORA×garantia)">✦</td>
+    <td class="cell-o">·</td>
+    <td class="cell-o">·</td>
+    <td class="cell-o">·</td>
+    <td class="cell-o">·</td>
+  </tr>
+  <tr>
+    <td class="nodo">CHALTEN<br><span style="font-size:.6rem;color:#888">lending cloud</span></td>
+    <td class="cell-o">·</td>
+    <td class="cell-o">·</td>
+    <td class="cell-o">·</td>
+    <td class="cell-o">·</td>
+    <td class="cell-x" title="deposito KU → SAMU → prestamo WU → repago →空">✦</td>
+  </tr>
+  <tr>
+    <td class="nodo">TANDIL<br><span style="font-size:.6rem;color:#888">hub neural_net</span></td>
+    <td class="cell-o">·</td>
+    <td class="cell-o">·</td>
+    <td class="cell-x" title="build_graph() · nodos+links+clusters · hub">✦</td>
+    <td class="cell-x" title="verified nodes · total_links · cluster stats">✦</td>
+    <td class="cell-o">·</td>
+  </tr>
+</table>
+</div>
+
+<div class="eq-calc">
+  <div class="eq-title">▸ CARILO &lt;equation&gt; CALCULADORA SOBERANA</div>
+  <div class="eq-formula">R = ( capital × plazo ) / ( score_NORA × garantia )</div>
+  <div class="eq-inputs">
+    <div class="eq-field">
+      <label>capital ($)</label>
+      <input type="number" id="cap" value="10000" oninput="calcR()">
+    </div>
+    <div class="eq-field">
+      <label>plazo (meses)</label>
+      <input type="number" id="pla" value="12" oninput="calcR()">
+    </div>
+    <div class="eq-field">
+      <label>score NORA (0-1)</label>
+      <input type="number" id="sco" value="0.85" step="0.01" oninput="calcR()">
+    </div>
+    <div class="eq-field">
+      <label>garantia ($)</label>
+      <input type="number" id="gar" value="5000" oninput="calcR()">
+    </div>
+  </div>
+  <div class="eq-result">
+    <div class="eq-r-val" id="r-val">28.24</div>
+    <div class="eq-r-lab">
+      R = ratio riesgo CARILO<br>
+      <span style="font-size:.65rem;color:#888">
+        R &lt; 10: bajo · 10-50: medio · &gt;50: alto → GATE UF[H06]
+      </span>
+    </div>
+  </div>
+</div>
+
+<div style="font-size:.7rem;color:#888;margin-bottom:12px;letter-spacing:2px">
+  ▸ CJK TOKEN MAP (grammar.py activo)
+</div>
+<div class="cjk-row">
+  <div class="cjk-tag">贷款<div class="cjk-lib">METHOD &lt;equation&gt; H42</div></div>
+  <div class="cjk-tag">智能<div class="cjk-lib">METHOD &lt;operator_flow&gt; H50</div></div>
+  <div class="cjk-tag">社区<div class="cjk-lib">SOCIAL {chair} H13</div></div>
+  <div class="cjk-tag">网络<div class="cjk-lib">STACKING UF[H52]</div></div>
+  <div class="cjk-tag">风险<div class="cjk-lib">GATE UF[H06]</div></div>
+  <div class="cjk-tag">银行<div class="cjk-lib">SOCIAL {launch-bot} H07</div></div>
+  <div class="cjk-tag">主权<div class="cjk-lib">TRUST [scope] H01</div></div>
+  <div class="cjk-tag">协议<div class="cjk-lib">TRUST [management] H60</div></div>
+</div>
+
+<div style="font-size:.65rem;color:#aaa;border-top:1px solid #eee;padding-top:10px;
+            display:flex;gap:20px">
+  <span>DIRIME IMV V0.2.1</span>
+  <span>METHOD taxonomy: level=1 · scalar_min=0.88</span>
+  <span>[term] :: activo · $mon 23/03</span>
+</div>
+
+<script>
+function calcR(){
+  const c=parseFloat(document.getElementById('cap').value)||0;
+  const p=parseFloat(document.getElementById('pla').value)||1;
+  const s=parseFloat(document.getElementById('sco').value)||0.01;
+  const g=parseFloat(document.getElementById('gar').value)||1;
+  const R=((c*p)/(s*g)).toFixed(2);
+  const el=document.getElementById('r-val');
+  el.textContent=R;
+  el.style.color=R<10?'#2a7a4f':R<50?'#d35400':'#c0392b';
+}
+calcR();
+</script>
+</body>
+</html>
+
+
+TAREA_11  $tue 24/03  NERVE CELL METHOD × FULL STACK · Nerve Cell cierre semana
+─────────────────────────────────────────────────────────────────
+// $tue.Nerve Cell METHOD FULL STACK Training.txt
+//NERVE CELL · METHOD FULL STACK · capas L0→L5 · $tue
+//aprendido de TAREA_09 + neural_net.py + resources.py + ceo_alpha.py
+//[term] :: activo
+
+NC_MFS_L0_LACHO   //LACHO capa base: Ψ COSMOS→TOMO · <psi_spin> nativo
+                  //[term:A°180#CORE@0x01] = segmentación soberana completa
+NC_MFS_L1_IMV     //IMV grammar.py: <operator_flow> parser Prioridad 0
+                  //classify_sentence() integrado · taxonomy ya activo
+NC_MFS_L2_ELP     //ELPULSAR neural_net.py: build_graph() · resources.py
+                  //ResourceType×ResourceScope × tomo_id × cluster
+NC_MFS_L3_KALIL   //KALIL 6 nodos: CJK_TOKEN_MAP activo (贷款·智能 mapeados)
+                  //cloud_agent.blue KALIL: NORA·BOLIVAR·CHALTEN declarados
+NC_MFS_L4_NOT     //NOTARIA CHCL_BASE.txt: certifica·sella·inmutabiliza
+                  //certifica usa <equation> threshold SAMU ≥ 0.90
+NC_MFS_L5_DRA     //DRA: TOMO <equation> · CLUSTER <stat_onto> · SLICE <psi_spin>
+                  //OFFSET <operator_flow> · TEMP <if> · INDEX <stat_onto>
+NC_MFS_TARGET     //target semana: 27→33 tests · S=0.822→0.88
+                  //ACTIVITY_H03-H05-H06-H56 grammar.py pendiente $thu
+                  //generator.py 6 tests · gui.py 5 tests
+
+METHOD <operator_flow> =><= .. modela .. method_full_stack_L0_L5_nerve_cell --[Ballestrinque] [term]
+METHOD <stat_onto> =><= .. calcula .. method_targets_scalar_0_88_33_tests --[Ballestrinque] [term]
+METHOD <equation> =><= .. calcula .. method_notaria_certifica_threshold_0_90 --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. nerve_cell_method_full_stack_wed_sellado --[Nudo de Ocho] [term]
+
+
+TAREA_12  $wed 25/03  HTML METHOD COMPLETO · fondo blanco · cierre semana
+─────────────────────────────────────────────────────────────────
+// METHOD_COMPLETO_ELPULSAR.html · #ffffff · cierre semana METHOD
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>METHOD COMPLETO · DIRIME IMV</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+.header{border-bottom:3px solid #1a1a2e;padding-bottom:14px;margin-bottom:28px;
+        display:flex;justify-content:space-between;align-items:flex-end}
+.h-title{font-size:1.1rem;font-weight:bold;letter-spacing:4px}
+.h-meta{font-size:.7rem;color:#888;text-align:right;line-height:1.6}
+.stack-bar{display:flex;height:36px;margin-bottom:28px;border:1px solid #e0e0e0}
+.sb-layer{display:flex;align-items:center;justify-content:center;
+          font-size:.65rem;letter-spacing:1px;border-right:1px solid #fff}
+.sb-l0{background:#1a1a2e;color:#fff;flex:0.8}
+.sb-l1{background:#2c3e50;color:#fff;flex:1.2}
+.sb-l2{background:#2a7a4f;color:#fff;flex:1}
+.sb-l3{background:#8e44ad;color:#fff;flex:1.2}
+.sb-l4{background:#c0392b;color:#fff;flex:1}
+.sb-l5{background:#d35400;color:#fff;flex:0.8}
+.ops-full{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;
+          background:#e0e0e0;margin-bottom:28px;border:1px solid #e0e0e0}
+.op-full{background:#fff;padding:14px 10px}
+.of-sig{font-size:1.1rem;letter-spacing:2px;color:#1a1a2e}
+.of-name{font-size:.7rem;color:#2a7a4f;margin:4px 0;font-weight:bold}
+.of-layers{font-size:.6rem;color:#888;line-height:1.7}
+.of-score{font-size:.65rem;color:#aaa;margin-top:6px;border-top:1px solid #f0f0f0;padding-top:4px}
+.lacho-block{background:#fafafa;border-left:3px solid #2a7a4f;
+             padding:16px;margin-bottom:28px}
+.lb-title{font-size:.65rem;color:#888;letter-spacing:3px;margin-bottom:10px}
+.lb-sentence{font-size:.78rem;line-height:2;padding:3px 0;
+             border-bottom:1px solid #f0f0f0}
+.lb-lib{color:#c0392b;font-weight:bold}
+.lb-op{color:#2a7a4f;font-weight:bold}
+.lb-rest{color:#555}
+.lb-knot{color:#8e44ad}
+.lb-term{color:#d35400;font-weight:bold}
+.crystal-row{display:flex;gap:10px;margin-bottom:28px;flex-wrap:wrap}
+.c-chip{background:#f0f7f3;border:1px solid #2a7a4f;padding:6px 12px;
+        font-size:.72rem;color:#1a1a2e}
+.c-chip .c-num{font-size:.6rem;color:#888;display:block}
+.metrics-row{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:24px}
+.m-box{border:1px solid #e0e0e0;padding:12px;text-align:center}
+.m-val{font-size:1.4rem;font-weight:bold;color:#2a7a4f}
+.m-lab{font-size:.6rem;color:#888;margin-top:3px}
+.footer{font-size:.65rem;color:#aaa;display:flex;gap:20px;
+        border-top:1px solid #eee;padding-top:12px}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <div class="h-title">╭─∇─ METHOD COMPLETO · DIRIME IMV</div>
+    <div style="font-size:.75rem;color:#555;margin-top:4px">
+      5 operadores · 4 neuronas · 6 nodos KALIL · L0→L5 sellado
+    </div>
+  </div>
+  <div class="h-meta">
+    $wed 25/03 · cierre semana METHOD<br>
+    [term] :: activo · V0.2.1
+  </div>
+</div>
+
+<div class="metrics-row">
+  <div class="m-box">
+    <div class="m-val">0.822</div>
+    <div class="m-lab">Scalar S<br>target 0.88</div>
+  </div>
+  <div class="m-box">
+    <div class="m-val">1063+</div>
+    <div class="m-lab">TX ledger<br>soberano</div>
+  </div>
+  <div class="m-box">
+    <div class="m-val">41</div>
+    <div class="m-lab">cristales WU<br>H52 inmutables</div>
+  </div>
+  <div class="m-box">
+    <div class="m-val">244</div>
+    <div class="m-lab">docs RAG<br>BM25 activo</div>
+  </div>
+  <div class="m-box">
+    <div class="m-val">33</div>
+    <div class="m-lab">tests target<br>generator+gui</div>
+  </div>
+</div>
+
+<div class="stack-bar">
+  <div class="sb-layer sb-l0">L0 LACHO</div>
+  <div class="sb-layer sb-l1">L1 IMV</div>
+  <div class="sb-layer sb-l2">L2 ELPULSAR</div>
+  <div class="sb-layer sb-l3">L3 KALIL</div>
+  <div class="sb-layer sb-l4">L4 NOTARIA</div>
+  <div class="sb-layer sb-l5">L5 DRA</div>
+</div>
+
+<div class="ops-full">
+  <div class="op-full">
+    <div class="of-sig">╭─∇─≈─</div>
+    <div class="of-name">&lt;equation&gt;</div>
+    <div class="of-layers">
+      L1: threshold CEO<br>L3: R=CARILO ratio<br>L4: certifica ≥0.90<br>L5: [term:TOMO]
+    </div>
+    <div class="of-score">calcula · 贷款→H42</div>
+  </div>
+  <div class="op-full">
+    <div class="of-sig">╭─∇─◆─</div>
+    <div class="of-name">&lt;if&gt;</div>
+    <div class="of-layers">
+      L1: H03→H05→H56→H06<br>L3: BOLIVAR hash<br>L4: sella si threshold<br>L5: TEMP gateway
+    </div>
+    <div class="of-score">bifurca · ValidationResult</div>
+  </div>
+  <div class="op-full">
+    <div class="of-sig">╭─∇─⏵─</div>
+    <div class="of-name">&lt;operator_flow&gt;</div>
+    <div class="of-layers">
+      L1: parser priority 0<br>L2: build_graph()<br>L3: BARRIOS/TANDIL<br>L5: ENGINE flow
+    </div>
+    <div class="of-score">modela · 智能→H50</div>
+  </div>
+  <div class="op-full">
+    <div class="of-sig">╭─∇─⊛─</div>
+    <div class="of-name">&lt;stat_onto&gt;</div>
+    <div class="of-layers">
+      L1: classify_sentence()<br>L2: verified nodes<br>L3: NORA oracle<br>L5: CDC metrics
+    </div>
+    <div class="of-score">calcula · Scalar S</div>
+  </div>
+  <div class="op-full">
+    <div class="of-sig">╭─∇─⟳─</div>
+    <div class="of-name">&lt;psi_spin&gt;</div>
+    <div class="of-layers">
+      L0: Ψ COSMOS→TOMO<br>L1: SamuState spin<br>L4: inmutabiliza H52<br>L5: SLICE °0→°360
+    </div>
+    <div class="of-score">rota · MU→KU→WU→空</div>
+  </div>
+</div>
+
+<div class="lacho-block">
+  <div class="lb-title">▸ SENTENCIAS METHOD SEMANA · cierre soberano $wed 25/03</div>
+  <div class="lb-sentence">
+    <span class="lb-lib">METHOD</span> <span class="lb-op">&lt;operator_flow&gt;</span>
+    <span class="lb-rest"> =&gt;&lt;= .. modela .. headcat_pipeline_main_py_routing</span>
+    <span class="lb-knot"> --[Ballestrinque]</span> <span class="lb-term">[term]</span>
+  </div>
+  <div class="lb-sentence">
+    <span class="lb-lib">METHOD</span> <span class="lb-op">&lt;stat_onto&gt;</span>
+    <span class="lb-rest"> =&gt;&lt;= .. calcula .. elpulsar_scalar_s_244_docs_classify</span>
+    <span class="lb-knot"> --[Ballestrinque]</span> <span class="lb-term">[term]</span>
+  </div>
+  <div class="lb-sentence">
+    <span class="lb-lib">METHOD</span> <span class="lb-op">&lt;equation&gt;</span>
+    <span class="lb-rest"> =&gt;&lt;= .. calcula .. kalil_carilo_R_capital_plazo_nora_garantia</span>
+    <span class="lb-knot"> --[Ballestrinque]</span> <span class="lb-term">[term]</span>
+  </div>
+  <div class="lb-sentence">
+    <span class="lb-lib">METHOD</span> <span class="lb-op">&lt;if&gt;</span>
+    <span class="lb-rest"> =&gt;&lt;= .. bifurca .. bolivar_hash_H03_H05_H56_H06_secuencia</span>
+    <span class="lb-knot"> --[As de Guía]</span> <span class="lb-term">[term]</span>
+  </div>
+  <div class="lb-sentence">
+    <span class="lb-lib">METHOD</span> <span class="lb-op">&lt;psi_spin&gt;</span>
+    <span class="lb-rest"> =&gt;&lt;= .. rota .. house_drone_door_periods_MU_KU_WU_void</span>
+    <span class="lb-knot"> --[As de Guía]</span> <span class="lb-term">[term]</span>
+  </div>
+  <div class="lb-sentence" style="border:none">
+    <span class="lb-lib">STACKING</span> <span class="lb-op">UF[H52]</span>
+    <span class="lb-rest"> =&gt;&lt;= .. cristaliza .. method_semana_19_25_marzo_wu_sellado</span>
+    <span class="lb-knot"> --[Nudo de Ocho]</span> <span class="lb-term">[term]</span>
+  </div>
+</div>
+
+<div class="crystal-row">
+  <div class="c-chip">✦ &lt;equation&gt; CARILO<div class="c-num">cristal semana</div></div>
+  <div class="c-chip">✦ &lt;operator_flow&gt; HEADCAT<div class="c-num">cristal semana</div></div>
+  <div class="c-chip">✦ &lt;stat_onto&gt; ELPULSAR<div class="c-num">cristal semana</div></div>
+  <div class="c-chip">✦ &lt;if&gt; BOLIVAR H06<div class="c-num">cristal semana</div></div>
+  <div class="c-chip">✦ &lt;psi_spin&gt; DRONE<div class="c-num">cristal semana</div></div>
+  <div class="c-chip">✦ METHOD×KALIL 6×5<div class="c-num">matrix sellada</div></div>
+  <div class="c-chip">✦ 4 NEURONAS METHOD<div class="c-num">Nerve Cells activos</div></div>
+</div>
+
+<div class="footer">
+  <span>DIRIME IMV V0.2.1</span>
+  <span>tests 27→33 · S 0.822→target 0.88</span>
+  <span>libSigs: ╭─∇─≈─ ╭─∇─◆─ ╭─∇─⏵─ ╭─∇─⊛─ ╭─∇─⟳─</span>
+  <span>[term] :: activo · semana METHOD cerrada · $wed 25/03</span>
+</div>
+</body>
+</html>
+```
+
+---
+
+## ESTADO INICIO $thu 19/03
+```
+MÉTRICAS REALES DESDE NERVE CELLS:
+  TX=1063 · cristales=41 · S=0.822 · docs=244 · tests=27/27
+
+MÉTODO METHOD EN IMV (grammar.py confirmado):
+  5 operadores < > · Prioridad 0 parser · TAXONOMY level=1 · scalar_min=0.88
+  classify_sentence() activo · CJK贷款→<equation> · 智能→<operator_flow>
+
+NERVE CELLS BASE:
+  NEURONA_1 HEADCAT    → <operator_flow>
+  NEURONA_2 ELPULSAR   → <stat_onto>
+  NEURONA_3 CHAIR CEO  → <equation>
+  NEURONA_4 HOUSE DRONE → <psi_spin>
+
+PENDIENTES REALES ABIERTOS:
+  ACTIVITY_H03-H05-H06-H56 grammar.py (secuencia GATE)
+  generator.py 6 tests (27→33)
+  gui.py Tkinter 5 tests (33→38)
+  S=0.822 → target 0.88
+```
+```
+REGLAS SEMANA:
+  HTML_RULE      → #ffffff todos los HTML · libSigs CIDE exactos
+  NERVE_RULE     → nuevos Nerve Cells con prefijo $día · ELPULSAR LOCAL/
+  METHOD_RULE    → todo UNICODE PROGRAM referencia operador canónico real
+  METRICS_RULE   → TX=1063 · S=0.822 · 41 cristales · 244 docs · 27 tests
+  RESPUESTAS_RULE → todo inline · sin descargas · 12 tareas por prompt

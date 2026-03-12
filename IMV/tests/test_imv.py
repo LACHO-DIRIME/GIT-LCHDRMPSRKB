@@ -132,7 +132,7 @@ def test_ceo_alpha_loader():
     assert role.get("library") == "ACTIVITY"
     threshold = get_scalar_threshold("H01")
     assert threshold >= 0.80
-    print("  ✅ ceo_alpha — 33 hexagramas · H01 ACTIVITY · threshold OK")
+    print("  ✅ ceo_alpha — 64 hexagramas · H01 ACTIVITY · threshold OK")
 
 
 class TestGrammarExtended:
@@ -426,6 +426,41 @@ def test_gen_6_gate_sequence():
     print("  ✅ grammar.GATE — secuencia H03→H05→H56→H06 válida")
 
 
+# ── Tests NOTARIA ────────────────────────────────────────────────
+
+def test_notaria_certifica():
+    """NOTARIA-1: CRYPTO certifica acto_notarial VALID."""
+    from core.grammar import validate, ValidationResult
+    sent = "CRYPTO (spark seat) =><= .. certifica .. acto_notarial --[Nudo de Ocho] [term]"
+    result = validate(sent)
+    assert result.result == ValidationResult.VALID, f"certifica acto_notarial debe ser VALID: {result.errors}"
+    print("  ✅ notaria.certifica — CRYPTO certifica acto_notarial VALID")
+
+def test_notaria_sella():
+    """NOTARIA-2: STACKING UF[H63] sella documento VALID."""
+    from core.grammar import validate, ValidationResult
+    sent = "STACKING UF[H63] =><= .. sella .. documento_soberano --[Nudo de Ocho] [term]"
+    result = validate(sent)
+    assert result.result == ValidationResult.VALID, f"STACKING UF[H63] sella debe ser VALID: {result.errors}"
+    print("  ✅ notaria.sella — STACKING UF[H63] sella VALID")
+
+def test_notaria_inmutabiliza():
+    """NOTARIA-3: STACKING UF[H52] inmutabiliza registro VALID."""
+    from core.grammar import validate, ValidationResult
+    sent = "STACKING UF[H52] =><= .. inmutabiliza .. registro_notarial --[Nudo de Ocho] [term]"
+    result = validate(sent)
+    assert result.result == ValidationResult.VALID, f"inmutabiliza registro_notarial debe ser VALID: {result.errors}"
+    print("  ✅ notaria.inmutabiliza — STACKING UF[H52] VALID")
+
+def test_notaria_scalar():
+    """NOTARIA-4: Scalar S ≥ 0.80 para operación notarial."""
+    from core.ledger import get_stats
+    stats = get_stats()
+    scalar = stats.get("scalar_s", 0)
+    assert scalar >= 0.80, f"Scalar S debe ser ≥ 0.80 para operar notarialmente: {scalar}"
+    print(f"  ✅ notaria.scalar — Scalar S={scalar:.3f} ≥ 0.80 operativo")
+
+
 # ── Runner soberano ─────────────────────────────────────────────
 
 def run_all_tests():
@@ -471,6 +506,11 @@ def run_all_tests():
         test_gen_4_language_routing,
         test_gen_5_route_cjk,
         test_gen_6_gate_sequence,
+        # NOTARIA (4)
+        test_notaria_certifica,
+        test_notaria_sella,
+        test_notaria_inmutabiliza,
+        test_notaria_scalar,
     ]
 
     passed = 0
@@ -491,6 +531,7 @@ def run_all_tests():
         "UNICODE":     tests[17:19],
         "GRAMMAR_EXT": tests[19:27],
         "GENERATOR":   tests[27:33],
+        "NOTARIA":     tests[33:37],
     }
 
     for group, group_tests in groups.items():

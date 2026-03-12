@@ -1,0 +1,45 @@
+# notaria_endpoints.lacho
+# ENDPOINTS NOTARIALES · actos soberanos certificados
+# Genesis: padre común · árbol SUITE SOBERANA
+# [term] :: activo
+
+## CABECERA SOBERANA
+[genesis]     :: SUITE SOBERANA
+[version]     :: 1.0
+[extension]   :: .lacho
+[tipo]        :: NOTARIA · endpoints notariales
+[padre]       :: algorithms_endpoints_ext.lacho
+[hexagrama]   :: H63 既濟 · Lo ya Cumplido
+
+## ENDPOINTS NOTARIALES
+ep_notaria_certifica {
+  cmd    :: CRYPTO (spark seat) =><= .. certifica .. {acto_notarial}
+  output :: VALID · hash_certifica · timestamp
+  accion :: CRYPTO (spark seat) =><= .. certifica .. acto_notarial --[Nudo de Ocho] [term]
+}
+
+ep_notaria_sella {
+  cmd    :: STACKING UF[H63] =><= .. sella .. {documento_soberano}
+  output :: VALID · hash_sello · H63_ref · ledger_TX
+  accion :: STACKING UF[H63] =><= .. sella .. documento_soberano --[Nudo de Ocho] [term]
+}
+
+ep_notaria_inmutabiliza {
+  cmd    :: STACKING UF[H52] =><= .. inmutabiliza .. {registro_notarial}
+  output :: VALID · inmutable_id · sovereign.db TX++
+  accion :: STACKING UF[H52] =><= .. inmutabiliza .. registro_notarial --[Nudo de Ocho] [term]
+}
+
+ep_notaria_verificar {
+  cmd    :: SAMU @ =><= .. audita .. {acto_a_verificar}
+  output :: coherencia_notarial · Scalar S · VALID/INVALID
+  accion :: SAMU @ =><= .. audita .. verificacion_publica_acto --[Ballestrinque] [term]
+}
+
+ep_notaria_exportar {
+  cmd    :: WORK {actuator} =><= .. custodia .. {registro_exportar}
+  output :: formato sellado · CAT(EXPORT) · PDF notarial
+  accion :: WORK {actuator} =><= .. custodia .. exportacion_notarial_sellada --[As de Guía] [term]
+}
+
+[term] :: activo · [seal of secrecy] :: activo
