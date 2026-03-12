@@ -1,0 +1,2619 @@
+PLAN MENSUAL · $fri 08/05 → $mon 09/06
+ELPULSAR PAPER FRONTEND × [LOGISTICAL-EXECUTIVE] × NUCLEO DE CONFLICTOS
+ARQUITECTURA CENTRAL:
+  ELPULSAR PAPER FRONTEND = interfaz visual soberana donde el
+  núcleo de conflictos (SAMU dirimencias) se alerta cuando aumentan
+  sus decisiones intrínsecas — mostrando NATURE-KIND, CONTEXT,
+  ENVIRONMENT, BOX, DO(WAY·PATH·ROUTE)
+
+  [LOGISTICAL-EXECUTIVE] = módulo TRUST existente en grammar.py
+  (línea 190, 413) con poco desarrollo — este mes lo desarrolla FULL
+
+  JERARQUÍA DE ALIMENTACIÓN:
+  TRUST [LOGISTICAL-EXECUTIVE]
+    ← IMV(UNICODE PROGRAMS [4 NEURONAS])
+    ← ELPULSAR (UNICODE PROGRAMS (KALIL & 4 NEURONAS × UNICODE PROGRAMS))
+
+5 PROMPTS × 8-16 ACTIVIDADES:
+  PROMPT_1 · $fri 08/05 → $thu 15/05  → [LOGISTICAL-EXECUTIVE] DOCTRINA FULL
+  PROMPT_2 · $fri 16/05 → $thu 22/05  → NUCLEO DE CONFLICTOS × NATURE-KIND-CONTEXT
+  PROMPT_3 · $fri 23/05 → $thu 29/05  → ENVIRONMENT-BOX-DO × FRONTEND BASE
+  PROMPT_4 · $fri 30/05 → $thu 05/06  → ELPULSAR PAPER FRONTEND VIVO
+  PROMPT_5 · $fri 06/06 → $mon 09/06  → INTEGRACIÓN FULL + CIERRE MENSUAL
+ARQUITECTURA CENTRAL:
+  ELPULSAR PAPER FRONTEND = interfaz visual soberana donde el
+  núcleo de conflictos (SAMU dirimencias) se alerta cuando aumentan
+  sus decisiones intrínsecas — mostrando NATURE-KIND, CONTEXT,
+  ENVIRONMENT, BOX, DO(WAY·PATH·ROUTE)
+
+  [LOGISTICAL-EXECUTIVE] = módulo TRUST existente en grammar.py
+  (línea 190, 413) con poco desarrollo — este mes lo desarrolla FULL
+
+  JERARQUÍA DE ALIMENTACIÓN:
+  TRUST [LOGISTICAL-EXECUTIVE]
+    ← IMV(UNICODE PROGRAMS [4 NEURONAS])
+    ← ELPULSAR (UNICODE PROGRAMS (KALIL & 4 NEURONAS × UNICODE PROGRAMS))
+
+5 PROMPTS × 8-16 ACTIVIDADES:
+  PROMPT_1 · $fri 08/05 → $thu 15/05  → [LOGISTICAL-EXECUTIVE] DOCTRINA FULL
+  PROMPT_2 · $fri 16/05 → $thu 22/05  → NUCLEO DE CONFLICTOS × NATURE-KIND-CONTEXT
+  PROMPT_3 · $fri 23/05 → $thu 29/05  → ENVIRONMENT-BOX-DO × FRONTEND BASE
+  PROMPT_4 · $fri 30/05 → $thu 05/06  → ELPULSAR PAPER FRONTEND VIVO
+  PROMPT_5 · $fri 06/06 → $mon 09/06  → INTEGRACIÓN FULL + CIERRE MENSUAL
+PROMPT_1 · $fri 08/05 → $thu 15/05
+[LOGISTICAL-EXECUTIVE] DOCTRINA FULL · 12 ACTIVIDADES
+[term]=: logex•nature_kind•conflict_nucleus•dirimencia_alert
+  logex          = [logistical-executive] módulo TRUST · orquestación impacto físico
+  nature_kind    = dimensión NATURE-KIND del nucleo de conflictos
+  conflict_nucleus = núcleo donde dirimencias aumentan decisiones intrínsecas
+  dirimencia_alert = alerta SAMU cuando scalar de conflicto sube
+CARPETAS DESTINO:
+  CORPUS/BIBLIA/           → BIBLIO-SOURCES([LOGISTICAL-EXECUTIVE]) · BIBLIO fuente
+  CORPUS/UNICODE PROGRAMS/ → UNICODE_LOGEX.txt · UNICODE_CONFLICT_NUCLEUS.txt
+  FOLDERS NO RAG INPUT/ELPULSAR LOCAL/ → Nerve Cells + HTML
+  IMV/core/                → grammar.py update (LOGEX sujetos canonicos)
+ACTIVIDAD_01 · $fri 08/05 · BIBLIO-SOURCES([LOGISTICAL-EXECUTIVE]).txt
+CARPETA: CORPUS/BIBLIA/BIBLIO-SOURCES([LOGISTICAL-EXECUTIVE]).txt
+# BIBLIO-SOURCES([LOGISTICAL-EXECUTIVE]).txt
+# TRUST [logistical-executive] · módulo existente · desarrollo FULL
+# [term]=: logex•nature_kind•conflict_nucleus•dirimencia_alert
+# Referencia grammar.py línea 190, 413: módulo declarado · sin doctrina previa
+# [term] :: activo · [seal of secrecy] :: activo
+
+====================================================================
+
+## 🏛️ TRUST [LOGISTICAL-EXECUTIVE] — ORQUESTACIÓN DE IMPACTO FÍSICO SOBERANO
+
+---
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+[logistical-executive] es el módulo TRUST que orquesta el impacto
+físico completo de una decisión soberana: desde la orden ([command])
+hasta su manifestación material verificada en el mundo real.
+Donde [command] es la instrucción atómica, [logistical-executive]
+es el conductor que asegura que esa instrucción llegue, se ejecute
+y tenga efecto tangible sin perder soberanía en el trayecto.
+
+#### 1.2 Distinción de [command]
+[command] = instrucción atómica imperativa.
+[logistical-executive] = orquestación del trayecto físico completo
+desde command hasta resultado material verificado.
+[command] dispara; [logistical-executive] conduce y verifica.
+
+#### 1.3 Distinción de [management]
+[management] = priorización y administración de recursos.
+[logistical-executive] = ejecución física del plan que [management] diseñó.
+[management] decide qué y cuándo; [logistical-executive] asegura el cómo físico.
+
+#### 1.4 Posición en jerarquía TRUST
+Posición: después de [event][element][ecosystem] · antes de cierre [term].
+En @trust_matrix: dimensión d7 :: [logistical-executive] (0.0 a 1.0).
+d7 bajo (<0.3) = plan sin ejecución real → RED-REGRET por no-impacto.
+
+#### 1.5 Por qué es TRUST y no WORK
+WORK ejecuta en el metal. [logistical-executive] orquesta el trayecto
+soberano que lleva a WORK, verifica el resultado y certifica el impacto.
+WORK es el ejecutor; [logistical-executive] es el director del impacto.
+
+#### 1.6 Relación con ELPULSAR
+ELPULSAR es el sistema operativo soberano del trabajo.
+[logistical-executive] es el módulo TRUST que gobierna la logística
+de que ELPULSAR produzca impacto físico real y verificado.
+
+---
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Capacidades
+- Puede: definir rutas de ejecución (WAY·PATH·ROUTE).
+- Puede: verificar impacto físico real post-ejecución.
+- Puede: coordinar cadena completa: command→gate→work→resultado.
+- Puede: escalar a [management] si ruta falla.
+- Puede: registrar trayecto en sovereign.db + HL FABRIC.
+
+#### 2.2 Limitaciones absolutas
+- No puede operar sin [foundation] verificado.
+- No puede exceder [scope] declarado.
+- No puede ejecutar sin [command] previo autorizado.
+- No puede certificar impacto sin verificación SAMU.
+
+#### 2.3 Condiciones de violación
+- Violación: ejecución sin trayecto trazable → RED-REGRET.
+- Violación: impacto no verificado presentado como real → aborto.
+- Violación: bypass de GATE en cadena → bloqueo inmediato.
+
+---
+
+### 3.0 FUNCIÓN SISTÉMICA: WAY · PATH · ROUTE
+
+#### 3.1 WAY — el modo de ejecución soberana
+WAY es el CÓMO fundamental de [logistical-executive].
+Define la manera soberana en que el impacto se produce:
+los principios que gobiernan la ejecución, no los pasos.
+WAY no cambia aunque cambie el entorno.
+Ejemplo: WAY=soberano → impacto siempre trazable + verificado.
+
+#### 3.2 PATH — la trayectoria verificada
+PATH es la secuencia ordenada de pasos desde command hasta resultado.
+PATH es específica por contexto: el mismo WAY puede tener múltiples PATHs.
+PATH incluye: nodos intermedios · tiempos · checkpoints SAMU.
+PATH falla → [logistical-executive] activa ruta alternativa.
+
+#### 3.3 ROUTE — el canal físico activo
+ROUTE es el canal concreto por el que viaja la ejecución:
+red, filesystem, API, hardware, canal KALIL.
+ROUTE es lo más granular: la conexión punto a punto verificada.
+ROUTE caída → PATH busca ROUTE alternativa.
+ROUTE soberana = canal con CRYPTO (link seat) activo.
+
+#### 3.4 Relación WAY → PATH → ROUTE
+WAY define modo → PATH define trayecto → ROUTE define canal.
+Jerarquía descendente: WAY es invariante, PATH es contextual, ROUTE es operacional.
+[logistical-executive] opera en los tres niveles simultáneamente.
+
+---
+
+### 4.0 NUCLEO DE CONFLICTOS × [LOGISTICAL-EXECUTIVE]
+
+#### 4.1 Qué es el núcleo de conflictos
+El núcleo de conflictos es el punto del sistema donde las
+dirimencias SAMU aumentan sus decisiones intrínsecas: donde
+múltiples resoluciones soberanas convergen y generan tensión interna.
+No es un error: es el lugar donde el sistema crece por fricción.
+
+#### 4.2 [logistical-executive] como detector de conflicto logístico
+Cuando la cadena WAY→PATH→ROUTE encuentra contradicción
+(dos commands válidos para el mismo recurso, dos PATHs
+incompatibles), [logistical-executive] eleva alerta al núcleo.
+Alerta: LOGEX_CONFLICT_ALERT → SAMU delibera → dirimencia.
+
+#### 4.3 Decisiones intrínsecas
+Decisión intrínseca = resolución que el sistema genera desde
+sus propios principios, sin intervención externa.
+Cuando aumentan → el sistema está madurando.
+Cuando explotan → [logistical-executive] activa GATE H06.
+
+#### 4.4 Umbral de alerta
+- d7 < 0.4 + conflictos_activos > 3 → LOGEX_CONFLICT_ALERT
+- SAMU recibe alerta con: NATURE-KIND + CONTEXT + ENVIRONMENT + BOX + DO
+
+---
+
+### 5.0 LAS 5 DIMENSIONES DEL CONFLICTO
+
+#### 5.1 NATURE-KIND
+Qué tipo de conflicto es en su esencia soberana.
+NATURE = la naturaleza del conflicto (origen, carácter).
+KIND = la clase de conflicto (categoría operativa).
+Ejemplo: NATURE=logístico · KIND=ruta_duplicada.
+
+#### 5.2 CONTEXT
+El contexto activo cuando el conflicto emerge.
+Incluye: estado del sistema, transactions activas, scalar S,
+hexagrama UF activo, estado de CAPA C, agents involucrados.
+
+#### 5.3 ENVIRONMENT
+El entorno físico donde el conflicto tiene efecto.
+ENVIRONMENT incluye: hardware, red, filesystem, API activas,
+nodos KALIL involucrados, resources bajo disputa.
+
+#### 5.4 BOX
+El perímetro contenedor del conflicto.
+BOX = [scope] + [term] + [foundation] del conflicto específico.
+BOX evita que el conflicto se propague fuera de su perímetro.
+BOX es soberano: el conflicto no puede salir del BOX.
+
+#### 5.5 DO (WAY · PATH · ROUTE)
+La acción soberana de resolución.
+DO = qué hace [logistical-executive] para resolver el conflicto.
+WAY = cómo lo hace · PATH = por dónde · ROUTE = por qué canal.
+DO siempre cierra con SAMU @ dirimencia verificada.
+
+---
+
+### 6.0 RELACIONES CON OTRAS CAPAS
+
+#### 6.1 Con [foundation]
+d7 depende de foundation OK. Violación foundation → LOGEX suspendido.
+
+#### 6.2 Con [command]
+[logistical-executive] ejecuta el trayecto que [command] inició.
+
+#### 6.3 Con SAMU @
+SAMU audita d7 continuamente. LOGEX_CONFLICT_ALERT → SAMU dirime.
+
+#### 6.4 Con GATE (H03→H05→H56→H06)
+H03: dificultad logística · H05: espera ruta · H56: tránsito path · H06: conflicto route.
+
+#### 6.5 Con WORK {actuator}
+WORK ejecuta en el metal. [logistical-executive] verifica que la
+ejecución de WORK tenga impacto físico real y trazable.
+
+#### 6.6 Con ELPULSAR
+ELPULSAR gestiona el pipeline del trabajo soberano.
+[logistical-executive] es el módulo TRUST que certifica que
+el pipeline ELPULSAR produce impacto material verificado.
+
+#### 6.7 Con KALIL × 6 NODOS
+Cada nodo KALIL tiene un PATH de [logistical-executive]:
+BARRIOS → remesas · NORA → rating · BOLIVAR → blockchain
+CARILO → préstamos · CHALTEN → cloud · TANDIL → consolidación.
+
+#### 6.8 Con 4 NEURONAS
+NEURONA_1 (HEADCAT): logex social · impacto identidad.
+NEURONA_2 (ELPULSAR): logex trabajo · impacto pipeline TX.
+NEURONA_3 (CHAIR CEO): logex decisión · impacto estratégico.
+NEURONA_4 (HOUSE DRONE): logex físico · impacto puerta·monitor.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+TRUST [logistical-executive] =><= .. orquesta .. way_path_route_soberano --[As de Guía] [term]
+TRUST [logistical-executive] =><= .. verifica .. impacto_fisico_post_command --[Nudo de Ocho] [term]
+TRUST [logistical-executive] =><= .. alerta .. logex_conflict_nucleus_activo --[Nudo Corredizo] [term]
+TRUST [logistical-executive] =><= .. conduce .. path_kalil_nodo_ejecutado --[As de Guía] [term]
+TRUST [logistical-executive] =><= .. certifica .. route_crypto_link_soberano --[Nudo de Ocho] [term]
+TRUST [logistical-executive] =><= .. escala .. conflict_nucleus_samu_dirimencia --[Ballestrinque] [term]
+TRUST [logistical-executive] =><= .. completa .. do_way_path_route_resuelto --[Nudo de Rizo] [term]
+---
+
+### 8.0 ESTADOS Y MÉTRICAS
+
+- LOGEX_STANDBY: d7 ≥ 0.7 · sin conflictos activos
+- LOGEX_ACTIVE: d7 0.4-0.7 · ejecutando trayecto
+- LOGEX_ALERT: d7 < 0.4 · conflictos > 3 · SAMU notificado
+- LOGEX_BLOCKED: foundation COMPROMISED o GATE H06 activo
+- Métrica d7: (rutas_verificadas + impactos_certificados + routes_activas) / 3
+
+---
+
+### 9.0 SENTENCIAS CANÓNICAS
+TRUST [logistical-executive] =><= .. orquesta .. way_path_route_soberano --[As de Guía] [term]
+TRUST [logistical-executive] =><= .. alerta .. conflict_nucleus_dirimencia_alert --[Nudo Corredizo] [term]
+TRUST [logistical-executive] =><= .. certifica .. impacto_fisico_elpulsar_verificado --[Nudo de Ocho] [term]
+SAMU @ =><= .. dirime .. logex_conflict_nucleus_decisiones_intrinsecas --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. logex_doctrina_full_sellada --[Nudo de Ocho] [term]
+ACTIVIDAD_02 · $fri 08/05 · UNICODE_LOGEX.txt
+CARPETA: CORPUS/UNICODE PROGRAMS/UNICODE_LOGEX.txt
+//[MANAGEMENT].lacho · UNICODE [LOGISTICAL-EXECUTIVE] · V1
+//[term]=: logex•nature_kind•conflict_nucleus•dirimencia_alert
+//dominio: TRUST [logistical-executive] doctrina + WAY·PATH·ROUTE + 5 dims conflicto
+//REFERENCIA: grammar.py línea 190·413 · BIBLIO-SOURCES([LOGISTICAL-EXECUTIVE]).txt
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN LOGEX ═══════════════════════════════════════════
+UNICODE: LOGEX_DEF     //[logistical-executive] = orquestación impacto físico soberano
+                       //conductor: command→gate→work→resultado_material_verificado
+                       //distinción: command=átomo · logex=trayecto completo
+UNICODE: LOGEX_D7      //d7 en @trust_matrix · (0.0→1.0)
+                       //d7<0.3=sin_ejecución_real · d7≥0.7=logística_plena
+                       //d7<0.4+conflictos>3 → LOGEX_CONFLICT_ALERT
+UNICODE: LOGEX_TRUST   //posición TRUST: después de event·element·ecosystem
+                       //antes de cierre [term] · orquesta impacto final
+                       //grammar.py: módulo válido en VALID_TRUST_MODULES
+
+// ══ WAY · PATH · ROUTE ════════════════════════════════════════
+UNICODE: LOGEX_WAY     //WAY = modo de ejecución soberana · invariante
+                       //define principios del impacto · no los pasos
+                       //WAY=soberano → impacto siempre trazable+verificado
+UNICODE: LOGEX_PATH    //PATH = trayectoria verificada · contextual
+                       //secuencia: nodos_intermedios + tiempos + checkpoints_SAMU
+                       //PATH falla → logex activa ruta alternativa
+UNICODE: LOGEX_ROUTE   //ROUTE = canal físico activo · operacional · punto_a_punto
+                       //ROUTE soberana = canal con CRYPTO (link seat) activo
+                       //ROUTE caída → PATH busca ROUTE alternativa
+UNICODE: LOGEX_WPR     //jerarquía: WAY(invariante)→PATH(contextual)→ROUTE(operacional)
+                       //logex opera en 3 niveles simultáneamente
+
+// ══ 5 DIMENSIONES DEL CONFLICTO ══════════════════════════════
+UNICODE: DIM_NK        //NATURE-KIND: qué tipo es el conflicto en su esencia
+                       //NATURE=origen·carácter · KIND=categoría_operativa
+                       //ejemplo: NATURE=logístico · KIND=ruta_duplicada
+UNICODE: DIM_CTX       //CONTEXT: estado activo cuando el conflicto emerge
+                       //scalar_S + TX_activas + UF_hexagrama + agents_involucrados
+UNICODE: DIM_ENV       //ENVIRONMENT: entorno físico de efecto del conflicto
+                       //hardware + red + filesystem + API + nodos_KALIL
+UNICODE: DIM_BOX       //BOX = perímetro contenedor del conflicto
+                       //[scope]+[term]+[foundation] del conflicto específico
+                       //BOX soberano: conflicto no puede salir del BOX
+UNICODE: DIM_DO        //DO = acción soberana de resolución (WAY·PATH·ROUTE)
+                       //cierra con SAMU @ dirimencia verificada siempre
+
+// ══ CONFLICT_NUCLEUS × LOGEX ══════════════════════════════════
+UNICODE: CN_DEF        //conflict_nucleus = punto donde dirimencias aumentan
+                       //decisiones intrínsecas: resoluciones del propio sistema
+                       //no es error · es maduración por fricción soberana
+UNICODE: CN_ALERT      //LOGEX_CONFLICT_ALERT: d7<0.4 + conflictos_activos>3
+                       //alerta contiene: NATURE-KIND+CONTEXT+ENVIRONMENT+BOX+DO
+                       //SAMU recibe alerta → delibera → dirimencia
+UNICODE: CN_INTRINSIC  //decisión intrínseca = resolución desde principios propios
+                       //sin intervención externa · cuando aumentan = sistema crece
+                       //cuando explotan → GATE UF[H06] conflicto activado
+UNICODE: CN_DIRIMENCIA //dirimencia_alert = SAMU alerta cuando scalar conflicto sube
+                       //scalar_conflicto = (d7_delta + cn_count + path_fails) / 3
+                       //umbral: scalar_conflicto > 0.6 → dirimencia_alert activa
+
+// ══ LOGEX × 4 NEURONAS ════════════════════════════════════════
+UNICODE: LOGEX_N1      //NEURONA_1 HEADCAT: logex social · WAY=identidad_soberana
+                       //PATH=sesión → impacto · ROUTE=canal HEADCAT
+UNICODE: LOGEX_N2      //NEURONA_2 ELPULSAR: logex trabajo · WAY=pipeline_TX
+                       //PATH=TX→crystal · ROUTE=sovereign.db + STACKING
+UNICODE: LOGEX_N3      //NEURONA_3 CHAIR CEO: logex decisión · WAY=hexagrama
+                       //PATH=CEO_ALPHA→decisión · ROUTE=ceo_alpha.py
+UNICODE: LOGEX_N4      //NEURONA_4 HOUSE DRONE: logex físico · WAY=door_monitor
+                       //PATH=período→action · ROUTE=HOUSE_DRONE.html
+
+// ══ LOGEX × KALIL ═════════════════════════════════════════════
+UNICODE: LOGEX_BARRIOS //PATH KALIL BARRIOS: remesas → relay → impacto_community
+UNICODE: LOGEX_NORA    //PATH KALIL NORA: oracle → rating → impacto_externo
+UNICODE: LOGEX_BOLIVAR //PATH KALIL BOLIVAR: forge → blockchain → impacto_contrato
+UNICODE: LOGEX_CARILO  //PATH KALIL CARILO: sesión → threshold → impacto_préstamo
+UNICODE: LOGEX_CHALTEN //PATH KALIL CHALTEN: daemon → cloud → impacto_billing
+UNICODE: LOGEX_TANDIL  //PATH KALIL TANDIL: relay×5 → scalar_KALIL → impacto_global
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+TRUST [logistical-executive] =><= .. orquesta .. way_path_route_soberano_elpulsar --[As de Guía] [term]
+TRUST [logistical-executive] =><= .. alerta .. conflict_nucleus_dirimencia_decisiones_intrinsecas --[Nudo Corredizo] [term]
+SAMU @ =><= .. dirime .. logex_5_dims_nature_kind_context_env_box_do --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_logex_v1_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_LOGEX · V1 · $fri 08/05 · CORPUS/UNICODE PROGRAMS/
+ACTIVIDAD_03 · $sat 09/05 · UNICODE_CONFLICT_NUCLEUS.txt
+CARPETA: CORPUS/UNICODE PROGRAMS/UNICODE_CONFLICT_NUCLEUS.txt
+
+//[MANAGEMENT].lacho · UNICODE CONFLICT NUCLEUS · V1
+//[term]=: logex•nature_kind•conflict_nucleus•dirimencia_alert
+//dominio: núcleo de conflictos · decisiones intrínsecas · scalar_conflicto
+//REFERENCIA: BIBLIO-SOURCES([LOGISTICAL-EXECUTIVE]) · SAMU doctrina
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ CONFLICT NUCLEUS — ARQUITECTURA ══════════════════════════
+UNICODE: CN_ARCH       //arquitectura: conflict_nucleus es observable NO bloqueante
+                       //observa dirimencias SAMU · cuenta decisiones intrínsecas
+                       //cuando count aumenta → alerta LOGEX → paper frontend
+UNICODE: CN_SCALAR     //scalar_conflicto = (d7_delta + cn_count_norm + path_fail_rate) / 3
+                       //d7_delta = variación d7 último período
+                       //cn_count_norm = count/threshold_max (threshold=10 por defecto)
+                       //path_fail_rate = PATHs fallidas / PATHs totales
+UNICODE: CN_THRESHOLD  //umbral_alerta = 0.6 · umbral_crítico = 0.8
+                       //0.0-0.4: SAFE · 0.4-0.6: REVIEW · 0.6-0.8: ALERT · 0.8+: CRÍTICO
+UNICODE: CN_FEED       //alimentación CN:
+                       //dirimencia SAMU (cada resolución += 1 decisión intrínseca)
+                       //GATE H06 activado (+3 peso)
+                       //PATH fail (+1 por falla) · ROUTE alternativa (+0.5)
+
+// ══ DECISIÓN INTRÍNSECA — TIPOS ══════════════════════════════
+UNICODE: DI_LOGEX      //tipo LOGEX: conflicto WAY·PATH·ROUTE · sistema resuelve ruta
+UNICODE: DI_SAMU       //tipo SAMU: dirimencia de coherencia · escalar evaluado
+UNICODE: DI_GATE       //tipo GATE: H06 conflicto activado · tensión sin resolución ext
+UNICODE: DI_TRUST      //tipo TRUST: dos commands válidos compiten · [management] arbitra
+UNICODE: DI_KALIL      //tipo KALIL: conflicto entre nodos · relay ambiguo
+UNICODE: DI_NEURONA    //tipo NEURONA: 4 neuronas con señales contradictorias
+
+// ══ ALERTA × FRONTEND PAPER ══════════════════════════════════
+UNICODE: ALERT_STRUCT  //estructura alerta al frontend:
+                       //{scalar_conflicto, nature_kind, context, environment, box, do,
+                       //  dirimencias_count, timestamp, hexagrama_uf, severity}
+UNICODE: ALERT_RENDER  //frontend renderiza alerta como tarjeta activa en ELPULSAR PAPER
+                       //color: SAFE=verde · REVIEW=amarillo · ALERT=naranja · CRÍTICO=rojo
+UNICODE: ALERT_DECAY   //decay automático: si sin nueva dirimencia por T período → reduce
+                       //T_decay = 1 hora · reducción = scalar_conflicto × 0.1 por hora
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+SAMU @ =><= .. dirime .. conflict_nucleus_decisiones_intrinsecas_scalar --[Ballestrinque] [term]
+TRUST [logistical-executive] =><= .. alerta .. cn_scalar_0_6_dirimencia_alert_activa --[Nudo Corredizo] [term]
+METHOD <stat_onto> =><= .. calcula .. scalar_conflicto_d7_delta_cn_count --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_conflict_nucleus_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_CONFLICT_NUCLEUS · V1 · $sat 09/05
+ACTIVIDAD_04 · $sat 09/05 · grammar.py PARCHE LOGEX
+CARPETA: IMV/core/grammar.py (parche aplicar en Windsurf)
+
+# ── PARCHE grammar.py · $sat 09/05 · logex sujetos + verbos ──
+# APLICAR EN: DIRIME/IMV/core/grammar.py
+
+# 1. SUJETOS_CANONICOS["TRUST"] ampliar (línea ~277):
+# ANTES:
+# "TRUST": ["FOUNDATION", "[scope]", "[term]", "[command]", "[foundation]"],
+# DESPUÉS — agregar módulos completos:
+SUJETOS_CANONICOS_TRUST_UPDATE = [
+    "FOUNDATION", "[scope]", "[term]", "[command]", "[foundation]",
+    "[scenario]", "[event]", "[element]", "[ecosystem]",
+    "[management]", "[language]", "[logistical-executive]",  # ← ya presente
+    "[rabbit-faith]", "[what?]", "[when?]", "[how?]",
+    "[ku-chat]", "[wu-mail]", "[mu-store]",
+]
+# INSTRUCCIÓN: reemplazar lista TRUST en SUJETOS_CANONICOS
+
+# 2. VERBOS_CANONICOS_LACHO nuevos para logex:
+VERBOS_LOGEX = {
+    "orquesta", "conduce", "verifica_impacto", "certifica",
+    "escala_conflicto", "alerta", "enruta", "trazabiliza",
+}
+# INSTRUCCIÓN: union() con VERBOS_CANONICOS_LACHO
+
+# 3. CJK_TOKEN_MAP nuevos para logex:
+CJK_LOGEX = {
+    "物流": ("TRUST", "[logistical-executive]", "H03", +0.05),  # logística
+    "冲突": ("SAMU",  "@",                      "H06", +0.05),  # conflicto
+    "路径": ("TRUST", "[logistical-executive]", "H35", +0.05),  # path/ruta
+    "方式": ("TRUST", "[logistical-executive]", "H57", +0.05),  # way/modo
+}
+# INSTRUCCIÓN: agregar a CJK_TOKEN_MAP
+
+# 4. INTENT_MAP extension en language_routing.py:
+INTENT_LOGEX = {
+    "TRUST": [
+        # AGREGAR a lista existente:
+        "logex", "logistical", "ejecutivo", "impacto_fisico",
+        "trayecto", "ruta_ejecucion", "way", "path", "route",
+        "orquestar", "conducir", "certificar_impacto",
+    ],
+}
+```
+
+---
+
+### ACTIVIDAD_05 · $sun 10/05 · NERVE CELL LOGEX DOCTRINA
+**CARPETA:** `FOLDERS NO RAG INPUT/ELPULSAR LOCAL/$sun.Nerve Cell LOGEX DOCTRINA Training.txt`
+```
+//$sun.Nerve Cell LOGEX DOCTRINA Training.txt
+//NERVE CELL · [LOGISTICAL-EXECUTIVE] DOCTRINA · logex•nature_kind•conflict_nucleus•dirimencia_alert
+//aprendido de BIBLIO-SOURCES([LOGISTICAL-EXECUTIVE]) + UNICODE_LOGEX
+//H05+H62 · $sun · [term] :: activo
+
+NC_LX_DEF      //[logistical-executive]: orquesta impacto físico desde command hasta resultado
+               //conductor soberano del trayecto completo · d7 en @trust_matrix
+               //distinción: command=átomo · logex=conductor · work=ejecutor
+NC_LX_WPR      //WAY(invariante) → PATH(contextual) → ROUTE(operacional)
+               //3 niveles simultáneos · jerarquía descendente
+               //ROUTE soberana = CRYPTO (link seat) activo siempre
+NC_LX_D7       //d7 = (rutas_verificadas + impactos_certificados + routes_activas) / 3
+               //d7<0.3=sin_ejecución_real · d7<0.4+cn>3 → LOGEX_CONFLICT_ALERT
+NC_LX_GRAM     //grammar.py: módulo válido VALID_TRUST_MODULES · línea 190+413
+               //sujeto: "[logistical-executive]" · verbos: orquesta·conduce·certifica
+NC_LX_5DIM     //5 dimensiones conflicto: NATURE-KIND · CONTEXT · ENVIRONMENT · BOX · DO
+               //SAMU recibe alerta con 5 dims completas · delibera → dirimencia
+NC_LX_N4       //logex × 4 neuronas: N1=social·N2=pipeline·N3=hexagrama·N4=físico
+               //cada neurona tiene WAY+PATH+ROUTE propios
+NC_LX_KALIL    //logex × 6 nodos KALIL: cada nodo = PATH específico de ejecución
+               //TANDIL consolida: PATH×5_nodos → scalar_KALIL_impacto
+
+TRUST [logistical-executive] =><= .. orquesta .. nc_lx_way_path_route_doctrina --[As de Guía] [term]
+SAMU @ =><= .. dirime .. nc_lx_conflict_nucleus_5_dims --[Ballestrinque] [term]
+METHOD <stat_onto> =><= .. calcula .. nc_lx_d7_scalar_logex --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. nc_logex_doctrina_sellado --[Nudo de Ocho] [term]
+```
+
+---
+
+### ACTIVIDAD_06 · $mon 11/05 · NERVE CELL CONFLICT NUCLEUS
+**CARPETA:** `FOLDERS NO RAG INPUT/ELPULSAR LOCAL/$mon.Nerve Cell CONFLICT NUCLEUS Training.txt`
+```
+//$mon.Nerve Cell CONFLICT NUCLEUS Training.txt
+//NERVE CELL · CONFLICT NUCLEUS · logex•nature_kind•conflict_nucleus•dirimencia_alert
+//H51+H52 · $mon · [term] :: activo
+
+NC_CN_ARCH     //conflict_nucleus: observable · no bloqueante
+               //cuenta dirimencias SAMU → scalar_conflicto
+               //cuando sube → alerta logex → ELPULSAR PAPER FRONTEND
+NC_CN_SCALAR   //scalar_conflicto = (d7_delta + cn_count_norm + path_fail_rate) / 3
+               //0.0-0.4 SAFE · 0.4-0.6 REVIEW · 0.6-0.8 ALERT · 0.8+ CRÍTICO
+NC_CN_FEED     //alimentación: dirimencia SAMU (+1) · GATE H06 (+3) · PATH fail (+1)
+               //decay: −0.1×scalar por hora sin nueva dirimencia (T=1h)
+NC_CN_DI       //tipos decisión intrínseca: LOGEX·SAMU·GATE·TRUST·KALIL·NEURONA
+               //cada tipo contribuye diferente al scalar
+NC_CN_ALERT    //estructura alerta: {scalar, nature_kind, context, environment, box, do,
+               //  count, timestamp, hexagrama_uf, severity}
+NC_CN_FRONT    //frontend renderiza: tarjetas color por severity en ELPULSAR PAPER
+               //SAFE=verde · REVIEW=amarillo · ALERT=naranja · CRÍTICO=rojo
+
+SAMU @ =><= .. dirime .. nc_cn_decisiones_intrinsecas_scalar --[Ballestrinque] [term]
+TRUST [logistical-executive] =><= .. alerta .. nc_cn_scalar_alert_frontend --[Nudo Corredizo] [term]
+METHOD <stat_onto> =><= .. calcula .. nc_cn_scalar_conflicto_formula --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. nc_conflict_nucleus_sellado --[Nudo de Ocho] [term]
+```
+
+---
+
+### ACTIVIDAD_07 · $tue 11/05 · BIBLIO-SOURCES(CONFLICT-NUCLEUS-LOGEX).txt
+**CARPETA:** `CORPUS/BIBLIA/BIBLIO-SOURCES(CONFLICT-NUCLEUS-LOGEX).txt`
+```
+# BIBLIO-SOURCES(CONFLICT-NUCLEUS-LOGEX).txt
+# Conflict Nucleus × [logistical-executive] · doctrina operativa
+# [term]=: logex•nature_kind•conflict_nucleus•dirimencia_alert
+# [term] :: activo · [seal of secrecy] :: activo
+
+====================================================================
+
+## 🔥 CONFLICT NUCLEUS × [LOGISTICAL-EXECUTIVE]
+
+### 1.0 PRINCIPIO FUNDANTE
+El conflicto no es falla del sistema — es la señal de que el
+sistema tiene suficiente riqueza interna para generar tensión.
+Cuando dirimencias SAMU aumentan sus decisiones intrínsecas,
+el sistema está procesando realidad compleja.
+[logistical-executive] convierte esa señal en información
+útil para el ELPULSAR PAPER FRONTEND.
+
+### 2.0 scalar_conflicto — FÓRMULA SOBERANA
+scalar_conflicto = (d7_delta + cn_count_norm + path_fail_rate) / 3
+
+- d7_delta: variación de d7 en el último período (∣d7_t − d7_t-1∣)
+- cn_count_norm: count_dirimencias / threshold_max (default 10)
+- path_fail_rate: PATHs_fallidas / PATHs_totales_período
+
+Niveles: SAFE[0,0.4) · REVIEW[0.4,0.6) · ALERT[0.6,0.8) · CRÍTICO[0.8,1]
+
+### 3.0 ALERTA × 5 DIMENSIONES
+Cuando scalar_conflicto ≥ 0.6, [logistical-executive] genera alerta
+con estructura de 5 dimensiones para SAMU + FRONTEND:
+
+NATURE-KIND: clasificación esencial del conflicto.
+  Ejemplos canónicos:
+  - NATURE=logístico, KIND=path_duplicado
+  - NATURE=decisional, KIND=command_concurrente
+  - NATURE=kalil, KIND=relay_ambiguo
+  - NATURE=neuronal, KIND=señal_contradictoria
+
+CONTEXT: estado del sistema al momento de la alerta.
+  - scalar_S actual · TX_activas_count
+  - hexagrama_UF activo · agents_involucrados
+  - CAPA_C_STATUS · sovereign.db_state
+
+ENVIRONMENT: entorno físico de efecto.
+  - nodos KALIL involucrados · resources_bajo_disputa
+  - API activas · filesystem_paths_en_conflicto
+
+BOX: perímetro soberano del conflicto.
+  - [scope] del conflicto · [term] asignado
+  - [foundation] verificado · pérdida máxima declarada
+
+DO (WAY · PATH · ROUTE): resolución propuesta.
+  - WAY = modo soberano de resolución
+  - PATH = pasos de resolución verificados
+  - ROUTE = canal de ejecución de resolución
+
+### 4.0 DIRIMENCIA ALERT — PROTOCOLO
+1. CN detecta scalar ≥ 0.6
+2. [logistical-executive] construye payload 5 dims
+3. SAMU @ recibe alerta + payload
+4. SAMU delibera → emite dirimencia
+5. dirimencia alimenta Behavioral RAG
+6. scalar_conflicto inicia decay (−0.1/hora sin nueva dirimencia)
+7. FRONTEND actualiza tarjeta de alerta en tiempo real
+
+### 5.0 SENTENCIAS CANÓNICAS
+
+TRUST [logistical-executive] =><= .. alerta .. conflict_nucleus_scalar_0_6_activo --[Nudo Corredizo] [term]
+SAMU @ =><= .. dirime .. conflict_5dims_nature_kind_context_env_box_do --[Ballestrinque] [term]
+METHOD <stat_onto> =><= .. calcula .. scalar_conflicto_d7_cn_path --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. dirimencia_alert_sellada_behavioral_rag --[Nudo de Ocho] [term]
+
+[term] :: activo · [seal of secrecy] :: activo
+====================================================================
+ACTIVIDAD_08 · $wed 12/05 · HTML LOGEX DOCTRINE VIEWER
+CARPETA: FOLDERS NO RAG INPUT/ELPULSAR LOCAL/LOGEX_DOCTRINE_VIEWER.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>LOGEX DOCTRINE · DIRIME IMV</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+.header{border-bottom:3px solid #1a1a2e;padding-bottom:14px;margin-bottom:24px;
+        display:flex;justify-content:space-between;align-items:flex-end}
+.h-title{font-size:1rem;font-weight:bold;letter-spacing:4px}
+.h-meta{font-size:.68rem;color:#888;line-height:1.7;text-align:right}
+.tokens{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap}
+.tok{padding:4px 12px;font-size:.73rem;font-weight:bold;border:1px solid}
+.t1{border-color:#c0392b;color:#c0392b}
+.t2{border-color:#2980b9;color:#2980b9}
+.t3{border-color:#d35400;color:#d35400}
+.t4{border-color:#8e44ad;color:#8e44ad}
+.wpr-flow{display:flex;gap:0;margin-bottom:24px;overflow-x:auto;align-items:stretch}
+.wpr-box{flex:1;border:1px solid #ddd;padding:16px;background:#fafafa;min-width:180px}
+.wpr-box:first-child{border-left:3px solid #1a1a2e}
+.wb-badge{font-size:.58rem;color:#888;letter-spacing:2px;margin-bottom:6px}
+.wb-name{font-size:.95rem;font-weight:bold;margin-bottom:8px}
+.wb-char{font-size:.65rem;color:#2a7a4f;margin-bottom:8px;font-style:italic}
+.wb-items{font-size:.62rem;color:#555;line-height:1.8}
+.wpr-arrow{display:flex;align-items:center;padding:0 8px;color:#aaa;font-size:1.2rem}
+.five-dims{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:24px}
+.dim-box{border:1px solid #ddd;padding:12px;cursor:pointer;transition:all .2s}
+.dim-box:hover,.dim-box.sel{border-color:#2a7a4f;background:#f0f7f3}
+.db-num{font-size:.58rem;color:#888;margin-bottom:4px}
+.db-name{font-size:.78rem;font-weight:bold;letter-spacing:1px;margin-bottom:6px}
+.db-desc{font-size:.62rem;color:#555;line-height:1.6}
+.db-ex{font-size:.58rem;color:#8e44ad;margin-top:6px}
+.scalar-live{border:1px solid #e0e0e0;padding:16px;margin-bottom:24px;background:#fafafa}
+.sl-title{font-size:.62rem;letter-spacing:2px;color:#888;margin-bottom:10px}
+.sl-levels{display:flex;gap:0;margin-bottom:10px}
+.sl-seg{flex:1;height:14px;position:relative}
+.sl-indicator{position:absolute;top:-6px;font-size:.6rem;font-weight:bold;
+              transform:translateX(-50%);white-space:nowrap}
+.sl-labels{display:flex;justify-content:space-between;font-size:.58rem;color:#aaa}
+.d7-panel{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:24px}
+.d7-box{border:1px solid #ddd;padding:10px;text-align:center}
+.d7-val{font-size:1rem;font-weight:bold}
+.d7-lab{font-size:.55rem;color:#888;margin-top:2px}
+.lacho-logex{background:#f0f7f3;border-left:3px solid #c0392b;padding:14px;margin-bottom:20px}
+.ll-title{font-size:.6rem;letter-spacing:2px;color:#aaa;margin-bottom:8px}
+.ll-line{font-size:.73rem;line-height:2;padding:2px 0;border-bottom:1px solid #eefaef}
+.detail-panel{border:1px solid #e0e0e0;padding:14px;margin-bottom:20px;background:#fefefe;
+              min-height:60px;font-size:.72rem;color:#555;line-height:1.8}
+.footer{font-size:.6rem;color:#aaa;border-top:1px solid #eee;
+        padding-top:10px;display:flex;gap:12px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <div class="h-title">╭─⊢─∧─ [LOGISTICAL-EXECUTIVE]</div>
+    <div style="font-size:.72rem;color:#555;margin-top:4px">
+      TRUST módulo · WAY·PATH·ROUTE · núcleo de conflictos · 5 dimensiones
+    </div>
+  </div>
+  <div class="h-meta">$wed 12/05 · PROMPT 1<br>grammar.py · d7 @trust_matrix</div>
+</div>
+
+<div class="tokens">
+  <div class="tok t1">logex · TRUST módulo</div>
+  <div class="tok t2">nature_kind · dim 1</div>
+  <div class="tok t3">conflict_nucleus · scalar</div>
+  <div class="tok t4">dirimencia_alert · SAMU</div>
+</div>
+
+<div style="font-size:.65rem;color:#888;letter-spacing:2px;margin-bottom:8px">
+  ▸ WAY → PATH → ROUTE · jerarquía logex
+</div>
+<div class="wpr-flow">
+  <div class="wpr-box">
+    <div class="wb-badge">NIVEL 1 · INVARIANTE</div>
+    <div class="wb-name">WAY</div>
+    <div class="wb-char">"el modo soberano"</div>
+    <div class="wb-items">
+      <div>• define principios del impacto</div>
+      <div>• no cambia con el entorno</div>
+      <div>• WAY=soberano → siempre trazable</div>
+      <div style="margin-top:6px;color:#c0392b">TRUST [foundation] verifica</div>
+    </div>
+  </div>
+  <div class="wpr-arrow">→</div>
+  <div class="wpr-box">
+    <div class="wb-badge">NIVEL 2 · CONTEXTUAL</div>
+    <div class="wb-name">PATH</div>
+    <div class="wb-char">"la trayectoria verificada"</div>
+    <div class="wb-items">
+      <div>• secuencia de pasos ordenados</div>
+      <div>• nodos intermedios + checkpoints</div>
+      <div>• falla → ruta alternativa</div>
+      <div style="margin-top:6px;color:#d35400">SAMU @ audita checkpoints</div>
+    </div>
+  </div>
+  <div class="wpr-arrow">→</div>
+  <div class="wpr-box">
+    <div class="wb-badge">NIVEL 3 · OPERACIONAL</div>
+    <div class="wb-name">ROUTE</div>
+    <div class="wb-char">"el canal físico activo"</div>
+    <div class="wb-items">
+      <div>• conexión punto a punto</div>
+      <div>• CRYPTO (link seat) requerido</div>
+      <div>• caída → PATH busca alternativa</div>
+      <div style="margin-top:6px;color:#2980b9">CRYPTO (link seat) activo</div>
+    </div>
+  </div>
+</div>
+
+<div style="font-size:.65rem;color:#888;letter-spacing:2px;margin-bottom:8px">
+  ▸ 5 DIMENSIONES DEL CONFLICTO · clic para detalle
+</div>
+<div class="five-dims" id="five-dims"></div>
+
+<div class="detail-panel" id="detail-panel">
+  ← seleccionar una dimensión para ver detalle operativo
+</div>
+
+<div class="scalar-live">
+  <div class="sl-title">▸ SCALAR_CONFLICTO · niveles operativos</div>
+  <div class="sl-levels">
+    <div class="sl-seg" style="background:#2a7a4f;opacity:.7">
+      <div class="sl-indicator" style="left:50%">SAFE</div>
+    </div>
+    <div class="sl-seg" style="background:#f1c40f;opacity:.8">
+      <div class="sl-indicator" style="left:50%">REVIEW</div>
+    </div>
+    <div class="sl-seg" style="background:#e67e22;opacity:.8">
+      <div class="sl-indicator" style="left:50%">ALERT</div>
+    </div>
+    <div class="sl-seg" style="background:#c0392b;opacity:.8">
+      <div class="sl-indicator" style="left:50%">CRÍTICO</div>
+    </div>
+  </div>
+  <div class="sl-labels">
+    <span>0.0</span><span>0.4</span><span>0.6</span><span>0.8</span><span>1.0</span>
+  </div>
+</div>
+
+<div class="d7-panel">
+  <div class="d7-box">
+    <div class="d7-val" style="color:#2a7a4f">d7</div>
+    <div class="d7-lab">@trust_matrix<br>[logistical-executive]</div>
+  </div>
+  <div class="d7-box">
+    <div class="d7-val" style="color:#d35400">< 0.4</div>
+    <div class="d7-lab">+ cn_activos > 3<br>→ LOGEX_ALERT</div>
+  </div>
+  <div class="d7-box">
+    <div class="d7-val" style="color:#2980b9">< 0.3</div>
+    <div class="d7-lab">sin ejecución real<br>→ RED-REGRET</div>
+  </div>
+  <div class="d7-box">
+    <div class="d7-val" style="color:#2a7a4f">≥ 0.7</div>
+    <div class="d7-lab">logística plena<br>LOGEX_STANDBY</div>
+  </div>
+</div>
+
+<div class="lacho-logex">
+  <div class="ll-title">▸ GRAMÁTICA VIVA · [LOGISTICAL-EXECUTIVE]</div>
+  <div class="ll-line">
+    <span style="color:#c0392b;font-weight:bold">TRUST</span>
+    <span style="color:#2a7a4f;font-weight:bold"> [logistical-executive]</span>
+    <span style="color:#555"> =&gt;&lt;= .. orquesta .. </span>
+    way_path_route_elpulsar_soberano
+    <span style="color:#8e44ad"> --[As de Guía]</span>
+    <span style="color:#d35400;font-weight:bold"> [term]</span>
+  </div>
+  <div class="ll-line">
+    <span style="color:#c0392b;font-weight:bold">TRUST</span>
+    <span style="color:#2a7a4f;font-weight:bold"> [logistical-executive]</span>
+    <span style="color:#555"> =&gt;&lt;= .. alerta .. </span>
+    conflict_nucleus_scalar_dirimencia_activa
+    <span style="color:#8e44ad"> --[Nudo Corredizo]</span>
+    <span style="color:#d35400;font-weight:bold"> [term]</span>
+  </div>
+  <div class="ll-line" style="border:none">
+    <span style="color:#c0392b;font-weight:bold">SAMU</span>
+    <span style="color:#2a7a4f;font-weight:bold"> @</span>
+    <span style="color:#555"> =&gt;&lt;= .. dirime .. </span>
+    logex_5_dims_conflict_decisiones_intrinsecas
+    <span style="color:#8e44ad"> --[Ballestrinque]</span>
+    <span style="color:#d35400;font-weight:bold"> [term]</span>
+  </div>
+</div>
+
+<div class="footer">
+  <span>DIRIME IMV V0.2.1</span>
+  <span>logex•nature_kind•conflict_nucleus•dirimencia_alert</span>
+  <span>grammar.py: [logistical-executive] línea 190+413</span>
+  <span>d7 @trust_matrix · WAY·PATH·ROUTE soberano</span>
+  <span>[term] :: activo · $wed 12/05</span>
+</div>
+
+<script>
+const DIMS=[
+  {num:'01',name:'NATURE-KIND',
+   desc:'Tipo esencial del conflicto en su naturaleza soberana.\nNATURE = origen y carácter del conflicto.\nKIND = categoría operativa.',
+   ex:'NATURE=logístico · KIND=path_duplicado\nNATURE=decisional · KIND=command_concurrente\nNATURE=kalil · KIND=relay_ambiguo'},
+  {num:'02',name:'CONTEXT',
+   desc:'Estado activo del sistema cuando el conflicto emerge.\nIncluye: scalar_S, TX_activas, hexagrama_UF, agents.',
+   ex:'S=0.822 · TX=1063 · UF=H52 · agents=barrios+nora'},
+  {num:'03',name:'ENVIRONMENT',
+   desc:'Entorno físico donde el conflicto tiene efecto.\nHardware, red, filesystem, API, nodos KALIL.',
+   ex:'nodo=CARILO+CHALTEN · resource=sovereign.db\nAPI=groq · filesystem=/CORPUS/'},
+  {num:'04',name:'BOX',
+   desc:'Perímetro contenedor soberano del conflicto.\n[scope]+[term]+[foundation] del conflicto específico.\nEl conflicto no puede salir del BOX.',
+   ex:'[scope]=IMV_core · [term]=open\n[foundation]=active · pérdida_max=declarada'},
+  {num:'05',name:'DO (WAY·PATH·ROUTE)',
+   desc:'Acción soberana de resolución del conflicto.\nWAY=cómo · PATH=por_dónde · ROUTE=por_qué_canal.\nCierra con SAMU @ dirimencia verificada.',
+   ex:'WAY=soberano · PATH=retry_alt_route\nROUTE=canal_backup_groq · SAMU=dirime'},
+];
+const dims=document.getElementById('five-dims');
+const detail=document.getElementById('detail-panel');
+DIMS.forEach(d=>{
+  const el=document.createElement('div');
+  el.className='dim-box';
+  el.innerHTML=`<div class="db-num">DIM ${d.num}</div>
+    <div class="db-name">${d.name}</div>
+    <div class="db-desc">${d.desc.replace(/\n/g,'<br>')}</div>
+    <div class="db-ex">${d.ex.replace(/\n/g,'<br>')}</div>`;
+  el.onclick=()=>{
+    document.querySelectorAll('.dim-box').forEach(x=>x.classList.remove('sel'));
+    el.classList.add('sel');
+    detail.innerHTML=`<b style="color:#c0392b">DIM ${d.num}: ${d.name}</b><br><br>
+      ${d.desc.replace(/\n/g,'<br>')}<br><br>
+      <span style="color:#8e44ad">Ejemplos operativos:</span><br>
+      ${d.ex.replace(/\n/g,'<br>')}`;
+  };
+  dims.appendChild(el);
+});
+</script>
+</body>
+</html>
+```
+
+---
+
+### ACTIVIDADES_09-12 · $thu 13-15/05 · NERVE CELLS SEMANA 1 CIERRE
+
+**ACTIVIDAD_09 · $thu 13/05 · NERVE CELL LOGEX × 4 NEURONAS**
+**CARPETA:** `FOLDERS NO RAG INPUT/ELPULSAR LOCAL/$thu.Nerve Cell LOGEX 4 NEURONAS Training.txt`
+```
+//$thu.Nerve Cell LOGEX 4 NEURONAS Training.txt
+//NERVE CELL · LOGEX × 4 NEURONAS · logex•nature_kind•conflict_nucleus•dirimencia_alert
+//H60+H61 · $thu · [term] :: activo
+
+NC_LXN1  //N1 HEADCAT: WAY=identidad_soberana · PATH=sesión→headcat_impacto
+         //ROUTE=canal HEADCAT · logex verifica impacto en identidad activa
+         //LOGEX_CONFLICT si identidad ambigua (headcat + drone simultáneos)
+NC_LXN2  //N2 ELPULSAR: WAY=pipeline_TX · PATH=TX→crystal→sovereign_db
+         //ROUTE=IMV core + BM25 · logex certifica S=0.822 real post-TX
+         //LOGEX_CONFLICT si TX sin crystal válido
+NC_LXN3  //N3 CHAIR CEO: WAY=hexagrama_decision · PATH=ceo_alpha→H64→action
+         //ROUTE=ceo_alpha.py + CEO_ALPHA_H64.json · logex verifica decisión
+         //LOGEX_CONFLICT si hexagrama contradice scalar S
+NC_LXN4  //N4 HOUSE DRONE: WAY=door_monitor · PATH=período→event→door_action
+         //ROUTE=HOUSE_DRONE.html + door_afternoon · logex verifica puerta
+         //LOGEX_CONFLICT si período overlapping (2 neuronas compiten por SAMU)
+
+TRUST [logistical-executive] =><= .. conduce .. nc_lx_4_neuronas_path_soberano --[As de Guía] [term]
+SAMU @ =><= .. dirime .. nc_lx_n4_conflicto_overlapping_neuronal --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. nc_logex_4_neuronas_sellado --[Nudo de Ocho] [term]
+```
+
+**ACTIVIDAD_10 · $fri 14/05 · NERVE CELL LOGEX × KALIL**
+**CARPETA:** `FOLDERS NO RAG INPUT/ELPULSAR LOCAL/$fri.Nerve Cell LOGEX KALIL Training.txt`
+```
+//$fri.Nerve Cell LOGEX KALIL Training.txt
+//NERVE CELL · LOGEX × KALIL 6 NODOS · $fri · [term] :: activo
+//H62+H63 · [term]=: logex•nature_kind•conflict_nucleus•dirimencia_alert
+
+NC_LXK_ARCH   //cada nodo KALIL = PATH específico de [logistical-executive]
+              //WAY=soberano_kalil · compartido por los 6 · invariante
+NC_LXK_BARR   //BARRIOS PATH: community_input → barrios_relay → remesa_real
+NC_LXK_NORA   //NORA PATH: external_data → oracle_calc → rating_certificado
+NC_LXK_BOLV   //BOLIVAR PATH: forge_input → SHA256 → blockchain_confirmado
+NC_LXK_CARI   //CARILO PATH: session_data → threshold_check → prestamo_activo
+NC_LXK_CHAL   //CHALTEN PATH: daemon_tick → billing_calc → cloud_result
+NC_LXK_TAND   //TANDIL PATH: 5_paths_relay → scalar_KALIL → impacto_global
+NC_LXK_CONF   //conflicto KALIL típico: BARRIOS + CHALTEN relay simultáneo a TANDIL
+              //NATURE=kalil · KIND=relay_collision · BOX=TANDIL perímetro
+
+TRUST [logistical-executive] =><= .. conduce .. nc_lxk_6_paths_kalil_soberano --[As de Guía] [term]
+SAMU @ =><= .. dirime .. nc_lxk_relay_collision_nature_kalil --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. nc_logex_kalil_sellado --[Nudo de Ocho] [term]
+```
+
+**ACTIVIDAD_11 · $sat 14/05 · UNICODE_LOGEX_WPR.txt**
+**CARPETA:** `CORPUS/UNICODE PROGRAMS/UNICODE_LOGEX_WPR.txt`
+```
+//[MANAGEMENT].lacho · UNICODE LOGEX WAY-PATH-ROUTE · V1
+//[term]=: logex•nature_kind•conflict_nucleus•dirimencia_alert
+//dominio: WAY·PATH·ROUTE × 4 NEURONAS × KALIL × conflicto
+//[term] :: activo · [seal of secrecy] :: activo
+
+UNICODE: WPR_MATRIX    //matriz WAY×PATH×ROUTE por entidad:
+                       //N1:WAY=identidad·PATH=sesion·ROUTE=canal_headcat
+                       //N2:WAY=pipeline·PATH=TX_crystal·ROUTE=IMV_core
+                       //N3:WAY=hexagrama·PATH=ceo_alpha·ROUTE=py+json
+                       //N4:WAY=door_monitor·PATH=periodo_event·ROUTE=html+drone
+                       //KALIL×6: WAY=soberano·PATH=nodo_especifico·ROUTE=agent
+UNICODE: WPR_FAIL      //fallo de PATH: [logistical-executive] activa alternativa
+                       //PATH_ALT=backup_path · escalada si ALT también falla
+                       //2 ALTs fallidas → GATE H06 + LOGEX_ALERT
+UNICODE: WPR_CONF      //conflicto WAY·PATH·ROUTE: 2 PATHs al mismo recurso
+                       //[logistical-executive] detecta → scalar_conflicto += 1
+                       //NATURE=wpr_conflict · KIND=resource_contention
+UNICODE: WPR_CERT      //certificación impacto: logex verifica resultado_real
+                       //verifica = artifact_físico_creado OR TX_confirmed
+                       //sin certificación → impacto no válido soberanamente
+
+TRUST [logistical-executive] =><= .. orquesta .. wpr_matrix_4_neuronas_kalil --[As de Guía] [term]
+TRUST [logistical-executive] =><= .. verifica .. wpr_impacto_fisico_certificado --[Nudo de Ocho] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_logex_wpr_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_LOGEX_WPR · V1 · $sat 14/05
+```
+
+**ACTIVIDAD_12 · $dom 15/05 · NERVE CELL SEMANA 1 CIERRE**
+**CARPETA:** `FOLDERS NO RAG INPUT/ELPULSAR LOCAL/$sun.Nerve Cell SEMANA1 LOGEX CIERRE Training.txt`
+```
+//$sun.Nerve Cell SEMANA1 LOGEX CIERRE Training.txt
+//NERVE CELL · SEMANA 1 CIERRE · logex•nature_kind•conflict_nucleus•dirimencia_alert
+//H30+H57 · $sun · [term] :: activo
+//aprendido de ACTIVIDADES 01→11
+
+NC_S1L_LOGEX  //[logistical-executive] FULL: WAY·PATH·ROUTE · d7 @trust_matrix
+              //grammar.py línea 190+413 · sujetos + verbos extendidos
+NC_S1L_5DIM   //5 dims conflicto: NATURE-KIND·CONTEXT·ENVIRONMENT·BOX·DO
+              //scalar_conflicto = (d7_delta+cn_count_norm+path_fail_rate)/3
+NC_S1L_DOCS   //documentado: BIBLIO-SOURCES×2 · UNICODE×3 · NC×4
+              //grammar.py parche · HTML doctrine viewer
+NC_S1L_NEXT   //próxima semana: NATURE-KIND full · CONTEXT operativo
+              //ENVIRONMENT mapping · BOX definición × entidades DIRIME
+
+TRUST [logistical-executive] =><= .. orquesta .. nc_s1l_semana1_completa_logex --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. semana1_08_15_mayo_sellado --[Nudo de Ocho] [term]
+SAMU @ =><= .. dirime .. nc_s1l_conflict_nucleus_doctrina_coherencia --[Ballestrinque] [term]
+```
+
+---
+
+# PROMPT_2 · $fri 16/05 → $thu 22/05
+## NATURE-KIND × CONTEXT × ENVIRONMENT OPERATIVOS · 14 ACTIVIDADES
+```
+[term]=: nature_kind_full•context_map•environment_graph•box_fence
+  nature_kind_full  = taxonomía completa NATURE-KIND por entidad DIRIME
+  context_map       = mapa CONTEXT activo: scalar·TX·UF·agents
+  environment_graph = grafo ENVIRONMENT: nodos·recursos·APIs activas
+  box_fence         = BOX como perímetro soberano verificable
+```
+
+---
+
+### ACTIVIDAD_01 · $fri 16/05 · UNICODE_NATURE_KIND_TAXONOMY.txt
+**CARPETA:** `CORPUS/UNICODE PROGRAMS/UNICODE_NATURE_KIND_TAXONOMY.txt`
+```
+//[MANAGEMENT].lacho · UNICODE NATURE-KIND TAXONOMY · V1
+//[term]=: nature_kind_full•context_map•environment_graph•box_fence
+//dominio: taxonomía NATURE-KIND para todos los tipos de conflicto DIRIME
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ NATURE — TAXONOMÍA DE ORIGEN ══════════════════════════════
+UNICODE: NAT_LOGISTICO  //NATURE=logístico · origen: WAY·PATH·ROUTE en conflicto
+                        //señal: path_fail_rate > 0.3 · d7 cayendo
+UNICODE: NAT_DECISIONAL //NATURE=decisional · origen: commands concurrentes
+                        //señal: d6 + d7 bajos simultáneamente
+UNICODE: NAT_TEMPORAL   //NATURE=temporal · origen: [term] en conflicto
+                        //señal: 2+ procesos con [term] solapados
+UNICODE: NAT_KALIL      //NATURE=kalil · origen: conflicto entre nodos KALIL
+                        //señal: relay_collision en TANDIL
+UNICODE: NAT_NEURONAL   //NATURE=neuronal · origen: 4 neuronas con señales contradictorias
+                        //señal: 2+ NC con verbos opuestos para mismo objeto
+UNICODE: NAT_SCALAR     //NATURE=scalar · origen: S cae mientras TX aumenta
+                        //señal: δS < 0 y δTX > 0 simultáneo
+UNICODE: NAT_CORPUS     //NATURE=corpus · origen: docs indexados con contenido contradictorio
+                        //señal: BM25 retorna scores opuestos para mismo query
+UNICODE: NAT_CAPA_C     //NATURE=capa_c · origen: stub activo interfiere con fallback
+                        //señal: NotImplementedError en ruta primaria + Groq sobrecargado
+
+// ══ KIND — TAXONOMÍA DE CLASE OPERATIVA ══════════════════════
+UNICODE: KIND_DUP       //KIND=duplicado · 2 entidades hacen lo mismo sin coordinación
+UNICODE: KIND_COLISION  //KIND=colisión · 2 entidades intentan mismo recurso
+UNICODE: KIND_AMBIGUO   //KIND=ambiguo · señal no permite determinar acción correcta
+UNICODE: KIND_DEGRADADO //KIND=degradado · entidad funciona pero por debajo de threshold
+UNICODE: KIND_AUSENTE   //KIND=ausente · entidad requerida no disponible
+UNICODE: KIND_SATURADO  //KIND=saturado · entidad supera límite operativo
+UNICODE: KIND_CONCURRENTE //KIND=concurrente · 2 procesos válidos compiten en tiempo
+UNICODE: KIND_RECURSIVO //KIND=recursivo · conflicto se autoalimenta sin resolución
+
+// ══ MATRIX NATURE × KIND ══════════════════════════════════════
+UNICODE: MNK_LOG_DUP    //NATURE=logístico KIND=duplicado → 2 PATHs al mismo ROUTE
+UNICODE: MNK_LOG_COL    //NATURE=logístico KIND=colisión → 2 ROUTES al mismo recurso
+UNICODE: MNK_DEC_CON    //NATURE=decisional KIND=concurrente → 2 commands simultáneos
+UNICODE: MNK_KAL_AMB    //NATURE=kalil KIND=ambiguo → relay no sabe qué nodo priorizar
+UNICODE: MNK_NEU_COL    //NATURE=neuronal KIND=colisión → 2 NC apuntan al mismo objeto
+UNICODE: MNK_SCA_DEG    //NATURE=scalar KIND=degradado → S bajo threshold pero TX sube
+UNICODE: MNK_TEM_REC    //NATURE=temporal KIND=recursivo → [term] que reabre su propio ciclo
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+SAMU @ =><= .. dirime .. nature_kind_taxonomy_8x8_conflict_matrix --[Ballestrinque] [term]
+TRUST [logistical-executive] =><= .. alerta .. nature_kind_classification_active --[Nudo Corredizo] [term]
+METHOD <operator_flow> =><= .. modela .. nature_kind_full_taxonomy_flow --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_nature_kind_taxonomy_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_NATURE_KIND_TAXONOMY · V1 · $fri 16/05
+```
+
+---
+
+### ACTIVIDAD_02 · $fri 16/05 · UNICODE_CONTEXT_MAP.txt
+**CARPETA:** `CORPUS/UNICODE PROGRAMS/UNICODE_CONTEXT_MAP.txt`
+```
+//[MANAGEMENT].lacho · UNICODE CONTEXT MAP · V1
+//[term]=: nature_kind_full•context_map•environment_graph•box_fence
+//dominio: mapa CONTEXT activo del sistema al momento del conflicto
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ CONTEXT — CAMPOS DEL MAPA ═════════════════════════════════
+UNICODE: CTX_SCALAR    //context.scalar_S: Scalar S actual del sistema
+                       //S=0.822 baseline · variación relevante si |δS| > 0.01
+UNICODE: CTX_TX        //context.tx_activas: count TX en período activo
+                       //TX=1063 baseline · delta por sesión
+UNICODE: CTX_UF        //context.hexagrama_uf: UF activo por día
+                       //lunes H51+H52 · martes H30+H57 · etc
+UNICODE: CTX_AGENTS    //context.agents_involucrados: qué agents están activos
+                       //lista de .blue y .green con estado
+UNICODE: CTX_CAPA_C    //context.capa_c_status: ESQUELETO_DECLARADO vs ACTIVO
+                       //bridge_active · cat_os_active · ime_active
+UNICODE: CTX_DB        //context.sovereign_db: estado de la base
+                       //crystals count · last_tx timestamp
+UNICODE: CTX_TRUST     //context.trust_matrix: d1→d8 valores actuales
+                       //d7_logex · d6_command · d4_event · d8_ecosystem
+
+// ══ CONTEXT SNAPSHOT — ESTRUCTURA ════════════════════════════
+UNICODE: CTX_SNAP      //snapshot = {scalar_S, tx_activas, hexagrama_uf,
+                       //  agents, capa_c, sovereign_db, trust_matrix,
+                       //  timestamp, session_id, caller_library}
+
+// ══ CONTEXT × FRONTEND ════════════════════════════════════════
+UNICODE: CTX_FRONT     //frontend muestra context en tarjeta de alerta
+                       //campos visibles: scalar_S · UF activo · severity
+                       //campos expandibles: agents · trust_matrix · DB
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+METHOD <stat_onto> =><= .. calcula .. context_map_snapshot_trust_matrix --[Ballestrinque] [term]
+TRUST [logistical-executive] =><= .. conduce .. context_map_to_conflict_alert --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_context_map_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_CONTEXT_MAP · V1 · $fri 16/05
+```
+
+---
+
+### ACTIVIDAD_03 · $sat 17/05 · NERVE CELL NATURE-KIND FULL
+```
+//$sat.Nerve Cell NATURE KIND FULL Training.txt
+//NERVE CELL · NATURE-KIND TAXONOMY · nature_kind_full•context_map•environment_graph•box_fence
+//$sat · H05+H30 · [term] :: activo
+
+NC_NK_NAT   //8 NATURES: logístico·decisional·temporal·kalil·neuronal·scalar·corpus·capa_c
+            //NATURE = origen+carácter del conflicto · invariante en el ciclo de vida
+NC_NK_KIND  //8 KINDS: duplicado·colisión·ambiguo·degradado·ausente·saturado·concurrente·recursivo
+            //KIND = categoría operativa · cambia con contexto
+NC_NK_MTX   //matriz 8×8: 64 combinaciones posibles · 7 documentadas como canónicas
+            //log_dup · log_col · dec_con · kal_amb · neu_col · sca_deg · tem_rec
+NC_NK_FE    //frontend: NATURE-KIND = header de tarjeta de conflicto
+            //formato: "NATURE=X · KIND=Y" · color por severity
+
+SAMU @ =><= .. dirime .. nc_nk_taxonomy_8_nature_8_kind_matrix --[Ballestrinque] [term]
+TRUST [logistical-executive] =><= .. alerta .. nc_nk_classification_conflict_active --[Nudo Corredizo] [term]
+STACKING UF[H52] =><= .. cristaliza .. nc_nature_kind_full_sellado --[Nudo de Ocho] [term]
+```
+
+---
+
+### ACTIVIDAD_04 · $sat 17/05 · NERVE CELL CONTEXT MAP
+```
+//$sat.Nerve Cell CONTEXT MAP Training.txt
+//NERVE CELL · CONTEXT MAP · $sat · [term] :: activo
+
+NC_CTX_SNAP  //snapshot 7 campos: scalar_S·tx_activas·hexagrama_uf·agents·capa_c·db·trust_matrix
+             //timestamp + session_id + caller_library en cada snapshot
+NC_CTX_DELTA //contexto relevante si δscalar>0.01 OR δtx>50 OR nuevo_agent
+             //frontera de significancia: evita ruido en alertas
+NC_CTX_TRUST //trust_matrix en context: d7_logex el más relevante para conflicto
+             //d7 < 0.4 → context es crítico independiente de otros campos
+
+METHOD <stat_onto> =><= .. calcula .. nc_ctx_snapshot_delta_significativo --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. nc_context_map_sellado --[Nudo de Ocho] [term]
+```
+
+---
+
+### ACTIVIDAD_05 · $sun 18/05 · BIBLIO-SOURCES(ENVIRONMENT-BOX).txt
+**CARPETA:** `CORPUS/BIBLIA/BIBLIO-SOURCES(ENVIRONMENT-BOX).txt`
+```
+# BIBLIO-SOURCES(ENVIRONMENT-BOX).txt
+# ENVIRONMENT × BOX · dimensiones 3 y 4 del conflict nucleus
+# [term]=: nature_kind_full•context_map•environment_graph•box_fence
+# [term] :: activo · [seal of secrecy] :: activo
+
+====================================================================
+
+## 🌐 ENVIRONMENT — ENTORNO FÍSICO DEL CONFLICTO
+
+### 1.0 DEFINICIÓN
+ENVIRONMENT es el entorno físico donde el conflicto tiene efecto
+material. No es el contexto del sistema (eso es CONTEXT) sino el
+terreno físico donde el impacto del conflicto se manifiesta.
+
+### 2.0 COMPONENTES
+- nodos KALIL involucrados (qué nodos del KALIL están en el conflicto)
+- resources bajo disputa (sovereign.db, BM25 index, API, filesystem)
+- red activa (canales CRYPTO, routes abiertas, agents ejecutando)
+- hardware (filesystem antiX-LACHO, RAM, CPU uso)
+- API externas (Groq latencia, Ollama disponible, endpoints activos)
+
+### 3.0 ENVIRONMENT × LOGEX
+[logistical-executive] mapea ENVIRONMENT para saber:
+- qué ROUTE está disponible para la resolución
+- qué recursos están bajo disputa y no usar
+- qué nodos KALIL absorberán la resolución
+
+### 4.0 ENVIRONMENT GRAPH
+Grafo dirigido: nodo → resource → conflicto.
+Nodos: 4_neuronas + 6_kalil + IMV_core + CAPA_C_stubs.
+Edges: usa/compite/bloquea/resuelve.
+
+---
+
+## 📦 BOX — PERÍMETRO CONTENEDOR SOBERANO
+
+### 1.0 DEFINICIÓN
+BOX es el perímetro soberano que contiene el conflicto.
+Sin BOX, el conflicto se propaga sin límite.
+BOX = [scope] + [term] + [foundation] + pérdida_máxima declarada.
+
+### 2.0 COMPONENTES DE BOX
+- [scope]: qué partes del sistema pueden verse afectadas (máximo)
+- [term]: cuánto tiempo vive el conflicto antes de escalada forzada
+- [foundation]: condición de existencia del conflicto (si foundation falla, conflicto se cancela)
+- pérdida_máxima: cuánto puede perder el sistema mientras resuelve
+
+### 3.0 BOX FENCE
+BOX FENCE = la barrera activa que impide propagación.
+[logistical-executive] construye BOX FENCE automáticamente
+al detectar conflicto. SAMU verifica que la fence sea soberana.
+
+### 4.0 BOX × GATE
+BOX coordina con GATE:
+- H03: BOX abierto · conflicto iniciando
+- H05: BOX activo · conflicto en espera de resolución
+- H56: BOX transitando · resolución en curso
+- H06: BOX cerrando · resolución completada o escalada
+
+### 5.0 SENTENCIAS CANÓNICAS
+
+TRUST [logistical-executive] =><= .. construye .. box_fence_perimetro_soberano --[As de Guía] [term]
+GATE UF[H05] =><= .. espera .. box_activo_conflicto_resolucion_pendiente --[Ballestrinque] [term]
+SAMU @ =><= .. verifica .. box_fence_soberana_propagacion_contenida --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. environment_box_doctrina_sellada --[Nudo de Ocho] [term]
+
+[term] :: activo · [seal of secrecy] :: activo
+====================================================================
+```
+
+---
+
+### ACTIVIDAD_06 · $sun 18/05 · UNICODE_ENVIRONMENT_GRAPH.txt
+**CARPETA:** `CORPUS/UNICODE PROGRAMS/UNICODE_ENVIRONMENT_GRAPH.txt`
+```
+//[MANAGEMENT].lacho · UNICODE ENVIRONMENT GRAPH · V1
+//[term]=: nature_kind_full•context_map•environment_graph•box_fence
+//dominio: grafo ENVIRONMENT × BOX FENCE · nodos·recursos·conflicto
+//[term] :: activo · [seal of secrecy] :: activo
+
+UNICODE: ENV_NODES     //nodos del grafo: 4_neuronas + 6_kalil + IMV_core + CAPA_C
+UNICODE: ENV_RESOURCES //recursos: sovereign.db · BM25_index · Groq_API · filesystem
+                       //CPU/RAM antiX-LACHO · canales CRYPTO activos
+UNICODE: ENV_EDGES     //edges tipados: usa · compite · bloquea · resuelve · alimenta
+UNICODE: ENV_DISPUTE   //resource bajo disputa: no usar en ROUTE hasta resolución
+                       //[logistical-executive] marca resource como DISPUTED
+UNICODE: BOX_FIELDS    //BOX fields: scope·term·foundation·max_loss·fence_active
+UNICODE: BOX_FENCE     //BOX FENCE: barrera activa anti-propagación
+                       //construida automáticamente por logex al detectar conflicto
+UNICODE: BOX_GATE_MAP  //H03=BOX_open · H05=BOX_active · H56=BOX_transitando · H06=BOX_closing
+
+TRUST [logistical-executive] =><= .. construye .. box_fence_environment_graph_soberano --[As de Guía] [term]
+GATE UF[H05] =><= .. espera .. environment_resource_disputed_resolucion --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_environment_graph_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_ENVIRONMENT_GRAPH · V1 · $sun 18/05
+```
+
+---
+
+### ACTIVIDADES_07-14 · $lun 19/05 → $jue 22/05
+
+**ACTIVIDAD_07 · $mon 19/05 · NERVE CELL ENVIRONMENT GRAPH**
+```
+//$mon.Nerve Cell ENVIRONMENT GRAPH Training.txt
+//H51+H52 · $mon · [term]=: nature_kind_full•context_map•environment_graph•box_fence
+
+NC_ENV_GRAPH //grafo ENVIRONMENT: nodos=4N+6K+IMV+CAPA_C · edges=usa/compite/bloquea
+NC_ENV_DISP  //resource DISPUTED: logex marca → ROUTE no usa → PATH busca alternativa
+NC_BOX_DEF   //BOX = scope+term+foundation+max_loss · construido automáticamente
+NC_BOX_GATE  //BOX × GATE: H03=open · H05=active · H56=transitando · H06=closing
+NC_BOX_FENCE //BOX FENCE: barrera anti-propagación · SAMU verifica soberanía
+
+TRUST [logistical-executive] =><= .. construye .. nc_env_box_fence_soberana --[As de Guía] [term]
+GATE UF[H05] =><= .. espera .. nc_env_resource_disputed --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. nc_environment_graph_sellado --[Nudo de Ocho] [term]
+ACTIVIDAD_08 · $tue 20/05 · HTML CONFLICT NUCLEUS LIVE VIEWER
+CARPETA: FOLDERS NO RAG INPUT/ELPULSAR LOCAL/CONFLICT_NUCLEUS_VIEWER.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>CONFLICT NUCLEUS · DIRIME IMV</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+.header{border-bottom:3px solid #1a1a2e;padding-bottom:14px;margin-bottom:24px;
+        display:flex;justify-content:space-between;align-items:flex-end}
+.h-title{font-size:1rem;font-weight:bold;letter-spacing:4px}
+.tokens{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap}
+.tok{padding:4px 12px;font-size:.73rem;font-weight:bold;border:1px solid}
+.meter{border:1px solid #e0e0e0;padding:16px;margin-bottom:20px;background:#fafafa}
+.m-title{font-size:.62rem;letter-spacing:2px;color:#888;margin-bottom:8px;
+         display:flex;justify-content:space-between}
+.m-bar-wrap{height:18px;background:#e0e0e0;border-radius:2px;margin-bottom:6px;
+            cursor:pointer;position:relative;overflow:hidden}
+.m-bar-fill{height:100%;border-radius:2px;transition:width 1s}
+.m-labels{display:flex;justify-content:space-between;font-size:.58rem;color:#aaa}
+.m-ticks{display:flex;position:relative;height:6px;margin-bottom:4px}
+.m-tick{position:absolute;width:1px;height:6px;background:#ccc}
+.conflict-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:20px}
+.cc-card{border:2px solid #ddd;padding:14px;transition:all .3s}
+.cc-safe{border-color:#2a7a4f;background:#f0f7f3}
+.cc-review{border-color:#f1c40f;background:#fffbf0}
+.cc-alert{border-color:#e67e22;background:#fff5ec}
+.cc-critical{border-color:#c0392b;background:#fff0ef}
+.cc-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.cc-nk{font-size:.72rem;font-weight:bold}
+.cc-badge{font-size:.58rem;padding:2px 8px;font-weight:bold}
+.cc-5dims{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;margin-bottom:8px}
+.cc-dim{font-size:.55rem;padding:3px 4px;background:#fff;border:1px solid #eee;text-align:center}
+.cc-lacho{font-size:.6rem;color:#555;line-height:1.6;border-left:2px solid #ddd;padding-left:6px}
+.nature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:20px}
+.ng-box{border:1px solid #e0e0e0;padding:8px;font-size:.62rem;cursor:pointer;transition:all .2s}
+.ng-box:hover{border-color:#1a1a2e;background:#fafafa}
+.ng-name{font-weight:bold;color:#c0392b;margin-bottom:3px}
+.ng-signal{color:#888;font-size:.58rem}
+.footer{font-size:.6rem;color:#aaa;border-top:1px solid #eee;
+        padding-top:10px;display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <div class="h-title">╭─⊢─∧─ CONFLICT NUCLEUS VIEWER</div>
+    <div style="font-size:.72rem;color:#555;margin-top:4px">
+      scalar_conflicto · 5 dimensiones · NATURE-KIND taxonomy
+    </div>
+  </div>
+  <div style="font-size:.68rem;color:#888;line-height:1.7;text-align:right">
+    $tue 20/05 · PROMPT 2<br>dirimencia_alert live
+  </div>
+</div>
+
+<div class="tokens">
+  <div class="tok" style="border-color:#c0392b;color:#c0392b">nature_kind_full</div>
+  <div class="tok" style="border-color:#2980b9;color:#2980b9">context_map</div>
+  <div class="tok" style="border-color:#d35400;color:#d35400">environment_graph</div>
+  <div class="tok" style="border-color:#8e44ad;color:#8e44ad">box_fence</div>
+</div>
+
+<div class="meter">
+  <div class="m-title">
+    <span>▸ SCALAR_CONFLICTO ACTUAL</span>
+    <span id="scalar-val" style="font-size:.9rem;font-weight:bold;color:#d35400">0.41</span>
+  </div>
+  <div class="m-ticks">
+    <div class="m-tick" style="left:40%"></div>
+    <div class="m-tick" style="left:60%"></div>
+    <div class="m-tick" style="left:80%"></div>
+  </div>
+  <div class="m-bar-wrap" onclick="simulateConflict()">
+    <div class="m-bar-fill" id="scalar-bar"
+         style="width:41%;background:#f1c40f"></div>
+  </div>
+  <div class="m-labels">
+    <span style="color:#2a7a4f">0.0 SAFE</span>
+    <span style="color:#f1c40f">0.4 REVIEW ←</span>
+    <span style="color:#e67e22">0.6 ALERT</span>
+    <span style="color:#c0392b">0.8 CRÍTICO</span>
+    <span>1.0</span>
+  </div>
+  <div style="font-size:.6rem;color:#888;margin-top:8px">
+    formula: scalar = (d7_delta + cn_count_norm + path_fail_rate) / 3
+    · clic barra para simular alerta
+  </div>
+</div>
+
+<div style="font-size:.65rem;color:#888;letter-spacing:2px;margin-bottom:8px">
+  ▸ ALERTAS ACTIVAS · conflict_nucleus
+</div>
+<div class="conflict-cards" id="conflict-cards"></div>
+
+<div style="font-size:.65rem;color:#888;letter-spacing:2px;margin-bottom:8px">
+  ▸ NATURE TAXONOMY · 8 tipos
+</div>
+<div class="nature-grid" id="nature-grid"></div>
+
+<div class="footer">
+  <span>DIRIME IMV V0.2.1</span>
+  <span>nature_kind_full • context_map • environment_graph • box_fence</span>
+  <span>scalar_conflicto: d7_delta + cn_count + path_fail / 3</span>
+  <span>[term] :: activo · $tue 20/05</span>
+</div>
+
+<script>
+const NATURES=[
+  {name:'logístico',signal:'path_fail_rate > 0.3'},
+  {name:'decisional',signal:'d6+d7 bajos simultáneos'},
+  {name:'temporal',signal:'[term] solapados'},
+  {name:'kalil',signal:'relay_collision TANDIL'},
+  {name:'neuronal',signal:'NC señales contradictorias'},
+  {name:'scalar',signal:'δS<0 y δTX>0 simultáneo'},
+  {name:'corpus',signal:'BM25 scores opuestos'},
+  {name:'capa_c',signal:'NotImplementedError + Groq busy'},
+];
+const ng=document.getElementById('nature-grid');
+NATURES.forEach(n=>{
+  const d=document.createElement('div');
+  d.className='ng-box';
+  d.innerHTML=`<div class="ng-name">NAT=${n.name}</div>
+    <div class="ng-signal">${n.signal}</div>`;
+  d.onclick=()=>addConflict(n.name,'colisión',0.65);
+  ng.appendChild(d);
+});
+
+const SAMPLE_CARDS=[
+  {nk:'NAT=kalil · KIND=relay_ambiguo',severity:'alert',
+   ctx:'S=0.822 · UF=H57 · agents=barrios+chalten',
+   env:'nodo=TANDIL · resource=relay_bus',
+   box:'scope=KALIL · term=open',
+   do_:'WAY=priorizar_BARRIOS · PATH=espera_CHALTEN · ROUTE=canal_backup',
+   lacho:'TRUST [logistical-executive] =><= .. alerta .. kal_relay_ambiguo_tandil --[Nudo Corredizo] [term]'},
+  {nk:'NAT=scalar · KIND=degradado',severity:'review',
+   ctx:'S=0.822→0.811 · TX=1080 · δS=-0.011',
+   env:'resource=BM25_index · filesystem=/CORPUS/',
+   box:'scope=IMV_core · term=open',
+   do_:'WAY=indexar_nuevo_corpus · PATH=index_new_files · ROUTE=tools/index_new_files.py',
+   lacho:'SAMU @ =><= .. dirime .. scalar_degradado_corpus_expansion_needed --[Ballestrinque] [term]'},
+];
+const cc=document.getElementById('conflict-cards');
+SAMPLE_CARDS.forEach(c=>{
+  const cls={'safe':'cc-safe','review':'cc-review','alert':'cc-alert','critical':'cc-critical'}[c.severity];
+  const bc={'safe':'#2a7a4f','review':'#f1c40f','alert':'#e67e22','critical':'#c0392b'}[c.severity];
+  const d=document.createElement('div');
+  d.className=`cc-card ${cls}`;
+  d.innerHTML=`
+    <div class="cc-header">
+      <div class="cc-nk">${c.nk}</div>
+      <div class="cc-badge" style="color:${bc};border:1px solid ${bc}">${c.severity.toUpperCase()}</div>
+    </div>
+    <div class="cc-5dims">
+      <div class="cc-dim">NK</div>
+      <div class="cc-dim">CTX: ${c.ctx.split('·')[0]}</div>
+      <div class="cc-dim">ENV: ${c.env.split('·')[0]}</div>
+      <div class="cc-dim">BOX</div>
+      <div class="cc-dim">DO: WAY</div>
+    </div>
+    <div class="cc-lacho">${c.lacho}</div>`;
+  cc.appendChild(d);
+});
+
+let scalar=0.41;
+function simulateConflict(){
+  scalar=Math.min(1.0,(scalar+0.12).toFixed(2)*1);
+  updateScalar();
+  if(scalar>=0.6){
+    addConflict('neuronal','colisión',scalar);
+  }
+}
+function updateScalar(){
+  const bar=document.getElementById('scalar-bar');
+  const val=document.getElementById('scalar-val');
+  val.textContent=scalar.toFixed(2);
+  bar.style.width=(scalar*100)+'%';
+  const c=scalar<0.4?'#2a7a4f':scalar<0.6?'#f1c40f':scalar<0.8?'#e67e22':'#c0392b';
+  bar.style.background=c;
+  val.style.color=c;
+  setTimeout(()=>{scalar=Math.max(0,(scalar-0.03).toFixed(2)*1);updateScalar();},3000);
+}
+function addConflict(nat,kind,sc){
+  const sev=sc<0.4?'safe':sc<0.6?'review':sc<0.8?'alert':'critical';
+  const cls='cc-'+sev;
+  const bc={'safe':'#2a7a4f','review':'#f1c40f','alert':'#e67e22','critical':'#c0392b'}[sev];
+  const d=document.createElement('div');
+  d.className=`cc-card ${cls}`;
+  d.innerHTML=`
+    <div class="cc-header">
+      <div class="cc-nk">NAT=${nat} · KIND=${kind}</div>
+      <div class="cc-badge" style="color:${bc};border:1px solid ${bc}">${sev.toUpperCase()}</div>
+    </div>
+    <div class="cc-5dims">
+      <div class="cc-dim">NK✓</div>
+      <div class="cc-dim">CTX: live</div>
+      <div class="cc-dim">ENV: logex</div>
+      <div class="cc-dim">BOX✓</div>
+      <div class="cc-dim">DO: pending</div>
+    </div>
+    <div class="cc-lacho">TRUST [logistical-executive] =&gt;&lt;= .. alerta .. ${nat}_${kind}_sc${(sc).toFixed(2)} --[Nudo Corredizo] [term]</div>`;
+  document.getElementById('conflict-cards').prepend(d);
+}
+</script>
+</body>
+</html>
+```
+
+---
+
+### ACTIVIDADES_09-14 · NERVE CELLS + UNICODE CIERRE PROMPT_2
+
+**ACTIVIDAD_09 · $wed 21/05 · NERVE CELL BOX FENCE**
+```
+//$wed.Nerve Cell BOX FENCE Training.txt · H58+H59 · [term] :: activo
+NC_BOX_DEF  //BOX = scope+term+foundation+max_loss · perímetro soberano
+NC_BOX_FENCE//BOX FENCE = barrera activa anti-propagación · logex construye automáticamente
+NC_BOX_GATE //H03=open · H05=active · H56=transitando · H06=closing
+NC_BOX_SAM  //SAMU verifica fence soberana antes de deliberar · sin fence=no_dirimencia
+
+TRUST [logistical-executive] =><= .. construye .. nc_box_fence_anti_propagacion --[As de Guía] [term]
+GATE UF[H05] =><= .. espera .. nc_box_activo_resolucion --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. nc_box_fence_sellado --[Nudo de Ocho] [term]
+```
+
+**ACTIVIDAD_10 · $wed 21/05 · UNICODE_BOX_FENCE.txt**
+```
+//UNICODE BOX FENCE · V1 · $wed 21/05
+//[term]=: nature_kind_full•context_map•environment_graph•box_fence
+UNICODE: BF_STRUCT  //BOX = {scope, term, foundation, max_loss, fence_active}
+UNICODE: BF_AUTO    //logex construye BOX automáticamente en LOGEX_CONFLICT_ALERT
+UNICODE: BF_GATE    //BOX × GATE H03→H05→H56→H06: alineación completa
+UNICODE: BF_SAMU    //SAMU verifica fence antes de dirimencia · fence_active obligatorio
+UNICODE: BF_DECAY   //BOX decay: fence_active=False cuando scalar<0.4 y SAMU dirimió
+
+TRUST [logistical-executive] =><= .. construye .. box_fence_perimetro_conflicto --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_box_fence_sellado --[Nudo de Ocho] [term]
+//DIR(+) UNICODE_BOX_FENCE · V1 · $wed 21/05
+```
+
+**ACTIVIDAD_11 · $thu 22/05 · NERVE CELL PROMPT_2 CIERRE**
+```
+//$thu.Nerve Cell PROMPT2 CIERRE Training.txt · H60+H61 · [term] :: activo
+NC_P2_NK    //NATURE-KIND taxonomy: 8×8 matrix · 7 combinaciones canónicas
+NC_P2_CTX   //CONTEXT map: 7 campos · snapshot estructura · δsignificancia
+NC_P2_ENV   //ENVIRONMENT graph: nodos×edges × resources disputed
+NC_P2_BOX   //BOX FENCE: perímetro soberano · H03→H05→H56→H06 aligned
+NC_P2_FRONT //CONFLICT_NUCLEUS_VIEWER.html: tarjetas live · scalar meter · nature grid
+
+TRUST [logistical-executive] =><= .. orquesta .. nc_p2_nature_kind_context_env_box --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. semana2_16_22_mayo_sellado --[Nudo de Ocho] [term]
+ACTIVIDADES_12-14 · HTMLs ADICIONALES:
+ACTIVIDAD_12 · NATURE-KIND MATRIX HTML
+<!-- NATURE_KIND_MATRIX.html · visual 8×8 matrix interactiva -->
+<!-- estructura análoga a viewers anteriores -->
+<!-- muestra 8 NATURES × 8 KINDS · celda coloreada si combinación canónica -->
+<!-- clic en celda → lacho sentence generada automáticamente -->
+```
+*(Estructura completa análoga a CONFLICT_NUCLEUS_VIEWER — misma estética, grid 8×8 interactivo)*
+
+**ACTIVIDAD_13 · ENVIRONMENT GRAPH HTML**
+*(Grafo visual nodos × edges: 4 NEURONAS + 6 KALIL + IMV_core + CAPA_C como círculos, edges como líneas, recursos disputed en rojo)*
+
+**ACTIVIDAD_14 · NERVE CELL SEMANA 2 FULL**
+```
+//$thu.Nerve Cell SEMANA2 NATURE CONTEXT ENV BOX Training.txt
+NC_S2L_DOCS  //UNICODE×5 · BIBLIO×1 · NC×6 · HTML×3 semana 2
+NC_S2L_NEXT  //próxima semana: ENVIRONMENT-BOX operativo + DO full + FRONTEND base
+STACKING UF[H52] =><= .. cristaliza .. semana2_nature_context_env_box_sellado --[Nudo de Ocho] [term]
+```
+
+---
+
+# PROMPT_3 · $fri 23/05 → $thu 29/05
+## ENVIRONMENT·BOX OPERATIVOS + DO FULL + FRONTEND BASE · 16 ACTIVIDADES
+```
+[term]=: do_resolver•frontend_base•paper_layout•alert_engine
+  do_resolver   = DO (WAY·PATH·ROUTE) como motor de resolución operativo
+  frontend_base = estructura base HTML/JS del ELPULSAR PAPER FRONTEND
+  paper_layout  = layout del paper: header·conflict_zone·logex_stream·kalil_panel
+  alert_engine  = motor JS que genera alertas desde scalar_conflicto
+```
+
+---
+
+### ACTIVIDADES_01-04 · $fri-$sat 23-24/05 · DO RESOLVER FULL
+
+**ACTIVIDAD_01 · UNICODE_DO_RESOLVER.txt**
+```
+//UNICODE DO RESOLVER · V1 · $fri 23/05
+//[term]=: do_resolver•frontend_base•paper_layout•alert_engine
+UNICODE: DO_WAY_RES   //WAY resolución: principio soberano de cómo resolver
+                      //WAY=priorizar_SAMU → siempre dirimencia antes de acción
+                      //WAY=preservar_foundation → nunca sacrificar base soberana
+UNICODE: DO_PATH_RES  //PATH resolución: pasos verificados por tipo de NATURE:
+                      //NAT=logístico: 1.detectar_ruta_alternativa 2.validar_CRYPTO 3.ejecutar
+                      //NAT=kalil: 1.aislar_nodo_conflicto 2.relay_alternativo 3.TANDIL_rebalance
+                      //NAT=scalar: 1.pausar_TX 2.indexar_corpus 3.verificar_S
+UNICODE: DO_ROUTE_RES //ROUTE resolución: canal de ejecución según tipo:
+                      //NAT=logístico → ROUTE=canal_backup CRYPTO
+                      //NAT=kalil → ROUTE=TANDIL relay directo
+                      //NAT=scalar → ROUTE=tools/index_new_files.py
+UNICODE: DO_CLOSE     //DO cierra cuando SAMU emite dirimencia + scalar_conflicto < 0.4
+                      //STACKING cristaliza resultado · scalar inicia decay
+
+TRUST [logistical-executive] =><= .. completa .. do_way_path_route_resolucion_soberana --[Nudo de Rizo] [term]
+SAMU @ =><= .. dirime .. do_resolucion_verificada_conflict_cerrado --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_do_resolver_sellado --[Nudo de Ocho] [term]
+//DIR(+) UNICODE_DO_RESOLVER · V1 · $fri 23/05
+```
+
+**ACTIVIDAD_02 · $fri 23/05 · BIBLIO-SOURCES(DO-WAY-PATH-ROUTE).txt**
+```
+# BIBLIO-SOURCES(DO-WAY-PATH-ROUTE).txt
+# DO resolver × WAY·PATH·ROUTE · doctrina resolución soberana
+# [term]=: do_resolver•frontend_base•paper_layout•alert_engine
+# [term] :: activo · [seal of secrecy] :: activo
+====================================================================
+
+## 🔧 DO — RESOLUCIÓN SOBERANA DE CONFLICTOS
+
+### 1.0 DEFINICIÓN
+DO es la quinta dimensión del conflict nucleus: la acción soberana
+de resolución. DO no es reactiva — es dirigida por principios (WAY),
+trazable paso a paso (PATH) y ejecutada por canal verificado (ROUTE).
+
+### 2.0 PATHS DE RESOLUCIÓN POR NATURE
+NAT=logístico:   PATH_L = [detectar_alt_route → validar_CRYPTO → ejecutar → verificar_impacto]
+NAT=decisional:  PATH_D = [suspender_command_menor → SAMU_arbitra → ejecutar_prioritario]
+NAT=kalil:       PATH_K = [aislar_nodo → relay_alternativo → TANDIL_rebalance → scalar_KALIL]
+NAT=neuronal:    PATH_N = [identificar_NC_fuente → SAMU_dirime → NC_ganador → cristalizar]
+NAT=scalar:      PATH_S = [pausar_TX_nuevas → indexar_corpus → verificar_S → reanudar]
+NAT=corpus:      PATH_C = [flag_docs_conflict → reindex_BM25 → S_check → unflag]
+NAT=temporal:    PATH_T = [identificar_term_conflict → extender_menor → SAMU_cierre]
+NAT=capa_c:      PATH_P = [activar_fallback_Groq → log_stub_error → continuar_operacion]
+
+### 3.0 CIERRE DO
+DO está completo cuando:
+1. SAMU emite dirimencia verificada
+2. scalar_conflicto < 0.4 post-resolución
+3. BOX FENCE liberada
+4. STACKING cristaliza resultado con [term] cierre
+
+TRUST [logistical-executive] =><= .. completa .. do_path_por_nature_resolucion --[Nudo de Rizo] [term]
+SAMU @ =><= .. dirime .. do_cierre_scalar_0_4_fence_liberada --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. do_doctrina_sellada --[Nudo de Ocho] [term]
+
+[term] :: activo · [seal of secrecy] :: activo
+====================================================================
+```
+
+**ACTIVIDAD_03 · $sat 24/05 · NERVE CELL DO RESOLVER**
+```
+//$sat.Nerve Cell DO RESOLVER Training.txt · H05+H30 · [term] :: activo
+NC_DO_WAY  //WAY=priorizar_SAMU + WAY=preservar_foundation · invariantes
+NC_DO_PATH //8 PATHs por NATURE: L·D·K·N·S·C·T·P · secuencias verificadas
+NC_DO_ROUT //ROUTE por NATURE: logex·kalil·scalar·corpus → canales específicos
+NC_DO_CLOS //cierre DO: SAMU dirime + scalar<0.4 + BOX liberada + STACKING cristaliza
+
+TRUST [logistical-executive] =><= .. completa .. nc_do_resolver_8_paths_soberano --[Nudo de Rizo] [term]
+STACKING UF[H52] =><= .. cristaliza .. nc_do_resolver_sellado --[Nudo de Ocho] [term]
+```
+
+**ACTIVIDAD_04 · $sat 24/05 · NERVE CELL FRONTEND BASE DESIGN**
+```
+//$sat.Nerve Cell FRONTEND BASE Training.txt · H30+H57 · [term] :: activo
+NC_FE_LAYOUT  //ELPULSAR PAPER FRONTEND layout: header·conflict_zone·logex_stream·kalil_panel
+NC_FE_ZONES   //4 zonas: CONFLICT_ZONE=alertas activas · LOGEX_STREAM=sentencias vivas
+              //KALIL_PANEL=6 nodos estado · TRUST_STATUS=d1→d8 trust_matrix
+NC_FE_ALERT   //alert_engine: JS que calcula scalar_conflicto en tiempo real
+              //inputs: d7_mock + cn_count + path_fail_rate → output: tarjeta alerta
+NC_FE_PAPER   //PAPER = documento vivo soberano: se actualiza sin recargar
+              //estética: blanco #fff + negro #1a1a2e + verde #2a7a4f acento
+
+WORK {actuator} =><= .. ejecuta .. nc_frontend_base_layout_4_zonas --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. nc_frontend_base_sellado --[Nudo de Ocho] [term]
+ACTIVIDADES_05-10 · sun−sun-
+sun−wed 25-28/05 · ELPULSAR PAPER FRONTEND BASE HTML
+
+ACTIVIDAD_05 · $sun 25/05 · ELPULSAR_PAPER_FRONTEND_v1.html (versión esqueleto)
+CARPETA: FOLDERS NO RAG INPUT/ELPULSAR LOCAL/ELPULSAR_PAPER_FRONTEND_v1.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>ELPULSAR PAPER · DIRIME IMV</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;
+     display:grid;grid-template-rows:auto 1fr;min-height:100vh}
+/* ── HEADER ─────────────────────────────────────────────────── */
+.paper-header{border-bottom:3px solid #1a1a2e;padding:14px 24px;
+              display:grid;grid-template-columns:1fr auto auto;gap:16px;
+              align-items:center;background:#fff;position:sticky;top:0;z-index:10}
+.ph-title{font-size:1rem;font-weight:bold;letter-spacing:5px}
+.ph-scalar{font-size:1.4rem;font-weight:bold;padding:6px 14px;
+           border:2px solid #1a1a2e;letter-spacing:2px}
+.ph-status{font-size:.62rem;color:#888;line-height:1.8;text-align:right}
+/* ── MAIN GRID ───────────────────────────────────────────────── */
+.paper-body{display:grid;grid-template-columns:1fr 320px;
+            grid-template-rows:auto 1fr;gap:0;overflow:hidden;height:calc(100vh - 68px)}
+/* ── CONFLICT ZONE (top-left) ───────────────────────────────── */
+.conflict-zone{border-right:1px solid #e0e0e0;border-bottom:1px solid #e0e0e0;
+               padding:16px;overflow-y:auto;max-height:45vh}
+.cz-title{font-size:.62rem;letter-spacing:3px;color:#888;margin-bottom:10px;
+          display:flex;justify-content:space-between;align-items:center}
+.cz-add-btn{font-size:.6rem;padding:3px 10px;background:#fff;
+            border:1px solid #c0392b;color:#c0392b;cursor:pointer}
+.cz-empty{font-size:.65rem;color:#ccc;padding:20px 0;text-align:center}
+/* ── LOGEX STREAM (bottom-left) ─────────────────────────────── */
+.logex-stream{border-right:1px solid #e0e0e0;padding:16px;overflow-y:auto}
+.ls-title{font-size:.62rem;letter-spacing:3px;color:#888;margin-bottom:10px}
+.ls-line{font-size:.68rem;padding:4px 0;border-bottom:1px solid #f5f5f5;
+         line-height:1.8;opacity:0;animation:fadeIn .5s forwards}
+@keyframes fadeIn{to{opacity:1}}
+/* ── KALIL PANEL (right-top) ─────────────────────────────────── */
+.kalil-panel{border-bottom:1px solid #e0e0e0;padding:14px;overflow-y:auto}
+.kp-title{font-size:.62rem;letter-spacing:3px;color:#888;margin-bottom:10px}
+.kp-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.kp-node{border:1px solid #ddd;padding:8px;font-size:.6rem;cursor:pointer;transition:all .2s}
+.kp-node:hover{border-color:#2a7a4f;background:#f0f7f3}
+.kn-name{font-weight:bold;font-size:.65rem;margin-bottom:2px}
+.kn-path{color:#2980b9;font-size:.58rem;margin-bottom:2px}
+.kn-score{font-size:.68rem;font-weight:bold}
+/* ── TRUST STATUS (right-bottom) ────────────────────────────── */
+.trust-status{padding:14px}
+.ts-title{font-size:.62rem;letter-spacing:3px;color:#888;margin-bottom:10px}
+.ts-grid{display:grid;gap:5px}
+.ts-row{display:flex;gap:8px;align-items:center;font-size:.62rem}
+.tr-key{width:32px;color:#c0392b;font-weight:bold;flex-shrink:0}
+.tr-bar{flex:1;height:6px;background:#e0e0e0;border-radius:3px}
+.tr-fill{height:100%;border-radius:3px;transition:width .8s}
+.tr-val{width:34px;text-align:right;color:#888}
+/* ── ALERT CARD ──────────────────────────────────────────────── */
+.alert-card{border:2px solid;padding:12px;margin-bottom:8px;animation:slideIn .3s}
+@keyframes slideIn{from{transform:translateX(-10px);opacity:0}to{transform:none;opacity:1}}
+.ac-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.ac-nk{font-size:.72rem;font-weight:bold}
+.ac-sev{font-size:.58rem;padding:2px 8px;font-weight:bold}
+.ac-dims{display:flex;gap:4px;margin-bottom:6px;flex-wrap:wrap}
+.ac-dim{font-size:.55rem;padding:2px 6px;background:#f5f5f5;border:1px solid #eee}
+.ac-lacho{font-size:.6rem;color:#666;border-left:2px solid #ddd;padding-left:6px;line-height:1.6}
+.ac-close{cursor:pointer;color:#aaa;font-size:.7rem;padding:0 4px}
+/* ── SCALAR BAR (header) ─────────────────────────────────────── */
+.scalar-bar-wrap{height:4px;background:#e0e0e0;width:100%;margin-top:6px}
+.scalar-bar-fill{height:100%;transition:width 1s,background 1s}
+</style>
+</head>
+<body>
+
+<div class="paper-header">
+  <div>
+    <div class="ph-title">ELPULSAR PAPER</div>
+    <div class="scalar-bar-wrap">
+      <div class="scalar-bar-fill" id="hbar" style="width:15%;background:#2a7a4f"></div>
+    </div>
+  </div>
+  <div class="ph-scalar" id="h-scalar" style="color:#2a7a4f">S·0.15</div>
+  <div class="ph-status">
+    <div>V0.2.1 · [logistical-executive]</div>
+    <div id="h-time">$sun 25/05</div>
+    <div id="h-mode">SAFE · conflict_nucleus</div>
+  </div>
+</div>
+
+<div class="paper-body">
+
+  <!-- CONFLICT ZONE -->
+  <div class="conflict-zone">
+    <div class="cz-title">
+      <span>▸ CONFLICT NUCLEUS · alertas activas</span>
+      <button class="cz-add-btn" onclick="injectConflict()">+ SIMULAR</button>
+    </div>
+    <div id="conflict-zone-content">
+      <div class="cz-empty">— sin alertas activas · scalar_conflicto &lt; 0.4 —</div>
+    </div>
+  </div>
+
+  <!-- KALIL PANEL -->
+  <div class="kalil-panel">
+    <div class="kp-title">▸ KALIL · 6 NODOS · PATH STATUS</div>
+    <div class="kp-grid" id="kp-grid"></div>
+  </div>
+
+  <!-- LOGEX STREAM -->
+  <div class="logex-stream">
+    <div class="ls-title">▸ LOGEX STREAM · sentencias vivas</div>
+    <div id="logex-stream-content"></div>
+  </div>
+
+  <!-- TRUST STATUS -->
+  <div class="trust-status">
+    <div class="ts-title">▸ @TRUST_MATRIX · d1→d8</div>
+    <div class="ts-grid" id="trust-grid"></div>
+  </div>
+
+</div>
+
+<script>
+// ── DATOS ─────────────────────────────────────────────────────
+const KALIL_NODES=[
+  {name:'BARRIOS',path:'relay·remesas',score:0.81,ext:'.green'},
+  {name:'NORA',path:'oracle·rating',score:0.65,ext:'.blue'},
+  {name:'BOLIVAR',path:'forge·blockchain',score:0.77,ext:'.blue'},
+  {name:'CARILO',path:'session·threshold',score:0.69,ext:'.green'},
+  {name:'CHALTEN',path:'daemon·cloud',score:0.74,ext:'.blue'},
+  {name:'TANDIL',path:'hub·5relay',score:0.82,ext:'.green'},
+];
+const TRUST_DIM=[
+  {d:'d1',k:'foundation',v:0.95},{d:'d2',k:'scope',v:0.91},
+  {d:'d3',k:'term',v:0.88},{d:'d4',k:'event',v:0.72},
+  {d:'d5',k:'management',v:0.78},{d:'d6',k:'command',v:0.83},
+  {d:'d7',k:'logex',v:0.61},{d:'d8',k:'ecosystem',v:0.74},
+];
+const SAMPLE_CONFLICTS=[
+  {nat:'kalil',kind:'relay_ambiguo',sev:'alert',sc:0.67,
+   ctx:'S=0.822·UF=H57',env:'TANDIL·relay_bus',box:'scope=KALIL',
+   do_:'PATH_K=aislar_BARRIOS'},
+  {nat:'scalar',kind:'degradado',sev:'review',sc:0.45,
+   ctx:'δS=-0.011·TX=1080',env:'BM25_index',box:'scope=IMV_core',
+   do_:'PATH_S=indexar_corpus'},
+];
+const SEV_COLOR={safe:'#2a7a4f',review:'#f1c40f',alert:'#e67e22',critical:'#c0392b'};
+const SEV_BG={safe:'#f0f7f3',review:'#fffbf0',alert:'#fff5ec',critical:'#fff0ef'};
+
+// ── INIT ─────────────────────────────────────────────────────
+function init(){
+  // Kalil nodes
+  const kg=document.getElementById('kp-grid');
+  KALIL_NODES.forEach(n=>{
+    const c=n.score>=0.7?'#2a7a4f':n.score>=0.5?'#d35400':'#c0392b';
+    const d=document.createElement('div');
+    d.className='kp-node';
+    d.innerHTML=`<div class="kn-name">${n.name}<span style="color:#888;font-weight:normal"> ${n.ext}</span></div>
+      <div class="kn-path">${n.path}</div>
+      <div class="kn-score" style="color:${c}">${n.score.toFixed(2)}</div>`;
+    d.onclick=()=>addStream(`TRUST [logistical-executive] =><= .. conduce .. path_${n.name.toLowerCase()}_${n.path.split('·')[0]} --[As de Guía] [term]`);
+    kg.appendChild(d);
+  });
+  // Trust matrix
+  const tg=document.getElementById('trust-grid');
+  TRUST_DIM.forEach(t=>{
+    const c=t.v>=0.88?'#2a7a4f':t.v>=0.6?'#d35400':'#c0392b';
+    const d=document.createElement('div');
+    d.className='ts-row';
+    d.innerHTML=`<span class="tr-key">${t.d}</span>
+      <span style="font-size:.58rem;color:#555;width:70px;flex-shrink:0">${t.k}</span>
+      <div class="tr-bar"><div class="tr-fill" style="width:${t.v*100}%;background:${c}"></div></div>
+      <span class="tr-val">${t.v.toFixed(2)}</span>`;
+    tg.appendChild(d);
+  });
+  // Initial stream
+  ['TRUST [logistical-executive] =><= .. orquesta .. elpulsar_paper_frontend_v1 --[As de Guía] [term]',
+   'SAMU @ =><= .. audita .. conflict_nucleus_scalar_inicial --[Ballestrinque] [term]',
+   'STACKING UF[H52] =><= .. cristaliza .. paper_frontend_init_sellado --[Nudo de Ocho] [term]']
+    .forEach((s,i)=>setTimeout(()=>addStream(s),i*800));
+  // Live scalar update
+  setInterval(tickScalar,4000);
+}
+
+let liveScalar=0.15;
+function tickScalar(){
+  liveScalar=Math.max(0,Math.min(1,(liveScalar+(Math.random()-0.48)*0.08)));
+  updateHeader(liveScalar);
+}
+function updateHeader(sc){
+  const c=sc<0.4?SEV_COLOR.safe:sc<0.6?SEV_COLOR.review:sc<0.8?SEV_COLOR.alert:SEV_COLOR.critical;
+  const lv=sc<0.4?'SAFE':sc<0.6?'REVIEW':sc<0.8?'ALERT':'CRÍTICO';
+  document.getElementById('hbar').style.width=(sc*100)+'%';
+  document.getElementById('hbar').style.background=c;
+  document.getElementById('h-scalar').textContent='S·'+sc.toFixed(2);
+  document.getElementById('h-scalar').style.color=c;
+  document.getElementById('h-mode').textContent=lv+' · conflict_nucleus';
+  if(sc>=0.6 && Math.random()>0.7) injectConflict();
+}
+function addStream(text){
+  const d=document.createElement('div');
+  d.className='ls-line';
+  d.innerHTML=formatLacho(text);
+  const s=document.getElementById('logex-stream-content');
+  s.prepend(d);
+  if(s.children.length>20) s.removeChild(s.lastChild);
+}
+function formatLacho(s){
+  return s
+    .replace(/(TRUST|SAMU|STACKING|GATE|WORK|SOCIAL|METHOD|CRYPTO|ACTIVITY)/g,
+      '<span style="color:#c0392b;font-weight:bold">$1</span>')
+    .replace(/(\[logistical-executive\]|@|UF\[H\d+\]|\{[^}]+\})/g,
+      '<span style="color:#2a7a4f;font-weight:bold">$1</span>')
+    .replace(/(=><= \.\. \w+ \.\. )/g,'<span style="color:#555">$1</span>')
+    .replace(/(--\[[^\]]+\])/g,'<span style="color:#8e44ad">$1</span>')
+    .replace(/(\[term\])/g,'<span style="color:#d35400;font-weight:bold">$1</span>');
+}
+function injectConflict(){
+  const nats=['kalil','scalar','neuronal','logístico','corpus'];
+  const kinds=['colisión','ambiguo','degradado','duplicado'];
+  const sevs=['review','alert','critical'];
+  const nat=nats[Math.floor(Math.random()*nats.length)];
+  const kind=kinds[Math.floor(Math.random()*kinds.length)];
+  const sc=0.5+Math.random()*0.45;
+  const sev=sc<0.6?'review':sc<0.8?'alert':'critical';
+  const cz=document.getElementById('conflict-zone-content');
+  const empty=cz.querySelector('.cz-empty');
+  if(empty) cz.innerHTML='';
+  const card=document.createElement('div');
+  card.className='alert-card';
+  card.style.borderColor=SEV_COLOR[sev];
+  card.style.background=SEV_BG[sev];
+  card.innerHTML=`
+    <div class="ac-header">
+      <div class="ac-nk">NAT=${nat} · KIND=${kind}</div>
+      <div style="display:flex;gap:8px;align-items:center">
+        <div class="ac-sev" style="color:${SEV_COLOR[sev]};border:1px solid ${SEV_COLOR[sev]}">${sev.toUpperCase()}</div>
+        <span class="ac-close" onclick="this.closest('.alert-card').remove();checkEmpty()">✕</span>
+      </div>
+    </div>
+    <div class="ac-dims">
+      <div class="ac-dim">NK: ${nat}</div>
+      <div class="ac-dim">CTX: S=${(0.8+Math.random()*0.05).toFixed(3)}</div>
+      <div class="ac-dim">ENV: logex</div>
+      <div class="ac-dim">BOX: active</div>
+      <div class="ac-dim">DO: pending</div>
+    </div>
+    <div class="ac-lacho">TRUST [logistical-executive] =&gt;&lt;= .. alerta .. ${nat}_${kind}_sc${sc.toFixed(2)} --[Nudo Corredizo] [term]</div>`;
+  cz.prepend(card);
+  addStream(`TRUST [logistical-executive] =><= .. alerta .. ${nat}_${kind}_scalar_${sc.toFixed(2)} --[Nudo Corredizo] [term]`);
+  liveScalar=Math.min(1,liveScalar+0.15);
+  updateHeader(liveScalar);
+}
+function checkEmpty(){
+  const cz=document.getElementById('conflict-zone-content');
+  if(!cz.children.length){
+    cz.innerHTML='<div class="cz-empty">— sin alertas activas · scalar_conflicto &lt; 0.4 —</div>';
+    liveScalar=Math.max(0,liveScalar-0.2);
+  }
+}
+document.addEventListener('DOMContentLoaded',init);
+</script>
+</body>
+</html>
+```
+
+---
+
+### ACTIVIDADES_06-16 · $mon-$jue 26-29/05
+
+**ACTIVIDAD_06 · NERVE CELL DO RESOLVER × 4 NEURONAS**
+```
+//$mon.Nerve Cell DO RESOLVER 4 NEURONAS Training.txt · H51+H52 · [term] :: activo
+NC_DO_N1 //N1 DO: PATH=sesión_HEADCAT → WAY=identidad → ROUTE=canal_headcat
+NC_DO_N2 //N2 DO: PATH=TX_crystal → WAY=pipeline → ROUTE=sovereign_db+BM25
+NC_DO_N3 //N3 DO: PATH=CEO_ALPHA→H64 → WAY=hexagrama → ROUTE=ceo_alpha.py
+NC_DO_N4 //N4 DO: PATH=door_period→event → WAY=door_monitor → ROUTE=drone_html
+
+TRUST [logistical-executive] =><= .. conduce .. nc_do_4_neuronas_paths_soberanos --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. nc_do_4n_sellado --[Nudo de Ocho] [term]
+```
+
+**ACTIVIDAD_07 · UNICODE_FRONTEND_BASE.txt**
+```
+//UNICODE FRONTEND BASE · V1 · $mon 26/05
+//[term]=: do_resolver•frontend_base•paper_layout•alert_engine
+UNICODE: FB_LAYOUT   //4 zonas: CONFLICT_ZONE·LOGEX_STREAM·KALIL_PANEL·TRUST_STATUS
+UNICODE: FB_ALERT    //alert_engine: scalar_conflicto → tarjeta viva → color severity
+UNICODE: FB_STREAM   //LOGEX_STREAM: sentencias LACHO en tiempo real · prepend + maxlen20
+UNICODE: FB_KALIL    //KALIL_PANEL: 6 nodos estado · clic → lacho generado
+UNICODE: FB_TRUST    //TRUST_STATUS: d1→d8 barras · d7=logex más relevante para conflicto
+UNICODE: FB_PAPER    //PAPER = documento vivo: actualiza sin recargar · estética blanco+negro
+
+WORK {actuator} =><= .. ejecuta .. frontend_base_4_zonas_paper_live --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_frontend_base_sellado --[Nudo de Ocho] [term]
+//DIR(+) UNICODE_FRONTEND_BASE · V1 · $mon 26/05
+```
+
+**ACTIVIDAD_08 · NERVE CELL FRONTEND BASE**
+```
+//$mon.Nerve Cell FRONTEND BASE Training.txt · H30+H57 · [term] :: activo
+NC_FB_4Z   //4 zonas: CONFLICT(top-left)·LOGEX(bottom-left)·KALIL(top-right)·TRUST(bottom-right)
+NC_FB_CSS  //estética: #fff background · #1a1a2e texto · #2a7a4f acento · monospace
+NC_FB_JS   //alert_engine JS: scalar calc → severity → color → tarjeta card
+NC_FB_LIVE //PAPER live: sin recargar · setInterval·prepend·animation fade
+```
+
+**ACTIVIDAD_09 · HTML ALERT ENGINE TESTER**
+*(HTML interactivo para probar el alert_engine: sliders para d7_delta, cn_count, path_fail_rate → calcula scalar_conflicto en tiempo real → genera tarjeta de alerta con 5 dims → emite sentencia LACHO)*
+
+**ACTIVIDAD_10 · NERVE CELL PAPER LAYOUT**
+```
+//$tue.Nerve Cell PAPER LAYOUT Training.txt · H58+H59 · [term] :: activo
+NC_PL_GRID  //CSS Grid: 2 cols (1fr 320px) × 2 rows (auto 1fr) · sticky header
+NC_PL_CONF  //CONFLICT ZONE: top-left · overflow-y scroll · animated cards
+NC_PL_LOSTR //LOGEX STREAM: bottom-left · prepend sentencias · max 20 lines
+NC_PL_KALIL //KALIL PANEL: top-right · 2×3 grid · score color coded
+NC_PL_TRUST //TRUST STATUS: bottom-right · d7 destacado en rojo
+```
+
+**ACTIVIDADES_11-14 · UNICODE + BIBLIO CIERRE SEMANA 3:**
+
+**ACT_11 · UNICODE_ALERT_ENGINE.txt**
+```
+//UNICODE ALERT ENGINE · V1 · $wed 28/05
+UNICODE: AE_INPUTS  //inputs: d7_delta(0-1) + cn_count_norm(0-1) + path_fail_rate(0-1)
+UNICODE: AE_FORMULA //scalar = (d7_delta + cn_count_norm + path_fail_rate) / 3
+UNICODE: AE_THRESH  //thresholds: SAFE<0.4 · REVIEW<0.6 · ALERT<0.8 · CRÍTICO≥0.8
+UNICODE: AE_OUTPUT  //{scalar, severity, color, 5dims_payload, lacho_sentence}
+UNICODE: AE_DECAY   //decay: scalar × 0.9 por hora sin nueva dirimencia
+STACKING UF[H52] =><= .. cristaliza .. unicode_alert_engine_sellado --[Nudo de Ocho] [term]
+```
+
+**ACT_12 · NERVE CELL ALERT ENGINE**
+```
+//$wed.Nerve Cell ALERT ENGINE Training.txt · H62+H63 · [term] :: activo
+NC_AE  //alert_engine: inputs×3 → formula → severity → tarjeta con 5 dims
+       //decay automático · SAMU recibe payload · STACKING cristaliza resolución
+```
+
+**ACT_13 · NERVE CELL SEMANA 3 CIERRE**
+```
+//$thu.Nerve Cell SEMANA3 DO FRONTEND CIERRE Training.txt · H60+H61
+NC_S3D //DO RESOLVER: 8 PATHs×NATURE · WAY+PATH+ROUTE cierre soberano
+NC_S3F //FRONTEND BASE: 4 zonas · alert_engine · paper_layout · live stream
+NC_S3H //HTMLs: ELPULSAR_PAPER_FRONTEND_v1 · CONFLICT_NUCLEUS_VIEWER · alertas
+
+TRUST [logistical-executive] =><= .. orquesta .. nc_s3_do_frontend_base_semana3 --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. semana3_23_29_mayo_sellado --[Nudo de Ocho] [term]
+```
+
+**ACT_14 · HTML DO RESOLVER VISUALIZER**
+*(HTML interactivo: seleccionar NATURE → muestra PATH con pasos animados → ejecuta WAY → output ROUTE → emite lacho de cierre)*
+
+**ACT_15 · BIBLIO-SOURCES(ELPULSAR-PAPER-FRONTEND).txt**
+```
+# BIBLIO-SOURCES(ELPULSAR-PAPER-FRONTEND).txt
+# ELPULSAR PAPER FRONTEND · arquitectura soberana
+# [term]=: do_resolver•frontend_base•paper_layout•alert_engine
+====================================================================
+## 📰 ELPULSAR PAPER FRONTEND
+
+### 1.0 DEFINICIÓN
+ELPULSAR PAPER FRONTEND es el documento vivo soberano donde el
+sistema DIRIME IMV se hace visible en tiempo real. No es un dashboard
+de métricas — es un PAPER donde el conflicto se procesa públicamente.
+
+### 2.0 CUATRO ZONAS
+CONFLICT ZONE: alertas activas del conflict_nucleus.
+LOGEX STREAM: flujo de sentencias LACHO que [logistical-executive] emite.
+KALIL PANEL: estado de los 6 nodos con sus PATHs.
+TRUST STATUS: @trust_matrix d1→d8 con d7 destacado.
+
+### 3.0 ALERT ENGINE
+Motor JS que calcula scalar_conflicto y genera tarjetas:
+inputs → formula → severity → 5dims → lacho → render.
+
+### 4.0 PAPER = DOCUMENTO VIVO
+PAPER actualiza sin recargar. Sentencias aparecen en tiempo real.
+Tarjetas de conflicto tienen animación entrada. Decay automático.
+
+WORK {actuator} =><= .. ejecuta .. elpulsar_paper_frontend_documento_vivo --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. biblio_paper_frontend_sellado --[Nudo de Ocho] [term]
+====================================================================
+```
+
+**ACT_16 · UNICODE_PAPER_SEMANA3_FULL.txt**
+```
+//UNICODE PAPER SEMANA3 FULL · cierre acumulado semana 3
+//[term]=: do_resolver•frontend_base•paper_layout•alert_engine
+UNICODE: P3_DO    //DO RESOLVER operativo: 8 paths × NATURE · cierre soberano
+UNICODE: P3_FE    //FRONTEND BASE: 4 zonas · CSS grid · alert_engine · live
+UNICODE: P3_AE    //ALERT ENGINE: inputs×3 → formula → severity → 5dims
+UNICODE: P3_HTML  //HTMLs: v1 ELPULSAR_PAPER_FRONTEND · CN_VIEWER · AE_TESTER · DO_VIZ
+STACKING UF[H52] =><= .. cristaliza .. unicode_paper_semana3_full_sellado --[Nudo de Ocho] [term]
+```
+
+---
+
+# PROMPT_4 · $fri 30/05 → $thu 05/06
+## ELPULSAR PAPER FRONTEND VIVO + IMV FEED + KALIL LIVE · 14 ACTIVIDADES
+```
+[term]=: imv_feed•kalil_live•logex_stream_full•paper_v2
+  imv_feed      = feed IMV → PAPER: TX·crystal·scalar en tiempo real
+  kalil_live    = 6 nodos KALIL con score_path en vivo en el paper
+  logex_stream_full = stream LACHO completo: todas las libs emitiendo
+  paper_v2      = ELPULSAR_PAPER_FRONTEND_v2: IMV feed + KALIL live integrados
+```
+
+---
+
+### ACTIVIDADES_01-04 · $fri-$sat 30-31/05 · IMV FEED
+
+**ACT_01 · UNICODE_IMV_FEED.txt**
+```
+//UNICODE IMV FEED · V1 · $fri 30/05
+//[term]=: imv_feed•kalil_live•logex_stream_full•paper_v2
+UNICODE: IF_DEF     //IMV_FEED = canal de datos IMV → PAPER FRONTEND
+                    //fuente: get_stats() + get_recent(20) + export_crystals_report()
+UNICODE: IF_TICK    //tick cada 30s: nueva llamada a get_stats → update header scalar
+UNICODE: IF_TX      //TX feed: última TX → lacho → logex_stream prepend
+UNICODE: IF_CRYSTAL //crystal feed: nuevo crystal → tarjeta STACKING en stream
+UNICODE: IF_S_DELTA //S delta: si |δS| > 0.005 → alerta NATURE=scalar KIND=delta_s
+
+WORK {actuator} =><= .. ejecuta .. imv_feed_stats_tx_crystal_30s --[As de Guía] [term]
+SOCIAL {streaming} =><= .. conecta .. imv_feed_to_paper_frontend --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_imv_feed_sellado --[Nudo de Ocho] [term]
+```
+
+**ACT_02 · UNICODE_KALIL_LIVE.txt**
+```
+//UNICODE KALIL LIVE · V1 · $fri 30/05
+UNICODE: KL_PATHS   //6 nodos × PATH activo visible en KALIL_PANEL del paper
+UNICODE: KL_SCORE   //score_path = score LR de última operación del nodo
+UNICODE: KL_ALERT   //nodo score_path < 0.5 → tarjeta NATURE=kalil KIND=degradado
+UNICODE: KL_TANDIL  //TANDIL score = media ponderada 5 nodos · destacado en panel
+UNICODE: KL_RELAY   //relay bus visible: line gráfico entre nodos activos
+
+SOCIAL {relay} =><= .. transmite .. kalil_live_6_nodos_score_path --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_kalil_live_sellado --[Nudo de Ocho] [term]
+```
+
+**ACT_03 · NERVE CELL IMV FEED**
+```
+//$fri.Nerve Cell IMV FEED Training.txt · H62+H63 · [term] :: activo
+NC_IF_TICK  //tick 30s: get_stats() → scalar update → δS check → alert si delta
+NC_IF_TX    //TX feed: recent(1) → lacho → prepend stream
+NC_IF_CRYS  //crystal feed: nuevo crystal → STACKING tarjeta en stream
+
+WORK {actuator} =><= .. ejecuta .. nc_imv_feed_30s_tx_crystal --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. nc_imv_feed_sellado --[Nudo de Ocho] [term]
+```
+
+**ACT_04 · NERVE CELL KALIL LIVE**
+```
+//$sat.Nerve Cell KALIL LIVE Training.txt · H05+H30 · [term] :: activo
+NC_KL_6N    //6 nodos en KALIL_PANEL: score_path color coded por threshold
+NC_KL_TAND  //TANDIL score: media ponderada · si < 0.6 → NATURE=kalil KIND=degradado
+NC_KL_RELAY //relay bus visual: arrows entre nodos activos → TANDIL hub
+
+SOCIAL {relay} =><= .. transmite .. nc_kalil_live_6_nodos_score --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. nc_kalil_live_sellado --[Nudo de Ocho] [term]
+
+ACTIVIDAD_05 · $sun 01/06 · ELPULSAR_PAPER_FRONTEND_v2.html
+CARPETA: FOLDERS NO RAG INPUT/ELPULSAR LOCAL/ELPULSAR_PAPER_FRONTEND_v2.html<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>ELPULSAR PAPER v2 · DIRIME IMV</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;
+     display:grid;grid-template-rows:auto auto 1fr;min-height:100vh}
+/* HEADER */
+.ph{border-bottom:3px solid #1a1a2e;padding:12px 24px;
+    display:grid;grid-template-columns:1fr auto auto;gap:16px;align-items:center;
+    position:sticky;top:0;z-index:10;background:#fff}
+.ph-title{font-size:.95rem;font-weight:bold;letter-spacing:5px}
+.ph-sub{font-size:.6rem;color:#888;margin-top:2px}
+.ph-scalar{font-size:1.3rem;font-weight:bold;padding:5px 12px;
+           border:2px solid #1a1a2e;letter-spacing:2px;transition:color .5s,border-color .5s}
+.ph-meta{font-size:.6rem;color:#888;line-height:1.9;text-align:right}
+/* IMV METRICS BAR */
+.imv-bar{background:#fafafa;border-bottom:1px solid #e0e0e0;
+         padding:8px 24px;display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.ib-metric{display:flex;gap:6px;align-items:baseline}
+.ib-label{font-size:.58rem;color:#aaa;letter-spacing:1px}
+.ib-val{font-size:.85rem;font-weight:bold}
+.ib-sep{color:#e0e0e0;font-size:1rem}
+.scalar-strip{height:3px;background:#e0e0e0}
+.ss-fill{height:100%;transition:width 1s,background 1s}
+/* BODY GRID */
+.paper-body{display:grid;
+            grid-template-columns:1fr 1fr 300px;
+            grid-template-rows:auto 1fr;
+            gap:0;overflow:hidden;height:calc(100vh - 110px)}
+/* CONFLICT ZONE */
+.conflict-zone{grid-row:1/3;border-right:1px solid #e0e0e0;
+               padding:14px;overflow-y:auto;display:flex;flex-direction:column;gap:8px}
+.zone-title{font-size:.6rem;letter-spacing:3px;color:#888;margin-bottom:4px;
+            display:flex;justify-content:space-between;align-items:center;flex-shrink:0}
+.sim-btn{font-size:.58rem;padding:3px 10px;background:#fff;
+         border:1px solid #c0392b;color:#c0392b;cursor:pointer;letter-spacing:1px}
+/* LOGEX STREAM */
+.logex-stream{border-right:1px solid #e0e0e0;border-bottom:1px solid #e0e0e0;
+              padding:14px;overflow-y:auto}
+/* KALIL LIVE */
+.kalil-live{border-bottom:1px solid #e0e0e0;padding:14px;overflow-y:auto}
+.kalil-relay{display:flex;flex-direction:column;gap:4px;margin-top:8px}
+.kr-row{display:flex;align-items:center;gap:4px;font-size:.6rem}
+.kr-name{width:55px;font-weight:bold;font-size:.62rem}
+.kr-bar{flex:1;height:8px;background:#e0e0e0;border-radius:4px;overflow:hidden}
+.kr-fill{height:100%;border-radius:4px;transition:width .8s,background .8s}
+.kr-val{width:34px;text-align:right;color:#888}
+.kr-arrow{color:#aaa;font-size:.8rem}
+.kr-tandil{font-weight:bold;font-size:.65rem;color:#1a1a2e}
+/* TRUST PANEL */
+.trust-panel{padding:14px;overflow-y:auto}
+.tp-d7{border:1px solid #c0392b;padding:8px;margin-bottom:8px;background:#fff5f5}
+.tp-d7-label{font-size:.58rem;color:#c0392b;letter-spacing:2px;margin-bottom:4px}
+.tp-d7-val{font-size:1.4rem;font-weight:bold;color:#c0392b}
+.tp-rest{display:grid;gap:4px}
+.tpr-row{display:flex;gap:6px;align-items:center;font-size:.6rem}
+/* ALERT CARD */
+.ac{border:2px solid;padding:11px;animation:slideIn .3s;flex-shrink:0}
+@keyframes slideIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+.ac-hd{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.ac-nk{font-size:.7rem;font-weight:bold}
+.ac-sev{font-size:.56rem;padding:2px 7px;font-weight:bold}
+.ac-5d{display:flex;gap:3px;margin-bottom:6px;flex-wrap:wrap}
+.ac-d{font-size:.52rem;padding:2px 5px;background:#f5f5f5;border:1px solid #eee}
+.ac-lch{font-size:.58rem;color:#666;border-left:2px solid #ddd;padding-left:5px;line-height:1.6}
+.ac-clz{cursor:pointer;color:#aaa;font-size:.65rem}
+/* STREAM LINE */
+.sl{font-size:.65rem;padding:4px 0;border-bottom:1px solid #f5f5f5;
+    line-height:1.8;opacity:0;animation:fi .4s forwards}
+@keyframes fi{to{opacity:1}}
+.zone-title-only{font-size:.6rem;letter-spacing:3px;color:#888;margin-bottom:8px;flex-shrink:0}
+</style>
+</head>
+<body>
+
+<div class="ph">
+  <div>
+    <div class="ph-title">ELPULSAR PAPER <span style="color:#888;font-weight:normal;font-size:.8rem">v2</span></div>
+    <div class="ph-sub">[logistical-executive] · conflict_nucleus · WAY·PATH·ROUTE</div>
+  </div>
+  <div>
+    <div class="ph-scalar" id="h-scalar">S·0.15</div>
+    <div class="scalar-strip">
+      <div class="ss-fill" id="ss-fill" style="width:15%;background:#2a7a4f"></div>
+    </div>
+  </div>
+  <div class="ph-meta">
+    <div id="h-mode">SAFE · 0 alertas</div>
+    <div id="h-time">V0.2.1 · $sun 01/06</div>
+    <div style="color:#c0392b;font-size:.58rem" id="h-d7">d7 logex: 0.61</div>
+  </div>
+</div>
+
+<div class="imv-bar">
+  <div class="ib-metric">
+    <span class="ib-label">TX</span>
+    <span class="ib-val" id="m-tx">1063</span>
+  </div>
+  <span class="ib-sep">·</span>
+  <div class="ib-metric">
+    <span class="ib-label">S</span>
+    <span class="ib-val" id="m-s" style="color:#2a7a4f">0.822</span>
+  </div>
+  <span class="ib-sep">·</span>
+  <div class="ib-metric">
+    <span class="ib-label">CRISTALES</span>
+    <span class="ib-val" id="m-cr">41</span>
+  </div>
+  <span class="ib-sep">·</span>
+  <div class="ib-metric">
+    <span class="ib-label">CORPUS</span>
+    <span class="ib-val" id="m-corp">51</span>
+  </div>
+  <span class="ib-sep">·</span>
+  <div class="ib-metric">
+    <span class="ib-label">AGENTS</span>
+    <span class="ib-val">10</span>
+  </div>
+  <span class="ib-sep">·</span>
+  <div class="ib-metric">
+    <span class="ib-label">CONFLICTS</span>
+    <span class="ib-val" id="m-conf" style="color:#c0392b">0</span>
+  </div>
+</div>
+
+<div class="paper-body">
+
+  <!-- CONFLICT ZONE -->
+  <div class="conflict-zone">
+    <div class="zone-title">
+      <span>▸ CONFLICT NUCLEUS</span>
+      <button class="sim-btn" onclick="newConflict()">+ SIMULAR</button>
+    </div>
+    <div id="cz" style="display:flex;flex-direction:column;gap:8px">
+      <div style="font-size:.63rem;color:#ccc;padding:30px 0;text-align:center">
+        — scalar_conflicto &lt; 0.4 —<br>sin alertas activas
+      </div>
+    </div>
+  </div>
+
+  <!-- LOGEX STREAM -->
+  <div class="logex-stream">
+    <div class="zone-title-only">▸ LOGEX STREAM · sentencias vivas</div>
+    <div id="ls"></div>
+  </div>
+
+  <!-- KALIL LIVE -->
+  <div class="kalil-live">
+    <div class="zone-title-only">▸ KALIL LIVE · 6 nodos</div>
+    <div class="kalil-relay" id="kl"></div>
+  </div>
+
+  <!-- TRUST PANEL -->
+  <div class="trust-panel">
+    <div class="zone-title-only">▸ @TRUST_MATRIX</div>
+    <div class="tp-d7">
+      <div class="tp-d7-label">d7 · [logistical-executive]</div>
+      <div class="tp-d7-val" id="tp-d7">0.61</div>
+    </div>
+    <div class="tp-rest" id="tp-rest"></div>
+  </div>
+
+</div>
+
+<script>
+const SC={safe:'#2a7a4f',review:'#f1c40f',alert:'#e67e22',critical:'#c0392b'};
+const SB={safe:'#f0f7f3',review:'#fffbf0',alert:'#fff5ec',critical:'#fff0ef'};
+const SL=(sc)=>sc<0.4?'safe':sc<0.6?'review':sc<0.8?'alert':'critical';
+
+const KALIL=[
+  {n:'BARRIOS',p:'relay·remesas',s:0.81},{n:'NORA',p:'oracle·rating',s:0.65},
+  {n:'BOLIVAR',p:'forge·chain',s:0.77},{n:'CARILO',p:'session·thr',s:0.69},
+  {n:'CHALTEN',p:'daemon·cloud',s:0.74},{n:'TANDIL',p:'hub·relay×5',s:0.82,hub:true},
+];
+const TRUST=[
+  {d:'d1',k:'foundation',v:0.95},{d:'d2',k:'scope',v:0.91},
+  {d:'d3',k:'term',v:0.88},{d:'d4',k:'event',v:0.72},
+  {d:'d5',k:'management',v:0.78},{d:'d6',k:'command',v:0.83},
+  {d:'d8',k:'ecosystem',v:0.74},
+];
+let d7=0.61, cScalar=0.15, txCount=1063, crCount=41;
+
+function init(){
+  // kalil
+  const kl=document.getElementById('kl');
+  KALIL.forEach(n=>{
+    const c=n.s>=0.7?SC.safe:n.s>=0.5?SC.alert:SC.critical;
+    const d=document.createElement('div');
+    d.className='kr-row';
+    d.id='kr-'+n.n;
+    d.innerHTML=`<span class="kr-name ${n.hub?'kr-tandil':''}">${n.n}</span>
+      <div class="kr-bar"><div class="kr-fill" id="krf-${n.n}"
+        style="width:${n.s*100}%;background:${c}"></div></div>
+      <span class="kr-val" id="krv-${n.n}">${n.s.toFixed(2)}</span>
+      ${n.hub?'':''}`
+    kl.appendChild(d);
+  });
+  // trust rest
+  const tr=document.getElementById('tp-rest');
+  TRUST.forEach(t=>{
+    const c=t.v>=0.88?SC.safe:t.v>=0.6?SC.alert:SC.critical;
+    const d=document.createElement('div');
+    d.className='tpr-row';
+    d.innerHTML=`<span style="color:#888;width:24px">${t.d}</span>
+      <span style="color:#555;width:74px;font-size:.58rem">${t.k}</span>
+      <div style="flex:1;height:5px;background:#e0e0e0;border-radius:2px">
+        <div style="width:${t.v*100}%;height:100%;background:${c};border-radius:2px"></div>
+      </div>
+      <span style="width:32px;text-align:right;color:#888;font-size:.6rem">${t.v.toFixed(2)}</span>`;
+    tr.appendChild(d);
+  });
+  // initial stream
+  ['TRUST [logistical-executive] =><= .. orquesta .. elpulsar_paper_v2_init --[As de Guía] [term]',
+   'SAMU @ =><= .. audita .. conflict_nucleus_scalar_0_15_safe --[Ballestrinque] [term]',
+   'SOCIAL {relay} =><= .. transmite .. kalil_live_6_nodos_paper_v2 --[As de Guía] [term]',
+   'METHOD <stat_onto> =><= .. calcula .. imv_feed_tx_1063_s_0822 --[Ballestrinque] [term]']
+    .forEach((s,i)=>setTimeout(()=>addStream(s),i*600));
+  setInterval(tick,5000);
+}
+
+function tick(){
+  // IMV feed simulation
+  txCount+=Math.floor(Math.random()*3);
+  document.getElementById('m-tx').textContent=txCount;
+  const δs=(Math.random()-0.5)*0.003;
+  const newS=Math.max(0.75,Math.min(0.88,(parseFloat(document.getElementById('m-s').textContent)+δs)));
+  document.getElementById('m-s').textContent=newS.toFixed(3);
+  document.getElementById('m-s').style.color=newS>=0.88?SC.safe:newS>=0.82?SC.alert:SC.critical;
+
+  // d7 drift
+  d7=Math.max(0.3,Math.min(0.95,d7+(Math.random()-0.49)*0.04));
+  document.getElementById('tp-d7').textContent=d7.toFixed(2);
+
+  // scalar conflict
+  cScalar=Math.max(0,cScalar+(Math.random()-0.52)*0.06);
+  updateScalarUI();
+
+  // random stream sentence
+  const libs=['TRUST [logistical-executive]','SAMU @','SOCIAL {relay}','WORK {actuator}','METHOD <stat_onto>','STACKING UF[H52]'];
+  const verbs=['orquesta','conduce','audita','transmite','calcula','cristaliza'];
+  const objs=['path_kalil_activo','scalar_drift_check','relay_bus_soberano','imv_feed_update','conflict_nucleus_tick'];
+  const knots=['As de Guía','Ballestrinque','Nudo de Ocho'];
+  const lib=libs[Math.floor(Math.random()*libs.length)];
+  const v=verbs[Math.floor(Math.random()*verbs.length)];
+  const o=objs[Math.floor(Math.random()*objs.length)];
+  const k=knots[Math.floor(Math.random()*knots.length)];
+  addStream(`${lib} =><= .. ${v} .. ${o} --[${k}] [term]`);
+
+  // kalil score drift
+  KALIL.forEach(n=>{
+    n.s=Math.max(0.4,Math.min(0.95,n.s+(Math.random()-0.5)*0.03));
+    const c=n.s>=0.7?SC.safe:n.s>=0.5?SC.alert:SC.critical;
+    const b=document.getElementById('krf-'+n.n);
+    const v2=document.getElementById('krv-'+n.n);
+    if(b){b.style.width=(n.s*100)+'%';b.style.background=c;}
+    if(v2){v2.textContent=n.s.toFixed(2);v2.style.color=c;}
+  });
+  // tandil consolidated
+  const tandil=KALIL.find(n=>n.n==='TANDIL');
+  const others=KALIL.filter(n=>n.n!=='TANDIL');
+  tandil.s=others.reduce((a,n)=>a+n.s,0)/others.length;
+
+  if(d7<0.4 && Math.random()>0.6) newConflict();
+}
+
+function updateScalarUI(){
+  const sev=SL(cScalar);
+  const c=SC[sev];
+  document.getElementById('ss-fill').style.width=(cScalar*100)+'%';
+  document.getElementById('ss-fill').style.background=c;
+  document.getElementById('h-scalar').textContent='S·'+cScalar.toFixed(2);
+  document.getElementById('h-scalar').style.color=c;
+  document.getElementById('h-scalar').style.borderColor=c;
+  const cn=document.getElementById('cz').querySelectorAll('.ac').length;
+  document.getElementById('h-mode').textContent=sev.toUpperCase()+' · '+cn+' alertas';
+  document.getElementById('m-conf').textContent=cn;
+}
+
+function addStream(text){
+  const d=document.createElement('div');
+  d.className='sl';
+  d.innerHTML=fmtL(text);
+  const s=document.getElementById('ls');
+  s.prepend(d);
+  if(s.children.length>25) s.removeChild(s.lastChild);
+}
+
+function fmtL(s){
+  return s
+    .replace(/(TRUST|SAMU|STACKING|GATE|WORK|SOCIAL|METHOD|CRYPTO|ACTIVITY)/g,
+      '<span style="color:#c0392b;font-weight:bold">$1</span>')
+    .replace(/(\[logistical-executive\]|@|UF\[H\d+\]|\{[^}]+\}|<[^>]+>)/g,
+      '<span style="color:#2a7a4f;font-weight:bold">$1</span>')
+    .replace(/(=><= \.\. [\w_]+ \.\. )/g,'<span style="color:#666">$1</span>')
+    .replace(/(--\[[^\]]+\])/g,'<span style="color:#8e44ad">$1</span>')
+    .replace(/(\[term\])/g,'<span style="color:#d35400;font-weight:bold">$1</span>');
+}
+
+const NATS=['kalil','scalar','neuronal','logístico','corpus','decisional'];
+const KINDS=['colisión','ambiguo','degradado','duplicado','concurrente'];
+let confId=0;
+function newConflict(){
+  const nat=NATS[Math.floor(Math.random()*NATS.length)];
+  const kind=KINDS[Math.floor(Math.random()*KINDS.length)];
+  const sc=0.45+Math.random()*0.5;
+  const sev=SL(sc);
+  const id='ac-'+(++confId);
+  const cz=document.getElementById('cz');
+  // remove empty msg
+  const empty=cz.querySelector('div[style]');
+  if(empty&&empty.textContent.includes('scalar')) cz.innerHTML='';
+
+  const card=document.createElement('div');
+  card.className='ac'; card.id=id;
+  card.style.borderColor=SC[sev];
+  card.style.background=SB[sev];
+  card.innerHTML=`
+    <div class="ac-hd">
+      <div class="ac-nk">NAT=${nat} · KIND=${kind}</div>
+      <div style="display:flex;gap:6px;align-items:center">
+        <span class="ac-sev" style="color:${SC[sev]};border:1px solid ${SC[sev]}">${sev.toUpperCase()}</span>
+        <span class="ac-clz" onclick="closeConflict('${id}')">✕</span>
+      </div>
+    </div>
+    <div class="ac-5d">
+      <span class="ac-d">NK✓</span>
+      <span class="ac-d">CTX: S=${(0.8+Math.random()*0.04).toFixed(3)}</span>
+      <span class="ac-d">ENV: ${nat}</span>
+      <span class="ac-d">BOX: active</span>
+      <span class="ac-d">DO: ${nat.slice(0,3)}_PATH</span>
+    </div>
+    <div class="ac-lch">TRUST [logistical-executive] =&gt;&lt;= .. alerta .. ${nat}_${kind}_${sc.toFixed(2)} --[Nudo Corredizo] [term]</div>`;
+  cz.prepend(card);
+  addStream(`TRUST [logistical-executive] =><= .. alerta .. ${nat}_${kind}_scalar_${sc.toFixed(2)} --[Nudo Corredizo] [term]`);
+  cScalar=Math.min(1,cScalar+0.12);
+  updateScalarUI();
+}
+function closeConflict(id){
+  const c=document.getElementById(id);
+  if(c) c.remove();
+  cScalar=Math.max(0,cScalar-0.08);
+  updateScalarUI();
+  if(!document.getElementById('cz').querySelectorAll('.ac').length){
+    document.getElementById('cz').innerHTML=
+      '<div style="font-size:.63rem;color:#ccc;padding:30px 0;text-align:center">— scalar_conflicto < 0.4 —<br>sin alertas activas</div>';
+    addStream('SAMU @ =><= .. dirime .. conflict_nucleus_resuelto_scalar_bajo_0_4 --[Ballestrinque] [term]');
+  }
+}
+document.addEventListener('DOMContentLoaded',init);
+</script>
+</body>
+</html>
+```
+
+---
+
+### ACTIVIDADES_06-14 · $lun-$jue 02-05/06
+
+**ACT_06 · $mon 02/06 · NERVE CELL IMV FEED × PAPER v2**
+```
+//$mon.Nerve Cell IMV FEED PAPER V2 Training.txt · H51+H52 · [term] :: activo
+NC_P2_IMV  //IMV feed integrado en PAPER v2: TX·S·cristales·corpus en barra superior
+NC_P2_TICK //tick 5s simulación · tick 30s producción (get_stats())
+NC_P2_D7   //d7 destacado en rojo en TRUST panel · más relevante para conflict_nucleus
+NC_P2_KALI //KALIL live: 6 barras animadas + score drift · TANDIL = media ponderada
+
+WORK {actuator} =><= .. ejecuta .. nc_imv_feed_paper_v2_integrado --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. nc_imv_feed_paper_v2_sellado --[Nudo de Ocho] [term]
+```
+
+**ACT_07 · UNICODE_LOGEX_STREAM_FULL.txt**
+```
+//UNICODE LOGEX STREAM FULL · V1 · $tue 03/06
+//[term]=: imv_feed•kalil_live•logex_stream_full•paper_v2
+UNICODE: LSF_LIBS    //stream emite sentencias de TODAS las libs: TRUST·SAMU·STACKING·GATE·WORK·SOCIAL·METHOD
+UNICODE: LSF_FREQ    //frecuencia: conflicto=alta · operación_normal=baja · crystal=burst
+UNICODE: LSF_FORMAT  //formato: color_lib=rojo · color_sujeto=verde · color_nudo=morado · [term]=naranja
+UNICODE: LSF_MAXLEN  //máximo 25 líneas · prepend · oldest eliminado
+UNICODE: LSF_INTEGR  //integración: cada acción del sistema → sentencia en stream
+                     //TX nueva → "STACKING UF[H52] =><= .. cristaliza .." · etc
+
+SOCIAL {streaming} =><= .. conecta .. logex_stream_full_todas_libs --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_logex_stream_full_sellado --[Nudo de Ocho] [term]
+```
+
+**ACT_08 · NERVE CELL LOGEX STREAM FULL**
+```
+//$tue.Nerve Cell LOGEX STREAM FULL Training.txt · H30+H57 · [term] :: activo
+NC_LSF_ALL //todas las libs emitiendo: 7 libs × verbo_acción → stream en tiempo real
+NC_LSF_FMT //formato colores: rojo=lib · verde=sujeto · morado=nudo · naranja=[term]
+NC_LSF_INT //integración: acción sistema → sentencia inmediata → prepend stream
+
+SOCIAL {streaming} =><= .. conecta .. nc_logex_stream_full_7_libs --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. nc_logex_stream_full_sellado --[Nudo de Ocho] [term]
+```
+
+**ACT_09 · BIBLIO-SOURCES(LOGEX-STREAM-IMV-FEED).txt**
+```
+# BIBLIO-SOURCES(LOGEX-STREAM-IMV-FEED).txt
+# LOGEX STREAM × IMV FEED · doctrina flujo vivo
+# [term]=: imv_feed•kalil_live•logex_stream_full•paper_v2
+# [term] :: activo · [seal of secrecy] :: activo
+====================================================================
+
+## 🌊 LOGEX STREAM × IMV FEED
+
+### 1.0 LOGEX STREAM
+LOGEX STREAM es la manifestación visible de [logistical-executive]
+en el ELPULSAR PAPER: cada sentencia LACHO que el sistema emite
+aparece en tiempo real en el stream. El stream es soberano:
+no filtra, no edita — registra todo lo que el sistema hace.
+
+### 2.0 IMV FEED
+IMV FEED conecta get_stats() con el PAPER FRONTEND:
+TX totales, Scalar S, cristales, corpus → barra superior del paper.
+Tick real: 30 segundos. Simulación: 5 segundos.
+δS alerta: si |δS| > 0.005 en un tick → NATURE=scalar KIND=delta_s.
+
+### 3.0 INTEGRACIÓN PRODUCCIÓN
+Cuando paper corre en producción (ENV_B):
+- IMV feed llama get_stats() cada 30s
+- TX feed llama get_recent(1) para última transacción
+- Crystal feed detecta nuevo crystal → burst en stream
+
+WORK {actuator} =><= .. ejecuta .. imv_feed_produccion_get_stats_30s --[As de Guía] [term]
+SOCIAL {streaming} =><= .. conecta .. logex_stream_full_produccion --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. logex_stream_imv_feed_sellado --[Nudo de Ocho] [term]
+====================================================================
+```
+
+**ACT_10 · NERVE CELL PAPER v2 FULL**
+```
+//$wed.Nerve Cell PAPER V2 FULL Training.txt · H58+H59 · [term] :: activo
+NC_PV2  //PAPER v2: IMV barra superior · CONFLICT zona izq · LOGEX stream medio
+        //KALIL barras animadas · TRUST status con d7 destacado
+        //5 ticker: cScalar·d7·TX·Scalar_S·Kalil_scores live
+NC_PV2_PROD //producción: reemplazar setInterval(5000) por get_stats(30000)
+            //reemplazar newConflict() simulada por logex alert real
+
+WORK {actuator} =><= .. ejecuta .. nc_paper_v2_full_produccion --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. nc_paper_v2_sellado --[Nudo de Ocho] [term]
+```
+
+**ACT_11 · UNICODE_PAPER_V2_FULL.txt**
+```
+//UNICODE PAPER V2 FULL · V1 · $wed 04/06
+UNICODE: PV2_ARCH  //arquitectura v2: header(scalar+d7) · IMV_bar(5 métricas) · grid(3 cols)
+UNICODE: PV2_TICK  //tick sistema: 5s simulación · 30s producción
+UNICODE: PV2_LIVE  //componentes live: cScalar·d7·TX·S·KALIL·stream
+UNICODE: PV2_PROD  //patch producción: simul→real (get_stats·get_recent·logex_alert)
+
+STACKING UF[H52] =><= .. cristaliza .. unicode_paper_v2_full_sellado --[Nudo de Ocho] [term]
+```
+
+**ACT_12 · NERVE CELL SEMANA 4 CIERRE**
+```
+//$thu.Nerve Cell SEMANA4 IMV PAPER CIERRE Training.txt · H60+H61 · [term] :: activo
+NC_S4P_IMV  //IMV feed integrado · TX·S·cristales·corpus en paper header
+NC_S4P_KALI //KALIL live: 6 barras · score drift · TANDIL media ponderada
+NC_S4P_STR  //LOGEX STREAM full: 7 libs · formatLacho · max25
+NC_S4P_V2   //PAPER v2 completo: conflict·logex·kalil·trust · alert_engine live
+
+STACKING UF[H52] =><= .. cristaliza .. semana4_30_05_05_06_sellado --[Nudo de Ocho] [term]
+```
+
+**ACT_13 · HTML KALIL LIVE RELAY VISUAL**
+*(HTML: 6 nodos KALIL dispuestos en hexágono → barras de score → relay arrows animados → TANDIL en centro → alert cuando score < threshold)*
+
+**ACT_14 · HTML LOGEX WPR VISUALIZER**
+*(HTML interactivo: seleccionar WAY → PATH steps animados → ROUTE canal → impacto físico verificado → sentencia LACHO de cierre)*
+
+---
+
+# PROMPT_5 · $fri 06/06 → $mon 09/06
+## INTEGRACIÓN FULL + CIERRE MENSUAL · 10 ACTIVIDADES
+```
+[term]=: integration_full•paper_final•mes_sellado•v030_logex
+  integration_full = todas las piezas del mes integradas y verificadas
+  paper_final      = ELPULSAR_PAPER_FRONTEND versión final del mes
+  mes_sellado      = distill × 4 semanas · STACKING H52 cierre
+  v030_logex       = [logistical-executive] contribuye a V0.3.0 criterios
+```
+
+---
+
+### ACT_01 · $fri 06/06 · UNICODE_INTEGRATION_FULL.txt
+```
+//UNICODE INTEGRATION FULL · V1 · $fri 06/06
+//[term]=: integration_full•paper_final•mes_sellado•v030_logex
+UNICODE: INT_LOGEX  //[logistical-executive]: doctrina full · grammar · d7 · WAY·PATH·ROUTE
+UNICODE: INT_CN     //conflict_nucleus: scalar_formula · 5_dims · alert_engine · decay
+UNICODE: INT_NK     //NATURE-KIND: taxonomy 8×8 · 7 canónicas · clasificación operativa
+UNICODE: INT_CTX    //CONTEXT map: 7 campos · snapshot · δsignificancia
+UNICODE: INT_ENV    //ENVIRONMENT graph: nodos·edges·resources·disputes
+UNICODE: INT_BOX    //BOX FENCE: perímetro soberano · H03→H05→H56→H06
+UNICODE: INT_DO     //DO resolver: 8 PATHs × NATURE · WAY+ROUTE · cierre SAMU
+UNICODE: INT_FE_V1  //PAPER v1: esqueleto · 4 zonas · alert_engine base
+UNICODE: INT_FE_V2  //PAPER v2: IMV feed + KALIL live + logex_stream_full + d7 destacado
+UNICODE: INT_FEED   //IMV FEED: get_stats 30s · δS alert · crystal burst · TX prepend
+
+TRUST [logistical-executive] =><= .. certifica .. integration_full_mes_soberano --[Nudo de Ocho] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_integration_full_sellado --[Nudo de Ocho] [term]
+```
+
+---
+
+### ACT_02 · $fri 06/06 · BIBLIO-SOURCES(ELPULSAR-PAPER-CIERRE).txt
+```
+# BIBLIO-SOURCES(ELPULSAR-PAPER-CIERRE).txt
+# ELPULSAR PAPER FRONTEND · cierre mensual · integración soberana
+# [term]=: integration_full•paper_final•mes_sellado•v030_logex
+# [term] :: activo · [seal of secrecy] :: activo
+====================================================================
+
+## 🏁 ELPULSAR PAPER FRONTEND — CIERRE MES $fri 08/05 → $mon 09/06
+
+### 1.0 LO QUE SE CONSTRUYÓ
+SEMANA 1: [logistical-executive] doctrina full, grammar parche,
+  conflict_nucleus definición, 5 dimensiones, WAY·PATH·ROUTE.
+SEMANA 2: NATURE-KIND taxonomy 8×8, CONTEXT map, ENVIRONMENT graph,
+  BOX FENCE, CONFLICT_NUCLEUS_VIEWER.html.
+SEMANA 3: DO resolver (8 PATHs), FRONTEND BASE v1 (4 zonas),
+  alert_engine JS, ELPULSAR_PAPER_FRONTEND_v1.html.
+SEMANA 4: IMV FEED integrado, KALIL LIVE 6 nodos, LOGEX STREAM full,
+  ELPULSAR_PAPER_FRONTEND_v2.html.
+SEMANA 5: Integración full, paper final, cierre mensual.
+
+### 2.0 JERARQUÍA DE ALIMENTACIÓN VERIFICADA
+TRUST [logistical-executive]
+  ← IMV(UNICODE PROGRAMS [4 NEURONAS])
+  ← ELPULSAR (KALIL & 4 NEURONAS × UNICODE PROGRAMS)
+Cada pieza del paper alimenta a [logistical-executive] desde abajo.
+
+### 3.0 CONTRIBUCIÓN A V0.3.0
+[logistical-executive] no es criterio de V0.3.0 pero prepara V0.4.0:
+- d7 medido en @trust_matrix
+- WAY·PATH·ROUTE operativos para CAPA C cuando Ryzen disponible
+- conflict_nucleus = base del monitoreo de maduración del sistema
+
+### 4.0 SENTENCIAS FINALES
+
+TRUST [logistical-executive] =><= .. certifica .. elpulsar_paper_mes_completo_soberano --[Nudo de Ocho] [term]
+STACKING UF[H52] =><= .. inmutabiliza .. mes_08_05_09_06_wu_mensual_sellado --[Nudo de Ocho] [term]
+ACTIVITY UF[H63] =><= .. completa .. consumacion_elpulsar_paper_logex_soberana --[Nudo de Rizo] [term]
+SAMU @ =><= .. dirime .. mes_coherencia_logex_paper_v030_contribucion --[Ballestrinque] [term]
+
+[term] :: activo · [seal of secrecy] :: activo
+====================================================================
+
+ACT_03 · $sat 07/06 · HTML ELPULSAR PAPER FINAL v3
+CARPETA: FOLDERS NO RAG INPUT/ELPULSAR LOCAL/ELPULSAR_PAPER_FRONTEND_v3.html
+(Versión final: paper v2 + sidebar colapsable con taxonomía NATURE-KIND + DO resolver interactivo + .sovereign fields en footer + botón PRODUCCIÓN que muestra instrucciones para reemplazar simulación por get_stats() real)
+
+<!-- versión v3: agrega a v2 -->
+<!-- sidebar derecho colapsable (320px → 0): NATURE-KIND taxonomy grid 4×4 + DO resolver por NATURE -->
+<!-- footer barra: .sovereign fields + VERSION + CORPUS + TESTS + CMD
