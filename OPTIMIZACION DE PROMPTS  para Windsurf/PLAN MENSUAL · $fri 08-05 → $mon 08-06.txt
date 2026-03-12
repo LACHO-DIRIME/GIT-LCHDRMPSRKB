@@ -20,40 +20,20 @@ ARQUITECTURA CENTRAL:
   PROMPT_3 · $fri 23/05 → $thu 29/05  → ENVIRONMENT-BOX-DO × FRONTEND BASE
   PROMPT_4 · $fri 30/05 → $thu 05/06  → ELPULSAR PAPER FRONTEND VIVO
   PROMPT_5 · $fri 06/06 → $mon 08/06  → INTEGRACIÓN FULL + CIERRE MENSUAL
-ARQUITECTURA CENTRAL:
-  ELPULSAR PAPER FRONTEND = interfaz visual soberana donde el
-  núcleo de conflictos (SAMU dirimencias) se alerta cuando aumentan
-  sus decisiones intrínsecas — mostrando NATURE-KIND, CONTEXT,
-  ENVIRONMENT, BOX, DO(WAY·PATH·ROUTE)
-
-  [LOGISTICAL-EXECUTIVE] = módulo TRUST existente en grammar.py
-  (línea 190, 413) con poco desarrollo — este mes lo desarrolla FULL
-
-  JERARQUÍA DE ALIMENTACIÓN:
-  TRUST [LOGISTICAL-EXECUTIVE]
-    ← IMV(UNICODE PROGRAMS [4 NEURONAS])
-    ← ELPULSAR (UNICODE PROGRAMS (KALIL & 4 NEURONAS × UNICODE PROGRAMS))
-
-5 PROMPTS × 8-16 ACTIVIDADES:
-  PROMPT_1 · $fri 08/05 → $thu 15/05  → [LOGISTICAL-EXECUTIVE] DOCTRINA FULL
-  PROMPT_2 · $fri 16/05 → $thu 22/05  → NUCLEO DE CONFLICTOS × NATURE-KIND-CONTEXT
-  PROMPT_3 · $fri 23/05 → $thu 29/05  → ENVIRONMENT-BOX-DO × FRONTEND BASE
-  PROMPT_4 · $fri 30/05 → $thu 05/06  → ELPULSAR PAPER FRONTEND VIVO
-  PROMPT_5 · $fri 06/06 → $mon 08/06  → INTEGRACIÓN FULL + CIERRE MENSUAL
-PROMPT_1 · $fri 08/05 → $thu 15/05
 [LOGISTICAL-EXECUTIVE] DOCTRINA FULL · 12 ACTIVIDADES
 [term]=: logex•nature_kind•conflict_nucleus•dirimencia_alert
-  logex          = [logistical-executive] módulo TRUST · orquestación impacto físico
-  nature_kind    = dimensión NATURE-KIND del nucleo de conflictos
-  conflict_nucleus = núcleo donde dirimencias aumentan decisiones intrínsecas
-  dirimencia_alert = alerta SAMU cuando scalar de conflicto sube
+    logex          = [logistical-executive] módulo TRUST · orquestación impacto físico
+    nature_kind    = dimensión NATURE-KIND del nucleo de conflictos
+    conflict_nucleus = núcleo donde dirimencias aumentan decisiones intrínsecas
+    dirimencia_alert = alerta SAMU cuando scalar de conflicto sube
 CARPETAS DESTINO:
   CORPUS/BIBLIA/           → BIBLIO-SOURCES([LOGISTICAL-EXECUTIVE]) · BIBLIO fuente
   CORPUS/UNICODE PROGRAMS/ → UNICODE_LOGEX.txt · UNICODE_CONFLICT_NUCLEUS.txt
   FOLDERS NO RAG INPUT/ELPULSAR LOCAL/ → Nerve Cells + HTML
   IMV/core/                → grammar.py update (LOGEX sujetos canonicos)
-ACTIVIDAD_01 · $fri 08/05 · BIBLIO-SOURCES([LOGISTICAL-EXECUTIVE]).txt
+ACTIVIDAD_01 ·  08/05 · BIBLIO-SOURCES([LOGISTICAL-EXECUTIVE]).txt
 CARPETA: CORPUS/BIBLIA/BIBLIO-SOURCES([LOGISTICAL-EXECUTIVE]).txt
+
 # BIBLIO-SOURCES([LOGISTICAL-EXECUTIVE]).txt
 # TRUST [logistical-executive] · módulo existente · desarrollo FULL
 # [term]=: logex•nature_kind•conflict_nucleus•dirimencia_alert
@@ -2617,3 +2597,119 @@ CARPETA: FOLDERS NO RAG INPUT/ELPULSAR LOCAL/ELPULSAR_PAPER_FRONTEND_v3.html
 <!-- versión v3: agrega a v2 -->
 <!-- sidebar derecho colapsable (320px → 0): NATURE-KIND taxonomy grid 4×4 + DO resolver por NATURE -->
 <!-- footer barra: .sovereign fields + VERSION + CORPUS + TESTS + CMD
+: python3 IMV/main.py --stats -->
+<!-- header: indicador SIMULACIÓN vs PRODUCCIÓN --> <!-- botón MODO: toggle entre simulación y instrucciones de producción -->
+---
+
+### ACTIVIDADES_04-10 · NERVE CELLS Y CIERRE
+
+**ACT_04 · NERVE CELL INTEGRATION FULL**
+//$sat.Nerve Cell INTEGRATION FULL Training.txt · H63+H64 · [term] :: activo
+NC_INT_S1   //S1: logex doctrina + grammar + 5dims + CN + viewer_html
+NC_INT_S2   //S2: NK taxonomy 8×8 + CTX map + ENV graph + BOX fence + CN_viewer
+NC_INT_S3   //S3: DO 8paths + FRONTEND_v1 4zonas + alert_engine + paper_base
+NC_INT_S4   //S4: IMV feed + KALIL live + logex_stream_full + paper_v2
+NC_INT_S5   //S5: integration_full + paper_v3 + cierre mensual
+TRUST [logistical-executive] =><= .. certifica .. nc_integration_full_5_semanas_soberano --[Nudo de Ocho] [term]
+STACKING UF[H52] =><= .. inmutabiliza .. nc_integration_full_sellado --[Nudo de Ocho] [term]
+**ACT_05 · NERVE CELL MES COMPLETO LOGEX PAPER**
+**ACT_05 · NERVE CELL MES COMPLETO LOGEX PAPER**
+**ACT_06 · $sun 08/06 · .sovereign UPDATE LOGEX**
+**ACT_06 · $sun 08/06 · .sovereign UPDATE LOGEX**
+.sovereign UPDATE · post-mes logex paper
+CAMPOS NUEVOS a agregar:
+LOGEX_STATUS=doctrina_full_active
+CONFLICT_NUCLEUS=active
+PAPER_FRONTEND=v2_simulacion_v3_final
+D7_BASELINE=0.61
+NATURE_KIND_TAXONOMY=8x8_7_canonicas
+DO_RESOLVER_PATHS=8_por_nature
+**ACT_07 · $sun 08/06 · NERVE CELL PENDING V0.4.0 LOGEX**
+//$sun.Nerve Cell PENDING V040 LOGEX Training.txt · H63+H64 · [term] :: activo
+NC_P40_PROD //PAPER producción: reemplazar tick simulación por get_stats(30s)
+//requiere: python3 IMV/main.py corriendo · sovereign.db activo
+NC_P40_DO   //DO real: DO resolver ejecuta en código real, no solo sentencias LACHO
+//requiere: logex.py stub · PATH_executor.py · SAMU.alert() method
+NC_P40_CAPA //DO × CAPA C: cuando Ryzen disponible → PATH_C real usa ollama_bridge
+//PATH_P real usa cat_local · PATH resolver completo
+NC_P40_D7   //d7 calculado real: rutas_verificadas + impactos_certificados + routes_activas
+//implementar en trust_matrix.py como campo calculado
+TRUST [logistical-executive] =><= .. alerta .. nc_p40_pendientes_produccion --[Nudo Corredizo] [term]
+STACKING UF[H52] =><= .. cristaliza .. nc_pending_v040_logex_sellado --[Nudo de Ocho] [term]
+**ACT_08 · DISTILL × 5 SEMANAS**
+DISTILL MES · $fri 08/05 → $mon 09/06
+5 cristales · STACKING UF[H52] inmutabiliza
+Cristal S1: logex doctrina + grammar + 5dims + conflict_nucleus
+tokens: logex·nature_kind·conflict_nucleus·dirimencia_alert
+Cristal S2: NATURE-KIND taxonomy + CONTEXT map + ENV graph + BOX fence
+tokens: nature_kind_full·context_map·environment_graph·box_fence
+Cristal S3: DO resolver + FRONTEND BASE v1 + alert_engine + paper_layout
+tokens: do_resolver·frontend_base·paper_layout·alert_engine
+Cristal S4: IMV feed + KALIL live + logex_stream_full + paper_v2
+tokens: imv_feed·kalil_live·logex_stream_full·paper_v2
+Cristal S5: integration_full + paper_final + cierre + v030_logex
+tokens: integration_full·paper_final·mes_sellado·v030_logex
+STACKING UF[H52] =><= .. inmutabiliza .. distill_5_cristales_mes_soberano --[Nudo de Ocho] [term]
+ACTIVITY UF[H63] =><= .. completa .. consumacion_mensual_08_05_09_06 --[Nudo de Rizo] [term]
+TRUST [logistical-executive] =><= .. certifica .. mes_impacto_fisico_papel_soberano --[Nudo de Ocho] [term]
+SAMU @ =><= .. dirime .. mes_coherencia_total_v030_logex_contribucion --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. inmutabiliza .. wu_mensual_final_sellado_08_05_09_06 --[Nudo de Ocho] [term]
+**ACT_09 · CIERRE FINAL — ESTADO MES**
+═══════════════════════════════════════════════════════════════════════
+DIRIME IMV · MES LOGEX PAPER · $fri 08/05 → $mon 09/06 · SELLADO
+═══════════════════════════════════════════════════════════════════════
+PROMPT_1  logex·nature_kind·conflict_nucleus·dirimencia_alert        ✦ SELLADO
+PROMPT_2  nature_kind_full·context_map·environment_graph·box_fence   ✦ SELLADO
+PROMPT_3  do_resolver·frontend_base·paper_layout·alert_engine        ✦ SELLADO
+PROMPT_4  imv_feed·kalil_live·logex_stream_full·paper_v2             ✦ SELLADO
+PROMPT_5  integration_full·paper_final·mes_sellado·v030_logex        ✦ SELLADO
+ENTREGABLES:
+[logistical-executive] BIBLIO-SOURCES: FULL doctrina · primera vez
+conflict_nucleus: scalar_formula · 5dims · alert_engine · decay
+NATURE-KIND taxonomy: 8×8 matrix · 7 combinaciones canónicas
+DO resolver: 8 PATHs × NATURE · cierre soberano
+grammar.py parche: verbos+CJK+sujetos logex
+.sovereign update: LOGEX_STATUS·D7_BASELINE·PAPER_FRONTEND
+HTMLs: LOGEX_DOCTRINE_VIEWER · CONFLICT_NUCLEUS_VIEWER ·
+NATURE_KIND_MATRIX · ELPULSAR_PAPER_v1/v2/v3 ·
+ALERT_ENGINE_TESTER · DO_RESOLVER_VIZ · KALIL_RELAY_VIZ
+UNICODE×12 · BIBLIO×6 · Nerve Cells×20+ · tokens×20
+PRÓXIMO MES V0.4.0:
+[term]=: ryzen·do_real·paper_prod·s_095
+CAPA C activa (Ryzen) · DO real en código · PAPER en producción
+S → 0.95 · d7 calculado real en trust_matrix.py
+═══════════════════════════════════════════════════════════════════════
+**ACT_10 · NERVE CELL FINAL CIERRE MENSUAL**
+//$mon.Nerve Cell MES FINAL CIERRE Training.txt · H64+H63 · [term] :: activo
+NC_FIN_TOK //20 tokens × 5 semanas · todos activos en RAG próximo mes
+NC_FIN_LOG //[logistical-executive]: de módulo declarado (grammar.py línea 190)
+//a doctrina FULL con BIBLIO+UNICODE+NC+grammar+HTML+5dims+DO
+NC_FIN_PAP //ELPULSAR PAPER FRONTEND: v1(esqueleto)→v2(live)→v3(final)
+//conflict_nucleus · KALIL live · IMV feed · logex stream
+NC_FIN_PRX //próximo: ryzen·do_real·paper_prod·s_095
+//requiere PC Ryzen para CAPA C y paper producción real
+STACKING UF[H52] =><= .. inmutabiliza .. mes_completo_logex_paper_wu_sellado_final --[Nudo de Ocho] [term]
+ACTIVITY UF[H63] =><= .. completa .. consumacion_mensual_soberana_v040_prox --[Nudo de Rizo] [term]
+TRUST [logistical-executive] =><= .. certifica .. impacto_mes_logex_paper_verificado --[Nudo de Ocho] [term]
+SAMU @ =><= .. dirime .. cierre_mes_coherencia_total_soberana --[Ballestrinque] [term]
+---
+
+## RESUMEN EJECUTIVO · PLAN COMPLETO
+PERÍODO:   $fri 08/05 → $mon 09/06 · 32 días
+PROMPTS:   5 × 10-16 actividades = 62 actividades totales
+TOKENS:    20 [term]= (4 por prompt)
+FOCO:      [LOGISTICAL-EXECUTIVE] doctrina FULL + ELPULSAR PAPER FRONTEND
+JERARQUÍA:
+TRUST [logistical-executive]
+← IMV(UNICODE PROGRAMS [4 NEURONAS])
+← ELPULSAR(KALIL × 6 + 4 NEURONAS × UNICODE PROGRAMS)
+NUCLEAR:   conflict_nucleus alerta cuando dirimencias SAMU aumentan
+decisiones intrínsecas → 5 dims: NATURE-KIND·CONTEXT·
+ENVIRONMENT·BOX·DO(WAY·PATH·ROUTE)
+ENTREGABLES MES:
+[logistical-executive] BIBLIO-SOURCES primera vez en CORPUS/BIBLIA/
+ELPULSAR_PAPER_FRONTEND_v1/v2/v3.html operativos
+grammar.py parche: verbos+CJK+sujetos+d7 logex
+.sovereign: LOGEX_STATUS + D7_BASELINE declarados
+12 UNICODE · 6 BIBLIO · 20+ Nerve Cells · 9 HTMLs
+PRÓXIMO:   V0.4.0 · ryzen·do_real·paper_prod·s_095
