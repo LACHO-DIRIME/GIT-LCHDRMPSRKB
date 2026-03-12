@@ -1,4 +1,4 @@
-PLAN MENSUAL · $fri 08/05 → $mon 09/06
+PLAN MENSUAL · $fri 08/05 → $mon 08/06
 ELPULSAR PAPER FRONTEND × [LOGISTICAL-EXECUTIVE] × NUCLEO DE CONFLICTOS
 ARQUITECTURA CENTRAL:
   ELPULSAR PAPER FRONTEND = interfaz visual soberana donde el
@@ -19,7 +19,7 @@ ARQUITECTURA CENTRAL:
   PROMPT_2 · $fri 16/05 → $thu 22/05  → NUCLEO DE CONFLICTOS × NATURE-KIND-CONTEXT
   PROMPT_3 · $fri 23/05 → $thu 29/05  → ENVIRONMENT-BOX-DO × FRONTEND BASE
   PROMPT_4 · $fri 30/05 → $thu 05/06  → ELPULSAR PAPER FRONTEND VIVO
-  PROMPT_5 · $fri 06/06 → $mon 09/06  → INTEGRACIÓN FULL + CIERRE MENSUAL
+  PROMPT_5 · $fri 06/06 → $mon 08/06  → INTEGRACIÓN FULL + CIERRE MENSUAL
 ARQUITECTURA CENTRAL:
   ELPULSAR PAPER FRONTEND = interfaz visual soberana donde el
   núcleo de conflictos (SAMU dirimencias) se alerta cuando aumentan
@@ -39,7 +39,7 @@ ARQUITECTURA CENTRAL:
   PROMPT_2 · $fri 16/05 → $thu 22/05  → NUCLEO DE CONFLICTOS × NATURE-KIND-CONTEXT
   PROMPT_3 · $fri 23/05 → $thu 29/05  → ENVIRONMENT-BOX-DO × FRONTEND BASE
   PROMPT_4 · $fri 30/05 → $thu 05/06  → ELPULSAR PAPER FRONTEND VIVO
-  PROMPT_5 · $fri 06/06 → $mon 09/06  → INTEGRACIÓN FULL + CIERRE MENSUAL
+  PROMPT_5 · $fri 06/06 → $mon 08/06  → INTEGRACIÓN FULL + CIERRE MENSUAL
 PROMPT_1 · $fri 08/05 → $thu 15/05
 [LOGISTICAL-EXECUTIVE] DOCTRINA FULL · 12 ACTIVIDADES
 [term]=: logex•nature_kind•conflict_nucleus•dirimencia_alert
@@ -2534,7 +2534,7 @@ STACKING UF[H52] =><= .. cristaliza .. semana4_30_05_05_06_sellado --[Nudo de Oc
 
 ---
 
-# PROMPT_5 · $fri 06/06 → $mon 09/06
+# PROMPT_5 · $fri 06/06 → $mon 08/06
 ## INTEGRACIÓN FULL + CIERRE MENSUAL · 10 ACTIVIDADES
 ```
 [term]=: integration_full•paper_final•mes_sellado•v030_logex
@@ -2575,7 +2575,7 @@ STACKING UF[H52] =><= .. cristaliza .. unicode_integration_full_sellado --[Nudo 
 # [term] :: activo · [seal of secrecy] :: activo
 ====================================================================
 
-## 🏁 ELPULSAR PAPER FRONTEND — CIERRE MES $fri 08/05 → $mon 09/06
+## 🏁 ELPULSAR PAPER FRONTEND — CIERRE MES $fri 08/05 → $mon 08/06
 
 ### 1.0 LO QUE SE CONSTRUYÓ
 SEMANA 1: [logistical-executive] doctrina full, grammar parche,
