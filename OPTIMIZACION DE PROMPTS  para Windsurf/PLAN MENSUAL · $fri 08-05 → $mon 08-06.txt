@@ -2637,7 +2637,7 @@ NC_P40_D7   //d7 calculado real: rutas_verificadas + impactos_certificados + rou
 TRUST [logistical-executive] =><= .. alerta .. nc_p40_pendientes_produccion --[Nudo Corredizo] [term]
 STACKING UF[H52] =><= .. cristaliza .. nc_pending_v040_logex_sellado --[Nudo de Ocho] [term]
 **ACT_08 · DISTILL × 5 SEMANAS**
-DISTILL MES · $fri 08/05 → $mon 09/06
+DISTILL MES · $fri 08/05 → $mon 08/06
 5 cristales · STACKING UF[H52] inmutabiliza
 Cristal S1: logex doctrina + grammar + 5dims + conflict_nucleus
 tokens: logex·nature_kind·conflict_nucleus·dirimencia_alert
@@ -2656,7 +2656,7 @@ SAMU @ =><= .. dirime .. mes_coherencia_total_v030_logex_contribucion --[Ballest
 STACKING UF[H52] =><= .. inmutabiliza .. wu_mensual_final_sellado_08_05_09_06 --[Nudo de Ocho] [term]
 **ACT_09 · CIERRE FINAL — ESTADO MES**
 ═══════════════════════════════════════════════════════════════════════
-DIRIME IMV · MES LOGEX PAPER · $fri 08/05 → $mon 09/06 · SELLADO
+DIRIME IMV · MES LOGEX PAPER · $fri 08/05 → $mon 08/06 · SELLADO
 ═══════════════════════════════════════════════════════════════════════
 PROMPT_1  logex·nature_kind·conflict_nucleus·dirimencia_alert        ✦ SELLADO
 PROMPT_2  nature_kind_full·context_map·environment_graph·box_fence   ✦ SELLADO
@@ -2695,7 +2695,7 @@ SAMU @ =><= .. dirime .. cierre_mes_coherencia_total_soberana --[Ballestrinque] 
 ---
 
 ## RESUMEN EJECUTIVO · PLAN COMPLETO
-PERÍODO:   $fri 08/05 → $mon 09/06 · 32 días
+PERÍODO:   $fri 08/05 → $mon 08/06 · 32 días
 PROMPTS:   5 × 10-16 actividades = 62 actividades totales
 TOKENS:    20 [term]= (4 por prompt)
 FOCO:      [LOGISTICAL-EXECUTIVE] doctrina FULL + ELPULSAR PAPER FRONTEND
@@ -2713,3 +2713,2253 @@ grammar.py parche: verbos+CJK+sujetos+d7 logex
 .sovereign: LOGEX_STATUS + D7_BASELINE declarados
 12 UNICODE · 6 BIBLIO · 20+ Nerve Cells · 9 HTMLs
 PRÓXIMO:   V0.4.0 · ryzen·do_real·paper_prod·s_095
+
+
+Estado completo verificado. El proyecto real es VERSION=0.2.1, CORPUS=51. El PAPER anterior fue el plan mensual generado. Ahora el usuario pide continuar — significa continuar desde donde el plan mensual quedó: PROMPT_2 del mes logex·paper, ya que PROMPT_1 fue generado en la sesión anterior.
+Continúo con el desarrollo pendiente: los archivos que quedaron como stubs o parciales en los prompts ya emitidos, más el contexto real del negocio GUALICHO HUINCA que el archivo revela.
+
+CONTINUACIÓN — DESARROLLO PENDIENTE
+Archivos que quedaron como stubs · Completar + Nuevos reales
+
+1 · NATURE_KIND_MATRIX.html · COMPLETO
+CARPETA: FOLDERS NO RAG INPUT/ELPULSAR LOCAL/NATURE_KIND_MATRIX.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>NATURE-KIND MATRIX · DIRIME IMV</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+.header{border-bottom:3px solid #1a1a2e;padding-bottom:14px;margin-bottom:24px;
+        display:flex;justify-content:space-between;align-items:flex-end}
+.h-title{font-size:1rem;font-weight:bold;letter-spacing:4px}
+.h-meta{font-size:.68rem;color:#888;line-height:1.7;text-align:right}
+.tokens{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap}
+.tok{padding:4px 12px;font-size:.73rem;font-weight:bold;border:1px solid}
+/* GRID MATRIX */
+.matrix-wrap{overflow-x:auto;margin-bottom:20px}
+.matrix{display:grid;grid-template-columns:90px repeat(8,1fr);gap:2px;min-width:720px}
+.mx-empty{background:transparent}
+.mx-kind-label{font-size:.55rem;padding:6px 4px;text-align:center;
+               background:#fafafa;border:1px solid #e0e0e0;
+               color:#2980b9;font-weight:bold;letter-spacing:.5px;
+               display:flex;align-items:center;justify-content:center}
+.mx-nature-label{font-size:.55rem;padding:6px 8px;
+                 background:#fafafa;border:1px solid #e0e0e0;
+                 color:#c0392b;font-weight:bold;
+                 display:flex;align-items:center}
+.mx-cell{padding:8px 4px;border:1px solid #e0e0e0;cursor:pointer;
+         transition:all .2s;text-align:center;font-size:.52rem;
+         min-height:44px;display:flex;align-items:center;justify-content:center;
+         color:#aaa;line-height:1.4}
+.mx-cell:hover{border-color:#1a1a2e;background:#f0f7f3}
+.mx-cell.canonical{background:#fff0ef;border-color:#c0392b;color:#c0392b;font-weight:bold}
+.mx-cell.sel{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+/* DETAIL */
+.detail-box{border:1px solid #e0e0e0;padding:16px;margin-bottom:20px;
+            background:#fafafa;min-height:80px}
+.db-header{font-size:.65rem;letter-spacing:2px;color:#888;margin-bottom:8px}
+.db-content{font-size:.72rem;line-height:1.9;color:#555}
+.db-lacho{margin-top:10px;background:#f0f7f3;border-left:3px solid #2a7a4f;
+          padding:10px;font-size:.68rem;line-height:2}
+/* LEGEND */
+.legend{display:flex;gap:12px;margin-bottom:16px;flex-wrap:wrap}
+.lg-item{display:flex;gap:6px;align-items:center;font-size:.62rem}
+.lg-box{width:14px;height:14px;flex-shrink:0}
+/* KIND AXIS */
+.kind-axis{display:grid;grid-template-columns:repeat(8,1fr);gap:2px;
+           margin-bottom:2px;margin-left:92px}
+.ka-item{font-size:.52rem;color:#2980b9;font-weight:bold;text-align:center;
+         padding:4px 2px;letter-spacing:.5px}
+.footer{font-size:.6rem;color:#aaa;border-top:1px solid #eee;
+        padding-top:10px;display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <div class="h-title">╭─⊢─∧─ NATURE × KIND MATRIX</div>
+    <div style="font-size:.72rem;color:#555;margin-top:4px">
+      8 NATURES × 8 KINDS · 7 combinaciones canónicas · conflict_nucleus taxonomy
+    </div>
+  </div>
+  <div class="h-meta">$fri 16/05 · PROMPT 2<br>clic celda → lacho generada</div>
+</div>
+
+<div class="tokens">
+  <div class="tok" style="border-color:#c0392b;color:#c0392b">nature_kind_full</div>
+  <div class="tok" style="border-color:#2980b9;color:#2980b9">context_map</div>
+  <div class="tok" style="border-color:#d35400;color:#d35400">environment_graph</div>
+  <div class="tok" style="border-color:#8e44ad;color:#8e44ad">box_fence</div>
+</div>
+
+<div class="legend">
+  <div class="lg-item">
+    <div class="lg-box" style="background:#fff0ef;border:1px solid #c0392b"></div>
+    <span>combinación CANÓNICA documentada</span>
+  </div>
+  <div class="lg-item">
+    <div class="lg-box" style="background:#fafafa;border:1px solid #e0e0e0"></div>
+    <span>combinación posible</span>
+  </div>
+  <div class="lg-item">
+    <div class="lg-box" style="background:#1a1a2e"></div>
+    <span>seleccionada</span>
+  </div>
+</div>
+
+<div class="matrix-wrap">
+  <div class="kind-axis" id="kind-axis"></div>
+  <div class="matrix" id="matrix"></div>
+</div>
+
+<div class="detail-box" id="detail-box">
+  <div class="db-header">▸ SELECCIONAR CELDA PARA VER DETALLE</div>
+  <div class="db-content">— clic en cualquier celda de la matrix —</div>
+</div>
+
+<div style="font-size:.65rem;color:#888;letter-spacing:2px;margin-bottom:10px">
+  ▸ COMBINACIONES CANÓNICAS DOCUMENTADAS (7)
+</div>
+<div id="canonicals-list" style="display:grid;gap:4px;margin-bottom:20px"></div>
+
+<div class="footer">
+  <span>DIRIME IMV V0.2.1</span>
+  <span>nature_kind_full · 8×8 = 64 combinaciones · 7 canónicas</span>
+  <span>conflict_nucleus taxonomy · [logistical-executive] d7</span>
+  <span>[term] :: activo · $fri 16/05</span>
+</div>
+
+<script>
+const NATURES=[
+  {code:'LOG',full:'logístico',desc:'WAY·PATH·ROUTE en conflicto',signal:'path_fail_rate > 0.3'},
+  {code:'DEC',full:'decisional',desc:'commands concurrentes',signal:'d6+d7 bajos simultáneos'},
+  {code:'TEM',full:'temporal',desc:'[term] en conflicto',signal:'2+ [term] solapados'},
+  {code:'KAL',full:'kalil',desc:'conflicto entre nodos KALIL',signal:'relay_collision TANDIL'},
+  {code:'NEU',full:'neuronal',desc:'4 neuronas señales contradictorias',signal:'2 NC señales opuestas'},
+  {code:'SCA',full:'scalar',desc:'S cae mientras TX aumenta',signal:'δS<0 y δTX>0'},
+  {code:'COR',full:'corpus',desc:'docs con contenido contradictorio',signal:'BM25 scores opuestos'},
+  {code:'CAP',full:'capa_c',desc:'stub interfiere con fallback',signal:'NotImplementedError+Groq busy'},
+];
+const KINDS=[
+  {code:'DUP',full:'duplicado',desc:'2 entidades hacen lo mismo sin coordinar'},
+  {code:'COL',full:'colisión',desc:'2 entidades intentan mismo recurso'},
+  {code:'AMB',full:'ambiguo',desc:'señal no permite determinar acción'},
+  {code:'DEG',full:'degradado',desc:'entidad bajo threshold operativo'},
+  {code:'AUS',full:'ausente',desc:'entidad requerida no disponible'},
+  {code:'SAT',full:'saturado',desc:'entidad supera límite operativo'},
+  {code:'CON',full:'concurrente',desc:'2 procesos válidos compiten en tiempo'},
+  {code:'REC',full:'recursivo',desc:'conflicto se autoalimenta sin resolución'},
+];
+// combinaciones canónicas: [nat_idx, kind_idx, lacho_obj, path, severity]
+const CANONICALS=[
+  {n:0,k:1,label:'LOG×COL',alias:'log_col',
+   desc:'2 ROUTEs intentan el mismo recurso simultáneamente.',
+   path:'PATH_L: detectar_alt_route → validar_CRYPTO → ejecutar',
+   sev:'alert',
+   lacho:'TRUST [logistical-executive] =><= .. alerta .. log_col_route_resource_collision --[Nudo Corredizo] [term]'},
+  {n:0,k:0,label:'LOG×DUP',alias:'log_dup',
+   desc:'2 PATHs idénticos al mismo ROUTE sin coordinación.',
+   path:'PATH_L: detectar_duplicado → cancelar_menor_prioridad → ejecutar_principal',
+   sev:'review',
+   lacho:'TRUST [logistical-executive] =><= .. alerta .. log_dup_path_sin_coordinacion --[Nudo Corredizo] [term]'},
+  {n:1,k:6,label:'DEC×CON',alias:'dec_con',
+   desc:'2 commands válidos ejecutan simultáneamente sobre el mismo elemento.',
+   path:'PATH_D: suspender_command_menor → SAMU_arbitra → ejecutar_prioritario',
+   sev:'alert',
+   lacho:'TRUST [logistical-executive] =><= .. alerta .. dec_con_commands_concurrentes --[Nudo Corredizo] [term]'},
+  {n:3,k:2,label:'KAL×AMB',alias:'kal_amb',
+   desc:'relay TANDIL no puede determinar qué nodo KALIL priorizar.',
+   path:'PATH_K: aislar_nodo_ambiguo → relay_alternativo → TANDIL_rebalance',
+   sev:'alert',
+   lacho:'TRUST [logistical-executive] =><= .. alerta .. kal_amb_relay_tandil_ambiguo --[Nudo Corredizo] [term]'},
+  {n:4,k:1,label:'NEU×COL',alias:'neu_col',
+   desc:'2 Nerve Cells apuntan acciones opuestas al mismo objeto.',
+   path:'PATH_N: identificar_NC_fuente → SAMU_dirime → NC_ganador → cristalizar',
+   sev:'critical',
+   lacho:'TRUST [logistical-executive] =><= .. alerta .. neu_col_nerve_cells_objeto_opuesto --[Nudo Corredizo] [term]'},
+  {n:5,k:3,label:'SCA×DEG',alias:'sca_deg',
+   desc:'Scalar S cae por debajo del threshold mientras TX continúan.',
+   path:'PATH_S: pausar_TX_nuevas → indexar_corpus → verificar_S → reanudar',
+   sev:'review',
+   lacho:'TRUST [logistical-executive] =><= .. alerta .. sca_deg_scalar_bajo_threshold --[Nudo Corredizo] [term]'},
+  {n:2,k:7,label:'TEM×REC',alias:'tem_rec',
+   desc:'[term] que reabre su propio ciclo indefinidamente.',
+   path:'PATH_T: identificar_term_conflict → extender_menor → SAMU_cierre',
+   sev:'critical',
+   lacho:'TRUST [logistical-executive] =><= .. alerta .. tem_rec_term_recursivo_sin_cierre --[Nudo Corredizo] [term]'},
+];
+const SEV_C={safe:'#2a7a4f',review:'#f1c40f',alert:'#e67e22',critical:'#c0392b'};
+const CANON_SET=new Set(CANONICALS.map(c=>c.n+'-'+c.k));
+
+function buildMatrix(){
+  // kind axis labels
+  const ka=document.getElementById('kind-axis');
+  KINDS.forEach(k=>{
+    const d=document.createElement('div');
+    d.className='ka-item';
+    d.textContent=k.code;
+    d.title=k.full;
+    ka.appendChild(d);
+  });
+  const mx=document.getElementById('matrix');
+  // header row: empty + kind labels (already in axis above)
+  const empty=document.createElement('div');
+  empty.className='mx-empty';
+  mx.appendChild(empty);
+  KINDS.forEach(k=>{
+    const d=document.createElement('div');
+    d.className='mx-kind-label';
+    d.innerHTML=`<span title="${k.desc}">${k.full}</span>`;
+    mx.appendChild(d);
+  });
+  // data rows
+  NATURES.forEach((n,ni)=>{
+    const nl=document.createElement('div');
+    nl.className='mx-nature-label';
+    nl.innerHTML=`<span title="${n.desc}">${n.full}</span>`;
+    mx.appendChild(nl);
+    KINDS.forEach((k,ki)=>{
+      const key=ni+'-'+ki;
+      const canon=CANONICALS.find(c=>c.n===ni&&c.k===ki);
+      const d=document.createElement('div');
+      d.className='mx-cell'+(canon?' canonical':'');
+      d.textContent=canon?canon.label:'';
+      d.title=`${n.full} × ${k.full}`;
+      d.onclick=()=>selectCell(d,ni,ki,n,k,canon);
+      mx.appendChild(d);
+    });
+  });
+  // canonicals list
+  const cl=document.getElementById('canonicals-list');
+  CANONICALS.forEach(c=>{
+    const n=NATURES[c.n];const k=KINDS[c.k];
+    const d=document.createElement('div');
+    d.style.cssText='border:1px solid #e0e0e0;padding:10px;display:grid;grid-template-columns:80px 1fr;gap:8px;cursor:pointer';
+    d.innerHTML=`
+      <div>
+        <div style="font-size:.65rem;font-weight:bold;color:#c0392b">${c.label}</div>
+        <div style="font-size:.55rem;color:${SEV_C[c.sev]};font-weight:bold;margin-top:2px">${c.sev.toUpperCase()}</div>
+      </div>
+      <div>
+        <div style="font-size:.65rem;color:#555;margin-bottom:4px">${c.desc}</div>
+        <div style="font-size:.58rem;color:#2980b9">${c.path}</div>
+      </div>`;
+    d.onclick=()=>{
+      const cell=document.querySelector(`.mx-cell.canonical:nth-child(${c.n*9+c.k+10})`);
+      selectCell(null,c.n,c.k,n,k,c);
+    };
+    cl.appendChild(d);
+  });
+}
+
+let selectedCell=null;
+function selectCell(el,ni,ki,n,k,canon){
+  if(selectedCell) selectedCell.classList.remove('sel');
+  if(el){selectedCell=el;el.classList.add('sel');}
+  const db=document.getElementById('detail-box');
+  const sevColor=canon?SEV_C[canon.sev]:'#888';
+  db.innerHTML=`
+    <div class="db-header" style="display:flex;justify-content:space-between">
+      <span>▸ NATURE=${n.full} × KIND=${k.full}</span>
+      ${canon?`<span style="color:${sevColor};font-weight:bold;font-size:.62rem">${canon.sev.toUpperCase()} · CANÓNICA</span>`:'<span style="color:#aaa;font-size:.62rem">combinación posible</span>'}
+    </div>
+    <div class="db-content">
+      <b style="color:#c0392b">NATURE ${n.code}:</b> ${n.desc} · señal: <i>${n.signal}</i><br>
+      <b style="color:#2980b9">KIND ${k.code}:</b> ${k.desc}<br>
+      ${canon?`<br><b>PATH resolución:</b> ${canon.path}`:'<br>PATH: no documentado · SAMU delibera ad hoc'}
+    </div>
+    ${canon?`<div class="db-lacho">
+      <span style="color:#c0392b;font-weight:bold">TRUST</span>
+      <span style="color:#2a7a4f;font-weight:bold"> [logistical-executive]</span>
+      <span style="color:#555"> =&gt;&lt;= .. alerta .. </span>
+      ${canon.alias}_conflict_nucleus_active
+      <span style="color:#8e44ad"> --[Nudo Corredizo]</span>
+      <span style="color:#d35400;font-weight:bold"> [term]</span><br>
+      <span style="color:#c0392b;font-weight:bold">SAMU</span>
+      <span style="color:#2a7a4f;font-weight:bold"> @</span>
+      <span style="color:#555"> =&gt;&lt;= .. dirime .. </span>
+      ${canon.alias}_5_dims_resolucion
+      <span style="color:#8e44ad"> --[Ballestrinque]</span>
+      <span style="color:#d35400;font-weight:bold"> [term]</span>
+    </div>`:''}`;
+}
+document.addEventListener('DOMContentLoaded',buildMatrix);
+</script>
+</body>
+</html>
+2 · ENVIRONMENT_GRAPH.html · COMPLETO
+CARPETA: FOLDERS NO RAG INPUT/ELPULSAR LOCAL/ENVIRONMENT_GRAPH.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>ENVIRONMENT GRAPH · DIRIME IMV</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+.header{border-bottom:3px solid #1a1a2e;padding-bottom:14px;margin-bottom:20px;
+        display:flex;justify-content:space-between;align-items:flex-end}
+.h-title{font-size:1rem;font-weight:bold;letter-spacing:4px}
+.h-meta{font-size:.68rem;color:#888;line-height:1.7;text-align:right}
+.tokens{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.tok{padding:4px 12px;font-size:.73rem;font-weight:bold;border:1px solid}
+/* GRAPH CANVAS */
+.graph-wrap{border:1px solid #e0e0e0;background:#fafafa;
+            position:relative;height:420px;margin-bottom:16px;overflow:hidden}
+/* NODES */
+.gnode{position:absolute;border:2px solid;padding:8px 10px;
+       font-size:.6rem;font-weight:bold;cursor:pointer;
+       transition:all .2s;text-align:center;min-width:80px;
+       background:#fff;z-index:2}
+.gnode:hover{transform:scale(1.05)}
+.gnode.disputed{border-style:dashed;animation:pulse 1.2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.6}}
+.gn-label{font-size:.58rem;color:#888;font-weight:normal;margin-top:2px}
+/* EDGES */
+svg.edges{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1}
+/* LEGEND */
+.legend{display:flex;gap:14px;margin-bottom:16px;flex-wrap:wrap}
+.lg-item{display:flex;gap:6px;align-items:center;font-size:.62rem}
+.lg-box{width:24px;height:3px;flex-shrink:0}
+/* DETAIL */
+.node-detail{border:1px solid #e0e0e0;padding:14px;margin-bottom:16px;
+             background:#fafafa;min-height:60px;font-size:.7rem;line-height:1.9}
+/* RESOURCES */
+.resources{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:16px}
+.res-box{border:1px solid #ddd;padding:8px;font-size:.6rem;cursor:pointer;transition:all .2s}
+.res-box:hover{border-color:#c0392b;background:#fff0ef}
+.res-box.disputed{border-color:#c0392b;background:#fff0ef}
+.rb-name{font-weight:bold;margin-bottom:2px;font-size:.63rem}
+.rb-status{font-size:.58rem;color:#888}
+.footer{font-size:.6rem;color:#aaa;border-top:1px solid #eee;
+        padding-top:10px;display:flex;gap:12px;flex-wrap:wrap;margin-top:4px}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <div class="h-title">╭─⊢─∧─ ENVIRONMENT GRAPH</div>
+    <div style="font-size:.72rem;color:#555;margin-top:4px">
+      nodos × edges × recursos · BOX FENCE · conflict_nucleus entorno físico
+    </div>
+  </div>
+  <div class="h-meta">$sun 18/05 · PROMPT 2<br>clic nodo → detail · clic recurso → disputar</div>
+</div>
+
+<div class="tokens">
+  <div class="tok" style="border-color:#d35400;color:#d35400">environment_graph</div>
+  <div class="tok" style="border-color:#8e44ad;color:#8e44ad">box_fence</div>
+  <div class="tok" style="border-color:#c0392b;color:#c0392b">nature_kind_full</div>
+  <div class="tok" style="border-color:#2980b9;color:#2980b9">context_map</div>
+</div>
+
+<div class="legend">
+  <div class="lg-item"><div class="lg-box" style="background:#2a7a4f"></div><span>edge: usa</span></div>
+  <div class="lg-item"><div class="lg-box" style="background:#c0392b"></div><span>edge: compite/disputa</span></div>
+  <div class="lg-item"><div class="lg-box" style="background:#2980b9"></div><span>edge: alimenta</span></div>
+  <div class="lg-item"><div class="lg-box" style="background:#e0e0e0"></div><span>edge: bloquea</span></div>
+  <div class="lg-item">
+    <div style="width:24px;height:14px;border:2px dashed #c0392b;flex-shrink:0"></div>
+    <span>nodo DISPUTED</span>
+  </div>
+</div>
+
+<div class="graph-wrap" id="graph-wrap">
+  <svg class="edges" id="edges-svg"></svg>
+  <!-- nodos posicionados por JS -->
+</div>
+
+<div class="node-detail" id="node-detail">
+  ← seleccionar nodo para ver PATH [logistical-executive] asociado
+</div>
+
+<div style="font-size:.65rem;color:#888;letter-spacing:2px;margin-bottom:8px">
+  ▸ RESOURCES · clic para marcar como DISPUTED
+</div>
+<div class="resources" id="resources"></div>
+
+<div class="footer">
+  <span>DIRIME IMV V0.2.1</span>
+  <span>ENVIRONMENT = entorno físico del conflicto</span>
+  <span>BOX FENCE: recurso DISPUTED → logex construye barrera</span>
+  <span>[term] :: activo · $sun 18/05</span>
+</div>
+
+<script>
+const NODES=[
+  // 4 Neuronas (top row)
+  {id:'N1',label:'NEURONA 1',sub:'HEADCAT',color:'#8e44ad',x:8,y:8,
+   path:'WAY=identidad · ROUTE=canal_headcat'},
+  {id:'N2',label:'NEURONA 2',sub:'ELPULSAR',color:'#2980b9',x:28,y:8,
+   path:'WAY=pipeline_TX · ROUTE=sovereign.db+BM25'},
+  {id:'N3',label:'NEURONA 3',sub:'CHAIR CEO',color:'#d35400',x:48,y:8,
+   path:'WAY=hexagrama · ROUTE=ceo_alpha.py+H64.json'},
+  {id:'N4',label:'NEURONA 4',sub:'HOUSE DRONE',color:'#2a7a4f',x:68,y:8,
+   path:'WAY=door_monitor · ROUTE=HOUSE_DRONE.html'},
+  // 6 KALIL (middle)
+  {id:'KA_B',label:'BARRIOS',sub:'.green relay',color:'#2a7a4f',x:5,y:42,
+   path:'PATH_K: community → relay → remesa'},
+  {id:'KA_N',label:'NORA',sub:'.blue oracle',color:'#2980b9',x:22,y:42,
+   path:'PATH_K: external → oracle → rating'},
+  {id:'KA_BO',label:'BOLIVAR',sub:'.blue forge',color:'#2980b9',x:38,y:42,
+   path:'PATH_K: input → SHA256 → blockchain'},
+  {id:'KA_C',label:'CARILO',sub:'.green session',color:'#2a7a4f',x:54,y:42,
+   path:'PATH_K: session → threshold → prestamo'},
+  {id:'KA_CH',label:'CHALTEN',sub:'.blue daemon',color:'#2980b9',x:70,y:42,
+   path:'PATH_K: daemon → billing → cloud'},
+  {id:'KA_T',label:'TANDIL',sub:'.green hub',color:'#1a1a2e',x:40,y:68,
+   path:'PATH_K: relay×5 → scalar_KALIL → impacto_global'},
+  // IMV core (bottom left)
+  {id:'IMV',label:'IMV CORE',sub:'grammar+ledger',color:'#555',x:10,y:72,
+   path:'WAY=soberano · ROUTE=sovereign.db+BM25'},
+  // CAPA C stubs (bottom right)
+  {id:'CC',label:'CAPA C',sub:'stubs·INACTIVE',color:'#aaa',x:72,y:72,
+   path:'WAY=futuro(Ryzen) · ROUTE=ollama_bridge(stub)'},
+];
+const EDGES=[
+  // Neuronas → IMV core
+  {from:'N2',to:'IMV',type:'usa'},{from:'N3',to:'IMV',type:'usa'},
+  // KALIL → TANDIL (hub)
+  {from:'KA_B',to:'KA_T',type:'alimenta'},{from:'KA_N',to:'KA_T',type:'alimenta'},
+  {from:'KA_BO',to:'KA_T',type:'alimenta'},{from:'KA_C',to:'KA_T',type:'alimenta'},
+  {from:'KA_CH',to:'KA_T',type:'alimenta'},
+  // Neuronas → KALIL
+  {from:'N1',to:'KA_B',type:'usa'},{from:'N2',to:'KA_N',type:'usa'},
+  {from:'N3',to:'KA_BO',type:'usa'},{from:'N4',to:'KA_CH',type:'usa'},
+  // IMV → Neuronas (alimenta)
+  {from:'IMV',to:'N2',type:'alimenta'},
+  // TANDIL → IMV
+  {from:'KA_T',to:'IMV',type:'alimenta'},
+  // CAPA C conflict (compite con Groq fallback)
+  {from:'CC',to:'IMV',type:'compite'},
+];
+const EDGE_COLOR={usa:'#2a7a4f',alimenta:'#2980b9',compite:'#c0392b',bloquea:'#e0e0e0'};
+
+const RESOURCES=[
+  {id:'sovereign_db',name:'sovereign.db',users:['N2','IMV'],status:'ok'},
+  {id:'bm25_index',name:'BM25 index',users:['N2','IMV'],status:'ok'},
+  {id:'groq_api',name:'Groq API',users:['N3','CC'],status:'ok'},
+  {id:'relay_bus',name:'relay bus KALIL',users:['KA_B','KA_CH','KA_T'],status:'ok'},
+  {id:'filesystem',name:'filesystem antiX',users:['IMV','N2'],status:'ok'},
+  {id:'crypto_link',name:'CRYPTO link seat',users:['KA_BO','KA_T'],status:'ok'},
+  {id:'hl_fabric',name:'HL FABRIC',users:['KA_T','IMV'],status:'ok'},
+  {id:'ollama_stub',name:'Ollama stub',users:['CC'],status:'inactive'},
+];
+
+function pct(v,wrap){return v/100*wrap;}
+
+function buildGraph(){
+  const wrap=document.getElementById('graph-wrap');
+  const W=wrap.clientWidth||800, H=wrap.clientHeight||420;
+  const svg=document.getElementById('edges-svg');
+  svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
+
+  // place nodes
+  NODES.forEach(n=>{
+    const el=document.createElement('div');
+    el.className='gnode';
+    el.id='gn-'+n.id;
+    el.style.cssText=`left:${pct(n.x,W)}px;top:${pct(n.y,H)}px;border-color:${n.color}`;
+    el.innerHTML=`<div style="color:${n.color}">${n.label}</div>
+      <div class="gn-label">${n.sub}</div>`;
+    el.onclick=()=>selectNode(n);
+    wrap.appendChild(el);
+  });
+
+  // draw edges
+  setTimeout(()=>{
+    EDGES.forEach(e=>{
+      const fromEl=document.getElementById('gn-'+e.from);
+      const toEl=document.getElementById('gn-'+e.to);
+      if(!fromEl||!toEl) return;
+      const fr=fromEl.getBoundingClientRect();
+      const tr=toEl.getBoundingClientRect();
+      const wr=wrap.getBoundingClientRect();
+      const x1=fr.left-wr.left+fr.width/2;
+      const y1=fr.top-wr.top+fr.height/2;
+      const x2=tr.left-wr.left+tr.width/2;
+      const y2=tr.top-wr.top+tr.height/2;
+      const line=document.createElementNS('http://www.w3.org/2000/svg','line');
+      line.setAttribute('x1',x1);line.setAttribute('y1',y1);
+      line.setAttribute('x2',x2);line.setAttribute('y2',y2);
+      line.setAttribute('stroke',EDGE_COLOR[e.type]);
+      line.setAttribute('stroke-width',e.type==='compite'?2:1.5);
+      line.setAttribute('stroke-dasharray',e.type==='bloquea'?'4,4':'none');
+      line.setAttribute('opacity','0.7');
+      svg.appendChild(line);
+    });
+  },100);
+
+  // resources
+  const rc=document.getElementById('resources');
+  RESOURCES.forEach(r=>{
+    const d=document.createElement('div');
+    d.className='res-box'+(r.status==='inactive'?' disputed':'');
+    d.id='res-'+r.id;
+    d.innerHTML=`<div class="rb-name">${r.name}</div>
+      <div class="rb-status">${r.users.join(' · ')}</div>
+      <div class="rb-status" style="margin-top:2px;color:${r.status==='inactive'?'#c0392b':'#2a7a4f'}">${r.status}</div>`;
+    d.onclick=()=>disputeResource(r,d);
+    rc.appendChild(d);
+  });
+}
+
+function selectNode(n){
+  document.querySelectorAll('.gnode').forEach(el=>el.style.background='#fff');
+  document.getElementById('gn-'+n.id).style.background='#f0f7f3';
+  document.getElementById('node-detail').innerHTML=`
+    <b style="color:${n.color}">${n.label}</b> · ${n.sub}<br>
+    <span style="color:#555">${n.path}</span><br><br>
+    <span style="color:#c0392b;font-weight:bold">TRUST</span>
+    <span style="color:#2a7a4f;font-weight:bold"> [logistical-executive]</span>
+    <span style="color:#555"> =&gt;&lt;= .. conduce .. </span>
+    path_${n.id.toLowerCase()}_${n.sub.toLowerCase().replace(/[\s.]/g,'_')}
+    <span style="color:#8e44ad"> --[As de Guía]</span>
+    <span style="color:#d35400;font-weight:bold"> [term]</span>`;
+}
+
+function disputeResource(r,el){
+  const isDisp=el.classList.toggle('disputed');
+  el.querySelector('.rb-status:last-child').textContent=isDisp?'DISPUTED':'ok';
+  el.querySelector('.rb-status:last-child').style.color=isDisp?'#c0392b':'#2a7a4f';
+  document.getElementById('node-detail').innerHTML=`
+    <b style="color:#c0392b">RESOURCE ${isDisp?'DISPUTED':'LIBRE'}: ${r.name}</b><br>
+    usuarios: ${r.users.join(' · ')}<br><br>
+    ${isDisp?`<span style="color:#c0392b;font-weight:bold">TRUST</span>
+    <span style="color:#2a7a4f;font-weight:bold"> [logistical-executive]</span>
+    <span style="color:#555"> =&gt;&lt;= .. construye .. </span>
+    box_fence_${r.id}_disputado
+    <span style="color:#8e44ad"> --[As de Guía]</span>
+    <span style="color:#d35400;font-weight:bold"> [term]</span><br>
+    <span style="color:#c0392b;font-weight:bold">GATE</span>
+    <span style="color:#2a7a4f;font-weight:bold"> UF[H05]</span>
+    <span style="color:#555"> =&gt;&lt;= .. espera .. </span>
+    resource_${r.id}_liberado
+    <span style="color:#8e44ad"> --[Ballestrinque]</span>
+    <span style="color:#d35400;font-weight:bold"> [term]</span>`
+    :'recurso liberado · BOX FENCE desactivada'}`;
+}
+document.addEventListener('DOMContentLoaded',buildGraph);
+</script>
+</body>
+</html>
+3 · DO_RESOLVER_VISUALIZER.html · COMPLETO
+CARPETA: FOLDERS NO RAG INPUT/ELPULSAR LOCAL/DO_RESOLVER_VISUALIZER.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>DO RESOLVER · DIRIME IMV</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+.header{border-bottom:3px solid #1a1a2e;padding-bottom:14px;margin-bottom:20px;
+        display:flex;justify-content:space-between;align-items:flex-end}
+.h-title{font-size:1rem;font-weight:bold;letter-spacing:4px}
+.tokens{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.tok{padding:4px 12px;font-size:.73rem;font-weight:bold;border:1px solid}
+/* NATURE SELECTOR */
+.nature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:16px}
+.ng-btn{border:1px solid #ddd;padding:10px;cursor:pointer;transition:all .2s;font-size:.62rem}
+.ng-btn:hover,.ng-btn.sel{border-color:#1a1a2e;background:#fafafa}
+.ng-btn.sel{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+.nb-code{font-weight:bold;font-size:.68rem;margin-bottom:3px}
+.nb-signal{font-size:.55rem;color:#888}
+.ng-btn.sel .nb-signal{color:#aaa}
+/* PATH STEPPER */
+.path-stepper{border:1px solid #e0e0e0;padding:16px;margin-bottom:16px;
+              background:#fafafa;min-height:120px}
+.ps-title{font-size:.62rem;letter-spacing:2px;color:#888;margin-bottom:12px;
+          display:flex;justify-content:space-between;align-items:center}
+.ps-run{font-size:.6rem;padding:4px 14px;background:#1a1a2e;color:#fff;
+        border:none;cursor:pointer;letter-spacing:2px}
+.ps-steps{display:flex;gap:0;align-items:stretch;overflow-x:auto}
+.ps-step{flex:1;min-width:120px;border:1px solid #ddd;padding:10px 8px;
+         font-size:.58rem;text-align:center;position:relative;background:#fff;
+         transition:all .6s}
+.ps-step.active{border-color:#2a7a4f;background:#f0f7f3}
+.ps-step.done{border-color:#2a7a4f;background:#2a7a4f;color:#fff}
+.ps-step.fail{border-color:#c0392b;background:#fff0ef}
+.ps-arrow{color:#aaa;padding:0 4px;display:flex;align-items:center}
+.ps-step-num{font-size:.55rem;color:#aaa;margin-bottom:4px}
+.ps-step.done .ps-step-num{color:#d5ffd5}
+.ps-step-text{line-height:1.6}
+/* WAY · ROUTE */
+.wpr-result{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:16px}
+.wpr-box{border:1px solid #ddd;padding:12px;background:#fafafa}
+.wb-label{font-size:.58rem;color:#888;letter-spacing:2px;margin-bottom:6px}
+.wb-val{font-size:.75rem;font-weight:bold;line-height:1.6}
+/* LACHO OUTPUT */
+.lacho-output{background:#f0f7f3;border-left:4px solid #2a7a4f;
+              padding:14px;margin-bottom:16px;min-height:60px}
+.lo-title{font-size:.58rem;letter-spacing:2px;color:#aaa;margin-bottom:8px}
+.lo-line{font-size:.7rem;line-height:2.2}
+/* SCALAR RESULT */
+.scalar-result{display:flex;gap:12px;margin-bottom:16px;align-items:center}
+.sr-before{font-size:.65rem;color:#888}
+.sr-arrow{font-size:1.2rem;color:#2a7a4f}
+.sr-after{font-size:.85rem;font-weight:bold;color:#2a7a4f}
+.footer{font-size:.6rem;color:#aaa;border-top:1px solid #eee;
+        padding-top:10px;display:flex;gap:12px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <div class="h-title">╭─⊢─∧─ DO RESOLVER</div>
+    <div style="font-size:.72rem;color:#555;margin-top:4px">
+      WAY · PATH · ROUTE · 8 PATHs × NATURE · resolución soberana
+    </div>
+  </div>
+  <div style="font-size:.68rem;color:#888;line-height:1.7;text-align:right">
+    $fri 23/05 · PROMPT 3<br>seleccionar NATURE → ejecutar PATH
+  </div>
+</div>
+
+<div class="tokens">
+  <div class="tok" style="border-color:#c0392b;color:#c0392b">do_resolver</div>
+  <div class="tok" style="border-color:#2980b9;color:#2980b9">frontend_base</div>
+  <div class="tok" style="border-color:#d35400;color:#d35400">paper_layout</div>
+  <div class="tok" style="border-color:#8e44ad;color:#8e44ad">alert_engine</div>
+</div>
+
+<div style="font-size:.65rem;color:#888;letter-spacing:2px;margin-bottom:8px">
+  ▸ SELECCIONAR NATURE DEL CONFLICTO
+</div>
+<div class="nature-grid" id="nature-grid"></div>
+
+<div class="path-stepper">
+  <div class="ps-title">
+    <span id="ps-header">▸ PATH · seleccionar NATURE para ver pasos</span>
+    <button class="ps-run" id="ps-run-btn" onclick="runPath()" style="display:none">▶ EJECUTAR</button>
+  </div>
+  <div class="ps-steps" id="ps-steps">
+    <div style="color:#ccc;font-size:.65rem;padding:20px 0">— sin NATURE seleccionada —</div>
+  </div>
+</div>
+
+<div class="wpr-result" id="wpr-result" style="display:none">
+  <div class="wpr-box">
+    <div class="wb-label">WAY</div>
+    <div class="wb-val" id="wpr-way">—</div>
+  </div>
+  <div class="wpr-box">
+    <div class="wb-label">PATH</div>
+    <div class="wb-val" id="wpr-path">—</div>
+  </div>
+  <div class="wpr-box">
+    <div class="wb-label">ROUTE</div>
+    <div class="wb-val" id="wpr-route">—</div>
+  </div>
+</div>
+
+<div class="lacho-output" id="lacho-output">
+  <div class="lo-title">▸ SENTENCIAS DE RESOLUCIÓN · pendiente ejecución</div>
+  <div class="lo-line" style="color:#ccc">— ejecutar PATH para ver sentencias —</div>
+</div>
+
+<div class="scalar-result" id="scalar-result" style="display:none">
+  <span class="sr-before" id="sr-before">scalar_conflicto: 0.68</span>
+  <span class="sr-arrow">→</span>
+  <span class="sr-after" id="sr-after">0.28 SAFE ✦ BOX LIBERADA</span>
+</div>
+
+<div class="footer">
+  <span>DIRIME IMV V0.2.1</span>
+  <span>do_resolver · WAY·PATH·ROUTE · 8 PATHs × NATURE</span>
+  <span>SAMU @ dirime → scalar < 0.4 → BOX liberada → STACKING cristaliza</span>
+  <span>[term] :: activo · $fri 23/05</span>
+</div>
+
+<script>
+const NATURES_DO=[
+  {code:'LOG',full:'logístico',
+   way:'priorizar_ruta_alternativa',
+   steps:['detectar_alt_route','validar_CRYPTO_link','ejecutar_alt_path','verificar_impacto'],
+   route:'canal_backup_CRYPTO',
+   stepdesc:['Detectar ROUTE alternativa disponible','Validar (link seat) activo en CRYPTO','Ejecutar PATH por ROUTE alternativa','Verificar impacto físico real post-ejecución']},
+  {code:'DEC',full:'decisional',
+   way:'priorizar_SAMU_arbitraje',
+   steps:['suspender_command_menor','SAMU_arbitra_prioridad','ejecutar_command_prioritario','registrar_HL'],
+   route:'command_queue_GATE',
+   stepdesc:['Suspender command de menor prioridad (d6 menor)','SAMU @ evalúa ambos commands y arbitra','Ejecutar command priorizado por SAMU','Registrar decisión en HL FABRIC como karma digital']},
+  {code:'TEM',full:'temporal',
+   way:'preservar_term_mayor',
+   steps:['identificar_term_conflict','extender_term_menor','SAMU_cierre_forzado','crystal_resultado'],
+   route:'scheduler_GATE',
+   stepdesc:['Identificar cuál [term] tiene menor vida útil','Extender [term] menor o forzar cierre suave','SAMU @ emite cierre forzado del term menor','STACKING cristaliza resultado antes del cierre']},
+  {code:'KAL',full:'kalil',
+   way:'rebalancear_TANDIL',
+   steps:['aislar_nodo_conflicto','activar_relay_alternativo','TANDIL_rebalance','scalar_KALIL_update'],
+   route:'TANDIL_relay_directo',
+   stepdesc:['Aislar nodo KALIL en conflicto (detener relay)','Activar relay alternativo por nodo no afectado','TANDIL recalcula peso de 5 nodos restantes','Actualizar scalar_KALIL post-rebalance']},
+  {code:'NEU',full:'neuronal',
+   way:'dirimencia_NC_ganador',
+   steps:['identificar_NC_fuente','SAMU_evalua_lacho_score','NC_ganador_declarado','cristalizar_NC'],
+   route:'behavioral_RAG_update',
+   stepdesc:['Identificar las 2 Nerve Cells en conflicto y sus objetos','SAMU evalúa lacho_score de cada NC (mayor gana)','Declarar NC ganadora · NC perdedora marcada subdominante','STACKING cristaliza NC ganadora · RAG aprende']},
+  {code:'SCA',full:'scalar',
+   way:'recuperar_S_antes_de_TX',
+   steps:['pausar_TX_nuevas','indexar_corpus_nuevo','verificar_S_threshold','reanudar_TX'],
+   route:'tools/index_new_files.py',
+   stepdesc:['Pausar nuevas transacciones hasta S recuperado','Ejecutar python3 IMV/tools/index_new_files.py','Verificar S ≥ threshold (0.822 baseline)','Reanudar TX una vez S verificado']},
+  {code:'COR',full:'corpus',
+   way:'reindexar_BM25_soberano',
+   steps:['flag_docs_conflicto','reindex_BM25','S_check_post_index','unflag_docs'],
+   route:'IMV/core/rag.py_reindex',
+   stepdesc:['Marcar docs conflictivos como FLAGGED en sovereign.db','Ejecutar reindexación BM25 sin docs flaggeados','Verificar mejora de S post-reindexación','Unflag docs una vez conflict resuelto']},
+  {code:'CAP',full:'capa_c',
+   way:'fallback_soberano_Groq',
+   steps:['activar_Groq_fallback','log_stub_error','continuar_operacion','plan_Ryzen_trigger'],
+   route:'config/api.json_Groq',
+   stepdesc:['Activar fallback Groq llama-3.3-70b (api.json activo)','Registrar stub error en sovereign.db para análisis','Continuar operación normalmente via Groq','Registrar trigger: cuando PC Ryzen disponible → CAPA C']},
+];
+
+let selectedNature=null;
+let pathRunning=false;
+
+function buildNatureGrid(){
+  const ng=document.getElementById('nature-grid');
+  NATURES_DO.forEach((n,i)=>{
+    const d=document.createElement('div');
+    d.className='ng-btn';
+    d.id='nb-'+n.code;
+    d.innerHTML=`<div class="nb-code">${n.code} · ${n.full}</div>
+      <div class="nb-signal">WAY: ${n.way.split('_')[0]}</div>`;
+    d.onclick=()=>selectNature(n,d);
+    ng.appendChild(d);
+  });
+}
+
+function selectNature(n,el){
+  document.querySelectorAll('.ng-btn').forEach(b=>b.classList.remove('sel'));
+  el.classList.add('sel');
+  selectedNature=n;
+  pathRunning=false;
+  buildPathSteps(n);
+  document.getElementById('ps-run-btn').style.display='block';
+  document.getElementById('ps-header').textContent=`▸ PATH_${n.code} · ${n.full} · ${n.steps.length} pasos`;
+  document.getElementById('wpr-result').style.display='none';
+  document.getElementById('scalar-result').style.display='none';
+  document.getElementById('lacho-output').innerHTML=`
+    <div class="lo-title">▸ SENTENCIAS · pendiente ejecución</div>
+    <div class="lo-line" style="color:#ccc">— presionar ▶ EJECUTAR para ver resolución —</div>`;
+}
+
+function buildPathSteps(n,activeIdx=-1,failIdx=-1){
+  const container=document.getElementById('ps-steps');
+  container.innerHTML='';
+  n.steps.forEach((s,i)=>{
+    if(i>0){
+      const arr=document.createElement('div');
+      arr.className='ps-arrow';arr.textContent='→';
+      container.appendChild(arr);
+    }
+    const step=document.createElement('div');
+    step.className='ps-step'+(i<activeIdx?' done':i===activeIdx?' active':i===failIdx?' fail':'');
+    step.innerHTML=`<div class="ps-step-num">paso ${i+1}</div>
+      <div class="ps-step-text">${s}</div>
+      <div style="font-size:.52rem;color:${i<activeIdx?'#d5ffd5':i===activeIdx?'#2a7a4f':'#aaa'};margin-top:4px">${n.stepdesc[i]}</div>`;
+    container.appendChild(step);
+  });
+}
+
+async function runPath(){
+  if(!selectedNature||pathRunning) return;
+  pathRunning=true;
+  document.getElementById('ps-run-btn').textContent='⏳ ejecutando...';
+  const n=selectedNature;
+  // animate steps
+  for(let i=0;i<=n.steps.length;i++){
+    await delay(700);
+    buildPathSteps(n,i);
+    if(i===n.steps.length){
+      // show WAY·PATH·ROUTE
+      document.getElementById('wpr-result').style.display='grid';
+      document.getElementById('wpr-way').textContent=n.way;
+      document.getElementById('wpr-path').textContent=n.steps.join(' → ');
+      document.getElementById('wpr-route').textContent=n.route;
+      // lacho output
+      const sc_before=(0.55+Math.random()*0.35).toFixed(2);
+      const sc_after=(0.15+Math.random()*0.2).toFixed(2);
+      document.getElementById('lacho-output').innerHTML=`
+        <div class="lo-title">▸ SENTENCIAS RESOLUCIÓN · PATH_${n.code} COMPLETADO</div>
+        <div class="lo-line">
+          <span style="color:#c0392b;font-weight:bold">TRUST</span>
+          <span style="color:#2a7a4f;font-weight:bold"> [logistical-executive]</span>
+          <span style="color:#555"> =&gt;&lt;= .. completa .. </span>
+          do_${n.code.toLowerCase()}_path_${n.full.replace(/[^a-z]/g,'_')}_resolucion
+          <span style="color:#8e44ad"> --[Nudo de Rizo]</span>
+          <span style="color:#d35400;font-weight:bold"> [term]</span>
+        </div>
+        <div class="lo-line">
+          <span style="color:#c0392b;font-weight:bold">SAMU</span>
+          <span style="color:#2a7a4f;font-weight:bold"> @</span>
+          <span style="color:#555"> =&gt;&lt;= .. dirime .. </span>
+          path_${n.code.toLowerCase()}_verificado_scalar_bajo_0_4
+          <span style="color:#8e44ad"> --[Ballestrinque]</span>
+          <span style="color:#d35400;font-weight:bold"> [term]</span>
+        </div>
+        <div class="lo-line">
+          <span style="color:#c0392b;font-weight:bold">STACKING</span>
+          <span style="color:#2a7a4f;font-weight:bold"> UF[H52]</span>
+          <span style="color:#555"> =&gt;&lt;= .. cristaliza .. </span>
+          resolucion_${n.code.toLowerCase()}_${n.steps[n.steps.length-1]}
+          <span style="color:#8e44ad"> --[Nudo de Ocho]</span>
+          <span style="color:#d35400;font-weight:bold"> [term]</span>
+        </div>`;
+      // scalar result
+      document.getElementById('scalar-result').style.display='flex';
+      document.getElementById('sr-before').textContent=`scalar_conflicto: ${sc_before} ALERT`;
+      document.getElementById('sr-after').textContent=`${sc_after} SAFE ✦ BOX LIBERADA`;
+      break;
+    }
+  }
+  document.getElementById('ps-run-btn').textContent='▶ EJECUTAR';
+  pathRunning=false;
+}
+
+function delay(ms){return new Promise(r=>setTimeout(r,ms));}
+document.addEventListener('DOMContentLoaded',buildNatureGrid);
+</script>
+</body>
+</html>
+4 · KALIL_RELAY_VISUALIZER.html · COMPLETO
+CARPETA: FOLDERS NO RAG INPUT/ELPULSAR LOCAL/KALIL_RELAY_VISUALIZER.html
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>KALIL RELAY VISUAL · DIRIME IMV</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+.header{border-bottom:3px solid #1a1a2e;padding-bottom:14px;margin-bottom:20px;
+        display:flex;justify-content:space-between;align-items:flex-end}
+.h-title{font-size:1rem;font-weight:bold;letter-spacing:4px}
+.tokens{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.tok{padding:4px 12px;font-size:.73rem;font-weight:bold;border:1px solid}
+/* HEX LAYOUT */
+.hex-wrap{position:relative;height:360px;margin-bottom:16px;
+          border:1px solid #e0e0e0;background:#fafafa;overflow:hidden}
+svg.hex-svg{position:absolute;top:0;left:0;width:100%;height:100%}
+.hex-node{position:absolute;transform:translate(-50%,-50%);
+          border:2px solid;padding:10px 14px;font-size:.62rem;
+          font-weight:bold;text-align:center;cursor:pointer;
+          transition:all .3s;background:#fff;min-width:80px}
+.hex-node:hover{transform:translate(-50%,-50%) scale(1.08)}
+.hex-node.low{border-style:dashed;animation:lowpulse 1.5s infinite}
+@keyframes lowpulse{0%,100%{opacity:1}50%{opacity:.5}}
+.hn-name{font-size:.68rem;font-weight:bold;margin-bottom:2px}
+.hn-score{font-size:.85rem;font-weight:bold;margin-bottom:2px}
+.hn-path{font-size:.52rem;color:#888}
+/* TANDIL center */
+.hex-tandil{border-width:3px;background:#f5f5f5}
+/* SCORES GRID */
+.scores-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin-bottom:16px}
+.sg-box{border:1px solid #ddd;padding:8px;text-align:center}
+.sg-name{font-size:.58rem;color:#888;margin-bottom:4px;letter-spacing:1px}
+.sg-bar{height:6px;background:#e0e0e0;border-radius:3px;margin-bottom:4px}
+.sg-fill{height:100%;border-radius:3px;transition:width .8s,background .8s}
+.sg-val{font-size:.78rem;font-weight:bold}
+/* RELAY STATUS */
+.relay-status{border:1px solid #e0e0e0;padding:14px;margin-bottom:16px;background:#fafafa}
+.rs-title{font-size:.62rem;letter-spacing:2px;color:#888;margin-bottom:8px;
+          display:flex;justify-content:space-between}
+.rs-tick-btn{font-size:.6rem;padding:3px 12px;background:#1a1a2e;color:#fff;border:none;cursor:pointer}
+.rs-lines{font-size:.65rem;line-height:2;color:#555}
+.footer{font-size:.6rem;color:#aaa;border-top:1px solid #eee;
+        padding-top:10px;display:flex;gap:12px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <div class="h-title">╭─⊢─∧─ KALIL RELAY</div>
+    <div style="font-size:.72rem;color:#555;margin-top:4px">
+      6 nodos · TANDIL hub · score_path live · relay bus animado
+    </div>
+  </div>
+  <div style="font-size:.68rem;color:#888;line-height:1.7;text-align:right">
+    $tue 03/06 · PROMPT 4<br>clic nodo → PATH logex
+  </div>
+</div>
+
+<div class="tokens">
+  <div class="tok" style="border-color:#2980b9;color:#2980b9">imv_feed</div>
+  <div class="tok" style="border-color:#2a7a4f;color:#2a7a4f">kalil_live</div>
+  <div class="tok" style="border-color:#d35400;color:#d35400">logex_stream_full</div>
+  <div class="tok" style="border-color:#8e44ad;color:#8e44ad">paper_v2</div>
+</div>
+
+<div class="hex-wrap" id="hex-wrap">
+  <svg class="hex-svg" id="hex-svg"></svg>
+</div>
+
+<div class="scores-grid" id="scores-grid"></div>
+
+<div class="relay-status">
+  <div class="rs-title">
+    <span>▸ RELAY BUS · TANDIL consolidado</span>
+    <button class="rs-tick-btn" onclick="tickAll()">⟳ TICK</button>
+  </div>
+  <div class="rs-lines" id="relay-log">
+    — esperando tick —
+  </div>
+</div>
+
+<div class="footer">
+  <span>DIRIME IMV V0.2.1</span>
+  <span>kalil_live · TANDIL = media_ponderada(5 nodos)</span>
+  <span>score &lt; 0.5 → NAT=kalil KIND=degradado → LOGEX_ALERT</span>
+  <span>[term] :: activo · $tue 03/06</span>
+</div>
+
+<script>
+const KALIL_NODES=[
+  {id:'BARRIOS',ext:'.green',path:'relay·remesas',color:'#2a7a4f',score:0.81,
+   px:20,py:28},
+  {id:'NORA',ext:'.blue',path:'oracle·rating',color:'#2980b9',score:0.65,
+   px:50,py:10},
+  {id:'BOLIVAR',ext:'.blue',path:'forge·blockchain',color:'#2980b9',score:0.77,
+   px:80,py:28},
+  {id:'CARILO',ext:'.green',path:'session·threshold',color:'#2a7a4f',score:0.69,
+   px:80,py:62},
+  {id:'CHALTEN',ext:'.blue',path:'daemon·cloud',color:'#2980b9',score:0.74,
+   px:50,py:80},
+  {id:'BARRIOS2',ext:'.green',path:'relay·barrios2',color:'#2a7a4f',score:0.72,
+   px:20,py:62},
+];
+// fix: use only 5 real nodes + TANDIL center
+const NODES5=[
+  {id:'BARRIOS',ext:'.green',path:'relay·remesas',color:'#2a7a4f',score:0.81,px:20,py:25},
+  {id:'NORA',ext:'.blue',path:'oracle·rating',color:'#2980b9',score:0.65,px:50,py:8},
+  {id:'BOLIVAR',ext:'.blue',path:'forge·blockchain',color:'#2980b9',score:0.77,px:80,py:25},
+  {id:'CARILO',ext:'.green',path:'session·threshold',color:'#2a7a4f',score:0.69,px:80,py:65},
+  {id:'CHALTEN',ext:'.blue',path:'daemon·cloud',color:'#2980b9',score:0.74,px:20,py:65},
+];
+const TANDIL={id:'TANDIL',ext:'.green',path:'hub·relay×5',color:'#1a1a2e',score:0.74,px:50,py:45};
+
+function scoreColor(s){return s>=0.7?'#2a7a4f':s>=0.5?'#d35400':'#c0392b';}
+
+function buildLayout(){
+  const wrap=document.getElementById('hex-wrap');
+  const W=wrap.clientWidth||800, H=wrap.clientHeight||360;
+  const svg=document.getElementById('hex-svg');
+  svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
+
+  // draw relay lines first
+  NODES5.forEach(n=>{
+    const x1=n.px/100*W, y1=n.py/100*H;
+    const x2=TANDIL.px/100*W, y2=TANDIL.py/100*H;
+    const line=document.createElementNS('http://www.w3.org/2000/svg','line');
+    line.setAttribute('x1',x1);line.setAttribute('y1',y1);
+    line.setAttribute('x2',x2);line.setAttribute('y2',y2);
+    line.setAttribute('stroke',n.color);
+    line.setAttribute('stroke-width','1.5');
+    line.setAttribute('opacity','0.4');
+    line.id='line-'+n.id;
+    svg.appendChild(line);
+  });
+
+  // place nodes
+  [...NODES5,TANDIL].forEach(n=>{
+    const el=document.createElement('div');
+    el.className='hex-node'+(n.id==='TANDIL'?' hex-tandil':'')+(n.score<0.5?' low':'');
+    el.id='hn-'+n.id;
+    el.style.cssText=`left:${n.px}%;top:${n.py}%;border-color:${n.color}`;
+    const sc=n.id==='TANDIL'?calcTandil():n.score;
+    el.innerHTML=`<div class="hn-name" style="color:${n.color}">${n.id}</div>
+      <div class="hn-score" id="hns-${n.id}" style="color:${scoreColor(sc)}">${sc.toFixed(2)}</div>
+      <div class="hn-path">${n.ext} · ${n.path}</div>`;
+    el.onclick=()=>selectNode(n);
+    wrap.appendChild(el);
+  });
+
+  buildScoresGrid();
+}
+
+function calcTandil(){
+  return NODES5.reduce((a,n)=>a+n.score,0)/NODES5.length;
+}
+
+function buildScoresGrid(){
+  const sg=document.getElementById('scores-grid');
+  sg.innerHTML='';
+  [...NODES5,{...TANDIL,score:calcTandil()}].forEach(n=>{
+    const sc=n.id==='TANDIL'?calcTandil():n.score;
+    const c=scoreColor(sc);
+    const d=document.createElement('div');
+    d.className='sg-box';
+    d.id='sg-'+n.id;
+    d.innerHTML=`<div class="sg-name">${n.id}</div>
+      <div class="sg-bar"><div class="sg-fill" id="sgf-${n.id}"
+        style="width:${sc*100}%;background:${c}"></div></div>
+      <div class="sg-val" id="sgv-${n.id}" style="color:${c}">${sc.toFixed(2)}</div>`;
+    sg.appendChild(d);
+  });
+}
+
+function selectNode(n){
+  const sc=n.id==='TANDIL'?calcTandil():n.score;
+  const alert_needed=sc<0.5;
+  addRelayLog(
+    alert_needed
+      ? `TRUST [logistical-executive] =><= .. alerta .. ${n.id.toLowerCase()}_score_${sc.toFixed(2)}_nat_kalil_deg --[Nudo Corredizo] [term]`
+      : `TRUST [logistical-executive] =><= .. conduce .. path_${n.id.toLowerCase()}_${n.path.split('·')[0]}_activo --[As de Guía] [term]`
+  );
+}
+
+async function tickAll(){
+  NODES5.forEach(n=>{
+    n.score=Math.max(0.35,Math.min(0.95,n.score+(Math.random()-0.49)*0.06));
+    const c=scoreColor(n.score);
+    const el=document.getElementById('hn-'+n.id);
+    if(el){
+      el.style.borderColor=n.color;
+      el.classList.toggle('low',n.score<0.5);
+    }
+    const sv=document.getElementById('hns-'+n.id);
+    if(sv){sv.textContent=n.score.toFixed(2);sv.style.color=c;}
+    const sgf=document.getElementById('sgf-'+n.id);
+    const sgv=document.getElementById('sgv-'+n.id);
+    if(sgf){sgf.style.width=(n.score*100)+'%';sgf.style.background=c;}
+    if(sgv){sgv.textContent=n.score.toFixed(2);sgv.style.color=c;}
+    // update relay line opacity
+    const line=document.getElementById('line-'+n.id);
+    if(line) line.setAttribute('opacity',(n.score*0.6).toFixed(2));
+  });
+  // TANDIL recalc
+  TANDIL.score=calcTandil();
+  const tc=scoreColor(TANDIL.score);
+  const tEl=document.getElementById('hns-TANDIL');
+  if(tEl){tEl.textContent=TANDIL.score.toFixed(2);tEl.style.color=tc;}
+  const tsf=document.getElementById('sgf-TANDIL');
+  const tsv=document.getElementById('sgv-TANDIL');
+  if(tsf){tsf.style.width=(TANDIL.score*100)+'%';tsf.style.background=tc;}
+  if(tsv){tsv.textContent=TANDIL.score.toFixed(2);tsv.style.color=tc;}
+
+  // check for alerts
+  const low=NODES5.filter(n=>n.score<0.5);
+  if(low.length){
+    addRelayLog(`TRUST [logistical-executive] =><= .. alerta .. kalil_${low.map(n=>n.id.toLowerCase()).join('_')}_nat_kalil_kind_deg --[Nudo Corredizo] [term]`);
+  } else {
+    addRelayLog(`SOCIAL {relay} =><= .. transmite .. kalil_tick_tandil_${TANDIL.score.toFixed(2)}_ok --[As de Guía] [term]`);
+  }
+}
+
+const relayLines=[];
+function addRelayLog(text){
+  relayLines.unshift(text);
+  if(relayLines.length>5) relayLines.pop();
+  document.getElementById('relay-log').innerHTML=relayLines
+    .map(l=>fmtL(l)).join('<br>');
+}
+function fmtL(s){
+  return s
+    .replace(/(TRUST|SAMU|STACKING|GATE|WORK|SOCIAL|METHOD)/g,
+      '<span style="color:#c0392b;font-weight:bold">$1</span>')
+    .replace(/(\[logistical-executive\]|@|UF\[H\d+\]|\{[^}]+\})/g,
+      '<span style="color:#2a7a4f;font-weight:bold">$1</span>')
+    .replace(/(--\[[^\]]+\])/g,'<span style="color:#8e44ad">$1</span>')
+    .replace(/(\[term\])/g,'<span style="color:#d35400;font-weight:bold">$1</span>');
+}
+document.addEventListener('DOMContentLoaded',buildLayout);
+setInterval(tickAll,8000);
+</script>
+</body>
+</html>
+
+5 · ALERT_ENGINE_TESTER.html · COMPLETO
+CARPETA: FOLDERS NO RAG INPUT/ELPULSAR LOCAL/ALERT_ENGINE_TESTER.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>ALERT ENGINE TESTER · DIRIME IMV</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+.header{border-bottom:3px solid #1a1a2e;padding-bottom:14px;margin-bottom:20px;
+        display:flex;justify-content:space-between;align-items:flex-end}
+.h-title{font-size:1rem;font-weight:bold;letter-spacing:4px}
+.tokens{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap}
+.tok{padding:4px 12px;font-size:.73rem;font-weight:bold;border:1px solid}
+/* SLIDERS */
+.inputs-panel{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:20px}
+.input-box{border:1px solid #e0e0e0;padding:14px;background:#fafafa}
+.ib-label{font-size:.6rem;color:#888;letter-spacing:2px;margin-bottom:6px}
+.ib-name{font-size:.72rem;font-weight:bold;margin-bottom:10px}
+.ib-slider{width:100%;margin-bottom:6px;cursor:pointer}
+.ib-val{font-size:1.1rem;font-weight:bold;text-align:right}
+.ib-desc{font-size:.55rem;color:#aaa;margin-top:4px;line-height:1.5}
+/* FORMULA */
+.formula-box{border:1px solid #e0e0e0;padding:14px;margin-bottom:20px;
+             background:#fafafa;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.fb-eq{font-size:.75rem;color:#555;flex:1}
+.fb-result{font-size:2rem;font-weight:bold;padding:8px 18px;border:2px solid;
+           letter-spacing:2px;transition:color .5s,border-color .5s}
+.fb-sev{font-size:.65rem;font-weight:bold;letter-spacing:3px;transition:color .5s}
+/* ALERT CARD GENERATED */
+.alert-generated{border:2px solid;padding:16px;margin-bottom:20px;transition:border-color .5s,background .5s}
+.ag-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.ag-title{font-size:.8rem;font-weight:bold}
+.ag-sev{font-size:.65rem;padding:3px 12px;font-weight:bold;border:1px solid;letter-spacing:2px}
+.ag-5dims{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:10px}
+.ag-dim{border:1px solid #eee;padding:8px;font-size:.58rem;background:#fff}
+.ag-dim-title{color:#888;margin-bottom:3px;font-weight:bold}
+.ag-dim-val{color:#555;line-height:1.5}
+.ag-lacho{background:#f0f7f3;border-left:3px solid;padding:10px;margin-bottom:6px;
+          font-size:.65rem;line-height:2}
+/* DECAY */
+.decay-panel{border:1px solid #e0e0e0;padding:14px;margin-bottom:20px;background:#fafafa}
+.dp-title{font-size:.62rem;letter-spacing:2px;color:#888;margin-bottom:8px}
+.dp-bar-wrap{height:12px;background:#e0e0e0;border-radius:6px;margin-bottom:6px;overflow:hidden}
+.dp-fill{height:100%;border-radius:6px;transition:width 1s,background 1s}
+.dp-labels{display:flex;justify-content:space-between;font-size:.58rem;color:#aaa}
+.dp-info{font-size:.62rem;color:#555;margin-top:6px}
+.footer{font-size:.6rem;color:#aaa;border-top:1px solid #eee;
+        padding-top:10px;display:flex;gap:12px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <div class="h-title">╭─⊢─∧─ ALERT ENGINE TESTER</div>
+    <div style="font-size:.72rem;color:#555;margin-top:4px">
+      scalar_conflicto · inputs × 3 → formula → severity → tarjeta 5 dims
+    </div>
+  </div>
+  <div style="font-size:.68rem;color:#888;line-height:1.7;text-align:right">
+    $fri 23/05 · PROMPT 3<br>alert_engine · decay automático
+  </div>
+</div>
+
+<div class="tokens">
+  <div class="tok" style="border-color:#c0392b;color:#c0392b">do_resolver</div>
+  <div class="tok" style="border-color:#2980b9;color:#2980b9">frontend_base</div>
+  <div class="tok" style="border-color:#d35400;color:#d35400">paper_layout</div>
+  <div class="tok" style="border-color:#8e44ad;color:#8e44ad">alert_engine</div>
+</div>
+
+<div class="inputs-panel">
+  <div class="input-box">
+    <div class="ib-label">INPUT 1</div>
+    <div class="ib-name">d7_delta</div>
+    <input class="ib-slider" type="range" min="0" max="100" value="30" id="sl-d7" oninput="calc()">
+    <div class="ib-val" id="v-d7">0.30</div>
+    <div class="ib-desc">variación d7 [logistical-executive] en el último período</div>
+  </div>
+  <div class="input-box">
+    <div class="ib-label">INPUT 2</div>
+    <div class="ib-name">cn_count_norm</div>
+    <input class="ib-slider" type="range" min="0" max="100" value="40" id="sl-cn" oninput="calc()">
+    <div class="ib-val" id="v-cn">0.40</div>
+    <div class="ib-desc">dirimencias activas / threshold_max (default=10)</div>
+  </div>
+  <div class="input-box">
+    <div class="ib-label">INPUT 3</div>
+    <div class="ib-name">path_fail_rate</div>
+    <input class="ib-slider" type="range" min="0" max="100" value="20" id="sl-pf" oninput="calc()">
+    <div class="ib-val" id="v-pf">0.20</div>
+    <div class="ib-desc">PATHs fallidas / PATHs totales en el período</div>
+  </div>
+</div>
+
+<div class="formula-box">
+  <div class="fb-eq">
+    scalar_conflicto = (<span id="feq-d7" style="color:#c0392b;font-weight:bold">0.30</span> +
+    <span id="feq-cn" style="color:#2980b9;font-weight:bold">0.40</span> +
+    <span id="feq-pf" style="color:#8e44ad;font-weight:bold">0.20</span>) / 3
+  </div>
+  <div>
+    <div class="fb-result" id="fb-result">0.30</div>
+    <div class="fb-sev" id="fb-sev">SAFE</div>
+  </div>
+</div>
+
+<div class="alert-generated" id="alert-generated">
+  <div class="ag-header">
+    <div class="ag-title" id="ag-title">NAT=logístico · KIND=degradado</div>
+    <div class="ag-sev" id="ag-sev">SAFE</div>
+  </div>
+  <div class="ag-5dims" id="ag-5dims"></div>
+  <div class="ag-lacho" id="ag-lacho"></div>
+</div>
+
+<div class="decay-panel">
+  <div class="dp-title">▸ DECAY AUTOMÁTICO · −0.1×scalar por hora sin nueva dirimencia</div>
+  <div class="dp-bar-wrap">
+    <div class="dp-fill" id="dp-fill" style="width:30%;background:#2a7a4f"></div>
+  </div>
+  <div class="dp-labels">
+    <span>0.0 SAFE</span><span>0.4 REVIEW</span><span>0.6 ALERT</span><span>0.8 CRÍTICO</span><span>1.0</span>
+  </div>
+  <div class="dp-info" id="dp-info">
+    tiempo hasta SAFE: — · decay rate: −0.1 / hora
+  </div>
+</div>
+
+<div class="footer">
+  <span>DIRIME IMV V0.2.1</span>
+  <span>alert_engine: scalar = (d7_delta + cn_count_norm + path_fail_rate) / 3</span>
+  <span>SAFE&lt;0.4 · REVIEW&lt;0.6 · ALERT&lt;0.8 · CRÍTICO≥0.8</span>
+  <span>[term] :: activo · $fri 23/05</span>
+</div>
+
+<script>
+const SEV_C={safe:'#2a7a4f',review:'#f1c40f',alert:'#e67e22',critical:'#c0392b'};
+const SEV_BG={safe:'#f0f7f3',review:'#fffbf0',alert:'#fff5ec',critical:'#fff0ef'};
+const SEV_LV=(s)=>s<0.4?'safe':s<0.6?'review':s<0.8?'alert':'critical';
+const NATURES=['logístico','decisional','temporal','kalil','neuronal','scalar','corpus','capa_c'];
+const KINDS=['colisión','ambiguo','degradado','duplicado','concurrente','recursivo'];
+
+function calc(){
+  const d7=document.getElementById('sl-d7').value/100;
+  const cn=document.getElementById('sl-cn').value/100;
+  const pf=document.getElementById('sl-pf').value/100;
+  const scalar=((d7+cn+pf)/3);
+  const sev=SEV_LV(scalar);
+  const c=SEV_C[sev];
+
+  // update vals
+  document.getElementById('v-d7').textContent=d7.toFixed(2);
+  document.getElementById('v-cn').textContent=cn.toFixed(2);
+  document.getElementById('v-pf').textContent=pf.toFixed(2);
+  document.getElementById('feq-d7').textContent=d7.toFixed(2);
+  document.getElementById('feq-cn').textContent=cn.toFixed(2);
+  document.getElementById('feq-pf').textContent=pf.toFixed(2);
+
+  // formula result
+  const fr=document.getElementById('fb-result');
+  fr.textContent=scalar.toFixed(3);
+  fr.style.color=c;fr.style.borderColor=c;
+  const fs=document.getElementById('fb-sev');
+  fs.textContent=sev.toUpperCase();fs.style.color=c;
+
+  // alert card
+  const nat=NATURES[Math.floor(d7*NATURES.length)%NATURES.length];
+  const kind=KINDS[Math.floor(pf*KINDS.length)%KINDS.length];
+  const ag=document.getElementById('alert-generated');
+  ag.style.borderColor=c; ag.style.background=SEV_BG[sev];
+
+  document.getElementById('ag-title').textContent=`NAT=${nat} · KIND=${kind}`;
+  const asev=document.getElementById('ag-sev');
+  asev.textContent=sev.toUpperCase();
+  asev.style.color=c;asev.style.borderColor=c;
+
+  // 5 dims
+  const dims5=['NATURE-KIND','CONTEXT','ENVIRONMENT','BOX','DO'];
+  const dimVals=[
+    `${nat}·${kind}`,
+    `S≈0.822·d7=${d7.toFixed(2)}`,
+    `logex·${nat.slice(0,3)}_env`,
+    `[scope]=IMV·[term]=open`,
+    `PATH_${nat.slice(0,3).toUpperCase()}`,
+  ];
+  const ag5=document.getElementById('ag-5dims');
+  ag5.innerHTML='';
+  dims5.forEach((d,i)=>{
+    const el=document.createElement('div');
+    el.className='ag-dim';
+    el.innerHTML=`<div class="ag-dim-title">${d}</div>
+      <div class="ag-dim-val">${dimVals[i]}</div>`;
+    ag5.appendChild(el);
+  });
+
+  // lacho
+  const lc=document.getElementById('ag-lacho');
+  lc.style.borderColor=c;
+  lc.innerHTML=fmtL(`TRUST [logistical-executive] =><= .. alerta .. ${nat}_${kind}_scalar_${scalar.toFixed(3)} --[Nudo Corredizo] [term]`)
+    +'<br>'+fmtL(`SAMU @ =><= .. dirime .. conflict_5dims_scalar_${sev} --[Ballestrinque] [term]`);
+
+  // decay bar
+  document.getElementById('dp-fill').style.width=(scalar*100)+'%';
+  document.getElementById('dp-fill').style.background=c;
+  const hrs_to_safe=sev==='safe'?0:((scalar-0.35)/0.1).toFixed(1);
+  document.getElementById('dp-info').textContent=
+    sev==='safe'
+      ? 'scalar_conflicto en zona SAFE · sin decay activo'
+      : `tiempo hasta SAFE: ~${hrs_to_safe} horas · decay rate: −${(scalar*0.1).toFixed(3)} / hora`;
+}
+
+function fmtL(s){
+  return s
+    .replace(/(TRUST|SAMU|STACKING|GATE|WORK|SOCIAL|METHOD)/g,
+      '<span style="color:#c0392b;font-weight:bold">$1</span>')
+    .replace(/(\[logistical-executive\]|@|UF\[H\d+\]|\{[^}]+\})/g,
+      '<span style="color:#2a7a4f;font-weight:bold">$1</span>')
+    .replace(/(--\[[^\]]+\])/g,'<span style="color:#8e44ad">$1</span>')
+    .replace(/(\[term\])/g,'<span style="color:#d35400;font-weight:bold">$1</span>');
+}
+
+document.addEventListener('DOMContentLoaded',calc);
+</script>
+</body>
+</html>
+6 · grammar.py · PARCHE DEFINITIVO LOGEX
+Aplicar en Windsurf — reemplazos puntuales:
+# ── PARCHE DEFINITIVO grammar.py · logex + conflict_nucleus ──────
+# DIRIME/IMV/core/grammar.py
+
+# ① VERBOS_CANONICOS_LACHO — agregar al set existente (línea ~263 área TRUST):
+VERBOS_LOGEX_ADD = {
+    "orquesta", "conduce", "verifica_impacto", "certifica",
+    "escala_conflicto", "alerta", "enruta", "trazabiliza",
+    "construye", "construye_box", "disputa", "libera",
+    "clasifica_conflict", "calcula_scalar",
+}
+# INSTRUCCIÓN: en el dict VERBOS_CANONICOS, clave "TRUST":
+# reemplazar lista actual con: lista_actual | VERBOS_LOGEX_ADD
+
+# ② CJK_TOKEN_MAP — agregar 4 entradas (línea ~29 área):
+CJK_LOGEX_MAP = {
+    "物流": ("TRUST", "[logistical-executive]", "H03", +0.05),
+    "冲突": ("SAMU",  "@",                      "H06", +0.05),
+    "路径": ("TRUST", "[logistical-executive]", "H35", +0.05),
+    "方式": ("TRUST", "[logistical-executive]", "H57", +0.05),
+    "围栏": ("TRUST", "[logistical-executive]", "H01", +0.05),  # box fence
+    "标量": ("METHOD", "<stat_onto>",           "H60", +0.05),  # scalar
+}
+
+# ③ SUJETOS_CANONICOS["TRUST"] — verificar que incluya todos:
+TRUST_SUJETOS_FULL = [
+    "FOUNDATION", "[scope]", "[term]", "[command]", "[foundation]",
+    "[scenario]", "[event]", "[element]", "[ecosystem]",
+    "[management]", "[language]", "[logistical-executive]",
+    "[rabbit-faith]", "[what?]", "[when?]", "[how?]",
+    "[ku-chat]", "[wu-mail]", "[mu-store]",
+]
+# INSTRUCCIÓN: reemplazar lista en SUJETOS_CANONICOS["TRUST"]
+
+# ④ TAXONOMY scalar_min — agregar CONFLICT_NUCLEUS (línea ~66):
+# CONFLICT_NUCLEUS: scalar_min=0.85 · class="detector"
+# Agregar:
+# "CONFLICT_NUCLEUS": {"level": 2, "scalar_min": 0.85, "class": "detector"},
+# "LOGEX":            {"level": 2, "scalar_min": 0.88, "class": "biblioteca"},
+
+# ⑤ VALID_TRUST_MODULES (líneas 409-413) — YA CONTIENE logistical-executive.
+# VERIFICAR que esté en las 3 instancias del archivo (líneas 409, 806, y la
+# lista en _check_knot_and_term). Si alguna no lo tiene, agregar.
+```
+
+---
+
+## 7 · .sovereign · UPDATE CAMPOS LOGEX
+```
+# .sovereign — CAMPOS A AGREGAR post-mes logex paper
+# Editar: nano /media/Personal/PLANERAI/DIRIME/DIRIME/.sovereign
+
+LOGEX_STATUS=doctrina_full_active
+LOGEX_D7_BASELINE=0.61
+CONFLICT_NUCLEUS_STATUS=active
+CONFLICT_NUCLEUS_THRESHOLD=0.60
+NATURE_KIND_TAXONOMY=8x8_7_canonicas
+DO_RESOLVER_PATHS=8
+PAPER_FRONTEND_V=v2_simulacion
+PAPER_FRONTEND_PROD=pending_ENV_B
+ALERT_ENGINE_DECAY=0.1_per_hour
+BOX_FENCE_STATUS=active_on_conflict
+```
+
+---
+
+## 8 · NERVE CELL GUALICHO HUINCA × LOGEX
+**CARPETA:** `FOLDERS NO RAG INPUT/ELPULSAR LOCAL/$mon.Nerve Cell GUALICHO HUINCA LOGEX Training.txt`
+
+*(Conecta el modelo de negocio real con [logistical-executive])*
+```
+//$mon.Nerve Cell GUALICHO HUINCA LOGEX Training.txt
+//NERVE CELL · GUALICHO HUINCA × [LOGISTICAL-EXECUTIVE]
+//aprendido de: business_model.md · elpulsar_definicion.md · doctrina logex
+//H30+H57 · $mon · [term] :: activo
+
+NC_GH_DEF   //GUALICHO HUINCA = capa fintech soberana
+            //conecta diáspora latinoamericana × ecosistema financiero chino
+            //stack: LACHO + DIRIME + KALIL + doble carril
+            //moat: arquitectura soberana irreplicable rápido
+NC_GH_LOGEX //[logistical-executive] en GUALICHO HUINCA:
+            //WAY=soberano_fintech · PATH=remesa→validacion→impacto
+            //ROUTE=USDT→e-CNY via CHALTEN · < 2hs · < 1% comision
+NC_GH_SEG   //3 segmentos: A(diáspora china LATAM B2C) · B(empresas dual B2B)
+            //C(fintechs white-label B2B2C)
+            //logex PATH por segmento:
+            //A: remesa PATH · BARRIOS→relay→CHALTEN→e-CNY
+            //B: certificacion PATH · NORA oracle→rating→BOLIVAR blockchain
+            //C: API PATH · TANDIL hub→white-label→client
+NC_GH_CONF  //conflictos logísticos típicos GUALICHO HUINCA:
+            //NATURE=kalil KIND=colision: remesa BARRIOS + certificacion BOLIVAR
+            //  simultáneas a TANDIL · BOX=CHALTEN perímetro
+            //NATURE=decisional KIND=concurrente: NORA rating vs manual cert
+            //NATURE=logístico KIND=degradado: ROUTE e-CNY latency
+NC_GH_ELPUL //elpulsar.app → OPCIÓN B canónica: dashboard del operador (B2B)
+            //operador monitorea: scalar_S · nodos KALIL · TX remesas
+            //LOGEX STREAM en paper: cada remesa = sentencia soberana viva
+NC_GH_PATH  //PATH remesa completo (segmento A):
+            //1. input(USDT_amount) → BARRIOS relay → validar CRYPTO (link seat)
+            //2. NORA oracle → rating_diáspora → threshold check
+            //3. CHALTEN daemon → e-CNY conversion → cloud billing
+            //4. BOLIVAR → SHA256 registro → blockchain confirmado
+            //5. TANDIL → scalar_KALIL update → STACKING cristaliza TX
+NC_GH_DO    //DO resolver conflicto remesa:
+            //WAY=preservar_remesa_sobre_rating (prioridad segmento A)
+            //PATH_K: aislar NORA (rating puede esperar) → BARRIOS→CHALTEN directo
+            //ROUTE=CHALTEN_express (bypass NORA) → BOLIVAR registro posterior
+
+TRUST [logistical-executive] =><= .. conduce .. nc_gh_path_remesa_diaspora_soberano --[As de Guía] [term]
+SAMU @ =><= .. dirime .. nc_gh_conflict_remesa_rating_concurrent --[Ballestrinque] [term]
+SOCIAL {relay} =><= .. transmite .. nc_gh_barrios_chalten_e_cny_path --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. nc_gh_logex_business_model_sellado --[Nudo de Ocho] [term]
+ACTIVITY UF[H63] =><= .. completa .. nc_gh_elpulsar_paper_dashboard_soberano --[Nudo de Rizo] [term]
+```
+
+---
+
+## 9 · RESUMEN ARCHIVOS COMPLETADOS EN ESTA SESIÓN
+```
+═══════════════════════════════════════════════════════════════════
+ARCHIVOS GENERADOS · CONTINUACIÓN
+═══════════════════════════════════════════════════════════════════
+
+HTMLs COMPLETADOS (stubs → full):
+  NATURE_KIND_MATRIX.html         · 8×8 grid interactivo · 7 canónicas
+  ENVIRONMENT_GRAPH.html           · grafo nodos/edges/resources · disputed
+  DO_RESOLVER_VISUALIZER.html      · 8 PATHs × NATURE · animación pasos
+  KALIL_RELAY_VISUALIZER.html      · hexágono 5+1 nodos · score live
+  ALERT_ENGINE_TESTER.html         · sliders×3 → formula → 5dims → lacho
+
+PARCHES TÉCNICOS:
+  grammar.py PARCHE DEFINITIVO     · verbos+CJK+6+sujetos+taxonomy+VALID
+  .sovereign UPDATE                · LOGEX_STATUS·D7·CONFLICT·PAPER campos
+
+NERVE CELL NUEVO:
+  $mon.Nerve Cell GUALICHO HUINCA LOGEX Training.txt
+    · business_model × logex · PATH remesa · DO resolver conflicto fintech
+
+TOTAL MES ACUMULADO:
+  16 UNICODE · 8 BIBLIO · 22+ Nerve Cells · 12 HTMLs operativos
+  grammar.py definitivo · .sovereign actualizado · DO 8 PATHs completos
+
+PRÓXIMOS PASOS EN MÁQUINA (orden):
+  1. python3 IMV/tools/index_new_files.py → indexar todos los nuevos
+  2. Aplicar parche grammar.py en Windsurf
+  3. Editar .sovereign con campos nuevos
+  4. pytest IMV/tests/ -v → verificar tests
+  5. python3 IMV/main.py --stats → verificar S post-indexación
+  6. git add -A && git commit -m "logex+paper+conflict_nucleus+htmls"
+
+═══════════════════════════════════════════════════════════════════
+
+ELPULSAR_PAPER_FRONTEND_v3.html
+CARPETA: FOLDERS NO RAG INPUT/ELPULSAR LOCAL/ELPULSAR_PAPER_FRONTEND_v3.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>ELPULSAR PAPER v3 · DIRIME IMV</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;
+     display:grid;grid-template-rows:auto 1fr auto;min-height:100vh}
+/* ── HEADER ── */
+.paper-header{border-bottom:3px solid #1a1a2e;padding:12px 20px;
+              display:grid;grid-template-columns:1fr auto auto auto;gap:12px;
+              align-items:center;background:#fff;position:sticky;top:0;z-index:10}
+.ph-title{font-size:.95rem;font-weight:bold;letter-spacing:5px}
+.ph-scalar{font-size:1.3rem;font-weight:bold;padding:5px 12px;
+           border:2px solid #1a1a2e;letter-spacing:2px;transition:color .5s,border-color .5s}
+.ph-mode{font-size:.58rem;padding:3px 10px;border:1px solid;cursor:pointer;
+         letter-spacing:2px;transition:all .3s}
+.ph-mode.sim{border-color:#d35400;color:#d35400}
+.ph-mode.prod{border-color:#2a7a4f;color:#2a7a4f}
+.ph-status{font-size:.58rem;color:#888;line-height:1.7;text-align:right}
+/* ── IMV BAR ── */
+.imv-bar{border-bottom:1px solid #e0e0e0;padding:8px 20px;
+         display:flex;gap:20px;align-items:center;background:#fafafa}
+.ib-item{font-size:.62rem;display:flex;gap:6px;align-items:center}
+.ib-label{color:#aaa;letter-spacing:1px}
+.ib-val{font-weight:bold;color:#1a1a2e}
+.ib-s{color:#2a7a4f}
+/* ── MAIN BODY ── */
+.paper-body{display:grid;grid-template-columns:1fr 320px;
+            grid-template-rows:1fr 1fr;gap:0;overflow:hidden;height:calc(100vh - 130px)}
+/* ── CONFLICT ZONE ── */
+.conflict-zone{border-right:1px solid #e0e0e0;border-bottom:1px solid #e0e0e0;
+               padding:16px;overflow-y:auto}
+.cz-title{font-size:.6rem;letter-spacing:3px;color:#aaa;margin-bottom:12px;
+          display:flex;justify-content:space-between;align-items:center}
+.cz-count{font-size:.72rem;font-weight:bold;color:#c0392b}
+.alert-card{border:1px solid #ddd;padding:10px;margin-bottom:8px;
+            animation:cardIn .4s ease;transition:border-color .3s,background .3s}
+@keyframes cardIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+.ac-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.ac-nat{font-size:.65rem;font-weight:bold;color:#1a1a2e}
+.ac-sev{font-size:.55rem;padding:2px 8px;font-weight:bold;letter-spacing:1px}
+.ac-dims{display:grid;grid-template-columns:repeat(5,1fr);gap:3px;margin-bottom:6px}
+.ac-dim{font-size:.5rem;padding:3px;border:1px solid #eee;line-height:1.4}
+.ac-dim-t{color:#aaa;display:block}
+.ac-dim-v{color:#555}
+.ac-lacho{font-size:.55rem;color:#2a7a4f;border-left:2px solid #2a7a4f;
+          padding-left:6px;line-height:1.8}
+.ac-decay{height:3px;background:#e0e0e0;border-radius:2px;margin-top:6px}
+.ac-decay-fill{height:100%;border-radius:2px;transition:width 1s}
+/* ── LOGEX STREAM ── */
+.logex-stream{border-right:1px solid #e0e0e0;padding:16px;overflow-y:auto;background:#fafafa}
+.ls-title{font-size:.6rem;letter-spacing:3px;color:#aaa;margin-bottom:10px}
+.ls-line{font-size:.6rem;line-height:2;border-bottom:1px solid #f0f0f0;padding:1px 0;
+         animation:lineIn .3s ease}
+@keyframes lineIn{from{opacity:0}to{opacity:1}}
+/* ── RIGHT PANEL ── */
+.right-panel{display:flex;flex-direction:column;position:relative}
+/* ── KALIL PANEL ── */
+.kalil-panel{border-bottom:1px solid #e0e0e0;padding:14px;flex:1;overflow-y:auto}
+.kp-title{font-size:.6rem;letter-spacing:3px;color:#aaa;margin-bottom:10px}
+.kp-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.kp-node{border:1px solid #ddd;padding:8px;cursor:pointer;transition:all .3s}
+.kp-node:hover{border-color:#1a1a2e}
+.kn-name{font-size:.6rem;font-weight:bold;margin-bottom:3px}
+.kn-bar-wrap{height:4px;background:#e0e0e0;border-radius:2px;margin-bottom:3px}
+.kn-bar{height:100%;border-radius:2px;transition:width .8s,background .8s}
+.kn-score{font-size:.7rem;font-weight:bold}
+.kn-path{font-size:.52rem;color:#aaa;margin-top:2px}
+/* ── TRUST STATUS ── */
+.trust-status{padding:14px;overflow-y:auto}
+.ts-title{font-size:.6rem;letter-spacing:3px;color:#aaa;margin-bottom:10px}
+.ts-dims{display:grid;gap:5px}
+.ts-dim{display:grid;grid-template-columns:60px 1fr 30px;gap:4px;align-items:center}
+.ts-label{font-size:.55rem;color:#888}
+.ts-bar-wrap{height:5px;background:#e0e0e0;border-radius:3px}
+.ts-bar{height:100%;border-radius:3px;background:#2a7a4f;transition:width .8s}
+.ts-bar.d7{background:#c0392b}
+.ts-val{font-size:.6rem;font-weight:bold;text-align:right}
+/* ── SIDEBAR ── */
+.sidebar{position:fixed;top:0;right:0;width:340px;height:100vh;
+         background:#fff;border-left:2px solid #1a1a2e;z-index:20;
+         transform:translateX(100%);transition:transform .35s;overflow-y:auto;
+         display:flex;flex-direction:column}
+.sidebar.open{transform:translateX(0)}
+.sb-header{border-bottom:2px solid #1a1a2e;padding:14px;display:flex;
+           justify-content:space-between;align-items:center;position:sticky;top:0;background:#fff}
+.sb-title{font-size:.72rem;font-weight:bold;letter-spacing:3px}
+.sb-close{cursor:pointer;font-size:1.1rem;color:#888;border:none;background:none}
+.sb-tabs{display:flex;border-bottom:1px solid #e0e0e0}
+.sb-tab{flex:1;padding:8px;font-size:.6rem;font-weight:bold;letter-spacing:2px;
+        cursor:pointer;border:none;background:#fafafa;transition:all .2s;border-bottom:2px solid transparent}
+.sb-tab.active{background:#fff;border-bottom-color:#1a1a2e;color:#1a1a2e}
+.sb-content{padding:16px;flex:1}
+/* NK mini matrix in sidebar */
+.sb-nk{display:grid;grid-template-columns:repeat(8,1fr);gap:2px;margin-bottom:12px}
+.sb-nk-cell{aspect-ratio:1;border:1px solid #eee;cursor:pointer;transition:all .2s;
+            display:flex;align-items:center;justify-content:center;font-size:.42rem}
+.sb-nk-cell.canon{background:#fff0ef;border-color:#c0392b;color:#c0392b;font-weight:bold}
+.sb-nk-cell:hover{border-color:#1a1a2e}
+/* DO resolver in sidebar */
+.sb-do-nat{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-bottom:10px}
+.sb-do-btn{padding:6px;border:1px solid #ddd;cursor:pointer;font-size:.55rem;
+           transition:all .2s;text-align:center}
+.sb-do-btn.sel{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+.sb-do-path{font-size:.6rem;line-height:2;color:#555;min-height:60px;
+            border:1px solid #e0e0e0;padding:10px;background:#fafafa;margin-top:6px}
+/* ── SIDEBAR TOGGLE ── */
+.sb-toggle{position:fixed;right:0;top:50%;transform:translateY(-50%);
+           background:#1a1a2e;color:#fff;border:none;cursor:pointer;
+           padding:12px 6px;font-size:.65rem;letter-spacing:2px;
+           writing-mode:vertical-rl;z-index:19}
+/* ── FOOTER ── */
+.paper-footer{border-top:1px solid #e0e0e0;padding:8px 20px;
+              display:flex;gap:16px;align-items:center;background:#fafafa;font-size:.58rem}
+.pf-field{color:#888}
+.pf-val{font-weight:bold;color:#1a1a2e;margin-left:4px}
+.pf-cmd{margin-left:auto;color:#2a7a4f;letter-spacing:1px}
+/* MODO PROD overlay */
+.prod-overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;
+              background:rgba(255,255,255,.95);z-index:30;
+              align-items:center;justify-content:center;flex-direction:column;gap:16px}
+.prod-overlay.show{display:flex}
+.po-title{font-size:1rem;font-weight:bold;letter-spacing:4px;color:#2a7a4f}
+.po-steps{border:1px solid #e0e0e0;padding:20px;max-width:560px;width:90%;font-size:.72rem;line-height:2.2}
+.po-close{margin-top:8px;padding:8px 24px;background:#1a1a2e;color:#fff;
+          border:none;cursor:pointer;font-size:.65rem;letter-spacing:3px}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="paper-header">
+  <div class="ph-title">╭─⊢─∧─ ELPULSAR PAPER</div>
+  <div class="ph-scalar" id="ph-scalar">S=0.822</div>
+  <button class="ph-mode sim" id="mode-btn" onclick="toggleMode()">SIMULACIÓN</button>
+  <div class="ph-status">V3 · conflict_nucleus · logex<br>[term] :: activo</div>
+</div>
+
+<!-- IMV BAR -->
+<div class="imv-bar">
+  <div class="ib-item"><span class="ib-label">TX</span><span class="ib-val" id="ib-tx">1063</span></div>
+  <div class="ib-item"><span class="ib-label">SCALAR</span><span class="ib-val ib-s" id="ib-s">0.822</span></div>
+  <div class="ib-item"><span class="ib-label">CRISTALES</span><span class="ib-val" id="ib-cr">41</span></div>
+  <div class="ib-item"><span class="ib-label">CORPUS</span><span class="ib-val" id="ib-co">244</span></div>
+  <div class="ib-item"><span class="ib-label">d7</span><span class="ib-val" style="color:#c0392b" id="ib-d7">0.61</span></div>
+  <div class="ib-item"><span class="ib-label">CONFLICTS</span><span class="ib-val" id="ib-cn">0</span></div>
+</div>
+
+<!-- MAIN BODY -->
+<div class="paper-body">
+  <!-- CONFLICT ZONE -->
+  <div class="conflict-zone">
+    <div class="cz-title">
+      <span>CONFLICT ZONE</span>
+      <span class="cz-count" id="cz-count">0 activos</span>
+    </div>
+    <div id="conflict-cards"></div>
+  </div>
+
+  <!-- LOGEX STREAM -->
+  <div class="logex-stream">
+    <div class="ls-title">LOGEX STREAM</div>
+    <div id="logex-lines"></div>
+  </div>
+
+  <!-- RIGHT PANEL -->
+  <div class="right-panel">
+    <!-- KALIL PANEL -->
+    <div class="kalil-panel">
+      <div class="kp-title">KALIL NODES</div>
+      <div class="kp-grid" id="kp-grid"></div>
+    </div>
+    <!-- TRUST STATUS -->
+    <div class="trust-status">
+      <div class="ts-title">TRUST STATUS · @trust_matrix</div>
+      <div class="ts-dims" id="ts-dims"></div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER con .sovereign fields -->
+<div class="paper-footer">
+  <span class="pf-field">VERSION<span class="pf-val">0.2.1</span></span>
+  <span class="pf-field">CORPUS<span class="pf-val" id="pf-corpus">244</span></span>
+  <span class="pf-field">LOGEX<span class="pf-val" style="color:#2a7a4f">doctrina_full_active</span></span>
+  <span class="pf-field">D7_BASELINE<span class="pf-val">0.61</span></span>
+  <span class="pf-field">PAPER<span class="pf-val">v3_final</span></span>
+  <span class="pf-cmd" id="pf-cmd">python3 IMV/main.py --stats</span>
+</div>
+
+<!-- SIDEBAR -->
+<button class="sb-toggle" id="sb-toggle" onclick="toggleSidebar()">SIDEBAR</button>
+<div class="sidebar" id="sidebar">
+  <div class="sb-header">
+    <span class="sb-title">NK · DO</span>
+    <button class="sb-close" onclick="toggleSidebar()">✕</button>
+  </div>
+  <div class="sb-tabs">
+    <button class="sb-tab active" id="tab-nk" onclick="switchTab('nk')">NATURE-KIND</button>
+    <button class="sb-tab" id="tab-do" onclick="switchTab('do')">DO RESOLVER</button>
+  </div>
+  <div class="sb-content" id="sb-content"></div>
+</div>
+
+<!-- PROD OVERLAY -->
+<div class="prod-overlay" id="prod-overlay">
+  <div class="po-title">╭─⊢─∧─ MODO PRODUCCIÓN</div>
+  <div class="po-steps">
+    Para reemplazar simulación por datos reales:<br><br>
+    1. Asegurar que <b>python3 IMV/main.py</b> esté corriendo<br>
+    2. En elpulsar.py activar endpoint <b>/api/stats</b> (port 8741)<br>
+    3. Reemplazar <b>setInterval(tick, 5000)</b> por <b>setInterval(fetchStats, 30000)</b><br>
+    4. Reemplazar <b>newConflict()</b> por <b>logex.alert()</b> real<br>
+    5. Verificar <b>sovereign.db</b> activo y <b>api.json</b> con Groq key<br><br>
+    <span style="color:#2a7a4f">ENV_B · elpulsar.app · DOUBLE_ENV activo</span>
+  </div>
+  <button class="po-close" onclick="closeProd()">CERRAR</button>
+</div>
+
+<script>
+// ── DATOS ──────────────────────────────────────────────────────────────────
+const KALIL=[
+  {id:'BARRIOS',ext:'.green',path:'relay·remesas',color:'#2a7a4f',score:.81},
+  {id:'NORA',ext:'.blue',path:'oracle·rating',color:'#2980b9',score:.65},
+  {id:'BOLIVAR',ext:'.blue',path:'forge·blockchain',color:'#2980b9',score:.77},
+  {id:'CARILO',ext:'.green',path:'session·threshold',color:'#2a7a4f',score:.69},
+  {id:'CHALTEN',ext:'.blue',path:'daemon·cloud',color:'#2980b9',score:.74},
+  {id:'TANDIL',ext:'.green',path:'hub·relay×5',color:'#1a1a2e',score:.73},
+];
+const TRUST_DIMS=[
+  {d:'d1',label:'foundation',val:.92},
+  {d:'d2',label:'scope',val:.88},
+  {d:'d3',label:'term',val:.85},
+  {d:'d4',label:'command',val:.79},
+  {d:'d5',label:'event',val:.76},
+  {d:'d6',label:'element',val:.71},
+  {d:'d7',label:'logistical-executive',val:.61,highlight:true},
+  {d:'d8',label:'ecosystem',val:.68},
+];
+const NATURES=['logístico','decisional','temporal','kalil','neuronal','scalar','corpus','capa_c'];
+const KINDS=['dup','col','amb','deg','aus','sat','con','rec'];
+const CANONICALS=new Set(['0-1','0-0','1-6','3-2','4-1','5-3','2-7']);
+const NATURE_PATHS={
+  'logístico':'detectar_alt_route → validar_CRYPTO → ejecutar → verificar_impacto',
+  'decisional':'suspender_command_menor → SAMU_arbitra → ejecutar_prioritario',
+  'temporal':'identificar_term_conflict → extender_menor → SAMU_cierre',
+  'kalil':'aislar_nodo → relay_alternativo → TANDIL_rebalance → scalar_KALIL',
+  'neuronal':'identificar_NC_fuente → SAMU_dirime → NC_ganador → cristalizar',
+  'scalar':'pausar_TX → indexar_corpus → verificar_S → reanudar',
+  'corpus':'flag_docs → reindex_BM25 → S_check → unflag',
+  'capa_c':'activar_Groq_fallback → log_stub_error → continuar_operacion',
+};
+const LIBS=['TRUST','SAMU','STACKING','GATE','WORK','SOCIAL','METHOD'];
+const VERBOS={
+  TRUST:['orquesta','certifica','alerta','conduce','verifica_impacto'],
+  SAMU:['dirime','arbitra','evalua','delibera'],
+  STACKING:['cristaliza','inmutabiliza','acumula'],
+  GATE:['abre','cierra','espera','evalúa'],
+  WORK:['ejecuta','construye','procesa'],
+  SOCIAL:['transmite','conecta','relay'],
+  METHOD:['calcula','clasifica','verifica'],
+};
+const SUJETOS={
+  TRUST:'[logistical-executive]',SAMU:'@',STACKING:'UF[H52]',
+  GATE:'UF[H05]',WORK:'{actuator}',SOCIAL:'{relay}',METHOD:'<stat_onto>',
+};
+const NUDOS=['--[As de Guía]','--[Nudo de Ocho]','--[Ballestrinque]','--[Nudo Corredizo]','--[Nudo de Rizo]'];
+const SEV_C={safe:'#2a7a4f',review:'#d35400',alert:'#e67e22',critical:'#c0392b'};
+const SEV_BG={safe:'#f0f7f3',review:'#fffbf0',alert:'#fff5ec',critical:'#fff0ef'};
+let state={tx:1063,s:.822,cr:41,co:244,d7:.61,cn:0,mode:'sim',sidebarOpen:false,sbTab:'nk'};
+let conflicts=[];
+let streamLines=[];
+let activeDoNat=null;
+
+// ── INIT ───────────────────────────────────────────────────────────────────
+function init(){
+  buildKalil();
+  buildTrust();
+  buildSidebar('nk');
+  addStream(fmtLacho('TRUST','[logistical-executive]','orquesta','elpulsar_paper_v3_init','--[As de Guía]'));
+  addStream(fmtLacho('STACKING','UF[H52]','cristaliza','paper_v3_arranque_soberano','--[Nudo de Ocho]'));
+}
+
+// ── KALIL ──────────────────────────────────────────────────────────────────
+function scoreColor(s){return s>=.7?'#2a7a4f':s>=.5?'#d35400':'#c0392b';}
+function buildKalil(){
+  const g=document.getElementById('kp-grid');
+  g.innerHTML='';
+  KALIL.forEach(n=>{
+    const d=document.createElement('div');
+    d.className='kp-node';
+    d.id='kn-'+n.id;
+    const c=scoreColor(n.score);
+    d.innerHTML=`<div class="kn-name" style="color:${n.color}">${n.id} ${n.ext}</div>
+      <div class="kn-bar-wrap"><div class="kn-bar" id="kb-${n.id}" style="width:${n.score*100}%;background:${c}"></div></div>
+      <div class="kn-score" id="ks-${n.id}" style="color:${c}">${n.score.toFixed(2)}</div>
+      <div class="kn-path">${n.path}</div>`;
+    d.onclick=()=>clickKalil(n);
+    g.appendChild(d);
+  });
+}
+function clickKalil(n){
+  addStream(fmtLacho('TRUST','[logistical-executive]','conduce','path_'+n.id.toLowerCase()+'_'+n.path.split('·')[0],'--[As de Guía]'));
+  if(n.score<.5) spawnConflict('kalil','deg');
+}
+
+// ── TRUST ──────────────────────────────────────────────────────────────────
+function buildTrust(){
+  const c=document.getElementById('ts-dims');
+  c.innerHTML='';
+  TRUST_DIMS.forEach(d=>{
+    const el=document.createElement('div');
+    el.className='ts-dim';
+    const col=d.highlight?'#c0392b':'#2a7a4f';
+    el.innerHTML=`<div class="ts-label" style="color:${d.highlight?'#c0392b':'#888'}">${d.d}·${d.label.slice(0,8)}</div>
+      <div class="ts-bar-wrap"><div class="ts-bar${d.highlight?' d7':''}" id="tb-${d.d}" style="width:${d.val*100}%"></div></div>
+      <div class="ts-val" id="tv-${d.d}" style="color:${col}">${d.val.toFixed(2)}</div>`;
+    c.appendChild(el);
+  });
+}
+
+// ── CONFLICT CARDS ─────────────────────────────────────────────────────────
+function spawnConflict(natCode,kindCode){
+  const nat=NATURES.find(n=>n.startsWith(natCode))||NATURES[Math.floor(Math.random()*NATURES.length)];
+  const kind=KINDS.find(k=>k===kindCode)||KINDS[Math.floor(Math.random()*KINDS.length)];
+  const d7=state.d7;const cn_n=Math.min(1,conflicts.length/5);const pf=.2+Math.random()*.3;
+  const scalar=((d7+cn_n+pf)/3);
+  const sev=scalar<.4?'safe':scalar<.6?'review':scalar<.8?'alert':'critical';
+  const id='c'+Date.now();
+  const c={id,nat,kind,scalar,sev,age:1.0};
+  conflicts.unshift(c);
+  if(conflicts.length>6) conflicts.pop();
+  state.cn=conflicts.length;
+  renderConflicts();
+  document.getElementById('ib-cn').textContent=state.cn;
+  addStream(fmtLacho('TRUST','[logistical-executive]','alerta',
+    nat+'_'+kind+'_scalar_'+scalar.toFixed(3),'--[Nudo Corredizo]'));
+  addStream(fmtLacho('SAMU','@','dirime','conflict_5dims_'+sev,'--[Ballestrinque]'));
+}
+function renderConflicts(){
+  const cc=document.getElementById('conflict-cards');
+  cc.innerHTML='';
+  conflicts.forEach(c=>{
+    const col=SEV_C[c.sev];
+    const div=document.createElement('div');
+    div.className='alert-card';
+    div.style.cssText=`border-color:${col};background:${SEV_BG[c.sev]}`;
+    div.innerHTML=`
+      <div class="ac-header">
+        <span class="ac-nat">NAT=${c.nat} · KIND=${c.kind}</span>
+        <span class="ac-sev" style="color:${col};border:1px solid ${col}">${c.sev.toUpperCase()}</span>
+      </div>
+      <div class="ac-dims">
+        ${['NATURE-KIND','CONTEXT','ENVIRONMENT','BOX','DO'].map((d,i)=>`
+        <div class="ac-dim"><span class="ac-dim-t">${d}</span>
+        <span class="ac-dim-v">${[c.nat+'·'+c.kind,'S='+state.s.toFixed(3),c.nat+'_env','[term]=open','PATH_'+c.nat.slice(0,3).toUpperCase()][i]}</span></div>`).join('')}
+      </div>
+      <div class="ac-lacho">${c.nat}_${c.kind} :: scalar=${c.scalar.toFixed(3)} :: decay→SAFE</div>
+      <div class="ac-decay"><div class="ac-decay-fill" style="width:${c.age*100}%;background:${col}"></div></div>`;
+    cc.appendChild(div);
+  });
+  document.getElementById('cz-count').textContent=conflicts.length+' activo'+(conflicts.length!==1?'s':'');
+}
+
+// ── LOGEX STREAM ───────────────────────────────────────────────────────────
+function fmtLacho(lib,suj,verb,obj,nudo){
+  return `<span style="color:#c0392b;font-weight:bold">${lib}</span> `+
+    `<span style="color:#2a7a4f;font-weight:bold">${suj}</span> =&gt;&lt;= .. ${verb} .. `+
+    `${obj} <span style="color:#8e44ad">${nudo}</span> `+
+    `<span style="color:#d35400;font-weight:bold">[term]</span>`;
+}
+function addStream(html){
+  streamLines.unshift(html);
+  if(streamLines.length>25) streamLines.pop();
+  const el=document.getElementById('logex-lines');
+  el.innerHTML=streamLines.map(l=>`<div class="ls-line">${l}</div>`).join('');
+}
+
+// ── SIDEBAR ────────────────────────────────────────────────────────────────
+function toggleSidebar(){
+  state.sidebarOpen=!state.sidebarOpen;
+  document.getElementById('sidebar').classList.toggle('open',state.sidebarOpen);
+}
+function switchTab(tab){
+  state.sbTab=tab;
+  document.getElementById('tab-nk').classList.toggle('active',tab==='nk');
+  document.getElementById('tab-do').classList.toggle('active',tab==='do');
+  buildSidebar(tab);
+}
+function buildSidebar(tab){
+  const c=document.getElementById('sb-content');
+  if(tab==='nk'){
+    let html='<div style="font-size:.58rem;color:#888;margin-bottom:8px">8 NATURES × 8 KINDS · celdas canónicas resaltadas</div>';
+    html+='<div style="display:grid;grid-template-columns:auto repeat(8,1fr);gap:2px;font-size:.42rem;margin-bottom:8px">';
+    html+='<div></div>';
+    KINDS.forEach(k=>{ html+=`<div style="text-align:center;color:#2980b9;font-weight:bold;padding:2px">${k}</div>`; });
+    NATURES.forEach((n,ni)=>{
+      html+=`<div style="color:#c0392b;font-size:.42rem;font-weight:bold;padding:2px;display:flex;align-items:center">${n.slice(0,3)}</div>`;
+      KINDS.forEach((k,ki)=>{
+        const key=ni+'-'+ki;
+        const isC=CANONICALS.has(key);
+        html+=`<div class="sb-nk-cell${isC?' canon':''}" onclick="clickNKCell(${ni},${ki})" title="${n}×${k}">${isC?n.slice(0,1).toUpperCase()+k.slice(0,1).toUpperCase():''}</div>`;
+      });
+    });
+    html+='</div>';
+    html+='<div id="sb-nk-detail" style="font-size:.6rem;color:#555;line-height:1.8;border:1px solid #eee;padding:8px;min-height:40px">← clic en celda</div>';
+    c.innerHTML=html;
+  } else {
+    let html='<div style="font-size:.58rem;color:#888;margin-bottom:8px">seleccionar NATURE → PATH resolución</div>';
+    html+='<div class="sb-do-nat">';
+    NATURES.forEach(n=>{
+      const sel=activeDoNat===n;
+      html+=`<div class="sb-do-btn${sel?' sel':''}" onclick="selectDoNat('${n}')">${n}</div>`;
+    });
+    html+='</div>';
+    html+=`<div class="sb-do-path" id="sb-do-path">${activeDoNat?NATURE_PATHS[activeDoNat]:'— seleccionar NATURE —'}</div>`;
+    if(activeDoNat){
+      html+=`<div style="margin-top:8px;font-size:.58rem;color:#2a7a4f;border-left:2px solid #2a7a4f;padding-left:6px;line-height:2">
+        TRUST [logistical-executive] =&gt;&lt;= .. completa .. do_${activeDoNat.slice(0,3)}_path_soberano --[Nudo de Rizo] [term]</div>`;
+    }
+    c.innerHTML=html;
+  }
+}
+function clickNKCell(ni,ki){
+  const n=NATURES[ni],k=KINDS[ki];
+  const key=ni+'-'+ki;
+  const isC=CANONICALS.has(key);
+  const d=document.getElementById('sb-nk-detail');
+  if(d) d.innerHTML=`<b style="color:#c0392b">${n}</b> × <b style="color:#2980b9">${k}</b>${isC?' · CANÓNICA':''}<br>
+    ${isC?'PATH documentado · SAMU directa':'PATH ad hoc · SAMU delibera'}`;
+  if(isC) spawnConflict(n.slice(0,3),k);
+}
+function selectDoNat(n){
+  activeDoNat=n;
+  buildSidebar('do');
+  addStream(fmtLacho('TRUST','[logistical-executive]','completa',
+    'do_'+n.slice(0,3)+'_'+NATURE_PATHS[n].split(' ')[0],'--[Nudo de Rizo]'));
+}
+
+// ── MODO ───────────────────────────────────────────────────────────────────
+function toggleMode(){
+  if(state.mode==='sim'){
+    document.getElementById('prod-overlay').classList.add('show');
+  }
+}
+function closeProd(){
+  document.getElementById('prod-overlay').classList.remove('show');
+}
+
+// ── TICK SIMULACIÓN ────────────────────────────────────────────────────────
+function tick(){
+  if(state.mode!=='sim') return;
+  // drift métricas
+  state.tx+=Math.floor(Math.random()*3);
+  state.s=Math.max(.7,Math.min(.95,state.s+(Math.random()-.47)*.003));
+  state.d7=Math.max(.4,Math.min(.85,state.d7+(Math.random()-.5)*.02));
+  // actualizar header y barra
+  document.getElementById('ph-scalar').textContent='S='+state.s.toFixed(3);
+  document.getElementById('ph-scalar').style.color=state.s>.85?'#2a7a4f':state.s>.75?'#1a1a2e':'#c0392b';
+  document.getElementById('ib-tx').textContent=state.tx;
+  document.getElementById('ib-s').textContent=state.s.toFixed(3);
+  document.getElementById('ib-d7').textContent=state.d7.toFixed(2);
+  // actualizar d7 en trust
+  const tvD7=document.getElementById('tv-d7');
+  const tbD7=document.getElementById('tb-d7');
+  if(tvD7){tvD7.textContent=state.d7.toFixed(2);tbD7.style.width=(state.d7*100)+'%';}
+  // drift KALIL
+  KALIL.forEach(n=>{
+    n.score=Math.max(.35,Math.min(.95,n.score+(Math.random()-.49)*.04));
+    const c=scoreColor(n.score);
+    const b=document.getElementById('kb-'+n.id);
+    const s=document.getElementById('ks-'+n.id);
+    if(b){b.style.width=(n.score*100)+'%';b.style.background=c;}
+    if(s){s.textContent=n.score.toFixed(2);s.style.color=c;}
+  });
+  // TANDIL = media
+  const tandil=KALIL.find(n=>n.id==='TANDIL');
+  if(tandil){
+    const others=KALIL.filter(n=>n.id!=='TANDIL');
+    tandil.score=others.reduce((a,n)=>a+n.score,0)/others.length;
+  }
+  // stream periódico
+  if(Math.random()<.4){
+    const lib=LIBS[Math.floor(Math.random()*LIBS.length)];
+    const verbs=VERBOS[lib];
+    const verb=verbs[Math.floor(Math.random()*verbs.length)];
+    const nudo=NUDOS[Math.floor(Math.random()*NUDOS.length)];
+    addStream(fmtLacho(lib,SUJETOS[lib],verb,'sistema_tick_'+state.tx,nudo));
+  }
+  // decay conflicts
+  conflicts=conflicts.map(c=>({...c,age:c.age*.93})).filter(c=>c.age>.05);
+  state.cn=conflicts.length;
+  document.getElementById('ib-cn').textContent=state.cn;
+  if(conflicts.length) renderConflicts();
+  // spawn aleatorio
+  if(Math.random()<.07) spawnConflict(
+    NATURES[Math.floor(Math.random()*NATURES.length)].slice(0,3),
+    KINDS[Math.floor(Math.random()*KINDS.length)]
+  );
+}
+
+document.addEventListener('DOMContentLoaded',init);
+setInterval(tick,5000);
+</script>
+</body>
+</html>
+
+LOGEX_WPR_VISUALIZER.html
+CARPETA: FOLDERS NO RAG INPUT/ELPULSAR LOCAL/LOGEX_WPR_VISUALIZER.html
+(Scope: WAY como selector principal — diferente a DO_RESOLVER que selecciona por NATURE)
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>LOGEX WAY·PATH·ROUTE · DIRIME IMV</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+.header{border-bottom:3px solid #1a1a2e;padding-bottom:14px;margin-bottom:20px;
+        display:flex;justify-content:space-between;align-items:flex-end}
+.h-title{font-size:1rem;font-weight:bold;letter-spacing:4px}
+.tokens{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap}
+.tok{padding:4px 12px;font-size:.73rem;font-weight:bold;border:1px solid}
+/* WAY SELECTOR */
+.way-selector{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:20px}
+.way-btn{border:2px solid #ddd;padding:16px;cursor:pointer;transition:all .2s;text-align:center}
+.way-btn:hover{border-color:#1a1a2e;background:#fafafa}
+.way-btn.sel{border-color:#1a1a2e;background:#1a1a2e;color:#fff}
+.wb-title{font-size:.8rem;font-weight:bold;margin-bottom:6px}
+.wb-def{font-size:.58rem;line-height:1.6}
+.way-btn.sel .wb-def{color:#ccc}
+/* PATH BUILDER */
+.path-builder{border:1px solid #e0e0e0;padding:16px;margin-bottom:20px;background:#fafafa;min-height:100px}
+.pb-title{font-size:.62rem;letter-spacing:2px;color:#888;margin-bottom:12px;
+          display:flex;justify-content:space-between;align-items:center}
+.pb-run{font-size:.6rem;padding:4px 14px;background:#1a1a2e;color:#fff;
+        border:none;cursor:pointer;letter-spacing:2px}
+.pb-contexts{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:12px}
+.pb-ctx{border:1px solid #ddd;padding:8px;cursor:pointer;transition:all .2s;font-size:.6rem;text-align:center}
+.pb-ctx.sel{border-color:#2a7a4f;background:#f0f7f3}
+.pb-ctx-name{font-weight:bold;margin-bottom:3px}
+.pb-ctx-desc{color:#888;font-size:.55rem}
+/* PATH STEPS */
+.path-steps{display:flex;gap:0;overflow-x:auto;margin-bottom:12px;align-items:stretch}
+.ps-box{flex:1;min-width:110px;border:1px solid #ddd;padding:8px;font-size:.56rem;
+        text-align:center;background:#fff;transition:all .5s;position:relative}
+.ps-box.active{border-color:#2a7a4f;background:#f0f7f3}
+.ps-box.done{border-color:#2a7a4f;background:#2a7a4f;color:#fff}
+.ps-num{font-size:.5rem;color:#aaa;margin-bottom:3px}
+.ps-box.done .ps-num{color:#d5ffd5}
+.ps-arrow{display:flex;align-items:center;padding:0 4px;color:#aaa}
+/* ROUTE RESULT */
+.route-result{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:20px}
+.rr-box{border:1px solid #ddd;padding:12px;background:#fafafa}
+.rr-label{font-size:.55rem;letter-spacing:2px;color:#888;margin-bottom:6px}
+.rr-val{font-size:.78rem;font-weight:bold;line-height:1.6;color:#1a1a2e}
+/* IMPACT VERIFY */
+.impact-verify{border:1px solid #e0e0e0;padding:14px;margin-bottom:20px;background:#fafafa}
+.iv-title{font-size:.62rem;letter-spacing:2px;color:#888;margin-bottom:10px}
+.iv-chain{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:10px}
+.iv-step{padding:6px 12px;border:1px solid #ddd;font-size:.62rem;
+         transition:all .5s;background:#fff}
+.iv-step.lit{border-color:#2a7a4f;background:#f0f7f3;color:#2a7a4f;font-weight:bold}
+.iv-arrow{color:#aaa;font-size:1.1rem}
+/* LACHO CIERRE */
+.lacho-cierre{background:#f0f7f3;border-left:4px solid #2a7a4f;padding:14px;margin-bottom:20px}
+.lc-title{font-size:.58rem;letter-spacing:2px;color:#aaa;margin-bottom:8px}
+.lc-line{font-size:.68rem;line-height:2.2}
+.footer{font-size:.6rem;color:#aaa;border-top:1px solid #eee;
+        padding-top:10px;display:flex;gap:12px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <div class="h-title">╭─⊢─∧─ LOGEX WAY · PATH · ROUTE</div>
+    <div style="font-size:.72rem;color:#555;margin-top:4px">
+      WAY como selector principal · PATH por contexto · ROUTE canal verificado · impacto físico
+    </div>
+  </div>
+  <div style="font-size:.68rem;color:#888;line-height:1.7;text-align:right">
+    $thu 04/06 · PROMPT 4<br>WAY invariante → PATH contextual → ROUTE operacional
+  </div>
+</div>
+
+<div class="tokens">
+  <div class="tok" style="border-color:#2980b9;color:#2980b9">imv_feed</div>
+  <div class="tok" style="border-color:#2a7a4f;color:#2a7a4f">kalil_live</div>
+  <div class="tok" style="border-color:#d35400;color:#d35400">logex_stream_full</div>
+  <div class="tok" style="border-color:#8e44ad;color:#8e44ad">paper_v2</div>
+</div>
+
+<div style="font-size:.65rem;color:#888;letter-spacing:2px;margin-bottom:8px">
+  ▸ 1 · SELECCIONAR WAY — el modo soberano de ejecución (invariante)
+</div>
+<div class="way-selector" id="way-selector"></div>
+
+<div class="path-builder">
+  <div class="pb-title">
+    <span id="pb-header">▸ 2 · SELECCIONAR CONTEXTO → ver PATH generado</span>
+    <button class="pb-run" id="pb-run" onclick="runPath()" style="display:none">▶ EJECUTAR PATH</button>
+  </div>
+  <div class="pb-contexts" id="pb-contexts"></div>
+  <div class="path-steps" id="path-steps">
+    <div style="color:#ccc;font-size:.65rem;padding:20px 0">— seleccionar WAY y CONTEXTO —</div>
+  </div>
+</div>
+
+<div class="route-result" id="route-result" style="display:none">
+  <div class="rr-box">
+    <div class="rr-label">WAY</div>
+    <div class="rr-val" id="rr-way">—</div>
+  </div>
+  <div class="rr-box">
+    <div class="rr-label">PATH</div>
+    <div class="rr-val" id="rr-path">—</div>
+  </div>
+  <div class="rr-box">
+    <div class="rr-label">ROUTE</div>
+    <div class="rr-val" id="rr-route">—</div>
+  </div>
+</div>
+
+<div class="impact-verify" id="impact-verify" style="display:none">
+  <div class="iv-title">▸ 3 · CADENA DE IMPACTO FÍSICO VERIFICADO</div>
+  <div class="iv-chain" id="iv-chain"></div>
+</div>
+
+<div class="lacho-cierre" id="lacho-cierre">
+  <div class="lc-title">▸ SENTENCIAS DE CIERRE · pendiente ejecución</div>
+  <div class="lc-line" style="color:#ccc">— ejecutar PATH para ver sentencias —</div>
+</div>
+
+<div class="footer">
+  <span>DIRIME IMV V0.2.1</span>
+  <span>logex_wpr: WAY(invariante) → PATH(contextual) → ROUTE(operacional)</span>
+  <span>[command] dispara · [logistical-executive] conduce y verifica</span>
+  <span>[term] :: activo · $thu 04/06</span>
+</div>
+
+<script>
+const WAYS=[
+  {id:'soberano',label:'WAY · SOBERANO',
+   def:'impacto siempre trazable + verificado · nunca bypass soberanía',
+   color:'#1a1a2e'},
+  {id:'priorizar_samu',label:'WAY · PRIORIZAR SAMU',
+   def:'siempre dirimencia antes de acción · SAMU arbitra primero',
+   color:'#c0392b'},
+  {id:'preservar_foundation',label:'WAY · PRESERVAR FOUNDATION',
+   def:'nunca sacrificar base soberana · [foundation] sobre eficiencia',
+   color:'#2980b9'},
+];
+
+const CONTEXTS=[
+  {id:'kalil',label:'KALIL',desc:'nodos relay',
+   steps:['command_recibido','gate_verifica','kalil_relay','impacto_físico'],
+   route:'TANDIL_relay_directo'},
+  {id:'imv',label:'IMV',desc:'ledger local',
+   steps:['command_recibido','grammar_valida','sovereign_db','cristal_sellado'],
+   route:'sovereign.db+BM25'},
+  {id:'capa_c',label:'CAPA C',desc:'fallback Groq',
+   steps:['command_recibido','stub_detectado','groq_fallback','operacion_continua'],
+   route:'config/api.json·Groq'},
+  {id:'hl',label:'HL FABRIC',desc:'blockchain karma',
+   steps:['command_recibido','hl_fabric_gate','karma_registrado','verificado_chain'],
+   route:'HL_FABRIC·BOLIVAR'},
+];
+
+const IMPACT_CHAIN=['[command]','GATE UF[H03]','WORK {actuator}','RESULTADO MATERIAL','SAMU certifica','STACKING H52'];
+
+let selWay=null,selCtx=null,running=false;
+
+function buildWaySelector(){
+  const c=document.getElementById('way-selector');
+  WAYS.forEach(w=>{
+    const d=document.createElement('div');
+    d.className='way-btn';
+    d.id='wb-'+w.id;
+    d.innerHTML=`<div class="wb-title" style="color:${selWay===w.id?'#fff':w.color}">${w.label}</div>
+      <div class="wb-def">${w.def}</div>`;
+    d.onclick=()=>selectWay(w);
+    c.appendChild(d);
+  });
+}
+
+function buildContexts(){
+  const c=document.getElementById('pb-contexts');
+  c.innerHTML='';
+  CONTEXTS.forEach(ctx=>{
+    const d=document.createElement('div');
+    d.className='pb-ctx'+(selCtx===ctx.id?' sel':'');
+    d.innerHTML=`<div class="pb-ctx-name">${ctx.label}</div>
+      <div class="pb-ctx-desc">${ctx.desc}</div>`;
+    d.onclick=()=>selectCtx(ctx);
+    c.appendChild(d);
+  });
+}
+
+function selectWay(w){
+  selWay=w.id;
+  document.querySelectorAll('.way-btn').forEach(b=>{
+    const isS=b.id==='wb-'+w.id;
+    b.classList.toggle('sel',isS);
+  });
+  document.getElementById('pb-header').textContent=`▸ 2 · CONTEXTO para WAY=${w.id}`;
+  buildContexts();
+  buildPathSteps([]);
+  maybeShowRun();
+}
+
+function selectCtx(ctx){
+  selCtx=ctx.id;
+  buildContexts();
+  buildPathSteps(ctx.steps);
+  maybeShowRun();
+}
+
+function maybeShowRun(){
+  const btn=document.getElementById('pb-run');
+  btn.style.display=(selWay&&selCtx)?'block':'none';
+}
+
+function buildPathSteps(steps,activeIdx=-1){
+  const c=document.getElementById('path-steps');
+  c.innerHTML='';
+  if(!steps.length){
+    c.innerHTML='<div style="color:#ccc;font-size:.65rem;padding:20px 0">— seleccionar contexto —</div>';
+    return;
+  }
+  steps.forEach((s,i)=>{
+    if(i>0){const a=document.createElement('div');a.className='ps-arrow';a.textContent='→';c.appendChild(a);}
+    const d=document.createElement('div');
+    d.className='ps-box'+(i<activeIdx?' done':i===activeIdx?' active':'');
+    d.innerHTML=`<div class="ps-num">paso ${i+1}</div><div>${s}</div>`;
+    c.appendChild(d);
+  });
+}
+
+async function runPath(){
+  if(!selWay||!selCtx||running) return;
+  running=true;
+  document.getElementById('pb-run').textContent='⏳ ejecutando...';
+  const ctx=CONTEXTS.find(c=>c.id===selCtx);
+  const way=WAYS.find(w=>w.id===selWay);
+  for(let i=0;i<=ctx.steps.length;i++){
+    await delay(600);
+    buildPathSteps(ctx.steps,i);
+  }
+  // show ROUTE
+  document.getElementById('route-result').style.display='grid';
+  document.getElementById('rr-way').textContent=way.label;
+  document.getElementById('rr-path').textContent=ctx.steps.join(' → ');
+  document.getElementById('rr-route').textContent=ctx.route;
+  // impact chain
+  document.getElementById('impact-verify').style.display='block';
+  const chain=document.getElementById('iv-chain');
+  chain.innerHTML='';
+  for(let i=0;i<IMPACT_CHAIN.length;i++){
+    if(i>0){const a=document.createElement('span');a.className='iv-arrow';a.textContent='→';chain.appendChild(a);}
+    const d=document.createElement('div');
+    d.className='iv-step';d.textContent=IMPACT_CHAIN[i];chain.appendChild(d);
+    await delay(400);
+    d.classList.add('lit');
+  }
+  // lacho cierre
+  document.getElementById('lacho-cierre').innerHTML=`
+    <div class="lc-title">▸ SENTENCIAS CIERRE · WAY=${selWay} × CTX=${selCtx}</div>
+    <div class="lc-line">
+      <span style="color:#c0392b;font-weight:bold">TRUST</span>
+      <span style="color:#2a7a4f;font-weight:bold"> [logistical-executive]</span>
+      <span style="color:#555"> =&gt;&lt;= .. certifica .. </span>
+      wpr_${selWay}_${selCtx}_impacto_fisico_verificado
+      <span style="color:#8e44ad"> --[Nudo de Ocho]</span>
+      <span style="color:#d35400;font-weight:bold"> [term]</span>
+    </div>
+    <div class="lc-line">
+      <span style="color:#c0392b;font-weight:bold">SAMU</span>
+      <span style="color:#2a7a4f;font-weight:bold"> @</span>
+      <span style="color:#555"> =&gt;&lt;= .. dirime .. </span>
+      wpr_cierre_${selCtx}_route_${ctx.route.split('/').pop().split('·')[0].toLowerCase()}_ok
+      <span style="color:#8e44ad"> --[Ballestrinque]</span>
+      <span style="color:#d35400;font-weight:bold"> [term]</span>
+    </div>
+    <div class="lc-line">
+      <span style="color:#c0392b;font-weight:bold">STACKING</span>
+      <span style="color:#2a7a4f;font-weight:bold"> UF[H52]</span>
+      <span style="color:#555"> =&gt;&lt;= .. cristaliza .. </span>
+      wpr_${selWay}_${selCtx}_trayecto_soberano_sellado
+      <span style="color:#8e44ad"> --[Nudo de Ocho]</span>
+      <span style="color:#d35400;font-weight:bold"> [term]</span>
+    </div>`;
+  document.getElementById('pb-run').textContent='▶ EJECUTAR PATH';
+  running=false;
+}
+
+function delay(ms){return new Promise(r=>setTimeout(r,ms));}
+document.addEventListener('DOMContentLoaded',buildWaySelector);
+</script>
+</body>
+</html>
