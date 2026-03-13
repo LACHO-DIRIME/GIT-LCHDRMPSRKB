@@ -1,26 +1,77 @@
 # CRYSTALS-EXPORT — cristales WU
 # Generado desde sovereign.db
+# timestamp: 2026-03-13 $fri · cierre notaria · 58 cristales
 
 # [term:A]
+Verbo 'verifica' verificado 124 veces en ledger soberano.
+# [term:B]
 Verbo 'materializa' verificado 70 veces en ledger soberano.
-# [term:AA]
-Verbo 'transforma' verificado 10 veces en ledger soberano.
-# [term:AB]
-Verbo 'agota' verificado 10 veces en ledger soberano.
-# [term:AC]
-Verbo 'culmina' verificado 10 veces en ledger soberano.
-# [term:AD]
-Verbo 'espera' verificado 10 veces en ledger soberano.
-# [term:AE]
+# [term:C]
+Verbo 'conecta' verificado 19 veces en ledger soberano.
+# [term:D]
+Verbo 'registra' verificado 17 veces en ledger soberano.
+# [term:E]
+Verbo 'custodia' verificado 16 veces en ledger soberano.
+# [term:F]
+Verbo 'multiplica' verificado 16 veces en ledger soberano.
+# [term:G]
+Verbo 'audita' verificado 16 veces en ledger soberano.
+# [term:H]
+Verbo 'cierra' verificado 16 veces en ledger soberano.
+# [term:I]
+Verbo 'inmutabiliza' verificado 15 veces en ledger soberano.
+# [term:J]
+Verbo 'muestra' verificado 15 veces en ledger soberano.
+# [term:K]
+Verbo 'planifica' verificado 15 veces en ledger soberano.
+# [term:L]
+Verbo 'activa' verificado 15 veces en ledger soberano.
+# [term:M]
+Verbo 'declara' verificado 14 veces en ledger soberano.
+# [term:N]
+Verbo 'dirime' verificado 14 veces en ledger soberano.
+# [term:O]
+Verbo 'sella' verificado 13 veces en ledger soberano.
+# [term:P]
+Verbo 'protege' verificado 13 veces en ledger soberano.
+# [term:Q]
+Verbo 'cristaliza' verificado 13 veces en ledger soberano.
+# [term:R]
+Verbo 'colapsa' verificado 13 veces en ledger soberano.
+# [term:S]
+Verbo 'calcula' verificado 12 veces en ledger soberano.
+# [term:T]
+Verbo 'transita' verificado 12 veces en ledger soberano.
+# [term:U]
+Verbo 'espera' verificado 12 veces en ledger soberano.
+# [term:V]
 Verbo 'autoriza' verificado 12 veces en ledger soberano.
+# [term:W]
+Verbo 'distribuye' verificado 12 veces en ledger soberano.
+# [term:X]
+Verbo 'evalúa' verificado 11 veces en ledger soberano.
+# [term:Y]
+Verbo 'persevera' verificado 11 veces en ledger soberano.
+# [term:Z]
+Verbo 'sostiene' verificado 11 veces en ledger soberano.
+# [term:AA]
+Verbo 'ejecuta' verificado 11 veces en ledger soberano.
+# [term:AB]
+Verbo 'resuelve' verificado 11 veces en ledger soberano.
+# [term:AC]
+Verbo 'modera' verificado 11 veces en ledger soberano.
+# [term:AD]
+Verbo 'aprende' verificado 10 veces en ledger soberano.
+# [term:AE]
+Verbo 'transforma' verificado 10 veces en ledger soberano.
 # [term:AF]
-Verbo 'lanza' verificado 10 veces en ledger soberano.
+Verbo 'agota' verificado 10 veces en ledger soberano.
 # [term:AG]
-Verbo 'bloquea' verificado 10 veces en ledger soberano.
+Verbo 'culmina' verificado 10 veces en ledger soberano.
 # [term:AH]
-Verbo 'sella' verificado 10 veces en ledger soberano.
+Verbo 'lanza' verificado 10 veces en ledger soberano.
 # [term:AI]
-Verbo 'resuelve' verificado 10 veces en ledger soberano.
+Verbo 'bloquea' verificado 10 veces en ledger soberano.
 # [term:AJ]
 Verbo 'fluye' verificado 10 veces en ledger soberano.
 # [term:AK]
@@ -31,53 +82,39 @@ Verbo 'filtra' verificado 10 veces en ledger soberano.
 Verbo 'contiene' verificado 10 veces en ledger soberano.
 # [term:AN]
 Verbo 'inicia' verificado 5 veces en ledger soberano.
-# [term:B]
-Verbo 'verifica' verificado 67 veces en ledger soberano.
-# [term:C]
-Verbo 'conecta' verificado 19 veces en ledger soberano.
-# [term:D]
-Verbo 'registra' verificado 17 veces en ledger soberano.
-# [term:E]
-Verbo 'custodia' verificado 16 veces en ledger soberano.
-# [term:F]
-Verbo 'multiplica' verificado 16 veces en ledger soberano.
-# [term:G]
-Verbo 'cierra' verificado 16 veces en ledger soberano.
-# [term:H]
-Verbo 'muestra' verificado 15 veces en ledger soberano.
-# [term:I]
-Verbo 'planifica' verificado 15 veces en ledger soberano.
-# [term:J]
-Verbo 'activa' verificado 15 veces en ledger soberano.
-# [term:K]
-Verbo 'inmutabiliza' verificado 14 veces en ledger soberano.
-# [term:L]
-Verbo 'colapsa' verificado 13 veces en ledger soberano.
-# [term:M]
-Verbo 'calcula' verificado 12 veces en ledger soberano.
-# [term:N]
-Verbo 'declara' verificado 12 veces en ledger soberano.
-# [term:O]
-Verbo 'dirime' verificado 13 veces en ledger soberano.
-# [term:P]
-Verbo 'distribuye' verificado 12 veces en ledger soberano.
-# [term:Q]
-Verbo 'evalúa' verificado 11 veces en ledger soberano.
-# [term:R]
-Verbo 'persevera' verificado 11 veces en ledger soberano.
-# [term:S]
-Verbo 'transita' verificado 11 veces en ledger soberano.
-# [term:T]
-Verbo 'sostiene' verificado 11 veces en ledger soberano.
-# [term:U]
-Verbo 'audita' verificado 14 veces en ledger soberano.
-# [term:V]
-Verbo 'ejecuta' verificado 11 veces en ledger soberano.
-# [term:W]
-Verbo 'protege' verificado 13 veces en ledger soberano.
-# [term:X]
-Verbo 'cristaliza' verificado 12 veces en ledger soberano.
-# [term:Y]
-Verbo 'modera' verificado 11 veces en ledger soberano.
-# [term:Z]
-Verbo 'aprende' verificado 10 veces en ledger soberano.
+# [term:AO]
+Verbo 'GENERATED_LACHO' verificado 1 veces en ledger soberano.
+# [term:AP]
+Verbo 'GENERATED_LACHO' verificado 1 veces en ledger soberano.
+# [term:AQ]
+Verbo 'GENERATED_LACHO' verificado 1 veces en ledger soberano.
+# [term:AR]
+Verbo 'GENERATED_LACHO' verificado 1 veces en ledger soberano.
+# [term:AS]
+Verbo 'GENERATED_LACHO' verificado 1 veces en ledger soberano.
+# [term:AT]
+Verbo 'GENERATED_LACHO' verificado 1 veces en ledger soberano.
+# [term:AU]
+Verbo 'GENERATED_LACHO' verificado 1 veces en ledger soberano.
+# [term:AV]
+Verbo 'GENERATED_LACHO' verificado 1 veces en ledger soberano.
+# [term:AW]
+Verbo 'GENERATED_LACHO' verificado 1 veces en ledger soberano.
+# [term:AX]
+Verbo 'GENERATED_LACHO' verificado 1 veces en ledger soberano.
+# [term:AY]
+Verbo 'GENERATED_LACHO' verificado 1 veces en ledger soberano.
+# [term:AZ]
+Verbo 'GENERATED_LACHO' verificado 1 veces en ledger soberano.
+# [term:BA]
+Verbo 'GENERATED_LACHO' verificado 1 veces en ledger soberano.
+# [term:BB]
+Verbo 'GENERATED_LACHO' verificado 1 veces en ledger soberano.
+# [term:BC]
+Verbo 'GENERATED_LACHO' verificado 1 veces en ledger soberano.
+# [term:BD]
+Verbo 'GENERATED_LACHO' verificado 1 veces en ledger soberano.
+# [term:BE]
+Verbo 'GENERATED_LACHO' verificado 1 veces en ledger soberano.
+# [term:BF]
+Verbo 'GENERATED_LACHO' verificado 1 veces en ledger soberano.
