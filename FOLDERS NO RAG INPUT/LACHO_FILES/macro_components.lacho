@@ -41,6 +41,16 @@ componente_chcl {
   estetica :: COBOL-style · dominios · extensión LACHO
 }
 
+// ══ COMPONENTE NOTARIA ═════════════════════════════════════════
+componente_notaria {
+  rol    :: dominio notarial soberano
+  accion :: STACKING UF[H63] =><= .. sella .. acto_notarial_soberano --[NdO] [term]
+  score  :: Scalar S >= 0.90 · N1 mínimo (taxonomy LACHO)
+  kalil  :: BOLIVAR blockchain · NORA rating · CARILO fee
+  chcl   :: CHCL-NOTARIA · extensión COBOL soberana
+  gate   :: H03 → H05 → H56 → H06 → H63 (secuencia notarial)
+}
+
 ## INTEGRACION GITHUB
 github_sync {
   -- repositorio proyecto LACHO

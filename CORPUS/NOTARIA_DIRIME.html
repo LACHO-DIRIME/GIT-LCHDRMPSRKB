@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOTARIA DIRIME</title>
+<style>
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --green-wu: #00cc66;
+  --blue-ku: #3399ff;
+  --gray: #666666;
+  --light-gray: #f5f5f5;
+  --border: #cccccc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--white);
+  color: var(--black);
+  font-family: monospace;
+  font-size: 14px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ══ HEADER ══ */
+.header {
+  border-bottom: 2px solid var(--black);
+  padding: 20px;
+  text-align: center;
+  background: var(--white);
+}
+
+.header-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.header-symbols {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+}
+
+.symbol {
+  padding: 5px 10px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  background: var(--light-gray);
+}
+
+.libsig {
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+}
+
+/* ══ MAIN CONTAINER ══ */
+.main-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ══ PANELS GRID ══ */
+.panels-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  flex: 1;
+}
+
+.panel {
+  border: 2px solid var(--black);
+  border-radius: 5px;
+  padding: 20px;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.input-area {
+  margin-bottom: 15px;
+}
+
+.input-textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 12px;
+  resize: vertical;
+  background: var(--white);
+}
+
+.button-area {
+  margin-bottom: 15px;
+}
+
+.action-button {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid var(--black);
+  border-radius: 3px;
+  background: var(--white);
+  font-family: monospace;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.action-button:hover {
+  background: var(--light-gray);
+}
+
+.action-button:active {
+  transform: translateY(1px);
+}
+
+.output-area {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  background: var(--light-gray);
+  font-family: monospace;
+  font-size: 12px;
+  overflow-y: auto;
+}
+
+.output-valid {
+  color: var(--green-wu);
+  font-weight: bold;
+}
+
+.output-invalid {
+  color: #cc0000;
+  font-weight: bold;
+}
+
+.output-hash {
+  font-size: 10px;
+  color: var(--gray);
+  margin-top: 5px;
+  word-break: break-all;
+}
+
+/* ══ FOOTER ══ */
+.footer {
+  border-top: 2px solid var(--black);
+  padding: 15px 20px;
+  background: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.footer-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.scalar-bar {
+  width: 200px;
+  height: 20px;
+  border: 1px solid var(--black);
+  border-radius: 3px;
+  background: var(--light-gray);
+  position: relative;
+  overflow: hidden;
+}
+
+.scalar-progress {
+  height: 100%;
+  background: var(--green-wu);
+  width: 0%;
+  transition: width 0.5s ease;
+}
+
+.samu-status {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.samu-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--green-wu);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+/* ══ BORDER STYLE ══ */
+.panel::before {
+  content: '╭─';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  font-size: 12px;
+}
+
+.panel::after {
+  content: '─╮';
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  font-size: 12px;
+}
+
+/* ══ RESPONSIVE ══ */
+@media (max-width: 768px) {
+  .panels-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .header-symbols {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- ══ HEADER ══ -->
+<header class="header">
+  <div class="header-title">NOTARIA DIRIME</div>
+  <div class="header-symbols">
+    <div class="symbol">⊗</div>
+    <div class="symbol">H63 既濟</div>
+    <div class="symbol libsig">TRUST ╭─⊢─∧─</div>
+  </div>
+</header>
+
+<!-- ══ MAIN CONTAINER ══ -->
+<main class="main-container">
+  <div class="panels-grid">
+    
+    <!-- PANEL 1: CERTIFICA -->
+    <div class="panel">
+      <div class="panel-header">CERTIFICA</div>
+      <div class="input-area">
+        <textarea class="input-textarea" id="certifica-input" placeholder="Ingresa acto a certificar"></textarea>
+      </div>
+      <div class="button-area">
+        <button class="action-button" onclick="certificar()">⊢ CERTIFICAR</button>
+      </div>
+      <div class="output-area" id="certifica-output">
+        <div>Esperando acto a certificar...</div>
+      </div>
+    </div>
+    
+    <!-- PANEL 2: SELLA -->
+    <div class="panel">
+      <div class="panel-header">SELLA</div>
+      <div class="input-area">
+        <textarea class="input-textarea" id="sella-input" placeholder="Ingresa acto a sellar"></textarea>
+      </div>
+      <div class="button-area">
+        <button class="action-button" onclick="sellar()">⊣ SELLAR</button>
+      </div>
+      <div class="output-area" id="sella-output">
+        <div>Esperando acto a sellar...</div>
+      </div>
+    </div>
+    
+    <!-- PANEL 3: INMUTABILIZA -->
+    <div class="panel">
+      <div class="panel-header">INMUTABILIZA</div>
+      <div class="input-area">
+        <textarea class="input-textarea" id="inmutabiliza-input" placeholder="Hash o acto certificado"></textarea>
+      </div>
+      <div class="button-area">
+        <button class="action-button" onclick="inmutabilizar()">⊗ INMUTABILIZAR</button>
+      </div>
+      <div class="output-area" id="inmutabiliza-output">
+        <div>Esperando hash o acto certificado...</div>
+      </div>
+    </div>
+    
+  </div>
+</main>
+
+<!-- ══ FOOTER ══ -->
+<footer class="footer">
+  <div class="footer-section">
+    <span>Scalar S:</span>
+    <div class="scalar-bar">
+      <div class="scalar-progress" id="scalar-progress"></div>
+    </div>
+  </div>
+  <div class="footer-section">
+    <span>TX count: <span id="tx-count">0</span></span>
+  </div>
+  <div class="footer-section">
+    <div class="samu-status">
+      <span>SAMU @ status:</span>
+      <div class="samu-indicator"></div>
+      <span>◉ ACTIVO</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ══ FUNCIONES DE SIMULACIÓN ══
+let txCount = 0;
+let scalarValue = 0;
+
+function generarHash() {
+  const caracteres = 'abcdef0123456789';
+  let hash = '';
+  for (let i = 0; i < 64; i++) {
+    hash += caracteres.charAt(Math.floor(Math.random() * caracteres.length));
+  }
+  return hash;
+}
+
+function generarTimestamp() {
+  return new Date().toISOString();
+}
+
+function actualizarScalar() {
+  scalarValue = Math.min(1.0, scalarValue + 0.1);
+  const progressBar = document.getElementById('scalar-progress');
+  progressBar.style.width = (scalarValue * 100) + '%';
+}
+
+function actualizarTXCount() {
+  txCount++;
+  document.getElementById('tx-count').textContent = txCount;
+}
+
+// ══ FUNCIONES DE NOTARÍA ══
+function certificar() {
+  const input = document.getElementById('certifica-input');
+  const output = document.getElementById('certifica-output');
+  const texto = input.value.trim();
+  
+  if (!texto) {
+    output.innerHTML = '<div class="output-invalid">ERROR: Debe ingresar un acto</div>';
+    return;
+  }
+  
+  const hash = generarHash();
+  const timestamp = generarTimestamp();
+  
+  output.innerHTML = `
+    <div class="output-valid">VALID</div>
+    <div class="output-hash">Hash: ${hash}</div>
+    <div class="output-hash">Timestamp: ${timestamp}</div>
+    <div class="output-hash">Acto: ${texto.substring(0, 50)}${texto.length > 50 ? '...' : ''}</div>
+  `;
+  
+  actualizarScalar();
+  actualizarTXCount();
+}
+
+function sellar() {
+  const input = document.getElementById('sella-input');
+  const output = document.getElementById('sella-output');
+  const texto = input.value.trim();
+  
+  if (!texto) {
+    output.innerHTML = '<div class="output-invalid">ERROR: Debe ingresar un acto</div>';
+    return;
+  }
+  
+  const hash = generarHash();
+  const timestamp = generarTimestamp();
+  
+  output.innerHTML = `
+    <div class="output-valid">SELLADO</div>
+    <div class="output-hash">Hash: ${hash}</div>
+    <div class="output-hash">Timestamp: ${timestamp}</div>
+    <div class="output-hash">Acto: ${texto.substring(0, 50)}${texto.length > 50 ? '...' : ''}</div>
+  `;
+  
+  actualizarScalar();
+  actualizarTXCount();
+}
+
+function inmutabilizar() {
+  const input = document.getElementById('inmutabiliza-input');
+  const output = document.getElementById('inmutabiliza-output');
+  const texto = input.value.trim();
+  
+  if (!texto) {
+    output.innerHTML = '<div class="output-invalid">ERROR: Debe ingresar hash o acto certificado</div>';
+    return;
+  }
+  
+  const blockchainRef = generarHash();
+  const timestamp = generarTimestamp();
+  
+  output.innerHTML = `
+    <div class="output-valid">INMUTABLE</div>
+    <div class="output-hash">Blockchain Ref: ${blockchainRef}</div>
+    <div class="output-hash">Timestamp: ${timestamp}</div>
+    <div class="output-hash">Input: ${texto.substring(0, 50)}${texto.length > 50 ? '...' : ''}</div>
+  `;
+  
+  actualizarScalar();
+  actualizarTXCount();
+}
+
+// ══ INICIALIZACIÓN ══
+document.addEventListener('DOMContentLoaded', function() {
+  // Inicializar scalar con valor base
+  setTimeout(() => {
+    scalarValue = 0.5;
+    document.getElementById('scalar-progress').style.width = '50%';
+  }, 1000);
+});
+
+// ══ ATAJOS DE TECLADO ══
+document.addEventListener('keydown', function(e) {
+  if (e.ctrlKey || e.metaKey) {
+    switch(e.key) {
+      case '1':
+        e.preventDefault();
+        certificar();
+        break;
+      case '2':
+        e.preventDefault();
+        sellar();
+        break;
+      case '3':
+        e.preventDefault();
+        inmutabilizar();
+        break;
+    }
+  }
+});
+</script>
+
+</body>
+</html>

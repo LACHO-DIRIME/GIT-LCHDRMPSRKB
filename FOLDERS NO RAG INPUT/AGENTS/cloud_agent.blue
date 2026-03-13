@@ -36,4 +36,23 @@ kalil_conexion {
   CHALTEN :: cloud · lending · exchange
 }
 
+## NOTARIA_CLOUD
+notaria_certifica_cloud {
+  CRYPTO (spark seat) =><= .. certifica .. acto_notarial --[As de Guía] [term]
+  BOLIVAR blockchain =><= .. hashea .. acto_notarial + timestamp --[Nudo de Ocho] [term]
+  OUTPUT: certificado_valido + blockchain_hash
+}
+
+notaria_sella_cloud {
+  STACKING UF[H63] =><= .. sella .. acto_notarial_soberano --[NdO] [term]
+  CHALTEN exchange =><= .. registra .. post_notarizacion --[As de Guía] [term]
+  OUTPUT: acto_sellado + registro_blockchain
+}
+
+notaria_verifica_cloud {
+  NORA =><= .. evalua .. rating_partes_del_acto --[As de Guía] [term]
+  SAMU @ =><= .. audita .. scalar_verificacion --[Nudo Corredizo] [term]
+  CONDITION: scalar >= 0.90 → OUTPUT: VALID
+}
+
 [term] :: activo · [seal of secrecy] :: activo

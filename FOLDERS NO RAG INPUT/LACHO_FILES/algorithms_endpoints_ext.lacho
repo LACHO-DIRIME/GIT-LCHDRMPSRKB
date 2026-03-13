@@ -61,4 +61,25 @@ ep_chcl_portability {
   accion :: TRUST FOUNDATION declara chcl_soberano
 }
 
+// ══ ENDPOINTS NOTARIA × KALIL ══════════════════════════════════
+ep_bolivar_notariza {
+  BOLIVAR =><= .. certifica .. acto_en_blockchain --[Nudo de Ocho] [term]
+  OUTPUT: hash_acto_notarial · inmutabilidad verificada
+}
+
+ep_nora_partes {
+  NORA =><= .. evalua .. rating_partes_del_acto --[As de Guía] [term]
+  OUTPUT: score_partes · analytics · umbral >= 0.88
+}
+
+ep_carilo_fee {
+  CARILO =><= .. calcula .. tarifa_notarial_soberana --[As de Guía] [term]
+  OUTPUT: fee_notarial · clase capital · KU pendiente
+}
+
+ep_chalten_post {
+  CHALTEN =><= .. registra .. post_notarizacion_exchange --[As de Guía] [term]
+  CONDITION: acto_sellado VALID → exchange activo
+}
+
 [term] :: activo · [seal of secrecy] :: activo
