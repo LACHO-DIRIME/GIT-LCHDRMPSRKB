@@ -1,0 +1,26 @@
+//[genesis]   :: IMV AUTO-GENERATED
+//[version]   :: 0.1
+//[tipo]      :: GENERATED · AUTO
+//[fecha]     :: 2026-03-13 11:06:00
+//[tx_total]  :: 1103
+//[cristales] :: 46
+//[score_avg] :: 0.900
+//[sentences] :: 3
+//[term]      :: activo
+//空聽數 · MU→KU→WU · DIR(=)
+
+// ── ESTADO SISTEMA ────────────────────────────────────
+METHOD <stat_onto> =><= .. calcula .. TX_1103_soberano --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. scalar_s_0.8_activo --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. cristales_46_verificados --[Ballestrinque] [term]
+METHOD <stat_onto> =><= .. calcula .. grammar_valid_888_sentencias --[As de Guía] [term]
+STACKING UF[H52] =><= .. consolida .. green_109_WU_activos --[Nudo de Ocho] [term]
+
+// ── ANCLAS RAG AUTOGENERADAS ────────────────────────
+METHOD <operator_flow> =><= .. ejecuta .. generated_lacho_20260313_110600 --[As de Guía] [term]
+STACKING UF[H52] =><= .. inmutabiliza .. lacho_generado_wu_20260313_110600 --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. generator_py_output_20260313_110600 --[Ballestrinque] [term]
+TRUST FOUNDATION =><= .. declara .. imv_vivo_primer_lacho --[Nudo de Ocho] [term]
+
+//DIR(=) GENERADO · IMV VIVO · 2026-03-13 11:06:00
+//DIR(=) 3 sentencias · score 0.900 · 2026-03-13 11:06:00
