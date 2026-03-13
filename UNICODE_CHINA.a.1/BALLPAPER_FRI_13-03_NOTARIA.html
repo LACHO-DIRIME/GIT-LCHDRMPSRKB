@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BALLPAPER · $fri 13/03 · NOTARIA × KALIL FULL STACK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Share+Tech+Mono&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --white: #ffffff;
+            --black: #000000;
+            --green-wu: #00cc66;
+            --blue-ku: #3399ff;
+            --gold: #a07820;
+            --gray: #666666;
+            --light-gray: #f5f5f5;
+            --dim: rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            background: var(--white);
+            color: var(--black);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* MASTHEAD */
+        .masthead {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            align-items: center;
+            margin-bottom: 3rem;
+            padding: 1rem 0;
+            border-bottom: 2px solid var(--black);
+        }
+
+        .masthead-left {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+
+        .masthead-center {
+            text-align: center;
+        }
+
+        .masthead-title {
+            font-size: 42px;
+            font-weight: 700;
+            letter-spacing: 16px;
+            margin-bottom: 0.5rem;
+        }
+
+        .masthead-sub {
+            font-size: 1rem;
+            color: var(--gray);
+            font-style: italic;
+        }
+
+        .masthead-right {
+            text-align: right;
+            font-size: 3rem;
+            color: var(--green-wu);
+            transform: rotate(15deg);
+            font-weight: 700;
+        }
+
+        /* MÉTRICAS */
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-bottom: 3rem;
+            padding: 1.5rem;
+            background: var(--light-gray);
+            border-radius: 8px;
+            border: 1px solid var(--gray);
+        }
+
+        .metric {
+            text-align: center;
+            padding: 1rem;
+            background: var(--white);
+            border-radius: 4px;
+            border: 1px solid var(--gray);
+            font-family: 'Share Tech Mono', monospace;
+        }
+
+        .metric-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--green-wu);
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-label {
+            font-size: 0.8rem;
+            color: var(--gray);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* ENTREGABLES TABLE */
+        .entregables {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            letter-spacing: 4px;
+            border-bottom: 1px solid var(--gray);
+            padding-bottom: 0.5rem;
+        }
+
+        .entregables-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.9rem;
+        }
+
+        .entregables-table th,
+        .entregables-table td {
+            padding: 0.8rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--gray);
+        }
+
+        .entregables-table th {
+            background: var(--light-gray);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.8rem;
+        }
+
+        .entregables-table tr:hover {
+            background: var(--light-gray);
+        }
+
+        .status {
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .status-success {
+            background: var(--green-wu);
+            color: var(--white);
+        }
+
+        .file-info {
+            color: var(--gray);
+            font-size: 0.8rem;
+        }
+
+        /* NOTARIA SECTION */
+        .notaria-section {
+            background: var(--light-gray);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+            border: 1px solid var(--gray);
+        }
+
+        .notaria-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-align: center;
+            color: var(--green-wu);
+        }
+
+        .notaria-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .notaria-item {
+            background: var(--white);
+            padding: 1rem;
+            border-radius: 4px;
+            border: 1px solid var(--gray);
+        }
+
+        .notaria-item h4 {
+            color: var(--blue-ku);
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .notaria-item p {
+            font-size: 0.9rem;
+            color: var(--gray);
+            margin-bottom: 0.5rem;
+        }
+
+        /* FOOTER */
+        .footer {
+            border-top: 2px solid var(--black);
+            padding: 2rem 0;
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section {
+            text-align: center;
+        }
+
+        .footer-title {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--black);
+        }
+
+        .scalar-bar {
+            width: 100%;
+            height: 20px;
+            background: var(--light-gray);
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 0.5rem 0;
+            border: 1px solid var(--gray);
+        }
+
+        .scalar-fill {
+            height: 100%;
+            width: 78.9%;
+            background: linear-gradient(90deg, var(--green-wu), var(--blue-ku));
+            transition: width 2s ease;
+        }
+
+        .samu-status {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .samu-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--green-wu);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        .footer-note {
+            font-size: 0.8rem;
+            color: var(--gray);
+            font-style: italic;
+            margin-top: 1rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .masthead {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .masthead-right {
+                transform: none;
+                font-size: 2rem;
+            }
+
+            .entregables-table {
+                font-size: 0.8rem;
+            }
+
+            .entregables-table th,
+            .entregables-table td {
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- MASTHEAD -->
+        <header class="masthead">
+            <div class="masthead-left">
+                BALLPAPER<br>
+                $fri 13/03/2026<br>
+                Session 10
+            </div>
+            <div class="masthead-center">
+                <div class="masthead-title">NOTARIA × KALIL</div>
+                <div class="masthead-sub">FULL STACK SOVERANO</div>
+            </div>
+            <div class="masthead-right">✅</div>
+        </header>
+
+        <!-- MÉTRICAS -->
+        <section class="metrics">
+            <div class="metric">
+                <div class="metric-value">0.789</div>
+                <div class="metric-label">Scalar S</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">44/44</div>
+                <div class="metric-label">Tests ✅</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">15</div>
+                <div class="metric-label">Entregables</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">7</div>
+                <div class="metric-label">Layers</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">247</div>
+                <div class="metric-label">Líneas FS</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">H63</div>
+                <div class="metric-label">Hexagrama</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">100%</div>
+                <div class="metric-label">Cobertura</div>
+            </div>
+        </section>
+
+        <!-- ENTREGABLES -->
+        <section class="entregables">
+            <h2 class="section-title">ENTREGABLES NOTARIA KALIL</h2>
+            <table class="entregables-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Descripción</th>
+                        <th>Archivo</th>
+                        <th>Estado</th>
+                        <th>Detalles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>FRI_01</td>
+                        <td>UNICODE_PROGRAMS_KALIL_4_NEURONAS</td>
+                        <td>CORPUS/UNICODE PROGRAMS/</td>
+                        <td><span class="status status-success">✅</span></td>
+                        <td class="file-info">matrix 6×4 · 221 líneas</td>
+                    </tr>
+                    <tr>
+                        <td>FRI_02</td>
+                        <td>Nerve Cell KALIL</td>
+                        <td>FOLDERS NO RAG INPUT/ELPULSAR LOCAL/</td>
+                        <td><span class="status status-success">✅</span></td>
+                        <td class="file-info">6 neuronas · anclas RAG×4</td>
+                    </tr>
+                    <tr>
+                        <td>FRI_03</td>
+                        <td>cloud_agent.blue</td>
+                        <td>FOLDERS NO RAG INPUT/AGENTS/</td>
+                        <td><span class="status status-success">✅</span></td>
+                        <td class="file-info">sección notaria_cloud extendida</td>
+                    </tr>
+                    <tr>
+                        <td>FRI_04</td>
+                        <td>algorithms_endpoints</td>
+                        <td>FOLDERS NO RAG INPUT/LACHO_FILES/</td>
+                        <td><span class="status status-success">✅</span></td>
+                        <td class="file-info">4 endpoints NOTARIA×KALIL</td>
+                    </tr>
+                    <tr>
+                        <td>FRI_05</td>
+                        <td>NOTARIA_DIRIME.html</td>
+                        <td>CORPUS/</td>
+                        <td><span class="status status-success">✅</span></td>
+                        <td class="file-info">3 paneles · fondo blanco</td>
+                    </tr>
+                    <tr>
+                        <td>FRI_06</td>
+                        <td>UNICODE_PROGRAMS_ELPULSAR_KALIL</td>
+                        <td>CORPUS/UNICODE PROGRAMS/</td>
+                        <td><span class="status status-success">✅</span></td>
+                        <td class="file-info">4 secciones · 214 líneas</td>
+                    </tr>
+                    <tr>
+                        <td>FRI_07</td>
+                        <td>grammar.py</td>
+                        <td>IMV/core/</td>
+                        <td><span class="status status-success">✅</span></td>
+                        <td class="file-info">gate_sequence_notaria H3→H5→H56→H6</td>
+                    </tr>
+                    <tr>
+                        <td>FRI_08</td>
+                        <td>taxonomy.py</td>
+                        <td>IMV/core/</td>
+                        <td><span class="status status-success">✅</span></td>
+                        <td class="file-info">N0→N4 · is_notaria_valid · is_certifica_valid</td>
+                    </tr>
+                    <tr>
+                        <td>FRI_09</td>
+                        <td>Nerve Cell BOLIVAR</td>
+                        <td>FOLDERS NO RAG INPUT/ELPULSAR LOCAL/</td>
+                        <td><span class="status status-success">✅</span></td>
+                        <td class="file-info">blockchain · 5 neuronas</td>
+                    </tr>
+                    <tr>
+                        <td>FRI_10</td>
+                        <td>MU-STORE db</td>
+                        <td>FOLDERS NO RAG INPUT/ELPULSAR LOCAL/</td>
+                        <td><span class="status status-success">✅</span></td>
+                        <td class="file-info">5 registros H63/H05/H56</td>
+                    </tr>
+                    <tr>
+                        <td>FRI_11</td>
+                        <td>CIRCUIT_NOTARIA.html</td>
+                        <td>CORPUS/</td>
+                        <td><span class="status status-success">✅</span></td>
+                        <td class="file-info">circuito ⊢─⌀─●─⊣─⏺─⊗</td>
+                    </tr>
+                    <tr>
+                        <td>FRI_12</td>
+                        <td>macro_components</td>
+                        <td>FOLDERS NO RAG INPUT/LACHO_FILES/</td>
+                        <td><span class="status status-success">✅</span></td>
+                        <td class="file-info">componente_notaria append</td>
+                    </tr>
+                    <tr>
+                        <td>FRI_13</td>
+                        <td>44/44 tests</td>
+                        <td>IMV/tests/</td>
+                        <td><span class="status status-success">✅</span></td>
+                        <td class="file-info">10 tests NOTARIA verdes</td>
+                    </tr>
+                    <tr>
+                        <td>FRI_14</td>
+                        <td>UNICODE FULL STACK</td>
+                        <td>CORPUS/UNICODE PROGRAMS/</td>
+                        <td><span class="status status-success">✅</span></td>
+                        <td class="file-info">7 layers · 247 líneas</td>
+                    </tr>
+                    <tr>
+                        <td>FRI_15</td>
+                        <td>BALLPAPER $fri</td>
+                        <td>UNICODE_CHINA.a.1/</td>
+                        <td><span class="status status-success">✅</span></td>
+                        <td class="file-info">este archivo</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- NOTARIA SECTION -->
+        <section class="notaria-section">
+            <h2 class="notaria-title">NOTARIA FULL STACK KALIL</h2>
+            <div class="notaria-grid">
+                <div class="notaria-item">
+                    <h4>LAYER 1: GRAMMAR</h4>
+                    <p>Validación sintáctica LACHO</p>
+                    <p>HEADCAT neuronal · filtro inicial</p>
+                    <p><strong>H01 · CHIEN</strong></p>
+                </div>
+                <div class="notaria-item">
+                    <h4>LAYER 2: RAG</h4>
+                    <p>Contexto doctrinal notarial</p>
+                    <p>ELPULSAR neural · conocimiento</p>
+                    <p><strong>H52 · MOUNT</strong></p>
+                </div>
+                <div class="notaria-item">
+                    <h4>LAYER 3: SAMU</h4>
+                    <p>Auditoría y presidencia</p>
+                    <p>CHAIR_CEO autoridad</p>
+                    <p><strong>H32 · HENG</strong></p>
+                </div>
+                <div class="notaria-item">
+                    <h4>LAYER 4: LEDGER</h4>
+                    <p>Cristalización blockchain</p>
+                    <p>HOUSE_DRONE storage</p>
+                    <p><strong>H33 · RETREAT</strong></p>
+                </div>
+                <div class="notaria-item">
+                    <h4>LAYER 5: ELPULSAR</h4>
+                    <p>Dashboard notarial</p>
+                    <p>Visualización completa</p>
+                    <p><strong>H30 · CLING</strong></p>
+                </div>
+                <div class="notaria-item">
+                    <h4>LAYER 6: KALIL</h4>
+                    <p>BOLIVAR+NORA+CARILO</p>
+                    <p>Red económica completa</p>
+                    <p><strong>H06 · CONFLICT</strong></p>
+                </div>
+                <div class="notaria-item">
+                    <h4>LAYER 7: NOTARIA</h4>
+                    <p>Certifica+sella+inmutabiliza</p>
+                    <p>H63 既濟 consumación</p>
+                    <p><strong>H63 · COMPLETE</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-title">Scalar S</div>
+                    <div class="scalar-bar">
+                        <div class="scalar-fill"></div>
+                    </div>
+                    <div>0.789 / 1.000</div>
+                </div>
+                <div class="footer-section">
+                    <div class="footer-title">Transacción</div>
+                    <div>$fri 13/03</div>
+                </div>
+                <div class="footer-section">
+                    <div class="footer-title">SAMU Status</div>
+                    <div class="samu-status">
+                        <div class="samu-indicator"></div>
+                        <span>◉ ACTIVO</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-note">
+                DIRIME IMV · NOTARIA KALIL FULL STACK · Sesión 10 · 2026-03-13 · Todos los derechos soberanos reservados
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Animación de carga del scalar
+        document.addEventListener('DOMContentLoaded', function() {
+            const scalarFill = document.querySelector('.scalar-fill');
+            setTimeout(() => {
+                scalarFill.style.width = '78.9%';
+            }, 500);
+        });
+    </script>
+</body>
+</html>
