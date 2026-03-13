@@ -14,7 +14,10 @@ import re
 import unicodedata
 from dataclasses import dataclass, field
 from enum import Enum
-from typing import Optional
+from typing import Optional, Dict, List, Tuple, Union
+
+# Import taxonomy for notarial classification
+from .taxonomy import TaxonomyLACHO, classify_scalar, is_notaria_allowed, is_certifica_allowed
 
 from .foundation import (
     SovereignError,
@@ -251,7 +254,7 @@ PARADIGM_RULES = {
     "STACKING": {
         "mode": "orientado a objetos",
         "familia_real": ["H01","H02","H29","H30","H51","H52","H57","H58"],
-        "extensiones": ["H04","H23","H48"],
+        "extensiones": ["H04","H23","H48","H63"],
         "note": "familia real I Ching BASE/CENTER/TOP + extensiones"
     },
 }
@@ -267,7 +270,7 @@ VERBOS_NATURALES = {
     "CRYPTO":   ["autoriza", "certifica", "protege", "firma", "conecta"],
     "SOCIAL":   ["lanza", "recibe", "filtra", "distribuye", "registra"],
     "GATE":     ["suspende", "transita", "resuelve", "filtra", "permite", "espera"],
-    "STACKING": ["cristaliza", "inmutabiliza", "preserva", "archiva"],
+    "STACKING": ["cristaliza", "inmutabiliza", "preserva", "archiva", "sella"],
     "METHOD":   ["define", "formaliza", "opera", "calcula", "estructura"],
 }
 
@@ -370,6 +373,26 @@ def normalize_verb(verb: str) -> tuple[str, bool]:
         return normalized, True
     return verb, False
 
+
+
+# ── GATE SEQUENCE NOTARIAL ───────────────────────────────────────
+def gate_sequence_notaria(state: str) -> str:
+    """Mapea secuencia de estados GATE para flujo notarial.
+    
+    Secuencia notarial:
+    H03 → H05  (espera partes)
+    H05 → H56  (contiene → viajero=acto)
+    H56 → H06  (acto en tránsito → conflicto resuelto)
+    H06 → H63  (resolución → consumación notarial)
+    """
+    sequence_map = {
+        "H03": "H05",  # espera partes
+        "H05": "H56",  # contiene → viajero=acto
+        "H56": "H06",  # acto en tránsito → conflicto resuelto
+        "H06": "H63",  # resolución → consumación notarial
+        "H63": "H63",  # estado final notarial
+    }
+    return sequence_map.get(state, state)
 
 
 # SCHEDULER-OS (SOCIAL_SCHEDULER-OS): estados H1→H5→H56→H6
