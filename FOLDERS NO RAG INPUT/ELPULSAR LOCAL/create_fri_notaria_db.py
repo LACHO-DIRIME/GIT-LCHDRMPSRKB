@@ -24,7 +24,7 @@ def create_fri_notaria_db():
     conn = sqlite3.connect(str(db_path))
     cursor = conn.cursor()
     
-    # Crear tabla transactions (schema soberano)
+    # Crear tabla transactions (schema existente)
     cursor.execute("""
         CREATE TABLE transactions (
             id TEXT PRIMARY KEY,
@@ -37,32 +37,33 @@ def create_fri_notaria_db():
         )
     """)
     
-    # Crear tabla mu_store (schema soberano)
+    # Crear tabla mu_store (schema existente)
     cursor.execute("""
         CREATE TABLE mu_store (
-            id TEXT PRIMARY KEY,
+            id INTEGER PRIMARY KEY,
             hexagrama TEXT NOT NULL,
-            clave TEXT NOT NULL,
-            tipo TEXT NOT NULL,
-            scalar REAL NOT NULL,
-            estado TEXT NOT NULL,
-            descripcion TEXT NOT NULL,
-            ancla_rag TEXT
+            verbo TEXT NOT NULL,
+            biblioteca TEXT NOT NULL,
+            scalar_threshold REAL DEFAULT 0.88,
+            estado TEXT DEFAULT 'KU',
+            descripcion TEXT,
+            ancla_rag TEXT,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         )
     """)
     
     # Insertar registros mu_store para NOTARIA KALIL
     mu_store_data = [
-        ('ms001', 'H63', 'BOLIVAR_HASH',  'CRYPTO',   0.93, 'WU', 'hash acto en blockchain',      'BOLIVAR =><= .. hashea .. acto_notarial --[Nudo de Ocho] [term]'),
-        ('ms002', 'H63', 'NORA_PARTES',   'METHOD',   0.88, 'WU', 'rating partes del acto',       'NORA =><= .. evalua .. rating_partes --[As de Guía] [term]'),
-        ('ms003', 'H63', 'CARILO_FEE',    'METHOD',   0.85, 'KU', 'tarifa notarial pendiente',     'CARILO =><= .. calcula .. tarifa_notarial --[As de Guía] [term]'),
-        ('ms004', 'H05', 'GATE_ACTO',     'GATE',     0.85, 'KU', 'espera partes reunidas',        'GATE UF[H05] =><= .. contiene .. partes_reunidas --[Ballestrinque] [term]'),
-        ('ms005', 'H56', 'VIAJERO_ACTO',  'ACTIVITY', 0.82, 'KU', 'acto en tránsito',              'ACTIVITY UF[H56] =><= .. penetra .. acto_en_transito --[As de Guía] [term]')
+        (None, 'H63', 'hash', 'CRYPTO', 0.93, 'WU', 'hash acto en blockchain', 'BOLIVAR =><= .. hashea .. acto_notarial --[Nudo de Ocho] [term]'),
+        (None, 'H63', 'evalua', 'METHOD', 0.88, 'WU', 'rating partes del acto', 'NORA =><= .. evalua .. rating_partes --[As de Guía] [term]'),
+        (None, 'H63', 'calcula', 'METHOD', 0.85, 'KU', 'tarifa notarial pendiente', 'CARILO =><= .. calcula .. tarifa_notarial --[As de Guía] [term]'),
+        (None, 'H05', 'contiene', 'GATE', 0.85, 'KU', 'espera partes reunidas', 'GATE UF[H05] =><= .. contiene .. partes_reunidas --[Ballestrinque] [term]'),
+        (None, 'H56', 'penetra', 'ACTIVITY', 0.82, 'KU', 'acto en tránsito', 'ACTIVITY UF[H56] =><= .. penetra .. acto_en_transito --[As de Guía] [term]')
     ]
     
     cursor.executemany("""
         INSERT INTO mu_store (
-            id, hexagrama, clave, tipo, scalar, estado, descripcion, ancla_rag
+            id, hexagrama, verbo, biblioteca, scalar_threshold, estado, descripcion, ancla_rag
         ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
     """, mu_store_data)
     
