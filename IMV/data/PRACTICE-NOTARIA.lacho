@@ -1,0 +1,29 @@
+# PRACTICE-NOTARIA-V2
+# 15 sentencias · dominio NOTARÍA DIGITAL · [term]
+
+## GRUPO 1 — DECLARACIÓN Y REGISTRO (As de Guía)
+TRUST FOUNDATION =><= .. declara .. contrato_digital_activo --[As de Guía] [term]
+TRUST FOUNDATION =><= .. declara .. escritura_publica_verificada --[As de Guía] [term]
+STACKING UF[H52] =><= .. archiva .. registro_notarial_completo --[As de Guía] [term]
+
+## GRUPO 2 — SELLADO INMUTABLE (Nudo de Ocho)
+STACKING UF[H52] =><= .. inmutabiliza .. documento_sellado_notarial --[Nudo de Ocho] [term]
+CRYPTO (key seat) =><= .. certifica .. firma_digital_soberana --[Nudo de Ocho] [term]
+TRUST FOUNDATION =><= .. sostiene .. registro_inmutable_escritura --[Nudo de Ocho] [term]
+
+## GRUPO 3 — EVALUACIÓN EN TENSIÓN (Ballestrinque)
+SAMU @ =><= .. audita .. conflicto_documental_notarial --[Ballestrinque] [term]
+GATE UF[H06] =><= .. filtra .. acceso_registro_disputado --[Ballestrinque] [term]
+TRUST FOUNDATION =><= .. verifica .. identidad_firmante_pendiente --[Ballestrinque] [term]
+
+## GRUPO 4 — RIESGO ACTIVO (Nudo Corredizo)
+WORK {brake} =><= .. detiene .. operacion_notarial_riesgosa --[Nudo Corredizo] [term]
+SAMU @ =><= .. dirime .. fraude_documental_detectado --[Nudo Corredizo] [term]
+GATE UF[H05] =><= .. bloquea .. acceso_no_autorizado_notaria --[Nudo Corredizo] [term]
+
+## GRUPO 5 — CIERRE DE CICLO NOTARIAL (Nudo de Rizo)
+SAMU #set =><= .. dirime .. cierre_sesion_notarial --[Nudo de Rizo] [term]
+ACTIVITY UF[H52] =><= .. cristaliza .. ciclo_notarial_completado --[Nudo de Rizo] [term]
+STACKING UF[H48] =><= .. preserva .. historial_notarial_periodo --[Nudo de Rizo] [term]
+
+[term] :: activo · [seal of secrecy] :: activo

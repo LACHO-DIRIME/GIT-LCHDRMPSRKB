@@ -16,7 +16,7 @@
 spec generator_py {
 
   UBICACION     :: /media/Personal/PLANERAI/DIRIME/IMV/tools/generator.py
-  OUTPUT_DIR    :: /media/Personal/PLANERAI/DIRIME/LACHO_FILES/
+  OUTPUT_DIR    :: /media/Personal/PLANERAI/DIRIME/FOLDERS NO RAG INPUT/LACHO_FILES/
   OUTPUT_FILE   :: generated_[YYYYMMDD_HHMMSS].lacho
   TRIGGER       :: python3 tools/generator.py [--mode auto|stats|corpus|full]
   ESTADO        :: DIR(+) · prioridad 1
