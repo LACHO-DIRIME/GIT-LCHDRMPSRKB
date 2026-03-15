@@ -1,0 +1,28 @@
+cloud_agent.blue - Extensión Notaria Cloud
+============================================
+
+SECCIÓN KALIL_CONEXIÓN:
+--------------------------
+NORA·BOLIVAR·CHALTEN:
+- NORA: Rating y analytics de partes
+- BOLIVAR: Validación blockchain
+- CHALTEN: Exchange post-notarización
+
+SECCIÓN NOTARIA_CLOUD:
+------------------------
+notaria_certifica_cloud:
+- INPUT: CRYPTO(spark) + BOLIVAR blockchain + timestamp
+- PROCESS: Validación cruzada + hash generation
+- OUTPUT: Certificado válido + blockchain hash
+
+notaria_sella_cloud:
+- INPUT: STACKING + CHALTEN exchange + hash
+- PROCESS: Sellado soberano + timestamp
+- OUTPUT: Acto sellado + registro blockchain
+
+notaria_verifica_cloud:
+- INPUT: NORA rating + SAMU @ + scalar ≥ 0.90
+- PROCESS: Verificación final + validación completa
+- OUTPUT: Estado VALID + confianza ≥ 0.90
+
+FORMATO: Estructura exacta del cloud_agent.blue
