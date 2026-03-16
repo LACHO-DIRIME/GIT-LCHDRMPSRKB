@@ -25,9 +25,9 @@ GITHUB:   main · commit cierre $mon pendiente
 RAG:      258 CORPUS · 4 THEATER · 3 RUNNER · 2 AGENT
 
 ## PRIORIDADES $tue 17-03
-  [1] IMV/core/ballpaper.py — COMPLETADO HOY ✅ · tests 44/44
-  [2] /api/notaria/* 5 endpoints en elpulsar.py — verificar integración con ballpaper
-  [3] tools/autoresearch_specs.py (S2.2) — pendiente
+  [1] ballpaper.py — COMPLETADO ✅ commit c80097d
+  [2] /api/notaria/* endpoints — verificar con ballpaper integrado
+  [3] tools/autoresearch_specs.py (S2.2)
 
 ## CONTEXTO TÉCNICO
   NOTARIA:     grammar H63+sella · taxonomy N0-N4 · pipeline 44/44
