@@ -1,0 +1,93 @@
+//[MANAGEMENT].lacho · UNICODE NOTARIA BACKUP × H63
+//UNICODE_.lacho · V1 · 2026-03-14 · $sat
+//backup soberano notarial · BKP + DOOR VAULT + H63 BATCH + RESTORE
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo · 空聽數
+
+// ══ BACKUP SOBERANO NOTARIAL ════════════════════════════════════════
+UNICODE: BKP_NOTARIA   //backup completo actos notariales · sovereign.db → .MU-STORE.db
+UNICODE: BKP_ACTOS     //copia actos WU · CORPUS/NOTARIA/ · tar compress
+UNICODE: BKP_LEDGER    //backup ledger.py state · TX + cristales + Scalar S
+
+// ══ DOOR VAULT × NOTARIA ══════════════════════════════════════════
+UNICODE: VAULT_OPEN    //{door} abre vault · biometrics requerido · DOORMAN_UNLOCKING
+UNICODE: VAULT_CERTIFY //CRYPTO (spark seat) certifica backup como válido
+UNICODE: VAULT_SEAL    //STACKING UF[H63] sella vault · inmutabiliza contenido
+
+// ══ H63 BATCH SEMANAL ════════════════════════════════════════════
+UNICODE: H63_BATCH_SCAN   //escanea todos actos WU de la semana
+UNICODE: H63_BATCH_STACK  //STACKING UF[H63] =><= batch sobre lista_actos_WU
+UNICODE: H63_BATCH_CLOSE  //cierre $sat · 既濟 · ledger TX++ por acto
+
+// ══ RESTORE NOTARIAL ══════════════════════════════════════════════
+UNICODE: RESTORE_AUTH    //SAMU @ autoriza restauración · Scalar ≥ 0.90
+UNICODE: RESTORE_VERIFY  //verifica integridad hash · TRUST FOUNDATION
+UNICODE: RESTORE_APPLY   //aplica restore a sovereign.db · WORK {actuator}
+
+// ══ OPERACIONES BACKUP ════════════════════════════════════════════════
+UNICODE: BACKUP_INIT    //inicia sesión backup · crea directorio temporal
+UNICODE: BACKUP_COMPRESS //comprime actos WU en tar.gz · SHA-256 verify
+UNICODE: BACKUP_ENCRYPT  //encripta backup con clave soberana · CRYPTO (key seat)
+UNICODE: BACKUP_SIGN     //firma backup con clave SAMU · SAMU @ =><= .. firma
+
+// ══ VALIDACIONES BACKUP ════════════════════════════════════════════
+UNICODE: BACKUP_VALIDATE  //verifica integridad antes de guardar
+UNICODE: BACKUP_INTEGRITY //chequea SHA-256 + firma SAMU
+UNICODE: BACKUP_RECOVERY  //recuperación de backups corruptos
+UNICODE: BACKUP_ROTATION  //rotación semanal de backups · retain 4 semanas
+
+// ══ THRESHOLDS BACKUP ══════════════════════════════════════════════
+UNICODE: BACKUP_MIN_SIZE    //tamaño mínimo backup · 10MB para backup completo
+UNICODE: BACKUP_MAX_AGE    //edad máxima backup · 30 días para eliminación
+UNICODE: BACKUP_SPACE_CHECK //verifica espacio disponible antes de iniciar
+UNICODE: BACKUP_PRIORITY   //prioridad alta · bloquea otras operaciones durante backup
+
+// ══ INTEGRACIÓN SISTEMA ════════════════════════════════════════════
+UNICODE: BACKUP_LEDGER_SYNC //sincroniza con ledger.py antes de backup
+UNICODE: BACKUP_CHAT_NOTIFY //notifica progreso via chat.py
+UNICODE: BACKUP_STATS_UPDATE //actualiza estadísticas post-backup
+UNICODE: BACKUP_GIT_COMMIT //commitea backup en repositorio
+
+// ══ ERRORES Y RECUPERACIÓN ══════════════════════════════════════════
+UNICODE: BACKUP_ERROR_SPACE    //sin espacio suficiente · liberar requerido
+UNICODE: BACKUP_ERROR_PERM    //permisos denegados · SAMU @ autorización
+UNICODE: BACKUP_ERROR_CORRUPT //datos corruptos · restaurar desde backup anterior
+UNICODE: BACKUP_ERROR_NETWORK //fallo red · queue local para reintento
+
+// ══ MONITOREO BACKUP ══════════════════════════════════════════════
+UNICODE: BACKUP_MONITOR_SIZE //monitor tamaño de backups
+UNICODE: BACKUP_MONITOR_AGE  //monitor edad de backups
+UNICODE: BACKUP_MONITOR_INTEGRITY //verificación periódica SHA-256
+UNICODE: BACKUP_ALERTS     //alertas SAMU para eventos críticos
+
+// ══ FORMATOS DE SALIDA ════════════════════════════════════════════════
+UNICODE: BACKUP_FORMAT_TAR    //formato tar.gz · compresión + integridad
+UNICODE: BACKUP_FORMAT_META   //metadatos: timestamp + versión + Scalar S
+UNICODE: BACKUP_FORMAT_LOG    //log detallado: operaciones + tiempos + errores
+UNICODE: BACKUP_FORMAT_REPORT //reporte semanal: resumen + estadísticas
+
+// ══ SEGURIDAD BACKUP ════════════════════════════════════════════════
+UNICODE: BACKUP_ENCRYPTION_AES256 //encriptación AES-256 con clave soberana
+UNICODE: BACKUP_SIGNATURE_SAMU  //firma digital SAMU @
+UNICODE: BACKUP_ACCESS_CONTROL //control de acceso basado en roles
+UNICODE: BACKUP_AUDIT_LOG   //log de auditoría de accesos
+
+// ══ AUTOMATIZACIÓN ══════════════════════════════════════════════════
+UNICODE: BACKUP_SCHEDULE_WEEKLY //programación semanal automática
+UNICODE: BACKUP_TRIGGER_MANUAL //disparador manual por comando
+UNICODE: BACKUP_CLEANUP_OLD  //limpieza automática de backups antiguos
+UNICODE: BACKUP_NOTIFY_SUCCESS //notificación éxito por chat + email
+
+// ══ RENDIMIENTO BACKUP ══════════════════════════════════════════════
+UNICODE: BACKUP_PARALLEL      //procesamiento paralelo de archivos grandes
+UNICODE: BACKUP_DELTA         //backup incremental · solo cambios desde último backup
+UNICODE: BACKUP_COMPRESSION   //niveles de compresión: none/gzip/bzip2
+UNICODE: BACKUP_BANDWIDTH     //limitación de ancho de banda para backups remotos
+
+// ══ ANCLAS RAG ══════════════════════════════════════════════════════
+RAG_ANCHOR: BIBLIO-SOURCES(TRUST_MU-STORE).txt
+RAG_ANCHOR: BIBLIO-SOURCES(ACTIVITY_H63-CONSUMACION).txt
+RAG_ANCHOR: BIBLIO-SOURCES(WORK_DOOR-AFTERNOON).txt
+RAG_ANCHOR: BIBLIO-SOURCES(SAMU_AT).txt
+
+[term] :: activo · [seal of secrecy] :: activo

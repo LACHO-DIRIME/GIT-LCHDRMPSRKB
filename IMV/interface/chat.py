@@ -285,7 +285,7 @@ BIBLIOTECAS Y SUJETOS VÁLIDOS:
   SAMU     → @ #rise #set
   ACTIVITY → UF[H01] UF[H29] UF[H30] UF[H51] UF[H52] UF[H57]
   GATE     → UF[H05] UF[H56] UF[H06]
-  STACKING → UF[H02] UF[H04] UF[H23] UF[H48] UF[H52]
+  STACKING → UF[H02] UF[H04] UF[H23] UF[H48] UF[H52] UF[H63]
   SOCIAL   → {launch-bot} {chair} {scheduler} {drip} {relay} {masking}
   METHOD   → <equation> <if> <operator_flow> <stat_onto> <psi_spin>
 
@@ -296,7 +296,7 @@ VERBOS CANÓNICOS POR BIBLIOTECA:
   SAMU     → dirime / audita / modera / registra / activa
   ACTIVITY → penetra / emerge / completa / inicia / transita
   GATE     → bloquea / abre / filtra / contiene / permite
-  STACKING → cristaliza / inmutabiliza / preserva / archiva
+  STACKING → cristaliza / inmutabiliza / preserva / archiva / sella
   SOCIAL   → lanza / planifica / conecta / transmite / enmascara
   METHOD   → define / formaliza / opera / calcula / estructura
 
@@ -354,6 +354,24 @@ Output: STACKING UF[H52] =><= .. inmutabiliza .. cristal_verificado --[Nudo de O
 
 Input: lanzar bot de mercado para memecoins
 Output: SOCIAL {launch-bot} =><= .. lanza .. bot_memecoins --[As de Guía] [term]
+
+Input: evaluar estrategia bajo tensión activa
+Output: CRYPTO (spark seat) =><= .. certifica .. estrategia_tension --[Ballestrinque] [term]
+
+Input: certificar acto notarial
+Output: CRYPTO (spark seat) =><= .. certifica .. acto_notarial --[As de Guía] [term]
+
+Input: sellar documento soberano
+Output: STACKING UF[H63] =><= .. sella .. documento_soberano --[Nudo de Ocho] [term]
+
+Input: esperar reunión de partes
+Output: GATE UF[H05] =><= .. espera .. partes_reunidas --[Ballestrinque] [term]
+
+Input: declarar acto ante notario
+Output: TRUST [command] =><= .. declara .. acto_notarial --[As de Guía] [term]
+
+Input: registrar hash en blockchain notarial
+Output: STACKING UF[H63] =><= .. inmutabiliza .. hash_notarial --[Nudo de Ocho] [term]
 
 Input: evaluar estrategia bajo tensión activa
 Output: SAMU @ =><= .. dirime .. estrategia_activa --[Ballestrinque] [term]"""
@@ -423,9 +441,10 @@ Output: SAMU @ =><= .. dirime .. estrategia_activa --[Ballestrinque] [term]"""
             if not any(model in m for m in models):
                 return None
 
+            system_prompt_ollama = "Traducí a gramática LACHO: BIBLIOTECA SUJETO =><= .. verbo .. objeto --[Nudo] [term]. Solo la sentencia, sin explicación."
             response = httpx.post(
                 f"{host}/api/generate",
-                json={"model": model, "prompt": self.system_prompt + "\n\nInput: " + natural_text,
+                json={"model": model, "prompt": system_prompt_ollama + "\n\nInput: " + natural_text,
                       "stream": False},
                 timeout=30.0
             )
@@ -817,6 +836,31 @@ def ballpaper_render(state: dict) -> str:
     )
 
 
+def ballpaper_render_notaria(acto: str, resultado_samu: str, scalar_s: float) -> str:
+    """
+    Render notarial soberano · extensión de ballpaper_render()
+    Invoca desde: /api/notaria/certifica · /api/notaria/sella
+    Scalar S threshold: 0.90 para H63 · 0.78 para WU
+    """
+    WIDTH = 46
+    bar_len = 20
+    filled = int(scalar_s * bar_len)
+    bar = "█" * filled + "░" * (bar_len - filled)
+    pct = int(scalar_s * 100)
+    estado = "H63 既濟" if scalar_s >= 0.90 else "WU válido" if scalar_s >= 0.78 else "KU pendiente"
+    nudo = "Nudo de Ocho" if scalar_s >= 0.90 else "As de Guía"
+    
+    lines = [
+        "┌─ NOTARIA BALLPAPER " + "─" * (WIDTH - 20) + "┐",
+        f"│ ACTO: {acto[:WIDTH-8]:<{WIDTH-8}} │",
+        f"│ SAMU: {resultado_samu[:12]} · S={scalar_s:.2f} · {estado:<10} │",
+        f"│ {bar} {pct}%{' ' * (WIDTH - bar_len - 6)} │",
+        f"│ STACKING UF[H63] :: {nudo} [term]{' ' * (WIDTH - 37)} │",
+        "└" + "─" * (WIDTH + 2) + "┘",
+    ]
+    return "\n".join(lines)
+
+
 def chat(user_input: str) -> ChatMessage:
     """API pública soberana del chat."""
     return _sovereign_chat.process_message(user_input)
@@ -851,3 +895,37 @@ if __name__ == "__main__":
     summary = get_summary()
     print(f"\n📊 Resumen de sesión: {summary}")
     print("═" * 60)
+
+# Test inmediato — ejecutar tras guardar:
+if __name__ == "__main__":
+    # Test original
+    print("═" * 60)
+    print("DIRIME IMV — Chat AI Soberano")
+    print("═" * 60)
+    
+    test_inputs = [
+        "help",
+        "verificar el sistema",
+        "TRUST FOUNDATION =><= .. verifica .. scope_activo --[As de Guía] [term]",
+        "stats",
+        "status",
+    ]
+    
+    for user_input in test_inputs:
+        print(f"\n👤 Usuario: {user_input}")
+        message = chat(user_input)
+        print(f"⏱️  Tiempo: {message.processing_time_ms}ms")
+        print(f"✅ Verificado: {message.sovereign_verified}")
+        print(f"🤖 Respuesta:\n{message.response_content}")
+        print("-" * 40)
+    
+    # Test ballpaper_render_notaria
+    print("\n" + "=" * 50)
+    print("TEST NOTARIA BALLPAPER RENDER")
+    print("=" * 50)
+    print(ballpaper_render_notaria(
+        acto="certifica documento_X",
+        resultado_samu="VALID",
+        scalar_s=0.92
+    ))
+    print("=" * 50)
