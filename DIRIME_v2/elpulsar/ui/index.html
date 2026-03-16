@@ -121,6 +121,7 @@ select:focus,input:focus{border-color:var(--gold);outline:none}
   <button class="btn active" onclick="toggleP('k')">KEY</button>
   <button class="btn active" id="bt" onclick="showTable()">TABLE</button>
   <button class="btn" id="bg" onclick="showGraph()">RED</button>
+  <button class="btn" onclick="showTab('notaria')">⊗ NOTARIA</button>
   <button class="btn active" onclick="toggleP('p')">PAPER</button>
   <button class="btn" onclick="toggleAdd()">+ REC</button>
   <span class="hsep">·</span>
@@ -257,6 +258,30 @@ select:focus,input:focus{border-color:var(--gold);outline:none}
   </div>
 </main>
 
+<div id="tab-notaria" class="tab-content" style="display:none">
+  <h3 style="font-family:monospace;color:#533483">⊗ NOTARIA H63 · ACTOS</h3>
+
+  <div id="notaria-scalar" style="font-family:monospace;font-size:13px;margin:8px 0">
+    Scalar S: <span id="notaria-s-val">0.773</span>
+    <span id="notaria-estado" style="margin-left:8px">WU válido ⚡</span>
+  </div>
+
+  <div id="notaria-actos" style="margin:10px 0">
+    <div style="font-family:monospace;font-size:12px;color:#666">
+      actos hoy: <span id="notaria-count">0</span> ·
+      H63 sellados: <span id="notaria-h63">0</span>
+    </div>
+  </div>
+
+  <div id="notaria-endpoints" style="font-family:monospace;font-size:11px;
+       background:#F3E8FF;border:1px solid #533483;padding:8px;margin:8px 0">
+    GET  /api/notaria/status<br>
+    POST /api/notaria/certifica<br>
+    POST /api/notaria/sella<br>
+    GET  /api/notaria/archivo
+  </div>
+</div>
+
 <div id="status">
   <span id="stl">ELPULSAR · iniciando</span>
   <span style="color:var(--mist)" id="str">空聽數</span>
@@ -385,6 +410,28 @@ async function showGraph(){
   })
 }
 function showTable(){document.getElementById("gp").classList.remove("vis");document.getElementById("bt").classList.add("active");document.getElementById("bg").classList.remove("active")}
+function showTab(tab){
+  // Ocultar todas las vistas principales
+  document.getElementById("gp").classList.remove("vis")
+  document.getElementById("bt").classList.remove("active")
+  document.getElementById("bg").classList.remove("active")
+  
+  // Ocultar todos los tabs
+  document.querySelectorAll(".tab-content").forEach(t=>t.style.display="none")
+  
+  // Mostrar tab solicitado
+  if(tab==="notaria"){
+    document.getElementById("tab-notaria").style.display="block"
+    // Cargar datos de notaria
+    fetch('/api/notaria/status')
+      .then(r => r.json())
+      .then(d => {
+        document.getElementById('notaria-s-val').textContent = d.scalar || '0.773';
+        document.getElementById('notaria-count').textContent = d.actos_hoy || '0';
+        document.getElementById('notaria-h63').textContent = d.h63_count || '0';
+      }).catch(() => {});  // silencioso si endpoint no existe aún
+  }
+}
 
 // BUILDER
 function selLib(el){

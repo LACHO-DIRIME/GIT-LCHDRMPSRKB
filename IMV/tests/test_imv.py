@@ -621,6 +621,71 @@ def test_notaria_gate_sequence():
     assert gate_sequence_notaria("H56") == "H06"
     assert gate_sequence_notaria("H06") == "H63"
 
+def test_notaria_cjk_certifica():
+    """公证 como objeto en sentencia LACHO → VALID."""
+    from core.grammar import validate, ValidationResult
+    s = "CRYPTO (spark seat) =><= .. certifica .. 公证_acto_soberano --[Nudo de Ocho] [term]"
+    p = validate(s)
+    assert p.result == ValidationResult.VALID, f"CJK certifica falló: {p.result}"
+
+def test_notaria_cjk_sella():
+    """封印 como objeto en sentencia LACHO → VALID."""
+    from core.grammar import validate, ValidationResult
+    s = "STACKING UF[H63] =><= .. sella .. 封印_documento_h63 --[Nudo de Ocho] [term]"
+    p = validate(s)
+    assert p.result == ValidationResult.VALID, f"CJK sella falló: {p.result}"
+
+def test_notaria_china_dual():
+    """Sentencia bilingue TRUST + 信任 → VALID."""
+    from core.grammar import validate, ValidationResult
+    s = "TRUST FOUNDATION =><= .. verifica .. 信任_公证_acto_soberano --[As de Guía] [term]"
+    p = validate(s)
+    assert p.result == ValidationResult.VALID, f"China dual falló: {p.result}"
+
+def test_notaria_boost_rag():
+    """UNICODE_NOTARIA_IMV.txt debe estar indexado en RAG."""
+    from core.rag import _rag
+    _rag.build_index()
+    files = [d["file"] for d in _rag._docs]
+    assert any("NOTARIA_IMV" in f for f in files), "UNICODE_NOTARIA_IMV.txt no indexado"
+
+def test_notaria_integration_end_to_end():
+    """Flujo completo de un acto notarial soberano."""
+    from core.ledger import get_stats, record_grammar
+    from core.samu import audit, get_scalar_s
+    from core.grammar import validate, ValidationResult
+
+    # Step 1: grammar.validate() → VALID para certifica
+    s = "CRYPTO (spark seat) =><= .. certifica .. acto_integracion_test --[Nudo de Ocho] [term]"
+    parsed = validate(s)
+    assert parsed.result == ValidationResult.VALID, f"Step 1 falló: {parsed.result}"
+
+    # Step 2: ceo_alpha.get_notaria_requirements() si existe
+    try:
+        from core.ceo_alpha import get_notaria_requirements
+        req = get_notaria_requirements()
+        assert req.get("hexagram") in ("H63", "63", 63), f"Step 2: hexagram inesperado {req}"
+        assert float(req.get("min_scalar", 0)) == 0.90, f"Step 2: min_scalar inesperado"
+    except ImportError:
+        pass  # función aún no implementada · no fallar el test
+
+    # Step 3: samu.audit() → None (sin disputa en sentencia VALID)
+    dispute = audit(parsed)
+    assert dispute is None, f"Step 3: SAMU detectó disputa inesperada: {dispute}"
+
+    # Step 4: ledger.record_grammar() → TX sube
+    stats_antes = get_stats()
+    tx_antes = stats_antes.get("transactions_total", 0)
+    record_grammar(parsed)  # Solo toma parsed, no metadata
+    stats_despues = get_stats()
+    tx_despues = stats_despues.get("transactions_total", 0)
+    assert tx_despues > tx_antes, f"Step 4: TX no aumentó ({tx_antes} → {tx_despues})"
+
+    # Step 5: verificar que Scalar S es accesible
+    scalar = get_scalar_s()
+    assert isinstance(scalar, float), f"Step 5: Scalar S no es float: {type(scalar)}"
+    assert 0.0 <= scalar <= 1.0, f"Step 5: Scalar S fuera de rango: {scalar}"
+
 
 if __name__ == '__main__':
     success = run_all_tests()

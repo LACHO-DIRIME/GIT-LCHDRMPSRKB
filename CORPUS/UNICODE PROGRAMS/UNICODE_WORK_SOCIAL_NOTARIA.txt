@@ -1,0 +1,16 @@
+//[MANAGEMENT].lacho · UNICODE WORK SOCIAL × NOTARIA
+//UNICODE_.lacho · V1 · 2026-03-16 · $mon
+//módulos WORK y SOCIAL como soporte operativo del acto notarial
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo · 空聽數
+
+UNICODE: WORK_ACTUATOR_NOT  //{actuator} materializa el acto físico notarial · H49
+UNICODE: WORK_DOOR_NOT      //{door} vault resguarda actos sellados · acceso biométrico
+UNICODE: WORK_GREEN_NOT     //{green-knowledge} filtra actos · delta-Ψ > 0 → WU
+UNICODE: SOCIAL_CHAIR_NOT   //{chair} preside sesión notarial declarativa · H13
+UNICODE: SOCIAL_CONCIERGE_NOT //{concierge desk} recibe partes del acto · control acceso
+
+WORK {actuator} =><= .. materializa .. acto_fisico_notarial_soberano --[As de Guía] [term]
+WORK {door} =><= .. resguarda .. vault_actos_sellados_acceso_soberano --[Nudo de Ocho] [term]
+SOCIAL {chair} =><= .. preside .. sesion_notarial_declarativa_h13 --[As de Guía] [term]
+SOCIAL {concierge desk} =><= .. recibe .. partes_acto_control_acceso --[As de Guía] [term]

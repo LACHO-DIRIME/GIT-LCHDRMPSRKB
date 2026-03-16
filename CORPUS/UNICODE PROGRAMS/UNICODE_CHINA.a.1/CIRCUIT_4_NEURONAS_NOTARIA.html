@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIRCUIT 4 NEURONAS × NOTARIA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #ffffff;
+            font-family: 'Courier New', monospace;
+            color: #000000;
+            overflow-x: auto;
+            padding: 80px 20px;
+        }
+        
+        /* Header fijo */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #f8f9fa;
+            border-bottom: 2px solid #dee2e6;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            font-size: 14px;
+        }
+        
+        .header-left {
+            font-weight: bold;
+            color: #1A1A2E;
+        }
+        
+        .header-right {
+            color: #2D6A4F;
+            font-weight: bold;
+        }
+        
+        /* Footer fijo */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #f8f9fa;
+            border-top: 2px solid #dee2e6;
+            padding: 12px 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #495057;
+            z-index: 1000;
+        }
+        
+        /* Contenedor principal */
+        .circuit-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 400px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        /* Nodos */
+        .node {
+            border-radius: 12px;
+            padding: 20px;
+            min-width: 200px;
+            max-width: 250px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            color: #FFFFFF;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+        
+        .node:hover {
+            transform: translateY(-5px);
+        }
+        
+        .node-title {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .node-libsig {
+            font-size: 11px;
+            margin-bottom: 12px;
+            text-align: center;
+            opacity: 0.9;
+            font-family: monospace;
+        }
+        
+        .node-text {
+            font-size: 12px;
+            margin-bottom: 10px;
+            text-align: center;
+            line-height: 1.4;
+        }
+        
+        .node-pill {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 10px;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+        }
+        
+        /* Colores de nodos */
+        .node-n1 { background-color: #1A1A2E; }
+        .node-n2 { background-color: #0F3460; }
+        .node-n3 { background-color: #533483; }
+        .node-n4 { background-color: #2D6A4F; }
+        
+        /* Estados de pills */
+        .pill-valid { background-color: #28a745; }
+        .pill-invalid { background-color: #dc3545; }
+        .pill-scalar { background-color: #17a2b8; }
+        .pill-h63 { background-color: #6f42c1; }
+        .pill-wu { background-color: #28a745; }
+        .pill-ku { background-color: #ffc107; color: #000; }
+        .pill-sellado { background-color: #E94560; }
+        
+        /* Flechas animadas */
+        .arrow-container {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            color: #E94560;
+            animation: pulse 1.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 0.3; }
+            50% { opacity: 1; }
+            100% { opacity: 0.3; }
+        }
+        
+        /* Estados de fondo */
+        .state-ku { background-color: #FFF8E1; color: #000; }
+        .state-wu { background-color: #E6F4EA; color: #000; }
+        .state-h63 { background-color: #F3E8FF; color: #000; }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .circuit-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .arrow-container {
+                transform: rotate(90deg);
+                margin: 10px 0;
+            }
+            
+            .header {
+                font-size: 12px;
+                padding: 10px 15px;
+            }
+            
+            .node {
+                min-width: 180px;
+                max-width: 220px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header fijo -->
+    <div class="header">
+        <div class="header-left">⚡ CIRCUIT 4 NEURONAS × NOTARIA</div>
+        <div class="header-right">Pipeline: ⏵ RUNNING · TX=1363 · S=0.773</div>
+    </div>
+    
+    <!-- Contenedor del circuito -->
+    <div class="circuit-container">
+        <!-- N1: HEADCAT -->
+        <div class="node node-n1">
+            <div class="node-title">N1 HEADCAT</div>
+            <div class="node-libsig">╭─SOCIAL{headcat}─⊛─→─</div>
+            <div class="node-text">
+                "grammar.validate()"<br>
+                "INPUT operador"
+            </div>
+            <div class="node-pill pill-valid" id="n1-status">VALID</div>
+        </div>
+        
+        <!-- Flecha N1 → N2 -->
+        <div class="arrow-container">→</div>
+        
+        <!-- N2: ELPULSAR -->
+        <div class="node node-n2">
+            <div class="node-title">N2 ELPULSAR</div>
+            <div class="node-libsig">╭─WORK{actuator}─⏵─→─</div>
+            <div class="node-text">
+                "rag.suggest()"<br>
+                "5 greens"
+            </div>
+            <div class="node-pill pill-scalar" id="n2-status">Scalar S calculado</div>
+        </div>
+        
+        <!-- Flecha N2 → N3 -->
+        <div class="arrow-container">→</div>
+        
+        <!-- N3: CHAIR CEO -->
+        <div class="node node-n3">
+            <div class="node-title">N3 CHAIR CEO</div>
+            <div class="node-libsig">╭─TRUST FOUNDATION─∧─→─</div>
+            <div class="node-text">
+                "threshold S≥0.90 → H63"
+            </div>
+            <div class="node-pill pill-h63" id="n3-status">H63 ✅ / WU ⚡ / KU ⏳</div>
+        </div>
+        
+        <!-- Flecha N3 → N4 -->
+        <div class="arrow-container">→</div>
+        
+        <!-- N4: DRONE -->
+        <div class="node node-n4">
+            <div class="node-title">N4 DRONE</div>
+            <div class="node-libsig">╭─SAMU @─⏺─→─⊗─</div>
+            <div class="node-text">
+                "ledger.record()"<br>
+                "TX++"
+            </div>
+            <div class="node-pill pill-sellado" id="n4-status">⊗ SELLADO</div>
+        </div>
+    </div>
+    
+    <!-- Footer fijo -->
+    <div class="footer">
+        TX=1363 · cristales=46 · S=0.773 · H63: 既濟 · [term] :: activo
+    </div>
+    
+    <script>
+        // Simulación de estados dinámicos
+        let txCount = 1363;
+        let scalarS = 0.773;
+        let cristales = 46;
+        
+        // Función para actualizar contadores
+        function updateCounters() {
+            txCount += Math.floor(Math.random() * 3) + 1;
+            scalarS = Math.min(0.999, scalarS + (Math.random() * 0.01));
+            cristales += Math.floor(Math.random() * 2);
+            
+            // Actualizar header
+            document.querySelector('.header-right').textContent = 
+                `Pipeline: ⏵ RUNNING · TX=${txCount} · S=${scalarS.toFixed(3)}`;
+            
+            // Actualizar footer
+            document.querySelector('.footer').textContent = 
+                `TX=${txCount} · cristales=${cristales} · S=${scalarS.toFixed(3)} · H63: 既濟 · [term] :: activo`;
+        }
+        
+        // Simulación de cambios de estado en nodos
+        function simulateNodeStates() {
+            const states = ['VALID', 'INVALID'];
+            const n1Status = document.getElementById('n1-status');
+            const n2Status = document.getElementById('n2-status');
+            const n3Status = document.getElementById('n3-status');
+            const n4Status = document.getElementById('n4-status');
+            
+            // N1: Alternar VALID/INVALID
+            if (Math.random() > 0.7) {
+                n1Status.textContent = states[Math.floor(Math.random() * states.length)];
+                n1Status.className = n1Status.textContent === 'VALID' ? 'node-pill pill-valid' : 'node-pill pill-invalid';
+            }
+            
+            // N2: Actualizar mensaje de scalar
+            if (Math.random() > 0.8) {
+                n2Status.textContent = `Scalar S: ${scalarS.toFixed(3)}`;
+            }
+            
+            // N3: Cambiar estados H63/WU/KU
+            if (Math.random() > 0.6) {
+                const h63States = ['H63 ✅ / WU ⚡ / KU ⏳', 'WU ⚡ / KU ⏳', 'KU ⏳'];
+                n3Status.textContent = h63States[Math.floor(Math.random() * h63States.length)];
+                n3Status.className = n3Status.textContent.includes('H63') ? 'node-pill pill-h63' : 
+                                   n3Status.textContent.includes('WU') ? 'node-pill pill-wu' : 'node-pill pill-ku';
+            }
+            
+            // N4: Alternar estado de sellado
+            if (Math.random() > 0.8) {
+                n4Status.textContent = n4Status.textContent === '⊗ SELLADO' ? '⏺ PROCESANDO' : '⊗ SELLADO';
+                n4Status.className = n4Status.textContent === '⊗ SELLADO' ? 'node-pill pill-sellado' : 'node-pill pill-scalar';
+            }
+        }
+        
+        // Iniciar simulaciones
+        setInterval(updateCounters, 2000);
+        setInterval(simulateNodeStates, 3000);
+        
+        // Función addNode() para compatibilidad con Circuit IDE
+        function addNode(nodeData) {
+            console.log('addNode() called with:', nodeData);
+            // Implementación para agregar nodos dinámicamente si se necesita
+        }
+        
+        // Función libSig para compatibilidad
+        function libSig(signature) {
+            console.log('libSig() called with:', signature);
+            return signature;
+        }
+        
+        // Log inicial
+        console.log('CIRCUIT 4 NEURONAS NOTARIA initialized');
+        console.log('addNode() and libSig() functions available');
+    </script>
+</body>
+</html>

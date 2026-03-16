@@ -527,6 +527,15 @@ body::before {
       <button class="lib-btn lb-CJK" onclick="addNode('空','空 VOID','CJK')">空 kōng</button>
       <button class="lib-btn lb-CJK" onclick="addNode('聽','聽 LISTEN','CJK')">聽 tīng</button>
     </div>
+
+    <div class="lib-group">
+      <span class="lib-label">NOTARIA</span>
+      <button class="lib-btn lb-NOTARIA" draggable="true" data-sym="⊗" data-lib="NOTARIA" data-label="NOTARIA H63" onclick="addNode('⊗','NOTARIA H63','STACKING')">⊗ NOTARIA H63</button>
+      <button class="lib-btn lb-NOTARIA" draggable="true" data-sym="公" data-lib="NOTARIA" data-label="certifica" onclick="addNode('公','certifica','CRYPTO')">公 certifica</button>
+      <button class="lib-btn lb-NOTARIA" draggable="true" data-sym="证" data-lib="NOTARIA" data-label="sella" onclick="addNode('证','sella','CRYPTO')">证 sella</button>
+      <button class="lib-btn lb-NOTARIA" draggable="true" data-sym="档" data-lib="NOTARIA" data-label="inmutabiliza" onclick="addNode('档','inmutabiliza','STACKING')">档 inmutabiliza</button>
+      <button class="lib-btn lb-NOTARIA" draggable="true" data-sym="核" data-lib="NOTARIA" data-label="verifica" onclick="addNode('核','verifica','SAMU')">核 verifica</button>
+    </div>
   </div>
 
   <!-- CIRCUIT CANVAS -->
@@ -1094,6 +1103,11 @@ function updateBuilder() {
     'ACTIVITY UF[H01]': '╭─⚡─⟳─',
     'METHOD <equation>':'╭─∇─≈─',
     'SOCIAL {relay}':   '╭─↩─⟳─',
+    'NOTARIA H63':     '╭─⊗─∞─',
+    'certifica':        '╭─公─≡─',
+    'sella':           '╭─证─∞─',
+    'inmutabiliza':    '╭─档─∞─',
+    'verifica':        '╭─核─●─',
   };
   const sig = (libSigs[lib] || '╭─') + '⊗─╯';
   const stateChar = currentState==='WU'?'╝':currentState==='KU'?'⏵':'⌀';

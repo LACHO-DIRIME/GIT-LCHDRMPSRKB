@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTARIA PARTES · NORA RATING</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #ffffff;
+            font-family: 'Courier New', monospace;
+            color: #000000;
+            font-size: 14px;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 3px solid #000000;
+            margin-bottom: 30px;
+            background-color: #ffffff;
+        }
+        
+        .header-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 5px;
+        }
+        
+        /* Sección Agregar Parte */
+        .add-section {
+            background-color: #f8f9fa;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .add-section-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #000000;
+        }
+        
+        .input-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr 0.5fr auto;
+            gap: 10px;
+            align-items: end;
+            margin-bottom: 15px;
+        }
+        
+        .input-field {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .input-field label {
+            font-size: 12px;
+            margin-bottom: 5px;
+            color: #495057;
+            font-weight: bold;
+        }
+        
+        .input-field input {
+            padding: 8px 12px;
+            border: 2px solid #ced4da;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+        }
+        
+        .input-field input:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+        }
+        
+        .btn-add {
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            height: 36px;
+            white-space: nowrap;
+        }
+        
+        .btn-add:hover {
+            background-color: #0056b3;
+        }
+        
+        .btn-add:active {
+            transform: translateY(1px);
+        }
+        
+        /* Lista de Partes */
+        .parts-section {
+            margin-bottom: 30px;
+        }
+        
+        .parts-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #000000;
+        }
+        
+        .parts-table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid #000000;
+            background-color: #ffffff;
+        }
+        
+        .parts-table th,
+        .parts-table td {
+            border: 1px solid #000000;
+            padding: 12px;
+            text-align: left;
+            vertical-align: middle;
+        }
+        
+        .parts-table th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+        
+        .parts-table tr:hover {
+            background-color: #f1f3f4;
+        }
+        
+        /* Semáforos */
+        .semaforo {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-block;
+            border: 2px solid;
+            margin-right: 8px;
+        }
+        
+        .semaforo-verde {
+            background-color: #E6F4EA;
+            border-color: #2D6A4F;
+        }
+        
+        .semaforo-amarillo {
+            background-color: #FFF8E1;
+            border-color: #9A6700;
+        }
+        
+        .semaforo-rojo {
+            background-color: #FFE8E8;
+            border-color: #E94560;
+        }
+        
+        .nora-score {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .btn-remove {
+            padding: 4px 8px;
+            background-color: #dc3545;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        
+        .btn-remove:hover {
+            background-color: #c82333;
+        }
+        
+        /* Panel SAMU DIRIME */
+        .samu-panel {
+            background-color: #FFE8E8;
+            border: 3px solid #E94560;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            display: none;
+        }
+        
+        .samu-panel.active {
+            display: block;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { border-color: #E94560; }
+            50% { border-color: #ff6b6b; }
+            100% { border-color: #E94560; }
+        }
+        
+        .samu-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #E94560;
+            margin-bottom: 10px;
+        }
+        
+        .samu-message {
+            font-size: 14px;
+            color: #000000;
+            margin-bottom: 15px;
+        }
+        
+        .samu-gate {
+            font-size: 12px;
+            color: #495057;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+        
+        .btn-samu {
+            padding: 10px 20px;
+            background-color: #E94560;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .btn-samu:hover {
+            background-color: #d63447;
+        }
+        
+        /* GATE UF[H05] Visual */
+        .gate-visual {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #EDE7F6;
+            border: 3px solid #533483;
+            border-radius: 8px;
+            padding: 15px;
+            font-size: 12px;
+            color: #533483;
+            font-weight: bold;
+            max-width: 300px;
+            display: none;
+            z-index: 1000;
+        }
+        
+        .gate-visual.active {
+            display: block;
+            animation: gatePulse 3s infinite;
+        }
+        
+        @keyframes gatePulse {
+            0% { background-color: #EDE7F6; }
+            50% { background-color: #D1C4E9; }
+            100% { background-color: #EDE7F6; }
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid #000000;
+            background-color: #ffffff;
+            margin-top: auto;
+            font-size: 12px;
+            color: #495057;
+        }
+        
+        /* Estados especiales */
+        .estado-revision {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .input-group {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .parts-table {
+                font-size: 12px;
+            }
+            
+            .parts-table th,
+            .parts-table td {
+                padding: 8px;
+            }
+            
+            .gate-visual {
+                position: static;
+                margin-top: 20px;
+                max-width: 100%;
+            }
+        }
+        
+        /* Empty state */
+        .empty-state {
+            text-align: center;
+            padding: 40px;
+            color: #6c757d;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="header-title">⊗ NOTARIA PARTES · NORA RATING · DIRIME/IMV</div>
+    </div>
+    
+    <!-- Sección Agregar Parte -->
+    <div class="add-section">
+        <div class="add-section-title">AGREGAR NUEVA PARTE</div>
+        <div class="input-group">
+            <div class="input-field">
+                <label for="nombre">Nombre parte</label>
+                <input type="text" id="nombre" placeholder="Ej: Juan Pérez">
+            </div>
+            <div class="input-field">
+                <label for="documento">ID/Doc</label>
+                <input type="text" id="documento" placeholder="Ej: DNI 12345678">
+            </div>
+            <div class="input-field">
+                <label for="nora">NORA score (0-1)</label>
+                <input type="number" id="nora" min="0" max="1" step="0.01" placeholder="0.85">
+            </div>
+            <button class="btn-add" onclick="agregarParte()">+ AGREGAR PARTE</button>
+        </div>
+    </div>
+    
+    <!-- Panel SAMU DIRIME -->
+    <div class="samu-panel" id="samuPanel">
+        <div class="samu-title">⚠️ SAMU @ detectó parte con score < 0.70</div>
+        <div class="samu-message">Se ha detectado una o más partes con NORA score inferior al umbral mínimo requerido.</div>
+        <div class="samu-gate">GATE UF[H05] — conteniendo acto · partes bajo revisión</div>
+        <button class="btn-samu" onclick="activarRevision()">SAMU @ DIRIME</button>
+    </div>
+    
+    <!-- Lista de Partes -->
+    <div class="parts-section">
+        <div class="parts-title">LISTA DE PARTES REGISTRADAS</div>
+        <table class="parts-table" id="partsTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>ID</th>
+                    <th>NORA Score</th>
+                    <th>Semáforo</th>
+                    <th>Estado</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody id="partsTableBody">
+                <!-- Las partes se agregarán dinámicamente aquí -->
+            </tbody>
+        </table>
+        <div class="empty-state" id="emptyState">
+            No hay partes registradas. Agregue una parte para comenzar.
+        </div>
+    </div>
+    
+    <!-- GATE UF[H05] Visual -->
+    <div class="gate-visual" id="gateVisual">
+        ⌀ GATE H05 · ACTO CONTENIDO · esperando partes OK
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+        TX=1363 · S=0.773 · NORA threshold: 0.70 · [term] :: activo
+    </div>
+    
+    <script>
+        // Variables globales
+        let partes = [];
+        let parteIdCounter = 1;
+        let samuActivo = false;
+        let gateActivo = false;
+        let enRevision = false;
+        
+        // Constantes
+        const NORA_THRESHOLD = 0.70;
+        const NORA_GREEN = 0.85;
+        
+        // Función para agregar parte
+        function agregarParte() {
+            const nombre = document.getElementById('nombre').value.trim();
+            const documento = document.getElementById('documento').value.trim();
+            const noraScore = parseFloat(document.getElementById('nora').value);
+            
+            // Validaciones
+            if (!nombre) {
+                alert('Por favor ingrese el nombre de la parte');
+                return;
+            }
+            
+            if (!documento) {
+                alert('Por favor ingrese el ID/Documento de la parte');
+                return;
+            }
+            
+            if (isNaN(noraScore) || noraScore < 0 || noraScore > 1) {
+                alert('Por favor ingrese un NORA score válido entre 0 y 1');
+                return;
+            }
+            
+            // Crear nueva parte
+            const nuevaParte = {
+                id: parteIdCounter++,
+                nombre: nombre,
+                documento: documento,
+                noraScore: noraScore,
+                estado: 'ACTIVA'
+            };
+            
+            partes.push(nuevaParte);
+            
+            // Limpiar formulario
+            document.getElementById('nombre').value = '';
+            document.getElementById('documento').value = '';
+            document.getElementById('nora').value = '';
+            
+            // Actualizar UI
+            actualizarTabla();
+            verificarSAMU();
+            verificarGATE();
+            
+            console.log('Parte agregada:', nuevaParte);
+        }
+        
+        // Función para quitar parte
+        function quitarParte(id) {
+            partes = partes.filter(parte => parte.id !== id);
+            actualizarTabla();
+            verificarSAMU();
+            verificarGATE();
+            console.log('Parte eliminada:', id);
+        }
+        
+        // Función para actualizar tabla
+        function actualizarTabla() {
+            const tbody = document.getElementById('partsTableBody');
+            const emptyState = document.getElementById('emptyState');
+            
+            if (partes.length === 0) {
+                tbody.innerHTML = '';
+                emptyState.style.display = 'block';
+                return;
+            }
+            
+            emptyState.style.display = 'none';
+            
+            tbody.innerHTML = partes.map(parte => {
+                const semaforoClass = getSemaforoClass(parte.noraScore);
+                const semaforoHtml = `<span class="semaforo ${semaforoClass}"></span>`;
+                const estadoHtml = parte.estado === 'EN REVISIÓN' ? 
+                    '<span class="estado-revision">EN REVISIÓN</span>' : 
+                    parte.estado;
+                
+                return `
+                    <tr>
+                        <td>${parte.id}</td>
+                        <td>${parte.nombre}</td>
+                        <td>${parte.documento}</td>
+                        <td><span class="nora-score">${parte.noraScore.toFixed(2)}</span></td>
+                        <td>${semaforoHtml}</td>
+                        <td>${estadoHtml}</td>
+                        <td>
+                            <button class="btn-remove" onclick="quitarParte(${parte.id})">✕ quitar</button>
+                        </td>
+                    </tr>
+                `;
+            }).join('');
+        }
+        
+        // Función para obtener clase de semáforo
+        function getSemaforoClass(score) {
+            if (score >= NORA_GREEN) return 'semaforo-verde';
+            if (score >= NORA_THRESHOLD) return 'semaforo-amarillo';
+            return 'semaforo-rojo';
+        }
+        
+        // Función para verificar SAMU
+        function verificarSAMU() {
+            const samuPanel = document.getElementById('samuPanel');
+            const tienePartesBajas = partes.some(parte => parte.noraScore < NORA_THRESHOLD);
+            
+            if (tienePartesBajas && !samuActivo) {
+                samuPanel.classList.add('active');
+                samuActivo = true;
+                console.log('SAMU activado: se detectaron partes con score < 0.70');
+            } else if (!tienePartesBajas && samuActivo) {
+                samuPanel.classList.remove('active');
+                samuActivo = false;
+                console.log('SAMU desactivado: todas las partes cumplen el umbral');
+            }
+        }
+        
+        // Función para verificar GATE
+        function verificarGATE() {
+            const gateVisual = document.getElementById('gateVisual');
+            
+            if (partes.length > 0 && !gateActivo) {
+                gateVisual.classList.add('active');
+                gateActivo = true;
+                console.log('GATE activado: hay partes registradas');
+            } else if (partes.length === 0 && gateActivo) {
+                gateVisual.classList.remove('active');
+                gateActivo = false;
+                console.log('GATE desactivado: no hay partes registradas');
+            }
+        }
+        
+        // Función para activar revisión SAMU
+        function activarRevision() {
+            if (!samuActivo) return;
+            
+            enRevision = true;
+            
+            // Cambiar estado de partes con score bajo
+            partes.forEach(parte => {
+                if (parte.noraScore < NORA_THRESHOLD) {
+                    parte.estado = 'EN REVISIÓN';
+                }
+            });
+            
+            actualizarTabla();
+            
+            // Actualizar mensaje del panel SAMU
+            const samuPanel = document.getElementById('samuPanel');
+            samuPanel.innerHTML = `
+                <div class="samu-title">✅ SAMU @ EN REVISIÓN ACTIVA</div>
+                <div class="samu-message">Las partes con score bajo están en proceso de revisión.</div>
+                <div class="samu-gate">GATE UF[H05] — monitoreando estado de revisión</div>
+                <button class="btn-samu" onclick="finalizarRevision()">FINALIZAR REVISIÓN</button>
+            `;
+            
+            console.log('Revisión SAMU activada');
+        }
+        
+        // Función para finalizar revisión
+        function finalizarRevision() {
+            enRevision = false;
+            
+            // Restaurar estados
+            partes.forEach(parte => {
+                if (parte.estado === 'EN REVISIÓN') {
+                    parte.estado = 'ACTIVA';
+                }
+            });
+            
+            actualizarTabla();
+            
+            // Restaurar panel SAMU original
+            const samuPanel = document.getElementById('samuPanel');
+            samuPanel.innerHTML = `
+                <div class="samu-title">⚠️ SAMU @ detectó parte con score < 0.70</div>
+                <div class="samu-message">Se ha detectado una o más partes con NORA score inferior al umbral mínimo requerido.</div>
+                <div class="samu-gate">GATE UF[H05] — conteniendo acto · partes bajo revisión</div>
+                <button class="btn-samu" onclick="activarRevision()">SAMU @ DIRIME</button>
+            `;
+            
+            console.log('Revisión SAMU finalizada');
+        }
+        
+        // Función para manejar Enter en inputs
+        document.getElementById('nombre').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') document.getElementById('documento').focus();
+        });
+        
+        document.getElementById('documento').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') document.getElementById('nora').focus();
+        });
+        
+        document.getElementById('nora').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') agregarParte();
+        });
+        
+        // Inicialización
+        console.log('NOTARIA PARTES inicializado');
+        console.log('NORA threshold:', NORA_THRESHOLD);
+        console.log('NORA green threshold:', NORA_GREEN);
+        
+        // Estado inicial
+        actualizarTabla();
+    </script>
+</body>
+</html>

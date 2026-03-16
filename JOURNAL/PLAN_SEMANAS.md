@@ -20,13 +20,15 @@
 - [ ] github_sync.sh automático en macro_cierre
 - [ ] Windsurf instalación
 
-## SEMANA 2026-W12
-### Objetivos
-- [ ] Dominios KALIL primeros módulos operativos
-- [ ] FLYBOT conectado con cloud_agent.blue
-- [ ] HEADCAT como módulo activo ELPULSAR pipeline
-- [ ] Scalar S objetivo 0.90 (actual 0.844)
-- [ ] 30 traducciones NL→LACHO documentadas nuevas
+## SEMANA 2026-W12 · $mon 16/03 → $fri 20/03
+### Objetivos NOTARIA como eje
+- [ ] NOTARIA endpoints operativos en elpulsar.py (SUN_05 completado)
+- [ ] RAG boost NOTARIA activo (SUN_09 completado)
+- [ ] test suite 48/48 con tests CJK (SUN_13 completado)
+- [ ] Scalar S objetivo: 0.850+
+- [ ] cristales objetivo: 45+
+- [ ] Nerve Cells acumulados: 10+ total
+- [ ] autoresearch_specs.py · autoresearch_gap.py · DIRIME> asks
 
 ## HORIZONTE CAPA C (PC nueva)
 - Ollama bridge transparente Groq→local

@@ -311,6 +311,18 @@ body::before {
 .tab-content { display:none; padding: 20px; }
 .tab-content.active { display:block; }
 
+/* ══ NOTARIA TAB ══ */
+.door-periods { display:flex; gap:10px; margin:10px 0; font-family:monospace; font-size:12px; }
+.period { padding:4px 8px; border-radius:3px; }
+.period.morning { background:#e8f4fd; }
+.period.afternoon { background:#fff3e0; }
+.period.nocturnal { background:#1a1a2e; color:#aab; }
+.acto-item { font-family:monospace; font-size:13px; padding:6px; margin:3px 0; border-left:3px solid; }
+.acto-item.wu { border-color:#2d6a4f; background:#e6f4ea; }
+.acto-item.ku { border-color:#e94560; background:#fff0f0; }
+.acto-item.pending { border-color:#9a6700; background:#fff8e1; }
+.notaria-stats { font-family:monospace; font-size:11px; color:#666; margin-top:10px; }
+
 /* ══ LABOR CORE ══ */
 .labor-header {
   display: flex; align-items: baseline; gap: 12px;
@@ -827,9 +839,10 @@ body::before {
     <div class="tab-bar">
       <button class="tab active" onclick="switchTab('labor')">LABOR CORE</button>
       <button class="tab" onclick="switchTab('sprint')">NEXT SPRINT</button>
-      <button class="tab" onclick="switchTab('rutina')">RUTINA</button>
-      <button class="tab" onclick="switchTab('weekend')">WEEKEND</button>
-      <button class="tab" onclick="switchTab('tips')">TIPS LACHO</button>
+      <button class="tab" onclick="switchTab('rutina')">RUTINA SOBERANA</button>
+      <button class="tab" onclick="switchTab('weekend')">OVER WORKING WEEKEND</button>
+      <button class="tab" onclick="switchTab('tips')">TIPS HOMEWORK SPEC</button>
+      <button class="tab-btn" onclick="showTab('notaria')">⊗ NOTARIA</button>
     </div>
 
     <!-- ── LABOR CORE ── -->
@@ -1540,7 +1553,16 @@ function switchTab(tab) {
   document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
   document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
   document.getElementById('tab-'+tab).classList.add('active');
-  const tabs = ['labor','sprint','rutina','weekend','tips'];
+  const tabs = ['labor','sprint','rutina','weekend','tips','notaria'];
+  const idx = tabs.indexOf(tab);
+  document.querySelectorAll('.tab')[idx].classList.add('active');
+}
+
+function showTab(tab) {
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('tab-'+tab).classList.add('active');
+  const tabs = ['labor','sprint','rutina','weekend','tips','notaria'];
   const idx = tabs.indexOf(tab);
   document.querySelectorAll('.tab')[idx].classList.add('active');
 }
@@ -1605,5 +1627,28 @@ function closeModal() {
   document.getElementById('modal-overlay').classList.remove('show');
 }
 </script>
+<div id="tab-notaria" class="tab-content" style="display:none;">
+  <h3 style="font-family:monospace">⊗ NOTARIA H63 · ACTOS DEL DÍA</h3>
+  
+  <!-- Door periods × NOTARIA -->
+  <div class="door-periods">
+    <span class="period morning">🌅 MORNING → recibe actos (06:00-12:00)</span>
+    <span class="period afternoon">⊗ AFTERNOON → sella actos (12:00-18:00)</span>
+    <span class="period nocturnal">∞ NOCTURNAL → inmutabiliza (18:00-06:00)</span>
+  </div>
+
+  <!-- Lista actos del día -->
+  <div class="actos-list">
+    <div class="acto-item wu">① certifica_acuerdo_BOLIVAR · S=0.91 · H63 既濟</div>
+    <div class="acto-item ku">② verifica_partes_NORA · S=0.82 · WU pendiente</div>
+    <div class="acto-item pending">③ sella_contrato_CARILO · S=0.78 · en proceso</div>
+  </div>
+
+  <!-- Stats footer del tab -->
+  <div class="notaria-stats">
+    TX HOY: +12 · H63 HOY: 1 · Scalar S: 0.822
+  </div>
+</div>
+
 </body>
 </html>

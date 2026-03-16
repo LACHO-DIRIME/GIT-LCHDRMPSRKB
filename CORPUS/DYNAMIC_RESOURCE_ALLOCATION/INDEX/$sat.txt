@@ -16,3 +16,35 @@ UNICODE: IDX_SAT_SET          //SAMU #set $sat · semana sellada · H63→空
 //WORK {door} =><= .. sella .. index_sat_backup_semanal --[Nudo de Ocho] [term]
 //STACKING UF[H52] =><= .. inmutabiliza .. index_sat_mu_save_semanal --[Nudo de Ocho] [term]
 //DIR(+) DRA/INDEX/$sat · V1 · backup total · {door} · H63 semana cerrada
+
+// ── NOTARIA APPEND · $sat 14-03 ─────────────────────────────────────────
+
+IDX_SAT_BACKUP_NOT:
+  BKP_FULL NOTARIA · tar -czf ~/DIRIME/CORPUS/NOTARIA_BKP_sat14-03.tar.gz "CORPUS/UNICODE PROGRAMS/UNICODE_NOTARIA"*
+  DOOR_SEAL: {door} cierra semana · BACKUP_DOOR.txt actualizado
+  MU-STORE: $sat.CORPUS_NOTARIA_KALIL.MU-STORE.db generado
+
+IDX_SAT_NERVE_CELLS:
+  $thu: Nerve Cell Notaria Training · ELPULSAR Notaria · HOUSE DRONE Notaria
+  $fri: Nerve Cell KALIL Notaria Training · Nerve Cell BOLIVAR Blockchain Notaria
+  $sat: Nerve Cell BACKUP Notaria
+  Total: 6 Nerve Cells notariales · semana completa
+
+IDX_SAT_UNICODE_PROG:
+  UNICODE_NOTARIA_BACKUP_H63.txt · UNICODE_NORA_NOTARIA.txt
+  UNICODE_CARILO_NOTARIA.txt · UNICODE_IMV_4NEURONAS_NOTARIA_V1.txt
+  Total nuevos $sat: 4
+
+IDX_SAT_TESTS:
+  Tests IMV: 44/44 ✅ · PRACTICE-NOTARIA.lacho × 5 VALID
+
+IDX_SAT_SCALAR:
+  S inicio: 0.78 · objetivo cierre: 0.840+
+  Boost RAG: taxonomy:1.6 · PRACTICE-NOTARIA:1.5
+  BOLIVAR_CHAIR_CEO_NOTARIA threshold: 0.90
+
+IDX_SAT_PUSH:
+  tools/github_sync.sh · commits $thu+$fri+$sat batch
+  "STACKING UF[H63] :: cristaliza :: notaria_14-03 --[NdO] [term]"
+
+[term] :: activo · [seal of secrecy] :: activo · 空聽數 · H63 既濟

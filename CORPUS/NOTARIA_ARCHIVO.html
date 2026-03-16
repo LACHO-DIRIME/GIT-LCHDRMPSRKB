@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARCHIVO NOTARIAL · TANDIL H48</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #ffffff;
+            color: #1a1a2e;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.4;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header {
+            background: #ffffff;
+            border-bottom: 2px solid #1a1a2e;
+            padding: 15px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .filters {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+        .filter-label {
+            font-size: 12px;
+            color: #666;
+            font-weight: bold;
+        }
+        
+        .filter-input, .filter-select {
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 12px;
+            background: #ffffff;
+        }
+        
+        .filter-input:focus, .filter-select:focus {
+            outline: none;
+            border-color: #1a1a2e;
+        }
+        
+        .table-container {
+            flex: 1;
+            overflow: auto;
+            padding: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #ffffff;
+        }
+        
+        th, td {
+            padding: 12px 8px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+            vertical-align: top;
+        }
+        
+        th {
+            background: #f8f9fa;
+            font-weight: bold;
+            font-size: 12px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        
+        tr:hover {
+            background: #f8f9fa;
+            cursor: pointer;
+        }
+        
+        .estado-pill {
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: bold;
+            display: inline-block;
+            white-space: nowrap;
+        }
+        
+        .estado-wu {
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .estado-ku {
+            background: #fff3cd;
+            color: #856404;
+        }
+        
+        .estado-h63 {
+            background: #e2d9f3;
+            color: #533483;
+        }
+        
+        .hash-truncado {
+            font-family: monospace;
+            font-size: 11px;
+            color: #666;
+            word-break: break-all;
+        }
+        
+        .fecha {
+            white-space: nowrap;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+        
+        .modal-content {
+            background: #ffffff;
+            margin: 5% auto;
+            padding: 20px;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 600px;
+            max-height: 80vh;
+            overflow-y: auto;
+            position: relative;
+        }
+        
+        .modal-header {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            color: #666;
+        }
+        
+        .modal-close:hover {
+            color: #1a1a2e;
+        }
+        
+        .modal-section {
+            margin-bottom: 15px;
+        }
+        
+        .modal-label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .modal-value {
+            padding: 8px;
+            background: #f8f9fa;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 12px;
+            word-break: break-all;
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            border-top: 1px solid #e0e0e0;
+            padding: 15px 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .no-data {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            font-style: italic;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        📁 ARCHIVO NOTARIAL · TANDIL H48 🔍
+    </div>
+
+    <div class="filters">
+        <div class="filter-group">
+            <div class="filter-label">Fecha</div>
+            <input type="date" id="fecha-filter" class="filter-input">
+        </div>
+        
+        <div class="filter-group">
+            <div class="filter-label">Estado</div>
+            <select id="estado-filter" class="filter-select">
+                <option value="">Todos</option>
+                <option value="WU">WU</option>
+                <option value="KU">KU</option>
+                <option value="H63">H63</option>
+            </select>
+        </div>
+        
+        <div class="filter-group">
+            <div class="filter-label">Nodo KALIL</div>
+            <select id="nodo-filter" class="filter-select">
+                <option value="">Todos</option>
+                <option value="BOLIVAR">BOLIVAR</option>
+                <option value="NORA">NORA</option>
+                <option value="CARILO">CARILO</option>
+                <option value="BARRIOS">BARRIOS</option>
+                <option value="CHALTEN">CHALTEN</option>
+                <option value="TANDIL">TANDIL</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="table-container">
+        <table id="actos-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Fecha</th>
+                    <th>Partes</th>
+                    <th>Objeto</th>
+                    <th>Estado</th>
+                    <th>Hash</th>
+                    <th>KALIL nodo</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Datos se cargarán aquí -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="cerrarModal()">✕</button>
+            <div class="modal-header">DETALLES DEL ACTO NOTARIAL</div>
+            
+            <div class="modal-section">
+                <div class="modal-label">Acto ID</div>
+                <div id="modal-acto-id" class="modal-value"></div>
+            </div>
+            
+            <div class="modal-section">
+                <div class="modal-label">Partes</div>
+                <div id="modal-partes" class="modal-value"></div>
+            </div>
+            
+            <div class="modal-section">
+                <div class="modal-label">Objeto</div>
+                <div id="modal-objeto" class="modal-value"></div>
+            </div>
+            
+            <div class="modal-section">
+                <div class="modal-label">Hash SHA-256</div>
+                <div id="modal-hash" class="modal-value"></div>
+            </div>
+            
+            <div class="modal-section">
+                <div class="modal-label">SAMU Audit Result</div>
+                <div id="modal-samu" class="modal-value"></div>
+            </div>
+            
+            <div class="modal-section">
+                <div class="modal-label">TX Ledger</div>
+                <div id="modal-tx" class="modal-value"></div>
+            </div>
+            
+            <div class="modal-section">
+                <div class="modal-label">Timestamp</div>
+                <div id="modal-timestamp" class="modal-value"></div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <button onclick="cerrarModal()" style="padding: 10px 20px; background: #1a1a2e; color: white; border: none; border-radius: 4px; cursor: pointer; font-family: inherit;">✕ Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        TX=1335 · cristales=42 · S=0.78 · [term] :: activo
+    </div>
+
+    <script>
+        // Datos de ejemplo - en producción vendrían del backend
+        let actosNotariales = [
+            {
+                id: 1,
+                fecha: '2026-03-14',
+                partes: 'Parte_A, Parte_B',
+                objeto: 'Contrato de compraventa inmueble',
+                estado: 'H63',
+                hash: '7f8a3d9b2c5e1a4d8c9b8b5a7d9e8c3a2f1b4e7c6f',
+                nodo: 'BOLIVAR',
+                samuAudit: 'VALID · score=0.93 · coherencia_ok',
+                tx: 'TX-1348',
+                timestamp: '2026-03-14T13:45:32Z'
+            },
+            {
+                id: 2,
+                fecha: '2026-03-14',
+                partes: 'Empresa_X, Trabajador_Y',
+                objeto: 'Acuerdo laboral confidencial',
+                estado: 'WU',
+                hash: 'a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b',
+                nodo: 'NORA',
+                samuAudit: 'VALID · score=0.87 · coherencia_ok',
+                tx: 'TX-1347',
+                timestamp: '2026-03-14T11:20:15Z'
+            },
+            {
+                id: 3,
+                fecha: '2026-03-13',
+                partes: 'Comunidad_A, Estado_B',
+                objeto: 'Convenio de cooperación comunitaria',
+                estado: 'KU',
+                hash: '9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1',
+                nodo: 'BARRIOS',
+                samuAudit: 'REVIEW · score=0.75 · requiere_validación',
+                tx: 'TX-1346',
+                timestamp: '2026-03-13T16:30:45Z'
+            },
+            {
+                id: 4,
+                fecha: '2026-03-13',
+                partes: 'Inversor_A, Startup_B',
+                objeto: 'Acuerdo de inversión semilla',
+                estado: 'H63',
+                hash: 'b4a3c2d1e0f9a8b7c6d5e4f3a2b1c0d9e8f7a6b5',
+                nodo: 'CARILO',
+                samuAudit: 'VALID · score=0.91 · coherencia_ok',
+                tx: 'TX-1345',
+                timestamp: '2026-03-13T09:15:20Z'
+            },
+            {
+                id: 5,
+                fecha: '2026-03-12',
+                partes: 'Artista_X, Galería_Y',
+                objeto: 'Contrato de exhibición artística',
+                estado: 'WU',
+                hash: 'c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5',
+                nodo: 'CHALTEN',
+                samuAudit: 'VALID · score=0.84 · coherencia_ok',
+                tx: 'TX-1344',
+                timestamp: '2026-03-12T14:25:10Z'
+            },
+            {
+                id: 6,
+                fecha: '2026-03-12',
+                partes: 'Comité_A, Miembros_B',
+                objeto: 'Acta constitutiva de asociación civil',
+                estado: 'H63',
+                hash: 'd6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b0c9d8e7f6',
+                nodo: 'TANDIL',
+                samuAudit: 'VALID · score=0.95 · coherencia_ok',
+                tx: 'TX-1343',
+                timestamp: '2026-03-12T10:40:55Z'
+            }
+        ];
+
+        let actosFiltrados = [...actosNotariales];
+
+        function renderTable() {
+            const tbody = document.getElementById('table-body');
+            tbody.innerHTML = '';
+
+            if (actosFiltrados.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="7" class="no-data">No se encontraron actos notariales</td></tr>';
+                return;
+            }
+
+            actosFiltrados.forEach((acto, index) => {
+                const row = document.createElement('tr');
+                row.onclick = () => abrirModal(acto);
+                
+                const estadoClass = `estado-${acto.estado.toLowerCase()}`;
+                const hashTruncado = acto.hash.substring(0, 16) + '...';
+                
+                row.innerHTML = `
+                    <td>${acto.id}</td>
+                    <td class="fecha">${acto.fecha}</td>
+                    <td>${acto.partes}</td>
+                    <td>${acto.objeto}</td>
+                    <td><span class="estado-pill ${estadoClass}">${acto.estado}</span></td>
+                    <td class="hash-truncado">${hashTruncado}</td>
+                    <td>${acto.nodo}</td>
+                `;
+                
+                tbody.appendChild(row);
+            });
+        }
+
+        function filtrarActos() {
+            const fechaFilter = document.getElementById('fecha-filter').value;
+            const estadoFilter = document.getElementById('estado-filter').value.toUpperCase();
+            const nodoFilter = document.getElementById('nodo-filter').value.toUpperCase();
+
+            actosFiltrados = actosNotariales.filter(acto => {
+                const fechaMatch = !fechaFilter || acto.fecha === fechaFilter;
+                const estadoMatch = !estadoFilter || acto.estado === estadoFilter;
+                const nodoMatch = !nodoFilter || acto.nodo.toUpperCase() === nodoFilter;
+                
+                return fechaMatch && estadoMatch && nodoMatch;
+            });
+
+            renderTable();
+        }
+
+        function abrirModal(acto) {
+            document.getElementById('modal-acto-id').textContent = `ACTO-${acto.id}`;
+            document.getElementById('modal-partes').textContent = acto.partes;
+            document.getElementById('modal-objeto').textContent = acto.objeto;
+            document.getElementById('modal-hash').textContent = acto.hash;
+            document.getElementById('modal-samu').textContent = acto.samuAudit;
+            document.getElementById('modal-tx').textContent = acto.tx;
+            document.getElementById('modal-timestamp').textContent = acto.timestamp;
+            
+            document.getElementById('modal').style.display = 'block';
+        }
+
+        function cerrarModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+
+        // Event listeners
+        document.getElementById('fecha-filter').addEventListener('change', filtrarActos);
+        document.getElementById('estado-filter').addEventListener('change', filtrarActos);
+        document.getElementById('nodo-filter').addEventListener('change', filtrarActos);
+
+        // Cerrar modal al hacer clic fuera
+        document.getElementById('modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                cerrarModal();
+            }
+        });
+
+        // Inicialización
+        document.addEventListener('DOMContentLoaded', function() {
+            renderTable();
+        });
+    </script>
+</body>
+</html>

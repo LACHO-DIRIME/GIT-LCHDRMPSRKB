@@ -1,0 +1,67 @@
+# CHCL_NOTARIA.txt
+# CHCL NOTARIA COMPLETO · ejecutable · acto soberano H63 既濟
+# Extiende CHCL_BASE.txt · NOTARIA DIVISION completo
+# [term] :: activo · [seal of secrecy] :: activo
+
+IDENTIFICATION DIVISION.
+  PROGRAM-ID. CHCL-NOTARIA-COMPLETO.
+  VERSION. 2.0.
+  EXTENDS. CHCL-BASE.
+  HEXAGRAMA. H63-既濟.
+  THRESHOLD-SCALAR. 0.90.
+
+ENVIRONMENT DIVISION.
+CONFIGURATION SECTION.
+  LACHO-BASE     :: lenguaje soberano fundacional
+  DIRIME-ENGINE  :: motor decisión · validación · S=0.773
+  ELPULSAR-AGENT :: procesamiento agéntico · 4 neuronas
+  KALIL-KERNEL   :: BOLIVAR · NORA · CARILO · BARRIOS · CHALTEN · TANDIL
+  CHCL-PORTABIL  :: CEO portátil · extensión dominios
+  NOTARIA-DOMAIN :: H63 既濟 · threshold 0.90 · acto soberano
+
+DATA DIVISION.
+  01 NOTARIA-CERTIFICA.
+     05 acto        PIC X(128).
+     05 partes      PIC X(256).
+     05 objeto      PIC X(256).
+     05 fecha       PIC 9(8).
+  01 NOTARIA-SELLA.
+     05 firma_crypto   PIC X(64).
+     05 timestamp      PIC 9(14).
+     05 hash           PIC X(64).
+     05 nudo           PIC X(32).
+  01 NOTARIA-INMUTABILIZA.
+     05 stacking_id    PIC X(32).
+     05 h63_ref        PIC X(32).
+     05 ledger_tx      PIC 9(10).
+     05 samu_auditado  PIC X(1).
+  01 KALIL-NODOS.
+     05 BOLIVAR    PIC X(32).
+     05 NORA       PIC X(32).
+     05 CARILO     PIC X(32).
+     05 BARRIOS    PIC X(32).
+     05 CHALTEN    PIC X(32).
+     05 TANDIL     PIC X(32).
+
+PROCEDURE DIVISION NOTARIA-MAIN.
+  NOTARIA-STEP-1.
+    TRUST FOUNDATION =><= .. verifica .. condiciones_acto_notarial_partes --[As de Guía] [term]
+  NOTARIA-STEP-2.
+    GATE UF[H05] =><= .. espera .. deliberacion_soberana_notarial --[Ballestrinque] [term]
+  NOTARIA-STEP-3.
+    CRYPTO (spark seat) =><= .. certifica .. acto_notarial_partes_objeto --[Nudo de Ocho] [term]
+  NOTARIA-STEP-4.
+    SAMU @ =><= .. audita .. coherencia_previa_sello_notarial --[Ballestrinque] [term]
+  NOTARIA-STEP-5.
+    METHOD <stat_onto> =><= .. calcula .. nora_rating_partes_acto_notarial --[Ballestrinque] [term]
+  NOTARIA-STEP-6.
+    STACKING UF[H63] =><= .. sella .. documento_notarial_partes_sellado --[Nudo de Ocho] [term]
+  NOTARIA-STEP-7.
+    STACKING UF[H52] =><= .. inmutabiliza .. registro_notarial_ledger --[Nudo de Ocho] [term]
+  NOTARIA-STEP-8.
+    WORK {actuator} =><= .. custodia .. archivo_notarial_tandil_perpetuo --[As de Guía] [term]
+  NOTARIA-CLOSE.
+    STOP RUN. // H63 既濟 · acto cerrado · [term] activo
+
+STOP RUN.
+[term] :: activo · [seal of secrecy] :: activo · 空聽數

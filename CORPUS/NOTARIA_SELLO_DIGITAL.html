@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⊗ NOTARIA SELLO DIGITAL · DIRIME/IMV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Courier New', monospace;
+            background: #ffffff;
+            color: #1a1a2e;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #1a1a2e;
+        }
+        
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .subtitle {
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        
+        #acto-input {
+            width: 100%;
+            height: 80px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-family: inherit;
+            resize: vertical;
+            margin-bottom: 10px;
+        }
+        
+        #partes-input {
+            width: 100%;
+            padding: 8px 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-family: inherit;
+            margin-bottom: 10px;
+        }
+        
+        .btn {
+            background: #1a1a2e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 12px;
+        }
+        
+        .btn:hover {
+            background: #333;
+        }
+        
+        .btn:disabled {
+            background: #999;
+            cursor: not-allowed;
+        }
+        
+        .proceso {
+            padding: 15px;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .proceso-ku {
+            background: #fff8e1;
+            color: #9a6700;
+        }
+        
+        .proceso-procesando {
+            background: #fff3e0;
+            color: #e94560;
+        }
+        
+        .proceso-wu {
+            background: #e6f4ea;
+            color: #2d6a4f;
+        }
+        
+        .output {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 3px;
+            font-size: 11px;
+            line-height: 1.4;
+        }
+        
+        .output-item {
+            margin-bottom: 8px;
+            word-break: break-all;
+        }
+        
+        .output-label {
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .btn-h63 {
+            background: #2d6a4f;
+            color: white;
+        }
+        
+        .btn-h63:hover {
+            background: #1a5c30;
+        }
+        
+        .inmutables {
+            background: #f0f8f0;
+            padding: 15px;
+            border-radius: 3px;
+            border: 1px solid #2d6a4f;
+        }
+        
+        .inmutable-item {
+            padding: 8px;
+            margin-bottom: 5px;
+            background: white;
+            border-radius: 3px;
+            font-size: 11px;
+        }
+        
+        .inmutable-number {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: #2d6a4f;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 20px;
+            margin-right: 8px;
+            font-weight: bold;
+        }
+        
+        .hash-truncado {
+            font-family: monospace;
+            color: #666;
+            font-size: 10px;
+        }
+        
+        .timestamp {
+            color: #999;
+            font-size: 10px;
+        }
+        
+        .libsig {
+            margin-top: 10px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 3px;
+            font-size: 11px;
+        }
+        
+        .libsig-item {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="title">⊗ NOTARIA SELLO DIGITAL · DIRIME/IMV</div>
+        <div class="subtitle">Sistema de Sellado Digital Notarial Soberano</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">INPUT SECTION</div>
+        <textarea id="acto-input" placeholder="Texto del acto notarial..."></textarea>
+        <input id="partes-input" placeholder="Partes: Parte_A, Parte_B" />
+        <button class="btn" onclick="procesarActo()">PROCESAR → KU</button>
+    </div>
+
+    <div class="section">
+        <div class="section-title">PROCESO VISUAL</div>
+        <div id="proceso-visual" class="proceso proceso-ku">
+            <div>○ KU → Recibiendo acto...</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">OUTPUT SECTION</div>
+        <div class="output">
+            <div class="output-item">
+                <span class="output-label">Hash SHA-256:</span>
+                <div id="hash-output">Esperando procesamiento...</div>
+            </div>
+            <div class="output-item">
+                <span class="output-label">Timestamp:</span>
+                <div id="timestamp-output">-</div>
+            </div>
+            <div class="output-item">
+                <span class="output-label">Firma H63:</span>
+                <div id="firma-output">-</div>
+            </div>
+            <div class="libsig">
+                <div class="libsig-item">CRYPTO ╭─●─≡─</div>
+                <div class="libsig-item">STACKING ╭─⊣─∞─</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">BOTÓN INMUTABILIZAR</div>
+        <button id="btn-inmutabilizar" class="btn" onclick="inmutabilizar()" disabled>⊗ INMUTABILIZAR → H63</button>
+    </div>
+
+    <div class="section">
+        <div class="section-title">STACKING VISUAL</div>
+        <div id="inmutables" class="inmutables">
+            <div style="color: #999; font-style: italic;">No hay actos inmutabilizados en esta sesión</div>
+        </div>
+    </div>
+
+    <script>
+        let actoActual = null;
+        let inmutableCounter = 0;
+
+        function procesarActo() {
+            const actoInput = document.getElementById('acto-input');
+            const partesInput = document.getElementById('partes-input');
+            const procesoVisual = document.getElementById('proceso-visual');
+            const btnInmutabilizar = document.getElementById('btn-inmutabilizar');
+            
+            if (!actoInput.value.trim() || !partesInput.value.trim()) {
+                alert('Por favor ingrese el texto del acto y las partes');
+                return;
+            }
+            
+            actoActual = {
+                texto: actoInput.value.trim(),
+                partes: partesInput.value.trim(),
+                timestamp: new Date().toISOString()
+            };
+            
+            // Paso 1: KU
+            procesoVisual.className = 'proceso proceso-ku';
+            procesoVisual.innerHTML = '<div>○ KU → Recibiendo acto...</div>';
+            
+            setTimeout(() => {
+                // Paso 2: Procesando
+                procesoVisual.className = 'proceso proceso-procesando';
+                procesoVisual.innerHTML = '<div>⏵ Procesando → SAMU @ auditando...</div>';
+                
+                setTimeout(() => {
+                    // Paso 3: WU SELLADO
+                    procesoVisual.className = 'proceso proceso-wu';
+                    procesoVisual.innerHTML = '<div>⊗ WU SELLADO → Scalar S calculado</div>';
+                    
+                    // Generar hash SHA-256
+                    generarHash();
+                    
+                    // Habilitar botón de inmutabilización
+                    btnInmutabilizar.disabled = false;
+                    
+                }, 2000);
+            }, 2000);
+        }
+
+        function generarHash() {
+            if (!actoActual) return;
+            
+            // Usar SubtleCrypto para hash SHA-256 real
+            const encoder = new TextEncoder();
+            const data = encoder.encode(actoActual.texto + actoActual.timestamp);
+            
+            crypto.subtle.digest('SHA-256', data).then(hashBuffer => {
+                const hashArray = Array.from(new Uint8Array(hashBuffer));
+                const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+                
+                document.getElementById('hash-output').textContent = hashHex;
+                document.getElementById('timestamp-output').textContent = actoActual.timestamp;
+                document.getElementById('firma-output').textContent = 
+                    `STACKING UF[H63] =><= .. sella .. [acto_${inmutableCounter + 1}] --[Nudo de Ocho] [term]`;
+            });
+        }
+
+        function inmutabilizar() {
+            if (!actoActual) return;
+            
+            const btnInmutabilizar = document.getElementById('btn-inmutabilizar');
+            btnInmutabilizar.disabled = true;
+            btnInmutabilizar.textContent = '⏵ INMUTABILIZANDO...';
+            
+            setTimeout(() => {
+                inmutableCounter++;
+                agregarAInmutables(actoActual);
+                
+                // Resetear formulario
+                document.getElementById('acto-input').value = '';
+                document.getElementById('partes-input').value = '';
+                document.getElementById('proceso-visual').className = 'proceso proceso-ku';
+                document.getElementById('proceso-visual').innerHTML = '<div>○ KU → Listo para nuevo acto...</div>';
+                document.getElementById('hash-output').textContent = 'Esperando procesamiento...';
+                document.getElementById('timestamp-output').textContent = '-';
+                document.getElementById('firma-output').textContent = '-';
+                
+                btnInmutabilizar.textContent = '⊗ INMUTABILIZAR → H63';
+                btnInmutabilizar.disabled = true;
+                
+                actoActual = null;
+            }, 1500);
+        }
+
+        function agregarAInmutables(acto) {
+            const inmutablesDiv = document.getElementById('inmutables');
+            
+            // Si es el primer acto, limpiar el placeholder
+            if (inmutableCounter === 1) {
+                inmutablesDiv.innerHTML = '';
+            }
+            
+            const actoDiv = document.createElement('div');
+            actoDiv.className = 'inmutable-item';
+            
+            // Obtener hash actual
+            const hashOutput = document.getElementById('hash-output').textContent;
+            const hashTruncado = hashOutput ? hashOutput.substring(0, 16) + '...' : 'Calculando...';
+            
+            actoDiv.innerHTML = `
+                <span class="inmutable-number">${inmutableCounter}</span>
+                <strong>${acto.texto.substring(0, 50)}${acto.texto.length > 50 ? '...' : ''}</strong><br>
+                <span class="hash-truncado">${hashTruncado}</span><br>
+                <span class="timestamp">${acto.timestamp}</span>
+            `;
+            
+            inmutablesDiv.appendChild(actoDiv);
+            
+            // Scroll suave al final
+            inmutablesDiv.scrollTop = inmutablesDiv.scrollHeight;
+        }
+
+        // Inicialización
+        document.addEventListener('DOMContentLoaded', function() {
+            // Verificar soporte de SubtleCrypto
+            if (!window.crypto || !window.crypto.subtle) {
+                document.getElementById('hash-output').textContent = 'SubtleCrypto no soportado';
+                document.getElementById('firma-output').textContent = 'Hash no disponible';
+            }
+        });
+    </script>
+</body>
+</html>

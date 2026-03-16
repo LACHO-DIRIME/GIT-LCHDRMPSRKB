@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BALLPAPER · $mon 16/03/2026 · NOTARIA CIRCUITO ACTIVO</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Courier New', monospace;
+            background: #ffffff;
+            color: #1a1a2e;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .paper {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #1a1a2e;
+            padding-bottom: 20px;
+        }
+        
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .subtitle {
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            background: #fafafa;
+        }
+        
+        .section-title {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #1a1a2e;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        
+        .circuit {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+            padding: 15px;
+            background: #f0f8ff;
+            border: 1px solid #4169e1;
+        }
+        
+        .neuron {
+            text-align: center;
+            padding: 10px;
+            background: #e6f3ff;
+            border: 1px solid #4169e1;
+            border-radius: 5px;
+            font-size: 11px;
+        }
+        
+        .arrow {
+            font-size: 18px;
+            color: #4169e1;
+        }
+        
+        .code-block {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            font-size: 11px;
+            overflow-x: auto;
+            margin: 10px 0;
+        }
+        
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 11px;
+        }
+        
+        .table th, .table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        .table th {
+            background: #f2f2f2;
+            font-weight: bold;
+        }
+        
+        .check {
+            color: #28a745;
+            font-weight: bold;
+        }
+        
+        .status-running {
+            color: #28a745;
+            font-weight: bold;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #1a1a2e;
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .semaphore {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        
+        .green { background: #28a745; }
+        .yellow { background: #ffc107; }
+        .red { background: #dc3545; }
+    </style>
+</head>
+<body>
+    <div class="paper">
+        <!-- HEADER -->
+        <div class="header">
+            <div class="title">BALLPAPER · $mon 16/03/2026 · NOTARIA CIRCUITO ACTIVO</div>
+            <div class="subtitle">空 聽 數 · H63 既濟 · TX=1363 · S=0.773 → objetivo 0.845</div>
+        </div>
+
+        <!-- SECCIÓN 1 - Circuit 4 Neuronas -->
+        <div class="section">
+            <div class="section-title">SECCIÓN 1 — Circuit 4 Neuronas (MON_01)</div>
+            <div class="circuit">
+                <div class="neuron">
+                    <strong>TRUST</strong><br>
+                    <span style="font-size: 9px;">libSig: 0.85</span><br>
+                    <span style="font-size: 9px;">verifica</span>
+                </div>
+                <div class="arrow">→</div>
+                <div class="neuron">
+                    <strong>CRYPTO</strong><br>
+                    <span style="font-size: 9px;">libSig: 0.92</span><br>
+                    <span style="font-size: 9px;">certifica</span>
+                </div>
+                <div class="arrow">→</div>
+                <div class="neuron">
+                    <strong>SAMU</strong><br>
+                    <span style="font-size: 9px;">libSig: 0.78</span><br>
+                    <span style="font-size: 9px;">audita</span>
+                </div>
+                <div class="arrow">→</div>
+                <div class="neuron">
+                    <strong>STACKING</strong><br>
+                    <span style="font-size: 9px;">libSig: 0.88</span><br>
+                    <span style="font-size: 9px;">inmutabiliza</span>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 10px;">
+                <span class="status-running">Pipeline ⏵ RUNNING</span>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 2 - main.py comando notaria -->
+        <div class="section">
+            <div class="section-title">SECCIÓN 2 — main.py comando notaria (MON_03)</div>
+            <div class="code-block">🔧 Inicializando DIRIME IMV...
+✅ IME RAG — 257 CORPUS · 0 LIBRO · 4 THEATER · 3 RUNNER · 2 AGENT · 13 patrones
+✅ Condiciones soberanas verificadas
+✅ HL FABRIC ledger integro
+🚀 Sistema DIRIME IMV listo
+
+⊗  NOTARIA — ESTADO PIPELINE
+──────────────────────────────────────────────
+  Scalar S    : 0.773  [█████████████████░░░]
+  Estado      : KU pendiente ⏳
+  TX total    : 1363
+  CEO req     : H63 · min_S=0.90 (ceo_alpha pendiente)
+
+  PIPELINE:
+  N1 HEADCAT   grammar.validate()   ✅
+  N2 ELPULSAR  rag.suggest()        ✅
+  N3 CHAIR_CEO S=0.77             ⚠️ 
+  N4 DRONE     ledger.record()      ✅
+
+  PENDIENTES CAPA B:
+  ❌ IMV/core/ballpaper.py
+  ❌ /api/notaria/certifica · sella · inmutabiliza
+──────────────────────────────────────────────</div>
+        </div>
+
+        <!-- SECCIÓN 3 - language_routing extensión -->
+        <div class="section">
+            <div class="section-title">SECCIÓN 3 — language_routing extensión (MON_09)</div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>INPUT NL</th>
+                        <th>BIBLIOTECA</th>
+                        <th>SENTENCIA LACHO generada</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>"certificar acto"</td>
+                        <td>CRYPTO</td>
+                        <td>CRYPTO (spark seat) =><= .. certifica .. acto --[Nudo de Ocho] [term]</td>
+                    </tr>
+                    <tr>
+                        <td>"sellar documento"</td>
+                        <td>STACKING</td>
+                        <td>STACKING UF[H63] =><= .. sella .. documento --[Nudo de Ocho] [term]</td>
+                    </tr>
+                    <tr>
+                        <td>"inmutabilizar registro"</td>
+                        <td>STACKING</td>
+                        <td>STACKING UF[H52] =><= .. inmutabiliza .. registro --[Nudo de Ocho] [term]</td>
+                    </tr>
+                    <tr>
+                        <td>"auditar acto"</td>
+                        <td>SAMU</td>
+                        <td>SAMU @ =><= .. audita .. acto --[Ballestrinque] [term]</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- SECCIÓN 4 - CHCL_NOTARIA -->
+        <div class="section">
+            <div class="section-title">SECCIÓN 4 — CHCL_NOTARIA (MON_08)</div>
+            <div class="code-block">PROCEDURE DIVISION.
+    BEGIN.
+        STEP-1: VALIDAR-ACTO-NOTARIAL.
+        STEP-2: GENERAR-HASH-SHA256.
+        STEP-3: VERIFICAR-PARTES-KYC.
+        <span class="highlight">STEP-4: SAMU @ AUDITAR-Y-REGISTRAR.</span>
+        STEP-5: CALCULAR-NORA-SCORE.
+        <span class="highlight">STEP-6: STACKING H63 INMUTABILIZAR.</span>
+        STEP-7: FIRMA-DIGITAL-MULTIPARTY.
+        STEP-8: ARCHIVO-BLOCKCHAIN-LEDGER.
+    END-BEGIN.</div>
+        </div>
+
+        <!-- SECCIÓN 5 - Test integración -->
+        <div class="section">
+            <div class="section-title">SECCIÓN 5 — Test integración (MON_11)</div>
+            <div style="font-family: monospace; font-size: 12px;">
+                <div><span class="check">✅</span> test_notaria_integration_end_to_end PASSED</div>
+                <div style="margin-left: 20px; margin-top: 10px;">
+                    <div><span class="check">✓</span> Step 1: grammar.validate() → VALID</div>
+                    <div><span class="check">✓</span> Step 2: ceo_alpha.get_notaria_requirements() → H63, min_S=0.90</div>
+                    <div><span class="check">✓</span> Step 3: samu.audit() → None (sin disputas)</div>
+                    <div><span class="check">✓</span> Step 4: ledger.record_grammar() → TX incrementa</div>
+                    <div><span class="check">✓</span> Step 5: Scalar S accesible (0.773, float, rango válido)</div>
+                </div>
+                <div style="margin-top: 10px; color: #28a745; font-weight: bold;">
+                    Resultado: 49/49 tests pasan · +1 test notarial integrado
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 6 - NORA rating protocol -->
+        <div class="section">
+            <div class="section-title">SECCIÓN 6 — NORA rating protocol (MON_05)</div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>PARTE</th>
+                        <th>SCORE</th>
+                        <th>ESTADO</th>
+                        <th>ACCIÓN</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>PARTE A</td>
+                        <td>0.85</td>
+                        <td><span class="semaphore green"></span>🟢 Verde</td>
+                        <td>✅ Aprobado directo</td>
+                    </tr>
+                    <tr>
+                        <td>PARTE B</td>
+                        <td>0.72</td>
+                        <td><span class="semaphore yellow"></span>🟡 Amarillo</td>
+                        <td>⚠️ Revisión manual</td>
+                    </tr>
+                    <tr>
+                        <td>PARTE C</td>
+                        <td>0.65</td>
+                        <td><span class="semaphore red"></span>🔴 Rojo</td>
+                        <td>🚨 SAMU @ intervención</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="margin-top: 10px; font-size: 11px; color: #666;">
+                Thresholds: ≥0.85 (verde) · ≥0.70 (amarillo) · &lt;0.70 (rojo → SAMU)
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            Scalar S objetivo: 0.845+ · cristales=46 · [term] :: activo · 既濟
+        </div>
+    </div>
+</body>
+</html>

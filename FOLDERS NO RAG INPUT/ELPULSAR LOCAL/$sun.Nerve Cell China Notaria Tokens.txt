@@ -1,0 +1,115 @@
+//$sun.Nerve Cell China Notaria Tokens.txt
+//tokens CJK notariales · definición previa a SUN_11
+//[term] :: activo · [seal of secrecy] :: activo · 空聽數
+
+// ══ QUÉ APRENDE ESTA CELDA ════════════════════════════════════
+// China Notaria Tokens aprende a definir tokens CJK para sistema notarial
+// + UNICODE-CHINA-TOKENS.txt · formato CJK_TOKEN_MAP · IMV/core/grammar.py
+// Tokens CJK notariales → SUN_11 formaliza como UNICODE PROGRAMS
+// No duplica claves existentes en CJK_TOKEN_MAP de grammar.py
+
+// ══ TOKENS NC_* CON DEFINICIÓN CJK + MAPEO LACHO ════════════════════════════════════
+NC_CN_GONGZHENG:   公证 = gōngzhèng → TRUST FOUNDATION · notarización soberana
+NC_CN_RENZHENG:    认证 = rènzhèng  → CRYPTO (spark seat) · certificación
+NC_CN_FENGYIN:     封印 = fēngyìn   → STACKING UF[H63] · sello soberano
+NC_CN_IMMUTABLE:   不可篡改 = bùkě cuàngǎi → STACKING UF[H52] · inmutable
+NC_CN_NOTARIO:     公证员 = gōngzhèngyuán → SAMU @ CHAIR_CEO · rol H63
+
+// ══ DEFINICIÓN DETALLADA DE TOKENS CJK ════════════════════════════════════
+NC_CN_GONGZHENG_DETAIL:
+    //公证 = gōngzhèng · notarización pública soberana
+    //mapeo: TRUST FOUNDATION · confianza en el acto notarial
+    //contexto: acto notarial soberano con validez jurídica
+    //validación: partes + objeto + formalidad + registro
+    //output: acto notarial válido con sello soberano
+
+NC_CN_RENZHENG_DETAIL:
+    //认证 = rènzhèng · certificación y autenticación
+    //mapeo: CRYPTO (spark seat) · certificación digital
+    //contexto: verificación de identidad y autenticidad
+    //validación: criptografía + firma digital + timestamp
+    //output: certificado válido con spark seat
+
+NC_CN_FENGYIN_DETAIL:
+    //封印 = fēngyìn · sello oficial y cierre
+    //mapeo: STACKING UF[H63] · sello soberano H63
+    //contexto: sellado de documento notarial soberano
+    //validación: H63 既濟 · acto completado y sellado
+    //output: documento sellado con H63 status
+
+NC_CN_IMMUTABLE_DETAIL:
+    //不可篡改 = bùkě cuàngǎi · inmutable y permanente
+    //mapeo: STACKING UF[H52] · inmutabilidad blockchain
+    //contexto: registro permanente que no puede modificarse
+    //validación: hash chain + merkle tree + blockchain
+    //output: registro inmutable con H52 艮
+
+NC_CN_NOTARIO_DETAIL:
+    //公证员 = gōngzhèngyuán · funcionario notarial
+    //mapeo: SAMU @ CHAIR_CEO · rol de autoridad
+    //contexto: autoridad notarial soberana con poder de certificación
+    //validación: CHAIR_CEO + SAMU audit + H63 authority
+    //output: autoridad notarial válida con poder de sellado
+
+// ══ INTEGRACIÓN CON CJK_TOKEN_MAP ════════════════════════════════════
+NC_CN_INTEGRATION:
+    //integración con CJK_TOKEN_MAP existente en grammar.py
+    //verificación: no duplicar claves existentes
+    //claves nuevas: 公证, 认证, 封印, 不可篡改, 公证员
+    //formato: ("LIBRARY", "SUBJECT", "HEXAGRAM", bonus)
+
+NC_CN_GRAMMAR_CHECK:
+    //verificación contra CJK_TOKEN_MAP en grammar.py
+    //claves existentes a evitar: 信任, 关系, 面子, 资本, 交易, 合同, 安全, 验证, 数字, 货币, 银行, 贷款, 风险, 网络, 节点, 主权, 协议, 社区, 智能, 桥梁
+    //claves nuevas permitidas: 公证, 认证, 封印, 不可篡改, 公证员
+    //validación: sin conflictos con claves existentes
+
+NC_CN_SUN_11_FORMAL:
+    //formalización en SUN_11 como UNICODE PROGRAMS
+    //proceso: definición → validación → formalización
+    //output: UNICODE_CHINA_NOTARIA_TOKENS_SUN_11.txt
+    //integración: con sistema UNICODE PROGRAMS completo
+
+// ══ ANCLAS RAG BILINGÜES × 4 ════════════════════════════════════
+TRUST FOUNDATION =><= .. verifica .. 公证_acto_soberano_partes_validas --[As de Guía] [term]
+CRYPTO (spark seat) =><= .. certifica .. 认证_credencial_notarial --[Nudo de Ocho] [term]
+STACKING UF[H63] =><= .. sella .. 封印_documento_notarial_soberano --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. 公证员_coherencia_acto_completo --[Ballestrinque] [term]
+
+// ══ CONTEXTOS BILINGÜES ════════════════════════════════════
+NC_CN_BILINGUAL_CONTEXT:
+    //contexto bilingüe para tokens notariales
+    //chino: 公证, 认证, 封印, 不可篡改, 公证员
+    //pinyin: gōngzhèng, rènzhèng, fēngyìn, bùkě cuàngǎi, gōngzhèngyuán
+    //español: notarización, certificación, sello, inmutable, notario
+    //inglés: notarization, certification, seal, immutable, notary
+
+NC_CN_USAGE_EXAMPLES:
+    //ejemplos de uso en sentencias LACHO
+    //公证 + TRUST FOUNDATION: notarización soberana
+    //认证 + CRYPTO: certificación digital con spark seat
+    //封印 + STACKING UF[H63]: sello con H63 既濟
+    //不可篡改 + STACKING UF[H52]: inmutable con H52 艮
+    //公证员 + SAMU @ CHAIR_CEO: autoridad notarial
+
+NC_CN_VALIDATION_RULES:
+    //reglas de validación para tokens CJK notariales
+    //sintaxis: debe ser CJK válido + pinyin + mapeo LACHO
+    //semántica: debe tener significado notarial claro
+    //conflictos: no debe duplicar claves existentes
+    //integración: debe ser compatible con grammar.py
+
+// ══ PREPARACIÓN PARA SUN_11 ════════════════════════════════════
+NC_CN_SUN_11_READY:
+    //preparación para formalización SUN_11
+    //tokens listos: 5 tokens CJK notariales definidos
+    //anclas listas: 4 anclas RAG bilingües validadas
+    //integración lista: compatible con CJK_TOKEN_MAP
+    //próximo paso: SUN_11 formalización UNICODE PROGRAMS
+
+NC_CN_FUTURE_EXPANSION:
+    //expansión futura de tokens CJK notariales
+    //posibles nuevos tokens: 证人, 签名, 日期, 文件, 记录
+    //criterios: relevancia notarial + uso frecuente + mapeo claro
+    //proceso: validación → definición → integración
+    //objetivo: cobertura completa de términos notariales

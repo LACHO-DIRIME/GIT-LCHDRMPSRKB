@@ -25,13 +25,21 @@ SEMANA 3 — GROQ CALIBRADO
     - KALIL nodos económicos en LACHO
 
 SEMANA 4 — CICLO REAL
-  Target: usar LACHO para decisiones reales del día
+  Target: usar LACHO para decisiones relevantes del día
   Tareas:
     - Una sentencia LACHO por decisión relevante diaria
     - SAMU @ para cada conflicto
     - STACKING para cada WU cristalizado
     - Dashboard ELPULSAR básico operativo
     - Revisar stats cada $fri
+
+## SEMANA W12 — NOTARIA OPERATIVA
+  Target: Scalar S >= 0.840 · cristales >= 45
+  Tareas:
+    - NOTARIA endpoints verificados en elpulsar.py
+    - autoresearch_specs.py + autoresearch_gap.py operativos
+    - 10+ Nerve Cells indexados RAG
+    - METHOD × 4 NEURONAS (según prompts $thu 19-03)
 
 ## MÉTRICA SOBERANA
   precision_soberana = grammar_valid / transactions_total

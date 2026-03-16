@@ -41,6 +41,23 @@ INTENT_MAP: dict[str, list[str]] = {
                  "completar","ciclo","hexagrama","phase","fase"],
 }
 
+# ── Intenciones notariales ──────────────────────────────────────
+NOTARIA_INTENT_MAP: dict[str, tuple[str, str, str]] = {
+    "certificar":      ("CRYPTO",   "(spark seat)",  "certifica"),
+    "notariar":        ("CRYPTO",   "(spark seat)",  "certifica"),
+    "autenticar":      ("CRYPTO",   "(key seat)",    "autenticar"),
+    "legalizar":       ("TRUST",    "FOUNDATION",    "verifica"),
+    "sellar":          ("STACKING", "UF[H63]",       "sella"),
+    "sellar documento":("STACKING", "UF[H63]",       "sella"),
+    "inmutabilizar":   ("STACKING", "UF[H52]",       "inmutabiliza"),
+    "inmutabilizar registro": ("STACKING","UF[H52]", "inmutabiliza"),
+    "auditar acto":    ("SAMU",     "@",             "audita"),
+    "certificar acto": ("CRYPTO",   "(spark seat)",  "certifica"),
+    "公证":             ("TRUST",    "FOUNDATION",    "verifica"),
+    "认证":             ("CRYPTO",   "(spark seat)",  "certifica"),
+    "封印":             ("STACKING", "UF[H63]",       "sella"),
+}
+
 # Verbo por defecto para cada biblioteca
 DEFAULT_VERB: dict[str, str] = {
     "TRUST":    "verifica",
@@ -177,22 +194,39 @@ def route(text: str) -> RoutedSentence:
     library, confidence = _detect_library(text)
     notes.append(f"library={library} confidence={confidence:.2f}")
 
-    # 3. Sujeto
+    # 3. Boost notarial: priorizar intenciones notariales específicas
+    text_lower = text.lower()
+    NOTARIA_KW = {
+        "certifica","sella","inmutabiliza","notari","acto","h63",
+        "既濟","sellado","公证","认证","封印","partes","objeto"
+    }
+    # Si cualquier keyword notarial está en el input, priorizar CRYPTO/STACKING
+    if any(k in text_lower for k in NOTARIA_KW):
+        # boost: si la library detectada no es CRYPTO ni STACKING, intentar reasignar
+        if library not in ("CRYPTO", "STACKING", "TRUST", "SAMU"):
+            # Buscar intención notarial exacta
+            for intent, (lib, subj, verb) in NOTARIA_INTENT_MAP.items():
+                if intent in text_lower:
+                    library = lib
+                    notes.append(f"notarial boost: {intent} -> {lib}")
+                    break
+
+    # 4. Sujeto
     subject = DEFAULT_SUBJECT.get(library, "FOUNDATION")
 
-    # 4. Verbo
+    # 5. Verbo
     verb = _detect_verb(text, library)
 
-    # 5. Objeto
+    # 6. Objeto
     obj = _extract_object(text, library, cjk_tokens)
 
-    # 6. Nudo
+    # 7. Nudo
     knot = _detect_knot(text)
 
-    # 7. Construir sentencia
+    # 8. Construir sentencia
     sentence = f"{library} {subject} =><= .. {verb} .. {obj} --[{knot}] [term]"
 
-    # 8. Validar con grammar
+    # 9. Validar con grammar
     parsed = validate(sentence)
     validated = parsed.result in (ValidationResult.VALID, ValidationResult.WARNING)
 

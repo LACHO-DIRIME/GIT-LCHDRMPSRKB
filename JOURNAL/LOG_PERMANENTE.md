@@ -25,3 +25,5 @@
 | 2026-03-08 | 1012 | 40 | 0.844 | GitHub SSH activo · 4 commits · árbol soberano completo |
 | 2026-03-08 | 1012 | 40 | 0.844 | 8 integraciones data aplicada · grammar +8 sujetos · ballpaper_render() |
 | 2026-03-08 | 1012 | 40 | 0.844 | RAG boost críticos · system prompt COGNITIVOS prioritarios · tests 25/25 |
+| 2026-03-15 | 1363 | 46 | 0.773 | $sun NOTARIA CHINA · 15/15 prompts · TANDIL archivo · CJK tokens bilingues · BARRIOS+CHALTEN UNICODE · endpoints notariales declarados · test bilingues · BALLPAPER $sun |
+| 2026-03-16 | 1387 | 49 | 0.768 | $mon NOTARIA circuit · 15/15 prompts · ballpaper.py implementado · bug _show_notaria_status verificado · S baja levemente normal con TX nuevos |

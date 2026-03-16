@@ -15,25 +15,19 @@
 ##
 ## ═══════════════════════════════════════════════════════════════════
 
-## ESTADO DEL SISTEMA — $sun 15-03-2026
+## ESTADO DEL SISTEMA — $mon 16-03-2026
 
 VERSIÓN:  0.2.1
-LEDGER:   TX=1363 · cristales=46 · Scalar S=0.773 · tests=44/44
+LEDGER:   TX=1387 · cristales=49 · Scalar S=0.768 · tests=44/44
 STACK:    Windsurf ✅ · Groq llama-3.3-70b activo
 DIR:      cd /media/Personal/PLANERAI/DIRIME/IMV
-GITHUB:   main · commit cierre $sun completado
-RAG:      252 CORPUS · 4 THEATER · 3 RUNNER · 2 AGENT · 14 patrones
-SAMU:     IDLE · 0 disputas · lacho_score=0.8
+GITHUB:   main · commit cierre $mon pendiente
+RAG:      258 CORPUS · 4 THEATER · 3 RUNNER · 2 AGENT
 
-## PRÓXIMOS CRISTALES
-  certifica × 10 → ✨ CRISTAL
-  detiene   × 10 → ✨ CRISTAL
-
-## PRIORIDADES $mon 16-03
-  [1] /api/notaria/* — 5 endpoints en main.py (S2.1 · prereq: ballpaper.py)
-  [2] tools/autoresearch_specs.py — scanner repo sin Groq (S2.2)
-  [3] Askings/$sat_asks_14-03.txt — ejemplo manual formato asks (S2.3)
-  [4] IMV/core/ballpaper.py — tabla 3 familias (S1.2 · aún pendiente)
+## PRIORIDADES $tue 17-03
+  [1] IMV/core/ballpaper.py — COMPLETADO HOY ✅ · tests 44/44
+  [2] /api/notaria/* 5 endpoints en elpulsar.py — verificar integración con ballpaper
+  [3] tools/autoresearch_specs.py (S2.2) — pendiente
 
 ## CONTEXTO TÉCNICO
   NOTARIA:     grammar H63+sella · taxonomy N0-N4 · pipeline 44/44
@@ -61,8 +55,8 @@ python3 ~/DIRIME/IMV/main.py --asks
 ```
 
 ## CHECKLIST DE CIERRE
-  [ ] Actualizar ESTADO DEL SISTEMA arriba (TX · S · tests · fecha)
-  [ ] Agregar línea a JOURNAL/LOG_PERMANENTE.md
+  [x] Actualizar ESTADO DEL SISTEMA arriba (TX · S · tests · fecha)
+  [x] Agregar línea a JOURNAL/LOG_PERMANENTE.md
   [ ] Marcar tareas completadas en PLAN_IMPLEMENTACION_BLOQUE_B.md
   [ ] bash ~/DIRIME/tools/github_sync.sh
 

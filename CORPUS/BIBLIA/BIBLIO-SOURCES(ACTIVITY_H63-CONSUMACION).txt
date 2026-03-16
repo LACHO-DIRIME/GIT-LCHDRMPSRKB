@@ -293,3 +293,8 @@ La consumación soberana es el arte de completar el ciclo sabiendo que cada fin 
 **PRÓXIMA REVISIÓN:** Cuando UF[H64] complete nuevo proceso
 **PROTECCIÓN:** UF[H29] + UF[H52] + SAMU @ + UF[H64]
 ---
+
+//SENTENCIAS SOBERANAS H63 — indexables RAG
+//STACKING UF[H63] =><= .. cristaliza .. consumacion_soberana --[Nudo de Ocho] [term]
+//STACKING UF[H63] =><= .. sella .. acto_consumado --[Nudo de Ocho] [term]
+//GATE UF[H06] =><= .. resuelve .. ciclo_h63 --[Nudo de Rizo] [term]

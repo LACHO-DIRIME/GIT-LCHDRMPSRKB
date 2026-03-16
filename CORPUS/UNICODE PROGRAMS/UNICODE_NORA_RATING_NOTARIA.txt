@@ -1,0 +1,17 @@
+//[MANAGEMENT].lacho · UNICODE NORA RATING × NOTARIA
+//UNICODE_.lacho · V1 · 2026-03-16 · $mon
+//NORA = nodo analytics KALIL · rating partes acto notarial · oracle soberano
+//Fuente: 面子(miànzi) → SAMU scalar-S · H15 · NORA · DeFi score
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo · 空聽數
+
+UNICODE: NORA_INPUT        //datos de partes: identidad · historial · score previo
+UNICODE: NORA_PROCESS      //METHOD <stat_onto> calcula rating 0→1 · delta-Ψ
+UNICODE: NORA_OUTPUT       //rating por parte · si < 0.70 → SAMU @ dirime
+UNICODE: NORA_KALIL_LINK   //rating NORA alimenta CARILO_FEE · loop KALIL cerrado
+UNICODE: NORA_LEDGER       //rating registrado en ledger TX · inmutable · trazable
+
+METHOD <stat_onto> =><= .. calcula .. nora_rating_partes_acto_notarial --[Ballestrinque] [term]
+SAMU @ =><= .. dirime .. nora_red_flag_parte_bajo_070_revision --[Ballestrinque] [term]
+METHOD <equation> =><= .. calcula .. nora_carilo_link_fee_notarial --[Ballestrinque] [term]
+WORK {actuator} =><= .. registra .. nora_rating_ledger_tx_inmutable --[As de Guía] [term]

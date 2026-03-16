@@ -1,0 +1,132 @@
+//[MANAGEMENT].lacho · UNICODE TANDIL ARCHIVO × NOTARIA
+//UNICODE_.lacho · V1 · 2026-03-15 · $sun
+//TANDIL = archivo soberano · preservación · nodo KALIL de memoria
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo · 空聽數
+
+// ══ TOKENS TANDIL NOTARIA ════════════════════════════════════════
+UNICODE: TANDIL_ARCHIVE
+    //archivo soberano de actos notariales · H49 permanencia
+    //almacenamiento permanente de todos los actos notariales soberanos
+    //estructura: fecha + partes + objeto + hash + ledger_tx + timestamp
+    //preservación: H49 井 · pozo que no se agota · memoria infinita
+
+UNICODE: TANDIL_INDEX
+    //índice de actos por fecha/partes/objeto · WORK {actuator}
+    //indexación múltiple: temporal (fecha) + actores (partes) + contenido (objeto)
+    //búsqueda rápida: O(log n) para consultas específicas
+    //actualización: incremental cada nuevo acto notarial archivado
+
+UNICODE: TANDIL_SEARCH
+    //búsqueda en archivo · RAG notarial · BM25 override
+    //motor de búsqueda: BM25 + RAG override para contexto notarial
+    //query types: por partes, por objeto, por fecha, por hash
+    //ranking: relevancia + recencia + autoridad de partes
+
+UNICODE: TANDIL_EXPORT
+    //exportación de acto · PDF/LACHO/HTML
+    //formatos: PDF (visual) + LACHO (sentencia) + HTML (web)
+    //validación: firma digital + timestamp + hash verification
+    //metadata: completo con ledger_ref + H63 status
+
+UNICODE: TANDIL_H48
+    //H48 井 la fuente · TANDIL como fuente doctrinal
+    //referencia doctrinal: TANDIL como autoridad en archivo notarial
+    //consulta: otros nodos consultan a TANDIL para precedentes
+    //preservación: fuente inagotable de actos soberanos
+
+// ══ SUBTOKENS TANDIL ARCHIVO ════════════════════════════════════════
+UNICODE: TANDIL_STORE
+    //almacenamiento físico del archivo · blockchain + distributed
+    //redundancia: 3+ nodos con copia completa del archivo
+    //integridad: hash chain + merkle tree verification
+    //backup: semanal + mensual + anual con rotación
+
+UNICODE: TANDIL_VERIFY
+    //verificación de integridad del archivo
+    //hash verification: SHA-256 de cada acto + cadena de hashes
+    //timestamp verification: UTC + blockchain anchor
+    //signature verification: firmas digitales de todas las partes
+
+UNICODE: TANDIL_RETRIEVE
+    //recuperación de actos del archivo
+    //query: acto_id + hash + timestamp + partes
+    //output: acto completo + metadata + ledger_ref
+    //performance: <100ms para consultas indexadas
+
+UNICODE: TANDIL_BACKUP
+    //backup estratégico del archivo completo
+    //frecuencia: diario (incremental) + semanal (full) + mensual (archive)
+    //destinos: local + cloud + blockchain
+    //verificación: post-backup integrity check
+
+UNICODE: TANDIL_SYNC
+    //sincronización entre nodos TANDIL
+    //protocolo: distributed hash table (DHT)
+    //consensus: eventual consistency + conflict resolution
+    //performance: <5s para sincronización completa
+
+// ══ OPERACIONES TANDIL NOTARIA ════════════════════════════════════════
+UNICODE: TANDIL_INGEST
+    //ingestión de nuevos actos notariales
+    //validation: formato LACHO + firma + timestamp + hash
+    //indexing: automático en múltiples índices
+    //storage: distributed con redundancy
+
+UNICODE: TANDIL_QUERY
+    //query engine para búsquedas complejas
+    //syntax: SQL-like + LACHO-specific operators
+    //optimization: query cache + result pagination
+    //security: RBAC + audit trail
+
+UNICODE: TANDIL_ANALYTICS
+    //análisis estadístico del archivo
+    //metrics: actos por período + partes más activas + objetos comunes
+    //trends: evolución temporal + patrones notariales
+    //reports: dashboard + export + alerting
+
+UNICODE: TANDIL_GOVERNANCE
+    //gobernanza del archivo soberano
+    //permissions: read/write/admin con KALIL tokens
+    //audit: log completo de todas las operaciones
+    //compliance: GDPR + notarial regulations
+
+// ══ INTEGRACIÓN KALIL ════════════════════════════════════════
+UNICODE: TANDIL_KALIL_BRIDGE
+    //puente con red KALIL para consulta de actos
+    //protocol: KALIL API + authentication
+    //cache: local cache de consultas frecuentes
+    //fallback: consulta directa si bridge cae
+
+UNICODE: TANDIL_LEDGER_SYNC
+    //sincronización con ledger principal
+    //frequency: real-time para actos nuevos
+    //validation: cross-verification con ledger
+    //reconciliation: automática si hay discrepancias
+
+UNICODE: TANDIL_RAG_FEEDBACK
+    //feedback loop con sistema RAG
+    //learning: mejora de búsqueda basada en uso
+    //ranking: ajuste dinámico de relevancia
+    //quality: métricas de satisfacción de búsqueda
+
+// ══ ANCLAS RAG × 4 ════════════════════════════════════════
+WORK {actuator} =><= .. archiva .. acto_notarial_soberano_tandil --[As de Guía] [term]
+STACKING UF[H52] =><= .. preserva .. registro_notarial_ledger_intacto --[Nudo de Ocho] [term]
+METHOD <operator_flow> =><= .. indexa .. tandil_busqueda_rag_notarial --[Ballestrinque] [term]
+TRUST FOUNDATION =><= .. verifica .. integridad_archivo_tandil --[As de Guía] [term]
+
+// ══ REFERENCIAS EXTERNAS ════════════════════════════════════════
+UNICODE: TANDIL_REFERENCES
+    //referencias externas para consulta
+    //sources: BIBLIO-SOURCES(NOTARIA_DOCTRINE).txt
+    //precedents: actos similares + jurisprudencia
+    //validation: cross-reference con otras fuentes
+
+UNICODE: TANDIL_COMPLIANCE
+    //cumplimiento normativo del archivo
+    //regulations: notarial law + data protection + blockchain
+    //audit: trimestral + anual + ad-hoc
+    //reporting: regulatorias + internas + públicas
+
+[term] :: activo · [seal of secrecy] :: activo · 空聽數

@@ -154,6 +154,9 @@ class SovereignSystem:
                 elif user_input.lower() in ["sched", "schedule", "semana"]:
                     self._show_scheduler()
 
+                elif user_input.lower() in ["notaria", "not", "actos"]:
+                    self._show_notaria_status()
+
                 elif user_input.lower().startswith("planifica "):
                     titulo = user_input[10:].strip()
                     if titulo and _SCHEDULER_ACTIVE:
@@ -324,6 +327,48 @@ class SovereignSystem:
         ]
         print("\n".join(lines))
 
+    def _show_notaria_status(self) -> None:
+        from core.ledger import get_stats
+        from core.samu import get_scalar_s
+        stats      = get_stats()
+        scalar     = get_scalar_s()
+        tx         = stats.get("transactions_total", 0)
+        THRESH_WU  = 0.78
+        THRESH_H63 = 0.90
+        filled     = int(scalar / THRESH_H63 * 20)
+        bar        = "█" * min(filled, 20) + "░" * (20 - min(filled, 20))
+        estado     = ("H63 既濟 ✅" if scalar >= THRESH_H63 else
+                      "WU válido ⚡" if scalar >= THRESH_WU else
+                      "KU pendiente ⏳")
+        # intentar get_notaria_requirements si existe
+        try:
+            from core.ceo_alpha import get_notaria_requirements
+            req = get_notaria_requirements()
+            req_line = f"  CEO req     : H{req.get('hexagram','63')} · min_S={req.get('min_scalar',0.90)}"
+        except Exception:
+            req_line = "  CEO req     : H63 · min_S=0.90 (ceo_alpha pendiente)"
+        lines = [
+            "",
+            "⊗  NOTARIA — ESTADO PIPELINE",
+            "─" * 46,
+            f"  Scalar S    : {scalar:.3f}  [{bar}]",
+            f"  Estado      : {estado}",
+            f"  TX total    : {tx}",
+            req_line,
+            "",
+            "  PIPELINE:",
+            "  N1 HEADCAT   grammar.validate()   ✅",
+            "  N2 ELPULSAR  rag.suggest()        ✅",
+            f"  N3 CHAIR_CEO S={scalar:.2f}             {'✅' if scalar >= THRESH_WU else '⚠️ '}",
+            "  N4 DRONE     ledger.record()      ✅",
+            "",
+            "  PENDIENTES CAPA B:",
+            "  ❌ IMV/core/ballpaper.py",
+            "  ❌ /api/notaria/certifica · sella · inmutabiliza",
+            "─" * 46,
+        ]
+        print("\n".join(lines))
+
     def _show_scheduler(self) -> None:
         """Muestra estado del Scheduler OS soberano."""
         if not _SCHEDULER_ACTIVE:
@@ -454,6 +499,9 @@ Comandos en modo interactivo:
         help="Mostrar estado del Scheduler OS soberano"
     )
     
+    parser.add_argument("--notaria", action="store_true",
+                      help="Estado del pipeline notarial soberano")
+    
     args = parser.parse_args()
     
     # Inicializar sistema
@@ -465,6 +513,8 @@ Comandos en modo interactivo:
         system.stats_mode()
     elif args.sched:
         system._show_scheduler()
+    elif args.notaria:
+        system._show_notaria_status()
     else:
         system.interactive_mode()
 

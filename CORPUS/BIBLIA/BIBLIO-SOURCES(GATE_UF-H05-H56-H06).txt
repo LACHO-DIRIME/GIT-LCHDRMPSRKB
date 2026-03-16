@@ -337,3 +337,8 @@ Soberanía temporal del sistema, control soberano del flujo, protección del nú
 [term] :: activo · [seal of secrecy] :: activo
 
 ====================================================================
+
+//GATE SEQUENCE NOTARIA — indexable RAG
+//GATE UF[H05] =><= .. espera .. partes_reunidas --[Ballestrinque] [term]
+//GATE UF[H56] =><= .. transita .. acto_en_curso --[As de Guía] [term]
+//GATE UF[H06] =><= .. resuelve .. tension_notarial --[Nudo de Rizo] [term]

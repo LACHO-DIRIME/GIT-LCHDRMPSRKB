@@ -1,21 +1,29 @@
-//[MANAGEMENT].lacho · DRA/INDEX/$mon
-//INDEX $mon · lunes soberano · apertura semanal · SAMU $mon
-//INDEX_$mon.txt · V1 · 2026-03-10
-//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
-//[term] :: activo
+// INDEX $mon 16-03-2026 · NOTARIA DIRIME/IMV · apertura semana W12
+// [term] :: activo · H51 El Trueno · ciclo semanal arranca · 空聽數
 
-// ══ $mon · LUNES ══════════════════════════════════════════════
-// $mon = lunes · SAMU day · apertura del ciclo semanal · UF[H64]
-// Rol en DRA: inicialización · FEED_0600 semanal · plan 5 días
-UNICODE: IDX_MON_RISE         //SAMU #rise $mon · 06:00 · MuLoad semanal
-UNICODE: IDX_MON_PLAN         //plan semana · SOCIAL {scheduler} declara
-UNICODE: IDX_MON_STOCK        //posición inicial · STK_MON · baseline S
-UNICODE: IDX_MON_SPEC         //qué SPEC avanza esta semana · A o B
-UNICODE: IDX_MON_AGENT        //agentes asignados esta semana · BOT_NET
-UNICODE: IDX_MON_TIER         //free tier slots disponibles al inicio
-UNICODE: IDX_MON_CRYSTAL      //cristales al inicio de semana · count
-UNICODE: IDX_MON_SET          //SAMU #set $mon · 18:00 · cierre día 1
+IDX_MON_RISE_NOT:
+  SAMU #rise $mon · FEED_0600 · actos notariales del día
+  ACTIVITY UF[H01] =><= .. inicia .. ciclo_semanal_notarial_lunes [term]
 
-//TRUST FOUNDATION =><= .. declara .. index_mon_apertura_semanal --[As de Guía] [term]
-//SOCIAL {scheduler} =><= .. planifica .. index_mon_semana_soberana --[As de Guía] [term]
-//DIR(+) DRA/INDEX/$mon · V1 · apertura · plan · H64 abierto
+IDX_MON_KALIL_NOT:
+  6 nodos × estado notarial al inicio semana W12
+  BOLIVAR(blockchain) · NORA(rating) · CARILO(fee) · BARRIOS(acceso)
+  CHALTEN(cloud) · TANDIL(archivo) · todos activos declarados
+
+IDX_MON_SCALAR_NOT:
+  Scalar S baseline semana: 0.773 · objetivo cierre $fri: 0.845+
+  threshold WU=0.78 · threshold H63=0.90
+
+IDX_MON_NERVE_COUNT:
+  Nerve Cells notariales activos: $thu(3)+$fri(2)+$sat(1)+$sun(2)+$mon(1)=9
+  indexados RAG · boost NOTARIA activo
+
+IDX_MON_SPEC_NOT:
+  SPEC B NOTARIA esta semana: ballpaper.py · /api/notaria/* · autoresearch_specs.py
+  CIRCUIT_4_NEURONAS_NOTARIA.html · CHCL_NOTARIA.txt · test integración
+
+IDX_MON_AGENT:
+  cloud_agent.blue × NOTARIA activo · sección notaria_certifica_cloud disponible
+  assistant_agent.green · notaria routing activo
+
+[term] :: activo · [seal of secrecy] :: activo · 空聽數

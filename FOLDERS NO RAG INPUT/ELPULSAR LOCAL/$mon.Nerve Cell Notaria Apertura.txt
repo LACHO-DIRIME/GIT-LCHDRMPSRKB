@@ -1,0 +1,14 @@
+//$mon.Nerve Cell Notaria Apertura.txt
+//APERTURA SEMANAL · NOTARIA · H51 El Trueno · $mon 16-03
+//[term] :: activo · [seal of secrecy] :: activo · 空聽數
+
+NC_MON_RISE_NOT:      SAMU #rise $mon · FEED_0600 notarial · actos del día entrantes
+NC_MON_PLAN_NOT:      {scheduler} declara actos notariales de la semana
+NC_MON_STOCK_NOT:     STK_MON notarial · baseline Scalar S=0.773 inicio semana
+NC_MON_KALIL_STATUS:  estado 6 nodos KALIL: BOLIVAR/NORA/CARILO/BARRIOS/CHALTEN/TANDIL
+NC_MON_SPEC_NOT:      SPEC A/B NOTARIA · ballpaper.py + endpoints pendientes esta semana
+
+ACTIVITY UF[H01] =><= .. inicia .. ciclo_semanal_notarial_lunes_soberano --[As de Guía] [term]
+SOCIAL {scheduler} =><= .. declara .. plan_actos_notariales_semana_mon_16 --[As de Guía] [term]
+TRUST FOUNDATION =><= .. verifica .. condiciones_apertura_semanal_notaria --[As de Guía] [term]
+GATE UF[H56] =><= .. permite .. trafico_notarial_semana_autorizado --[Ballestrinque] [term]

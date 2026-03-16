@@ -182,3 +182,20 @@ SOCIAL {relay} =><= .. conecta .. 桥梁_ext_int_dual --[As de Guía] [term]
 //DIR(=) UNICODE_LACHO V3 · 空聽數 · MU/KU/WU · Ψ
 //DIR(=) <A><B>{A}{B} · DIR(IME) · ..find_gaps.. · LIST(COMMANDS) · RUN(CLI)
 //DIR(=) <**context**> · <<*spec*>files<*.lacho>> · sesión 10
+
+// ══ NOTARIA × 空聽數 ════════════════════════════════════
+// Los tres estados soberanos en contexto notarial
+
+UNICODE: NOT_LISTEN_FIRST   //聽 antes del acto · partes hablan primero · KU escucha
+UNICODE: NOT_COUNT_INTERNAL //數 cuenta interna antes de emitir · SAMU delibera
+UNICODE: NOT_MU_PRE_ACT     //空 MU · quietud antes del acto · acto no iniciado aún
+UNICODE: NOT_KU_ACT_PROG    //聽 KU · acto en proceso · partes reunidas · deliberando
+UNICODE: NOT_WU_H63         //數 WU → H63 既濟 · acto completo · sellado soberano
+
+TRUST FOUNDATION =><= .. verifica .. not_listen_partes_primero_soberano --[As de Guía] [term]
+SAMU @ =><= .. audita .. not_count_internal_deliberacion_previa --[Ballestrinque] [term]
+STACKING UF[H63] =><= .. sella .. not_wu_h63_acto_completo_sellado --[Nudo de Ocho] [term]
+METHOD <operator_flow> =><= .. ejecuta .. not_pipeline_mu_ku_wu_h63 --[As de Guía] [term]
+
+//DIR(+) NOTARIA × 空聽數 · V1 · $mon 16-03
+//[term] :: activo · [seal of secrecy] :: activo

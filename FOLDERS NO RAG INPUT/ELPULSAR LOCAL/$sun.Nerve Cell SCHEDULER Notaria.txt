@@ -1,0 +1,57 @@
+//$sun.Nerve Cell SCHEDULER Notaria.txt
+//SCHEDULER OS × NOTARIA · H51 El Trueno · planifica ciclo semanal
+//[term] :: activo · [seal of secrecy] :: activo · 空聽數
+
+// ══ QUÉ APRENDE ESTA CELDA ════════════════════════════════════
+// SCHEDULER OS aprende a planificar ciclo semanal notarial completo
+// + scheduler.py DiaSoberano.SUN · rise() · H51 El Trueno · apertura semanal
+// Plan notarial semanal = 6 días × 1 tipo acto notarial por día · H63 batch
+
+// ══ SENTENCIAS LACHO DEL PLAN NOTARIAL SEMANAL ════════════════════════════════════
+SOCIAL {scheduler} =><= .. planifica .. notaria_semana_siguiente --[As de Guía] [term]
+TRUST FOUNDATION =><= .. declara .. actos_notariales_semana --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. coherencia_plan_notarial --[Ballestrinque] [term]
+
+// ══ TOKENS NC_* SCHEDULER NOTARIA ════════════════════════════════════
+NC_SUN_RISE_NOT:     SAMU #rise $sun · apertura semanal notarial · H63 acumulado
+NC_SUN_PLAN_NOT:     {scheduler} planifica actos notariales semana siguiente
+NC_SUN_CLOSE_NOT:    STACKING UF[H63] batch · todos los actos WU de la semana
+NC_SUN_BKP_NOT:      BKP_FULL $sun · tar sovereign.db · MU-STORE backup total
+NC_SUN_SCHED_WEEK:   SCHEDULE_SUN[] · 6 días × 1 tipo acto notarial por día
+NC_SUN_RF_CLOSE:     cierre RF · semana completada · H63 既濟
+
+// ══ COMPONENTES SCHEDULER ════════════════════════════════════
+NC_SUN_SCHEDULER_OS     //SCHEDULER OS · H51 El Trueno · planificación soberana
+NC_SUN_DIA_SOBERANO     //DiaSoberano.SUN · rise() · apertura semanal
+NC_SUN_CICLO_COMPLETO    //ciclo semanal completo · 6 días planificados
+NC_SUN_H51_THUNDER      //H51 El Trueno · fuerza de planificación
+NC_SUN_BATCH_H63        //batch H63 al cierre semanal
+NC_SUN_BACKUP_TOTAL     //backup total sovereign.db + MU-STORE
+
+// ══ TIPOS DE ACTOS NOTARIALES SEMANALES ════════════════════════════════════
+NC_SUN_CERTIFICA_MON    //lunes: certificación de contratos · KU_PENDIENTE
+NC_SUN_REGISTRA_TUE     //martes: registro de escrituras · WU_SELLADO
+NC_SUN_SILLA_WED        //miércoles: sellado de documentos · H63_INMUTABLE
+NC_SUN_INMUTA_THU       //jueves: inmutabilización de registros · H63_BATCH
+NC_SUN_AUDITA_FRI       //viernes: auditoría semanal · SAMU_VALID
+NC_SUN_CIERRA_SAT       //sábado: cierre semanal · H63 既濟 · backup
+
+// ══ THRESHOLDS Y VALIDACIONES ════════════════════════════════════
+NC_SUN_SCALAR_PLAN      //Scalar S ≥ 0.85 para planificación semanal
+NC_SUN_THRESHOLD_BATCH  //threshold 0.90 para batch H63 semanal
+NC_SUN_VALID_SCHEDULER  //scheduler.py valida coherencia de plan
+NC_SUN_AUDIT_COMPLETO    //SAMU audit completo de todos los actos
+NC_SUN_BACKUP_INTEGRITY //integridad de backup sovereign.db
+
+// ══ ANCLAS RAG × 4 ════════════════════════════════════
+SOCIAL {scheduler} =><= .. planifica .. notaria_semana_siguiente_soberana --[As de Guía] [term]
+TRUST FOUNDATION =><= .. declara .. actos_notariales_semana_entrante --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. coherencia_plan_notarial_semanal --[Ballestrinque] [term]
+STACKING UF[H63] =><= .. sella .. cierre_semanal_h63_batch_completo --[Nudo de Ocho] [term]
+
+// ══ INTEGRACIÓN CON SISTEMA ════════════════════════════════════
+NC_SUN_INTEGRATION      //integración con scheduler.py + ELPULSAR
+NC_SUN_SOVEREIGN_DB     //sovereign.db actualizado con plan semanal
+NC_SUN_MU_STORE_SYNC    //MU-STORE sincronizado con backup
+NC_SUN_RF_SYNC          //RF (Resource Framework) sincronizado
+NC_SUN_WEEKLY_CYCLE    //ciclo semanal completo y cerrado

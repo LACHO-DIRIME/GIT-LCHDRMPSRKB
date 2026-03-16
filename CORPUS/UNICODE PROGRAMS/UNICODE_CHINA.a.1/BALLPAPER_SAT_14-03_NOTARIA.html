@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BALLPAPER · $sat 14/03/2026 · NOTARIA DASHBOARD + BACKUP</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Share+Tech+Mono&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Courier Prime', 'Share Tech Mono', monospace;
+            background: #ffffff;
+            color: #1a1a2e;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .paper {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #1a1a2e;
+            padding-bottom: 20px;
+        }
+        
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .subtitle {
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+            padding: 15px;
+            border: 1px solid #f0f0f0;
+            border-radius: 5px;
+        }
+        
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #1a5c30;
+        }
+        
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .neuron-card {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 3px;
+            border-left: 3px solid #1a5c30;
+        }
+        
+        .neuron-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .activation-bar {
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            margin: 3px 0;
+        }
+        
+        .activation-fill {
+            height: 100%;
+            background: #1a5c30;
+            border-radius: 4px;
+        }
+        
+        .panel-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+        
+        .panel {
+            background: #f0f8ff;
+            padding: 10px;
+            border-radius: 3px;
+            border-left: 3px solid #3399ff;
+        }
+        
+        .panel-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .panel-state {
+            font-size: 12px;
+            color: #333;
+        }
+        
+        .scalar-gauge {
+            background: #f5f5f5;
+            padding: 10px;
+            border-radius: 3px;
+            margin: 10px 0;
+        }
+        
+        .scalar-bar {
+            height: 12px;
+            background: #e0e0e0;
+            border-radius: 6px;
+            margin: 5px 0;
+        }
+        
+        .scalar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #ff6b6b 0%, #ffd93d 50%, #6bcf7f 100%);
+            border-radius: 6px;
+        }
+        
+        .node-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+        
+        .node-card {
+            background: #e8f5e8;
+            padding: 10px;
+            border-radius: 3px;
+            border: 1px solid #d4a373;
+        }
+        
+        .node-name {
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+        
+        .node-hex {
+            font-size: 10px;
+            color: #666;
+            margin-bottom: 3px;
+        }
+        
+        .node-state {
+            font-size: 11px;
+            color: #333;
+        }
+        
+        .demo-section {
+            background: #f0fff0;
+            padding: 15px;
+            border-radius: 3px;
+            border-left: 3px solid #28a745;
+        }
+        
+        .demo-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #155724;
+        }
+        
+        .demo-code {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 3px;
+            font-family: monospace;
+            font-size: 12px;
+            margin: 10px 0;
+            border: 1px solid #e1e4e8;
+        }
+        
+        .token-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        
+        .token-table th,
+        .token-table td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        
+        .token-table th {
+            background: #f8f9fa;
+            font-weight: bold;
+        }
+        
+        .log-section {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 3px;
+            border-left: 3px solid #ffc107;
+        }
+        
+        .log-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #856404;
+        }
+        
+        .log-content {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 3px;
+            font-family: monospace;
+            font-size: 11px;
+            border: 1px solid #e1e4e8;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 3px;
+            text-align: center;
+            font-size: 11px;
+            color: #666;
+        }
+        
+        .metrics {
+            display: flex;
+            justify-content: space-around;
+            margin: 10px 0;
+        }
+        
+        .metric {
+            text-align: center;
+        }
+        
+        .metric-value {
+            font-weight: bold;
+            color: #1a5c30;
+        }
+        
+        .chinese {
+            font-family: 'Noto Serif SC', serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="paper">
+        <div class="header">
+            <div class="title">BALLPAPER · $sat 14/03/2026 · NOTARIA DASHBOARD + BACKUP</div>
+            <div class="subtitle"><span class="chinese">空 聽 數</span> · H63 既濟 · TX=1335 · S=0.840 objetivo</div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">SECCIÓN 1 — Dashboard ELPULSAR/KALIL/NOTARIA (mini del PROMPT_SAT_01)</div>
+            <div class="dashboard-grid">
+                <div class="neuron-card">
+                    <div class="neuron-name">NEURONA_1 HEADCAT</div>
+                    <div class="activation-bar">
+                        <div class="activation-fill" style="width: 85%;"></div>
+                    </div>
+                    <small>Input parsing · 85%</small>
+                </div>
+                <div class="neuron-card">
+                    <div class="neuron-name">NEURONA_2 ELPULSAR</div>
+                    <div class="activation-bar">
+                        <div class="activation-fill" style="width: 92%;"></div>
+                    </div>
+                    <small>5 greens pipeline · 92%</small>
+                </div>
+                <div class="neuron-card">
+                    <div class="neuron-name">NEURONA_3 CHAIR_CEO</div>
+                    <div class="activation-bar">
+                        <div class="activation-fill" style="width: 88%;"></div>
+                    </div>
+                    <small>H63 NOTARIO · 88%</small>
+                </div>
+                <div class="neuron-card">
+                    <div class="neuron-name">NEURONA_4 HOUSE_DRONE</div>
+                    <div class="activation-bar">
+                        <div class="activation-fill" style="width: 90%;"></div>
+                    </div>
+                    <small>Door periods · 90%</small>
+                </div>
+            </div>
+            
+            <div class="panel-grid">
+                <div class="panel">
+                    <div class="panel-title">NOTARIA_PANEL_1</div>
+                    <div class="panel-state">KU_PENDIENTE · Recibiendo actos</div>
+                </div>
+                <div class="panel">
+                    <div class="panel-title">NOTARIA_PANEL_2</div>
+                    <div class="panel-state">WU_SELLADO · Actos validados</div>
+                </div>
+                <div class="panel">
+                    <div class="panel-title">NOTARIA_PANEL_3</div>
+                    <div class="panel-state">H63_INMUTABLE · Actos sellados</div>
+                </div>
+            </div>
+            
+            <div class="scalar-gauge">
+                <div>Scalar S: 0.840/0.900 (objetivo)</div>
+                <div class="scalar-bar">
+                    <div class="scalar-fill" style="width: 93%;"></div>
+                </div>
+            </div>
+            
+            <div class="node-grid">
+                <div class="node-card">
+                    <div class="node-name">BOLIVAR</div>
+                    <div class="node-hex">H63 既濟</div>
+                    <div class="node-state">BLOCKCHAIN VALID</div>
+                </div>
+                <div class="node-card">
+                    <div class="node-name">NORA</div>
+                    <div class="node-hex">H15 謙</div>
+                    <div class="node-state">ANALYTICS ACTIVE</div>
+                </div>
+                <div class="node-card">
+                    <div class="node-name">CARILO</div>
+                    <div class="node-hex">H48 井</div>
+                    <div class="node-state">CAPITAL READY</div>
+                </div>
+                <div class="node-card">
+                    <div class="node-name">BARRIOS</div>
+                    <div class="node-hex">H06 訟</div>
+                    <div class="node-state">SOCIAL STANDBY</div>
+                </div>
+                <div class="node-card">
+                    <div class="node-name">CHALTEN</div>
+                    <div class="node-hex">H05 需</div>
+                    <div class="node-state">RESOURCES IDLE</div>
+                </div>
+                <div class="node-card">
+                    <div class="node-name">TANDIL</div>
+                    <div class="node-hex">H52 艮</div>
+                    <div class="node-state">INDUSTRY WAIT</div>
+                </div>
+            </div>
+            
+            <div class="metrics">
+                <div class="metric">
+                    <div>TX Objetivo</div>
+                    <div class="metric-value">1100+</div>
+                </div>
+                <div class="metric">
+                    <div>Cristales</div>
+                    <div class="metric-value">43</div>
+                </div>
+                <div class="metric">
+                    <div>Actos H63</div>
+                    <div class="metric-value">12</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">SECCIÓN 2 — ballpaper_render_notaria() demo (PROMPT_SAT_04)</div>
+            <div class="demo-section">
+                <div class="demo-title">ASCII Render Demo - Acto Notarial Real</div>
+                <div class="demo-code">
+┌─────────────────────────────────────────────────────────────────┐<br>
+│  BALLPAPER NOTARIAL · $sat 14/03/2026 · 13:45:32Z    │<br>
+├─────────────────────────────────────────────────────────────────┤<br>
+│  ACTO: certifica_acuerdo_BOLIVAR_$sat                   │<br>
+│  ESTADO: SAMU VALID · S=0.91 · H63 既濟                │<br>
+│  HASH: 7f8a3d9b2c5e1a4d8c9b8b5a7d9e8c3a2f1b4e7c6f  │<br>
+│  LEDGER: TX=1348 · CRISTAL=⊗ · BLOCKCHAIN CONFIRMADO   │<br>
+└─────────────────────────────────────────────────────────────────┘<br>
+<br>
+┌─ NOTARIA PIPELINE ────────────────────────────────────────┐<br>
+│  HEADCAT → ELPULSAR → CHAIR_CEO → HOUSE_DRONE     │<br>
+│  INPUT → 5GREENS → H63_AUDIT → DOOR_PERIODS      │<br>
+│  ✅ VALID · score=0.91 · [term] activo              │<br>
+└───────────────────────────────────────────────────────────────┘
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">SECCIÓN 3 — Tokens NORA + CARILO creados hoy (PROMPT_SAT_05 + 07)</div>
+            <table class="token-table">
+                <thead>
+                    <tr>
+                        <th>TOKEN</th>
+                        <th>NUDO</th>
+                        <th>FUNCIÓN</th>
+                        <th>SCALAR_THRESHOLD</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>NORA_RATING_PARTES</td>
+                        <td>As de Guía</td>
+                        <td>Rating partes 0→1</td>
+                        <td>0.70</td>
+                    </tr>
+                    <tr>
+                        <td>NORA_RISK_ACT</td>
+                        <td>As de Guía</td>
+                        <td>Riesgo acto completo</td>
+                        <td>0.40</td>
+                    </tr>
+                    <tr>
+                        <td>CARILO_FEE_NOTARIA</td>
+                        <td>Nudo de Ocho</td>
+                        <td>Fee notarial en tokens</td>
+                        <td>0.001 UF</td>
+                    </tr>
+                    <tr>
+                        <td>CARILO_RISK_ACT</td>
+                        <td>Nudo de Ocho</td>
+                        <td>Riesgo crediticio</td>
+                        <td>0.90</td>
+                    </tr>
+                    <tr>
+                        <td>CARILO_LOAN_NOT</td>
+                        <td>Nudo de Ocho</td>
+                        <td>Préstamo asociado</td>
+                        <td>0.78</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <div class="section-title">SECCIÓN 4 — github_sync.sh log simulado (PROMPT_SAT_10)</div>
+            <div class="log-section">
+                <div class="log-title">Git Sync Log - $sat 14/03/2026</div>
+                <div class="log-content">
+✅ github_sync.sh · commit notarial · $sat 14-03 · [term] activo<br>
+<br>
+STAGE 1: Notaria files<br>
+  + UNICODE_NOTARIA_BACKUP_H63.txt<br>
+  + UNICODE_NORA_NOTARIA.txt<br>
+  + UNICODE_CARILO_NOTARIA.txt<br>
+  + UNICODE_IMV_4NEURONAS_NOTARIA_V1.txt<br>
+<br>
+STAGE 2: MU-STORE DB backup<br>
+  + $sat.CORPUS_NOTARIA_KALIL.MU-STORE.db<br>
+  + Size: 2.4MB · Records: 156<br>
+<br>
+STAGE 3: Nerve cells daily<br>
+  + $thu.Nerve Cell Notaria Training.txt<br>
+  + $fri.Nerve Cell KALIL Notaria Training.txt<br>
+  + $sat.Nerve Cell BACKUP Notaria.txt<br>
+<br>
+STAGE 4: IMV core files<br>
+  + IMV/core/grammar.py (notaria fixes)<br>
+  + IMV/data/PRACTICE-NOTARIA.lacho<br>
+  + IMV/interface/chat.py (ballpaper_render_notaria)<br>
+<br>
+STAGE 5: LACHO_FILES<br>
+  + micro_solutions.lacho (notaria extension)<br>
+  + macro_components.lacho (componente_notaria)<br>
+<br>
+FINAL: git push origin/main --tags<br>
+Commit: "STACKING UF[H63] :: cristaliza :: notaria_14-03 --[NdO] [term]"<br>
+Remote: https://github.com/DIRIME/DIRIME.git<br>
+Status: ✅ PUSHED · 4 files · 2.4MB<br>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">SECCIÓN 5 — CIDE nodes agregados hoy (PROMPT_SAT_08)</div>
+            <div class="demo-section">
+                <div class="demo-title">CIDE Circuit IDE - NOTARIA Nodes Added</div>
+                <div class="demo-code">
+┌─ CIDE LIBRARY ────────────────────────────────────────────────┐<br>
+│  NOTARIA GROUP (added $sat 14-03)                    │<br>
+├─────────────────────────────────────────────────────────────┤<br>
+│  ⊗ NOTARIA H63    [STACKING] · H63 既濟          │<br>
+│  公 certifica        [CRYPTO] · spark seat              │<br>
+│  证 sella           [CRYPTO] · Nudo de Ocho            │<br>
+│  档 inmutabiliza    [STACKING] · H52 艮                │<br>
+│  核 verifica         [SAMU] · audit oracle              │<br>
+└─────────────────────────────────────────────────────────────┘<br>
+<br>
+┌─ LIBSIG VISUAL ────────────────────────────────────────────┐<br>
+│  CRYPTO ╭─●─≡─  · certificación spark seat        │<br>
+│  STACKING ╭─⊣─∞─ · inmutabilización H52/H63      │<br>
+│  NOTARIA ╭─⊗─∞─ · sellado H63 既濟              │<br>
+│  SAMU ╭─核─●─  · verificación oracle              │<br>
+└─────────────────────────────────────────────────────────────┘
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">SECCIÓN 6 — micro_solutions NOTARIA resumen (PROMPT_SAT_09)</div>
+            <div class="demo-section">
+                <div class="demo-title">Micro Solutions - NOTARIA Extension</div>
+                <div class="demo-code">
+┌─ NOTARIA MICRO ROUTINES ───────────────────────────────┐<br>
+│  rutina_certifica_micro                           │<br>
+│  INPUT: partes [iniciante, contraparte, objeto, testigo] │<br>
+│  TRUST FOUNDATION → VALID → CRYPTO certifica → KU_CERTIFICADO │<br>
+│                                                     │<br>
+│  rutina_sella_micro                                │<br>
+│  INPUT: acto_id, scalar_s                           │<br>
+│  IF S≥0.90 → CRYPTO hash → STACKING UF[H63] → WU_SELLADO │<br>
+│                                                     │<br>
+│  rutina_inmutabiliza_micro                         │<br>
+│  INPUT: sello_hash, acto_id                        │<br>
+│  STACKING UF[H52] → sovereign.db INSERT → H63_INMUTABLE │<br>
+│                                                     │<br>
+│  rutina_verifica_micro                              │<br>
+│  INPUT: acto_id                                    │<br>
+│  SAMU @ audit → Scalar S validation → estado final     │<br>
+└─────────────────────────────────────────────────────────────┘<br>
+<br>
+ENDPOINTS: /api/notaria/*<br>
+THRESHOLDS: S≥0.90 (H63) · S≥0.78 (WU)<br>
+INTEGRATION: IMV/main.py + sovereign.db + SAMU audit
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">SECCIÓN 7 — 4 Neuronas × NOTARIA V1 (PROMPT_SAT_12)</div>
+            <div class="demo-section">
+                <div class="demo-title">IMV Pipeline - 4 Neuronas NOTARIA</div>
+                <div class="demo-code">
+┌─ NEURONAS NOTARIA PIPELINE ──────────────────────────────┐<br>
+│  N1 (HEADCAT) → N2 (ELPULSAR) → N3 (CHAIR_CEO) → N4 (HOUSE_DRONE) │<br>
+├─────────────────────────────────────────────────────────────────┤<br>
+│  NEURONA_1: INPUT parsing + routing                   │<br>
+│  → grammar.py valida → bypass N2 si S≥0.90              │<br>
+│                                                     │<br>
+│  NEURONA_2: 5 greens pipeline                           │<br>
+│  → green1: KU_PENDIENTE                              │<br>
+│  → green2: RAG precedentes                             │<br>
+│  → green3: NORA_RATING_PARTES                        │<br>
+│  → green4: Scalar S computado                          │<br>
+│  → green5: output listo para N3 · WU                   │<br>
+│                                                     │<br>
+│  NEURONA_3: H63 NOTARIO                              │<br>
+│  → SAMU @ audit → STACKING UF[H63] sella → H63 既濟   │<br>
+│  → CHAIR_CEO firma como NOTARIO soberano              │<br>
+│  → IF S<0.90 → GATE UF[H06] → reject + retry        │<br>
+│                                                     │<br>
+│  NEURONA_4: HOUSE_DRONE door periods                  │<br>
+│  → MORNING (06-12): recibe actos · KU_PENDIENTE      │<br>
+│  → AFTERNOON (12-18): sella actos · WU_SELLADO      │<br>
+│  → NOCTURNAL (18-06): inmutabiliza batch · H63_INMUTABLE │<br>
+│  → ledger TX++ · cristal UNICODE ⊗ asignado          │<br>
+└─────────────────────────────────────────────────────────────┘<br>
+<br>
+INTEGRACIÓN END-TO-END:<br>
+  INPUT(HEADCAT) → 5greens(ELPULSAR) → H63(CHAIR_CEO) → door(DRONE)<br>
+  VALIDACIONES: grammar + NORA + SAMU + Scalar S thresholds<br>
+  OUTPUT: ledger TX++ · cristal UNICODE ⊗ · sovereign.db updated<br>
+  PIPELINE COMPLETO: acto notarial soberano end-to-end
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="metrics">
+                <div class="metric">
+                    <div>Scalar S Cierre</div>
+                    <div class="metric-value">0.840</div>
+                </div>
+                <div class="metric">
+                    <div>Cristales Totales</div>
+                    <div class="metric-value">43</div>
+                </div>
+                <div class="metric">
+                    <div>TX Final</div>
+                    <div class="metric-value">1347</div>
+                </div>
+                <div class="metric">
+                    <div><span class="chinese">既濟</span> H63</div>
+                    <div class="metric-value">CONSUMADO</div>
+                </div>
+            </div>
+            <div style="margin-top: 15px; font-size: 10px; color: #999;">
+                5 sentencias CHCL VALID · una por línea · monospace verde<br>
+                Scalar S cierre: 0.840 · cristales: 43 · TX: 1347<br>
+                <span class="chinese">[term] :: activo · [seal of secrecy] :: activo · 空聽數 · 既濟</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

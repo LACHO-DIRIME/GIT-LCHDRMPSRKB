@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELPULSAR KALIL NOTARIA DASHBOARD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --white: #ffffff;
+            --black: #000000;
+            --green-wu: #00cc66;
+            --blue-ku: #3399ff;
+            --gold: #a07820;
+            --gray: #666666;
+            --light-gray: #f5f5f5;
+            --red: #ff3333;
+            --dim: rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier Prime', 'Share Tech Mono', monospace;
+            background: var(--white);
+            color: var(--black);
+            line-height: 1.4;
+            padding: 1rem;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: 25% 40% 35%;
+            gap: 1rem;
+            max-width: 1600px;
+            margin: 0 auto;
+            min-height: 100vh;
+        }
+
+        /* COLUMN IZQUIERDA - NEURONAS */
+        .col-izq {
+            background: var(--light-gray);
+            border: 1px solid var(--gray);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        .neurona {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            background: var(--white);
+            border-radius: 4px;
+            border: 1px solid var(--gray);
+        }
+
+        .neurona-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .neurona-nombre {
+            color: var(--black);
+        }
+
+        .neurona-activa {
+            color: var(--green-wu);
+            font-weight: 700;
+        }
+
+        .bar-container {
+            background: var(--light-gray);
+            border-radius: 10px;
+            overflow: hidden;
+            height: 12px;
+            margin-top: 0.5rem;
+        }
+
+        .bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--green-wu), var(--blue-ku));
+            transition: width 1s ease;
+        }
+
+        .neurona-porcentaje {
+            font-size: 0.8rem;
+            color: var(--gray);
+            margin-top: 0.25rem;
+        }
+
+        /* COLUMNA CENTRO - NOTARIA + SCALAR */
+        .col-centro {
+            background: var(--light-gray);
+            border: 1px solid var(--gray);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        .notaria-panels {
+            margin-bottom: 1.5rem;
+        }
+
+        .notaria-panel {
+            background: var(--white);
+            border: 1px solid var(--gray);
+            border-radius: 4px;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .notaria-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .notaria-accion {
+            color: var(--black);
+            font-size: 1.1rem;
+        }
+
+        .notaria-estado {
+            padding: 0.25rem 0.5rem;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .estado-ku-pendiente {
+            background: var(--blue-ku);
+            color: var(--white);
+        }
+
+        .estado-wu-sellado {
+            background: var(--green-wu);
+            color: var(--white);
+        }
+
+        .estado-h63-inmutable {
+            background: var(--gold);
+            color: var(--white);
+        }
+
+        .scalar-section {
+            background: var(--white);
+            border: 1px solid var(--gray);
+            border-radius: 4px;
+            padding: 1rem;
+        }
+
+        .scalar-header {
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--black);
+        }
+
+        .scalar-gauge {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .scalar-bar {
+            flex: 1;
+            height: 20px;
+            background: var(--light-gray);
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid var(--gray);
+        }
+
+        .scalar-fill {
+            height: 100%;
+            width: 82.2%;
+            background: linear-gradient(90deg, var(--green-wu), var(--blue-ku));
+            transition: width 2s ease;
+        }
+
+        .scalar-value {
+            font-weight: 700;
+            color: var(--black);
+            font-size: 1.2rem;
+        }
+
+        .scalar-threshold {
+            font-size: 0.8rem;
+            color: var(--gray);
+            margin-top: 0.5rem;
+        }
+
+        /* COLUMNA DERECHA - NODOS KALIL */
+        .col-der {
+            background: var(--light-gray);
+            border: 1px solid var(--gray);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        .nodos-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+        }
+
+        .nodo-tarjeta {
+            background: var(--white);
+            border: 1px solid var(--gray);
+            border-radius: 4px;
+            padding: 0.75rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .nodo-tarjeta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .nodo-activo {
+            background: var(--gold);
+            color: var(--white);
+            border-color: var(--gold);
+            font-weight: 700;
+        }
+
+        .nodo-nombre {
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+            font-size: 0.9rem;
+        }
+
+        .nodo-hexagrama {
+            font-size: 1.2rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .nodo-estado {
+            font-size: 0.8rem;
+            color: var(--gray);
+        }
+
+        .nodo-indicador {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--green-wu);
+            margin: 0 auto;
+            margin-top: 0.5rem;
+        }
+
+        /* FOOTER */
+        .footer {
+            grid-column: 1 / -1;
+            background: var(--light-gray);
+            border: 1px solid var(--gray);
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 0.9rem;
+        }
+
+        .footer-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .footer-label {
+            color: var(--gray);
+        }
+
+        .footer-value {
+            font-weight: 700;
+            color: var(--black);
+        }
+
+        .libsig {
+            font-family: monospace;
+            font-size: 1.1rem;
+            color: var(--black);
+            margin: 0 0.5rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .dashboard {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .nodos-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .dashboard {
+                padding: 0.5rem;
+            }
+
+            .nodos-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+
+        /* Animaciones */
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { opacity: 1; }
+        }
+
+        .nodo-activo .nodo-indicador {
+            animation: pulse 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- COLUMNA IZQUIERDA - NEURONAS -->
+        <div class="col-izq">
+            <h3 style="margin-bottom: 1rem; text-align: center; color: var(--black);">NEURONAS ACTIVACIÓN</h3>
+            
+            <div class="neurona">
+                <div class="neurona-header">
+                    <span class="neurona-nombre">NEURONA_1 HEADCAT</span>
+                    <span class="neurona-porcentaje">80%</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width: 80%;"></div>
+                </div>
+            </div>
+
+            <div class="neurona">
+                <div class="neurona-header">
+                    <span class="neurona-nombre">NEURONA_2 ELPULSAR</span>
+                    <span class="neurona-porcentaje">100%</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width: 100%;"></div>
+                </div>
+            </div>
+
+            <div class="neurona">
+                <div class="neurona-header">
+                    <span class="neurona-nombre">NEURONA_3 CHAIR_CEO</span>
+                    <span class="neurona-porcentaje neurona-activa">82%</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width: 82%;"></div>
+                </div>
+            </div>
+
+            <div class="neurona">
+                <div class="neurona-header">
+                    <span class="neurona-nombre">NEURONA_4 HOUSE_DRONE</span>
+                    <span class="neurona-porcentaje">70%</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width: 70%;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- COLUMNA CENTRO - NOTARIA + SCALAR -->
+        <div class="col-centro">
+            <h3 style="margin-bottom: 1rem; text-align: center; color: var(--black);">PANELES NOTARIA</h3>
+            
+            <div class="notaria-panels">
+                <div class="notaria-panel">
+                    <div class="notaria-header">
+                        <span class="notaria-accion">[CERTIFICA]</span>
+                        <span class="notaria-estado estado-ku-pendiente">KU_PENDIENTE</span>
+                    </div>
+                    <div style="font-size: 0.9rem; color: var(--gray);">Esperando validación SAMU para certificación</div>
+                </div>
+
+                <div class="notaria-panel">
+                    <div class="notaria-header">
+                        <span class="notaria-accion">[SELLA]</span>
+                        <span class="notaria-estado estado-wu-sellado">WU_SELLADO</span>
+                    </div>
+                    <div style="font-size: 0.9rem; color: var(--gray);">Documento sellado con autoridad soberana</div>
+                </div>
+
+                <div class="notaria-panel">
+                    <div class="notaria-header">
+                        <span class="notaria-accion">[INMUTABILIZA]</span>
+                        <span class="notaria-estado estado-h63-inmutable">H63_INMUTABLE</span>
+                    </div>
+                    <div style="font-size: 0.9rem; color: var(--gray);">Acto cristalizado en blockchain permanente</div>
+                </div>
+            </div>
+
+            <div class="scalar-section">
+                <div class="scalar-header">Scalar S Gauge</div>
+                <div class="scalar-gauge">
+                    <div class="scalar-bar">
+                        <div class="scalar-fill"></div>
+                    </div>
+                    <div class="scalar-value">0.822</div>
+                </div>
+                <div class="scalar-threshold">Threshold: 0.90 para H63</div>
+            </div>
+        </div>
+
+        <!-- COLUMNA DERECHA - NODOS KALIL -->
+        <div class="col-der">
+            <h3 style="margin-bottom: 1rem; text-align: center; color: var(--black);">NODOS KALIL</h3>
+            
+            <div class="nodos-grid">
+                <div class="nodo-tarjeta nodo-activo">
+                    <div class="nodo-nombre">BOLIVAR</div>
+                    <div class="nodo-hexagrama">⊗ H63</div>
+                    <div class="nodo-estado">NOTARIA activa</div>
+                    <div class="nodo-indicador"></div>
+                </div>
+
+                <div class="nodo-tarjeta">
+                    <div class="nodo-nombre">NORA</div>
+                    <div class="nodo-hexagrama">◉</div>
+                    <div class="nodo-estado">analytics</div>
+                    <div class="nodo-indicador"></div>
+                </div>
+
+                <div class="nodo-tarjeta">
+                    <div class="nodo-nombre">BARRIOS</div>
+                    <div class="nodo-hexagrama">◉</div>
+                    <div class="nodo-estado">social</div>
+                    <div class="nodo-indicador"></div>
+                </div>
+
+                <div class="nodo-tarjeta">
+                    <div class="nodo-nombre">CARILO</div>
+                    <div class="nodo-hexagrama">◉</div>
+                    <div class="nodo-estado">capital</div>
+                    <div class="nodo-indicador"></div>
+                </div>
+
+                <div class="nodo-tarjeta">
+                    <div class="nodo-nombre">TANDIL</div>
+                    <div class="nodo-hexagrama">◉</div>
+                    <div class="nodo-estado">industria</div>
+                    <div class="nodo-indicador"></div>
+                </div>
+
+                <div class="nodo-tarjeta">
+                    <div class="nodo-nombre">CHALTEN</div>
+                    <div class="nodo-hexagrama">◉</div>
+                    <div class="nodo-estado">recursos</div>
+                    <div class="nodo-indicador"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-item">
+                    <span class="footer-label">TX:</span>
+                    <span class="footer-value">1335</span>
+                </div>
+                <div class="footer-item">
+                    <span class="footer-label">cristales:</span>
+                    <span class="footer-value">42</span>
+                </div>
+                <div class="footer-item">
+                    <span class="footer-label">S:</span>
+                    <span class="footer-value">0.822</span>
+                </div>
+                <div class="footer-item">
+                    <span class="footer-label">H63 既濟</span>
+                    <span class="footer-value">activo</span>
+                </div>
+                <div class="footer-item">
+                    <span class="footer-label">$sat</span>
+                    <span class="footer-value">14-03</span>
+                </div>
+            </div>
+            <div style="margin-top: 0.5rem; font-size: 0.8rem; color: var(--gray);">
+                <span class="libsig">CRYPTO ╭─●─≡─</span>
+                <span class="libsig">STACKING ╭─⊣─∞─</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Animación de carga del dashboard
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animar barras de neuronas
+            setTimeout(() => {
+                const bars = document.querySelectorAll('.bar-fill');
+                bars.forEach(bar => {
+                    const width = bar.style.width;
+                    bar.style.width = '0%';
+                    setTimeout(() => {
+                        bar.style.width = width;
+                    }, 100);
+                });
+            }, 500);
+
+            // Animar gauge de Scalar S
+            setTimeout(() => {
+                const scalarFill = document.querySelector('.scalar-fill');
+                scalarFill.style.width = '0%';
+                setTimeout(() => {
+                    scalarFill.style.width = '82.2%';
+                }, 800);
+            }, 1000);
+
+            // Simular actualización de estados
+            setInterval(() => {
+                const indicadores = document.querySelectorAll('.nodo-indicador');
+                indicadores.forEach(ind => {
+                    if (ind.parentElement.classList.contains('nodo-activo')) {
+                        ind.style.opacity = ind.style.opacity === '1' ? '0.5' : '1';
+                    }
+                });
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

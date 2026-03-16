@@ -178,6 +178,21 @@ class IMEBM25:
             raw_score = score
             boost = doc.get("boost", 1.0)
             
+            # NOTARIA_BOOST para archivos notariales críticos
+            NOTARIA_BOOST = {
+                "UNICODE_NOTARIA_IMV.txt":                    2.0,
+                "CHCL_BASE.txt":                              1.8,
+                "UNICODE_PROGRAMS_FULL_STACK_NOTARIA.txt":    1.8,
+                "UNICODE_PROGRAMS_KALIL_4_NEURONAS.txt":      1.6,
+                "PRACTICE-NOTARIA.lacho":                     1.5,
+            }
+            # Nerve Cells notariales — boost si están indexados:
+            NOTARIA_NC_BOOST = {
+                "$thu.Nerve Cell Notaria Training.txt":        1.5,
+                "$fri.Nerve Cell KALIL Notaria Training.txt":  1.5,
+                "$sun.Nerve Cell China Notaria Training.txt":  1.5,
+            }
+            
             BOOST_FILES = {
                 "BIBLIO-SOURCES(HEADCAT)": 2.0,
                 "COGNITIVO_03": 1.8,
@@ -190,6 +205,12 @@ class IMEBM25:
                 "BIBLIOTECAS_MADRE_LACHO": 1.4,
             }
             fname = doc.get("file","")
+            
+            # Aplicar boost NOTARIA si corresponde
+            notaria_boost = NOTARIA_BOOST.get(fname, NOTARIA_NC_BOOST.get(fname, 1.0))
+            boost *= notaria_boost
+            
+            # Aplicar boost existente
             for key, mult in BOOST_FILES.items():
                 if key in fname:
                     boost *= mult

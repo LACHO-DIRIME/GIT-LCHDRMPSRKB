@@ -43,6 +43,20 @@ def get_scalar_threshold(h_num: str) -> float:
         return thresholds.get(t, 0.80)
     return 0.80
 
+def get_notaria_requirements() -> dict:
+    """Retorna requisitos soberanos para acto notarial H63."""
+    return {
+        "hexagram":           "H63",
+        "role":               "NOTARIO",
+        "min_scalar":         0.90,
+        "required_libraries": ["CRYPTO", "STACKING", "TRUST"],
+        "kalil_nodes":        ["BOLIVAR", "NORA", "CARILO"],
+        "chcl_division":      "CHCL-NOTARIA",
+        "gate_sequence":      ["H03", "H05", "H56", "H06", "H63"],
+        "lacho_certifica":    "CRYPTO (spark seat) =><= .. certifica .. acto --[Nudo de Ocho] [term]",
+        "lacho_sella":        "STACKING UF[H63] =><= .. sella .. acto --[Nudo de Ocho] [term]",
+    }
+
 def ceo_summary() -> str:
     data = load_ceo_alpha()
     total = len(data.get("hexagrams", {}))
