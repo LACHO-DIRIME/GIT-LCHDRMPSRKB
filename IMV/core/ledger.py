@@ -737,6 +737,33 @@ class HLFabric:
             return row[0] if row else 0
 
 
+    def export_notaria_report(self) -> list[dict]:
+        """Retorna TXs VALID de CRYPTO/TRUST para el archivo notarial."""
+        import json as _json
+        with sqlite3.connect(self.db_path) as conn:
+            rows = conn.execute(
+                "SELECT id, data, timestamp FROM transactions ORDER BY timestamp DESC LIMIT 200"
+            ).fetchall()
+        result = []
+        for row in rows:
+            try:
+                d = _json.loads(row[1]) if row[1] else {}
+            except Exception:
+                continue
+            lib = d.get("library", "")
+            if d.get("result") == "VALID" and lib in ("CRYPTO", "TRUST"):
+                result.append({
+                    "tx_id":     row[0],
+                    "verb":      d.get("verb", ""),
+                    "library":   lib,
+                    "knot":      d.get("knot", ""),
+                    "timestamp": row[2],
+                    "scalar_s":  d.get("scalar_s", 0),
+                })
+            if len(result) >= 50:
+                break
+        return result
+
 # ── Instancia global soberana ─────────────────────────────────────
 _hl_fabric = HLFabric()
 
@@ -835,3 +862,66 @@ if __name__ == "__main__":
         print(f"  {tx.id[:8]}... - {tx.type.value} - {tx.timestamp}")
     
     print("\n═" * 60)
+# ── NOTARIA functions ─────────────────────────────────────────────────────
+
+def record_notaria_act(acto: str, partes: list, objeto: str, scalar_s: float) -> str:
+    """Registra un acto notarial soberano en el ledger."""
+    import hashlib, time as _time
+    ts    = _time.time()
+    hash_ = hashlib.sha256(f"{acto}:{objeto}:{ts}".encode()).hexdigest()[:24]
+    tx = Transaction(
+        type=TransactionType.GRAMMAR_VALIDATION,
+        knowledge_state="GREEN" if scalar_s >= 0.78 else "BLUE",
+        data={
+            "sentence": f"CRYPTO (spark seat) =><= .. certifica .. {objeto} --[Nudo de Ocho] [term]",
+            "result":   "VALID",
+            "library":  "CRYPTO",
+            "verb":     "certifica",
+            "knot":     "Nudo de Ocho",
+            "scalar_s": scalar_s,
+            "acto":     acto,
+            "partes":   partes,
+            "objeto":   objeto,
+            "hash":     hash_,
+            "tipo":     "NOTARIA_ACT",
+        }
+    )
+    _hl_fabric.record_transaction(tx)
+    return hash_
+
+def get_notaria_stats() -> dict:
+    """Estadísticas del pipeline notarial soberano."""
+    import json as _json, sqlite3
+    with sqlite3.connect(_hl_fabric.db_path) as conn:
+        rows = conn.execute(
+            "SELECT data FROM transactions ORDER BY timestamp DESC LIMIT 500"
+        ).fetchall()
+    actos_total = actos_wu = actos_ku = h63_count = 0
+    scalar_sum  = 0.0
+    for (raw,) in rows:
+        try:
+            d = _json.loads(raw) if raw else {}
+        except Exception:
+            continue
+        if d.get("tipo") != "NOTARIA_ACT":
+            continue
+        actos_total += 1
+        s = d.get("scalar_s", 0.0)
+        scalar_sum += s
+        if s >= 0.90:
+            actos_wu += 1
+            h63_count += 1
+        elif s >= 0.78:
+            actos_wu += 1
+        else:
+            actos_ku += 1
+    return {
+        "actos_total":    actos_total,
+        "actos_wu":       actos_wu,
+        "actos_ku":       actos_ku,
+        "scalar_promedio": round(scalar_sum / actos_total, 3) if actos_total else 0.0,
+        "h63_count":      h63_count,
+    }
+def export_notaria_report() -> list[dict]:
+    """Exporta actos notariales — TX VALID de bibliotecas CRYPTO/TRUST con S >= 0.78."""
+    return _hl_fabric.export_notaria_report()
