@@ -35,6 +35,11 @@ _IMV_DIR = Path(__file__).parent.parent
 if str(_IMV_DIR) not in sys.path:
     sys.path.insert(0, str(_IMV_DIR))
 
+# Agregar DIRIME_v2 al path para bridges (path absoluto)
+_DIRIME_V2_DIR = Path("/media/Personal/PLANERAI/DIRIME/DIRIME_v2")
+if str(_DIRIME_V2_DIR) not in sys.path:
+    sys.path.insert(0, str(_DIRIME_V2_DIR))
+
 from core.foundation import verify_sovereign_conditions
 from core.grammar import validate, ParsedSentence
 from core.samu import audit, verify_coherence
@@ -84,6 +89,7 @@ class SovereignChat:
         self.state = ChatState.IDLE
         self.session_history: list[ChatMessage] = []
         self._last_translation_was_default = False
+        self.active_provider = "none"  # "ollama", "groq", o "none"
 
     def _detect_input_type(self, user_input: str) -> str:
         """
@@ -225,10 +231,39 @@ class SovereignChat:
 
     def _translate_via_api(self, natural_text: str) -> str | None:
         """
-        NIVEL 2 — Traducción vía Groq API.
-        Estado: ACTIVO cuando existe config/api.json con provider=groq.
-
+        NIVEL 2 — Traducción dual: Ollama local (prioridad) → Groq API (fallback).
         Retorna: sentencia LACHO generada, o None si falla/no configurado.
+        """
+        # Intentar Ollama primero (temporalmente desactivado por problemas de gramática)
+        # Ollama qwen2.5 no sigue reglas gramaticales estrictas - usar Groq
+        """
+        try:
+            from DIRIME_v2.ollama.bridge_ollama import translate as ollama_translate, is_active
+            if is_active():
+                print("🟢 Usando Ollama local (qwen2.5)")
+                self.active_provider = "ollama"
+                result = ollama_translate(natural_text, system_prompt)
+                if result:
+                    return result
+        except Exception as e:
+            print(f"⚠️ Ollama falló: {e}")
+        """
+        
+        # Fallback a Groq
+        try:
+            result = self._translate_via_groq(natural_text)
+            if result:
+                print("🔵 Usando Groq API (llama-3.3-70b)")
+                self.active_provider = "groq"
+                return result
+        except Exception as e:
+            print(f"⚠️ Groq falló: {e}")
+        
+        return None
+
+    def _translate_via_groq(self, natural_text: str) -> str | None:
+        """
+        Traducción vía Groq API (método original).
         """
         try:
             import json
