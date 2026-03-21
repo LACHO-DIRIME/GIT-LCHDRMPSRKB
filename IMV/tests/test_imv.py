@@ -662,8 +662,8 @@ def test_notaria_china_dual():
     assert p.result == ValidationResult.VALID, f"China dual falló: {p.result}"
 
 
-def test_notaria_integration_end_to_end():
-    """Flujo completo de un acto notarial soberano."""
+def test_notaria_integration_flujo_soberano():
+    """Flujo completo de un acto notarial soberano: grammar → samu → ledger → scalar."""
     from core.ledger import get_stats, record_grammar
     from core.samu import audit, get_scalar_s
     from core.grammar import validate, ValidationResult
