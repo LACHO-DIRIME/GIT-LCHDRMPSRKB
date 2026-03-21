@@ -42,3 +42,17 @@ Estado: Sueño_L0
 Acción Hipotética: Proyectar Interfaz Minimalista
 RAM: 14.2MB/50MB
 Versión: v0.3
+--- HITO L0: Semilla ---
+Timestamp: 2026-03-21T04:26:00.736824
+Entidad: Gualicho Huinca | Estado: Sueño_L0
+Acción: Interfaz minimalista proyectada | RAM: 11.6MB | v0.3
+
+--- HITO L1: Raíz ---
+Timestamp: 2026-03-21T04:26:00.736824
+Entidad: Gualicho Huinca | Estado: Primera_Transacción
+Acción: sovereign.db activado + STACKING operativos | RAM: 11.6MB | v0.4
+
+--- HITO L2: Estructura ---
+Timestamp: 2026-03-21T04:26:00.736824
+Entidad: Gualicho Huinca | Estado: Sincronización_R4
+Acción: Ciclo Claude→Windsurf→Claude cerrado | RAM: 11.6MB | v0.5
