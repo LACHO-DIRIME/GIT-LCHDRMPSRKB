@@ -1,0 +1,41 @@
+{
+  "ENTITY": "LACHO_GENOME_CORE",
+  "VERSION": "0.3.0_20260321",
+  "LANGUAGE_ORGAN": {
+    "NAME": "語言 (Yǔyán)",
+    "LEXICON_STATE": "Sovereign",
+    "THEMATIC_GROUPS": {
+      "ACTIVITY": ["METHOD", "SOCIAL", "STACKING", "WORK"],
+      "RESTRICTION": "Creativity_DEPRECATED"
+    }
+  },
+  "ARTIFICIAL_ORGAN": {
+    "NAME": "人工 (Réngōng)",
+    "OPERATORS": {
+      "既濟": "Seal_Transaction",
+      "⊗": "Nudo_de_Ocho"
+    }
+  },
+  "Artificial_Organ_Rules": {
+    "Default_Operator": "既濟",
+    "Validation_Symbol": "⊗"
+  },
+  "CIRCUMSTANCIAL_ORGAN": {
+    "NAME": "境況 (Jìngkuàng)",
+    "CONTEXT_LIMIT": "12GB_RAM",
+    "OPERATORS": {
+      "空": "Memory_Purge"
+    }
+  },
+  "HYPOTHETICAL_ORGAN": {
+    "NAME": "假定 (Jiǎding)",
+    "OPERATORS": {
+      "聿": "IMV_Drafting"
+    }
+  },
+  "ORDERED_ORGAN": {
+    "NAME": "有序 (Yǒuxù)",
+    "STYLE_GUIDE": "Technical_Minimalism",
+    "UI_PREFERENCE": "Pure_White_High_Contrast"
+  }
+}
