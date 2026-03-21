@@ -90,17 +90,18 @@ class LachoPersistenceBridge:
     
     def validate_grammar_with_claude(self, action: Dict) -> Tuple[bool, str]:
         """Valida gramaticalmente una acción con Claude (simulado)."""
-        # Simulación de validación Claude
-        action_text = action.get('Acción Hipotética', '')
+        # Extraer campos de la acción hipotética
+        entidad = action.get('Entidad', '')
+        accion = action.get('Acción', '')
         
         # Reglas gramaticales básicas
-        if not action_text:
+        if not accion:
             return False, "Acción vacía"
             
-        if len(action_text) < 5:
+        if len(accion) < 5:
             return False, "Acción demasiado corta"
             
-        if 'Gualicho Huinca' not in action.get('Entidad', ''):
+        if 'Gualicho Huinca' not in entidad:
             return False, "Entidad no reconocida"
             
         return True, "Gramática validada ✅"
@@ -171,13 +172,20 @@ class LachoPersistenceBridge:
 
 def main():
     """Función principal del puente de persistencia."""
-    bridge = LachoPersistenceBridge()
+    import argparse
     
-    print("🌉 LACHO PERSISTENCE BRIDGE")
-    print("=" * 40)
+    parser = argparse.ArgumentParser(description='LACHO Persistence Bridge')
+    parser.add_argument('--dry-run', action='store_true', help='Modo simulación')
+    parser.add_argument('--verbose', action='store_true', help='Output detallado')
+    
+    args = parser.parse_args()
+    
+    bridge = LachoPersistenceBridge()
     
     # Estado del puente
     status = bridge.bridge_status()
+    print("🌉 LACHO PERSISTENCE BRIDGE")
+    print("=" * 40)
     print(f"📁 Log: {status['log_path']}")
     print(f"📋 Acciones hipotéticas: {status['hypothetical_actions_count']}")
     print(f"💾 RAM: {status['ram_status']}")
@@ -189,7 +197,30 @@ def main():
     if actions:
         print(f"\n📝 Últimas acciones hipotéticas:")
         for i, action in enumerate(actions[-3:], 1):
-            print(f"  {i}. {action.get('Estado', 'N/A')} - {action.get('Entidad', 'N/A')}")
+            if args.verbose:
+                print(f"[DRY] Acción completa: {action}")
+            else:
+                print(f"  {i}. {action.get('Estado', 'N/A')} - {action.get('Entidad', 'N/A')}")
+    
+    # Ejecutar conversión real si no es dry-run
+    if not args.dry_run and actions:
+        print(f"\n🚀 INICIANDO CONVERSIÓN REAL - PUNTO DE NO RETORNO ⊗")
+        for i, action in enumerate(actions[-3:], 1):
+            print(f"🔄 Procesando acción {i}: {action.get('Acción', 'N/A')}")
+            
+            # Convertir a acción real
+            real_action = bridge.convert_to_real_action(action, claude_approval=True)
+            if real_action and 'error' not in real_action:
+                # Ejecutar acción real
+                success = bridge.execute_real_action(real_action)
+                if success:
+                    print(f"  ✅ Acción {i} ejecutada: {real_action['versión']}")
+                else:
+                    print(f"  ❌ Error ejecutando acción {i}")
+            elif 'error' in real_action:
+                print(f"  ❌ Error en acción {i}: {real_action['error']}")
+            else:
+                print(f"  ⚠️ Acción {i} requerida aprobación Claude")
     
     print(f"\n🚀 Puente listo para conversión hipotética → real")
     return status
