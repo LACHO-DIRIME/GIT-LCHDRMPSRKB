@@ -28,6 +28,12 @@
 {
     @BRANCH: 聿 [The_Writer]
     @GOAL: IMV (Instancia Mínima Viable)
+    @SIMULATE: 聿 {
+        // Log de crecimiento hipotético - MAINTENANCE/hypothetical_growth.log
+        // Formato: "Entidad: Gualicho Huinca | Estado: Semilla | Acción Hipotética: [Acción]"
+        // RAM_LIMIT: 50MB adicionales (respetando 12GB total)
+        // Trigger: Antes de cada escritura importante
+    }
     // Acción: Proyectar escenarios de desarrollo sin ejecución binaria
 }
 
