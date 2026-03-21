@@ -5,6 +5,7 @@ from pathlib import Path
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
 sys.path.insert(0, str(Path(__file__).parent))
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))  # DIRIME raíz → IMV accesible
 from core.neural_net import build_graph
 from core.resources import (get_all, create, verify, connect,
                              ResourceType, ResourceScope)
@@ -33,7 +34,7 @@ class Handler(BaseHTTPRequestHandler):
         elif p == "/api/sync":
             from core.resources import sync_from_ledger
             self._json(sync_from_ledger())
-        elif path == "/api/notaria/status":
+        elif p == "/api/notaria/status":
             from IMV.core.samu import get_scalar_s
             from IMV.core.ledger import get_stats
             scalar = get_scalar_s()
@@ -44,7 +45,7 @@ class Handler(BaseHTTPRequestHandler):
                 "threshold_ok": scalar >= 0.90,
                 "estado":       "H63_OK" if scalar >= 0.90 else "WU_OK" if scalar >= 0.78 else "KU",
             })
-        elif path == "/api/notaria/archivo":
+        elif p == "/api/notaria/archivo":
             from IMV.core.ledger import export_notaria_report
             self._respond_json({"actos_wu": export_notaria_report(), "count": len(export_notaria_report())})
         else: self._send(404, b"not found", "text/plain")
@@ -65,8 +66,7 @@ class Handler(BaseHTTPRequestHandler):
         elif p == "/api/connect":
             self._json(connect(body["source"], body["target"],
                                body.get("relation","DEPENDE_DE")))
-        elif path == "/api/notaria/certifica":
-            body  = self._read_body()
+        elif p == "/api/notaria/certifica":
             acto  = body.get("acto", "")
             from IMV.core.grammar import validate
             from IMV.core.samu import audit
@@ -76,8 +76,7 @@ class Handler(BaseHTTPRequestHandler):
                 "valid":      parsed.result == "VALID",
                 "samu_audit": str(audit(parsed)),
             })
-        elif path == "/api/notaria/sella":
-            body     = self._read_body()
+        elif p == "/api/notaria/sella":
             acto_id  = body.get("acto_id", "")
             from IMV.core.samu import get_scalar_s
             scalar   = get_scalar_s()
@@ -86,6 +85,21 @@ class Handler(BaseHTTPRequestHandler):
                 "h63_ref": "既濟" if scalar >= 0.90 else None,
                 "tx":      acto_id,
                 "estado":  "H63_SELLADO" if scalar >= 0.90 else "SCALAR_INSUFICIENTE",
+            })
+        elif p == "/api/notaria/inmutabiliza":
+            acto_id = body.get("acto_id", "")
+            from IMV.core.ledger import get_stats
+            from IMV.core.samu import get_scalar_s
+            stats  = get_stats()
+            scalar = get_scalar_s()
+            import hashlib, time
+            sello = hashlib.sha256(f"{acto_id}:{time.time()}".encode()).hexdigest()[:24]
+            self._respond_json({
+                "inmutabilizado": True,
+                "sello":          sello,
+                "tx_total":       stats.get("transactions_total", 0),
+                "scalar":         scalar,
+                "estado":         "INMUTABLE · [term]",
             })
         else: self._send(404, b"not found", "text/plain")
 

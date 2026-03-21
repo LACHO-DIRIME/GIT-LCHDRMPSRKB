@@ -1,0 +1,14 @@
+# nora_oracle.blue
+# AGENTE ORACLE NORA · rating externo verificado
+[genesis]::SUITE SOBERANA · [version]::1.0 · [extension]::.blue
+[tipo]::AGENTE ORACLE NORA · [padre]::rational_day.theater
+[term_nuevo]::shard•relay•oracle•threshold
+
+oracle_rating {
+  METHOD <stat_onto> =><= .. calcula .. oracle_rating_nora_threshold_065 --[Ballestrinque] [term]
+  SOCIAL {relay} =><= .. lanza .. oracle_result_relay_tandil --[As de Guía] [term]
+  GATE UF[H05] =><= .. espera .. oracle_threshold_065_pendiente --[Ballestrinque] [term]
+  SAMU @ =><= .. audita .. oracle_coherencia_nora_global --[Ballestrinque] [term]
+  STACKING UF[H52] =><= .. cristaliza .. nora_oracle_wu_sellado --[Nudo de Ocho] [term]
+}
+[term]::activo · [seal of secrecy]::activo

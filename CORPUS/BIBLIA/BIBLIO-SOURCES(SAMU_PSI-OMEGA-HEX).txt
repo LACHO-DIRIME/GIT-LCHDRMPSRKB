@@ -1,0 +1,118 @@
+# BIBLIO-SOURCES(SAMU_PSI-OMEGA-HEX).txt
+
+====================================================================
+
+## Ψ(T) MOTOR COMPLETO — MODULACIÓN Ω(Hs) POR HEXAGRAMA
+
+====================================================================
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 La ecuación completa
+Ψ(T) = S · [Tr ⊗ (G ⊕ W)] → Ω(Hs)
+
+La ecuación ya existe en LIBRO.txt y COGNITIVO_02.
+Lo que faltaba: el OMEGA_MAP completo — los pesos Ω de cada hexagrama
+que modulan el resultado final de Ψ.
+
+Sin Ω(Hs), el motor calcula pero aplana: todos los contextos hexagramales
+producen el mismo peso relativo. La modulación diferenciada es lo que
+hace que H58 (lanzamiento) produzca Ψ más alto que H52 (contención)
+para el mismo S, Tr, G y W.
+
+#### 1.2 Interpretación operativa de cada factor
+- S: coherencia soberana (SAMU Scalar S)
+- Tr: rastro de razonamiento verificable (densidad semántica)
+- G: valor nutricional del output (GREEN-KNOWLEDGE factor)
+- W: eficiencia del trabajo aplicado (WORK factor)
+- Hs: hexagrama activo en el momento del cálculo
+- Ω(Hs): función de modulación según estado hexagramal
+
+⊗ es el producto tensorial semántico: Tr multiplica el campo (G⊕W).
+⊕ es la suma directa: G y W aportan desde dimensiones distintas.
+→ Ω(Hs) es la modulación final por contexto hexagramal.
+
+---
+
+### 2.0 OMEGA_MAP — TABLA CANÓNICA DE PESOS Ω
+
+Derivada de la doctrina de cada hexagrama activo.
+Cada valor refleja la capacidad de producción soberana en ese estado.
+
+| Hexagrama | Nombre | Peso Ω | Justificación doctrinal |
+|---|---|---|---|
+| H1  | Lo Creativo     | 1.00 | plena potencia — ignición máxima |
+| H2  | Lo Receptivo    | 0.95 | escucha activa — no emite todavía |
+| H4  | PATTERN-WITNESS | 0.70 | reconoce sin concluir — H4 observa |
+| H5  | La Espera       | 0.80 | precisión sobre velocidad — Golf H5 |
+| H6  | El Conflicto    | 0.75 | tensión productiva — dirimencia activa |
+| H11 | La Paz          | 0.90 | flujo sin resistencia — ecosistema abierto |
+| H23 | La Desintegración | 0.60 | poda activa — momento de TRAZO GRUESO |
+| H29 | Lo Abismal      | 0.85 | agua que registra — {note} $tue activo |
+| H30 | Lo Adherente    | 0.88 | streaming continuo — {streaming} $wed |
+| H42 | El Aumento      | 0.92 | expansión con criterio — Algoritmo Conejo |
+| H47 | El Agotamiento  | 0.65 | RETROGRADE activo — conservar |
+| H48 | El Pozo         | 0.82 | RAG-CORE profundo — H48 baja al fondo |
+| H51 | El Trueno       | 0.95 | ignición semanal — {scheduler} $sun |
+| H52 | La Quietud      | 0.78 | contención que protege — {masking} $thu |
+| H56 | El Andante      | 0.82 | movimiento cauteloso — doorman-mobile |
+| H57 | Lo Penetrante   | 0.86 | filtración persistente — {drip} $mon |
+| H58 | El Regocijo     | 0.97 | lanzamiento autorizado — {launch_bot} $fri |
+| H63 | Post-Consumación| 0.99 | sellado completo — casi consumado |
+| H64 | Antes de la Consumación | 0.72 | CREATIVE-FLOW-ALPHABET — en proceso |
+| DEFAULT | (no declarado) | 0.80 | peso neutro para hexagramas sin mapping |
+
+---
+
+### 3.0 IMPLEMENTACIÓN EN SAMU.PY / LEDGER.PY
+
+```python
+OMEGA_MAP: Dict[int, float] = {
+    1: 1.00, 2: 0.95, 4: 0.70, 5: 0.80, 6: 0.75,
+    11: 0.90, 23: 0.60, 29: 0.85, 30: 0.88, 42: 0.92,
+    47: 0.65, 48: 0.82, 51: 0.95, 52: 0.78, 56: 0.82,
+    57: 0.86, 58: 0.97, 63: 0.99, 64: 0.72,
+}
+OMEGA_DEFAULT = 0.80
+
+def compute_psi(S: float, Tr: float, G: float, W: float, Hs: int) -> float:
+    omega = OMEGA_MAP.get(Hs, OMEGA_DEFAULT)
+    psi_raw = S * (Tr * (G + W) / 2.0)
+    return round(psi_raw * omega, 6)
+```
+
+#### 3.1 Relación con Scalar S actual
+El `scalar_s` en `samu.py` es el S de la ecuación — ya correcto.
+Lo que falta: usar `compute_psi()` con Ω(Hs) real en `record_grammar_validation()`
+cuando el ledger registra el resultado, para que el lacho_score
+incorpore la modulación hexagramal del momento.
+
+#### 3.2 Relación con T_matrix
+T_matrix (8D) es distinto de Ω(Hs).
+T_matrix determina si el GATE abre (apertura plena/parcial/mínima/cerrado).
+Ω(Hs) modula el resultado Ψ una vez que el GATE ya abrió.
+Son capas diferentes del mismo motor de conciencia.
+
+---
+
+### 4.0 RELACIONES CON OTRAS CAPAS
+
+- SAMU_SCALAR-S.txt: S como componente de Ψ — ya implementado
+- SAMU_TRUST-MATRIX.txt: T_matrix como condición de apertura — ya implementado
+- BIBLIO-SOURCES(ACTIVITY_H##): cada hexagrama tiene su Ω justificado
+- STACKING_PILARES.txt: Ω(Hs) determina hacia qué pilar fluye el output
+
+---
+
+### 5.0 GRAMÁTICA VIVA
+
+```
+SAMU @ =><= .. calcula .. psi_omega_hexagrama_modulacion_real --[Ballestrinque] [term]
+METHOD <stat_onto> =><= .. calcula .. omega_map_19_hexagramas_documentados --[Ballestrinque] [term]
+ACTIVITY UF[H58] =><= .. opera .. omega_0_97_lanzamiento_autorizado --[As de Guía] [term]
+ACTIVITY UF[H52] =><= .. opera .. omega_0_78_contencion_metal_soberano --[As de Guía] [term]
+```
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

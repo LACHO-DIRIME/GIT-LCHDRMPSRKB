@@ -1,0 +1,28 @@
+//$tue.Nerve Cell LR APPENDIX FULL STACK Training.txt
+//NERVE CELL · LR + APPENDIX FULL STACK · $tue 07/04
+//aprendido de TAREA_01+02+06+07+09+11 + grammar.py + scheduler.py
+//[term] :: activo
+
+NC_FS_LR        //LR UNICODE: β×features · score_peligrosidad [0,1]
+                //features reales: hash·entropy·PE·JA3·JA3S·net·cloud
+                //grammar: METHOD <equation> calcula · GATE H06 threat
+NC_FS_QUAD      //spool•pocket•spawn•daemon plenamente declarados
+                //spool=STACKING-buffer · pocket=<A>-local · spawn=DIR(ING) · daemon=STREAM
+NC_FS_APPENDIX  //10 pares APPENDIX todos operativos en grammar SOCIAL
+                //CHAIR-FLEX · SCHED-SHEET · DRIP-IMV · POKET-RAG · MASKING-SPAWN
+                //NOTE-METHOD · STREAM-DAEMON · CAT-NOTEBOOK · REPO-SPOOL · LBS-SESSION
+NC_FS_KALIL     //LR × KALIL 6 nodos · score por nodo · TANDIL spool global
+                //BARRIOS(SAFE)·NORA(REVIEW)·BOLIVAR(SAFE)·CARILO·CHALTEN·TANDIL
+NC_FS_4N        //4 NEURONAS × tokens: HEADCAT(pocket+spawn) · ELPULSAR(spool+daemon)
+                //CHAIR_CEO(pocket+spawn_H) · HOUSE_DRONE(spool+daemon_door)
+NC_FS_IMV       //IMV pipeline: spool_tx·pocket_RAG·spawn_proc·daemon_stat
+                //PENDIENTE: activar spool_tx batch · spawn MASKING-SPAWN
+NC_FS_SECURITY  //security LR operativo: JA3 whitelist STACKING · blacklist GATE H06
+                //PE_ENTROPY > 7.0 trigger · cloud_drift feature · C2 pattern
+
+METHOD <equation> =><= .. calcula .. nc_lr_appendix_full_stack_features_soberano --[Ballestrinque] [term]
+SOCIAL {launch-bot} =><= .. lanza .. nc_lr_appendix_spawn_bot_session_mandate --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. nc_lr_appendix_full_stack_sellado --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. nc_lr_appendix_coherencia_global_7_dias --[Ballestrinque] [term]
+
+//DIR(+) NERVE CELL LR APPENDIX FULL STACK · V1 · $tue 07/04

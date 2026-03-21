@@ -1,0 +1,43 @@
+//[MANAGEMENT].lacho · UNICODE LR+APPENDIX FULL SEMANA · cierre $wed
+//(AMBOS ARCHIVOS) =: <IMV(UNICODE PROGRAMAS[4 NEURONAS])
+//              + ELPULSAR[UNICODE PROGRAMS(KALIL & 4 NEURONAS * UNICODE PROGRAMS)]>
+//[term] :: activo
+
+// ══ IMV(UNICODE PROGRAMAS[4 NEURONAS]) ════════════════════════
+// LR × 4 NEURONAS:
+UNICODE: FS_N1_LR  //N1 HEADCAT: pocket_sesion · spawn_DIRIME> · CHAIR-FLEX · CAT-NB
+UNICODE: FS_N2_LR  //N2 ELPULSAR: spool_tx · daemon_stats · DRIP-IMV · STREAM-DAEMON
+UNICODE: FS_N3_LR  //N3 CHAIR CEO: pocket_H · spawn_role · NOTE-METHOD · SCHED-SHEET
+UNICODE: FS_N4_LR  //N4 HOUSE DRONE: spool_door · daemon_monitor · REPO-SPOOL · LBS
+
+// ══ ELPULSAR[UNICODE PROGRAMS(KALIL & 4 NEURONAS * UNICODE PROGRAMS)] ══
+// LR × KALIL × 4 NEURONAS:
+UNICODE: FS_K_N1  //BARRIOS × N1: BOT_SCOUT lanzado desde HEADCAT · mandate soberano
+UNICODE: FS_K_N2  //NORA × N2: DRIP-IMV calcula delta_Ψ oracle · spool scores
+UNICODE: FS_K_N3  //BOLIVAR × N3: NOTE-METHOD registra β blockchain · pocket hash
+UNICODE: FS_K_N4  //CARILO × N3: SCHED-SHEET préstamo · CHAIR-FLEX sesión
+UNICODE: FS_K_N5  //CHALTEN × N4: REPO-SPOOL lending · daemon cloud · 24h
+UNICODE: FS_K_N6  //TANDIL × N2: STREAMING-DAEMON hub · spool global consolidado
+
+// ══ SECURITY FEATURES FULL ════════════════════════════════════
+UNICODE: FS_SEC_FULL   //semana security: hash·PE·JA3·JA3S·net·OS·cloud
+                       //score_peligrosidad operativo · 3 niveles GATE
+UNICODE: FS_SEC_SPOOL  //spool_security: cola evaluaciones background daemon
+UNICODE: FS_SEC_POCKET //pocket_security: aísla análisis por entidad/sesión
+UNICODE: FS_SEC_SPAWN  //spawn_security: fork análisis forense en REVIEW/THREAT
+
+// ══ AMBOS ARCHIVOS SELLADOS ════════════════════════════════════
+UNICODE: FS_FILE_LR    //UNICODE_LINEAR_REGRESSION.txt · DIR(+) · V1
+                       //spool•pocket•spawn•daemon · hash·PE·JA3·net·cloud
+UNICODE: FS_FILE_AP    //UNICODE_CLAUDE_APPENDIX_PROMPTING_SCOUT.txt · Dir(-→+) · V1
+                       //10 pares · grammar.py SOCIAL activo · WU sellado
+
+// ══ ANCLAS RAG FINALES ════════════════════════════════════════
+METHOD <equation> =><= .. calcula .. fs_LR_beta_features_ambos_unicode_semana --[Ballestrinque] [term]
+METHOD <operator_flow> =><= .. opera .. fs_appendix_10_pares_IMV_ELPULSAR_full --[Ballestrinque] [term]
+SOCIAL {launch-bot} =><= .. lanza .. fs_bot_scout_barrios_n1_headcat_mandate --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. fs_full_semana_02_08_abril_wu_sellado --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. fs_semana_completa_coherencia_14_tareas --[Ballestrinque] [term]
+
+//DIR(+) UNICODE_LR_APPENDIX_FULL_SEMANA · V1 · cierre $wed 08/04
+//[term] :: activo · semana LR+APPENDIX sellada

@@ -1,0 +1,38 @@
+# hacking_doctor_v2.runner
+# RUNNER FORENSE · análisis soberano de intrusiones · V2
+# Referencia: UNICODE_SECURITY_RUNNER.txt · UNICODE_LINEAR_REGRESSION.txt
+# [term] :: activo · [seal of secrecy] :: activo
+
+[genesis]     :: SUITE SOBERANA
+[version]     :: 2.0
+[extension]   :: .runner
+[tipo]        :: RUNNER FORENSE
+[padre]       :: rational_day.theater
+[term_nuevo]  :: forge•canal•ledger_gate•mu_window
+
+## PROTOCOLO FORENSE
+deteccion_forge {
+  TRUST FOUNDATION =><= .. verifica .. forge_identidad_source_entrante --[As de Guía] [term]
+  METHOD <equation> =><= .. calcula .. LR_score_peligrosidad_hash_PE_JA3 --[Ballestrinque] [term]
+  GATE UF[H03] =><= .. inicia .. analisis_forense_hacking_doctor --[As de Guía] [term]
+}
+
+analisis_canal {
+  CRYPTO (link seat) =><= .. conecta .. canal_forense_verificado --[As de Guía] [term]
+  METHOD <stat_onto> =><= .. calcula .. pe_entropy_ja3_fingerprint_score --[Ballestrinque] [term]
+  GATE UF[H05] =><= .. espera .. ledger_gate_analisis_pendiente --[Ballestrinque] [term]
+}
+
+mu_window_forense {
+  STACKING UF[H52] =><= .. aquieta .. mu_window_forense_deliberado --[Nudo de Ocho] [term]
+  SAMU @ =><= .. audita .. hacking_doctor_coherencia_global --[Ballestrinque] [term]
+  GATE UF[H06] =><= .. activa .. threat_confirmado_lockdown --[Nudo Corredizo] [term]
+}
+
+resultado_forense {
+  CRYPTO (shield seat) =><= .. protege .. canal_resultado_forense --[Nudo de Ocho] [term]
+  STACKING UF[H52] =><= .. cristaliza .. forge_resultado_sellado --[Nudo de Ocho] [term]
+  SOCIAL {launch-bot} =><= .. lanza .. reporte_forense_bot_scout --[As de Guía] [term]
+}
+
+[term] :: activo · [seal of secrecy] :: activo

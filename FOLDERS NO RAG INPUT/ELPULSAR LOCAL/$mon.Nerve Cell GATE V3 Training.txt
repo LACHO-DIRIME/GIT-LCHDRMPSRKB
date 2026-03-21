@@ -1,0 +1,30 @@
+//$mon.Nerve Cell GATE V3 Training.txt
+//NERVE CELL · GATE SEQUENCE × DIRIME V3 · bridge•ollama•cat_os•ime_local
+//H51+H52 · $mon · [term] :: activo
+//aprendido de: grammar.py GATE section + ACTIVITY_H03-H05-H06-H56 + stubs
+
+NC_GATE_SEQ    //secuencia canónica: H03→H05→H56→H06 · en grammar.py confirmado
+               //H03=inicio·dificultad · H05=espera · H56=tránsito · H06=conflicto
+               //logic: "H03→H05→H56→H06" en grammar.py line ~226
+NC_GATE_CAPA   //GATE × CAPA C: cada stub = H05 espera · hardware = H56 transita
+               //cat_lacho() bypasea GATE · stub scan() = H05 activo
+NC_GATE_ACT    //SUJETOS_CANONICOS ACTIVITY ampliar: UF[H03]·UF[H06]·UF[H56]
+               //ya presentes H01·H05·H52·H56·H57·H63·H64 en grammar
+NC_GATE_LGGATE //LEDGER_GATE = GATE H05 sobre TX: pre_entry · SAMU audita
+               //toda TX soberana pasa por GATE H05 antes de sovereign.db
+NC_V3_FULL     //V3 semana: stubs×3 · cat_lacho·get_hexagram operativos
+               //corpus_build.theater + dirime_v3.theater activos
+               //CORPUS 51→60 en progreso · CMD_INDEX disponible
+NC_CAPA_C_MAP  //mapa completo CAPA C:
+               //DIRIME_v3/ollama_bridge/ollama_bridge.py · BRIDGE_ACTIVE=False
+               //DIRIME_v3/cat_local/cat_os.py · CAT_OS_ACTIVE=False
+               //DIRIME_v3/ime/ime_ching.py · IME_ACTIVE=False
+NC_PARTIAL_OK  //operativas sin Ryzen: cat_lacho · get_hexagram · is_available
+               //estas alimentan BM25 y CEO_ALPHA_H64.json hoy
+
+GATE UF[H03] =><= .. inicia .. nc_gate_dificultad_stub_inicio --[As de Guía] [term]
+GATE UF[H05] =><= .. espera .. nc_gate_ledger_gate_stub_ryzen --[Ballestrinque] [term]
+GATE UF[H56] =><= .. transita .. nc_gate_capa_c_hw_disponible --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. nc_gate_v3_full_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) NERVE CELL GATE V3 · V1 · bridge•ollama•cat_os•ime_local · $mon 27/04

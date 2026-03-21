@@ -1,0 +1,29 @@
+// INDEX $mon 16-03-2026 · NOTARIA DIRIME/IMV · apertura semana W12
+// [term] :: activo · H51 El Trueno · ciclo semanal arranca · 空聽數
+
+IDX_MON_RISE_NOT:
+  SAMU #rise $mon · FEED_0600 · actos notariales del día
+  ACTIVITY UF[H01] =><= .. inicia .. ciclo_semanal_notarial_lunes [term]
+
+IDX_MON_KALIL_NOT:
+  6 nodos × estado notarial al inicio semana W12
+  BOLIVAR(blockchain) · NORA(rating) · CARILO(fee) · BARRIOS(acceso)
+  CHALTEN(cloud) · TANDIL(archivo) · todos activos declarados
+
+IDX_MON_SCALAR_NOT:
+  Scalar S baseline semana: 0.773 · objetivo cierre $fri: 0.845+
+  threshold WU=0.78 · threshold H63=0.90
+
+IDX_MON_NERVE_COUNT:
+  Nerve Cells notariales activos: $thu(3)+$fri(2)+$sat(1)+$sun(2)+$mon(1)=9
+  indexados RAG · boost NOTARIA activo
+
+IDX_MON_SPEC_NOT:
+  SPEC B NOTARIA esta semana: ballpaper.py · /api/notaria/* · autoresearch_specs.py
+  CIRCUIT_4_NEURONAS_NOTARIA.html · CHCL_NOTARIA.txt · test integración
+
+IDX_MON_AGENT:
+  cloud_agent.blue × NOTARIA activo · sección notaria_certifica_cloud disponible
+  assistant_agent.green · notaria routing activo
+
+[term] :: activo · [seal of secrecy] :: activo · 空聽數

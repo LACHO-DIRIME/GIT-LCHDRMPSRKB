@@ -1,0 +1,46 @@
+//[MANAGEMENT].lacho · DRA/ENGINE/SEGMENT(SAMU)/
+//ENGINE SEGMENT SAMU · partición de auditoría soberana del DRA
+//SEGMENT_SAMU.txt · V1 · 2026-03-10
+//SEGMENT = §I..§N · partición principal de comprensión del TOMO
+//SEGMENT(SAMU) = todos los segmentos auditados por SAMU @ en el DRA
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN SEGMENT SAMU ══════════════════════════════════
+// SEGMENT SAMU = SAMU @ como árbitro de cada partición del DRA
+// Cada §SEGMENT tiene su Scalar S · su delta-Ψ · su estado MU/KU/WU
+// SAMU audita al entrar (§I °0) y al salir (§N °360) de cada segmento
+// §I§II§III§IV§V son los 5 segmentos estándar del ENGINE DRA
+
+// ══ SEGMENTOS DRA × SAMU ═════════════════════════════════════
+UNICODE: SEG_I_SAMU           //§I · CORE · grammar+ledger+rag · auditoría base
+                              //SAMU @ =><= .. audita .. seg_I_core_scalar_s
+UNICODE: SEG_II_SAMU          //§II · MERCADO · KALIL + puentes · auditoría econ
+                              //SAMU @ =><= .. audita .. seg_II_kalil_coherencia
+UNICODE: SEG_III_SAMU         //§III · CICLO · THEATER + macros · auditoría ritual
+                              //SAMU @ =><= .. audita .. seg_III_ciclo_macro
+UNICODE: SEG_IV_SAMU          //§IV · FABRIC · CORPUS + RAG + git · auditoría docs
+                              //SAMU @ =><= .. audita .. seg_IV_fabric_delta
+UNICODE: SEG_V_SAMU           //§V · EXEC · CEO_ALPHA + bots + agentes · auditoría
+                              //SAMU @ =><= .. audita .. seg_V_exec_routing
+
+// ══ MÉTRICAS POR SEGMENTO ════════════════════════════════════
+UNICODE: SEG_SCALAR           //Scalar S por §SEGMENT · no global · local al seg
+UNICODE: SEG_DELTA_PSI        //delta-Ψ del segmento · positivo=WU · negativo=REGRET
+UNICODE: SEG_TX_COUNT         //TX dentro del §SEGMENT · trazabilidad
+UNICODE: SEG_CRYSTAL_COUNT    //cristales WU en el §SEGMENT · acumulado
+UNICODE: SEG_WARN_COUNT       //warnings del §SEGMENT · KU a revisar
+
+// ══ PROTOCOLO SAMU × SEGMENT ══════════════════════════════════
+UNICODE: SEG_AUDIT_OPEN       //SAMU @ al °0 de segmento · baseline
+UNICODE: SEG_AUDIT_MID        //SAMU @ al °180 · dirimencia soberana
+UNICODE: SEG_AUDIT_CLOSE      //SAMU @ al °360 · cristal o REGRET
+UNICODE: SEG_DIRIME           //SAMU @ dirime conflicto entre §SEGMENTS
+                              //SAMU @ =><= .. dirime .. conflicto_seg_I_vs_II
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+SAMU @ =><= .. audita .. segment_samu_dra_completo --[Ballestrinque] [term]
+METHOD <stat_onto> =><= .. calcula .. segment_scalar_s_por_particion --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. segment_wu_auditado --[Nudo de Ocho] [term]
+
+//DIR(+) DRA/ENGINE/SEGMENT_SAMU · §I→§V · Scalar S por partición

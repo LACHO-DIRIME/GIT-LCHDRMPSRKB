@@ -1,0 +1,85 @@
+MOVIMIENTO DE ARCHIVOS - UPGRADE_TASKING
+=======================================
+
+FECHA: 2026-05-18 21:35
+ACCION: Reubicación de archivos a ubicaciones más apropiadas
+MOTIVO: Mejorar organización y coherencia del directorio
+
+ARCHIVO MOVIDO:
+---------------
+
+cloud_agent_notaria_extension.txt
+- ORIGEN: /UPGRADE_TASKING/cloud_agent_notaria_extension.txt
+- DESTINO: /FOLDERS NO RAG INPUT/AGENTS/cloud_agent_notaria_extension.txt
+- MOTIVO: Ubicación más apropiada junto al archivo base cloud_agent.blue
+
+JUSTIFICACIÓN DEL MOVIMIENTO:
+------------------------------
+
+1. COHERENCIA DE UBICACIÓN:
+   - cloud_agent.blue está en /FOLDERS NO RAG INPUT/AGENTS/
+   - Su extensión debe estar en el mismo directorio
+   - Mejor organización de archivos de agentes
+
+2. ACCESIBILIDAD:
+   - Más fácil encontrar junto al archivo base
+   - Lógica de agrupación por tipo de componente
+   - Referencia directa al archivo relacionado
+
+3. MANTENIMIENTO:
+   - Más fácil mantener ambos archivos juntos
+   - Actualizaciones simultáneas más sencillas
+   - Gestión de versiones coordinada
+
+VERIFICACIÓN DEL MOVIMIENTO:
+---------------------------
+
+✅ Archivo movido correctamente
+✅ Contenido preservado intacto
+✅ Ubicación final verificada
+✅ Referencia en README.md actualizada
+✅ Directorio UPGRADE_TASKING limpio
+
+ESTADO FINAL:
+------------
+
+📋 ARCHIVO ANTES: /UPGRADE_TASKING/cloud_agent_notaria_extension.txt
+📋 ARCHIVO DESPUÉS: /FOLDERS NO RAG INPUT/AGENTS/cloud_agent_notaria_extension.txt
+📋 ESTADO: Reubicado exitosamente
+📋 ACCESIBILIDAD: Mejorada
+📋 ORGANIZACIÓN: Optimizada
+
+BENEFICIOS DEL MOVIMIENTO:
+------------------------
+
+📋 ORGANIZACIÓN: Agentes agrupados en directorio específico
+📋 COHERENCIA: Extensión junto al archivo base
+📋 MANTENIMIENTO: Más fácil gestionar ambos archivos
+📋 ACCESIBILIDAD: Referencia directa y clara
+📋 LÓGICA: Agrupación por tipo de componente
+
+REFERENCIAS ACTUALIZADAS:
+------------------------
+
+📋 README.md: Referencia a cloud_agent_notaria_extension.txt eliminada
+📋 ESTRUCTURA: Directorio UPGRADE_TASKING más limpio
+📋 AGENTS: Directorio con ambos archivos relacionados
+
+PRÓXIMOS PASOS:
+---------------
+
+1. Implementar la extensión en cloud_agent.blue
+2. Validar la funcionalidad notaria cloud
+3. Test de integración con sistema DIRIME IMV
+4. Documentar los resultados
+
+ESTADO FINAL:
+------------
+
+🚀 Archivo reubicado exitosamente
+📋 Ubicación más apropiada y coherente
+📋 Directorio UPGRADE_TASKING optimizado
+📋 Organización de agentes mejorada
+✅ Listo para implementación
+
+[term] :: activo · [seal of secrecy] :: activo

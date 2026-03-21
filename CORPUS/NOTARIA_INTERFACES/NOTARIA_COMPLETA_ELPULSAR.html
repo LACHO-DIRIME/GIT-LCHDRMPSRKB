@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTARIA DIRIME · H63 既濟 · Powered by LACHO</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Courier New', monospace;
+            background: #ffffff;
+            color: #1a1a2e;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-bottom: 2px solid #c9a84c;
+        }
+        
+        .header h1 {
+            color: #1a1a2e;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .header .subtitle {
+            color: #c9a84c;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .main-container {
+            display: flex;
+            gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .panel {
+            flex: 1;
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        
+        .tabs {
+            display: flex;
+            border-bottom: 2px solid #e0e0e0;
+            margin-bottom: 20px;
+        }
+        
+        .tab {
+            padding: 12px 20px;
+            background: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-bottom: none;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+        
+        .tab.active {
+            background: #1a1a2e;
+            color: #ffffff;
+            border-color: #1a1a2e;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #1a1a2e;
+        }
+        
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #d0d0d0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+        }
+        
+        .form-group textarea {
+            height: 80px;
+            resize: vertical;
+        }
+        
+        .btn {
+            background: #1a1a2e;
+            color: #ffffff;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .btn:hover {
+            background: #2d2d2d;
+        }
+        
+        .btn-success {
+            background: #2d6a2d;
+        }
+        
+        .btn-success:hover {
+            background: #1e591e;
+        }
+        
+        .btn-warning {
+            background: #f39c12;
+        }
+        
+        .btn-warning:hover {
+            background: #d68910;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        
+        .status-valid {
+            background: #2d6a2d;
+            color: white;
+        }
+        
+        .status-pending {
+            background: #f39c12;
+            color: white;
+        }
+        
+        .status-sealed {
+            background: #c9a84c;
+            color: white;
+        }
+        
+        .status-immutable {
+            background: #1a4a8a;
+            color: white;
+        }
+        
+        .sidebar {
+            width: 250px;
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        
+        .nodo-item {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            background: #f8f9fa;
+        }
+        
+        .nodo-name {
+            font-weight: bold;
+            color: #1a1a2e;
+            margin-bottom: 5px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            border-top: 2px solid #c9a84c;
+            background: #f8f9fa;
+        }
+        
+        .footer .status-live {
+            color: #2d6a2d;
+            font-weight: bold;
+        }
+        
+        .neuronas {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .neurona {
+            padding: 5px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .neurona-grammar { background: #2d6a2d; color: white; }
+        .neurona-ledger { background: #1a4a8a; color: white; }
+        .neurona-samu { background: #c9a84c; color: white; }
+        .neurona-rag { background: #f39c12; color: white; }
+        
+        .scalar-bar {
+            width: 200px;
+            height: 20px;
+            background: #e0e0e0;
+            border-radius: 10px;
+            margin: 10px auto;
+            overflow: hidden;
+        }
+        
+        .scalar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #1a4a8a 0%, #2d6a2d 78%, #c9a84c 100%);
+            transition: width 0.3s ease;
+        }
+        
+        .list-item {
+            padding: 10px;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .list-item:hover {
+            background: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>⊗ NOTARIA DIRIME · H63 既濟 · Powered by LACHO</h1>
+        <div class="subtitle">Scalar S live · TX · cristales · SAMU @ status</div>
+    </div>
+
+    <div class="main-container">
+        <div class="panel">
+            <div class="tabs">
+                <div class="tab active" onclick="showTab('certifica')">CERTIFICA</div>
+                <div class="tab" onclick="showTab('sella')">SELLA</div>
+                <div class="tab" onclick="showTab('inmutabiliza')">INMUTABILIZA</div>
+            </div>
+
+            <!-- Tab CERTIFICA -->
+            <div id="certifica" class="tab-content active">
+                <h3>Certificar Acto Notarial</h3>
+                <form onsubmit="certificarActo(event)">
+                    <div class="form-group">
+                        <label for="acto">Acto:</label>
+                        <input type="text" id="acto" name="acto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="partes">Partes (CSV):</label>
+                        <textarea id="partes" name="partes" placeholder="parte1,parte2,parte3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="objeto">Objeto:</label>
+                        <input type="text" id="objeto" name="objeto" required>
+                    </div>
+                    <button type="submit" class="btn btn-success">CERTIFICAR</button>
+                    <span id="certifica-status" class="status-badge"></span>
+                </form>
+                <div id="certifica-output" style="margin-top: 20px; display: none;">
+                    <h4>Resultado:</h4>
+                    <div id="certifica-result"></div>
+                </div>
+            </div>
+
+            <!-- Tab SELLA -->
+            <div id="sella" class="tab-content">
+                <h3>Lista de Actos Certificados</h3>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="filtro-certifica" onchange="filtrarActos()">
+                        Mostrar solo actos con verb=certifica
+                    </label>
+                </div>
+                <div id="actos-list">
+                    <div class="list-item">
+                        <span>Cargando actos...</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab INMUTABILIZA -->
+            <div id="inmutabiliza" class="tab-content">
+                <h3>Actos Listos para Inmutabilizar (WU)</h3>
+                <div id="inmutabiliza-list">
+                    <div class="list-item">
+                        <span>Cargando actos WU...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <h3>Nodos KALIL</h3>
+            <div class="nodo-item">
+                <div class="nodo-name">BOLIVAR</div>
+                <span class="status-badge status-pending">PENDIENTE</span>
+            </div>
+            <div class="nodo-item">
+                <div class="nodo-name">NORA</div>
+                <span class="status-badge status-valid">ACTIVO</span>
+            </div>
+            <div class="nodo-item">
+                <div class="nodo-name">CARILO</div>
+                <span class="status-badge status-pending">PENDIENTE</span>
+            </div>
+            <div class="nodo-item">
+                <div class="nodo-name">BARRIOS</div>
+                <span class="status-badge status-valid">ACTIVO</span>
+            </div>
+            <div class="nodo-item">
+                <div class="nodo-name">CHALTEN</div>
+                <span class="status-badge status-sealed">SELLADO</span>
+            </div>
+            <div class="nodo-item">
+                <div class="nodo-name">TANDIL</div>
+                <span class="status-badge status-pending">PENDIENTE</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="status-live">S=0.757 · TX=1442 · KU · 4 neuronas · [term] :: activo</div>
+        <div class="neuronas">
+            <div class="neurona neurona-grammar">grammar</div>
+            <div class="neurona neurona-ledger">ledger</div>
+            <div class="neurona neurona-samu">samu</div>
+            <div class="neurona neurona-rag">rag</div>
+        </div>
+        <div class="scalar-bar">
+            <div class="scalar-fill" style="width: 75.7%;"></div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:8741';
+
+        // Tab functionality
+        function showTab(tabName) {
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+            
+            document.querySelector(`[onclick="showTab('${tabName}')"]`).classList.add('active');
+            document.getElementById(tabName).classList.add('active');
+            
+            if (tabName === 'sella') {
+                cargarActos();
+            } else if (tabName === 'inmutabiliza') {
+                cargarActosWU();
+            }
+        }
+
+        // Certificar acto
+        async function certificarActo(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const data = {
+                acto: formData.get('acto'),
+                partes: formData.get('partes'),
+                objeto: formData.get('objeto')
+            };
+            
+            try {
+                const response = await fetch(`${API_BASE}/api/notaria/certifica`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+                
+                const result = await response.json();
+                
+                document.getElementById('certifica-status').className = 'status-badge status-valid';
+                document.getElementById('certifica-status').textContent = 'VÁLIDO';
+                
+                document.getElementById('certifica-output').style.display = 'block';
+                document.getElementById('certifica-result').innerHTML = `
+                    <strong>Hash:</strong> ${result.hash}<br>
+                    <strong>Sentencia LACHO:</strong> ${result.sentencia}<br>
+                    <strong>Estado:</strong> <span class="status-badge status-valid">${result.estado}</span>
+                `;
+                
+                // Actualizar Scalar S bar
+                updateScalarBar(result.scalar_s);
+                
+            } catch (error) {
+                document.getElementById('certifica-status').className = 'status-badge status-pending';
+                document.getElementById('certifica-status').textContent = 'ERROR';
+                console.error('Error:', error);
+            }
+        }
+
+        // Cargar actos
+        async function cargarActos() {
+            try {
+                const response = await fetch(`${API_BASE}/api/notaria/archivo`);
+                const actos = await response.json();
+                
+                const actosList = document.getElementById('actos-list');
+                actosList.innerHTML = '';
+                
+                const filtroCertifica = document.getElementById('filtro-certifica').checked;
+                
+                actos.forEach(acto => {
+                    if (filtroCertifica && acto.verb !== 'certifica') return;
+                    
+                    const item = document.createElement('div');
+                    item.className = 'list-item';
+                    item.innerHTML = `
+                        <span>${acto.acto} - ${acto.partes}</span>
+                        <button class="btn" onclick="sellarActo('${acto.id}')">SELLAR</button>
+                    `;
+                    actosList.appendChild(item);
+                });
+                
+            } catch (error) {
+                console.error('Error cargando actos:', error);
+                document.getElementById('actos-list').innerHTML = '<div class="list-item"><span>Error cargando actos</span></div>';
+            }
+        }
+
+        // Cargar actos WU para inmutabilizar
+        async function cargarActosWU() {
+            try {
+                const response = await fetch(`${API_BASE}/api/notaria/archivo`);
+                const actos = await response.json();
+                
+                const actosList = document.getElementById('inmutabiliza-list');
+                actosList.innerHTML = '';
+                
+                actos.forEach(acto => {
+                    if (acto.scalar_s >= 0.78 || acto.knowledge_state === 'GREEN') {
+                        const item = document.createElement('div');
+                        item.className = 'list-item';
+                        item.innerHTML = `
+                            <span>${acto.acto} - S=${acto.scalar_s}</span>
+                            <button class="btn btn-warning" onclick="inmutabilizarActo('${acto.id}')">INMUTABILIZAR</button>
+                        `;
+                        actosList.appendChild(item);
+                    }
+                });
+                
+            } catch (error) {
+                console.error('Error cargando actos WU:', error);
+                document.getElementById('inmutabiliza-list').innerHTML = '<div class="list-item"><span>Error cargando actos WU</span></div>';
+            }
+        }
+
+        // Sellar acto
+        async function sellarActo(actoId) {
+            try {
+                const response = await fetch(`${API_BASE}/api/notaria/sella/${actoId}`, {
+                    method: 'POST'
+                });
+                
+                const result = await response.json();
+                alert(`Acto sellado: ${result.h63_ref}`);
+                cargarActos(); // Refresh list
+                
+            } catch (error) {
+                console.error('Error sellando acto:', error);
+                alert('Error sellando acto');
+            }
+        }
+
+        // Inmutabilizar acto
+        async function inmutabilizarActo(actoId) {
+            try {
+                const response = await fetch(`${API_BASE}/api/notaria/inmutabiliza/${actoId}`, {
+                    method: 'POST'
+                });
+                
+                const result = await response.json();
+                alert(`Acto inmutabilizado: ${result.sha256}`);
+                cargarActosWU(); // Refresh list
+                
+            } catch (error) {
+                console.error('Error inmutabilizando acto:', error);
+                alert('Error inmutabilizando acto');
+            }
+        }
+
+        // Update Scalar S bar
+        function updateScalarBar(scalar) {
+            const percentage = Math.min(scalar * 100, 100);
+            document.querySelector('.scalar-fill').style.width = `${percentage}%`;
+        }
+
+        // Live status update
+        async function updateLiveStatus() {
+            try {
+                const response = await fetch(`${API_BASE}/api/notaria/status`);
+                const status = await response.json();
+                
+                document.querySelector('.status-live').innerHTML = 
+                    `S=${status.scalar_s} · TX=${status.tx} · ${status.estado} · ${status.neuronas} neuronas · [term] :: activo`;
+                
+                updateScalarBar(status.scalar_s);
+                
+            } catch (error) {
+                console.error('Error actualizando status:', error);
+            }
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            cargarActos();
+            setInterval(updateLiveStatus, 5000); // Update every 5 seconds
+        });
+    </script>
+</body>
+</html>

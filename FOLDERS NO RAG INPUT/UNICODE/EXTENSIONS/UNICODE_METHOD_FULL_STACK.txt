@@ -1,0 +1,41 @@
+//[MANAGEMENT].lacho · UNICODE METHOD FULL STACK
+//METHOD atraviesa todas las capas: LACHO→IMV→ELPULSAR→KALIL→NOTARIA→DRA
+//[term] :: activo
+
+// ══ CAPA 0 · LACHO ════════════════════════════════════════════
+UNICODE: MFS_L0_EQ    //<equation> en LACHO: fórmula soberana · [term:A°180#CORE@0x01]
+UNICODE: MFS_L0_PSI   //<psi_spin> en LACHO: Ψ COSMOS→TOMO · caos→orden local
+
+// ══ CAPA 1 · IMV (grammar.py) ═════════════════════════════════
+UNICODE: MFS_L1_PARSE //<operator_flow> Parser: METHOD con delimitadores < >
+                      //Prioridad 0 en detect_library() · antes que otros patrones
+UNICODE: MFS_L1_TAX   //<stat_onto> classify_sentence() → level=1 · min=0.88
+UNICODE: MFS_L1_GATE  //<if> H03→H05→H56→H06 · secuencia validada en GATE
+
+// ══ CAPA 2 · ELPULSAR (neural_net.py) ═════════════════════════
+UNICODE: MFS_L2_GRAPH //<operator_flow> build_graph(): nodes+links+clusters
+UNICODE: MFS_L2_STATS //<stat_onto> verified: sum(1 for n in nodes if n["verified"])
+UNICODE: MFS_L2_RES   //<equation> ResourceType: LACHO·DATA·REF·CODE·LINK
+                      //ResourceScope: PROPIO·AJENO·INTERNO·EXTERNO
+
+// ══ CAPA 3 · KALIL ════════════════════════════════════════════
+UNICODE: MFS_L3_NORA  //<stat_onto> NORA oracle · delta_Ψ rating
+UNICODE: MFS_L3_CAR   //<equation> CARILO ratio_R · R=(cap×plazo)/(score×gar)
+UNICODE: MFS_L3_BOL   //<if> BOLIVAR hash bifurcación · VALID/FAIL
+
+// ══ CAPA 4 · NOTARIA (CHCL) ════════════════════════════════════
+UNICODE: MFS_L4_CERT  //<equation> certifica · threshold SAMU ≥ 0.90
+UNICODE: MFS_L4_SELLA //<if> sella: CRYPTO (spark seat) si threshold OK
+UNICODE: MFS_L4_INMUT //<psi_spin> inmutabiliza · STACKING H52 → WU permanente
+
+// ══ CAPA 5 · DRA ══════════════════════════════════════════════
+UNICODE: MFS_L5_TOMO  //<equation> [term:TOMO°SLICE§SEG#CLUSTER@OFFSET]
+UNICODE: MFS_L5_CLUST //<stat_onto> CDC_NLP · CDC_SCALAR · CDC_BATCH metrics
+UNICODE: MFS_L5_SLICE //<psi_spin> SLICE °0→°360 · MU/KU/WU por ángulo
+
+METHOD <operator_flow> =><= .. opera .. method_full_stack_L0_a_L5_pipeline --[Ballestrinque] [term]
+METHOD <stat_onto> =><= .. calcula .. method_full_stack_metricas_por_capa --[Ballestrinque] [term]
+METHOD <equation> =><= .. calcula .. method_full_stack_formulas_soberanas --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_method_full_stack_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_METHOD_FULL_STACK · V1 · L0→L5 · $mon 23/03

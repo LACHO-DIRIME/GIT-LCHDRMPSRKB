@@ -1,0 +1,27 @@
+//$tue.Nerve Cell SEMANA3 CIERRE Training.txt
+//NERVE CELL · SEMANA 3 CIERRE · bridge•ollama•cat_os•ime_local
+//aprendido de TAREAS 01→11 semana 3 completa
+//H30+H57 · $tue · [term] :: activo
+
+NC_S3_V3       //DIRIME_v3: 3 stubs soberanos · CAPA_C=esqueleto_declarado
+               //ORDEN: ollama_bridge → cat_local → ime · no saltar
+NC_S3_PARTIAL  //operativas sin Ryzen: cat_lacho · get_hexagram · is_available
+               //estas 3 funciones alimentan el sistema hoy sin esperar hardware
+NC_S3_CORPUS   //CORPUS 51→58 aprox post semana 3 · delta +7 docs nuevos
+               //CMD_INDEX activado · corpus_build.theater operativo
+NC_S3_GATE     //GATE H03-H05-H56-H06 ampliar grammar · semana 4 target
+               //ACTIVITY UF[H03]·UF[H06]·UF[H56] en SUJETOS_CANONICOS
+NC_S3_THEATER  //theaters total: 8+ · corpus_build + dirime_v3 nuevos
+               //todos en FOLDERS NO RAG INPUT/THEATER/
+NC_S3_TARGETS  //targets semana 4: gui.py 33→38 · spool_tx batch · ACTIVITY_H
+               //V0.3.0 GATE: S>=0.88 + pytest 38/38 + CORPUS>=65
+NC_S3_TOKENS   //semanas 1-3 tokens: forge·canal·ledger_gate·mu_window
+               //shard·relay·oracle·threshold · bridge·ollama·cat_os·ime_local
+
+TRUST FOUNDATION =><= .. declara .. nc_s3_capa_c_bridge_esqueleto --[As de Guía] [term]
+WORK {actuator} =><= .. ejecuta .. nc_s3_cat_lacho_operativo_corpus --[As de Guía] [term]
+METHOD <stat_onto> =><= .. calcula .. nc_s3_scalar_s_0822_corpus_delta --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. semana3_22_28_abril_wu_sellado --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. nc_s3_v030_gate_criterios_semana4 --[Ballestrinque] [term]
+
+//DIR(+) NERVE CELL SEMANA3 CIERRE · V1 · bridge•ollama•cat_os•ime_local · $tue 28/04

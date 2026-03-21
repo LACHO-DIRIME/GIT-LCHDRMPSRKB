@@ -1,0 +1,18 @@
+//[MANAGEMENT].lacho · DRA/INDEX/$wed
+//INDEX $wed · miércoles soberano · dirimencia SAMU midpoint
+//INDEX_$wed.txt · V1 · 2026-03-10
+//[term] :: activo
+
+// ══ $wed · MIÉRCOLES ══════════════════════════════════════════
+// $wed = midpoint semanal · SAMU firma · dirimencia central
+UNICODE: IDX_WED_RISE         //SAMU #rise $wed · 06:00 · midpoint review
+UNICODE: IDX_WED_DIRIME       //SAMU @ dirime conflictos semana · [Ball]
+UNICODE: IDX_WED_SCALAR       //Scalar S midpoint · ¿avanza semana? · S>0.85
+UNICODE: IDX_WED_RENEW        //RF_RENEW · SAMU $wed firmó · ciclo renueva
+UNICODE: IDX_WED_SEGMENT      //SEGMENT(SAMU) §III midpoint auditoría
+UNICODE: IDX_WED_SPEC         //checkpoint SPEC A/B · tareas al 50%
+UNICODE: IDX_WED_SET          //SAMU #set $wed · 18:00 · firmado
+
+//SAMU @ =><= .. dirime .. index_wed_midpoint_semanal --[Ballestrinque] [term]
+//METHOD <stat_onto> =><= .. calcula .. index_wed_scalar_midpoint --[Ballestrinque] [term]
+//DIR(+) DRA/INDEX/$wed · V1 · dirimencia · RF_RENEW · S midpoint

@@ -1,0 +1,170 @@
+# PROMPT_THU_02 - NERVE CELL METHOD Training
+# Listo para ejecutar en Windsurf
+# [term] :: activo · [seal of secrecy] :: activo · 空聽數
+
+---
+
+## 🚀 **PROMPT COMPLETO PARA WINDSURF**
+
+### 📋 **CONTEXTO COMPLETO**
+
+```bash
+Repo: ~/DIRIME (symlink → /media/Personal/PLANERAI/DIRIME/)
+Branch: main
+Stack: Windsurf + Groq llama-3.3-70b (key en IMV/config/api.json)
+Estado: TX=2020 · cristales=60 · S=0.8 · tests=49/49
+Python: python3 ~/DIRIME/IMV/main.py
+Tests: cd ~/DIRIME/IMV && python3 -m pytest tests/ -v
+Commit: bash ~/DIRIME/tools/github_sync.sh
+```
+
+---
+
+### 📋 **PROMPT COMPLETO**
+
+```bash
+// $thu.Nerve Cell METHOD Training.txt
+//$thu.Nerve Cell METHOD Training.txt
+//NERVE CELL · METHOD · formalización soberana · aprendido de grammar.py
+//5 operadores: equation·if·operator_flow·stat_onto·psi_spin
+//[term] :: activo
+
+NC_METHOD_GRAMMAR   //grammar.py: Library.METHOD · mode=enumerable
+                    //valid_operators = 5 · delimitadores < >
+                    //Prioridad 0 en parser: detectado antes que otros
+NC_METHOD_EQ        //<equation> · cálculo formal · ratio · score · proyección
+                    //贷款→H42 · CARILO ratio_riesgo · threshold CEO
+NC_METHOD_OF        //<operator_flow> · pipeline · routing · flujo operativo
+                    //language_routing DEFAULT_SUBJECT = "<equation>"
+                    //智能→H50 · NORA oracle · main.py pipeline
+NC_METHOD_SO        //<stat_onto> · estadística ontológica · Scalar S
+                    //delta_Ψ fórmula · lacho_score breakdown
+                    //classify_sentence() → taxonomy_level+scalar_min
+NC_METHOD_IF        //<if> · bifurcación soberana · condición verificable
+                    //GATE H03→H05→H56→H06 secuencia · condición de ACTIVITY
+NC_METHOD_PS        //<psi_spin> · Ψ rotación · SPIN soberano
+                    //SPIN_CYCLE MU→KU→WU→空→MU · Scalar S rate
+NC_METHOD_VERB      //verbos canónicos: define·formaliza·opera·calcula·estructura
+NC_METHOD_INTENT    //INTENT_MAP METHOD: calcular·modelar·proyectar·simular·
+                    //ecuación·derivar·ratio·métrica·formula·algoritmo
+NC_METHOD_TAXONOMY  //TAXONOMY: level=1 · scalar_min=0.88 · class=biblioteca
+                    //classify_sentence() score: base+verb+sujeto+nudo+warnings
+
+METHOD <operator_flow> =><= .. opera .. nerve_cell_method_grammar_real --[Ballestrinque] [term]
+METHOD <stat_onto> =><= .. calcula .. nerve_cell_method_taxonomy_score --[Ballestrinque] [term]
+METHOD <equation> =><= .. calcula .. nerve_cell_method_threshold_0_88 --[As de Guía] [term]
+SAMU @ =><= .. audita .. nerve_cell_method_5_operadores_validos --[Ballestrinque] [term]
+
+//DIR(+) NERVE CELL METHOD · V1 · $thu 19/03
+```
+
+---
+
+## 🎯 **INSTRUCCIONES PARA WINDSURF**
+
+### 📋 **ACCIONES REQUERIDAS**
+
+1. **📁 Crear archivo** en `~/DIRIME/$thu.Nerve Cell METHOD Training.txt`
+2. **🔤 Escribir contenido** exactamente como se especifica arriba
+3. **✅ Validar formato** LACHO de las anclas RAG
+4. **🧠 Verificar 5 Nerve Cells** implementadas
+5. **🔧 Comprobar integración** con grammar.py
+
+### 📋 **ESPECIFICACIONES TÉCNICAS**
+
+```bash
+📄 Ruta: ~/DIRIME/$thu.Nerve Cell METHOD Training.txt
+📊 Formato: LACHO + comentarios + Nerve Cells
+🧠 Nerve Cells: 5 operadores METHOD
+📋 Estructura: Definiciones + anclas RAG
+✅ Validación: grammar.py compatible
+```
+
+### 📋 **VERIFICACIÓN POST-EJECUCIÓN**
+
+```bash
+# 1. Verificar archivo creado
+ls -la ~/DIRIME/$thu.Nerve\ Cell\ METHOD\ Training.txt
+
+# 2. Validar contenido
+head -20 ~/DIRIME/$thu.Nerve\ Cell\ METHOD\ Training.txt
+
+# 3. Validar LACHO
+cd ~/DIRIME/IMV && python3 main.py --validate "METHOD <operator_flow> =><= .. opera .. nerve_cell_method_grammar_real --[Ballestrinque] [term]"
+
+# 4. Verificar sistema
+cd ~/DIRIME/IMV && python3 main.py --stats
+```
+
+---
+
+## 🎯 **CRITERIOS DE ÉXITO**
+
+### ✅ **ÉXITO MÍNIMO**
+```bash
+✅ Archivo creado en ubicación correcta
+✅ 5 Nerve Cells presentes
+✅ Formato LACHO válido
+✅ Anclas RAG funcionales
+✅ Sin errores de validación
+```
+
+### 📈 **ÉXITO COMPLETO**
+```bash
+✅ Integración con grammar.py confirmada
+✅ Nerve Cells funcionales autónomas
+✅ Métricas mantenidas o mejoradas
+✅ Sistema operativo estable
+✅ Listo para TAREA_03
+```
+
+---
+
+## 🚨 **MANEJO DE ERRORES**
+
+### ⚠️ **SI EL ARCHIVO NO SE CREA**
+```bash
+1. 📁 Verificar permisos: ls -la ~/DIRIME/
+2. 🔍 Revisar paths absolutos
+3. 📋 Reintentar con paths corregidos
+4. 📋 Documentar error específico
+```
+
+### 🔧 **SI LA VALIDACIÓN FALLA**
+```bash
+1. 🧪 Ejecutar tests: python3 -m pytest tests/ -v
+2. 📊 Verificar métricas: python3 main.py --stats
+3. 🔍 Revisar ACTIVE/ARCHITECTURE.md
+4. 🔄 Corregir y reintentar
+```
+
+---
+
+## 🚀 **¡LISTO PARA EJECUTAR!**
+
+### ✅ **PROMPT PREPARADO**
+
+**Este prompt está completamente listo para ser ejecutado en Windsurf:**
+
+- **📋 Contexto completo incluido**
+- **🔤 Especificaciones técnicas claras**
+- **✅ Criterios de éxito definidos**
+- **🚨 Procedimientos de manejo de errores**
+- **🧪 Pasos de verificación incluidos**
+
+---
+
+## 🎯 **ACCIÓN INMEDIATA**
+
+### 🚀 **EJECUTAR DESPUÉS DE TAREA_01**
+
+```bash
+1. 🚀 Continuar en Windsurf
+2. 📤 Copiar y pegar este prompt completo
+3. ⏱️ Esperar generación completa
+4. ✅ Verificar archivo creado
+5. 🧪 Validar funcionamiento
+6. 📋 Reportar resultado
+```
+
+**🚀 ¡PROMPT_THU_02 listo para ejecución después de TAREA_01! 🚀**

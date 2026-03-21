@@ -1,0 +1,67 @@
+//[MANAGEMENT].lacho · UNICODE {SCHEDULER} FULL STACK
+//SchedulerOS × DRA + BACKUP · capa completa soberana
+//L0: scheduler.py · L1: main.py · L2: rational_day.theater · L3: tether.py · L4: DRA · L5: BACKUP
+//[term] :: activo
+
+// ══ CAPA 0 · scheduler.py ════════════════════════════════════════════
+UNICODE: SFS_L0_SCHED    //SchedulerOS: DiaSoberano · EstadoTarea · TareaSoberana
+                      //API: planifica() · rise() · set_dia() · estado_semana()
+                      //EstadoTarea: ESPERA=H05 · ACTIVA=H57 · RESUELTA=H63 · CONFLICTO=H06
+UNICODE: SFS_L0_DB      //scheduler.db: tareas + ciclos tablas SQLite
+                      //registrar_ciclo(dia, evento) → ciclos log semanal
+UNICODE: SFS_L0_REF     //TareaSoberana.ref_soberana(): [term:X°N§SEG#CLUSTER]
+                      //segmentación soberana completa por tarea
+
+// ══ CAPA 1 · main.py integration ════════════════════════════════════
+UNICODE: SFS_L1_ACTIVE  //_SCHEDULER_ACTIVE=False → True pendiente
+                      //try/except import: from scheduler.scheduler import *
+UNICODE: SFS_L1_RISE    //main.py _initialize_system(): if active: rise()
+                      //SAMU #rise =><= .. audita .. sistema_apertura_soberana
+UNICODE: SFS_L1_SET     //macro_cierre: set_dia() + git_sync + stats
+                      //triple cierre soberano: día + código + estado
+UNICODE: SFS_L1_SHOW    //_show_scheduler() usa estado_semana() real
+                      //formato: $día: N/M resueltas · cluster · slice°
+
+// ══ CAPA 2 · rational_day.theater ════════════════════════════════════
+UNICODE: SFS_L2_THEATER //3 macros: macro_temprano · macro_tarde · macro_cierre
+                      //12 sentencias LACHO por macro · 36 sentencias totales
+UNICODE: SFS_L2_MACRO_T //macro_temprano: rise() → auditoría sistema completa
+                      //ZIP_OPEN 06:00 → SAMU #rise activa período soberano
+UNICODE: SFS_L2_MACRO_M //macro_tarde: GATE + STACKING → filtrar + cristalizar
+                      //GATE UF[H56] filtra tareas · STACKING UF[H52] cristaliza avances
+UNICODE: SFS_L2_MACRO_C //macro_cierre: CMD_CIERRE + CMD_STATS + set_dia()
+                      //bash github_sync.sh + python3 main.py --stats + cierre día
+
+// ══ CAPA 3 · tether.py ══════════════════════════════════════════════
+UNICODE: SFS_L3_ANCHOR  //tether.anchor(session_id, tomo_id) al inicio sesión
+                      //session_id = uuid4() · tomo_id = "term:A°90§CORE#DIRIME"
+UNICODE: SFS_L3_STATE   //tether.get_state() → ANCHORED/DETACHED
+                      //tether_state.json persiste entre sesiones
+UNICODE: SFS_L3_RELEASE //tether.release() en macro_cierre
+                      //libera anclaje + set_dia() = cierre completo
+
+// ══ CAPA 4 · DRA ════════════════════════════════════════════════════
+UNICODE: SFS_L4_TOMO    //DRA tomo_id: [term:TOMO°SLICE§SEG#CLUSTER@OFFSET]
+                      //cada sesión genera tomo_id único con referencia soberana
+UNICODE: SFS_L4_CLUSTER  //DRA cluster: CDC_NLP · CDC_SCALAR · CDC_BATCH
+                      //métricas por cluster: tokens · scalar_s · procesamiento
+UNICODE: SFS_L4_OFFSET  //DRA offset: posición temporal exacta en el ciclo
+                      //OFFSET <operator_flow> · flujo temporal soberano
+
+// ══ CAPA 5 · BACKUP ══════════════════════════════════════════════════
+UNICODE: SFS_L5_LEDGER  //BKP_LEDGER(daily): backup diario ledger
+                      //timestamp + hash + compresión · recuperación garantizada
+UNICODE: SFS_L5_CORPUS  //BKP_CORPUS(weekly): backup semanal CORPUS
+                      //284 docs · BM25 index · estado RAG completo
+UNICODE: SFS_L5_FULL    //BKP_FULL($sun): backup completo sistema
+                      //scheduler.db + $día.db + tether_state.json + logs
+
+SOCIAL {scheduler} =><= .. lanza .. scheduler_full_stack_L0_scheduler_py --[Ballestrinque] [term]
+SOCIAL {scheduler} =><= .. registra .. scheduler_full_stack_L1_main_py_integration --[Ballestrinque] [term]
+SOCIAL {scheduler} =><= .. distribuye .. scheduler_full_stack_L2_theater_macros --[As de Guía] [term]
+SOCIAL {scheduler} =><= .. filtra .. scheduler_full_stack_L3_tether_anchor_release --[As de Guía] [term]
+SOCIAL {scheduler} =><= .. certifica .. scheduler_full_stack_L4_dra_tomo_cluster_offset --[Ballestrinque] [term]
+SOCIAL {scheduler} =><= .. distribuye .. scheduler_full_stack_L5_backup_ledger_corpus_full --[As de Guía] [term]
+STACKING UF[H64] =><= .. cristaliza .. unicode_scheduler_full_stack_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_SCHEDULER_FULL_STACK · V1 · L0→L5 · $mon 30/03

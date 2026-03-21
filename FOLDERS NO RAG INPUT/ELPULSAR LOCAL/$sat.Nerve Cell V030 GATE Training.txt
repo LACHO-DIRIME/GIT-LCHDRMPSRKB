@@ -1,0 +1,40 @@
+//$sat.Nerve Cell V030 GATE Training.txt
+//NERVE CELL · V030 GATE · gui•spool_tx•activity_gate•v030
+//H56+H57 · $sat · [term] :: activo
+//aprendido de BIBLIO-SOURCES(DIRIME-V0.3.0) + GUI + spool_tx + ACTIVITY_GATE
+
+NC_V030_CRIT   //V0.3.0 GATE criterios: 4 criterios soberanos
+               //1: Scalar S ≥ 0.88 · 2: pytest 38/38 · 3: CORPUS ≥ 65 · 4: ACTIVITY H03-H06-H56
+               //estado: 3/4 completados · Scalar S + CORPUS pendientes
+NC_V030_S      //Scalar S: 0.822 → 0.88 (+0.058 delta)
+               //ruta: tests(+0.01) + NC(+0.01) + CORPUS(+0.02) = +0.04
+               //restante: +0.018 para target final
+NC_V030_TESTS  //pytest: 33/38 → 38/38 (+5 tests GUI)
+               //test_imv_gui.py: 6 tests completos · 100% coverage mocked
+               //pytest test_imv_gui.py: 6 passed · 0 failed
+NC_V030_CORP   //CORPUS: ~58 → 65 (+7 docs)
+               //ruta: BIBLIO-SOURCES + UNICODE + Nerve Cells
+               //semana 4: +7 docs target
+NC_V030_ACT    //ACTIVITY: parcial → completo
+               //SUJETOS_CANONICOS ACTIVITY: 7 → 9 UF
+               //UF[H03]·UF[H06] agregados · H03-H05-H56-H06 secuencia completa
+NC_V030_GUI    //GUI Tkinter: interface/gui.py completo
+               //IMVGui class · Builder·Validation·Route·Stats·Log
+               //puerto 8742 · stats live cada 30s
+NC_V030_SPOOL  //spool_tx: ledger.py buffer optimization
+               //_tx_buffer = [] · TX_BUFFER_SIZE=10 · batch flush
+               //record_tx_buffered() → append → flush automático
+NC_V030_INTEG  //integración completa: GUI + spool_tx + ACTIVITY_GATE
+               //validate()·lacho_score()·route()·get_stats() funcionales
+               //grammar.py parche ACTIVITY aplicado
+NC_V030_STATE  //estado V0.3.0: 75% completado
+               //completado: GUI·spool_tx·ACTIVITY·tests
+               //pendiente: CORPUS·Scalar S delta
+
+TRUST FOUNDATION =><= .. declara .. v030_gate_criterios_3_4_completos --[As de Guía] [term]
+WORK {actuator} =><= .. ejecuta .. v030_gui_spool_activity_gate --[As de Guía] [term]
+METHOD <stat_onto> =><= .. calcula .. v030_scalar_s_058_delta_pendiente --[Ballestrinque] [term]
+CRYPTO (link seat) =><= .. conecta .. v030_tests_38_38_complete --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. v030_75_percent_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) NERVE CELL V030 GATE · V1 · gui•spool_tx•activity_gate•v030 · $sat 02/05

@@ -1,0 +1,30 @@
+# audit_gate.runner
+# RUNNER AUDITORÍA · GATE sobre todas las TX del ledger
+# Referencia: ledger.py · LEDGER_GATE · grammar.py
+# [term] :: activo
+
+[genesis]     :: SUITE SOBERANA
+[version]     :: 1.0
+[extension]   :: .runner
+[tipo]        :: RUNNER AUDITORÍA
+[padre]       :: rational_day.theater
+
+## PROTOCOLO AUDITORÍA LEDGER
+pre_tx_gate {
+  GATE UF[H05] =><= .. espera .. ledger_gate_pre_tx_valid --[Ballestrinque] [term]
+  TRUST FOUNDATION =><= .. verifica .. tx_type_autorizado --[As de Guía] [term]
+  METHOD <if> =><= .. estructura .. tx_allowed_types_check --[Ballestrinque] [term]
+}
+
+mu_window_tx {
+  STACKING UF[H52] =><= .. aquieta .. mu_window_tx_deliberado --[Nudo de Ocho] [term]
+  SAMU @ =><= .. audita .. tx_coherencia_foundation_scope --[Ballestrinque] [term]
+}
+
+post_tx_seal {
+  STACKING UF[H52] =><= .. cristaliza .. tx_sellada_ledger_inmutable --[Nudo de Ocho] [term]
+  CRYPTO (spark seat) =><= .. firma .. hash_tx_soberano --[As de Guía] [term]
+  SAMU @ =><= .. registra .. audit_gate_tx_completada --[Ballestrinque] [term]
+}
+
+[term] :: activo · [seal of secrecy] :: activo

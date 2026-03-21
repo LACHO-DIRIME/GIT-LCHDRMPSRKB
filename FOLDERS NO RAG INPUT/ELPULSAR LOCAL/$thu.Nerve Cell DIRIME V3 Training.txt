@@ -1,0 +1,33 @@
+//$thu.Nerve Cell DIRIME V3 Training.txt
+//NERVE CELL · DIRIME V3 · bridge•ollama•cat_os•ime_local
+//aprendido de UNICODE_DIRIME_V3 + stubs + README_CAPA_C.md
+//H60+H61 · $thu · [term] :: activo
+
+NC_V3_CAPA_C   //CAPA C = esqueleto declarado · 3 módulos · orden fijo
+               //ollama_bridge/ → cat_local/ → ime/ · no saltar
+               //CAPA_C_TRIGGER = hardware_disponible (PC Ryzen)
+NC_V3_BRIDGE   //OllamaBridge: swap Groq→Ollama · mismo contrato API
+               //BRIDGE_ACTIVE=False hasta Ryzen · fallback Groq automático
+               //contrato: bridge.chat(messages) ≡ groq._translate_via_api()
+NC_V3_CAT      //CatOS: scan·spawn_file · ACTIVE=False hasta Ryzen
+               //cat_lacho() OPERATIVO YA: lee líneas =><= [term] localmente
+               //no espera Ryzen para cat_lacho — sí para scan+spawn_file
+NC_V3_IME      //IMEChing: ACTIVE=False · tabla HEXAGRAMS_MIN ya cargada
+               //get_hexagram(n) OPERATIVO sin Ryzen · listen() stub
+               //IME offline preview: H01·H52·H57·H63·H64 en tabla
+NC_V3_STUBS    //3 stubs soberanos: NotImplementedError con mensaje claro
+               //mensaje: "X inactivo — PC Ryzen pendiente. Usar Y."
+               //cada stub tiene fallback declarado en el mensaje
+NC_V3_ORDER    //orden activación: 1º ollama_bridge · 2º cat_local · 3º ime
+               //en .sovereign: CAPA_C_STATUS=esqueleto_declarado→activo
+               //trigger: CAPA_C_TRIGGER=hardware_disponible
+NC_V3_PARTIAL  //funciones OPERATIVAS sin Ryzen:
+               //cat_lacho() · get_hexagram() · is_available()=False
+               //estas no requieren hardware · disponibles hoy
+
+TRUST FOUNDATION =><= .. declara .. nc_v3_bridge_groq_ollama_contrato --[As de Guía] [term]
+WORK {actuator} =><= .. ejecuta .. nc_v3_cat_lacho_operativo_sin_ryzen --[As de Guía] [term]
+ACTIVITY UF[H64] =><= .. genera .. nc_v3_stubs_capa_c_esqueleto --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. nc_v3_dirime_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) NERVE CELL DIRIME V3 · V1 · bridge•ollama•cat_os•ime_local · $thu 23/04

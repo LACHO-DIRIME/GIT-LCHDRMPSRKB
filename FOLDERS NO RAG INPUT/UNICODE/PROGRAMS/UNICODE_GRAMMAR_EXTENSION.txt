@@ -1,0 +1,48 @@
+//[MANAGEMENT].lacho · UNICODE GRAMMAR EXTENSION · V1
+//[term]=: shard•relay•oracle•threshold
+//dominio: grammar.py + language_routing.py + tests 27→33 + TAXONOMY
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ GRAMMAR.PY REAL — ESTRUCTURA DOCUMENTADA ══════════════════
+UNICODE: GR_CJK_MAP    //CJK_TOKEN_MAP: 18+ tokens chinos → (lib, sujeto, H, Δscore)
+                       //信任→TRUST·面子→SAMU·风险→GATE·智能→METHOD·etc
+                       //extensión: 阈值·分片·中继·神谕·锻造·通道 (+6 nuevos)
+UNICODE: GR_TAXONOMY   //TAXONOMY_MAP: COGNITIVO(0)·libs(1)·módulos(2)·operadores(3)
+                       //scalar_min por nivel: 0.95·0.88·0.85·0.80
+                       //extensión: KALIL_AGENT·RUNNER·AGENT·NERVE_CELL
+UNICODE: GR_VERBOS     //VERBOS_CANONICOS_LACHO: set ~40 verbos · +0.1 en score
+                       //nuevos: forja·fragmenta·retransmite·evalúa_oracle·umbrala
+UNICODE: GR_INTENT     //INTENT_MAP en language_routing.py: 9 libs × keywords
+                       //extensión: relay→SOCIAL · oracle→METHOD · forge→TRUST
+UNICODE: GR_ROUTE_FN   //route(text)→RoutedSentence: library·subject·verb·obj·knot
+                       //confidence = 0.5 + hits×0.1 · fallback con defaults
+UNICODE: GR_LACHO_SCR  //lacho_score(parsed): +0.5 base · +0.1 verbo · +0.1 sujeto
+                       //+0.1 nudo · +0.1 no_warnings · +0.1 tomo_id · +0.05 CJK
+UNICODE: GR_VALIDATE   //validate(sentence)→ParsedSentence: VALID·WARNING·INVALID
+                       //9 bibliotecas canónicas · regex library·subject·verb·obj
+
+// ══ TESTS 27→33 · test_imv_ext.py ════════════════════════════
+UNICODE: TST_28_RELAY  //test_ext_social_relay: SOCIAL {relay} válido en grammar
+UNICODE: TST_29_STAT   //test_ext_method_stat_onto: score >= 0.7 verificado
+UNICODE: TST_30_SAMU   //test_ext_samu_threshold: WARNING aceptado · no INVALID
+UNICODE: TST_31_H04    //test_ext_stacking_h04_shard: H04 extensión válida
+UNICODE: TST_32_ROUTE  //test_ext_routing_relay: language_routing relay→SOCIAL
+UNICODE: TST_33_BATCH  //test_ext_batch_kalil: 3 textos · máx 1 INVALID
+
+// ══ TARGET S=0.88 — RUTA ══════════════════════════════════════
+UNICODE: S_CURRENT     //S=0.822 · TX=1063+ · cristales=41 · docs=244
+UNICODE: S_TARGET      //S=0.88 · delta=0.058 · ruta: tests+NC+CORPUS
+UNICODE: S_PATH_TESTS  //27→33 tests · validar grammar nuevo · +0.01 aprox
+UNICODE: S_PATH_NC     //nuevos NC: shard·relay·oracle·threshold · +0.01 por NC
+UNICODE: S_PATH_CORP   //CORPUS 51→65: nuevos BIBLIO-SOURCES + UNICODE_* · +0.02
+UNICODE: S_PATH_WEEK4  //Semana 4: grammar.py ACTIVITY_H03-H05-H06-H56 completo
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+METHOD <operator_flow> =><= .. modela .. grammar_intent_relay_oracle_forge --[Ballestrinque] [term]
+TRUST FOUNDATION =><= .. verifica .. tests_27_33_ext_grammar_soberano --[As de Guía] [term]
+METHOD <stat_onto> =><= .. calcula .. s_delta_0058_target_088_ruta --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_grammar_extension_sellado --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. lacho_score_deltas_grammar_taxonomy_real --[Ballestrinque] [term]
+
+//DIR(+) UNICODE_GRAMMAR_EXTENSION · V1 · $mon 20/04

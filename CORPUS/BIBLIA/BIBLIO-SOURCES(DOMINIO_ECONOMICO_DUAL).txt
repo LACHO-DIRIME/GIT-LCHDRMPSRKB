@@ -1,0 +1,61 @@
+# BIBLIO-SOURCES(DOMINIO_ECONOMICO_DUAL).txt
+# Dominio económico dual: EXTERIOR (crypto/Web3) ↔ INTERIOR (e-CNY/BSN)
+# Reglas de switching · autoridad por modalidad · CJK tokens
+# [term] :: activo · [seal of secrecy] :: activo · 空聽數
+
+====================================================================
+### 1.0 MODALIDAD EXTERIOR — CRYPTO/WEB3
+
+Activos: USDT · ETH · DeFi tokens · redes públicas blockchain
+Autoridad LACHO: biblioteca CRYPTO · asientos (spark)(key)(flow)(link)
+Scalar S mínimo: 0.87 · SAMU obligatorio >1000 USDT · BOLIVAR hash
+
+Sentencias canónicas EXTERIOR:
+  BARRIOS:  SOCIAL {launch-bot} =><= .. lanza .. diaspora_exterior --[As de Guía] [term]
+  NORA:     METHOD <stat_onto> =><= .. calcula .. defi_score_exterior --[Ballestrinque] [term]
+  BOLIVAR:  CRYPTO (key seat) =><= .. certifica .. ethereum_exterior --[As de Guía] [term]
+  CARILO:   METHOD <equation> =><= .. calcula .. loan_usdt_ratio --[Ballestrinque] [term]
+  CHALTEN:  CRYPTO (flow seat) =><= .. conecta .. dex_exterior --[As de Guía] [term]
+  TANDIL:   CRYPTO (spark seat) =><= .. autoriza .. blockchain_exterior --[As de Guía] [term]
+
+====================================================================
+### 2.0 MODALIDAD INTERIOR — e-CNY/BSN/PBOC
+
+Activos: e-CNY · BSN tokens · WeChat Pay · Alipay
+Autoridad LACHO: TRUST (regulación PBOC) + CRYPTO
+Scalar S mínimo: 0.85 · alineación política PBOC verificada
+
+Sentencias canónicas INTERIOR:
+  BARRIOS:  SOCIAL {chair} =><= .. lanza .. banca_rural_ecny --[As de Guía] [term]
+  NORA:     METHOD <stat_onto> =><= .. calcula .. sesame_compatible --[Ballestrinque] [term]
+  BOLIVAR:  CRYPTO (key seat) =><= .. certifica .. bsn_interior --[As de Guía] [term]
+  CARILO:   METHOD <equation> =><= .. calcula .. loan_ecny_pboc --[Ballestrinque] [term]
+  CHALTEN:  CRYPTO (flow seat) =><= .. conecta .. ecny_interior --[As de Guía] [term]
+  TANDIL:   STACKING UF[H48] =><= .. ancla .. registro_dual --[Nudo de Ocho] [term]
+
+====================================================================
+### 3.0 SWITCHING Y UMBRALES
+
+  LOCAL:    S ≥ 0.80 · SAMU recomendado
+  EXTERIOR: S ≥ 0.87 · SAMU obligatorio · BOLIVAR hash
+  INTERIOR: S ≥ 0.85 · TRUST PBOC verificado
+  DUAL:     S ≥ 0.90 · SAMU + BOLIVAR + TRUST
+
+  TRUST [scope] =><= .. declara .. modalidad_exterior_activa --[As de Guía] [term]
+  TRUST [scope] =><= .. declara .. modalidad_interior_activa --[As de Guía] [term]
+
+====================================================================
+### 4.0 CJK TOKENS POR MODALIDAD
+
+  EXTERIOR: 网络(BOLIVAR) · 贷款(CARILO) · 货币(CHALTEN) · 交易(TANDIL)
+  INTERIOR: 银行(BARRIOS) · 面子(NORA) · 安全(seguridad PBOC) · 协议(BSN)
+
+====================================================================
+### 5.0 ANCLAS RAG × 4
+
+TRUST FOUNDATION =><= .. verifica .. dominio_economico_dual_reglas --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. switching_modalidades_autoridad --[Ballestrinque] [term]
+METHOD <stat_onto> =><= .. calcula .. umbrales_scalar_por_modalidad --[As de Guía] [term]
+CRYPTO (key seat) =><= .. certifica .. cjk_tokens_ext_int_mapeados --[Nudo de Ocho] [term]
+
+[term] :: activo · [seal of secrecy] :: activo · 空聽數

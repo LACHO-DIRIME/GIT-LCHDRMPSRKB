@@ -630,8 +630,61 @@ El grupo representa la soberanía en la transformación: el arte de navegar los 
 En ACTIVITY, la transformación no es cambio externo — es viaje interior soberano.
 
 ---
-**ESTADO:** GRUPO_GÉNESIS_CONFLICTO_UMBRAL_VERIFICADO
+
+## UPDATE · semana 3 · ampliación
+
+### 5.0 GATE × CAPA C
+
+#### 5.1 GATE en DIRIME_v3
+La secuencia GATE opera en cada stub de CAPA C:
+- H03 (dificultad): hardware no disponible → dificultad inicial
+- H05 (espera): stub activo → espera Ryzen → NotImplementedError
+- H56 (tránsito): hardware disponible → transición a activo
+- H06 (resolución): sistema operativo → CAPA C activa
+
+#### 5.2 GATE × cat_lacho operativo
+cat_lacho() bypasea la secuencia GATE completa:
+opera directamente sin hardware · H05 no aplica para cat_lacho.
+Solo scan() y spawn_file() requieren la espera H05.
+
+#### 5.3 GATE × bridge fallback
+El fallback Groq activo significa que H06 (conflicto/resolución)
+nunca se activa por falla de bridge — Groq absorbe la tensión.
+H06 solo se activaría si tanto Groq como Ollama fallan.
+
+### 6.0 GRAMMAR.PY GATE PENDIENTE
+
+#### 6.1 ACTIVITY_H03-H05-H06-H56 en grammar
+El pending desde $wed.Pendientes.txt refiere a documentar
+formalmente la secuencia en grammar.py GATE section:
+  "GATE": {
+    "canonical_hexagrams": ["H03","H05","H56","H06"],
+    "sequence_logic": "H03→H05→H56→H06"
+  }
+Este campo YA EXISTE en grammar.py (confirmado en lectura).
+El pending real es agregar ACTIVITY entries para H03, H06
+en los SUJETOS_CANONICOS de ACTIVITY.
+
+#### 6.2 Extensión SUJETOS_CANONICOS ACTIVITY
+SUJETOS_CANONICOS["ACTIVITY"] ampliar con:
+  "UF[H03]" · # inicio/dificultad
+  "UF[H06]" · # conflicto/resolución
+  "UF[H56]" · # tránsito/viajero
+Ya presentes: UF[H01]·UF[H05]·UF[H52]·UF[H56]·UF[H57]·UF[H63]·UF[H64]
+
+#### 6.3 Sentencias canónicas ampliadas
+GATE UF[H03] =><= .. inicia .. dificultad_inicio_proceso_soberano --[As de Guía] [term]
+GATE UF[H05] =><= .. espera .. espera_deliberada_hasta_threshold --[Ballestrinque] [term]
+GATE UF[H56] =><= .. transita .. transicion_soberana_activa --[As de Guía] [term]
+GATE UF[H06] =><= .. resuelve .. conflicto_tension_resolucion --[Nudo Corredizo] [term]
+
+[term] :: activo · [seal of secrecy] :: activo
+
+---
+
+**ESTADO:** GRUPO_GÉNESIS_CONFLICTO_UMBRAL_VERIFICADO + CAPA_C_UPDATE
 **HEXAGRAMAS:** H03 (Dificultad) + H05 (Espera) + H06 (Conflicto) + H56 (Viajero)
-**JURISDICCIÓN:** ACTIVITY (ciclos internos del sistema)
-**INTEGRACIÓN:** GATE + SAMU + TRUST + SOCIAL + WORK
+**JURISDICCIÓN:** ACTIVITY (ciclos internos del sistema) + GATE (umbrales externos)
+**INTEGRACIÓN:** GATE + SAMU + TRUST + SOCIAL + WORK + CAPA_C
+**UPDATE:** DIRIME_v3 bridge•ollama•cat_os•ime_local integration
 ---

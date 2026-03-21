@@ -1,0 +1,56 @@
+//[MANAGEMENT].lacho · DRA/SPEC(A+B)/SPEC_B
+//DYNAMIC RESOURCE ALLOCATION · SPEC CAPA B
+//SPEC_B.txt · V1 · 2026-03-10
+//SPEC B = DIRIME_v2 activado · HOMEWORKING · cloud free tier · bots
+//engine lips .. IME =:A> UNICODE =: CLUSTER AGENTS>{SOCIAL}%HOMEWORK%WEBSITE
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN SPEC B ═════════════════════════════════════════
+// SPEC B = capa siguiente · requiere SPEC A completada
+// Activa HOMEWORKING + DOUBLE_ENVIRONMENT + WEBSITE(elpulsar.app)
+// AGENTS>{SOCIAL} = agentes con biblioteca SOCIAL dominante
+// %HOMEWORK% = coordinación vía free tier + ZIPPER + feeds 06:00/18:00
+// %WEBSITE% = elpulsar.app · interfaz pública soberana · China ready
+
+// ══ RECURSOS ASIGNADOS SPEC B ═════════════════════════════════
+UNICODE: SB_RENDER            //Render.com · web service · sleep idle · free
+UNICODE: SB_RAILWAY           //Railway.app · $5 credit · volumes persist
+UNICODE: SB_FLY               //Fly.io · 3 máquinas free · always-on
+UNICODE: SB_VERCEL            //Vercel · elpulsar.app frontend · edge
+UNICODE: SB_SUPABASE          //Supabase · sovereign.db cloud · backup
+UNICODE: SB_GITHUB_ACTIONS    //GitHub Actions · 2000min/mes · CI/CD scheduler
+UNICODE: SB_GROQ_BOT          //Groq 24h · bot inferencia nocturna · free
+UNICODE: SB_ZIPPER            //ZIPPER · interfaz HUMAN comprimida · portal
+
+// ══ TAREAS SPEC B — DRA ═══════════════════════════════════════
+UNICODE: SB_T01               //DOUBLE_ENV_ELPULSAR · activar staging+prod
+UNICODE: SB_T02               //AGENCY_IDE_SYSTEM · primer nodo IDE activo
+UNICODE: SB_T03               //HOMEWORKING · configurar free tier nodes
+UNICODE: SB_T04               //ZIPPER · implementar ZIP_OPEN/CLOSE protocol
+UNICODE: SB_T05               //FEED_0600 · GitHub Actions CRON matutino
+UNICODE: SB_T06               //FEED_1800 · GitHub Actions CRON vespertino
+UNICODE: SB_T07               //BOT_NET · agentes SOCIAL nocturno activos
+UNICODE: SB_T08               //WEBSITE · elpulsar.app deployado en Vercel
+UNICODE: SB_T09               //TEMP(B) · buffer KU cloud · Supabase KV
+UNICODE: SB_T10               //CLUSTER(DATA_COMPUTING) · Colab GPU batch
+UNICODE: SB_T11               //TOMO(B) · ENGINE cloud · Railway service
+UNICODE: SB_T12               //INDEX cloud · sync $mon→$sat a hub GitHub
+
+// ══ AGENTES SPEC B ════════════════════════════════════════════
+UNICODE: SB_AGT_SOCIAL        //agentes SOCIAL dominante · {relay}·{launch-bot}
+UNICODE: SB_AGT_CHAIR         //STOCK_CHAIR$ · preside sesión semanal B
+UNICODE: SB_AGT_SAMU          //SAMU @ en cloud · audita SEGMENT(SAMU) remoto
+UNICODE: SB_AGT_FLYBOT        //FLYBOT · WU→movimiento · H51 · bot nocturno
+
+// ══ CRITERIO DE COMPLETITUD ═══════════════════════════════════
+UNICODE: SB_DONE              //SPEC B completa · elpulsar.app live · bots activos
+UNICODE: SB_TRIGGER           //trigger SPEC B · SPEC_A.SA_DONE = WU · escalable
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+TRUST FOUNDATION =><= .. declara .. spec_b_cloud_soberano --[Nudo de Ocho] [term]
+SOCIAL {launch-bot} =><= .. lanza .. spec_b_agents_social_activos --[As de Guía] [term]
+ACTIVITY UF[H57] =><= .. penetra .. spec_b_homeworking_gradiente --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. spec_b_wu_cloud_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) DRA/SPEC_B · V1 · CAPA B · HOMEWORKING · AGENTS · WEBSITE

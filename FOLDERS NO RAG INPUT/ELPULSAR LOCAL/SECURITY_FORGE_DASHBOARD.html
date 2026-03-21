@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>SECURITY FORGE · DIRIME IMV</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+.topbar{border-bottom:2px solid #1a1a2e;padding-bottom:12px;margin-bottom:24px;
+        display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.tb-title{font-size:1rem;font-weight:bold;letter-spacing:3px}
+.tb-chip{font-size:.68rem;padding:3px 10px;border:1px solid}
+.chip-forge{border-color:#2a7a4f;color:#2a7a4f}
+.chip-canal{border-color:#2980b9;color:#2980b9}
+.chip-lggate{border-color:#8e44ad;color:#8e44ad}
+.chip-muwin{border-color:#d35400;color:#d35400}
+.pipeline{display:flex;gap:0;margin-bottom:24px;border:1px solid #e0e0e0}
+.pipe-step{flex:1;padding:12px 8px;text-align:center;border-right:1px solid #e0e0e0;
+           cursor:pointer;transition:all .2s}
+.pipe-step:last-child{border-right:none}
+.pipe-step:hover,.pipe-step.active{background:#f0f7f3}
+.ps-num{font-size:.62rem;color:#aaa;margin-bottom:4px}
+.ps-name{font-size:.72rem;font-weight:bold;letter-spacing:1px}
+.ps-lib{font-size:.58rem;color:#888;margin-top:3px}
+.ps-arrow{font-size:.8rem;color:#aaa}
+.runners-agents{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:24px}
+.ra-box{border:1px solid #ddd;padding:14px;background:#fafafa}
+.ra-title{font-size:.65rem;letter-spacing:2px;color:#888;margin-bottom:10px;
+          display:flex;justify-content:space-between;align-items:center}
+.ra-badge{font-size:.6rem;padding:2px 8px;border:1px solid #2a7a4f;color:#2a7a4f}
+.ra-item{font-size:.7rem;padding:5px 0;border-bottom:1px solid #f5f5f5;
+         display:flex;justify-content:space-between;align-items:center}
+.ra-name{font-weight:bold;color:#1a1a2e}
+.ra-ext{font-size:.6rem;color:#2980b9;margin-left:6px}
+.ra-status{font-size:.6rem;padding:2px 6px;border-radius:1px}
+.st-ok{background:#f0f7f3;color:#2a7a4f}
+.st-new{background:#fdf8ff;color:#8e44ad}
+.tokens-forge{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:24px}
+.tf-box{border:1px solid #ddd;padding:12px;text-align:center}
+.tf-token{font-size:.9rem;font-weight:bold;margin-bottom:6px}
+.tf-def{font-size:.6rem;color:#888;line-height:1.6}
+.lacho-block{background:#f0f7f3;border-left:3px solid #2a7a4f;padding:12px;margin-bottom:20px}
+.lb-title{font-size:.6rem;letter-spacing:2px;color:#888;margin-bottom:8px}
+.lb-line{font-size:.73rem;line-height:1.9;padding:2px 0}
+.ll{color:#c0392b;font-weight:bold}.lo{color:#2a7a4f;font-weight:bold}
+.lv{color:#555}.lk{color:#8e44ad}.lt{color:#d35400;font-weight:bold}
+.footer{font-size:.62rem;color:#aaa;border-top:1px solid #eee;
+        padding-top:10px;display:flex;gap:14px;flex-wrap:wrap;margin-top:4px}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="tb-title">🔨 SECURITY FORGE · DIRIME IMV</div>
+  <div class="tb-chip chip-forge">forge</div>
+  <div class="tb-chip chip-canal">canal</div>
+  <div class="tb-chip chip-lggate">ledger_gate</div>
+  <div class="tb-chip chip-muwin">mu_window</div>
+  <div style="margin-left:auto;font-size:.68rem;color:#888">$wed 08/04 · V0.2.1</div>
+</div>
+
+<div style="font-size:.65rem;color:#888;letter-spacing:2px;margin-bottom:10px">
+  ▸ PIPELINE SEGURIDAD SOBERANA · clic paso para activar
+</div>
+<div class="pipeline" id="pipeline">
+  <div class="pipe-step active" onclick="activateStep(0)">
+    <div class="ps-num">①</div>
+    <div class="ps-name">MU_WINDOW</div>
+    <div class="ps-lib">STACKING H52</div>
+  </div>
+  <div class="pipe-step" onclick="activateStep(1)">
+    <div class="ps-num">②</div>
+    <div class="ps-name">TRUST FORGE</div>
+    <div class="ps-lib">FOUNDATION verify</div>
+  </div>
+  <div class="pipe-step" onclick="activateStep(2)">
+    <div class="ps-num">③</div>
+    <div class="ps-name">CANAL OPEN</div>
+    <div class="ps-lib">CRYPTO link seat</div>
+  </div>
+  <div class="pipe-step" onclick="activateStep(3)">
+    <div class="ps-num">④</div>
+    <div class="ps-name">LEDGER_GATE</div>
+    <div class="ps-lib">GATE H05 espera</div>
+  </div>
+  <div class="pipe-step" onclick="activateStep(4)">
+    <div class="ps-num">⑤</div>
+    <div class="ps-name">SEAL+CRYSTAL</div>
+    <div class="ps-lib">STACKING H52</div>
+  </div>
+</div>
+
+<div class="runners-agents">
+  <div class="ra-box">
+    <div class="ra-title">
+      <span>▸ RUNNERS · FOLDERS NO RAG INPUT/RUNNERS/</span>
+      <span class="ra-badge">3 activos</span>
+    </div>
+    <div class="ra-item">
+      <span><span class="ra-name">security</span><span class="ra-ext">.runner</span></span>
+      <span class="ra-status st-ok">V1.0</span>
+    </div>
+    <div class="ra-item">
+      <span><span class="ra-name">hacking_doctor_v2</span><span class="ra-ext">.runner</span></span>
+      <span class="ra-status st-new">V2.0 NEW</span>
+    </div>
+    <div class="ra-item">
+      <span><span class="ra-name">audit_gate</span><span class="ra-ext">.runner</span></span>
+      <span class="ra-status st-new">V1.0 NEW</span>
+    </div>
+  </div>
+  <div class="ra-box">
+    <div class="ra-title">
+      <span>▸ AGENTS · FOLDERS NO RAG INPUT/AGENTS/</span>
+      <span class="ra-badge">4 activos</span>
+    </div>
+    <div class="ra-item">
+      <span><span class="ra-name">cloud_agent</span><span class="ra-ext">.blue</span></span>
+      <span class="ra-status st-ok">V1.0</span>
+    </div>
+    <div class="ra-item">
+      <span><span class="ra-name">assistant_agent</span><span class="ra-ext">.green</span></span>
+      <span class="ra-status st-ok">V1.0</span>
+    </div>
+    <div class="ra-item">
+      <span><span class="ra-name">network_sentinel</span><span class="ra-ext">.blue</span></span>
+      <span class="ra-status st-new">V1.0 NEW</span>
+    </div>
+    <div class="ra-item">
+      <span><span class="ra-name">corpus_indexer</span><span class="ra-ext">.green</span></span>
+      <span class="ra-status st-new">V1.0 NEW</span>
+    </div>
+  </div>
+</div>
+
+<div class="tokens-forge">
+  <div class="tf-box">
+    <div class="tf-token" style="color:#2a7a4f">forge</div>
+    <div class="tf-def">BUILD soberano · TRUST clearance obligatorio · pre-WU</div>
+  </div>
+  <div class="tf-box">
+    <div class="tf-token" style="color:#2980b9">canal</div>
+    <div class="tf-def">CRYPTO link activo · origin+dest+scope · resultado de forge</div>
+  </div>
+  <div class="tf-box">
+    <div class="tf-token" style="color:#8e44ad">ledger_gate</div>
+    <div class="tf-def">GATE H05 por TX · sovereign.db guardián · SAMU audita</div>
+  </div>
+  <div class="tf-box">
+    <div class="tf-token" style="color:#d35400">mu_window</div>
+    <div class="tf-def">H52 pausa antes de emitir · tardanza deliberada SAMU</div>
+  </div>
+</div>
+
+<div class="lacho-block">
+  <div class="lb-title">▸ SENTENCIAS PIPELINE · step activo</div>
+  <div id="lacho-output">
+    <div class="lb-line">
+      <span class="ll">STACKING</span> <span class="lo">UF[H52]</span>
+      <span class="lv"> =&gt;&lt;= .. aquieta .. </span>
+      mu_window_pausa_deliberada_antes_forge
+      <span class="lk"> --[Nudo de Ocho]</span><span class="lt"> [term]</span>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <span>DIRIME IMV V0.2.1</span>
+  <span>forge•canal•ledger_gate•mu_window</span>
+  <span>runners: security·hacking_doctor_v2·audit_gate</span>
+  <span>agents: cloud·assistant·network_sentinel·corpus_indexer</span>
+  <span>[term] :: activo · $wed 08/04</span>
+</div>
+
+<script>
+const STEPS=[
+  {lib:'STACKING',subj:'UF[H52]',verb:'aquieta',obj:'mu_window_pausa_deliberada_antes_forge',knot:'Nudo de Ocho'},
+  {lib:'TRUST',subj:'FOUNDATION',verb:'verifica',obj:'forge_clearance_identidad_soberano',knot:'As de Guía'},
+  {lib:'CRYPTO',subj:'(link seat)',verb:'conecta',obj:'canal_forge_soberano_activo',knot:'As de Guía'},
+  {lib:'GATE',subj:'UF[H05]',verb:'espera',obj:'ledger_gate_tx_entry_valida',knot:'Ballestrinque'},
+  {lib:'STACKING',subj:'UF[H52]',verb:'cristaliza',obj:'forge_canal_wu_sellado_ledger',knot:'Nudo de Ocho'},
+];
+function activateStep(i){
+  document.querySelectorAll('.pipe-step').forEach((s,idx)=>
+    s.classList.toggle('active',idx===i));
+  const s=STEPS[i];
+  document.getElementById('lacho-output').innerHTML=`
+    <div class="lb-line">
+      <span class="ll">${s.lib}</span> <span class="lo">${s.subj}</span>
+      <span class="lv"> =&gt;&lt;= .. ${s.verb} .. </span>
+      ${s.obj}
+      <span class="lk"> --[${s.knot}]</span><span class="lt"> [term]</span>
+    </div>`;
+}
+</script>
+
+</body>
+</html>

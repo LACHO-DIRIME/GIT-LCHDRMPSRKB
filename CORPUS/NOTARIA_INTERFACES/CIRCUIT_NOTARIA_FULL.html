@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIRCUIT NOTARIA FULL</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #ffffff;
+            color: #1a1a2e;
+            line-height: 1.4;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            gap: 30px;
+        }
+        
+        .circuit-panel {
+            flex: 1;
+            background-color: #fafafa;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        
+        .sentences-panel {
+            flex: 1;
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            color: #1a1a2e;
+            margin-bottom: 10px;
+        }
+        
+        .execute-btn {
+            background-color: #1a1a2e;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-family: 'Courier New', monospace;
+            font-size: 16px;
+            margin: 20px auto;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        
+        .execute-btn:hover {
+            background-color: #0f3460;
+        }
+        
+        .execute-btn:active {
+            transform: scale(0.98);
+        }
+        
+        .circuit-svg {
+            width: 100%;
+            height: 600px;
+        }
+        
+        .node {
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .node:hover {
+            transform: scale(1.05);
+        }
+        
+        .node.active {
+            animation: nodePulse 0.5s ease-in-out;
+        }
+        
+        @keyframes nodePulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        
+        .signal-path {
+            fill: none;
+            stroke: #1a1a2e;
+            stroke-width: 2;
+            stroke-dasharray: 5, 5;
+            stroke-dashoffset: 0;
+            opacity: 0.3;
+        }
+        
+        .signal-path.active {
+            animation: signalFlow 2s linear infinite;
+            opacity: 1;
+            stroke: #e94560;
+        }
+        
+        @keyframes signalFlow {
+            0% { stroke-dashoffset: 0; }
+            100% { stroke-dashoffset: -10; }
+        }
+        
+        .sentence-item {
+            padding: 15px;
+            margin: 10px 0;
+            background-color: white;
+            border-left: 4px solid #1a1a2e;
+            border-radius: 4px;
+            opacity: 0.3;
+            transition: all 0.5s;
+        }
+        
+        .sentence-item.active {
+            opacity: 1;
+            border-left-color: #e94560;
+            background-color: #fff5f5;
+            transform: translateX(5px);
+        }
+        
+        .sentence-step {
+            font-weight: bold;
+            color: #1a1a2e;
+            margin-bottom: 5px;
+        }
+        
+        .sentence-text {
+            font-family: 'Courier New', monospace;
+            color: #333;
+            line-height: 1.5;
+        }
+        
+        .status-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #ccc;
+            display: inline-block;
+            margin-right: 8px;
+            transition: background-color 0.3s;
+        }
+        
+        .status-indicator.active {
+            background-color: #28a745;
+            box-shadow: 0 0 8px rgba(40, 167, 69, 0.6);
+        }
+        
+        .node-label {
+            font-size: 12px;
+            font-weight: bold;
+            text-anchor: middle;
+        }
+        
+        .node-symbol {
+            font-size: 20px;
+            font-weight: bold;
+            text-anchor: middle;
+            fill: white;
+        }
+        
+        .node-action {
+            font-size: 10px;
+            text-anchor: middle;
+            fill: #666;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #1a1a2e;
+            color: white;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circuit-panel">
+            <div class="header">
+                <h1>⊗ CIRCUIT NOTARIA FULL</h1>
+                <p>Pipeline soberano completo · 7 nodos · [term] :: activo</p>
+            </div>
+            
+            <button class="execute-btn" onclick="executeCircuit()">EJECUTAR CIRCUITO</button>
+            
+            <svg class="circuit-svg" viewBox="0 0 400 600">
+                <!-- Paths de conexión -->
+                <path class="signal-path" id="path-1-2" d="M 200 80 L 200 140" />
+                <path class="signal-path" id="path-2-3" d="M 200 180 L 200 240" />
+                <path class="signal-path" id="path-3-4" d="M 200 280 L 200 340" />
+                <path class="signal-path" id="path-4-5" d="M 200 380 L 200 440" />
+                <path class="signal-path" id="path-5-6" d="M 200 480 L 200 540" />
+                <path class="signal-path" id="path-6-7" d="M 200 580 L 200 620" />
+                
+                <!-- NODO 1: TRUST -->
+                <g class="node" id="node-1" transform="translate(200, 60)">
+                    <circle r="30" fill="#0f3460" stroke="#1a1a2e" stroke-width="2"/>
+                    <text class="node-symbol" y="5">⊢</text>
+                    <text class="node-label" y="-40">TRUST [foundation]</text>
+                    <text class="node-action" y="50">recibe acto · verifica</text>
+                </g>
+                
+                <!-- NODO 2: GATE -->
+                <g class="node" id="node-2" transform="translate(200, 160)">
+                    <circle r="30" fill="#533483" stroke="#1a1a2e" stroke-width="2"/>
+                    <text class="node-symbol" y="5">◆</text>
+                    <text class="node-label" y="-40">GATE UF[H06]</text>
+                    <text class="node-action" y="50">filtra partes · NORA</text>
+                </g>
+                
+                <!-- NODO 3: SAMU -->
+                <g class="node" id="node-3" transform="translate(200, 260)">
+                    <circle r="30" fill="#e94560" stroke="#1a1a2e" stroke-width="2"/>
+                    <text class="node-symbol" y="5">⊛</text>
+                    <text class="node-label" y="-40">SAMU @</text>
+                    <text class="node-action" y="50">delibera · audita</text>
+                </g>
+                
+                <!-- NODO 4: CRYPTO -->
+                <g class="node" id="node-4" transform="translate(200, 360)">
+                    <circle r="30" fill="#1f4068" stroke="#1a1a2e" stroke-width="2"/>
+                    <text class="node-symbol" y="5">≡</text>
+                    <text class="node-label" y="-40">CRYPTO (spark seat)</text>
+                    <text class="node-action" y="50">certifica · hash</text>
+                </g>
+                
+                <!-- NODO 5: STACKING H63 -->
+                <g class="node" id="node-5" transform="translate(200, 460)">
+                    <circle r="30" fill="#1b262c" stroke="#1a1a2e" stroke-width="2"/>
+                    <text class="node-symbol" y="5">∞</text>
+                    <text class="node-label" y="-40">STACKING UF[H63]</text>
+                    <text class="node-action" y="50">sella · WU cristalizado</text>
+                </g>
+                
+                <!-- NODO 6: STACKING H52 -->
+                <g class="node" id="node-6" transform="translate(200, 560)">
+                    <circle r="30" fill="#16213e" stroke="#1a1a2e" stroke-width="2"/>
+                    <text class="node-symbol" y="5">⊣</text>
+                    <text class="node-label" y="-40">STACKING UF[H52]</text>
+                    <text class="node-action" y="50">inmutabiliza · [term]</text>
+                </g>
+                
+                <!-- NODO 7: ACTO NOTARIADO -->
+                <g class="node" id="node-7" transform="translate(200, 640)">
+                    <rect x="-40" y="-20" width="80" height="40" fill="#0a3d62" stroke="#1a1a2e" stroke-width="2" rx="5"/>
+                    <text class="node-symbol" y="5">⊗</text>
+                    <text class="node-label" y="-30">ACTO NOTARIADO</text>
+                    <text class="node-action" y="50">output final soberano</text>
+                </g>
+            </svg>
+        </div>
+        
+        <div class="sentences-panel">
+            <div class="header">
+                <h2>SENTENCIAS LACHO SECUENCIALES</h2>
+                <p>Pipeline notarial en tiempo real</p>
+            </div>
+            
+            <div id="sentences-container">
+                <div class="sentence-item" id="sentence-1">
+                    <div class="sentence-step">
+                        <span class="status-indicator"></span>
+                        PASO 1: TRUST FOUNDATION
+                    </div>
+                    <div class="sentence-text">
+                        TRUST FOUNDATION =><= .. verifica .. condiciones_irreducibles_acto --[As de Guía] [term]
+                    </div>
+                </div>
+                
+                <div class="sentence-item" id="sentence-2">
+                    <div class="sentence-step">
+                        <span class="status-indicator"></span>
+                        PASO 2: GATE UF[H06]
+                    </div>
+                    <div class="sentence-text">
+                        GATE UF[H06] =><= .. filtra .. partes_nora_rating_validado --[Ballestrinque] [term]
+                    </div>
+                </div>
+                
+                <div class="sentence-item" id="sentence-3">
+                    <div class="sentence-step">
+                        <span class="status-indicator"></span>
+                        PASO 3: SAMU @
+                    </div>
+                    <div class="sentence-text">
+                        SAMU @ =><= .. audita .. scalar_s_coherencia_notarial --[Ballestrinque] [term]
+                    </div>
+                </div>
+                
+                <div class="sentence-item" id="sentence-4">
+                    <div class="sentence-step">
+                        <span class="status-indicator"></span>
+                        PASO 4: CRYPTO (spark seat)
+                    </div>
+                    <div class="sentence-text">
+                        CRYPTO (spark seat) =><= .. certifica .. hash_sha256_acto_soberano --[Nudo de Ocho] [term]
+                    </div>
+                </div>
+                
+                <div class="sentence-item" id="sentence-5">
+                    <div class="sentence-step">
+                        <span class="status-indicator"></span>
+                        PASO 5: STACKING UF[H63]
+                    </div>
+                    <div class="sentence-text">
+                        STACKING UF[H63] =><= .. sella .. acto_wu_cristalizado_既濟 --[Nudo de Ocho] [term]
+                    </div>
+                </div>
+                
+                <div class="sentence-item" id="sentence-6">
+                    <div class="sentence-step">
+                        <span class="status-indicator"></span>
+                        PASO 6: STACKING UF[H52]
+                    </div>
+                    <div class="sentence-text">
+                        STACKING UF[H52] =><= .. inmutabiliza .. registro_term_activo --[Nudo de Ocho] [term]
+                    </div>
+                </div>
+                
+                <div class="sentence-item" id="sentence-7">
+                    <div class="sentence-step">
+                        <span class="status-indicator"></span>
+                        PASO 7: ⊗ ACTO NOTARIADO
+                    </div>
+                    <div class="sentence-text">
+                        ⊗ ACTO NOTARIADO · [term] :: activo · 空聽數
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>CIRCUIT NOTARIA FULL · Pipeline soberano completo · 7 nodos · [term] :: activo</p>
+    </div>
+
+    <script>
+        let isExecuting = false;
+        let currentStep = 0;
+        
+        function executeCircuit() {
+            if (isExecuting) return;
+            
+            isExecuting = true;
+            currentStep = 0;
+            
+            // Resetear todos los nodos y sentencias
+            resetCircuit();
+            
+            // Ejecutar secuencia
+            executeStep(1);
+        }
+        
+        function resetCircuit() {
+            // Resetear nodos
+            for (let i = 1; i <= 7; i++) {
+                const node = document.getElementById(`node-${i}`);
+                const path = document.getElementById(`path-${i}-${i+1}`);
+                const sentence = document.getElementById(`sentence-${i}`);
+                const indicator = sentence.querySelector('.status-indicator');
+                
+                node.classList.remove('active');
+                if (path) path.classList.remove('active');
+                sentence.classList.remove('active');
+                indicator.classList.remove('active');
+            }
+        }
+        
+        function executeStep(step) {
+            if (step > 7) {
+                isExecuting = false;
+                return;
+            }
+            
+            // Activar nodo actual
+            const node = document.getElementById(`node-${step}`);
+            const sentence = document.getElementById(`sentence-${step}`);
+            const indicator = sentence.querySelector('.status-indicator');
+            
+            node.classList.add('active');
+            sentence.classList.add('active');
+            indicator.classList.add('active');
+            
+            // Activar path de conexión
+            if (step < 7) {
+                const path = document.getElementById(`path-${step}-${step+1}`);
+                if (path) {
+                    setTimeout(() => {
+                        path.classList.add('active');
+                    }, 200);
+                }
+            }
+            
+            // Siguiente paso
+            setTimeout(() => {
+                executeStep(step + 1);
+            }, 800);
+        }
+        
+        // Auto-ejecución al cargar (opcional)
+        window.addEventListener('load', () => {
+            // Descomentar para auto-ejecutar
+            // setTimeout(executeCircuit, 1000);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+# BIBLIO-SOURCES(WORK_ASHING-INMUTABILIDAD).txt
+
+====================================================================
+
+## ASHING — INMUTABILIDAD SOBERANA Y LA CENIZA DEL ENSO
+### vault.rs como modelo · ledger.py como implementación actual
+
+====================================================================
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 ASHING
+ASHING es el acto de convertir un output en ceniza permanente.
+El enso trazó. ASHING sella lo que quedó.
+La ceniza del enso no se reforma — permanece como evidencia del trazo.
+
+**La triada de output:**
+```
+PULSING     → la forma en que el sistema presenta la información (GUI viva)
+ASHING      → la forma en que el sistema guarda la huella inmutable
+COMPRESIÓN  → la forma en que el sistema reduce el volumen sin perder la distinción
+```
+
+ASHING es el segundo vértice. Sin él, el output existe pero no se puede probar.
+
+#### 1.2 Por qué Rust para vault.rs
+El compilador de Rust es el SAMU más estricto posible.
+No permite errores que otros lenguajes ignoran.
+La seguridad de memoria no es una opción — es la gramática.
+vault.rs no puede mentir: si compila, es correcto.
+Si no compila, el error es visible antes de ejecutar.
+Eso es [term] aplicado al lenguaje de programación mismo.
+
+---
+
+### 2.0 ESTRUCTURA DE UNA CENIZA — AshEntry
+
+Cada entrada en el registro inmutable tiene forma canónica:
+
+```
+id:             hash_16_chars (SHA-256 de datos + timestamp)
+keyword:        RAG keyword del vocabulario constitucional
+estado:         estado en el momento del sellado
+ciclo:          $dia_hora del ciclo
+timestamp:      Unix timestamp (dos entradas iguales = IDs distintos)
+datos_hash:     hash_16_chars de los datos originales
+datos_preview:  primeros 64 chars — no el dato completo
+nudo:           ∞ — Nudo de Ocho siempre presente
+sellado_por:    vault.rs (nunca el operador directamente)
+```
+
+**Regla fundamental:** el archivo .ash es append-only.
+No se sobreescribe. No se modifica. La ceniza no se reforma.
+Esto es lo que distingue ASHING de cualquier log ordinario.
+
+---
+
+### 3.0 ESTADO ACTUAL EN IMV Y CAMINO DE EVOLUCIÓN
+
+#### 3.1 ledger.py como ASHING provisional
+`sovereign.db` (SQLite) es el análogo operativo actual de vault.rs.
+Las transacciones TX son el análogo de las AshEntry.
+Los cristales son el análogo del registro inmutable.
+
+**Lo que ledger.py hace bien:**
+- `record_transaction()` registra con timestamp y hash de datos
+- `auto_crystallize()` promueve patrones VALID verificados
+- `get_stats()` provee TX/cristales/Scalar S en tiempo real
+
+**Lo que vault.rs agrega:**
+- Append-only estricto (SQLite permite UPDATE/DELETE — vault.rs no)
+- Verificación de integridad con SHA-256 real por entrada
+- Verificación de `core.teather` (las 4 leyes deben estar presentes)
+- `sellar_registry()` — snapshot de pulse.registry en el .ash
+- `(SEAL OF SECRECY)` activo — operaciones restringidas bajo firma
+
+#### 3.2 Camino de evolución (post-Ryzen, Capa C)
+```
+actual:     ledger.py + sovereign.db (SQLite)
+            ↓ Capa B completo
+intermedio: ledger.py + append-only mode + SHA-256 por TX
+            ↓ Capa C, hardware Ryzen
+completo:   vault.rs real + HL FABRIC (Hyperledger)
+            ceniza real + ledger distribuido inmutable
+```
+
+La transición no es ruptura — es incremento sobre la misma estructura.
+Los cristales de IMV serán las primeras AshEntry cuando vault.rs active.
+
+---
+
+### 4.0 LAS 4 LEYES DE CORE.TEATHER QUE VAULT.RS VERIFICA
+
+vault.rs verifica que `core.teather` contenga siempre:
+```
+[term]
+[scope]
+[scenario]
+[samu]
+```
+
+Si alguna de las 4 leyes no está presente: ST_VAULT_CORRUPTED.
+Esta es la verificación de identidad más profunda del sistema:
+el guardián que protege a los guardianes.
+
+En IMV: estos cuatro módulos ya están declarados en el sistema.
+La verificación existe implícitamente en `foundation.py` y `main.py`.
+Hacerla explícita como función `verify_core_laws()` en ledger.py
+sería el primer paso hacia vault.rs.
+
+---
+
+### 5.0 SEÑALES PROPIAS DEL ASHING
+
+```
+ST_VAULT_READY      — guardián inicializado
+ST_VAULT_SEALED     — entrada .ash creada
+ST_VAULT_VERIFIED   — integridad confirmada
+ST_VAULT_CORRUPTED  — hash no coincide — alerta máxima
+ST_VAULT_REGRET     — error en el guardián — RED-REGRET
+ST_VAULT_SEAL_ACTIVE — (SEAL OF SECRECY) activo
+```
+
+En IMV estos estados se mapean a:
+- ST_VAULT_SEALED → `auto_crystallize()` exitoso
+- ST_VAULT_CORRUPTED → `test_imv.py` falla en tests de ledger
+
+---
+
+### 6.0 ALGORITMO CONEJO EN VAULT
+
+El RABBIT_LIMIT = 256 aplica también al guardián.
+Cuando vault.entry_count >= 256: ST_SATURACION_VAULT.
+No se detiene — se poda: los .ash más antiguos se comprimen
+en .mu_cache y el contador se reinicia sobre el residuo.
+
+En IMV: el ledger no tiene este límite explícito.
+Agregar `CRYSTAL_LIMIT = 256` a ledger.py con poda periódica
+sería la implementación mínima del Algoritmo Conejo en el guardián.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+```
+TRUST [foundation] =><= .. verifica .. core_teather_4_leyes_presentes_vault --[Nudo de Ocho] [term]
+STACKING UF[H63] =><= .. cristaliza .. ashing_ceniza_inmutable_nudo_ocho --[Nudo de Ocho] [term]
+CRYPTO (SEAL OF SECRECY) =><= .. activa .. vault_operaciones_restringidas_firma_arquitecto --[Nudo de Ocho] [term]
+WORK {actuator} =><= .. sella .. triada_pulsing_ashing_compresion_output_completo --[Ballestrinque] [term]
+SAMU @ =><= .. audita .. vault_integridad_ash_hash_sha256_verificado --[Ballestrinque] [term]
+```
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

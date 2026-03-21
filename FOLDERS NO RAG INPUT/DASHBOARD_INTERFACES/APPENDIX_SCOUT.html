@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>APPENDIX PROMPTING SCOUT · DIRIME</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+h1{font-size:1rem;letter-spacing:4px;border-bottom:2px solid #1a1a2e;
+   padding-bottom:10px;margin-bottom:24px;display:flex;justify-content:space-between}
+.pairs-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:28px}
+.pair-card{border:1px solid #e0e0e0;padding:14px;cursor:pointer;transition:all .2s}
+.pair-card:hover,.pair-card.active{border-color:#2a7a4f;background:#f0f7f3}
+.pc-header{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.pc-token{font-size:.95rem;font-weight:bold;letter-spacing:2px;color:#1a1a2e}
+.pc-lib{font-size:.65rem;color:#2a7a4f;padding:2px 7px;border:1px solid #2a7a4f}
+.pc-desc{font-size:.68rem;color:#555;line-height:1.6;margin-bottom:6px}
+.pc-lacho{font-size:.65rem;color:#888;font-style:italic;
+          border-left:2px solid #e0e0e0;padding-left:6px;line-height:1.7}
+.pc-ll{color:#c0392b;font-weight:bold}
+.pc-lo{color:#2a7a4f;font-weight:bold}
+.spool-tokens{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px;
+              padding:14px;background:#fafafa;border:1px solid #e0e0e0}
+.st-chip{padding:5px 12px;border:1px solid #1a1a2e;font-size:.78rem;cursor:pointer;
+         transition:all .2s}
+.st-chip.active{background:#1a1a2e;color:#fff}
+.st-chip.spool-c{border-color:#8e44ad;color:#8e44ad}
+.st-chip.spool-c.active{background:#8e44ad;color:#fff}
+.st-chip.pocket-c{border-color:#2980b9;color:#2980b9}
+.st-chip.pocket-c.active{background:#2980b9;color:#fff}
+.st-chip.spawn-c{border-color:#2a7a4f;color:#2a7a4f}
+.st-chip.spawn-c.active{background:#2a7a4f;color:#fff}
+.st-chip.daemon-c{border-color:#d35400;color:#d35400}
+.st-chip.daemon-c.active{background:#d35400;color:#fff}
+.output-box{background:#f8f8f8;border:1px solid #ddd;padding:14px;
+            margin-bottom:20px;min-height:70px}
+.ob-title{font-size:.6rem;letter-spacing:2px;color:#aaa;margin-bottom:8px}
+.ob-sentence{font-size:.78rem;line-height:2}
+.footer{font-size:.62rem;color:#aaa;border-top:1px solid #eee;
+        padding-top:10px;display:flex;gap:16px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<h1>
+  <span>APPENDIX PROMPTING SCOUT · DIRIME</span>
+  <span style="font-size:.7rem;color:#888;font-weight:normal">
+    10 pares · grammar.py SOCIAL activo
+  </span>
+</h1>
+
+<div style="font-size:.65rem;color:#888;letter-spacing:2px;margin-bottom:10px">
+  ▸ TOKENS [term]=: spool•pocket•spawn•daemon
+</div>
+<div class="spool-tokens">
+  <div class="st-chip spool-c" onclick="toggleToken('spool',this)">spool</div>
+  <div class="st-chip pocket-c" onclick="toggleToken('pocket',this)">pocket</div>
+  <div class="st-chip spawn-c" onclick="toggleToken('spawn',this)">spawn</div>
+  <div class="st-chip daemon-c" onclick="toggleToken('daemon',this)">daemon</div>
+  <div id="token-desc" style="font-size:.68rem;color:#555;flex:1;display:flex;align-items:center">
+    ← clic para activar token
+  </div>
+</div>
+
+<div class="pairs-grid" id="pairs-grid"></div>
+
+<div class="output-box">
+  <div class="ob-title">▸ LACHO SENTENCE GENERADA · clic par para activar</div>
+  <div class="ob-sentence" id="lacho-output">
+    <span style="color:#aaa">seleccionar par para generar sentencia soberana</span>
+  </div>
+</div>
+
+<div class="footer">
+  <span>DIRIME IMV V0.2.1</span>
+  <span>SOCIAL valid: {chair}·{drip}·{masking}·{streaming}·{launch-bot}·{scheduler}</span>
+  <span>Dir(-) → optimizado → Dir(+)</span>
+  <span>[term] :: activo · $sat 04/04</span>
+</div>
+
+<script>
+const PAIRS=[
+  {token:'CHAIR-FLEX',lib:'SOCIAL {chair}',
+   desc:'Sesión adaptativa sin agenda fija. {chair} pivota sin perder [scope]. FLEX=MASK_TRANSFORM interno.',
+   lacho:'SOCIAL {chair} =><= .. distribuye .. session_flex_pivot_scope_preservado --[As de Guía] [term]',
+   token2:'spawn',extra:'spawn instancia flexible'},
+  {token:'SCHEDULER-SHEET',lib:'SOCIAL {scheduler}',
+   desc:'Hoja declarativa tabular. TareaSoberana.to_dict(). SS_ROW × SS_FILTER × SS_EXPORT.',
+   lacho:'SOCIAL {scheduler} =><= .. registra .. sheet_tareas_dia_cluster_ref_soberana --[Ballestrinque] [term]',
+   token2:'spool',extra:'spool export batch'},
+  {token:'DRIP-IMV',lib:'SOCIAL {drip}',
+   desc:'Goteo de sentencias LACHO validadas. 1 drip = 1 sentencia → validate() → TX++.',
+   lacho:'SOCIAL {drip} =><= .. filtra .. imv_pipeline_validate_record_tx_incrementado --[As de Guía] [term]',
+   token2:'daemon',extra:'daemon mide rate'},
+  {token:'POKET-RAG',lib:'GATE UF[H05]',
+   desc:'Pocket × RAG. Segmento comprimido top_k BM25. Spawn por query. Evict post-WU.',
+   lacho:'GATE UF[H05] =><= .. contiene .. pocket_rag_top_k_bm25_query_aislado --[Ballestrinque] [term]',
+   token2:'pocket',extra:'pocket aísla query'},
+  {token:'MASKING-SPAWN',lib:'SOCIAL {masking}',
+   desc:'Fork soberano. Spawn hereda MASK_PERSONA del padre. MASK_EMERGENCY levanta todo.',
+   lacho:'SOCIAL {masking} =><= .. lanza .. masking_spawn_fork_soberano_mask_persona --[Ballestrinque] [term]',
+   token2:'spawn',extra:'spawn con máscara'},
+  {token:'NOTE-METHOD',lib:'METHOD <equation>',
+   desc:'Nota formal con operador METHOD. Metadata + timestamp + author + [term].',
+   lacho:'METHOD <equation> =><= .. calcula .. note_method_metadata_timestamp_author --[As de Guía] [term]',
+   token2:'pocket',extra:'pocket almacena nota'},
+  {token:'STREAMING-DAEMON',lib:'SOCIAL {streaming}',
+   desc:'Flujo persistente background. 18:00→06:00. Buffer circular + trigger.',
+   lacho:'SOCIAL {streaming} =><= .. mantiene .. streaming_daemon_flujo_persistente --[As de Guía] [term]',
+   token2:'daemon',extra:'daemon background'},
+  {token:'CAT-NOTEBOOK',lib:'SOCIAL {cat}',
+   desc:'Iteración documental. CAT() navega + notebook registra. Version control.',
+   lacho:'SOCIAL {cat} =><= .. navega .. cat_notebook_iteracion_documental --[Ballestrinque] [term]',
+   token2:'pocket',extra:'pocket contexto'},
+  {token:'REPOSITORIES-SPOOL',lib:'SOCIAL {repositories}',
+   desc:'Cola de sync git. Priority + timestamp + repo_hash. Trust verification.',
+   lacho:'SOCIAL {repositories} =><= .. registra .. repositories_spool_sync_git --[Corredizo] [term]',
+   token2:'spool',extra:'spool cola cambios'},
+  {token:'LAUNCH-BOT-SESSION',lib:'SOCIAL {launch-bot}',
+   desc:'Bot con mandato. Session = mandato + scope + timeout + [term].',
+   lacho:'SOCIAL {launch-bot} =><= .. lanza .. launch_bot_session_mandato --[As de Guía] [term]',
+   token2:'spawn',extra:'spawn bot session'}
+];
+
+const TOKEN_DESC={
+  spool:'Cola soberana · buffer pre-emit · STACKING UF[H52] holding antes del WU',
+  pocket:'Segmento local comprimido · <A> memoria aislada · análisis portátil',
+  spawn:'Nueva instancia soberana · DIR(ING) · UF[H64] open · proceso hijo verificado',
+  daemon:'Proceso persistente background · BOT_NET nocturno · 18:00→06:00 sin trigger'
+};
+
+let activeTokens=new Set();
+let activePair=null;
+
+function toggleToken(token,el){
+  if(activeTokens.has(token)){
+    activeTokens.delete(token);
+    el.classList.remove('active');
+  }else{
+    activeTokens.add(token);
+    el.classList.add('active');
+  }
+  updateTokenDesc();
+}
+
+function updateTokenDesc(){
+  const desc=document.getElementById('token-desc');
+  if(activeTokens.size===0){
+    desc.textContent='← clic para activar token';
+  }else{
+    const tokens=Array.from(activeTokens).join('•');
+    desc.textContent=`${tokens}: ${TOKEN_DESC[Array.from(activeTokens)[0]]}`;
+  }
+}
+
+function renderPairs(){
+  const grid=document.getElementById('pairs-grid');
+  grid.innerHTML=PAIRS.map(pair=>`
+    <div class="pair-card" onclick="selectPair('${pair.token}',this)">
+      <div class="pc-header">
+        <div class="pc-token">${pair.token}</div>
+        <div class="pc-lib">${pair.lib}</div>
+      </div>
+      <div class="pc-desc">${pair.desc}</div>
+      <div class="pc-lacho">
+        <span class="pc-ll">${pair.lacho.split(' ')[0]}</span> ${pair.lacho.split(' ').slice(1).join(' ')}
+      </div>
+    </div>
+  `).join('');
+}
+
+function selectPair(token,el){
+  document.querySelectorAll('.pair-card').forEach(c=>c.classList.remove('active'));
+  el.classList.add('active');
+  activePair=PAIRS.find(p=>p.token===token);
+  generateLachoSentence();
+}
+
+function generateLachoSentence(){
+  if(!activePair) return;
+  
+  const output=document.getElementById('lacho-output');
+  let sentence=activePair.lacho;
+  
+  // Highlight active tokens
+  if(activeTokens.has(activePair.token2)){
+    sentence=sentence.replace(new RegExp(activePair.token2,'gi'), `<span style="color:#8e44ad;font-weight:bold">${activePair.token2.toUpperCase()}</span>`);
+  }
+  
+  // Format LACHO parts
+  sentence=sentence.replace(/(SOCIAL \{[^}]+\}|GATE UF\[H[0-9]+\]|METHOD <[^>]+|CRYPTO \([^)]+\))/g, '<span class="pc-ll">$1</span>');
+  sentence=sentence.replace(/=><=\s*\.\.\s*[a-z]+/g, '<span class="pc-lo">$&</span>');
+  sentence=sentence.replace(/--[A-Za-z\s]+/g, '<span class="pc-lo">$&</span>');
+  sentence=sentence.replace(/\[term\]/g, '<span style="color:#d35400;font-weight:bold">[term]</span>');
+  
+  output.innerHTML=sentence;
+}
+
+renderPairs();
+</script>
+
+</body>
+</html>

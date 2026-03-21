@@ -1,0 +1,67 @@
+//[MANAGEMENT].lacho · DRA/AGENCY_IDE_SYSTEM(DIR(-))
+//AGENCY IDE SYSTEM · gaps declarados · pendientes soberanos
+//AGENCY_IDE_SYSTEM.txt · V1 · 2026-03-10
+//DIR(-) = gaps · KU sin resolver · pendientes hacia WU
+//AGENCY IDE = NODO-IDE · personalidad exploratoria · METHOD dominante
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN AGENCY IDE SYSTEM ═════════════════════════════
+// AGENCY IDE SYSTEM = nodo diseñador · NODO-IDE en arquitectura DRA
+// Personalidad: exploratoria · sintética · enfocada en diseño+agencia
+// Biblioteca dominante: METHOD · ACTIVITY · SAMU activo
+// Diferencia de NODO-WS: diseña → no ejecuta directamente
+// DIR(-) = este archivo mapea todos los gaps del AGENCY IDE
+// Un gap DIR(-) es un KU declarado que espera recursos para ser WU
+
+// ══ GAPS DECLARADOS DIR(-) ════════════════════════════════════
+UNICODE: GAP_NODO_IDE         //NODO-IDE físico · requiere segunda PC · CAPA C
+                              //stub: Agency_IDE_Beta · NODO_CFG declarado
+UNICODE: GAP_WINDSURF         //Windsurf IDE · segunda PC · congelado hasta CAPA C
+                              //EXT_WINDSURF pendiente · DIR(v2) frozen
+UNICODE: GAP_TETHER           //SOCIAL {tether} + .tether + (tether seat) CRYPTO
+                              //inter-nodo real · requiere 2 nodos físicos
+UNICODE: GAP_GENERATOR        //generator.py · modo full · autogeneración .lacho
+                              //STATUS: implementado · pendiente integración DRA
+UNICODE: GAP_GUI_BUILDER      //LACHO BUILDER GUI · elpulsar.gui · port 8742
+                              //STATUS: implementado · pendiente test completo
+UNICODE: GAP_AGENCY_TEMPLATE  //template de agencia · NODO_CFG.txt soberano
+                              //pendiente: red_cfg, política, SAMU_MODO
+UNICODE: GAP_CAPA_C           //Ryzen 5 7600 · Ollama · CAT(OS) · CAT(SSH)
+                              //IME Modo I CHING · LOAN-IME · background hex
+UNICODE: GAP_CONVERGENCIA     //protocolo convergencia NODO-WS ↔ NODO-IDE
+                              //SAMU @ árbitro · GATE sync · activo en CAPA C
+UNICODE: GAP_DOUBLE_ENV       //DOUBLE_ENVIRONMENT staging/prod · SPEC B trigger
+UNICODE: GAP_WEBSITE          //elpulsar.app · deployment · China ready · SPEC B
+
+// ══ NODO_CFG AGENCY IDE (DECLARADO) ══════════════════════════
+UNICODE: NODO_CFG_IDE         //configuración declarada · stub soberano
+//[NODO_CFG]
+//NOMBRE = Agency_IDE_Beta
+//PERSONALIDAD = exploratoria
+//OBJETIVO_PRINCIPAL = diseño
+//BIBLIOTECA_DOMINANTE = METHOD
+//RED = local_then_HL_FABRIC
+//NO_NET = false
+//POLICY = auditado
+//SAMU_MODO = activo
+//STATUS = DIR(-) · requiere CAPA C
+
+// ══ PROTOCOLO DE CONVERGENCIA (SPEC) ═════════════════════════
+UNICODE: CONV_PROTO           //cuando NODO-IDE activo · convergencia con NODO-WS
+UNICODE: CONV_TRUST           //TRUST arbitra · foundation no negociable
+UNICODE: CONV_SAMU            //SAMU @ dirime conflictos inter-nodo
+UNICODE: CONV_GATE            //GATE UF[H05] sincroniza flujos convergentes
+UNICODE: CONV_TETHER          //(tether seat) canal seguro inter-nodo
+
+// ══ TRANSICIÓN DIR(-)→DIR(+) ══════════════════════════════════
+UNICODE: GAP_TRIGGER_C        //trigger CAPA C · nueva PC comprada → DIR(-) → DIR(+)
+UNICODE: GAP_TRIGGER_B        //trigger SPEC B · DOUBLE_ENV activo → algunos DIR(-)→WU
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+METHOD <operator_flow> =><= .. modela .. agency_ide_gaps_declarados --[Ballestrinque] [term]
+GATE UF[H05] =><= .. contiene .. agency_ide_dir_menos_pendientes --[As de Guía] [term]
+SAMU @ =><= .. audita .. agency_ide_convergencia_spec --[Ballestrinque] [term]
+ACTIVITY UF[H64] =><= .. inicia .. agency_ide_ciclo_abierto --[As de Guía] [term]
+
+//DIR(-) DRA/AGENCY_IDE_SYSTEM · V1 · gaps soberanos · CAPA C trigger

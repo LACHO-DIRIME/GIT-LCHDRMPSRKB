@@ -1,0 +1,35 @@
+//[MANAGEMENT].lacho · DRA/DOCS/
+//DOCS · documentación soberana del DRA
+//DOCS.txt · V1 · 2026-03-10
+//DOCS = todos los documentos de referencia del DRA · no código
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN DOCS ══════════════════════════════════════════
+// DOCS = capa de documentación del DRA · legible por humano y RAG
+// Todo DOCS es ancla RAG · indexable · CORPUS fuente de verdad
+// Formato: .txt UNICODE · estilo SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+// DOCS no contiene código ejecutable · contiene especificación soberana
+
+// ══ DOCUMENTOS DEL DRA ════════════════════════════════════════
+UNICODE: DOC_README           //README.txt · overview DRA · primer doc · H01
+UNICODE: DOC_SPEC             //SPEC(A+B) · este directorio · declaraciones
+UNICODE: DOC_ARCHITECTURE     //arquitectura DRA · nodos · clusters · flujos
+UNICODE: DOC_HOMEWORKING      //HOMEWORKING protocol · ZIPPER · feeds · bots
+UNICODE: DOC_SEGMENTATION     //segmentación soberana · TOMO/SLICE/SEG/CLUSTER
+UNICODE: DOC_MU_STORE         //MU-STORE protocols · 5 capas · ciclos
+UNICODE: DOC_KALIL_DRA        //KALIL en DRA · 6 nodos · puentes · sentencias
+UNICODE: DOC_CHINA_DRA        //China dual DRA · CJK · interior/exterior
+UNICODE: DOC_CHANGELOG        //changelog soberano · versiones · H63 commits
+UNICODE: DOC_GLOSSARY         //glosario DRA · términos nuevos · Blue-Words→WU
+
+// ══ FORMATO DOCS ══════════════════════════════════════════════
+UNICODE: DOC_FORMAT           //.txt UNICODE · encabezado [MANAGEMENT] · anclas RAG
+UNICODE: DOC_INDEX            //índice de DOCS · LIST(DRA:DOCS) · RAG query
+UNICODE: DOC_VERSION          //versionado · V1→V2 · por cristal DIR(=)
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+TRUST FOUNDATION =><= .. declara .. docs_dra_fuente_verdad --[Nudo de Ocho] [term]
+STACKING UF[H48] =><= .. cristaliza .. docs_dra_corpus_indexado --[Nudo de Ocho] [term]
+
+//DIR(+) DRA/DOCS · V1 · documentación soberana · CORPUS source · RAG

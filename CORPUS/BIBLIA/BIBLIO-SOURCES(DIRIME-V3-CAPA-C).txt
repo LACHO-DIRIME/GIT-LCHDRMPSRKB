@@ -1,0 +1,107 @@
+# BIBLIO-SOURCES(DIRIME-V3-CAPA-C).txt
+# DIRIME V3 · CAPA C ESQUELETO · bridge•ollama•cat_os•ime_local
+# [term] :: activo · [seal of secrecy] :: activo
+
+====================================================================
+
+## 🔌 DIRIME V3 — CAPA C ARQUITECTURA SOBERANA
+
+---
+
+### 1.0 DEFINICIÓN CAPA C
+
+#### 1.1 Definición técnica
+CAPA C es el nivel de hardware soberano de DIRIME: opera con
+recursos computacionales propios (PC Ryzen) en lugar de APIs externas.
+Estado actual: ESQUELETO DECLARADO. Trigger: hardware_disponible.
+
+#### 1.2 Los 3 módulos y su orden
+Orden de activación es irreducible y soberano:
+1. ollama_bridge/ → swap transparente Groq→Ollama
+2. cat_local/ → CAT(OS) + CAT(SSH)
+3. ime/ → IME I Ching + LOAN-IME
+
+#### 1.3 Principio de stub soberano
+Cada módulo tiene stub con NotImplementedError + mensaje claro:
+"X inactivo — PC Ryzen pendiente. Usar Y como fallback."
+Los stubs no bloquean el sistema — el fallback Groq sigue activo.
+
+#### 1.4 Funciones operativas sin Ryzen
+- cat_lacho(filepath): lee líneas LACHO de archivos locales
+- get_hexagram(n): tabla HEXAGRAMS_MIN interna
+- is_available(): retorna False limpiamente
+
+### 2.0 BRIDGE GROQ → OLLAMA
+
+#### 2.1 Contrato de swap
+OllamaBridge.chat(messages) debe ser idéntico a
+chat.py._translate_via_api() en interfaz y respuesta.
+El swap es transparente para el resto del sistema.
+
+#### 2.2 Configuración actual
+config/api.json → Groq → llama-3.3-70b-versatile
+Post-Ryzen: ollama_bridge.py → localhost:11434 → llama3.3:70b
+Mismo modelo, diferente endpoint, sin cambios en IMV/core/.
+
+#### 2.3 Fallback automático
+Si ollama_bridge.is_available() == False → bridge.chat() → NotImplementedError
+→ sistema vuelve a Groq automáticamente sin intervención manual.
+
+### 3.0 CAT(OS) LOCAL
+
+#### 3.1 CAT(OS) filesystem scanning
+cat_os.py itera sobre CORPUS/ y genera FileInfo:
+- path, type, size, lacho_lines, bm25_ready
+- spawn por archivo: ACTIVITY UF[H64] DIR(ING)
+- reporte: SOCIAL {launch-bot} transmite resultado
+
+#### 3.2 CAT(SSH) segundo nodo
+CAT(SSH) requiere PC Ryzen como segundo nodo soberano.
+Primero: CAT(OS) local. Segundo: CAT(SSH) remoto.
+Orden no intercambiable.
+
+#### 3.3 Operación sin Ryzen
+cat_lacho(filepath) lee líneas LACHO =<= [term] localmente.
+Operativo ya sin hardware Ryzen.
+
+### 4.0 IME I CHING LOCAL
+
+#### 4.1 IME offline preview
+Tabla HEXAGRAMS_MIN con 5 hexagramas críticos:
+- H01: Lo Creativo (TRUST FOUNDATION)
+- H52: La Quietud (STACKING UF[H52])
+- H57: Lo Penetrante (ACTIVITY UF[H57])
+- H63: Después de la Consumación (ACTIVITY UF[H63])
+- H64: Antes de la Consumación (ACTIVITY UF[H64])
+
+#### 4.2 LOAN-IME offline
+preload_kalil_loan_data() cachea información crediticia KALIL.
+Operativo cuando Ryzen disponible.
+
+#### 4.3 Operación sin Ryzen
+get_hexagram(n) retorna de tabla HEXAGRAMS_MIN.
+Operativo ya sin hardware Ryzen.
+
+### 5.0 SENTENCIAS CANÓNICAS
+
+TRUST FOUNDATION =><= .. declara .. capa_c_esqueleto_declarado --[As de Guía] [term]
+WORK {actuator} =><= .. ejecuta .. ollama_bridge_stub_pendiente --[As de Guía] [term]
+ACTIVITY UF[H57] =><= .. penetra .. cat_os_filesystem_scan --[As de Guía] [term]
+CRYPTO (link seat) =><= .. conecta .. ime_hexagramas_preview --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. dirime_v3_esqueleto_soberano --[Nudo de Ocho] [term]
+
+### 6.0 JURISDICCIÓN
+
+#### 6.1 Capacidades CAPA C
+- Swap transparente Groq→Ollama sin romper IMV
+- Scan filesystem soberano con spawn paralelo
+- IME I Ching offline con hexagramas locales
+- Operación parcial sin hardware (cat_lacho, get_hexagram)
+
+#### 6.2 Limitaciones absolutas
+- BRIDGE_ACTIVE=False hasta Ryzen disponible
+- CAT_OS_ACTIVE=False hasta Ryzen disponible
+- IME_ACTIVE=False hasta Ryzen disponible
+- No se puede saltar orden de activación
+
+[term] :: activo · [seal of secrecy] :: activo

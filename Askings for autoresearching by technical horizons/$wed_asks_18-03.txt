@@ -1,0 +1,23 @@
+// ASKING · $wed 18-03 · autoresearch soberano · Groq llama-3.3-70b
+// TX=0 · generado: 2026-03-18 10:32:53
+// horizonte activo: CAPA_B · hardware antiX · Groq API
+
+ASK_01 | ALTA | CAPA_B | ~30min
+  WORK {actuator} =><= .. implementa .. github_sync_valores_reales_tx_scalar --[As de Guía] [term]
+  impacto: commit message con TX/S reales en vez de hardcodeados
+  desbloquea: github_sync.sh fidelidad · log permanente correcto
+
+ASK_02 | ALTA | CAPA_B | ~1h
+  WORK {actuator} =><= .. implementa .. scalar_s_en_notaria_archivo_endpoint --[As de Guía] [term]
+  impacto: scalar_s:0 → valor real en /api/notaria/archivo
+  desbloquea: export_notaria_report calidad · métricas reales
+
+ASK_03 | MEDIA | CAPA_B | ~2h
+  WORK {actuator} =><= .. implementa .. theater_runner_cmd_executor --[As de Guía] [term]
+  impacto: ciclo diario automatizable · macro_cierre real
+  desbloquea: rational_day.theater ejecutable · github_sync automático
+
+ASK_BLOCKED_01: DIRIME_v3/ollama_bridge/ → requiere PC Ryzen
+ASK_BLOCKED_02: DIRIME_v3/ime/ → requiere Ollama local
+
+[term] :: activo · generado por autoresearch_gap.py

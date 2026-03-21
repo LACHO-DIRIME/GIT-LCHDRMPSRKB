@@ -1,0 +1,60 @@
+//[MANAGEMENT].lacho · UNICODE DIRIME V3 · V1
+//[term]=: bridge•ollama•cat_os•ime_local
+//dominio: DIRIME_v3/ esqueleto · CAPA C · Ollama bridge · CAT OS · IME local
+//REFERENCIA: DIRIME_v3/README_CAPA_C.md · CAPA_C_STATUS=esqueleto_declarado
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN [term]=: bridge•ollama•cat_os•ime_local ════════
+UNICODE: BRIDGE      //swap transparente Groq→Ollama · mismo contrato API
+                     //ollama_bridge/ stub · activar cuando Ryzen disponible
+                     //TRUST FOUNDATION =><= .. declara .. bridge_groq_ollama_swap
+UNICODE: OLLAMA      //LLM local · llama-3.3-70b en Ryzen · sin API key
+                     //DIRIME_v3/ollama_bridge/ollama_bridge.py stub
+                     //WORK {actuator} =><= .. ejecuta .. ollama_local_inference
+UNICODE: CAT_OS      //CAT(OS) local · iteración sobre filesystem soberano
+                     //DIRIME_v3/cat_local/cat_os.py · spawn por dir
+                     //ACTIVITY UF[H57] =><= .. penetra .. cat_os_filesystem
+UNICODE: IME_LOCAL   //IME I Ching local · loan-IME offline · DIRIME_v3/ime/
+                     //stub: ime_ching_listen · loan_ime_preload
+                     //CRYPTO (link seat) =><= .. conecta .. ime_local_stub
+
+// ══ DIRIME_v3 ESTRUCTURA REAL ════════════════════════════════
+UNICODE: V3_OLLAMA_BRIDGE  //ollama_bridge/ · swap Groq→Ollama transparente
+                           //config/api.json actual → ollama_bridge adapta
+                           //mismo endpoint /v1/messages · sin romper IMV
+UNICODE: V3_CAT_LOCAL      //cat_local/ · CAT(OS) + CAT(SSH) local
+                           //cat_os.py: itera dirs soberanos · spawn por archivo
+                           //CAT(SSH): segundo nodo · requiere PC Ryzen
+UNICODE: V3_IME            //ime/ · IME I Ching + LOAN-IME offline
+                           //ime_ching_listen: escucha hexagramas locales
+                           //loan_ime_preload: precarga KALIL loan data
+UNICODE: V3_ORDEN          //ORDEN ACTIVACIÓN: ollama_bridge → cat_local → ime
+                           //secuencia soberana · no saltar pasos
+                           //TRUST FOUNDATION verifica cada step
+
+// ══ CAPA C STUBS (Python) ════════════════════════════════════
+UNICODE: STUB_BRIDGE_PY    //ollama_bridge.py stub:
+                           //class OllamaBridge:
+                           //  def __init__(self): self.active=False
+                           //  def chat(self, msg): raise NotImplementedError("Ryzen pendiente")
+UNICODE: STUB_CAT_OS_PY    //cat_os.py stub:
+                           //def cat_os_iterate(root_dir):
+                           //  for path in Path(root_dir).rglob("*"):
+                           //    if path.is_file(): yield path
+UNICODE: STUB_IME_PY       //ime_ching_listen.py stub:
+                           //def ime_listen_local():
+                           //  return {"status": "stub", "hexagram": "待机"}
+UNICODE: STUB_LOAN_IME     //loan_ime_preload.py stub:
+                           //def preload_kalil_loan_data():
+                           //  return {"kalil_nodes": 6, "status": "stub"}
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+TRUST FOUNDATION =><= .. declara .. dirime_v3_bridge_groq_ollama_swap --[As de Guía] [term]
+WORK {actuator} =><= .. ejecuta .. ollama_local_inference_stub --[As de Guía] [term]
+ACTIVITY UF[H57] =><= .. penetra .. cat_os_filesystem_soberano --[As de Guía] [term]
+CRYPTO (link seat) =><= .. conecta .. ime_local_stub_implementado --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. dirime_v3_esqueleto_capa_c --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_DIRIME_V3 · V1 · bridge•ollama•cat_os•ime_local
+//$wed 22/04 · CORPUS/UNICODE PROGRAMS/

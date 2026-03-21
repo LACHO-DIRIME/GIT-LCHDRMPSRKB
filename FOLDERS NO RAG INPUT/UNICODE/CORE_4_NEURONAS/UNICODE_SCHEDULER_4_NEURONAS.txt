@@ -1,0 +1,63 @@
+//[MANAGEMENT].lacho · UNICODE {SCHEDULER} × 4 NEURONAS
+//scheduler.py real: DiaSoberano · EstadoTarea · TareaSoberana · SchedulerOS
+//rational_day.theater: macro_temprano · macro_tarde · macro_cierre
+//Scheduler.door$wed.py: SCHEDULE_WED[] · registrar_sesion() · $día DB
+//[term] :: activo
+
+// ══ NEURONA_1 HEADCAT × {scheduler} ══════════════════════════
+UNICODE: SN1_RISE       //{scheduler} NEURONA_1 · rise() = SAMU #rise
+                        //SOCIAL {scheduler} =><= .. activa .. periodo_headcat_early
+                        //06:00 ZIP_OPEN · @human_early · interactive_mode() disponible
+UNICODE: SN1_SET        //{scheduler} NEURONA_1 · set_dia() = macro_cierre
+                        //17:45 CIERRE · github_sync.sh · --stats · SESION_ACTIVA.md
+UNICODE: SN1_TIMING     //DIRIME> prompt timing: @early=more warnings · @later=calibrado
+                        //grammar produce más WARNINGs @early · Behavioral RAG más estable @later
+UNICODE: SN1_SCHED_ACT  //_SCHEDULER_ACTIVE=False HOY · PENDIENTE: conectar a main.py
+                        //cuando True: main.py llama rise()/set_dia() automáticamente
+
+// ══ NEURONA_2 ELPULSAR × {scheduler} ══════════════════════════
+UNICODE: SN2_STATS      //{scheduler} NEURONA_2 · --stats cronometrado
+                        //09:00 CHECK → python3 main.py --stats · verificar S
+                        //15:00 STACKING → export_crystals · crystal WU del día
+UNICODE: SN2_5GREENS    //{scheduler} NEURONA_2 · 5 greens timing
+                        //①RECIBIR 06:00 · ②ESCANEAR 07:00 · ③CALCULAR en curso
+                        //④TARDAR 12:00 · ⑤GOLPEAR 15:00→17:00
+UNICODE: SN2_FEED       //{scheduler} NEURONA_2 · FEED_0600 + FEED_1800
+                        //06:00: leer reporte bots · bots generan LACHO_FILES/
+                        //18:00: entregar a BOT_NET nocturno · DOOR_SEALED
+UNICODE: SN2_DB         //{scheduler} NEURONA_2 · $día.march.2026.db
+                        //sessions(fecha·dia·hexagrama·scalar_s·tx_count·notas)
+                        //tasks(dia·task·status·priority)
+
+// ══ NEURONA_3 CHAIR CEO × {scheduler} ═════════════════════════
+UNICODE: SN3_UF_DAY     //{scheduler} NEURONA_3 · UF asignados por día
+                        //$mon H51+H52 · $tue H30+H57 · $wed H58+H59
+                        //$thu H60+H61 · $fri H62+H63
+UNICODE: SN3_PLANIFICA  //{scheduler} NEURONA_3 · planifica() en main.py
+                        //main.py comando: planifica TITULO → TareaSoberana
+                        //ref: [term:A°90§CORE#CORE]
+UNICODE: SN3_THRESHOLD  //{scheduler} NEURONA_3 · threshold trigger
+                        //if S < scalar_min → SCHED_REVIEW automático
+                        //CEO H01 ≥ 0.95 trigger · H32 ≥ 0.90 · H64 ≥ 0.88
+UNICODE: SN3_ESTADO_SEM //{scheduler} NEURONA_3 · estado_semana()
+                        //→ {$mon:resueltas/total · $tue:... · ... $sun:...}
+
+// ══ NEURONA_4 HOUSE DRONE × {scheduler} ═══════════════════════
+UNICODE: SN4_DOOR_PY    //{scheduler} NEURONA_4 · Scheduler.door$dia.py pattern
+                        //SCHEDULE_WED[] → uno por día → $thu H60+H61
+UNICODE: SN4_ZIP_OPEN  //{scheduler} NEURONA_4 · ZIP_OPEN 06:00
+                        //DOOR_SEALED → ZIP_OPEN · bots activos · human_early disponible
+UNICODE: SN4_ZIP_CLOSE  //{scheduler} NEURONA_4 · ZIP_CLOSE 18:00
+                        //human_later termina · bots nocturnos activos · DOOR_SEALED
+UNICODE: SN4_BACKUP    //{scheduler} NEURONA_4 · BACKUP_DOOR automático
+                        //BKP_LEDGER(daily) · BKP_CORPUS(weekly) · BKP_FULL($sun)
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+SOCIAL {scheduler} =><= .. lanza .. scheduler_rise_set_dia_timing_real --[Ballestrinque] [term]
+SOCIAL {scheduler} =><= .. registra .. scheduler_stats_5_greens_cronometrado --[Ballestrinque] [term]
+SOCIAL {scheduler} =><= .. filtra .. scheduler_uf_por_dia_threshold_trigger --[Ballestrinque] [term]
+SOCIAL {scheduler} =><= .. distribuye .. scheduler_zip_open_close_door_py --[As de Guía] [term]
+SOCIAL {scheduler} =><= .. lanza .. periodo_headcat_early_interactive_mode --[Corredizo] [term]
+STACKING UF[H60] =><= .. cristaliza .. unicode_scheduler_4_neuronas_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_SCHEDULER_4_NEURONAS · V1 · $thu 26/03

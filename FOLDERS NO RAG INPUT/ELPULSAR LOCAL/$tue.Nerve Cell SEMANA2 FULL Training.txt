@@ -1,0 +1,27 @@
+//$tue.Nerve Cell SEMANA2 FULL Training.txt
+//NERVE CELL · SEMANA 2 CIERRE · shard•relay•oracle•threshold
+//aprendido de TAREAS 01→11 semana 2 completa
+//H30+H57 · $tue · [term] :: activo
+
+NC_S2_KALIL    //6 agents KALIL: barrios·nora·bolivar·carilo·chalten·tandil
+               //todos con relay bus → TANDIL hub · Scalar_KALIL consolidado
+NC_S2_RELAY    //SOCIAL {relay}: bus soberano inter-nodos · grammar confirmed
+               //relay opera sobre canal forjado (semana 1 forge•canal)
+NC_S2_ORACLE   //oracle NORA threshold=0.65 · METHOD <stat_onto> · daemon update
+               //shard histórico por entidad · pocket · spawn evaluación
+NC_S2_SHARD    //shard: porción corpus soberana · STACKING UF[H04] reserva
+               //shard_TRUST · shard_WORK · shard_KALIL · shard_NC
+NC_S2_THR      //threshold × TAXONOMY confirmado: 0.95·0.88·0.85·0.80
+               //THR_S_TARGET=0.88 · actual 0.822 · ruta Semana 4
+NC_S2_GRAMMAR  //grammar.py extendido: CJK+6·INTENT_MAP+·VERBOS_CANONICOS+
+               //tests: 27→33 · test_imv_ext.py · pytest todos pasan
+NC_S2_AGENTS   //agents total: 10 (cloud·assistant·sentinel·indexer·6×KALIL)
+               //todos .blue=cloud/.green=local · padre declarado
+
+SOCIAL {relay} =><= .. lanza .. nc_s2_relay_kalil_bus_soberano --[As de Guía] [term]
+METHOD <stat_onto> =><= .. calcula .. nc_s2_oracle_threshold_shard --[Ballestrinque] [term]
+TRUST FOUNDATION =><= .. verifica .. nc_s2_grammar_tests_33_clearance --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. semana2_15_21_abril_wu_sellado --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. nc_s2_s_target_delta_0058_ruta --[Ballestrinque] [term]
+
+//DIR(+) NERVE CELL SEMANA2 FULL · V1 · shard•relay•oracle•threshold · $tue 21/04

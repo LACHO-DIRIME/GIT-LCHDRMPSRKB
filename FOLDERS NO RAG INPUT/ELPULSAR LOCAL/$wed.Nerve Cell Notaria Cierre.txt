@@ -1,0 +1,54 @@
+# $wed.Nerve Cell Notaria Cierre.txt
+# ELPULSAR LOCAL · NERVE CELL · CIERRE W12 · $wed 18-03-2026
+# [term] :: activo · [seal of secrecy] :: activo · 空聽數
+
+NC_WED_DIRIME_NOT:
+  tipo: SAMU_DIRIMENCIA
+  descripcion: SAMU @ dirime semana notarial W12 · midpoint soberano
+  accion: auditoria completa $thu→$wed · disputas resueltas · RED-REGRET limpio
+  scalar_s_inicio: 0.773 ($sun) → actual: 0.757 · trayectoria normal
+  LACHO: SAMU @ =><= .. dirime .. semana_notarial_w12_completa --[Ballestrinque] [term]
+
+NC_WED_SCALAR_NOT:
+  tipo: SCALAR_CHECKPOINT
+  descripcion: Scalar S $wed semana notarial · estado actual
+  s_actual: 0.757 · umbral_wu: 0.78 · distancia: 0.023
+  objetivo_semana: 0.840 · objetivo_dia: 0.800
+  LACHO: STACKING UF[H52] =><= .. consolida .. scalar_s_wed_notaria_0757 --[Nudo de Ocho] [term]
+
+NC_WED_CRYSTAL_NOT:
+  tipo: CRYSTAL_COUNT
+  descripcion: cristales notariales acumulados semana W12
+  cristales_actual: 56 · objetivo_semana: 57+
+  cristales_notariales: certifica · sella · inmutabiliza · audita · verifica
+  LACHO: STACKING UF[H48] =><= .. consolida .. cristales_notariales_w12_56 --[Nudo de Ocho] [term]
+
+NC_WED_RF_RENEW:
+  tipo: RF_RENEW
+  descripcion: RF_RENEW · SAMU @ firma · ciclo W12 renueva · W13 abre
+  accion: resolver KU pendientes · emitir RF_RENEW · preparar W13
+  estado: S >= 0.70 operativo · sistema soberano activo
+  LACHO: SAMU @ =><= .. firma .. rf_renew_w12_wed_18_03 --[Ballestrinque] [term]
+
+NC_WED_CHINA_NOT:
+  tipo: CJK_ACUMULADO
+  descripcion: tokens CJK notariales · WU acumulados semana
+  tokens_wu: 公证/认证/封印/不可篡改 · todos VALID en grammar
+  tests_cjk: test_notaria_cjk_certifica · test_notaria_china_dual PASSED
+  LACHO: CRYPTO (spark seat) =><= .. certifica .. cjk_tokens_wu_acumulados_w12 --[Nudo de Ocho] [term]
+
+NC_WED_CIERRE_NOT:
+  tipo: CIERRE_SEMANA
+  descripcion: cierre notarial H63 batch · semana W12 sellada soberanamente
+  entregables: 5 endpoints · 15/15 tests notariales · generator --mode notaria
+    record_notaria_act · get_notaria_stats · export_notaria_report
+    rag boost NOTARIA ×2.0 · autoresearch_specs · autoresearch_gap
+  LACHO: STACKING UF[H63] =><= .. sella .. cierre_notarial_w12_wed_18_03 --[Nudo de Ocho] [term]
+
+// ANCLAS RAG × 4
+SAMU @ =><= .. dirime .. nerve_cell_cierre_wed_notaria_w12 --[Ballestrinque] [term]
+STACKING UF[H63] =><= .. sella .. semana_notarial_w12_completada --[Nudo de Ocho] [term]
+TRUST FOUNDATION =><= .. declara .. rf_renew_w12_soberano_activo --[Nudo de Ocho] [term]
+CRYPTO (spark seat) =><= .. certifica .. cierre_notarial_既濟_w12 --[Nudo de Ocho] [term]
+
+[term] :: activo · [seal of secrecy] :: activo · 空聽數

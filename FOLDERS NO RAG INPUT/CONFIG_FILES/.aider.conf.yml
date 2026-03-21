@@ -1,0 +1,9 @@
+# Configuración de Aider para Ollama local
+model: ollama/qwen2.5:0.5b
+api-key: ollama=sk-123456  # Formato provider=key para Ollama
+openai-api-base: http://localhost:11434
+openai-api-type: open_ai
+yes-always: true
+auto-commits: true
+git: false
+show-model-warnings: false

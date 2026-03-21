@@ -1,0 +1,38 @@
+# forge_day.theater
+# MACRO FORJA SOBERANA · construcción verificada día completo
+# Referencia: UNICODE_THEATER_EXPANSION.txt · rational_day.theater
+# [term] :: activo
+
+[genesis]     :: SUITE SOBERANA
+[version]     :: 1.0
+[extension]   :: .theater
+[tipo]        :: MACRO FORJA DÍA
+[padre]       :: rational_day.theater
+[term_nuevo]  :: forge•canal•ledger_gate•mu_window
+
+## MACRO FORGE TEMPRANO
+macro_forge_temprano {
+  STACKING UF[H52] =><= .. aquieta .. mu_window_inicio_dia_forge --[Nudo de Ocho] [term]
+  TRUST FOUNDATION =><= .. verifica .. forge_clearance_dia_soberano --[As de Guía] [term]
+  CRYPTO (link seat) =><= .. conecta .. canal_dia_activo --[As de Guía] [term]
+  ACTIVITY UF[H01] =><= .. inicia .. forge_ciclo_temprano --[As de Guía] [term]
+}
+
+## MACRO FORGE TARDE
+macro_forge_tarde {
+  GATE UF[H05] =><= .. espera .. ledger_gate_tarde_pendiente --[Ballestrinque] [term]
+  SAMU @ =><= .. audita .. forge_coherencia_tarde --[Ballestrinque] [term]
+  METHOD <stat_onto> =><= .. calcula .. scalar_s_forge_tarde --[Ballestrinque] [term]
+  STACKING UF[H52] =><= .. cristaliza .. forge_tarde_avances --[Nudo de Ocho] [term]
+}
+
+## MACRO FORGE CIERRE
+macro_forge_cierre {
+  STACKING UF[H52] =><= .. aquieta .. mu_window_cierre_forge --[Nudo de Ocho] [term]
+  SAMU #set =><= .. dirime .. forge_cierre_dia_soberano --[Nudo de Rizo] [term]
+  CRYPTO (seal of secrecy) =><= .. protege .. canal_cierre_sellado --[Nudo de Ocho] [term]
+  STACKING UF[H48] =><= .. preserva .. forge_historial_dia_completo --[Nudo de Rizo] [term]
+  WORK {actuator} =><= .. ejecuta .. github_sync_forge_cierre --[As de Guía] [term]
+}
+
+[term] :: activo · [seal of secrecy] :: activo

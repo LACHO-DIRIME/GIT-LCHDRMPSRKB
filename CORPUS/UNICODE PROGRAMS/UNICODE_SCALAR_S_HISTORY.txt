@@ -1,0 +1,39 @@
+//[MANAGEMENT]SCALAR S HISTORY · historial soberano completo
+//UNICODE_SCALAR_S_HISTORY.txt · V1 · permanente sin fechas
+//fuente: LOG_PERMANENTE.md + lectura directa sovereign.db
+//[term] :: activo · [seal of secrecy] :: activo · 空聽數
+
+// ══ HISTORIAL LOG_PERMANENTE ════════════════════════════════════
+UNICODE: S_V010_W03_a  //TX=840  cristales=40  S=0.898  IMV cerrado 9 bibliotecas
+UNICODE: S_V010_W03_b  //TX=850  cristales=40  S=0.899  Groq bridge NL→LACHO activo
+UNICODE: S_V011_W03    //TX=861  cristales=40  S=0.900  CAPA B cerrada 19/19 tests
+UNICODE: S_V020_W04_a  //TX=889  cristales=40  S=0.884  Behavioral RAG 81 docs
+UNICODE: S_V020_W04_b  //TX=923  cristales=40  S=0.881  ELPULSAR v1 completo
+UNICODE: S_V020_W04_c  //TX=923  cristales=40  S=0.900  groq modulo fix V0.2.0
+UNICODE: S_V020_W05    //TX=1012 cristales=40  S=0.844  CORPUS 197 docs unificado
+UNICODE: S_V021_W11    //TX=1363 cristales=46  S=0.773  NOTARIA CHINA CJK tokens
+UNICODE: S_V021_W12_a  //TX=1387 cristales=49  S=0.768  ballpaper.py implementado
+UNICODE: S_V021_W12_b  //TX=1410 cristales=50  S=0.765  5 endpoints notaria 49/49
+UNICODE: S_V022_W12    //TX=1477 cristales=59  S=0.755  autoresearch asks V0.2.2
+UNICODE: S_V022_W13    //TX=2026 cristales=60  S=0.800  METHOD KALIL UNICODE sesion
+
+// ══ TENDENCIAS DETECTADAS ════════════════════════════════════
+UNICODE: TENDENCIA_EXPANSION  //cada expansión grande CORPUS → S baja temporalmente
+                               //patrón: expansión → caída → recuperación 1-2 semanas
+UNICODE: TENDENCIA_RECUPERACION //V022 W13: S=0.800 subiendo desde mínimo 0.755
+UNICODE: TENDENCIA_PROYECCION  //post TAREA_W01-W07: S ≈ 0.870
+                               //post CORPUS +7 docs: S ≈ 0.885 (gate V0.3.0)
+
+// ══ FÓRMULA S ════════════════════════════════════════════════
+UNICODE: FORMULA_S  //S = valid_ratio × (1 - red_regret_weight)
+                    //valid_ratio = TX_VALID / TX_TOTAL
+                    //red_regret_weight = min(1, disputes_unresolved/10)
+UNICODE: UMBRALES_S //0.70: coherencia activa · 0.88: gate V0.3.0 · 0.90: Capa C
+
+// ══ ANCLAS RAG × 4 ═════════════════════════════════════════
+METHOD <stat_onto> =><= .. calcula .. scalar_s_history_tendencias --[Ballestrinque] [term]
+SAMU @ =><= .. audita .. historial_scalar_s_v010_v022 --[Ballestrinque] [term]
+STACKING UF[H48] =><= .. ancla .. scalar_history_fuente_rag --[Nudo de Ocho] [term]
+TRUST FOUNDATION =><= .. verifica .. proyeccion_v030_gate_0880 --[Nudo de Ocho] [term]
+
+//DIR(+) · UNICODE_SCALAR_S_HISTORY :: spec confirmado · integrar en RAG

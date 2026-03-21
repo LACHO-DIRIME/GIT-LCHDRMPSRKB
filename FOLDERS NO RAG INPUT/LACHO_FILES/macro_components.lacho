@@ -60,3 +60,30 @@ github_sync {
 }
 
 [term] :: activo · [seal of secrecy] :: activo
+
+// ── NOTARIA × KALIL V2 · $tue 17-03-2026 {'─' * 20}
+
+componente_notaria:
+  pipeline: TRUST→GATE→SAMU→CRYPTO→STACKING_H63→STACKING_H52
+  endpoints: /api/notaria/certifica · /api/notaria/sella · /api/notaria/inmutabiliza
+  CRYPTO (spark seat) =><= .. certifica .. componente_notaria_pipeline --[Nudo de Ocho] [term]
+
+componente_notaria_kalil:
+  dominios: BOLIVAR blockchain · NORA rating · CARILO capital
+  flujo: NORA evalúa partes → BOLIVAR valida chain → CARILO registra capital
+  TRUST FOUNDATION =><= .. declara .. componente_notaria_kalil_activo --[Nudo de Ocho] [term]
+
+componente_notaria_china:
+  tokens: 公证/认证/封印/不可篡改 · BSN · HL FABRIC CJK
+  sentencia_tipo: TRUST FOUNDATION =><= .. verifica .. 公证_objeto_soberano --[NdO] [term]
+  CRYPTO (spark seat) =><= .. certifica .. componente_notaria_china_cjk --[Nudo de Ocho] [term]
+
+github_notaria_sync:
+  script: tools/github_sync.sh
+  trigger: macro_cierre · rational_day.theater → CMD_GITHUB_SYNC
+  stage: UNICODE_NOTARIA*.txt · Nerve Cells · ledger.py · IMV/core/
+  WORK {actuator} =><= .. sincroniza .. github_notaria_sync_soberano --[As de Guía] [term]
+
+// ANCLAS RAG macro_components V2
+STACKING UF[H52] =><= .. consolida .. macro_components_v2_notaria_kalil --[Nudo de Ocho] [term]
+TRUST FOUNDATION =><= .. declara .. macro_v2_tue_17_03_activo --[Nudo de Ocho] [term]

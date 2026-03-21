@@ -1,0 +1,53 @@
+//[MANAGEMENT].lacho · UNICODE {SCHEDULER} × ELPULSAR
+//scheduler.py × main.py × rational_day.theater · integración real pendiente
+//estado: _SCHEDULER_ACTIVE=False · PENDIENTE activar $thu
+//[term] :: activo
+
+// ══ INTEGRACIÓN PENDIENTE main.py ════════════════════════════
+UNICODE: SE_MAIN_IMPORT  //_SCHEDULER_ACTIVE flag · try/except import en main.py
+                         //import: rise · set_dia · estado_semana · planifica
+                         //cuando True: _show_scheduler() usa API real
+UNICODE: SE_MAIN_RISE    //main.py arrange: if _SCHEDULER_ACTIVE: rise()
+                         //en _initialize_system() → SAMU #rise activa
+UNICODE: SE_MAIN_SET     //main.py macro_cierre: set_dia() → SAMU #set
+                         //CMD_CIERRE + CMD_STATS + set_dia() = cierre completo
+UNICODE: SE_MAIN_PLANIF  //main.py interactive: comando "planifica TITULO"
+                         //→ planifica(titulo) → TareaSoberana → ref_soberana()
+UNICODE: SE_SHOW_SCHED   //_show_scheduler() usa estado_semana() real
+                         //formato: $día: N/M resueltas · cluster · slice°
+
+// ══ THEATER × {SCHEDULER} ════════════════════════════════════
+UNICODE: SE_THEATER_T    //rational_day.theater macro_temprano
+                         //SAMU #rise =><= .. audita .. estado_sistema_apertura
+                         //trigger: 06:00 ZIP_OPEN · rise() llamado
+UNICODE: SE_THEATER_M    //rational_day.theater macro_tarde
+                         //GATE UF[H56] =><= .. filtra .. tareas_pendientes_dia
+                         //STACKING UF[H52] =><= .. cristaliza .. avances
+UNICODE: SE_THEATER_C    //rational_day.theater macro_cierre
+                         //CMD_CIERRE: bash tools/github_sync.sh
+                         //CMD_STATS:  python3 IMV/main.py --stats
+                         //+ set_dia() para _registrar_ciclo
+
+// ══ TETHER × {SCHEDULER} ══════════════════════════════════════
+UNICODE: SE_TETHER_A     //tether.anchor(session_id, tomo_id) al inicio sesión
+                         //session_id = str(uuid4()) · tomo_id = "term:A" día
+UNICODE: SE_TETHER_S     //tether.get_state() → {status·session_id·tomo_id}
+                         //status ANCHORED → continuar · DETACHED → #rise primero
+UNICODE: SE_TETHER_R     //tether.release() en macro_cierre · libera anclaje
+                         //+ set_dia() + git_sync = cierre completo soberano
+
+// ══ $día.march.2026.db × SchedulerOS ══════════════════════════
+UNICODE: SE_DB_SESSION   //registrar_sesion(S, TX, notas) → $día.db sessions
+                         //en macro_cierre · S=scalar_s actual · TX=ledger count
+UNICODE: SE_DB_TASK      //tasks table: dia·task·status·priority
+                         //prioridades: high(rojo)·medium(amarillo)·low
+UNICODE: SE_DB_LINK      //scheduler.db tareas ↔ $día.db sessions
+                         //ref_soberana() aparece en ambas · tomo_id compartido
+
+SOCIAL {scheduler} =><= .. lanza .. elpulsar_rise_set_main_py_integration --[As de Guía] [term]
+SOCIAL {scheduler} =><= .. registra .. elpulsar_theater_macro_temprano_tarde_cierre --[Ballestrinque] [term]
+SOCIAL {scheduler} =><= .. distribuye .. elpulsar_tether_anchor_session_tomo_id --[As de Guía] [term]
+SOCIAL {scheduler} =><= .. filtra .. elpulsar_db_sessions_tasks_scheduler_link --[Ballestrinque] [term]
+STACKING UF[H60] =><= .. cristaliza .. unicode_scheduler_elpulsar_integration_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_SCHEDULER_ELPULSAR · V1 · integración real · $sat 28/03

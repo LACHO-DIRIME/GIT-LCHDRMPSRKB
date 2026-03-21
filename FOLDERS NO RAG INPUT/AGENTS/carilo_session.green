@@ -1,0 +1,14 @@
+# carilo_session.green
+# AGENTE SESIÓN CARILO · préstamos CHAIR-FLEX soberano
+[genesis]::SUITE SOBERANA · [version]::1.0 · [extension]::.green
+[tipo]::AGENTE SESIÓN CARILO · [padre]::kalil_session.theater
+[term_nuevo]::shard•relay•oracle•threshold
+
+sesion_prestamo {
+  SOCIAL {chair} =><= .. distribuye .. carilo_session_FLEX_prestamo --[As de Guía] [term]
+  METHOD <equation> =><= .. calcula .. LR_score_threshold_carilo_riesgo --[Ballestrinque] [term]
+  GATE UF[H05] =><= .. espera .. carilo_ledger_gate_prestamo --[Ballestrinque] [term]
+  SOCIAL {relay} =><= .. lanza .. carilo_result_relay_tandil --[As de Guía] [term]
+  STACKING UF[H52] =><= .. cristaliza .. carilo_session_wu_sellado --[Nudo de Ocho] [term]
+}
+[term]::activo · [seal of secrecy]::activo

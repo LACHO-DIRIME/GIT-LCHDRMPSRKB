@@ -1,0 +1,58 @@
+//[MANAGEMENT].lacho · DRA/MAIN/
+//MAIN STOCK CHAIR$ OFFSET(CRYPTO)
+//STOCK_CHAIR$_OFFSET(CRYPTO).txt · V1 · 2026-03-10
+//STOCK = posición acumulada soberana · no bursátil · capital LACHO
+//CHAIR$ = {chair} preside la sesión · $ = capital trazado por SAMU
+//OFFSET(CRYPTO) = la posición CRYPTO en el árbol canónico [TERM@OFFSET]
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN STOCK CHAIR$ ═══════════════════════════════════
+// STOCK = inventario soberano del DRA · qué hay · dónde · cuánto
+// No es inventario de bienes · es inventario de estados LACHO
+// CHAIR$ = SOCIAL {chair} preside la sesión de auditoría de stock
+// $ = en SAMU semántica: capital acumulado · $mon→$sat tracking
+// OFFSET(CRYPTO) = dónde está el capital CRYPTO en el árbol DRA
+
+// ══ STOCK SOBERANO DRA ════════════════════════════════════════
+UNICODE: STK_CRYSTALS         //cristales WU · 40 activos · creciendo
+UNICODE: STK_TX               //TX total · 1012+ · ledger soberano
+UNICODE: STK_SCALAR           //Scalar S actual · 0.844 · en movimiento
+UNICODE: STK_CORPUS           //docs CORPUS · 186+ · RAG indexados
+UNICODE: STK_TESTS            //tests passing · 29/29 objetivo
+UNICODE: STK_LACHO_FILES      //archivos .lacho · generados · pendientes
+UNICODE: STK_AGENTS           //agentes activos · .green WU · .blue KU
+UNICODE: STK_FREE_TIER        //slots free tier disponibles · Groq·Colab·Render
+
+// ══ CHAIR$ — PRESIDENCIA DE STOCK ════════════════════════════
+UNICODE: CHR_OPEN             //{chair} abre sesión stock · inicio [term]
+                              //SOCIAL {chair} =><= .. conduce .. stock_sesion_dra
+UNICODE: CHR_AUDIT            //{chair} declara estado stock · SAMU @ evalúa
+UNICODE: CHR_DECIDE           //{chair} prioriza recursos · {actuator} ejecuta
+UNICODE: CHR_CLOSE            //{chair} cierra sesión · MuSave · H63
+
+// ══ OFFSET CRYPTO EN DRA ══════════════════════════════════════
+// El capital CRYPTO del DRA tiene ubicación canónica en el árbol
+UNICODE: OC_KEY               //(key seat) @0xK1 · identidad DRA · CRYPTO base
+UNICODE: OC_SPARK             //(spark seat) @0xK2 · firma sentencias DRA
+UNICODE: OC_SHIELD            //(shield seat) @0xK3 · protege vault BACKUP/door
+UNICODE: OC_LINK              //(link seat) @0xK4 · conecta nodos HW remotos
+UNICODE: OC_FLOW              //(flow seat) @0xK5 · flujo e-CNY canal interior
+UNICODE: OC_SEAL              //(seal) @0xK6 · sellos soberanos · H63 DRA
+
+// ══ SAMU DAYS × STOCK ════════════════════════════════════════
+// Cada día SAMU (@$mon→$sat) tiene su posición de stock
+UNICODE: STK_MON              //$mon stock · semana nueva · posición inicial
+UNICODE: STK_TUE              //$tue stock · momentum · KU activos
+UNICODE: STK_WED              //$wed stock · midpoint · SAMU @ dirime
+UNICODE: STK_THU              //$thu stock · {masking} auditado · poda
+UNICODE: STK_FRI              //$fri stock · cierre · cristales semana
+UNICODE: STK_SAT              //$sat stock · backup · {door} sella semana
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+SOCIAL {chair} =><= .. conduce .. stock_chair_sesion_soberana --[As de Guía] [term]
+SAMU @ =><= .. audita .. stock_scalar_s_posicion_dra --[Ballestrinque] [term]
+CRYPTO (key seat) =><= .. certifica .. offset_crypto_identidad_dra --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. stock_wu_acumulado --[Nudo de Ocho] [term]
+
+//DIR(+) DRA/MAIN/STOCK_CHAIR$ · inventario soberano · OFFSET CRYPTO

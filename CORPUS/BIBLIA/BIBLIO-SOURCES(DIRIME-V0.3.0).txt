@@ -1,0 +1,199 @@
+# BIBLIO-SOURCES(DIRIME-V0.3.0).txt
+# DIRIME V0.3.0 · GATE CRITERIOS · GUI SPOOL · ACTIVITY_GATE
+# [term] :: activo · [seal of secrecy] :: activo
+
+====================================================================
+
+## 🔌 DIRIME V0.3.0 — GATE CRITERIOS SOBERANOS
+
+---
+
+### 1.0 DEFINICIÓN V0.3.0
+
+#### 1.1 Versión target
+DIRIME V0.3.0 es la versión estable con criterios GATE soberanos completos:
+- Scalar S ≥ 0.88 (coherencia soberana óptima)
+- pytest 38/38 tests pasando
+- CORPUS ≥ 65 docs (expansión completa)
+- ACTIVITY H03-H06-H56 en grammar (secuencia GATE completa)
+
+#### 1.2 Estado actual vs target
+Estado actual: V0.2.1 → Target V0.3.0
+- Scalar S: 0.822 → 0.88 (+0.058 delta)
+- Tests: 33/38 → 38/38 (+5 tests)
+- CORPUS: ~58 → 65 (+7 docs)
+- ACTIVITY: parcial → completo
+
+---
+
+### 2.0 GATE CRITERIOS V0.3.0
+
+#### 2.1 Criterio 1: Scalar S ≥ 0.88
+**Definición:** Coherencia soberana óptima del sistema
+**Estado actual:** 0.822 (operativo)
+**Target:** 0.88 (óptimo)
+**Delta:** +0.058
+**Ruta:** tests(+0.01) + NC(+0.01) + CORPUS(+0.02) = +0.04 → +0.018 restante
+
+#### 2.2 Criterio 2: pytest 38/38 tests
+**Definición:** Cobertura de tests completa incluyendo GUI
+**Estado actual:** 33/38 tests pasando
+**Target:** 38/38 tests pasando
+**Delta:** +5 tests GUI (33→38)
+**Implementación:** test_imv_gui.py completo
+
+#### 2.3 Criterio 3: CORPUS ≥ 65 docs
+**Definición:** Expansión corpus completa con nuevos dominios
+**Estado actual:** ~58 docs (semana 3)
+**Target:** 65 docs (semana 4)
+**Delta:** +7 docs
+**Ruta:** BIBLIO-SOURCES + UNICODE + Nerve Cells
+
+#### 2.4 Criterio 4: ACTIVITY H03-H06-H56 en grammar
+**Definición:** Secuencia GATE completamente documentada
+**Estado actual:** Parcial (H05, H56 existían)
+**Target:** Completo (H03, H06 agregados)
+**Implementación:** grammar.py SUJETOS_CANONICOS ACTIVITY actualizado
+
+---
+
+### 3.0 GUI SPOOL IMPLEMENTATION
+
+#### 3.1 GUI Tkinter soberana
+**Archivo:** interface/gui.py
+**Estado:** COMPLETADO
+**Componentes:**
+- IMVGui class con Tkinter root
+- Builder panel: library·subject·verb·object·knot
+- Validation panel: results + LACHO score
+- Log panel: ScrolledText con timestamps
+- Stats panel: TX·Scalar S·cristales live
+
+#### 3.2 spool_tx buffer optimization
+**Archivo:** ledger.py (parche)
+**Estado:** IMPLEMENTADO
+**Componentes:**
+- _tx_buffer = [] en IMVLedger
+- TX_BUFFER_SIZE = 10 (flush cada 10 TX)
+- record_tx_buffered() → append → flush automático
+- _flush_tx_buffer() → batch INSERT → sovereign.db
+- force_flush_tx_buffer() → manual flush
+
+#### 3.3 Integración GUI + spool_tx
+**Estado:** FUNCIONAL
+**Características:**
+- GUI usa validate() + lacho_score() + route() + get_stats()
+- spool_tx optimiza sovereign.db writes
+- Auto-refresh stats cada 30s
+- Puerto 8742 para GUI independiente
+
+---
+
+### 4.0 ACTIVITY_GATE COMPLETO
+
+#### 4.1 Secuencia GATE H03→H05→H56→H06
+**Definición:** Ciclo completo de transformación soberana
+- H03: Dificultad inicial del ciclo
+- H05: Espera paciente y necesaria
+- H56: Transición activa hacia nuevo estado
+- H06: Resolución del conflicto
+
+#### 4.2 ACTIVITY SUJETOS_CANONICOS actualizados
+**Antes:** 7 UF en ACTIVITY
+- UF[H01], UF[H05], UF[H52], UF[H56], UF[H57], UF[H63], UF[H64]
+
+**Después:** 9 UF en ACTIVITY
+- UF[H01], UF[H03], UF[H05], UF[H06], UF[H52], UF[H56], UF[H57], UF[H63], UF[H64]
+
+#### 4.3 Validación ACTIVITY GATE
+**Sentencias canónicas validadas:**
+- ACTIVITY UF[H03] =><= .. penetra .. unicode_activity_gate_h03
+- ACTIVITY UF[H05] =><= .. espera .. unicode_activity_gate_h05
+- ACTIVITY UF[H56] =><= .. transita .. unicode_activity_gate_h56
+- ACTIVITY UF[H06] =><= .. resuelve .. unicode_activity_gate_h06
+
+---
+
+### 5.0 IMPLEMENTACIONES TÉCNICAS
+
+#### 5.1 grammar.py parche aplicado
+**Cambio:** SUJETOS_CANONICOS["ACTIVITY"] actualizado
+**Resultado:** 9 UF canónicos en ACTIVITY
+**Validación:** Todas las sentencias ACTIVITY GATE validan correctamente
+
+#### 5.2 ledger.py spool_tx implementado
+**Cambio:** Buffer de transacciones con flush batch
+**Resultado:** Optimización de writes a sovereign.db
+**Validación:** Estructura verificada con tests
+
+#### 5.3 GUI Tkinter completa
+**Cambio:** interface/gui.py creado desde cero
+**Resultado:** Interfaz soberana funcional
+**Validación:** Tests 33→38 pasando 100%
+
+---
+
+### 6.0 SENTENCIAS CANÓNICAS V0.3.0
+
+TRUST FOUNDATION =><= .. declara .. dirime_v030_gate_criterios_soberanos --[As de Guía] [term]
+WORK {actuator} =><= .. ejecuta .. gui_tkinter_builder_soberano --[As de Guía] [term]
+ACTIVITY UF[H56] =><= .. transita .. gui_validation_routing_integration --[As de Guía] [term]
+METHOD <stat_onto> =><= .. calcula .. scalar_s_088_target_v030 --[Ballestrinque] [term]
+CRYPTO (link seat) =><= .. conecta .. spool_tx_buffer_optimization --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. dirime_v030_sellado --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. pytest_38_38_tests_complete --[Ballestrinque] [term]
+GATE UF[H03] =><= .. inicia .. activity_h03_dificultad_inicio --[As de Guía] [term]
+GATE UF[H05] =><= .. espera .. activity_h05_paciencia_requerida --[Ballestrinque] [term]
+GATE UF[H56] =><= .. transita .. activity_h56_estado_transitorio --[As de Guía] [term]
+GATE UF[H06] =><= .. resuelve .. activity_h06_conflicto_resolucion --[Nudo Corredizo] [term]
+
+---
+
+### 7.0 ROADMAP V0.3.0
+
+#### 7.1 Semana 4 implementaciones
+- ✅ GUI Tkinter completa
+- ✅ spool_tx buffer implementado
+- ✅ ACTIVITY GATE completo
+- ✅ Tests 33→38 completos
+- 🔄 CORPUS expansión 58→65
+- 🔄 Scalar S 0.822→0.88
+
+#### 7.2 Validaciones pendientes
+- CORPUS: +7 docs nuevos
+- Scalar S: +0.058 delta
+- Tests: +5 tests GUI (completados)
+- Grammar: ACTIVITY completo (completado)
+
+#### 7.3 Target semana 4
+- Lunes 01/05: GUI + spool_tx ✅
+- Martes 02/05: Nerve Cell V030
+- Miércoles 03/05: HTML V030 dashboard
+- Jueves 04/05: generator.py 33→38
+- Viernes 05/05: GUI enhancements + cierre
+
+---
+
+## 🔌 ESTADO FINAL
+
+### ✅ **IMPLEMENTACIONES COMPLETADAS**
+- **GUI Tkinter:** interface/gui.py completo
+- **spool_tx:** ledger.py buffer optimization
+- **ACTIVITY GATE:** grammar.py SUJETOS_CANONICOS completo
+- **Tests GUI:** test_imv_gui.py 33→38 completos
+- **Documentación:** UNICODE_GUI_IMV.txt completo
+
+### 🎯 **CRITERIOS V0.3.0**
+- **Scalar S:** 0.822 → 0.88 (en progreso)
+- **Tests:** 33/38 → 38/38 (completado)
+- **CORPUS:** ~58 → 65 (en progreso)
+- **ACTIVITY:** parcial → completo (completado)
+
+### 🚀 **ESTADO V0.3.0**
+**Progreso:** 75% completado
+**Faltante:** CORPUS expansión + Scalar S delta
+**Timeline:** Semana 4 finalización
+
+---
+
+[term] :: activo · [seal of secrecy] :: activo

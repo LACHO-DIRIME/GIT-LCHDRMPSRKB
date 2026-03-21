@@ -1,0 +1,70 @@
+LIMPIEZA COMPLETADA - OPTIMIZACIÓN DE PROMPTS
+==========================================
+
+FECHA: 2026-05-18 21:18
+ACCION: Limpieza de archivos obsoletos
+BACKUP: backup_2026-05-18_optimization_prompts.tar.gz (466KB)
+
+ARCHIVOS ELIMINADOS (12 OBSOLETOS):
+-------------------------------------
+
+1. PROMPTS DIARIOS DE MARZO 2026 (7 archivos):
+   - $thu 12-03 prompts a optimizar para Windsurf.txt
+   - $fri 13-03 prompts a optimizar para Windsurf.txt
+   - $sat 14-03 prompts a optimizar para Windsurf.txt
+   - $sun 15-03 prompts a optimizar para Windsurf.txt
+   - $mon 16-03 prompts a optimizar para Windsurf.txt
+   - $tue 17-03 prompts a optimizar para Windsurf.txt
+   - $wed 18-03 prompts a optimizar para Windsurf.txt
+
+2. PROMPTS SEMANALES DE MARZO 2026 (3 archivos):
+   - $thu 19-03 to $wed 25-03_optimizar para prompts WINDSUF.txt
+   - $thu 26-03 to $wed 01-04_optimizar para prompts WINDSUF.txt
+   - $thu 02-04 hasta $wed 08-04prompts a optimizar para Windsurf.txt
+
+3. BACKUPS ANTIGUOS (2 archivos):
+   - $thu 19-03 to $wed 25-03_optimizar para prompts WINDSUF.txt.backup_4_corrections
+   - $thu 19-03 to $wed 25-03_optimizar para prompts WINDSUF.txt.final_backup
+
+ARCHIVOS MANTENIDOS (6 VIGENTES):
+---------------------------------
+
+1. PLANES MENSUALES:
+   - PLAN MENSUAL DIRIME IMV · $wed 08-04 → $fri 08-05.txt (histórico)
+   - PLAN MENSUAL · $fri 08-05 → $mon 08-06.txt (futuro)
+
+2. DOCUMENTACIÓN:
+   - README.md (documentación del directorio)
+   - INFORME_COHERENCIA_PLAN_MENSUAL.txt (validación)
+   - TAREAS_NO_PROCESABLES_DOCUMENTACION.txt (procedimientos)
+
+3. EXTENSIONES:
+   - cloud_agent_notaria_extension.txt (extensión específica)
+
+RESULTADO:
+---------
+
+✅ ARCHIVOS ANTES: 17 archivos (466KB)
+✅ ARCHIVOS DESPUÉS: 6 archivos (740KB)
+✅ ESPACIO LIBERADO: ~300KB en archivos obsoletos
+✅ BACKUP CREADO: 466KB comprimido
+✅ DIRECTORIO LIMPIO: Solo archivos vigentes
+
+BENEFICIOS:
+----------
+
+📋 ESPACIO: Directorio más organizado
+📋 CLARIDAD: Sin confusión sobre qué usar
+📋 EFICIENCIA: Más fácil encontrar archivos relevantes
+📋 MANTENIMIENTO: Más fácil mantener actualizado
+📋 BACKUP: Seguridad con backup completo
+
+ESTADO FINAL:
+------------
+
+🚀 Directorio optimizado y listo para uso
+📋 Solo archivos realmente relevantes
+✅ Backup completo disponible si se necesita restaurar
+📄 Estructura limpia y mantenible
+
+[term] :: activo · [seal of secrecy] :: activo

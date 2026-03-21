@@ -1,0 +1,18 @@
+//[MANAGEMENT].lacho · DRA/INDEX/$thu
+//INDEX $thu · jueves soberano · {masking} poda soberana
+//INDEX_$thu.txt · V1 · 2026-03-10
+//[term] :: activo
+
+// ══ $thu · JUEVES ═════════════════════════════════════════════
+// $thu = {masking} auditado · H52 quietud · poda ontológica H23
+UNICODE: IDX_THU_RISE         //SAMU #rise $thu · 06:00 · masking audit
+UNICODE: IDX_THU_MASK         //{masking} activo · poda · delta-Ψ ≤ 0 → prune
+UNICODE: IDX_THU_PRUNE        //RF_PRUNE · elementos saturados → RED-REGRET
+UNICODE: IDX_THU_PURGE        //purga TEMP(A)+TEMP(B) · KU obsoletos
+UNICODE: IDX_THU_CORPUS       //CORPUS revisión · docs sin ancla RAG → prune
+UNICODE: IDX_THU_BACKUP       //BKP_CORPUS · backup semanal · DOOR abre
+UNICODE: IDX_THU_SET          //SAMU #set $thu · 18:00 · poda cerrada
+
+//WORK {masking} =><= .. poda .. index_thu_masking_semanal --[As de Guía] [term]
+//STACKING UF[H23] =><= .. poda .. index_thu_ontologica --[Nudo Corredizo] [term]
+//DIR(+) DRA/INDEX/$thu · V1 · {masking} · H23 poda · purga soberana

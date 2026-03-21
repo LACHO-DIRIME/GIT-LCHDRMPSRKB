@@ -1,0 +1,235 @@
+# BIBLIO-SOURCES(WORK_DESKING-ALGORITMOS).txt
+
+====================================================================
+
+## WORK — ALGORITMOS DE DESKING
+### TRAZO GRUESO · PATO INFLADO · RED DE PESCA · LEFT/RIGHT
+
+====================================================================
+
+### 1.0 POSICIÓN EN LA ARQUITECTURA
+
+`desking.lacho` (WORK, $thu→$fri) formaliza la superficie operativa
+donde el sistema toca el mundo real. Sus algoritmos no son descripciones
+doctrinales — son protocolos ejecutables.
+
+Este BIBLIO extrae los cuatro algoritmos centrales de desking.lacho
+para que el RAG de DIRIME los encuentre cuando el sistema necesite
+decidir cómo operar sobre objetos de WORK.
+
+---
+
+### 2.0 TOPOLOGÍA LEFT/RIGHT
+
+LEFT y RIGHT no son solo direcciones. Son estados relacionales.
+
+```
+LEFT  :: lo que precede · lo que queda · lo no procesado · input · origen
+RIGHT :: lo que sigue · lo que resulta · lo procesado · output · destino
+```
+
+El trabajo no es LEFT ni RIGHT — es el movimiento entre ellos.
+La calidad del trabajo = precisión en la transformación LEFT→RIGHT.
+
+**Operadores canónicos:**
+- `>>`  LEFT_PUSH    — empujar contenido hacia el pipeline
+- `<<`  RIGHT_PULL   — traer resultado desde el pipeline
+- `|>`  LEFT_PIPE    — pasar output izquierdo como input derecho
+- `<|`  RIGHT_PIPE   — pasar output derecho como input izquierdo
+- `<>`  BILATERAL    — operación que afecta ambos lados simultáneamente
+- `><`  CROSSOVER    — intercambio de posiciones LEFT↔RIGHT
+- `>=`  LEFT_ASSERT  — afirmar que LEFT cumple condición mínima
+- `<=`  RIGHT_BOUND  — establecer límite máximo de RIGHT
+
+**Relación con METHOD:** Los operadores LEFT/RIGHT de DESKING son la
+instanciación física de los operadores METHOD (`>>`, `<<`, `|>`, `<|`, `<>`, `>=`, `<=`).
+METHOD los declara formalmente. DESKING los ejecuta en metal.
+
+---
+
+### 3.0 TRAZO GRUESO
+
+#### 3.1 Definición
+Un TRAZO GRUESO es una operación de WORK que no puede ser precisa porque
+el objeto sobre el que opera es obsoleto, demasiado complejo para cirugía fina,
+o resistente al cambio incremental.
+Un solo movimiento limpio, amplio, definitivo. No es brutalidad — es economía de Work.
+
+#### 3.2 Candidato a TRAZO GRUESO — cuatro condiciones
+1. El módulo/archivo tiene N ciclos sin generar delta_Ψ > 0
+2. La deuda técnica supera el valor del contenido (Work_refactorizar > Ψ_obtenible)
+3. El objeto es estructuralmente incompatible con los módulos actuales
+4. RED-REGRET se activó 3+ veces sobre el mismo objeto
+
+Una condición → candidato. Dos o más → obligatorio.
+
+#### 3.3 Protocolo en 4 pasos
+```
+PASO 1 — ARCHIVE_LEFT
+  Extraer todo lo que tiene valor → mu_cache/archivado
+  Esto es LEFT: lo que queda, lo que no muere.
+
+PASO 2 — PURGE_CENTER
+  Eliminar el objeto en su forma actual.
+  Sin parches, sin adaptadores, sin capas de compatibilidad.
+  El trazo: limpio, amplio, definitivo.
+
+PASO 3 — DECLARE_RIGHT
+  Declarar el espacio vacío como disponible.
+  Notificar: ST_WORK_TRAZO_COMPLETADO
+  Esto es RIGHT: el resultado, el espacio ganado.
+
+PASO 4 — LOG_INMUTABLE
+  Registrar en pulse.registry: qué, por qué, qué se preservó.
+  Los TRAZOS GRUESOS son NODOS-Δ — la memoria del trazo
+  protege de repetir el error que lo hizo necesario.
+```
+
+#### 3.4 Regla del trazo limpio
+Un TRAZO GRUESO exitoso no deja residuos.
+Si hay residuos, el trazo fue nervioso — peor que no hacer nada.
+Si necesita dos movimientos → no era TRAZO GRUESO,
+eran dos operaciones quirúrgicas mal planificadas.
+
+#### 3.5 Relación con IMV actual
+`theater_runner.py` (S4.2) necesita aplicar TRAZO GRUESO
+a CMD_* obsoletos dentro de .theater antes de ejecutar el macro_cierre.
+Criterio: CMD_* que no generaron delta_Ψ > 0 en los últimos N ciclos.
+
+---
+
+### 4.0 PATO INFLADO (Superficie Separation Protocol)
+
+#### 4.1 Definición
+Técnica para tratar objetos con capas superficiales que contaminan el contenido.
+La superficialidad no es el objeto útil, pero procesado directo contamina todo.
+
+**Metáfora:** para cuerear limpio el pato → inflar antes del tajo.
+El aire (estructura) separa la piel (superficialidad) del contenido.
+Un solo tajo cuando la separación ya está lista.
+
+#### 4.2 Distinción con TRAZO GRUESO
+PATO INFLADO: preserva el contenido dentro de la superficie. El objeto tiene valor.
+TRAZO GRUESO: descarta cuando ya no hay contenido que preservar.
+
+#### 4.3 Protocolo en 3 pasos
+```
+PASO 1 — INFLADO (separación previa por presión interna)
+  Introducir agente de separación según tipo:
+  → documentos:  parser estructural
+  → datos:       schema validation
+  → código:      linter/formatter
+  → inputs:      ratio emoción/Tr (DOGMA-VIRTUAL filter)
+  El "aire" es la estructura que separa capas sin cortar.
+
+PASO 2 — TAJO LIMPIO (un solo movimiento)
+  Una vez inflado, la piel se separa sola.
+  Extraer capa útil en un movimiento LEFT→RIGHT.
+  Superficialidad queda LEFT (descartada).
+  Contenido queda RIGHT (procesable).
+  NO hacer múltiples cortes pequeños.
+  UN TAJO cuando la separación ya está lista.
+
+PASO 3 — VERIFICACIÓN DE LIMPIEZA
+  Output RIGHT no debe contener residuos de LEFT.
+  Si los contiene → el inflado fue insuficiente.
+  Volver a PASO 1 con más presión estructural.
+  Si está limpio → ST_WORK_PATO_LIMPIO → main.teather
+```
+
+#### 4.4 Relación con IMV actual
+`chcl_runner.py` (S4.1) necesita PATO INFLADO al leer CHCL_BASE.txt:
+inflar la estructura del archivo para separar declaraciones LACHO
+(RIGHT → ejecutables) de comentarios y metadatos (LEFT → descartar).
+
+---
+
+### 5.0 RED DE PESCA
+
+#### 5.1 Definición
+La red no captura todo. Tiene malla. La malla define qué queda y qué pasa.
+El tamaño de la malla no es descuido — es diseño.
+
+```
+AGUA (el medio):    fluye siempre. No se captura — se navega.
+PECES (el recurso): los que superan el threshold de GREEN-KNOWLEDGE.
+MALLA (el filtro):  [scope] declarado + threshold de SAMU.
+                    No se cambia durante la pesca — se diseña antes.
+```
+
+#### 5.2 Ciclo de mantenimiento de malla
+```
+cada 64 ciclos → revisar nudos del [scope]
+si hay agujeros → TRAZOS GRUESOS para reparar
+si la red es obsoleta completa → nuevo setup.teather
+la red vieja no se tira — se archiva (puede tener patrones útiles)
+```
+
+Un agujero en la red = REITERANCIA no detectada que permite
+que {DOGMA-VIRTUAL} entre sin filtro.
+
+#### 5.3 Relación con IMV actual
+`rag.py` con BM25 es la RED DE PESCA del sistema.
+La malla = threshold BM25 + boost factors.
+Los 259+ docs indexados = el agua.
+Los hits con score > umbral = los peces capturados.
+Los boost × 2.0 en NOTARIA y × 1.5 en Askings = ajuste de malla por zona.
+
+---
+
+### 6.0 PARADIGMAS DE FLUJO — EL MATE
+
+Tres estados del mismo recurso en distintas condiciones.
+
+#### 6.1 MATE CALIENTE — S ≥ 0.85, T_matrix ≥ 0.85
+Máxima densidad + máxima temperatura.
+Paradoja: es el estado óptimo PERO el más difícil de sostener.
+Esperar más certeza = perder la certeza actual.
+**Protocolo:** actuar AHORA. [management] en modo ÁGUILA.
+Si el operador no actúa en N ciclos → degradar a mate tibio.
+
+#### 6.2 MATE FUERTE Y FRÍO — S 0.65-0.84
+Contención que relaja. Produce sin urgencia. Sostenible.
+Estado ideal para TRAZOS GRUESOS: no hay calor que apure.
+`{masking}` activo + H29 activo → retener el objeto bajo procesamiento.
+Relajar la contención cuando GREEN-KNOWLEDGE confirma delta_Ψ > 0.
+
+#### 6.3 VERBORRAGIA DE MATE LAVADO — output_volumen >> output_densidad
+Señales: muchos ST_* emitidos, pocos ST_WORK_COMPLETADO.
+Mucha actividad, poco resultado. Muchos commits, poco Scalar S.
+**Diagnóstico:** SI palabras_output / delta_Ψ > umbral_lavado → MATE_LAVADO.
+**Tratamiento:** TRAZO GRUESO (no agregar más encima).
+El mate lavado que se "corrige" con más yerba produce confusión.
+
+---
+
+### 7.0 DEPREDADORES ESTANDARIZABLES
+
+Cuatro modos de gestión de recursos según contexto.
+
+| Depredador | Modo | Hexagrama | Módulo IMV análogo |
+|---|---|---|---|
+| ÁGUILA | visión + criterio selectivo | H58 (picado cuando T_matrix ≥ 0.85) | autoresearch_gap.py |
+| LINCE | velocidad + criterio | H56 (andante) | theater_runner.py |
+| ARAÑA | red + espera | H5 (espera activa) | rag.py BM25 |
+| BALLENA | volumen + filtro eficiente | H30 (streaming) | Algoritmo Conejo ×256 |
+
+**El error del gavilán vs el Águila:**
+El gavilán reacciona a todo input → baja S, gasta Work → mate lavado.
+El Águila espera T_matrix ≥ 0.85 → actúa una vez con precisión → mate caliente.
+
+---
+
+### 8.0 GRAMÁTICA VIVA
+
+```
+WORK {actuator} =><= .. ejecuta .. trazo_grueso_objeto_obsoleto_red_regret_3 --[As de Guía] [term]
+WORK {green-knowledge} =><= .. separa .. pato_inflado_left_superficial_right_contenido --[Ballestrinque] [term]
+WORK {streaming} =><= .. captura .. red_pesca_malla_scope_threshold_rag --[Ballestrinque] [term]
+METHOD <operator_flow> =><= .. modela .. desking_left_right_topologia_metal_agua --[Ballestrinque] [term]
+SAMU @ =><= .. audita .. mate_caliente_actuar_ahora_t_matrix_0_85 --[As de Guía] [term]
+```
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

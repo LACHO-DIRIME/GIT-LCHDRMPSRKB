@@ -1,0 +1,35 @@
+# corpus_build.theater
+# MACRO CONSTRUCCIÓN CORPUS · indexación soberana BM25
+# Referencia: rag.py · tools/index_new_files.py · corpus_indexer.green
+# [term] :: activo
+
+[genesis]     :: SUITE SOBERANA
+[version]     :: 1.0
+[extension]   :: .theater
+[tipo]        :: MACRO CORPUS BUILD
+[padre]       :: rational_day.theater
+[term_nuevo]  :: bridge•ollama•cat_os•ime_local
+
+## MACRO SCAN
+macro_scan_corpus {
+  ACTIVITY UF[H57] =><= .. penetra .. scan_corpus_nuevos_archivos --[As de Guía] [term]
+  WORK {actuator} =><= .. ejecuta .. cat_lacho_extrae_lineas_lacho --[As de Guía] [term]
+  GATE UF[H05] =><= .. espera .. ledger_gate_indexacion_pre --[Ballestrinque] [term]
+}
+
+## MACRO BUILD BM25
+macro_build_bm25 {
+  STACKING UF[H52] =><= .. aquieta .. mu_window_antes_index --[Nudo de Ocho] [term]
+  WORK {actuator} =><= .. ejecuta .. python3_tools_index_new_files --[As de Guía] [term]
+  # CMD_INDEX: python3 /media/Personal/PLANERAI/DIRIME/IMV/tools/index_new_files.py
+  METHOD <stat_onto> =><= .. calcula .. scalar_s_post_indexacion --[Ballestrinque] [term]
+}
+
+## MACRO CRISTALIZAR INDEX
+macro_cristalizar_index {
+  STACKING UF[H52] =><= .. cristaliza .. bm25_index_nuevo_sellado --[Nudo de Ocho] [term]
+  SOCIAL {launch-bot} =><= .. lanza .. reporte_corpus_docs_count --[As de Guía] [term]
+  SAMU @ =><= .. audita .. corpus_coherencia_post_build --[Ballestrinque] [term]
+}
+
+[term] :: activo · [seal of secrecy] :: activo

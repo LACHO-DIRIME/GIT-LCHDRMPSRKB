@@ -1,0 +1,14 @@
+# chalten_daemon.blue
+# AGENTE DAEMON CHALTEN · lending cloud 24h soberano
+[genesis]::SUITE SOBERANA · [version]::1.0 · [extension]::.blue
+[tipo]::AGENTE DAEMON CHALTEN · [padre]::forge_day.theater
+[term_nuevo]::shard•relay•oracle•threshold
+
+lending_daemon {
+  SOCIAL {streaming} =><= .. mantiene .. chalten_daemon_lending_24h --[As de Guía] [term]
+  WORK {actuator} =><= .. ejecuta .. chalten_cloud_spool_billing --[As de Guía] [term]
+  METHOD <stat_onto> =><= .. calcula .. oracle_chalten_cloud_drift --[Ballestrinque] [term]
+  SOCIAL {relay} =><= .. lanza .. chalten_spool_relay_tandil --[As de Guía] [term]
+  STACKING UF[H52] =><= .. cristaliza .. chalten_daemon_wu_sellado --[Nudo de Ocho] [term]
+}
+[term]::activo · [seal of secrecy]::activo

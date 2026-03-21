@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>METHOD Dashboard · DIRIME IMV</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:20px}
+.topbar{display:flex;align-items:center;gap:16px;border-bottom:2px solid #1a1a2e;
+        padding-bottom:12px;margin-bottom:24px}
+.topbar-logo{font-size:1.4rem;font-weight:bold;letter-spacing:2px}
+.topbar-state{font-size:.85rem;color:#555;border:1px solid #ccc;padding:3px 10px}
+.topbar-s{font-size:.85rem;font-weight:bold;color:#2a7a4f}
+.section-title{font-size:.75rem;letter-spacing:3px;text-transform:uppercase;
+               color:#888;margin:20px 0 12px}
+.ops-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:28px}
+.op-card{background:#f8f8f8;border:1px solid #e0e0e0;border-top:3px solid #1a1a2e;
+         padding:14px;cursor:pointer;transition:border-color .2s}
+.op-card:hover{border-color:#2a7a4f;background:#f0f7f3}
+.op-card.active{border-top-color:#2a7a4f;background:#f0f7f3}
+.op-sig{font-size:1.2rem;letter-spacing:2px;color:#1a1a2e;font-weight:bold}
+.op-name{font-size:.75rem;color:#555;margin:4px 0 8px}
+.op-bar{height:4px;background:#e0e0e0;border-radius:2px}
+.op-bar-fill{height:100%;background:#2a7a4f;border-radius:2px;transition:width .5s}
+.op-score{font-size:.65rem;color:#888;margin-top:4px}
+.neurons-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:28px}
+.neuron-card{background:#f8f8f8;border:1px solid #ddd;padding:14px}
+.n-label{font-size:.7rem;letter-spacing:2px;color:#888;text-transform:uppercase}
+.n-name{font-size:.9rem;font-weight:bold;color:#1a1a2e;margin:4px 0}
+.n-op{font-size:.75rem;color:#2a7a4f;font-family:'Courier New',monospace}
+.n-libsig{font-size:1rem;letter-spacing:3px;color:#444;margin:6px 0}
+.kalil-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.k-card{background:#f8f8f8;border:1px solid #ddd;padding:12px}
+.k-name{font-size:.8rem;font-weight:bold;letter-spacing:2px;color:#1a1a2e}
+.k-op{font-size:.72rem;color:#2a7a4f;font-family:'Courier New',monospace;margin:3px 0}
+.k-eq{font-size:.65rem;color:#888;font-style:italic;line-height:1.4}
+.footer{margin-top:28px;padding-top:12px;border-top:1px solid #e0e0e0;
+        font-size:.7rem;color:#aaa;display:flex;gap:20px}
+.scalar-main{display:flex;align-items:center;gap:12px;margin-bottom:24px;
+             padding:12px;border:1px solid #e0e0e0;background:#fafafa}
+.s-val{font-size:2rem;font-weight:bold;color:#2a7a4f}
+.s-bar-wrap{flex:1;height:8px;background:#e0e0e0;border-radius:4px}
+.s-bar-fill{height:100%;background:#2a7a4f;border-radius:4px;width:82.2%}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-logo">METHOD DASHBOARD</div>
+  <div class="topbar-state">ACTIVE</div>
+  <div class="topbar-s">S=0.822</div>
+</div>
+
+<div class="scalar-main">
+  <div class="s-val">0.822</div>
+  <div class="s-bar-wrap">
+    <div class="s-bar-fill"></div>
+  </div>
+  <div>Scalar S · METHOD</div>
+</div>
+
+<div class="section-title">5 OPERATORS METHOD</div>
+<div class="ops-grid">
+  <div class="op-card active">
+    <div class="op-sig">╭─∇─≈─</div>
+    <div class="op-name">&lt;equation&gt;</div>
+    <div class="op-bar">
+      <div class="op-bar-fill" style="width:92%"></div>
+    </div>
+    <div class="op-score">LACHO 0.92</div>
+  </div>
+  <div class="op-card">
+    <div class="op-sig">╭─∇─⏵─</div>
+    <div class="op-name">&lt;operator_flow&gt;</div>
+    <div class="op-bar">
+      <div class="op-bar-fill" style="width:88%"></div>
+    </div>
+    <div class="op-score">LACHO 0.88</div>
+  </div>
+  <div class="op-card">
+    <div class="op-sig">╭─∇─⊛─</div>
+    <div class="op-name">&lt;stat_onto&gt;</div>
+    <div class="op-bar">
+      <div class="op-bar-fill" style="width:85%"></div>
+    </div>
+    <div class="op-score">LACHO 0.85</div>
+  </div>
+  <div class="op-card">
+    <div class="op-sig">╭─∇─⟳─</div>
+    <div class="op-name">&lt;psi_spin&gt;</div>
+    <div class="op-bar">
+      <div class="op-bar-fill" style="width:87%"></div>
+    </div>
+    <div class="op-score">LACHO 0.87</div>
+  </div>
+  <div class="op-card">
+    <div class="op-sig">╭─∇─⏹─</div>
+    <div class="op-name">&lt;if&gt;</div>
+    <div class="op-bar">
+      <div class="op-bar-fill" style="width:83%"></div>
+    </div>
+    <div class="op-score">LACHO 0.83</div>
+  </div>
+</div>
+
+<div class="section-title">4 NEURONAS METHOD</div>
+<div class="neurons-grid">
+  <div class="neuron-card">
+    <div class="n-label">NEURONA_1</div>
+    <div class="n-name">HEADCAT</div>
+    <div class="n-op">&lt;operator_flow&gt;</div>
+    <div class="n-libsig">╭─∇─⏵─</div>
+  </div>
+  <div class="neuron-card">
+    <div class="n-label">NEURONA_2</div>
+    <div class="n-name">ELPULSAR</div>
+    <div class="n-op">&lt;stat_onto&gt;</div>
+    <div class="n-libsig">╭─∇─⊛─</div>
+  </div>
+  <div class="neuron-card">
+    <div class="n-label">NEURONA_3</div>
+    <div class="n-name">CHAIR CEO</div>
+    <div class="n-op">&lt;equation&gt;</div>
+    <div class="n-libsig">╭─∇─≈─</div>
+  </div>
+  <div class="neuron-card">
+    <div class="n-label">NEURONA_4</div>
+    <div class="n-name">HOUSE DRONE</div>
+    <div class="n-op">&lt;psi_spin&gt;</div>
+    <div class="n-libsig">╭─∇─⟳─</div>
+  </div>
+</div>
+
+<div class="section-title">6 NODOS KALIL</div>
+<div class="kalil-grid">
+  <div class="k-card">
+    <div class="k-name">BARRIOS</div>
+    <div class="k-op">&lt;operator_flow&gt;</div>
+    <div class="k-eq">Banking Access Remote Resources</div>
+  </div>
+  <div class="k-card">
+    <div class="k-name">NORA</div>
+    <div class="k-op">&lt;stat_onto&gt;</div>
+    <div class="k-eq">Oracle rating · delta_Ψ</div>
+  </div>
+  <div class="k-card">
+    <div class="k-name">BOLIVAR</div>
+    <div class="k-op">&lt;if&gt;</div>
+    <div class="k-eq">Blockchain hash bifurcation</div>
+  </div>
+  <div class="k-card">
+    <div class="k-name">CARILO</div>
+    <div class="k-op">&lt;equation&gt;</div>
+    <div class="k-eq">R = (capital×plazo)/(score×garantia)</div>
+  </div>
+  <div class="k-card">
+    <div class="k-name">CHALTEN</div>
+    <div class="k-op">&lt;psi_spin&gt;</div>
+    <div class="k-eq">Lending cloud · SPIN cycle</div>
+  </div>
+  <div class="k-card">
+    <div class="k-name">TANDIL</div>
+    <div class="k-op">&lt;operator_flow&gt;+&lt;stat_onto&gt;</div>
+    <div class="k-eq">Hub consolidación · neural_net</div>
+  </div>
+</div>
+
+<div class="footer">
+  <div>METHOD Dashboard · DIRIME IMV</div>
+  <div>$fri 20/03 · V1</div>
+  <div>Scalar S: ≥0.820</div>
+</div>
+
+</body>
+</html>

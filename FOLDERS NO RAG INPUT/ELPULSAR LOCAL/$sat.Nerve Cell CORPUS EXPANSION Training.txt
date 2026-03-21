@@ -1,0 +1,30 @@
+//$sat.Nerve Cell CORPUS EXPANSION Training.txt
+//NERVE CELL · CORPUS EXPANSION 51→65 · bridge•ollama•cat_os•ime_local
+//aprendido de UNICODE_CORPUS_60 + corpus_build.theater + rag.py real
+//$sat · [term] :: activo
+
+NC_CORP_STATE  //CORPUS_TOTAL=51 · docs_RAG=244 · 236 CORPUS + 8 SOVEREIGN
+               //BM25: K1=1.5 B=0.75 · boost crystal×2.5·theater×1.8·agent×2.0
+NC_CORP_DELTA  //14 docs nuevos para llegar a 65 · semanas 1-4 agregan:
+               //~3 UNICODE por semana + ~1 BIBLIO por semana = 14-16 docs
+NC_CORP_RAG    //BM25 re-build: python3 tools/index_new_files.py
+               //IMEBM25.build_index() ← _CORPUS_DIR.rglob("*.txt")
+               //agents y theater indexados por _SOVEREIGN_SOURCES
+NC_CORP_BOOST  //nuevos agents en RAG: boost×2.0 para todos .blue y .green
+               //runners nuevos: boost×1.6 para hacking_doctor_v2·audit_gate
+               //corpus_build.theater: boost×1.8
+NC_CORP_CAT    //cat_lacho() OPERATIVO: lee lineas =><= [term] sin Ryzen
+               //corpus_indexer.green usa cat_lacho() hoy
+               //cat_os.scan() espera Ryzen para spawn completo
+NC_CORP_CMD    //CMD_INDEX: python3 IMV/tools/index_new_files.py
+               //ejecutar después de cada batch de archivos nuevos
+               //corpus_build.theater macro_build_bm25 lo dispara
+NC_CORP_S_IMP  //impacto en Scalar S: +0.01 por doc · 14 docs = +0.14 teórico
+               //con filtros calidad: +0.04 realista para Semana 3+4
+
+ACTIVITY UF[H57] =><= .. penetra .. nc_corpus_scan_bm25_rebuild --[As de Guía] [term]
+WORK {actuator} =><= .. ejecuta .. nc_corpus_index_cmd_soberano --[As de Guía] [term]
+METHOD <stat_onto> =><= .. calcula .. nc_corpus_s_delta_14_docs --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. nc_corpus_expansion_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) NERVE CELL CORPUS EXPANSION · V1 · bridge•ollama•cat_os•ime_local · $sat 25/04

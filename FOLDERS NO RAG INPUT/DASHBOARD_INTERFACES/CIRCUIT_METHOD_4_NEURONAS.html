@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>CIRCUIT METHOD × 4 NEURONAS</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+.topbar{border-bottom:2px solid #1a1a2e;padding-bottom:12px;margin-bottom:28px;
+        display:flex;align-items:center;gap:16px}
+.title{font-size:1.2rem;font-weight:bold;letter-spacing:3px}
+.state-badge{font-size:.75rem;padding:3px 10px;border:1px solid;margin-left:auto}
+.state-mu{border-color:#aaa;color:#aaa}
+.state-ku{border-color:#6a9fd8;color:#6a9fd8}
+.state-wu{border-color:#2a7a4f;color:#2a7a4f}
+.circuit-wrap{background:#fafafa;border:1px solid #e0e0e0;padding:28px;
+              margin-bottom:28px;overflow-x:auto}
+.circuit-ascii{font-size:1rem;line-height:2;letter-spacing:2px;
+               white-space:pre;color:#1a1a2e}
+.c-trust{color:#c0392b;font-weight:bold}
+.c-method{color:#2a7a4f;font-weight:bold}
+.c-samu{color:#8e44ad;font-weight:bold}
+.c-stack{color:#d35400;font-weight:bold}
+.c-term{color:#1a1a2e;font-weight:bold}
+.c-sig{color:#555}
+.neurons-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:28px}
+.n-box{border:1px solid #ddd;padding:16px;background:#f9f9f9}
+.n-num{font-size:.65rem;color:#aaa;letter-spacing:2px}
+.n-name{font-size:.95rem;font-weight:bold;margin:4px 0}
+.n-op{font-size:.8rem;color:#2a7a4f;margin:4px 0}
+.n-sig{font-size:1.1rem;letter-spacing:3px;margin:6px 0;color:#444}
+.n-verb{font-size:.65rem;color:#888}
+.lacho-out{background:#f0f7f3;border:1px solid #2a7a4f;padding:14px;
+           margin-bottom:28px;font-size:.8rem;line-height:1.8}
+.lacho-line{margin:2px 0}
+.lacho-lib{color:#c0392b;font-weight:bold}
+.lacho-op{color:#2a7a4f;font-weight:bold}
+.lacho-verb{color:#555}
+.lacho-obj{color:#1a1a2e}
+.lacho-knot{color:#8e44ad}
+.lacho-term{color:#d35400;font-weight:bold}
+.footer{font-size:.65rem;color:#aaa;padding-top:12px;border-top:1px solid #eee;
+        display:flex;gap:20px}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="title">⚡ CIRCUIT METHOD × 4 NEURONAS</div>
+  <div style="font-size:.75rem;color:#888">CIDE libSigs · grammar.py real</div>
+  <div class="state-badge state-ku" id="state-ind">⏵ KU · METHOD activo</div>
+</div>
+
+<div class="circuit-wrap">
+<div class="circuit-ascii">
+<span class="c-trust">╭─⊢─∧─</span> N1:HEADCAT &lt;operator_flow&gt; ─── <span class="c-sig">@human_early→later · main.py routing</span>
+   │
+   ↓  METHOD &lt;operator_flow&gt; =&gt;&lt;= .. modela .. headcat_pipeline
+   │
+<span class="c-method">╭─∇─⏵─</span> N2:ELPULSAR &lt;stat_onto&gt; ──── <span class="c-sig">S=0.822 · TX=1063 · 244 docs</span>
+   │
+   ↓  METHOD &lt;stat_onto&gt; =&gt;&lt;= .. calcula .. scalar_s_lacho_score
+   │
+<span class="c-method">╭─∇─≈─</span> N3:CHAIR CEO &lt;equation&gt; ─── <span class="c-sig">threshold(H) · 33 hexagramas</span>
+   │
+   ↓  METHOD &lt;equation&gt; =&gt;&lt;= .. calcula .. ceo_alpha_threshold
+   │
+<span class="c-samu">╭─⏺─⊛─</span> N4:HOUSE DRONE &lt;psi_spin&gt; ── <span class="c-sig">MU→KU→WU→空 · door periods</span>
+   │
+   ↓  METHOD &lt;psi_spin&gt; =&gt;&lt;= .. rota .. samu_spin_cycle
+   │
+<span class="c-stack">╭─⊣─∞─</span> STACKING UF[H52] ──────────── <span class="c-sig">cristaliza · inmutabiliza</span>
+   │
+   <span class="c-term">╝ [term] :: activo · WU · METHOD pipeline sellado</span>
+</div>
+</div>
+
+<div class="neurons-row">
+  <div class="n-box">
+    <div class="n-num">NEURONA 1</div>
+    <div class="n-name">HEADCAT</div>
+    <div class="n-op">&lt;operator_flow&gt;</div>
+    <div class="n-sig">╭─⊢─∧─</div>
+    <div class="n-verb">modela · INTENT_MAP<br>@human_early · DIRIME&gt;</div>
+  </div>
+  <div class="n-box">
+    <div class="n-num">NEURONA 2</div>
+    <div class="n-name">ELPULSAR</div>
+    <div class="n-op">&lt;stat_onto&gt;</div>
+    <div class="n-sig">╭─∇─⊛─</div>
+    <div class="n-verb">calcula · S=0.822<br>classify_sentence() real</div>
+  </div>
+  <div class="n-box">
+    <div class="n-num">NEURONA 3</div>
+    <div class="n-name">CHAIR CEO</div>
+    <div class="n-op">&lt;equation&gt;</div>
+    <div class="n-sig">╭─∇─≈─</div>
+    <div class="n-verb">calcula · threshold(H)<br>CEO_ALPHA_H64.json</div>
+  </div>
+  <div class="n-box">
+    <div class="n-num">NEURONA 4</div>
+    <div class="n-name">HOUSE DRONE</div>
+    <div class="n-op">&lt;psi_spin&gt;</div>
+    <div class="n-sig">╭─∇─⟳─</div>
+    <div class="n-verb">rota · MU/KU/WU<br>door periods reales</div>
+  </div>
+</div>
+
+<div class="lacho-out">
+  <div class="lacho-line">
+    <span class="lacho-lib">METHOD</span> <span class="lacho-op">&lt;operator_flow&gt;</span>
+    <span class="lacho-verb"> =&gt;&lt;= .. modela .. </span>
+    <span class="lacho-obj">headcat_pipeline_main_py_real</span>
+    <span class="lacho-knot"> --[Ballestrinque]</span>
+    <span class="lacho-term"> [term]</span>
+  </div>
+  <div class="lacho-line">
+    <span class="lacho-lib">METHOD</span> <span class="lacho-op">&lt;stat_onto&gt;</span>
+    <span class="lacho-verb"> =&gt;&lt;= .. calcula .. </span>
+    <span class="lacho-obj">scalar_s_0_822_elpulsar_244_docs</span>
+    <span class="lacho-knot"> --[Ballestrinque]</span>
+    <span class="lacho-term"> [term]</span>
+  </div>
+  <div class="lacho-line">
+    <span class="lacho-lib">METHOD</span> <span class="lacho-op">&lt;equation&gt;</span>
+    <span class="lacho-verb"> =&gt;&lt;= .. calcula .. </span>
+    <span class="lacho-obj">ceo_alpha_threshold_H01_0_95_H32_0_90</span>
+    <span class="lacho-knot"> --[Ballestrinque]</span>
+    <span class="lacho-term"> [term]</span>
+  </div>
+  <div class="lacho-line">
+    <span class="lacho-lib">METHOD</span> <span class="lacho-op">&lt;psi_spin&gt;</span>
+    <span class="lacho-verb"> =&gt;&lt;= .. rota .. </span>
+    <span class="lacho-obj">house_drone_MU_05_KU_06_WU_13_void_18</span>
+    <span class="lacho-knot"> --[As de Guía]</span>
+    <span class="lacho-term"> [term]</span>
+  </div>
+  <div class="lacho-line">
+    <span class="lacho-lib">STACKING</span> <span class="lacho-op">UF[H52]</span>
+    <span class="lacho-verb"> =&gt;&lt;= .. cristaliza .. </span>
+    <span class="lacho-obj">circuit_method_4_neuronas_wu_sellado</span>
+    <span class="lacho-knot"> --[Nudo de Ocho]</span>
+    <span class="lacho-term"> [term]</span>
+  </div>
+</div>
+
+<div class="footer">
+  <div>CIRCUIT METHOD × 4 NEURONAS</div>
+  <div>$sat 21/03 · V1</div>
+  <div>CIDE libSigs · grammar.py real</div>
+</div>
+
+</body>
+</html>

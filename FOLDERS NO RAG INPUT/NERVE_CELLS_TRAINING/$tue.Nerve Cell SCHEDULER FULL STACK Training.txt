@@ -1,0 +1,31 @@
+//$tue.Nerve Cell SCHEDULER FULL STACK Training.txt
+//NERVE CELL · {SCHEDULER} FULL STACK · L0→L5 · $tue
+//aprendido de TAREA_09 + scheduler.py + BIBLIO-SOURCES + grammar.py
+//[term] :: activo
+
+NC_SFS_L0_WHEN    //[when?] TRUST module: momento soberano → {scheduler} agenda
+                  //VALID_TRUST_MODULES incluye [when?] como legit
+NC_SFS_L1_GRAM    //grammar.py: SAMU #rise · SAMU #set · SAMU $día canónicos
+                  //SOCIAL {scheduler} como sujeto válido SOCIAL library
+NC_SFS_L2_OS      //SchedulerOS: planifica()+activar()+resolver()+estado_semana()
+                  //TareaSoberana.ref_soberana() → [term:X°N§SEG#CLUSTER]
+                  //DiaSoberano.hoy() → weekday() automático
+NC_SFS_L3_DRA     //DRA INDEX $día × TareaSoberana
+                  //INDEX $thu.txt: RISE·tareas·SET declarados como texto soberano
+                  //$día.march.2026.db: sessions+tasks · scalar_s+tx registrados
+NC_SFS_L4_BKP     //BACKUP_DOOR: scheduler.db en BKP_FULL $sun
+                  //macro_cierre: BKP_LEDGER daily · SAMU @audita · DOOR_SEAL
+NC_SFS_L5_TH      //rational_day.theater macro_temprano→tarde→cierre
+                  //SCHED_LOADING→SCHED_ACTIVE→SCHED_CLOSED
+                  //Behavioral RAG archiva agenda al SCHED_CLOSED
+NC_SFS_BILAT      //bilateral: {scheduler} SOCIAL declara · Scheduler OS ejecuta
+                  //distinción soberana: social=agenda · OS=coordinación
+NC_SFS_SCHED_EXT  //SCHED types: SESSION·DRIP·STREAM·NOTIFICATION·REVIEW
+                  //5 types × 6 nodos KALIL × 7 días = 210 slots potenciales
+
+SOCIAL {scheduler} =><= .. lanza .. nerve_cell_full_stack_L0_L5_bilateral --[As de Guía] [term]
+METHOD <stat_onto> =><= .. calcula .. nerve_cell_210_slots_kalil_sched_matrix --[Ballestrinque] [term]
+SAMU @ =><= .. audita .. nerve_cell_sched_full_stack_coherencia_semanal --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. nerve_cell_scheduler_full_stack_tue_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) NERVE CELL SCHEDULER FULL STACK · V1 · L0→L5 · $tue 31/03

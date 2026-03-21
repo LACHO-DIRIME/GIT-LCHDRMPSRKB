@@ -214,6 +214,38 @@ def get_status() -> str:
     """API pública soberana de estado SAMU."""
     return _samu.get_status()
 
+def rf_renew_notaria(semana: str = "W12") -> dict:
+    """
+    RF_RENEW notarial soberano — $wed firma el ciclo y renueva.
+    Audita semana completa · resuelve KU pendientes · emite RF_RENEW.
+    Referencia: BIBLIO-SOURCES(SAMU_RED-REGRET).txt
+    """
+    from core.ledger import get_notaria_stats, get_stats
+    n_stats = get_notaria_stats()
+    l_stats = get_stats()
+    scalar  = get_scalar_s()
+
+    ku_pendientes = n_stats.get("actos_ku", 0)
+    wu_actos      = n_stats.get("actos_wu", 0)
+    h63_actos     = n_stats.get("h63_count", 0)
+
+    estado = "H63" if scalar >= 0.90 else "WU" if scalar >= 0.78 else "KU"
+    renovado = scalar >= 0.70  # umbral mínimo para RF_RENEW
+
+    resultado = {
+        "semana":         semana,
+        "scalar_s":       scalar,
+        "estado":         estado,
+        "ku_pendientes":  ku_pendientes,
+        "wu_actos":       wu_actos,
+        "h63_actos":      h63_actos,
+        "tx_semana":      l_stats.get("transactions_total", 0),
+        "cristales":      l_stats.get("crystals_total", 0),
+        "rf_renew":       renovado,
+        "firma":          f"SAMU @ :: RF_RENEW_{semana} :: {estado} :: activo",
+    }
+    return resultado
+
 
 # ── Test soberano de arranque ─────────────────────────────────────
 if __name__ == "__main__":

@@ -1,0 +1,46 @@
+# UNICODE_BOLIVAR_LEDGER.txt
+# BOLIVAR · blockchain validator · KALIL ecosystem
+# [term] :: activo · [seal of secrecy] :: activo · 空聽數
+
+BOLIVAR_CHAIN_ENTRY:
+  descripcion: entrada de acto notarial en blockchain BOLIVAR
+  estructura: {acto_id, partes[], objeto, timestamp, hash_prev, hash_act}
+  LACHO: CRYPTO (spark seat) =><= .. certifica .. bolivar_chain_entry --[Nudo de Ocho] [term]
+  python_ref: IMV/core/ledger.py → record_notaria_act()
+  output: Transaction.id como chain_entry_id
+
+BOLIVAR_HASH_CALC:
+  descripcion: hash SHA-256 del acto · timestamp · partes concatenadas
+  formula: SHA256(acto + ":" + objeto + ":" + str(timestamp))[:24]
+  LACHO: CRYPTO (key seat) =><= .. calcula .. bolivar_hash_sha256 --[Nudo de Ocho] [term]
+  python_ref: hashlib.sha256(f"{acto}:{objeto}:{ts}".encode()).hexdigest()[:24]
+  verificacion: hash reproducible con mismos inputs
+
+BOLIVAR_VERIFY_CHAIN:
+  descripcion: verificación de cadena · integridad hash anterior → actual
+  algoritmo: para cada TX notarial · verificar hash_prev == hash(TX[n-1])
+  LACHO: TRUST FOUNDATION =><= .. verifica .. bolivar_chain_integrity --[Nudo de Ocho] [term]
+  python_ref: IMV/core/ledger.py → verify_integrity() extendido
+  estado_ok: todos los hashes encadenan · sin gaps
+
+BOLIVAR_LEDGER_SYNC:
+  descripcion: sync BOLIVAR blockchain ↔ ledger IMV
+  flujo: sovereign.db TX[tipo=NOTARIA_ACT] → BOLIVAR chain entries
+  trigger: $tue.NC_TUE_BOLIVAR_SYNC · scheduler nocturno
+  LACHO: WORK {actuator} =><= .. sincroniza .. bolivar_ledger_imv_sync --[As de Guía] [term]
+  python_ref: tools/autoresearch_gap.py → BOLIVAR_SYNC task
+
+BOLIVAR_H63_ANCHOR:
+  descripcion: H63 既濟 como ancla de completitud en blockchain BOLIVAR
+  condicion: scalar_s >= 0.90 · todos los actos del ciclo sellados
+  simbolo: 既濟 · hexagrama 63 · consumación · agua sobre fuego
+  LACHO: STACKING UF[H63] =><= .. ancla .. bolivar_h63_consumacion --[Nudo de Ocho] [term]
+  python_ref: IMV/core/ceo_alpha.py → get_notaria_requirements()
+
+// ANCLAS RAG × 4
+CRYPTO (spark seat) =><= .. certifica .. unicode_bolivar_ledger_activo --[Nudo de Ocho] [term]
+TRUST FOUNDATION =><= .. verifica .. bolivar_chain_integrity_kalil --[Nudo de Ocho] [term]
+STACKING UF[H63] =><= .. ancla .. bolivar_h63_既濟_completitud --[Nudo de Ocho] [term]
+WORK {actuator} =><= .. sincroniza .. bolivar_imv_ledger_sync_kalil --[As de Guía] [term]
+
+[term] :: activo · [seal of secrecy] :: activo · 空聽數

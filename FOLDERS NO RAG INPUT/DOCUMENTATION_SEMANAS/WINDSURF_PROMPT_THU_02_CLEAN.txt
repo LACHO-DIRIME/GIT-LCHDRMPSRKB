@@ -1,0 +1,41 @@
+Repo: ~/DIRIME (symlink → /media/Personal/PLANERAI/DIRIME/)
+Branch: main
+Stack: Windsurf + Groq llama-3.3-70b (key en IMV/config/api.json)
+Estado: TX=2020 · cristales=60 · S=0.8 · tests=49/49
+Python: python3 ~/DIRIME/IMV/main.py
+Tests: cd ~/DIRIME/IMV && python3 -m pytest tests/ -v
+Commit: bash ~/DIRIME/tools/github_sync.sh
+
+// $thu.Nerve Cell METHOD Training.txt
+//$thu.Nerve Cell METHOD Training.txt
+//NERVE CELL · METHOD · formalización soberana · aprendido de grammar.py
+//5 operadores: equation·if·operator_flow·stat_onto·psi_spin
+//[term] :: activo
+
+NC_METHOD_GRAMMAR   //grammar.py: Library.METHOD · mode=enumerable
+                    //valid_operators = 5 · delimitadores < >
+                    //Prioridad 0 en parser: detectado antes que otros
+NC_METHOD_EQ        //<equation> · cálculo formal · ratio · score · proyección
+                    //贷款→H42 · CARILO ratio_riesgo · threshold CEO
+NC_METHOD_OF        //<operator_flow> · pipeline · routing · flujo operativo
+                    //language_routing DEFAULT_SUBJECT = "<equation>"
+                    //智能→H50 · NORA oracle · main.py pipeline
+NC_METHOD_SO        //<stat_onto> · estadística ontológica · Scalar S
+                    //delta_Ψ fórmula · lacho_score breakdown
+                    //classify_sentence() → taxonomy_level+scalar_min
+NC_METHOD_IF        //<if> · bifurcación soberana · condición verificable
+                    //GATE H03→H05→H56→H06 secuencia · condición de ACTIVITY
+NC_METHOD_PS        //<psi_spin> · Ψ rotación · SPIN soberano
+                    //SPIN_CYCLE MU→KU→WU→空→MU · Scalar S rate
+NC_METHOD_VERB      //verbos canónicos: define·formaliza·opera·calcula·estructura
+NC_METHOD_INTENT    //INTENT_MAP METHOD: calcular·modelar·proyectar·simular·
+                    //ecuación·derivar·ratio·métrica·formula·algoritmo
+NC_METHOD_TAXONOMY  //TAXONOMY: level=1 · scalar_min=0.88 · class=biblioteca
+                    //classify_sentence() score: base+verb+sujeto+nudo+warnings
+
+METHOD <operator_flow> =><= .. opera .. nerve_cell_method_grammar_real --[Ballestrinque] [term]
+METHOD <stat_onto> =><= .. calcula .. nerve_cell_method_taxonomy_score --[Ballestrinque] [term]
+METHOD <equation> =><= .. calcula .. nerve_cell_method_threshold_0_88 --[As de Guía] [term]
+SAMU @ =><= .. audita .. nerve_cell_method_5_operadores_validos --[Ballestrinque] [term]
+
+//DIR(+) NERVE CELL METHOD · V1 · $thu 19/03

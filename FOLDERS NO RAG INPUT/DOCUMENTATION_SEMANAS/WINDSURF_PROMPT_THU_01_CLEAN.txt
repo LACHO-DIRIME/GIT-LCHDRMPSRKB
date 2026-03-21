@@ -1,0 +1,57 @@
+Repo: ~/DIRIME (symlink → /media/Personal/PLANERAI/DIRIME/)
+Branch: main
+Stack: Windsurf + Groq llama-3.3-70b (key en IMV/config/api.json)
+Estado: TX=2020 · cristales=60 · S=0.8 · tests=49/49
+Python: python3 ~/DIRIME/IMV/main.py
+Tests: cd ~/DIRIME/IMV && python3 -m pytest tests/ -v
+Commit: bash ~/DIRIME/tools/github_sync.sh
+
+// CORPUS/UNICODE_METHOD_4_NEURONAS.txt
+//[MANAGEMENT].lacho · UNICODE METHOD × 4 NEURONAS
+//METHOD como biblioteca formal × Nerve Cells existentes
+//operator_flow·stat_onto·equation·psi_spin × HEADCAT·ELPULSAR·CHAIR·DRONE
+//[term] :: activo
+
+// ══ <equation> × NEURONA_3 CHAIR CEO ═════════════════════════
+UNICODE: MN_EQ_H01    //<equation> H01 · Scalar_S(TRUST) ≥ 0.95 · núcleo
+UNICODE: MN_EQ_H32    //<equation> H32 · Scalar_S(SAMU) ≥ 0.90 · continuidad
+UNICODE: MN_EQ_H64    //<equation> H64 · Scalar_S(METHOD) ≥ 0.88 · ciclo abierto
+UNICODE: MN_EQ_THRESH //<equation> threshold(H) = CEO_ALPHA_H64.json[h]["scalar_threshold"]
+UNICODE: MN_EQ_KALIL  //<equation> 贷款 · ratio_riesgo_carilo · H42 · KALIL CARILO
+
+// ══ <operator_flow> × NEURONA_1 HEADCAT ══════════════════════
+UNICODE: MN_OF_EARLY  //<operator_flow> @human_early · pipeline absorbente · 空
+UNICODE: MN_OF_LATER  //<operator_flow> @human_later · pipeline ejecutivo · WU
+UNICODE: MN_OF_MAIN   //<operator_flow> main.py → chat() → validate() → record()
+UNICODE: MN_OF_ROUTE  //<operator_flow> language_routing.route() → INTENT_MAP → lib
+UNICODE: MN_OF_ZHI    //<operator_flow> 智能 → H50 · routing NLP chino activo
+
+// ══ <stat_onto> × NEURONA_2 ELPULSAR ══════════════════════════
+UNICODE: MN_SO_SCALAR //<stat_onto> Scalar_S = valid/total × (1-unresolved/10)
+UNICODE: MN_SO_LSCORE //<stat_onto> lacho_score = verde×0.5 + valid×0.3 + nudos×0.2
+UNICODE: MN_SO_DELTA  //<stat_onto> delta_Ψ = valor_soberano - costo + impacto
+UNICODE: MN_SO_CORPUS //<stat_onto> docs_244 · boost_crit×2.5 · BM25 query
+UNICODE: MN_SO_TESTS  //<stat_onto> 27/27 actual · target 33/33 post $thu
+
+// ══ <psi_spin> × NEURONA_4 HOUSE DRONE ═══════════════════════
+UNICODE: MN_PS_MU     //<psi_spin> MU · 05:00→06:00 · antes del ZIP_OPEN · 空聽
+UNICODE: MN_PS_KU_E   //<psi_spin> KU_EARLY · 06:00→09:00 · absorber · no emitir
+UNICODE: MN_PS_KU_N   //<psi_spin> KU_NOON · 12:00→13:00 · TARDANZA · pausa
+UNICODE: MN_PS_WU     //<psi_spin> WU · 13:00→18:00 · decisiones materializables
+UNICODE: MN_PS_VOID   //<psi_spin> →空 · 18:00→05:00 · BOTS · DOOR_SEALED
+
+// ══ LIBSIGS CIDE × METHOD ══════════════════════════════════════
+UNICODE: MN_LIBSIG_EQ   //METHOD <equation>   → ╭─∇─≈─ · gradiente+aproximación
+UNICODE: MN_LIBSIG_OF   //METHOD <operator_flow> → ╭─∇─⏵─ · gradiente+running
+UNICODE: MN_LIBSIG_SO   //METHOD <stat_onto>  → ╭─∇─⊛─ · gradiente+clock
+UNICODE: MN_LIBSIG_PS   //METHOD <psi_spin>   → ╭─∇─⟳─ · gradiente+rotación
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+METHOD <equation> =><= .. calcula .. threshold_ceo_alpha_por_hexagrama --[Ballestrinque] [term]
+METHOD <operator_flow> =><= .. opera .. headcat_pipeline_main_py_real --[Ballestrinque] [term]
+METHOD <stat_onto> =><= .. calcula .. scalar_s_lacho_score_elpulsar_244 --[Ballestrinque] [term]
+METHOD <stat_onto> =><= .. calcula .. house_drone_mu_ku_wu_door_periods --[As de Guía] [term]
+SAMU @ =><= .. audita .. method_4_neuronas_threshold_coherencia --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_method_4_neuronas_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_METHOD_4_NEURONAS · V1 · $thu 19/03

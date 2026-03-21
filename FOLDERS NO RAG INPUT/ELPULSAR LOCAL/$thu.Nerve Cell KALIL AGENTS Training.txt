@@ -1,0 +1,28 @@
+//$thu.Nerve Cell KALIL AGENTS Training.txt
+//NERVE CELL · KALIL AGENTS · shard•relay•oracle•threshold
+//aprendido de UNICODE_KALIL_AGENTS + 6 nuevos agents
+//H60+H61 · $thu · [term] :: activo
+
+NC_KA_ARCH     //arquitectura agentes KALIL: 1 agente primario por nodo
+               //BARRIOS→barrios_relay.green · NORA→nora_oracle.blue
+               //BOLIVAR→bolivar_forge.blue · CARILO→carilo_session.green
+               //CHALTEN→chalten_daemon.blue · TANDIL→tandil_hub.green
+NC_KA_SHARD    //shard por agente: slice corpus especializado por nodo
+               //shard_BARRIOS = remesas+relay · shard_NORA = oracle+JA3S
+NC_KA_RELAY    //relay pipeline: nodo_result → {relay} → TANDIL → Scalar_KALIL
+               //SOCIAL {relay} es el bus inter-nodos de KALIL
+NC_KA_ORACLE   //oracle NORA: threshold=0.65 · daemon nightly update
+               //oracle ≠ IA · oracle = coherencia verificada METHOD <stat_onto>
+NC_KA_THR      //threshold × TAXONOMY: level_0=0.95 · level_1=0.88 · level_2=0.85
+               //THR_S_TARGET=0.88 · actual 0.822 · delta 0.058 → 6 semanas
+NC_KA_TYPES    //tipos extensión: .blue=cloud/oracle · .green=local/relay
+               //todos tienen padre: rational_day.theater o kalil_session.theater
+NC_KA_TANDIL   //TANDIL = hub consolidador: METHOD <operator_flow> modela spool
+               //Scalar_KALIL = media ponderada 5 nodos × threshold_weight
+
+SOCIAL {relay} =><= .. lanza .. nc_ka_relay_5_nodos_scalar_kalil --[As de Guía] [term]
+METHOD <stat_onto> =><= .. calcula .. nc_ka_oracle_nora_threshold_065 --[Ballestrinque] [term]
+TRUST FOUNDATION =><= .. verifica .. nc_ka_threshold_taxonomy_levels --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. nc_kalil_agents_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) NERVE CELL KALIL AGENTS · V1 · shard•relay•oracle•threshold · $thu 16/04

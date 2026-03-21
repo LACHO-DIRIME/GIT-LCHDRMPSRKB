@@ -1,0 +1,41 @@
+# Prompts optimizados para qwen2.5 local (rápidos y precisos)
+
+## REGLAS PARA PROMPTS EFICIENTES:
+- Usar verbos directos: "cambia", "optimiza", "corrige"
+- Especificar exactamente qué hacer
+- Limitar a una tarea por prompt
+- Usar formato: ACCIÓN + ARCHIVO + DETALLE
+
+## EJEMPLOS:
+
+### Para corrección de código:
+"cambia la función translate en bridge_ollama.py para usar temperature=0.0"
+
+### Para optimización:
+"optimiza el bucle for en chat.py línea 245, usa list comprehension"
+
+### Para agregar funcionalidad:
+"agrega try/except en main.py función _initialize_system"
+
+### Para refactorización:
+"refactoriza la variable cfg en bridge_ollama, usa constante CONFIG"
+
+## PLANTILLAS:
+
+### Corrección de errores:
+"arregla el error [descripción] en [archivo] línea [número]"
+
+### Optimización de rendimiento:
+"haz más rápido [función] en [archivo] usando [técnica]"
+
+### Agregar logging:
+"agrega print statements en [archivo] función [nombre] para debuggear"
+
+### Simplificación:
+"simplifica el código en [archivo] líneas [inicio]-[fin]"
+
+## EVITAR:
+- Prompts largos y complejos
+- Múltiples tareas en un solo request
+- Contexto extenso
+- Preguntas abiertas

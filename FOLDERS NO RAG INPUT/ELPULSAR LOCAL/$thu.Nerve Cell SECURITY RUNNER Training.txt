@@ -1,0 +1,38 @@
+//$thu.Nerve Cell SECURITY RUNNER Training.txt
+//NERVE CELL · SECURITY RUNNER · forge•canal•ledger_gate•mu_window
+//aprendido de UNICODE_SECURITY_RUNNER + security.runner + audit_gate.runner
+//H60+H61 · $thu · [term] :: activo
+
+// ══ QUÉ APRENDE ESTA CELDA ════════════════════════════════════
+// security.runner no es solo GATE. Es orquestación soberana de acceso.
+// Integra: LR_SCORE → GATE → LEDGER_GATE → MU_WINDOW → SEAL
+// forge = BUILD que TRUST FOUNDATION valida antes de emitir
+// canal = CRYPTO link entre security.runner y sus targets
+
+NC_SEC_FORGE     //forge: TRUST FOUNDATION verifica antes de construir
+                 //no hay BUILD sin FOUNDATION clearance · pre-WU obligatorio
+                 //grammar: TRUST FOUNDATION =><= .. verifica .. forge_source
+NC_SEC_CANAL     //canal: CRYPTO (link seat) · origen+destino+scope declarados
+                 //hacking_doctor usa canal forense · audit_gate canal tx
+NC_SEC_LGGATE    //LEDGER_GATE: GATE H05 espera cada TX antes de sovereign.db
+                 //TransactionType: GRAMMAR_VALIDATION·SAMU·CRYSTAL·SYSTEM
+NC_SEC_MUWIN     //MU_WINDOW: H52 pausa deliberada · SAMU tardanza soberana
+                 //mu_window_forense · mu_window_tx · mu_window_seal
+NC_SEC_LR_INT    //LR SCORE integrado: SAFE→permite·REVIEW→SAMU·THREAT→brake
+                 //security.runner consume LR_SCORE como feature de decisión
+NC_SEC_SEAL      //SEAL: CRYPTO (shield seat) + STACKING H52 sellan sesión
+                 //log_seguridad → cristal inmutable → ledger entry
+NC_SEC_BREACH    //BREACH: WORK {brake} detiene intrusiones >0.7 threat
+                 //JA3_BLACKLIST + LR_SCORE >0.7 → lockdown inmediato
+NC_SEC_AUDIT     //AUDIT: SAMU @ audita coherencia global del security.runner
+                 //verifica que FOUNDATION+GATE+LEDGER_GATE estén sincronizados
+
+TRUST FOUNDATION =><= .. verifica .. nc_sec_forge_identidad_operador --[As de Guía] [term]
+CRYPTO (link seat) =><= .. conecta .. nc_sec_canal_forense_verificado --[As de Guía] [term]
+GATE UF[H05] =><= .. espera .. nc_sec_ledger_gate_tx_validation --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. aquieta .. nc_sec_mu_window_deliberado --[Nudo de Ocho] [term]
+WORK {brake} =><= .. detiene .. nc_sec_breach_threat_lockdown --[Nudo Corredizo] [term]
+SAMU @ =><= .. audita .. nc_sec_coherencia_global_runner --[Ballestrinque] [term]
+CRYPTO (shield seat) =><= .. protege .. nc_sec_seal_sesion_inmutable --[Nudo de Ocho] [term]
+
+//DIR(+) NERVE CELL SECURITY RUNNER · V1 · forge•canal•ledger_gate•mu_window · $thu 09/04

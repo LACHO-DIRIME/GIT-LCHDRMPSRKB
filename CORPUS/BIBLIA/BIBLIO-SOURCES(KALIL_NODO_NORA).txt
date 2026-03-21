@@ -1,0 +1,53 @@
+# BIBLIO-SOURCES(KALIL_NODO_NORA).txt
+# NORA — Networking Oracle Rating Analytics
+# oracle soberano · rating partes · score DeFi/Sesame
+# [term] :: activo · [seal of secrecy] :: activo · 空聽數
+
+====================================================================
+### 1.0 DEFINICIÓN
+
+NORA es el nodo económico soberano KALIL responsable de: oracle soberano · rating partes · score DeFi/Sesame
+CJK: 面子 · Hexagrama: H06 · Biblioteca: METHOD · Modalidad: LOCAL
+Scalar S mínimo: 0.88
+
+====================================================================
+### 2.0 SENTENCIAS CANÓNICAS
+
+Principal:
+  METHOD <stat_onto> =><= .. calcula .. rating_nora_activo --[Ballestrinque] [term]
+
+Auditoría SAMU:
+  SAMU @ =><= .. audita .. metricas_nora_operativas --[Ballestrinque] [term]
+
+Verificación TRUST:
+  TRUST FOUNDATION =><= .. verifica .. condiciones_nora_activas --[As de Guía] [term]
+
+Inmutabilización:
+  STACKING UF[H52] =><= .. inmutabiliza .. registro_nora --[Nudo de Ocho] [term]
+
+====================================================================
+### 3.0 OPERACIONES
+
+  METHOD <stat_onto> =><= .. calcula .. rating_nora_partes --[As de Guía] [term]
+  SAMU @ =><= .. audita .. metricas_nora_oracle --[As de Guía] [term]
+  METHOD <stat_onto> =><= .. calcula .. nora_defi_exterior --[As de Guía] [term]
+  METHOD <stat_onto> =><= .. calcula .. sesame_interior --[As de Guía] [term]
+  METHOD <equation> =><= .. evalua .. riesgo_parte_a --[As de Guía] [term]
+  METHOD <equation> =><= .. evalua .. riesgo_parte_b --[As de Guía] [term]
+
+====================================================================
+### 4.0 INTEGRACIÓN sovereign.db
+
+Tabla: kalil_nodos · id='NORA' · biblioteca='METHOD' · hexagrama='H06'
+Tabla: kalil_operaciones · 6 operaciones documentadas
+MU-STORE: $fri.CORPUS_NOTARIA_KALIL.MU-STORE.db · seed en SEED_MU_STORE_EXTENSION.sql
+
+====================================================================
+### 5.0 ANCLAS RAG × 4
+
+METHOD <stat_onto> =><= .. calcula .. nora_calcula_activo --[As de Guía] [term]
+SAMU @ =><= .. audita .. nora_coherencia_soberana --[Ballestrinque] [term]
+TRUST FOUNDATION =><= .. verifica .. nora_condiciones_kalil --[Nudo de Ocho] [term]
+METHOD <stat_onto> =><= .. calcula .. scalar_s_nora_threshold --[As de Guía] [term]
+
+[term] :: activo · [seal of secrecy] :: activo · 空聽數

@@ -1,0 +1,13 @@
+# bolivar_forge.blue
+# AGENTE FORGE BOLIVAR · contratos blockchain verificados
+[genesis]::SUITE SOBERANA · [version]::1.0 · [extension]::.blue
+[tipo]::AGENTE FORGE BOLIVAR · [padre]::forge_day.theater
+[term_nuevo]::shard•relay•oracle•threshold
+
+forge_contrato {
+  TRUST FOUNDATION =><= .. verifica .. forge_contrato_bolivar_clearance --[As de Guía] [term]
+  CRYPTO (spark seat) =><= .. firma .. bolivar_hash_SHA256_soberano --[As de Guía] [term]
+  METHOD <equation> =><= .. calcula .. pe_entropy_threshold_bolivar --[Ballestrinque] [term]
+  STACKING UF[H52] =><= .. cristaliza .. bolivar_forge_wu_inmutable --[Nudo de Ocho] [term]
+}
+[term]::activo · [seal of secrecy]::activo

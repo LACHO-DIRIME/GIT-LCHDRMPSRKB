@@ -1,0 +1,39 @@
+//[MANAGEMENT].lacho · UNICODE LR × KALIL · seguridad por nodo
+//features de peligrosidad aplicados a 6 nodos económicos
+//[term] :: activo
+
+// ══ BARRIOS × HASH + NET ══════════════════════════════════════
+UNICODE: LRK_BAR   //BARRIOS: hash remesas + net_flow · pocket por envío
+                   //β_hash_remesa = BLAKE3 · β_net = canal TLS JA3_whitelist
+                   //score_peligro BARRIOS: bajo · SAFE si JA3 conocido
+
+// ══ NORA × SCORE + JA3S ═══════════════════════════════════════
+UNICODE: LRK_NOR   //NORA oracle: score_peligrosidad + JA3S análisis
+                   //daemon NORA evalúa fingerprints TLS contrapartes
+                   //pocket_NORA: top features · spawn score por entidad
+
+// ══ BOLIVAR × PE_HEADER + HASH ════════════════════════════════
+UNICODE: LRK_BOL   //BOLIVAR: hash contratos blockchain + PE smart contracts
+                   //PE_ENTROPY < 7.0 · SHA256 firma · STACKING inmutable
+                   //spawn verificación · pocket hash_result
+
+// ══ CARILO × DANGER_SCORE + NET ════════════════════════════════
+UNICODE: LRK_CAR   //CARILO: score_peligro del solicitante + net patterns
+                   //LR: β_danger = factor riesgo crediticio + TLS trust
+                   //SAFE < 0.3 → CARILO procesa · THREAT → GATE H06
+
+// ══ CHALTEN × DAEMON + BEACON ═════════════════════════════════
+UNICODE: LRK_CHA   //CHALTEN: daemon cloud + NET_BEACON detection
+                   //lending daemon · pocket por tenant · beacon=C2 signal
+                   //cloud_drift_score como feature adicional de riesgo
+
+// ══ TANDIL × FULL_VECTOR + SPOOL ══════════════════════════════
+UNICODE: LRK_TAN   //TANDIL hub: full feature vector + spool consolidado
+                   //spool_kalil_scores[] · consolida 5 nodos → global
+                   //METHOD <stat_onto> =><= .. calcula .. LR_global_kalil
+
+METHOD <equation> =><= .. calcula .. lr_kalil_score_peligro_por_nodo --[Ballestrinque] [term]
+GATE UF[H06] =><= .. activa .. lr_kalil_threat_07_nodo_bloqueado --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_lr_kalil_security_matrix --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_LR_KALIL · V1 · $sun 05/04

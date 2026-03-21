@@ -92,6 +92,25 @@ def add_corpus_unicode(filename: str, content: str):
     target.write_text(content, encoding="utf-8")
     print(f"  ✅ Corpus add: {filename}")
 
+def detect_notaria_files():
+    """Detecta archivos NOTARIA específicos para indexación."""
+    notaria_files = []
+    
+    # CORPUS/UNICODE PROGRAMS/UNICODE_NOTARIA*.txt
+    corpus_notaria = list(_CORPUS_DIR.glob("UNICODE PROGRAMS/UNICODE_NOTARIA*.txt"))
+    notaria_files.extend(corpus_notaria)
+    
+    # FOLDERS NO RAG INPUT/ELPULSAR LOCAL/$tue.Nerve Cell Notaria*.txt
+    elpulsar_notaria = list((_SOVEREIGN / "ELPULSAR LOCAL").glob("$tue.Nerve Cell Notaria*.txt"))
+    notaria_files.extend(elpulsar_notaria)
+    
+    if notaria_files:
+        print(f"  🔍 Archivos NOTARIA detectados: {len(notaria_files)}")
+        for f in notaria_files:
+            print(f"    · {f.relative_to(_BASE)}")
+    
+    return notaria_files
+
 
 if __name__ == "__main__":
     print("=== INDEX NEW SOVEREIGN FILES ===")
@@ -102,7 +121,13 @@ if __name__ == "__main__":
 
     # 2. Contar y verificar
     total = count_and_verify()
+    
+    # 2.1 Detectar archivos NOTARIA
+    notaria_files = detect_notaria_files()
+    
     print(f"\n  Total archivos soberanos encontrados: {total}")
+    if notaria_files:
+        print(f"  Incluyendo {len(notaria_files)} archivos NOTARIA con boost")
 
     # 3. Rebuild RAG si hay --rag flag o si hay archivos
     rebuild = "--rag" in sys.argv or "--all" in sys.argv or total > 0

@@ -1,0 +1,186 @@
+{
+  "generated": "2026-03-18T10:27:59.803682",
+  "tx_total": 1463,
+  "crystals": 57,
+  "scalar_s": "?",
+  "modules": {
+    "IMV/core/grammar.py": {
+      "status": "ACTIVE",
+      "size": 44757
+    },
+    "IMV/core/ceo_alpha.py": {
+      "status": "ACTIVE",
+      "size": 2787
+    },
+    "IMV/core/rag.py": {
+      "status": "ACTIVE",
+      "size": 17010
+    },
+    "IMV/core/samu.py": {
+      "status": "ACTIVE",
+      "size": 9427
+    },
+    "IMV/core/__init__.py": {
+      "status": "DECLARED",
+      "size": 199
+    },
+    "IMV/core/language_routing.py": {
+      "status": "ACTIVE",
+      "size": 11248
+    },
+    "IMV/core/ledger.py": {
+      "status": "ACTIVE",
+      "size": 35685
+    },
+    "IMV/core/foundation.py": {
+      "status": "ACTIVE",
+      "size": 8060
+    },
+    "IMV/core/taxonomy.py": {
+      "status": "ACTIVE",
+      "size": 5373
+    },
+    "IMV/core/ballpaper.py": {
+      "status": "ACTIVE",
+      "size": 5291
+    },
+    "IMV/tools/generator.py": {
+      "status": "ACTIVE",
+      "size": 15327
+    },
+    "IMV/tools/office_landing.py": {
+      "status": "ACTIVE",
+      "size": 4931
+    },
+    "IMV/tools/export_crystals_lacho.py": {
+      "status": "ACTIVE",
+      "size": 1589
+    },
+    "IMV/tools/__init__.py": {
+      "status": "DECLARED",
+      "size": 72
+    },
+    "IMV/tools/index_new_files.py": {
+      "status": "ACTIVE",
+      "size": 5419
+    },
+    "tools/generator.py": {
+      "status": "ACTIVE",
+      "size": 12456
+    },
+    "tools/autoresearch_specs.py": {
+      "status": "ACTIVE",
+      "size": 5669
+    },
+    "DIRIME_v2/scheduler/scheduler.py": {
+      "status": "ACTIVE",
+      "size": 11463
+    },
+    "DIRIME_v2/scheduler/__init__.py": {
+      "status": "ACTIVE",
+      "size": 546
+    },
+    "DIRIME_v2/scheduler/tether.py": {
+      "status": "ACTIVE",
+      "size": 1358
+    },
+    "DIRIME_v2/fabric/__init__.py": {
+      "status": "ACTIVE",
+      "size": 506
+    },
+    "DIRIME_v2/fabric/cat.py": {
+      "status": "ACTIVE",
+      "size": 7126
+    },
+    "DIRIME_v2/fabric/poke_peek.py": {
+      "status": "ACTIVE",
+      "size": 8811
+    },
+    "DIRIME_v2/groq/__init__.py": {
+      "status": "STUB",
+      "size": 49
+    },
+    "DIRIME_v2/groq/bridge.py": {
+      "status": "ACTIVE",
+      "size": 2490
+    },
+    "DIRIME_v2/ollama/bridge_ollama.py": {
+      "status": "ACTIVE",
+      "size": 3351
+    },
+    "DIRIME_v2/elpulsar/elpulsar.py": {
+      "status": "ACTIVE",
+      "size": 5512
+    },
+    "DIRIME_v2/elpulsar/core/resources.py": {
+      "status": "ACTIVE",
+      "size": 7373
+    },
+    "DIRIME_v2/elpulsar/core/__init__.py": {
+      "status": "DECLARED",
+      "size": 262
+    },
+    "DIRIME_v2/elpulsar/core/neural_net.py": {
+      "status": "ACTIVE",
+      "size": 3125
+    },
+    "DIRIME_v2/elpulsar/tools/table.py": {
+      "status": "ACTIVE",
+      "size": 924
+    },
+    "DIRIME_v2/elpulsar/tools/__init__.py": {
+      "status": "DECLARED",
+      "size": 159
+    },
+    "DIRIME_v2/elpulsar/tools/sprint.py": {
+      "status": "ACTIVE",
+      "size": 999
+    },
+    "DIRIME_v2/elpulsar/tools/key.py": {
+      "status": "ACTIVE",
+      "size": 1179
+    },
+    "DIRIME_v2/elpulsar/tools/paper.py": {
+      "status": "ACTIVE",
+      "size": 1139
+    }
+  },
+  "verb_freq": [
+    {
+      "verb": "verifica",
+      "count": 179
+    },
+    {
+      "verb": "materializa",
+      "count": 82
+    },
+    {
+      "verb": "audita",
+      "count": 48
+    },
+    {
+      "verb": "calcula",
+      "count": 44
+    },
+    {
+      "verb": "certifica",
+      "count": 39
+    },
+    {
+      "verb": "inmutabiliza",
+      "count": 31
+    },
+    {
+      "verb": "ejecuta",
+      "count": 30
+    },
+    {
+      "verb": "declara",
+      "count": 30
+    },
+    {
+      "verb": "cristaliza",
+      "count": 29
+    }
+  ]
+}

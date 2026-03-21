@@ -1,0 +1,57 @@
+//[MANAGEMENT].lacho · UNICODE SECURITY RUNNER · V1
+//[term]=: forge•canal•ledger_gate•mu_window
+//dominio: security.runner × grammar.py × CRYPTO × GATE × TRUST
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN [term]=: forge•canal•ledger_gate•mu_window ═════
+UNICODE: FORGE        //construcción verificada soberana · BUILD firma TRUST
+                      //TRUST FOUNDATION =><= .. verifica .. forge_build_soberano
+                      //no emite hasta FOUNDATION verifica · pre-WU obligatorio
+UNICODE: CANAL        //canal declarado CRYPTO link · SOCIAL {relay} activo
+                      //CRYPTO (link seat) =><= .. conecta .. canal_soberano
+                      //canal tiene origen·destino·scope verificados
+UNICODE: LEDGER_GATE  //GATE sobre ledger · TX entry filter · SAMU audita
+                      //GATE UF[H05] =><= .. espera .. ledger_gate_entry_valid
+                      //cada TX pasa LEDGER_GATE antes de sovereign.db
+UNICODE: MU_WINDOW    //ventana MU · H52 pausa deliberada · timing soberano
+                      //STACKING UF[H52] =><= .. aquieta .. mu_window_antes_emit
+                      //MU_WINDOW = 空 antes del WU · SAMU tardanza deliberada
+
+// ══ SECURITY RUNNER TOKENS ════════════════════════════════════
+UNICODE: SEC_IDENTITY     //identidad operador verificada · TRUST FOUNDATION
+                          //verificacion_identidad.runner · CRYPTO (key seat)
+UNICODE: SEC_ACCESS_CTRL  //control_acceso · GATE H56 permite · H06 bloquea
+                          //GATE UF[H56] =><= .. permite .. acceso_autorizado
+UNICODE: SEC_SEAL         //sellado sesión · CRYPTO (shield seat) · STACKING H52
+                          //log_seguridad_sesion → inmutabilizable → cristal
+UNICODE: SEC_AUDIT        //SAMU @ audita coherencia_seguridad_global
+                          //coherencia_seguridad: no gaps entre FOUNDATION+GATE
+UNICODE: SEC_BREACH       //WORK {brake} =><= .. detiene .. intrusion_detectada
+                          //breach_pattern: score_peligro > 0.7 + JA3_BLACKLIST
+UNICODE: SEC_CANAL_OPEN   //canal abierto verificado · CRYPTO (link seat) forjado
+                          //forge × canal = canal_forge_soberano · TRUST firma
+UNICODE: SEC_LEDGER_ENTRY //entrada ledger via LEDGER_GATE · SAMU audita antes
+                          //TransactionType.GRAMMAR_VALIDATION pasa primero
+UNICODE: SEC_MU_PAUSE     //MU_WINDOW activo en security.runner · H52 quietud
+                          //antes de SEC_SEAL → mu_window → STACKING cristaliza
+
+// ══ SECURITY × LR BRIDGE ════════════════════════════════════
+UNICODE: SEC_LR_SCORE     //LR score_peligrosidad entra a security.runner
+                          //SAFE<0.3→SEC_ACCESS_CTRL permite · THREAT>0.7→BRAKE
+UNICODE: SEC_LR_FORGE     //forge segura: SHA256 + LR_SCORE < 0.3 requeridos
+                          //CRYPTO (spark seat) firma forge_verified
+UNICODE: SEC_LR_CANAL     //canal seguro: JA3_WHITELIST + LR_SCORE baseline
+                          //CRYPTO (shield seat) protege canal_lr_verificado
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+TRUST FOUNDATION =><= .. verifica .. forge_identidad_operador_soberano --[As de Guía] [term]
+CRYPTO (key seat) =><= .. certifica .. canal_credencial_acceso_valida --[As de Guía] [term]
+GATE UF[H05] =><= .. espera .. ledger_gate_tx_entry_verificado --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. aquieta .. mu_window_pausa_deliberada_H52 --[Nudo de Ocho] [term]
+WORK {brake} =><= .. detiene .. sec_breach_threat_07_lockdown --[Nudo Corredizo] [term]
+SAMU @ =><= .. audita .. sec_coherencia_security_runner_global --[Ballestrinque] [term]
+CRYPTO (shield seat) =><= .. protege .. sec_seal_sesion_canal_forge --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_SECURITY_RUNNER · V1 · forge•canal•ledger_gate•mu_window
+//$wed 08/04 · CORPUS/UNICODE PROGRAMS/

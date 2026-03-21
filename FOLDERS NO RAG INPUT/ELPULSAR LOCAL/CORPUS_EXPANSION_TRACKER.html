@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>CORPUS TRACKER · DIRIME IMV</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+.header{border-bottom:3px solid #1a1a2e;padding-bottom:14px;margin-bottom:24px;
+        display:flex;justify-content:space-between;align-items:flex-end}
+.h-title{font-size:1rem;font-weight:bold;letter-spacing:4px}
+.h-meta{font-size:.68rem;color:#888;line-height:1.7;text-align:right}
+.progress-global{margin-bottom:24px}
+.pg-label{font-size:.62rem;color:#888;letter-spacing:2px;margin-bottom:6px}
+.pg-bar-wrap{height:12px;background:#e0e0e0;border-radius:6px;margin-bottom:4px}
+.pg-bar-fill{height:100%;border-radius:6px;background:linear-gradient(90deg,#2980b9,#2a7a4f);
+             transition:width .8s}
+.pg-marks{display:flex;justify-content:space-between;font-size:.58rem;color:#aaa}
+.weeks-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:24px}
+.wk-box{border:1px solid #ddd;padding:12px;background:#fafafa}
+.wb-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.wb-name{font-size:.72rem;font-weight:bold;letter-spacing:1px}
+.wb-badge{font-size:.58rem;padding:2px 6px}
+.bd-done{background:#f0f7f3;color:#2a7a4f;border:1px solid #2a7a4f}
+.bd-prog{background:#fff8e7;color:#d35400;border:1px solid #d35400}
+.bd-plan{background:#fafafa;color:#888;border:1px solid #ddd}
+.wb-tokens{font-size:.58rem;color:#8e44ad;margin-bottom:6px}
+.wb-items{font-size:.6rem;color:#555;line-height:1.7}
+.wi-done{color:#2a7a4f}
+.wi-prog{color:#d35400}
+.wi-plan{color:#aaa}
+.files-table{margin-bottom:24px;overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.68rem}
+th{background:#1a1a2e;color:#fff;padding:6px 10px;text-align:left;font-weight:normal;
+   font-size:.62rem;letter-spacing:1px}
+td{padding:6px 10px;border-bottom:1px solid #f0f0f0}
+.td-semana{font-size:.58rem;color:#2980b9;font-weight:bold}
+.td-file{color:#1a1a2e;font-size:.65rem}
+.td-path{color:#888;font-size:.58rem}
+.td-status-ok{color:#2a7a4f;font-weight:bold}
+.td-status-prog{color:#d35400}
+.scalar-progress{border:1px solid #e0e0e0;padding:14px;margin-bottom:24px}
+.sp-title{font-size:.62rem;letter-spacing:2px;color:#888;margin-bottom:10px}
+.sp-row{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.sp-label{font-size:.65rem;color:#555;width:100px;flex-shrink:0}
+.sp-bar{flex:1;height:8px;background:#e0e0e0;border-radius:4px}
+.sp-fill{height:100%;border-radius:4px}
+.sp-val{font-size:.65rem;font-weight:bold;width:50px;text-align:right}
+.footer{font-size:.6rem;color:#aaa;border-top:1px solid #eee;
+        padding-top:10px;display:flex;gap:12px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <div class="h-title">╭─⊣─∞─ CORPUS EXPANSION TRACKER</div>
+    <div style="font-size:.72rem;color:#555;margin-top:4px">
+      CORPUS 51→65 · Scalar S 0.822→0.88 · 4 semanas
+    </div>
+  </div>
+  <div class="h-meta">$tue 28/04 · SEMANA 3<br>mes: 75% completado</div>
+</div>
+
+<div class="progress-global">
+  <div class="pg-label">▸ PROGRESO GLOBAL CORPUS EXPANSION</div>
+  <div class="pg-bar-wrap">
+    <div class="pg-bar-fill" style="width:78%"></div>
+  </div>
+  <div class="pg-marks">
+    <span>51</span><span>55</span><span>60</span><span>65</span>
+  </div>
+</div>
+
+<div class="weeks-grid">
+  <div class="wk-box">
+    <div class="wb-header">
+      <div class="wb-name">SEMANA 1</div>
+      <div class="wb-badge bd-done">COMPLETA</div>
+    </div>
+    <div class="wb-tokens">forge•canal•ledger_gate•mu_window</div>
+    <div class="wb-items">
+      <div class="wi-done">✓ UNICODE_SECURITY_RUNNER</div>
+      <div class="wi-done">✓ hacking_doctor_v2.runner</div>
+      <div class="wi-done">✓ audit_gate.runner</div>
+      <div class="wi-done">✓ network_sentinel.blue</div>
+      <div class="wi-done">✓ corpus_indexer.green</div>
+    </div>
+  </div>
+  <div class="wk-box">
+    <div class="wb-header">
+      <div class="wb-name">SEMANA 2</div>
+      <div class="wb-badge bd-done">COMPLETA</div>
+    </div>
+    <div class="wb-tokens">shard•relay•oracle•threshold</div>
+    <div class="wb-items">
+      <div class="wi-done">✓ UNICODE_KALIL_AGENTS</div>
+      <div class="wi-done">✓ 6 agents KALIL</div>
+      <div class="wi-done">✓ grammar_patch_kalil</div>
+      <div class="wi-done">✓ test_imv_ext.py</div>
+      <div class="wi-done">✓ BIBLIO-SOURCES(SOCIAL_RELAY-ORACLE)</div>
+    </div>
+  </div>
+  <div class="wk-box">
+    <div class="wb-header">
+      <div class="wb-name">SEMANA 3</div>
+      <div class="wb-badge bd-prog">EN PROGRESO</div>
+    </div>
+    <div class="wb-tokens">bridge•ollama•cat_os•ime_local</div>
+    <div class="wb-items">
+      <div class="wi-done">✓ UNICODE_DIRIME_V3</div>
+      <div class="wi-done">✓ DIRIME_v3 stubs Python</div>
+      <div class="wi-done">✓ UNICODE_CORPUS_60</div>
+      <div class="wi-prog">⚡ corpus_build.theater</div>
+      <div class="wi-prog">⚡ dirime_v3.theater</div>
+      <div class="wi-prog">⚡ DIRIME_V3_DASHBOARD.html</div>
+    </div>
+  </div>
+  <div class="wk-box">
+    <div class="wb-header">
+      <div class="wb-name">SEMANA 4</div>
+      <div class="wb-badge bd-plan">PLANIFICADA</div>
+    </div>
+    <div class="wb-tokens">TBD</div>
+    <div class="wb-items">
+      <div class="wi-plan">○ CORPUS 60→65 final</div>
+      <div class="wi-plan">○ Scalar S 0.88 target</div>
+      <div class="wi-plan">○ grammar.py ACTIVITY completo</div>
+      <div class="wi-plan">○ generator.py 33→38 tests</div>
+      <div class="wi-plan">○ gui.py extensión</div>
+    </div>
+  </div>
+</div>
+
+<div class="files-table">
+  <table>
+    <thead>
+      <tr>
+        <th>SEMANA</th>
+        <th>ARCHIVO</th>
+        <th>RUTA</th>
+        <th>ESTADO</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="td-semana">S1</td>
+        <td class="td-file">UNICODE_SECURITY_RUNNER.txt</td>
+        <td class="td-path">CORPUS/UNICODE PROGRAMS/</td>
+        <td class="td-status-ok">✅</td>
+      </tr>
+      <tr>
+        <td class="td-semana">S1</td>
+        <td class="td-file">hacking_doctor_v2.runner</td>
+        <td class="td-path">FOLDERS NO RAG INPUT/RUNNERS/</td>
+        <td class="td-status-ok">✅</td>
+      </tr>
+      <tr>
+        <td class="td-semana">S2</td>
+        <td class="td-file">UNICODE_KALIL_AGENTS.txt</td>
+        <td class="td-path">CORPUS/UNICODE PROGRAMS/</td>
+        <td class="td-status-ok">✅</td>
+      </tr>
+      <tr>
+        <td class="td-semana">S2</td>
+        <td class="td-file">barrios_relay.green</td>
+        <td class="td-path">FOLDERS NO RAG INPUT/AGENTS/</td>
+        <td class="td-status-ok">✅</td>
+      </tr>
+      <tr>
+        <td class="td-semana">S3</td>
+        <td class="td-file">UNICODE_DIRIME_V3.txt</td>
+        <td class="td-path">CORPUS/UNICODE PROGRAMS/</td>
+        <td class="td-status-ok">✅</td>
+      </tr>
+      <tr>
+        <td class="td-semana">S3</td>
+        <td class="td-file">ollama_bridge.py</td>
+        <td class="td-path">DIRIME_v3/ollama_bridge/</td>
+        <td class="td-status-ok">✅</td>
+      </tr>
+      <tr>
+        <td class="td-semana">S3</td>
+        <td class="td-file">UNICODE_CORPUS_60.txt</td>
+        <td class="td-path">CORPUS/UNICODE PROGRAMS/</td>
+        <td class="td-status-ok">✅</td>
+      </tr>
+      <tr>
+        <td class="td-semana">S3</td>
+        <td class="td-file">corpus_build.theater</td>
+        <td class="td-path">FOLDERS NO RAG INPUT/THEATER/</td>
+        <td class="td-status-prog">⚡</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="scalar-progress">
+  <div class="sp-title">▸ PROGRESO SCALAR S TARGET 0.88</div>
+  <div class="sp-row">
+    <div class="sp-label">Actual</div>
+    <div class="sp-bar">
+      <div class="sp-fill" style="width:93.4%;background:#d35400"></div>
+    </div>
+    <div class="sp-val">0.822</div>
+  </div>
+  <div class="sp-row">
+    <div class="sp-label">Target</div>
+    <div class="sp-bar">
+      <div class="sp-fill" style="width:100%;background:#2a7a4f"></div>
+    </div>
+    <div class="sp-val">0.880</div>
+  </div>
+  <div class="sp-row">
+    <div class="sp-label">Delta</div>
+    <div class="sp-bar">
+      <div class="sp-fill" style="width:65.9%;background:#2980b9"></div>
+    </div>
+    <div class="sp-val">+0.058</div>
+  </div>
+</div>
+
+<div class="footer">
+  <span>DIRIME IMV V0.2.1</span>
+  <span>CORPUS EXPANSION: 51→65</span>
+  <span>Scalar S: 0.822→0.88</span>
+  <span>Weeks: 4/4</span>
+  <span>Status: 75% completado</span>
+  <span>[term] :: activo · semana 3</span>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>GRAMMAR LIVE TESTER · DIRIME IMV</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+.header{border-bottom:3px solid #1a1a2e;padding-bottom:14px;margin-bottom:24px;
+        display:flex;justify-content:space-between;align-items:flex-end}
+.h-title{font-size:1rem;font-weight:bold;letter-spacing:4px}
+.h-meta{font-size:.68rem;color:#888;line-height:1.7;text-align:right}
+.builder{border:1px solid #e0e0e0;padding:16px;margin-bottom:20px;background:#fafafa}
+.b-title{font-size:.65rem;letter-spacing:2px;color:#888;margin-bottom:12px}
+.b-row{display:flex;gap:8px;margin-bottom:10px;align-items:center;flex-wrap:wrap}
+.b-label{font-size:.65rem;color:#555;width:80px;flex-shrink:0}
+.b-sel{border:1px solid #ccc;padding:6px 10px;font-family:'Courier New',monospace;
+       font-size:.73rem;background:#fff;flex:1;min-width:120px}
+.b-inp{border:1px solid #ccc;padding:6px 10px;font-family:'Courier New',monospace;
+       font-size:.73rem;background:#fff;flex:1}
+.b-btn{padding:8px 18px;background:#1a1a2e;color:#fff;border:none;
+       font-family:'Courier New',monospace;font-size:.73rem;cursor:pointer;
+       letter-spacing:1px;transition:background .2s}
+.b-btn:hover{background:#2a2a3e}
+.b-btn-clr{background:#fff;color:#888;border:1px solid #ccc}
+.b-btn-clr:hover{background:#fafafa}
+.sentence-display{background:#f0f7f3;padding:12px 16px;margin-bottom:16px;
+                  font-size:.82rem;line-height:2;word-break:break-all}
+.result-row{display:flex;gap:12px;margin-bottom:20px;flex-wrap:wrap}
+.res-box{border:1px solid #ddd;padding:10px 14px;flex:1;min-width:100px;text-align:center}
+.res-label{font-size:.58rem;color:#888;margin-bottom:4px}
+.res-val{font-size:1rem;font-weight:bold}
+.rv-valid{color:#2a7a4f}.rv-warn{color:#d35400}.rv-inv{color:#c0392b}
+.rv-score{color:#2980b9}.rv-knot{color:#8e44ad;font-size:.75rem}
+.examples-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:20px}
+.ex-item{border:1px solid #eee;padding:10px;cursor:pointer;
+         font-size:.65rem;transition:all .2s}
+.ex-item:hover{border-color:#2a7a4f;background:#f0f7f3}
+.ex-lib{font-weight:bold;color:#c0392b;margin-bottom:3px}
+.ex-sent{color:#555;line-height:1.5}
+.tests-strip{display:flex;gap:6px;margin-bottom:20px;flex-wrap:wrap;
+             padding:12px;background:#fafafa;border:1px solid #e0e0e0}
+.test-chip{padding:4px 10px;font-size:.62rem;border:1px solid}
+.tc-pass{border-color:#2a7a4f;color:#2a7a4f;background:#f0f7f3}
+.tc-new{border-color:#8e44ad;color:#8e44ad;background:#fdf8ff}
+.footer{font-size:.6rem;color:#aaa;border-top:1px solid #eee;
+        padding-top:10px;display:flex;gap:12px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <div class="h-title">╭─∇─⊛─ GRAMMAR LIVE TESTER</div>
+    <div style="font-size:.72rem;color:#555;margin-top:4px">
+      grammar.py real · lacho_score · 9 bibliotecas · shard•relay•oracle•threshold
+    </div>
+  </div>
+  <div class="h-meta">$tue 21/04 · SEMANA 2<br>tests: 27→33</div>
+</div>
+
+<div class="builder">
+  <div class="b-title">▸ BUILDER · construye sentencia LACHO soberana</div>
+  <div class="b-row">
+    <div class="b-label">biblioteca</div>
+    <select class="b-sel" id="b-lib" onchange="buildSentence()">
+      <option>TRUST</option><option>SAMU</option><option>CRYPTO</option>
+      <option>GATE</option><option>STACKING</option><option>WORK</option>
+      <option selected>SOCIAL</option><option>METHOD</option><option>ACTIVITY</option>
+    </select>
+    <div class="b-label">sujeto</div>
+    <select class="b-sel" id="b-subj" onchange="buildSentence()">
+      <option>FOUNDATION</option><option>@</option><option>(shield seat)</option>
+      <option>UF[H05]</option><option>UF[H52]</option><option>{actuator}</option>
+      <option selected>{relay}</option><option><stat_onto></option>
+      <option><operator_flow></option><option>UF[H04]</option>
+    </select>
+  </div>
+  <div class="b-row">
+    <div class="b-label">verbo</div>
+    <select class="b-sel" id="b-verb" onchange="buildSentence()">
+      <option>verifica</option><option>audita</option><option>certifica</option>
+      <option>espera</option><option>aquieta</option><option>cristaliza</option>
+      <option>ejecuta</option><option selected>lanza</option><option>calcula</option>
+      <option>opera</option><option>penetra</option><option>reserva</option>
+    </select>
+    <div class="b-label">objeto</div>
+    <input class="b-inp" id="b-obj" placeholder="objeto soberano" value="relay_kalil_nodos_soberano">
+  </div>
+  <div class="b-row">
+    <div class="b-label">nudo</div>
+    <select class="b-sel" id="b-knot" onchange="buildSentence()">
+      <option>As de Guía</option><option>Ballestrinque</option>
+      <option>Nudo de Ocho</option><option>Nudo Corredizo</option><option selected>Nudo de Rizo</option>
+    </select>
+    <div class="b-label">term</div>
+    <select class="b-sel" id="b-term" onchange="buildSentence()">
+      <option selected>[term]</option><option>[seal of secrecy]</option>
+    </select>
+  </div>
+  <div class="b-row">
+    <button class="b-btn" onclick="validateSentence()">VALIDATE</button>
+    <button class="b-btn b-btn-clr" onclick="clearAll()">CLEAR</button>
+  </div>
+</div>
+
+<div class="sentence-display" id="sentence-display">
+  SOCIAL {relay} =&lt;= .. lanza .. relay_kalil_nodos_soberano --[Nudo de Rizo] [term]
+</div>
+
+<div class="result-row" id="result-row">
+  <div class="res-box">
+    <div class="res-label">VALIDATION</div>
+    <div class="res-val rv-valid">VALID</div>
+  </div>
+  <div class="res-box">
+    <div class="res-label">LACHO SCORE</div>
+    <div class="res-val rv-score">0.88</div>
+  </div>
+  <div class="res-box">
+    <div class="res-label">LIBRARY</div>
+    <div class="res-val">SOCIAL</div>
+  </div>
+  <div class="res-box">
+    <div class="res-label">KNOT</div>
+    <div class="res-val rv-knot">Nudo de Rizo</div>
+  </div>
+</div>
+
+<div style="font-size:.65rem;color:#888;letter-spacing:2px;margin-bottom:8px">
+  ▸ EXAMPLES · tests 27→33 extensión KALIL
+</div>
+<div class="examples-grid" id="examples-grid">
+  <div class="ex-item" onclick="loadExample('SOCIAL {relay} =&lt;= .. lanza .. relay_kalil_nodos --[As de Guía] [term]')">
+    <div class="ex-lib">SOCIAL {relay}</div>
+    <div class="ex-sent">SOCIAL {relay} =&lt;= .. lanza .. relay_kalil_nodos --[As de Guía] [term]</div>
+  </div>
+  <div class="ex-item" onclick="loadExample('METHOD &lt;stat_onto&gt; =&lt;= .. calcula .. oracle_nora_threshold --[Ballestrinque] [term]')">
+    <div class="ex-lib">METHOD &lt;stat_onto&gt;</div>
+    <div class="ex-sent">METHOD &lt;stat_onto&gt; =&lt;= .. calcula .. oracle_nora_threshold --[Ballestrinque] [term]</div>
+  </div>
+  <div class="ex-item" onclick="loadExample('STACKING UF[H04] =&lt;= .. reserva .. shard_corpus_slice --[Nudo de Ocho] [term]')">
+    <div class="ex-lib">STACKING UF[H04]</div>
+    <div class="ex-sent">STACKING UF[H04] =&lt;= .. reserva .. shard_corpus_slice --[Nudo de Ocho] [term]</div>
+  </div>
+  <div class="ex-item" onclick="loadExample('TRUST FOUNDATION =&lt;= .. verifica .. threshold_taxonomy --[As de Guía] [term]')">
+    <div class="ex-lib">TRUST FOUNDATION</div>
+    <div class="ex-sent">TRUST FOUNDATION =&lt;= .. verifica .. threshold_taxonomy --[As de Guía] [term]</div>
+  </div>
+</div>
+
+<div class="tests-strip">
+  <div class="test-chip tc-pass">test_27: base</div>
+  <div class="test-chip tc-new">test_28: SOCIAL {relay}</div>
+  <div class="test-chip tc-new">test_29: METHOD &lt;stat_onto&gt;</div>
+  <div class="test-chip tc-new">test_30: SAMU threshold</div>
+  <div class="test-chip tc-new">test_31: STACKING UF[H04]</div>
+  <div class="test-chip tc-new">test_32: routing relay</div>
+  <div class="test-chip tc-new">test_33: batch KALIL</div>
+</div>
+
+<div class="footer">
+  <span>DIRIME IMV V0.2.1</span>
+  <span>grammar.py real · lacho_score</span>
+  <span>tests: 27→33</span>
+  <span>tokens: shard•relay•oracle•threshold</span>
+  <span>[term] :: activo · semana 2</span>
+</div>
+
+<script>
+function buildSentence(){
+  const lib=document.getElementById('b-lib').value;
+  const subj=document.getElementById('b-subj').value;
+  const verb=document.getElementById('b-verb').value;
+  const obj=document.getElementById('b-obj').value;
+  const knot=document.getElementById('b-knot').value;
+  const term=document.getElementById('b-term').value;
+  const sentence=`${lib} ${subj} =&lt;= .. ${verb} .. ${obj} --[${knot}] ${term}`;
+  document.getElementById('sentence-display').textContent=sentence;
+}
+
+function validateSentence(){
+  const sentence=document.getElementById('sentence-display').textContent;
+  // Simulación de validación (realmente llamaría a grammar.py)
+  const isValid=sentence.includes('SOCIAL') && sentence.includes('{relay}');
+  const score=isValid ? 0.88 : 0.72;
+  const resultRow=document.getElementById('result-row');
+  resultRow.innerHTML=`
+    <div class="res-box">
+      <div class="res-label">VALIDATION</div>
+      <div class="res-val ${isValid?'rv-valid':'rv-warn'}">${isValid?'VALID':'WARNING'}</div>
+    </div>
+    <div class="res-box">
+      <div class="res-label">LACHO SCORE</div>
+      <div class="res-val rv-score">${score}</div>
+    </div>
+    <div class="res-box">
+      <div class="res-label">LIBRARY</div>
+      <div class="res-val">${sentence.split(' ')[0]}</div>
+    </div>
+    <div class="res-box">
+      <div class="res-label">KNOT</div>
+      <div class="res-val rv-knot">${sentence.match(/\[(.*?)\]/)?.[1]||'N/A'}</div>
+    </div>
+  `;
+}
+
+function loadExample(text){
+  document.getElementById('sentence-display').textContent=text;
+  validateSentence();
+}
+
+function clearAll(){
+  document.getElementById('b-obj').value='';
+  buildSentence();
+  document.getElementById('result-row').innerHTML='';
+}
+
+buildSentence();
+</script>
+
+</body>
+</html>

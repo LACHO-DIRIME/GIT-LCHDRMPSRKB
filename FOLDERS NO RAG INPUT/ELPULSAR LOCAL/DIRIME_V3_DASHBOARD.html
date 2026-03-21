@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>DIRIME V3 · CAPA C · DIRIME IMV</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+.header{border-bottom:3px solid #1a1a2e;padding-bottom:14px;margin-bottom:24px;
+        display:flex;justify-content:space-between;align-items:flex-end}
+.h-title{font-size:1rem;font-weight:bold;letter-spacing:4px}
+.h-meta{font-size:.68rem;color:#888;line-height:1.7;text-align:right}
+.tokens{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap}
+.tok{padding:4px 12px;font-size:.73rem;font-weight:bold;border:1px solid}
+.tb{border-color:#2980b9;color:#2980b9}
+.to{border-color:#8e44ad;color:#8e44ad}
+.tc{border-color:#d35400;color:#d35400}
+.ti{border-color:#2a7a4f;color:#2a7a4f}
+.v3-layers{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:24px}
+.layer-box{border:2px solid #ddd;padding:16px;position:relative}
+.lb-status{position:absolute;top:10px;right:10px;font-size:.6rem;padding:2px 8px}
+.st-stub{background:#fff8e7;color:#d35400;border:1px solid #d35400}
+.st-partial{background:#f0f7f3;color:#2a7a4f;border:1px solid #2a7a4f}
+.lb-order{font-size:.62rem;color:#aaa;margin-bottom:4px;letter-spacing:2px}
+.lb-name{font-size:.9rem;font-weight:bold;margin-bottom:8px}
+.lb-token{font-size:.65rem;color:#8e44ad;margin-bottom:8px}
+.lb-file{font-size:.62rem;color:#2980b9;margin-bottom:8px}
+.lb-ops{font-size:.65rem;line-height:1.8}
+.op-ok{color:#2a7a4f}
+.op-stub{color:#d35400}
+.corpus-panel{border:1px solid #e0e0e0;padding:16px;margin-bottom:24px;background:#fafafa}
+.cp-title{font-size:.65rem;letter-spacing:2px;color:#888;margin-bottom:12px}
+.cp-bars{display:grid;gap:8px}
+.cp-row{display:grid;grid-template-columns:120px 1fr 60px;gap:8px;align-items:center;
+        font-size:.68rem}
+.cp-label{color:#555}
+.cp-bar-wrap{height:8px;background:#e0e0e0;border-radius:4px}
+.cp-bar-fill{height:100%;border-radius:4px;transition:width .6s}
+.cp-val{color:#888;text-align:right}
+.sovereign-row{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:24px}
+.sv-box{border:1px solid #ddd;padding:10px;text-align:center;background:#fafafa}
+.sv-val{font-size:1.1rem;font-weight:bold;color:#2a7a4f}
+.sv-lab{font-size:.55rem;color:#888;margin-top:2px}
+.lacho-v3{background:#f0f7f3;border-left:3px solid #2a7a4f;padding:12px;margin-bottom:20px}
+.lv-title{font-size:.6rem;letter-spacing:2px;color:#888;margin-bottom:6px}
+.lv-line{font-size:.73rem;line-height:2;padding:2px 0;border-bottom:1px solid #f0f0f0}
+.footer{font-size:.6rem;color:#aaa;border-top:1px solid #eee;
+        padding-top:10px;display:flex;gap:12px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <div class="h-title">╭─▌─⏵─ DIRIME V3 · CAPA C</div>
+    <div style="font-size:.72rem;color:#555;margin-top:4px">
+      bridge•ollama•cat_os•ime_local · esqueleto soberano
+    </div>
+  </div>
+  <div class="h-meta">$sun 26/04 · SEMANA 3<br>CAPA_C=esqueleto_declarado</div>
+</div>
+
+<div class="tokens">
+  <div class="tok tb">bridge · Groq→Ollama swap</div>
+  <div class="tok to">ollama · LLM local Ryzen</div>
+  <div class="tok tc">cat_os · filesystem iter</div>
+  <div class="tok ti">ime_local · I Ching offline</div>
+</div>
+
+<div class="v3-layers">
+  <div class="layer-box">
+    <div class="lb-status st-stub">STUB</div>
+    <div class="lb-order">① PRIMERO</div>
+    <div class="lb-name">ollama_bridge/</div>
+    <div class="lb-token">token: bridge</div>
+    <div class="lb-file">ollama_bridge.py</div>
+    <div class="lb-ops">
+      <div class="op-stub">✗ chat() → NotImplementedError</div>
+      <div class="op-ok">✓ is_available() → False</div>
+      <div class="op-stub">✗ activo: False (Ryzen pendiente)</div>
+      <div style="color:#aaa;margin-top:4px;font-size:.58rem">
+        fallback: Groq api.json activo
+      </div>
+    </div>
+  </div>
+  <div class="layer-box">
+    <div class="lb-status st-stub">STUB</div>
+    <div class="lb-order">② SEGUNDO</div>
+    <div class="lb-name">cat_local/</div>
+    <div class="lb-token">token: cat_os</div>
+    <div class="lb-file">cat_os.py</div>
+    <div class="lb-ops">
+      <div class="op-stub">✗ scan() → NotImplementedError</div>
+      <div class="op-stub">✗ spawn_file() → NotImplementedError</div>
+      <div class="op-ok">✓ cat_lacho() → OPERATIVO ✦</div>
+      <div style="color:#aaa;margin-top:4px;font-size:.58rem">
+        cat_lacho() extrae =&amp;lt;= [term] sin Ryzen
+      </div>
+    </div>
+  </div>
+  <div class="layer-box">
+    <div class="lb-status st-partial">PARTIAL</div>
+    <div class="lb-order">③ TERCERO</div>
+    <div class="lb-name">ime/</div>
+    <div class="lb-token">token: ime_local</div>
+    <div class="lb-file">ime_ching.py</div>
+    <div class="lb-ops">
+      <div class="op-stub">✗ listen() → NotImplementedError</div>
+      <div class="op-stub">✗ preload_loans() → NotImplementedError</div>
+      <div class="op-ok">✓ get_hexagram(n) → OPERATIVO ✦</div>
+      <div style="color:#aaa;margin-top:4px;font-size:.58rem">
+        H01·H52·H57·H63·H64 en tabla local
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="corpus-panel">
+  <div class="cp-title">▸ CORPUS EXPANSION · 51 → 65 docs target</div>
+  <div class="cp-bars">
+    <div class="cp-row">
+      <div class="cp-label">CORPUS actual</div>
+      <div class="cp-bar-wrap">
+        <div class="cp-bar-fill" style="width:78%;background:#2980b9"></div>
+      </div>
+      <div class="cp-val">51/65</div>
+    </div>
+    <div class="cp-row">
+      <div class="cp-label">docs RAG</div>
+      <div class="cp-bar-wrap">
+        <div class="cp-bar-fill" style="width:92%;background:#2a7a4f"></div>
+      </div>
+      <div class="cp-val">244/265</div>
+    </div>
+    <div class="cp-row">
+      <div class="cp-label">Scalar S</div>
+      <div class="cp-bar-wrap">
+        <div class="cp-bar-fill" style="width:93.4%;background:linear-gradient(90deg,#d35400,#2a7a4f)"></div>
+      </div>
+      <div class="cp-val">0.822/0.88</div>
+    </div>
+  </div>
+</div>
+
+<div class="sovereign-row">
+  <div class="sv-box"><div class="sv-val">3</div>
+    <div class="sv-lab">stubs CAPA C</div></div>
+  <div class="sv-box"><div class="sv-val">3</div>
+    <div class="sv-lab">funciones operativas sin Ryzen</div></div>
+  <div class="sv-box"><div class="sv-val">8</div>
+    <div class="sv-lab">theaters+gates total</div></div>
+  <div class="sv-box"><div class="sv-val">10</div>
+    <div class="sv-lab">agents total</div></div>
+</div>
+
+<div class="lacho-v3">
+  <div class="lv-title">▸ SENTENCIAS CAPA C · activas</div>
+  <div class="lv-line">
+    <span style="color:#c0392b;font-weight:bold">TRUST</span>
+    <span style="color:#2a7a4f;font-weight:bold"> FOUNDATION</span>
+    <span style="color:#555"> =&amp;gt;&amp;lt;= .. declara .. </span>
+    capa_c_esqueleto_declarado
+    <span style="color:#8e44ad"> --[As de Guía]</span>
+    <span style="color:#d35400;font-weight:bold"> [term]</span>
+  </div>
+  <div class="lv-line">
+    <span style="color:#c0392b;font-weight:bold">WORK</span>
+    <span style="color:#2a7a4f;font-weight:bold"> {actuator}</span>
+    <span style="color:#555"> =&amp;gt;&amp;lt;= .. ejecuta .. </span>
+    cat_lacho_operativo_sin_ryzen
+    <span style="color:#8e44ad"> --[As de Guía]</span>
+    <span style="color:#d35400;font-weight:bold"> [term]</span>
+  </div>
+  <div class="lv-line" style="border:none">
+    <span style="color:#c0392b;font-weight:bold">STACKING</span>
+    <span style="color:#2a7a4f;font-weight-bold"> UF[H52]</span>
+    <span style="color:#555"> =&amp;gt;&amp;lt;= .. cristaliza .. </span>
+    dirime_v3_esqueleto_soberano
+    <span style="color:#8e44ad"> --[Nudo de Ocho]</span>
+    <span style="color:#d35400;font-weight:bold"> [term]</span>
+  </div>
+</div>
+
+<div class="footer">
+  <span>DIRIME IMV V0.2.1</span>
+  <span>DIRIME V3: bridge•ollama•cat_os•ime_local</span>
+  <span>CAPA_C: esqueleto_declarado</span>
+  <span>stubs: 3 soberanos</span>
+  <span>funciones operativas sin Ryzen: 3</span>
+  <span>[term] :: activo · semana 3</span>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>SCHEDULER OS · DIRIME IMV</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+.topbar{border-bottom:2px solid #1a1a2e;padding-bottom:12px;margin-bottom:24px;
+        display:flex;align-items:center;gap:14px}
+.tb-logo{font-size:1.1rem;font-weight:bold;letter-spacing:3px}
+.tb-day{font-size:.8rem;padding:3px 10px;border:1px solid #1a1a2e;letter-spacing:2px}
+.tb-sched{font-size:.75rem;color:#888;margin-left:auto}
+.week-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-bottom:24px}
+.day-col{border:1px solid #e0e0e0;padding:10px 8px}
+.day-col.active{border-color:#2a7a4f;background:#f0f7f3}
+.day-hdr{font-size:.65rem;letter-spacing:2px;color:#888;text-transform:uppercase;margin-bottom:6px}
+.day-hex{font-size:.7rem;color:#2a7a4f;margin-bottom:6px;font-weight:bold}
+.day-bar{height:3px;background:#e0e0e0;border-radius:2px;margin-bottom:6px}
+.day-bar-fill{height:100%;background:#2a7a4f;border-radius:2px}
+.day-tasks{font-size:.6rem;color:#888}
+.day-task{padding:2px 0;border-bottom:1px solid #f5f5f5;display:flex;align-items:center;gap:4px}
+.t-state-h5{color:#d35400}
+.t-state-h57{color:#2a7a4f}
+.t-state-h63{color:#aaa;text-decoration:line-through}
+.t-state-h6{color:#c0392b}
+.schedule-list{background:#fafafa;border:1px solid #e0e0e0;padding:16px;
+               margin-bottom:24px}
+.sl-title{font-size:.65rem;letter-spacing:3px;color:#888;margin-bottom:12px}
+.sl-row{display:grid;grid-template-columns:60px 120px 1fr 50px;gap:8px;
+        padding:6px 0;border-bottom:1px solid #f0f0f0;align-items:center}
+.sl-row.past{opacity:.5}
+.sl-row.now{background:#f0f7f3;margin:0 -16px;padding:6px 16px;
+            border-left:3px solid #2a7a4f}
+.sl-time{font-size:.78rem;font-weight:bold}
+.sl-name{font-size:.72rem;color:#1a1a2e;font-weight:bold}
+.sl-desc{font-size:.65rem;color:#888}
+.sl-prio{font-size:.6rem;padding:2px 6px;border-radius:2px}
+.prio-high{background:#fde8e8;color:#c0392b}
+.prio-med{background:#fef9e7;color:#d35400}
+.estados-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:24px}
+.est-box{padding:12px;border:1px solid #ddd;text-align:center}
+.est-uf{font-size:.65rem;color:#888;letter-spacing:2px}
+.est-name{font-size:.8rem;font-weight:bold;margin:4px 0}
+.est-count{font-size:1.4rem;font-weight:bold}
+.est-h5{color:#d35400}.est-h57{color:#2a7a4f}.est-h63{color:#aaa}.est-h6{color:#c0392b}
+.tether-box{background:#f8f8f8;border:1px solid #ddd;padding:14px;
+            margin-bottom:24px;display:flex;gap:16px;align-items:center}
+.th-state{font-size:.75rem;padding:4px 12px;border:1px solid}
+.th-anchored{border-color:#2a7a4f;color:#2a7a4f}
+.th-detached{border-color:#aaa;color:#aaa}
+.th-meta{font-size:.7rem;color:#888;line-height:1.7}
+.kalil-sched{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:24px}
+.ks-card{border:1px solid #ddd;padding:12px;background:#fafafa}
+.ks-nodo{font-size:.75rem;font-weight:bold;letter-spacing:2px;margin-bottom:4px}
+.ks-type{font-size:.65rem;color:#2a7a4f;margin-bottom:4px}
+.ks-window{font-size:.6rem;color:#888}
+.footer{font-size:.62rem;color:#aaa;border-top:1px solid #eee;padding-top:10px;
+        display:flex;gap:20px}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="tb-logo">⚡ {SCHEDULER} OS · DIRIME</div>
+  <div class="tb-day" id="dia-badge">$thu · H60+H61</div>
+  <div style="font-size:.72rem;color:#2a7a4f">SCHED_ACTIVE</div>
+  <div class="tb-sched">
+    TX:<span id="tx-v">1063+</span> · ✦<span id="cr-v">41</span> · S:<span id="s-v">0.822</span>
+  </div>
+</div>
+
+<div class="week-grid">
+  <div class="day-col"><div class="day-hdr">$mon</div><div class="day-hex">H51+H52</div>
+    <div class="day-bar"><div class="day-bar-fill" style="width:80%"></div></div>
+    <div class="day-tasks"><div class="day-task"><span class="t-state-h63">●</span> rise</div>
+    <div class="day-task"><span class="t-state-h63">●</span> ledger</div></div></div>
+  <div class="day-col"><div class="day-hdr">$tue</div><div class="day-hex">H30+H57</div>
+    <div class="day-bar"><div class="day-bar-fill" style="width:65%"></div></div>
+    <div class="day-tasks"><div class="day-task"><span class="t-state-h63">●</span> CORPUS</div>
+    <div class="day-task"><span class="t-state-h5">●</span> RAG</div></div></div>
+  <div class="day-col"><div class="day-hdr">$wed</div><div class="day-hex">H58+H59</div>
+    <div class="day-bar"><div class="day-bar-fill" style="width:90%"></div></div>
+    <div class="day-tasks"><div class="day-task"><span class="t-state-h63">●</span> UNICODE</div>
+    <div class="day-task"><span class="t-state-h63">●</span> github_sync</div></div></div>
+  <div class="day-col active"><div class="day-hdr">$thu</div><div class="day-hex">H60+H61</div>
+    <div class="day-bar"><div class="day-bar-fill" style="width:30%"></div></div>
+    <div class="day-tasks"><div class="day-task"><span class="t-state-h57">▶</span> SCHED</div>
+    <div class="day-task"><span class="t-state-h5">○</span> tests</div></div></div>
+  <div class="day-col"><div class="day-hdr">$fri</div><div class="day-hex">H62+H63</div>
+    <div class="day-bar"><div class="day-bar-fill" style="width:0%"></div></div>
+    <div class="day-tasks"><div class="day-task"><span class="t-state-h5">○</span> review</div>
+    <div class="day-task"><span class="t-state-h5">○</span> ballpaper</div></div></div>
+  <div class="day-col"><div class="day-hdr">$sat</div><div class="day-hex">H01+H52</div>
+    <div class="day-bar"><div class="day-bar-fill" style="width:0%"></div></div>
+    <div class="day-tasks"><div class="day-task"><span class="t-state-h5">○</span> backup</div></div></div>
+  <div class="day-col"><div class="day-hdr">$sun</div><div class="day-hex">H64+H01</div>
+    <div class="day-bar"><div class="day-bar-fill" style="width:0%"></div></div>
+    <div class="day-tasks"><div class="day-task"><span class="t-state-h5">○</span> plan</div></div></div>
+</div>
+
+<div class="estados-row">
+  <div class="est-box"><div class="est-uf">UF[H05]</div>
+    <div class="est-name">ESPERA</div><div class="est-count est-h5" id="c-h5">3</div></div>
+  <div class="est-box"><div class="est-uf">UF[H57]</div>
+    <div class="est-name">ACTIVA</div><div class="est-count est-h57" id="c-h57">1</div></div>
+  <div class="est-box"><div class="est-uf">UF[H63]</div>
+    <div class="est-name">RESUELTA</div><div class="est-count est-h63" id="c-h63">7</div></div>
+  <div class="est-box"><div class="est-uf">UF[H06]</div>
+    <div class="est-name">CONFLICTO</div><div class="est-count est-h6" id="c-h6">0</div></div>
+</div>
+
+<div class="schedule-list">
+  <div class="sl-title">▸ SCHEDULE $thu · H60+H61 · Limitación + Verdad Interior</div>
+  <div class="sl-row past">
+    <div class="sl-time">06:00</div>
+    <div class="sl-name">ZIP_OPEN</div>
+    <div class="sl-desc">FEED_0600 · estado semana · SAMU #rise</div>
+    <div class="sl-prio prio-high">HIGH</div>
+  </div>
+  <div class="sl-row past">
+    <div class="sl-time">07:00</div>
+    <div class="sl-name">WORK_KU</div>
+    <div class="sl-desc">TAREA_01 $thu · grammar ACTIVITY_H03→H06</div>
+    <div class="sl-prio prio-high">HIGH</div>
+  </div>
+  <div class="sl-row past">
+    <div class="sl-time">08:30</div>
+    <div class="sl-name">WORK_KU_2</div>
+    <div class="sl-desc">tests generator.py · 27→33 target</div>
+    <div class="sl-prio prio-high">HIGH</div>
+  </div>
+  <div class="sl-row now">
+    <div class="sl-time">09:00</div>
+    <div class="sl-name">CHECK</div>
+    <div class="sl-desc">python3 main.py --stats · verificar S · tests</div>
+    <div class="sl-prio prio-med">MED</div>
+  </div>
+  <div class="sl-row">
+    <div class="sl-time">10:00</div>
+    <div class="sl-name">WORK_KU_3</div>
+    <div class="sl-desc">TAREA_02 $thu · TAREA_03 si hay tiempo</div>
+    <div class="sl-prio prio-high">HIGH</div>
+  </div>
+  <div class="sl-row">
+    <div class="sl-time">12:00</div>
+    <div class="sl-name">ZIPPER_NOON</div>
+    <div class="sl-desc">TARDANZA DELIBERADA · 空 · H61 verdad interior</div>
+    <div class="sl-prio prio-high">HIGH</div>
+  </div>
+  <div class="sl-row">
+    <div class="sl-time">13:00</div>
+    <div class="sl-name">AFTERNOON</div>
+    <div class="sl-desc">DOOR AFTERNOON · WU materializable · @later</div>
+    <div class="sl-prio prio-high">HIGH</div>
+  </div>
+  <div class="sl-row">
+    <div class="sl-time">15:00</div>
+    <div class="sl-name">STACKING</div>
+    <div class="sl-desc">cristalizar WU del día · export_crystals</div>
+    <div class="sl-prio prio-med">MED</div>
+  </div>
+  <div class="sl-row">
+    <div class="sl-time">17:00</div>
+    <div class="sl-name">GIT_SYNC</div>
+    <div class="sl-desc">github_sync.sh · main sellado · H60 límite</div>
+    <div class="sl-prio prio-high">HIGH</div>
+  </div>
+  <div class="sl-row">
+    <div class="sl-time">17:45</div>
+    <div class="sl-name">CIERRE</div>
+    <div class="sl-desc">macro_cierre · SESION_ACTIVA.md update</div>
+    <div class="sl-prio prio-high">HIGH</div>
+  </div>
+  <div class="sl-row">
+    <div class="sl-time">18:00</div>
+    <div class="sl-name">ZIP_CLOSE</div>
+    <div class="sl-desc">FEED_1800 · BOT_NET toma relevo nocturno</div>
+    <div class="sl-prio prio-high">HIGH</div>
+  </div>
+</div>
+
+<div class="tether-box">
+  <div class="th-state th-anchored">ANCHORED</div>
+  <div>
+    <div style="font-weight:bold;margin-bottom:4px">TETHER STATE</div>
+    <div class="th-meta">
+      Session: sess_20260326_0900<br>
+      Tomo: TOMO°180§CORE#DIRIME<br>
+      Anchor: H60+H61 · Limitación<br>
+      Duration: 06:00→18:00
+    </div>
+  </div>
+</div>
+
+<div class="kalil-sched">
+  <div class="ks-card">
+    <div class="ks-nodo">BARRIOS</div>
+    <div class="ks-type">SCHED_DRIP</div>
+    <div class="ks-window">15:00→17:00 · @human_later</div>
+  </div>
+  <div class="ks-card">
+    <div class="ks-nodo">NORA</div>
+    <div class="ks-type">SCHED_REVIEW</div>
+    <div class="ks-window">$fri H62+H63 · 07:00</div>
+  </div>
+  <div class="ks-card">
+    <div class="ks-nodo">BOLIVAR</div>
+    <div class="ks-type">SCHED_NOTIFICATION</div>
+    <div class="ks-window">09:00 CHECK · 15:00 WU</div>
+  </div>
+</div>
+
+<div class="footer">
+  <div>SCHEDULER OS · DIRIME IMV</div>
+  <div>$thu 26/03 · V0.2.1</div>
+  <div>[term] :: activo · SCHED_ACTIVE</div>
+</div>
+
+</body>
+</html>

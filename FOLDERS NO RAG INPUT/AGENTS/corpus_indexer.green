@@ -1,0 +1,39 @@
+# corpus_indexer.green
+# AGENTE INDEXADOR CORPUS · operaciones RAG soberanas
+# Referencia: rag.py · tools/index_new_files.py · BM25
+# [term] :: activo
+
+[genesis]     :: SUITE SOBERANA
+[version]     :: 1.0
+[extension]   :: .green
+[tipo]        :: AGENTE INDEXADOR LOCAL
+[padre]       :: rational_day.theater
+
+## OPERACIONES INDEXADO
+scan_corpus {
+  ACTIVITY UF[H57] =><= .. penetra .. corpus_scan_nuevos_archivos --[As de Guía] [term]
+  METHOD <operator_flow> =><= .. opera .. bm25_index_build_soberano --[Ballestrinque] [term]
+  GATE UF[H05] =><= .. espera .. ledger_gate_indexacion_pendiente --[Ballestrinque] [term]
+}
+
+mu_window_indexacion {
+  STACKING UF[H52] =><= .. aquieta .. mu_window_index_deliberado --[Nudo de Ocho] [term]
+  SAMU @ =><= .. audita .. coherencia_corpus_index_global --[Ballestrinque] [term]
+}
+
+cristalizacion_index {
+  STACKING UF[H52] =><= .. cristaliza .. index_bm25_nuevo_sellado --[Nudo de Ocho] [term]
+  WORK {actuator} =><= .. ejecuta .. python3_tools_index_new_files --[As de Guía] [term]
+  SOCIAL {launch-bot} =><= .. lanza .. reporte_corpus_244_docs --[As de Guía] [term]
+}
+
+## BOOST RULES RAG
+boost_rules {
+  crystal  :: ×2.5 · cristales en sovereign.db
+  theater  :: ×1.8 · FOLDERS NO RAG INPUT/THEATER/
+  agent    :: ×2.0 · FOLDERS NO RAG INPUT/AGENTS/
+  runner   :: ×1.6 · FOLDERS NO RAG INPUT/RUNNERS/
+  biblia   :: ×1.4 · CORPUS/BIBLIA/
+}
+
+[term] :: activo · [seal of secrecy] :: activo

@@ -1,0 +1,70 @@
+//[MANAGEMENT].lacho · UNICODE AGENTS EXPANSION · V1
+//[term]=: forge•canal•ledger_gate•mu_window
+//dominio: AGENTS × 4 NEURONAS × KALIL · nuevos agentes soberanos
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ AGENTS EXISTENTES DOCUMENTADOS ═══════════════════════════
+UNICODE: AG_CLOUD_BLUE    //cloud_agent.blue · KALIL cloud ops · NORA·BOLIVAR·CHALTEN
+                          //CRYPTO (link seat) · TRUST verifica · GATE H56 permite
+UNICODE: AG_ASSIST_GREEN  //assistant_agent.green · local soberano · rutina diaria
+                          //SOCIAL {chair} planifica · METHOD <if> decisión asistida
+                          //alimenta ELPULSAR_DASHBOARD · escala a security.runner
+
+// ══ AGENTS NUEVOS · V1 ═══════════════════════════════════════
+UNICODE: AG_NET_SENTINEL  //network_sentinel.blue · canal+JA3+LR_score
+                          //monitoreo continuo · anomalia detection · forge canal seguro
+UNICODE: AG_CORPUS_INDEX  //corpus_indexer.green · BM25 + boost rules
+                          //scan_corpus · mu_window · cristalización index
+                          //ACTIVITY UF[H57] penetra · METHOD <operator_flow> opera
+UNICODE: AG_SECURITY_RUN //security_runner.blue · expansión de security.runner
+                          //integración LR_SCORE · forge·canal·ledger_gate·mu_window
+                          //escalada automática a hacking_doctor_v2.runner
+UNICODE: AG_KALIL_ORACLE  //kalil_oracle.blue · 6 nodos económicos soberanos
+                          //BARRIOS·NORA·BOLIVAR·CARILO·CHALTEN·TANDIL
+                          //forge decisiones · canal resultados · ledger_gate audit
+
+// ══ AGENTS × 4 NEURONAS ═══════════════════════════════════════
+UNICODE: AG_N1_HEADCAT    //HEADCAT × agents: {chair}·{launch-bot}·{cat}
+                          //SOCIAL {chair} distribuye · {launch-bot} lanza · {cat} navega
+                          //forge sesión · canal interacción · mu_window deliberado
+UNICODE: AG_N2_ELPULSAR    //ELPULSAR × agents: {drip}·{streaming}·{scheduler}
+                          //{drip} filtra · {streaming} mantiene · {scheduler} organiza
+                          //forge pipeline · canal datos · ledger_gate validación
+UNICODE: AG_N3_CHAIR_CEO   //CHAIR CEO × agents: {note}·{masking}·{repositories}
+                          //{note} captura · {masking} lanza · {repositories} registra
+                          //forge análisis · canal reportes · mu_window reflexión
+UNICODE: AG_N4_HOUSE_DRONE //HOUSE DRONE × agents: WORK·GATE·ACTIVITY
+                          //WORK ejecuta · GATE espera · ACTIVITY penetra
+                          //forge tareas · canal estado · ledger_gate completado
+
+// ══ AGENTS × KALIL 6 NODOS ═════════════════════════════════════
+UNICODE: AG_KALIL_BAR     //BARRIOS: forge_remesa · canal_hash_BLAKE3
+                          //TRUST FOUNDATION verifica · CRYPTO (link seat) conecta
+                          //JA3_whitelist · LR_SCORE baseline · ledger_gate registro
+UNICODE: AG_KALIL_NOR     //NORA: forge_oracle · canal_delta_Ψ
+                          //METHOD <stat_onto> calcula · GATE UF[H05] espera
+                          //ledger_gate audit · mu_window deliberación oracle
+UNICODE: AG_KALIL_BOL     //BOLIVAR: forge_contrato · canal_blockchain
+                          //CRYPTO (spark seat) firma · PE_entropy < 7.0
+                          //ledger_gate smart contract · mu_window validación
+UNICODE: AG_KALIL_CAR     //CARILO: forge_préstamo · canal_crediticio
+                          //LR_SCORE riesgo · GATE UF[H56] permite si SAFE
+                          //ledger_gate préstamo · mu_window evaluación
+UNICODE: AG_KALIL_CHA     //CHALTEN: forge_lending · canal_cloud
+                          //daemon cloud · beacon detection · ledger_gate cloud
+                          //mu_window cloud_drift · SAMU audita
+UNICODE: AG_KALIL_TAN     //TANDIL: forge_hub · canal_consolidado
+                          //spool global · METHOD <stat_onto> consolida
+                          //ledger_gate hub · mu_window sincronización
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+TRUST FOUNDATION =><= .. verifica .. ag_forge_clearance_soberano --[As de Guía] [term]
+CRYPTO (link seat) =><= .. conecta .. ag_canal_forge_soberano --[As de Guía] [term]
+GATE UF[H05] =><= .. espera .. ag_ledger_gate_forge_registro --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. aquieta .. ag_mu_window_deliberado --[Nudo de Ocho] [term]
+ACTIVITY UF[H57] =><= .. penetra .. ag_corpus_scan_nuevos_archivos --[As de Guía] [term]
+WORK {actuator} =><= .. ejecuta .. ag_forge_build_soberano_verificado --[As de Guía] [term]
+
+//DIR(+) UNICODE_AGENTS_EXPANSION · V1 · forge•canal•ledger_gate•mu_window
+//$fri 10/04 · CORPUS/UNICODE PROGRAMS/

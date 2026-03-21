@@ -1,0 +1,64 @@
+//[MANAGEMENT].lacho · UNICODE KALIL AGENTS · V1
+//[term]=: shard•relay•oracle•threshold
+//dominio: 6 nodos KALIL × agentes especializados × grammar
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN [term]=: shard•relay•oracle•threshold ══════════
+UNICODE: SHARD       //fragmento verificado · porción corpus soberana
+                     //shard = pocket granular · <A> por slice
+                     //STACKING UF[H04] =><= .. reserva .. shard_corpus_slice
+UNICODE: RELAY       //SOCIAL {relay} bridge entre nodos · canal KALIL
+                     //relay hereda de canal semana anterior
+                     //SOCIAL {relay} =><= .. lanza .. relay_nodo_bridge
+UNICODE: ORACLE      //evaluador externo verificado · NORA oracle
+                     //METHOD <stat_onto> =><= .. calcula .. oracle_rating_ext
+                     //oracle no es IA · oracle es coherencia verificada
+UNICODE: THRESHOLD   //umbral soberano · scalar_min de TAXONOMY
+                     //TRUST FOUNDATION verifica: score >= threshold
+                     //SAMU @ =><= .. audita .. threshold_cumplido_soberano
+
+// ══ AGENTES KALIL — DEFINICIONES ═════════════════════════════
+UNICODE: KA_BARRIOS_AGENT  //barrios_relay.green · remesas · SOCIAL {relay}
+                           //bridge entre comunidad y plataforma · canal BLAKE3
+UNICODE: KA_NORA_AGENT     //nora_oracle.blue · rating externo · oracle soberano
+                           //METHOD <stat_onto> evalúa contrapartes · JA3S
+UNICODE: KA_BOLIVAR_AGENT  //bolivar_forge.blue · blockchain · forge contratos
+                           //CRYPTO (spark seat) · SHA256 · PE_entropy check
+UNICODE: KA_CARILO_AGENT   //carilo_session.green · préstamos · {chair} FLEX
+                           //threshold score crediticio · LEDGER_GATE
+UNICODE: KA_CHALTEN_AGENT  //chalten_daemon.blue · cloud lending · daemon 24h
+                           //SOCIAL {streaming} · beacon detection · cloud_drift
+UNICODE: KA_TANDIL_AGENT    //tandil_hub.green · consolidación · METHOD <operator_flow>
+                           //spool global · shard granular · relay 6→1
+
+// ══ AGENTES × GRAMMAR EXTENSION ════════════════════════════════
+UNICODE: KA_GRAMMAR_EXT   //grammar.py extensión · INTENT_MAP nuevos dominios
+                           //ACTIVITY_H03-H05-H06-H56 · agents_kalil_map
+                           //language_routing: shard·relay·oracle·threshold
+UNICODE: KA_TESTS_EXT     //tests 27→33 · test_imv_ext.py nuevos
+                           //coverage: agents_kalil · shard_corpus · relay_bridge
+                           //oracle_rating · threshold_validation
+
+// ══ CROSS-AGENTS × DRIP-IMV LIVE ═══════════════════════════════
+UNICODE: KA_DRIP_LIVE     //DRIP-IMV live stream · agents_kalil feed
+                           //SOCIAL {drip} =><= .. filtra .. agents_kalil_drip_live
+                           //daemon background · feed_0600 procesa
+UNICODE: KA_FEED_0600     //feed procesamiento 06:00 · daemon nocturno
+                           //consolida 6 agents → spool_kalil_agents
+                           //METHOD <stat_onto> =><= .. calcula .. feed_metrics
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+SOCIAL {relay} =><= .. lanza .. ka_barrios_relay_community_platform --[As de Guía] [term]
+METHOD <stat_onto> =><= .. calcula .. ka_nora_oracle_rating_externo --[Ballestrinque] [term]
+CRYPTO (spark seat) =><= .. firma .. ka_bolivar_forge_contrato_sha256 --[As de Guía] [term]
+SOCIAL {chair} =><= .. distribuye .. ka_carilo_session_prestamo_flex --[As de Guía] [term]
+SOCIAL {streaming} =><= .. mantiene .. ka_chalten_daemon_cloud_lending --[As de Guía] [term]
+METHOD <operator_flow> =><= .. opera .. ka_tandil_hub_spool_global_consolidado --[Ballestrinque] [term]
+
+STACKING UF[H04] =><= .. reserva .. shard_corpus_slice_verificado --[Nudo de Ocho] [term]
+TRUST FOUNDATION =><= .. verifica .. threshold_score_soberano_cumplido --[As de Guía] [term]
+SAMU @ =><= .. audita .. agents_kalil_coherencia_global --[Ballestrinque] [term]
+
+//DIR(+) UNICODE_KALIL_AGENTS · V1 · shard•relay•oracle•threshold
+//$wed 15/04 · CORPUS/UNICODE PROGRAMS/

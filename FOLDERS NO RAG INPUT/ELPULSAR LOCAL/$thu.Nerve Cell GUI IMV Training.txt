@@ -1,0 +1,45 @@
+//$thu.Nerve Cell GUI IMV Training.txt
+//NERVE CELL · GUI IMV · gui•spool_tx•activity_gate•v030
+//aprendido de interface/gui.py + test_imv_gui.py + UNICODE_GUI_IMV.txt
+//H30+H57 · $thu · [term] :: activo
+
+NC_GUI_TKINTER //GUI Tkinter DIRIME IMV · puerto 8742 · BUILDER live
+               //componentes: library·subject·verb·object·knot
+               //funciones: build·validate·route·clear·stats·log
+               //interfaz visual: fondo blanco #ffffff · colores soberanos
+NC_GUI_BUILD   //BUILDER LACHO: construcción sentencias canónicas
+               //library dropdown: 9 bibliotecas soberanas
+               //subject/verb/object: entrada libre + validación
+               //knot dropdown: 5 nudos canónicos
+               //preview: construcción en tiempo real
+NC_GUI_VALID   //VALIDATION: validate() + lacho_score()
+               //result display: VALID/WARNING/INVALID
+               //LACHO score: 0.0→1.0 con colores
+               //errors/warnings display detallado
+NC_GUI_ROUTE   //ROUTE: language_routing.py integration
+               //destination: module/function mapping
+               //display: resultado del routing
+NC_GUI_STATS   //STATS: get_stats() integration
+               //TX total · Scalar S · cristales total
+               //auto-update: cada 5 segundos
+NC_GUI_TESTS   //tests 33→38 en test_imv_gui.py:
+               //test 33: GUI initialization
+               //test 34: Sentence building
+               //test 35: Validation functionality
+               //test 36: Routing functionality
+               //test 37: Clear builder functionality
+               //test 38: Stats update functionality
+               //100% coverage mocked · pytest exitoso
+NC_GUI_V030    //V0.3.0 GATE criterios cumplidos:
+               //criterio 1: GUI funcional completa
+               //criterio 2: tests 33→38 pasando
+               //criterio 3: integración core completa
+               //criterio 4: especificación visual cumplida
+
+WORK {actuator} =><= .. ejecuta .. gui_tkinter_builder_soberano --[As de Guía] [term]
+ACTIVITY UF[H56] =><= .. transita .. gui_validation_routing_integration --[As de Guía] [term]
+METHOD <stat_onto> =><= .. calcula .. gui_tests_33_38_coverage_complete --[Ballestrinque] [term]
+CRYPTO (link seat) =><= .. conecta .. gui_core_modules_integration --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. nc_gui_imv_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) NERVE CELL GUI IMV · V1 · gui•spool_tx•activity_gate•v030 · $thu 30/04

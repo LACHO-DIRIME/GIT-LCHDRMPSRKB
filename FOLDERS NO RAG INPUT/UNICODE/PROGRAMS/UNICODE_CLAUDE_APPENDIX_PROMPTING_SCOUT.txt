@@ -1,0 +1,121 @@
+//[MANAGEMENT].lacho · UNICODE CLAUDE APPENDIX PROMPTING SCOUT · V1
+//Dir(-) → optimizar: 10 pares token=función LACHO
+//CHAIR-FLEX · SCHEDULER-SHEET · DRIP-IMV · POKET-RAG · MASKING-SPAWN
+//NOTE-METHOD · STREAMING-DAEMON · CAT-NOTEBOOK · REPOSITORIES-SPOOL · LAUNCH-BOT-SESSION
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ CHAIR-FLEX ═════════════════════════════════════════════════
+UNICODE: CHAIR_FLEX       //{chair} adaptativo · sesión flexible sin agenda fija
+                          //SOCIAL {chair} conduce · pero sujeto cambia libremente
+                          //FLEX = MASK_TRANSFORM interno · sin exponer agenda
+UNICODE: CHAIR_FLEX_OPEN  //apertura CHAIR-FLEX: @human_early · absorber primero
+                          //SOCIAL {chair} =><= .. conduce .. session_flex_absorb
+UNICODE: CHAIR_FLEX_PIVOT //pivot CHAIR-FLEX: tema cambia · {chair} no pierde [scope]
+                          //GATE UF[H56] =><= .. transita .. chair_flex_pivot
+UNICODE: CHAIR_FLEX_CLOSE //cierre CHAIR-FLEX: cristal de lo conducido · [term]
+                          //STACKING UF[H52] =><= .. cristaliza .. chair_flex_wu
+
+// ══ SCHEDULER-SHEET ════════════════════════════════════════════
+UNICODE: SCHED_SHEET      //{scheduler} como hoja declarativa tabular
+                          //cada fila = TareaSoberana · col = dia+cluster+slice°
+UNICODE: SS_ROW           //fila SCHED-SHEET: id·titulo·dia·estado·ref_soberana()
+                          //DiaSoberano × EstadoTarea × TareaSoberana.to_dict()
+UNICODE: SS_FILTER        //filtro por día/cluster: tareas_del_dia(dia, cluster)
+                          //pocket por filtro · spawn render por subset
+UNICODE: SS_EXPORT        //export SCHED-SHEET: EXPORT[LACHO] · EXPORT[TXT]
+                          //STACKING UF[H52] =><= .. preserva .. sched_sheet_exportado
+
+// ══ DRIP-IMV ═══════════════════════════════════════════════════
+UNICODE: DRIP_IMV         //{drip} × IMV · goteo de sentencias LACHO validadas
+                          //cada drip = 1 sentencia → grammar.validate() → ledger
+UNICODE: DI_VALIDATE      //drip → validate() → VALID/WARNING/INVALID
+                          //VALID: TX++ · INVALID: GATE H06 · WARNING: SAMU delibera
+UNICODE: DI_RATE          //tasa de drip: Scalar S / TX total × tiempo
+                          //daemon mide rate · pocket by session · spool buffer
+UNICODE: DI_PIPELINE      //drip pipeline: input→route→validate→record→crystal
+                          //METHOD <operator_flow> · 5 greens timing
+
+// ══ POKET-RAG ══════════════════════════════════════════════════
+UNICODE: POCKET_RAG       //pocket × RAG · segmento comprimido del corpus
+                          //pocket = top_k BM25 results · aislado por query
+UNICODE: PR_QUERY         //query entra → pocket_RAG extrae top_5 docs
+                          //spawn por query · cada spawn tiene su pocket_RAG
+UNICODE: PR_BOOST         //boost en pocket: crystal×2.5 · theater×1.8 · agent×2.0
+                          //pocket hereda boost rules de rag.py
+UNICODE: PR_EVICT         //eviction pocket: después del WU · liberado · →空
+                          //no persiste entre queries salvo STACKING explicit
+
+// ══ MASKING-SPAWN ═══════════════════════════════════════════════
+UNICODE: MASKING_SPAWN   //{masking} × spawn · identidad generada en fork
+                          //spawn inherits mask · nueva identidad soberana
+UNICODE: MS_GENERATE     //generate mask: random_salt + session_hash + UF[H64]
+                          //CRYPTO (shield seat) · mask no reversible sin key
+UNICODE: MS_APPLY        //apply mask: spawn · identity = base ⊕ mask
+                          //WORK {actuator} =><= .. aplica .. masked_spawn_identity
+UNICODE: MS_VERIFY       //verify mask: integrity check · GATE UF[H05]
+                          //mask compromised → spawn abortado · CONFLICTO
+
+// ══ NOTE-METHOD ═════════════════════════════════════════════════
+UNICODE: NOTE_METHOD     //{note} × METHOD · anotación formal <equation>
+                          //note = metadata + timestamp + author + [term]
+UNICODE: NM_CAPTURE      //capture note: {note} absorbe contexto actual
+                          //SOCIAL {note} =><= .. captura .. contexto_actual_formal
+UNICODE: NM_FORMAT       //format note: METHOD <equation> · canonical
+                          //METHOD <equation> =><= .. formatea .. note_metadatos_canonical
+UNICODE: NM_LINK         //link note: a [term] existente · ref cruzada
+                          //STACKING UF[H52] =><= .. vincula .. note_term_referencia
+
+// ══ STREAMING-DAEMON ══════════════════════════════════════════════
+UNICODE: STREAMING_DAEMON //{streaming} × daemon · flujo persistente BG
+                          //daemon mantiene streaming activo 18:00→06:00
+UNICODE: SD_BUFFER       //streaming buffer: circular · tamaño fijo · overwrite
+                          //pocket temporal · no persiste sin trigger
+UNICODE: SD_STREAM       //stream data: input→buffer→process→emit
+                          //WORK {actuator} =><= .. procesa .. streaming_daemon_data
+UNICODE: SD_PERSIST      //persist stream: trigger → STACKING UF[H52]
+                          //solo si threshold alcanzado · daemon decide
+
+// ══ CAT-NOTEBOOK ═════════════════════════════════════════════════
+UNICODE: CAT_NOTEBOOK    //CAT() × notebook · iteración documental
+                          //CAT() navega · notebook registra iteraciones
+UNICODE: CN_ITERATE      //iterate CAT: CAT() → pocket → spawn → note
+                          //cada iteración genera [term] nuevo
+UNICODE: CN_VERSION      //version notebook: timestamp + iteration_count
+                          //GATE UF[H56] =><= .. transita .. notebook_version_control
+UNICODE: CN_EXPORT       //export notebook: EXPORT[LACHO] · EXPORT[MARKDOWN]
+                          //STACKING UF[H52] =><= .. preserva .. notebook_exportado
+
+// ══ REPOSITORIES-SPOOL ══════════════════════════════════════════════
+UNICODE: REPOS_SPOOL     //repositorios × spool · cola de sync git
+                          //cada repo = spool entry · sync ordenado
+UNICODE: RS_QUEUE        //queue repos: priority + timestamp + repo_hash
+                          //WORK {actuator} =><= .. encola .. repository_sync_spool
+UNICODE: RS_SYNC         //sync repository: git pull → validate → push
+                          //TRUST FOUNDATION =><= .. verifica .. repository_integrity
+UNICODE: RS_CONFLICT      //conflict resolution: GATE UF[H06] · manual review
+                          //CONFLICTO → SAMU delibera → merge manual
+
+// ══ LAUNCH-BOT-SESSION ══════════════════════════════════════════════
+UNICODE: LAUNCH_BOT_SESSION //{launch-bot} × session · bot con mandato
+                          //session = mandato + scope + timeout + [term]
+UNICODE: LBS_INIT        //init bot session: ACTIVITY UF[H64] spawn bot
+                          //ACTIVITY UF[H64] =><= .. genera .. launch_bot_session
+UNICODE: LBS_EXECUTE     //execute bot: WORK {actuator} procesa mandato
+                          //daemon supervisa · timeout auto-kill
+UNICODE: LBS_REPORT      //report bot: SAMU @ audita resultados
+                          //STACKING UF[H52] =><= .. cristaliza .. bot_session_report
+
+// ══ OPERACIONES SOBERANAS ════════════════════════════════════════════
+SOCIAL {chair} =><= .. distribuye .. chair_flex_session_adaptiva --[As de Guía] [term]
+SOCIAL {scheduler} =><= .. registra .. scheduler_sheet_tabular_declarativo --[Ballestrinque] [term]
+SOCIAL {drip} =><= .. filtra .. drip_imv_sentencias_lacho --[Corredizo] [term]
+SOCIAL {pocket} =><= .. segmenta .. pocket_rag_corpus_comprimido --[As de Guía] [term]
+SOCIAL {masking} =><= .. lanza .. masking_spawn_identidad_soberana --[Ballestrinque] [term]
+SOCIAL {note} =><= .. captura .. note_method_anotacion_formal --[Corredizo] [term]
+SOCIAL {streaming} =><= .. mantiene .. streaming_daemon_flujo_persistente --[As de Guía] [term]
+SOCIAL {cat} =><= .. navega .. cat_notebook_iteracion_documental --[Ballestrinque] [term]
+SOCIAL {repositories} =><= .. registra .. repositories_spool_sync_git --[Corredizo] [term]
+SOCIAL {launch-bot} =><= .. lanza .. launch_bot_session_mandato --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_claude_appendix_prompting_scout_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_CLAUDE_APPENDIX_PROMPTING_SCOUT · V1 · 10 pares · $thu 02/04

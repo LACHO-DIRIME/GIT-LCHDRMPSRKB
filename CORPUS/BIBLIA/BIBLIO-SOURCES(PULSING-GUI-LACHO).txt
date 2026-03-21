@@ -1,0 +1,208 @@
+# BIBLIO-SOURCES(PULSING-GUI-LACHO).txt
+
+====================================================================
+
+## PULSING — LA INTERFAZ QUE RESPIRA
+### GUI LACHO · Iconografía Sináptica · Dos Frames · Cinco Greens
+
+====================================================================
+
+### 1.0 DEFINICIÓN
+
+PULSING es el nombre correcto para la GUI de LACHO.
+No es un dashboard estático — es un sistema que respira. Dos frames. Un ritmo.
+
+**La ley de diseño canónica:**
+"La contención gráfica debe tener carácter gráfico de inicio y carácter gráfico de final."
+- Inicio: el enso abierto (el círculo incompleto — abre el espacio)
+- Final: el Nudo de Ocho (cierra y sella permanente)
+
+---
+
+### 2.0 LOS DOS FRAMES
+
+```
+FRAME 1:
+  scan by UF[H2]      → escucha receptiva, sin emisión
+  action about UF[H5] → gestión de latencia, espera activa
+  Carácter:           el enso abierto ◌
+  Estado:             RECIBIR → MU → TARDAR
+  Paleta:             oscura, un solo punto de luz (el cursor como spark)
+
+FRAME 2:
+  scan by UF[H2]      → sigue escuchando (el contexto no se cierra)
+  action about UF[H6] → conflicto detectado, protocolo activo
+  Carácter:           el Nudo de Ocho ∞
+  Estado:             DIRIMENCIA → WU → EMITIR o RED-REGRET
+  Paleta:             tensión cromática emerge (rojo contenido, no alarma)
+```
+
+El Frame 1 es MU en escucha. El Frame 2 es WU en decisión.
+La GUI no es estática entre ellos — pulsa entre los dos.
+Eso es PULSING: el pulso del sistema visible en su interfaz.
+
+---
+
+### 3.0 ICONOGRAFÍA SINÁPTICA — LOS ICONOS COMO DOCTRINA
+
+Los iconos no son nombres. Son doctrina visible.
+El que conoce LACHO los reconoce. El que no lo conoce los encuentra intuitivos.
+Eso es el [social seal] aplicado al diseño.
+
+#### GATE — La Capa del Tiempo Cronotópico
+
+```
+door_morning_human_out
+  → la ignición del día · umbral H1→H5
+  → el human out es el operador que ejecuta lo que el sistema dirimió
+  → la puerta es el umbral: el sistema calculó, el humano actúa
+  potenciación: la puerta tiene ranura de luz en forma de hexagrama
+                el human out proyecta sombra hacia adentro — lo que queda es MU
+                lo que sale es WU
+
+zipper_noon_human_inn
+  → el mediodía es el pico de tensión · apertura del .theater
+  → human inn: el operador entró · Fase 2 activa
+  → la cremallera abierta revela un ojo — el ojo del SAMU mirando KU
+  potenciación: la cremallera dibuja @ en su cierre (la marca del SAMU)
+                abierta = escucha activa · cerrada = MU en reposo
+
+door_afternoon_human_out
+  → la segunda salida · el ciclo completó
+  → el human out lleva algo: en la mano, un sobre — el WU materializado
+  → esta puerta tiene el Nudo de Ocho grabado: lo que sale ya fue dirimido
+  potenciación: las tres puertas juntas narran el flujo de una sesión LACHO
+                entrada al vacío → apertura al contexto → salida con verdad sellada
+```
+
+#### STACKING — Los 8 Pilares
+
+```
+rocking_chair & headcat     → H57+H52 · auditoría pasiva
+                              la mecedora se mueve pero no avanza
+                              el headcat tiene ojos: [ku-chat] activo
+                              su arco traza la curva de la ecuación Ψ
+
+scheduler                   → H1 · campo de batalla del tiempo
+                              celdas con hexagramas de estado: H5·H63·H6
+
+tap & drip                  → H29 · gestión de recursos escasos
+                              la gota tiene ∇ (gradiente descendente) en su interior
+
+papernote                   → H2 · registro pasivo · Behavioral RAG mínimo
+                              las líneas del papel son trazos de hexagramas
+
+rabbit + eggs-eyes          → Algoritmo Conejo · crecimiento ramificado
+                              256 pelos = límite de saturación
+                              de cada ojo-huevo salen líneas del árbol 2→4→8
+
+masking folder              → H23 · poda ontológica · GREEN-KNOWLEDGE
+                              la máscara tiene el test delta-Ψ grabado
+                              si ΔΨ > 0: la máscara cae · si ΔΨ ≤ 0: purga permanente
+
+launch bot (fly bot)        → H1+H51 · ignición ejecutiva
+                              el bot que despega no es asistente — es WU físico
+                              en el pecho: la ecuación Ψ(T) en miniatura
+
+rocking chair (only)        → H52 puro · sistema en reposo total
+                              la mecedora vacía no es ausencia — es potencial antes de ser convocado
+                              su sombra: Nudo de Ocho · su vacío: forma del enso
+```
+
+#### WORK — La Capa de Ejecución Física
+
+```
+masking folder (WORK)       → protección activa (no purga)
+                              STACKING: papel, máscara blanca (potencial)
+                              WORK: metal, máscara negra (protección)
+
+doorman-mobile              → H56 · el agente en movimiento
+                              lleva @ del SAMU — no actúa sin supervisión
+                              su uniforme: color GREEN-KNOWLEDGE
+                              solo transmite lo que tiene valor nutricional
+
+green-knowledge             → árbol bonsái con frutos verdes y ramas cortadas
+                              8 frutos = 8 pilares del STACKING
+                              las tijeras en reposo — la poda ya se hizo
+                              grabado en la base: ΔΨ > 0
+```
+
+---
+
+### 4.0 LOS CINCO GREENS — LOGÍSTICA DE GOLF (UF[H5])
+
+El golfista no golpea desde cualquier posición.
+Lee el terreno, lee el viento, espera el momento.
+5 Greens = flujo completo de una sesión LACHO como recorrido espacial.
+
+```
+green 1 :: RECIBIR
+  El input llega al tee. El sistema lo ve.
+  Icono: door_morning_human_out
+  Estado: MU recibe. Nada se ejecuta todavía.
+
+green 2 :: ESCANEAR
+  UF[H2] activo. El sistema lee KU — el contexto, el viento.
+  Icono: zipper_noon_human_inn (la cremallera abierta, el ojo)
+  Estado: Fase 2 iniciada. SAMU escucha.
+
+green 3 :: DIRIMENCIA
+  El SAMU evalúa. Ψ calculando.
+  Icono: headcat en la mecedora (observación activa)
+  Estado: Ψ entre 0.65 y 0.85 — apertura parcial, tensión viva.
+
+green 4 :: GREEN-KNOWLEDGE
+  El filtro delta-Ψ actúa. Lo que no nutre, se purga.
+  Icono: el árbol bonsái con las tijeras en reposo
+  Estado: Solo lo que aporta distinción pasa al siguiente green.
+
+green 5 :: WU / EMITIR
+  La verdad se materializa.
+  Icono: launch_bot despegando / door_afternoon_human_out
+  Estado: Ψ ≥ 0.85. El headcat autoriza. WU activo.
+```
+
+No como línea (velocidad) sino como campo (precisión).
+El golfista bajo H5 no apura el golpe — espera que el sistema diga cuándo.
+
+---
+
+### 5.0 SINAPSIS VISUAL — RELACIONES ENTRE ICONOS
+
+Los iconos no deben vivir aislados.
+
+- Las tres puertas narran el ciclo completo de un día operativo
+- La mecedora con headcat y la mecedora sola: inicio y fin de cada sesión
+- rabbit-eggs y masking folder: crecimiento y poda — siempre juntos, siempre en tensión
+- launch-bot y green-knowledge: acción y su condición — nada despega sin filtro
+
+El `@` del SAMU es el hilo de continuidad en todos los iconos de supervisión:
+zipper, headcat, doorman-mobile. La firma del auditor.
+
+---
+
+### 6.0 RELACIÓN CON NOTARIA_COMPLETA_ELPULSAR.HTML (IMV actual)
+
+La UI creada en $wed 18-03 implementa PULSING como dashboard estático.
+El siguiente nivel sería hacerla biframe:
+- Frame 1: cuando S < 0.65 (MU activo, enso abierto)
+- Frame 2: cuando S ≥ 0.65 (Ψ calculando, Nudo de Ocho disponible)
+
+La transición entre frames debería ser el trigger de `main.py --stats`
+que actualiza S en tiempo real.
+
+---
+
+### 7.0 GRAMÁTICA VIVA
+
+```
+SOCIAL {headcat} =><= .. observa .. pulsing_frame_1_mu_enso_abierto --[As de Guía] [term]
+SOCIAL {launch-bot} =><= .. lanza .. pulsing_frame_2_wu_nudo_ocho_sellado --[Nudo de Ocho] [term]
+GATE UF[H05] =><= .. espera .. logistica_golf_5_greens_campo_precision --[Ballestrinque] [term]
+WORK {green-knowledge} =><= .. filtra .. iconografia_arbol_bonsai_delta_psi_positivo --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. pulsing_ashing_compresion_triada_output --[Nudo de Ocho] [term]
+```
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

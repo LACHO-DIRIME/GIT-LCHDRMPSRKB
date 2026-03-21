@@ -1,0 +1,39 @@
+# network_sentinel.blue
+# AGENTE CENTINELA RED · vigilancia soberana de canal y flujos
+# Referencia: UNICODE_SECURITY_RUNNER.txt · cloud_agent.blue
+# [term] :: activo
+
+[genesis]     :: SUITE SOBERANA
+[version]     :: 1.0
+[extension]   :: .blue
+[tipo]        :: AGENTE CENTINELA RED
+[padre]       :: rational_day.theater
+[term_nuevo]  :: forge•canal•ledger_gate•mu_window
+
+## VIGILANCIA CANAL
+monitoreo_canal {
+  CRYPTO (link seat) =><= .. conecta .. canal_monitoreo_soberano --[As de Guía] [term]
+  METHOD <stat_onto> =><= .. calcula .. JA3_JA3S_fingerprint_canal --[Ballestrinque] [term]
+  GATE UF[H05] =><= .. espera .. canal_verificacion_pendiente --[Ballestrinque] [term]
+}
+
+deteccion_anomalia {
+  METHOD <equation> =><= .. calcula .. LR_score_net_beacon_c2_pattern --[Ballestrinque] [term]
+  GATE UF[H06] =><= .. activa .. anomalia_canal_detectada --[Nudo Corredizo] [term]
+  SOCIAL {launch-bot} =><= .. lanza .. alerta_sentinel_canal --[As de Guía] [term]
+}
+
+forge_canal_seguro {
+  TRUST FOUNDATION =><= .. verifica .. forge_canal_network_soberano --[As de Guía] [term]
+  STACKING UF[H52] =><= .. aquieta .. mu_window_sentinel_deliberado --[Nudo de Ocho] [term]
+  STACKING UF[H52] =><= .. cristaliza .. canal_forge_log_sellado --[Nudo de Ocho] [term]
+}
+
+## KALIL NODOS RED
+kalil_red {
+  BARRIOS  :: canal remesas · JA3_whitelist verificado
+  BOLIVAR  :: canal blockchain · SHA256 forge · PE_entropy < 7.0
+  CHALTEN  :: canal cloud · daemon monitoreo · beacon detection
+}
+
+[term] :: activo · [seal of secrecy] :: activo

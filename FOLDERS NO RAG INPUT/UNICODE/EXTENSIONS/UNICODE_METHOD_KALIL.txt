@@ -1,0 +1,53 @@
+//[MANAGEMENT].lacho · UNICODE METHOD × KALIL 6 NODOS
+//cada nodo KALIL tiene su operador METHOD dominante + ecuación nativa
+//贷款→<equation> · 智能→<operator_flow> ya en CJK_TOKEN_MAP
+//[term] :: activo
+
+// ══ BARRIOS × <operator_flow> ════════════════════════════════
+UNICODE: MK_BAR_OF    //BARRIOS <operator_flow> · flujo banca comunitaria
+                      //Banking Access Remote Resources · routing diáspora
+UNICODE: MK_BAR_PIPE  //pipeline: remesa→BARRIOS→{actuator}→ledger
+UNICODE: MK_BAR_ZH    //社区→H13 · {chair} · comunidad soberana
+
+// ══ NORA × <stat_onto> ════════════════════════════════════════
+UNICODE: MK_NOR_SO    //NORA <stat_onto> · oracle rating · Scalar S por contraparte
+UNICODE: MK_NOR_DELTA //delta_Ψ_NORA = rating_actual - rating_baseline + impacto_mercado
+UNICODE: MK_NOR_ZH    //智能→H50 · <operator_flow> · analítica inteligente
+
+// ══ BOLIVAR × <if> ════════════════════════════════════════════
+UNICODE: MK_BOL_IF    //BOLIVAR <if> · bifurcación blockchain · VALID/FAIL hash
+UNICODE: MK_BOL_COND  //<if> hash_verificado: → CRYPTO (key seat) certifica
+                      //<if> hash_fallido:    → GATE UF[H06] bloquea
+UNICODE: MK_BOL_HL    //HL FABRIC compatible · CRYPTO (shield seat) protege
+
+// ══ CARILO × <equation> ═══════════════════════════════════════
+UNICODE: MK_CAR_EQ    //CARILO <equation> · ratio_riesgo · score_prestamo
+UNICODE: MK_CAR_FORM  //equation: R = (capital × plazo) / (score_NORA × garantia)
+UNICODE: MK_CAR_ZH    //贷款→H42 · <equation> · préstamo calculado soberano
+
+// ══ CHALTEN × <psi_spin> ══════════════════════════════════════
+UNICODE: MK_CHA_PS    //CHALTEN <psi_spin> · lending cloud · exchange spin
+UNICODE: MK_CHA_CYCLE //SPIN: deposito(KU)→verificacion(SAMU)→prestamo(WU)→repago(空)
+UNICODE: MK_CHA_TIER  //FT_ROTATE aplicado · Railway+Fly+Supabase · cloud lending
+
+// ══ TANDIL × <operator_flow> + <stat_onto> ════════════════════
+UNICODE: MK_TAN_OF    //TANDIL <operator_flow> · nodo de consolidación · hub
+UNICODE: MK_TAN_SO    //TANDIL <stat_onto> · métricas globales KALIL · dashboard
+UNICODE: MK_TAN_NET   //neural_net.py build_graph() · TANDIL como hub cluster
+
+// ══ MATRIX 6×5 KALIL × METHOD ═════════════════════════════════
+//          <eq>   <if>   <of>   <so>   <ps>
+// BARRIOS  [ ]   [ ]    [X]    [ ]    [ ]
+// NORA     [ ]   [ ]    [X]    [X]    [ ]
+// BOLIVAR  [ ]   [X]    [ ]    [ ]    [ ]
+// CARILO   [X]   [ ]    [ ]    [ ]    [ ]
+// CHALTEN  [ ]   [ ]    [ ]    [ ]    [X]
+// TANDIL   [ ]   [ ]    [X]    [X]    [ ]
+
+METHOD <equation> =><= .. calcula .. kalil_carilo_ratio_riesgo_prestamo --[Ballestrinque] [term]
+METHOD <operator_flow> =><= .. opera .. kalil_barrios_flujo_banca_comunitaria --[Ballestrinque] [term]
+METHOD <if> =><= .. estructura .. kalil_bolivar_hash_valido_invalido --[As de Guía] [term]
+METHOD <stat_onto> =><= .. calcula .. kalil_nora_oracle_rating_delta --[Ballestrinque] [term]
+METHOD <stat_onto> =><= .. calcula .. kalil_chalten_lending_cloud_ciclo --[As de Guía] [term]
+
+//DIR(+) UNICODE_METHOD_KALIL · V1 · 6×5 matrix · $fri 20/03

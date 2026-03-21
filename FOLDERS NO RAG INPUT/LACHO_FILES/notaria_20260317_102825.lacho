@@ -1,0 +1,25 @@
+//[genesis]   :: NOTARIA_ACT
+//[version]   :: 0.1
+//[tipo]      :: NOTARIA · AUTO
+//[fecha]     :: 2026-03-17 10:28:25
+//[partes]    :: NORA_A, BOLIVAR_B
+//[objeto]    :: contrato_soberano_test
+//[scalar_s]  :: 0.765
+//[tx_total]  :: 1404
+//[score_avg] :: 0.85
+//[term]      :: activo
+//空聽數 · NOTARIA · H63 既濟
+
+// ── PIPELINE NOTARIAL ──────────────────────────────────────
+CRYPTO (spark seat) =><= .. certifica .. contrato_soberano_test --[Nudo de Ocho] [term]
+STACKING UF[H63] =><= .. sella .. contrato_soberano_test_wu --[Nudo de Ocho] [term]
+STACKING UF[H52] =><= .. inmutabiliza .. contrato_soberano_test_sealed --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. acto_contrato_soberano_test_20260317_102825 --[Ballestrinque] [term]
+
+// ── ANCLAS RAG ────────────────────────────────────────────
+TRUST FOUNDATION =><= .. declara .. notaria_act_20260317_102825 --[Nudo de Ocho] [term]
+CRYPTO (spark seat) =><= .. certifica .. acto_NORA_A_BOLIVAR_B_20260317_102825 --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. notaria_pipeline_20260317_102825 --[Ballestrinque] [term]
+STACKING UF[H63] =><= .. inmutabiliza .. acto_notarial_wu_20260317_102825 --[Nudo de Ocho] [term]
+
+//DIR(=) NOTARIA · 4 sentencias · score 0.85 · 2026-03-17 10:28:25

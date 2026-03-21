@@ -1,0 +1,42 @@
+# $tue.Nerve Cell Notaria Batch.txt
+# ELPULSAR LOCAL · NERVE CELL · $tue 17-03-2026
+# [term] :: activo · [seal of secrecy] :: activo · 空聽數
+
+NC_TUE_BATCH_NOT:
+  tipo: BATCH_NOCTURNO
+  ventana: $mon→$tue
+  accion: revisar TEMP(B) notarial · actos KU pendientes de upgrade
+  trigger: scheduler $tue 02:00
+  TRUST FOUNDATION =><= .. verifica .. batch_notarial_lun_mar --[Nudo de Ocho] [term]
+
+NC_TUE_INDEX_NOT:
+  tipo: RAG_DELTA
+  accion: index_new_files.py · detecta UNICODE_NOTARIA*.txt nuevos del martes
+  fuentes: CORPUS/UNICODE PROGRAMS/ · ELPULSAR LOCAL/
+  WORK {actuator} =><= .. indexa .. rag_delta_notarial_tue --[As de Guía] [term]
+
+NC_TUE_DELTA_NOT:
+  tipo: DELTA_ACTOS
+  accion: delta actos entre $mon y $tue · nuevos WU cristalizados
+  query: SELECT * FROM transactions WHERE tipo=NOTARIA_ACT AND timestamp > $mon_epoch
+  STACKING UF[H48] =><= .. consolida .. delta_wu_notarial_tue --[Nudo de Ocho] [term]
+
+NC_TUE_MOMENTUM:
+  tipo: MOMENTUM_KU
+  accion: momentum notarial · KU activos del día · pendientes de sella
+  estado: S=0.766 · umbral WU=0.78 · distancia=0.014
+  SAMU @ =><= .. audita .. momentum_notarial_ku_tue --[Ballestrinque] [term]
+
+NC_TUE_BOLIVAR_SYNC:
+  tipo: BLOCKCHAIN_SYNC
+  accion: BOLIVAR sync · actos del lunes confirmados en chain
+  hash_ref: sovereign.db TX CRYPTO/TRUST $mon
+  CRYPTO (spark seat) =><= .. sincroniza .. bolivar_chain_lun_tue --[Nudo de Ocho] [term]
+
+// ANCLAS RAG × 4
+TRUST FOUNDATION =><= .. declara .. nerve_cell_tue_notaria_batch --[Nudo de Ocho] [term]
+WORK {actuator} =><= .. ejecuta .. batch_nocturno_notarial_tue_17_03 --[As de Guía] [term]
+SAMU @ =><= .. audita .. delta_actos_notariales_lun_mar --[Ballestrinque] [term]
+STACKING UF[H63] =><= .. consolida .. momentum_notarial_tue_wu --[Nudo de Ocho] [term]
+
+[term] :: activo · [seal of secrecy] :: activo · 空聽數

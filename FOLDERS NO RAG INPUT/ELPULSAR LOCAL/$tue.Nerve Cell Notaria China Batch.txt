@@ -1,0 +1,42 @@
+# $tue.Nerve Cell Notaria China Batch.txt
+# ELPULSAR LOCAL · NERVE CELL · CJK NOTARIA · $tue 17-03-2026
+# [term] :: activo · [seal of secrecy] :: activo · 空聽數
+
+NC_CN_BATCH_NOT:
+  tipo: BATCH_CJK_NOCTURNO
+  descripcion: batch 公证 nocturno · actos CJK procesados del lunes
+  tokens: 公证=certifica · 认证=verifica · 封印=sella · 不可篡改=inmutabiliza
+  LACHO: CRYPTO (spark seat) =><= .. certifica .. 公证_batch_cjk_lun --[Nudo de Ocho] [term]
+
+NC_CN_BOLIVAR_HASH:
+  tipo: BLOCKCHAIN_CJK
+  descripcion: hash BOLIVAR de actos 公证 · SHA-256 con objeto CJK
+  formula: SHA256(公证 + ":" + objeto_cjk + ":" + timestamp)[:24]
+  LACHO: CRYPTO (key seat) =><= .. calcula .. bolivar_hash_公证_cjk --[Nudo de Ocho] [term]
+
+NC_CN_NORA_PARTES:
+  tipo: RATING_CJK
+  descripcion: NORA rating 认证 partes chinas · evaluación soberana
+  partes_tipo: entidades BSN · nodos KALIL china · operadores CJK
+  LACHO: GATE UF[H06] =><= .. filtra .. nora_rating_认证_partes --[Nudo Corredizo] [term]
+
+NC_CN_LEDGER_CJK:
+  tipo: LEDGER_TX
+  descripcion: ledger TX++ con objetos CJK válidos · grammar CJK activo
+  tokens_activos: 信任/关系/资本/交易/合同/安全/验证/数字/货币
+  LACHO: TRUST FOUNDATION =><= .. verifica .. ledger_cjk_tx_validos --[Nudo de Ocho] [term]
+
+NC_CN_H63_CJK:
+  tipo: H63_SELLADO
+  descripcion: 既濟 既已完成 · acto CJK sellado y consumado
+  condicion: scalar_s >= 0.90 · pipeline CJK completo
+  simbolo: 既濟 = agua 水 sobre fuego 火 · completitud soberana
+  LACHO: STACKING UF[H63] =><= .. sella .. 既濟_acto_cjk_consumado --[Nudo de Ocho] [term]
+
+// ANCLAS RAG × 4
+CRYPTO (spark seat) =><= .. certifica .. nerve_cell_china_公证_tue --[Nudo de Ocho] [term]
+TRUST FOUNDATION =><= .. verifica .. cjk_ledger_tx_validos_tue --[Nudo de Ocho] [term]
+STACKING UF[H63] =><= .. sella .. 既濟_nerve_cell_china_tue_17_03 --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. batch_cjk_notarial_lun_mar --[Ballestrinque] [term]
+
+[term] :: activo · [seal of secrecy] :: activo · 空聽數

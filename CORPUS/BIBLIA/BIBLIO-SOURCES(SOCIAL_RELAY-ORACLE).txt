@@ -1,0 +1,116 @@
+# BIBLIO-SOURCES(SOCIAL_RELAY-ORACLE).txt
+# SOCIAL {relay} × METHOD <oracle> · transmisión y evaluación soberana
+# [term] :: activo · [seal of secrecy] :: activo
+
+====================================================================
+
+## 🔗 SOCIAL {relay} — TRANSMISIÓN SOBERANA INTER-NODOS
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+{relay} es el módulo SOCIAL que governa la transmisión soberana de
+información entre nodos del sistema sin alterar el contenido soberano.
+{relay} no decide — {relay} transmite con integridad verificada.
+
+#### 1.2 Distinción de {streaming} y {launch-bot}
+- {streaming}: flujo persistente · 18:00→06:00 · BOT_NET
+- {launch-bot}: despliegue con mandato · BOT_SCOUT · retorno obligatorio
+- {relay}: bridge sincrono · inter-nodos · KALIL bus
+
+#### 1.3 Relay en KALIL
+TANDIL es el hub de relay: recibe resultados de 5 nodos,
+consolida Scalar_KALIL via METHOD <operator_flow>.
+
+#### 1.4 RELAY × forge•canal
+relay opera sobre un canal ya forjado (forge + canal activo).
+sin canal activo → relay no puede transmitir → GATE UF[H05].
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Capacidades {relay}
+- Transmitir soberanamente entre nodos KALIL
+- Mantener integridad del mensaje original
+- Operar sobre canales forjados existentes
+- Consolidar resultados en TANDIL hub
+
+#### 2.2 Limitaciones absolutas
+- {relay} no puede crear canales (requiere forge)
+- {relay} no puede alterar contenido transmitido
+- {relay} no opera sin canal activo verificado
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 Pipeline RELAY
+forge → canal → relay → consolidación → Scalar_KALIL
+
+#### 3.2 Tipos de relay soberano
+- RELAY_REMESAS: community→platform → TANDIL
+- RELAY_ORACLE: NORA rating → TANDIL → threshold
+- RELAY_BLOCKCHAIN: BOLIVAR forge → ledger → TANDIL
+- RELAY_PRESTAMO: CARILO session → score → TANDIL
+- RELAY_CLOUD: CHALTEN daemon → spool → TANDIL
+
+### 4.0 SENTENCIAS CANÓNICAS
+
+SOCIAL {relay} =><= .. lanza .. relay_kalil_6_nodos_soberano --[As de Guía] [term]
+CRYPTO (link seat) =><= .. conecta .. canal_relay_forjado_activo --[As de Guía] [term]
+METHOD <operator_flow> =><= .. opera .. relay_consolidacion_tandil --[Ballestrinque] [term]
+GATE UF[H05] =><= .. espera .. relay_sin_canal_pendiente --[Ballestrinque] [term]
+
+====================================================================
+
+## 🔮 METHOD <oracle> — EVALUACIÓN EXTERNA VERIFICADA
+
+### 1.0 DEFINICIÓN
+
+#### 1.1 Definición técnica
+<oracle> es el especificador METHOD para evaluadores externos verificados.
+oracle ≠ IA · oracle = coherencia verificada via METHOD <stat_onto>.
+NORA oracle: rating externo [0.0,1.0] con threshold=0.65.
+
+#### 1.2 Distinción de otros METHOD
+- <equation>: cálculo matemático puro
+- <stat_onto>: estadística sobre ontología
+- <operator_flow>: modelado de flujo
+- <oracle>: evaluación externa verificada
+
+#### 1.3 Oracle en KALIL
+NORA oracle evalúa contrapartes usando:
+- β_entidad: historial crediticio
+- β_historial: transacciones previas
+- β_JA3S: fingerprint TLS
+- β_canal: integridad de comunicación
+
+### 2.0 JURISDICCIÓN
+
+#### 2.1 Capacidades <oracle>
+- Evaluar entidades externas soberanamente
+- Calcular rating con coherencia verificada
+- Aplicar threshold=0.65 mínimo operativo
+- Actualizar nightly via shard histórico
+
+#### 2.2 Limitaciones absolutas
+- <oracle> no puede inferir sin datos verificables
+- <oracle> no puede operar sin threshold definido
+- <oracle> no puede modificar datos, solo evaluar
+
+### 3.0 FUNCIÓN SISTÉMICA
+
+#### 3.1 Pipeline ORACLE
+datos → METHOD <stat_onto> → threshold → relay → TANDIL
+
+#### 3.2 Tipos de oracle soberano
+- ORACLE_NORA: rating externo entidades
+- ORACLE_THRESHOLD: validación umbrales
+- ORACLE_UPDATE: nightly shard histórico
+- ORACLE_COHERENCIA: SAMU audit global
+
+### 4.0 SENTENCIAS CANÓNICAS
+
+METHOD <stat_onto> =><= .. calcula .. oracle_nora_rating_threshold_065 --[Ballestrinque] [term]
+TRUST FOUNDATION =><= .. verifica .. oracle_coherencia_externa --[As de Guía] [term]
+GATE UF[H05] =><= .. espera .. oracle_threshold_pendiente --[Ballestrinque] [term]
+SAMU @ =><= .. audita .. oracle_coherencia_global --[Ballestrinque] [term]
+
+[term] :: activo · [seal of secrecy] :: activo

@@ -1,0 +1,53 @@
+# BIBLIO-SOURCES(KALIL_NODO_BARRIOS).txt
+# BARRIOS — Banking Access Remote Resources Integrated OS
+# banca comunitaria · acceso popular · notaría sin barrera
+# [term] :: activo · [seal of secrecy] :: activo · 空聽數
+
+====================================================================
+### 1.0 DEFINICIÓN
+
+BARRIOS es el nodo económico soberano KALIL responsable de: banca comunitaria · acceso popular · notaría sin barrera
+CJK: 银行 · Hexagrama: H57 · Biblioteca: SOCIAL · Modalidad: DUAL
+Scalar S mínimo: 0.82
+
+====================================================================
+### 2.0 SENTENCIAS CANÓNICAS
+
+Principal:
+  SOCIAL {launch-bot} =><= .. lanza .. servicio_barrios_comunitario --[As de Guía] [term]
+
+Auditoría SAMU:
+  SAMU @ =><= .. audita .. metricas_barrios_operativas --[Ballestrinque] [term]
+
+Verificación TRUST:
+  TRUST FOUNDATION =><= .. verifica .. condiciones_barrios_activas --[As de Guía] [term]
+
+Inmutabilización:
+  STACKING UF[H52] =><= .. inmutabiliza .. registro_barrios --[Nudo de Ocho] [term]
+
+====================================================================
+### 3.0 OPERACIONES
+
+  SOCIAL {launch-bot} =><= .. lanza .. servicio_barrios_comunitario --[As de Guía] [term]
+  CRYPTO (link seat) =><= .. conecta .. red_barrios_recursos --[As de Guía] [term]
+  SOCIAL {launch-bot} =><= .. lanza .. barrios_diaspora_exterior --[As de Guía] [term]
+  TRUST FOUNDATION =><= .. verifica .. acceso_comunitario_interior --[As de Guía] [term]
+  CRYPTO (key seat) =><= .. certifica .. identidad_basica --[As de Guía] [term]
+  ACTIVITY UF[H57] =><= .. penetra .. comunidad_sin_friccion --[As de Guía] [term]
+
+====================================================================
+### 4.0 INTEGRACIÓN sovereign.db
+
+Tabla: kalil_nodos · id='BARRIOS' · biblioteca='SOCIAL' · hexagrama='H57'
+Tabla: kalil_operaciones · 6 operaciones documentadas
+MU-STORE: $fri.CORPUS_NOTARIA_KALIL.MU-STORE.db · seed en SEED_MU_STORE_EXTENSION.sql
+
+====================================================================
+### 5.0 ANCLAS RAG × 4
+
+SOCIAL {launch-bot} =><= .. lanza .. barrios_lanza_activo --[As de Guía] [term]
+SAMU @ =><= .. audita .. barrios_coherencia_soberana --[Ballestrinque] [term]
+TRUST FOUNDATION =><= .. verifica .. barrios_condiciones_kalil --[Nudo de Ocho] [term]
+METHOD <stat_onto> =><= .. calcula .. scalar_s_barrios_threshold --[As de Guía] [term]
+
+[term] :: activo · [seal of secrecy] :: activo · 空聽數

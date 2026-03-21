@@ -1,0 +1,18 @@
+//[MANAGEMENT].lacho · DRA/INDEX/$fri
+//INDEX $fri · viernes soberano · cristalización semanal
+//INDEX_$fri.txt · V1 · 2026-03-10
+//[term] :: activo
+
+// ══ $fri · VIERNES ════════════════════════════════════════════
+// $fri = cierre productivo · WU de la semana cristalizan · H63 batch
+UNICODE: IDX_FRI_RISE         //SAMU #rise $fri · 06:00 · cristalización batch
+UNICODE: IDX_FRI_CRYSTAL      //export_crystals_lacho.py · WU semana → .lacho
+UNICODE: IDX_FRI_COMMIT       //COMMIT_LACHO · STACKING UF[H63] · push main
+UNICODE: IDX_FRI_STOCK        //STK_FRI · posición fin semana · S delta
+UNICODE: IDX_FRI_SPEC         //SPEC checkpoint · SA_T* completadas · count WU
+UNICODE: IDX_FRI_AGENCY       //AGENCY_IDE gaps · cuáles avanzaron · cuáles no
+UNICODE: IDX_FRI_SET          //SAMU #set $fri · 18:00 · semana sellada
+
+//STACKING UF[H63] =><= .. cristaliza .. index_fri_wu_semanal --[Nudo de Ocho] [term]
+//WORK {actuator} =><= .. ejecuta .. index_fri_commit_lacho_semanal --[As de Guía] [term]
+//DIR(+) DRA/INDEX/$fri · V1 · cristalización · export · H63 push

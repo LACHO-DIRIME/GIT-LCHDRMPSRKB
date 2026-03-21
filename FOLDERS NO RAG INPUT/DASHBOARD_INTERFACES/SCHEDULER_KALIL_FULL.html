@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>{SCHEDULER} × KALIL · DIRIME</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+h1{font-size:1rem;letter-spacing:4px;border-bottom:2px solid #1a1a2e;
+   padding-bottom:10px;margin-bottom:24px;display:flex;justify-content:space-between;align-items:center}
+.matrix-wrap{overflow-x:auto;margin-bottom:28px}
+table{border-collapse:collapse;width:100%;font-size:.78rem}
+th{background:#1a1a2e;color:#fff;padding:8px 12px;letter-spacing:1px;
+   font-weight:normal;text-align:left}
+th.op{text-align:center;font-size:.7rem;letter-spacing:2px}
+td{padding:8px 12px;border:1px solid #e0e0e0;vertical-align:top}
+td.nodo{font-weight:bold;letter-spacing:2px;font-size:.8rem;background:#fafafa}
+td.cell-act{background:#f0f7f3;text-align:center;cursor:pointer;color:#2a7a4f;
+          font-size:1rem;transition:background .2s}
+td.cell-act:hover{background:#e0f0e8}
+td.cell-pend{background:#fafafa;text-align:center;color:#ddd}
+.plan-box{background:#f8f8f8;border:1px solid #e0e0e0;padding:16px;margin-bottom:28px}
+.plan-title{font-size:.7rem;letter-spacing:3px;color:#888;margin-bottom:12px}
+.plan-form{display:grid;grid-template-columns:1fr 1fr 1fr auto auto;gap:10px;margin-bottom:12px}
+.plan-field{display:flex;flex-direction:column;gap:4px}
+.plan-field label{font-size:.65rem;color:#888}
+.plan-field input,select{border:1px solid #ccc;padding:6px 8px;font-family:'Courier New',monospace;
+                font-size:.85rem;background:#fff}
+.plan-btn{background:#2a7a4f;color:#fff;border:none;padding:8px 16px;
+          cursor:pointer;font-family:'Courier New',monospace;font-size:.8rem}
+.plan-btn:hover{background:#1e5f3a}
+.plan-ref{font-size:.7rem;color:#555;margin-top:8px}
+.tareas-list{background:#fafafa;border:1px solid #e0e0e0;padding:16px;margin-bottom:28px}
+.tl-title{font-size:.65rem;letter-spacing:3px;color:#888;margin-bottom:12px}
+.tl-row{display:grid;grid-template-columns:80px 60px 1fr 120px 80px 80px;
+        gap:8px;padding:8px 0;border-bottom:1px solid #f0f0f0;align-items:center}
+.tl-ref{font-size:.65rem;color:#2a7a4f;font-family:'Courier New',monospace}
+.st-h5{color:#d35400}.st-h57{color:#2a7a4f}.st-h63{color:#aaa}.st-h6{color:#c0392b}
+.act-btn,.res-btn{background:#2a7a4f;color:#fff;border:none;padding:4px 8px;
+               cursor:pointer;font-size:.65rem;font-family:'Courier New',monospace}
+.res-btn{background:#d35400}
+.footer{font-size:.65rem;color:#aaa;display:flex;gap:20px;
+        border-top:1px solid #eee;padding-top:12px}
+</style>
+</head>
+<body>
+
+<h1>
+  <span>╭─∇─ {SCHEDULER} × KALIL 6 NODOS</span>
+  <span style="font-size:.7rem;color:#888;font-weight:normal">
+    SchedulerOS · planifica() · activar() · resolver()
+  </span>
+</h1>
+
+<div class="matrix-wrap">
+<table>
+  <tr>
+    <th>NODO KALIL</th>
+    <th class="op">SESSION<br>╭─∇─⊛─</th>
+    <th class="op">DRIP<br>╭─∇─⏵─</th>
+    <th class="op">STREAM<br>╭─∇─⟳─</th>
+    <th class="op">NOTIF<br>╭─∇─◆─</th>
+    <th class="op">REVIEW<br>╭─∇─≈─</th>
+  </tr>
+  <tr>
+    <td class="nodo">BARRIOS<br><span style="font-size:.6rem;color:#888">remesas</span></td>
+    <td class="cell-pend">·</td>
+    <td class="cell-act" title="remesas programadas · @human_later">✦ 15:00→17:00</td>
+    <td class="cell-pend">·</td>
+    <td class="cell-pend">·</td>
+    <td class="cell-pend">·</td>
+  </tr>
+  <tr>
+    <td class="nodo">NORA<br><span style="font-size:.6rem;color:#888">oracle</span></td>
+    <td class="cell-pend">·</td>
+    <td class="cell-pend">·</td>
+    <td class="cell-pend">·</td>
+    <td class="cell-pend">·</td>
+    <td class="cell-act" title="rating periódico · delta_Ψ">✦ $fri 07:00</td>
+  </tr>
+  <tr>
+    <td class="nodo">BOLIVAR<br><span style="font-size:.6rem;color:#888">blockchain</span></td>
+    <td class="cell-pend">·</td>
+    <td class="cell-act" title="confirmación hash">✦ 09:00</td>
+    <td class="cell-pend">·</td>
+    <td class="cell-act" title="alerta hash pendiente">✦ 15:00</td>
+    <td class="cell-pend">·</td>
+  </tr>
+  <tr>
+    <td class="nodo">CARILO<br><span style="font-size:.6rem;color:#888">préstamo</span></td>
+    <td class="cell-act" title="sesión préstamo · $wed">✦ $wed</td>
+    <td class="cell-pend">·</td>
+    <td class="cell-pend">·</td>
+    <td class="cell-pend">·</td>
+    <td class="cell-pend">·</td>
+  </tr>
+  <tr>
+    <td class="nodo">CHALTEN<br><span style="font-size:.6rem;color:#888">lending</span></td>
+    <td class="cell-pend">·</td>
+    <td class="cell-pend">·</td>
+    <td class="cell-act" title="lending 18:00→06:00 BOT_NET">✦ 18:00→06:00</td>
+    <td class="cell-pend">·</td>
+    <td class="cell-pend">·</td>
+  </tr>
+  <tr>
+    <td class="nodo">TANDIL<br><span style="font-size:.6rem;color:#888">hub</span></td>
+    <td class="cell-pend">·</td>
+    <td class="cell-pend">·</td>
+    <td class="cell-pend">·</td>
+    <td class="cell-pend">·</td>
+    <td class="cell-act" title="hub · estado_semana() · $fri 17:00">✦ $fri 17:00</td>
+  </tr>
+</table>
+</div>
+
+<div class="plan-box">
+  <div class="plan-title">▸ planifica() · TareaSoberana</div>
+  <div class="plan-form">
+    <div class="plan-field">
+      <label>título</label>
+      <input type="text" id="p-titulo" placeholder="tarea soberana">
+    </div>
+    <div class="plan-field">
+      <label>dia</label>
+      <select id="p-dia">
+        <option value="$thu">$thu</option>
+        <option value="$fri">$fri</option>
+        <option value="$sat">$sat</option>
+        <option value="$sun">$sun</option>
+        <option value="$mon">$mon</option>
+        <option value="$tue">$tue</option>
+        <option value="$wed">$wed</option>
+      </select>
+    </div>
+    <div class="plan-field">
+      <label>cluster</label>
+      <input type="text" id="p-cluster" placeholder="CORE#DIRIME">
+    </div>
+    <div class="plan-field">
+      <label>slice°</label>
+      <input type="number" id="p-slice" value="90" min="0" max="360">
+    </div>
+    <button class="plan-btn" onclick="planifica()">planifica</button>
+  </div>
+  <div class="plan-ref" id="p-ref">ref_soberana(): [term:A°90§CORE#DIRIME] · id: 00000001</div>
+</div>
+
+<div class="tareas-list">
+  <div class="tl-title">▸ TareasSoberanas · EstadoTarea</div>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px">
+    <div style="text-align:center">
+      <div style="font-size:1.2rem;font-weight:bold;color:#d35400" id="st-esp">0</div>
+      <div style="font-size:.6rem;color:#888">UF[H05] ESPERA</div>
+    </div>
+    <div style="text-align:center">
+      <div style="font-size:1.2rem;font-weight:bold;color:#2a7a4f" id="st-act">0</div>
+      <div style="font-size:.6rem;color:#888">UF[H57] ACTIVA</div>
+    </div>
+    <div style="text-align:center">
+      <div style="font-size:1.2rem;font-weight:bold;color:#aaa" id="st-res">0</div>
+      <div style="font-size:.6rem;color:#888">UF[H63] RESUELTA</div>
+    </div>
+    <div style="text-align:center">
+      <div style="font-size:1.2rem;font-weight:bold;color:#c0392b" id="st-con">0</div>
+      <div style="font-size:.6rem;color:#888">UF[H06] CONFLICTO</div>
+    </div>
+  </div>
+  <div id="tareas-body"></div>
+</div>
+
+<div class="footer">
+  <span>{SCHEDULER} × KALIL · DIRIME</span>
+  <span>planifica()·activar()·resolver()·estado_semana()</span>
+  <span>EstadoTarea: H05·H57·H63·H06</span>
+  <span>[term] :: activo · $mon 30/03</span>
+</div>
+
+<script>
+let tareas=[];
+let idCount=0;
+
+function genId(){
+  return (++idCount).toString(16).padStart(8,'0').slice(-8);
+}
+
+function genRef(dia,slice,cluster){
+  const tomo=dia==='$thu'?'A':dia==='$fri'?'B':'C';
+  return `[term:${tomo}°${slice}#${cluster.replace('#','')}]`;
+}
+
+function planifica(){
+  const titulo=document.getElementById('p-titulo').value.trim();
+  if(!titulo){alert('titulo requerido');return;}
+  const dia=document.getElementById('p-dia').value;
+  const cluster=document.getElementById('p-cluster').value;
+  const slice=parseInt(document.getElementById('p-slice').value)||90;
+  const id=genId();
+  const ref=genRef(dia,slice,cluster);
+  tareas.push({id,titulo,dia,cluster,slice,estado:'UF[H05]',ref});
+  document.getElementById('p-ref').textContent=
+    `✦ ref_soberana(): ${ref} · id: ${id}`;
+  document.getElementById('p-titulo').value='';
+  renderTareas();
+  updateStats();
+}
+
+function activar(id){
+  const t=tareas.find(t=>t.id===id);
+  if(t&&t.estado==='UF[H05]'){t.estado='UF[H57]';renderTareas();updateStats();}
+}
+
+function resolver(id){
+  const t=tareas.find(t=>t.id===id);
+  if(t){t.estado='UF[H63]';renderTareas();updateStats();}
+}
+
+function renderTareas(){
+  const body=document.getElementById('tareas-body');
+  if(!tareas.length){
+    body.innerHTML='<div style="font-size:.65rem;color:#aaa;padding:10px">'+
+      'sin tareas · planifica() para crear TareaSoberana</div>';
+    return;
+  }
+  body.innerHTML=tareas.map(t=>`
+    <div class="tl-row">
+      <div style="font-size:.6rem;color:#888">${t.id}</div>
+      <div>${t.dia}</div>
+      <div>${t.titulo.slice(0,35)}${t.titulo.length>35?'…':''}</div>
+      <div class="tl-ref">${t.ref}</div>
+      <div class="${'st-'+t.estado.replace('UF[','').replace(']','').toLowerCase()}">${t.estado}</div>
+      <div>
+        ${t.estado==='UF[H05]'?
+          `<button class="act-btn" onclick="activar('${t.id}')">activar</button>`:
+          t.estado==='UF[H57]'?
+          `<button class="res-btn" onclick="resolver('${t.id}')">resolver</button>`:
+          '<span style="font-size:.6rem;color:#aaa">H63 ✓</span>'}
+      </div>
+    </div>`).join('');
+}
+
+function updateStats(){
+  document.getElementById('st-esp').textContent=
+    tareas.filter(t=>t.estado==='UF[H05]').length;
+  document.getElementById('st-act').textContent=
+    tareas.filter(t=>t.estado==='UF[H57]').length;
+  document.getElementById('st-res').textContent=
+    tareas.filter(t=>t.estado==='UF[H63]').length;
+  document.getElementById('st-con').textContent=
+    tareas.filter(t=>t.estado==='UF[H06]').length;
+}
+
+renderTareas();
+</script>
+</body>
+</html>

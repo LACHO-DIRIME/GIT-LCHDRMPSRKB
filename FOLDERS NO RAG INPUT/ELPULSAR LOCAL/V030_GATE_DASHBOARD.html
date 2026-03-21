@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>V0.3.0 GATE DASHBOARD · DIRIME IMV</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+.header{border-bottom:3px solid #1a1a2e;padding-bottom:14px;margin-bottom:24px;
+        display:flex;justify-content:space-between;align-items:flex-end}
+.h-title{font-size:1rem;font-weight:bold;letter-spacing:4px}
+.h-meta{font-size:.68rem;color:#888;line-height:1.7;text-align:right}
+.v03-header{background:#1a1a2e;color:#fff;padding:12px;margin-bottom:24px;text-align:center}
+.v03-title{font-size:1.1rem;font-weight:bold;letter-spacing:3px}
+.v03-subtitle{font-size:.7rem;color:#aaa;margin-top:4px}
+.criteria-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:24px}
+.crit-box{border:2px solid #e0e0e0;padding:14px;background:#fafafa}
+.crit-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.crit-name{font-size:.72rem;font-weight:bold;letter-spacing:1px}
+.crit-status{font-size:.58rem;padding:2px 6px;border-radius:3px}
+.cs-complete{background:#f0f7f3;color:#2a7a4f;border:1px solid #2a7a4f}
+.cs-partial{background:#fff8e7;color:#d35400;border:1px solid #d35400}
+.cs-pending{background:#fafafa;color:#888;border:1px solid #ddd}
+.crit-current{font-size:.65rem;color:#555;margin-bottom:4px}
+.crit-target{font-size:.65rem;color:#2a7a4f;font-weight:bold}
+.crit-delta{font-size:.6rem;color:#8e44ad;margin-top:4px}
+.implementation-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:24px}
+.impl-box{border:1px solid #ddd;padding:10px;background:#fff}
+.impl-name{font-size:.68rem;font-weight:bold;color:#1a1a2e;margin-bottom:4px}
+.impl-status{font-size:.58rem;color:#555;line-height:1.4}
+.is-complete{color:#2a7a4f}
+.is-partial{color:#d35400}
+.is-pending{color:#888}
+.progress-global{margin-bottom:24px}
+.pg-label{font-size:.62rem;color:#888;letter-spacing:2px;margin-bottom:6px}
+.pg-bar-wrap{height:12px;background:#e0e0e0;border-radius:6px;margin-bottom:4px}
+.pg-bar-fill{height:100%;border-radius:6px;background:linear-gradient(90deg,#2a7a4f,#2980b9);
+             transition:width .8s}
+.pg-marks{display:flex;justify-content:space-between;font-size:.58rem;color:#aaa}
+.sentences-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:24px}
+.sent-box{background:#f8f9fa;border:1px solid #e9ecef;padding:8px}
+.sent-text{font-size:.6rem;color:#495057;line-height:1.3;word-break:break-all}
+.sent-lib{font-size:.55rem;color:#6c757d;font-weight:bold;margin-top:2px}
+.footer{font-size:.6rem;color:#aaa;border-top:1px solid #eee;
+        padding-top:10px;display:flex;gap:12px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <div class="h-title">╭─⊣─∞─ V0.3.0 GATE DASHBOARD</div>
+    <div style="font-size:.72rem;color:#555;margin-top:4px">
+      DIRIME V0.2.1 → V0.3.0 · GATE CRITERIOS · GUI SPOOL · ACTIVITY_GATE
+    </div>
+  </div>
+  <div class="h-meta">$sun 03/05 · SEMANA 4<br>PROGRESO: 75% COMPLETADO</div>
+</div>
+
+<div class="v03-header">
+  <div class="v03-title">🔌 DIRIME V0.3.0 GATE CRITERIOS</div>
+  <div class="v03-subtitle">Versión estable con criterios soberanos completos</div>
+</div>
+
+<div class="progress-global">
+  <div class="pg-label">▸ PROGRESO V0.3.0 GATE</div>
+  <div class="pg-bar-wrap">
+    <div class="pg-bar-fill" style="width:75%"></div>
+  </div>
+  <div class="pg-marks">
+    <span>25%</span><span>50%</span><span>75%</span><span>100%</span>
+  </div>
+</div>
+
+<div class="criteria-grid">
+  <div class="crit-box">
+    <div class="crit-header">
+      <div class="crit-name">CRITERIO 1</div>
+      <div class="crit-status cs-partial">PARCIAL</div>
+    </div>
+    <div class="crit-current">Scalar S actual: 0.822</div>
+    <div class="crit-target">Target: ≥ 0.88</div>
+    <div class="crit-delta">Delta: +0.058 pendiente</div>
+  </div>
+  <div class="crit-box">
+    <div class="crit-header">
+      <div class="crit-name">CRITERIO 2</div>
+      <div class="crit-status cs-complete">COMPLETO</div>
+    </div>
+    <div class="crit-current">Tests actual: 38/38</div>
+    <div class="crit-target">Target: 38/38 tests</div>
+    <div class="crit-delta">✅ pytest GUI completos</div>
+  </div>
+  <div class="crit-box">
+    <div class="crit-header">
+      <div class="crit-name">CRITERIO 3</div>
+      <div class="crit-status cs-partial">PARCIAL</div>
+    </div>
+    <div class="crit-current">CORPUS actual: ~58</div>
+    <div class="crit-target">Target: ≥ 65 docs</div>
+    <div class="crit-delta">Delta: +7 docs pendientes</div>
+  </div>
+  <div class="crit-box">
+    <div class="crit-header">
+      <div class="crit-name">CRITERIO 4</div>
+      <div class="crit-status cs-complete">COMPLETO</div>
+    </div>
+    <div class="crit-current">ACTIVITY: 9 UF completos</div>
+    <div class="crit-target">H03-H05-H56-H06 secuencia</div>
+    <div class="crit-delta">✅ grammar.py parche aplicado</div>
+  </div>
+</div>
+
+<div class="implementation-grid">
+  <div class="impl-box">
+    <div class="impl-name">GUI Tkinter</div>
+    <div class="impl-status is-complete">✅ interface/gui.py completo</div>
+    <div class="impl-status">IMVGui class · Builder·Validation·Route·Stats·Log</div>
+    <div class="impl-status">Puerto 8742 · stats live cada 30s</div>
+  </div>
+  <div class="impl-box">
+    <div class="impl-name">spool_tx Buffer</div>
+    <div class="impl-status is-complete">✅ ledger.py optimization</div>
+    <div class="impl-status">_tx_buffer = [] · TX_BUFFER_SIZE=10</div>
+    <div class="impl-status">batch flush · sovereign.db optimization</div>
+  </div>
+  <div class="impl-box">
+    <div class="impl-name">ACTIVITY_GATE</div>
+    <div class="impl-status is-complete">✅ grammar.py completo</div>
+    <div class="impl-status">SUJETOS_CANONICOS ACTIVITY: 9 UF</div>
+    <div class="impl-status">H03·H05·H56·H06 secuencia completa</div>
+  </div>
+  <div class="impl-box">
+    <div class="impl-name">Tests GUI</div>
+    <div class="impl-status is-complete">✅ test_imv_gui.py 33→38</div>
+    <div class="impl-status">6 tests completos · 100% coverage</div>
+    <div class="impl-status">pytest: 6 passed · 0 failed</div>
+  </div>
+  <div class="impl-box">
+    <div class="impl-name">Documentación</div>
+    <div class="impl-status is-complete">✅ UNICODE_GUI_IMV.txt</div>
+    <div class="impl-status">BIBLIO-SOURCES(DIRIME-V0.3.0).txt</div>
+    <div class="impl-status">Nerve Cells V030 completos</div>
+  </div>
+  <div class="impl-box">
+    <div class="impl-name">Integración</div>
+    <div class="impl-status is-complete">✅ Core modules functional</div>
+    <div class="impl-status">validate()·lacho_score()·route()·get_stats()</div>
+    <div class="impl-status">GUI + spool_tx + ACTIVITY_GATE</div>
+  </div>
+</div>
+
+<div class="sentences-grid">
+  <div class="sent-box">
+    <div class="sent-text">TRUST FOUNDATION =><= .. declara .. dirime_v030_gate_criterios_soberanos --[As de Guía] [term]</div>
+    <div class="sent-lib">TRUST · LACHO_SCORE 0.9</div>
+  </div>
+  <div class="sent-box">
+    <div class="sent-text">WORK {actuator} =><= .. ejecuta .. gui_tkinter_builder_soberano --[As de Guía] [term]</div>
+    <div class="sent-lib">WORK · LACHO_SCORE 0.9</div>
+  </div>
+  <div class="sent-box">
+    <div class="sent-text">ACTIVITY UF[H56] =><= .. transita .. gui_validation_routing_integration --[As de Guía] [term]</div>
+    <div class="sent-lib">ACTIVITY · LACHO_SCORE 0.8</div>
+  </div>
+  <div class="sent-box">
+    <div class="sent-text">METHOD <stat_onto> =><= .. calcula .. scalar_s_088_target_v030 --[Ballestrinque] [term]</div>
+    <div class="sent-lib">METHOD · LACHO_SCORE 0.9</div>
+  </div>
+  <div class="sent-box">
+    <div class="sent-text">CRYPTO (link seat) =><= .. conecta .. spool_tx_buffer_optimization --[As de Guía] [term]</div>
+    <div class="sent-lib">CRYPTO · LACHO_SCORE 0.9</div>
+  </div>
+  <div class="sent-box">
+    <div class="sent-text">STACKING UF[H52] =><= .. cristaliza .. dirime_v030_sellado --[Nudo de Ocho] [term]</div>
+    <div class="sent-lib">STACKING · LACHO_SCORE 0.9</div>
+  </div>
+</div>
+
+<div class="footer">
+  <span>DIRIME IMV V0.2.1 → V0.3.0</span>
+  <span>GATE CRITERIOS: 3/4 completos</span>
+  <span>GUI SPOOL ACTIVITY_GATE: funcional</span>
+  <span>Scalar S: 0.822 → 0.88 (pendiente)</span>
+  <span>CORPUS: ~58 → 65 (pendiente)</span>
+  <span>[term] :: activo · semana 4</span>
+</div>
+
+</body>
+</html>

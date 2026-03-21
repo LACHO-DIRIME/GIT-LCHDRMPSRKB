@@ -1,0 +1,65 @@
+//[MANAGEMENT].lacho · UNICODE CORPUS 60 · V1
+//[term]=: bridge•ollama•cat_os•ime_local
+//dominio: expansión CORPUS 51→60 · nuevos dominios BIBLIA · índice RAG
+//REFERENCIA: rag.py · BIBLIO-SOURCES existentes · CORPUS_TOTAL=51
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ ESTADO CORPUS ACTUAL ══════════════════════════════════════
+UNICODE: CORP_ACTUAL   //CORPUS_TOTAL=51 · BIBLIA/ + UNICODE PROGRAMS/
+                       //docs_RAG=244 · 236 CORPUS + 8 SOVEREIGN
+                       //BIBLIA: WORK_FORGE-CANAL · SOCIAL_RELAY-ORACLE
+                       //UNICODE: SECURITY_RUNNER·AGENTS_EXPANSION·THEATER_EXPANSION·KALIL_AGENTS·GRAMMAR_EXTENSION·DIRIME_V3
+UNICODE: CORP_META     //CORPUS metadata: 51 docs indexados en BM25
+                       //RAG boost: 13 patrones · 4 agents · 5 runners · 6 theaters
+                       //coverage: SECURITY·KALIL·GRAMMAR·DIRIME_V3 dominios
+
+// ══ EXPANSIÓN CORPUS 51→60 ════════════════════════════════════
+UNICODE: CORP_TARGET   //CORPUS_TOTAL=60 · +9 nuevos docs
+                       //meta: docs_RAG=253 · +9 RAG boost
+                       //nuevos dominios: DIRIME_V3·CAPA_C·BRIDGE·OLLAMA·CAT_OS·IME_LOCAL
+UNICODE: CORP_BIBLIA   //3 nuevos BIBLIO-SOURCES:
+                       //BIBLIO-SOURCES(BRIDGE_OLLAMA) · swap transparente
+                       //BIBLIO-SOURCES(CAT_OS_IME) · filesystem + I Ching
+                       //BIBLIO-SOURCES(CAPA_C_STATUS) · esqueleto → activo
+UNICODE: CORP_THEATER  //2 nuevos theaters:
+                       //dirime_v3.theater · CAPA C activation sequence
+                       //corpus_build.theater · CAT(OS) build pipeline
+UNICODE: CORP_UNI      //2 nuevos UNICODE:
+                       //UNICODE_CORPUS_60.txt (este) · expansión documentada
+                       //UNICODE_CAPA_C_STATUS.txt · estado CAPA C real
+UNICODE: CORP_NC       //2 nuevos Nerve Cells:
+                       //$fri.Nerve Cell CORPUS 60 Training.txt
+                       //$sun.Nerve Cell CAPA_C STATUS Training.txt
+
+// ══ NUEVOS DOMINIOS RAG ══════════════════════════════════════
+UNICODE: RAG_BRIDGE    //bridge: swap Groq→Ollama · mismo contrato API
+                       //boost queries: "bridge", "swap", "ollama", "groq"
+UNICODE: RAG_OLLAMA    //ollama: LLM local · llama-3.3-70b · sin API key
+                       //boost queries: "llama", "70b", "local", "ryzen"
+UNICODE: RAG_CAT_OS    //cat_os: filesystem scan · spawn por archivo
+                       //boost queries: "cat", "filesystem", "scan", "spawn"
+UNICODE: RAG_IME       //ime: I Ching local · hexagramas offline
+                       //boost queries: "hexagrama", "ching", "loan", "offline"
+UNICODE: RAG_CAPA_C    //CAPA_C: esqueleto → activo · 3 módulos
+                       //boost queries: "capa_c", "esqueleto", "modulo", "activación"
+
+// ══ ÍNDICE RAG EXPANSIÓN ══════════════════════════════════════
+UNICODE: RAG_INDEX_60  //index_new_files.py trigger para +9 docs
+                       //python3 tools/index_new_files.py --corpus-expansion
+                       //BM25 rebuild: 51→60 docs · boost patterns actualizado
+UNICODE: RAG_BOOST_NEW //13→15 patrones: +2 patrones nuevos
+                       //bridge_swap · cat_os_scan · ime_hexagrama
+                       //coverage: SECURITY·KALIL·GRAMMAR·DIRIME_V3·CAPA_C
+UNICODE: RAG_QUERY     //query expansion: +4 nuevos términos
+                       //bridge·ollama·cat_os·ime_local · capa_c
+                       //mejora retrieval en dominios nuevos
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+WORK {actuator} =><= .. ejecuta .. corpus_expansion_51_60_soberano --[As de Guía] [term]
+ACTIVITY UF[H64] =><= .. genera .. rag_index_rebuild_60_docs --[As de Guía] [term]
+TRUST FOUNDATION =><= .. declara .. corpus_60_nuevos_dominios --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_corpus_60_sellado --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. rag_boost_patterns_expansion --[Ballestrinque] [term]
+
+//DIR(+) UNICODE_CORPUS_60 · V1 · bridge•ollama•cat_os•ime_local
+//$fri 24/04 · CORPUS/UNICODE PROGRAMS/

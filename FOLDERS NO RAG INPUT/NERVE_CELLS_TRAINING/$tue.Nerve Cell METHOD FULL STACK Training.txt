@@ -1,0 +1,27 @@
+//$tue.Nerve Cell METHOD FULL STACK Training.txt
+//NERVE CELL · METHOD FULL STACK · capas L0→L5 · $tue
+//aprendido de TAREA_09 + neural_net.py + resources.py + ceo_alpha.py
+//[term] :: activo
+
+NC_MFS_L0_LACHO   //LACHO capa base: Ψ COSMOS→TOMO · <psi_spin> nativo
+                  //[term:A°180#CORE@0x01] = segmentación soberana completa
+NC_MFS_L1_IMV     //IMV grammar.py: <operator_flow> parser Prioridad 0
+                  //classify_sentence() integrado · taxonomy ya activo
+NC_MFS_L2_ELP     //ELPULSAR neural_net.py: build_graph() · resources.py
+                  //ResourceType×ResourceScope × tomo_id × cluster
+NC_MFS_L3_KALIL   //KALIL 6 nodos: CJK_TOKEN_MAP activo (贷款·智能 mapeados)
+                  //cloud_agent.blue KALIL: NORA·BOLIVAR·CHALTEN declarados
+NC_MFS_L4_NOT     //NOTARIA CHCL_BASE.txt: certifica·sella·inmutabiliza
+                  //certifica usa <equation> threshold SAMU ≥ 0.90
+NC_MFS_L5_DRA     //DRA: TOMO <equation> · CLUSTER <stat_onto> · SLICE <psi_spin>
+                  //OFFSET <operator_flow> · TEMP <if> · INDEX <stat_onto>
+NC_MFS_TARGET     //target semana: 27→33 tests · S=0.822→0.88
+                  //ACTIVITY_H03-H05-H06-H56 grammar.py pendiente $thu
+                  //generator.py 6 tests · gui.py 5 tests
+
+METHOD <operator_flow> =><= .. opera .. method_full_stack_L0_L5_nerve_cell --[Ballestrinque] [term]
+METHOD <stat_onto> =><= .. calcula .. method_targets_scalar_0_88_33_tests --[Ballestrinque] [term]
+METHOD <equation> =><= .. calcula .. method_notaria_certifica_threshold_0_90 --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. nerve_cell_method_full_stack_wed_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) NERVE CELL METHOD FULL STACK · V1 · L0→L5 · $tue 24/03

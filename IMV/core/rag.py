@@ -18,11 +18,16 @@ _CORPUS_DIR = Path(__file__).parent.parent.parent / "CORPUS"
 _THEATER_DIR = Path(__file__).parent.parent.parent / "FOLDERS NO RAG INPUT" / "THEATER"
 _RUNNERS_DIR = Path(__file__).parent.parent.parent / "FOLDERS NO RAG INPUT" / "RUNNERS"
 _AGENTS_DIR  = Path(__file__).parent.parent.parent / "FOLDERS NO RAG INPUT" / "AGENTS"
+_ELPULSAR_LOCAL_DIR = Path(__file__).parent.parent.parent / "FOLDERS NO RAG INPUT" / "ELPULSAR LOCAL"
+_ASKINGS_DIR = Path("/media/Personal/DIRIME/Askings for autoresearching by technical horizons")
 
 _SOVEREIGN_SOURCES = [
     (_THEATER_DIR, "*.theater", "theater", 1.8),
     (_RUNNERS_DIR, "*",         "runner",  1.6),
     (_AGENTS_DIR,  "*",         "agent",   2.0),
+    (_ELPULSAR_LOCAL_DIR, "*nerve_cell*", "nerve_cell", 2.0),   # Nerve Cells notariales
+    (_ASKINGS_DIR, "*.json",    "askings", 1.7),                 # Askings for autoresearching
+    (_ASKINGS_DIR, "*.yml",     "askings", 1.7),                 # Askings YAML files
 ]
 
 
@@ -40,6 +45,63 @@ class IMEBM25:
 
     def _tokenize(self, text: str) -> list[str]:
         return re.findall(r'[a-záéíóúüñA-ZÁÉÍÓÚÜÑ]+', text.lower())
+
+    def _extract_askings_text(self, data: dict, filename: str) -> str:
+        """Extrae texto searchable de archivos JSON Askings."""
+        lines = [f"Askings file: {filename}"]
+        
+        # Extract from filesystem section
+        if "filesystem" in data:
+            fs = data["filesystem"]
+            if "summary" in fs:
+                summary = fs["summary"]
+                lines.extend([
+                    f"Total modules: {summary.get('total_modules', 0)}",
+                    f"Active modules: {summary.get('active', 0)}",
+                    f"Declared modules: {summary.get('declared', 0)}",
+                    f"Stub modules: {summary.get('stub', 0)}",
+                    f"Blocked modules: {summary.get('blocked', 0)}"
+                ])
+            
+            # Extract module information
+            if "modules" in fs:
+                for module_path, module_info in fs["modules"].items():
+                    status = module_info.get("status", "unknown")
+                    reason = module_info.get("reason", "")
+                    lines.append(f"Module {module_path}: status {status} reason {reason}")
+        
+        # Extract from gap_analysis section
+        if "gap_analysis" in data:
+            gap = data["gap_analysis"]
+            if "summary" in gap:
+                summary = gap["summary"]
+                lines.extend([
+                    f"Gap priority: {summary.get('overall_priority', 'unknown')}",
+                    f"Missing implementations: {summary.get('total_missing', 0)}",
+                    f"Incomplete modules: {summary.get('total_incomplete', 0)}",
+                    f"Test coverage gaps: {summary.get('total_test_gaps', 0)}",
+                    f"Dependency gaps: {summary.get('total_dependency_gaps', 0)}"
+                ])
+            
+            # Extract missing implementations
+            if "missing_implementations" in gap:
+                for item in gap["missing_implementations"]:
+                    module = item.get("module", "")
+                    reason = item.get("reason", "")
+                    priority = item.get("priority", "")
+                    lines.append(f"Missing implementation: {module} reason {reason} priority {priority}")
+        
+        # Extract from upgrade_plan section
+        if "upgrade_plan" in data:
+            plan = data["upgrade_plan"]
+            if "immediate_actions" in plan:
+                for action in plan["immediate_actions"]:
+                    act_type = action.get("action", "")
+                    module = action.get("module", "")
+                    hours = action.get("estimated_hours", 0)
+                    lines.append(f"Immediate action: {act_type} module {module} estimated {hours} hours")
+        
+        return "\n".join(lines)
 
     def build_index(self) -> int:
         """Construye índice BM25 desde CORPUS. Retorna docs indexados."""
@@ -81,7 +143,7 @@ class IMEBM25:
                 except Exception:
                     continue
 
-        # CAPA 4: THEATER / RUNNERS / AGENTS
+        # CAPA 4: THEATER / RUNNERS / AGENTS / ASKINGS
         for src_dir, pattern, src_tag, boost in _SOVEREIGN_SOURCES:
             if not src_dir.exists():
                 continue
@@ -89,13 +151,36 @@ class IMEBM25:
                 try:
                     text = f.read_text(encoding="utf-8", errors="ignore")
                     if text.strip():
-                        self._docs.append({
+                        # Special handling for Askings files
+                        if src_tag == "askings":
+                            # Extract key information from JSON/YAML Askings files
+                            if f.suffix == ".json":
+                                import json
+                                try:
+                                    data = json.loads(text)
+                                    # Create searchable text from JSON structure
+                                    searchable_text = self._extract_askings_text(data, f.name)
+                                    text = searchable_text
+                                except:
+                                    text = text[:2000]  # Fallback to raw text
+                            elif f.suffix in [".yml", ".yaml"]:
+                                # For YAML files, use raw text but limit size
+                                text = text[:3000]
+                        
+                        doc = {
                             "file": f"{src_tag}:{f.name}",
                             "text": text[:4000],
                             "tokens": self._tokenize(text[:4000]),
                             "source": src_tag,
                             "boost": boost
-                        })
+                        }
+                        # Boost ×2.0 para docs NOTARIA
+                        if "notaria" in f.name.lower() or "NOTARIA" in text[:200]:
+                            doc["boost"] = doc["boost"] * 2.0
+                        # Additional boost for Askings files
+                        elif src_tag == "askings":
+                            doc["boost"] = doc["boost"] * 1.5
+                        self._docs.append(doc)
                 except Exception:
                     continue
 

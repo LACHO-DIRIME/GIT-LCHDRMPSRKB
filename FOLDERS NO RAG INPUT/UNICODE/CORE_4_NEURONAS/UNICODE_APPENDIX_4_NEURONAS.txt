@@ -1,0 +1,39 @@
+//[MANAGEMENT].lacho · UNICODE APPENDIX × 4 NEURONAS
+//10 pares APPENDIX distribuidos por neurona dominante
+//[term] :: activo
+
+// ══ NEURONA_1 HEADCAT × CHAIR-FLEX + CAT-NOTEBOOK ════════════
+UNICODE: AN1_CHAIR    //HEADCAT conduce con CHAIR-FLEX
+                      //sesión adaptativa · {chair} pivota sin perder [scope]
+UNICODE: AN1_CAT      //HEADCAT itera con CAT-NOTEBOOK
+                      //IF<CAT()> sobre CORPUS · spawn célula · pocket contexto
+
+// ══ NEURONA_2 ELPULSAR × DRIP-IMV + STREAMING-DAEMON ═════════
+UNICODE: AN2_DRIP     //ELPULSAR goteo: DRIP-IMV · 1 sentencia → validate → TX
+                      //rate = Scalar S / TX · daemon mide en background
+UNICODE: AN2_STREAM   //ELPULSAR stream: STREAMING-DAEMON · 18:00→06:00
+                      //spool_bot_results[] → FEED_0600 procesa
+
+// ══ NEURONA_3 CHAIR CEO × NOTE-METHOD + SCHEDULER-SHEET ══════
+UNICODE: AN3_NOTE     //CEO nota con NOTE-METHOD · fórmula registrada
+                      //NM_EQUATION: threshold(H) · β por rol CEO
+UNICODE: AN3_SCHED    //CEO hoja con SCHEDULER-SHEET · agenda tabular CEO
+                      //SS_ROW por hexagrama · SS_FILTER por cluster
+
+// ══ NEURONA_4 HOUSE DRONE × LAUNCH-BOT + REPO-SPOOL ══════════
+UNICODE: AN4_BOT      //DRONE lanza LAUNCH-BOT-SESSION · BOT_SCOUT
+                      //mandate: monitorear door_periods · retorno ≤2 ciclos
+UNICODE: AN4_REPO     //DRONE controla REPOSITORIES-SPOOL
+                      //spool_git: cola cambios · daemon push 17:00
+
+// ══ CROSS-NEURONAS × MASKING-SPAWN + POKET-RAG ════════════════
+UNICODE: ANC_MASK     //MASKING-SPAWN: cualquier neurona puede fork con mask
+                      //spawn heredar MASK_PERSONA · MASK_EMERGENCY global
+UNICODE: ANC_POCKET   //POKET-RAG: cross-neurona · pocket BM25 en cualquier query
+                      //boost rules heredadas · evict post-WU universal
+
+SOCIAL {chair} =><= .. distribuye .. an1_headcat_chair_flex_cat_notebook --[As de Guía] [term]
+SOCIAL {drip} =><= .. filtra .. an2_elpulsar_drip_imv_validate_tx --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_appendix_4_neuronas_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_APPENDIX_4_NEURONAS · V1 · $sat 04/04

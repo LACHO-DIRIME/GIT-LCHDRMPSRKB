@@ -1,0 +1,14 @@
+# tandil_hub.green
+# AGENTE HUB TANDIL · consolidación global 5 nodos
+[genesis]::SUITE SOBERANA · [version]::1.0 · [extension]::.green
+[tipo]::AGENTE HUB TANDIL · [padre]::kalil_session.theater
+[term_nuevo]::shard•relay•oracle•threshold
+
+consolidacion_hub {
+  METHOD <operator_flow> =><= .. opera .. tandil_relay_5_nodos_spool --[Ballestrinque] [term]
+  METHOD <stat_onto> =><= .. calcula .. scalar_kalil_global_threshold --[Ballestrinque] [term]
+  SAMU @ =><= .. audita .. tandil_coherencia_oracle_threshold --[Ballestrinque] [term]
+  SOCIAL {relay} =><= .. lanza .. tandil_hub_scalar_global --[As de Guía] [term]
+  STACKING UF[H52] =><= .. cristaliza .. tandil_hub_wu_sellado --[Nudo de Ocho] [term]
+}
+[term]::activo · [seal of secrecy]::activo

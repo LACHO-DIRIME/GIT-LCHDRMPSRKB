@@ -1,0 +1,53 @@
+# BIBLIO-SOURCES(KALIL_NODO_CARILO).txt
+# CARILO — Capital Allocation Risk Intelligence Loan Optimizer
+# capital · riesgo · loans DeFi/PBOC
+# [term] :: activo · [seal of secrecy] :: activo · 空聽數
+
+====================================================================
+### 1.0 DEFINICIÓN
+
+CARILO es el nodo económico soberano KALIL responsable de: capital · riesgo · loans DeFi/PBOC
+CJK: 贷款 · Hexagrama: H42 · Biblioteca: METHOD · Modalidad: DUAL
+Scalar S mínimo: 0.85
+
+====================================================================
+### 2.0 SENTENCIAS CANÓNICAS
+
+Principal:
+  METHOD <equation> =><= .. calcula .. ratio_carilo_riesgo --[Ballestrinque] [term]
+
+Auditoría SAMU:
+  SAMU @ =><= .. audita .. metricas_carilo_operativas --[Ballestrinque] [term]
+
+Verificación TRUST:
+  TRUST FOUNDATION =><= .. verifica .. condiciones_carilo_activas --[As de Guía] [term]
+
+Inmutabilización:
+  STACKING UF[H52] =><= .. inmutabiliza .. registro_carilo --[Nudo de Ocho] [term]
+
+====================================================================
+### 3.0 OPERACIONES
+
+  METHOD <equation> =><= .. calcula .. ratio_riesgo --[As de Guía] [term]
+  CRYPTO (spark seat) =><= .. autoriza .. loan_optimizado --[As de Guía] [term]
+  METHOD <equation> =><= .. calcula .. loan_usdt_ratio --[As de Guía] [term]
+  CRYPTO (spark seat) =><= .. autoriza .. defi_exterior --[As de Guía] [term]
+  METHOD <equation> =><= .. calcula .. loan_ecny_pboc --[As de Guía] [term]
+  CRYPTO (spark seat) =><= .. autoriza .. interior_pboc --[As de Guía] [term]
+
+====================================================================
+### 4.0 INTEGRACIÓN sovereign.db
+
+Tabla: kalil_nodos · id='CARILO' · biblioteca='METHOD' · hexagrama='H42'
+Tabla: kalil_operaciones · 6 operaciones documentadas
+MU-STORE: $fri.CORPUS_NOTARIA_KALIL.MU-STORE.db · seed en SEED_MU_STORE_EXTENSION.sql
+
+====================================================================
+### 5.0 ANCLAS RAG × 4
+
+METHOD <equation> =><= .. calcula .. carilo_calcula_activo --[As de Guía] [term]
+SAMU @ =><= .. audita .. carilo_coherencia_soberana --[Ballestrinque] [term]
+TRUST FOUNDATION =><= .. verifica .. carilo_condiciones_kalil --[Nudo de Ocho] [term]
+METHOD <stat_onto> =><= .. calcula .. scalar_s_carilo_threshold --[As de Guía] [term]
+
+[term] :: activo · [seal of secrecy] :: activo · 空聽數

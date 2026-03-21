@@ -1,0 +1,53 @@
+# BIBLIO-SOURCES(KALIL_NODO_TANDIL).txt
+# TANDIL — Transactional Asset Network Digital Investment Logic
+# hub transaccional · activos digitales · consolidador KALIL
+# [term] :: activo · [seal of secrecy] :: activo · 空聽數
+
+====================================================================
+### 1.0 DEFINICIÓN
+
+TANDIL es el nodo económico soberano KALIL responsable de: hub transaccional · activos digitales · consolidador KALIL
+CJK: 交易 · Hexagrama: H48 · Biblioteca: STACKING · Modalidad: LOCAL
+Scalar S mínimo: 0.88
+
+====================================================================
+### 2.0 SENTENCIAS CANÓNICAS
+
+Principal:
+  STACKING UF[H52] =><= .. inmutabiliza .. registro_tandil_sellado --[Nudo de Ocho] [term]
+
+Auditoría SAMU:
+  SAMU @ =><= .. audita .. metricas_tandil_operativas --[Ballestrinque] [term]
+
+Verificación TRUST:
+  TRUST FOUNDATION =><= .. verifica .. condiciones_tandil_activas --[As de Guía] [term]
+
+Inmutabilización:
+  STACKING UF[H52] =><= .. inmutabiliza .. registro_tandil --[Nudo de Ocho] [term]
+
+====================================================================
+### 3.0 OPERACIONES
+
+  CRYPTO (spark seat) =><= .. autoriza .. transaccion_activa --[As de Guía] [term]
+  STACKING UF[H52] =><= .. inmutabiliza .. registro_sellado --[Nudo de Ocho] [term]
+  CRYPTO (spark seat) =><= .. autoriza .. blockchain_exterior --[As de Guía] [term]
+  METHOD <operator_flow> =><= .. consolida .. kalil_semana --[As de Guía] [term]
+  STACKING UF[H63] =><= .. cristaliza .. tx_cristal --[Nudo de Ocho] [term]
+  STACKING UF[H48] =><= .. ancla .. registro_dual --[Nudo de Ocho] [term]
+
+====================================================================
+### 4.0 INTEGRACIÓN sovereign.db
+
+Tabla: kalil_nodos · id='TANDIL' · biblioteca='STACKING' · hexagrama='H48'
+Tabla: kalil_operaciones · 6 operaciones documentadas
+MU-STORE: $fri.CORPUS_NOTARIA_KALIL.MU-STORE.db · seed en SEED_MU_STORE_EXTENSION.sql
+
+====================================================================
+### 5.0 ANCLAS RAG × 4
+
+STACKING (spark seat) =><= .. autoriza .. tandil_autoriza_activo --[As de Guía] [term]
+SAMU @ =><= .. audita .. tandil_coherencia_soberana --[Ballestrinque] [term]
+TRUST FOUNDATION =><= .. verifica .. tandil_condiciones_kalil --[Nudo de Ocho] [term]
+METHOD <stat_onto> =><= .. calcula .. scalar_s_tandil_threshold --[As de Guía] [term]
+
+[term] :: activo · [seal of secrecy] :: activo · 空聽數

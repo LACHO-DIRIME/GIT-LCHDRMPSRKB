@@ -1,0 +1,74 @@
+//[MANAGEMENT].lacho · DRA/INDEX/$sat
+//INDEX $sat · sábado soberano · backup y sellado semanal
+//INDEX_$sat.txt · V1 · 2026-03-10
+//[term] :: activo
+
+// ══ $sat · SÁBADO ═════════════════════════════════════════════
+// $sat = backup total · {door} sella semana · MuSave semanal
+UNICODE: IDX_SAT_RISE         //SAMU #rise $sat · 06:00 · backup ritual
+UNICODE: IDX_SAT_BACKUP       //BKP_FULL · tar DRA/ completo · DOOR_SEAL
+UNICODE: IDX_SAT_MU_SAVE      //MuSave semanal · .sovereign actualizado
+UNICODE: IDX_SAT_PUSH         //git push semana completa · FABRIC_HASH
+UNICODE: IDX_SAT_STATS        //python3 main.py --stats · resumen semana
+UNICODE: IDX_SAT_NEXT         //plan semana siguiente · SOCIAL {scheduler}
+UNICODE: IDX_SAT_SET          //SAMU #set $sat · semana sellada · H63→空
+
+//WORK {door} =><= .. sella .. index_sat_backup_semanal --[Nudo de Ocho] [term]
+//STACKING //[MANAGEMENT].lacho · DRA/DOUBLE_ENVIRONMENT_ELPULSAR/
+//DOUBLE ENVIRONMENT ELPULSAR · staging + producción soberanos
+//DOUBLE_ENV_ELPULSAR.txt · V1 · 2026-03-10
+//STAGING = ENV_A · pruebas · .blue · KU activo
+//PRODUCTION = ENV_B · elpulsar.app · .green · WU sellado
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN DOUBLE ENVIRONMENT ════════════════════════════
+// DOUBLE ENV = dos instancias paralelas de ELPULSAR
+// ENV_A (staging) · ENV_B (prod) · misma codebase · distintos datos
+// ENV_A es el NOW_OBS del desarrollador · ENV_B el del usuario
+// GATE UF[H05] separa ambos · no hay cross-contamination
+// SPEC B trigger: cuando ENV_A valida → promueve a ENV_B
+
+// ══ ENV_A — STAGING ═══════════════════════════════════════════
+UNICODE: ENV_A_HOST           //staging · Render.com o Railway · free tier
+UNICODE: ENV_A_PORT           //port 8741 staging · diferente dominio
+UNICODE: ENV_A_DB             //sovereign_staging.db · no es producción
+UNICODE: ENV_A_CORPUS         //CORPUS staging · subset · test docs
+UNICODE: ENV_A_SKIN           //SKIN_PAPER · siempre · identifica staging visual
+UNICODE: ENV_A_LOGO           //⚠️ STAGING · header badge · no confundir
+UNICODE: ENV_A_MU             //MU_STATE_A · independiente de ENV_B
+UNICODE: ENV_A_GATE           //GATE UF[H05] ENV_A · bloquea push a prod sin WU
+
+// ══ ENV_B — PRODUCCIÓN ════════════════════════════════════════
+UNICODE: ENV_B_HOST           //elpulsar.app · Vercel frontend · Fly.io backend
+UNICODE: ENV_B_PORT           //port 443 HTTPS · TLS · certificado soberano
+UNICODE: ENV_B_DB             //sovereign.db producción · Supabase · backup daily
+UNICODE: ENV_B_CORPUS         //CORPUS completo · 186+ docs · RAG full
+UNICODE: ENV_B_SKIN           //SKIN_AUTO · detecta canal · exterior/interior China
+UNICODE: ENV_B_MU             //MU_STATE_B · producción · nunca resetear sin SAMU
+UNICODE: ENV_B_CDN            //CDN Vercel · edge · latencia mínima · ∇ gradiente
+
+// ══ PROTOCOLO PROMOCIÓN A→B ═══════════════════════════════════
+UNICODE: PROMO_VALIDATE       //ENV_A · pytest 29/29 · grammar.validate() OK
+UNICODE: PROMO_SAMU           //SAMU @ · audita ENV_A · Scalar S ≥ 0.88
+UNICODE: PROMO_GATE           //GATE UF[H05] · verifica no contamina ENV_B
+UNICODE: PROMO_MERGE          //DIR(MERGE) · feature → main → deploy ENV_B
+UNICODE: PROMO_SEAL           //CRYPTO (spark seat) · firma release · [NdO]
+UNICODE: PROMO_COMMIT         //COMMIT_LACHO ENV_B · H63 · cristal deploy
+
+// ══ CHINA DUAL EN DOUBLE ENV ═════════════════════════════════
+UNICODE: DE_CHINA_EXT         //ENV_B exterior · SKIN_DARK · crypto · Web3
+UNICODE: DE_CHINA_INT         //ENV_B interior · SKIN_CHINA · e-CNY · BSN
+UNICODE: DE_CHINA_GATE        //GATE entre exterior/interior · dentro de ENV_B
+UNICODE: DE_STAGING_CHINA     //ENV_A testea dual mode · sin impacto prod
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+TRUST FOUNDATION =><= .. declara .. double_env_staging_prod_soberano --[Nudo de Ocho] [term]
+GATE UF[H05] =><= .. separa .. double_env_a_b_no_contamina --[As de Guía] [term]
+ACTIVITY UF[H57] =><= .. penetra .. double_env_promo_gradiente --[As de Guía] [term]
+STACKING UF[H63] =><= .. cristaliza .. double_env_b_deploy_sellado --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. double_env_scalar_promo_threshold --[Ballestrinque] [term]
+
+//DIR(+) DRA/DOUBLE_ENV_ELPULSAR · V1 · staging·prod · A→B promo
+//DIR(+) elpulsar.app · China dual · GATE separación · SPEC B triggerUF[H52] =><= .. inmutabiliza .. index_sat_mu_save_semanal --[Nudo de Ocho] [term]
+//DIR(+) DRA/INDEX/$sat · V1 · backup total · {door} · H63 semana cerrada

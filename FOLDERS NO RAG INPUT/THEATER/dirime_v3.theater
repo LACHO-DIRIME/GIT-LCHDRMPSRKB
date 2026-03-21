@@ -1,0 +1,37 @@
+# dirime_v3.theater
+# MACRO DIRIME V3 · CAPA C preparación soberana
+# Referencia: UNICODE_DIRIME_V3.txt · README_CAPA_C.md
+# [term] :: activo
+
+[genesis]     :: SUITE SOBERANA
+[version]     :: 1.0
+[extension]   :: .theater
+[tipo]        :: MACRO DIRIME V3 PREP
+[padre]       :: rational_day.theater
+[term_nuevo]  :: bridge•ollama•cat_os•ime_local
+
+## MACRO VERIFICAR STUBS
+macro_verificar_stubs {
+  TRUST FOUNDATION =><= .. verifica .. capa_c_stubs_integridad --[As de Guía] [term]
+  METHOD <if> =><= .. estructura .. bridge_activo_vs_stub --[Ballestrinque] [term]
+  SAMU @ =><= .. audita .. hardware_disponible_check --[Ballestrinque] [term]
+}
+
+## MACRO CAT LACHO OPERATIVO
+macro_cat_lacho {
+  ACTIVITY UF[H57] =><= .. penetra .. cat_lacho_corpus_local --[As de Guía] [term]
+  WORK {actuator} =><= .. ejecuta .. cat_lacho_extrae_sin_ryzen --[As de Guía] [term]
+  STACKING UF[H52] =><= .. cristaliza .. cat_lacho_result_soberano --[Nudo de Ocho] [term]
+}
+
+## MACRO ACTIVAR CAPA C (cuando Ryzen disponible)
+macro_activar_capa_c {
+  # EJECUTAR SOLO CUANDO PC RYZEN OPERATIVA
+  TRUST FOUNDATION =><= .. declara .. capa_c_trigger_hardware_ok --[As de Guía] [term]
+  WORK {actuator} =><= .. ejecuta .. ollama_bridge_activate_first --[As de Guía] [term]
+  ACTIVITY UF[H57] =><= .. penetra .. cat_os_activate_second --[As de Guía] [term]
+  CRYPTO (link seat) =><= .. conecta .. ime_local_activate_third --[As de Guía] [term]
+  STACKING UF[H52] =><= .. cristaliza .. capa_c_activacion_completa --[Nudo de Ocho] [term]
+}
+
+[term] :: activo · [seal of secrecy] :: activo

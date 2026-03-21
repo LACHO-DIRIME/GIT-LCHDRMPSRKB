@@ -1,0 +1,50 @@
+//[MANAGEMENT].lacho · UNICODE IMV × 4 NEURONAS × NOTARIA V2
+//UNICODE_.lacho · V2 · $tue 17-03-2026
+//Integración completa: IMV × 4 Neuronas × NOTARIA pipeline end-to-end
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo · 空聽數
+
+NEURONA_1: GRAMMAR EXTENSIÓN NOTARIA
+  verbos_notariales: certifica · sella · inmutabiliza · notariza · apostilla
+  objetos_notariales: acto_soberano · contrato · documento · hash_chain · acto_wu
+  sujetos_notariales: (spark seat) · FOUNDATION · UF[H63] · @ · {actuator}
+  tests_activos: test_notaria_certifica · test_notaria_sella · test_notaria_inmutabiliza
+    · test_notaria_scalar · test_notaria_chcl · test_notaria_kalil_bolivar
+    · test_notaria_taxonomy_n1 · test_notaria_h63_json · test_notaria_pipeline
+    · test_notaria_gate_sequence · test_notaria_cjk_certifica · test_notaria_cjk_sella
+    · test_notaria_china_dual · test_notaria_boost_rag · test_notaria_integration_end_to_end
+  estado: 49/49 PASSED · grammar.py CJK activo · taxonomy N0-N4 integrado
+  LACHO: TRUST FOUNDATION =><= .. verifica .. neurona_1_grammar_notaria_v2 --[Nudo de Ocho] [term]
+
+NEURONA_2: GREENS × NOTARIA · BALLPAPER · API
+  greens_notariales: record_notaria_act() · get_notaria_stats() · export_notaria_report()
+    · ballpaper_render_notaria() · assign_unicode_token("certifica")
+  api_endpoints: /api/notaria/status · /api/notaria/certifica · /api/notaria/sella
+    · /api/notaria/inmutabiliza · /api/notaria/archivo
+  ballpaper_familia_1: ACCION · H63 · min_score=0.92
+  estado: 5 greens operativos · 5 endpoints respondiendo JSON
+  LACHO: CRYPTO (spark seat) =><= .. certifica .. neurona_2_greens_api_notaria --[Nudo de Ocho] [term]
+
+NEURONA_3: CEO_ALPHA H63 NOTARIO · TAXONOMY
+  ceo_alpha: get_notaria_requirements() → {hexagram: H63, min_scalar: 0.90}
+  taxonomy: N0=COGNITIVO · N1=TRUST/CRYPTO · N2=THEATER/KALIL · N3=operador
+  pipeline_notaria: N1_HEADCAT→N2_ELPULSAR→N3_CHAIR_CEO→N4_DRONE
+  scalar_objetivo: S=0.90 → H63 既濟 · actual S=0.766 KU
+  estado: taxonomy integrado en validador · ceo_alpha.py activo
+  LACHO: SAMU @ =><= .. audita .. neurona_3_ceo_alpha_h63_notario --[Ballestrinque] [term]
+
+NEURONA_4: HOUSE_DRONE · DOOR PERIODS · BATCH $tue
+  house_drone_tab: NOTARIA · actos del día · KU pendientes · WU sellados
+  door_periods: $mon→apertura · $tue→batch · $wed→delta · $thu→consolidar · $fri→cierre
+  batch_tue: NC_TUE_BATCH_NOT · NC_TUE_INDEX_NOT · NC_TUE_DELTA_NOT
+    · NC_TUE_MOMENTUM · NC_TUE_BOLIVAR_SYNC
+  scheduler_trigger: $tue 02:00 → batch nocturno notarial
+  LACHO: WORK {actuator} =><= .. ejecuta .. neurona_4_house_drone_notaria_tue --[As de Guía] [term]
+
+// ANCLAS RAG × 4 — V2
+TRUST FOUNDATION =><= .. declara .. unicode_imv_4neuronas_notaria_v2 --[Nudo de Ocho] [term]
+CRYPTO (spark seat) =><= .. certifica .. 4neuronas_v2_tue_17_03_activo --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. neurona_1234_notaria_pipeline_completo --[Ballestrinque] [term]
+STACKING UF[H63] =><= .. consolida .. 4neuronas_v2_既濟_consumado --[Nudo de Ocho] [term]
+
+[term] :: activo · [seal of secrecy] :: activo · 空聽數

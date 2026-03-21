@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>LR × KALIL SECURITY · DIRIME</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+h1{font-size:1rem;letter-spacing:4px;border-bottom:2px solid #1a1a2e;
+   padding-bottom:10px;margin-bottom:24px;display:flex;justify-content:space-between}
+.nodos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:28px}
+.nodo-card{border:1px solid #ddd;padding:14px;background:#fafafa}
+.nc-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.nc-name{font-size:.8rem;font-weight:bold;letter-spacing:2px}
+.nc-score{font-size:1.1rem;font-weight:bold;padding:2px 10px;border-radius:2px}
+.score-safe{background:#f0f7f3;color:#2a7a4f}
+.score-rev{background:#fff8e7;color:#d35400}
+.score-thr{background:#fde8e8;color:#c0392b}
+.nc-features{font-size:.6rem;color:#888;line-height:1.7;margin-bottom:8px}
+.nc-bar{height:4px;background:#e0e0e0;border-radius:2px;margin-bottom:6px}
+.nc-bar-fill{height:100%;border-radius:2px}
+.nc-token{font-size:.6rem;color:#8e44ad}
+.spool-global{background:#fafafa;border:1px solid #e0e0e0;padding:14px;
+              margin-bottom:24px}
+.sg-title{font-size:.65rem;letter-spacing:2px;color:#888;margin-bottom:12px}
+.sg-row{display:grid;grid-template-columns:100px 1fr 80px 80px;gap:8px;
+        padding:5px 0;border-bottom:1px solid #f5f5f5;align-items:center;font-size:.7rem}
+.sg-head{color:#aaa;font-size:.6rem;letter-spacing:1px}
+.sg-bar-wrap{height:6px;background:#e0e0e0;border-radius:3px}
+.sg-bar-fill{height:100%;border-radius:3px}
+.lacho-block{background:#f0f7f3;border-left:3px solid #2a7a4f;
+             padding:12px;margin-bottom:20px}
+.lb-line{font-size:.75rem;line-height:2}
+.footer{font-size:.62rem;color:#aaa;border-top:1px solid #eee;
+        padding-top:10px;display:flex;gap:16px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<h1>
+  <span>╭─∇─≈─ LR SECURITY × KALIL 6 NODOS</span>
+  <span style="font-size:.7rem;color:#888;font-weight:normal">
+    spool•pocket•spawn · score_peligrosidad por nodo
+  </span>
+</h1>
+
+<div class="nodos-grid" id="nodos-grid"></div>
+
+<div class="spool-global">
+  <div class="sg-title">▸ SPOOL GLOBAL · TANDIL consolidado</div>
+  <div class="sg-row sg-head">
+    <div>NODO</div><div>score_bar</div><div>SCORE</div><div>ESTADO</div>
+  </div>
+  <div id="spool-rows"></div>
+</div>
+
+<div class="lacho-block">
+  <div style="font-size:.65rem;color:#888;letter-spacing:2px;margin-bottom:8px">
+    ▸ LACHO SOBERANO · LR KALIL
+  </div>
+  <div class="lb-line">
+    <span style="color:#c0392b;font-weight:bold">METHOD</span>
+    <span style="color:#2a7a4f;font-weight:bold"> &lt;stat_onto&gt;</span>
+    <span style="color:#555"> =&gt;&lt;= .. calcula .. </span>
+    <span>LR_kalil_global_score_spool_tandil_consolidado</span>
+    <span style="color:#8e44ad"> --[Ballestrinque]</span>
+    <span style="color:#d35400;font-weight:bold"> [term]</span>
+  </div>
+</div>
+
+<div class="footer">
+  <span>DIRIME IMV V0.2.1</span>
+  <span>LR features: hash·entropy·JA3·PE·net·cloud</span>
+  <span>spool TANDIL = consolidación 5 nodos</span>
+  <span>[term] :: activo · $sun 05/04</span>
+</div>
+
+<script>
+const NODOS=[
+  {name:'BARRIOS',features:'BLAKE3·JA3_whitelist·net_flow',
+   scores:[0.9,0.0,-0.4,0.0,0.0],tokens:'pocket remesa · spool canal'},
+  {name:'NORA',features:'JA3S_análisis·oracle·fingerprints',
+   scores:[0.9,0.0,-0.4,0.6,0.0],tokens:'daemon evalúa · pocket entidad'},
+  {name:'BOLIVAR',features:'SHA256·PE_entropy·smart_contracts',
+   scores:[0.9,-0.1,0.0,0.0,0.0],tokens:'spawn verificación · pocket hash'},
+  {name:'CARILO',features:'danger_score·TLS_trust·net_pattern',
+   scores:[0.5,0.2,-0.2,0.0,0.2],tokens:'pocket solicitante · spawn score'},
+  {name:'CHALTEN',features:'daemon_cloud·beacon·cloud_drift',
+   scores:[0.5,0.3,0.0,0.0,0.3],tokens:'daemon tenant · pocket billing'},
+  {name:'TANDIL',features:'full_vector·spool_kalil·consolidado',
+   scores:[0.7,0.1,-0.2,0.3,0.1],tokens:'spool global · pocket hub'},
+];
+
+const BETA0=0.10;
+const grid=document.getElementById('nodos-grid');
+const spoolRows=document.getElementById('spool-rows');
+
+NODOS.forEach(n=>{
+  const raw=BETA0+n.scores.reduce((a,b)=>a+b,0);
+  const score=Math.min(1,Math.max(0,raw));
+  const cls=score<0.3?'score-safe':score<0.7?'score-rev':'score-thr';
+  const status=score<0.3?'SAFE':score<0.7?'REVIEW':'THREAT';
+  const color=score<0.3?'#2a7a4f':score<0.7?'#d35400':'#c0392b';
+  
+  grid.innerHTML+=`
+    <div class="nodo-card">
+      <div class="nc-header">
+        <div class="nc-name">${n.name}</div>
+        <div class="nc-score ${cls}">${score.toFixed(3)}</div>
+      </div>
+      <div class="nc-features">${n.features}</div>
+      <div class="nc-bar">
+        <div class="nc-bar-fill" style="width:${score*100}%;background:${color}"></div>
+      </div>
+      <div class="nc-token">${n.tokens}</div>
+    </div>
+  `;
+  
+  spoolRows.innerHTML+=`
+    <div class="sg-row">
+      <div>${n.name}</div>
+      <div class="sg-bar-wrap">
+        <div class="sg-bar-fill" style="width:${score*100}%;background:${color}"></div>
+      </div>
+      <div>${score.toFixed(3)}</div>
+      <div class="${cls}">${status}</div>
+    </div>
+  `;
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+//[MANAGEMENT].lacho · DRA/SPEC(A+B)/SPEC_A
+//DYNAMIC RESOURCE ALLOCATION · SPEC CAPA A
+//SPEC_A.txt · V1 · 2026-03-10
+//SPEC A = implementable HOY · hardware antiX · sin dependencias nuevas
+//engine lips .. IME =:A> UNICODE =: CLUSTER=: AGENTS>{SOCIAL}%HOMEWORK%WEBSITE
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ DEFINICIÓN SPEC A ═════════════════════════════════════════
+// SPEC A = lo que puede implementarse en hardware actual antiX
+// DIR(+) = spec confirmada · KU→WU inminente · sin bloqueante
+// No requiere PC nueva · no requiere K8S · no requiere cloud pago
+// Base: IMV + CORPUS + THEATER + RAG 4 capas + Groq bridge activo
+// CAPA_A del roadmap: fundacional · completable ahora
+
+// ══ RECURSOS ASIGNADOS SPEC A ═════════════════════════════════
+UNICODE: SA_HW                //antiX workstation · /media/Personal/ · activo
+UNICODE: SA_IMV               //IMV V0.2.1 · grammar+ledger+rag+chat+ceo · OK
+UNICODE: SA_GROQ              //Groq free · llama-3.3-70b · bridge activo
+UNICODE: SA_GITHUB            //GitHub SSH main · sync soberano · activo
+UNICODE: SA_CORPUS            //CORPUS 186+ docs · RAG indexado · activo
+UNICODE: SA_THEATER           //THEATER 4 macros + 1 runner · activo
+UNICODE: SA_LEDGER            //sovereign.db · 1012 TX · 40 cristales · S=0.844
+
+// ══ TAREAS SPEC A — DRA ═══════════════════════════════════════
+UNICODE: SA_T01               //TOMO_A ENGINE · crear estructura dirs DRA local
+UNICODE: SA_T02               //AGENCY_IDE_SYSTEM · documentar gaps DIR(-) actuales
+UNICODE: SA_T03               //INDEX $mon→$sat · crear 6 archivos índice semanal
+UNICODE: SA_T04               //TEMP(A) · buffer KU sesión activa · .blue local
+UNICODE: SA_T05               //OFFSET(BLUEWORDS) · mapear blue-words DRA activas
+UNICODE: SA_T06               //SEGMENT(SAMU) · auditoría SAMU por segmento DRA
+UNICODE: SA_T07               //SLICE(LACHO) · sentencias LACHO por slice del dir
+UNICODE: SA_T08               //BACKUP/door · protocolo backup diario · MuSave
+UNICODE: SA_T09               //DOCS/ · documentación DRA accesible · .txt soberano
+UNICODE: SA_T10               //SOURCES/ASSETS · fuentes y recursos del DRA
+UNICODE: SA_T11               //ICONS/ · iconografía DRA · IME{} tokens visuales
+UNICODE: SA_T12               //STOCK_CHAIR$ · posición semanal · $mon→$sat
+
+// ══ CRITERIO DE COMPLETITUD ═══════════════════════════════════
+UNICODE: SA_DONE              //SPEC A completa · todos SA_T0N = WU · Scalar S ≥ 0.88
+UNICODE: SA_PARTIAL           //tarea parcial · KU activo · [Ballestrinque] · revisar
+UNICODE: SA_BLOCKED           //tarea bloqueada · DIR(-) · requiere SPEC B · escalar
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+TRUST FOUNDATION =><= .. declara .. spec_a_implementable_hoy --[Nudo de Ocho] [term]
+WORK {actuator} =><= .. ejecuta .. spec_a_tareas_dra_local --[As de Guía] [term]
+SAMU @ =><= .. audita .. spec_a_completitud_scalar --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. spec_a_wu_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) DRA/SPEC_A · V1 · CAPA A · antiX · sin bloqueante · DIR(+)

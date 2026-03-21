@@ -1,0 +1,34 @@
+//[MANAGEMENT].lacho · UNICODE LR × 4 NEURONAS
+//spool•pocket•spawn•daemon aplicados por neurona
+//[term] :: activo
+
+// ══ NEURONA_1 HEADCAT × pocket+spawn ═════════════════════════
+UNICODE: LRN1_POCKET  //HEADCAT pocket: @human_early · 空聽 aísla input
+                      //pocket = contexto sesión comprimido · previo a KU
+UNICODE: LRN1_SPAWN   //HEADCAT spawn: nueva instancia DIRIME> por @human
+                      //DIR(ING) · spawn soberano · fork del operador
+
+// ══ NEURONA_2 ELPULSAR × spool+daemon ════════════════════════
+UNICODE: LRN2_SPOOL   //ELPULSAR spool: TX buffer · sentencias pre-ledger
+                      //spool_tx[] acumula · batch insert a sovereign.db
+UNICODE: LRN2_DAEMON  //ELPULSAR daemon: --stats background · S monitor
+                      //daemon actualiza Scalar S · pocket resultado · FEED
+
+// ══ NEURONA_3 CHAIR CEO × pocket+spawn(H) ════════════════════
+UNICODE: LRN3_POCKET  //CEO pocket: aísla análisis por hexagrama
+                      //pocket_H[H01..H64] · threshold verificado aislado
+UNICODE: LRN3_SPAWN   //CEO spawn: genera instancia por rol CEO_ALPHA
+                      //spawn_rol = DIR(ING) × get_role_by_hexagram(H)
+
+// ══ NEURONA_4 HOUSE DRONE × spool+daemon ══════════════════════
+UNICODE: LRN4_SPOOL   //DRONE spool: eventos door_period · cola de transiciones
+                      //ZIP_OPEN·NOON·AFTERNOON·CLOSE → spool_door_events[]
+UNICODE: LRN4_DAEMON  //DRONE daemon: monitoreo continuo door periods
+                      //daemon detecta hora → trigger macro correcto
+
+ACTIVITY UF[H64] =><= .. lanza .. lr_n1_spawn_headcat_nueva_instancia --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. lr_n2_spool_elpulsar_tx_buffer --[Nudo de Ocho] [term]
+METHOD <equation> =><= .. calcula .. lr_n3_pocket_ceo_threshold_aislado --[Ballestrinque] [term]
+WORK {actuator} =><= .. mantiene .. lr_n4_daemon_drone_door_events --[As de Guía] [term]
+
+//DIR(+) UNICODE_LR_4_NEURONAS · V1 · $sat 04/04

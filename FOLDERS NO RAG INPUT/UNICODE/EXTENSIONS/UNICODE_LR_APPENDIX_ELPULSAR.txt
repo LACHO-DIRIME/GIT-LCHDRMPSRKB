@@ -1,0 +1,42 @@
+//[MANAGEMENT].lacho · UNICODE LR+APPENDIX × ELPULSAR integración
+//spool•pocket•spawn•daemon en pipeline real IMV
+//[term] :: activo
+
+// ══ SPOOL EN IMV (PENDIENTE implementar) ══════════════════════
+UNICODE: ELP_SPOOL_TX    //spool_tx: buffer sentencias pre-sovereign.db
+                         //actualmente: insert directo · pendiente batch
+                         //spool_tx = [] · flush cada 10 TX o en macro_cierre
+UNICODE: ELP_SPOOL_CRYS  //spool_crystals: buffer crystals pre-export
+                         //export_crystals() actual → spool + flush
+UNICODE: ELP_SPOOL_BOT   //spool_bot_results: retorno FEED_0600 desde BOT_NET
+                         //daemon noche acumula → spool → FEED procesa AM
+
+// ══ POCKET EN IMV ═════════════════════════════════════════════
+UNICODE: ELP_POCKET_RAG  //pocket_RAG: top_k BM25 ya existe · spawn por query
+                         //cada query en interactive_mode() = pocket implícito
+UNICODE: ELP_POCKET_CEO  //pocket_CEO: aísla análisis CEO_ALPHA por hexagrama
+                         //load_ceo_alpha() → pocket H1..H64 · threshold aislado
+UNICODE: ELP_POCKET_SESS //pocket_SESSION: contexto comprimido por sesión
+                         //tether.anchor(session_id, tomo_id) = pocket_session
+
+// ══ SPAWN EN IMV ══════════════════════════════════════════════
+UNICODE: ELP_SPAWN_PROC  //spawn proceso hijo: MASKING-SPAWN · fork
+                         //DIR(ING) · nueva instancia grammar.validate()
+UNICODE: ELP_SPAWN_BOT   //spawn bot: LAUNCH-BOT-SESSION · BOT_SCOUT
+                         //SOCIAL {launch-bot} con mandato verificado
+UNICODE: ELP_SPAWN_CAT   //spawn célula: CAT-NOTEBOOK · IF<CAT()>
+                         //itera CORPUS/ · valida · registra gaps
+
+// ══ DAEMON EN IMV ════════════════════════════════════════════
+UNICODE: ELP_DAEMON_STAT //daemon stats: _SCHEDULER_ACTIVE · background monitor
+                         //daemon actualiza Scalar S · pocket resultado
+UNICODE: ELP_DAEMON_STRE //daemon streaming: STREAMING-DAEMON · 18:00→06:00
+                         //BOT_NET activo · {streaming} persistente
+UNICODE: ELP_DAEMON_REPO //daemon repo: REPOSITORIES-SPOOL · daemon 17:00 push
+                         //spool_git queue · git_sync.sh trigger
+
+METHOD <operator_flow> =><= .. opera .. elp_spool_tx_pocket_query_spawn_proc --[Ballestrinque] [term]
+WORK {actuator} =><= .. mantiene .. elp_daemon_stat_stream_repo_background --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_lr_appendix_elpulsar_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_LR_APPENDIX_ELPULSAR · V1 · $mon 06/04

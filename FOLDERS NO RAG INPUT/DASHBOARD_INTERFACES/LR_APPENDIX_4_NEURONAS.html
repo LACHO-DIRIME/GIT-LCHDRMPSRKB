@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>LR+APPENDIX × 4 NEURONAS · DIRIME</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+.header{border-bottom:3px solid #1a1a2e;padding-bottom:12px;margin-bottom:24px;
+        display:flex;justify-content:space-between;align-items:flex-end}
+.h-title{font-size:1rem;font-weight:bold;letter-spacing:3px}
+.h-meta{font-size:.68rem;color:#888;text-align:right;line-height:1.7}
+.stack-bar{display:flex;height:28px;margin-bottom:24px;border:1px solid #e0e0e0}
+.sb-l{display:flex;align-items:center;justify-content:center;
+      font-size:.58rem;letter-spacing:1px;border-right:1px solid #fff}
+.sb-l0{background:#8e44ad;color:#fff;flex:.8}
+.sb-l1{background:#c0392b;color:#fff;flex:1.2}
+.sb-l2{background:#2a7a4f;color:#fff;flex:1}
+.sb-l3{background:#2980b9;color:#fff;flex:1}
+.sb-l4{background:#d35400;color:#fff;flex:.8}
+.tokens-row{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap}
+.tok{padding:5px 12px;font-size:.75rem;font-weight:bold;border:1px solid}
+.tok-spool{border-color:#8e44ad;color:#8e44ad;background:#fdf8ff}
+.tok-pocket{border-color:#2980b9;color:#2980b9;background:#f0f6ff}
+.tok-spawn{border-color:#2a7a4f;color:#2a7a4f;background:#f0f7f3}
+.tok-daemon{border-color:#d35400;color:#d35400;background:#fff8f0}
+.neurons-full{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:24px}
+.nf-box{border:1px solid #ddd;padding:14px;background:#fafafa}
+.nf-num{font-size:.62rem;color:#aaa;letter-spacing:2px}
+.nf-name{font-size:.9rem;font-weight:bold;margin:4px 0}
+.nf-lr{font-size:.7rem;color:#c0392b;margin:3px 0}
+.nf-ap{font-size:.7rem;color:#2a7a4f;margin:3px 0}
+.nf-tokens{font-size:.65rem;color:#8e44ad;margin-top:6px;
+           border-top:1px solid #f0f0f0;padding-top:4px}
+.appendix-full{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:24px}
+.af-row{display:flex;gap:8px;padding:6px 0;border-bottom:1px solid #f5f5f5;
+        align-items:center;font-size:.7rem}
+.af-token{font-weight:bold;letter-spacing:1px;width:180px;flex-shrink:0;color:#1a1a2e}
+.af-lib{color:#2a7a4f;font-size:.65rem}
+.af-tok2{font-size:.6rem;color:#8e44ad;margin-left:auto}
+.lacho-final{background:#fafafa;border-left:3px solid #1a1a2e;
+             padding:14px;margin-bottom:20px}
+.lf-title{font-size:.62rem;letter-spacing:2px;color:#aaa;margin-bottom:8px}
+.lf-line{font-size:.75rem;line-height:2;padding:2px 0;border-bottom:1px solid #f5f5f5}
+.footer{font-size:.6rem;color:#aaa;border-top:1px solid #eee;
+        padding-top:10px;display:flex;gap:14px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <div class="h-title">LR + APPENDIX × 4 NEURONAS</div>
+    <div style="font-size:.72rem;color:#555;margin-top:4px">
+      UNICODE Linear Regression + CLAUDE APPENDIX PROMPTING SCOUT
+    </div>
+  </div>
+  <div class="h-meta">$tue 07/04 · DIRIME IMV V0.2.1<br>[term] :: activo</div>
+</div>
+
+<div class="stack-bar">
+  <div class="sb-l sb-l0">APPENDIX · 10 pares</div>
+  <div class="sb-l sb-l1">LR · β×features</div>
+  <div class="sb-l sb-l2">4 NEURONAS</div>
+  <div class="sb-l sb-l3">KALIL 6 nodos</div>
+  <div class="sb-l sb-l4">spool•pocket•spawn•daemon</div>
+</div>
+
+<div class="tokens-row">
+  <div class="tok tok-spool">spool · STACKING buffer</div>
+  <div class="tok tok-pocket">pocket · &lt;A&gt; local</div>
+  <div class="tok tok-spawn">spawn · DIR(ING)</div>
+  <div class="tok tok-daemon">daemon · SCHED_STREAM BG</div>
+</div>
+
+<div class="neurons-full">
+  <div class="nf-box">
+    <div class="nf-num">NEURONA 1</div>
+    <div class="nf-name">HEADCAT</div>
+    <div class="nf-lr">LR: pocket(@early) · spawn(DIRIME>)</div>
+    <div class="nf-ap">APPENDIX: CHAIR-FLEX · CAT-NOTEBOOK</div>
+    <div class="nf-tokens">pocket · spawn</div>
+  </div>
+  <div class="nf-box">
+    <div class="nf-num">NEURONA 2</div>
+    <div class="nf-name">ELPULSAR</div>
+    <div class="nf-lr">LR: spool(TX) · daemon(--stats BG)</div>
+    <div class="nf-ap">APPENDIX: DRIP-IMV · STREAMING-DAEMON</div>
+    <div class="nf-tokens">spool · daemon</div>
+  </div>
+  <div class="nf-box">
+    <div class="nf-num">NEURONA 3</div>
+    <div class="nf-name">CHAIR CEO</div>
+    <div class="nf-lr">LR: pocket(H_threshold) · spawn(CEO_role)</div>
+    <div class="nf-ap">APPENDIX: NOTE-METHOD · SCHEDULER-SHEET</div>
+    <div class="nf-tokens">pocket · spawn_H</div>
+  </div>
+  <div class="nf-box">
+    <div class="nf-num">NEURONA 4</div>
+    <div class="nf-name">HOUSE DRONE</div>
+    <div class="nf-lr">LR: spool(door_events) · daemon(door_periods)</div>
+    <div class="nf-ap">APPENDIX: LAUNCH-BOT · REPO-SPOOL</div>
+    <div class="nf-tokens">spool · daemon</div>
+  </div>
+</div>
+
+<div class="appendix-full">
+  <div class="af-row">
+    <div class="af-token">CHAIR-FLEX</div>
+    <div class="af-lib">SOCIAL {chair}</div>
+    <div class="af-tok2">spawn</div>
+  </div>
+  <div class="af-row">
+    <div class="af-token">SCHEDULER-SHEET</div>
+    <div class="af-lib">SOCIAL {scheduler}</div>
+    <div class="af-tok2">spool</div>
+  </div>
+  <div class="af-row">
+    <div class="af-token">DRIP-IMV</div>
+    <div class="af-lib">SOCIAL {drip}</div>
+    <div class="af-tok2">daemon</div>
+  </div>
+  <div class="af-row">
+    <div class="af-token">POKET-RAG</div>
+    <div class="af-lib">GATE UF[H05]</div>
+    <div class="af-tok2">pocket</div>
+  </div>
+  <div class="af-row">
+    <div class="af-token">MASKING-SPAWN</div>
+    <div class="af-lib">SOCIAL {masking}</div>
+    <div class="af-tok2">spawn</div>
+  </div>
+  <div class="af-row">
+    <div class="af-token">NOTE-METHOD</div>
+    <div class="af-lib">METHOD &lt;equation&gt;</div>
+    <div class="af-tok2">pocket</div>
+  </div>
+  <div class="af-row">
+    <div class="af-token">STREAMING-DAEMON</div>
+    <div class="af-lib">SOCIAL {streaming}</div>
+    <div class="af-tok2">daemon</div>
+  </div>
+  <div class="af-row">
+    <div class="af-token">CAT-NOTEBOOK</div>
+    <div class="af-lib">SOCIAL {cat}</div>
+    <div class="af-tok2">pocket</div>
+  </div>
+  <div class="af-row">
+    <div class="af-token">REPOSITORIES-SPOOL</div>
+    <div class="af-lib">SOCIAL {repositories}</div>
+    <div class="af-tok2">spool</div>
+  </div>
+  <div class="af-row">
+    <div class="af-token">LAUNCH-BOT-SESSION</div>
+    <div class="af-lib">SOCIAL {launch-bot}</div>
+    <div class="af-tok2">spawn</div>
+  </div>
+</div>
+
+<div class="lacho-final">
+  <div class="lf-title">▸ LACHO SOBERANO · FULL STACK INTEGRADO</div>
+  <div class="lf-line">
+    <span style="color:#c0392b;font-weight:bold">METHOD</span>
+    <span style="color:#2a7a4f;font-weight:bold"> &lt;equation&gt;</span>
+    <span style="color:#555"> =&lt;= .. calcula .. </span>
+    <span>nc_lr_appendix_full_stack_features_soberano</span>
+    <span style="color:#8e44ad"> --[Ballestrinque]</span>
+    <span style="color:#d35400;font-weight:bold"> [term]</span>
+  </div>
+  <div class="lf-line">
+    <span style="color:#c0392b;font-weight:bold">SOCIAL</span>
+    <span style="color:#2a7a4f;font-weight:bold"> {launch-bot}</span>
+    <span style="color:#555"> =&lt;= .. lanza .. </span>
+    <span>nc_lr_appendix_spawn_bot_session_mandate</span>
+    <span style="color:#8e44ad"> --[As de Guía]</span>
+    <span style="color:#d35400;font-weight:bold"> [term]</span>
+  </div>
+  <div class="lf-line">
+    <span style="color:#c0392b;font-weight:bold">STACKING</span>
+    <span style="color:#2a7a4f;font-weight-bold"> UF[H52]</span>
+    <span style="color:#555"> =&lt;= .. cristaliza .. </span>
+    <span>nc_lr_appendix_full_stack_sellado</span>
+    <span style="color:#8e44ad"> --[Nudo de Ocho]</span>
+    <span style="color:#d35400;font-weight:bold"> [term]</span>
+  </div>
+  <div class="lf-line">
+    <span style="color:#c0392b;font-weight:bold">SAMU</span>
+    <span style="color:#8e44ad;font-weight:bold"> @</span>
+    <span style="color:#555"> =&lt;= .. audita .. </span>
+    <span>nc_lr_appendix_coherencia_global_7_dias</span>
+    <span style="color:#8e44ad"> --[Ballestrinque]</span>
+    <span style="color:#d35400;font-weight:bold"> [term]</span>
+  </div>
+</div>
+
+<div class="footer">
+  <span>DIRIME IMV V0.2.1</span>
+  <span>LR × APPENDIX × 4 NEURONAS · full stack integrado</span>
+  <span>spool•pocket•spawn•daemon · KALIL 6 nodos</span>
+  <span>[term] :: activo · $tue 07/04</span>
+</div>
+
+</body>
+</html>

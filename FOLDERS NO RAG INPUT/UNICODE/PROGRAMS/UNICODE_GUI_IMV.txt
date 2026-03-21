@@ -1,0 +1,119 @@
+//[MANAGEMENT].lacho · UNICODE GUI IMV · V1
+//[term]=: gui•spool_tx•activity_gate•v030
+//dominio: GUI Tkinter soberana · interface/gui.py · tests 33→38
+//REFERENCIA: interface/gui.py · test_imv_gui.py · Tkinter framework
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ GUI SOBERANA DEFINICIÓN ════════════════════════════════════
+UNICODE: GUI_DEF      //GUI Tkinter DIRIME IMV · puerto 8742 · BUILDER live
+                     //componentes: library·subject·verb·object·knot
+                     //funciones: build·validate·route·clear·stats
+                     //interfaz visual: fondo blanco #ffffff · colores soberanos
+UNICODE: GUI_BUILD    //BUILDER LACHO: construcción sentencias canónicas
+                     //library dropdown: 9 bibliotecas soberanas
+                     //subject/verb/object: entrada libre + validación
+                     //knot dropdown: 5 nudos canónicos
+                     //preview: construcción en tiempo real
+UNICODE: GUI_VALID    //VALIDATION: validate() + lacho_score()
+                     //result display: VALID/WARNING/INVALID
+                     //LACHO score: 0.0→1.0 con colores
+                     //errors/warnings display detallado
+UNICODE: GUI_ROUTE    //ROUTE: language_routing.py integration
+                     //destination: module/function mapping
+                     //display: resultado del routing
+UNICODE: GUI_STATS    //STATS: get_stats() integration
+                     //TX total · Scalar S · cristales total
+                     //auto-update: cada 5 segundos
+UNICODE: GUI_LOG      //LOG: scrolling text area
+                     //timestamp: HH:MM:SS
+                     //events: build·validate·route·clear·errors
+                     //colors: diferentes niveles de logging
+
+// ══ COMPONENTES TÉCNICOS ════════════════════════════════════════
+UNICODE: GUI_TKINTER  //Tkinter framework: Python GUI estándar
+                     //import: tkinter + ttk + scrolledtext
+                     //widgets: Frame·Label·Entry·Combobox·Button·ScrolledText
+                     //layout: pack() + grid() + PanedWindow
+UNICODE: GUI_COLORS   //esquema de colores soberano:
+                     //bg: #ffffff (blanco puro)
+                     //fg: #1a1a2e (texto oscuro)
+                     //accent: #2a7a4f (verde éxito)
+                     //warn: #d35400 (naranja advertencia)
+                     //error: #c0392b (rojo error)
+                     //purple: #8e44ad (púrpura LACHO)
+                     //blue: #2980b9 (azul información)
+                     //border: #e0e0e0 (gris borde)
+                     //bg_dark: #1a1a2e (fondo oscuro header)
+UNICODE: GUI_FONTS    //tipografías monoespaciadas:
+                     //font-family: "Courier New" (monoespaciado)
+                     //sizes: 8·9·10·11·12·14 para diferentes elementos
+                     //weights: normal·bold para jerarquía visual
+UNICODE: GUI_LAYOUT   //estructura de paneles:
+                     //header: título + stats
+                     //builder: controls + preview
+                     //validation: resultados + score
+                     //actions: buttons principales
+                     //log: área scrollable
+                     //responsive: minsize 800x600
+
+// ══ INTEGRACIÓN SISTEMA ══════════════════════════════════════════
+UNICODE: GUI_CORE     //integración con core modules:
+                     //validate() desde core.grammar
+                     //lacho_score() desde core.grammar
+                     //route() desde core.language_routing
+                     //get_stats() desde core.ledger
+UNICODE: GUI_TESTS    //tests 33→38 en test_imv_gui.py:
+                     //test 33: GUI initialization
+                     //test 34: Sentence building
+                     //test 35: Validation functionality
+                     //test 36: Routing functionality
+                     //test 37: Clear builder functionality
+                     //test 38: Stats update functionality
+UNICODE: GUI_MOCK     //mocking para tests:
+                     //tkinter mock (no disponible en CI)
+                     //core modules mock
+                     //widget behavior mock
+                     //100% test coverage sin GUI real
+
+// ══ FUNCIONALIDADES ESPECÍFICAS ════════════════════════════════════
+UNICODE: GUI_PREVIEW  //preview en tiempo real:
+                     //trigger: onChange en cualquier campo
+                     //format: LACHO canónico completo
+                     //colors: #f0f7f3 background · #2a7a4f text
+UNICODE: GUI_VALIDATE //validación completa:
+                     //button: ▶ VALIDAR (azul)
+                     //result: color según resultado
+                     //score: LACHO: 0.000 (verde si ≥0.8)
+UNICODE: GUI_CLEAR    //limpieza builder:
+                     //button: CLEAR (naranja)
+                     //action: reset all fields
+                     //log: "Builder cleared"
+UNICODE: GUI_ROUTE    //routing de sentencia:
+                     //button: ROUTE (púrpura)
+                     //display: destination module
+                     //log: "Routed to: module"
+
+// ══ V0.3.0 GATE CRITERIOS ════════════════════════════════════════
+UNICODE: GUI_V030_1   //criterio 1: GUI funcional completa
+                     //BUILDER operando · VALIDATION funcionando
+                     //ROUTE activo · STATS actualizando
+UNICODE: GUI_V030_2   //criterio 2: tests 33→38 pasando
+                     //100% coverage mocked · 0 failures
+                     //pytest test_imv_gui.py exitoso
+UNICODE: GUI_V030_3   //criterio 3: integración core completa
+                     //validate() · lacho_score() · route() · get_stats()
+                     //todos los imports funcionales
+UNICODE: GUI_V030_4   //criterio 4: especificación visual cumplida
+                     //fondo blanco #ffffff confirmado
+                     //colores soberanos implementados
+                     //tipografía monoespaciada activa
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+WORK {actuator} =><= .. ejecuta .. gui_tkinter_builder_soberano --[As de Guía] [term]
+ACTIVITY UF[H56] =><= .. transita .. gui_validation_routing_integration --[As de Guía] [term]
+METHOD <stat_onto> =><= .. calcula .. gui_tests_33_38_coverage_complete --[Ballestrinque] [term]
+CRYPTO (link seat) =><= .. conecta .. gui_core_modules_integration --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_gui_imv_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_GUI_IMV · V1 · gui•spool_tx•activity_gate•v030
+//$thu 30/04 · CORPUS/UNICODE PROGRAMS/

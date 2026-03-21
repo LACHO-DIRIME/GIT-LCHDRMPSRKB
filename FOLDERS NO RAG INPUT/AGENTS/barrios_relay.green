@@ -1,0 +1,14 @@
+# barrios_relay.green
+# AGENTE RELAY BARRIOS · bridge remesas soberano
+[genesis]::SUITE SOBERANA · [version]::1.0 · [extension]::.green
+[tipo]::AGENTE RELAY BARRIOS · [padre]::rational_day.theater
+[term_nuevo]::shard•relay•oracle•threshold
+
+relay_remesas {
+  SOCIAL {relay} =><= .. lanza .. relay_community_platform_barrios --[As de Guía] [term]
+  CRYPTO (link seat) =><= .. conecta .. canal_remesas_BLAKE3_soberano --[As de Guía] [term]
+  METHOD <equation> =><= .. calcula .. LR_score_remesa_threshold --[Ballestrinque] [term]
+  GATE UF[H05] =><= .. espera .. ledger_gate_remesa_pre_tx --[Ballestrinque] [term]
+  STACKING UF[H52] =><= .. cristaliza .. barrios_relay_wu_sellado --[Nudo de Ocho] [term]
+}
+[term]::activo · [seal of secrecy]::activo

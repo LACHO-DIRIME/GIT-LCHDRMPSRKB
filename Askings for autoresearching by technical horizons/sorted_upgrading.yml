@@ -1,0 +1,33 @@
+# sorted_upgrading.yml — generado por autoresearch_specs.py
+# 2026-03-18 10:27:59
+
+modules:
+  ACTIVE:
+    - IMV/core/grammar.py
+    - IMV/core/ceo_alpha.py
+    - IMV/core/rag.py
+    - IMV/core/samu.py
+    - IMV/core/language_routing.py
+    - IMV/core/ledger.py
+    - IMV/core/foundation.py
+    - IMV/core/taxonomy.py
+    - IMV/core/ballpaper.py
+    - IMV/tools/generator.py
+    - IMV/tools/office_landing.py
+    - IMV/tools/export_crystals_lacho.py
+    - IMV/tools/index_new_files.py
+    - tools/generator.py
+    - tools/autoresearch_specs.py
+  DECLARED:
+    - IMV/core/__init__.py
+    - IMV/tools/__init__.py
+    - DIRIME_v2/elpulsar/core/__init__.py
+    - DIRIME_v2/elpulsar/tools/__init__.py
+  STUB:
+    - DIRIME_v2/groq/__init__.py
+  BLOCKED:
+
+gaps:
+  - "scalar_s:0 en /api/notaria/archivo · guardar en data al registrar grammar"
+  - "sync:0 cristales elpulsar startup · sync_from_ledger apuntar a sovereign.db IMV"
+  - "github_sync.sh commit message usa TX/S hardcodeados en vez de valores reales"

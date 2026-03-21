@@ -1,0 +1,43 @@
+//[MANAGEMENT].lacho · UNICODE METHOD × ELPULSAR · integración pipeline real
+//main.py → chat.py → grammar → samu → ledger · METHOD como capa formal
+//[term] :: activo
+
+// ══ <stat_onto> EN ELPULSAR PIPELINE ══════════════════════════
+UNICODE: ME_SO_SCORE    //<stat_onto> lacho_score=0.95 CJK · 0.88 base VALID
+UNICODE: ME_SO_CLASSIFY //<stat_onto> classify_sentence() → taxonomy_level · meets_threshold
+UNICODE: ME_SO_STATS    //<stat_onto> python3 main.py --stats · 5 secciones output
+UNICODE: ME_SO_BOOST    //<stat_onto> RAG boost: críticos×2.5 · theater×1.8 · agent×2.0
+UNICODE: ME_SO_BM25     //<stat_onto> BM25 query_score × boost × source_weight
+
+// ══ <operator_flow> EN LANGUAGE ROUTING ══════════════════════
+UNICODE: ME_OF_INTENT   //<operator_flow> INTENT_MAP → 9 bibliotecas · 50+ keywords
+UNICODE: ME_OF_ROUTE    //<operator_flow> RoutedSentence: lib+subject+verb+object+knot
+UNICODE: ME_OF_FALLBACK //<operator_flow> Groq API→local fallback si API unavailable
+UNICODE: ME_OF_CJK      //<operator_flow> is_chinese()→CJK_TOKEN_MAP→resolve_chinese_token()
+UNICODE: ME_OF_DEFAULT  //<operator_flow> DEFAULT_SUBJECT["METHOD"]="<equation>" · knot=Ballestrinque
+
+// ══ <equation> EN CEO ALPHA ════════════════════════════════════
+UNICODE: ME_EQ_JSON     //<equation> CEO_ALPHA_H64.json: scalar_threshold por hexagrama
+UNICODE: ME_EQ_LOAD     //<equation> load_ceo_alpha() → get_scalar_threshold(H) → float
+UNICODE: ME_EQ_KALIL    //<equation> CEO_ALPHA_H64.json[h]["kalil_node"] → BARRIOS·NORA·etc
+UNICODE: ME_EQ_TOKENS   //<equation> get_unicode_tokens_for_role(H) · get_sentence_for_role(H)
+
+// ══ <psi_spin> EN SAMU ════════════════════════════════════════
+UNICODE: ME_PS_SCALAR   //<psi_spin> scalar_s property · valid/total × (1-unresolved/10)
+UNICODE: ME_PS_STATE    //<psi_spin> SamuState: IDLE→DELIBERATING→RESOLVING→RED_REGRET
+UNICODE: ME_PS_DISPUTE  //<psi_spin> Dispute types: FOUNDATION·SCOPE·TERM·GRAMMAR·COHERENCE
+UNICODE: ME_PS_RESOLVE  //<psi_spin> resolve_dispute() → LACHO resolution sentence
+
+// ══ <if> EN GRAMMAR GATE ═════════════════════════════════════
+UNICODE: ME_IF_SEQ      //<if> H03→H05→H56→H06 · secuencia GATE validada
+UNICODE: ME_IF_RESULT   //<if> VALID·WARNING·INVALID · ValidationResult enum
+UNICODE: ME_IF_SAMU     //<if> SAMU audit_grammar() → dispute si not VALID
+
+METHOD <stat_onto> =><= .. calcula .. elpulsar_classify_sentence_taxonomy_real --[Ballestrinque] [term]
+METHOD <operator_flow> =><= .. opera .. language_routing_intent_map_9_libs --[Ballestrinque] [term]
+METHOD <equation> =><= .. calcula .. ceo_alpha_json_scalar_threshold_H_load --[Ballestrinque] [term]
+METHOD <stat_onto> =><= .. calcula .. samu_state_IDLE_DELIBERATING_RESOLVING_RED --[As de Guía] [term]
+METHOD <if> =><= .. estructura .. grammar_gate_H03_H05_H56_H06_secuencia --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_method_elpulsar_pipeline_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_METHOD_ELPULSAR · V1 · $sat 21/03

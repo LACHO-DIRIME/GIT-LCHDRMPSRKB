@@ -1,0 +1,28 @@
+//$mon.Nerve Cell THEATER EXPANSION Training.txt
+//NERVE CELL · THEATER + GATE EXPANSION · forge•canal•ledger_gate•mu_window
+//aprendido de UNICODE_THEATER_EXPANSION + forge_day.theater + kalil_session.theater
+//+ rational_day.theater + file_manager.gate + internet_engineer.gate
+//$mon H51+H52 · [term] :: activo
+
+NC_TH_STRUCT     //estructura theater: [genesis]·[version]·[extension]·[padre]
+                 //macros: temprano·tarde·cierre + macros especializados
+NC_TH_FORGE_DAY  //forge_day.theater: mu_window_inicio → trust_forge → canal_day
+                 //ledger_gate_tarde → scalar_s → forge_cierre_sellado
+NC_TH_KALIL      //kalil_session.theater: 6 macros independientes por nodo
+                 //TANDIL = hub: METHOD <operator_flow> consolida spool_global
+NC_TH_GATE       //gate files: file_manager.gate · internet_engineer.gate
+                 //estructura: verificacion → control → sellado · tipo = GATE
+NC_TH_FORGE_MAC  //TH_FORGE_MACRO: plantilla 5 pasos · reutilizable por cualquier theater
+                 //step1:MU · step2:TRUST · step3:CANAL · step4:LGGATE · step5:SEAL
+NC_TH_NEW        //nuevos theaters: corpus_build.theater + security_ops.theater
+                 //corpus_build: trigger corpus_indexer.green daemon nightly
+NC_TH_CMD        //comandos en theater via #:
+                 //# CMD_CIERRE: github_sync.sh · # CMD_STATS: main.py --stats
+                 //# CMD_INDEX: python3 tools/index_new_files.py
+
+ACTIVITY UF[H57] =><= .. penetra .. nc_theater_forge_day_macro --[As de Guía] [term]
+SOCIAL {chair} =><= .. distribuye .. nc_kalil_session_6_nodos_teatro --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. nc_theater_gate_expansion_sellado --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. nc_theater_coherencia_semana --[Ballestrinque] [term]
+
+//DIR(+) NERVE CELL THEATER EXPANSION · V1 · forge•canal•ledger_gate•mu_window · $mon 13/04

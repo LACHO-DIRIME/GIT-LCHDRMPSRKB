@@ -1,0 +1,28 @@
+//$mon.Nerve Cell S TARGET Training.txt
+//NERVE CELL · S TARGET 0.88 · ruta verificada desde 0.822
+//H51+H52 · $mon · [term] :: activo
+//aprendido de: grammar.py·lacho_score·test_imv.py·test_imv_ext.py
+
+NC_S_CURRENT    //S=0.822 actual · TX=1063+ · cristales=41 · docs=244
+                //baseline semana 1 · foundation estable para crecimiento
+NC_S_TARGET     //S=0.88 objetivo · delta=0.058 · 6 semanas ruta
+                //threshold level_1 = 0.88 · SAMU trigger si < threshold
+NC_S_PATH_TESTS //27→33 tests · validar grammar nuevo · +0.01 S por test validado
+                //test_imv_ext.py: SOCIAL {relay}·METHOD <stat_onto>·threshold·shard
+NC_S_PATH_NC    //nuevos NC: shard·relay·oracle·threshold · +0.01 S por NC sellado
+                //NC KALIL AGENTS · NC GRAMMAR EXTENSION · NC S TARGET
+NC_S_PATH_CORP  //CORPUS 51→65: +14 docs · BIBLIO-SOURCES nuevos · +0.02 S
+                //SOCIAL_RELAY-ORACLE · WORK_FORGE-CANAL · UNICODE_* nuevos
+NC_S_PATH_WEEK4 //Semana 4: grammar.py ACTIVITY_H03-H05-H06-H56 completo
+                //actividades nuevas: shard·relay·oracle·threshold·forge·canal
+NC_S_DELTA      //delta=0.058 → 0.01 por semana × 6 semanas
+                //ruta acumulativa: 0.822→0.832→0.842→0.852→0.862→0.872→0.882
+NC_S_SAMU       //SAMU @ audita progreso S weekly
+                //si weekly_delta < 0.008 → SAMU delibera corrección de ruta
+
+METHOD <stat_onto> =><= .. calcula .. nc_s_current_0822_target_088 --[Ballestrinque] [term]
+TRUST FOUNDATION =><= .. verifica .. nc_s_path_tests_27_33_grammar --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. nc_s_path_nc_shard_relay_oracle --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. nc_s_progress_weekly_delta_008 --[Ballestrinque] [term]
+
+//DIR(+) NERVE CELL S TARGET · V1 · shard•relay•oracle•threshold · $mon 20/04

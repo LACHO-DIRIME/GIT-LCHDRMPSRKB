@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>KALIL SESSION THEATER · DIRIME</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+.header{border-bottom:3px solid #1a1a2e;padding-bottom:14px;margin-bottom:24px;
+        display:flex;justify-content:space-between;align-items:flex-end}
+.h-title{font-size:1rem;font-weight:bold;letter-spacing:4px}
+.h-meta{font-size:.68rem;color:#888;line-height:1.7;text-align:right}
+.progress-bar{height:8px;background:#e0e0e0;border-radius:4px;margin-bottom:20px}
+.pb-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,#2a7a4f,#2980b9);
+         transition:width .8s}
+.metrics-row{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:24px}
+.m-box{border:1px solid #e0e0e0;padding:10px;text-align:center;background:#fafafa}
+.m-val{font-size:1.2rem;font-weight:bold}
+.m-val-green{color:#2a7a4f}.m-val-blue{color:#2980b9}
+.m-val-purple{color:#8e44ad}.m-val-orange{color:#d35400}
+.m-lab{font-size:.56rem;color:#888;margin-top:3px}
+.kalil-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:24px}
+.k-card{border:1px solid #ddd;padding:14px;cursor:pointer;transition:all .2s}
+.k-card:hover,.k-card.active{border-color:#2a7a4f;background:#f0f7f3}
+.kc-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.kc-name{font-size:.85rem;font-weight:bold;letter-spacing:2px}
+.kc-role{font-size:.58rem;padding:2px 8px;border:1px solid #888;color:#888}
+.kc-theater{font-size:.65rem;color:#2a7a4f;margin-bottom:4px}
+.kc-lacho{font-size:.6rem;color:#aaa;line-height:1.6;border-left:2px solid #eee;padding-left:6px}
+.theater-stack{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:24px}
+.ts-box{border:1px solid #e0e0e0;padding:10px;background:#fafafa}
+.ts-name{font-size:.7rem;font-weight:bold;margin-bottom:4px}
+.ts-ext{font-size:.6rem;color:#2980b9}
+.ts-macro{font-size:.6rem;color:#888;line-height:1.6}
+.lacho-week{background:#fafafa;border-left:3px solid #1a1a2e;padding:14px;margin-bottom:20px}
+.lw-title{font-size:.6rem;letter-spacing:2px;color:#aaa;margin-bottom:8px}
+.lw-line{font-size:.72rem;line-height:2;padding:2px 0;border-bottom:1px solid #f5f5f5}
+.footer{font-size:.6rem;color:#aaa;border-top:1px solid #eee;
+        padding-top:10px;display:flex;gap:12px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <div class="h-title">╭─▌─⏵─ KALIL SESSION THEATER</div>
+    <div style="font-size:.72rem;color:#555;margin-top:4px">
+      6 nodos × macros soberanos · forge•canal•ledger_gate•mu_window
+    </div>
+  </div>
+  <div class="h-meta">$tue 14/04 · SEMANA 1 CIERRE<br>V0.2.1 · [term] :: activo</div>
+</div>
+
+<div class="progress-bar">
+  <div class="pb-fill" id="pb" style="width:25%"></div>
+</div>
+<div style="font-size:.6rem;color:#aaa;text-align:right;margin-bottom:20px">
+  mes: 25% completado · $wed 08/04 → $fri 08/05
+</div>
+
+<div class="metrics-row">
+  <div class="m-box"><div class="m-val m-val-green">3</div>
+    <div class="m-lab">runners activos</div></div>
+  <div class="m-box"><div class="m-val m-val-blue">4</div>
+    <div class="m-lab">agents activos</div></div>
+  <div class="m-box"><div class="m-val m-val-purple">4</div>
+    <div class="m-lab">tokens nuevos</div></div>
+  <div class="m-box"><div class="m-val m-val-orange">6</div>
+    <div class="m-lab">theaters/gates</div></div>
+  <div class="m-box"><div class="m-val m-val-green">12</div>
+    <div class="m-lab">tareas semana</div></div>
+</div>
+
+<div style="font-size:.65rem;color:#888;letter-spacing:2px;margin-bottom:10px">
+  ▸ KALIL × kalil_session.theater · clic nodo para ver macro
+</div>
+<div class="kalil-grid" id="kalil-grid"></div>
+
+<div style="font-size:.65rem;color:#888;letter-spacing:2px;margin-bottom:10px">
+  ▸ THEATERS + GATES · FOLDERS NO RAG INPUT/THEATER/
+</div>
+<div class="theater-stack">
+  <div class="ts-box">
+    <div class="ts-name">rational_day<span class="ts-ext">.theater</span></div>
+    <div class="ts-macro">macros: temprano·tarde·cierre · CMD_CIERRE·CMD_STATS</div>
+  </div>
+  <div class="ts-box">
+    <div class="ts-name">forge_day<span class="ts-ext">.theater</span> <span style="font-size:.55rem;color:#8e44ad">NEW</span></div>
+    <div class="ts-macro">macros: forge_temprano·forge_tarde·forge_cierre · MU_WINDOW</div>
+  </div>
+  <div class="ts-box">
+    <div class="ts-name">kalil_session<span class="ts-ext">.theater</span> <span style="font-size:.55rem;color:#8e44ad">NEW</span></div>
+    <div class="ts-macro">macros: barrios·nora·bolivar·carilo·chalten·tandil</div>
+  </div>
+  <div class="ts-box">
+    <div class="ts-name">file_manager<span class="ts-ext">.gate</span></div>
+    <div class="ts-macro">GATE archivos soberanos · verificacion·control·sellado</div>
+  </div>
+</div>
+
+<div class="lacho-week">
+  <div class="lw-title">▸ SENTENCIAS CIERRE SEMANA 1 · $tue 14/04</div>
+  <div class="lw-line">
+    <span style="color:#c0392b;font-weight:bold">TRUST</span>
+    <span style="color:#2a7a4f;font-weight:bold"> FOUNDATION</span>
+    <span style="color:#555"> =&gt;&lt;= .. verifica .. </span>
+    forge_clearance_semana1_agents_runners_theaters
+    <span style="color:#8e44ad"> --[As de Guía]</span>
+    <span style="color:#d35400;font-weight:bold"> [term]</span>
+  </div>
+  <div class="lw-line">
+    <span style="color:#c0392b;font-weight:bold">CRYPTO</span>
+    <span style="color:#2a7a4f;font-weight:bold"> (link seat)</span>
+    <span style="color:#555"> =&gt;&lt;= .. conecta .. </span>
+    canal_kalil_6_nodos_session_theater_activo
+    <span style="color:#8e44ad"> --[As de Guía]</span>
+    <span style="color:#d35400;font-weight:bold"> [term]</span>
+  </div>
+  <div class="lw-line">
+    <span style="color:#c0392b;font-weight:bold">GATE</span>
+    <span style="color:#2a7a4f;font-weight:bold"> UF[H05]</span>
+    <span style="color:#555"> =&gt;&lt;= .. espera .. </span>
+    ledger_gate_semana1_12_tareas_tx_verificadas
+    <span style="color:#8e44ad"> --[Ballestrinque]</span>
+    <span style="color:#d35400;font-weight:bold"> [term]</span>
+  </div>
+  <div class="lw-line" style="border:none">
+    <span style="color:#c0392b;font-weight:bold">STACKING</span>
+    <span style="color:#2a7a4f;font-weight:bold"> UF[H52]</span>
+    <span style="color:#555"> =&gt;&lt;= .. cristaliza .. </span>
+    semana1_08_14_abril_forge_canal_wu_sellado
+    <span style="color:#8e44ad"> --[Nudo de Ocho]</span>
+    <span style="color:#d35400;font-weight:bold"> [term]</span>
+  </div>
+</div>
+
+<div class="footer">
+  <span>DIRIME IMV V0.2.1</span>
+  <span>tokens: forge•canal•ledger_gate•mu_window</span>
+  <span>runners: security·hacking_doctor_v2·audit_gate</span>
+  <span>agents: cloud·assistant·network_sentinel·corpus_indexer</span>
+  <span>theaters: rational_day·forge_day·kalil_session</span>
+  <span>[term] :: activo · semana 1 sellada</span>
+</div>
+
+<script>
+const KALIL=[
+  {name:'BARRIOS',role:'remesas·canal',theater:'macro_barrios',
+   lacho:'METHOD &lt;equation&gt; =&gt;&lt;= .. calcula .. LR_score_remesa_BLAKE3 --[Ballestrinque] [term]'},
+  {name:'NORA',role:'oracle·rating',theater:'macro_nora',
+   lacho:'METHOD &lt;stat_onto&gt; =&gt;&lt;= .. calcula .. nora_oracle_rating_ja3s --[Ballestrinque] [term]'},
+  {name:'BOLIVAR',role:'contrato·hash',theater:'macro_bolivar',
+   lacho:'CRYPTO (spark seat) =&gt;&lt;= .. firma .. bolivar_contrato_SHA256 --[As de Guía] [term]'},
+  {name:'CARILO',role:'préstamo·FLEX',theater:'macro_carilo',
+   lacho:'SOCIAL {chair} =&gt;&lt;= .. distribuye .. carilo_prestamo_FLEX --[As de Guía] [term]'},
+  {name:'CHALTEN',role:'daemon·cloud',theater:'macro_chalten',
+   lacho:'SOCIAL {streaming} =&gt;&lt;= .. mantiene .. chalten_daemon_24h --[As de Guía] [term]'},
+  {name:'TANDIL',role:'hub·spool',theater:'macro_tandil',
+   lacho:'METHOD &lt;operator_flow&gt; =&gt;&lt;= .. opera .. tandil_hub_spool_global --[Ballestrinque] [term]'}
+];
+
+function renderKalil(){
+  const grid=document.getElementById('kalil-grid');
+  grid.innerHTML=KALIL.map(node=>`
+    <div class="k-card" onclick="selectNode('${node.name}')">
+      <div class="kc-header">
+        <div class="kc-name">${node.name}</div>
+        <div class="kc-role">${node.role}</div>
+      </div>
+      <div class="kc-theater">${node.theater}</div>
+      <div class="kc-lacho">${node.lacho}</div>
+    </div>
+  `).join('');
+}
+
+function selectNode(name){
+  document.querySelectorAll('.k-card').forEach(c=>c.classList.remove('active'));
+  event.currentTarget.classList.add('active');
+}
+
+renderKalil();
+</script>
+
+</body>
+</html>

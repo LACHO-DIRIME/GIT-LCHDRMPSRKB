@@ -1,0 +1,27 @@
+//$sat.Nerve Cell AGENTS EXPANSION Training.txt
+//NERVE CELL · AGENTS EXPANSION · forge•canal•ledger_gate•mu_window
+//aprendido de UNICODE_AGENTS_EXPANSION + cloud_agent + assistant_agent
+//+ network_sentinel + corpus_indexer · $sat · [term] :: activo
+
+NC_AG_TYPES      //4 tipos agente: cloud.blue · assistant.green · sentinel.blue · indexer.green
+                 //extensión file = tipo · .blue=cloud · .green=local
+NC_AG_FORGE      //forge agente: TRUST → CRYPTO → LEDGER_GATE → deploy soberano
+                 //mu_window obligatorio antes de cada deploy
+NC_AG_CANAL      //canal agente: link_seat + scope + term · origin→destination
+                 //canal_forense · canal_tx · canal_bot · canal_cloud
+NC_AG_BM25       //corpus_indexer.green: BM25 build · python3 tools/index_new_files.py
+                 //target: 244→265+ docs · daemon nightly · boost rules activas
+NC_AG_SENTINEL   //network_sentinel.blue: JA3+JA3S+LR_score · GATE H06 anomalía
+                 //kalil_red: BARRIOS·BOLIVAR·CHALTEN canales monitoreados
+NC_AG_4N         //4 NEURONAS × agents:
+                 //N1 HEADCAT→assistant · N2 ELPULSAR→indexer
+                 //N3 CEO→cloud · N4 DRONE→sentinel
+NC_AG_KALIL      //6 nodos × agents: cada nodo tiene agente dominante
+                 //TANDIL como hub de consolidación vía corpus_indexer
+
+TRUST FOUNDATION =><= .. verifica .. nc_ag_forge_deploy_clearance --[As de Guía] [term]
+CRYPTO (link seat) =><= .. conecta .. nc_ag_canal_sentinel_kalil --[As de Guía] [term]
+ACTIVITY UF[H57] =><= .. penetra .. nc_ag_corpus_indexer_bm25 --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. nc_agents_expansion_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) NERVE CELL AGENTS EXPANSION · V1 · forge•canal•ledger_gate•mu_window · $sat 11/04

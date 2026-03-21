@@ -1,0 +1,27 @@
+//$sat.Nerve Cell GRAMMAR EXTENSION Training.txt
+//NERVE CELL · GRAMMAR EXTENSION · shard•relay•oracle•threshold
+//aprendido de grammar.py real + language_routing.py + test_imv_ext.py
+//$sat · [term] :: activo
+
+NC_GR_INTENT   //INTENT_MAP: palabras_clave → biblioteca LACHO
+               //nueva clave "relay"→SOCIAL · "oracle"→METHOD · "forge"→TRUST
+               //confidence = 0.5 + hits×0.1 · CJK bonus +2 por token
+NC_GR_ROUTE    //route(text): library·subject·verb·obj·knot·sentence·validated
+               //pipeline: intent → subject → verb → obj → knot → validate
+NC_GR_CJK_EXT //CJK nuevos: 阈值(threshold)·分片(shard)·中继(relay)·神谕(oracle)
+               //cada CJK → (biblioteca, sujeto, hexagrama, score_delta)
+NC_GR_VERBOS   //VERBOS_CANONICOS_LACHO: set extensible · +0.1 en lacho_score
+               //nuevos: forja·fragmenta·retransmite·evalúa_oracle·umbrala
+NC_GR_TAXONOMY //TAXONOMY_MAP extensión: KALIL_AGENT·RUNNER·AGENT·NERVE_CELL
+               //level_2 scalar_min=0.85 · level_3 scalar_min=0.80
+NC_GR_TESTS    //test 27→33: 6 nuevos tests en test_imv_ext.py
+               //relay·stat_onto·threshold·shard·routing·batch_kalil
+NC_GR_SCORE    //lacho_score deltas: +0.1 verbo canónico · +0.1 nudo válido
+               //+0.1 sujeto OK · +0.1 no warnings · +0.1 tomo_id · +0.05 CJK
+
+METHOD <operator_flow> =><= .. opera .. nc_grammar_intent_relay_oracle --[Ballestrinque] [term]
+TRUST FOUNDATION =><= .. verifica .. nc_grammar_tests_27_33_soberano --[As de Guía] [term]
+METHOD <stat_onto> =><= .. calcula .. nc_grammar_lacho_score_deltas --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. nc_grammar_extension_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) NERVE CELL GRAMMAR EXTENSION · V1 · shard•relay•oracle•threshold · $sat 18/04

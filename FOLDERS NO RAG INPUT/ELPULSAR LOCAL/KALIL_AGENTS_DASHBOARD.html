@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>KALIL AGENTS · DIRIME IMV</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+.header{border-bottom:3px solid #1a1a2e;padding-bottom:14px;margin-bottom:24px;
+        display:flex;justify-content:space-between;align-items:flex-end}
+.h-title{font-size:1rem;font-weight:bold;letter-spacing:4px}
+.h-meta{font-size:.68rem;color:#888;line-height:1.7;text-align:right}
+.tokens{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap}
+.tok{padding:4px 12px;font-size:.73rem;font-weight:bold;border:1px solid}
+.ts{border-color:#8e44ad;color:#8e44ad}.tr{border-color:#2980b9;color:#2980b9}
+.to{border-color:#d35400;color:#d35400}.tt{border-color:#2a7a4f;color:#2a7a4f}
+.relay-bus{background:#fafafa;border:1px solid #e0e0e0;padding:14px;
+           margin-bottom:24px;display:flex;align-items:center;gap:0;overflow-x:auto}
+.rb-node{text-align:center;padding:8px 12px;border:1px solid #ddd;
+         font-size:.65rem;min-width:80px;background:#fff;cursor:pointer;
+         transition:all .2s}
+.rb-node:hover{background:#f0f7f3;border-color:#2a7a4f}
+.rb-arrow{color:#aaa;font-size:1rem;padding:0 6px;flex-shrink:0}
+.rb-hub{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+.rb-hub:hover{background:#2a2a3e}
+.rn-name{font-weight:bold;letter-spacing:1px}
+.rn-ext{font-size:.55rem;color:#2980b9;margin-top:2px}
+.rn-score{font-size:.65rem;margin-top:3px}
+.agents-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:24px}
+.ag-box{border:1px solid #ddd;padding:14px;background:#fafafa;cursor:pointer;
+        transition:all .2s}
+.ag-box:hover,.ag-box.sel{border-color:#2a7a4f;background:#f0f7f3}
+.ab-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.ab-name{font-size:.82rem;font-weight:bold;letter-spacing:2px}
+.ab-ext{font-size:.6rem;padding:2px 7px;border:1px solid}
+.ext-blue{border-color:#2980b9;color:#2980b9}
+.ext-green{border-color:#2a7a4f;color:#2a7a4f}
+.ab-token{font-size:.62rem;color:#8e44ad;margin-bottom:5px}
+.ab-sent{font-size:.6rem;color:#aaa;line-height:1.6;border-left:2px solid #eee;padding-left:5px}
+.scalar-kalil{border:1px solid #e0e0e0;padding:16px;margin-bottom:24px;
+              display:flex;gap:20px;align-items:center}
+.sk-val{font-size:2.4rem;font-weight:bold;color:#2a7a4f;text-align:center}
+.sk-lab{font-size:.6rem;color:#888;margin-top:3px}
+.sk-bar-wrap{flex:1;height:10px;background:#e0e0e0;border-radius:5px}
+.sk-bar-fill{height:100%;border-radius:5px;background:linear-gradient(90deg,#d35400,#2a7a4f);
+             transition:width .8s}
+.sk-targets{display:flex;justify-content:space-between;font-size:.58rem;color:#aaa;margin-top:4px}
+.lacho-panel{background:#f0f7f3;border-left:3px solid #2a7a4f;padding:12px;margin-bottom:20px}
+.lp-title{font-size:.6rem;letter-spacing:2px;color:#888;margin-bottom:6px}
+.lp-line{font-size:.72rem;line-height:1.9;padding:2px 0}
+.footer{font-size:.6rem;color:#aaa;border-top:1px solid #eee;
+        padding-top:10px;display:flex;gap:12px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <div class="h-title">╭─▌─⏵─ KALIL AGENTS DASHBOARD</div>
+    <div style="font-size:.72rem;color:#555;margin-top:4px">
+      6 agentes × 6 nodos · relay bus · oracle threshold
+    </div>
+  </div>
+  <div class="h-meta">$sun 19/04 · SEMANA 2<br>V0.2.1 · [term] :: activo</div>
+</div>
+
+<div class="tokens">
+  <div class="tok ts">shard · STACKING H04</div>
+  <div class="tok tr">relay · SOCIAL {relay}</div>
+  <div class="tok to">oracle · METHOD &lt;stat_onto&gt;</div>
+  <div class="tok tt">threshold · TRUST FOUNDATION</div>
+</div>
+
+<div style="font-size:.65rem;color:#888;letter-spacing:2px;margin-bottom:10px">
+  ▸ RELAY BUS · 5 nodos → TANDIL hub consolidado
+</div>
+<div class="relay-bus" id="relay-bus">
+  <div class="rb-node" onclick="selectNode('BARRIOS')">
+    <div class="rn-name">BARRIOS</div>
+    <div class="rn-ext">.green</div>
+    <div class="rn-score">0.82</div>
+  </div>
+  <div class="rb-arrow">→</div>
+  <div class="rb-node" onclick="selectNode('NORA')">
+    <div class="rn-name">NORA</div>
+    <div class="rn-ext">.blue</div>
+    <div class="rn-score">0.91</div>
+  </div>
+  <div class="rb-arrow">→</div>
+  <div class="rb-node" onclick="selectNode('BOLIVAR')">
+    <div class="rn-name">BOLIVAR</div>
+    <div class="rn-ext">.blue</div>
+    <div class="rn-score">0.78</div>
+  </div>
+  <div class="rb-arrow">→</div>
+  <div class="rb-node" onclick="selectNode('CARILO')">
+    <div class="rn-name">CARILO</div>
+    <div class="rn-ext">.green</div>
+    <div class="rn-score">0.85</div>
+  </div>
+  <div class="rb-arrow">→</div>
+  <div class="rb-node" onclick="selectNode('CHALTEN')">
+    <div class="rn-name">CHALTEN</div>
+    <div class="rn-ext">.blue</div>
+    <div class="rn-score">0.73</div>
+  </div>
+  <div class="rb-arrow">→</div>
+  <div class="rb-node rb-hub" onclick="selectNode('TANDIL')">
+    <div class="rn-name">TANDIL</div>
+    <div class="rn-ext">.green</div>
+    <div class="rn-score">0.88</div>
+  </div>
+</div>
+
+<div style="font-size:.65rem;color:#888;letter-spacing:2px;margin-bottom:10px">
+  ▸ AGENTES KALIL · clic agente para ver sentencia LACHO
+</div>
+<div class="agents-grid" id="agents-grid"></div>
+
+<div class="scalar-kalil">
+  <div>
+    <div class="sk-val" id="scalar-val">0.82</div>
+    <div class="sk-lab">SCALAR KALIL</div>
+  </div>
+  <div style="flex:1">
+    <div class="sk-bar-wrap">
+      <div class="sk-bar-fill" id="scalar-bar" style="width:82%"></div>
+    </div>
+    <div class="sk-targets">
+      <span>MIN: 0.65</span>
+      <span>TARGET: 0.88</span>
+      <span>ACTUAL: 0.82</span>
+    </div>
+  </div>
+</div>
+
+<div class="lacho-panel">
+  <div class="lp-title">▸ SENTENCIA LACHO · agente seleccionado</div>
+  <div id="lacho-output">
+    <div class="lp-line">
+      <span style="color:#c0392b;font-weight:bold">SOCIAL</span>
+      <span style="color:#2a7a4f;font-weight:bold"> {relay}</span>
+      <span style="color:#555"> =&gt;&lt;= .. lanza .. </span>
+      ka_barrios_relay_community_platform
+      <span style="color:#8e44ad"> --[As de Guía]</span>
+      <span style="color:#d35400;font-weight:bold"> [term]</span>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <span>DIRIME IMV V0.2.1</span>
+  <span>tokens: shard•relay•oracle•threshold</span>
+  <span>agents: 6 KALIL + 4 base</span>
+  <span>relay bus: 5→1 consolidación</span>
+  <span>oracle threshold: 0.65</span>
+  <span>[term] :: activo · semana 2</span>
+</div>
+
+<script>
+const AGENTS=[
+  {name:'barrios_relay',ext:'green',token:'relay',node:'BARRIOS',score:0.82,
+   lacho:'SOCIAL {relay} =&lt;= .. lanza .. ka_barrios_relay_community --[As de Guía] [term]'},
+  {name:'nora_oracle',ext:'blue',token:'oracle',node:'NORA',score:0.91,
+   lacho:'METHOD &lt;stat_onto&gt; =&lt;= .. calcula .. ka_nora_oracle_rating --[Ballestrinque] [term]'},
+  {name:'bolivar_forge',ext:'blue',token:'forge',node:'BOLIVAR',score:0.78,
+   lacho:'TRUST FOUNDATION =&lt;= .. verifica .. ka_bolivar_forge_contrato --[As de Guía] [term]'},
+  {name:'carilo_session',ext:'green',token:'threshold',node:'CARILO',score:0.85,
+   lacho:'SOCIAL {chair} =&lt;= .. distribuye .. ka_carilo_session_prestamo --[As de Guía] [term]'},
+  {name:'chalten_daemon',ext:'blue',token:'shard',node:'CHALTEN',score:0.73,
+   lacho:'STACKING UF[H04] =&lt;= .. reserva .. ka_chalten_shard_daemon --[Nudo de Ocho] [term]'},
+  {name:'tandil_hub',ext:'green',token:'relay',node:'TANDIL',score:0.88,
+   lacho:'METHOD &lt;operator_flow&gt; =&lt;= .. opera .. ka_tandil_hub_spool_global --[Ballestrinque] [term]'}
+];
+
+function renderAgents(){
+  const grid=document.getElementById('agents-grid');
+  grid.innerHTML=AGENTS.map(ag=>`
+    <div class="ag-box ${ag.node==='BARRIOS'?'sel':''}" onclick="selectAgent('${ag.name}')">
+      <div class="ab-header">
+        <div class="ab-name">${ag.name}</div>
+        <div class="ab-ext ext-${ag.ext}">.${ag.ext}</div>
+      </div>
+      <div class="ab-token">token: ${ag.token}</div>
+      <div class="ab-sent">${ag.lacho.replace(/&lt;/g,'<').replace(/&gt;/g,'>')}</div>
+    </div>
+  `).join('');
+}
+
+function selectAgent(name){
+  document.querySelectorAll('.ag-box').forEach(b=>b.classList.remove('sel'));
+  event.currentTarget.classList.add('sel');
+  const ag=AGENTS.find(a=>a.name===name);
+  document.getElementById('lacho-output').innerHTML=`
+    <div class="lp-line">${ag.lacho.replace(/&lt;/g,'<').replace(/&gt;/g,'>')}</div>
+  `;
+  updateScalar(ag.score);
+}
+
+function selectNode(node){
+  const ag=AGENTS.find(a=>a.node===node);
+  if(ag) selectAgent(ag.name);
+}
+
+function updateScalar(val){
+  document.getElementById('scalar-val').textContent=val;
+  document.getElementById('scalar-bar').style.width=`${val*100}%`;
+}
+
+renderAgents();
+</script>
+
+</body>
+</html>

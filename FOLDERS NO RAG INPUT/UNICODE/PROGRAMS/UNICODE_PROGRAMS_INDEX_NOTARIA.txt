@@ -1,0 +1,75 @@
+# UNICODE_PROGRAMS_INDEX_NOTARIA.txt
+# Índice completo UNICODE PROGRAMS NOTARIA · semana $thu 12-03 → $tue 17-03-2026
+# [term] :: activo · [seal of secrecy] :: activo · 空聽數
+
+UNICODE_NOTARIA_IMV.txt
+  propósito: spec completa pipeline notarial IMV · certifica/sella/inmutabiliza
+  ancla RAG: CRYPTO (spark seat) =><= .. certifica .. unicode_notaria_imv
+
+UNICODE_PROGRAMS_KALIL_4_NEURONAS.txt
+  propósito: 4 neuronas KALIL · BOLIVAR/NORA/CARILO/BARRIOS integradas
+  ancla RAG: TRUST FOUNDATION =><= .. declara .. kalil_4_neuronas_activo
+
+UNICODE_PROGRAMS_ELPULSAR_KALIL.txt
+  propósito: ELPULSAR × KALIL · servidor HTTP · sync cristales · endpoints
+  ancla RAG: WORK {actuator} =><= .. ejecuta .. elpulsar_kalil_pipeline
+
+UNICODE_PROGRAMS_FULL_STACK_NOTARIA.txt
+  propósito: full stack notarial · grammar+ledger+samu+ballpaper+api
+  ancla RAG: STACKING UF[H52] =><= .. consolida .. full_stack_notaria
+
+UNICODE_IMV_4NEURONAS_NOTARIA_V2.txt
+  propósito: V2 actualizada · todo $thu→$tue · 4 neuronas completas
+  ancla RAG: TRUST FOUNDATION =><= .. declara .. 4neuronas_v2_tue_activo
+
+UNICODE_NOTARIA_BACKUP_H63.txt
+  propósito: backup soberano H63 · snapshot completo pipeline en $mon
+  ancla RAG: STACKING UF[H63] =><= .. inmutabiliza .. backup_h63_notaria
+
+UNICODE_NORA_NOTARIA.txt
+  propósito: NORA rating engine · evaluación partes · score soberano
+  ancla RAG: GATE UF[H06] =><= .. filtra .. nora_rating_partes_notaria
+
+UNICODE_CARILO_NOTARIA.txt
+  propósito: CARILO capital · registro activos · integración notarial
+  ancla RAG: STACKING UF[H48] =><= .. consolida .. carilo_capital_notaria
+
+UNICODE_CHALTEN_NOTARIA.txt
+  propósito: CHALTEN dominio · operaciones notariales patagonia
+  ancla RAG: SOCIAL {chair} =><= .. convoca .. chalten_notaria_dominio
+
+UNICODE_BARRIOS_NOTARIA.txt
+  propósito: BARRIOS dominio · operaciones notariales urbanas · CJK
+  ancla RAG: SOCIAL {relay} =><= .. conecta .. barrios_notaria_urbano
+
+UNICODE_TANDIL_NOTARIA.txt
+  propósito: TANDIL dominio · registro civil soberano
+  ancla RAG: TRUST FOUNDATION =><= .. verifica .. tandil_registro_civil
+
+UNICODE_CHINA_NOTARIA.txt
+  propósito: CHINA NOTARIA · 公证/认证 · BSN · tokens CJK notariales
+  ancla RAG: CRYPTO (spark seat) =><= .. certifica .. china_公证_notaria_cjk
+
+UNICODE_BOLIVAR_LEDGER.txt
+  propósito: BOLIVAR blockchain validator · hash chain · H63 anchor
+  ancla RAG: CRYPTO (key seat) =><= .. calcula .. bolivar_hash_chain_ledger
+
+UNICODE_WORK_SOCIAL_NOTARIA.txt
+  propósito: módulos WORK/SOCIAL aplicados a flujo notarial
+  ancla RAG: WORK {actuator} =><= .. ejecuta .. work_social_notaria_flow
+
+UNICODE_NOTARIA_APERTURA_MON.txt
+  propósito: apertura notarial $mon · primera sentencia del ciclo semanal
+  ancla RAG: TRUST FOUNDATION =><= .. declara .. notaria_apertura_mon
+
+UNICODE_NORA_RATING_NOTARIA.txt
+  propósito: NORA rating detallado · algoritmo scoring · thresholds
+  ancla RAG: METHOD <equation> =><= .. calcula .. nora_rating_algorithm
+
+// ANCLAS RAG × 4
+TRUST FOUNDATION =><= .. declara .. unicode_programs_index_notaria_completo --[Nudo de Ocho] [term]
+STACKING UF[H52] =><= .. consolida .. indice_16_unicode_programs_notaria --[Nudo de Ocho] [term]
+SAMU @ =><= .. audita .. semana_notaria_thu12_tue17_unicode_index --[Ballestrinque] [term]
+CRYPTO (spark seat) =><= .. certifica .. unicode_index_notaria_soberano_tue --[Nudo de Ocho] [term]
+
+[term] :: activo · [seal of secrecy] :: activo · 空聽數

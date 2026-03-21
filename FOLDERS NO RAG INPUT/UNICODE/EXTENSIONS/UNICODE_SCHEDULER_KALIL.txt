@@ -1,0 +1,56 @@
+//[MANAGEMENT].lacho · UNICODE {SCHEDULER} × KALIL
+//{scheduler} como coordinador de 6 nodos económicos en el tiempo
+//BIBLIO: {scheduler} domains: memcoins · custodia · notaría
+//[term] :: activo
+
+// ══ BARRIOS × SCHED_DRIP ══════════════════════════════════════
+UNICODE: SK_BAR_DRIP    //BARRIOS {scheduler}: SCHED_DRIP · remesas programadas
+                        //SOCIAL {scheduler} =><= .. drip .. barrios_remesa_programada
+                        //timing: @human_later · 15:00→17:00 · WU materializable
+UNICODE: SK_BAR_WINDOW  //ventana BARRIOS: $tue H30+H57 · flujo sostenido+penetrante
+
+// ══ NORA × SCHED_REVIEW ═══════════════════════════════════════
+UNICODE: SK_NOR_REV     //NORA {scheduler}: SCHED_REVIEW · oracle rating periódico
+                        //SOCIAL {scheduler} =><= .. plan .. nora_review_delta_psi
+                        //timing: $fri H62+H63 · ajuste y consumación
+UNICODE: SK_NOR_WIN     //ventana NORA: @human_early 07:00 · absorber datos · 空聽
+
+// ══ BOLIVAR × SCHED_NOTIFICATION ══════════════════════════════
+UNICODE: SK_BOL_NOT     //BOLIVAR {scheduler}: SCHED_NOTIFICATION · confirm blockchain
+                        //SOCIAL {scheduler} =><= .. drip .. bolivar_blockchain_confirm
+                        //timing: 09:00 CHECK · si hash pendiente → alertar
+UNICODE: SK_BOL_WIN     //ventana BOLIVAR: post-STACKING 15:00 · WU ya cristalizado
+
+// ══ CARILO × SCHED_SESSION ════════════════════════════════════
+UNICODE: SK_CAR_SESS    //CARILO {scheduler}: SCHED_SESSION · ventana préstamo
+                        //SOCIAL {scheduler} =><= .. certify .. carilo_loan_session
+                        //requiere: SAMU @ · GATE H05 verificado · BIOMETRICS
+UNICODE: SK_CAR_WIN     //ventana CARILO: $wed H58+H59 · Lo Gozoso · decisiones maduras
+
+// ══ CHALTEN × SCHED_STREAM ════════════════════════════════════
+UNICODE: SK_CHA_STR     //CHALTEN {scheduler}: SCHED_STREAM · lending cloud 24h
+                        //SOCIAL {scheduler} =><= .. plan .. chalten_stream_lending
+                        //BOT_NET nocturno: 18:00→06:00 · {scheduler} inactivo humano
+UNICODE: SK_CHA_WIN     //ventana CHALTEN: 18:00 ZIP_CLOSE → BOT_NET toma relevo
+
+// ══ TANDIL × SCHED_REVIEW global ════════════════════════════════
+UNICODE: SK_TAN_HUB     //TANDIL {scheduler}: SCHED_REVIEW global · hub consolidación
+                        //estado_semana() → TANDIL lee total+resueltas por día
+                        //$fri 17:00 GIT_SYNC → TANDIL cierra ciclo semanal
+
+// ══ TIPOS SCHED × KALIL MATRIX ════════════════════════════════
+//              SESSION  DRIP  STREAM  NOTIF  REVIEW
+// BARRIOS      [ ]      [X]   [ ]     [ ]    [ ]
+// NORA         [ ]      [ ]   [ ]     [ ]    [X]
+// BOLIVAR      [ ]      [X]   [ ]     [X]    [ ]
+// CARILO       [X]      [ ]   [ ]     [ ]    [ ]
+// CHALTEN      [ ]      [ ]   [X]     [ ]    [ ]
+// TANDIL       [ ]      [ ]   [ ]     [ ]    [X]
+
+SOCIAL {scheduler} =><= .. distribuye .. kalil_barrios_remesa_programada_later --[As de Guía] [term]
+SOCIAL {scheduler} =><= .. certifica .. kalil_carilo_loan_session_window --[Ballestrinque] [term]
+SOCIAL {scheduler} =><= .. filtra .. kalil_nora_review_delta_psi_fri --[As de Guía] [term]
+SOCIAL {scheduler} =><= .. distribuye .. kalil_chalten_stream_lending_botnet --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_scheduler_kalil_matrix_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_SCHEDULER_KALIL · V1 · 6×5 matrix · $fri 27/03

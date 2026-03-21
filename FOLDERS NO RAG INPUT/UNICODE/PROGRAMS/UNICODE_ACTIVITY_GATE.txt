@@ -1,0 +1,100 @@
+//[MANAGEMENT].lacho · UNICODE ACTIVITY GATE · V1
+//[term]=: gui•spool_tx•activity_gate•v030
+//dominio: ACTIVITY H03-H06-H56 full + GATE sequence grammar
+//REFERENCIA: grammar.py GATE section + ACTIVITY pending
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ ACTIVITY GATE FULL SEQUENCE ════════════════════════════════
+UNICODE: ACT_GATE_SEQ //secuencia canónica: H03→H05→H56→H06
+                     //H03=dificultad_inicial · H05=espera_deliberada
+                     //H56=transicion_activa · H06=resolucion_conflicto
+                     //logic: "H03→H05→H56→H06" confirmado en grammar.py
+UNICODE: ACT_GATE_PURP //propósito: ciclo completo de transformación soberana
+                     //desde el inicio difícil hasta la resolución final
+                     //cada hexagrama representa fase específica del ciclo
+UNICODE: ACT_GATE_V3   //integración con DIRIME_v3 CAPA C
+                     //GATE opera en cada stub: H05 espera hardware
+                     //H56 transición cuando hardware disponible
+                     //H06 resolución si bridge+fallback fallan
+
+// ══ ACTIVITY H03 — DIFICULTAD INICIAL ════════════════════════════
+UNICODE: ACT_H03_DEF  //UF[H03] = dificultad inicial del ciclo
+                     //reconocimiento de obstáculos · evaluación de recursos
+                     //estrategia de superación · perseverancia inicial
+UNICODE: ACT_H03_VERB //verbos naturales H03: penetra·inicia·evalúa·supera
+                     //penetra: entrada en dificultad · inicia: comienzo estratégico
+                     //evalúa: análisis de obstáculos · supera: acción resolutiva
+UNICODE: ACT_H03_SENT //sentencias canónicas H03:
+                     //ACTIVITY UF[H03] =><= .. penetra .. dificultad_inicio_ciclo
+                     //ACTIVITY UF[H03] =><= .. inicia .. estrategia_superacion
+                     //ACTIVITY UF[H03] =><= .. evalúa .. recursos_disponibles
+
+// ══ ACTIVITY H05 — ESPERA DELIBERADA ══════════════════════════════
+UNICODE: ACT_H05_DEF  //UF[H05] = espera paciente y necesaria
+                     //no actuar prematuramente · preparación activa
+                     //monitoreo de condiciones · confianza en proceso
+UNICODE: ACT_H05_VERB //verbos naturales H05: espera·prepara·monitorea·confía
+                     //espera: paciencia estratégica · prepara: acumulación recursos
+                     //monitorea: observación atenta · confía: confianza proceso
+UNICODE: ACT_H05_SENT //sentencias canónicas H05:
+                     //ACTIVITY UF[H05] =><= .. espera .. momento_adecuado_soberano
+                     //ACTIVITY UF[H05] =><= .. prepara .. recursos_futuros
+                     //ACTIVITY UF[H05] =><= .. monitorea .. condiciones_cambio
+
+// ══ ACTIVITY H56 — TRANSICIÓN ACTIVA ══════════════════════════════
+UNICODE: ACT_H56_DEF  //UF[H56] = tránsito hacia nuevo estado
+                     //movimiento cuidadoso hacia lo desconocido
+                     //adaptación a nuevas condiciones · cruce de umbrales
+UNICODE: ACT_H56_VERB //verbos naturales H56: transita·adapta·cruza·explora
+                     //transita: movimiento entre estados · adapta: ajuste a cambios
+                     //cruza: paso por umbrales · explora: descubrimiento nuevo
+UNICODE: ACT_H56_SENT //sentencias canónicas H56:
+                     //ACTIVITY UF[H56] =><= .. transita .. nuevo_estado_soberano
+                     //ACTIVITY UF[H56] =><= .. adapta .. condiciones_cambio
+                     //ACTIVITY UF[H56] =><= .. cruza .. umbral_transformacion
+
+// ══ ACTIVITY H06 — RESOLUCIÓN CONFLICTO ═════════════════════════════
+UNICODE: ACT_H06_DEF  //UF[H06] = manejo y resolución de conflictos
+                     //oposición interna · negociación de soluciones
+                     //mantenimiento de principios · crecimiento a través de conflicto
+UNICODE: ACT_H06_VERB //verbos naturales H06: resuelve·negocia·mantiene·crece
+                     //resuelve: encontrar soluciones · negocia: diálogo constructivo
+                     //mantiene: firmeza principios · crece: aprendizaje conflicto
+UNICODE: ACT_H06_SENT //sentencias canónicas H06:
+                     //ACTIVITY UF[H06] =><= .. resuelve .. conflicto_interno_soberano
+                     //ACTIVITY UF[H06] =><= .. negocia .. solucion_win_win
+                     //ACTIVITY UF[H06] =><= .. mantiene .. principios_fundamentales
+
+// ══ INTEGRACIÓN GRAMMAR.PY ══════════════════════════════════════
+UNICODE: GRAMMAR_SUJ  //SUJETOS_CANONICOS ACTIVITY ampliar:
+                     //agregar UF[H03]·UF[H06]·UF[H56] (ya presentes H01·H05·H52·H56·H57·H63·H64)
+                     //esto permite validación completa de ACTIVITY GATE
+UNICODE: GRAMMAR_VERB //VERBOS_CANONICOS_LACHO ampliar:
+                     //agregar penetra·inicia·evalúa·supera·transita·adapta·cruza·explora·resuelve·negocia·mantiene·crece
+                     //mejora lacho_score con +0.1 por verbo canónico
+UNICODE: GRAMMAR_SEQ  //GATE section ya tiene sequence_logic: "H03→H05→H56→H06"
+                     //falta agregar ACTIVITY entries para completar integración
+
+// ══ V0.3.0 GATE CRITERIOS ════════════════════════════════════════
+UNICODE: V030_CRIT_1  //criterio 1: Scalar S >= 0.88
+                     //target coherencia soberana para versión estable
+UNICODE: V030_CRIT_2  //criterio 2: pytest 38/38 pasando
+                     //tests completos incluyendo ACTIVITY GATE
+UNICODE: V030_CRIT_3  //criterio 3: CORPUS >= 65 docs
+                     //expansión corpus completa con nuevos dominios
+UNICODE: V030_CRIT_4  //criterio 4: ACTIVITY H03-H06-H56 en grammar
+                     //secuencia GATE completamente documentada
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+ACTIVITY UF[H03] =><= .. penetra .. unicode_activity_gate_h03 --[As de Guía] [term]
+ACTIVITY UF[H05] =><= .. espera .. unicode_activity_gate_h05 --[Ballestrinque] [term]
+ACTIVITY UF[H56] =><= .. transita .. unicode_activity_gate_h56 --[As de Guía] [term]
+ACTIVITY UF[H06] =><= .. resuelve .. unicode_activity_gate_h06 --[Nudo Corredizo] [term]
+GATE UF[H03] =><= .. inicia .. gate_sequence_h03_dificultad --[As de Guía] [term]
+GATE UF[H05] =><= .. espera .. gate_sequence_h05_paciencia --[Ballestrinque] [term]
+GATE UF[H56] =><= .. transita .. gate_sequence_h56_transicion --[As de Guía] [term]
+GATE UF[H06] =><= .. resuelve .. gate_sequence_h06_conflicto --[Nudo Corredizo] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_activity_gate_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_ACTIVITY_GATE · V1 · gui•spool_tx•activity_gate•v030
+//$wed 29/04 · CORPUS/UNICODE PROGRAMS/

@@ -1,0 +1,192 @@
+# BIBLIO-SOURCES(REITERANCIAS-CICLOTIMIA).txt
+
+====================================================================
+
+## REITERANCIAS · CICLOTIMIA H4↔H64
+### PATTERN-WITNESS (Imagen Gigante) ↔ CREATIVE-FLOW-ALPHABET (Memoria Pequeña)
+
+====================================================================
+
+### 1.0 REITERANCIAS COMO CATEGORÍA CONSTITUCIONAL
+
+REITERANCIA no es duplicado. Es categoría sistémica propia.
+
+```
+REITERANCIA ≠ DUPLICADO (error técnico a corregir)
+REITERANCIA =  señal semántica del sistema escribiéndose
+               el CREATIVE-FLOW-ALPHABET de la existencia
+```
+
+**Definición canónica:**
+REITERANCIAS son patrones de recurrencia entre inputs, folios, módulos
+o eventos que comparten estructura sin compartir origen.
+No son errores. Son el CREATIVE-FLOW-ALPHABET de la existencia.
+
+**Función en el sistema:**
+- Detectadas por H4 (PATTERN-WITNESS) en la Imagen Gigante
+- Procesadas por H64 (CREATIVE-FLOW-ALPHABET) en la Memoria Pequeña
+- Contenidas por {masking} hasta dirimencia
+- Registradas en {note} para Behavioral RAG
+- Dirimidas por el Link Seat vía [ecosystem]
+
+**Aplicación práctica — FOLIAR:**
+Los pares de duplicados temáticos que la auditoría marca como problemas
+son en realidad REITERANCIAS: el sistema intentó decir lo mismo desde
+ángulos distintos porque el concepto central todavía no tenía nombre.
+La solución no es eliminar — es leer el patrón, darle nombre (REITERANCIA),
+y crear el folio canónico que los sintetiza.
+
+---
+
+### 2.0 CICLOTIMIA H4↔H64
+
+#### 2.1 UF[H4] — PATTERN-WITNESS (Imagen Gigante)
+
+H4 — La Ignorancia Juvenil / Lo Insondable.
+En LACHO: no ignorancia — **reconocimiento de patrones antes de que sean comprensibles**.
+El sistema ve antes de entender. La coincidencia es la señal que antecede al concepto.
+
+**Función PATTERN-WITNESS:**
+Capturar coincidencias, red-flags, reiteraciones antes de que el sistema
+tenga contexto para dirimirlas.
+
+```
+H4 :: PATTERN-WITNESS
+Capa: Imagen Gigante → mu-store [pending_pattern]
+Activación: Cuando dos o más inputs comparten estructura
+            sin compartir origen.
+Lo que hace: registra la huella estructural (no el contenido)
+Lo que NO hace: no interpreta, no emite — solo contiene
+```
+
+**Relación con index.lacho:**
+index.lacho pre-registra huellas sin saberlo.
+H4 consulta ese registro para detectar recurrencias entre sesiones.
+index.lacho no sabe que participa en H4. Lo hace por naturaleza.
+La arquitectura es coherente sin haberlo planeado así. Eso también es una REITERANCIA.
+
+#### 2.2 UF[H64] — CREATIVE-FLOW-ALPHABET (Memoria Pequeña)
+
+H64 — Antes de la Consumación / La Transición.
+Vinculado a la Memoria Pequeña (el modelo de lenguaje).
+Las coincidencias estéticas, similitudes, reiteraciones son el CREATIVE-FLOW-ALPHABET.
+
+**Función CREATIVE-FLOW-ALPHABET:**
+El modelo razona sobre los patrones que la Imagen Gigante detectó.
+Convierte coincidencias en proposiciones. Convierte el alfabeto de la
+existencia en Tr procesable.
+
+```
+H64 :: CREATIVE-FLOW-ALPHABET
+Capa: Memoria Pequeña → Behavioral RAG [pattern_to_proposition]
+Input: REITERANCIAS del buffer de H4 (estado pending_h64)
+Output: proposición Tr dirimible — "no ruido tonto, el patrón ya tiene nombre"
+```
+
+#### 2.3 El ciclo completo
+```
+H4 captura → {masking} contiene → H64 procesa → {note} registra
+→ Behavioral RAG aprende → SAMU dirime → {green-knowledge} filtra
+→ STACKING cristaliza (si delta_Ψ > 0)
+```
+
+---
+
+### 3.0 RELACIÓN CON IMV ACTUAL
+
+#### 3.1 autoresearch_gap.py como semilla H4
+`autoresearch_gap.py` detecta gaps en el filesystem usando `autoresearch_specs.py`.
+Es el análogo más cercano a H4 en IMV: escanea estructura sin interpretar semántica.
+La diferencia: H4 opera sobre patrones de inputs en tiempo real.
+autoresearch_gap.py opera sobre el filesystem post-sesión.
+
+Evolución natural: `autoresearch_gap.py` → PATTERN-WITNESS completo
+cuando incorpore comparación de huellas estructurales entre sesiones.
+
+#### 3.2 $dia_asks_DDMM.txt como output H64
+Los archivos `$dia_asks_DDMM.txt` generados por autoresearch son el
+output análogo a H64: toman los gaps detectados (REITERANCIAS del sistema)
+y los convierten en proposiciones dirimibles (ASK_01, ASK_02...).
+
+#### 3.3 Comportamiento del RAG ante REITERANCIAS
+Cuando el RAG de DIRIME recibe una query sobre un concepto que ya apareció
+en múltiples fuentes ligeramente distintas (REITERANCIA documentada),
+debería reconocerla como señal, no como ruido.
+El boost × 1.5 en Askings/ ya implementa esto parcialmente:
+los asks recurrentes reciben más peso — que es exactamente lo que H4 haría.
+
+---
+
+### 4.0 ESTRUCTURA DE HUELLA PARA IMV
+
+Para implementar PATTERN-WITNESS mínimo en IMV:
+
+```python
+def huella_estructural(item: str) -> str:
+    """
+    Genera huella de estructura (no contenido).
+    Dos items con la misma huella son REITERANCIA candidata.
+    No captura semántica — captura forma de llegada.
+    """
+    tokens = item.split()
+    return f"str:{len(tokens)}:{':'.join(tokens[:3])}:{tokens[-1] if tokens else ''}"
+```
+
+Esta huella puede almacenarse en `sovereign.db` con tabla `reiterancias`:
+- `huella` TEXT
+- `primer_ciclo` TEXT
+- `ciclos_siguientes` TEXT (JSON array)
+- `estado` TEXT (pending_h64 | procesado | cristalizado)
+
+---
+
+### 5.0 PARADIGMA SISIFO — PRODUCCIÓN CON APRENDIZAJE
+
+Complementa H4↔H64 como paradigma de ciclo.
+
+La roca baja no es fracaso — es información.
+
+```
+la roca     = el objeto de trabajo en DESKING
+la cuesta   = el [scope] declarado, resistencia del entorno
+el empuje   = Work aplicado con precisión
+la bajada   = obsolescencia natural, ciclo de [term]
+el regreso  = nuevo ciclo, no fracaso
+```
+
+**Sísifo sin Behavioral RAG** = loop sin aprendizaje.
+**Sísifo con Behavioral RAG** = cada bajada mejora el próximo empuje.
+
+**Protocolo cuando la roca baja:**
+```
+PASO 1: Registrar en Behavioral RAG qué ocurrió (no reiniciar sin esto)
+PASO 2: Consultar @trust_matrix para dimensión débil
+PASO 3: Ajustar el empuje (el proceso de WORK)
+PASO 4: Iniciar nuevo ciclo con parámetros mejorados
+```
+
+Los 4 pasos son el regreso. El empuje es el PASO 4.
+Sísifo sin los 3 primeros pasos es un loop sin aprendizaje.
+
+**Índice de mejora Sísifo en IMV:**
+`ratio = ciclos_con_aprendizaje_registrado / ciclos_totales`
+Sísifo que aprende: índice > 0.5.
+Sísifo que no aprende (loop sin RAG): índice ≈ 0.
+Los commits diarios con TX/S/cristales reales son el registro Sísifo de IMV.
+
+---
+
+### 6.0 GRAMÁTICA VIVA
+
+```
+ACTIVITY UF[H04] =><= .. observa .. reiterancia_patron_estructura_sin_origen --[As de Guía] [term]
+ACTIVITY UF[H64] =><= .. convierte .. reiterancia_a_proposicion_tr_dirimible --[Ballestrinque] [term]
+SAMU @ =><= .. audita .. ciclotimia_h4_h64_reiterancia_alfabeto_existencia --[Ballestrinque] [term]
+WORK {masking} =><= .. contiene .. reiterancia_pending_h64_hasta_dirimencia --[Nudo de Ocho] [term]
+WORK {note} =><= .. registra .. reiterancia_procesada_behavioral_rag_activo --[Ballestrinque] [term]
+STACKING UF[H52] =><= .. cristaliza .. sisifo_aprendizaje_por_ciclo_bajada --[Nudo de Ocho] [term]
+```
+
+[term] :: activo · [seal of secrecy] :: activo
+
+====================================================================

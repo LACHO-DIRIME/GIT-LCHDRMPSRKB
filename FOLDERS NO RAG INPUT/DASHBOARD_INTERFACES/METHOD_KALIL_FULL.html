@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>METHOD × KALIL · DIRIME</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:'Courier New',monospace;color:#1a1a2e;padding:24px}
+h1{font-size:1rem;letter-spacing:4px;border-bottom:2px solid #1a1a2e;
+   padding-bottom:10px;margin-bottom:24px;display:flex;justify-content:space-between;align-items:center}
+.matrix-wrap{overflow-x:auto;margin-bottom:28px}
+table{border-collapse:collapse;width:100%;font-size:.78rem}
+th{background:#1a1a2e;color:#fff;padding:8px 12px;letter-spacing:1px;
+   font-weight:normal;text-align:left}
+th.op{text-align:center;font-size:.7rem;letter-spacing:2px}
+td{padding:8px 12px;border:1px solid #e0e0e0;vertical-align:top}
+td.nodo{font-weight:bold;letter-spacing:2px;font-size:.8rem;background:#fafafa}
+td.cell-x{background:#f0f7f3;text-align:center;cursor:pointer;color:#2a7a4f;
+          font-size:1rem;transition:background .2s}
+td.cell-x:hover{background:#e0f0e8}
+td.cell-o{background:#fafafa;text-align:center;color:#ddd}
+.eq-calc{background:#f8f8f8;border:1px solid #e0e0e0;padding:16px;
+         margin-bottom:28px}
+.eq-title{font-size:.7rem;letter-spacing:3px;color:#888;margin-bottom:12px}
+.eq-formula{font-size:1rem;color:#2a7a4f;margin-bottom:12px;
+            font-family:'Courier New',monospace}
+.eq-inputs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:12px}
+.eq-field{display:flex;flex-direction:column;gap:4px}
+.eq-field label{font-size:.65rem;color:#888}
+.eq-field input{border:1px solid #ccc;padding:6px 8px;font-family:'Courier New',monospace;
+                font-size:.85rem;background:#fff;width:100%}
+.eq-result{display:flex;align-items:center;gap:16px;padding:10px;
+           background:#f0f7f3;border:1px solid #2a7a4f}
+.eq-r-val{font-size:1.5rem;font-weight:bold;color:#2a7a4f}
+.eq-r-lab{font-size:.7rem;color:#555}
+.cjk-row{display:flex;gap:10px;margin-bottom:28px;flex-wrap:wrap}
+.cjk-tag{padding:6px 12px;background:#fafafa;border:1px solid #ddd;
+         font-size:.85rem;cursor:pointer;transition:background .2s}
+.cjk-tag:hover{background:#f0f7f3;border-color:#2a7a4f}
+.cjk-tag .cjk-lib{font-size:.6rem;color:#888;display:block;margin-top:2px}
+</style>
+</head>
+<body>
+
+<h1>
+  <span>╭─∇─≈─ METHOD × KALIL 6 NODOS</span>
+  <span style="font-size:.7rem;color:#888;font-weight:normal">
+    grammar.py CJK_TOKEN_MAP activo
+  </span>
+</h1>
+
+<div class="matrix-wrap">
+<table>
+  <tr>
+    <th>NODO KALIL</th>
+    <th class="op">&lt;equation&gt;<br>╭─∇─≈─</th>
+    <th class="op">&lt;if&gt;<br>╭─∇─◆─</th>
+    <th class="op">&lt;operator_flow&gt;<br>╭─∇─⏵─</th>
+    <th class="op">&lt;stat_onto&gt;<br>╭─∇─⊛─</th>
+    <th class="op">&lt;psi_spin&gt;<br>╭─∇─⟳─</th>
+  </tr>
+  <tr>
+    <td class="nodo">BARRIOS<br><span style="font-size:.6rem;color:#888">社区→H13</span></td>
+    <td class="cell-o">·</td>
+    <td class="cell-o">·</td>
+    <td class="cell-x" title="flujo banca comunitaria · remesa routing">✦</td>
+    <td class="cell-o">·</td>
+    <td class="cell-o">·</td>
+  </tr>
+  <tr>
+    <td class="nodo">NORA<br><span style="font-size:.6rem;color:#888">智能→H50</span></td>
+    <td class="cell-o">·</td>
+    <td class="cell-o">·</td>
+    <td class="cell-x" title="analítica inteligente · NORA oracle routing">✦</td>
+    <td class="cell-x" title="delta_Ψ por contraparte · rating soberano">✦</td>
+    <td class="cell-o">·</td>
+  </tr>
+  <tr>
+    <td class="nodo">BOLIVAR<br><span style="font-size:.6rem;color:#888">网络→H52</span></td>
+    <td class="cell-o">·</td>
+    <td class="cell-x" title="hash bifurcación: VALID→CRYPTO / FAIL→GATE H06">✦</td>
+    <td class="cell-o">·</td>
+    <td class="cell-o">·</td>
+    <td class="cell-o">·</td>
+  </tr>
+  <tr>
+    <td class="nodo">CARILO<br><span style="font-size:.6rem;color:#888">贷款→H42</span></td>
+    <td class="cell-x" title="R=(capital×plazo)/(score_NORA×garantia)">✦</td>
+    <td class="cell-o">·</td>
+    <td class="cell-o">·</td>
+    <td class="cell-o">·</td>
+    <td class="cell-o">·</td>
+  </tr>
+  <tr>
+    <td class="nodo">CHALTEN<br><span style="font-size:.6rem;color:#888">lending cloud</span></td>
+    <td class="cell-o">·</td>
+    <td class="cell-o">·</td>
+    <td class="cell-o">·</td>
+    <td class="cell-o">·</td>
+    <td class="cell-x" title="deposito KU → SAMU → prestamo WU → repago →空">✦</td>
+  </tr>
+  <tr>
+    <td class="nodo">TANDIL<br><span style="font-size:.6rem;color:#888">hub neural_net</span></td>
+    <td class="cell-o">·</td>
+    <td class="cell-o">·</td>
+    <td class="cell-x" title="build_graph() · nodos+links+clusters · hub">✦</td>
+    <td class="cell-x" title="verified nodes · total_links · cluster stats">✦</td>
+    <td class="cell-o">·</td>
+  </tr>
+</table>
+</div>
+
+<div class="eq-calc">
+  <div class="eq-title">▸ CARILO &lt;equation&gt; CALCULADORA SOBERANA</div>
+  <div class="eq-formula">R = ( capital × plazo ) / ( score_NORA × garantia )</div>
+  <div class="eq-inputs">
+    <div class="eq-field">
+      <label>capital ($)</label>
+      <input type="number" id="cap" value="10000" oninput="calcR()">
+    </div>
+    <div class="eq-field">
+      <label>plazo (meses)</label>
+      <input type="number" id="plazo" value="12" oninput="calcR()">
+    </div>
+    <div class="eq-field">
+      <label>score_NORA</label>
+      <input type="number" id="score" value="0.85" step="0.01" min="0" max="1" oninput="calcR()">
+    </div>
+    <div class="eq-field">
+      <label>garantia ($)</label>
+      <input type="number" id="garantia" value="5000" oninput="calcR()">
+    </div>
+  </div>
+  <div class="eq-result">
+    <div class="eq-r-val" id="result">141.18</div>
+    <div class="eq-r-lab">Ratio R</div>
+  </div>
+</div>
+
+<div class="cjk-row">
+  <div class="cjk-tag">
+    贷款
+    <div class="cjk-lib">METHOD &lt;equation&gt;</div>
+  </div>
+  <div class="cjk-tag">
+    智能
+    <div class="cjk-lib">METHOD &lt;operator_flow&gt;</div>
+  </div>
+  <div class="cjk-tag">
+    风险
+    <div class="cjk-lib">GATE UF[H06]</div>
+  </div>
+  <div class="cjk-tag">
+    银行
+    <div class="cjk-lib">SOCIAL {launch-bot}</div>
+  </div>
+</div>
+
+<script>
+function calcR() {
+  const cap = parseFloat(document.getElementById('cap').value) || 0;
+  const plazo = parseFloat(document.getElementById('plazo').value) || 0;
+  const score = parseFloat(document.getElementById('score').value) || 0;
+  const garantia = parseFloat(document.getElementById('garantia').value) || 0;
+  
+  if (score > 0 && garantia > 0) {
+    const R = (cap * plazo) / (score * garantia);
+    document.getElementById('result').textContent = R.toFixed(2);
+  } else {
+    document.getElementById('result').textContent = 'ERROR';
+  }
+}
+calcR();
+</script>
+
+</body>
+</html>

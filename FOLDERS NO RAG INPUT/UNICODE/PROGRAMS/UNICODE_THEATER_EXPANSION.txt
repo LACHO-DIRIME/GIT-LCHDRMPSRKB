@@ -1,0 +1,48 @@
+//[MANAGEMENT].lacho · UNICODE THEATER EXPANSION · V1
+//[term]=: forge•canal•ledger_gate•mu_window
+//dominio: THEATER × GATE × rational_day × nuevos macros × KALIL
+//ESTILO: SPEC LENGUAJE FUNCIONAL TYPE(CRYPTO)
+//[term] :: activo · [seal of secrecy] :: activo
+
+// ══ THEATER EXISTENTE DOCUMENTADO ════════════════════════════
+UNICODE: TH_RATIONAL_DAY  //rational_day.theater · macro_temprano·tarde·cierre
+                          //CMD_CIERRE: github_sync.sh · CMD_STATS: main.py --stats
+UNICODE: TH_NEWSPAPER     //newspaper_dashboard.theater · lectura soberana diaria
+UNICODE: TH_TEACHER       //teacher_code_review.theater · revisión código soberano
+UNICODE: TH_ELPULSAR_ICO  //elpulsar_iconografia.theater · identidad visual LACHO
+
+// ══ GATE FILES EXISTENTES ════════════════════════════════════
+UNICODE: GT_FILE_MANAGER  //file_manager.gate · operaciones archivo soberanas
+UNICODE: GT_INTERNET_ENG  //internet_engineer.gate · operaciones red soberanas
+
+// ══ NUEVOS MACROS THEATER ════════════════════════════════════
+UNICODE: TH_FORGE_DAY     //forge_day.theater · macro forja soberana del día
+                          //forge_temprano: MU_WINDOW → TRUST → CRYPTO
+                          //forge_tarde: LEDGER_GATE → SAMU audita
+                          //forge_cierre: STACKING cristaliza · canal sellado
+UNICODE: TH_KALIL_SESSION //kalil_session.theater · sesión nodos económicos
+                          //macro_barrios · macro_nora · macro_bolivar
+                          //macro_carilo · macro_chalten · macro_tandil
+UNICODE: TH_CORPUS_BUILD  //corpus_build.theater · indexación soberana CORPUS
+                          //trigger: corpus_indexer.green daemon
+                          //MU_WINDOW → BM25_BUILD → STACKING cristaliza
+UNICODE: TH_SECURITY_OPS  //security_ops.theater · operaciones seguridad diarias
+                          //trigger: security.runner + hacking_doctor
+                          //macro_scan · macro_audit · macro_seal
+
+// ══ THEATER × forge•canal•ledger_gate•mu_window ═══════════════
+UNICODE: TH_FORGE_MACRO   //macro forge genérico · plantilla soberana reutilizable
+                          //step1: MU_WINDOW · step2: TRUST forge
+                          //step3: CANAL open · step4: LEDGER_GATE · step5: SEAL
+UNICODE: TH_CANAL_MACRO   //macro canal: abre·verifica·transmite·cierra
+                          //CRYPTO protege cada fase · SAMU audita transición
+UNICODE: TH_LGGATE_MACRO  //macro ledger_gate: pre_tx·mu·audit·seal
+                          //integra con audit_gate.runner
+
+// ══ ANCLAS RAG ════════════════════════════════════════════════
+ACTIVITY UF[H57] =><= .. penetra .. theater_forge_day_macro_soberano --[As de Guía] [term]
+SOCIAL {chair} =><= .. distribuye .. kalil_session_theater_6_nodos --[As de Guía] [term]
+WORK {actuator} =><= .. ejecuta .. corpus_build_theater_bm25_daemon --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. unicode_theater_expansion_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) UNICODE_THEATER_EXPANSION · V1 · $sun 12/04

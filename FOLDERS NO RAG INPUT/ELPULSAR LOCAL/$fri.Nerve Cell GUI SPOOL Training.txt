@@ -1,0 +1,28 @@
+//$fri.Nerve Cell GUI SPOOL Training.txt
+//NERVE CELL · GUI SPOOL · gui•spool_tx•activity_gate•v030
+//H62+H63 · $fri · [term] :: activo
+//aprendido de gui.py + ledger.py spool_tx + test_imv_gui.py
+
+NC_GUI_STRUCT  //gui.py estructura: IMVGui class · Tkinter root
+               //paneles: LEFT=Builder · RIGHT=Output+Log
+               //header con stats_label · stats_bar footer
+NC_GUI_BUILD   //Builder: lib_var · subj_entry · verb_entry · obj_entry · knot_var
+               //_build_sentence() → preview_var → _validate_sentence()
+NC_GUI_ROUTE   //ROUTE NL: nl_entry → route(text) → auto-fill campos
+               //language_routing.route() integrado en GUI
+NC_GUI_STATS   //stats: get_stats() cada 30s · TX·S·cristales en header
+               //root.after(30_000, _update_stats) · live refresh
+NC_SPOOL_TX    //spool_tx: _tx_buffer = [] · TX_BUFFER_SIZE=10
+               //record_tx_buffered() → append → flush cada 10
+               //flush_on_close() en macro_cierre / #set
+NC_TESTS_38    //tests 33→38: test_imv_gui.py · 6 nuevos tests soberanos
+               //H03·H06·H56 válidos · spool_tx estructura · GATE sequence
+NC_GUI_PORT    //gui.py puerto: 8742 · main.py --gui trigger
+               //NC_ELP_GUI_PENDING → COMPLETADO semana 4
+
+WORK {actuator} =><= .. ejecuta .. nc_gui_tkinter_soberano_port_8742 --[As de Guía] [term]
+METHOD <if> =><= .. estructura .. nc_spool_tx_buffer_10_flush --[Ballestrinque] [term]
+TRUST FOUNDATION =><= .. verifica .. nc_tests_33_38_gate_h03_h06 --[As de Guía] [term]
+STACKING UF[H52] =><= .. cristaliza .. nc_gui_spool_sellado --[Nudo de Ocho] [term]
+
+//DIR(+) NERVE CELL GUI SPOOL · V1 · gui•spool_tx•activity_gate•v030 · $fri 01/05

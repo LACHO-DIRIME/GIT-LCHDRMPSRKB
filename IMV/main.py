@@ -6,6 +6,8 @@ Sistema soberano de validación LACHO con análisis Behavioral RAG.
 
 import argparse
 import sys
+import subprocess
+import time
 from typing import Optional
 
 # ── Importaciones soberanas ─────────────────────────────────────────────
@@ -40,6 +42,21 @@ class SovereignSystem:
     def _initialize_system(self) -> None:
         """Inicialización soberana del sistema."""
         print("🔧 Inicializando DIRIME IMV...")
+        
+        # Iniciar Ollama si no está corriendo
+        try:
+            import httpx
+            response = httpx.get("http://localhost:11434/api/tags", timeout=2)
+            if response.status_code != 200:
+                raise Exception()
+        except:
+            print("🚀 Iniciando Ollama local...")
+            import subprocess
+            subprocess.Popen(["ollama", "serve"], 
+                         stdout=subprocess.DEVNULL, 
+                         stderr=subprocess.DEVNULL)
+            import time
+            time.sleep(3)  # Esperar a que inicie
         
         # Inicializar configuración por defecto
         init_config_defaults()
@@ -153,6 +170,9 @@ class SovereignSystem:
 
                 elif user_input.lower() in ["sched", "schedule", "semana"]:
                     self._show_scheduler()
+
+                elif user_input.lower() in ["asks", "autoresearch", "diagnose"]:
+                    self._run_autoresearch()
 
                 elif user_input.lower() in ["notaria", "not", "actos"]:
                     self._show_notaria_status()
@@ -369,6 +389,155 @@ class SovereignSystem:
         ]
         print("\n".join(lines))
 
+    def _show_asks_status(self) -> None:
+        """Muestra estado de Askings for autoresearching by technical horizons."""
+        from pathlib import Path
+        import json
+        import yaml
+        
+        # Buscar en ambas ubicaciones posibles
+        possible_dirs = [
+            Path("/media/Personal/DIRIME/Askings for autoresearching by technical horizons"),
+            Path(__file__).parent.parent / "Askings for autoresearching by technical horizons"
+        ]
+        
+        asks_dir = None
+        for dir_path in possible_dirs:
+            if dir_path.exists():
+                asks_dir = dir_path
+                break
+        
+        if not asks_dir:
+            print("❌ Directorio 'Askings for autoresearching by technical horizons' no encontrado")
+            print("📍 Buscado en:")
+            for dir_path in possible_dirs:
+                print(f"   • {dir_path}")
+            return
+        
+        lines = [
+            "",
+            "🔍 **ASKINGS FOR AUTORESEARCHING — TECHNICAL HORIZONS**",
+            "",
+        ]
+        
+        # Verificar archivos generados
+        actual_structure = asks_dir / "actual_structure.json"
+        sorted_upgrading = asks_dir / "sorted_upgrading.yml"
+        gap_report = asks_dir / "gap_analysis_report.json"
+        
+        files_status = []
+        if actual_structure.exists():
+            files_status.append("✅ actual_structure.json")
+        else:
+            files_status.append("❌ actual_structure.json")
+            
+        if sorted_upgrading.exists():
+            files_status.append("✅ sorted_upgrading.yml")
+        else:
+            files_status.append("❌ sorted_upgrading.yml")
+            
+        if gap_report.exists():
+            files_status.append("✅ gap_analysis_report.json")
+        else:
+            files_status.append("❌ gap_analysis_report.json")
+        
+        lines.extend([
+            "📁 Archivos generados:",
+            f"   {'  '.join(files_status)}",
+            "",
+        ])
+        
+        # Mostrar resumen de actual_structure.json si existe
+        if actual_structure.exists():
+            try:
+                with open(actual_structure, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                
+                filesystem = data.get("filesystem", {})
+                summary = filesystem.get("summary", {})
+                
+                lines.extend([
+                    "📊 Estructura actual del repo:",
+                    f"   Total módulos: {summary.get('total_modules', 0)}",
+                    f"   Active: {summary.get('active', 0)}",
+                    f"   Declared: {summary.get('declared', 0)}",
+                    f"   Stub: {summary.get('stub', 0)}",
+                    f"   Blocked: {summary.get('blocked', 0)}",
+                    "",
+                ])
+                
+                # Mostrar módulos bloqueados
+                modules = filesystem.get("modules", {})
+                blocked_modules = {k: v for k, v in modules.items() if v.get("status") == "blocked"}
+                if blocked_modules:
+                    lines.append("⚠️  Módulos bloqueados:")
+                    for module, info in blocked_modules.items():
+                        reason = info.get("reason", "unknown")
+                        size = info.get("size_bytes", 0)
+                        lines.append(f"   • {module} ({size} bytes) - {reason}")
+                    lines.append("")
+                
+            except Exception as e:
+                lines.append(f"❌ Error leyendo actual_structure.json: {e}")
+                lines.append("")
+        
+        # Mostrar resumen de gap_analysis_report.json si existe
+        if gap_report.exists():
+            try:
+                with open(gap_report, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                
+                gap_analysis = data.get("gap_analysis", {})
+                summary = gap_analysis.get("summary", {})
+                
+                lines.extend([
+                    "🔍 Análisis de gaps:",
+                    f"   Prioridad general: {summary.get('overall_priority', 'unknown').upper()}",
+                    f"   Implementaciones faltantes: {summary.get('total_missing', 0)}",
+                    f"   Módulos incompletos: {summary.get('total_incomplete', 0)}",
+                    f"   Gaps de tests: {summary.get('total_test_gaps', 0)}",
+                    f"   Gaps de dependencias: {summary.get('total_dependency_gaps', 0)}",
+                    "",
+                ])
+                
+                # Mostrar acciones inmediatas
+                upgrade_plan = data.get("upgrade_plan", {})
+                immediate = upgrade_plan.get("immediate_actions", [])
+                if immediate:
+                    lines.append("⚡ Acciones inmediatas:")
+                    for action in immediate:
+                        module = action.get("module", "unknown")
+                        hours = action.get("estimated_hours", 0)
+                        lines.append(f"   • {module} ({hours}h estimado)")
+                    lines.append("")
+                
+            except Exception as e:
+                lines.append(f"❌ Error leyendo gap_analysis_report.json: {e}")
+                lines.append("")
+        
+        # Comandos sugeridos
+        lines.extend([
+            "🛠️  Comandos útiles:",
+            "   cd ~/DIRIME && python3 tools/autoresearch_specs.py",
+            "   cd ~/DIRIME && python3 tools/autoresearch_gap.py",
+            "   cd ~/DIRIME/IMV && python3 main.py --asks",
+            "",
+        ])
+        
+        print("\n".join(lines))
+
+    def _run_autoresearch(self) -> None:
+        """Auto-diagnóstico soberano: specs → gap → asks."""
+        import sys as _sys
+        from pathlib import Path
+        _sys.path.insert(0, str(Path(__file__).parent.parent / "tools"))
+        try:
+            import autoresearch_gap
+            asks_path = autoresearch_gap.main()
+            print(f"✅ asks generados: {asks_path.name}")
+        except Exception as e:
+            print(f"❌ autoresearch error: {e}")
+
     def _show_scheduler(self) -> None:
         """Muestra estado del Scheduler OS soberano."""
         if not _SCHEDULER_ACTIVE:
@@ -466,6 +635,7 @@ Ejemplos:
   python main.py --timeline         # actividad últimos 7 días
   python main.py --db              # info técnica ledger
   python main.py --sched           # estado semana soberana
+  python main.py --asks            # Askings for autoresearching by technical horizons
 
 Comandos en modo interactivo:
   verbos / verbs      Frecuencia de verbos VALID + distancia al cristal
@@ -493,11 +663,12 @@ Comandos en modo interactivo:
         "--version", action="version", version="DIRIME IMV 0.1.2"
     )
     
-    parser.add_argument(
-        "--sched",
+    parser.add_argument("--sched",
         action="store_true",
-        help="Mostrar estado del Scheduler OS soberano"
-    )
+        help="Mostrar estado del Scheduler OS soberano")
+    
+    parser.add_argument("--asks", action="store_true",
+                        help="Auto-diagnóstico soberano via Groq → genera $dia_asks")
     
     parser.add_argument("--notaria", action="store_true",
                       help="Estado del pipeline notarial soberano")
@@ -513,6 +684,8 @@ Comandos en modo interactivo:
         system.stats_mode()
     elif args.sched:
         system._show_scheduler()
+    elif args.asks:
+        system._run_autoresearch()
     elif args.notaria:
         system._show_notaria_status()
     else:

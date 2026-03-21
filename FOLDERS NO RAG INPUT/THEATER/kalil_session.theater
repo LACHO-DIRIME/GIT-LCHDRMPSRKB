@@ -1,0 +1,54 @@
+# kalil_session.theater
+# MACRO SESIÓN KALIL · 6 nodos económicos soberanos
+# Referencia: UNICODE_THEATER_EXPANSION.txt · cloud_agent.blue
+# [term] :: activo
+
+[genesis]     :: SUITE SOBERANA
+[version]     :: 1.0
+[extension]   :: .theater
+[tipo]        :: MACRO SESIÓN KALIL
+[padre]       :: rational_day.theater
+
+## MACRO BARRIOS
+macro_barrios {
+  TRUST FOUNDATION =><= .. verifica .. forge_canal_remesas_barrios --[As de Guía] [term]
+  METHOD <equation> =><= .. calcula .. LR_score_remesa_hash_BLAKE3 --[Ballestrinque] [term]
+  STACKING UF[H52] =><= .. cristaliza .. barrios_session_sellada --[Nudo de Ocho] [term]
+}
+
+## MACRO NORA
+macro_nora {
+  METHOD <stat_onto> =><= .. calcula .. nora_oracle_rating_ja3s --[Ballestrinque] [term]
+  SAMU @ =><= .. audita .. nora_coherencia_oracle --[Ballestrinque] [term]
+  STACKING UF[H52] =><= .. cristaliza .. nora_session_sellada --[Nudo de Ocho] [term]
+}
+
+## MACRO BOLIVAR
+macro_bolivar {
+  CRYPTO (spark seat) =><= .. firma .. bolivar_contrato_hash_SHA256 --[As de Guía] [term]
+  METHOD <equation> =><= .. calcula .. pe_entropy_bolivar_smart_contract --[Ballestrinque] [term]
+  STACKING UF[H52] =><= .. cristaliza .. bolivar_session_sellada --[Nudo de Ocho] [term]
+}
+
+## MACRO CARILO
+macro_carilo {
+  SOCIAL {chair} =><= .. distribuye .. carilo_sesion_prestamo_FLEX --[As de Guía] [term]
+  METHOD <equation> =><= .. calcula .. LR_score_carilo_riesgo --[Ballestrinque] [term]
+  GATE UF[H05] =><= .. espera .. carilo_ledger_gate_prestamo --[Ballestrinque] [term]
+}
+
+## MACRO CHALTEN
+macro_chalten {
+  SOCIAL {streaming} =><= .. mantiene .. chalten_daemon_lending_24h --[As de Guía] [term]
+  WORK {actuator} =><= .. ejecuta .. chalten_cloud_daemon_activo --[As de Guía] [term]
+  STACKING UF[H52] =><= .. cristaliza .. chalten_session_sellada --[Nudo de Ocho] [term]
+}
+
+## MACRO TANDIL (HUB)
+macro_tandil {
+  METHOD <operator_flow> =><= .. opera .. tandil_hub_spool_global --[Ballestrinque] [term]
+  SAMU @ =><= .. audita .. tandil_coherencia_6_nodos --[Ballestrinque] [term]
+  STACKING UF[H52] =><= .. cristaliza .. kalil_sesion_completa_sellada --[Nudo de Ocho] [term]
+}
+
+[term] :: activo · [seal of secrecy] :: activo

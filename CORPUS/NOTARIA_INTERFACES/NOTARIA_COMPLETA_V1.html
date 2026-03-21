@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⊗ NOTARIA SOBERANA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #ffffff;
+            color: #1a1a2e;
+            line-height: 1.4;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            background-color: #1a1a2e;
+            color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .header-stats {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+        }
+        
+        .tabs {
+            display: flex;
+            border-bottom: 2px solid #1a1a2e;
+            margin-bottom: 20px;
+        }
+        
+        .tab {
+            padding: 12px 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-bottom: none;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .tab:hover {
+            background-color: #e0e0e0;
+        }
+        
+        .tab.active {
+            background-color: #0f3460;
+            color: white;
+            border-color: #0f3460;
+        }
+        
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .btn {
+            background-color: #1a1a2e;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: 'Courier New', monospace;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #0f3460;
+        }
+        
+        .output {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        
+        .sentencia {
+            background-color: #e8f4f8;
+            padding: 10px;
+            border-left: 4px solid #1a1a2e;
+            margin-top: 10px;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        
+        .table th, .table td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        .table th {
+            background-color: #1a1a2e;
+            color: white;
+        }
+        
+        .badge-crypto { background-color: #007bff; color: white; padding: 2px 6px; border-radius: 3px; font-size: 11px; }
+        .badge-trust { background-color: #28a745; color: white; padding: 2px 6px; border-radius: 3px; font-size: 11px; }
+        .badge-wu { background-color: #17a2b8; color: white; padding: 2px 6px; border-radius: 3px; font-size: 11px; }
+        .badge-ku { background-color: #ffc107; color: black; padding: 2px 6px; border-radius: 3px; font-size: 11px; }
+        
+        .search-box {
+            margin-bottom: 15px;
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background-color: #1a1a2e;
+            transition: width 0.3s;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #1a1a2e;
+            color: white;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        .loading {
+            color: #666;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⊗ NOTARIA SOBERANA</h1>
+            <div class="header-stats">
+                <div id="scalar-s">S=<span class="loading">cargando...</span></div>
+                <div id="tx-count">TX=<span class="loading">cargando...</span></div>
+                <div id="samu-status">SAMU=<span class="loading">cargando...</span></div>
+            </div>
+        </div>
+        
+        <div class="tabs">
+            <div class="tab active" onclick="showTab('certifica')">CERTIFICA</div>
+            <div class="tab" onclick="showTab('sella')">SELLA</div>
+            <div class="tab" onclick="showTab('inmutabiliza')">INMUTABILIZA</div>
+            <div class="tab" onclick="showTab('archivo')">ARCHIVO</div>
+        </div>
+        
+        <!-- TAB CERTIFICA -->
+        <div id="certifica" class="tab-content active">
+            <h2>CERTIFICA ACTO NOTARIAL</h2>
+            <form id="certifica-form">
+                <div class="form-group">
+                    <label for="acto">Acto:</label>
+                    <input type="text" id="acto" name="acto" placeholder="ej: contrato_soberano" required>
+                </div>
+                <div class="form-group">
+                    <label for="partes">Partes (CSV):</label>
+                    <input type="text" id="partes" name="partes" placeholder="parte_alpha,parte_beta" required>
+                </div>
+                <div class="form-group">
+                    <label for="objeto">Objeto:</label>
+                    <input type="text" id="objeto" name="objeto" placeholder="ej: contrato_comercial" required>
+                </div>
+                <button type="submit" class="btn">CERTIFICA</button>
+            </form>
+            
+            <div id="certifica-output" class="output" style="display: none;">
+                <h3>Resultado:</h3>
+                <div id="certifica-result"></div>
+                <div id="certifica-sentencia" class="sentencia"></div>
+            </div>
+        </div>
+        
+        <!-- TAB SELLA -->
+        <div id="sella" class="tab-content">
+            <h2>SELLA ACTOS KU (S &lt; 0.90)</h2>
+            <div id="ku-list" class="loading">Cargando actos KU...</div>
+        </div>
+        
+        <!-- TAB INMUTABILIZA -->
+        <div id="inmutabiliza" class="tab-content">
+            <h2>INMUTABILIZA ACTOS WU (S ≥ 0.78)</h2>
+            <div id="wu-list" class="loading">Cargando actos WU...</div>
+            <div style="margin-top: 20px;">
+                <h3>Progreso H63:</h3>
+                <div class="progress-bar">
+                    <div id="h63-progress" class="progress-fill" style="width: 0%;"></div>
+                </div>
+                <div id="h63-text">S actual: 0.000 / Objetivo: 0.900</div>
+            </div>
+        </div>
+        
+        <!-- TAB ARCHIVO -->
+        <div id="archivo" class="tab-content">
+            <h2>ARCHIVO COMPLETO</h2>
+            <input type="text" id="archivo-search" class="search-box" placeholder="Buscar por verbo o biblioteca...">
+            <div id="archivo-table-container">
+                <div class="loading">Cargando archivo...</div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div id="footer-status">
+                <span class="loading">Actualizando estado...</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:8741';
+        
+        function showTab(tabName) {
+            // Ocultar todos los tabs
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Mostrar tab seleccionado
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+            
+            // Cargar datos específicos del tab
+            if (tabName === 'sella') loadKUList();
+            if (tabName === 'inmutabiliza') loadWUList();
+            if (tabName === 'archivo') loadArchivo();
+        }
+        
+        async function fetchAPI(endpoint) {
+            try {
+                const response = await fetch(`${API_BASE}${endpoint}`);
+                return await response.json();
+            } catch (error) {
+                console.error('API Error:', error);
+                return null;
+            }
+        }
+        
+        async function updateHeaderStats() {
+            const status = await fetchAPI('/api/notaria/status');
+            if (status) {
+                document.getElementById('scalar-s').innerHTML = `S=${status.scalar_s || '0.000'}`;
+                document.getElementById('tx-count').innerHTML = `TX=${status.tx_count || '0'}`;
+                document.getElementById('samu-status').innerHTML = `SAMU=${status.samu_status || 'OK'}`;
+            }
+        }
+        
+        async function updateFooter() {
+            const status = await fetchAPI('/api/notaria/status');
+            if (status) {
+                const knowledgeState = status.scalar_s >= 0.78 ? 'WU' : 'KU';
+                document.getElementById('footer-status').innerHTML = 
+                    `S=${status.scalar_s || '0.000'} · TX=${status.tx_count || '0'} · ${knowledgeState} · [term] :: activo`;
+            }
+        }
+        
+        // Certifica form handler
+        document.getElementById('certifica-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData);
+            
+            const result = await fetchAPI('/api/notaria/certifica', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify(data)
+            });
+            
+            if (result) {
+                document.getElementById('certifica-output').style.display = 'block';
+                document.getElementById('certifica-result').innerHTML = `
+                    <strong>Hash:</strong> ${result.hash || 'N/A'}<br>
+                    <strong>Válido:</strong> ${result.valid ? 'SÍ' : 'NO'}<br>
+                    <strong>SAMU Audit:</strong> ${result.samu_audit || 'N/A'}<br>
+                    <strong>NORA Rating:</strong> ${result.nora_rating || 'N/A'}
+                `;
+                
+                const sentencia = `CRYPTO (spark seat) =><= .. certifica .. ${data.objeto} --[Nudo de Ocho] [term]`;
+                document.getElementById('certifica-sentencia').textContent = sentencia;
+            }
+        });
+        
+        async function loadKUList() {
+            const archivo = await fetchAPI('/api/notaria/archivo');
+            if (archivo) {
+                const kuActos = archivo.filter(item => item.scalar_s < 0.90);
+                const html = kuActos.map(acto => `
+                    <div style="border: 1px solid #ccc; padding: 10px; margin: 10px 0; border-radius: 4px;">
+                        <strong>ID:</strong> ${acto.tx_id.substring(0,8)}<br>
+                        <strong>Objeto:</strong> ${acto.objeto}<br>
+                        <strong>Scalar S:</strong> ${acto.scalar_s}<br>
+                        <button class="btn" onclick="sellaActo('${acto.tx_id}')">SELLA</button>
+                    </div>
+                `).join('');
+                document.getElementById('ku-list').innerHTML = html || '<div>No hay actos KU pendientes</div>';
+            }
+        }
+        
+        async function loadWUList() {
+            const archivo = await fetchAPI('/api/notaria/archivo');
+            if (archivo) {
+                const wuActos = archivo.filter(item => item.scalar_s >= 0.78);
+                const html = `
+                    <button class="btn" onclick="inmutabilizaBatch()">INMUTABILIZA BATCH</button>
+                    <div style="margin-top: 15px;">
+                        ${wuActos.map(acto => `
+                            <div style="border: 1px solid #ccc; padding: 10px; margin: 10px 0; border-radius: 4px;">
+                                <strong>ID:</strong> ${acto.tx_id.substring(0,8)}<br>
+                                <strong>Objeto:</strong> ${acto.objeto}<br>
+                                <strong>Scalar S:</strong> ${acto.scalar_s}<br>
+                                <strong>Estado:</strong> ${acto.estado || 'WU'}
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+                document.getElementById('wu-list').innerHTML = html || '<div>No hay actos WU disponibles</div>';
+                
+                // Actualizar progreso H63
+                const avgScalar = wuActos.reduce((sum, acto) => sum + acto.scalar_s, 0) / wuActos.length || 0;
+                const progressPercent = (avgScalar / 0.90) * 100;
+                document.getElementById('h63-progress').style.width = `${Math.min(progressPercent, 100)}%`;
+                document.getElementById('h63-text').textContent = `S actual: ${avgScalar.toFixed(3)} / Objetivo: 0.900`;
+            }
+        }
+        
+        async function loadArchivo() {
+            const archivo = await fetchAPI('/api/notaria/archivo');
+            if (archivo) {
+                renderArchivoTable(archivo);
+            }
+        }
+        
+        function renderArchivoTable(data) {
+            const html = `
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>TX ID</th>
+                            <th>Verbo</th>
+                            <th>Biblioteca</th>
+                            <th>Nudo</th>
+                            <th>Timestamp</th>
+                            <th>Scalar S</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${data.map(item => `
+                            <tr>
+                                <td>${item.tx_id.substring(0,8)}</td>
+                                <td>${item.verb || 'N/A'}</td>
+                                <td><span class="badge-${item.library?.toLowerCase()}">${item.library || 'N/A'}</span></td>
+                                <td>${item.knot || 'N/A'}</td>
+                                <td>${item.timestamp || 'N/A'}</td>
+                                <td>${item.scalar_s || 'N/A'}</td>
+                                <td><span class="badge-${item.scalar_s >= 0.78 ? 'wu' : 'ku'}">${item.scalar_s >= 0.78 ? 'WU' : 'KU'}</span></td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            `;
+            document.getElementById('archivo-table-container').innerHTML = html;
+        }
+        
+        // Búsqueda en archivo
+        document.getElementById('archivo-search').addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            const rows = document.querySelectorAll('#archivo-table-container tr');
+            rows.forEach(row => {
+                const text = row.textContent.toLowerCase();
+                row.style.display = text.includes(searchTerm) ? '' : 'none';
+            });
+        });
+        
+        async function sellaActo(actoId) {
+            const result = await fetchAPI('/api/notaria/sella', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({acto_id: actoId})
+            });
+            
+            if (result) {
+                alert(`Acto ${actoId.substring(0,8)} sellado: ${result.seal ? 'OK' : 'ERROR'}`);
+                loadKUList(); // Recargar lista
+            }
+        }
+        
+        async function inmutabilizaBatch() {
+            const archivo = await fetchAPI('/api/notaria/archivo');
+            if (archivo) {
+                const wuActos = archivo.filter(item => item.scalar_s >= 0.78);
+                let successCount = 0;
+                
+                for (const acto of wuActos) {
+                    const result = await fetchAPI('/api/notaria/inmutabiliza', {
+                        method: 'POST',
+                        headers: {'Content-Type': 'application/json'},
+                        body: JSON.stringify({acto_id: acto.tx_id})
+                    });
+                    
+                    if (result && result.inmutable) {
+                        successCount++;
+                    }
+                }
+                
+                alert(`Batch completado: ${successCount}/${wuActos.length} actos inmutabilizados`);
+                loadWUList(); // Recargar lista
+            }
+        }
+        
+        // Inicialización
+        updateHeaderStats();
+        updateFooter();
+        setInterval(updateFooter, 5000); // Actualizar footer cada 5 segundos
+    </script>
+</body>
+</html>
