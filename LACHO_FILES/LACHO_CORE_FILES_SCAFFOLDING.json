@@ -1,0 +1,58 @@
+{
+  "ENTITY": "LACHO_CORE_FILES_SCAFFOLDING",
+  "MAPPING_LEVEL": "TECHNICAL_ARTIFACT_GENERATION",
+  "DATA_STRUCTURE": {
+    "FILE_01": {
+      "NAME": "lacho_genome.json",
+      "PATH": "LACHO_FILES/",
+      "CONTENT": {
+        "ENTITY": "LACHO_GENOME_CORE",
+        "VERSION": "0.3.0_20260321",
+        "LANGUAGE_ORGAN": {
+          "NAME": "語言 (Yǔyán)",
+          "LEXICON_STATE": "Sovereign",
+          "THEMATIC_GROUPS": {
+            "ACTIVITY": ["METHOD", "SOCIAL", "STACKING", "WORK"],
+            "RESTRICTION": "Creativity_DEPRECATED"
+          }
+        },
+        "ARTIFICIAL_ORGAN": {
+          "NAME": "人工 (Réngōng)",
+          "OPERATORS": {
+            "既濟": "Seal_Transaction",
+            "⊗": "Nudo_de_Ocho"
+          }
+        },
+        "CIRCUMSTANCIAL_ORGAN": {
+          "NAME": "境況 (Jìngkuàng)",
+          "CONTEXT_LIMIT": "12GB_RAM",
+          "OPERATORS": {
+            "空": "Memory_Purge"
+          }
+        },
+        "HYPOTHETICAL_ORGAN": {
+          "NAME": "假定 (Jiǎding)",
+          "OPERATORS": {
+            "聿": "IMV_Drafting"
+          }
+        },
+        "ORDERED_ORGAN": {
+          "NAME": "有序 (Yǒuxù)",
+          "STYLE_GUIDE": "Technical_Minimalism",
+          "UI_PREFERENCE": "Pure_White_High_Contrast"
+        }
+      }
+    },
+    "FILE_02": {
+      "NAME": "sovereign_organs.lacho",
+      "PATH": "LACHO_FILES/",
+      "CONTENT_TYPE": "LACHO_DSL_STRUCTURE",
+      "CONTENT_STR": "[ORGAN: LENGUAJE_語言]\n{\n    @VERBS:METHOD { opera, calcula, estructura, define, formaliza }\n    @VERBS:STACKING { cristaliza, inmutabiliza, preserva, archiva, sella }\n    @TRANSITION: Activity -> Activity\n}\n\n[ORGAN: ARTIFICIAL_人工]\n{\n    @MODE: 既濟 [Full_Completion]\n    @VALIDATOR: ⊗ [Nudo_de_Ocho]\n}\n\n[ORGAN: CIRCUNSTANCIAL_境況]\n{\n    @STATE: 空 [Emptiness_Potential]\n    @CONSTRAINT: RAM_LIMIT(12288MB)\n}\n\n[ORGAN: HIPOTETICO_假定]\n{\n    @BRANCH: 聿 [The_Writer]\n    @GOAL: IMV\n}\n\n[ORGAN: ORDENADO_有序]\n{\n    @PRINCIPLE: Technical_Minimalism\n    @DISPLAY: { Background: #FFFFFF; Font: Monospace; Prose: MIN }\n}"
+    }
+  },
+  "METADATA": {
+    "FORMAT": "PURE_DATA_MAPPING",
+    "STATUS": "READY_FOR_LOCAL_SAVE",
+    "PROSE_SUPPRESSION": "MAX"
+  }
+}

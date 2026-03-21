@@ -7,7 +7,7 @@
 {
     @VERBS:METHOD { opera, calcula, estructura, define, formaliza }
     @VERBS:STACKING { cristaliza, inmutabiliza, preserva, archiva, sella }
-    @TRANSITION: Creativity -> Activity // Sincronización de grupo temático
+    @TRANSITION: Activity -> Activity // Sincronización de grupo temático
 }
 
 [ORGAN: ARTIFICIAL_人工]
