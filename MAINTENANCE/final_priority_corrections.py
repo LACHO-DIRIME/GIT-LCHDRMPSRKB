@@ -4,6 +4,8 @@ RAM ESTIMATION: ~30MB (Uso de buffers de texto).
 VALIDATED_BY: CLAUDE_PENDING
 """
 
+STYLE = {"font": "monospace", "bg": "#FFFFFF", "fg": "#000000"}
+
 from pathlib import Path
 import psutil
 

@@ -4,6 +4,8 @@ lacho_persistence_bridge.py - Puente de Persistencia LACHO
 Convierte acciones hipotéticas (假定) en acciones reales (既濟) con validación Claude
 """
 
+STYLE = {"font": "monospace", "bg": "#FFFFFF", "fg": "#000000"}
+
 import json
 import time
 from pathlib import Path

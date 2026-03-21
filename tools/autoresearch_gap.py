@@ -3,6 +3,9 @@
 tools/autoresearch_gap.py — Gap detector + Groq → $dia_asks_DDMM.txt
 [term] :: activo
 """
+
+STYLE = {"font": "monospace", "bg": "#FFFFFF", "fg": "#000000"}
+
 import sys
 import json
 from pathlib import Path

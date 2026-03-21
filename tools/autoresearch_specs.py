@@ -4,6 +4,9 @@ tools/autoresearch_specs.py — Scanner soberano del ecosistema DIRIME.
 Sin Groq · Python stdlib puro · genera actual_structure.json + sorted_upgrading.yml
 [term] :: activo
 """
+
+STYLE = {"font": "monospace", "bg": "#FFFFFF", "fg": "#000000"}
+
 import sys
 import json
 import sqlite3

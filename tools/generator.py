@@ -4,6 +4,9 @@ generator.py — IMV genera su primer .lacho soberano
 SUITE SOBERANA · VECTOR 1 · 2026-03-10
 Uso: python3 tools/generator.py [--mode auto|stats|corpus|full] [--output path]
 """
+
+STYLE = {"font": "monospace", "bg": "#FFFFFF", "fg": "#000000"}
+
 import sys, argparse
 from pathlib import Path
 from datetime import datetime

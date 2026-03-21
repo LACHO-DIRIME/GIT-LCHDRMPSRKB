@@ -1,0 +1,54 @@
+---
+DISPLAY: Monospace | Background: #FFFFFF | Prose: MIN
+---
+
+# TEMPLATE DE REPORTE AUTOMÁTICO
+**Fecha:** [timestamp]  
+**Estado:** [estado]  
+**Versión:** [versión]
+
+---
+
+## 📋 **RESUMEN EJECUTIVO**
+
+- **Tareas completadas:** [count]
+- **Errores detectados:** [count]
+- **RAM utilizada:** [ram]MB
+- **Estado sistema:** [status]
+
+---
+
+## 🔧 **DETALLES TÉCNICOS**
+
+### **Componentes procesados**
+- [ ] Componente 1
+- [ ] Componente 2
+- [ ] Componente 3
+
+### **Acciones realizadas**
+1. Acción 1
+2. Acción 2
+3. Acción 3
+
+---
+
+## 📊 **MÉTRICAS**
+
+| Métrica | Valor | Estado |
+|---------|-------|--------|
+| RAM | [ram]MB | OK |
+| CPU | [cpu]% | OK |
+| Tiempo | [time]s | OK |
+
+---
+
+## ✅ **VALIDACIÓN**
+
+- **Gramática:** [status]
+- **Sintaxis:** [status]
+- **Integridad:** [status]
+
+---
+
+*Reporte generado automáticamente por sistema LACHO*  
+*Estilo: Monospace | Background: #FFFFFF | Prose: MIN*
