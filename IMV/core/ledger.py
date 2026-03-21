@@ -918,36 +918,45 @@ def record_notaria_act(acto: str, partes: list, objeto: str, scalar_s: float) ->
 
 def get_notaria_stats() -> dict:
     """Estadísticas del pipeline notarial soberano."""
-    import json as _json, sqlite3
+    import sqlite3
     with sqlite3.connect(_hl_fabric.db_path) as conn:
-        rows = conn.execute(
-            "SELECT data FROM transactions ORDER BY timestamp DESC LIMIT 500"
-        ).fetchall()
-    actos_total = actos_wu = actos_ku = h63_count = 0
-    scalar_sum  = 0.0
-    for (raw,) in rows:
-        try:
-            d = _json.loads(raw) if raw else {}
-        except Exception:
-            continue
-        if d.get("tipo") != "NOTARIA_ACT":
-            continue
-        actos_total += 1
-        s = d.get("scalar_s", 0.0)
-        scalar_sum += s
-        if s >= 0.90:
-            actos_wu += 1
-            h63_count += 1
-        elif s >= 0.78:
-            actos_wu += 1
-        else:
-            actos_ku += 1
+        # Leer directamente de tabla notaria_acts para estadísticas actuales
+        cursor = conn.execute("SELECT COUNT(*) FROM notaria_acts")
+        actos_total = cursor.fetchone()[0]
+        
+        if actos_total == 0:
+            return {
+                "actos_total": 0,
+                "actos_wu": 0,
+                "actos_ku": 0,
+                "scalar_promedio": 0.0,
+                "h63_count": 0,
+            }
+        
+        # Contar actos por estado y scalar
+        cursor = conn.execute("""
+            SELECT 
+                COUNT(*) as total,
+                COUNT(CASE WHEN scalar_s >= 0.90 THEN 1 END) as wu_high,
+                COUNT(CASE WHEN scalar_s >= 0.78 AND scalar_s < 0.90 THEN 1 END) as wu_mid,
+                COUNT(CASE WHEN scalar_s < 0.78 THEN 1 END) as ku_low,
+                COUNT(CASE WHEN hexagrama = 'H63' THEN 1 END) as h63_count,
+                AVG(scalar_s) as scalar_avg
+            FROM notaria_acts
+        """)
+        result = cursor.fetchone()
+        
+        actos_wu = result[1] + result[2]  # WU high + WU mid
+        actos_ku = result[3]  # KU low
+        h63_count = result[4]
+        scalar_promedio = round(result[5], 3) if result[5] else 0.0
+        
     return {
-        "actos_total":    actos_total,
-        "actos_wu":       actos_wu,
-        "actos_ku":       actos_ku,
-        "scalar_promedio": round(scalar_sum / actos_total, 3) if actos_total else 0.0,
-        "h63_count":      h63_count,
+        "actos_total": actos_total,
+        "actos_wu": actos_wu,
+        "actos_ku": actos_ku,
+        "scalar_promedio": scalar_promedio,
+        "h63_count": h63_count,
     }
 def export_notaria_report() -> list[dict]:
     """Exporta actos notariales — TX VALID de bibliotecas CRYPTO/TRUST con S >= 0.78."""
