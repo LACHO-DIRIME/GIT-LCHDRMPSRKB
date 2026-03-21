@@ -280,7 +280,7 @@ SUJETOS_CANONICOS = {
     "TRUST":    ["FOUNDATION", "[scope]", "[term]", "[command]", "[foundation]"],
     "WORK":     ["{actuator}", "{brake}", "{doorman-mobile}", "{door-afternoon}"],
     "SAMU":     ["@", "#rise", "#set", "$mon", "$tue", "$wed", "$thu", "$fri", "$sat", "$sun", "@trust_matrix"],
-    "ACTIVITY": ["UF[H01]", "UF[H05]", "UF[H52]", "UF[H56]", "UF[H57]", "UF[H63]", "UF[H64]"],
+    "ACTIVITY": ["UF[H01]", "UF[H03]", "UF[H05]", "UF[H52]", "UF[H56]", "UF[H57]", "UF[H63]", "UF[H64]", "UF[H06]"],
     "CRYPTO":   ["(spark seat)", "(shield seat)", "(key seat)", "(link seat)"],
     "SOCIAL":   ["{chair}", "{drip}", "{launch-bot}", "{masking}", "{tether}", "{scheduler}", "{relay}", "{headcat}", "{concierge-desk}", "{rocking-chair}", "{streaming}", "{handshake}", "{guest-services}"],
     "GATE":     ["UF[H03]", "UF[H05]", "UF[H56]", "UF[H06]"],
@@ -290,6 +290,21 @@ SUJETOS_CANONICOS = {
 # NOTARIA GÉNESIS · $thu 2026-03-12 · H63 既濟
 # acto_notarial: objeto válido CRYPTO·STACKING·TRUST
 # UF[H63]: STACKING inmutabiliza acto cerrado
+
+# ── PARADIGM_RULES ─────────────────────────────────────────────────────
+# Reglas de validación por paradigma de biblioteca
+# Referencia: BIBLIO-SOURCES(GAP_PARADIGMAS_GRAMMAR).txt
+PARADIGM_RULES = {
+    "TRUST":    {"mode": "imperativo",  "valid_modules": ["foundation","scope","term","command","scenario","event","element","ecosystem","management","language","what","when","how","ku-chat","wu-mail","mu-store","rabbit-faith"]},
+    "SOCIAL":   {"mode": "declarativo", "forbidden_verbs": ["ignite","commit","purge","destruye","elimina"]},
+    "CRYPTO":   {"mode": "funcional",   "requires_seat_subject": True, "valid_subjects": ["(spark seat)","(shield seat)","(key seat)","(link seat)","(direction seat)","(flow seat)","(seal of secrecy)"]},
+    "GATE":     {"mode": "script",      "valid_hexagrams": ["H03","H05","H56","H06"]},
+    "WORK":     {"mode": "bajo_nivel",  "valid_subjects": ["{actuator}","{brake}","{doorman-mobile}","{door-afternoon}","{green-knowledge}","{masking-folder}"]},
+    "METHOD":   {"mode": "enumerable",  "valid_operators": ["<equation>","<operator_flow>","<if>","<stat_onto>","<loop>"]},
+    "ACTIVITY": {"mode": "intermedio",  "active_slots": ["UF[H01]","UF[H02]","UF[H03]","UF[H05]","UF[H06]","UF[H24]","UF[H29]","UF[H30]","UF[H42]","UF[H48]","UF[H49]","UF[H51]","UF[H52]","UF[H56]","UF[H57]","UF[H58]","UF[H63]","UF[H64]"]},
+    "SAMU":     {"mode": "alto_nivel",  "valid_subjects": ["@","@trust_matrix","#rise","#set","$mon","$tue","$wed","$thu","$fri","$sat","$sun"]},
+    "STACKING": {"mode": "orientado_objetos", "valid_subjects": ["UF[H01]","UF[H02]","UF[H04]","UF[H23]","UF[H29]","UF[H30]","UF[H48]","UF[H51]","UF[H52]","UF[H57]","UF[H58]"]},
+}
 
 @dataclass
 class ParsedSentence:
@@ -679,60 +694,31 @@ class GrammarValidator:
         self, sentence: str, parsed: ParsedSentence
     ) -> None:
         """
-        Valida reglas de paradigma por biblioteca.
+        Valida reglas de paradigma por biblioteca según PARADIGM_RULES.
         Genera WARNING — no INVALID.
-        El sistema avisa sin bloquear.
-        Referencia: BIBLIO-SOURCES(DIRIME-IMV_PARADIGM).txt
+        Referencia: BIBLIO-SOURCES(GAP_PARADIGMAS_GRAMMAR).txt
         """
-        lib = parsed.library.value
-        rules = PARADIGM_RULES.get(lib)
-        if not rules:
-            return
-
+        lib = parsed.library.value if hasattr(parsed.library,'value') else str(parsed.library)
+        rules = PARADIGM_RULES.get(lib, {})
+        
         # SOCIAL: verbos prohibidos
-        if lib == "SOCIAL" and parsed.verb:
-            forbidden = rules.get("forbidden_verbs", [])
-            if parsed.verb.lower() in forbidden:
-                parsed.warnings.append(
-                    f"Paradigma SOCIAL (declarativo): "
-                    f"verbo '{parsed.verb}' es de ejecución directa. "
-                    f"SOCIAL describe estado — verbos válidos: "
-                    f"lanza, distribuye, filtra, modera, recibe."
-                )
-
-        # CRYPTO: sujeto debe ser asiento canónico
-        if lib == "CRYPTO" and parsed.subject:
-            valid_seats = rules.get("valid_subjects", [])
-            subj_lower = parsed.subject.lower().strip("()")
-            is_seat = any(s in subj_lower for s in valid_seats)
-            if not is_seat:
-                parsed.warnings.append(
-                    f"Paradigma CRYPTO (funcional): "
-                    f"'{parsed.subject}' no es asiento de autoridad. "
-                    f"Válidos: (spark seat) (shield seat) (key seat) "
-                    f"(link seat) (flow seat) (head seat) etc."
-                )
-
-        # GATE: hexagrama canónico
-        if lib == "GATE" and parsed.subject:
-            canonical = rules.get("canonical_hexagrams", [])
-            has_canonical = any(h in parsed.subject for h in canonical)
-            if "UF[" in parsed.subject and not has_canonical:
-                parsed.warnings.append(
-                    f"Paradigma GATE (script): "
-                    f"'{parsed.subject}' no es hexagrama canónico GATE. "
-                    f"Canónicos: UF[H05] espera · UF[H56] tránsito · UF[H06] conflicto."
-                )
-
-        # METHOD: operador del set canónico
-        if lib == "METHOD" and parsed.subject:
-            valid_ops = rules.get("valid_operators", [])
-            if parsed.subject and parsed.subject not in valid_ops:
-                parsed.warnings.append(
-                    f"Paradigma METHOD (enumerable): "
-                    f"'{parsed.subject}' no está en el set canónico. "
-                    f"Válidos: {', '.join(valid_ops)}"
-                )
+        if rules.get("forbidden_verbs") and parsed.verb and parsed.verb.lower() in rules["forbidden_verbs"]:
+            parsed.warnings.append(f"Verbo '{parsed.verb}' prohibido en paradigma {rules['mode']} ({lib})")
+        
+        # CRYPTO: requiere sujeto (seat)
+        if rules.get("requires_seat_subject"):
+            if parsed.subject and not any(s in parsed.subject for s in rules.get("valid_subjects",[])):
+                parsed.warnings.append(f"CRYPTO funcional requiere sujeto (seat) — recibido: '{parsed.subject}'")
+        
+        # GATE: hexagrama válido
+        if rules.get("valid_hexagrams"):
+            if parsed.subject and not any(h in parsed.subject for h in rules["valid_hexagrams"]):
+                parsed.warnings.append(f"GATE requiere hexagrama en {rules['valid_hexagrams']}")
+        
+        # METHOD: operador válido
+        if lib == "METHOD" and rules.get("valid_operators"):
+            if parsed.subject and not any(op in parsed.subject for op in rules["valid_operators"]):
+                parsed.warnings.append(f"METHOD enumerable requiere operador del set")
 
         # ACTIVITY y STACKING: requieren UF[H##]
         if lib in ("ACTIVITY", "STACKING") and parsed.subject:

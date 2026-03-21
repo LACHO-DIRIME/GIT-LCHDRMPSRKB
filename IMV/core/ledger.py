@@ -77,6 +77,11 @@ class HLFabric:
         
         self.db_path = db_path
         self.status = LedgerStatus.ACTIVE
+        
+        # ── spool_tx buffer · $wed 29/04 ─────────────────────────────
+        self._tx_buffer: list[dict] = []
+        self.TX_BUFFER_SIZE = 10  # flush cada 10 TX
+        
         self._init_database()
 
     def _init_database(self) -> None:
@@ -142,27 +147,39 @@ class HLFabric:
         if self.status != LedgerStatus.ACTIVE:
             raise SovereignError(f"Ledger {self.status.value} — no puede registrar transacciones")
         
-        # Calcular hash simple (en producción: hash criptográfico real)
-        import json
-        data_str = json.dumps(transaction.data, sort_keys=True)
-        transaction.hash = f"hash_{hash(data_str)}_{transaction.timestamp}"
-        transaction.verified = True
+        # ── spool_tx buffer logic ─────────────────────────────────────
+        self._tx_buffer.append({
+            "id": transaction.id,
+            "type": transaction.type.value,
+            "timestamp": transaction.timestamp,
+            "data": transaction.data,
+            "hash": transaction.hash,
+            "verified": transaction.verified
+        })
+        
+        # Flush buffer si alcanza tamaño
+        if len(self._tx_buffer) >= self.TX_BUFFER_SIZE:
+            self._flush_tx_buffer()
+        
+        return transaction.id
+    
+    def _flush_tx_buffer(self) -> None:
+        """Flush del buffer de transacciones a SQLite."""
+        if not self._tx_buffer:
+            return
         
         with sqlite3.connect(self.db_path) as conn:
-            conn.execute("""
+            conn.executemany("""
                 INSERT INTO transactions 
                 (id, type, timestamp, data, hash, verified)
                 VALUES (?, ?, ?, ?, ?, ?)
-            """, (
-                transaction.id,
-                transaction.type.value,
-                transaction.timestamp,
-                json.dumps(transaction.data),
-                transaction.hash,
-                transaction.verified
-            ))
+            """, self._tx_buffer)
         
-        return transaction.id
+        self._tx_buffer.clear()
+    
+    def force_flush_tx_buffer(self) -> None:
+        """Force flush manual del buffer."""
+        self._flush_tx_buffer()
 
     def record_grammar_validation(self, parsed: ParsedSentence) -> str:
         """Registra validación gramatical soberana con estado .blue/.green."""
@@ -182,9 +199,19 @@ class HLFabric:
                 "errors": parsed.errors,
                 "warnings": parsed.warnings,
                 "knowledge_state": knowledge_state,
+                "scalar_s": self._get_current_scalar(),
             }
         )
         return self.record_transaction(transaction)
+
+    def _get_current_scalar(self) -> float:
+        try:
+            import sys
+            sys.path.insert(0, str(Path(__file__).parent.parent))
+            from core.samu import get_scalar_s
+            return get_scalar_s()
+        except Exception:
+            return 0.0
 
     def record_crystal(self, crystal_id: str, form: str, content: str, frequency: int = 1) -> str:
         """Registra un cristal STACKING soberano."""
