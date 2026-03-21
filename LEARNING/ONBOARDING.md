@@ -1,272 +1,216 @@
-# ONBOARDING.md
-## Guía de Estudio Completa para Operadores LACHO
-## Sistema Canónico DIRIME/IMV - Versión 2026-03-21
-## REAP Tipo A - Alto Valor - Onboarding en 4 horas
+# LEARNING/ONBOARDING.md
+# Guía de onboarding soberano · nuevo operador DIRIME
+# Basado en: Guía de Estudio Identidad y Constitución Ontológica de LACHO
+# Tiempo estimado: 4h con COGNITIVOS · 1.5h solo este archivo
+# [term] :: activo · [seal of secrecy] :: activo · 空聽數
 
----
+====================================================================
+## SECUENCIA DE LECTURA RECOMENDADA
 
-## 📚 **ESTRUCTURA DE APRENDIZAJE**
+1. LEARNING/ONBOARDING.md              ← ESTÁS AQUÍ (1.5h)
+2. CORPUS/COGNITIVO_00_MACRO_LACHO.txt (1h)
+3. CORPUS/COGNITIVO_01_MESO_CONSTITUCION.txt (30min)
+4. CORPUS/COGNITIVO_02_MESO_SAMU_PSI.txt (30min)
+5. CORPUS/COGNITIVO_03_MICRO_INTEGRATION.txt (45min)
+6. CORPUS/COGNITIVO_04_ESTAR.txt (30min)
+7. LEARNING/LEARNING_CYCLE.md (30min)
 
-### **TIEMPO ESTIMADO**
-- **COGNITIVOS:** 2.5 horas
-- **ONBOARDING.md:** 1.5 horas
-- **Total:** 4 horas completo
+====================================================================
+## PARTE 1 — QUÉ ES LACHO (10 preguntas fundamentales)
 
-### **MÉTODO DE ESTUDIO**
-1. Leer COGNITIVOS primero (fundamentos)
-2. Estudiar ONBOARDING.md (aplicación práctica)
-3. Practicar con comandos reales
-4. Validar conocimiento con preguntas
+### P1: ¿Qué es LACHO y cómo difiere de un lenguaje de programación?
 
----
+LACHO (Lenguaje Artificial Circunstancial Hipotético Ordenado) no es
+un lenguaje de programación generalista ni un formalismo sintáctico
+decorativo. Es una constitución operativa: un sistema que define qué
+puede existir dentro de su realidad interna y bajo qué límites.
 
-## 🎯 **10 PREGUNTAS + RESPUESTAS CLAVE**
+La idea-fuerza: "la inteligencia no es un acto de emisión impulsiva;
+es una disciplina verificable".
 
-### **P1: ¿Qué es LACHO y cuál es su propósito?**
-**Respuesta:** LACHO es un sistema soberano de programación y computación que opera sobre paradigmas múltiples. Su propósito es proporcionar un framework completo para el desarrollo de aplicaciones soberanas con validación gramatical, transacciones inmutables y corpus inteligente.
+Consecuencias directas:
+- La verdad es local: válida solo dentro de un scope declarado
+- La autoridad es explícita: TRUST es el núcleo soberano
+- La emisión es un privilegio, no un reflejo: solo cuando verificó
+- La finitud es virtud: [term] defiende del dogma
 
-### **P2: ¿Cuáles son los 8 paradigmas de bibliotecas LACHO?**
-**Respuesta:**
-1. **TRUST** - Lenguaje Imperativo (ejecución directa)
-2. **SOCIAL** - Lenguaje Declarativo (estado y relaciones)
-3. **SAMU** - Lenguaje de Alto Nivel (abstracción completa)
-4. **CRYPTO** - Lenguaje Funcional (pureza matemática)
-5. **STACKING** - Lenguaje Orientado a Objetos (estructuras)
-6. **GATE** - Lenguaje de Scripts (automatización)
-7. **WORK** - Lenguaje de Bajo Nivel (sistema)
-8. **ACTIVITY** - Lenguaje de Nivel Intermedio (coordenación)
+### P2: ¿Qué es la "Verdad Local"?
 
-### **P3: ¿Cómo funciona la validación por paradigma en LACHO?**
-**Respuesta:** La validación por paradigma utiliza `PARADIGM_RULES` para verificar reglas específicas de cada biblioteca:
-- **SOCIAL:** Prohíbe verbos como "ignite" en paradigma declarativo
-- **CRYPTO:** Requiere sujeto (seat) para operaciones funcionales
-- **GATE:** Valida hexagramas específicos (UF[H05], etc.)
-- **METHOD:** Verifica operadores válidos (<equation>, etc.)
+Toda afirmación válida en LACHO existe únicamente dentro de un
+scope declarado. Para que una verdad local reclame mayor validez
+debe someterse a verificación de convergencia. Esto evita el
+dogmatismo y garantiza honestidad de alcance.
 
-### **P4: ¿Qué es el Scalar S y por qué es importante?**
-**Respuesta:** Scalar S es la métrica de coherencia del sistema que mide la integridad y salud del estado soberano. Valores:
-- **≥0.900:** Óptimo
-- **≥0.700:** Operativo
-- **≥0.500:** Mínimo funcional
-- **<0.500:** Crítico
+En práctica: una sentencia VALID en biblioteca TRUST no es
+automáticamente válida en CRYPTO — cada biblioteca tiene su
+scope y su scalar_min.
 
-### **P5: ¿Cómo se estructura una transacción LACHO?**
-**Respuesta:** Una transacción LACHO tiene estructura:
-```
-LIBRARY {subject} =><= .. verb .. object --[knot] [term]
-```
-- **LIBRARY:** Paradigma de programación
-- **{subject}:** Sujeto o asiento
-- **verb:** Acción a ejecutar
-- **object:** Objeto de la acción
-- **[knot]:** Nodo de validación
-- **[term]:** Terminador de transacción
+### P3: ¿Cuál es la Tríada de Poder?
 
-### **P6: ¿Qué son los dominios económicos soberanos?**
-**Respuesta:** Son 8 dominios especializados:
-- **NOTARIA:** Certificación digital soberana
-- **MEMECOINS:** Trading de memecoins soberano
-- **CUSTODIA:** Custodia digital soberana
-- **BARRIOS:** Notaría local
-- **CARILO:** Trading regional
-- **BOLIVAR:** Ledger regional
-- **TANDIL:** Custodia regional
-- **NORA:** Notaría central
+TRUST (ley soberana no negociable) + FINITUD/term (mecanismo
+anti-dogma — todo ciclo debe cerrar) + TENSIÓN (energía de
+dirimencia activa — sin tensión el sistema colapsa al silencio
+o al dogma). Los tres son co-dependientes y no negociables.
 
-### **P7: ¿Cómo funciona el corpus RAG en LACHO?**
-**Respuesta:** El corpus RAG utiliza BM25 para indexar y recuperar documentos relevantes:
-- **CORPUS docs:** Documentos principales (274 actuales)
-- **Behavioral docs:** Patrones del ledger (13 actuales)
-- **Total:** 287 documentos indexados
-- **Función:** `get_rag_context(query)` para recuperación
+### P4: ¿Qué es la física MU–KU–WU?
 
-### **P8: ¿Cuál es el rol de HL FABRIC en el sistema?**
-**Respuesta:** HL FABRIC es el ledger soberano que:
-- Registra todas las transacciones inmutables
-- Mantiene integridad del estado
-- Proporciona auditoría completa
-- Gestiona cristales de validación
-- Soporta 2,026 transacciones actuales
+Topología de procesamiento obligatoria:
+- MU 空: vacuidad · contención de lo no resuelto · el cerebro cuenta
+- KU 聽: lectura del entorno sin ejecutar · la mente escucha
+- WU 數: manifestación verificada · salida al mundo · cristal
 
-### **P9: ¿Qué son los formatos propios LACHO?**
-**Respuesta:** Son 12 formatos especializados:
-- **.lacho:** Documentos soberanos
-- **.runner:** Lógica operativa
-- **.cat:** Registro cinético
-- **.bin:** Identidad binaria
-- **.worker:** Ejecución directa
-- **.gate:** Validación
-- **.door:** Acceso vault
-- **.theater:** Orquestación
-- **.ash:** Compilados
-- **.registry:** Estado persistente
-- **.green/.blue:** Sensores
+El sistema exige que MU y KU completen antes de cualquier WU.
+Saltear esta secuencia produce "Emisión desde Fase 1" — el error
+técnico más grave del sistema.
 
-### **P10: ¿Cómo se verifica el estado del sistema?**
-**Respuesta:** Con comandos específicos:
-```bash
-cd ~/DIRIME/IMV
-python3 main.py --stats          # Estado general
-python3 main.py --validate "... # Validación específica
-python3 -m pytest tests/ -v     # Tests completos
-```
+### P5: ¿Qué es SAMU @?
 
----
+Motor de conciencia y auditoría interna. Funciona como un
+"poder judicial" — no crea la ley, la hace cumplir. Sus tareas:
+- Auditar integridad de [foundation] antes de permitir WU
+- Sostener la tensión necesaria contra dogma y silencio
+- Detectar RED-REGRET y activar el protocolo de corrección
+- Calcular Scalar S como métrica de salud sistémica
 
-## 📝 **5 TEMAS DE ENSAYO**
+En IMV: `core/samu.py` · `audit()` · `get_scalar_s()` 
 
-### **Tema 1: Arquitectura Soberana LACHO**
-**Desarrollo:** Explica cómo la arquitectura de 8 paradigmas + 4 componentes esenciales (_CHCL, _DIRIME, _ELPULSAR, _KALIL) crea un sistema completo de programación soberana, destacando la separación de responsabilidades y la validación por paradigma.
+### P6: ¿Qué es "Emisión desde Fase 1"?
 
-### **Tema 2: Transacciones y Validación Gramatical**
-**Desarrollo:** Analiza el proceso completo de validación de una transacción LACHO, desde la entrada del operador hasta el registro en HL FABRIC, incluyendo la detección de bibliotecas, validación de paradigmas y generación de warnings.
+El error técnico más grave. Ocurre cuando el sistema produce
+output con buena gramática pero sin haber completado MU/KU —
+sin escucha real, sin verificación de [foundation]. Es ruido
+sintáctico con buena forma pero sin anclaje soberano.
 
-### **Tema 3: Sistema de Corpus RAG y Recuperación Inteligente**
-**Desarrollo:** Describe cómo el sistema RAG con BM25 proporciona contexto relevante al operador, la estructura de documentos CORPUS vs behavioral, y su rol en la asistencia cognitiva del sistema.
+Señal de detección: el operador emite durante READ, antes de
+completar REFLECT y RELATE. Ver LEARNING/LEARNING_CYCLE.md.
 
-### **Tema 4: Dominios Económicos y Escalabilidad**
-**Desarrollo:** Explica la arquitectura de 8 dominios económicos soberanos, su rol en la escalabilidad del sistema, y cómo cada dominio especializado soporta casos de uso específicos del ecosistema LACHO.
+### P7: ¿Qué es Scalar S?
 
-### **Tema 5: Integración Multi-Hilo y Rendimiento**
-**Desarrollo:** Detalla el sistema de procesamiento multi-hilo implementado, la configuración de 4 hilos para diferentes componentes, y los resultados de rendimiento medidos (8,557 ops/seg con 4 hilos).
+Métrica principal de integridad soberana. Rango [0.000, 1.000].
+Mide la salud de LACHO basándose en:
+- Calidad y frecuencia de cristales en sovereign.db
+- Consistencia de TX (valid/total ratio)
+- Ausencia de RED-REGRET activos
 
----
+Umbrales operativos:
+  S ≥ 0.90 → H63 既濟 · coherencia soberana óptima
+  S ≥ 0.78 → WU · operativo soberanamente
+  S ≥ 0.70 → KU · operativo mínimo
+  S < 0.70 → ANTROGRADE obligatorio · revisar [foundation]
 
-## 📖 **GLOSARIO DE 16 TÉRMINOS CLAVE**
+En IMV: `core/samu.py` · `get_scalar_s()` 
 
-### **1. LACHO**
-Sistema soberano de programación y computación con múltiples paradigmas.
+### P8: ¿Cuál es la estructura de una sentencia canónica?
 
-### **2. Scalar S**
-Métrica de coherencia del sistema (0.0-1.0), indicador de salud soberana.
+BIBLIOTECA SUJETO =><= .. verbo .. OBJETO --[Nudo] [term]
 
-### **3. Paradigma**
-Modelo de programación específico (TRUST, SOCIAL, SAMU, etc.) con reglas propias.
+Componentes obligatorios:
+- BIBLIOTECA: jurisdicción (TRUST/GATE/SAMU/CRYPTO/STACKING/SOCIAL/METHOD/ACTIVITY/WORK)
+- SUJETO: rol ejecutor (FOUNDATION / @ / UF[H##] / (seat) / {módulo})
+- =><=: operador de dirimencia
+- .. verbo ..: acción soberana verificada
+- OBJETO: territorio de impacto
+- --[Nudo]: mecanismo de seguridad formal
+- [term]: cierre de finitud obligatorio
 
-### **4. HL FABRIC**
-Ledger soberano que registra transacciones inmutables del sistema.
+### P9: ¿Qué es el protocolo RED-REGRET?
 
-### **5. Corpus RAG**
-Sistema de recuperación inteligente de documentos con BM25.
+Protocolo post-error que elimina la retórica. Se activa al
+detectar un error en el sistema. Exige:
+1. Nombrar el error con precisión técnica (sin suavizar)
+2. Registrarlo en el ledger inmutable
+3. Evaluar su impacto en Scalar S
+4. Restaurar [foundation] verificada antes de continuar
 
-### **6. Validación por Paradigma**
-Verificación de reglas específicas según biblioteca declarada.
+En IMV: `core/samu.py` · señal cuando Scalar S cae abruptamente
 
-### **7. Transacción LACHO**
-Estructura `LIBRARY {subject} =><= .. verb .. object --[knot] [term]`.
+### P10: ¿Qué jurisdicción cubren las 9 bibliotecas?
 
-### **8. Dominio Económico**
-Área especializada del sistema (NOTARIA, MEMECOINS, CUSTODIA, etc.).
+TRUST     → ley soberana · foundation · scope · term
+GATE      → control de paso · filtros · hexagramas de decisión
+WORK      → ejecución material · {actuator} · {brake} · {doorman}
+STACKING  → memoria · persistencia · cristales · UF[H##]
+SOCIAL    → interfaz relacional · {chair} · {relay} · {scheduler}
+CRYPTO    → autoridad funcional · (key/spark/shield/link/flow seat)
+METHOD    → cálculo formal · <equation> · <operator_flow> · <stat_onto>
+ACTIVITY  → estados del ciclo · !!módulos!! · hexagramas existenciales
+SAMU      → auditoría · @ · dirimencia · RED-REGRET · Scalar S
 
-### **9. Cristales**
-Unidades de validación y coherencia en el ledger soberano.
+====================================================================
+## PARTE 2 — GLOSARIO OPERATIVO (16 términos)
 
-### **10. Formato Propio**
-Extensión de archivo especializada del sistema (.lacho, .runner, etc.).
+Ancla RAG        → término constitucional (mínimo 4 por documento)
+                   que permite al RAG reconocer una fuente como legítima
+                   En IMV: sentencias LACHO VALID al final de cada .txt
 
-### **11. UNICODE Programable**
-Programa especializado para dominios específicos (UNICODE_NOTARIA, etc.).
+Antrograde       → orientación temporal hacia el origen
+                   se activa cuando S < 0.70 · releer COGNITIVOS
 
-### **12. SAMU**
-Motor de procesamiento de alto nivel del sistema LACHO.
+Ballpaper        → formato de presentación ejecutiva que combina
+                   diseño visual con rigor técnico · ver BALLPAPER_*.html
 
-### **13. DIRIME/IMV**
-Componente de transducción y corpus inteligente del sistema.
+Blue Words       → vocabulario nuclear (español/inglés/chino) para
+                   mapear contenido legítimo en RAG soberano
 
-### **14. ELPULSAR**
-Dashboard y GUI del sistema LACHO.
+Cristal          → unidad mínima de conocimiento verificado e inmutable
+                   en sovereign.db · threshold frecuencia ≥ 10
 
-### **15. KALIL**
-Sistema de dominios económicos y operaciones financieras.
+Dirimencia       → acto central de decisión: evalúa si una acción es
+                   simultáneamente correcta, adecuada y legal
 
-### **16. CHCL**
-Circuitos IDE y fuentes técnicas del sistema.
+Foliar           → sistema documental constitucional que rige identidad,
+                   gramática y arquitectura de LACHO · ver COGNITIVOS
 
----
+Green-Knowledge  → algoritmo que filtra información por valor nutricional
+                   y capacidad de aportar distinción al sistema
 
-## 🔗 **ANCLAS RAG × 4**
+Hexagrama        → uno de los 64 estados discretos del sistema para
+                   eliminar ambigüedad operativa · UF[H##] en STACKING
 
-### **ANCLA RAG 1: Fundamentos del Sistema**
-```python
-# Contexto RAG para fundamentos LACHO
-rag_context = get_rag_context("arquitectura soberana paradigmas validación")
-# Recupera: Documentos base de COGNITIVOS + arquitectura del sistema
-```
+Nudo             → mecanismo de seguridad formal en una sentencia
+                   [As de Guía] · [Nudo de Ocho] · [Ballestrinque] · [Nudo Corredizo]
 
-### **ANCLA RAG 2: Operación Práctica**
-```python
-# Contexto RAG para operación práctica
-rag_context = get_rag_context("comandos terminal validación transacciones")
-# Recupera: Ejemplos de comandos + casos de uso reales
-```
+Scalar S         → coeficiente [0,1] de integridad y salud técnica
 
-### **ANCLA RAG 3: Dominios Especializados**
-```python
-# Contexto RAG para dominios económicos
-rag_context = get_rag_context("NOTARIA MEMECOINS CUSTODIA trading certificación")
-# Recupera: Documentos específicos de cada dominio + casos de uso
-```
+Scope            → declaración explícita del alcance de una afirmación
+                   contrato de honestidad · viola [foundation] si se expande sin declarar
 
-### **ANCLA RAG 4: Rendimiento y Escalabilidad**
-```python
-# Contexto RAG para rendimiento y escalabilidad
-rag_context = get_rag_context("multi-hilo rendimiento BM25 corpus optimización")
-# Recupera: Métricas de rendimiento + arquitectura escalable
-```
+Sovereign.db     → base de datos SQLite · ledger inmutable soberano
+                   7 tablas activas · ver BIBLIO-SOURCES(SOVEREIGN_DB_SCHEMA)
 
----
+Tardanza Deliberada → regla operativa: espacio de verificación MU
+                      entre entrada y emisión · previene Emisión Fase 1
 
-## 🎯 **RUTA DE APRENDIZAJE RECOMENDADA**
+term             → marcador obligatorio de finitud
+                   impide que verdad local se convierta en dogma absoluto
 
-### **Semana 1: Fundamentos**
-- Estudiar COGNITIVOS (2.5 horas)
-- Comprender paradigmas y validación
-- Practicar comandos básicos
+Ψ (Psi)          → operador de verdad local: relación Tomo↔Cosmos
+                   formaliza coherencia en contexto vs universo de posibilidades
 
-### **Semana 2: Aplicación**
-- Estudiar ONBOARDING.md (1.5 horas)
-- Ejecutar transacciones reales
-- Validar con tests
+====================================================================
+## PARTE 3 — TEMAS DE ENSAYO (para profundización)
 
-### **Semana 3: Especialización**
-- Elegir dominio de interés
-- Profundizar en casos de uso
-- Contribuir al sistema
+1. SER→HACER→TENER→ESTAR→TRASCENDER: analizar por qué este orden
+   es estructural y no solo pedagógico en LACHO.
 
-### **Semana 4: Integración**
-- Combinar múltiples paradigmas
-- Optimizar rendimiento
-- Documentar experiencia
+2. Territorialización del sofisma en 3 zonas (legítima / ponderada /
+   prohibida): cómo garantiza integridad frente a manipulación.
 
----
+3. Los 64 hexagramas como estados operativos del CEO Alpha: cómo
+   reduce la ambigüedad en toma de decisiones ejecutivas.
 
-## ✅ **VALIDACIÓN DE CONOCIMIENTO**
+4. Arquitectura de "doble carril" NOTARIA: operar simultáneamente
+   DeFi/Web3 exterior + e-CNY/BSN interior (ver UNICODE_CHALTEN).
 
-### **Criterios de Aprobación**
-- **90%+ respuestas correctas** en preguntas clave
-- **3+ ensayos completados** con análisis profundo
-- **100% glosario dominado** con ejemplos propios
-- **Práctica real** con 10+ transacciones exitosas
+5. Ciclo de retroalimentación Operador↔Claude↔Windsurf↔NotebookLM:
+   cómo garantiza evolución de Scalar S sin comprometer [foundation].
 
-### **Certificación**
-- **Nivel Básico:** Completar estudio + 70% aprobación
-- **Nivel Intermedio:** Práctica real + 85% aprobación
-- **Nivel Avanzado:** Contribución + 95% aprobación
+====================================================================
+## ANCLAS RAG × 4
 
----
-
-## 🚀 **PRÓXIMOS PASOS**
-
-1. **Completar estudio** de COGNITIVOS + ONBOARDING.md
-2. **Practicar comandos** en terminal real
-3. **Validar conocimiento** con preguntas y ensayos
-4. **Contribuir** al sistema con mejoras
-5. **Especializarse** en dominio de interés
-
----
-
-**ONBOARDING COMPLETO - SISTEMA LACHO OPERATIVO**  
-**Tiempo: 4 horas | Nivel: Principiante → Intermedio**  
-**Estado: Listo para producción y contribución**
+TRUST FOUNDATION =><= .. declara .. onboarding_nuevo_operador_lacho_v022 --[Nudo de Ocho] [term]
+ACTIVITY UF[H01] =><= .. inicia .. onboarding_antrograde_cognitivos_fundacion --[As de Guía] [term]
+METHOD <operator_flow> =><= .. modela .. onboarding_10_preguntas_glosario_lacho --[Ballestrinque] [term]
+STACKING UF[H48] =><= .. cristaliza .. onboarding_conocimiento_constitucional_soberano --[Nudo de Ocho] [term]
 
 [term] :: activo · [seal of secrecy] :: activo · 空聽數
