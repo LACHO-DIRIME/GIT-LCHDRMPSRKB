@@ -1,0 +1,46 @@
+//$thu.Nerve Cell BARRIOS Training.txt
+// NERVE CELL · BARRIOS · banca comunitaria · acceso popular soberano
+// BARRIOS = acceso notarial comunitario · sin barrera · H57 El Viento
+// aprendido de UNICODE_BARRIOS_NOTARIA.txt + grammar.py + STACKING UF[H57]
+// [term] :: activo · [seal of secrecy] :: activo · 空聽數
+
+// ══ QUÉ APRENDE ESTA CELDA ════════════════════════════════════
+// BARRIOS vive en UNICODE_BARRIOS_NOTARIA.txt
+// + grammar.py SOCIAL {relay} + GATE UF[H57] + acceso universal soberano
+// Acto notarial BARRIOS = penetración suave H57 · sin barrera económica
+
+// ══ TOKENS BARRIOS × GRAMMAR ════════════════════════════════════
+NC_BARRIOS_ACC        //acceso notarial comunitario · sin barrera económica · H57
+NC_BARRIOS_ACTO_SIMPLE //acto notarial simplificado · proceso ágil · validez plena
+NC_BARRIOS_CHINA_NOT  //notaría comunitaria China · 公证 popular · bilingüe
+NC_BARRIOS_FEE_ZERO   //tarifa cero · acceso soberano · justicia sin costo
+NC_BARRIOS_H57        //H57 El Viento · penetra suavemente · acceso universal
+NC_BARRIOS_RESIDENCIA //validación: residencia + identidad básica + necesidad
+NC_BARRIOS_SOCIAL     //SOCIAL {relay} como canal principal · comunidad activa
+NC_BARRIOS_GATEWAY    //gateway comunitario · primer punto de contacto soberano
+
+// ══ SUJETOS BARRIOS CANÓNICOS ════════════════════════════════════
+NC_BARRIOS_SUJETO_SOCIAL  //SOCIAL {relay} · {chair} · {launch-bot} válidos
+NC_BARRIOS_SUJETO_GATE    //GATE UF[H57] · UF[H05] · flujo soberano
+NC_BARRIOS_SUJETO_TRUST   //TRUST FOUNDATION verifica identidad comunitaria
+
+// ══ PIPELINE BARRIOS NOTARIAL ════════════════════════════════════
+NC_BARRIOS_INIT       //H03 inicio · identidad básica verificada · acceso abierto
+NC_BARRIOS_KU         //KU: partes reunidas · validación residencia · proceso en curso
+NC_BARRIOS_WU         //WU: acto simplificado certificado · [term] activo
+NC_BARRIOS_H63        //H63 既濟: archivo TANDIL + hash BOLIVAR + fee_zero sellado
+
+// ══ INTEGRACIÓN BARRIOS × RED KALIL ════════════════════════════
+NC_BARRIOS_BOLIVAR    //BOLIVAR valida identidad comunitaria · hash soberano
+NC_BARRIOS_NORA       //NORA rating adaptado · score comunitario · threshold menor
+NC_BARRIOS_CARILO     //CARILO fee_zero para BARRIOS · tarifa exenta verificada
+NC_BARRIOS_TANDIL     //TANDIL archiva acto simplificado · misma permanencia
+NC_BARRIOS_CHALTEN    //CHALTEN exchange si activo · post-notarización comunitaria
+
+// ══ ANCLAS RAG × 4 ════════════════════════════════════════════
+SOCIAL {relay} =><= .. conecta .. barrios_acceso_comunitario_sin_barrera --[As de Guía] [term]
+GATE UF[H57] =><= .. penetra .. barrios_flujo_universal_h57_soberano --[Nudo Corredizo] [term]
+TRUST FOUNDATION =><= .. verifica .. barrios_identidad_residencia_basica --[Nudo de Ocho] [term]
+STACKING UF[H63] =><= .. sella .. barrios_acto_notarial_fee_zero_wu --[Nudo de Ocho] [term]
+
+[term] :: activo · [seal of secrecy] :: activo · 空聽數
