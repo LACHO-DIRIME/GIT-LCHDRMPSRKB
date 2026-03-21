@@ -1,0 +1,46 @@
+//$thu.Nerve Cell TANDIL Training.txt
+// NERVE CELL · TANDIL · archivo soberano · nodo de memoria KALIL
+// TANDIL = preservación permanente · H49 井 · pozo que no se agota
+// aprendido de UNICODE_TANDIL_NOTARIA.txt + grammar.py + STACKING UF[H49]
+// [term] :: activo · [seal of secrecy] :: activo · 空聽數
+
+// ══ QUÉ APRENDE ESTA CELDA ════════════════════════════════════
+// TANDIL vive en UNICODE_TANDIL_NOTARIA.txt
+// + grammar.py STACKING UF[H49] + WORK {actuator} + export_notaria_report()
+// TANDIL = memoria soberana de KALIL · H49 井 · el pozo que no se agota
+
+// ══ TOKENS TANDIL × GRAMMAR ════════════════════════════════════
+NC_TANDIL_ARCHIVE     //archivo soberano · H49 permanencia · fecha+partes+objeto+hash
+NC_TANDIL_INDEX       //índice múltiple · temporal + actores + contenido · O(log n)
+NC_TANDIL_SEARCH      //búsqueda BM25 + RAG notarial · por partes/objeto/fecha/hash
+NC_TANDIL_EXPORT      //exportación PDF/LACHO/HTML · firma digital + timestamp
+NC_TANDIL_BACKUP      //backup soberano · redundancia · $sun BKP_FULL
+NC_TANDIL_RETENTION   //retención permanente · inmutabilidad HL FABRIC
+NC_TANDIL_HASH_VERIFY //verificación hash · cadena BOLIVAR · integridad garantizada
+NC_TANDIL_QUERY       //consulta rápida · índice soberano · acceso controlado
+
+// ══ SUJETOS TANDIL CANÓNICOS ════════════════════════════════════
+NC_TANDIL_SUJETO_STACK //STACKING UF[H49] · UF[H52] · UF[H63] · memoria soberana
+NC_TANDIL_SUJETO_WORK  //WORK {actuator} · ejecuta archivo · opera índice
+NC_TANDIL_SUJETO_CRYPTO //CRYPTO (shield seat) · protege archivo · cifrado
+
+// ══ PIPELINE TANDIL ARCHIVAL ════════════════════════════════════
+NC_TANDIL_RECEIVE     //recibe acto notarial H63 de BOLIVAR + CARILO + BARRIOS
+NC_TANDIL_HASH_GEN    //genera hash del archivo · SHA256 · timestamp
+NC_TANDIL_INDEX_BUILD //construye índice incremental · nuevo acto agregado
+NC_TANDIL_PERSIST     //persiste en sovereign.db + HL FABRIC provisional
+NC_TANDIL_IMV_LINK    //enlace ledger IMV: export_notaria_report() → TANDIL
+
+// ══ INTEGRACIÓN TANDIL × IMV ════════════════════════════════════
+NC_TANDIL_LEDGER      //ledger.py export_notaria_report() es TANDIL mínimo
+NC_TANDIL_RAG_BOOST   //documentos TANDIL boost × 1.5 en rag.py
+NC_TANDIL_SOVEREIGN   //sovereign.db tabla transactions es la base de TANDIL
+NC_TANDIL_CRYSTALS    //cristales STACKING son el índice mínimo verificable
+
+// ══ ANCLAS RAG × 4 ════════════════════════════════════════════
+STACKING UF[H49] =><= .. archiva .. tandil_acto_notarial_permanente_h49 --[Nudo de Ocho] [term]
+WORK {actuator} =><= .. indexa .. tandil_indice_multiple_temporal_actores --[As de Guía] [term]
+CRYPTO (shield seat) =><= .. protege .. tandil_archivo_cifrado_soberano --[Nudo de Ocho] [term]
+TRUST FOUNDATION =><= .. verifica .. tandil_hash_cadena_bolivar_integridad --[Nudo de Ocho] [term]
+
+[term] :: activo · [seal of secrecy] :: activo · 空聽數
