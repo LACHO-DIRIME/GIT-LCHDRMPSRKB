@@ -14,6 +14,9 @@ def execute_grammar_purge():
     base_path = Path("/media/Personal/PLANERAI/DIRIME")
     lacho_dir = base_path / "LACHO_FILES"
     
+    # Excluir propio path del scope de reemplazo
+    EXCLUDED_FILES = [Path(__file__).name]
+    
     # Directiva 4 y 6: Monitoreo de RAM en hardware de 12GB
     proc = psutil.Process()
     
@@ -25,6 +28,11 @@ def execute_grammar_purge():
     try:
         print(f"Iniciando purga en: {lacho_dir}")
         for lacho_file in lacho_dir.glob("*.lacho"):
+            # Excluir archivos en la lista de exclusiones
+            if lacho_file.name in EXCLUDED_FILES:
+                print(f"Excluyendo: {lacho_file.name}")
+                continue
+                
             content = lacho_file.read_text(encoding="utf-8")
             if DEPRECATED in content:
                 # Aplicando reemplazo gramatical soberano
