@@ -1,301 +1,146 @@
-BIBLIO-SOURCES(SOVEREIGN_DB_SCHEMA).txt
-Documentación de las 7 tablas principales de sovereign.db
-Extraído el 2026-03-21 desde sistema DIRIME/IMV operativo
-GAP_02 real verificado - RAG puede consultar su propio ledger
+# BIBLIO-SOURCES(SOVEREIGN_DB_SCHEMA).txt
+# HL FABRIC SQLite provisional — esquema de 7 tablas soberanas
+# Referencia directa: IMV/core/ledger.py · HLFabric._init_database()
+# [term] :: activo · [seal of secrecy] :: activo · 空聽數
 
 ====================================================================
-## TABLA 1: TRANSACTIONS
-====================================================================
-PROPÓSITO: Ledger soberano de todas las transacciones inmutables
-REGISTROS: 2,026 transacciones registradas
+## 1. TABLA: transactions — ledger principal soberano
 
 SCHEMA:
-┌─────────────────────────────────────────────────────────────┐
-│ id TEXT (PRIMARY KEY)                                       │
-│   Identificador único de la transacción                    │
-│ type TEXT (NOT NULL)                                        │
-│   Tipo de transacción (NOTARIA_ACT, VALIDATION, etc.)      │
-│ timestamp REAL (NOT NULL)                                   │
-│   Timestamp Unix de creación                                │
-│ data TEXT (NOT NULL)                                        │
-│   Payload JSON con datos completos de la transacción        │
-│ hash TEXT                                                    │
-│   Hash criptográfico de integridad                         │
-│ verified BOOLEAN (DEFAULT FALSE)                            │
-│   Estado de verificación criptográfica                      │
-│ created_at REAL (DEFAULT strftime('%s', 'now'))            │
-│   Timestamp automático de creación                          │
-└─────────────────────────────────────────────────────────────┘
+  id        TEXT PRIMARY KEY  → UUID único por transacción
+  type      TEXT NOT NULL     → TransactionType enum value
+  timestamp REAL NOT NULL     → time.time() Unix epoch
+  data      TEXT NOT NULL     → JSON serializado · ParsedSentence + metadata
+  hash      TEXT              → hash_{hash(data)}_{timestamp}
+  verified  BOOLEAN DEFAULT FALSE
+  created_at REAL DEFAULT strftime('%s','now')
 
-RELACIONES:
-- Es la tabla central del ledger soberano
-- Todas las demás tablas referencian transacciones
-- Contiene el historial completo del sistema
+PROPÓSITO: registro inmutable de toda operación soberana
+REGISTROS HOY: 2026 rows
+CAMPOS CLAVE EN data JSON:
+  sentence · result · library · verb · knot · term_present
+  errors · warnings · scalar_s · tipo (NOTARIA_ACT si aplica)
+REFERENCIA: ledger.py record_grammar_validation() · record_notaria_act()
+
+LACHO: TRUST FOUNDATION =><= .. verifica .. transactions_ledger_inmutable --[Nudo de Ocho] [term]
 
 ====================================================================
-## TABLA 2: CRYSTALS
-====================================================================
-PROPÓSITO: Unidades de coherencia y validación del sistema
-REGISTROS: 60 cristales activos
+## 2. TABLA: crystals — cristales STACKING soberanos
 
 SCHEMA:
-┌─────────────────────────────────────────────────────────────┐
-│ id TEXT (PRIMARY KEY)                                       │
-│   Identificador único del cristal                          │
-│ form TEXT (NOT NULL)                                        │
-│   Forma/estructura del cristal                             │
-│ content TEXT (NOT NULL)                                     │
-│   Contenido y datos del cristal                            │
-│ frequency INTEGER (DEFAULT 1)                              │
-│   Frecuencia de resonancia                                  │
-│ created_at REAL (DEFAULT strftime('%s', 'now'))            │
-│   Timestamp de creación                                     │
-│ tomo_id TEXT                                                │
-│   Referencia a tomo/volumen                                 │
-│ cluster TEXT                                                │
-│   Agrupación por características                            │
-└─────────────────────────────────────────────────────────────┘
+  id        TEXT PRIMARY KEY  → crystal_id soberano
+  form      TEXT              → "verbo_soberano:{verb}" o forma canónica
+  content   TEXT              → descripción del cristal
+  frequency INTEGER           → usos VALID acumulados · umbral=10
+  created_at REAL
+  tomo_id   TEXT
+  cluster   TEXT
 
-RELACIONES:
-- Vinculado a transacciones de validación
-- Representa unidades de coherencia del sistema
-- Agrupado por clusters temáticos
+PROPÓSITO: conocimiento cristalizado · Behavioral RAG base
+REGISTROS HOY: 60 cristales activos
+THRESHOLD: frecuencia ≥ 10 → cristal activo en suggest_from_history()
+REFERENCIA: ledger.py auto_crystallize() · export_crystals_report()
+
+LACHO: STACKING UF[H48] =><= .. cristaliza .. crystals_behavioral_rag_umbral_10 --[Nudo de Ocho] [term]
 
 ====================================================================
-## TABLA 3: FABRIC_STATE
-====================================================================
-PROPÓSITO: Estado actual del fabric de sistema
-REGISTROS: 3 entradas de estado
+## 3. TABLA: fabric_state — estado soberano POKE/PEEK
 
 SCHEMA:
-┌─────────────────────────────────────────────────────────────┐
-│ key TEXT (PRIMARY KEY)                                       │
-│   Clave del estado (ej: 'system_status', 'scalar_s')        │
-│ value TEXT (NOT NULL)                                       │
-│   Valor actual del estado                                   │
-│ tomo_id TEXT                                                │
-│   Referencia a tomo/volumen                                 │
-│ cluster TEXT                                                │
-│   Agrupación por dominio                                    │
-│ tx_id TEXT (NOT NULL)                                       │
-│   Transacción que modificó este estado                      │
-│ timestamp REAL (NOT NULL)                                   │
-│   Timestamp de la última modificación                        │
-│ operation TEXT (DEFAULT 'POKE')                             │
-│   Tipo de operación (SET, POKE, DELETE)                    │
-└─────────────────────────────────────────────────────────────┘
+  key       TEXT PRIMARY KEY  → clave soberana (ej: "autoresearch:last_run")
+  value     TEXT              → valor serializado
+  tomo_id   TEXT
+  cluster   TEXT DEFAULT '#CORE'  → agrupación soberana
+  tx_id     TEXT
+  timestamp REAL
+  operation TEXT DEFAULT 'POKE'
 
-RELACIONES:
-- Referencia a transactions via tx_id
-- Almacena estado global del sistema
-- Actualizado por cada transacción relevante
+PROPÓSITO: memoria persistente entre sesiones · poke_peek.py
+REGISTROS HOY: 3 entradas activas
+REFERENCIA: DIRIME_v2/fabric/poke_peek.py · poke() · peek()
+
+LACHO: STACKING UF[H52] =><= .. persiste .. fabric_state_poke_peek_soberano --[Nudo de Ocho] [term]
 
 ====================================================================
-## TABLA 4: FABRIC_LOG
-====================================================================
-PROPÓSITO: Historial de cambios en el fabric state
-REGISTROS: 10 entradas de log
+## 4. TABLA: fabric_log — log de operaciones fabric
 
 SCHEMA:
-┌─────────────────────────────────────────────────────────────┐
-│ id TEXT (PRIMARY KEY)                                       │
-│   Identificador único del log                               │
-│ operation TEXT (NOT NULL)                                   │
-│   Tipo de operación (SET, DELETE, UPDATE)                   │
-│ key TEXT (NOT NULL)                                          │
-│   Clave del estado modificado                               │
-│ value TEXT                                                   │
-│   Valor anterior o nuevo                                    │
-│ tomo_id TEXT                                                │
-│   Referencia a tomo/volumen                                 │
-│ cluster TEXT                                                │
-│   Agrupación por dominio                                    │
-│ timestamp REAL (NOT NULL)                                   │
-│   Timestamp del cambio                                      │
-│ status TEXT (DEFAULT 'OK')                                  │
-│   Estado de la operación                                    │
-└─────────────────────────────────────────────────────────────┘
+  id        TEXT PRIMARY KEY
+  operation TEXT NOT NULL     → tipo de operación (poke/peek/delete)
+  key       TEXT NOT NULL
+  value     TEXT
+  tomo_id   TEXT
+  cluster   TEXT
+  timestamp REAL NOT NULL
+  status    TEXT DEFAULT 'OK'
 
-RELACIONES:
-- Historial auditado de fabric_state
-- Permite reconstruir estado en cualquier punto
-- Vinculado a operaciones del sistema
+PROPÓSITO: trazabilidad de operaciones fabric · auditoría SAMU
+REGISTROS HOY: 10 entradas
+REFERENCIA: DIRIME_v2/fabric/poke_peek.py · audit_fabric_operations()
+
+LACHO: SAMU @ =><= .. audita .. fabric_log_trazabilidad_operaciones --[Ballestrinque] [term]
 
 ====================================================================
-## TABLA 5: CAT_LOG
-====================================================================
-PROPÓSITO: Registro de operaciones del compilador CAT
-REGISTROS: 2 operaciones registradas
+## 5. TABLA: cat_log — log CAT operaciones
 
 SCHEMA:
-┌─────────────────────────────────────────────────────────────┐
-│ id TEXT (PRIMARY KEY)                                       │
-│   Identificador único de la operación                      │
-│ operation TEXT (NOT NULL)                                   │
-│   Tipo de operación (COMPILE, VALIDATE, OPTIMIZE)          │
-│ code_preview TEXT                                            │
-│   Vista previa del código compilado                         │
-│ status TEXT (NOT NULL)                                      │
-│   Estado de la operación (SUCCESS, ERROR, PENDING)         │
-│ tomo_id TEXT                                                │
-│   Referencia a tomo/volumen                                 │
-│ timestamp REAL (NOT NULL)                                   │
-│   Timestamp de la operación                                 │
-└─────────────────────────────────────────────────────────────┘
+  id        TEXT PRIMARY KEY
+  operation TEXT NOT NULL     → CAT(OS)/CAT(SSH)/CAT(SCAN)
+  code_preview TEXT
+  status    TEXT NOT NULL
+  tomo_id   TEXT
+  timestamp REAL NOT NULL
 
-RELACIONES:
-- Registro de compilaciones y validaciones
-- Vinculado a transacciones de desarrollo
-- Historial de operaciones CAT
+PROPÓSITO: log de operaciones CAT · preparado para CAPA C
+REGISTROS HOY: 2 entradas · CAPA C pendiente hardware
+REFERENCIA: DIRIME_v3/cat_local/ (STUB · hardware bloqueado)
+
+LACHO: GATE UF[H05] =><= .. espera .. cat_log_capa_c_hardware_pendiente --[Nudo Corredizo] [term]
 
 ====================================================================
-## TABLA 6: ELPULSAR_RESOURCES
-====================================================================
-PROPÓSITO: Recursos gestionados por ELPULSAR (Dashboard/GUI)
-REGISTROS: 55 recursos activos
+## 6. TABLA: elpulsar_resources — recursos ELPULSAR
 
 SCHEMA:
-┌─────────────────────────────────────────────────────────────┐
-│ id TEXT (PRIMARY KEY)                                       │
-│   Identificador único del recurso                          │
-│ title TEXT (NOT NULL)                                       │
-│   Título descriptivo del recurso                           │
-│ type TEXT (NOT NULL)                                        │
-│   Tipo de recurso (DASHBOARD, WIDGET, COMPONENT)            │
-│ scope TEXT (NOT NULL)                                       │
-│   Alcance del recurso (GLOBAL, USER, SYSTEM)               │
-│ content TEXT                                                │
-│   Contenido o configuración del recurso                     │
-│ tomo_id TEXT                                                │
-│   Referencia a tomo/volumen                                 │
-│ cluster TEXT                                                │
-│   Agrupación por categoría                                  │
-│ verified INTEGER (DEFAULT 0)                               │
-│   Estado de verificación (0=pendiente, 1=verificado)       │
-│ created_at REAL (DEFAULT strftime('%s', 'now'))            │
-│   Timestamp de creación                                     │
-│ updated_at REAL (DEFAULT strftime('%s', 'now'))            │
-│   Timestamp de última actualización                         │
-└─────────────────────────────────────────────────────────────┘
+  id        TEXT PRIMARY KEY
+  title     TEXT NOT NULL
+  type      TEXT NOT NULL     → ResourceType enum
+  scope     TEXT NOT NULL     → ResourceScope enum
+  content   TEXT
+  tomo_id   TEXT
+  cluster   TEXT
+  verified  INTEGER DEFAULT 0
+  created_at REAL DEFAULT strftime('%s','now')
+  updated_at REAL DEFAULT strftime('%s','now')
 
-RELACIONES:
-- Recursos del dashboard ELPULSAR
-- Vinculado a conexiones ELPULSAR_CONNECTIONS
-- Agrupado por clusters funcionales
+PROPÓSITO: recursos del servidor ELPULSAR · sincronización con ledger
+REGISTROS HOY: 55 recursos activos
+REFERENCIA: DIRIME_v2/elpulsar/core/resources.py · sync_from_ledger()
+
+LACHO: WORK {actuator} =><= .. gestiona .. elpulsar_resources_sync_ledger --[As de Guía] [term]
 
 ====================================================================
-## TABLA 7: ELPULSAR_CONNECTIONS
-====================================================================
-PROPÓSITO: Conexiones entre recursos ELPULSAR
-REGISTROS: 2 conexiones activas
+## 7. TABLA: elpulsar_connections — conexiones ELPULSAR
 
 SCHEMA:
-┌─────────────────────────────────────────────────────────────┐
-│ id TEXT (PRIMARY KEY)                                       │
-│   Identificador único de la conexión                        │
-│ source_id TEXT (NOT NULL)                                   │
-│   ID del recurso origen                                     │
-│ target_id TEXT (NOT NULL)                                   │
-│   ID del recurso destino                                    │
-│ relation TEXT (NOT NULL)                                    │
-│   Tipo de relación (DEPENDS_ON, LINKS_TO, INCLUDES)         │
-│ weight REAL (DEFAULT 1.0)                                   │
-│   Peso/importancia de la conexión                          │
-│ created_at REAL (DEFAULT strftime('%s', 'now'))            │
-│   Timestamp de creación                                     │
-└─────────────────────────────────────────────────────────────┘
+  id        TEXT PRIMARY KEY
+  source_id TEXT NOT NULL     → recurso origen
+  target_id TEXT NOT NULL     → recurso destino
+  relation  TEXT NOT NULL     → tipo de conexión
+  weight    REAL DEFAULT 1.0
+  created_at REAL DEFAULT strftime('%s','now')
 
-RELACIONES:
-- Conecta recursos ELPULSAR_RESOURCES
-- Define grafo de dependencias
-- Soporta navegación y renderizado
+PROPÓSITO: grafo de dependencias entre recursos ELPULSAR
+REGISTROS HOY: 2 conexiones activas
+REFERENCIA: DIRIME_v2/elpulsar/core/resources.py · connect()
+
+LACHO: SOCIAL {relay} =><= .. conecta .. elpulsar_connections_grafo_recursos --[As de Guía] [term]
 
 ====================================================================
-## RELACIONES ENTRE TABLAS
-====================================================================
+## ANCLAS RAG × 4
 
-DIAGRAMA DE RELACIONES:
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   TRANSACTIONS  │────│   FABRIC_STATE  │────│   FABRIC_LOG    │
-│   (2026 regs)   │    │    (3 regs)     │    │   (10 regs)     │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-         │                       │                       │
-         └───────────────────────┼───────────────────────┘
-                                 │
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│     CRYSTALS    │    │     CAT_LOG     │    │ ELPULSAR_RES.   │
-│    (60 regs)    │    │    (2 regs)     │    │   (55 regs)     │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-                                                       │
-                                                       │
-┌─────────────────┐                              ┌─────────────────┐
-│ ELPULSAR_CONN.  │◄─────────────────────────────│ ELPULSAR_RES.   │
-│    (2 regs)     │                              │   (55 regs)     │
-└─────────────────┘                              └─────────────────┘
-
-FLUJO DE DATOS:
-1. TRANSACTIONS → FABRIC_STATE (actualización de estado)
-2. FABRIC_STATE → FABRIC_LOG (historial de cambios)
-3. TRANSACTIONS → CRYSTALS (generación de cristales)
-4. TRANSACTIONS → CAT_LOG (operaciones de compilación)
-5. ELPULSAR_RESOURCES → ELPULSAR_CONNECTIONS (grafo de UI)
-
-====================================================================
-## CONSULTAS RAG HABILITADAS
-====================================================================
-
-TIPOS DE CONSULTAS POSIBLES:
-- "¿Cuántas transacciones NOTARIA_ACT hay?" → TRANSACTIONS
-- "Estado actual del sistema" → FABRIC_STATE
-- "Historial de cambios en Scalar S" → FABRIC_LOG
-- "Recursos del dashboard disponibles" → ELPULSAR_RESOURCES
-- "Conexiones entre componentes" → ELPULSAR_CONNECTIONS
-- "Cristales activos por cluster" → CRYSTALS
-- "Operaciones CAT recientes" → CAT_LOG
-
-EJEMPLO SQL PARA RAG:
-```sql
--- Transacciones por tipo
-SELECT type, COUNT(*) as count 
-FROM transactions 
-GROUP BY type;
-
--- Estado actual del sistema
-SELECT key, value, timestamp 
-FROM fabric_state 
-ORDER BY timestamp DESC;
-
--- Recursos ELPULSAR verificados
-SELECT title, type, scope 
-FROM elpulsar_resources 
-WHERE verified = 1;
-```
-
-====================================================================
-## IMPACTO DEL GAP_02
-====================================================================
-
-ANTES: RAG no podía consultar el ledger propio
-DESPUÉS: RAG puede responder preguntas sobre estado del sistema
-
-BENEFICIOS:
-- Auditoría transparente del ledger
-- Consultas en lenguaje natural sobre transacciones
-- Análisis de estado del sistema vía RAG
-- Historial completo accesible
-- Integración con corpus existente
-
-ESTADO: GAP_02 COMPLETADO - RAG AUTOCONSULTA HABILITADA
-
-====================================================================
-## METADATOS
-====================================================================
-
-ARCHIVO: BIBLIO-SOURCES(SOVEREIGN_DB_SCHEMA).txt
-CREACIÓN: 2026-03-21
-FUENTE: sovereign.db (sistema DIRIME/IMV)
-REGISTROS TOTALES: 2,158 (7 tablas)
-PROPÓSITO: Documentación para RAG autoconsulta
-IMPACTO: GAP_02 resuelto - ledger consultable
+TRUST FOUNDATION =><= .. verifica .. sovereign_db_7_tablas_schema_completo --[Nudo de Ocho] [term]
+STACKING UF[H48] =><= .. indexa .. sovereign_db_schema_rag_consultable --[Nudo de Ocho] [term]
+METHOD <stat_onto> =><= .. calcula .. sovereign_db_metricas_tx_cristales_fabric --[As de Guía] [term]
+SAMU @ =><= .. audita .. sovereign_db_integridad_7_tablas_verificadas --[Ballestrinque] [term]
 
 [term] :: activo · [seal of secrecy] :: activo · 空聽數
