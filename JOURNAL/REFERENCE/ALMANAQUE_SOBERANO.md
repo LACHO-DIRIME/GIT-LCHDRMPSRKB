@@ -46,23 +46,29 @@ LEARNING activo: README.md creado · primeros archivos pendientes
 
 ---
 
-### ⚡ W13 · $thu 19/03 → $wed 25/03
-```
-📖 EJE:     METHOD × 4 NEURONAS
-            equation · operator_flow · stat_onto · psi_spin
-            HEADCAT/ELPULSAR/CHAIR CEO/HOUSE DRONE mapeados
+### ⚡ W13 · $thu 19/03 → $wed 25/03 📖 EJE:     METHOD × 4 NEURONAS + GAPS BRIEFING RESUELTOS
+equation · operator_flow · stat_onto · psi_spin
+GAP_02 sovereign.db schema · GAP_04 pipeline H03→H63
+GAP_06 Nerve Cells BARRIOS + TANDIL + CHALTEN
 🧠 LEARNING:
-  STRATEGIC ABSORPTION → declarar antes: "absorber METHOD para mapear
-                          4 operadores a 4 neuronas y aumentar Scalar S"
-  READ    → leer $thu 19-03 to $wed 25-03 completo antes de ejecutar
-  REFLECT → ¿cómo cambia grammar.py? ¿qué tests nuevos necesito?
-  RELATE  → conectar con COGNITIVO_03 · BIBLIO-SOURCES(METHOD) existente
-  REAP    → cristalizar: UNICODE_METHOD_4_NEURONAS.txt en CORPUS
-  PROGRADE → 12 tareas · cada una es un paso PROGRADE verificado
-⚠️  ALERTA: METHOD es CAPA A · POLLUTE risk si se modifica sin tests
-MÉTRICAS OBJETIVO: S=0.820+ · tests=50+ · cristales=60+
+STRATEGIC ABSORPTION → "absorbo METHOD + gaps verificados para
+aumentar coherencia RAG y cerrar deuda documental"
+READ    → leer $thu 19-03 to $wed 25-03 + 3 documentos del briefing
+REFLECT → gaps reales vs gaps del briefing: verificar con sistema real
+RELATE  → UNICODE Programs KALIL ya existen · Nerve Cells faltan
+REAP    → cristalizar: 3 Nerve Cells + 2 BIBLIO-SOURCES + ONBOARDING.md
+RELIABLE → verificar siempre con python3 main.py --stats antes de aceptar
+números del briefing externo
+⚠️  ALERTA: briefing V022 tiene Scalar S=0.807 pero sistema real=0.753
+CLAUDE_SESSION/ no existe · no ejecutar SQL fantasma
+GAP_01 parcialmente resuelto · _validate_by_paradigm() ya existe
+GAPS REALES VERIFICADOS ESTA SEMANA:
+GAP_02 ✅ → BIBLIO-SOURCES(SOVEREIGN_DB_SCHEMA).txt crear
+GAP_04 ✅ → BIBLIO-SOURCES(PIPELINE_NOTARIA_H03_H63).txt crear
+GAP_06 ✅ → Nerve Cells BARRIOS + TANDIL + CHALTEN crear
+BONUS  ✅ → LEARNING/ONBOARDING.md de la Guía de Estudio
+MÉTRICAS OBJETIVO: S=0.820+ · tests=50+ · cristales=63+
 ARCHIVOS: OPTIMIZACION DE PROMPTS/$thu 19-03 to $wed 25-03
-```
 
 ---
 
@@ -481,7 +487,7 @@ S < 0.70               ANTROGRADE             releer COGNITIVOS desde 00
 
 ```
 $wed 18/03/2026  → HOY · LEARNING/ creado · almanaque activo
-$wed 25/03/2026  → METHOD × 4 NEURONAS cristalizado
+$wed 25/03/2026  → METHOD × 4 NEURONAS · GAP_02/04/06 cerrados · ONBOARDING.md · S=0.820+
 $wed 08/04/2026  → LINEAR REGRESSION sellado · fin W15
 $fri 08/05/2026  → V0.3.0 GATE · CAPA B completa · mes 1 cerrado
 $mon 08/06/2026  → [LOGISTICAL-EXECUTIVE] + ELPULSAR PAPER vivo
