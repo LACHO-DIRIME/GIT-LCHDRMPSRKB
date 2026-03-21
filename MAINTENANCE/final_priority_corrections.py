@@ -95,6 +95,16 @@ class SovereignValidator:
         """Registra acción hipotética en hypothetical_growth.log."""
         try:
             timestamp = datetime.now().isoformat()
+            
+            # Medir RAM del proceso Python actual
+            try:
+                import psutil
+                process = psutil.Process()
+                process_ram_mb = process.memory_info().rss / (1024 * 1024)
+                ram_usage = f"{process_ram_mb:.1f}MB/50MB"
+            except:
+                ram_usage = ram_usage or "auto"
+            
             entry = f"\n--- ACCIÓN HIPOTÉTICA REGISTRADA ---\n"
             entry += f"Timestamp: {timestamp}\n"
             entry += f"Entidad: Gualicho Huinca\n"
@@ -181,6 +191,14 @@ class SovereignValidator:
 
 def main():
     """Función principal del motor de correcciones."""
+    import argparse
+    
+    parser = argparse.ArgumentParser(description='Sovereign Validator - Motor de Correcciones Prioritarias')
+    parser.add_argument('--dry-run', action='store_true', 
+                       help='Ejecutar en modo simulación sin modificar archivos')
+    
+    args = parser.parse_args()
+    
     validator = SovereignValidator()
     
     # Registrar acción hipotética solicitada
@@ -196,7 +214,30 @@ def main():
     if action_registered:
         print("✅ Acción hipotética registrada en hypothetical_growth.log")
     
-    # Ejecutar correcciones
+    # Ejecutar correcciones con dry-run si corresponde
+    if args.dry_run:
+        print("\n🔍 MODO DRY-RUN ACTIVADO - Simulando acciones sin modificar archivos")
+        # Simular escaneo de archivos
+        lacho_files = validator.scan_lacho_files()
+        print(f"[DRY] Escaneando {len(lacho_files)} archivos .lacho")
+        
+        # Simular correcciones
+        for lacho_file in lacho_files:
+            print(f"[DRY] Procesando: {lacho_file.name}")
+            content = lacho_file.read_text(encoding='utf-8')
+            corrected_content, corrections = validator.correct_obsolete_terms(content)
+            
+            if corrections:
+                print(f"[DRY] Correcciones detectadas en {lacho_file.name}:")
+                for old, new in corrections.items():
+                    print(f"[DRY]   {old} → {new}")
+            else:
+                print(f"[DRY] Sin cambios necesarios en {lacho_file.name}")
+        
+        print("[DRY] Simulación completada - ningún archivo modificado")
+        return {"dry_run": True, "files_scanned": len(lacho_files)}
+    
+    # Ejecución real
     summary = validator.run_corrections()
     
     print(f"\n🚀 MOTOR DE CORRECCIONES COMPLETADO")

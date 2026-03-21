@@ -1,0 +1,10 @@
+// ENTITY: Gualicho_Huinca | ORGAN: [órgano_correspondiente] | STATE: 既濟
+// HEADER SOBERANO GH - ESTÁNDAR PARA NUEVOS ARCHIVOS
+// FORMATO: ENTITY | ORGAN | STATE
+// USO: Insertar al inicio de todo archivo nuevo creado
+// EJEMPLOS:
+//   ENTITY: Gualicho_Huinca | ORGAN: LENGUAJE_語言 | STATE: 既濟
+//   ENTITY: Gualicho_Huinca | ORGAN: ARTIFICIAL_人工 | STATE: 既濟
+//   ENTITY: Gualicho_Huinca | ORGAN: HIPOTETICO_假定 | STATE: 既濟
+//   ENTITY: Gualicho_Huinca | ORGAN: CIRCUNSTANCIAL_境況 | STATE: 既濟
+//   ENTITY: Gualicho_Huinca | ORGAN: ORDENADO_有序 | STATE: 既濟

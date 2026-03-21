@@ -14,9 +14,35 @@ class LachoPersistenceBridge:
     """Puente entre simulación hipotética y ejecución real."""
     
     def __init__(self):
-        self.log_path = Path(__file__).parent.parent / "MAINTENANCE" / "hypothetical_growth.log"
+        self.base_path = Path(__file__).parent.parent
+        self.log_path = self.base_path / "MAINTENANCE" / "hypothetical_growth.log"
+        self.db_path = self.base_path / "IMV" / "sovereign.db"
         self.ram_limit_mb = 50
         self.total_ram_limit_mb = 12288  # 12GB
+        
+    def _check_db_exists(self) -> bool:
+        """Verifica existencia de sovereign.db antes de conectar."""
+        return self.db_path.exists()
+        
+    def _read_dynamic_tables(self) -> Dict:
+        """Lee tablas dinámicamente desde sqlite_master."""
+        if not self._check_db_exists():
+            return {"error": "sovereign.db no encontrado"}
+            
+        try:
+            import sqlite3
+            conn = sqlite3.connect(str(self.db_path))
+            cursor = conn.cursor()
+            
+            # Leer tablas dinámicamente
+            cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
+            tables = [row[0] for row in cursor.fetchall()]
+            
+            conn.close()
+            return {"tables": tables, "db_path": str(self.db_path)}
+            
+        except Exception as e:
+            return {"error": f"Error leyendo DB: {e}"}
         
     def read_hypothetical_log(self) -> List[Dict]:
         """Lee el log de crecimiento hipotético."""
