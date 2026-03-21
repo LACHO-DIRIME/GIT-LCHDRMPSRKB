@@ -510,8 +510,6 @@ class HLFabric:
             valid_ratio  = valid / total
             nudo_variety = min(nudos, 5) / 5
             score = (green_ratio * 0.5) + (valid_ratio * 0.3) + (nudo_variety * 0.2)
-            # Ensure minimum score for notarial operations
-            score = max(score, 0.80)
             return round(score, 3)
 
     def get_verb_frequency(self, limit: int = 20) -> list[dict]:
