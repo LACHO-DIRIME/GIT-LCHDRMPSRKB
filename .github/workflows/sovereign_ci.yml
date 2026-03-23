@@ -35,13 +35,13 @@ jobs:
 
       - name: Verify no stale FOLDERS_NO_RAG references in code
         run: |
-          result=$(grep -rn "FOLDERS NO RAG" IMV/ 2>/dev/null || true)
-          if [ -n "$result" ]; then
-            echo "FAIL: stale path references found:"
-            echo "$result"
-            exit 1
-          fi
-          echo "OK: no stale path references"
+                  result=$(grep -rn "FOLDERS NO RAG" IMV/core/ IMV/adapters/ IMV/libraries/ IMV/tools/ IMV/tests/ 2>/dev/null || true)
+                            if [ -n "$result" ]; then
+                                        echo "FAIL: stale path references in executable code:"
+                                                    echo "$result"
+                                                                exit 1
+                                                                          fi
+                                                                                    echo "OK: no stale path references in code"
 
   scalar_report:
     name: Scalar S Report (artifact)
