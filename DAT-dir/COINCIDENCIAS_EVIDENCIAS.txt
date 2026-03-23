@@ -1,0 +1,285 @@
+APLICACIÓN DE PISTAS Y GUIAS - EVALUACIÓN DE COINCIDENCIAS Y EVIDENCIAS FUERTES
+=======================================================================
+
+🔍 SISTEMA DE EVALUACIÓN DE COINCIDENCIAS
+
+MÉTODO DE APLICACIÓN:
+---------------------
+
+1. IDENTIFICAR PALABRAS CANDIDATAS
+   - Buscar palabras con letras raras (K, Q, X, Z, W, J, Y)
+   - Filtrar por contexto técnico relevante
+   - Priorizar por frecuencia y significado
+
+2. EVALUAR COINCIDENCIAS LETRA-CONCEPTO
+   - Para cada letra rara, buscar conceptos técnicos asociados
+   - Evaluar si el contexto del sistema relaciona ambos
+   - Calcular probabilidad de coincidencia real
+
+3. VALIDAR ESTRUCTURA DE ACRÓNIMO
+   - Verificar si todas las letras tienen significado
+   - Evaluar coherencia semántica del conjunto
+   - Confirmar lógica interna del acrónimo
+
+4. BUSCAR EVIDENCIAS FUERTES
+   - Documentación explícita del acrónimo
+   - Uso consistente en el sistema
+   - Referencias cruzadas válidas
+
+5. GENERAR VEREDICTO CON NIVEL DE CONFIANZA
+   - Combinar todas las evidencias
+   - Calcular confianza matemática
+   - Proporcionar recomendación final
+
+🔍 APLICACIÓN PRÁCTICA - EVALUACIÓN DE PALABRAS
+
+PALABRAS CON K (PRIORIDAD MÁXIMA):
+---------------------------------
+
+KALIL:
+- Letra K: Kernel (coincidencia fuerte)
+- Letra A: AI (coincidencia fuerte)
+- Letra L: Logic (coincidencia moderada)
+- Letra I: Information (coincidencia moderada)
+- Letra L: Learning (coincidencia moderada)
+- Evidencia documental: Encontrada explícitamente
+- Veredicto: ACRÓNIMO CONFIRMADO
+- Confianza: 95%
+
+OTRAS PALABRAS CON K (POR INVESTIGAR):
+------------------------------------
+[Lista de palabras con K encontradas en el sistema]
+
+PALABRAS CON Q (PRIORIDAD ALTA):
+---------------------------------
+
+QUERY:
+- Letra Q: Query (coincidencia fuerte)
+- Letra U: ? (sin significado claro)
+- Letra E: ? (sin significado claro)
+- Letra R: ? (sin significado claro)
+- Letra Y: ? (sin significado claro)
+- Evidencia documental: No encontrada
+- Veredicto: NO ES ACRÓNIMO
+- Confianza: 5%
+
+QUEUE:
+- Letra Q: Queue (coincidencia fuerte)
+- Letra U: ? (sin significado claro)
+- Letra E: ? (sin significado claro)
+- Letra U: ? (sin significado claro)
+- Letra E: ? (sin significado claro)
+- Evidencia documental: No encontrada
+- Veredicto: NO ES ACRÓNIMO
+- Confianza: 5%
+
+[Otras palabras con Q por investigar]
+
+PALABRAS CON X (PRIORIDAD MEDIA):
+----------------------------------
+
+XML:
+- Letra X: eXtensible Markup Language (coincidencia fuerte)
+- Letra M: Markup (coincidencia moderada)
+- Letra L: Language (coincidencia moderada)
+- Evidencia documental: No es acrónimo, es sigla estándar
+- Veredicto: NO ES ACRÓNIMO DEL SISTEMA
+- Confianza: 10%
+
+X-SERVER:
+- Letra X: X Window System (coincidencia moderada)
+- Letra S: Server (coincidencia moderada)
+- Evidencia documental: Es término estándar
+- Veredicto: NO ES ACRÓNIMO DEL SISTEMA
+- Confianza: 10%
+
+[Otras palabras con X por investigar]
+
+PALABRAS CON W (PRIORIDAD BAJA):
+----------------------------------
+
+WORK:
+- Letra W: Work (coincidencia débil - palabra común)
+- Letra O: ? (sin significado claro)
+- Letra R: ? (sin significado claro)
+- Letra K: ? (sin significado claro)
+- Evidencia documental: No encontrada
+- Veredicto: NO ES ACRÓNIMO
+- Confianza: 1%
+
+WORKSPACE:
+- Letra W: Workspace (coincidencia débil - palabra común)
+- Evidencia documental: No encontrada
+- Veredicto: NO ES ACRÓNIMO
+- Confianza: 1%
+
+[Otras palabras con W por investigar]
+
+PALABRAS CON Z (PRIORIDAD MÍNIMA):
+----------------------------------
+
+ZONE:
+- Letra Z: Zone (coincidencia moderada)
+- Letra O: ? (sin significado claro)
+- Letra N: ? (sin significado claro)
+- Letra E: ? (sin significado claro)
+- Evidencia documental: No encontrada
+- Veredicto: NO ES ACRÓNIMO
+- Confianza: 2%
+
+ZERO:
+- Letra Z: Zero (coincidencia moderada)
+- Letra E: ? (sin significado claro)
+- Letra R: ? (sin significado claro)
+- Letra O: ? (sin significado claro)
+- Evidencia documental: No encontrada
+- Veredicto: NO ES ACRÓNIMO
+- Confianza: 2%
+
+[Otras palabras con Z por investigar]
+
+🔍 ANÁLISIS DE EVIDENCIAS FUERTES
+
+CRITERIOS DE EVIDENCIA FUERTE:
+----------------------------
+
+1. COINCIDENCIA LETRA-CONCEPTO DIRECTA
+   - Letra rara + concepto técnico claro
+   - Ejemplo: K + Kernel
+
+2. DOCUMENTACIÓN EXPLÍCITA
+   - Definición directa del acrónimo
+   - Ejemplo: "KALIL → Kernel AI Logic & Information Learning"
+
+3. COHERENCIA SEMÁNTICA COMPLETA
+   - Todas las letras tienen significado
+   - El conjunto tiene lógica interna
+
+4. USO CONSISTENTE EN EL SISTEMA
+   - Referencias cruzadas válidas
+   - Aplicación coherente
+
+EVIDENCIAS FUERTES IDENTIFICADAS:
+--------------------------------
+
+KALIL:
+✅ Coincidencia K-Kernel (directa)
+✅ Documentación explícita encontrada
+✅ Coherencia semántica completa
+✅ Uso consistente en el sistema
+✅ Nivel de evidencia: MÁXIMO
+
+[Otras evidencias fuertes por descubrir]
+
+🔍 MÉTODO DE VALIDACIÓN MATEMÁTICA
+
+FÓRMULA DE CONFIANZA:
+-------------------
+
+Confianza = (Rareza_letra × 0.3) + (Coincidencia_conceptual × 0.4) + (Coherencia_semantica × 0.2) + (Documentacion_explicita × 0.1)
+
+UMBRAL DE DECISIÓN:
+------------------
+
+- Confianza ≥ 0.8: ACRÓNIMO CONFIRMADO
+- 0.5 ≤ Confianza < 0.8: INVESTIGACIÓN REQUERIDA
+- Confianza < 0.5: NO ES ACRÓNIMO
+
+APLICACIÓN A KALIL:
+------------------
+
+- Rareza_letra (K): 0.9
+- Coincidencia_conceptual (K-Kernel): 1.0
+- Coherencia_semantica: 0.9
+- Documentacion_explicita: 1.0
+
+Confianza = (0.9 × 0.3) + (1.0 × 0.4) + (0.9 × 0.2) + (1.0 × 0.1)
+Confianza = 0.27 + 0.4 + 0.18 + 0.1 = 0.95
+
+Veredicto: ACRÓNIMO CONFIRMADO (95% confianza)
+
+🔍 SISTEMA DE DETECCIÓN AUTOMÁTICA
+
+ALGORITMO IMPLEMENTABLE:
+---------------------
+
+function detectar_acronimo(palabra, contexto_sistema):
+    # Paso 1: Identificar letras raras
+    letras_raras = identificar_letras_raras(palabra)
+    
+    if not letras_raras:
+        return {"veredicto": "NO_ES_ACRONIMO", "confianza": 0.1, "razon": "sin_letras_raras"}
+    
+    # Paso 2: Evaluar coincidencias
+    coincidencias = evaluar_coincidencias_conceptuales(letras_raras, contexto_sistema)
+    
+    # Paso 3: Validar estructura
+    estructura_valida = validar_estructura_acronimo(palabra, coincidencias)
+    
+    # Paso 4: Buscar documentación
+    documentacion = buscar_documentacion_explicita(palabra)
+    
+    # Paso 5: Calcular confianza
+    confianza = calcular_confianza(letras_raras, coincidencias, estructura_valida, documentacion)
+    
+    # Paso 6: Generar veredicto
+    veredicto = generar_veredicto(confianza)
+    
+    return {
+        "palabra": palabra,
+        "letras_raras": letras_raras,
+        "coincidencias": coincidencias,
+        "estructura_valida": estructura_valida,
+        "documentacion": documentacion,
+        "confianza": confianza,
+        "veredicto": veredicto
+    }
+
+🔍 RESULTADOS DE LA APLICACIÓN
+
+ACRÓNIMOS CONFIRMADOS:
+---------------------
+
+✅ KALIL - Kernel AI Logic & Information Learning (95% confianza)
+
+ACRÓNIMOS RECHAZADOS:
+-------------------
+
+❌ ELPULSAR - Sin letras raras, sin coincidencias (5% confianza)
+❌ WORK - Palabra común, sin estructura (1% confianza)
+❌ QUERY - Sin coherencia semántica (5% confianza)
+❌ QUEUE - Sin coherencia semántica (5% confianza)
+❌ XML - Sigla estándar, no acrónimo del sistema (10% confianza)
+
+PENDIENTES DE INVESTIGACIÓN:
+---------------------------
+
+[Lista de palabras con letras raras que requieren investigación adicional]
+
+🔍 CONCLUSIONES Y RECOMENDACIONES
+
+EFECTIVIDAD DEL MÉTODO:
+---------------------
+
+✅ Las letras raras son pistas muy efectivas
+✅ La coincidencia conceptual es el criterio clave
+✅ La documentación explícita confirma definitivamente
+✅ La coherencia semántica valida la estructura
+
+RECOMENDACIONES:
+---------------
+
+1. Aplicar este método sistemáticamente a todo el sistema
+2. Priorizar palabras con letras K, Q, X (más efectivas)
+3. Documentar todos los acrónimos confirmados
+4. Actualizar el sistema con nuevas evidencias
+5. Evitar falsos positivos usando umbrales estrictos
+
+APLICACIÓN FUTURA:
+-----------------
+
+- Extender a otros sistemas similares
+- Automatizar la detección con el algoritmo
+- Crear base de datos de acrónimos confirmados
+- Desarrollar herramientas de visualización
+- Generar reportes automáticos de evidencias

@@ -1,0 +1,321 @@
+# C.index.lacho
+# GLOSSARY — Letra C / c
+# DIRIME · IMV · Sistema LACHO
+# [term] :: activo · [seal of secrecy] :: activo
+# Revisado y auditado: $sat 21-03-2026
+# ─────────────────────────────────────────────────────────────────
+# N1 → Fundamentos del lenguaje
+# N2 → Módulos y mecanismos operativos
+# N3 → Actores, estados y clasificaciones
+# N4 → Herramientas, documentos y referencias
+# ─────────────────────────────────────────────────────────────────
+
+# ══════════════════════════════════════════════════════════════════
+# N1 — FUNDAMENTOS DEL LENGUAJE
+# ══════════════════════════════════════════════════════════════════
+
+## COMMAND [N1]
+# Clase: tipo de mensaje · Gramática LACHO
+# Instrucción ejecutable dentro del sistema.
+# tipo: SIGNAL | DATA | COMMAND | ACK | REGRET
+# COMMAND = 2 ;;; instrucción ejecutable
+# Ver: COMMAND_EXECUTE · COMMAND_DEFER · SIGNAL · ACK
+
+## COMMAND_EXECUTE [N1]
+# Clase: variante de COMMAND · Doctrina operativa
+# Orden de ejecución inmediata en el sistema.
+# "COMMAND_EXECUTE: orden de ejecución inmediata."
+# Se activa junto a COMMAND_DEFER y COMMAND_ABORT.
+
+## COMMAND_DEFER [N1]
+# Clase: variante de COMMAND · Doctrina de Tardanza
+# Orden con latencia deliberada. Aplica H5 (La Espera).
+# "COMMAND_DEFER: orden con latencia deliberada (Doctrina de la Tardanza, H5)."
+# Ver: TARDANZA_DELIBERADA · SAMU · H5
+
+## COMMENT_LINE [N1]
+# Clase: token · Gramática ANTLR
+# Línea de comentario doctrinal en archivos LACHO.
+# COMMENT_LINE ::= COMMENT_OPEN [^\n]* NEWLINE
+# FILE_HEADER ::= COMMENT_LINE+ ;;; encabezado doctrinal
+# Los comentarios en LACHO son parte de la doctrina, no decoración.
+
+## CROSSOVER [N1]
+# Clase: operador · Gramática LACHO
+# Intercambio de posiciones LEFT↔RIGHT simultáneo.
+# CROSSOVER ::= "><"
+# ">< CROSSOVER — intercambio de posiciones LEFT↔RIGHT"
+# Ver: BILATERAL (<>) · ARROW_RIGHT · ARROW_LEFT
+
+## CRYPTO_OPEN / CRYPTO_CLOSE [N1]
+# Clase: tokens · Gramática ANTLR · Biblioteca CRYPTO
+# Delimitadores del bloque CRYPTO en la gramática LACHO.
+# CRYPTO_OPEN  ::= "("
+# CRYPTO_CLOSE ::= ")"
+# Todo sujeto entre paréntesis es un asiento de autoridad CRYPTO.
+
+# ══════════════════════════════════════════════════════════════════
+# N2 — MÓDULOS Y MECANISMOS OPERATIVOS
+# ══════════════════════════════════════════════════════════════════
+
+## CAT [N2]
+# Clase: familia de módulos · Capa C/D
+# Módulos de control de bajo nivel del sistema operativo soberano.
+# Familia completa de módulos CAT:
+#   CAT(OS)     → syscalls directas al OS local
+#   CAT(SSH)    → túneles hacia nodo remoto
+#   CAT(BOOT)   → arranque soberano diario
+#   CAT(BRIDGE) → enlace híbrido local↔cloud
+#   CAT(CLOUD)  → sincronía con cloud providers
+#   CAT(SCAN)   → auditoría de integridad en tiempo real
+#   CAT(MU)     → swap cifrado / memoria soberana
+#   CAT(ALARM)  → alertas críticas del sistema
+#   CAT(ZIP/MAIL/IMPORT/EXPORT) → operaciones de flujo
+# Capa C bloqueada (hardware Ryzen pendiente).
+
+## CANAL [N2]
+# Clase: módulo · Sistema de comunicación soberano
+# Vía de transmisión de datos entre componentes del sistema.
+# velocidad: declarada en CANAL.codificacion
+# tcp/udp: según tipo de CANAL
+# CANAL en BARRIOS: forge_remesa · canal_hash_BLAKE3
+# Ver: BRIDGE · BROADCAST · CSC
+
+## CIERRE [N2]
+# Clase: proceso · Scheduler · Ciclo semanal
+# Protocolo de cierre del ciclo operativo (diario o semanal).
+# Secuencia canónica del cierre:
+#   Nerve Cell Notaria Cierre · commit soberano · BKP_LEDGER
+#   LOG_PERMANENTE.md · github_sync.sh · SESION_ACTIVA.md actualizado
+# Tipos: CIERRE MACRO · CIERRE MESO · CIERRE de sesión diaria.
+
+## CICLO [N2]
+# Clase: concepto · Nivel: operacional
+# Unidad de tiempo soberano del sistema.
+# El ciclo básico es el día operativo ($dia).
+# 64 ciclos = un recorrido completo de hexagramas.
+# CICLO_ORIGEN: declaración del origen de un ciclo soberano.
+# ::: CICLO_ORIGEN = $fri#H58#SETUP.teather
+
+## CICLOTIMIA [N2]
+# Clase: mecanismo · Oscilación soberana · H4↔H64
+# Oscilación entre la Imagen Gigante (H64) y la Memoria Pequeña (H4)
+# dentro de una sesión de trabajo.
+# "CICLOTIMIA — oscilación H4↔H64, Imagen Gigante↔Memoria Pequeña."
+# Es el mecanismo que impide que el sistema se quede en un solo extremo.
+
+## CLUSTER [N2]
+# Clase: componente · Sistema de segmentación DRA
+# Agrupación de segmentos en el Dynamic Resource Allocation.
+# Formato canónico: [term:A°SLICE§SEGMENT#CLUSTER@OFFSET]
+# Tipos: CLUSTER #CORE · CLUSTER #MERCADO · CLUSTER #CICLO · CLUSTER #FABRIC
+# Ver: DRA · SLICE · SEGMENT · OFFSET
+
+## COGNITIVE_RAG [N2]
+# Clase: algoritmo · Sistema RAG · Nivel: Capa A
+# Motor de conocimiento organizado en grafos semánticos.
+# "COGNITIVE RAG: organiza conocimiento en grafo con síntesis y trazabilidad."
+# Vive en: COGNITIVE_RAG.md · corpus maduro · UF[H48].
+# Forma parte de los tres algoritmos fundamentales de LACHO.
+# Ver: BEHAVIORAL_RAG · GREEN-KNOWLEDGE · BM25
+
+## CONCIENCIA [N2]
+# Clase: función · Sistema SAMU
+# Función central de SAMU @: sostener conciencia del estado del sistema.
+# "SAMU @: CONCIENCIA, AUDITORÍA Y TARDANZA DELIBERADA"
+# "SAMU @ COMO INSTITUCIÓN OPERATIVA (CONCIENCIA Y AUDITORÍA)"
+# La conciencia soberana precede a la emisión WU.
+
+## CONFLICT_6 [N2]
+# Clase: estado · Hexagrama: H06 · 訟 Sòng · Sistema GATE
+# Estado de conflicto activo que activa el protocolo de cancelación.
+# [CONFLICT_6] activo → IF (status == "CONFLICT_6"): ABORT
+# H06: El Conflicto — punto de ABORT en el pipeline LACHO.
+# Ver: ABORT · H06 · GATE · CRISIS_MANAGEMENT
+
+## CRISIS_MANAGEMENT [N2]
+# Clase: protocolo · Hexagramas: H3/H29
+# Protocolo de resiliencia crítica ante degradación del sistema.
+# "CRISIS_MANAGEMENT (H3/H29): resiliencia crítica ante degradación."
+# Requiere auditoría de decisiones del SAMU @.
+# Ver: CONFLICT_6 · ABORT · H29 · SAMU
+
+## CREATIVE_PAUSE [N2]
+# Clase: protocolo · H52 aplicado a H64
+# Pausa soberana en el flujo creativo.
+# "UF[H52] (Quietud) aplicado a UF[H64] — la creatividad que sabe
+# cuándo detenerse para verificar."
+# Latencia promedio de CREATIVE_PAUSE: métrica de calidad del sistema.
+
+## CRYSTAL_FINAL [N2]
+# Clase: artefacto · Sistema de cristales · H52
+# El cristal que UF[H52] convierte en forma definitiva.
+# "CRYSTAL_FINAL: el cristal que UF[H52] convierte en forma definitiva
+# — ya no puede modificarse."
+# Ver: CRISTALES · UF[H52] · LEDGER · sovereign.db
+
+## CUSTODIA [N2]
+# Clase: protocolo · Biblioteca: WORK · NODO-WS
+# Gestión soberana de transferencias y acceso en el nodo de trabajo.
+# "CUSTODIA MÓVIL: {doorman-mobile} gestionando acceso y transferencias soberanas."
+# Canal de custodia certificado por (link seat).
+# Ver: {doorman-mobile} · NODO-WS · LINK_SEAT · PRACTICE-CUSTODIA-V2
+
+## CSC [N2]
+# Clase: módulo · DIRIME LINUX · Punto de entrada soberano
+# Concierge-Service-Center: módulo que gestiona el punto de entrada
+# soberano del sistema hacia el mundo exterior.
+# "Recibe actores externos, los verifica soberanamente, los sostiene
+# en espera activa y los distribuye al canal correcto."
+# Parte de la arquitectura: DATA-CENTER · AGENCY-IDE · BALLPAPER ·
+# CHAT-AI · CSC · UNICODE-CHINA · PUENTES.
+# Ver: GATE · ACTOR_INCOMING · AFUERA · CAT(BRIDGE)
+
+## CIDE [N2]
+# Clase: interfaz · Circuit IDE · ELPULSAR
+# Circuit IDE: entorno de desarrollo visual soberano del sistema LACHO.
+# "CIDE · Circuit IDE · ELPULSAR"
+# Visualiza el circuito de 4 neuronas y los libSigs de cada una.
+# Archivo: CIDE · Circuit IDE · ELPULSAR.html
+# Ver: ELPULSAR · BUILDER · 4 NEURONAS · CIRCUIT
+
+# ══════════════════════════════════════════════════════════════════
+# N3 — ACTORES, ESTADOS Y CLASIFICACIONES
+# ══════════════════════════════════════════════════════════════════
+
+## CAPA [N3]
+# Clase: clasificación · Arquitectura del sistema
+# División estructural del sistema DIRIME:
+#   CAPA A → COMPLETO ✅ (núcleo ejecutable: grammar, ledger, rag, samu…)
+#   CAPA B → ACTIVO ⚡ (extensiones en curso: groq, scheduler, elpulsar…)
+#   CAPA C → BLOQUEADO 🔒 (hardware Ryzen pendiente: Ollama, CAT(OS)…)
+#   CAPA D → FUTURO 🌐 (WEB3, dos nodos físicos, HL FABRIC real…)
+# Las capas son jerárquicas: Capa A no se modifica sin tests.
+
+## CERRADO [N3]
+# Clase: estado · Sistema GATE
+# Estado del GATE cuando bloquea el paso de sentencias.
+# Contrario de ABIERTO. Estado por defecto en días no especificados.
+# Ver: GATE · ABIERTO · gate_abierto
+
+## COGNITIVO [N3]
+# Clase: nivel constitucional · grammar.py
+# El nivel más alto de la taxonomía del sistema.
+# "COGNITIVO": {"level": 0, "scalar_min": 0.95, "class": "constitucional"}
+# Los documentos COGNITIVO_00–05 son la constitución cognitiva del sistema.
+# Ver: COGNITIVO_00 · COGNITIVO_01 · CONSTITUCIONAL · AXIOMA
+
+## CONSTITUCIONAL [N3]
+# Clase: nivel de autoridad · Nivel: sistema
+# Calificativo del más alto nivel de autoridad documental.
+# "SAMU COMO FIGURA CONSTITUCIONAL: MEDITACIÓN EN ACCIÓN"
+# Lo constitucional no se debate — se verifica o no se verifica.
+# Ver: COGNITIVO · AXIOMA · TRUST · FOUNDATION
+
+## COMPLETADO / COMPLETO [N3]
+# Clase: estado · Nivel: tracking
+# COMPLETADO: tarea o sprint que finalizó con éxito verificado.
+# COMPLETO: estado de un módulo o documento sin partes pendientes.
+# Se registra en SESION_ACTIVA.md con [x] y en LOG_PERMANENTE.md.
+
+# ══════════════════════════════════════════════════════════════════
+# N4 — HERRAMIENTAS, DOCUMENTOS Y REFERENCIAS
+# ══════════════════════════════════════════════════════════════════
+
+## CORPUS [N4]
+# Clase: directorio · DIRIME/CORPUS/
+# El cuerpo documental soberano del sistema LACHO.
+# 281+ archivos indexados en el RAG (estado $sat 21-03).
+# Subdirectorios: BIBLIA/ · COGNITIVO_FRAMEWORK/ · DOCUMENTATION/
+# MICRO_ARCHITECTURE/ · DYNAMIC_RESOURCE_ALLOCATION/ · SPECIFICATIONS/
+# Ver: BIBLIO-SOURCES · BM25 · BEHAVIORAL_RAG · COGNITIVE_RAG
+
+## CARILO [N4]
+# Clase: nodo económico · Dominio KALIL
+# Nodo de capital y fees dentro del sistema KALIL.
+# CARILO(fee): gestión de tarifas y capital soberano.
+# Ver: KALIL · BOLIVAR · BARRIOS · NORA
+
+## CHALTEN [N4]
+# Clase: nodo económico · Dominio KALIL
+# Nodo de cloud y operaciones remotas dentro del sistema KALIL.
+# CHALTEN(cloud): operaciones cloud soberanas.
+# Ver: KALIL · BOLIVAR · CLOUD · chalten_daemon.blue
+
+## CEO [N4]
+# Clase: rol / hexagrama H01 · Nivel: constitucional
+# Dirección de Voluntad. CEO (H01): la ignición creativa del sistema.
+# CHCL → portabilidad · CEO de LACHO.
+# CEO ALPHA: jerarquía empresarial × sistema Unicode China (H64).
+# Ver: H01 · CHCL · ARTIFICIAL_ORGAN · AUTHORITY
+
+## CHCL [N4]
+# Clase: lenguaje · Portabilidad · CEO de LACHO
+# Lenguaje de portabilidad del sistema LACHO.
+# "CHCL → portabilidad · CEO de LACHO"
+# PROGRAM-ID. CHCL-KALIL-INTEGRATION.
+# Ver: CEO · LACHO · KALIL · CLI
+
+## CJK [N4]
+# Clase: sistema de escritura · Trilingüismo · RAG
+# Caracteres unificados CJK (Chinese/Japanese/Korean).
+# Parte del sistema trilingüe ES/EN/CJK de language_routing.py.
+# "CJK · interior/exterior" en el DRA China.
+# Notaria China: tokenización CJK soberana.
+# Ver: CHINA_DUAL · language_routing · UNICODE · CNY
+
+## CHINA / CHINA_DUAL [N4]
+# Clase: dominio · Estrategia económica soberana
+# Dominio dual del sistema: interior (BSN, e-CNY, WeChat) vs
+# exterior (Ethereum/DeFi, mercados internacionales).
+# BIBLIO-SOURCES(DIRIME-LINUX_UNICODE-CHINA).txt:
+# UNICODE programable + semántica china soberana.
+# Ver: CJK · CNY · BSN · BOLIVAR · KALIL
+
+## CNY [N4]
+# Clase: referencia · Moneda digital china
+# e-CNY (yuan digital): moneda de referencia en el dominio CHINA.
+# "ENV_B interior · SKIN_CHINA · e-CNY · BSN"
+# "(flow seat) @0xK5 · flujo e-CNY canal interior"
+# Ver: CHINA_DUAL · BSN · CARILO · CRYPTO
+
+## CLI [N4]
+# Clase: interfaz · Nivel: Capa A/B
+# Command Line Interface. Interfaz principal del sistema DIRIME.
+# "CLI Linux: el transductor final que permite el control de bajo nivel."
+# Comandos canónicos: python3 main.py --stats · --asks · --notaria
+# Ver: BRAIN · SAMU · main.py
+
+## CLAUDE [N4]
+# Clase: IA · Rol: Gerencia y Arquitectura
+# Claude opera como gerente de arquitectura del sistema DIRIME.
+# Rol diferenciado de Windsurf (operaciones e implementación).
+# Archivos: $sat 21-02-2026 para CLAUDE(LACHO).txt
+# Ver: AI · WINDSURF · GROQ · AI_INTEGRATION
+
+## COGNITIVO_00 / COGNITIVO_01 / COGNITIVO_02 [N4]
+# Clase: documentos constitucionales · CORPUS/COGNITIVO_FRAMEWORK/
+# Los documentos cognitivos que forman la constitución del sistema:
+#   COGNITIVO_00 (SER)   → Arquitectura global, qué es LACHO
+#   COGNITIVO_01 (MESO)  → Constitución, folios, gramática viva
+#   COGNITIVO_02 (MESO)  → SAMU, Ψ, dirimencia, scope, term
+#   COGNITIVO_03         → Addendum de expansión verificada
+# Ver: AXIOMA · CONSTITUCIONAL · FOLIAR · ADDENDUM
+
+## CPU [N4]
+# Clase: recurso hardware · Sistema de límites
+# Procesador del sistema. Utilización target: < 80% para operación normal.
+# Los 64 hexagramas como Practicantes compiten en RAM + CPU.
+# Mapeo de estados I Ching a instrucciones de hardware (IRQ, estados de CPU).
+# Ver: RAM · CAT(OS) · BATCH_PROCESSING
+
+## CREATIVE-FLOW-ALPHABET [N4]
+# Clase: hexagrama · UF[H64] · Biblioteca ACTIVITY
+# Hexagrama H64 en su aspecto de generación creativa soberana.
+# "UF[H64] CREATIVE-FLOW-ALPHABET activo"
+# BIBLIO-SOURCES(ACTIVITY_H64-CREATIVE-FLOW-ALPHABET).txt:
+# Alfabeto creativo — generación soberana desde H64.
+# Ver: UF[H64] · ACTIVITY · H64
+
+# ─────────────────────────────────────────────────────────────────
+# [term] :: activo · C.index.lacho · DIRIME/IMV · $sat 21-03-2026

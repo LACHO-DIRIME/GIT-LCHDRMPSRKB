@@ -1,0 +1,260 @@
+# GLOSSARY_MENU.index.lacho
+# MENÚ DE OPCIONES — Glosario DIRIME/LACHO
+# Sistema DIRIME · IMV · $sat 21-03-2026
+# ─────────────────────────────────────────────────────────────────
+# Adjunto a: GLOSSARY_MAP.index.lacho
+# Uso: este archivo es el punto de entrada operativo al glosario.
+#      Cada opción referencia el archivo y sección exacta.
+# ─────────────────────────────────────────────────────────────────
+
+# ══════════════════════════════════════════════════════════════════
+# MENÚ 1 — NAVEGACIÓN POR LETRA
+# ══════════════════════════════════════════════════════════════════
+# Buscar un término → abrir {LETRA}.index.lacho
+#
+#  A → A.index.lacho  (154 entradas · el más denso)
+#  B → B.index.lacho  (37)   C → C.index.lacho  (39)
+#  D → D.index.lacho  (19)   E → E.index.lacho  (12)
+#  F → F.index.lacho  (16)   G → G.index.lacho  (9)
+#  H → H.index.lacho  (16)   I → I.index.lacho  (13)
+#  J → J.index.lacho  (6)    K → K.index.lacho  (9)
+#  L → L.index.lacho  (10)   M → M.index.lacho  (15)
+#  N → N.index.lacho  (13)   O → O.index.lacho  (6)
+#  P → P.index.lacho  (13)   Q → Q.index.lacho  (3)
+#  R → R.index.lacho  (9)    S → S.index.lacho  (15)
+#  T → T.index.lacho  (12)   U → U.index.lacho  (6)
+#  V → V.index.lacho  (9)    W → W.index.lacho  (11)
+#  X → X.index.lacho  (2)    Y → Y.index.lacho  (2)
+#  Z → Z.index.lacho  (4)
+#
+#  UF  → UF[H01-H02].index.lacho  (29 entradas · H01+H02 completos)
+#  UF? → UF[H..].index.lacho      (placeholder · H03–H64 pendientes)
+
+# ══════════════════════════════════════════════════════════════════
+# MENÚ 2 — NAVEGACIÓN POR NIVEL
+# ══════════════════════════════════════════════════════════════════
+# Buscar por función en el sistema:
+#
+#  [N1] FUNDAMENTOS DEL LENGUAJE (116 entradas)
+#       → Lo que define cómo LACHO existe como lenguaje
+#       Ejemplos: ACTIVITY · TRUST · STACKING · METHOD · GATE
+#                 ANTLR · BNF · AST · BILATERAL · CROSSOVER
+#                 TERM · SCOPE · FINITUD · LACHO · ARTIFICIAL
+#       grep "\[N1\]" *.index.lacho
+#
+#  [N2] MÓDULOS Y MECANISMOS OPERATIVOS (196 entradas)
+#       → Lo que hace que el sistema funcione en ejecución
+#       Ejemplos: DIRIMENCIA · RAG · BM25 · SAMU · GATE · NOTARIA
+#                 UF[H01] · UF[H02] · BRAIN · AUDITORIA · PSI(Ψ)
+#       grep "\[N2\]" *.index.lacho
+#
+#  [N3] ACTORES, ESTADOS Y CLASIFICACIONES (87 entradas)
+#       → Quién opera y en qué estado está el sistema
+#       Ejemplos: ACTOR_HOSTILE · ACTOR_TRUSTED · AUSENTE · VALID
+#                 DEGRADED · ANCHORED · BLOQUEADO · CAPA · COGNITIVO
+#       grep "\[N3\]" *.index.lacho
+#
+#  [N4] HERRAMIENTAS, DOCUMENTOS Y REFERENCIAS (119 entradas)
+#       → El contexto operativo: archivos, IAs, dominios, tools
+#       Ejemplos: AIDER · WINDSURF · CORPUS · ALMANAQUE · KALIL
+#                 BIBLIO-SOURCES · ARCHITECTURE.md · AUTORESEARCH
+#       grep "\[N4\]" *.index.lacho
+
+# ══════════════════════════════════════════════════════════════════
+# MENÚ 3 — NAVEGACIÓN POR BIBLIOTECA LACHO
+# ══════════════════════════════════════════════════════════════════
+# Buscar por paradigma:
+#
+#  TRUST (imperativo)
+#    Archivo principal: T.index.lacho → TRUST · TERM · TIP · TOKENS
+#    Ver también: A → AUTHORITY · AXIOMA · ASIENTO · ABSOLUTE_SYNC
+#                 C → COMMAND · COMMAND_DEFER · COMMAND_EXECUTE
+#                 F → FOUNDATION · FOUNDATION_COMPROMISED
+#                 S → SCOPE · SEAL · K → KEYWORDS
+#    GLOSSARY_MAP.index.lacho § "ÍNDICE CRUZADO POR BIBLIOTECA" → TRUST
+#
+#  SOCIAL (declarativo)
+#    Archivo principal: S.index.lacho → SAMU · SOCIAL · SENSE
+#    Ver también: D → DRIP · G → GATO/{headcat} · H → HEADCAT
+#                 M → MASKING · N → NOTE/{note} · P → PAPERNOTE
+#    GLOSSARY_MAP.index.lacho § SOCIAL
+#
+#  CRYPTO (funcional)
+#    Ver: A → AES-256 · ASIENTO · AUTHORIZED_0
+#         B → BLAKE3 · BLOCKCHAIN · C → CRYPTO_OPEN/CLOSE
+#         F → FIRMA_SOBERANA · K → KEY/(key seat)
+#         S → SEAL · SHIELD/(shield seat) · Z → ZKP
+#    GLOSSARY_MAP.index.lacho § CRYPTO
+#
+#  STACKING (orientado a objetos)
+#    Archivo principal: S.index.lacho → STACKING
+#    Ver también: A → APPEND_ONLY_LOG · ASCENSO · ABSOLUTE_SYNC
+#                 C → CRYSTAL_FINAL · F → FABRIC/HL FABRIC
+#                 K → KNOWLEDGE_SYNTHESIS · Q → QUIETUD · T → TOMO
+#                 UF → UF[H01-H02].index.lacho
+#    GLOSSARY_MAP.index.lacho § STACKING
+#
+#  GATE (de script)
+#    Archivo principal: G.index.lacho → GATE · GATE_SIGIL
+#    Ver también: C → CONFLICT_6 · E → ESPERA(H5) · F → FIFO
+#                 Q → QUARANTINE_HOLD · QUEUE_MANAGEMENT · W → WAIT_QUEUE
+#    GLOSSARY_MAP.index.lacho § GATE
+#
+#  WORK (bajo nivel)
+#    Archivo principal: W.index.lacho → WORK · WORM · WARNING
+#    Ver también: A → ACTUATOR · AS_DE_GUIA · ARMY_DEPLOY
+#                 B → BALLESTRINQUE · BRAKE/{brake}
+#                 D → DOORMAN-MOBILE · F → FLYBOT/{flybot}
+#                 G → GREEN-KNOWLEDGE · M → METAL · MONITOR
+#                 T → TRAZO_GRUESO
+#    GLOSSARY_MAP.index.lacho § WORK
+#
+#  SAMU (alto nivel)
+#    Archivo principal: S.index.lacho → SAMU · SILENCIO · SENSE
+#    Ver también: @ → arroba/SAMU · A → AHORA · APRUEBA · AUDITORÍA
+#                 C → CONCIENCIA · D → DIRIMENCIA · DRIFT
+#                 P → PSI(Ψ) · PATTERN-WITNESS · R → RED-REGRET · RITMO
+#    GLOSSARY_MAP.index.lacho § SAMU
+#
+#  ACTIVITY (movimiento)
+#    Archivo principal: A.index.lacho → ACTIVITY · ACTIVACIÓN
+#    Ver también: B → BATCH_PROCESSING · BACKGROUND_PROCESS
+#                 C → CREATIVE_PAUSE · K → KU · KU_DV
+#                 Q → QUIETUD · R → RIFF · W → WU · Z → ZIPPER
+#                 UF → UF[H01-H02].index.lacho
+#    GLOSSARY_MAP.index.lacho § ACTIVITY
+#
+#  METHOD (operadores)
+#    Archivo principal: M.index.lacho → METHOD
+#    Ver también: A → ALGORITMO CONEJO · ALGORITMO GREEN-KNOWLEDGE
+#                 B → BNF · BOOLEAN · C → CROSSOVER
+#                 F → FLOW_STMT · G → GRADIENT · GRAMMAR
+#                 P → PSI(Ψ) · T → TIP
+#    GLOSSARY_MAP.index.lacho § METHOD
+
+# ══════════════════════════════════════════════════════════════════
+# MENÚ 4 — NAVEGACIÓN POR HEXAGRAMA
+# ══════════════════════════════════════════════════════════════════
+# UF activas documentadas en el glosario:
+#
+#  H01 乾 Lo Creativo   → UF[H01-H02].index.lacho + C.index.lacho → CEO
+#  H02 坤 Lo Receptivo  → UF[H01-H02].index.lacho + H.index.lacho → HEADCAT
+#  H05 需 La Espera     → E.index.lacho → ESPERA
+#                         Q.index.lacho → QUEUE_MANAGEMENT
+#  H06 訟 El Conflicto  → C.index.lacho → CONFLICT_6
+#                         A.index.lacho → ABORT
+#  H07 師 El Ejército   → B.index.lacho → BATCH_PROCESSING
+#  H14 大有 Gran Posesión → A.index.lacho → ASSET_VALUATION
+#  H15 謙 La Modestia   → B.index.lacho → BACKGROUND_PROCESS
+#  H29 坎 Lo Abismal    → A.index.lacho → ABISMO
+#                         D.index.lacho → DESKING
+#                         M.index.lacho → MATE_LARGO
+#  H42 益 El Aumento    → A.index.lacho → AUMENTO
+#  H46 升 El Ascenso    → A.index.lacho → ASCENSO
+#  H48 井 El Pozo       → A.index.lacho → ACTIVIDAD_H48_RAG (núcleo RAG)
+#  H50 鼎 El Caldero    → K.index.lacho → KNOWLEDGE_SYNTHESIS
+#  H51 震 El Trueno     → A.index.lacho → ACTIVACIÓN(H51)
+#                         W.index.lacho → WHEN_NOW
+#  H52 艮 La Quietud    → C.index.lacho → CREATIVE_PAUSE · CRYSTAL_FINAL
+#                         Q.index.lacho → QUIETUD
+#  H56 旅 El Viajero    → A.index.lacho → ACTIVIDAD_H03/H05/H06/H56
+#  H57 巽 Lo Penetrante → A.index.lacho → APPEND_ONLY_LOG
+#  H58 兌 Lo Gozoso     → A.index.lacho → 0x3A_OUT
+#  H61 中孚 Fe Interior  → A.index.lacho → ABSOLUTE_SYNC
+#  H63 既濟 Ya Cruzado   → A.index.lacho → ACTIVIDAD_H63_CONSUMACION
+#  H64 未濟 No Cruzado   → A.index.lacho → ALCANZADO(H64)
+#                                           CREATIVE-FLOW-ALPHABET
+#
+#  H03–H64 latentes (44 slots) → A.index.lacho → ACTIVITY_LATENTES
+
+# ══════════════════════════════════════════════════════════════════
+# MENÚ 5 — NAVEGACIÓN POR SÍMBOLO / OPERADOR
+# ══════════════════════════════════════════════════════════════════
+# Archivos de símbolos (placeholders con destino declarado):
+#
+#  #.index.lacho    → TX · cristales · métricas numéricas
+#                     Ver: T.index.lacho → TX
+#  $.index.lacho    → $mon $tue $wed $thu $fri $sat $sun
+#                     Ver: A.index.lacho → ALMANAQUE_SOBERANO
+#                          D.index.lacho → DAY_ID
+#  @.index.lacho    → SAMU @ · @human_early · @human_later · #set · #rise
+#                     Ver: S.index.lacho → SAMU
+#                          A.index.lacho → @(arroba)
+#  [..].index.lacho → [term] [scope] [scenario] [event] [management]
+#                     [command] [language] [ecosystem] [ku-chat]
+#                     [mu-store] [wu-mail] [rabbit-faith]
+#                     [logistical-executive] [elements] [what?] [how?] [when?]
+#                     Ver: LACHO_trust_terms.txt (archivo separado · 17 módulos)
+#                          T.index.lacho → TERM
+#                          S.index.lacho → SCOPE
+#                          M.index.lacho → MAIL/[wu-mail] · MASKING
+#                          R.index.lacho → RABBIT-FAITH
+#  {..}.index.lacho → {chair} {drip} {note} {streaming} {masking}
+#                     {headcat} {scheduler} {launch-bot} {flybot}
+#                     {concierge-desk} {relay} {dogma-virtual} {green-knowledge}
+#                     Ver: D.index.lacho → DRIP · DOORMAN-MOBILE · DOGMA-VIRTUAL
+#                          G.index.lacho → GATO/{headcat} · GREEN-KNOWLEDGE
+#                          H.index.lacho → HEADCAT
+#                          N.index.lacho → NOTE/{note}
+#                          P.index.lacho → PAPERNOTE
+#  **..**.index.lacho → !! !! (ACTIVITY delimitadores)
+#                       .. .. (verbos / doble pausa)
+#                       <equation> <operator_flow> <if> <stat_onto> <loop>
+#                       =><=  (operador de sujeto)
+#                       --[nudo] (operador de nudo)
+#                       Ver: A.index.lacho → ACTIVITY_OPEN/CLOSE · ASSERT_LEFT
+#                            B.index.lacho → BILATERAL
+#                            C.index.lacho → CROSSOVER
+#                            G.index.lacho → GRAMMAR
+#                            M.index.lacho → METHOD
+#  'AI'.index.lacho → Claude · Groq · Windsurf · Jules · NotebookLM
+#                     Ver: A.index.lacho → AI/IA · AI_INTEGRATION · AIDER
+#                          C.index.lacho → CLAUDE
+#                          J.index.lacho → JULES
+
+# ══════════════════════════════════════════════════════════════════
+# MENÚ 6 — ARCHIVOS COMPLEMENTARIOS (fuera del glosario)
+# ══════════════════════════════════════════════════════════════════
+# Archivos del sistema que complementan el glosario:
+#
+#  LACHO_trust_terms.txt
+#    → Los 17 componentes TRUST con definición completa + @trust_matrix
+#    → Fuente: BIBLIO-SOURCES(TRUST_X).txt por cada módulo
+#
+#  LACHO_it_terms.txt
+#    → 188 términos informáticos verificados en el corpus
+#    → Extraídos de LACHO_grouping.txt con filtro corpus-first
+#
+#  LACHO_english_terms.txt
+#    → 1959 términos en inglés del LACHO_grouping.txt original
+#
+#  LACHO_grouping_v2.txt
+#    → Reclasificación funcional del grouping original
+#    → 8 bloques: sentencia canónica · estados · capas · actores
+#                 RAG · dominios · línea ontológica · gaps futuros
+#
+#  glossary_method.json
+#    → Algoritmo de construcción del glosario (5 fases verificadas)
+#    → Métricas finales · criterios de inclusión · formato canónico
+
+# ══════════════════════════════════════════════════════════════════
+# MENÚ 7 — PENDIENTES Y GAPS
+# ══════════════════════════════════════════════════════════════════
+# Archivos placeholder con contenido pendiente de documentar:
+#
+#  UF[H..].index.lacho  → UF[H03] a UF[H64] (44 slots latentes)
+#                          Prioridad: H48 (RAG core) · H29 (vault)
+#                                     H52 (quietud) · H51 (trueno)
+#  #.index.lacho         → métricas numéricas del sistema
+#  $.index.lacho         → operadores de día y almanaque
+#  @.index.lacho         → operadores SAMU completos
+#  [..].index.lacho      → los 17 componentes TRUST (ver archivo separado)
+#  {..}.index.lacho      → los 13 sujetos SOCIAL
+#  **..**.index.lacho    → delimitadores y operadores gramaticales
+#  'AI'.index.lacho      → IAs del toolchain
+#  README.index.lacho    → instrucciones de uso del glosario
+#  MIMEtype.index.lacho  → extensiones propias del sistema
+#                          (.lacho .theater .gate .green .blue .runner .door)
+
+# ─────────────────────────────────────────────────────────────────
+# [term] :: activo · GLOSSARY_MENU.index.lacho · DIRIME/IMV · $sat 21-03-2026

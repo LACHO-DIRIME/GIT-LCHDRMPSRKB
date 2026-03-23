@@ -1,0 +1,87 @@
+# V.index.lacho
+# GLOSSARY — Letra V / v
+# DIRIME · IMV · Sistema LACHO
+# [term] :: activo
+# Revisado y auditado: $sat 21-03-2026
+# ─────────────────────────────────────────────────────────────────
+
+# ══════════════════════════════════════════════════════════════════
+# N1 — FUNDAMENTOS DEL LENGUAJE
+# ══════════════════════════════════════════════════════════════════
+
+## VERB [N1]
+# Clase: token · Gramática ANTLR
+# Verbo soberano en la gramática LACHO.
+# VERB_PHRASE ::= ".." VERB ".."
+# VERB ::= "validate" | "invoke" | "trace" | "commit" | "purge" | ...
+# Los verbos canónicos de cada biblioteca están en grammar.py.
+# Ver: VERB_PHRASE · ACTION · FLOW_STMT · grammar.py
+
+## VALUE [N1]
+# Clase: token · Gramática ANTLR
+# Valor declarado en una línea de declaración LACHO.
+# DECL_LINE ::= DECL_MARK WHITESPACE IDENTIFIER WHITESPACE "=" WHITESPACE VALUE
+# SUBSECTION ::= INDENT IDENTIFIER DECLARE_FLOW VALUE
+# Ver: DECL_LINE · IDENTIFIER · DECLARE_FLOW · JSON_VALUE
+
+## VERDAD [N1]
+# Clase: principio epistémico · Nivel: constitucional
+# En LACHO, la verdad es local y verificable — nunca universal.
+# "DIRIMENCIA: MECANISMO DE DECISIÓN ENTRE VERDAD, ADECUACIÓN Y ÉTICA"
+# "Ψ como OPERADOR COSMOS–TOMO: VERDAD LOCAL Y ORDEN VERIFICABLE"
+# Ver: SCOPE · DIRIMENCIA · Ψ · AXIOMA
+
+# ══════════════════════════════════════════════════════════════════
+# N2 — MÓDULOS Y MECANISMOS OPERATIVOS
+# ══════════════════════════════════════════════════════════════════
+
+## VAULT [N2]
+# Clase: módulo · trust/vault.rs · Rust · Seguridad
+# Módulo de resguardo y cifrado de la persistencia soberana.
+# "/trust/vault.rs: Módulo de resguardo y cifrado."
+# 0x1D_VAULT: registro de seguridad del estado de blindaje.
+# "Rust fue el guardián (vault.rs). Python es el trazo (brain.py)."
+# BP_TRUST → "⊞": trust inactivo / vault requiere verificación.
+# Ver: BRAIN · AES-256 · FIRMA_SOBERANA · INTEGRITY
+
+## VALID [N2]
+# Clase: estado · Sistema de validación
+# Estado de una sentencia o acto que pasó la validación soberana.
+# "IF Ψ(T) == VALID" — condición de emisión autorizada.
+# IF .cat .. dirime .. CAT(CODE) == VALID
+# Se opone a: INVALID · AUSENTE · ABORT.
+# Ver: INVALID · Ψ · FOUNDATION · grammar.py
+
+## VPC [N2]
+# Clase: módulo · CAT(VPC) · Red soberana
+# Virtual Private Cloud. Túneles soberanos entre nodos.
+# CAT(VPC): módulo de sincronía en la nube soberana.
+# "libp2p para topología mesh P2P. WireGuard para tunnels CAT(VPC)."
+# Ver: CAT · SSH · CLOUD · BRIDGE
+
+## VOLUNTAD [N2]
+# Clase: principio operativo · Sistema LACHO
+# La voluntad del Arquitecto como fuerza motriz del sistema.
+# "LA VOLUNTAD ES AHORA" — imperativo de ejecución.
+# "CEO (H01): Dirección de Voluntad."
+# En el sistema: el .tether es el cordón entre la voluntad del
+# Trust y el comportamiento físico del .worker.
+# Ver: AHORA · CEO · TRUST · TETHER
+
+## VIVA (gramática viva) [N2]
+# Clase: calificativo · Gramática LACHO · Nivel: constitucional
+# La gramática en LACHO es viva: no es estilo, es coerción útil.
+# "Gramática viva como sintaxis de sujetos, verbos y objetos."
+# BIBLIO-SOURCES(GRAMATICA VIVA).txt: delimitadores, sujetos,
+# verbos, objetos, sentencia canónica.
+# Ver: GRAMATICA · VERB · IDENTIFIER · FOLIAR
+
+## VENTANA_CREATIVA [N3]
+# Clase: estado / período · Sistema del operador
+# La ventana creativa soberana: $sat(mecedora+gato) → $sat(mecedora).
+# "VENTANA CREATIVA: $sat→$sat — resiliencia ++ procrastinación."
+# Período semanal de generación creativa del operador.
+# Ver: ALMANAQUE_SOBERANO · $sat · ROCKING_CHAIR · GATO
+
+# ─────────────────────────────────────────────────────────────────
+# [term] :: activo · V.index.lacho · DIRIME/IMV · $sat 21-03-2026

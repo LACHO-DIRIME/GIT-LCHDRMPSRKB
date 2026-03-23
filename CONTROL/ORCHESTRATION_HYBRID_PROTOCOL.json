@@ -1,0 +1,28 @@
+{
+  "ENTITY": "ORCHESTRATION_HYBRID_PROTOCOL",
+  "MAPPING_LEVEL": "MANAGEMENT_&_EXECUTION_SYNC",
+  "DATA_STRUCTURE": {
+    "CLAUDE_OFFICE_GERENTE": {
+      "ROLE": "Architectural_Supervisor_&_Feedback_Loop",
+      "INPUT": "Archivos_Comprimidos (.tar.gz)",
+      "ACTION": "Refactorización_Estratégica_y_Análisis_Profundo",
+      "OUTPUT": "Nuevas_Directivas_y_Estructuras_Refinadas"
+    },
+    "WINDSURF_OPERATIONS_EJECUTOR": {
+      "ROLE": "Literal_Technical_Executor",
+      "INPUT": "Instrucciones_Directas_y_Comandos_Terminal",
+      "ACTION": "Mutación_de_Archivos_en_Tiempo_Real_y_Sincronización_SQL",
+      "OUTPUT": "Sistema_Funcional_y_Validación_LSP"
+    },
+    "SYNC_BRIDGE": {
+      "PROTOCOL": "IMV_Sovereign_Handover",
+      "CORE_PATH": "LACHO_FILES/",
+      "NAMESPACE": "GUALICHO_HUINCA_ROOT"
+    }
+  },
+  "METADATA": {
+    "FORMAT": "PURE_DATA_MAPPING",
+    "STATUS": "PROTOCOL_ESTABLISHED",
+    "PROSE_SUPPRESSION": "MAX"
+  }
+}

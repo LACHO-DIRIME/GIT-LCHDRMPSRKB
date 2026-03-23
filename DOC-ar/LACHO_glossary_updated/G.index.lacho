@@ -1,0 +1,88 @@
+# G.index.lacho
+# GLOSSARY — Letra G / g
+# DIRIME · IMV · Sistema LACHO
+# [term] :: activo
+# Revisado y auditado: $sat 21-03-2026
+# ─────────────────────────────────────────────────────────────────
+
+# ══════════════════════════════════════════════════════════════════
+# N1 — FUNDAMENTOS DEL LENGUAJE
+# ══════════════════════════════════════════════════════════════════
+
+## GAP [N1]
+# Clase: operador · Gramática LACHO · Sistema DRA
+# Distancia al NODO-Ω: lo que falta para completar el objetivo.
+# GAP_DECL ::= "GAP" DECLARE_FLOW IDENTIFIER ;;; distancia al NODO-Ω
+# ;;; GAP/TIP — operadores de motivación y palanca
+# Ver: TIP · NODO_OMEGA · AUTORESEARCH
+
+## GATE_SIGIL [N1]
+# Clase: token · Gramática ANTLR · Biblioteca GATE
+# Identificador de sigilo de Gate en la gramática LACHO.
+# GATE_SIGIL ::= HEX_ID "::" IDENTIFIER
+# CRYPTO_TERM | SAMU_SIGIL | GATE_SIGIL | STACK_TERM
+# Ver: GATE · HEX_ID · CRYPTO_OPEN
+
+## GRAMMAR [N1]
+# Clase: módulo · IMV/core/grammar.py · Nivel: Capa A
+# Parser LACHO: 9 bibliotecas · 5 operadores METHOD.
+# La gramática no es estilo: es coerción útil.
+# ::: CICLO_ORIGEN = $sat#H2#GRAMMAR.lacho
+# Ver: grammar.py · ANTLR · AST · VALIDACION
+
+## GRADIENT [N1]
+# Clase: símbolo · Ballpaper · Sistema de dirección
+# "GRADIENT": "∇" — dirección de menor esfuerzo.
+# El gradiente ∇ indica la dirección óptima de flujo del sistema.
+# // TAP&DRIP aplicado: cómputo dosificado · gradiente ∇
+# Ver: BALLPAPER · DRIP · TIP
+
+# ══════════════════════════════════════════════════════════════════
+# N2 — MÓDULOS Y MECANISMOS OPERATIVOS
+# ══════════════════════════════════════════════════════════════════
+
+## GATE [N2]
+# Clase: biblioteca · Nivel: 1 · Paradigma: de script
+# Biblioteca de control de flujo soberano.
+# "GATES: inspirado en hexagramas 5, 56, 6 del I Ching."
+# Controla qué entra, qué espera y qué se cancela.
+# Sujeto canónico: UF[H##] (H05 espera · H56 umbral · H06 conflicto)
+# Relación con GATE_H06, GATE_H05, GATE_H56 en BIBLIA.
+# Ver: GATE_SIGIL · CONFLICT_6 · ABORT · FIFO
+
+## GREEN-KNOWLEDGE [{green-knowledge}] [N2]
+# Clase: sujeto canónico · Biblioteca: WORK · Algoritmo de filtro
+# Filtro de valor nutricional del conocimiento.
+# "Solo carga lo que pasó el filtro GREEN-KNOWLEDGE."
+# "¿Este mensaje tiene valor nutricional?"
+# Asociado a H23 (La Desintegración) — poda ontológica.
+# Ver: BLACKLIST · FILTER · BEHAVIORAL_RAG · WORK
+
+## GUI [N2]
+# Clase: interfaz · Sistema DIRIME · Nivel: Capa B
+# Graphical User Interface. Interfaces HTML soberanas del sistema.
+# LACHO BUILDER GUI · elpulsar.gui · port 8742.
+# Dashboards: DIRIME_V3_DASHBOARD · KALIL_AGENTS_DASHBOARD
+# ELPULSAR_INTEGRATED · SECURITY_FORGE_DASHBOARD.
+# Ver: ELPULSAR · CIDE · BUILDER · BALLPAPER
+
+## GESTA [N3]
+# Clase: estado · Nivel: proyecto soberano
+# La empresa completa del sistema LACHO como gesta soberana.
+# [ESTADO DE LA GESTA]: SUCCESSFUL_BUILD · WAITING_FOR_NEXT_IGNITION
+# "La Gesta": nombre del proyecto global del operador.
+# Ver: ESTADO · CICLO · ARRANQUE
+
+# ══════════════════════════════════════════════════════════════════
+# N3 — ACTORES, ESTADOS Y CLASIFICACIONES
+# ══════════════════════════════════════════════════════════════════
+
+## GATO [{headcat}] [N3]
+# Clase: iconografía · HEADCAT · Sistema visual
+# El gato como símbolo del headcat soberano.
+# "VENTANA CREATIVA, DE SABADO(MECEDORA Y GATO) A SABADO(MECEDORA)"
+# El gato con ojos abiertos sobre la mecedora: auditoría pasiva activa.
+# Ver: HEADCAT · ROCKING_CHAIR · KU
+
+# ─────────────────────────────────────────────────────────────────
+# [term] :: activo · G.index.lacho · DIRIME/IMV · $sat 21-03-2026

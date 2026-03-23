@@ -1,0 +1,105 @@
+# L.index.lacho
+# GLOSSARY — Letra L / l
+# DIRIME · IMV · Sistema LACHO
+# [term] :: activo
+# Revisado y auditado: $sat 21-03-2026
+# ─────────────────────────────────────────────────────────────────
+
+# ══════════════════════════════════════════════════════════════════
+# N1 — FUNDAMENTOS DEL LENGUAJE
+# ══════════════════════════════════════════════════════════════════
+
+## LACHO [N1]
+# Clase: lenguaje · Nivel: fundacional · Constitución operativa
+# Lenguaje Artificial Circunstancial Hipotético Ordenado.
+# "No se presenta como lenguaje generalista ni formalismo sintáctico.
+# Se presenta como una constitución operativa: un sistema que define
+# qué puede existir dentro de su realidad interna, bajo qué condiciones,
+# y con qué límites."
+# La circunstancia no es accidente. Lo hipotético no es debilidad.
+# Lo ordenado no es rigidez.
+# Ver: ARTIFICIAL · CIRCUNSTANCIAL · HIPOTETICO · ORDENADO · DSL
+
+## LEFT [N1]
+# Clase: token · Gramática LACHO · Dirección
+# Dirección izquierda en operadores de flujo de LACHO.
+# FLOW_LEFT · ASSERT_LEFT (">="): operadores de dirección izquierda.
+# "Usos amplios de LEFT en todas sus variantes ontológicas."
+# Ver: FLOW_LEFT · ASSERT_LEFT · ARROW_LEFT · ARCHIVE_LEFT
+
+# ══════════════════════════════════════════════════════════════════
+# N2 — MÓDULOS Y MECANISMOS OPERATIVOS
+# ══════════════════════════════════════════════════════════════════
+
+## LEDGER [N2]
+# Clase: módulo · IMV/core/ledger.py · Nivel: Capa A
+# Registro soberano inmutable de transacciones del sistema.
+# "HL FABRIC provisional — ledger soberano inmutable."
+# Almacena: TX · cristales · Scalar S · actos notariales.
+# Base de datos: data/sovereign.db
+# "DIRIME-IMV_LEDGER — ledger.py + HL FABRIC"
+# Ver: sovereign.db · CRISTALES · TX · SCALAR_S
+
+## LLM [N2]
+# Clase: componente · Sistema cognitivo · LACHO-in-LLM
+# Large Language Model. La "Memoria Pequeña" del sistema.
+# "El Sistema Operativo actúa como la 'Imagen Gigante'
+# (orquestación global), mientras que el LLM funciona como la
+# 'Memoria Pequeña' (núcleo de procesamiento optimizado)."
+# LACHO-in-LLM: LACHO operando dentro de un LLM.
+# Ver: GROQ · CLAUDE · IMV · IMAGEN_GIGANTE
+
+## LINK / (link seat) [N2]
+# Clase: asiento de autoridad · Biblioteca: CRYPTO
+# El asiento de enlace entre nodos del sistema.
+# CRYPTO (link seat) =><= .. conecta .. barrios_remesas_usdt
+# "conectar" → CRYPTO (link seat)
+# Ver: ASIENTO · CRYPTO · BARRIOS · BRIDGE
+
+## LOG_PERMANENTE [N2]
+# Clase: documento · JOURNAL/REFERENCE/
+# Registro histórico permanente del sistema DIRIME.
+# Documenta: TX/S/cristales por fecha · logros · correcciones.
+# "LOG_PERMANENTE.md → Log permanente de eventos importantes."
+# Se actualiza al cierre de cada sesión soberana.
+# Ver: JOURNAL · CIERRE · CRISTALES · SCALAR_S
+
+## LEARNING [N2]
+# Clase: directorio · Sistema de aprendizaje · rag.py
+# Directorio con el ciclo de aprendizaje soberano del sistema.
+# _LEARNING_DIR: indexado con boost ×2.0 en rag.py.
+# Archivos: LEARNING_CYCLE.md · ONBOARDING.md · THREATS.md · WEEKLY_RITUAL.md
+# Ver: APRENDIZAJE · BM25 · BEHAVIORAL_RAG
+
+# ══════════════════════════════════════════════════════════════════
+# N3 — ACTORES, ESTADOS Y CLASIFICACIONES
+# ══════════════════════════════════════════════════════════════════
+
+## LINCE [N3]
+# Clase: depredador estandarizable · Ballpaper · SAMU
+# Precisión + velocidad = captura focalizada. Símbolo: ◇
+# SPECIES_DECL ::= ("AGUILA" | "LINCE" | "ARANA" | "BALLENA")
+# Modo LINCE: ataque preciso y veloz en el momento exacto.
+# Ver: ÁGUILA · ARAÑA · BALLENA · ballpaper.py
+
+## LINUX [N3]
+# Clase: sistema operativo · Hardware del operador
+# Sistema operativo base del entorno de desarrollo DIRIME.
+# "CLI Linux: el transductor final que permite control de bajo nivel."
+# Hardware: Linux Mint · 12GB RAM · SSD 240GB · HDD 1TB.
+# DIRIME LINUX: la versión completa del sistema en Linux soberano.
+# Ver: CLI · HARDWARE · CAT(OS) · CAPA_D
+
+# ══════════════════════════════════════════════════════════════════
+# N4 — HERRAMIENTAS, DOCUMENTOS Y REFERENCIAS
+# ══════════════════════════════════════════════════════════════════
+
+## LIBRO [N4]
+# Clase: documento · CORPUS/DOCUMENTATION/LIBRO.txt
+# El LIBRO LACHO: acopio canónico y completo del sistema.
+# "LIBRO LACHO (ACOPIO) — ARQUITECTURA COGNITIVA GLOBAL"
+# Estructura: MACRO → MESO → MICRO (niveles de lectura).
+# Ver: ACOPIO · FOLIAR · CORPUS · COGNITIVO_00
+
+# ─────────────────────────────────────────────────────────────────
+# [term] :: activo · L.index.lacho · DIRIME/IMV · $sat 21-03-2026

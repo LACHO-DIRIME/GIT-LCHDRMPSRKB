@@ -1,0 +1,124 @@
+# N.index.lacho
+# GLOSSARY — Letra N / n
+# DIRIME · IMV · Sistema LACHO
+# [term] :: activo
+# Revisado y auditado: $sat 21-03-2026
+# ─────────────────────────────────────────────────────────────────
+
+# ══════════════════════════════════════════════════════════════════
+# N1 — FUNDAMENTOS DEL LENGUAJE
+# ══════════════════════════════════════════════════════════════════
+
+## NEWLINE [N1]
+# Clase: token · Gramática ANTLR
+# Token de salto de línea en la gramática LACHO.
+# NEWLINE ::= "\n" | "\r\n"
+# COMMENT_LINE ::= COMMENT_OPEN [^\n]* NEWLINE
+# Ver: COMMENT_LINE · DECL_LINE · BNF
+
+## NDJSON [N1]
+# Clase: formato · Sistema de telemetría · Behavioral RAG
+# Newline-Delimited JSON. Una entrada por línea.
+# "Formato NDJSON — una entrada por línea. Legible por Behavioral RAG."
+# pulse.registry en NDJSON: cada evento lleva [RAG: KEYWORD :: estado :: $dia_hora]
+# Ver: JSON · BEHAVIORAL_RAG · APPEND_ONLY_LOG
+
+## NULL [N1]
+# Clase: tipo de dato · ledger.py · SQL
+# Valor nulo. En sovereign.db: NOT NULL obligatorio en campos críticos.
+# type TEXT NOT NULL → TransactionType enum value
+# timestamp REAL NOT NULL → time.time() Unix epoch
+# Ver: ledger.py · sovereign.db · IDENTIFIER
+
+# ══════════════════════════════════════════════════════════════════
+# N2 — MÓDULOS Y MECANISMOS OPERATIVOS
+# ══════════════════════════════════════════════════════════════════
+
+## NOTARIA [N2]
+# Clase: sistema · Pipeline soberano · Capa B
+# Sistema de certificación, sellado e inmutabilización de actos.
+# "+NOTARÍA: certifica / sella / registra / declara / inmutabiliza"
+# 5 endpoints REST: /api/notaria/certifica · sella · inmutabiliza · verifica · export
+# NOTARIA-9: Pipeline completo certifica→sella→inmutabiliza.
+# Ver: LEDGER · CRYPTO · ACTO · elpulsar.py
+
+## NUDOS [N2]
+# Clase: topología · Sistema de control soberano
+# "TOPOLOGÍA DE NUDOS Y 64 ESTADOS: EL CÓDIGO TIENE PESO"
+# "Los nudos funcionan como formas de control comparables a
+# primitives de seguridad."
+# Tipos canónicos: As de Guía · Ballestrinque · Nudo de Ocho
+# · Nudo Corredizo · Nudo de Rizo
+# Ver: AS_DE_GUIA · BALLESTRINQUE · NUDO_DE_OCHO
+
+## NODO [N2]
+# Clase: componente · Sistema distribuido
+# Nodo soberano del sistema LACHO. Tipos principales:
+#   NODO-WS  → Workstation (diseña · no ejecuta directamente)
+#   NODO-IDE → Infraestructura generativa soberana (Capa C)
+#   NODO-Ω   → Destino final de un camino de Tr
+#   NODO-Σ   → Nodo en aproximación al NODO-Ω
+# "Protocolo convergencia NODO-WS ↔ NODO-IDE"
+# Ver: NODO-WS · NODO-IDE · NODO-OMEGA · FABRIC
+
+## NODO-OMEGA [N2]
+# Clase: destino · Sistema de razonamiento (Tr)
+# El punto de resolución final de un camino de pensamiento.
+# "NODO-OMEGA — destino final de un camino de Tr, el punto de resolución."
+# "La respuesta honesta: el camino al NODO-Ω de esta pregunta."
+# NODO-SIGMA: nodo en proceso de aproximación al NODO-Ω.
+# Ver: NODO · GAP · DIRIMENCIA · Ψ
+
+# ══════════════════════════════════════════════════════════════════
+# N3 — ACTORES, ESTADOS Y CLASIFICACIONES
+# ══════════════════════════════════════════════════════════════════
+
+## NODO-WS [N3]
+# Clase: nodo · Workstation soberana
+# La estación de trabajo del operador como nodo soberano.
+# "NODO-WS: diseña → no ejecuta directamente."
+# CUSTODIA MÓVIL en NODO-WS: {doorman-mobile} gestiona acceso.
+# Ver: NODO · NODO-IDE · HARDWARE · AGENCY_IDE
+
+## NODO-IDE [N3]
+# Clase: nodo · Infraestructura generativa · Capa C
+# Nodo IDE de segunda PC: infraestructura generativa soberana.
+# "NODO-IDE — infraestructura generativa soberana"
+# "AGENCY IDE = NODO-IDE · personalidad exploratoria · METHOD dominante"
+# Bloqueado en Capa C (requiere hardware Ryzen).
+# Ver: NODO · AGENCY_IDE · IDE · CAPA_C
+
+## NUEVO [N3]
+# Clase: estado · Corpus / Sistema
+# Estado de un documento o módulo recién incorporado.
+# En CORPUS_INDEX: columna NUEVO vs ESTABLE vs EN_PROGRESO.
+# Se opone a ESTABLE.
+
+# ══════════════════════════════════════════════════════════════════
+# N4 — HERRAMIENTAS, DOCUMENTOS Y REFERENCIAS
+# ══════════════════════════════════════════════════════════════════
+
+## NORA [N4]
+# Clase: nodo económico · Dominio KALIL · Agente
+# Nodo de rating y analytics dentro del sistema KALIL.
+# NORA Rating: calificación soberana de partes y actores.
+# "filtra partes · NORA"
+# nora_oracle.blue: agente soberano del nodo NORA.
+# Ver: KALIL · ANALYTICS · BARRIOS · BOLIVAR
+
+## NOTE [{note}] [N4]
+# Clase: sujeto canónico · Biblioteca: SOCIAL · Día: $tue
+# Registro pasivo soberano. La nota es el destino de la ciclotimia.
+# "+++ H29 :: {note} $tue — papernote, registro pasivo"
+# "PAPERNOTE: Registro pasivo, memoria simple."
+# SESSION — una sesión completa GATE→NOTE.
+# Ver: SOCIAL · PAPERNOTE · CICLOTIMIA · H29
+
+## NOTEBOOKLM [N4]
+# Clase: herramienta IA · Integración externa
+# Herramienta de Google usada en el toolchain de estudio de LACHO.
+# "FUENTES NOTEBOOKLM": archivos de estudio del sistema.
+# Ver: JULES · CLAUDE · GROQ · AI_INTEGRATION
+
+# ─────────────────────────────────────────────────────────────────
+# [term] :: activo · N.index.lacho · DIRIME/IMV · $sat 21-03-2026

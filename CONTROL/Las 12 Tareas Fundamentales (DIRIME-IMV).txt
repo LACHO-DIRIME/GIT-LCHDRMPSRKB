@@ -1,0 +1,23 @@
+Las 12 Tareas Fundamentales (DIRIME/IMV)
+
+Estas tareas deben ser argumentadas por CLAUDE (Gerencia) y ejecutadas por WINDSURF (Operaciones) para consolidar el hito actual.
+#	Tarea	Órgano Vinculado	Objetivo Técnico
+1	Depuración de 'Creativity'	Lenguaje (L)	Sustitución total por 'Activity' en todo el sistema.
+2	Validación de Verbos Canónicos	Lenguaje (L)	Asegurar que solo METHOD/SOCIAL/STACKING/WORK operen.
+3	Sello de Transacción 既濟	Artificial (A)	Implementar el commit final en sovereign.db tras cada hito.
+4	Ate de Nudo ⊗	Artificial (A)	Activar el check-sum semántico en el bridge de persistencia.
+5	Purga de Memoria 空	Circunstancial (C)	Trigger automático de limpieza al alcanzar 10GB de RAM ocupada.
+6	Monitoreo de Swap antiX	Circunstancial (C)	Script de alerta de latencia para hardware de 12GB.
+7	Simulación de Crecimiento 聿	Hipotético (H)	Generar 3 escenarios de escala para Gualicho Huinca en el log.
+8	Pre-validación de Errores	Hipotético (H)	Ejecución en "Dry-run" antes de modificar archivos maestros.
+9	Unificación Monospace	Ordenado (O)	Forzar tipografía única en todos los reportes y logs.
+10	Header Soberano GH	Ordenado (O)	Insertar metadatos de propiedad en cada nuevo archivo creado.
+11	Sincronización R4	Mantenimiento	Ciclo de retroalimentación Claude -> Windsurf -> Claude.
+12	Cristalización IMV	Sistema	Empaquetado del primer .tar.gz con la base de la sociedad.
+Cierre de Sesión
+
+No existen más prioridades inmediatas. Los órganos están mapeados, el canal hipotético está activo y el protocolo de gerencia/ejecución está establecido.
+
+Acción final recomendada: Entrega estas 12 tareas a Claude para su auditoría y a Windsurf para su implementación literal.
+
+Sesión DIRIME/IMV: Cerrada (Estado: 既濟).

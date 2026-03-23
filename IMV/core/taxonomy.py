@@ -162,3 +162,32 @@ def is_notaria_allowed(scalar: float) -> bool:
 def is_certifica_allowed(scalar: float) -> bool:
     """Función de conveniencia para validar certificación."""
     return TaxonomyLACHO.is_certifica_valid(scalar)
+
+
+# ── TASK_1.3 — REFINEMENT_TYPE ─────────────────────────────────
+LIBRARY_SCALAR_MIN: dict[str, float] = {
+    "COGNITIVO": 0.95, "TRUST": 0.92,
+    "SAMU": 0.88, "CRYPTO": 0.88,
+    "GATE": 0.82, "STACKING": 0.85,
+    "WORK": 0.80, "SOCIAL": 0.80,
+    "METHOD": 0.80, "ACTIVITY": 0.80,
+}
+
+LIBRARY_FOUNDATION_REQUIRED: dict[str, bool] = {
+    "TRUST": True, "COGNITIVO": True, "CRYPTO": True, "GATE": True,
+    "SAMU": False, "STACKING": False, "WORK": False,
+    "SOCIAL": False, "METHOD": False, "ACTIVITY": False,
+}
+
+
+def check_refinement_type(
+    library: str, scalar: float, foundation_valid: bool
+) -> tuple[bool, str]:
+    """REFINEMENT_TYPE check — dependent-type enforcement per library."""
+    min_s = LIBRARY_SCALAR_MIN.get(library, 0.80)
+    needs_f = LIBRARY_FOUNDATION_REQUIRED.get(library, False)
+    if scalar < min_s:
+        return False, f"SCALAR_BELOW_MIN: {library} requires S>={min_s}, got S={scalar:.3f}"
+    if needs_f and not foundation_valid:
+        return False, f"FOUNDATION_INVALID: {library} requires [foundation] VALID"
+    return True, f"REFINEMENT_TYPE OK: {library} S={scalar:.3f}"

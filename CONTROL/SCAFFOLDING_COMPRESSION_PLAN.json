@@ -1,0 +1,18 @@
+{
+  "ENTITY": "SCAFFOLDING_COMPRESSION_PLAN",
+  "TARGET_FILENAME": "LACHO_UPDATE_V3.tar.gz",
+  "STRUCTURE": {
+    "LACHO_FILES/": {
+      "lacho_genome.json": "Genetic_Mapping_v3",
+      "sovereign_organs.lacho": "DSL_Definitions",
+      "schema_v15_sync.json": "Database_Alignment"
+    },
+    "MAINTENANCE/": {
+      "lacho_persistence_bridge.py": "Execution_Script_既濟"
+    }
+  },
+  "METADATA": {
+    "COMPRESSION_FORMAT": "Gzip_Tar",
+    "SOURCE_INTEGRITY": "Verified"
+  }
+}

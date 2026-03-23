@@ -1,0 +1,27 @@
+{
+  "ENTITY": "GUALICHO_HUINCA_SEED_INTEGRATION",
+  "MAPPING_LEVEL": "LEGAL_SOCIEDAD_BASE_L0",
+  "DATA_STRUCTURE": {
+    "CONCEPTUAL_IDENTITY": {
+      "NAME": "Gualicho Huinca",
+      "STATUS": "Semilla_Experimental (L0)",
+      "FUTURE_ROLE": "Propiedad_Soberana_del_Ecosistema",
+      "CURRENT_VALUE": "Marco_Legal_Filosófico"
+    },
+    "ORGAN_ALIGNMENT": {
+      "ORDERED_ORGAN": "Define la estética de la marca (Minimalismo/Blanco/Negro).",
+      "HYPOTHETICAL_ORGAN": "Proyecta la viabilidad comercial de DIRIME/LACHO.",
+      "ARTIFICIAL_ORGAN": "Gestiona los activos digitales (Smart Contracts/Sovereign DB)."
+    },
+    "MINIMALIST_SCAFFOLDING": {
+      "SITE_STRUCTURE": "HTML5_Pure_Semantic",
+      "VISUAL_RULES": "Integrated_Typography_Only",
+      "METADATA": "Encrypted_Identity_既濟"
+    }
+  },
+  "METADATA": {
+    "FORMAT": "PURE_DATA_MAPPING",
+    "STATUS": "ROOT_SOCIETY_DEFINED",
+    "PROSE_SUPPRESSION": "MAX"
+  }
+}

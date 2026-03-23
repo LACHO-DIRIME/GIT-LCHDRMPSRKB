@@ -1,0 +1,34 @@
+{
+  "ENTITY": "LACHO_ORCHESTRATION_PROTOCOL",
+  "MAPPING_LEVEL": "OPERATIONAL_SYNC_V4",
+  "DATA_STRUCTURE": {
+    "STORAGE_STRATEGY": {
+      "PRIMARY_SOURCE": "LACHO_FILES/",
+      "CONTROL_FILES": ["lacho_genome.json", "sovereign_organs.lacho"],
+      "SYNC_AGENT": "Windsurf_IDE_Cascade"
+    },
+    "AGENT_ROLES_SINC": {
+      "CLAUDE_AI": {
+        "ROLE": "Architectural_Refactoring_&_Packaging",
+        "CAPABILITY": "Archive_Processing_&_Generation",
+        "ACTION": "Modificación de esquemas en .tar.gz / Generación de nuevos .lacho"
+      },
+      "WINDSURF_CASCADE": {
+        "ROLE": "Local_Execution_&_LSP_Validation",
+        "CAPABILITY": "Real_Time_File_Mutation",
+        "ACTION": "Escritura directa en LACHO_FILES/ y sincronización con sovereign.db"
+      }
+    },
+    "NEXT_MILESTONE_IMV": {
+      "TITLE": "CRYSTALLIZATION_OF_PERSISTENCE",
+      "TARGET": "sovereign.db",
+      "CORE_ACTION": "Binding_SQL_to_STACKING_Verbs",
+      "PRAGMATIC_MOTOR": "既濟 (Ji Ji) - Transactional_Seal"
+    }
+  },
+  "METADATA": {
+    "FORMAT": "PURE_DATA_MAPPING",
+    "STATUS": "PROTOCOL_ALIGNED",
+    "PROSE_SUPPRESSION": "MAX"
+  }
+}

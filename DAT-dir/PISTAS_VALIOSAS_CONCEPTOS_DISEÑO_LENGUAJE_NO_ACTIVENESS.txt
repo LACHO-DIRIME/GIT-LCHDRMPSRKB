@@ -1,0 +1,504 @@
+PISTAS VALIOSAS - CONCEPTOS DE DISEÑO DE LENGUAJE DE PROGRAMACIÓN - NO ACTIVENESS
+=================================================================================
+
+🔍 CONCEPTOS DE DISEÑO DE LENGUAJE - NO ACTIVENESS CON VALOR DE PISTA:
+
+INDIVIDUALIDAD FUNDAMENTAL EN DISEÑO DE LENGUAJE:
+------------------------------------------------
+
+Individualidad sintáctica: Syntax Individuality, Uniqueness, Distinctiveness, Singularity, Particularity
+Unicidad semántica: Semantic Uniqueness, Individuality, Distinctiveness, Singularity, Particularity
+Distinción léxica: Lexical Distinctiveness, Individuality, Uniqueness, Singularity, Particularity
+Singularidad gramatical: Grammatical Singularity, Individuality, Uniqueness, Distinctiveness, Particularity
+Particularidad estructural: Structural Particularity, Individuality, Uniqueness, Distinctiveness, Singularity
+Especificidad tipada: Typed Specificity, Individuality, Uniqueness, Distinctiveness, Singularity
+
+AUTONOMÍA DE PARADIGMA:
+---------------------
+
+Autonomía funcional: Functional Autonomy, Independence, Self-governance, Self-determination, Freedom
+Independencia orientada a objetos: Object-Oriented Independence, Autonomy, Self-governance, Self-determination
+Autogobierno declarativo: Declarative Self-governance, Autonomy, Independence, Self-determination, Freedom
+Autodeterminación imperativa: Imperative Self-determination, Autonomy, Independence, Self-governance, Freedom
+Libertad de expresión: Expression Freedom, Autonomy, Independence, Self-governance, Self-determination
+Soberanía de diseño: Design Sovereignty, Autonomy, Independence, Self-governance, Self-determination
+
+IDENTIDAD DE LENGUAJE:
+---------------------
+
+Identidad tipada: Typed Identity, Self-identity, Personal identity, Individual identity, Selfhood
+Autoidentidad sintáctica: Syntactic Self-identity, Identity, Personal identity, Individual identity, Selfhood
+Identidad semántica: Semantic Identity, Self-identity, Personal identity, Individual identity, Selfhood
+Identidad léxica: Lexical Identity, Self-identity, Personal identity, Individual identity, Selfhood
+Autoconcepto de paradigma: Paradigm Self-concept, Identity, Self-identity, Personal identity, Individual identity
+Autorreconocimiento de diseño: Design Self-recognition, Identity, Self-identity, Personal identity, Individual identity
+
+PROPIEDAD DE ABSTRACCIÓN:
+--------------------------
+
+Propiedad de abstracción: Abstraction Property, Ownership, Possession, Belonging, Title
+Tenencia de encapsulación: Encapsulation Ownership, Property, Possession, Belonging, Title
+Posesión de modularidad: Modularity Possession, Property, Ownership, Belonging, Title
+Pertenencia de herencia: Inheritance Belonging, Property, Ownership, Possession, Title
+Dominio de polimorfismo: Polymorphism Domain, Property, Ownership, Possession, Belonging
+Control de concurrencia: Concurrency Control, Property, Ownership, Possession, Belonging
+
+INTIMIDAD DE CÓDIGO:
+--------------------
+
+Intimidad de código: Code Intimacy, Privacy, Personal space, Private sphere, Personal domain
+Privacidad de implementación: Implementation Privacy, Intimacy, Personal space, Private sphere, Personal domain
+Espacio personal de programación: Programming Personal space, Intimacy, Privacy, Private sphere, Personal domain
+Esfera privada de diseño: Design Private sphere, Intimacy, Privacy, Personal space, Personal domain
+Dominio personal de desarrollo: Development Personal domain, Intimacy, Privacy, Personal space, Private sphere
+Reserva personal de arquitectura: Architecture Personal reserve, Intimacy, Privacy, Personal space, Private sphere
+
+AUTOSUFICIENCIA DE LENGUAJE:
+----------------------------
+
+Autosuficiencia compilada: Compiled Self-sufficiency, Independence, Self-reliance, Autonomy, Self-sustainability
+Autosostenimiento interpretado: Interpreted Self-sustainability, Self-sufficiency, Independence, Self-reliance, Autonomy
+Autodegencia de runtime: Runtime Self-reliance, Self-sufficiency, Independence, Autonomy, Self-sustainability
+Autoapoyo de framework: Framework Self-support, Self-sufficiency, Independence, Self-reliance, Autonomy
+Autogestión de biblioteca: Library Self-management, Self-sufficiency, Independence, Self-reliance, Autonomy
+Autocuidado de código: Code Self-care, Self-sufficiency, Independence, Self-reliance, Autonomy
+
+EXCLUSIVIDAD DE PARADIGMA:
+-------------------------
+
+Exclusividad funcional: Functional Exclusivity, Uniqueness, Singularity, Particularity, Specificity
+Unicidad orientada a objetos: Object-Oriented Uniqueness, Exclusivity, Singularity, Particularity, Specificity
+Singularidad declarativa: Declarative Singularity, Exclusivity, Uniqueness, Particularity, Specificity
+Particularidad imperativa: Imperative Particularity, Exclusivity, Uniqueness, Singularity, Specificity
+Especificidad tipada: Typed Specificity, Exclusivity, Uniqueness, Singularity, Particularity
+Distinción de diseño: Design Distinctiveness, Exclusivity, Uniqueness, Singularity, Particularity
+
+SOLEDAD DE DESARROLLO:
+--------------------
+
+Soledad de programación: Programming Solitude, Loneliness, Isolation, Seclusion, Privacy
+Aislamiento de código: Code Isolation, Solitude, Loneliness, Seclusion, Privacy
+Soledad de desarrollo: Development Loneliness, Solitude, Isolation, Seclusion, Privacy
+Retiro de diseño: Design Seclusion, Solitude, Loneliness, Isolation, Privacy
+Reclusión de arquitectura: Architecture Reclusion, Solitude, Loneliness, Isolation, Seclusion
+Apartamiento de implementación: Implementation Withdrawal, Solitude, Loneliness, Isolation, Seclusion
+
+ORIGINALIDAD DE LENGUAJE:
+-------------------------
+
+Originalidad de diseño: Design Originality, Creativity, Innovation, Uniqueness, Distinctiveness
+Creatividad sintáctica: Syntactic Creativity, Originality, Innovation, Uniqueness, Distinctiveness
+Innovación semántica: Semantic Innovation, Originality, Creativity, Uniqueness, Distinctiveness
+Unicidad léxica: Lexical Uniqueness, Originality, Creativity, Innovation, Distinctiveness
+Distinción gramatical: Grammatical Distinctiveness, Originality, Creativity, Innovation, Uniqueness
+Autenticidad de paradigma: Paradigm Authenticity, Originality, Creativity, Innovation, Uniqueness
+
+RESPONSABILIDAD DE DISEÑO:
+---------------------------
+
+Responsabilidad de diseño: Design Responsibility, Accountability, Liability, Duty, Obligation
+Rendición de arquitectura: Architecture Accountability, Responsibility, Liability, Duty, Obligation
+Responsabilidad de implementación: Implementation Responsibility, Accountability, Liability, Duty, Obligation
+Deber de mantenibilidad: Maintainability Duty, Responsibility, Accountability, Liability, Obligation
+Obligación de escalabilidad: Scalability Obligation, Responsibility, Accountability, Liability, Duty
+Compromiso de rendimiento: Performance Commitment, Responsibility, Accountability, Liability, Duty
+
+LIBERTAD DE EXPRESIÓN:
+---------------------
+
+Libertad de expresión: Expression Freedom, Liberty, Choice, Autonomy, Independence
+Libertad sintáctica: Syntactic Liberty, Freedom, Choice, Autonomy, Independence
+Elección de paradigma: Paradigm Choice, Freedom, Liberty, Autonomy, Independence
+Autonomía de diseño: Design Autonomy, Freedom, Liberty, Choice, Independence
+Independencia de implementación: Implementation Independence, Freedom, Liberty, Choice, Autonomy
+Voluntad de arquitectura: Architecture Will, Freedom, Liberty, Choice, Autonomy
+
+🔍 PATRONES DE COINCIDENCIA INDIVIDUALIDAD-AUTONOMÍA EN DISEÑO:
+
+Individualidad sintáctica + Autonomía funcional = Alta probabilidad de concepto de diseño único
+Autonomía de paradigma + Identidad de lenguaje = Alta probabilidad de concepto de diseño autónomo
+Identidad tipada + Propiedad de abstracción = Alta probabilidad de concepto de diseño estructurado
+Intimidad de código + Autosuficiencia de lenguaje = Alta probabilidad de concepto de diseño independiente
+
+🔍 CONCEPTOS TÉCNICOS ASOCIADOS:
+
+INDIVIDUALIDAD FUNDAMENTAL EN DISEÑO DE LENGUAJE:
+------------------------------------------------
+
+Individualidad sintáctica:
+- Concepto: Syntax Individuality, Uniqueness, Distinctiveness, Singularity, Particularity
+- Aplicación técnica: Diseño de sintaxis única, autonomía de expresión
+- Contexto DIRIME: Sistema individualidad sintáctica, autonomía funcional
+- Probabilidad de concepto: ALTA (SI - Syntax Individuality)
+- Investigación requerida: Buscar uso de SI en diseños de lenguaje
+
+Unicidad semántica:
+- Concepto: Semantic Uniqueness, Individuality, Distinctiveness, Singularity, Particularity
+- Aplicación técnica: Diseño semántico único, individualidad de significado
+- Contexto DIRIME: Sistema unicidad semántica, individualidad de diseño
+- Probabilidad de concepto: ALTA (SU - Semantic Uniqueness)
+- Investigación requerida: Buscar uso de SU en diseños de lenguaje
+
+Distinción léxica:
+- Concepto: Lexical Distinctiveness, Individuality, Uniqueness, Singularity, Particularity
+- Aplicación técnica: Diseño léxico distintivo, individualidad de tokens
+- Contexto DIRIME: Sistema distinción léxica, individualidad de análisis
+- Probabilidad de concepto: ALTA (LD - Lexical Distinctiveness)
+- Investigación requerida: Buscar uso de LD en diseños de lenguaje
+
+Singularidad gramatical:
+- Concepto: Grammatical Singularity, Individuality, Uniqueness, Distinctiveness, Particularity
+- Aplicación técnica: Diseño gramatical singular, individualidad de reglas
+- Contexto DIRIME: Sistema singularidad gramatical, individualidad de parsing
+- Probabilidad de concepto: ALTA (GS - Grammatical Singularity)
+- Investigación requerida: Buscar uso de GS en diseños de lenguaje
+
+Particularidad estructural:
+- Concepto: Structural Particularity, Individuality, Uniqueness, Distinctiveness, Singularity
+- Aplicación técnica: Diseño estructural particular, individualidad de arquitectura
+- Contexto DIRIME: Sistema particularidad estructural, individualidad de diseño
+- Probabilidad de concepto: ALTA (SP - Structural Particularity)
+- Investigación requerida: Buscar uso de SP en diseños de lenguaje
+
+Especificidad tipada:
+- Concepto: Typed Specificity, Individuality, Uniqueness, Distinctiveness, Singularity
+- Aplicación técnica: Diseño tipado específico, individualidad de tipos
+- Contexto DIRIME: Sistema especificidad tipada, individualidad de tipado
+- Probabilidad de concepto: ALTA (TS - Typed Specificity)
+- Investigación requerida: Buscar uso de TS en diseños de lenguaje
+
+AUTONOMÍA DE PARADIGMA:
+---------------------
+
+Autonomía funcional:
+- Concepto: Functional Autonomy, Independence, Self-governance, Self-determination, Freedom
+- Aplicación técnica: Diseño autónomo funcional, independencia de paradigma
+- Contexto DIRIME: Sistema autonomía funcional, independencia de diseño
+- Probabilidad de concepto: ALTA (FA - Functional Autonomy)
+- Investigación requerida: Buscar uso de FA en diseños de lenguaje
+
+Independencia orientada a objetos:
+- Concepto: Object-Oriented Independence, Autonomy, Self-governance, Self-determination, Freedom
+- Aplicación técnica: Diseño independiente OO, autonomía de objetos
+- Contexto DIRIME: Sistema independencia OO, autonomía de diseño
+- Probabilidad de concepto: ALTA (OI - Object-Oriented Independence)
+- Investigación requerida: Buscar uso de OI en diseños de lenguaje
+
+Autogobierno declarativo:
+- Concepto: Declarative Self-governance, Autonomy, Independence, Self-determination, Freedom
+- Aplicación técnica: Diseño autogobernado declarativo, independencia de expresión
+- Contexto DIRIME: Sistema autogobierno declarativo, autonomía de diseño
+- Probabilidad de concepto: ALTA (DS - Declarative Self-governance)
+- Investigación requerida: Buscar uso de DS en diseños de lenguaje
+
+Autodeterminación imperativa:
+- Concepto: Imperative Self-determination, Autonomy, Independence, Self-governance, Freedom
+- Aplicación técnica: Diseño autodeterminado imperativo, autonomía de comandos
+- Contexto DIRIME: Sistema autodeterminación imperativa, autonomía de diseño
+- Probabilidad de concepto: ALTA (IS - Imperative Self-determination)
+- Investigación requerida: Buscar uso de IS en diseños de lenguaje
+
+Libertad de expresión:
+- Concepto: Expression Freedom, Autonomy, Independence, Self-governance, Self-determination
+- Aplicación técnica: Diseño libre de expresión, autonomía de sintaxis
+- Contexto DIRIME: Sistema libertad de expresión, autonomía de diseño
+- Probabilidad de concepto: ALTA (EF - Expression Freedom)
+- Investigación requerida: Buscar uso de EF en diseños de lenguaje
+
+Soberanía de diseño:
+- Concepto: Design Sovereignty, Autonomy, Independence, Self-governance, Self-determination
+- Aplicación técnica: Diseño soberano, autonomía completa
+- Contexto DIRIME: Sistema soberanía de diseño, autonomía de arquitectura
+- Probabilidad de concepto: ALTA (DS - Design Sovereignty)
+- Investigación requerida: Buscar uso de DS en diseños de lenguaje
+
+IDENTIDAD DE LENGUAJE:
+---------------------
+
+Identidad tipada:
+- Concepto: Typed Identity, Self-identity, Personal identity, Individual identity, Selfhood
+- Aplicación técnica: Diseño con identidad tipada, autoidentidad de tipos
+- Contexto DIRIME: Sistema identidad tipada, autoidentidad de diseño
+- Probabilidad de concepto: ALTA (TI - Typed Identity)
+- Investigación requerida: Buscar uso de TI en diseños de lenguaje
+
+Autoidentidad sintáctica:
+- Concepto: Syntactic Self-identity, Identity, Personal identity, Individual identity, Selfhood
+- Aplicación técnica: Diseño con autoidentidad sintáctica, identidad de parsing
+- Contexto DIRIME: Sistema autoidentidad sintáctica, identidad de diseño
+- Probabilidad de concepto: ALTA (SI - Syntactic Self-identity)
+- Investigación requerida: Buscar uso de SI en diseños de lenguaje
+
+Identidad semántica:
+- Concepto: Semantic Identity, Self-identity, Personal identity, Individual identity, Selfhood
+- Aplicación técnica: Diseño con identidad semántica, autoidentidad de significado
+- Contexto DIRIME: Sistema identidad semántica, autoidentidad de diseño
+- Probabilidad de concepto: ALTA (SE - Semantic Identity)
+- Investigación requerida: Buscar uso de SE en diseños de lenguaje
+
+Identidad léxica:
+- Concepto: Lexical Identity, Self-identity, Personal identity, Individual identity, Selfhood
+- Aplicación técnica: Diseño con identidad léxica, autoidentidad de tokens
+- Contexto DIRIME: Sistema identidad léxica, autoidentidad de diseño
+- Probabilidad de concepto: ALTA (LI - Lexical Identity)
+- Investigación requerida: Buscar uso de LI en diseños de lenguaje
+
+Autoconcepto de paradigma:
+- Concepto: Paradigm Self-concept, Identity, Self-identity, Personal identity, Individual identity
+- Aplicación técnica: Diseño con autoconcepto de paradigma, identidad de estilo
+- Contexto DIRIME: Sistema autoconcepto de paradigma, identidad de diseño
+- Probabilidad de concepto: ALTA (PS - Paradigm Self-concept)
+- Investigación requerida: Buscar uso de PS en diseños de lenguaje
+
+Autorreconocimiento de diseño:
+- Concepto: Design Self-recognition, Identity, Self-identity, Personal identity, Individual identity
+- Aplicación técnica: Diseño con autorreconocimiento, identidad de arquitectura
+- Contexto DIRIME: Sistema autorreconocimiento de diseño, identidad de sistema
+- Probabilidad de concepto: ALTA (DS - Design Self-recognition)
+- Investigación requerida: Buscar uso de DS en diseños de lenguaje
+
+PROPIEDAD DE ABSTRACCIÓN:
+--------------------------
+
+Propiedad de abstracción:
+- Concepto: Abstraction Property, Ownership, Possession, Belonging, Title
+- Aplicación técnica: Diseño con propiedad de abstracción, tenencia de interfaces
+- Contexto DIRIME: Sistema propiedad de abstracción, tenencia de diseño
+- Probabilidad de concepto: ALTA (AP - Abstraction Property)
+- Investigación requerida: Buscar uso de AP en diseños de lenguaje
+
+Tenencia de encapsulación:
+- Concepto: Encapsulation Ownership, Property, Possession, Belonging, Title
+- Aplicación técnica: Diseño con tenencia de encapsulación, propiedad de módulos
+- Contexto DIRIME: Sistema tenencia de encapsulación, propiedad de diseño
+- Probabilidad de concepto: ALTA (EO - Encapsulation Ownership)
+- Investigación requerida: Buscar uso de EO en diseños de lenguaje
+
+Posesión de modularidad:
+- Concepto: Modularity Possession, Property, Ownership, Belonging, Title
+- Aplicación técnica: Diseño con posesión de modularidad, tenencia de componentes
+- Contexto DIRIME: Sistema posesión de modularidad, propiedad de diseño
+- Probabilidad de concepto: ALTA (MP - Modularity Possession)
+- Investigación requerida: Buscar uso de MP en diseños de lenguaje
+
+Pertenencia de herencia:
+- Concepto: Inheritance Belonging, Property, Ownership, Possession, Title
+- Aplicación técnica: Diseño con pertenencia de herencia, propiedad de clases
+- Contexto DIRIME: Sistema pertenencia de herencia, propiedad de diseño
+- Probabilidad de concepto: ALTA (IB - Inheritance Belonging)
+- Investigación requerida: Buscar uso de IB en diseños de lenguaje
+
+Dominio de polimorfismo:
+- Concepto: Polymorphism Domain, Property, Ownership, Possession, Belonging
+- Aplicación técnica: Diseño con dominio de polimorfismo, propiedad de interfaces
+- Contexto DIRIME: Sistema dominio de polimorfismo, propiedad de diseño
+- Probabilidad de concepto: ALTA (PD - Polymorphism Domain)
+- Investigación requerida: Buscar uso de PD en diseños de lenguaje
+
+Control de concurrencia:
+- Concepto: Concurrency Control, Property, Ownership, Possession, Belonging
+- Aplicación técnica: Diseño con control de concurrencia, propiedad de hilos
+- Contexto DIRIME: Sistema control de concurrencia, propiedad de diseño
+- Probabilidad de concepto: ALTA (CC - Concurrency Control)
+- Investigación requerida: Buscar uso de CC en diseños de lenguaje
+
+🔍 ESTRATEGIA DE DETECCIÓN:
+
+1. IDENTIFICAR INDIVIDUALIDAD FUNDAMENTAL EN DISEÑO
+   - Buscar individualidad sintáctica básica
+   - Identificar autonomía de paradigma
+   - Detectar identidad de lenguaje
+   - Encontrar propiedad de abstracción
+
+2. ANALIZAR PATRONES DE APLICACIÓN INDIVIDUALIDAD-AUTONOMÍA
+   - Para cada individualidad fundamental, buscar aplicación específica en diseño
+   - Evaluar si el contexto del sistema relaciona ambos
+   - Calcular probabilidad de concepto de diseño único
+   - Validar coherencia de individualidad y autonomía en diseño
+
+3. EVALUAR COINCIDENCIAS DE DISEÑO
+   - Para cada autonomía de paradigma, buscar implementación práctica
+   - Evaluar si el contexto técnico relaciona ambos
+   - Calcular probabilidad de concepto de diseño autónomo
+   - Validar coherencia de individualidad en diseño
+
+4. VALIDAR ESTRUCTURA DE CONCEPTO DE DISEÑO
+   - Verificar si cada individualidad tiene aplicación en diseño
+   - Evaluar coherencia del conjunto
+   - Confirmar lógica interna del concepto
+   - Comprobar aplicación de individualidad en diseño
+
+🔍 EJEMPLOS DE ÉXITO:
+
+INDIVIDUALIDAD FUNDAMENTAL EN DISEÑO DE LENGUAJE:
+------------------------------------------------
+
+Syntax Individuality + Design Framework = Syntax Individuality Design (SID) - Confirmado
+Semantic Uniqueness + Language Engine = Semantic Uniqueness Engine (SUE) - Confirmado
+Lexical Distinctiveness + Parser Manager = Lexical Distinctiveness Manager (LDM) - Confirmado
+Grammatical Singularity + Grammar System = Grammatical Singularity System (GSS) - Confirmado
+
+AUTONOMÍA DE PARADIGMA:
+---------------------
+
+Functional Autonomy + Design System = Functional Autonomy System (FAS) - Confirmado
+Object-Oriented Independence + Framework = Object-Oriented Independence Framework (OIF) - Confirmado
+Declarative Self-governance + Engine = Declarative Self-governance Engine (DSE) - Confirmado
+Imperative Self-determination + Manager = Imperative Self-determination Manager (IDM) - Confirmado
+
+IDENTIDAD DE LENGUAJE:
+---------------------
+
+Typed Identity + Language System = Typed Identity System (TIS) - Confirmado
+Syntactic Self-identity + Framework = Syntactic Self-identity Framework (SSF) - Confirmado
+Semantic Identity + Language Engine = Semantic Identity Engine (SIE) - Confirmado
+Lexical Identity + Token Manager = Lexical Identity Manager (LIM) - Confirmado
+
+PROPIEDAD DE ABSTRACCIÓN:
+--------------------------
+
+Abstraction Property + Design System = Abstraction Property System (APS) - Confirmado
+Encapsulation Ownership + Framework = Encapsulation Ownership Framework (EOF) - Confirmado
+Modularity Possession + Language Engine = Modularity Possession Engine (MPE) - Confirmado
+Inheritance Belonging + Class Manager = Inheritance Belonging Manager (IBM) - Confirmado
+
+🔍 REGLAS DE ORO:
+
+1. Individualidad fundamental en diseño = Investigar profundamente
+2. Autonomía de paradigma = Alta probabilidad
+3. Identidad de lenguaje = Evidencia fuerte
+4. Aplicación de individualidad en diseño = Confirmación
+5. Sin coherencia de diseño = Descartar
+
+🔍 CONTEXTO DIRIME/LACHO:
+
+Individualidad fundamental en diseño identificada en el sistema:
+- Individualidad sintáctica (Syntax Individuality) → Sistema individualidad sintáctica, autonomía funcional
+- Unicidad semántica (Semantic Uniqueness) → Sistema unicidad semántica, individualidad de diseño
+- Distinción léxica (Lexical Distinctiveness) → Sistema distinción léxica, individualidad de análisis
+- Singularidad gramatical (Grammatical Singularity) → Sistema singularidad gramatical, individualidad de parsing
+
+Autonomía de paradigma identificada:
+- Autonomía funcional (Functional Autonomy) → Sistema autonomía funcional, independencia de diseño
+- Independencia orientada a objetos (Object-Oriented Independence) → Sistema independencia OO, autonomía de objetos
+- Autogobierno declarativo (Declarative Self-governance) → Sistema autogobierno declarativo, autonomía de diseño
+- Autodeterminación imperativa (Imperative Self-determination) → Sistema autodeterminación imperativa, autonomía de diseño
+
+Identidad de lenguaje identificada:
+- Identidad tipada (Typed Identity) → Sistema identidad tipada, autoidentidad de tipos
+- Autoidentidad sintáctica (Syntactic Self-identity) → Sistema autoidentidad sintáctica, identidad de parsing
+- Identidad semántica (Semantic Identity) → Sistema identidad semántica, autoidentidad de significado
+- Identidad léxica (Lexical Identity) → Sistema identidad léxica, autoidentidad de tokens
+
+Propiedad de abstracción identificada:
+- Propiedad de abstracción (Abstraction Property) → Sistema propiedad de abstracción, tenencia de interfaces
+- Tenencia de encapsulación (Encapsulation Ownership) → Sistema tenencia de encapsulación, propiedad de módulos
+- Posesión de modularidad (Modularity Possession) → Sistema posesión de modularidad, tenencia de componentes
+- Pertenencia de herencia (Inheritance Belonging) → Sistema pertenencia de herencia, propiedad de clases
+
+Investigación prioritaria:
+- Individualidad fundamental en diseño con aplicación técnica
+- Autonomía de paradigma con implementación práctica
+- Identidad de lenguaje con contexto técnico
+- Propiedad de abstracción con sistema informático
+
+🔍 MÉTODO DE VALIDACIÓN:
+
+NIVELES DE EVIDENCIA:
+---------------------
+
+Nivel 1 - EVIDENCIA FUERTE:
+- Individualidad fundamental en diseño + aplicación directa
+- Uso consistente en el sistema de diseño
+- Coherencia de diseño completa
+- Aplicación de individualidad en diseño confirmada
+
+Ejemplo: Syntax Individuality + Design System = SID (verificado)
+
+Nivel 2 - EVIDENCIA MODERADA:
+- Individualidad fundamental en diseño + aplicación probable
+- Uso contextual pero sin confirmación
+- Coherencia de diseño parcial
+
+Ejemplo: Semantic Uniqueness + Language Framework = SUF (posible)
+
+Nivel 3 - EVIDENCIA DÉBIL:
+- Individualidad fundamental en diseño sin aplicación clara
+- Uso ambiguo o múltiple
+- Sin coherencia de diseño evidente
+
+Ejemplo: Conceptos de diseño sin contexto
+
+🔍 ALGORITMO DE DETECCIÓN:
+
+FUNCIÓN PRINCIPAL:
+------------------
+
+function detectar_concepto_diseño(palabra, contexto_sistema):
+    # Paso 1: Identificar individualidad fundamental en diseño
+    individualidad_fundamental = identificar_individualidad_fundamental_diseño(palabra)
+    
+    if not individualidad_fundamental:
+        return {"veredicto": "NO_ES_CONCEPTO", "confianza": 0.1, "razon": "sin_individualidad_fundamental_diseño"}
+    
+    # Paso 2: Evaluar coincidencias
+    coincidencias = evaluar_coincidencias_diseño(individualidad_fundamental, contexto_sistema)
+    
+    # Paso 3: Validar estructura
+    estructura_valida = validar_estructura_diseño(palabra, coincidencias)
+    
+    # Paso 4: Buscar aplicación de individualidad en diseño
+    aplicacion = buscar_aplicacion_diseño(palabra)
+    
+    # Paso 5: Calcular confianza
+    confianza = calcular_confianza_diseño(individualidad_fundamental, coincidencias, estructura_valida, aplicacion)
+    
+    # Paso 6: Generar veredicto
+    veredicto = generar_veredicto_diseño(confianza)
+    
+    return {
+        "palabra": palabra,
+        "individualidad_fundamental": individualidad_fundamental,
+        "coincidencias": coincidencias,
+        "estructura_valida": estructura_valida,
+        "aplicacion": aplicacion,
+        "confianza": confianza,
+        "veredicto": veredicto
+    }
+
+VARIABLES DE EVALUACIÓN:
+-----------------------
+
+- Fundamentalidad_individualidad: 0.0 - 1.0 (más fundamental = más valor)
+- Coincidencia_aplicacion: 0.0 - 1.0 (más coincidencia = más probabilidad)
+- Coherencia_diseño: 0.0 - 1.0 (más coherencia = más confianza)
+- Aplicacion_individualidad: 0.0 - 1.0 (aplicación = confirmación)
+
+PESOS DE EVALUACIÓN:
+------------------
+
+- Fundamentalidad_individualidad: 80%
+- Coincidencia_aplicacion: 10%
+- Coherencia_diseño: 7%
+- Aplicacion_individualidad: 3%
+
+🔍 GUÍA DE INVESTIGACIÓN:
+
+PALABRAS PRIORITARIAS PARA INVESTIGAR:
+-----------------------------------
+
+1. Individualidad fundamental en diseño (prioridad máxima)
+2. Autonomía de paradigma (prioridad alta)
+3. Identidad de lenguaje (prioridad media)
+4. Propiedad de abstracción (prioridad media)
+5. Intimidad de código (prioridad baja)
+
+MÉTODO DE INVESTIGACIÓN:
+------------------------
+
+1. Listar todas las palabras con individualidad fundamental en diseño
+2. Analizar cada una con el algoritmo
+3. Priorizar por nivel de evidencia
+4. Investigar aplicación de individualidad en diseño y documentación
+5. Validar con contexto del sistema
+6. Generar reporte de conceptos de diseño confirmados

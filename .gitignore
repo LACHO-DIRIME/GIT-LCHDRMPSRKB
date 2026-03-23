@@ -1,0 +1,33 @@
+# Build artifacts
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# Bases de datos operativas por día (identificadores SAMU soberanos)
+IMV/data/$*.db
+IMV/data/*.backup_*
+CAPA_B/scheduler/scheduler.db
+
+# NERVE_CELLS — archivos de training por sesión (datos locales)
+RUNTIME/NERVE_CELLS/$*
+
+# CORPUS BIBLIA — 185 archivos con paréntesis en nombre
+# Se respaldan via ARCHIVE/*.tar.gz, no via git
+CORPUS/BIBLIA/BIBLIO-SOURCES(*).txt
+
+# Duplicados archivados
+CORPUS/AUX21-03-copiar2/
+
+# Configs personales de herramientas
+RUNTIME/CONFIG/.aider*
+RUNTIME/CONFIG/.sovereign
+
+# Logs de sesión locales
+IMV/logs/
+MAINTENANCE/hypothetical_growth.log
+MAINTENANCE/real_execution.log
+MAINTENANCE/backup.log
+
+# API keys — NUNCA al repo
+IMV/config/api.json

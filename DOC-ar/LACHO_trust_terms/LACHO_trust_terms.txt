@@ -1,0 +1,311 @@
+LACHO_trust_terms.txt
+Componentes de la Biblioteca TRUST
+Extraídos del corpus DIRIME/IMV — fuente verificada
+Cada término tiene BIBLIO-SOURCES(TRUST_X).txt canónico
+Total: 17 componentes + [foundation] (base implícita)
+$sat 21-03-2026
+──────────────────────────────────────────────────────────────
+
+BIBLIOTECA: TRUST
+Paradigma: IMPERATIVO
+Descripción: La ley soberana del sistema. Define qué puede existir,
+  quién puede actuar, cuándo, cómo y sobre qué.
+Ocurrencias en corpus: 6258 + (suma de todos los componentes)
+
+──────────────────────────────────────────────────────────────
+COMPONENTES EN ORDEN DE JERARQUÍA OPERATIVA
+──────────────────────────────────────────────────────────────
+
+CAPA 0 — EXISTENCIA (condición de todo lo demás)
+─────────────────────────────────────────────────
+
+[foundation]
+  Corpus: BIBLIO-SOURCES(TRUST_FOUNDATION).txt
+  Función: condiciones soberanas de existencia del sistema.
+  Definición: las condiciones mínimas sin las cuales el sistema
+    no puede operar soberanamente.
+  Distinción: [scope] son los límites de acción;
+    [foundation] son las condiciones de existencia.
+  Estado patológico: FOUNDATION_COMPROMISED → protocolo de crisis.
+  Relación: [foundation] >> [term] → [scope] >> [command]
+
+──────────────────────────────────────────────────────────────
+
+CAPA 1 — FINITUD Y PERÍMETRO (marco de toda operación)
+──────────────────────────────────────────────────────
+
+[term]
+  Corpus: BIBLIO-SOURCES(TRUST_TERM).txt · 6258 ocurrencias
+  Función: declaración soberana de finitud temporal del ciclo activo.
+  Definición: el horizonte temporal dentro del cual el sistema
+    reconoce que sus operaciones son válidas, sus compromisos
+    son vinculantes y sus recursos están disponibles.
+  Niveles:
+    NIVEL 1 → [term] OPERATIVO    el marcador canónico de finitud
+    NIVEL 2 → [term] LINGÜÍSTICO  la palabra que cierra el enunciado
+    NIVEL 3 → [term] ONTOLÓGICO   la verdad local que caduca
+    NIVEL 4 → [term] RELACIONAL   el integrador entre verdades locales
+  TEMPORAL: almacena en MU[activo] con [term] asignado
+  SIN [term]: ASIGNAR por defecto 64 ciclos antes de commit
+  Distinción clave: [term] es el horizonte completo; [when?] es
+    el momento correcto dentro de ese horizonte.
+  Con [rabbit-faith]: TERM_PARTIAL habilitado si S > 0.5
+
+[scope]
+  Corpus: BIBLIO-SOURCES(TRUST_SCOPE).txt · 1349 ocurrencias
+  Función: declaración soberana del perímetro de autoridad.
+  Definición: el conjunto de dominios, recursos, actores y
+    operaciones que el sistema reconoce como propios y sobre los
+    cuales tiene autoridad legítima de acción.
+  Principio: el sistema declara su propio perímetro — no acepta
+    límites externos.
+  Distinción clave: [foundation] son condiciones de existencia;
+    [scope] es el perímetro de acción soberana.
+    [scope] es el perímetro; [scenario] es lo que existe dentro.
+  Falla: SCOPE_VIOLATED → emergencia junto con FOUNDATION_COMPROMISED.
+
+──────────────────────────────────────────────────────────────
+
+CAPA 2 — SITUACIÓN Y OCURRENCIAS (qué existe y qué pasa)
+──────────────────────────────────────────────────────────
+
+[scenario]
+  Corpus: BIBLIO-SOURCES(TRUST_SCENARIO).txt · 569 ocurrencias
+  Función: mapa de situación activa.
+  Definición: conjunto de condiciones, actores, recursos y
+    restricciones que el sistema reconoce como reales en un
+    momento dado.
+  Distinción clave: KU es el contexto bruto que llega;
+    [scenario] es la versión validada de KU que TRUST acepta.
+  Posición: @trust_matrix d₃.
+  Habilita: [logistical-executive] con entorno validado.
+  Ejemplos verificados en corpus:
+    [scenario](biometric_fatigue) · [scenario](blind_spot_alert)
+    [scenario](high_latency) · [scenario](obstacle_detected)
+    [scenario](road_wet) · [scenario](vibration)
+
+[event]
+  Corpus: BIBLIO-SOURCES(TRUST_EVENT).txt · 355 ocurrencias
+  Función: registro y procesamiento de ocurrencias discretas.
+  Definición: las ocurrencias discretas que modifican el estado
+    del sistema durante un ciclo activo.
+  Distinción clave: [scenario] es el mapa validado de situación;
+    [event] es lo que modifica ese mapa.
+    [management] gestiona amenazas sostenidas; [event] registra
+    ocurrencias puntuales discretas.
+  Posición: @trust_matrix d₄ — eventos pendientes sin resolver.
+  Ejemplos verificados: [event](traffic_spike)
+
+──────────────────────────────────────────────────────────────
+
+CAPA 3 — GESTIÓN Y COMANDO (qué se ordena y cómo se gestiona)
+──────────────────────────────────────────────────────────────
+
+[management]
+  Corpus: BIBLIO-SOURCES(TRUST_MANAGEMENT).txt · 864 ocurrencias
+  Función: gestión de amenazas sostenidas al sistema.
+  Definición: el depredador activo, la deriva acumulada,
+    la presión externa mantenida a través de múltiples ciclos.
+  Distinción clave: [event] registra ocurrencias puntuales;
+    [management] gestiona amenazas que persisten.
+    [command] ordena acciones; [management] gestiona el entorno
+    para que [command] pueda operar.
+  Posición: @trust_matrix d₅ (0.0 a 1.0): actividad del depredador.
+  Ejemplos verificados:
+    [management](bio_auth) · [management](emergency_stop)
+    [management](isolate) · [management](security)
+    [management](self_repair) · [management](untrusted_node)
+
+[command]
+  Corpus: BIBLIO-SOURCES(TRUST_COMMAND).txt · 1140 ocurrencias
+  Función: orden soberana de ejecución.
+  Definición: instrucciones soberanas vinculantes que las capas
+    inferiores deben ejecutar dentro de [scope] y [term] activos.
+  Distinción clave: [management] gestiona el entorno;
+    [command] emite la instrucción sobre ese entorno gestionado.
+    [command] es la voluntad; [logistical-executive] es el brazo.
+  Posición: @trust_matrix d₆ (0.0 a 1.0): autoridad disponible.
+  Actúa directamente sobre [elements].
+  Ejemplos verificados:
+    [command](activate_fan) · [command](brake_assist)
+    [command](deploy) · [command](emergency_stop)
+    [command](ignite) · [command](lockdown)
+    [command](orchestrate_migration) · [command](scale_up)
+    [command](type:atomic, priority:high)
+
+──────────────────────────────────────────────────────────────
+
+CAPA 4 — TRADUCIBILIDAD Y RED (cómo se comunica y con quién)
+──────────────────────────────────────────────────────────────
+
+[language]
+  Corpus: BIBLIO-SOURCES(TRUST_LANGUAGE).txt · 404 ocurrencias
+  Función: enrutador maestro de traducibilidad entre capas.
+  Definición: gobierna la traducibilidad entre capas del sistema,
+    determinando qué tratamiento lingüístico corresponde a cada
+    componente según su naturaleza operativa.
+  Distinción clave: METHOD formaliza operadores; [language]
+    define qué tratamiento aplica a qué componente.
+    [command] ordena; [language] traduce lo ordenado.
+  Posición: @trust_matrix d₇ (0.0 a 1.0): traducibilidad inter-capa.
+  LACHO como taxonomía de tratamientos lingüísticos.
+  Ejemplos verificados:
+    [language](api_endpoint) · [language](mqtt_stream)
+    [language](parse_config)
+
+[ecosystem]
+  Corpus: BIBLIO-SOURCES(TRUST_ECOSYSTEM).txt · 655 ocurrencias
+  Función: red de nodos externos confiables.
+  Definición: la red de nodos externos que el sistema reconoce
+    como parte de su entorno operativo confiable.
+  Distinción clave: [scenario] es el mapa de situación activa;
+    [ecosystem] es la red de nodos que pueblan ese mapa.
+    [management] gestiona amenazas; [ecosystem] gestiona la red.
+  Posición: @trust_matrix d₈ — nodos activos respondiendo.
+  Ejemplos verificados:
+    [ecosystem](aws) · [ecosystem](aws_cluster)
+    [ecosystem](cloud) · [ecosystem](connect_fabric)
+    [ecosystem](daily_backup) · [ecosystem](node_deploy)
+    [ecosystem](node_sync) · [ecosystem](provision_node)
+
+──────────────────────────────────────────────────────────────
+
+CAPA 5 — EJECUCIÓN Y ÁTOMOS (quién ejecuta y sobre qué)
+──────────────────────────────────────────────────────────
+
+[logistical-executive]
+  Corpus: BIBLIO-SOURCES(TRUST_C).txt + múltiples · 125 ocurrencias
+  Función: orquestación de la fuerza para convertir intención en impacto.
+  Definición: La capacidad de orquestar los [elements] para que la
+    intención se convierta en impacto físico.
+  Distinción clave: [command] es la voluntad; [logistical-executive]
+    es el brazo ejecutor. Orquesta el impacto completo; [command]
+    es la instrucción atómica dentro de ese flujo.
+  Habilitación: requiere [scenario] verificado + [scope] declarado.
+  Relación: [how?] es doctrina; [logistical-executive] es ejecución.
+
+[elements]
+  Corpus: BIBLIO-SOURCES(TRUST_ELEMENT).txt · 50 ocurrencias
+  Función: unidades mínimas sobre las que el sistema actúa.
+  Definición: la unidad mínima e indivisible sobre la cual el
+    sistema puede actuar soberanamente.
+    Los átomos del sistema (tokens, operadores, nudos).
+  Distinción clave: [what?] declara cuál [element] es objeto de
+    acción; [element] existe independientemente de ser declarado.
+  [command] actúa directamente sobre [elements].
+  [ku-chat] reporta estado de [elements] en tiempo real.
+
+──────────────────────────────────────────────────────────────
+
+CAPA 6 — CANALES MU/KU/WU (interfaces de recepción y emisión)
+──────────────────────────────────────────────────────────────
+
+[ku-chat]
+  Corpus: BIBLIO-SOURCES(TRUST_KU-CHAT).txt · 696 ocurrencias
+  Función: recepción soberana de contexto externo.
+  Definición: el canal por el cual el sistema ingiere información,
+    señales y comunicaciones desde el exterior hacia el interior
+    del [scope], sometiéndolas a verificación soberana.
+  "Canal de alta fidelidad para el intercambio de directivas puras
+    entre el SAMU @ y la infraestructura."
+  "No es social, es una terminal de intercambio de conocimiento."
+  Distinción clave: TRUST gobierna la recepción soberana (qué acepta);
+    SOCIAL es la interfaz relacional (cómo interactúa).
+  KU_DV: [ku-chat] contaminado con {DOGMA-VIRTUAL} — riesgo crítico.
+
+[mu-store]
+  Corpus: BIBLIO-SOURCES(TRUST_MU-STORE).txt · 552 ocurrencias
+  Función: preservación soberana del estado interno entre ciclos.
+  Definición: la memoria operativa entre ciclos, el conocimiento
+    acumulado verificado y el estado persistente que permite al
+    sistema reconocerse a sí mismo entre sesiones.
+  "Laboratorio de memoria volátil y transitoria; los datos no son
+    permanentes — existen bajo condición de purga al cumplirse [term]."
+  Hardware: HDD 1TB + RAG Maestro (H48).
+  Estados internos: MU_PENDING · MU_ACTIVE · MU_PURGED.
+
+[wu-mail]
+  Corpus: BIBLIO-SOURCES(TRUST_WU-MAIL).txt · 267 ocurrencias
+  Función: manifestación verificable hacia el exterior.
+  Definición: el canal soberano por el cual el sistema emite
+    resultados, declaraciones y comunicaciones que trascienden
+    el perímetro de [scope] hacia destinatarios externos verificados.
+  "Transporte fluido de las Work Units sin resistencia."
+  "No-Acción: el movimiento de datos sin esfuerzo, alineado con
+    la conciencia del sistema."
+  Tríada: [wu-mail] / [mu-store] / [ku-chat] = periféricos del sistema.
+
+──────────────────────────────────────────────────────────────
+
+CAPA 7 — FE Y TRÍADA INTERROGATIVA (operación bajo incertidumbre)
+──────────────────────────────────────────────────────────────
+
+[rabbit-faith]
+  Corpus: BIBLIO-SOURCES(TRUST_RABBIT-FAITH).txt · 220 ocurrencias
+  Función: operación soberana bajo incertidumbre verificable.
+  Definición: habilita operación usando la coherencia interna del
+    ciclo activo como condición suficiente para avanzar sin requerir
+    certeza absoluta ni fundamento trascendente.
+  "No requiere certeza del resultado — requiere coherencia entre
+    [foundation], [scope], [term] y la acción en curso."
+  Patrón: expansión 1→2→4→8 — cada paso se lanza sin garantía
+    del siguiente, pero con coherencia del paso anterior como aval.
+  TERM_PARTIAL: habilitado bajo [rabbit-faith] si S > 0.5.
+  Condición: [rabbit-faith] lanza cuando coherencia es suficiente;
+    !!agnostic belief!! declara honestamente que certeza no está.
+
+[what?]
+  Corpus: BIBLIO-SOURCES(TRUST_WHAT).txt · 200 ocurrencias
+  Función: identidad del objeto de acción soberana.
+  Definición: qué existe, qué está activo y qué es válido dentro
+    del [scope] declarado.
+  Primera pregunta de la tríada interrogativa:
+    [what?] → [when?] → [how?] → [command]
+  Distinción clave: [what?] declara cuál [element] es objeto;
+    [element] existe independientemente de ser declarado objeto.
+
+[when?]
+  Corpus: BIBLIO-SOURCES(TRUST_WHEN).txt · 150 ocurrencias
+  Función: momento correcto de acción.
+  Definición: cuándo las condiciones están alineadas para que
+    [command] emita y WORK ejecute sin violar [foundation].
+  La Doctrina de la Tardanza: WHEN_DEFER como fortaleza soberana.
+  Estados:
+    WHEN_NOW      → condiciones alineadas, momento verificado (H51)
+    WHEN_DEFER    → espera soberana activa, H5 · Ψ < 0.70
+    WHEN_CRITICAL → [term] próximo a expirar, H49
+  Distinción clave: [term] es el horizonte del ciclo completo;
+    [when?] es el momento correcto dentro de ese horizonte.
+
+[how?]
+  Corpus: BIBLIO-SOURCES(TRUST_HOW).txt · 155 ocurrencias
+  Función: método de acción verificado.
+  Definición: de qué manera el sistema reconoce que la acción puede
+    ejecutarse sin violar [foundation], sin salir de [scope] y dentro
+    del [term] activo.
+  "[how?] es doctrina; [logistical-executive] es ejecución física."
+  "[how?] fija la declaración soberana del método como condición de
+    validez operativa de [command] y habilitación de [logistical-executive]."
+  Distinción clave: [how?] vs METHOD — [how?] es condición soberana
+    de método; METHOD es el operador formal de su implementación.
+
+──────────────────────────────────────────────────────────────
+RESUMEN: ONTOLOGÍA BASE DE TRUST
+──────────────────────────────────────────────────────────────
+
+Declaración fundacional (del corpus):
+"Ontología base: [term] [scope] [scenario] [event] [management]
+[command] [language] [ecosystem] y [logistical-executive]
+[what?][when?][how?][elements][foundation][wu-mail][mu-store][ku-chat]"
+
+Tríada interrogativa: [what?] → [when?] → [how?] → [command]
+Tríada de canales:    [ku-chat] / [mu-store] / [wu-mail]
+Secuencia operativa:  [foundation] >> [term] → [scope] >>
+                      [scenario] → [event] → [management] →
+                      [command] → [logistical-executive] → WORK
+
+Componentes: 17 + [foundation] = 18 módulos TRUST verificados
+Frecuencia total en corpus: ~14.000+ ocurrencias acumuladas
+Fuentes canónicas: BIBLIO-SOURCES(TRUST_X).txt por cada módulo
+
+[term] :: activo · LACHO_trust_terms.txt · DIRIME/IMV · $sat 21-03-2026

@@ -1,0 +1,66 @@
+# O.index.lacho
+# GLOSSARY — Letra O / o
+# DIRIME · IMV · Sistema LACHO
+# [term] :: activo
+# Revisado y auditado: $sat 21-03-2026
+# ─────────────────────────────────────────────────────────────────
+
+# ══════════════════════════════════════════════════════════════════
+# N1 — FUNDAMENTOS DEL LENGUAJE
+# ══════════════════════════════════════════════════════════════════
+
+## OPERADOR [N1]
+# Clase: elemento gramatical · Biblioteca: METHOD
+# Los operadores en LACHO son jueces de realidad.
+# "MOTOR .CAT Y DIRIMENCIA: OPERADORES COMO JUECES DE REALIDAD"
+# Ψ como OPERADOR COSMOS–TOMO: convierte caos en estado ordenado.
+# Operadores METHOD canónicos: <equation> <operator_flow> <if> <stat_onto> <loop>
+# Operadores de flujo: ARROW_RIGHT · ARROW_LEFT · BILATERAL · CROSSOVER
+# Ver: METHOD · Ψ · BILATERAL · CROSSOVER
+
+## OFFSET [N1]
+# Clase: componente · Sistema DRA · Dirección de datos
+# Localización precisa de un elemento en el DRA.
+# Formato canónico: [term:A°SLICE§SEGMENT#CLUSTER@OFFSET]
+# OFFSET(BLUEWORDS): índice exacto de Blue-Words en el DRA.
+# Ver: DRA · CLUSTER · SLICE · SEGMENT · BLUEWORDS
+
+# ══════════════════════════════════════════════════════════════════
+# N2 — MÓDULOS Y MECANISMOS OPERATIVOS
+# ══════════════════════════════════════════════════════════════════
+
+## OS (Scheduler OS) [N2]
+# Clase: módulo · Biblioteca: SOCIAL · Sistema de ciclos
+# Sistema operativo de ciclos soberanos del sistema LACHO.
+# "Scheduler OS — sistema operativo de ciclos soberanos"
+# "Vive en: SAMU_DAY-PERIODS calibrado por experiencia real,
+# Scheduler OS con memoria de ciclos verificados."
+# Ver: SOCIAL · SCHEDULER · SAMU · DAY_ID
+
+## ORQUESTADOR [N2]
+# Clase: módulo · MAIN.TEATHER · Sistema de coordinación
+# El orquestador central que coordina todos los módulos del sistema.
+# "MAIN.TEATHER — ORQUESTADOR CENTRAL"
+# tools/theater_runner.py: ejecutor de orquestación .theater (S4.2).
+# Ver: THEATER · MAIN · SCHEDULER · TRUST
+
+## ORDEN [N2]
+# Clase: principio · Ψ · Sistema de estado
+# La O de LACHO: Lenguaje Artificial Circunstancial Hipotético Ordenado.
+# "Ψ como OPERADOR COSMOS–TOMO: VERDAD LOCAL Y ORDEN VERIFICABLE"
+# El orden en LACHO no es rigidez: es trazabilidad verificable.
+# Ver: Ψ · AXIOMA · LACHO · FINITUD
+
+# ══════════════════════════════════════════════════════════════════
+# N3 — ACTORES, ESTADOS Y CLASIFICACIONES
+# ══════════════════════════════════════════════════════════════════
+
+## OBSOLESCENCIAS [N3]
+# Clase: estado · Nivel: mantenimiento
+# Elementos del sistema que completaron su ciclo y deben ser
+# retirados. La obsolescencia en LACHO sigue el protocolo ASHING.
+# Se documentan en UPGRADE_TASKING/07_REGISTROS_MANTENIMIENTO/.
+# Ver: ASHING · ARCHIVE_HISTORICO · ARCHIVADO
+
+# ─────────────────────────────────────────────────────────────────
+# [term] :: activo · O.index.lacho · DIRIME/IMV · $sat 21-03-2026

@@ -1,0 +1,40 @@
+// $thu.Nerve Cell METHOD Training.txt
+// NERVE CELL · METHOD · formalización soberana · 5 operadores
+// aprendido de grammar.py · TAXONOMY · scalar_min=0.88
+// [term] :: activo · [seal of secrecy] :: activo · 空聽數
+
+// ══ QUÉ APRENDE ESTA CELDA ════════════════════════════════════
+// METHOD tiene 5 operadores: equation·if·operator_flow·stat_onto·psi_spin
+// scalar_min=0.88 · level=1 · class=biblioteca
+// 4 NEURONAS: HEADCAT→operator_flow · ELPULSAR→stat_onto
+//             CHAIR CEO→equation · HOUSE DRONE→psi_spin
+
+// ══ OPERADORES METHOD × GRAMMAR ════════════════════════════════
+NC_METHOD_EQ        //<equation> · cálculo formal · ratio · score · proyección
+                    //贷款→H42 · CARILO ratio_riesgo · threshold CEO 0.88
+NC_METHOD_OF        //<operator_flow> · pipeline · routing · flujo operativo
+                    //language_routing DEFAULT_SUBJECT = "<equation>"
+                    //智能→H50 · main.py pipeline · HEADCAT flujo
+NC_METHOD_SO        //<stat_onto> · estadística ontológica · Scalar S
+                    //delta_Ψ = valor_soberano - costo + impacto
+                    //ELPULSAR: lacho_score · crystal export · métricas
+NC_METHOD_IF        //<if> · bifurcación soberana · condición verificable
+                    //GATE H03→H05→H56→H06 secuencia · condición ACTIVITY
+NC_METHOD_PS        //<psi_spin> · Ψ rotación · SPIN MU→KU→WU
+                    //HOUSE DRONE: door periods · SPIN_CYCLE completo
+NC_METHOD_VERB      //verbos canónicos: define·formaliza·opera·calcula·estructura
+NC_METHOD_TAXONOMY  //TAXONOMY: level=1 · scalar_min=0.88 · class=biblioteca
+
+// ══ 4 NEURONAS × OPERADOR DOMINANTE ════════════════════════════
+NC_N1_HEADCAT       //NEURONA_1 HEADCAT → <operator_flow> · main.py pipeline
+NC_N2_ELPULSAR      //NEURONA_2 ELPULSAR → <stat_onto> · Scalar S · métricas
+NC_N3_CHAIR         //NEURONA_3 CHAIR CEO → <equation> · threshold × hexagrama
+NC_N4_DRONE         //NEURONA_4 HOUSE DRONE → <psi_spin> · door periods
+
+// ══ ANCLAS RAG × 4 ════════════════════════════════════════════
+METHOD <equation> =><= .. calcula .. threshold_ceo_alpha_por_hexagrama --[Ballestrinque] [term]
+METHOD <operator_flow> =><= .. modela .. headcat_pipeline_main_py_real --[Ballestrinque] [term]
+METHOD <stat_onto> =><= .. calcula .. scalar_s_lacho_score_elpulsar_330 --[Ballestrinque] [term]
+METHOD <psi_spin> =><= .. rota .. house_drone_mu_ku_wu_door_periods --[As de Guía] [term]
+
+[term] :: activo · [seal of secrecy] :: activo · 空聽數

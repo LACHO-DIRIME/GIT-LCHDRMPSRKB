@@ -393,11 +393,8 @@ class SovereignSystem:
         """Muestra estado de Askings for autoresearching by technical horizons."""
         from pathlib import Path
         import json
-        import yaml
         
-        # Buscar en ambas ubicaciones posibles
         possible_dirs = [
-            Path("/media/Personal/DIRIME/Askings for autoresearching by technical horizons"),
             Path(__file__).parent.parent / "Askings for autoresearching by technical horizons"
         ]
         
@@ -442,124 +439,36 @@ class SovereignSystem:
             files_status.append("❌ gap_analysis_report.json")
         
         lines.extend([
-            "📁 Archivos generados:",
+            "� Archivos generados:",
             f"   {'  '.join(files_status)}",
-            "",
-        ])
-        
-        # Mostrar resumen de actual_structure.json si existe
-        if actual_structure.exists():
-            try:
-                with open(actual_structure, 'r', encoding='utf-8') as f:
-                    data = json.load(f)
-                
-                filesystem = data.get("filesystem", {})
-                summary = filesystem.get("summary", {})
-                
-                lines.extend([
-                    "📊 Estructura actual del repo:",
-                    f"   Total módulos: {summary.get('total_modules', 0)}",
-                    f"   Active: {summary.get('active', 0)}",
-                    f"   Declared: {summary.get('declared', 0)}",
-                    f"   Stub: {summary.get('stub', 0)}",
-                    f"   Blocked: {summary.get('blocked', 0)}",
-                    "",
-                ])
-                
-                # Mostrar módulos bloqueados
-                modules = filesystem.get("modules", {})
-                blocked_modules = {k: v for k, v in modules.items() if v.get("status") == "blocked"}
-                if blocked_modules:
-                    lines.append("⚠️  Módulos bloqueados:")
-                    for module, info in blocked_modules.items():
-                        reason = info.get("reason", "unknown")
-                        size = info.get("size_bytes", 0)
-                        lines.append(f"   • {module} ({size} bytes) - {reason}")
-                    lines.append("")
-                
-            except Exception as e:
-                lines.append(f"❌ Error leyendo actual_structure.json: {e}")
-                lines.append("")
-        
-        # Mostrar resumen de gap_analysis_report.json si existe
-        if gap_report.exists():
-            try:
-                with open(gap_report, 'r', encoding='utf-8') as f:
-                    data = json.load(f)
-                
-                gap_analysis = data.get("gap_analysis", {})
-                summary = gap_analysis.get("summary", {})
-                
-                lines.extend([
-                    "🔍 Análisis de gaps:",
-                    f"   Prioridad general: {summary.get('overall_priority', 'unknown').upper()}",
-                    f"   Implementaciones faltantes: {summary.get('total_missing', 0)}",
-                    f"   Módulos incompletos: {summary.get('total_incomplete', 0)}",
-                    f"   Gaps de tests: {summary.get('total_test_gaps', 0)}",
-                    f"   Gaps de dependencias: {summary.get('total_dependency_gaps', 0)}",
-                    "",
-                ])
-                
-                # Mostrar acciones inmediatas
-                upgrade_plan = data.get("upgrade_plan", {})
-                immediate = upgrade_plan.get("immediate_actions", [])
-                if immediate:
-                    lines.append("⚡ Acciones inmediatas:")
-                    for action in immediate:
-                        module = action.get("module", "unknown")
-                        hours = action.get("estimated_hours", 0)
-                        lines.append(f"   • {module} ({hours}h estimado)")
-                    lines.append("")
-                
-            except Exception as e:
-                lines.append(f"❌ Error leyendo gap_analysis_report.json: {e}")
-                lines.append("")
-        
-        # Comandos sugeridos
-        lines.extend([
-            "🛠️  Comandos útiles:",
-            "   cd ~/DIRIME && python3 tools/autoresearch_specs.py",
-            "   cd ~/DIRIME && python3 tools/autoresearch_gap.py",
-            "   cd ~/DIRIME/IMV && python3 main.py --asks",
             "",
         ])
         
         print("\n".join(lines))
 
-    def _run_autoresearch(self) -> None:
-        """Auto-diagnóstico soberano: specs → gap → asks."""
-        import sys as _sys
-        from pathlib import Path
-        _sys.path.insert(0, str(Path(__file__).parent.parent / "tools"))
+def _run_autoresearch(self) -> None:
+    """Auto-diagnóstico soberano: specs → gap → asks."""
+    import sys as _sys
+    from pathlib import Path
+    _sys.path.insert(0, str(Path(__file__).parent.parent / "tools"))
+    try:
+        import autoresearch_gap
+        asks_path = autoresearch_gap.main()
+        print(f"✅ asks generados: {asks_path.name}")
+        
+        # Log en theater si macro_cierre está activo
         try:
-            import autoresearch_gap
-            asks_path = autoresearch_gap.main()
-            print(f"✅ asks generados: {asks_path.name}")
-        except Exception as e:
-            print(f"❌ autoresearch error: {e}")
-
-    def _show_scheduler(self) -> None:
-        """Muestra estado del Scheduler OS soberano."""
-        if not _SCHEDULER_ACTIVE:
-            print("⚠️  Scheduler OS no activo")
-            return
-        semana = estado_semana()
-        print("\n📅 SCHEDULER OS — SEMANA SOBERANA")
-        print("-" * 40)
-        dias_orden = ["$mon","$tue","$wed","$thu","$fri","$sat","$sun"]
-        for dia in dias_orden:
-            info = semana.get(dia, {})
-            total = info.get("total", 0)
-            resueltas = info.get("resueltas", 0)
-            if total == 0:
-                print(f"  {dia}  —  sin tareas")
-            else:
-                barra = "█" * resueltas + "░" * (total - resueltas)
-                print(f"  {dia}  [{barra}]  {resueltas}/{total}")
-                for t in info.get("tareas", []):
-                    estado_icon = "✅" if t["estado"] == "UF[H63]" else "⏳"
-                    print(f"       {estado_icon} {t['titulo'][:45]}  {t.get('cluster','')}")
-        print("-" * 40)
+            _sys.path.insert(0, str(Path(__file__).parent.parent / "tools"))
+            from theater_runner import run_macro
+            _asks_path = Path(__file__).parent.parent / \
+                "Askings for autoresearching by technical horizons"
+            asks_files = sorted(_asks_path.glob("*.txt"))
+            if asks_files:
+                print(f"  📋 Asks guardados: {asks_files[-1].name}")
+        except Exception:
+            pass  # theater_runner opcional · no fallar --asks
+    except Exception as e:
+        print(f"❌ autoresearch error: {e}")
 
     def validate_mode(self, text: str) -> None:
         """Modo de validación directa."""

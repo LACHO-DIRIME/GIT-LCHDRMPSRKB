@@ -1,0 +1,95 @@
+# R.index.lacho
+# GLOSSARY — Letra R / r
+# DIRIME · IMV · Sistema LACHO
+# [term] :: activo
+# Revisado y auditado: $sat 21-03-2026
+# ─────────────────────────────────────────────────────────────────
+
+# ══════════════════════════════════════════════════════════════════
+# N1 — FUNDAMENTOS DEL LENGUAJE
+# ══════════════════════════════════════════════════════════════════
+
+## REITERANCIAS [N1]
+# Clase: concepto constitucional · Vocabulario soberano
+# El nombre propio que el Arquitecto da al fenómeno de recurrencia.
+# No "duplicados" (problema técnico) — REITERANCIAS: alfabeto de la existencia.
+# "REITERANCIAS :: [RAG_KEYWORD]"
+# "REITERANCIAS merece entrada propia junto a DIRIMENCIA, GREEN-KNOWLEDGE."
+# => "REITERANCIAS" << [scope] :: {masking} >> {note} = $tue
+# Ver: DIRIMENCIA · SCOPE · MASKING · NOTE
+
+## RIFF [N1]
+# Clase: sección documental · Nivel: micro
+# Sección de un folio que ejecuta un protocolo específico en [ku-chat].
+# "IV. RIFF DE EXPANSIÓN FRACTAL ([ku-chat])"
+# "IV. RIFF DE PERSISTENCIA MASIVA ([ku-chat])"
+# "IV. RIFF DE SINCRONIZACIÓN TEMPORAL ([ku-chat])"
+# El RIFF es el paso de ejecución soberana de un hexagrama.
+# Ver: FOLIO · KU · ACTIVACIÓN · PROTOCOL
+
+# ══════════════════════════════════════════════════════════════════
+# N2 — MÓDULOS Y MECANISMOS OPERATIVOS
+# ══════════════════════════════════════════════════════════════════
+
+## RAG [N2]
+# Clase: sistema · Retrieval-Augmented Generation · Nivel: Capa A
+# Motor de recuperación y generación aumentada del sistema LACHO.
+# "SISTEMA RAG COMO INGENIERÍA DE CONOCIMIENTO (VOCABULARIO + ALGORITMOS)"
+# Implementado como IMEBM25 en IMV/core/rag.py.
+# 4 capas: base · boost · NOTARIA · CJK ZH.
+# Ver: BM25 · BEHAVIORAL_RAG · COGNITIVE_RAG · ANCHOR_RAG
+
+## RED-REGRET [N2]
+# Clase: protocolo · Sistema SAMU · Corrección soberana
+# Protocolo de corrección cuando la emisión generó daño.
+# "RED-REGRET: CUÁNDO LA EMISIÓN GENERÓ DAÑO Y CÓMO SE REPARA"
+# "Post-error: nombrar el error, no encuadrarlo."
+# Pipeline: error → RED-REGRET → Behavioral RAG (aprendizaje).
+# Diferencia de ADDENDUM (expansión): RED-REGRET es corrección.
+# Ver: SAMU · BEHAVIORAL_RAG · ADDENDUM · DIRIMENCIA
+
+## RABBIT-FAITH [[rabbit-faith]] [N2]
+# Clase: componente · Biblioteca: TRUST · Motor del Algoritmo Conejo
+# La fe-conejo: motor energético del Algoritmo Conejo.
+# "[RABBIT-FAITH] da energía al [term] mientras está activo."
+# "Cuando el [term] llega, [RABBIT-FAITH] lo acepta."
+# Sin RABBIT-FAITH el Algoritmo Conejo no funciona en alta incertidumbre.
+# Ver: ALGORITMO_CONEJO · [term] · TRUST · FRACTAL
+
+## RITMO [N2]
+# Clase: mecanismo · Sistema SAMU · Ciclo temporal
+# El ritmo soberano del sistema como regulador de transiciones.
+# "[RAG: RITMO :: TRANSICION :: $sat→$sun :: CHISPA_SEMANAL]"
+# BP_RITMO: Dict[str, str] → símbolo de ritmo por día.
+# RITMO_CAT: categoría de ritmo soberano en rag.py.
+# Ver: DAY_ID · SCHEDULER · SAMU · BP_RITMO
+
+## ROI [N2]
+# Clase: métrica · Sistema KALIL · Economía soberana
+# Return on Investment. Retorno sobre la inversión en LACHO.
+# "El reporte final (%report) consolida el ROI logrado."
+# [ASSET_VALUATION / ROI_STABLE]: retorno estable sobre inversión.
+# LACHO como activo monetizable mediante tokenización en Hyperledger.
+# Ver: ASSET_VALUATION · KALIL · LEDGER · HYPERLEDGER
+
+## RELACIONAL [N2]
+# Clase: dimensión · [term] RELACIONAL
+# El cuarto nivel de [term]: integrador entre verdades locales.
+# "NIVEL 4 — [term] RELACIONAL (el integrador)"
+# "× {OPERATIVO, LINGÜÍSTICO, ONTOLÓGICO, RELACIONAL}"
+# Ver: A_RELACIONAL · [term] · SCOPE · DIRIMENCIA
+
+# ══════════════════════════════════════════════════════════════════
+# N3 — ACTORES, ESTADOS Y CLASIFICACIONES
+# ══════════════════════════════════════════════════────────────────
+
+## RAM [N3]
+# Clase: recurso hardware · Sistema de límites
+# Random Access Memory. Límite crítico del sistema: 12GB.
+# "BATCH_PROCESSING sin calibración de H07 → desbordamiento de RAM."
+# Los 64 hexagramas (Practicantes) compiten dentro de 12GB de RAM.
+# Utilización target: < 80% para operación normal.
+# Ver: CPU · SSD · HDD · CAT(MU) · MONITOR
+
+# ─────────────────────────────────────────────────────────────────
+# [term] :: activo · R.index.lacho · DIRIME/IMV · $sat 21-03-2026

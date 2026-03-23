@@ -2,7 +2,7 @@
 """
 index_new_files.py — CORREGIDO $wed 2026-03-11
 Indexa CORPUS + THEATER · LACHO_FILES · AGENTS · RUNNERS · ELPULSAR LOCAL al RAG
-Rutas reales: FOLDERS NO RAG INPUT/ · crea directorios si no existen
+Rutas reales: RUNTIME/ · crea directorios si no existen
 """
 import sys
 import os
@@ -18,7 +18,7 @@ _TOOLS_DIR  = Path(__file__).resolve().parent
 _IMV_DIR    = _TOOLS_DIR.parent
 _BASE       = _IMV_DIR.parent          # /media/Personal/PLANERAI/DIRIME/
 _CORPUS_DIR = _BASE / "CORPUS"
-_SOVEREIGN  = _BASE / "FOLDERS NO RAG INPUT"
+_SOVEREIGN  = _BASE / "RUNTIME"
 
 # ── DIRECTORIOS SOBERANOS ─────────────────────────────────────
 SOVEREIGN_DIRS = {
@@ -100,7 +100,7 @@ def detect_notaria_files():
     corpus_notaria = list(_CORPUS_DIR.glob("UNICODE PROGRAMS/UNICODE_NOTARIA*.txt"))
     notaria_files.extend(corpus_notaria)
     
-    # FOLDERS NO RAG INPUT/ELPULSAR LOCAL/$tue.Nerve Cell Notaria*.txt
+    # RUNTIME/NERVE_CELLS/$tue.Nerve Cell Notaria*.txt
     elpulsar_notaria = list((_SOVEREIGN / "ELPULSAR LOCAL").glob("$tue.Nerve Cell Notaria*.txt"))
     notaria_files.extend(elpulsar_notaria)
     

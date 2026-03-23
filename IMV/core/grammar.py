@@ -7,6 +7,24 @@ Sentencia canónica:
 
 Referencia canónica:
   BIBLIO-SOURCES(GRAMATICA VIVA).txt
+
+--- LACHO FORMAL GRAMMAR — BNF CONTRACT v1.0 ---
+Context-sensitive (Chomsky N3) — maps to LACHO sentence structure
+
+SENTENCE    ::= LIBRARY SUBJECT BIND VERB OBJECT NUDO TERM
+LIBRARY     ::= "TRUST" | "SAMU" | "CRYPTO" | "GATE" | "STACKING"
+              | "WORK" | "SOCIAL" | "METHOD" | "ACTIVITY" | "COGNITIVO"
+BIND        ::= "=><=">
+NUDO        ::= "--[" NUDO_TYPE "]"
+NUDO_TYPE   ::= "As de Guía" | "Ballestrinque" | "⊗" | "Corredizo"
+TERM        ::= "[" IDENTIFIER "]"
+ABORT       ::= "!!" "Abort" "!!" ("--" "--" IDENTIFIER)?
+CONV_DEF    ::= IDENTIFIER "::=" EXPRESSION
+
+SLOTS: exactly 6 mandatory positions before TERM
+DEPTH_MAX: 64 (maps to 64 UF hexagrams)
+ENCODING: UTF-8, CJK block U+4E00-U+9FFF supported
+[TASK_1.1 BNF CONTRACT v1.0]
 """
 
 from __future__ import annotations
@@ -23,6 +41,8 @@ from .foundation import (
     SovereignError,
     verify_sovereign_conditions,
 )
+
+MAX_RECURSION_DEPTH = 64  # maps to 64 UF hexagrams — TASK_1.2
 
 def is_chinese(text: str) -> bool:
     """Detecta si el texto contiene caracteres CJK soberanos."""
@@ -906,10 +926,37 @@ class GrammarValidator:
                 "sobre qué operar."
             )
 
-    def validate(self, sentence: str) -> ParsedSentence:
+    def validate(self, sentence: str, _depth: int = 0) -> ParsedSentence:
         """
         Valida una sentencia LACHO soberanamente.
+        _depth: TASK_1.2 DECIDABILITY_GUARD — max 64
         """
+        if _depth >= MAX_RECURSION_DEPTH:
+            p = ParsedSentence(sentence)
+            p.errors.append(
+                "ABORT: max recursion depth 64 exceeded — HALTING_PROBLEM guard [H06]"
+            )
+            return p
+
+        # ── TASK_3.5 — DEPENDENT_CONTRACT pre-conditions ────────────────
+        # PRE_1: sentence has at least 6 tokens
+        _tokens = sentence.strip().split() if sentence.strip() else []
+        if len(_tokens) < 6:
+            p = ParsedSentence(sentence)
+            p.errors.append(
+                f"PRE_CONDITION_FAIL [PRE_1]: sentence has {len(_tokens)} tokens, "
+                f"need >= 6 (SENTENCE ::= LIBRARY SUBJECT BIND VERB OBJECT KNOT TERM)"
+            )
+            return p
+
+        # PRE_2: [term] marker present
+        if "[" not in sentence or "]" not in sentence:
+            p = ParsedSentence(sentence)
+            p.errors.append(
+                "PRE_CONDITION_FAIL [PRE_2]: [term] bracket not found in sentence"
+            )
+            return p
+
         verify_sovereign_conditions("grammar")
 
         sentence = sentence.strip()
@@ -1030,9 +1077,9 @@ def lacho_score(parsed) -> float:
 # ── Instancia global soberana ─────────────────────────────────────
 _validator = GrammarValidator()
 
-def validate(sentence: str) -> ParsedSentence:
-    """API pública soberana del validador."""
-    return _validator.validate(sentence)
+def validate(sentence: str, _depth: int = 0) -> ParsedSentence:
+    """API pública soberana del validador. _depth: TASK_1.2"""
+    return _validator.validate(sentence, _depth=_depth)
 
 
 # ── Test soberano de arranque ─────────────────────────────────────

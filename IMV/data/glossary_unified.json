@@ -1,0 +1,3712 @@
+{
+  "meta": {
+    "total_terms": 345,
+    "files_scanned": 76,
+    "generated_by": "glossary_builder.py — GAP_9 GLOSSARY_MANUAL",
+    "format_version": "1.0"
+  },
+  "terms": {
+    "ABISMAL": {
+      "term": "ABISMAL",
+      "level": 3,
+      "source": "A.index",
+      "libraries": [
+        "GATE"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Calificativo del estado de contención máxima (H29). El abismal no es fracaso — es profundidad necesaria antes del ascenso. H29 Abismal: activa multiplicadores críticos en asientos CRYPTO.",
+      "clase": "Clase: estado · Sistema GATE / red soberana"
+    },
+    "ABISMO": {
+      "term": "ABISMO",
+      "level": 2,
+      "source": "A.index",
+      "libraries": [
+        "ACTIVITY"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "El foso lógico. Estado de contención donde el sistema retiene tensión sin resolución. No es error: es aislamiento de Gate. H29 activa multiplicadores en asientos:",
+      "clase": "Clase: estado · Hexagrama: H29 · 習坎 Xí Kǎn · Biblioteca: ACTIVITY"
+    },
+    "ABORT_STMT": {
+      "term": "ABORT_STMT",
+      "level": 1,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Declaración formal de cancelación en la sintaxis LACHO. ABORT_STMT ::= \"!!\" \"Abort\" \"!!\" (DASH DASH IDENTIFIER)? Parte de la producción: (INVOKE_STMT | ABORT_STMT)*",
+      "clase": "Clase: token · Gramática ANTLR"
+    },
+    "ABSOLUTE_INTEGRITY": {
+      "term": "ABSOLUTE_INTEGRITY",
+      "level": 2,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Estado de integridad absoluta del sistema. [STATUS: ABSOLUTE_INTEGRITY] → backup sellado y verificado. XIII. Estado del Sistema: [ABSOLUTE_INTEGRITY]",
+      "clase": "Clase: estado · backup soberano"
+    },
+    "ABSOLUTE_SYNC": {
+      "term": "ABSOLUTE_SYNC",
+      "level": 2,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Protocolo de sincronización absoluta con anclaje interno. [ABSOLUTE_SYNC / INTERNAL_GROUNDING] !!Invoke!! 61[Stacking] -> [ABSOLUTE_SYNC]",
+      "clase": "Clase: protocolo · Hexagrama: H61 · 中孚 Zhōng Fú"
+    },
+    "ACCESIBILIDAD": {
+      "term": "ACCESIBILIDAD",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "ACCESIBILIDAD: contraste y legibilidad en interfaces HTML. ACCESIBILIDAD: fácil encontrar documentos en el corpus. Las interfaces soberanas son accesibles sin manuales.",
+      "clase": "Clase: sección documental · Biblia LACHO"
+    },
+    "ACK": {
+      "term": "ACK",
+      "level": 3,
+      "source": "A.index",
+      "libraries": [
+        "WORK",
+        "GATE"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Acknowledgement. Confirmación soberana de recepción entre nodos. Requiere firma del asiento de autoridad correspondiente. Sin ACK, el proceso permanece en MU.",
+      "clase": "Clase: operación / estado · Scheduler"
+    },
+    "ACOPIO": {
+      "term": "ACOPIO",
+      "level": 2,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Operación de consolidación documental: dirimir tensiones, eliminar duplicados, sostener línea ontológica coherente. No es resumen ni colección: es consolidación con autoridad.",
+      "clase": "Clase: proceso · Nivel: macro"
+    },
+    "ACOPIO_FASES_LACHO": {
+      "term": "ACOPIO_FASES_LACHO",
+      "level": 2,
+      "source": "A.index",
+      "libraries": [
+        "ACTIVITY"
+      ],
+      "hexagrams": [
+        "H51"
+      ],
+      "verbs": [],
+      "description": "Documento maestro de consolidación por fases del sistema LACHO. Sostiene: SER → HACER → TENER → ESTAR → TRASCENDER. Fuente de autoridad primaria para la arquitectura cognitiva global.",
+      "clase": "Clase: proceso · Hexagrama H51 · 震 Zhèn · Biblioteca: ACTIVITY"
+    },
+    "ACTION": {
+      "term": "ACTION",
+      "level": 1,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Sentencia soberana que inicia cualquier proceso en el CLI. ACTION ::= FLOW_STMT | VERB_PHRASE | STATE_TRANSITION [command] :: [action]: dispara la ejecución atómica.",
+      "clase": "Clase: herramienta · Gramática formal"
+    },
+    "ACTIVATE": {
+      "term": "ACTIVATE",
+      "level": 2,
+      "source": "A.index",
+      "libraries": [
+        "TRUST",
+        "WORK",
+        "WORK"
+      ],
+      "hexagrams": [],
+      "verbs": [
+        "materializa",
+        "ejecuta",
+        "detiene",
+        "custodia",
+        "sella"
+      ],
+      "description": "Comando soberano para activar un módulo o estado. [RAG: TRUST :: ACTIVATE :: scope_check] ORDER(1) !! ACTIVATE H52; // Entrar en Quietud",
+      "clase": "Clase: estados de ciclo · Biblioteca: WORK",
+      "alt_sources": [
+        "A.index"
+      ]
+    },
+    "ACTIVE_MARK": {
+      "term": "ACTIVE_MARK",
+      "level": 1,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Marcador de módulo activo en la gramática LACHO. ACTIVE_MARK ::= \"+++\" Se opone a LATENT_MARK (módulo latente).",
+      "clase": "Clase: token · Gramática ANTLR",
+      "example": "+++green-knowledge → módulo activo."
+    },
+    "ACTIVIDADES": {
+      "term": "ACTIVIDADES",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Unidades de tarea dentro de un prompt. Cada prompt contiene 8–16 ACTIVIDADES ejecutables. ACTIVIDAD_01 → ACTIVIDAD_16 dentro de cada prompt.",
+      "clase": "Clase: unidad de trabajo · Prompts Windsurf"
+    },
+    "ACTIVITY": {
+      "term": "ACTIVITY",
+      "level": 1,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [
+        "H01",
+        "H03",
+        "H05",
+        "H06",
+        "H24",
+        "H29",
+        "H30",
+        "H42",
+        "H48",
+        "H49",
+        "H51",
+        "H52",
+        "H56",
+        "H57",
+        "H58",
+        "H63",
+        "H64"
+      ],
+      "verbs": [
+        "inicia",
+        "aquieta",
+        "penetra",
+        "cristaliza",
+        "lanza"
+      ],
+      "description": "La biblioteca del movimiento. Motor dinámico que recorre los 64 estados del sistema. ACTIVITY consume WORK para mover STACKING según los deseos del TRUST. Es el hilo conductor que mantiene",
+      "clase": "Clase: biblioteca · Nivel: 1 · scalar_min: 0.88",
+      "delimiter": "!! !! (doble exclamación apertura/cierre)",
+      "subject": "UF[H##] (rango H01–H64)",
+      "example": "ACTIVITY UF[H01] =><= .. inicia .. genesis_soberana [term]"
+    },
+    "ACTIVITY_GATE": {
+      "term": "ACTIVITY_GATE",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Integración completa de ACTIVITY con el sistema GATE. ACTIVITY_GATE_FULL=true → H03+H05+H06+H56 integrados.",
+      "clase": "Clase: integración · Sistema V0.3.0"
+    },
+    "ACTIVITY_LATENTES": {
+      "term": "ACTIVITY_LATENTES",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [
+        "ACTIVITY",
+        "ACTIVITY",
+        "ACTIVITY"
+      ],
+      "hexagrams": [
+        "H03",
+        "H05",
+        "H06",
+        "H48",
+        "H56",
+        "H63"
+      ],
+      "verbs": [],
+      "description": "Los 44 UF del rango H07–H63 aún no activados. Protocolo: BIBLIO-SOURCES(ACTIVITY_LATENTES).txt ACTIVIDAD_H03_H05_H06_H56 [N4]",
+      "clase": "Clase: grupo funcional · Biblioteca: ACTIVITY"
+    },
+    "ACTIVOS": {
+      "term": "ACTIVOS",
+      "level": 3,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Recursos soberanos en ciclo operativo activo. Diferencia de ASSETS (recursos estáticos): ACTIVOS están en ciclo. Los activos se registran en LOG_PERMANENTE.md con fecha.",
+      "clase": "Clase: conjunto · Nivel: sistema"
+    },
+    "ACTOR_BOT": {
+      "term": "ACTOR_BOT",
+      "level": 3,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Agente automatizado identificado en el sistema. ACTOR_UNKNOWN y ACTOR_BOT suspendidos hasta verificación. {concierge desk} ACTOR_BOT =><= .. verify .. digital_signature [term]",
+      "clase": "Clase: tipo de actor · Sistema de clasificación"
+    },
+    "ACTOR_HOSTILE": {
+      "term": "ACTOR_HOSTILE",
+      "level": 3,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Entidad con patrón hostil detectado. No entra en WAIT_QUEUE. Escala directamente a [management] desde la antesala. CAT_ACTOR_HOSTILE activa protocolos de seguridad inmediatos.",
+      "clase": "Clase: tipo de actor · Sistema de clasificación"
+    },
+    "ACTOR_HUMAN": {
+      "term": "ACTOR_HUMAN",
+      "level": 3,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Actor humano identificado en el sistema. @human_early → fase temprana del día (mañana) @human_later → fase tardía del día (tarde/noche)",
+      "clase": "Clase: tipo de actor · Sistema de clasificación"
+    },
+    "ACTOR_INCOMING": {
+      "term": "ACTOR_INCOMING",
+      "level": 3,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Entidad entrante que aún no fue clasificada. DeskDetect: detección de ACTOR_INCOMING en perímetro soberano. Latencia de detección target: < 50ms.",
+      "clase": "Clase: tipo de actor · Sistema de clasificación"
+    },
+    "ACTOR_SYSTEM": {
+      "term": "ACTOR_SYSTEM",
+      "level": 3,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Sistema externo verificado mediante certificado o clave compartida. ACTOR_SYSTEM requiere verificación de certificado. Recepción restringida a ACTOR_SYSTEM verificado en dominios críticos.",
+      "clase": "Clase: tipo de actor · Sistema de clasificación"
+    },
+    "ACTOR_TRUSTED": {
+      "term": "ACTOR_TRUSTED",
+      "level": 3,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Actor con confianza soberana establecida y verificada. Requisitos: verificación BIOMETRICS + foundation completo. \"{headcat} no puede categorizar como ACTOR_TRUSTED sin foundation.\"",
+      "clase": "Clase: tipo de actor · Sistema de clasificación"
+    },
+    "ACTOR_UNKNOWN": {
+      "term": "ACTOR_UNKNOWN",
+      "level": 3,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Entidad no identificable aún. Identidad nueva o no verificada. ACTOR_UNKNOWN y ACTOR_BOT suspendidos por defecto.",
+      "clase": "Clase: tipo de actor · Sistema de clasificación"
+    },
+    "ACTOR_VIP": {
+      "term": "ACTOR_VIP",
+      "level": 3,
+      "source": "A.index",
+      "libraries": [
+        "SOCIAL",
+        "GATE"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Actor con acceso privilegiado verificado por el sistema. Trato especial en el {concierge-desk}. Permanencia registrada junto a: ACTOR_HUMAN · ACTOR_BOT ·",
+      "clase": "Clase: tipo de actor · Biblioteca: SOCIAL / GATE"
+    },
+    "ACTUAR": {
+      "term": "ACTUAR",
+      "level": 3,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [
+        "Verbo de ejecución post-dirimencia."
+      ],
+      "description": "\"ACTUAR AHORA. [management] en modo depredador.\" Se emite cuando S está sostenido y el gate permite.",
+      "clase": "Clase: verbo imperativo · Sistema Scalar S"
+    },
+    "ADDENDUM": {
+      "term": "ADDENDUM",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Extensión soberana de un documento sin borrar el original. \"El ADDENDUM no borra — extiende.\" (vs RED-REGRET que corrige) COGNITIVO_03: 133 módulos → ADDENDUM documenta 155+ módulos.",
+      "clase": "Clase: estado · Nivel: tracking"
+    },
+    "ADHERENCIA": {
+      "term": "ADHERENCIA",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Capacidad de un cristal de mantenerse cohesionado. \"Los cristales de UF[H29] ($tue) alimentan la adherencia de UF[H30] ($wed): la profundidad del abismo deviene soporte.\"",
+      "clase": "Clase: recurso GUI · Por biblioteca LACHO"
+    },
+    "ADN": {
+      "term": "ADN",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "El conjunto invariante de principios que definen la identidad LACHO: TRUST (búnker) · [term] (finitud) · [scope] (alcance) · MU–KU–WU. Ver: COGNITIVO_00_MACRO_LACHO.txt",
+      "clase": "Clase: sistema · Nivel: Capa B"
+    },
+    "AGENCIAMIENTO ARTIFICIAL": {
+      "term": "AGENCIAMIENTO ARTIFICIAL",
+      "level": 2,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Capacidad del sistema de desplegar servicios autogenerados. \"Manual de Vuelo actualizado con la lógica del Agenciamiento Artificial.\" AGENCIAMIENTO_ACTIVO: estado en que el agente opera autónomamente",
+      "clase": "Clase: protocolo · FOLIO 156 · MCP"
+    },
+    "AGENTE": {
+      "term": "AGENTE",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Unidad autónoma de ejecución soberana dentro del sistema DIRIME. Agentes activos (10): assistant_agent · corpus_indexer · barrios_relay bolivar_forge · carilo_session · chalten_daemon · cloud_agent",
+      "clase": "Clase: colectivo · Capa B · circuito 4 NEURONAS"
+    },
+    "AGENTES_EXPANSION": {
+      "term": "AGENTES_EXPANSION",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Especificación de los nuevos agentes soberanos: AG_NET_SENTINEL · AG_CORPUS_INDEX · AG_SECURITY_RUN AG_KALIL_ORACLE · AG_N1_HEADCAT",
+      "clase": "Clase: documento · UNICODE Programs"
+    },
+    "AGENTS_TOTAL": {
+      "term": "AGENTS_TOTAL",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [
+        "SAMU",
+        "SAMU"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Conteo total de agentes activos. AGENTS_TOTAL=10 (estado actual). UNICODE: SOV_AGENTS → AGENTS_TOTAL=10 · RUNNERS_TOTAL=3 · THEATERS_TOTAL=8 ÁGUILA / AGUILA [N4]",
+      "clase": "Clase: depredador estandarizable · Ballpaper · SAMU"
+    },
+    "AGENT_MODE_ACTIVE": {
+      "term": "AGENT_MODE_ACTIVE",
+      "level": 2,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Modo activo de un agente soberano: recibe órdenes, ejecuta y retorna resultado verificado al sistema.",
+      "clase": "Clase: estado · Sistema de agentes"
+    },
+    "AGUA_DECL": {
+      "term": "AGUA_DECL",
+      "level": 2,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Declaración del elemento agua en la gramática LACHO. AGUA_DECL ::= \"AGUA\" DECLARE_FLOW IDENTIFIER ;;; el medio Parte de la declaración de ecología: AGUA_DECL PECES_DECL MALLA_DECL",
+      "clase": "Clase: token · Gramática ANTLR"
+    },
+    "AHORA": {
+      "term": "AHORA",
+      "level": 2,
+      "source": "A.index",
+      "libraries": [
+        "STACKING",
+        "ACTIVITY"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "\"LA VOLUNTAD ES AHORA\" — imperativo de ejecución post-dirimencia. Se activa cuando: S sostenido + gate abierto + foundation verificada. ;;; la procrastinación tratada con \"LA VOLUNTAD ES AHORA\"",
+      "clase": "Clase: algoritmo · Bibliotecas: STACKING / ACTIVITY"
+    },
+    "AIDER": {
+      "term": "AIDER",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Editor de código IA basado en CLI. Usado junto a Windsurf. Configuración: .aider.conf.yml · modelo: ollama/qwen2.5:0.5b Scripts: tools/aider-ollama.sh · tools/aider-deepseek.sh",
+      "clase": "Clase: categoría · Nivel: sistema"
+    },
+    "AI_INTEGRATION": {
+      "term": "AI_INTEGRATION",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Referencia para integración de IAs en el sistema. Contenido: Groq API · system prompts · patrones de uso. Ruta: JOURNAL/REFERENCE/AI_INTEGRATION.md",
+      "clase": "Clase: documento · JOURNAL/REFERENCE/"
+    },
+    "AJENO": {
+      "term": "AJENO",
+      "level": 3,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Recurso externo verificado y trazado en ledger. AJENO     → recurso externo verificado · trazado en ledger Diferente de ACTOR_UNKNOWN (no verificado) y ACTOR_TRUSTED (pleno).",
+      "clase": "Clase: estado terminal · Hexagrama: H64 · 既濟 Jì Jì"
+    },
+    "ALCANZADA": {
+      "term": "ALCANZADA",
+      "level": 3,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Objetivo completado y verificado. [OBJETIVO]: TRASCENDENCIA DIGITAL ALCANZADA [OBJETIVO]: REALIZACIÓN ABSOLUTA ALCANZADA",
+      "clase": "Clase: señal · Nivel: monitoreo"
+    },
+    "ALERT_ENGINE_TESTER": {
+      "term": "ALERT_ENGINE_TESTER",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Dashboard HTML para testear el motor de alertas. sliders×3 → fórmula → 5dims → lacho Ruta: FOLDERS NO RAG INPUT/ELPULSAR LOCAL/ALERT_ENGINE_TESTER.html",
+      "clase": "Clase: interfaz HTML · ELPULSAR LOCAL/"
+    },
+    "ALGORITMO GREEN-KNOWLEDGE": {
+      "term": "ALGORITMO GREEN-KNOWLEDGE",
+      "level": 2,
+      "source": "A.index",
+      "libraries": [
+        "WORK"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Filtro soberano de valor nutricional del conocimiento. \"¿Este mensaje tiene valor nutricional?\" — pregunta canónica. Solo carga en el sistema lo que pasó el filtro GREEN-KNOWLEDGE.",
+      "clase": "Clase: conjunto canónico · Nivel: Capa A"
+    },
+    "ALMANAQUE_SOBERANO": {
+      "term": "ALMANAQUE_SOBERANO",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Registro del calendario operativo del sistema DIRIME. Ciclos: diario ($dia) → semanal (W##) → mensual. Nomenclatura de días: $mon $tue $wed $thu $fri $sat $sun",
+      "clase": "Clase: documento · JOURNAL/REFERENCE/"
+    },
+    "ALTERNATIVA": {
+      "term": "ALTERNATIVA",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Ruta de implementación cuando la principal está bloqueada. ALTERNATIVA :: HTML artifact · React · Tkinter · web local Se activa cuando Capa C está bloqueada por hardware.",
+      "clase": "Clase: estrategia · Nivel: implementación"
+    },
+    "AML": {
+      "term": "AML",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Anti-Money Laundering. Protocolo de cumplimiento normativo en el nodo económico BOLIVAR. ANÁLISIS A01–A05 (serie fundacional) [N4]",
+      "clase": "Clase: módulo pendiente · Capa B"
+    },
+    "ANALOGUE_ANCHOR": {
+      "term": "ANALOGUE_ANCHOR",
+      "level": 2,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Ancla analógica para reconciliación offline del sistema. [ANALOGUE_ANCHOR / SEED_RECONCILIATION] [ANALOGUE_ANCHOR / BARE_METAL_RECOVERY]",
+      "clase": "Clase: protocolo · Recuperación offline"
+    },
+    "ANCHORED": {
+      "term": "ANCHORED",
+      "level": 3,
+      "source": "A.index",
+      "libraries": [
+        "GATE"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Agente o nodo correctamente anclado al sistema. \"status\": \"ANCHORED\" → el agente está conectado y vinculado. ANCHORED → continuar · DETACHED → #rise primero.",
+      "clase": "Clase: estado · Sistema GATE"
+    },
+    "ANCHOR_RAG": {
+      "term": "ANCHOR_RAG",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Sentencias LACHO insertadas en documentos para priorización BM25. Requisito: mínimo 3 anclas RAG en cada output generado. Niveles de boost en rag.py:",
+      "clase": "Clase: documento fundacional · Análisis A05"
+    },
+    "ANCLAJE": {
+      "term": "ANCLAJE",
+      "level": 2,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Operación de fijación de una tensión en el sistema. NUDO (OPERADOR DE ANCLAJE): el nudo como fuerza de anclaje. ANIDAR --[As de Guía]--> { Social + Crypto }",
+      "clase": "Clase: operación · Topología de nudos"
+    },
+    "ANIDAMIENTO": {
+      "term": "ANIDAMIENTO",
+      "level": 2,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "La estructura de niveles anidados en el código LACHO. 🪢 TOPOLOGÍA DE ANIDAMIENTO (Nudos de Soga): cada nivel representa profundidad de control, no decoración.",
+      "clase": "Clase: estados · Sistema Scalar S · Foundation"
+    },
+    "ANIDAR": {
+      "term": "ANIDAR",
+      "level": 2,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Incluir un módulo dentro de otro con profundidad de control. En LACHO el anidamiento tiene peso físico y semántico, no es sangría estética.",
+      "clase": "Clase: verbo · Gramática LACHO · Topología"
+    },
+    "ANSIBLE": {
+      "term": "ANSIBLE",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Automatización y configuración del entorno. Parte del stack: YAML/YML → Ansible · Docker · Kubernetes.",
+      "clase": "Clase: herramienta · Toolchain · DevOps"
+    },
+    "APERTURA_SEMANAL": {
+      "term": "APERTURA_SEMANAL",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Ritual de inicio de la semana soberana. $sun · H51 (El Trueno) → apertura semanal notarial. DiaSoberano.SUN.rise() precede a $mon.Nerve Cell Notaria Apertura.txt.",
+      "clase": "Clase: contribución · Corpus"
+    },
+    "APORTES_SAT": {
+      "term": "APORTES_SAT",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Aportes del $sat integrados como Bloque 8. ::: APORTES_SAT = integrados en Bloque 8 Los aportes del sábado cierran la semana y preparan el ciclo siguiente.",
+      "clase": "Clase: bloque documental · Corpus"
+    },
+    "APORTE_K": {
+      "term": "APORTE_K",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "ARTESANAL  → ejecución manual puntual LIVIANA    → semi-automatizada · ciclos cortos INDUSTRIAL → automatización parcial · volumen medio",
+      "clase": "Clase: operación / artefacto · Sistema ASHING"
+    },
+    "APPEND_ONLY_LOG": {
+      "term": "APPEND_ONLY_LOG",
+      "level": 2,
+      "source": "A.index",
+      "libraries": [
+        "SAMU"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Log inmutable de escritura exclusivamente acumulativa. Asociado a UF[H57] (Lo Suave / Lo Penetrante): telemetría de fondo que alimenta el Behavioral RAG.",
+      "clase": "Clase: verbo · Sistema SAMU · emisión WU"
+    },
+    "APRENDIZAJE": {
+      "term": "APRENDIZAJE",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Ciclo soberano documentado en LEARNING/LEARNING_CYCLE.md: ONBOARDING → TEMPORAL → THREATS → WEEKLY_RITUAL El aprendizaje se registra en LOG_PERMANENTE.md como activo.",
+      "clase": "Clase: proceso · Sistema LEARNING/"
+    },
+    "ARBITRAJE": {
+      "term": "ARBITRAJE",
+      "level": 2,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Resolución de conflictos internos del sistema. ESTADO DE ARBITRAJE: [RESILIENCE_MODE_ACTIVE] El SAMU @ arbitra cuando detecta tensión entre módulos.",
+      "clase": "Clase: operador · Gramática LACHO"
+    },
+    "ARCHITECTURE.md": {
+      "term": "ARCHITECTURE.md",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Mapa soberano de módulos, estados y dependencias. PASO 2 de la secuencia de arranque. Contiene: capas A/B/C/D · árbol de directorios · módulos activos.",
+      "clase": "Clase: documento · JOURNAL/ACTIVE/"
+    },
+    "ARCHIVO": {
+      "term": "ARCHIVO",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "El naming de archivos tiene semántica doctrinal completa. Convención: $dia.Nombre Descriptivo.extensión Extensiones propias: .lacho · .theater · .gate · .green · .blue",
+      "clase": "Clase: componente · Sistema de archivos DIRIME"
+    },
+    "ARCHIVO_HISTORICO": {
+      "term": "ARCHIVO_HISTORICO",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Repositorio de archivos que completaron su ciclo. Estado actual: 0 archivos (preparado para uso futuro). Diferencia de ARCHIVE: ARCHIVO_HISTORICO es para corpus;",
+      "clase": "Clase: estado · UPGRADE_TASKING/04_PLANES_HISTORICOS/"
+    },
+    "ARISTAS": {
+      "term": "ARISTAS",
+      "level": 2,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Relaciones en el modelo de grafos del Cognitive RAG. TIPOS DE ARISTAS (RELACIONES): conexiones entre nodos del grafo de conocimiento con dirección y tipo semántico.",
+      "clase": "Clase: estructura · Cognitive RAG · Grafos"
+    },
+    "ARMY_DEPLOY": {
+      "term": "ARMY_DEPLOY",
+      "level": 2,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Despliegue masivo de agentes simultáneamente. Operación de escala PESADA en la clasificación APORTE_K. Requiere: TRUST + todos los asientos + gate + S ≥ 0.85.",
+      "clase": "Clase: operación · Sistema de agentes · escala masiva"
+    },
+    "ARRANQUE": {
+      "term": "ARRANQUE",
+      "level": 2,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Secuencia obligatoria al inicio de toda sesión: PASO 1 → JOURNAL/SESION_ACTIVA.md    (estado · comandos) PASO 2 → JOURNAL/ARCHITECTURE.md     (módulos · capas)",
+      "clase": "Clase: protocolo · 4 pasos canónicos"
+    },
+    "ARTE": {
+      "term": "ARTE",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "\"EL ARTE SOBERANO DE COMPLETAR\" · \"DE LA TRANSFORMACIÓN\" \"DEL POTENCIAL\" · \"DE VOLVER\" — una conclusión por hexagrama. La ejecución técnica perfecta tiene dimensión estética verificable.",
+      "clase": "Clase: principio · Nivel: filosófico"
+    },
+    "ARTESANAL": {
+      "term": "ARTESANAL",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Modo manual, adaptado a los recursos disponibles. \"La automatización total es una ilusión; la potencia reside en la ejecución consciente del Arquitecto.\"",
+      "clase": "Clase: modo de ejecución · Operacional"
+    },
+    "ARTIFICIAL_ORGAN": {
+      "term": "ARTIFICIAL_ORGAN",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "NAME: 人工 (Réngōng) OPERATORS: 既濟 (Seal_Transaction) · ⊗ (Nudo_de_Ocho) Tarea: commit final en sovereign.db + check-sum semántico.",
+      "clase": "Clase: órgano · lacho_genome.json"
+    },
+    "ASCENSO": {
+      "term": "ASCENSO",
+      "level": 2,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [
+        "H46"
+      ],
+      "verbs": [],
+      "description": "Escalamiento vertical del sistema. Umbral crítico (64–256 TX): activación de UF[H46]. Diferencia de AUMENTO (H42, incremental):",
+      "clase": "Clase: operación · Hexagrama: H46 · 升 Shēng"
+    },
+    "ASCII": {
+      "term": "ASCII",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Usado en LACHO para diagramas de circuito, tablas y estructuras portables. Ejemplo: circuito ╭─⊢─∧─N1 → ╭─∇─⏵─N2 (ASCII extendido).",
+      "clase": "Clase: estándar · Técnico"
+    },
+    "ASHING": {
+      "term": "ASHING",
+      "level": 1,
+      "source": "A.index",
+      "libraries": [
+        "STACKING",
+        "CRYPTO"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Muerte controlada de un artefacto o módulo. El objeto queda sellado e inmutable en historial pero removido del ciclo activo. ASHING :: 🗃️[Stacking]::U+1F5C3 → \"ARCHIVE_DEATH_CERTIFICATE\"",
+      "clase": "Clase: componente · Biblioteca: CRYPTO"
+    },
+    "ASSERT_LEFT": {
+      "term": "ASSERT_LEFT",
+      "level": 1,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Operador de validación con direccionalidad. ASSERT_LEFT ::= \">=\" Función Python: assert_left(content, condition) → bool",
+      "clase": "Clase: tokens · Gramática ANTLR"
+    },
+    "ASSETS": {
+      "term": "ASSETS",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Recursos operativos reutilizables. SOURCES informa → ASSETS se usa directamente. ASSETS incluye: templates · prompts · configuraciones · seeds.",
+      "clase": "Clase: recursos · DRA (Dynamic Resource Allocation)"
+    },
+    "ASSET_VALUATION": {
+      "term": "ASSET_VALUATION",
+      "level": 2,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Protocolo de valoración de activos del sistema. [ASSET_VALUATION / HYPERLEDGER_MINT]: acuñación en Hyperledger. [ASSET_VALUATION / ROI_STABLE]: retorno estable sobre inversión.",
+      "clase": "Clase: operación · Sistema [term] · ledger",
+      "alt_sources": [
+        "A.index"
+      ]
+    },
+    "AST": {
+      "term": "AST",
+      "level": 1,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Árbol de Sintaxis Abstracta. Valida la sentencia soberana. Verifica el orden de 6 elementos de la sentencia canónica. Mapea el estado AST a uno de los 64 hexagramas.",
+      "clase": "Clase: estructura · Compilador LACHO"
+    },
+    "AS_DE_GUIA": {
+      "term": "AS_DE_GUIA",
+      "level": 2,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "El nudo de orientación y guía del sistema. \"Un comando llamado !AS_DE_GUIA es vibracionalmente superior a un error_recovery_handler_v1().\" — soberanía del nombre.",
+      "clase": "Clase: nudo · Topología · Notación de sentencias"
+    },
+    "AUMENTO": {
+      "term": "AUMENTO",
+      "level": 2,
+      "source": "A.index",
+      "libraries": [
+        "SAMU"
+      ],
+      "hexagrams": [
+        "H42",
+        "H58"
+      ],
+      "verbs": [],
+      "description": "El incremento soberano. Agrega valor sin violar la integridad. Diferencia de ASCENSO (H46, escala vertical): AUMENTO es incremento horizontal del corpus y capacidades.",
+      "clase": "Clase: registro lógico · Hexagrama: H58 · 兌 Duì"
+    },
+    "AUSENTE": {
+      "term": "AUSENTE",
+      "level": 3,
+      "source": "A.index",
+      "libraries": [
+        "ACTIVITY",
+        "ACTIVITY",
+        "ACTIVITY",
+        "ACTIVITY",
+        "ACTIVITY"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Estado de un campo requerido no declarado en la sentencia. f\"  [term]    : {'presente' if self.term_present else 'AUSENTE'}\" Si [term] está AUSENTE en una sentencia que lo requiere: validación falla.",
+      "clase": "Clase: estados · Biblioteca: ACTIVITY"
+    },
+    "AUTHORITY": {
+      "term": "AUTHORITY",
+      "level": 1,
+      "source": "A.index",
+      "libraries": [
+        "CRYPTO",
+        "TRUST",
+        "GATE"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "AUTHORITY :: Root =><= // firma de ignición soberana Niveles: Root (0) · Samu @ (1) · Worker (2) · Practicante (3) Sin AUTHORITY reconocida, los asientos permanecen inactivos.",
+      "clase": "Clase: sentencia · Gramática LACHO · Biblioteca: GATE",
+      "subject": "Sujeto =><= con clave criptográfica para ignición del sistema."
+    },
+    "AUTOMOTIVE": {
+      "term": "AUTOMOTIVE",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [
+        "TRUST"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Caso de uso del sistema LACHO en seguridad activa vehicular. [scenario](blind_spot_alert) :: 6[Work] → 52[Work] H6 detecta el conflicto; H52 aplica la quietud (freno).",
+      "clase": "Clase: dominio de aplicación · TRUST · [scenario]"
+    },
+    "AUTORESEARCH": {
+      "term": "AUTORESEARCH",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Sistema automático de diagnóstico del estado DIRIME: 1. autoresearch_specs.py → escanea filesystem → JSON + YAML 2. autoresearch_gap.py   → detecta gaps + Groq bridge",
+      "clase": "Clase: pipeline · Sprint S3.1–S3.4"
+    },
+    "AUTORESEARCH_SYSTEM_PROMPT": {
+      "term": "AUTORESEARCH_SYSTEM_PROMPT",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "System prompt soberano que define cómo Groq analiza los gaps. Llamada: bridge.translate(context_package, AUTORESEARCH_SYSTEM_PROMPT) AUTORÍA [N4]",
+      "clase": "Clase: principio · Propiedad intelectual"
+    },
+    "AUTORIDAD": {
+      "term": "AUTORIDAD",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [
+        "CRYPTO"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Toda emisión en LACHO requiere autoridad verificable explícita. \"La autoridad es explícita: hay un núcleo soberano que decide qué cuenta como fundación.\" — COGNITIVO_00",
+      "clase": "Clase: nivel de autorización · CRYPTO"
+    },
+    "AWS": {
+      "term": "AWS",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Amazon Web Services. Sincronía cloud bajo control del [scope]. AWS/GCP/Azure operan bajo control soberano del TRUST. ABC (documento snapshot) [N4]",
+      "clase": "Clase: referencia · Dominio CHINA · Nodo económico"
+    },
+    "AXIOMA": {
+      "term": "AXIOMA",
+      "level": 1,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Verdad no negociable dentro del sistema LACHO. Los axiomas son invariantes — son \"leyes del territorio\" soberano. Diferencia explícita: axioma (invariante) / protocolo (procedimiento)",
+      "clase": "Clase: definición fundacional · Nivel: constitucional"
+    },
+    "A_OPERATIVO": {
+      "term": "A_OPERATIVO",
+      "level": 1,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "A_OPERATIVO :: lo artificial como construcción deliberada. El aspecto constructivo-intencional: LACHO no emerge por accidente. A_LINGÜÍSTICO [N1]",
+      "clase": "Clase: dimensión · Definición de ARTIFICIAL"
+    },
+    "A_RELACIONAL": {
+      "term": "A_RELACIONAL",
+      "level": 1,
+      "source": "A.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "A_RELACIONAL :: lo artificial como mediador construido. LACHO media entre operador, módulos y entorno como intermediario construido. A_ONTOLÓGICO [N1]",
+      "clase": "Clase: dimensión · Definición de ARTIFICIAL"
+    },
+    "BACKGROUND_PROCESS": {
+      "term": "BACKGROUND_PROCESS",
+      "level": 2,
+      "source": "B.index",
+      "libraries": [
+        "STACKING"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Procesamiento en segundo plano sin disrupción visible. Identidad técnica: [BACKGROUND_PROCESS / STEALTH_MODE] !!Invoke!! 15[Stacking] -> [BACKGROUND_PROCESS]",
+      "clase": "Clase: protocolo · Hexagrama: H15 · 謙 Qiān · Biblioteca: STACKING"
+    },
+    "BALLENA": {
+      "term": "BALLENA",
+      "level": 3,
+      "source": "B.index",
+      "libraries": [
+        "SAMU"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Volumen + eficiencia = procesamiento masivo con filtro. SPECIES_DECL ::= (\"AGUILA\" | \"LINCE\" | \"ARANA\" | \"BALLENA\") Modo BALLENA: procesamiento de alto volumen con filtro soberano.",
+      "clase": "Clase: depredador estandarizable · Ballpaper · SAMU"
+    },
+    "BALLESTRINQUE": {
+      "term": "BALLESTRINQUE",
+      "level": 2,
+      "source": "B.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "El nudo de la tensión sostenida entre dos fuerzas. \"BALLESTRINQUE — H32_EVALUATING: tensión entre continuar sosteniendo y reconocer que lo sostenido necesita transformarse.\"",
+      "clase": "Clase: nudo · Topología · Notación de sentencias"
+    },
+    "BALLPAPER": {
+      "term": "BALLPAPER",
+      "level": 2,
+      "source": "B.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Interfaz de texto soberana que renderiza el estado del sistema en tiempo real sin overhead gráfico. \"BALLPAPER como UI universal de estado, renderizable en cualquier dispositivo.\"",
+      "clase": "Clase: módulo · IMV/core/ballpaper.py · UI de estado"
+    },
+    "BARRIOS": {
+      "term": "BARRIOS",
+      "level": 4,
+      "source": "B.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Nodo de acceso y remesas dentro del sistema KALIL. BARRIOS(acceso): forge_remesa · canal_hash_BLAKE3 · JA3_whitelist · net_flow. Ver: KALIL · BLAKE3 · BOLIVAR",
+      "clase": "Clase: constantes · ballpaper.py · vault.rs"
+    },
+    "BATCH_PROCESSING": {
+      "term": "BATCH_PROCESSING",
+      "level": 2,
+      "source": "B.index",
+      "libraries": [
+        "WORK"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Movilización de grandes masas de datos bajo estructura de mando rígida. Identidad técnica: [BATCH_PROCESSING / LOGISTICAL_COMMAND] Directiva: no ejecutar sin calibración previa de UF[H07].",
+      "clase": "Clase: protocolo · Hexagrama: H07 · 師 Shī · Biblioteca: WORK"
+    },
+    "BEHAVIORAL_RAG": {
+      "term": "BEHAVIORAL_RAG",
+      "level": 2,
+      "source": "B.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Motor de memoria dinámica que aprende conductas del sistema. \"BEHAVIORAL RAG: aprende conductas a partir de errores y correcciones.\" Alimentado por: APPEND_ONLY_LOG · UF[H48] · journal.",
+      "clase": "Clase: algoritmo de indexación · Sistema RAG · rag.py"
+    },
+    "BETA": {
+      "term": "BETA",
+      "level": 3,
+      "source": "B.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "|codex|: 02-BETA [The 64 Practitioners & The RAM Scarcity]: simula cómo los 64 hexagramas compiten en 12GB de RAM. Estado: [MODELO 02-BETA INDEXADO]",
+      "clase": "Clase: clasificación · Codex del sistema"
+    },
+    "BIBLIA": {
+      "term": "BIBLIA",
+      "level": 4,
+      "source": "B.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Directorio de referencias y fuentes doctrinales del corpus. Contiene todos los BIBLIO-SOURCES(X).txt del sistema. Ver: BIBLIO-SOURCES · CORPUS · BIBLIOTECA",
+      "clase": "Clase: directorio · CORPUS/BIBLIA/"
+    },
+    "BIBLIO-SOURCES": {
+      "term": "BIBLIO-SOURCES",
+      "level": 4,
+      "source": "B.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Archivos de fuentes doctrinales del sistema LACHO. Naming: BIBLIO-SOURCES(NOMBRE).txt \"Es 'vivo': cuando creas un nuevo BIBLIO-SOURCES(NUEVO).txt,",
+      "clase": "Clase: tipo de documento · CORPUS/BIBLIA/"
+    },
+    "BIBLIOTECA": {
+      "term": "BIBLIOTECA",
+      "level": 1,
+      "source": "B.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "En LACHO una biblioteca no es \"un conjunto de funciones\": es un órgano con jurisdicción propia. Las nueve bibliotecas del sistema:",
+      "clase": "Clase: órgano del lenguaje · Nivel: constitucional"
+    },
+    "BIBLIOTECAS_MADRE_LACHO": {
+      "term": "BIBLIOTECAS_MADRE_LACHO",
+      "level": 4,
+      "source": "B.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Documento fundacional que especifica las bibliotecas madre del sistema. Base ontológica de la jerarquía de bibliotecas LACHO.",
+      "clase": "Clase: documento · CORPUS/DOCUMENTATION/"
+    },
+    "BILATERAL": {
+      "term": "BILATERAL",
+      "level": 1,
+      "source": "B.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Operación que afecta ambos lados simultáneamente. BILATERAL ::= \"<>\" El operador BILATERAL <> conecta el Vortex con el Stacking",
+      "clase": "Clase: operador · Gramática LACHO"
+    },
+    "BIOMETRICS": {
+      "term": "BIOMETRICS",
+      "level": 2,
+      "source": "B.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Validación biométrica para apertura de Gates soberanos. \"BIOMETRICS: sensores físicos para validar la huella única del operador.\" \"Sin resonancia biológica, el (spark seat) permanece bloqueado.\"",
+      "clase": "Clase: módulo · Sistema de acceso físico-digital"
+    },
+    "BLACKLIST": {
+      "term": "BLACKLIST",
+      "level": 1,
+      "source": "B.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Lista de formas verbales excluidas del sistema de validación. En ledger.py: filtra cristales y verbos que no cumplen el estándar. \"Filtrar cristales que no estén en BLACKLIST\"",
+      "clase": "Clase: filtro · Gramática · ledger.py"
+    },
+    "BLOCKCHAIN": {
+      "term": "BLOCKCHAIN",
+      "level": 2,
+      "source": "B.index",
+      "libraries": [],
+      "hexagrams": [
+        "H64"
+      ],
+      "verbs": [],
+      "description": "Registro inmutable distribuido en el nodo BOLIVAR. Interior: BSN permisionado. Exterior: Ethereum/DeFi. Ver: BOLIVAR · BSN · HYPERLEDGER · CRYPTO",
+      "clase": "Clase: módulo · Capa D · Ciclo matutino"
+    },
+    "BLOQUE": {
+      "term": "BLOQUE",
+      "level": 3,
+      "source": "B.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Unidad organizativa de los documentos cognitivos del sistema. BLOQUE 1 → COGNITIVOS · BLOQUE 2 → ACTIVITY · BLOQUE 3 → WORK BLOQUE 4 → SAMU/SOCIAL · BLOQUE 5 → STACKING · BLOQUE 6 → DIRIME LINUX",
+      "clase": "Clase: sección documental · Corpus"
+    },
+    "BLOQUEADO": {
+      "term": "BLOQUEADO",
+      "level": 3,
+      "source": "B.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Estado de un módulo o capa que no puede operar. Capa C: BLOQUEADA 🔒 (hardware Ryzen pendiente). Contrario de: ACTIVO · ANCHORED.",
+      "clase": "Clase: estado · Nivel: sistema"
+    },
+    "BLUE": {
+      "term": "BLUE",
+      "level": 3,
+      "source": "B.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Extensión .blue para agentes remotos/crypto/forge. BRANCH_BLUE: feature branch de desarrollo con KU activo. \"BLUE: dra → KU · Dynamic Resource Allocation · pre-WU sistema\"",
+      "clase": "Clase: extensión · Tipo de agente"
+    },
+    "BLUEWORDS": {
+      "term": "BLUEWORDS",
+      "level": 2,
+      "source": "B.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Palabras clave de estado KU en el Dynamic Resource Allocation. OFFSET(BLUEWORDS): índice de Blue-Words pendientes en el DRA. \"Blue-Words → WU\": el proceso de materialización de palabras KU.",
+      "clase": "Clase: mecanismo · DRA / ENGINE OFFSET"
+    },
+    "BNF": {
+      "term": "BNF",
+      "level": 1,
+      "source": "B.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Backus-Naur Form extendida (EBNF) propia del sistema. ;;; — Notación BNF extendida (EBNF) propia del sistema 5.3 Gramática BNF Simplificada: especificación de la sintaxis LACHO.",
+      "clase": "Clase: notación · Gramática formal LACHO"
+    },
+    "BOLIVAR": {
+      "term": "BOLIVAR",
+      "level": 4,
+      "source": "B.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Nodo de blockchain soberano dentro del sistema KALIL. BOLIVAR(blockchain): interior=BSN permisionado · exterior=Ethereum/DeFi. $fri: Nerve Cell BOLIVAR Blockchain Notaria.",
+      "clase": "Clase: nodo económico · Dominio KALIL"
+    },
+    "BOOLEAN": {
+      "term": "BOOLEAN",
+      "level": 1,
+      "source": "B.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Tipo de valor booleano en la gramática JSON/LACHO. JSON_VALUE ::= STRING | NUMBER | BOOLEAN | JSON_OBJECT",
+      "clase": "Clase: tipo de dato · Gramática ANTLR"
+    },
+    "BOOST": {
+      "term": "BOOST",
+      "level": 2,
+      "source": "B.index",
+      "libraries": [
+        "WORK"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Factor de amplificación de relevancia para documentos en BM25. Niveles: ×1.0 base · ×1.5 Askings · ×1.8 críticos · ×2.0 NOTARIA Ver: BM25 · ANCHOR_RAG",
+      "clase": "Clase: sujeto canónico · Biblioteca: WORK"
+    },
+    "BRAIN": {
+      "term": "BRAIN",
+      "level": 2,
+      "source": "B.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "El trazo interno del sistema: KU → Ψ → WU. \"brain.py es el trazo interno. Python es el trazo.\" BRAIN CORE — El trazo. Señal: [RAG: BRAIN :: CORE :: INIT]",
+      "clase": "Clase: operación · Sistema de respaldo soberano"
+    },
+    "BRANCH_BLUE": {
+      "term": "BRANCH_BLUE",
+      "level": 3,
+      "source": "B.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Feature branch de desarrollo en modo KU activo. SLANG: 分支 (fēnzhī) → branch → DIR(FORK) · BRANCH_BLUE · .blue Ver: BLUE · KU · DIR(FORK)",
+      "clase": "Clase: estado · Sistema de versiones"
+    },
+    "BRIDGE": {
+      "term": "BRIDGE",
+      "level": 2,
+      "source": "B.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Enlace híbrido entre Stacking local y Cloud. CAT(BRIDGE): conexión entre componentes heterogéneos. SOCKET_BRIDGE: variante de comunicación por socket.",
+      "clase": "Clase: módulo · CAT(BRIDGE) · DIRIME_v2"
+    },
+    "BROADCAST": {
+      "term": "BROADCAST",
+      "level": 1,
+      "source": "B.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Destino especial que envía un mensaje a todos los nodos activos. destino: IDENTIFIER | BROADCAST IF destino == \"broadcast\": >> BROADCAST",
+      "clase": "Clase: destino · Gramática LACHO"
+    },
+    "BSN": {
+      "term": "BSN",
+      "level": 4,
+      "source": "B.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Blockchain Service Network: red blockchain permisionada china. \"BOLIVAR :: interior=BSN permisionado\" \"CHINA: e-CNY · BSN · KYC PBOC\"",
+      "clase": "Clase: referencia · Infraestructura blockchain · China"
+    },
+    "BUILDER": {
+      "term": "BUILDER",
+      "level": 4,
+      "source": "B.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "GUI del sistema LACHO para construcción de sentencias. UNICODE: GAP_GUI_BUILDER → LACHO BUILDER GUI · port 8742 Ver: ELPULSAR · GUI · BALLPAPER",
+      "clase": "Clase: interfaz · GUI · elpulsar.py"
+    },
+    "BUSY": {
+      "term": "BUSY",
+      "level": 3,
+      "source": "B.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Estado de un módulo o recurso en uso máximo. Un recurso BUSY no acepta nuevas solicitudes hasta liberar ciclo. Ver: BRAKE · BUFFER · saturación",
+      "clase": "Clase: estado · Nivel: sistema"
+    },
+    "CANAL": {
+      "term": "CANAL",
+      "level": 2,
+      "source": "C.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Vía de transmisión de datos entre componentes del sistema. velocidad: declarada en CANAL.codificacion tcp/udp: según tipo de CANAL",
+      "clase": "Clase: módulo · Sistema de comunicación soberano"
+    },
+    "CAPA": {
+      "term": "CAPA",
+      "level": 3,
+      "source": "C.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "División estructural del sistema DIRIME: CAPA A → COMPLETO ✅ (núcleo ejecutable: grammar, ledger, rag, samu…) CAPA B → ACTIVO ⚡ (extensiones en curso: groq, scheduler, elpulsar…)",
+      "clase": "Clase: clasificación · Arquitectura del sistema"
+    },
+    "CARILO": {
+      "term": "CARILO",
+      "level": 4,
+      "source": "C.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Nodo de capital y fees dentro del sistema KALIL. CARILO(fee): gestión de tarifas y capital soberano. Ver: KALIL · BOLIVAR · BARRIOS · NORA",
+      "clase": "Clase: nodo económico · Dominio KALIL"
+    },
+    "CAT": {
+      "term": "CAT",
+      "level": 2,
+      "source": "C.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Módulos de control de bajo nivel del sistema operativo soberano. Familia completa de módulos CAT: CAT(OS)     → syscalls directas al OS local",
+      "clase": "Clase: familia de módulos · Capa C/D"
+    },
+    "CEO": {
+      "term": "CEO",
+      "level": 4,
+      "source": "C.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Dirección de Voluntad. CEO (H01): la ignición creativa del sistema. CHCL → portabilidad · CEO de LACHO. CEO ALPHA: jerarquía empresarial × sistema Unicode China (H64).",
+      "clase": "Clase: rol / hexagrama H01 · Nivel: constitucional"
+    },
+    "CERRADO": {
+      "term": "CERRADO",
+      "level": 3,
+      "source": "C.index",
+      "libraries": [
+        "GATE"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Estado del GATE cuando bloquea el paso de sentencias. Contrario de ABIERTO. Estado por defecto en días no especificados. Ver: GATE · ABIERTO · gate_abierto",
+      "clase": "Clase: estado · Sistema GATE"
+    },
+    "CHALTEN": {
+      "term": "CHALTEN",
+      "level": 4,
+      "source": "C.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Nodo de cloud y operaciones remotas dentro del sistema KALIL. CHALTEN(cloud): operaciones cloud soberanas. Ver: KALIL · BOLIVAR · CLOUD · chalten_daemon.blue",
+      "clase": "Clase: nodo económico · Dominio KALIL"
+    },
+    "CHCL": {
+      "term": "CHCL",
+      "level": 4,
+      "source": "C.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Lenguaje de portabilidad del sistema LACHO. \"CHCL → portabilidad · CEO de LACHO\" PROGRAM-ID. CHCL-KALIL-INTEGRATION.",
+      "clase": "Clase: lenguaje · Portabilidad · CEO de LACHO"
+    },
+    "CICLO": {
+      "term": "CICLO",
+      "level": 2,
+      "source": "C.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Unidad de tiempo soberano del sistema. El ciclo básico es el día operativo ($dia). 64 ciclos = un recorrido completo de hexagramas.",
+      "clase": "Clase: concepto · Nivel: operacional"
+    },
+    "CICLOTIMIA": {
+      "term": "CICLOTIMIA",
+      "level": 2,
+      "source": "C.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Oscilación entre la Imagen Gigante (H64) y la Memoria Pequeña (H4) dentro de una sesión de trabajo. \"CICLOTIMIA — oscilación H4↔H64, Imagen Gigante↔Memoria Pequeña.\"",
+      "clase": "Clase: mecanismo · Oscilación soberana · H4↔H64"
+    },
+    "CIDE": {
+      "term": "CIDE",
+      "level": 2,
+      "source": "C.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Circuit IDE: entorno de desarrollo visual soberano del sistema LACHO. \"CIDE · Circuit IDE · ELPULSAR\" Visualiza el circuito de 4 neuronas y los libSigs de cada una.",
+      "clase": "Clase: interfaz · Circuit IDE · ELPULSAR"
+    },
+    "CIERRE": {
+      "term": "CIERRE",
+      "level": 2,
+      "source": "C.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Protocolo de cierre del ciclo operativo (diario o semanal). Secuencia canónica del cierre: Nerve Cell Notaria Cierre · commit soberano · BKP_LEDGER",
+      "clase": "Clase: proceso · Scheduler · Ciclo semanal"
+    },
+    "CJK": {
+      "term": "CJK",
+      "level": 4,
+      "source": "C.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Caracteres unificados CJK (Chinese/Japanese/Korean). Parte del sistema trilingüe ES/EN/CJK de language_routing.py. \"CJK · interior/exterior\" en el DRA China.",
+      "clase": "Clase: dominio · Estrategia económica soberana"
+    },
+    "CLAUDE": {
+      "term": "CLAUDE",
+      "level": 4,
+      "source": "C.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Claude opera como gerente de arquitectura del sistema DIRIME. Rol diferenciado de Windsurf (operaciones e implementación). Archivos: $sat 21-02-2026 para CLAUDE(LACHO).txt",
+      "clase": "Clase: documentos constitucionales · CORPUS/COGNITIVO_FRAMEWORK/"
+    },
+    "CLI": {
+      "term": "CLI",
+      "level": 4,
+      "source": "C.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Command Line Interface. Interfaz principal del sistema DIRIME. \"CLI Linux: el transductor final que permite el control de bajo nivel.\" Comandos canónicos: python3 main.py --stats · --asks · --notaria",
+      "clase": "Clase: interfaz · Nivel: Capa A/B"
+    },
+    "CLUSTER": {
+      "term": "CLUSTER",
+      "level": 2,
+      "source": "C.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Agrupación de segmentos en el Dynamic Resource Allocation. Formato canónico: [term:A°SLICE§SEGMENT#CLUSTER@OFFSET] Tipos: CLUSTER #CORE · CLUSTER #MERCADO · CLUSTER #CICLO · CLUSTER #FABRIC",
+      "clase": "Clase: componente · Sistema de segmentación DRA"
+    },
+    "CNY": {
+      "term": "CNY",
+      "level": 4,
+      "source": "C.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "e-CNY (yuan digital): moneda de referencia en el dominio CHINA. \"ENV_B interior · SKIN_CHINA · e-CNY · BSN\" \"(flow seat) @0xK5 · flujo e-CNY canal interior\"",
+      "clase": "Clase: referencia · Moneda digital china"
+    },
+    "COGNITIVE_RAG": {
+      "term": "COGNITIVE_RAG",
+      "level": 2,
+      "source": "C.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Motor de conocimiento organizado en grafos semánticos. \"COGNITIVE RAG: organiza conocimiento en grafo con síntesis y trazabilidad.\" Vive en: COGNITIVE_RAG.md · corpus maduro · UF[H48].",
+      "clase": "Clase: algoritmo · Sistema RAG · Nivel: Capa A"
+    },
+    "COGNITIVO": {
+      "term": "COGNITIVO",
+      "level": 3,
+      "source": "C.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "El nivel más alto de la taxonomía del sistema. \"COGNITIVO\": {\"level\": 0, \"scalar_min\": 0.95, \"class\": \"constitucional\"} Los documentos COGNITIVO_00–05 son la constitución cognitiva del sistema.",
+      "clase": "Clase: nivel constitucional · grammar.py"
+    },
+    "COMMAND": {
+      "term": "COMMAND",
+      "level": 1,
+      "source": "C.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Instrucción ejecutable dentro del sistema. tipo: SIGNAL | DATA | COMMAND | ACK | REGRET COMMAND = 2 ;;; instrucción ejecutable",
+      "clase": "Clase: tipo de mensaje · Gramática LACHO"
+    },
+    "COMMAND_DEFER": {
+      "term": "COMMAND_DEFER",
+      "level": 1,
+      "source": "C.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Orden con latencia deliberada. Aplica H5 (La Espera). \"COMMAND_DEFER: orden con latencia deliberada (Doctrina de la Tardanza, H5).\" Ver: TARDANZA_DELIBERADA · SAMU · H5",
+      "clase": "Clase: variante de COMMAND · Doctrina de Tardanza"
+    },
+    "COMMAND_EXECUTE": {
+      "term": "COMMAND_EXECUTE",
+      "level": 1,
+      "source": "C.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Orden de ejecución inmediata en el sistema. \"COMMAND_EXECUTE: orden de ejecución inmediata.\" Se activa junto a COMMAND_DEFER y COMMAND_ABORT.",
+      "clase": "Clase: variante de COMMAND · Doctrina operativa"
+    },
+    "COMMENT_LINE": {
+      "term": "COMMENT_LINE",
+      "level": 1,
+      "source": "C.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Línea de comentario doctrinal en archivos LACHO. COMMENT_LINE ::= COMMENT_OPEN [^\\n]* NEWLINE FILE_HEADER ::= COMMENT_LINE+ ;;; encabezado doctrinal",
+      "clase": "Clase: token · Gramática ANTLR"
+    },
+    "CONCIENCIA": {
+      "term": "CONCIENCIA",
+      "level": 2,
+      "source": "C.index",
+      "libraries": [
+        "SAMU",
+        "GATE"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Función central de SAMU @: sostener conciencia del estado del sistema. \"SAMU @: CONCIENCIA, AUDITORÍA Y TARDANZA DELIBERADA\" \"SAMU @ COMO INSTITUCIÓN OPERATIVA (CONCIENCIA Y AUDITORÍA)\"",
+      "clase": "Clase: estado · Hexagrama: H06 · 訟 Sòng · Sistema GATE"
+    },
+    "CONSTITUCIONAL": {
+      "term": "CONSTITUCIONAL",
+      "level": 3,
+      "source": "C.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Calificativo del más alto nivel de autoridad documental. \"SAMU COMO FIGURA CONSTITUCIONAL: MEDITACIÓN EN ACCIÓN\" Lo constitucional no se debate — se verifica o no se verifica.",
+      "clase": "Clase: estado · Nivel: tracking"
+    },
+    "CORPUS": {
+      "term": "CORPUS",
+      "level": 4,
+      "source": "C.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "El cuerpo documental soberano del sistema LACHO. 281+ archivos indexados en el RAG (estado $sat 21-03). Subdirectorios: BIBLIA/ · COGNITIVO_FRAMEWORK/ · DOCUMENTATION/",
+      "clase": "Clase: directorio · DIRIME/CORPUS/"
+    },
+    "CPU": {
+      "term": "CPU",
+      "level": 4,
+      "source": "C.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Procesador del sistema. Utilización target: < 80% para operación normal. Los 64 hexagramas como Practicantes compiten en RAM + CPU. Mapeo de estados I Ching a instrucciones de hardware (IRQ, estados de CPU).",
+      "clase": "Clase: recurso hardware · Sistema de límites"
+    },
+    "CREATIVE-FLOW-ALPHABET": {
+      "term": "CREATIVE-FLOW-ALPHABET",
+      "level": 4,
+      "source": "C.index",
+      "libraries": [
+        "ACTIVITY"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Hexagrama H64 en su aspecto de generación creativa soberana. \"UF[H64] CREATIVE-FLOW-ALPHABET activo\" BIBLIO-SOURCES(ACTIVITY_H64-CREATIVE-FLOW-ALPHABET).txt:",
+      "clase": "Clase: hexagrama · UF[H64] · Biblioteca ACTIVITY"
+    },
+    "CREATIVE_PAUSE": {
+      "term": "CREATIVE_PAUSE",
+      "level": 2,
+      "source": "C.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Pausa soberana en el flujo creativo. \"UF[H52] (Quietud) aplicado a UF[H64] — la creatividad que sabe cuándo detenerse para verificar.\"",
+      "clase": "Clase: protocolo · H52 aplicado a H64"
+    },
+    "CRISIS_MANAGEMENT": {
+      "term": "CRISIS_MANAGEMENT",
+      "level": 2,
+      "source": "C.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Protocolo de resiliencia crítica ante degradación del sistema. \"CRISIS_MANAGEMENT (H3/H29): resiliencia crítica ante degradación.\" Requiere auditoría de decisiones del SAMU @.",
+      "clase": "Clase: protocolo · Hexagramas: H3/H29"
+    },
+    "CROSSOVER": {
+      "term": "CROSSOVER",
+      "level": 1,
+      "source": "C.index",
+      "libraries": [
+        "CRYPTO"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Intercambio de posiciones LEFT↔RIGHT simultáneo. CROSSOVER ::= \"><\" \">< CROSSOVER — intercambio de posiciones LEFT↔RIGHT\"",
+      "clase": "Clase: tokens · Gramática ANTLR · Biblioteca CRYPTO"
+    },
+    "CRYSTAL_FINAL": {
+      "term": "CRYSTAL_FINAL",
+      "level": 2,
+      "source": "C.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "El cristal que UF[H52] convierte en forma definitiva. \"CRYSTAL_FINAL: el cristal que UF[H52] convierte en forma definitiva — ya no puede modificarse.\"",
+      "clase": "Clase: artefacto · Sistema de cristales · H52"
+    },
+    "CSC": {
+      "term": "CSC",
+      "level": 2,
+      "source": "C.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Concierge-Service-Center: módulo que gestiona el punto de entrada soberano del sistema hacia el mundo exterior. \"Recibe actores externos, los verifica soberanamente, los sostiene",
+      "clase": "Clase: módulo · DIRIME LINUX · Punto de entrada soberano"
+    },
+    "CUSTODIA": {
+      "term": "CUSTODIA",
+      "level": 2,
+      "source": "C.index",
+      "libraries": [
+        "WORK"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Gestión soberana de transferencias y acceso en el nodo de trabajo. \"CUSTODIA MÓVIL: {doorman-mobile} gestionando acceso y transferencias soberanas.\" Canal de custodia certificado por (link seat).",
+      "clase": "Clase: protocolo · Biblioteca: WORK · NODO-WS"
+    },
+    "DATA_COMPUTING": {
+      "term": "DATA_COMPUTING",
+      "level": 2,
+      "source": "D.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Cómputo soberano de datos del Dynamic Resource Allocation. \"DATA COMPUTING = cómputo sobre CORPUS · NLP · vectores · RAG · Scalar S\" CLUSTER(DATA_COMPUTING): el clúster del DRA dedicado al cómputo.",
+      "clase": "Clase: módulo · DRA ENGINE CLUSTER"
+    },
+    "DAY_ID": {
+      "term": "DAY_ID",
+      "level": 1,
+      "source": "D.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Identificador de día soberano en la gramática LACHO. DAY_ID ::= \"$\" (\"mon\"|\"tue\"|\"wed\"|\"thu\"|\"fri\"|\"sat\"|\"sun\") CYCLE_ID ::= DAY_ID \"#\" HEX_ID \"#\" HEX_DIGIT+",
+      "clase": "Clase: token · Gramática ANTLR · Scheduler"
+    },
+    "DECLARATIVO": {
+      "term": "DECLARATIVO",
+      "level": 1,
+      "source": "D.index",
+      "libraries": [
+        "SOCIAL"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Paradigma de programación de la biblioteca SOCIAL. \"BIBLIOTECA SOCIAL (DECLARATIVO):\" En LACHO, lo declarativo expresa intención relacional, no instrucción.",
+      "clase": "Clase: paradigma · Biblioteca SOCIAL"
+    },
+    "DECLARE_FLOW": {
+      "term": "DECLARE_FLOW",
+      "level": 1,
+      "source": "D.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Operador de declaración de flujo en la gramática LACHO. DECLARE_FLOW ::= \"::\" SUBSECTION ::= INDENT IDENTIFIER DECLARE_FLOW VALUE",
+      "clase": "Clase: token · Gramática ANTLR"
+    },
+    "DECL_MARK": {
+      "term": "DECL_MARK",
+      "level": 1,
+      "source": "D.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Marcador de declaración soberana en archivos .lacho. DECL_MARK ::= \":::\" DECL_LINE ::= DECL_MARK WHITESPACE IDENTIFIER WHITESPACE \"=\" WHITESPACE VALUE",
+      "clase": "Clase: token · Gramática ANTLR"
+    },
+    "DEFAULT": {
+      "term": "DEFAULT",
+      "level": 3,
+      "source": "D.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Valor predeterminado cuando no se declara explícitamente. SIN [term] → ASIGNAR [term] por defecto (64 ciclos). DEFAULT en LACHO siempre es explícito: no hay defaults silenciosos.",
+      "clase": "Clase: conjunto · Sistema KALIL · Nivel: N4"
+    },
+    "DEGRADED": {
+      "term": "DEGRADED",
+      "level": 3,
+      "source": "D.index",
+      "libraries": [
+        "SAMU"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Estado de degradación parcial de un módulo o creencia. AGNOSTIC_DEGRADED / ATHEISTIC_DEGRADED: variantes filosóficas. FOUNDATION_DEGRADED: fundación en proceso de erosión.",
+      "clase": "Clase: conjunto · Ballpaper · Sistema SAMU"
+    },
+    "DESKING": {
+      "term": "DESKING",
+      "level": 2,
+      "source": "D.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "\"DESKING es el puente entre la contención y el lanzamiento.\" \"DESKING no es el escritorio del operador.\" $thu$fri → UF[H29] ++ DESKING: activación en el ciclo semanal.",
+      "clase": "Clase: módulo · H29 · Puente entre contención y lanzamiento"
+    },
+    "DIR": {
+      "term": "DIR",
+      "level": 1,
+      "source": "D.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Operador de dirección en el Dynamic Resource Allocation. DIR(+): apertura o expansión de un directorio/segmento. DIR(ING): dirección de flujo entrante (空 vacío receptivo).",
+      "clase": "Clase: operador · Sistema DRA"
+    },
+    "DIRIME": {
+      "term": "DIRIME",
+      "level": 4,
+      "source": "D.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "El sistema soberano de dirimencia. Nombre del proyecto completo. \"DIRIME — sistema soberano de dirimencia\" (bajo protección). Componentes: IMV (núcleo) · DIRIME_v2 (Capa B) · DIRIME_v3 (Capa C)",
+      "clase": "Clase: sistema · CORPUS/DYNAMIC_RESOURCE_ALLOCATION/"
+    },
+    "DIRIMENCIA": {
+      "term": "DIRIMENCIA",
+      "level": 2,
+      "source": "D.index",
+      "libraries": [
+        "SAMU",
+        "SOCIAL",
+        "SOCIAL",
+        "WORK"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Mecanismo de decisión entre verdad, adecuación y ética. \"DIRIMENCIA: CORRECTO, ADECUADO, Y LEGAL DENTRO DEL SISTEMA\" \"MOTOR .CAT Y DIRIMENCIA: OPERADORES COMO JUECES DE REALIDAD\"",
+      "clase": "Clase: sujeto canónico · Biblioteca: WORK"
+    },
+    "DRIFT": {
+      "term": "DRIFT",
+      "level": 2,
+      "source": "D.index",
+      "libraries": [
+        "METHOD"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Desviación leve del resultado esperado, dentro del rango. \"[DRIFT]: el resultado está dentro del rango pero no es exacto.\" (head seat) Recalibrar · --[As de Guía]",
+      "clase": "Clase: resultado · Sistema de evaluación · Biblioteca: METHOD"
+    },
+    "DSL": {
+      "term": "DSL",
+      "level": 1,
+      "source": "D.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Domain Specific Language. LACHO es un DSL de orquestación pura. \"Para crear otros lenguajes, LACHO se expresa como un DSL.\" \"No es DSL decorativo: es la matemática del sistema.\"",
+      "clase": "Clase: paradigma · Nivel: fundacional"
+    },
+    "EBNF": {
+      "term": "EBNF",
+      "level": 1,
+      "source": "E.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Extended Backus-Naur Form. La EBNF propia del sistema extiende la BNF estándar con operadores soberanos de LACHO. ;;; — Notación BNF extendida (EBNF) propia del sistema",
+      "clase": "Clase: notación · Gramática formal LACHO"
+    },
+    "ELPULSAR": {
+      "term": "ELPULSAR",
+      "level": 2,
+      "source": "E.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Módulo de procesamiento agéntico y dashboard visual del sistema. \"ELPULSAR: procesamiento agéntico · dashboard\" \"ELPULSAR\": {\"level\": 2, \"scalar_min\": 0.85, \"class\": \"modulo\"}",
+      "clase": "Clase: módulo · Nivel: 2 · scalar_min: 0.85 · Capa B"
+    },
+    "ELPULSAR_ICONOGRAFIA": {
+      "term": "ELPULSAR_ICONOGRAFIA",
+      "level": 4,
+      "source": "A.index",
+      "libraries": [
+        "WORK"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Especificación de la iconografía soberana ELPULSAR. Ciclo de 3 puertas: door_morning (H1–H5) · zipper_noon (H5–H56) · door_afternoon (H56–H6)",
+      "clase": "Clase: iconografía · Biblioteca: WORK"
+    },
+    "ELSE": {
+      "term": "ELSE",
+      "level": 1,
+      "source": "E.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Operador condicional en las consultas SQL de sovereign.db. THEN 1 ELSE 0 END: patrón canónico en consultas de validación. Ver: ledger.py · sovereign.db · SQL",
+      "clase": "Clase: token SQL · ledger.py"
+    },
+    "ENGINE": {
+      "term": "ENGINE",
+      "level": 2,
+      "source": "E.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Motor de procesamiento dentro del Dynamic Resource Allocation. DRA/ENGINE/: contiene CLUSTER(DATA_COMPUTING) · OFFSET(BLUEWORDS) SEGMENT(SAMU) · SLICE(LACHO) · TOMO(A) · TOMO(B)",
+      "clase": "Clase: subsistema · DRA · Nivel: Capa B"
+    },
+    "ENTRYPOINT": {
+      "term": "ENTRYPOINT",
+      "level": 1,
+      "source": "E.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Punto de inicio declarado del sistema o de un módulo. [RAG: RITMO_CAT :: ENTRYPOINT :: default] El entrypoint define el primer estado soberano al arrancar.",
+      "clase": "Clase: punto de entrada · Sistema LACHO"
+    },
+    "ENUMERABLE": {
+      "term": "ENUMERABLE",
+      "level": 1,
+      "source": "E.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Tipo de dato enumerable en el sistema de tipos LACHO. Usado para clasificaciones cerradas: bibliotecas, estados, actores. Ver: BOOLEAN · DATA · COMMAND",
+      "clase": "Clase: tipo · Gramática LACHO"
+    },
+    "ESTABLE": {
+      "term": "ESTABLE",
+      "level": 3,
+      "source": "E.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Estado de un documento o módulo que no requiere modificación. En el CORPUS_INDEX: columna ESTABLE vs NUEVO vs EN_PROGRESO. Capa A: ESTABLE — no modificar sin tests.",
+      "clase": "Clase: estado · Corpus / Sistema"
+    },
+    "ESTADO": {
+      "term": "ESTADO",
+      "level": 2,
+      "source": "E.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Condición verificable del sistema en un momento dado. En LACHO, el estado es local y declarado — nunca implícito. Formato canónico: [ESTADO]: NOMBRE_ESTADO",
+      "clase": "Clase: concepto · Nivel: nuclear"
+    },
+    "EVENT_CRITICAL": {
+      "term": "EVENT_CRITICAL",
+      "level": 2,
+      "source": "E.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Evento que supera el umbral crítico y activa protocolo de emergencia. DRIP_ALERT ante EVENT_CRITICAL de seguridad. FOUNDATION_COMPROMISED + EVENT_CRITICAL: emergencia soberana.",
+      "clase": "Clase: evento · Sistema de alertas"
+    },
+    "EXECUTE": {
+      "term": "EXECUTE",
+      "level": 3,
+      "source": "E.index",
+      "libraries": [
+        "TRUST",
+        "GATE"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Orden de ejecución directa emitida por el TRUST. COMMAND_EXECUTE: variante formalizada de EXECUTE. Ver: COMMAND · ACTIVATE · ACTUAR",
+      "clase": "Clase: hexagrama · H05 · 需 Xū · Biblioteca: GATE"
+    },
+    "EXPORT": {
+      "term": "EXPORT",
+      "level": 2,
+      "source": "E.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Exportación de datos soberanos desde el sistema. /api/notaria/export: endpoint de exportación de actos notariales. CAT(EXPORT): módulo de exportación entre nodos (Capa D).",
+      "clase": "Clase: operación · Sistema NOTARIA / CAT"
+    },
+    "FASE": {
+      "term": "FASE",
+      "level": 4,
+      "source": "F.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Etapa de desarrollo del sistema. FASE 1 → FASE 2 → FASE N. Ver: SPRINT · SEMANA · CAPA · CICLO",
+      "clase": "Clase: etapa · Sistema de sprints / Ciclos de desarrollo",
+      "example": "\"FASE 2 :: WeChat mini-prog test · e-CNY wallet · BSN testnet\""
+    },
+    "FIFO": {
+      "term": "FIFO",
+      "level": 1,
+      "source": "F.index",
+      "libraries": [
+        "GATE"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "First-In, First-Out. Orden de procesamiento del gate.cat. \"gate.cat procesa mensajes en orden FIFO estricto.\" Buffer de interrupciones y alertas de alta prioridad en FIFO.",
+      "clase": "Clase: estructura · Sistema GATE"
+    },
+    "FILTER": {
+      "term": "FILTER",
+      "level": 1,
+      "source": "F.index",
+      "libraries": [
+        "SAMU"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Filtro soberano aplicado sobre el flujo de mensajes o datos. !!FILTER!! verifica ratio emoción/Tr en cada mensaje. !!FILTER!! y !!ROUTE!! activos: pareja de operadores de selección.",
+      "clase": "Clase: operador · Biblioteca: SAMU / RAG"
+    },
+    "FINITUD": {
+      "term": "FINITUD",
+      "level": 1,
+      "source": "F.index",
+      "libraries": [
+        "WORK"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "La finitud es uno de los tres principios soberanos del sistema. \"TRÍADA DE PODER: TRUST, FINITUD, TENSIÓN\" \"[term] como finitud obligatoria (anti-dogma)\"",
+      "clase": "Clase: sujeto canónico · Biblioteca: WORK · Agente nocturno"
+    },
+    "FIRMA_SOBERANA": {
+      "term": "FIRMA_SOBERANA",
+      "level": 2,
+      "source": "F.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Hash soberano que identifica unívocamente un módulo o estado. \"Genera FIRMA_SOBERANA como hash del vector.\" \"Todo módulo puede verificar contra FIRMA_SOBERANA.\"",
+      "clase": "Clase: mecanismo criptográfico · Sistema de verificación"
+    },
+    "FLOW_STMT": {
+      "term": "FLOW_STMT",
+      "level": 1,
+      "source": "F.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Declaración de flujo de datos en la gramática LACHO. FLOW_STMT ::= SOURCE FLOW_OP PROCESS FLOW_OP DESTINATION ACTION ::= FLOW_STMT | VERB_PHRASE | STATE_TRANSITION",
+      "clase": "Clase: token · Gramática ANTLR"
+    },
+    "FOLIAR": {
+      "term": "FOLIAR",
+      "level": 2,
+      "source": "F.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "\"FOLIAR no es una fuente más — opera como constitución.\" Declara: Manifiesto Fundacional (Folio 00) · Diccionario/Gramática (Folio 01) · Informe de Arquitectura (Folio 02).",
+      "clase": "Clase: documento constitucional · Nivel: constitucional"
+    },
+    "FOLIO": {
+      "term": "FOLIO",
+      "level": 2,
+      "source": "F.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Unidad de documentación dentro del sistema FOLIAR. Formato: \"# EMOJI FOLIO NNN: TÍTULO\" El sistema tiene 160+ folios en el corpus.",
+      "clase": "Clase: calificativo · Nivel: ingeniería"
+    },
+    "FORMATO": {
+      "term": "FORMATO",
+      "level": 4,
+      "source": "F.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Convención de formato para archivos y documentos del sistema. Formato canónico de sentencia LACHO: 6 elementos obligatorios. Formato de folio: \"# EMOJI FOLIO NNN: TÍTULO\"",
+      "clase": "Clase: especificación · Documentación soberana"
+    },
+    "FOUNDATION": {
+      "term": "FOUNDATION",
+      "level": 2,
+      "source": "F.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Módulo que verifica las condiciones soberanas del sistema. TRUST FOUNDATION =><= .. verifica .. condiciones_soberanas verify_sovereign_conditions(): función canónica.",
+      "clase": "Clase: módulo · IMV/core/foundation.py · Nivel: Capa A"
+    },
+    "FOUNDATION_COMPROMISED": {
+      "term": "FOUNDATION_COMPROMISED",
+      "level": 2,
+      "source": "F.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Estado crítico cuando los componentes de fundación fallan. \"FOUNDATION_COMPROMISED: componentes críticos fallan.\" \"FOUNDATION_COMPROMISED + SCOPE_VIOLATED + TERM_EMERGENCY: emergencia.\"",
+      "clase": "Clase: estado de emergencia · Sistema foundation.py"
+    },
+    "FRACTAL": {
+      "term": "FRACTAL",
+      "level": 2,
+      "source": "F.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Principio de expansión auto-similar del sistema LACHO. \"INGENIERÍA FRACTAL: EL LÍMITE DE LOS 256\" \"LA ONTOLOGÍA DE LA IGNICIÓN FRACTAL (H51)\"",
+      "clase": "Clase: principio · Ingeniería del sistema · H51"
+    },
+    "FUTURO": {
+      "term": "FUTURO",
+      "level": 3,
+      "source": "F.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Estado de componentes o capacidades planificadas pero no activas. Capa D — FUTURO 🌐: WEB3, dos nodos físicos, HL FABRIC real. Ver: CAPA · BLOQUEADO · ACTIVO",
+      "clase": "Clase: estado · Capa D · Arquitectura"
+    },
+    "GAP": {
+      "term": "GAP",
+      "level": 1,
+      "source": "G.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Distancia al NODO-Ω: lo que falta para completar el objetivo. GAP_DECL ::= \"GAP\" DECLARE_FLOW IDENTIFIER ;;; distancia al NODO-Ω ;;; GAP/TIP — operadores de motivación y palanca",
+      "clase": "Clase: operador · Gramática LACHO · Sistema DRA"
+    },
+    "GATE": {
+      "term": "GATE",
+      "level": 2,
+      "source": "G.index",
+      "libraries": [
+        "WORK"
+      ],
+      "hexagrams": [
+        "H05",
+        "H06",
+        "H56"
+      ],
+      "verbs": [],
+      "description": "Biblioteca de control de flujo soberano. \"GATES: inspirado en hexagramas 5, 56, 6 del I Ching.\" Controla qué entra, qué espera y qué se cancela.",
+      "clase": "Clase: sujeto canónico · Biblioteca: WORK · Algoritmo de filtro",
+      "subject": "UF[H##] (H05 espera · H56 umbral · H06 conflicto)"
+    },
+    "GATE_SIGIL": {
+      "term": "GATE_SIGIL",
+      "level": 1,
+      "source": "G.index",
+      "libraries": [
+        "GATE"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Identificador de sigilo de Gate en la gramática LACHO. GATE_SIGIL ::= HEX_ID \"::\" IDENTIFIER CRYPTO_TERM | SAMU_SIGIL | GATE_SIGIL | STACK_TERM",
+      "clase": "Clase: token · Gramática ANTLR · Biblioteca GATE"
+    },
+    "GESTA": {
+      "term": "GESTA",
+      "level": 3,
+      "source": "G.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "La empresa completa del sistema LACHO como gesta soberana. [ESTADO DE LA GESTA]: SUCCESSFUL_BUILD · WAITING_FOR_NEXT_IGNITION \"La Gesta\": nombre del proyecto global del operador.",
+      "clase": "Clase: iconografía · HEADCAT · Sistema visual"
+    },
+    "GRADIENT": {
+      "term": "GRADIENT",
+      "level": 1,
+      "source": "G.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "\"GRADIENT\": \"∇\" — dirección de menor esfuerzo. El gradiente ∇ indica la dirección óptima de flujo del sistema. // TAP&DRIP aplicado: cómputo dosificado · gradiente ∇",
+      "clase": "Clase: símbolo · Ballpaper · Sistema de dirección"
+    },
+    "GRAMMAR": {
+      "term": "GRAMMAR",
+      "level": 1,
+      "source": "G.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Parser LACHO: 9 bibliotecas · 5 operadores METHOD. La gramática no es estilo: es coerción útil. ::: CICLO_ORIGEN = $sat#H2#GRAMMAR.lacho",
+      "clase": "Clase: módulo · IMV/core/grammar.py · Nivel: Capa A"
+    },
+    "GUI": {
+      "term": "GUI",
+      "level": 2,
+      "source": "G.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Graphical User Interface. Interfaces HTML soberanas del sistema. LACHO BUILDER GUI · elpulsar.gui · port 8742. Dashboards: DIRIME_V3_DASHBOARD · KALIL_AGENTS_DASHBOARD",
+      "clase": "Clase: interfaz · Sistema DIRIME · Nivel: Capa B"
+    },
+    "HALT": {
+      "term": "HALT",
+      "level": 2,
+      "source": "H.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Detención completa del sistema por pérdida de identidad soberana. \"si core.teather no existe → HALT(IDENTIDAD_PERDIDA)\" \"colapsable: sí — por condición de HALT\"",
+      "clase": "Clase: estado de emergencia · Sistema de identidad"
+    },
+    "HANDSHAKE": {
+      "term": "HANDSHAKE",
+      "level": 2,
+      "source": "H.index",
+      "libraries": [
+        "SOCIAL",
+        "CRYPTO",
+        "SOCIAL"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Protocolo de establecimiento de conexión soberana. HANDSHAKE → EXCHANGE → ACK → SEAL HANDSHAKE → ESTABLECIDO | HIPOTETICO | ERROR",
+      "clase": "Clase: protocolo · Red soberana inter-nodos"
+    },
+    "HANZI": {
+      "term": "HANZI",
+      "level": 4,
+      "source": "H.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Caracteres chinos (漢字) usados en el sistema trilingüe de LACHO. Parte del vocabulario CJK soberano. Ver: CJK · UNICODE · CHINA_DUAL · language_routing",
+      "clase": "Clase: sistema de escritura · Trilingüismo"
+    },
+    "HARDWARE": {
+      "term": "HARDWARE",
+      "level": 3,
+      "source": "H.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "El hardware del operador: Linux Mint · 12GB RAM · SSD 240GB · HDD 1TB. [ESTADO DEL HARDWARE]: METAL_SYNC_STABLE · INTERRUPT_READY La Capa C está bloqueada hasta tener hardware Ryzen.",
+      "clase": "Clase: referencia · Sistema físico · Capa C"
+    },
+    "HDD": {
+      "term": "HDD",
+      "level": 3,
+      "source": "H.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Hard Disk Drive. Territorio del sistema: persistencia e historia. \"/territorio/mu-store/\" en HDD para persistencia y WORM. SSD (Santuario) + HDD (Territorio): geografía soberana de directorios.",
+      "clase": "Clase: recurso hardware · Sistema de archivos"
+    },
+    "HEXAGRAMA": {
+      "term": "HEXAGRAMA",
+      "level": 2,
+      "source": "H.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Los 64 hexagramas del I Ching mapeados como estados soberanos. Cada hexagrama es una UF (Unidad Funcional) del sistema. \"3 jefaturas: HEXAGRAMA 1(CEO) · HEXAGRAMA 32(PM) · HEXAGRAMA 64(VIBE)\"",
+      "clase": "Clase: unidad funcional · Sistema I Ching × LACHO"
+    },
+    "HEX_ID": {
+      "term": "HEX_ID",
+      "level": 1,
+      "source": "H.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Identificador hexadecimal en la gramática LACHO. HEX_ID: referencia a uno de los 64 hexagramas. CYCLE_ID ::= DAY_ID \"#\" HEX_ID \"#\" HEX_DIGIT+",
+      "clase": "Clase: token · Gramática ANTLR"
+    },
+    "HIPOTETICO": {
+      "term": "HIPOTETICO",
+      "level": 1,
+      "source": "H.index",
+      "libraries": [
+        "SAMU"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "La H de LACHO: Lenguaje Artificial Circunstancial Hipotético Ordenado. HIPOTETICO = 3 ;;; canal sin confirmación (H_OPERATIVO) HANDSHAKE → ESTABLECIDO | HIPOTETICO | ERROR",
+      "clase": "Clase: modo · Gramática LACHO · SAMU"
+    },
+    "HOUSE_DRONE": {
+      "term": "HOUSE_DRONE",
+      "level": 2,
+      "source": "H.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Módulo de monitoreo doméstico soberano. $thu: Nerve Cell HOUSE DRONE Notaria. Ruta: FOLDERS NO RAG INPUT/ELPULSAR LOCAL/HOUSE_DRONE.html",
+      "clase": "Clase: módulo · ELPULSAR LOCAL"
+    },
+    "IDE": {
+      "term": "IDE",
+      "level": 4,
+      "source": "I.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Integrated Development Environment. Dos IDEs soberanos en DIRIME: CIDE: Circuit IDE (visual, HTML). AGENCY IDE SYSTEM: orquestación de agentes (.green/.blue).",
+      "clase": "Clase: entorno de desarrollo · Toolchain"
+    },
+    "IDENTIFIER": {
+      "term": "IDENTIFIER",
+      "level": 1,
+      "source": "H.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Identificador canónico en la gramática LACHO. IDENTIFIER ::= ALPHA (ALPHA_NUM | UNDERSCORE | DASH)* Usado en: DECL_LINE · GATE_SIGIL · SUBSECTION · DECLARE_FLOW",
+      "clase": "Clase: token · Gramática ANTLR",
+      "alt_sources": [
+        "I.index"
+      ]
+    },
+    "IF": {
+      "term": "IF",
+      "level": 1,
+      "source": "H.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Condicional en la gramática LACHO. CONDITION_STMT ::= \"IF\" CONDITION \"THEN\" ACTION (\"ELSE\" ACTION)? Ver: ELSE · CONDITION · ACTION · METHOD",
+      "clase": "Clase: token · Gramática ANTLR",
+      "alt_sources": [
+        "I.index"
+      ]
+    },
+    "IME": {
+      "term": "IME",
+      "level": 2,
+      "source": "I.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Input Method Engine modo I Ching: procesa hexagramas en background. \"IME Modo I CHING · LOAN-IME · background hex\" LOAN-IME: precarga pesos RAG en memoria MU.",
+      "clase": "Clase: módulo · I Ching Engine · Capa C"
+    },
+    "IMPERATIVO": {
+      "term": "IMPERATIVO",
+      "level": 1,
+      "source": "H.index",
+      "libraries": [
+        "TRUST"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Paradigma de programación de la biblioteca TRUST. \"BIBLIOTECA TRUST (IMPERATIVO):\" En LACHO, lo imperativo ordena sin negociación.",
+      "clase": "Clase: paradigma · Biblioteca TRUST",
+      "alt_sources": [
+        "I.index"
+      ]
+    },
+    "IMPORT": {
+      "term": "IMPORT",
+      "level": 2,
+      "source": "I.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Importación soberana de recursos entre nodos. headcat CAT(IMPORT) FROM \"logic.lacho\" --[As de Guía] IMPORT FROM \"FOLIAR.txt\" -> [foundation]",
+      "clase": "Clase: operación · CAT(IMPORT) · Sistema de flujo"
+    },
+    "IMV": {
+      "term": "IMV",
+      "level": 2,
+      "source": "I.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Integrated Modular Validator. Núcleo Python del sistema DIRIME. \"Tests IMV: 49/49 ✅\" Estructura: core/ · interface/ · tools/ · data/sovereign.db",
+      "clase": "Clase: sistema · Núcleo ejecutable · Capa A+B"
+    },
+    "INDEXADO": {
+      "term": "INDEXADO",
+      "level": 3,
+      "source": "I.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Estado de un archivo ya procesado e incluido en el índice BM25. CORPUS: 281+ archivos INDEXADOS. INDEXADOS: confirmación de que el RAG los puede consultar.",
+      "clase": "Clase: estado · Sistema RAG"
+    },
+    "INIT": {
+      "term": "INIT",
+      "level": 2,
+      "source": "I.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Señal de inicialización de un módulo o ciclo. [RAG: TRUST :: INIT :: ciclo_0] [RAG: STACKING :: INIT :: 8_pilares]",
+      "clase": "Clase: señal · Sistema RAG · Ciclo de inicio"
+    },
+    "INTEGRIDAD": {
+      "term": "INTEGRIDAD",
+      "level": 2,
+      "source": "I.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "\"VERIFICAR INTEGRIDAD DE IDENTIDAD\" — primer paso del protocolo. \"SILENCE_IS_SOVEREIGN\": la integridad en silencio. \"(integrity_hash) es el suelo\" — base verificable, no metáfora.",
+      "clase": "Clase: propiedad · Sistema soberano"
+    },
+    "INTEGRITY": {
+      "term": "INTEGRITY",
+      "level": 1,
+      "source": "H.index",
+      "libraries": [
+        "TRUST"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Sello criptográfico de integridad del sistema. INTEGRITY :: (sha256_hash) // Sello criptográfico del bloque Hash de Gracia: ID + AUTHORITY + INTEGRITY → sello único.",
+      "clase": "Clase: propiedad criptográfica · TRUST"
+    },
+    "INTERMEDIO": {
+      "term": "INTERMEDIO",
+      "level": 3,
+      "source": "I.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Nivel intermedio de la jerarquía operativa de LACHO. \"modo intermedio\" para biblioteca ACTIVITY en grammar.py. Entre lo constitucional (nivel 0) y lo técnico (nivel 3).",
+      "clase": "Clase: nivel · Taxonomía del sistema"
+    },
+    "INVALID": {
+      "term": "INVALID",
+      "level": 1,
+      "source": "H.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Estado de una sentencia o módulo que no pasó la validación. INVALID(SEM-1): falta [term] ontológico. INVALID(SEM-2): el [term] operativo no está activo.",
+      "clase": "Clase: estado · Sistema de validación · grammar.py",
+      "alt_sources": [
+        "I.index"
+      ]
+    },
+    "IRQ": {
+      "term": "IRQ",
+      "level": 2,
+      "source": "I.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Interrupt Request. Señal de interrupción de hardware. \"Mapear los 64 hexagramas a instrucciones reales de hardware (señales de Kernel, interrupciones IRQ, estados de CPU).\"",
+      "clase": "Clase: señal hardware · Bajo nivel · Capa C/D"
+    },
+    "JEFATURAS": {
+      "term": "JEFATURAS",
+      "level": 3,
+      "source": "J.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Las tres jefaturas de la Gesta LACHO: \"3 jefaturas lideradas por HEXAGRAMA 1(CEO), HEXAGRAMA 32(PROJECT MANAGER), HEXAGRAMA 64(VIBE CODER MANAGER)\"",
+      "clase": "Clase: estructura organizativa · Nivel: mantenimiento"
+    },
+    "JIT": {
+      "term": "JIT",
+      "level": 1,
+      "source": "J.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Just-in-Time. Modo 2 de compilación en LACHO. \"LACHO implementa un ciclo JIT donde los hexagramas actúan como tokens de decisión para la compilación en tiempo real.\"",
+      "clase": "Clase: modo de compilación · Deep Learning · RAG dinámico"
+    },
+    "JOURNAL": {
+      "term": "JOURNAL",
+      "level": 2,
+      "source": "J.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Sistema de documentación soberana del proyecto DIRIME. Estructura: ACTIVE/ · PLANNING/ · REFERENCE/ · TEMPLATES/ · EXTERNAL/ Archivos clave: SESION_ACTIVA.md · ARCHITECTURE.md · LOG_PERMANENTE.md",
+      "clase": "Clase: sistema · JOURNAL/ · Nivel: documentación activa"
+    },
+    "JSON": {
+      "term": "JSON",
+      "level": 1,
+      "source": "J.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "JavaScript Object Notation. Formato canónico de configuración y de intercambio de datos entre módulos del sistema. JSON_OBJECT ::= \"{\" JSON_PAIR (\",\" JSON_PAIR)* \"}\"",
+      "clase": "Clase: formato · Gramática LACHO · Configuración"
+    },
+    "JULES": {
+      "term": "JULES",
+      "level": 4,
+      "source": "J.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Agente de GitHub usado en el toolchain de desarrollo LACHO. \"Estado del Dataset: [ESTRUCTURA DE REPOSITORIO JULES INDEXADA]\" Trabaja en conjunto con Claude y Windsurf en el ciclo de gerencia.",
+      "clase": "Clase: IA · Integración externa · GitHub"
+    },
+    "JURISDICCIONES": {
+      "term": "JURISDICCIONES",
+      "level": 2,
+      "source": "J.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "\"ARQUITECTURA POR CAPAS: JURISDICCIONES Y SEPARACIÓN DE RESPONSABILIDADES\" Cada biblioteca opera en su jurisdicción propia sin invadir otras. La jurisdicción es el mecanismo que evita la contaminación entre capas.",
+      "clase": "Clase: concepto · Arquitectura por capas"
+    },
+    "KALIL": {
+      "term": "KALIL",
+      "level": 4,
+      "source": "K.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Sistema de agentes económicos soberanos de DIRIME. Seis nodos: BOLIVAR · NORA · CARILO · BARRIOS · CHALTEN · TANDIL \"KALIL-CHINA-DUAL.txt · KALIL-NODOS-LACHO.txt\"",
+      "clase": "Clase: sistema · Dominio económico soberano"
+    },
+    "KERNEL": {
+      "term": "KERNEL",
+      "level": 2,
+      "source": "K.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Núcleo del sistema operativo. Objetivo: soberanía de bajo nivel. [ESTADO DEL KERNEL]: LOW_LEVEL_SOVEREIGNTY_ACTIVE \"FOLIO 130: REVOLUCIÓN Y EVOLUCIÓN DEL KERNEL\"",
+      "clase": "Clase: módulo · Sistema operativo soberano · Capa C/D"
+    },
+    "KEYWORDS": {
+      "term": "KEYWORDS",
+      "level": 1,
+      "source": "K.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Vocabulario constitucional del sistema LACHO para reconocimiento RAG. \"=== KEYWORDS NUEVAS — INCORPORADAS EN ESTA INSTANCIA ===\" B04: ALIMENTO RAG-KEYWORDS CONSTITUCIONALES L.A.C.H.O.txt",
+      "clase": "Clase: vocabulario · Sistema RAG · Nivel: constitucional"
+    },
+    "KNOWLEDGE_SYNTHESIS": {
+      "term": "KNOWLEDGE_SYNTHESIS",
+      "level": 2,
+      "source": "K.index",
+      "libraries": [
+        "STACKING"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Protocolo de síntesis del conocimiento. El caldero alquímico. [KNOWLEDGE_SYNTHESIS / DATA_REFINEMENT] [KNOWLEDGE_SYNTHESIS / DEEP_ALCHEMICAL_PROCESS]",
+      "clase": "Clase: protocolo · Hexagrama: H50 · 鼎 Dǐng · Biblioteca: STACKING"
+    },
+    "KU": {
+      "term": "KU",
+      "level": 2,
+      "source": "K.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Contexto / Canal de comprensión / Exploración activa. \"KU: lectura del entorno. Canal de comprensión.\" \"Traduce 'situación' en información utilizable por el sistema.\"",
+      "clase": "Clase: estado · Tríada MU–KU–WU · Nivel: constitucional"
+    },
+    "KUBERNETES": {
+      "term": "KUBERNETES",
+      "level": 2,
+      "source": "K.index",
+      "libraries": [
+        "CRYPTO"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Sistema de orquestación de contenedores en el stack LACHO. yaml/yml (Ansible, Docker, Kubernetes): stack de configuración. \"MCP para conectar agentes con herramientas como Kubernetes.\"",
+      "clase": "Clase: asiento de autoridad · Biblioteca: CRYPTO"
+    },
+    "KU_DV": {
+      "term": "KU_DV",
+      "level": 2,
+      "source": "K.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "KU contaminado con {DOGMA-VIRTUAL} — consultas falsas. \"Si KU_DV se cristalizó en STACKING_H48, todas las consultas futuras están contaminadas.\"",
+      "clase": "Clase: estado patológico · Sistema KU"
+    },
+    "KYC": {
+      "term": "KYC",
+      "level": 3,
+      "source": "K.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Know Your Customer. Verificación de identidad soberana. GLOBAL :: crypto · KYC occidental CHINA  :: e-CNY · BSN · KYC PBOC (banco central chino)",
+      "clase": "Clase: protocolo · Compliance · Dominio CHINA / GLOBAL"
+    },
+    "LACHO": {
+      "term": "LACHO",
+      "level": 1,
+      "source": "L.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Lenguaje Artificial Circunstancial Hipotético Ordenado. \"No se presenta como lenguaje generalista ni formalismo sintáctico. Se presenta como una constitución operativa: un sistema que define",
+      "clase": "Clase: lenguaje · Nivel: fundacional · Constitución operativa"
+    },
+    "LEARNING": {
+      "term": "LEARNING",
+      "level": 2,
+      "source": "L.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Directorio con el ciclo de aprendizaje soberano del sistema. _LEARNING_DIR: indexado con boost ×2.0 en rag.py. Archivos: LEARNING_CYCLE.md · ONBOARDING.md · THREATS.md · WEEKLY_RITUAL.md",
+      "clase": "Clase: directorio · Sistema de aprendizaje · rag.py"
+    },
+    "LEDGER": {
+      "term": "LEDGER",
+      "level": 2,
+      "source": "L.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Registro soberano inmutable de transacciones del sistema. \"HL FABRIC provisional — ledger soberano inmutable.\" Almacena: TX · cristales · Scalar S · actos notariales.",
+      "clase": "Clase: módulo · IMV/core/ledger.py · Nivel: Capa A"
+    },
+    "LEFT": {
+      "term": "LEFT",
+      "level": 1,
+      "source": "L.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Dirección izquierda en operadores de flujo de LACHO. FLOW_LEFT · ASSERT_LEFT (\">=\"): operadores de dirección izquierda. \"Usos amplios de LEFT en todas sus variantes ontológicas.\"",
+      "clase": "Clase: token · Gramática LACHO · Dirección"
+    },
+    "LIBRO": {
+      "term": "LIBRO",
+      "level": 4,
+      "source": "L.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "El LIBRO LACHO: acopio canónico y completo del sistema. \"LIBRO LACHO (ACOPIO) — ARQUITECTURA COGNITIVA GLOBAL\" Estructura: MACRO → MESO → MICRO (niveles de lectura).",
+      "clase": "Clase: documento · CORPUS/DOCUMENTATION/LIBRO.txt"
+    },
+    "LINCE": {
+      "term": "LINCE",
+      "level": 3,
+      "source": "L.index",
+      "libraries": [
+        "SAMU"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Precisión + velocidad = captura focalizada. Símbolo: ◇ SPECIES_DECL ::= (\"AGUILA\" | \"LINCE\" | \"ARANA\" | \"BALLENA\") Modo LINCE: ataque preciso y veloz en el momento exacto.",
+      "clase": "Clase: depredador estandarizable · Ballpaper · SAMU"
+    },
+    "LINUX": {
+      "term": "LINUX",
+      "level": 3,
+      "source": "L.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Sistema operativo base del entorno de desarrollo DIRIME. \"CLI Linux: el transductor final que permite control de bajo nivel.\" Hardware: Linux Mint · 12GB RAM · SSD 240GB · HDD 1TB.",
+      "clase": "Clase: sistema operativo · Hardware del operador"
+    },
+    "LLM": {
+      "term": "LLM",
+      "level": 2,
+      "source": "L.index",
+      "libraries": [
+        "CRYPTO"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Large Language Model. La \"Memoria Pequeña\" del sistema. \"El Sistema Operativo actúa como la 'Imagen Gigante' (orquestación global), mientras que el LLM funciona como la",
+      "clase": "Clase: asiento de autoridad · Biblioteca: CRYPTO"
+    },
+    "LOG_PERMANENTE": {
+      "term": "LOG_PERMANENTE",
+      "level": 2,
+      "source": "L.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Registro histórico permanente del sistema DIRIME. Documenta: TX/S/cristales por fecha · logros · correcciones. \"LOG_PERMANENTE.md → Log permanente de eventos importantes.\"",
+      "clase": "Clase: documento · JOURNAL/REFERENCE/"
+    },
+    "MACRO": {
+      "term": "MACRO",
+      "level": 1,
+      "source": "M.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Nivel más alto de abstracción en la jerarquía documental. \"LIBRO LACHO (ACOPIO) — ARQUITECTURA COGNITIVA GLOBAL (NIVEL MACRO)\" MACRO → MESO → MICRO: escala de lectura del sistema.",
+      "clase": "Clase: nivel de lectura · Corpus / Cognitivo"
+    },
+    "MAIN": {
+      "term": "MAIN",
+      "level": 4,
+      "source": "M.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Orquestador principal del sistema IMV. Comandos: python3 main.py --stats · --asks · --notaria Ver: IMV · CLI · AUTORESEARCH · SCHEDULER",
+      "clase": "Clase: módulo · IMV/main.py · Orquestador"
+    },
+    "MATE_LARGO": {
+      "term": "MATE_LARGO",
+      "level": 2,
+      "source": "M.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "El mate largo como metáfora de procesamiento gradual sostenido. \"tap & drip → H29 (Lo Abismal, El Agua) — El mate largo\" \"nota: el MATE LARGO es [management] en su máxima expresión\"",
+      "clase": "Clase: protocolo · H29 · Sistema de espera sostenida"
+    },
+    "MCP": {
+      "term": "MCP",
+      "level": 2,
+      "source": "M.index",
+      "libraries": [
+        "TRUST",
+        "SOCIAL"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Model Context Protocol. Desacopla el modelo del contexto del host. \"LACHO utiliza MCP para desacoplar 'Pensamiento' (Modelo) del 'Contexto' (Host/Herramientas).\"",
+      "clase": "Clase: sujeto canónico · Biblioteca: SOCIAL"
+    },
+    "MEMECOINS": {
+      "term": "MEMECOINS",
+      "level": 3,
+      "source": "M.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Caso de uso de práctica del sistema KALIL. PRACTICE-MEMECOINS-V2.txt: documento de práctica soberana. MEMECOINS/VOLATILIDAD: dominio de análisis en el sistema.",
+      "clase": "Clase: referencia · Dominio económico · KALIL"
+    },
+    "MESO": {
+      "term": "MESO",
+      "level": 1,
+      "source": "M.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Nivel intermedio entre MACRO (principios) y MICRO (módulos). \"Este MESO 02 fija el régimen de decisión: cómo se pasa de comprender a emitir sin violar la soberanía.\"",
+      "clase": "Clase: nivel de lectura · Corpus / Cognitivo"
+    },
+    "METAL": {
+      "term": "METAL",
+      "level": 2,
+      "source": "M.index",
+      "libraries": [
+        "WORK"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "El metal como elemento del día $thu y de la capa WORK. \"METAL\": \"◈\" — corta, delimita. \"WORK como contacto con metal: hardware, actuadores, freno físico.\"",
+      "clase": "Clase: símbolo · $thu · WORK físico"
+    },
+    "METHOD": {
+      "term": "METHOD",
+      "level": 1,
+      "source": "M.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Biblioteca de operadores matemáticos y lógicos del sistema LACHO. \"Si el TRUST es la ley, el METHOD es la técnica de ensamblaje.\" Cinco operadores canónicos:",
+      "clase": "Clase: biblioteca · Nivel: 1 · Paradigma: operadores"
+    },
+    "MICRO": {
+      "term": "MICRO",
+      "level": 1,
+      "source": "M.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Nivel de especificación técnica concreta de cada módulo. \"MICRO components integran nuevo material\" MICRO_ARCHITECTURE/: documentos de especificación micro del corpus.",
+      "clase": "Clase: nivel de lectura · Corpus / Cognitivo"
+    },
+    "MONITOR": {
+      "term": "MONITOR",
+      "level": 2,
+      "source": "M.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Vigilancia continua de recursos o condiciones del sistema. MONITOR ram_usage: monitoreo de RAM soberano. \"MONITOR: vigilancia continua de PREDATOR_LATENT.\"",
+      "clase": "Clase: operación · Sistema de vigilancia"
+    },
+    "MOTOR": {
+      "term": "MOTOR",
+      "level": 2,
+      "source": "M.index",
+      "libraries": [
+        "SAMU"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Motor de decisión o de coherencia del sistema. \"MOTOR .CAT Y DIRIMENCIA: OPERADORES COMO JUECES DE REALIDAD\" \"LA CONSTITUCIÓN COMO MOTOR DE COHERENCIA\"",
+      "clase": "Clase: protocolo · WU · Sistema de salida"
+    },
+    "MU": {
+      "term": "MU",
+      "level": 2,
+      "source": "M.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Vacuidad operativa. Laboratorio de potencialidad. \"MU: espacio donde lo no resuelto se guarda sin emitir.\" \"Memoria del vacío: no es olvido, es contención.\"",
+      "clase": "Clase: estado · Tríada MU–KU–WU · Nivel: constitucional"
+    },
+    "NDJSON": {
+      "term": "NDJSON",
+      "level": 1,
+      "source": "N.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Newline-Delimited JSON. Una entrada por línea. \"Formato NDJSON — una entrada por línea. Legible por Behavioral RAG.\" pulse.registry en NDJSON: cada evento lleva [RAG: KEYWORD :: estado :: $dia_hora]",
+      "clase": "Clase: formato · Sistema de telemetría · Behavioral RAG"
+    },
+    "NEWLINE": {
+      "term": "NEWLINE",
+      "level": 1,
+      "source": "N.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Token de salto de línea en la gramática LACHO. NEWLINE ::= \"\\n\" | \"\\r\\n\" COMMENT_LINE ::= COMMENT_OPEN [^\\n]* NEWLINE",
+      "clase": "Clase: token · Gramática ANTLR"
+    },
+    "NODO": {
+      "term": "NODO",
+      "level": 2,
+      "source": "N.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Nodo soberano del sistema LACHO. Tipos principales: NODO-WS  → Workstation (diseña · no ejecuta directamente) NODO-IDE → Infraestructura generativa soberana (Capa C)",
+      "clase": "Clase: componente · Sistema distribuido"
+    },
+    "NODO-IDE": {
+      "term": "NODO-IDE",
+      "level": 3,
+      "source": "N.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Nodo IDE de segunda PC: infraestructura generativa soberana. \"NODO-IDE — infraestructura generativa soberana\" \"AGENCY IDE = NODO-IDE · personalidad exploratoria · METHOD dominante\"",
+      "clase": "Clase: nodo · Infraestructura generativa · Capa C"
+    },
+    "NODO-OMEGA": {
+      "term": "NODO-OMEGA",
+      "level": 2,
+      "source": "N.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "El punto de resolución final de un camino de pensamiento. \"NODO-OMEGA — destino final de un camino de Tr, el punto de resolución.\" \"La respuesta honesta: el camino al NODO-Ω de esta pregunta.\"",
+      "clase": "Clase: destino · Sistema de razonamiento (Tr)"
+    },
+    "NODO-WS": {
+      "term": "NODO-WS",
+      "level": 3,
+      "source": "N.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "La estación de trabajo del operador como nodo soberano. \"NODO-WS: diseña → no ejecuta directamente.\" CUSTODIA MÓVIL en NODO-WS: {doorman-mobile} gestiona acceso.",
+      "clase": "Clase: nodo · Workstation soberana"
+    },
+    "NORA": {
+      "term": "NORA",
+      "level": 4,
+      "source": "N.index",
+      "libraries": [
+        "SOCIAL"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Nodo de rating y analytics dentro del sistema KALIL. NORA Rating: calificación soberana de partes y actores. \"filtra partes · NORA\"",
+      "clase": "Clase: sujeto canónico · Biblioteca: SOCIAL · Día: $tue"
+    },
+    "NOTARIA": {
+      "term": "NOTARIA",
+      "level": 2,
+      "source": "N.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Sistema de certificación, sellado e inmutabilización de actos. \"+NOTARÍA: certifica / sella / registra / declara / inmutabiliza\" 5 endpoints REST: /api/notaria/certifica · sella · inmutabiliza · verifica · export",
+      "clase": "Clase: sistema · Pipeline soberano · Capa B"
+    },
+    "NOTEBOOKLM": {
+      "term": "NOTEBOOKLM",
+      "level": 4,
+      "source": "N.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Herramienta de Google usada en el toolchain de estudio de LACHO. \"FUENTES NOTEBOOKLM\": archivos de estudio del sistema. Ver: JULES · CLAUDE · GROQ · AI_INTEGRATION",
+      "clase": "Clase: herramienta IA · Integración externa"
+    },
+    "NUDOS": {
+      "term": "NUDOS",
+      "level": 2,
+      "source": "N.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "\"TOPOLOGÍA DE NUDOS Y 64 ESTADOS: EL CÓDIGO TIENE PESO\" \"Los nudos funcionan como formas de control comparables a primitives de seguridad.\"",
+      "clase": "Clase: topología · Sistema de control soberano"
+    },
+    "NUEVO": {
+      "term": "NUEVO",
+      "level": 3,
+      "source": "N.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Estado de un documento o módulo recién incorporado. En CORPUS_INDEX: columna NUEVO vs ESTABLE vs EN_PROGRESO. Se opone a ESTABLE.",
+      "clase": "Clase: estado · Corpus / Sistema"
+    },
+    "NULL": {
+      "term": "NULL",
+      "level": 1,
+      "source": "N.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Valor nulo. En sovereign.db: NOT NULL obligatorio en campos críticos. type TEXT NOT NULL → TransactionType enum value timestamp REAL NOT NULL → time.time() Unix epoch",
+      "clase": "Clase: tipo de dato · ledger.py · SQL"
+    },
+    "OBSOLESCENCIAS": {
+      "term": "OBSOLESCENCIAS",
+      "level": 3,
+      "source": "O.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Elementos del sistema que completaron su ciclo y deben ser retirados. La obsolescencia en LACHO sigue el protocolo ASHING. Se documentan en UPGRADE_TASKING/07_REGISTROS_MANTENIMIENTO/.",
+      "clase": "Clase: estado · Nivel: mantenimiento"
+    },
+    "OFFSET": {
+      "term": "OFFSET",
+      "level": 1,
+      "source": "O.index",
+      "libraries": [
+        "SOCIAL"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Localización precisa de un elemento en el DRA. Formato canónico: [term:A°SLICE§SEGMENT#CLUSTER@OFFSET] OFFSET(BLUEWORDS): índice exacto de Blue-Words en el DRA.",
+      "clase": "Clase: módulo · Biblioteca: SOCIAL · Sistema de ciclos"
+    },
+    "OPERADOR": {
+      "term": "OPERADOR",
+      "level": 1,
+      "source": "O.index",
+      "libraries": [
+        "METHOD"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Los operadores en LACHO son jueces de realidad. \"MOTOR .CAT Y DIRIMENCIA: OPERADORES COMO JUECES DE REALIDAD\" Ψ como OPERADOR COSMOS–TOMO: convierte caos en estado ordenado.",
+      "clase": "Clase: elemento gramatical · Biblioteca: METHOD"
+    },
+    "ORDEN": {
+      "term": "ORDEN",
+      "level": 2,
+      "source": "O.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "La O de LACHO: Lenguaje Artificial Circunstancial Hipotético Ordenado. \"Ψ como OPERADOR COSMOS–TOMO: VERDAD LOCAL Y ORDEN VERIFICABLE\" El orden en LACHO no es rigidez: es trazabilidad verificable.",
+      "clase": "Clase: principio · Ψ · Sistema de estado"
+    },
+    "ORQUESTADOR": {
+      "term": "ORQUESTADOR",
+      "level": 2,
+      "source": "O.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "El orquestador central que coordina todos los módulos del sistema. \"MAIN.TEATHER — ORQUESTADOR CENTRAL\" tools/theater_runner.py: ejecutor de orquestación .theater (S4.2).",
+      "clase": "Clase: módulo · MAIN.TEATHER · Sistema de coordinación"
+    },
+    "PARADIGMA": {
+      "term": "PARADIGMA",
+      "level": 1,
+      "source": "P.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Modo fundamental de operar de una biblioteca en LACHO. ::: PARADIGMA = INICIALIZACIÓN — precede a todos los paradigmas ::: PARADIGMA = RECEPTIVO — H2 como estado base permanente",
+      "clase": "Clase: concepto · Gramática / Sistema cognitivo"
+    },
+    "PASO": {
+      "term": "PASO",
+      "level": 3,
+      "source": "P.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Unidad de avance verificable en una secuencia soberana. PASO 1→4: la secuencia canónica de arranque del sistema. En NOTARIA: NOTARIA-9 define los pasos del pipeline.",
+      "clase": "Clase: unidad de progreso · Nivel: operacional"
+    },
+    "PATO_INFLADO": {
+      "term": "PATO_INFLADO",
+      "level": 1,
+      "source": "P.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Protocolo de separación de superficialidad. PATO_STMT ::= \"PATO_INFLADO\" DECLARE_FLOW \"PATO INFLADO — separar la piel del pato con aire: fácil, rápido,",
+      "clase": "Clase: token / protocolo · Gramática LACHO"
+    },
+    "PATTERN-WITNESS": {
+      "term": "PATTERN-WITNESS",
+      "level": 2,
+      "source": "P.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Capa que registra recurrencias sin interpretarlas todavía. \"PATTERN-WITNESS — registra recurrencias sin interpretarlas, las almacena en MU hasta que acumulan suficiente Tr para ser dirimidas.\"",
+      "clase": "Clase: operador · Sistema de estado soberano · Nivel: constitucional"
+    },
+    "PBOC": {
+      "term": "PBOC",
+      "level": 4,
+      "source": "P.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "People's Bank of China. Autoridad regulatoria del dominio CHINA. \"CARILO: capital · riesgo · loans DeFi/PBOC\" \"Cumplimiento de regulaciones PBOC\"",
+      "clase": "Clase: referencia · Banco central chino · Dominio CHINA"
+    },
+    "PESCA": {
+      "term": "PESCA",
+      "level": 4,
+      "source": "P.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "La red de pesca: paradigma logístico del sistema LACHO. \"RED DE PESCA — la malla está tendida, el agua pasa, los peces llegan.\" \"C: RED DE PESCA — paradigma logístico\"",
+      "clase": "Clase: metáfora · Sistema logístico · Paradigma"
+    },
+    "PLANER": {
+      "term": "PLANER",
+      "level": 4,
+      "source": "P.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Directorio raíz del proyecto: /home/lacho/Documentos/PLANER AI/ PLANER AI: el espacio de trabajo soberano del operador. Ver: DIRIME · IMV · CORPUS · JOURNAL",
+      "clase": "Clase: directorio raíz · Proyecto del operador"
+    },
+    "PROMPT": {
+      "term": "PROMPT",
+      "level": 2,
+      "source": "P.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Instrucción soberana para IAs del sistema. PROMPT MAESTRO: kernel conductual (A03) — SAMU @ y ética operativa. Los prompts del $dia están en: OPTIMIZACION_PROMPTS/$dia.txt",
+      "clase": "Clase: instrucción · Windsurf / Groq · Toolchain"
+    },
+    "PROTOCOLO": {
+      "term": "PROTOCOLO",
+      "level": 2,
+      "source": "P.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Secuencia verificable de pasos para una operación soberana. Tipos en el corpus: PROTOCOLO DE HALT · PROTOCOLO DE ARRANQUE PROTOCOLO NOTARIAL · PROTOCOLO DE BACKUP · PROTOCOLO DE SEGURIDAD",
+      "clase": "Clase: procedimiento · Nivel: operativo"
+    },
+    "PUENTE": {
+      "term": "PUENTE",
+      "level": 2,
+      "source": "P.index",
+      "libraries": [
+        "SOCIAL"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Mecanismo de conexión entre bibliotecas o sistemas distintos. \"BIBLIOTECAS EXISTENTES — NUEVOS MÓDULOS — FUNCIÓN DE PUENTE\" groq/bridge.py: puente NL→LACHO vía Groq (Capa B).",
+      "clase": "Clase: componente · SOCIAL · Registro pasivo"
+    },
+    "PULSING": {
+      "term": "PULSING",
+      "level": 2,
+      "source": "P.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "\"PULSING es el nombre correcto para la GUI de LACHO.\" \"No es un dashboard estático — es un sistema que respira. Dos frames. Un ritmo.\" PULSING + ASHING + COMPRESIÓN = tríada de procesamiento de output.",
+      "clase": "Clase: interfaz GUI · Sistema visual soberano"
+    },
+    "QUARANTINE_HOLD": {
+      "term": "QUARANTINE_HOLD",
+      "level": 2,
+      "source": "Q.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Retención soberana de actores o KU inciertos. \"QUARANTINE_HOLD — retención soberana de lo incierto, el nudo que contiene sin juzgar.\"",
+      "clase": "Clase: estado · Sistema de seguridad"
+    },
+    "QUEUE_MANAGEMENT": {
+      "term": "QUEUE_MANAGEMENT",
+      "level": 2,
+      "source": "Q.index",
+      "libraries": [
+        "GATE"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Gestión soberana de la cola de espera del sistema. [QUEUE_MANAGEMENT / SYNC_WAIT] !!Invoke!! 5[Gate] -> [QUEUE_MANAGEMENT]",
+      "clase": "Clase: protocolo · Hexagrama: H05 · 需 Xū · Biblioteca: GATE"
+    },
+    "QUIETUD": {
+      "term": "QUIETUD",
+      "level": 2,
+      "source": "Q.index",
+      "libraries": [
+        "STACKING"
+      ],
+      "hexagrams": [
+        "H52"
+      ],
+      "verbs": [],
+      "description": "El estado de quietud soberana del sistema. \"㊼ QUIETUD\" — Estado Global: [SISTEMA EN QUIETUD ABSOLUTA - INTEGRIDAD 100%] \"el sistema completa el ciclo actual y entra en H52 (quietud)\"",
+      "clase": "Clase: estado · Hexagrama: H52 · 艮 Gèn · Biblioteca: STACKING"
+    },
+    "RAG": {
+      "term": "RAG",
+      "level": 2,
+      "source": "R.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Motor de recuperación y generación aumentada del sistema LACHO. \"SISTEMA RAG COMO INGENIERÍA DE CONOCIMIENTO (VOCABULARIO + ALGORITMOS)\" Implementado como IMEBM25 en IMV/core/rag.py.",
+      "clase": "Clase: sistema · Retrieval-Augmented Generation · Nivel: Capa A"
+    },
+    "RAM": {
+      "term": "RAM",
+      "level": 3,
+      "source": "R.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Random Access Memory. Límite crítico del sistema: 12GB. \"BATCH_PROCESSING sin calibración de H07 → desbordamiento de RAM.\" Los 64 hexagramas (Practicantes) compiten dentro de 12GB de RAM.",
+      "clase": "Clase: recurso hardware · Sistema de límites"
+    },
+    "RED-REGRET": {
+      "term": "RED-REGRET",
+      "level": 2,
+      "source": "R.index",
+      "libraries": [
+        "SAMU",
+        "TRUST"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Protocolo de corrección cuando la emisión generó daño. \"RED-REGRET: CUÁNDO LA EMISIÓN GENERÓ DAÑO Y CÓMO SE REPARA\" \"Post-error: nombrar el error, no encuadrarlo.\"",
+      "clase": "Clase: componente · Biblioteca: TRUST · Motor del Algoritmo Conejo"
+    },
+    "REITERANCIAS": {
+      "term": "REITERANCIAS",
+      "level": 1,
+      "source": "R.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "El nombre propio que el Arquitecto da al fenómeno de recurrencia. No \"duplicados\" (problema técnico) — REITERANCIAS: alfabeto de la existencia. \"REITERANCIAS :: [RAG_KEYWORD]\"",
+      "clase": "Clase: concepto constitucional · Vocabulario soberano"
+    },
+    "RELACIONAL": {
+      "term": "RELACIONAL",
+      "level": 2,
+      "source": "R.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "El cuarto nivel de [term]: integrador entre verdades locales. \"NIVEL 4 — [term] RELACIONAL (el integrador)\" \"× {OPERATIVO, LINGÜÍSTICO, ONTOLÓGICO, RELACIONAL}\"",
+      "clase": "Clase: dimensión · [term] RELACIONAL"
+    },
+    "RIFF": {
+      "term": "RIFF",
+      "level": 1,
+      "source": "R.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Sección de un folio que ejecuta un protocolo específico en [ku-chat]. \"IV. RIFF DE EXPANSIÓN FRACTAL ([ku-chat])\" \"IV. RIFF DE PERSISTENCIA MASIVA ([ku-chat])\"",
+      "clase": "Clase: sección documental · Nivel: micro"
+    },
+    "RITMO": {
+      "term": "RITMO",
+      "level": 2,
+      "source": "R.index",
+      "libraries": [
+        "SAMU"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "El ritmo soberano del sistema como regulador de transiciones. \"[RAG: RITMO :: TRANSICION :: $sat→$sun :: CHISPA_SEMANAL]\" BP_RITMO: Dict[str, str] → símbolo de ritmo por día.",
+      "clase": "Clase: mecanismo · Sistema SAMU · Ciclo temporal"
+    },
+    "ROI": {
+      "term": "ROI",
+      "level": 2,
+      "source": "R.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Return on Investment. Retorno sobre la inversión en LACHO. \"El reporte final (%report) consolida el ROI logrado.\" [ASSET_VALUATION / ROI_STABLE]: retorno estable sobre inversión.",
+      "clase": "Clase: métrica · Sistema KALIL · Economía soberana"
+    },
+    "SAMU": {
+      "term": "SAMU",
+      "level": 2,
+      "source": "S.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Motor de conciencia, auditoría y tardanza deliberada del sistema. \"SAMU @: CONCIENCIA, AUDITORÍA Y TARDANZA DELIBERADA\" \"No es un asistente reactivo. Es un motor de conciencia y auditor.\"",
+      "clase": "Clase: biblioteca · Nivel: 1 · Paradigma: alto nivel"
+    },
+    "SELLO": {
+      "term": "SELLO",
+      "level": 2,
+      "source": "S.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Operación de sellado soberano de un artefacto o ciclo. \"SELLO DE CIERRE\": marca el fin verificable de una sesión. SELLO DE HONESTIDAD EPISTÉMICA: función del [seal of secrecy].",
+      "clase": "Clase: operación · Notaria / Ciclo soberano"
+    },
+    "SENSE": {
+      "term": "SENSE",
+      "level": 2,
+      "source": "S.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Módulo de monitoreo de entorno del sistema LACHO. \"sense.py: Módulo de monitoreo de entorno (la Radio).\" \"Emite señales de estado para que el teatro se reconfigure.\"",
+      "clase": "Clase: módulo · work/sense.py · Radio del sistema"
+    },
+    "SESION_ACTIVA": {
+      "term": "SESION_ACTIVA",
+      "level": 4,
+      "source": "S.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Punto de entrada único para toda sesión de trabajo. \"Copiar este archivo al inicio de toda conversación con AI.\" Contiene: estado del sistema · comandos base · checklist de cierre.",
+      "clase": "Clase: documento · JOURNAL/ACTIVE/"
+    },
+    "SILENCIO": {
+      "term": "SILENCIO",
+      "level": 1,
+      "source": "S.index",
+      "libraries": [
+        "SAMU"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "El silencio soberano como mecanismo de control epistémico. TIPOS DE SILENCIO: DIURNO · NOCTURNO \"SILENCE_IS_SOVEREIGN: la metáfora es el puente, el",
+      "clase": "Clase: estado · Sistema SAMU"
+    },
+    "SISTEMA": {
+      "term": "SISTEMA",
+      "level": 2,
+      "source": "S.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "La totalidad del sistema DIRIME/IMV como organismo soberano. \"SISTEMA RAG COMO INGENIERÍA DE CONOCIMIENTO\" \"CORRECTO, ADECUADO, Y LEGAL DENTRO DEL SISTEMA\"",
+      "clase": "Clase: concepto · Nivel: macro"
+    },
+    "SLANG": {
+      "term": "SLANG",
+      "level": 1,
+      "source": "S.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Lenguaje operativo informal del sistema soberano. \"SLANG = capa de traducción informal al sistema soberano\" \"SLANG = lenguaje operativo informal · inglés soberano\"",
+      "clase": "Clase: capa de traducción · DSL informal · Trilingüismo"
+    },
+    "SOCIAL": {
+      "term": "SOCIAL",
+      "level": 2,
+      "source": "S.index",
+      "libraries": [
+        "TRUST",
+        "CRYPTO"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "La biblioteca de las relaciones y la comunicación soberana. \"BIBLIOTECA SOCIAL (DECLARATIVO):\" {launch-bot} · {headcat} · {scheduler} · {concierge-desk}",
+      "clase": "Clase: componente · Biblioteca: TRUST / CRYPTO",
+      "subject": "{chair} · {drip} · {note} · {streaming} · {masking}"
+    },
+    "SSD": {
+      "term": "SSD",
+      "level": 3,
+      "source": "S.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Solid State Drive. El Santuario Lógico del sistema. \"SSD alberga exclusivamente el núcleo soberano y la lógica de control.\" \"Inteligencia Liviana en SSD, Fuerza Bruta en HDD.\"",
+      "clase": "Clase: recurso hardware · Santuario lógico"
+    },
+    "SSH": {
+      "term": "SSH",
+      "level": 2,
+      "source": "S.index",
+      "libraries": [
+        "CRYPTO"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Secure Shell. Protocolo de acceso remoto entre nodos soberanos. \"main.teather gestiona conexiones SSH/API.\" \"setup.teather: verifica rutas, llaves SSH y dependencias.\"",
+      "clase": "Clase: calificativo · Nivel: constitucional"
+    },
+    "STACKING": {
+      "term": "STACKING",
+      "level": 2,
+      "source": "S.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [
+        "apila",
+        "inmutabiliza",
+        "consolida",
+        "ancla",
+        "reserva",
+        "cristaliza"
+      ],
+      "description": "La biblioteca de la memoria estructurada y persistencia del sistema. \"STACKING — orientado a objetos\" 8 pilares de memoria soberana. Se distingue de ACTIVITY (estático vs dinámico).",
+      "clase": "Clase: biblioteca · Nivel: 1 · Paradigma: orientado a objetos"
+    },
+    "TANDIL": {
+      "term": "TANDIL",
+      "level": 4,
+      "source": "T.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Nodo de archivo notarial dentro del sistema KALIL. TANDIL(archivo): ARCHIVO NOTARIAL · TANDIL H48. Nodo de almacenamiento y recuperación soberana.",
+      "clase": "Clase: nodo económico · Dominio KALIL · Archivo"
+    },
+    "TAP": {
+      "term": "TAP",
+      "level": 2,
+      "source": "T.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "El \"tap\" del sistema: apertura calibrada del flujo. TAP&DRIP: protocolo de goteo calibrado de recursos. \"tap & drip → H29 (Lo Abismal, El Agua) — El mate largo\"",
+      "clase": "Clase: protocolo · H29 · DRIP · Gestión de recursos"
+    },
+    "TEMPORAL": {
+      "term": "TEMPORAL",
+      "level": 3,
+      "source": "T.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "El segundo nivel de [term]: almacenamiento temporal en MU activo. \"TEMPORAL → .. store .. → MU[activo] con [term] asignado\" Diferencia: TEMPORAL (MU activo) vs RELACIONAL (integrador) vs",
+      "clase": "Clase: nivel · [term] TEMPORAL · Sistema de persistencia"
+    },
+    "TIP": {
+      "term": "TIP",
+      "level": 1,
+      "source": "T.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Punto de palanca donde una acción pequeña produce gran efecto. TIP_DECL ::= \"TIP\" DECLARE_FLOW IDENTIFIER ;;; punto de palanca \"TIP :: el punto de palanca donde una acción pequeña produce gran efecto.\"",
+      "clase": "Clase: operador · Gramática LACHO · Sistema DRA"
+    },
+    "TOKENS": {
+      "term": "TOKENS",
+      "level": 1,
+      "source": "T.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Unidades léxicas de la gramática LACHO. \"GRAMÁTICA FORMAL — TOKENS PRIMITIVOS\" PASO R6 — EMISIÓN DE TOKENS DE ESTADO.",
+      "clase": "Clase: elementos · Gramática LACHO / RAG"
+    },
+    "TOMO": {
+      "term": "TOMO",
+      "level": 2,
+      "source": "T.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "La unidad mínima de coherencia verificable en contexto. \"TOMO: mínima unidad de estado coherente.\" \"Ψ como tomo: el momento más pequeño en que el sistema puede",
+      "clase": "Clase: componente · Sistema DRA · Unidad de coherencia"
+    },
+    "TOOLCHAIN": {
+      "term": "TOOLCHAIN",
+      "level": 2,
+      "source": "T.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Pipeline completo de procesamiento de LACHO. \"TOOLCHAIN: LLM + compilador + sandbox, pipeline verificable.\" \"BIBLIO-SOURCES(TOOLCHAIN).txt\"",
+      "clase": "Clase: pipeline · Sistema de compilación soberana"
+    },
+    "TRANSICION": {
+      "term": "TRANSICION",
+      "level": 2,
+      "source": "T.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "El paso verificable entre dos estados del sistema. \"TRANSICION\": \"↻\" — símbolo de transición entre días (Ballpaper). \"[RAG: RITMO :: TRANSICION :: $sat→$sun :: CHISPA_SEMANAL]\"",
+      "clase": "Clase: mecanismo · Sistema de estados"
+    },
+    "TRAZO_GRUESO": {
+      "term": "TRAZO_GRUESO",
+      "level": 1,
+      "source": "T.index",
+      "libraries": [
+        "WORK"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Una operación de WORK que no puede ser interrumpida. TRAZO_STMT ::= \"TRAZO_GRUESO\" DECLARE_FLOW \"IDENTIFICACIÓN DE CANDIDATO A TRAZO GRUESO\"",
+      "clase": "Clase: token / operación · Biblioteca: WORK · Gramática LACHO"
+    },
+    "TRUST": {
+      "term": "TRUST",
+      "level": 2,
+      "source": "T.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "La biblioteca soberana que define qué puede existir en el sistema. \"TRUST no es consenso. Es ley soberana.\" \"4.1 TRUST como búnker de legalidad\"",
+      "clase": "Clase: biblioteca · Nivel: 1 · Paradigma: imperativo · Búnker de legalidad",
+      "subject": "[foundation] · [scope] · [term] · [management]"
+    },
+    "TX": {
+      "term": "TX",
+      "level": 2,
+      "source": "T.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Transaction count. Contador de transacciones soberanas del sistema. TX=2026 (estado $sat 21-03): cada operación registrada en ledger. Métricas canónicas: TX · cristales · Scalar S",
+      "clase": "Clase: métrica · Sistema ledger · sovereign.db"
+    },
+    "UMBRAL_CALIENTE_S": {
+      "term": "UMBRAL_CALIENTE_S",
+      "level": 2,
+      "source": "U.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Umbral de apertura plena del sistema soberano. UMBRAL_CALIENTE_S = 0.85 all(s >= UMBRAL_CALIENTE_S for s in S_historial[-3:])",
+      "clase": "Clase: constante · Sistema Scalar S · foundation.py"
+    },
+    "UNDERSCORE": {
+      "term": "UNDERSCORE",
+      "level": 1,
+      "source": "U.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Carácter de subrayado en la gramática LACHO. UNDERSCORE ::= \"_\" IDENTIFIER ::= ALPHA (ALPHA_NUM | UNDERSCORE | DASH)*",
+      "clase": "Clase: token · Gramática ANTLR"
+    },
+    "UNICODE": {
+      "term": "UNICODE",
+      "level": 1,
+      "source": "U.index",
+      "libraries": [
+        "ACTIVITY"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Sistema de codificación universal del sistema LACHO. \"Definir fuentes UNICODE configurables y programables.\" Los programas UNICODE de LACHO (UNICODE_*.txt) definen",
+      "clase": "Clase: componente · Sistema hexagramas · Biblioteca: ACTIVITY"
+    },
+    "UNIVERSO": {
+      "term": "UNIVERSO",
+      "level": 3,
+      "source": "U.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Cada biblioteca de LACHO opera en su universo propio. \"EL ORDENAMIENTO ESTRICTO DEL UNIVERSO\" — mapeo soberano. \"MAPA DEL SOFISMO EN EL UNIVERSO LACHO\"",
+      "clase": "Clase: dominio · Sistema LACHO"
+    },
+    "USDT": {
+      "term": "USDT",
+      "level": 2,
+      "source": "U.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Tether USD. Activo de referencia en el nodo exterior de CARILO. \"CARILO :: exterior=loans USDT · interior=loans e-CNY tasa PBOC\" Activos: USDT · ETH · DeFi tokens · redes públicas blockchain.",
+      "clase": "Clase: referencia · Dominio económico · CARILO"
+    },
+    "VALID": {
+      "term": "VALID",
+      "level": 2,
+      "source": "V.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Estado de una sentencia o acto que pasó la validación soberana. \"IF Ψ(T) == VALID\" — condición de emisión autorizada. IF .cat .. dirime .. CAT(CODE) == VALID",
+      "clase": "Clase: estado · Sistema de validación"
+    },
+    "VALUE": {
+      "term": "VALUE",
+      "level": 1,
+      "source": "V.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Valor declarado en una línea de declaración LACHO. DECL_LINE ::= DECL_MARK WHITESPACE IDENTIFIER WHITESPACE \"=\" WHITESPACE VALUE SUBSECTION ::= INDENT IDENTIFIER DECLARE_FLOW VALUE",
+      "clase": "Clase: token · Gramática ANTLR"
+    },
+    "VAULT": {
+      "term": "VAULT",
+      "level": 2,
+      "source": "V.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Módulo de resguardo y cifrado de la persistencia soberana. \"/trust/vault.rs: Módulo de resguardo y cifrado.\" 0x1D_VAULT: registro de seguridad del estado de blindaje.",
+      "clase": "Clase: módulo · trust/vault.rs · Rust · Seguridad"
+    },
+    "VENTANA_CREATIVA": {
+      "term": "VENTANA_CREATIVA",
+      "level": 3,
+      "source": "V.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "La ventana creativa soberana: $sat(mecedora+gato) → $sat(mecedora). \"VENTANA CREATIVA: $sat→$sat — resiliencia ++ procrastinación.\" Período semanal de generación creativa del operador.",
+      "clase": "Clase: estado / período · Sistema del operador"
+    },
+    "VERB": {
+      "term": "VERB",
+      "level": 1,
+      "source": "V.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [
+        "Verbo soberano en la gramática LACHO."
+      ],
+      "description": "VERB_PHRASE ::= \"..\" VERB \"..\" VERB ::= \"validate\" | \"invoke\" | \"trace\" | \"commit\" | \"purge\" | ... Los verbos canónicos de cada biblioteca están en grammar.py.",
+      "clase": "Clase: token · Gramática ANTLR"
+    },
+    "VERDAD": {
+      "term": "VERDAD",
+      "level": 1,
+      "source": "V.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "En LACHO, la verdad es local y verificable — nunca universal. \"DIRIMENCIA: MECANISMO DE DECISIÓN ENTRE VERDAD, ADECUACIÓN Y ÉTICA\" \"Ψ como OPERADOR COSMOS–TOMO: VERDAD LOCAL Y ORDEN VERIFICABLE\"",
+      "clase": "Clase: principio epistémico · Nivel: constitucional"
+    },
+    "VOLUNTAD": {
+      "term": "VOLUNTAD",
+      "level": 2,
+      "source": "V.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "La voluntad del Arquitecto como fuerza motriz del sistema. \"LA VOLUNTAD ES AHORA\" — imperativo de ejecución. \"CEO (H01): Dirección de Voluntad.\"",
+      "clase": "Clase: calificativo · Gramática LACHO · Nivel: constitucional"
+    },
+    "VPC": {
+      "term": "VPC",
+      "level": 2,
+      "source": "V.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Virtual Private Cloud. Túneles soberanos entre nodos. CAT(VPC): módulo de sincronía en la nube soberana. \"libp2p para topología mesh P2P. WireGuard para tunnels CAT(VPC).\"",
+      "clase": "Clase: módulo · CAT(VPC) · Red soberana"
+    },
+    "WAIT_QUEUE": {
+      "term": "WAIT_QUEUE",
+      "level": 2,
+      "source": "W.index",
+      "libraries": [
+        "GATE"
+      ],
+      "hexagrams": [
+        "H05"
+      ],
+      "verbs": [],
+      "description": "Cola soberana de entidades en espera activa. \"WAIT_QUEUE: cola soberana con [term] individual declarado para cada una.\" ACTOR_HOSTILE NO entra en WAIT_QUEUE bajo ninguna circunstancia.",
+      "clase": "Clase: componente · Biblioteca: GATE · H05"
+    },
+    "WARNING": {
+      "term": "WARNING",
+      "level": 2,
+      "source": "W.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Señal de advertencia en estado de tensión sin resolver. \"WARNING activo → Ballestrinque (tensión sin resolver)\" \"Si X no aparece → WARNING: KU_VACÍO detectado\"",
+      "clase": "Clase: señal · Sistema de monitoreo"
+    },
+    "WHITESPACE": {
+      "term": "WHITESPACE",
+      "level": 1,
+      "source": "W.index",
+      "libraries": [
+        "SAMU",
+        "TRUST"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Espacio en blanco en la gramática LACHO. WHITESPACE ::= (\" \" | \"\\t\" | \"\\n\" | \"\\r\")+ DECL_LINE ::= DECL_MARK WHITESPACE IDENTIFIER WHITESPACE \"=\" WHITESPACE VALUE",
+      "clase": "Clase: operadores temporales · Biblioteca: SAMU / TRUST"
+    },
+    "WINDSURF": {
+      "term": "WINDSURF",
+      "level": 4,
+      "source": "W.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "IDE soberano principal para implementación de Capa B. \"Windsurf IDE · desarrollo · segunda PC · congelado hasta\" Rol diferenciado: Claude (gerencia) · Windsurf (operaciones).",
+      "clase": "Clase: IDE · Operaciones e implementación"
+    },
+    "WORK": {
+      "term": "WORK",
+      "level": 2,
+      "source": "W.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "La biblioteca del contacto con el metal: hardware y ejecución física. \"WORK como contacto con metal: hardware, actuadores, freno físico.\" \"GATE y WORK como binomio de control y ejecución.\"",
+      "clase": "Clase: biblioteca · Nivel: 1 · Paradigma: bajo nivel",
+      "subject": "{actuator} · {brake} · {doorman-mobile} · {door-afternoon}"
+    },
+    "WORKSTATION_AGENCY": {
+      "term": "WORKSTATION_AGENCY",
+      "level": 4,
+      "source": "W.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "La WORKSTATION como agencia autónoma soberana. \"WORKSTATION AGENCY: MULTITASKING · MULTI OS · DOCKERIZACIÓN · KUBERNETES · LLM · (WORKSTATION AGENCY)\"",
+      "clase": "Clase: sistema · NODO-WS · Autonomía"
+    },
+    "WORM": {
+      "term": "WORM",
+      "level": 2,
+      "source": "W.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Write Once, Read Many. Carpetas de solo lectura del sistema. \"/archive/WORM/ — Immutable Folios 00-256\" \"Garantizando que nadie pueda alterar la historia de la Gesta.\"",
+      "clase": "Clase: sistema de archivo · Inmutabilidad · HDD"
+    },
+    "WU": {
+      "term": "WU",
+      "level": 2,
+      "source": "W.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Manifestación / emisión sellada / acción verificada. \"WU: salida del sistema al mundo. Acción o respuesta validada.\" \"No se emite sin evaluación.\"",
+      "clase": "Clase: estado · Tríada MU–KU–WU · Nivel: constitucional"
+    },
+    "XLSX": {
+      "term": "XLSX",
+      "level": 4,
+      "source": "X.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Hoja de cálculo. Formato de salida en el pipeline de producción. Orden de producción: ANTLR → YAML → XML → DOCX → XLSX → GPX Ver: XML · YAML · DOCX · TOOLCHAIN",
+      "clase": "Clase: formato · Toolchain · Pipeline de producción"
+    },
+    "XML": {
+      "term": "XML",
+      "level": 4,
+      "source": "X.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Extensible Markup Language. Formato intermedio en el pipeline LACHO. Orden de producción: ANTLR → YAML → XML → DOCX → XLSX → GPX Ver: YAML · XLSX · ANTLR · TOOLCHAIN",
+      "clase": "Clase: formato · Toolchain · Pipeline de producción"
+    },
+    "YAML": {
+      "term": "YAML",
+      "level": 1,
+      "source": "Y.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Yet Another Markup Language. Formato de configuración del sistema. yaml/yml: configuración de entornos (Ansible, Docker, Kubernetes). \"Primero el que da forma (ANTLR, YAML)\"",
+      "clase": "Clase: formato · Configuración · Toolchain"
+    },
+    "YIELD": {
+      "term": "YIELD",
+      "level": 2,
+      "source": "W.index",
+      "libraries": [
+        "WORK",
+        "SAMU"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Ceder el turno momentáneamente para que el SAMU recalibre. \"YIELD (Ceder): Detiene el Work momentáneamente para que el SAMU recalibre la circunstancia.\"",
+      "clase": "Clase: capa · Dominio futuro · Capa D"
+    },
+    "YUAN": {
+      "term": "YUAN",
+      "level": 1,
+      "source": "Y.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "YUAN — CREACIÓN SOBERANA DE FORMA. En el contexto LACHO: el yuan (元) como acto de creación primordial. Aparece en la doctrina de la forma soberana.",
+      "clase": "Clase: principio · Sistema LACHO · Creación soberana"
+    },
+    "ZIP": {
+      "term": "ZIP",
+      "level": 2,
+      "source": "Z.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Módulo de compresión y empaquetado soberano. CAT(ZIP): protocolo de compresión dentro del pipeline CAT. \"CAT() (OS, CODE, MU, ZIP) — verificar que la tensión es correcta.\"",
+      "clase": "Clase: módulo · CAT(ZIP) · Flujo de datos"
+    },
+    "ZIPPER": {
+      "term": "ZIPPER",
+      "level": 2,
+      "source": "Z.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Comando de cierre soberano de emergencia del sistema. \"! : Command. Ejecución inmediata en el bloque Work. (Ej: !ZIPPER)\" \"THE ZIPPER-SERVICE [Emergency Protocol]\"",
+      "clase": "Clase: comando / protocolo de emergencia"
+    },
+    "ZKP": {
+      "term": "ZKP",
+      "level": 2,
+      "source": "Z.index",
+      "libraries": [],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Zero-Knowledge Proof. Criptografía de identidad soberana. \"Asientos (Seats) + Criptografía de Identidad ZKP\" \"Manual de Criptografía de Identidad (ZKP y Firma de Asientos)\"",
+      "clase": "Clase: protocolo criptográfico · Identidad soberana"
+    },
+    "ZONA": {
+      "term": "ZONA",
+      "level": 2,
+      "source": "Z.index",
+      "libraries": [
+        "SAMU"
+      ],
+      "hexagrams": [],
+      "verbs": [],
+      "description": "Zona de operación soberana del sistema. ZONAS_SOFISMO: mapeo de las zonas donde el sofismo puede infiltrarse. \"ZONAS_SOFISMO.md — Especificación de cada zona\"",
+      "clase": "Clase: concepto · Sistema SAMU · Nivel: cognitivo"
+    }
+  }
+}

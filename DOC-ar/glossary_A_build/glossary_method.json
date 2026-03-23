@@ -1,0 +1,197 @@
+{
+  "id": "glossary_build_method",
+  "version": "1.0",
+  "target": "A.index.lacho",
+  "date": "$sat 21-03-2026",
+  "description": "Algoritmo de construcción y verificación de índice de glosario para el sistema LACHO/DIRIME. Sintetiza el método ejecutado para producir A.index.lacho con 154 entradas verificadas y ordenadas por nivel de relevancia.",
+
+  "phases": [
+
+    {
+      "phase": 1,
+      "name": "EXTRACCION",
+      "description": "Minería exhaustiva de términos desde las fuentes canónicas del corpus.",
+      "steps": [
+        {
+          "step": "1.1",
+          "action": "scan_all_sources",
+          "description": "Extraer todos los tokens en mayúsculas que inicien con la letra objetivo desde todos los archivos del corpus.",
+          "sources": [
+            "CORPUS/BIBLIA/",
+            "CORPUS/COGNITIVO_FRAMEWORK/",
+            "CORPUS/DOCUMENTATION/",
+            "CORPUS/MICRO_ARCHITECTURE/",
+            "CORPUS/DYNAMIC_RESOURCE_ALLOCATION/",
+            "IMV/core/*.py",
+            "FOLDERS NO RAG INPUT/UNICODE/PROGRAMS/",
+            "FOLDERS NO RAG INPUT/AGENTS/",
+            "FOLDERS NO RAG INPUT/THEATER/",
+            "FOLDERS NO RAG INPUT/RUNNERS/",
+            "LACHO_FILES/",
+            "UPGRADE_TASKING/",
+            "JOURNAL/"
+          ],
+          "pattern": "\\b[A-Z][A-Z_][A-Z_0-9-]*\\b",
+          "output": "frequency_table { term: count }"
+        },
+        {
+          "step": "1.2",
+          "action": "threshold_filter",
+          "description": "Retener solo términos con ocurrencia >= 2 en el corpus completo. Los términos con ocurrencia 1 solo se incluyen si son tokens gramaticales canónicos (ANTLR/gramática formal).",
+          "min_count": 2,
+          "exception": "tokens gramaticales ANTLR con ocurrencia 1 pero definición formal"
+        },
+        {
+          "step": "1.3",
+          "action": "fetch_context",
+          "description": "Para cada término candidato, extraer 3-5 líneas de contexto real desde las fuentes. Nunca generar definiciones sin contexto verificado en el corpus.",
+          "rule": "Si no hay contexto recuperable, el término NO entra al glosario."
+        }
+      ]
+    },
+
+    {
+      "phase": 2,
+      "name": "VERIFICACION",
+      "description": "Auditoría de veracidad de cada entrada antes de escribirla.",
+      "checks": [
+        {
+          "check": "2.1",
+          "name": "is_real_concept",
+          "description": "El término debe ser un concepto propio del sistema LACHO/DIRIME, no un adjetivo genérico, un fragmento de otra palabra, ni ruido estadístico.",
+          "examples_rejected": [
+            "ADA → aparece solo dentro de 'tríADA', no es un concepto LACHO",
+            "ARTICULACION → 0 ocurrencias verificadas como concepto",
+            "AUTOM → truncado, no es término canónico",
+            "ANTERIOR / ACTUALES / ADICIONAL → adjetivos sin rol técnico propio"
+          ]
+        },
+        {
+          "check": "2.2",
+          "name": "no_duplicate",
+          "description": "Detectar y eliminar entradas que cubren el mismo concepto con distintas formulaciones. Fusionar en una sola entrada canónica.",
+          "examples_merged": [
+            "APERTURA x4 → una entrada con APERTURA_MINIMA / PARCIAL / PLENA / SEMANAL",
+            "AGENCIAMIENTO + AGENCIAMIENTO ARTIFICIAL + AGENCIAMIENTO_ACTIVO → 2 entradas",
+            "ALIMENTO x3 → una entrada",
+            "ALINEACION + ARMONIA x2 → una entrada",
+            "AOT duplicado → uno solo",
+            "AES-256 duplicado → uno solo"
+          ]
+        },
+        {
+          "check": "2.3",
+          "name": "pedagogic_value",
+          "description": "La entrada debe aportar comprensión real del sistema. Entradas que solo enumeran sin enseñar nada sobre LACHO se descartan o fusionan.",
+          "rule": "Cada entrada responde: ¿qué es esto dentro del sistema? ¿para qué sirve? ¿cómo se usa o dónde aparece?"
+        }
+      ]
+    },
+
+    {
+      "phase": 3,
+      "name": "CLASIFICACION_POR_NIVEL",
+      "description": "Ordenar las entradas verificadas en 4 niveles de relevancia para el lector del glosario.",
+      "levels": [
+        {
+          "level": "N1",
+          "name": "Fundamentos del lenguaje",
+          "description": "Bibliotecas del sistema, tokens gramaticales canónicos, operadores core, definiciones constitucionales del lenguaje LACHO. Son las entradas que un lector nuevo debe leer primero para entender el resto.",
+          "count_in_A": 20,
+          "examples": ["ACTIVITY", "ABORT", "ARROW_RIGHT", "AXIOMA", "ARTIFICIAL (LACHO como)", "A_OPERATIVO", "ANTLR", "AST"]
+        },
+        {
+          "level": "N2",
+          "name": "Módulos y mecanismos operativos",
+          "description": "Componentes activos del sistema: módulos Python, protocolos, algoritmos, operaciones con impacto directo en el ciclo de ejecución.",
+          "count_in_A": 34,
+          "examples": ["ABISMO", "ACTIVACIÓN", "ACTUATOR", "ALGORITMO CONEJO", "APERTURA", "APPEND_ONLY_LOG", "AUDITORIA", "0x3A_OUT"]
+        },
+        {
+          "level": "N3",
+          "name": "Actores, estados y clasificaciones",
+          "description": "Tipos de actores del sistema, estados del ciclo de vida de módulos, clasificaciones filosóficas y operativas. No son componentes ejecutables sino descriptores de estado o identidad.",
+          "count_in_A": 34,
+          "examples": ["ACTOR_HOSTILE", "AGNOSTIC_DEGRADED", "ANCHORED", "AUSENTE", "ALCANZADO (H64)", "ABIERTO", "ACCESS_READY"]
+        },
+        {
+          "level": "N4",
+          "name": "Herramientas, documentos y referencias",
+          "description": "Archivos del corpus, herramientas del toolchain, documentos de referencia, dominios de aplicación, configuraciones. Son el contexto operativo y documental del sistema.",
+          "count_in_A": 65,
+          "examples": ["AIDER", "AI_INTEGRATION", "ALMANAQUE_SOBERANO", "ARCHITECTURE.md", "AUTORESEARCH", "AGENTS_TOTAL", "ELPULSAR_ICONOGRAFIA"]
+        }
+      ]
+    },
+
+    {
+      "phase": 4,
+      "name": "REDACCION",
+      "description": "Reglas de escritura de cada entrada del glosario.",
+      "rules": [
+        {
+          "rule": "4.1",
+          "name": "formato_canónico",
+          "description": "Cada entrada sigue la estructura: ## TERMINO [Nivel] / # Clase: X · Contexto / # Definición extraída del corpus / # Ver: referencias relacionadas"
+        },
+        {
+          "rule": "4.2",
+          "name": "citar_fuente",
+          "description": "Toda definición incluye al menos una cita textual corta del corpus en formato de comentario, o una referencia a archivo canónico. Nunca parafrasear sin respaldo."
+        },
+        {
+          "rule": "4.3",
+          "name": "densidad_útil",
+          "description": "Máximo 8 líneas por entrada. Si el concepto requiere más, es señal de que debe descomponerse en dos entradas o que la esencia pedagógica se está perdiendo."
+        },
+        {
+          "rule": "4.4",
+          "name": "no_inflar",
+          "description": "No agregar entradas para alcanzar un número objetivo. El número de entradas es consecuencia de los términos que existen en el corpus, no una meta."
+        }
+      ]
+    },
+
+    {
+      "phase": 5,
+      "name": "AUDITORIA_FINAL",
+      "description": "Verificación estructural del archivo producido antes de entregarlo.",
+      "checks": [
+        "grep '^## ' file | sort | uniq -d  → debe dar vacío (0 duplicados)",
+        "grep '^## ' file | wc -l          → contar entradas totales",
+        "grep '\\[N1\\]' file | wc -l      → verificar distribución por nivel",
+        "grep '\\[N2\\]' file | wc -l",
+        "grep '\\[N3\\]' file | wc -l",
+        "grep '\\[N4\\]' file | wc -l"
+      ],
+      "expected_result": {
+        "duplicates": 0,
+        "levels_present": ["N1", "N2", "N3", "N4"],
+        "n1_share": "10-20% del total (fundamentos, pocos pero densos)",
+        "n4_share": "30-45% del total (referencias, muchas pero concisas)"
+      }
+    }
+
+  ],
+
+  "output_format": {
+    "filename": "{LETRA}.index.lacho",
+    "encoding": "UTF-8",
+    "header": "# {LETRA}.index.lacho\n# GLOSSARY — Letra {LETRA}\n# DIRIME · IMV · Sistema LACHO\n# [term] :: activo\n# Revisado: $dia",
+    "entry_template": "## TERMINO [N{1-4}]\n# Clase: X · Biblioteca/Nivel: Y\n# Definición: ...\n# Cita: \"...texto del corpus...\"\n# Ver: RELACIONADO1 · RELACIONADO2"
+  },
+
+  "metrics_A_index": {
+    "total_entries": 154,
+    "total_lines": 1056,
+    "duplicates": 0,
+    "removed_noise": 12,
+    "merged_entries": 18,
+    "n1": 20,
+    "n2": 34,
+    "n3": 34,
+    "n4": 65,
+    "sources_scanned": 14,
+    "corpus_files_consulted": "300+"
+  }
+}

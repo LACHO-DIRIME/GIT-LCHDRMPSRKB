@@ -1,0 +1,333 @@
+# GLOSSARY_MAP.index.lacho
+# MAPA COMPLETO DEL GLOSARIO DIRIME/LACHO
+# Sistema DIRIME · IMV · $sat 21-03-2026
+# ─────────────────────────────────────────────────────────────────
+# Archivos: 38 · Entradas con contenido: 489 · Entradas vacías (placeholder): 72
+# Niveles: N1=116 N2=196 N3=87 N4=119 + UF sin nivel = 29
+# ─────────────────────────────────────────────────────────────────
+
+# ══════════════════════════════════════════════════════════════════
+# ESTRUCTURA DEL GLOSARIO
+# ══════════════════════════════════════════════════════════════════
+#
+#   ARCHIVOS ALFABÉTICOS         → A.index.lacho … Z.index.lacho
+#   ARCHIVOS DE SÍMBOLOS         → #.index.lacho · $.index.lacho
+#                                  @.index.lacho · [..].index.lacho
+#                                  {..}.index.lacho · **..**.index.lacho
+#                                  'AI'.index.lacho
+#   ARCHIVOS DE UNIDADES UF      → UF[H..].index.lacho (placeholder)
+#                                  UF[H01-H02].index.lacho (completo)
+#   ARCHIVOS DE SISTEMA          → README.index.lacho · folder.index.lacho
+#                                  MIMEtype.index.lacho
+#
+#   CONVENCIÓN DE NIVELES:
+#     [N1] Fundamentos del lenguaje: bibliotecas, gramática, operadores core
+#     [N2] Módulos y mecanismos operativos
+#     [N3] Actores, estados y clasificaciones
+#     [N4] Herramientas, documentos y referencias
+# ══════════════════════════════════════════════════════════════════
+
+## A.index.lacho — 154 entradas · N1=20 N2=34 N3=34 N4=65 · 1056 líneas
+# [N1] ACTIVITY · ASHING · ASIENTO/ASIENTOS DE AUTORIDAD · AUTHORITY
+#      ALPHA/ALPHA_NUM · ABORT/!!Abort!! · ABORT_STMT · ACTIVE_MARK
+#      ASSERT_LEFT · ARROW_RIGHT/ARROW_LEFT · ACTIVITY_OPEN/ACTIVITY_CLOSE
+#      ACTION · ANTLR/ANTLR4 · AST · AXIOMA · ARTIFICIAL(LACHO como)
+#      A_OPERATIVO · A_LINGÜÍSTICO · A_RELACIONAL · A_ONTOLÓGICO
+# [N2] ABISMO · ACOPIO · ACOPIO_FASES_LACHO · ACTIVACIÓN · ACTIVATE
+#      ACTUATOR/{actuator} · ACTUATOR_COMPLETE/FAILED/EXECUTING
+#      AGENCIAMIENTO ARTIFICIAL · AGENT_MODE_ACTIVE · AGUA_DECL · AHORA
+#      ALGORITMO CONEJO · ALGORITMO GREEN-KNOWLEDGE · ALGORITMOS(×3)
+#      ANALOGUE_ANCHOR · ANCLAJE · ANIDAR · ANIDAMIENTO
+#      APERTURA/PLENA/PARCIAL/MINIMA · APPEND_ONLY_LOG · APRUEBA(SAMU)
+#      ARISTAS · ARRANQUE · AS_DE_GUIA · ASCENSO · ASSET_VALUATION
+#      ASIGNAR([term]) · ABSOLUTE_INTEGRITY · ABSOLUTE_SYNC · AUMENTO
+#      AUDITORIA/AUDIT · 0x3A_OUT · ARMY_DEPLOY · ARBITRAJE
+# [N3] @(operador SAMU) · ABISMAL · ABIERTO/ABIERTA · ACK · ACTIVO/ACTIVA
+#      ACTIVAR/ACTIVADO · ACTOR_HOSTILE · ACTOR_INCOMING · ACTOR_SYSTEM
+#      ACTOR_BOT · ACTOR_TRUSTED · ACTOR_UNKNOWN · ACTOR_VIP · ACTOR_HUMAN
+#      ACTIVOS · AJENO · ALCANZADO(H64) · ALCANZADA · ALERTA/ALERTA_SISTEMA
+#      AUSENTE · AGNOSTIC_ACT/BELIEF · AGNOSTIC_DEGRADED/QUESTION
+#      AGNOSTIC_HOLD/SUSPENDING · ATHEISTIC_ACT/RELIGIOSITY
+#      ATHEISTIC_DEGRADED/RESISTING/SEARCHING · ANCHORED
+#      ALL_SEATS_OPERATIONAL/ALL_PILLARS_STABLE · ABIERTO(GATE) · ACTUAR
+#      ACTIVATE · ARCHAEOLOGY_READY/EXCAVATING/PRESERVING
+#      ACCESS_READY/RETRIEVING/INDEXING · ALARMONIA/ALINEACION · ALTA/ALTO
+# [N4] ADN · AES-256 · AGENCY/AGENCY IDE · AGENTE · AGENTES(×4 NEURONAS)
+#      AGENTES_EXPANSION · AIDER · AI/IA · AI_INTEGRATION · ALMANAQUE_SOBERANO
+#      AML · ANÁLISIS A01–A05 · ANALYTICS(NORA) · ANCHOR_RAG
+#      ANCLA_ANALOGICA(A05) · ANSIBLE · APERTURA_SEMANAL · APPENDIX
+#      APORTE/APORTES · APORTE_K · ARABIC · ARCHIVE/ARCHIVE_DEATH_CERT
+#      ARCHIVO · ARCHITECTURE.md · ARCHIVO_HISTORICO · ARCHIVADO/ARCHIVADOS
+#      ARTE · ARTESANAL · ASCII · ASSETS · ASSET_VALUATION · AUTORESEARCH
+#      AUTORESEARCH_SYSTEM_PROMPT · AUTORÍA · AUTORIDAD · AUTHORIZED_0
+#      AUTOMOTIVE · AWS · ABC(doc) · ABC(banco) · ACTIVITY_GATE
+#      ACTIVITY_LATENTES · ACTIVIDAD_H03/H05/H06/H56 · ACTIVIDAD_H48_RAG
+#      ACTIVIDAD_H63 · ALERT_ENGINE_TESTER · AGENTS_TOTAL · ÁGUILA · ARAÑA
+#      ELPULSAR_ICONOGRAFIA · AGENTE_DESPLEGADO(FLYBOT) · ARTIFICIAL_ORGAN
+#      ADDENDUM · ALCANZADOS · ACTIVIDADES · ALTERNATIVA · ACCESIBILIDAD
+#      ACCIÓN(mantenimiento) · APLICAR · APLICACIONES · ADHERENCIA
+#      ALIMENTO/ALIMENTO_RAG · ANIMACIONES · APRENDIZAJE · APORTES_SAT
+
+## B.index.lacho — 37 entradas · N1=6 N2=16 N3=7 N4=8 · 296 líneas
+# [N1] BIBLIOTECA · BILATERAL · BNF · BOOLEAN · BROADCAST · BLACKLIST
+# [N2] BALLPAPER · BEHAVIORAL_RAG · BM25 · BRAIN · BACKUP/BKP
+#      BATCH_PROCESSING · BACKGROUND_PROCESS · BIOMETRICS · BOOST
+#      BRAKE/{brake} · BRIDGE · BLOCKCHAIN · BLAKE3 · BOOT/CAT(BOOT)
+#      BLUEWORDS · BALLESTRINQUE
+# [N3] BALLENA · BLUE · BLOQUE · BLOQUEADO · BUSY · BETA · BRANCH_BLUE
+# [N4] BIBLIO-SOURCES · BIBLIA · BIBLIOTECAS_MADRE_LACHO · BOLIVAR · BARRIOS
+#      BP_RITMO/SENSE/REGRET/NUDO/SEAL/TRUST/GREEN · BSN · BUILDER
+
+## C.index.lacho — 39 entradas · N1=6 N2=15 N3=5 N4=13 · 321 líneas
+# [N1] COMMAND · COMMAND_EXECUTE · COMMAND_DEFER · COMMENT_LINE
+#      CROSSOVER · CRYPTO_OPEN/CLOSE
+# [N2] CAT · CANAL · CIERRE · CICLO · CICLOTIMIA · CLUSTER · COGNITIVE_RAG
+#      CONCIENCIA · CONFLICT_6 · CRISIS_MANAGEMENT · CREATIVE_PAUSE
+#      CRYSTAL_FINAL · CUSTODIA · CSC · CIDE
+# [N3] CAPA · CERRADO · COGNITIVO · CONSTITUCIONAL · COMPLETADO/COMPLETO
+# [N4] CORPUS · CARILO · CHALTEN · CEO · CHCL · CJK · CHINA/CHINA_DUAL
+#      CNY · CLI · CLAUDE · COGNITIVO_00/01/02 · CPU · CREATIVE-FLOW-ALPHABET
+
+## D.index.lacho — 19 entradas · N1=6 N2=7 N3=4 N4=2 · 174 líneas
+# [N1] DAY_ID · DECLARE_FLOW · DECL_MARK · DECLARATIVO · DIR · DSL
+# [N2] DIRIMENCIA · DOGMA-VIRTUAL · DRIP/{drip} · DOORMAN-MOBILE
+#      DESKING · DATA_COMPUTING · DRIFT
+# [N3] DEGRADED · DEPREDADORES · DEFAULT · DOMINIOS(económicos)
+# [N4] DIRIME · DRA(Dynamic Resource Allocation)
+
+## E.index.lacho — 12 entradas · N1=4 N2=5 N3=2 N4=1 · 108 líneas
+# [N1] EBNF · ELSE · ENTRYPOINT · ENUMERABLE
+# [N2] ELPULSAR · ESTADO · EXPORT · EVENT_CRITICAL · ENGINE
+# [N3] ESTABLE · EXECUTE
+# [N4] ESPERA(H5)
+
+## F.index.lacho — 16 entradas · N1=4 N2=8 N3=2 N4=2 · 143 líneas
+# [N1] FLOW_STMT · FILTER · FIFO · FINITUD
+# [N2] FABRIC/HL FABRIC · FLYBOT/{flybot} · FOUNDATION
+#      FOUNDATION_COMPROMISED · FRACTAL · FIRMA_SOBERANA · FOLIAR · FOLIO
+# [N3] FRACTAL(estado) · FUTURO
+# [N4] FASE · FORMATO
+
+## G.index.lacho — 9 entradas · N1=4 N2=3 N3=2 · 88 líneas
+# [N1] GAP · GATE_SIGIL · GRAMMAR · GRADIENT
+# [N2] GATE · GREEN-KNOWLEDGE/{green-knowledge} · GUI
+# [N3] GESTA · GATO/{headcat}
+
+## H.index.lacho — 16 entradas · N1=7 N2=6 N3=2 N4=1 · 139 líneas
+# [N1] HEX_ID · HIPOTETICO · IF · IDENTIFIER · IMPERATIVO · INTEGRITY · INVALID
+# [N2] HALT · HANDSHAKE · HEADCAT/{headcat} · HL(Hyperledger) · HEXAGRAMA
+#      HOUSE_DRONE
+# [N3] HARDWARE · HDD
+# [N4] HANZI
+
+## I.index.lacho — 13 entradas · N1=3 N2=6 N3=3 N4=1 · 105 líneas
+# [N1] IDENTIFIER · IF · IMPERATIVO
+# [N2] IME · IMV · IMPORT · INIT · INTEGRIDAD · IRQ
+# [N3] INDEXADO · INTERMEDIO · INVALID
+# [N4] IDE
+
+## J.index.lacho — 6 entradas · N1=2 N2=2 N3=1 N4=1 · 72 líneas
+# [N1] JSON · JIT
+# [N2] JOURNAL · JURISDICCIONES
+# [N3] JEFATURAS
+# [N4] JULES
+
+## K.index.lacho — 9 entradas · N1=1 N2=5 N3=2 N4=1 · 98 líneas
+# [N1] KEYWORDS
+# [N2] KU · KU_DV · KNOWLEDGE_SYNTHESIS · KERNEL · KUBERNETES
+# [N3] KEY/(key seat) · KYC
+# [N4] KALIL
+
+## L.index.lacho — 10 entradas · N1=2 N2=5 N3=2 N4=1 · 105 líneas
+# [N1] LACHO · LEFT
+# [N2] LEDGER · LLM · LINK/(link seat) · LOG_PERMANENTE · LEARNING
+# [N3] LINCE · LINUX
+# [N4] LIBRO
+
+## M.index.lacho — 15 entradas · N1=4 N2=9 N3=1 N4=1 · 147 líneas
+# [N1] METHOD · MACRO · MESO · MICRO
+# [N2] MU · MCP · MANAGEMENT/[management] · MASKING/{masking} · MATE_LARGO
+#      METAL · MONITOR · MOTOR · MAIL/[wu-mail]
+# [N3] MEMECOINS
+# [N4] MAIN
+
+## N.index.lacho — 13 entradas · N1=3 N2=4 N3=3 N4=3 · 124 líneas
+# [N1] NEWLINE · NDJSON · NULL
+# [N2] NOTARIA · NUDOS · NODO · NODO-OMEGA
+# [N3] NODO-WS · NODO-IDE · NUEVO
+# [N4] NORA · NOTE/{note} · NOTEBOOKLM
+
+## O.index.lacho — 6 entradas · N1=2 N2=3 N3=1 · 66 líneas
+# [N1] OPERADOR · OFFSET
+# [N2] OS(Scheduler OS) · ORQUESTADOR · ORDEN
+# [N3] OBSOLESCENCIAS
+
+## P.index.lacho — 13 entradas · N1=2 N2=7 N3=1 N4=3 · 127 líneas
+# [N1] PATO_INFLADO · PARADIGMA
+# [N2] PATTERN-WITNESS · PSI(Ψ) · PULSING · PROTOCOLO · PUENTE
+#      PAPERNOTE/{note} · PROMPT
+# [N3] PASO
+# [N4] PLANER · PESCA · PBOC
+
+## Q.index.lacho — 3 entradas · N2=3 · 38 líneas
+# [N2] QUIETUD · QUEUE_MANAGEMENT · QUARANTINE_HOLD
+
+## R.index.lacho — 9 entradas · N1=2 N2=6 N3=1 · 95 líneas
+# [N1] REITERANCIAS · RIFF
+# [N2] RAG · RED-REGRET · RABBIT-FAITH/[rabbit-faith] · RITMO · ROI · RELACIONAL
+# [N3] RAM
+
+## S.index.lacho — 15 entradas · N1=3 N2=8 N3=3 N4=1 · 146 líneas
+# [N1] SCOPE/[scope] · SLANG · SILENCIO
+# [N2] SAMU · STACKING · SOCIAL · SEAL(of secrecy) · SELLO · SENSE · SISTEMA · SSH
+# [N3] SHIELD/(shield seat) · SOBERANA/SOBERANO · SSD
+# [N4] SESION_ACTIVA
+
+## T.index.lacho — 12 entradas · N1=4 N2=6 N3=1 N4=1 · 126 líneas
+# [N1] TERM/[term] · TOKENS · TIP · TRAZO_GRUESO
+# [N2] TRUST · TOMO · TAP · TOOLCHAIN · TRANSICION · TX
+# [N3] TEMPORAL
+# [N4] TANDIL
+
+## U.index.lacho — 6 entradas · N1=2 N2=3 N3=1 · 68 líneas
+# [N1] UNDERSCORE · UNICODE
+# [N2] UF(Unidad Funcional) · UMBRAL_CALIENTE_S · USDT
+# [N3] UNIVERSO
+
+## V.index.lacho — 9 entradas · N1=3 N2=5 N3=1 · 87 líneas
+# [N1] VERB · VALUE · VERDAD
+# [N2] VAULT · VALID · VPC · VOLUNTAD · VIVA(gramática viva)
+# [N3] VENTANA_CREATIVA
+
+## W.index.lacho — 11 entradas · N1=2 N2=6 N3=0 N4=3 · 113 líneas
+# [N1] WHITESPACE · WHEN_NOW/WHEN_DEFER/WHEN_CRITICAL
+# [N2] WU · WORK · WORM · WARNING · WAIT_QUEUE · YIELD
+# [N4] WEB3 · WORKSTATION_AGENCY · WINDSURF
+
+## X.index.lacho — 2 entradas · N4=2 · 25 líneas
+# [N4] XML · XLSX
+
+## Y.index.lacho — 2 entradas · N1=2 · 28 líneas
+# [N1] YAML · YUAN
+
+## Z.index.lacho — 4 entradas · N2=4 · 46 líneas
+# [N2] ZIPPER · ZKP · ZIP · ZONA
+
+## UF[H01-H02].index.lacho — 29 entradas · N1=7 N2=7 N3=4 N4=11 · 441 líneas
+# [N1] UF[H01] DEFINICIÓN CONSTITUTIVA · UF[H01] JURISDICCIÓN
+#      UF[H01] CUATRO ATRIBUTOS STACKING
+#      UF[H02] DEFINICIÓN CONSTITUTIVA · UF[H02] JURISDICCIÓN
+#      UF[H02] FUNCIÓN STACKING: EL SUELO SOBERANO
+#      H01↔H02 EL PAR CONSTITUTIVO PRIMARIO
+# [N2] UF[H01] ACTIVITY — ESTADOS(×7) · UF[H01] STACKING — CRISTALIZACIÓN(×4)
+#      UF[H01] PROTOCOLOS(×6) · UF[H02] ACTIVITY — ESTADOS(×7)
+#      UF[H02] STACKING — CONTENCIÓN(×5) · UF[H02] PROTOCOLOS(×6)
+#      H01↔H02 HANDOFF OPERATIVO
+# [N3] UF[H01] ACTORES Y ROLES · UF[H01] DÍA OPERATIVO
+#      UF[H02] ACTORES Y ROLES · UF[H02] DÍA OPERATIVO
+# [N4] UF[H01] GRAMÁTICA VIVA · UF[H01] NUDOS · UF[H01] MÉTRICAS
+#      UF[H01] @trust_matrix · UF[H01] INVARIANTE
+#      UF[H02] GRAMÁTICA VIVA · UF[H02] NUDOS · UF[H02] MÉTRICAS
+#      UF[H02] @trust_matrix · UF[H02] INVARIANTE
+#      H01↔H02 DOMINIOS ECONÓMICOS
+
+## PLACEHOLDERS (archivos vacíos — estructura reservada)
+# UF[H..].index.lacho  → plantilla para futuras UF (H03–H64)
+# #.index.lacho        → operadores numéricos / de conteo
+# $.index.lacho        → operadores de día ($mon $tue … $sun)
+# @.index.lacho        → operadores SAMU (@human_early @human_later #set #rise)
+# [..].index.lacho     → componentes TRUST bracket [term][scope]…
+# {..}.index.lacho     → sujetos SOCIAL {chair}{drip}{note}…
+# **..**.index.lacho   → delimitadores ACTIVITY !! !! y METHOD < >
+# 'AI'.index.lacho     → IAs del sistema (Claude, Groq, Windsurf…)
+# README.index.lacho   → instrucciones del glosario
+# folder.index.lacho   → índice de la carpeta
+# MIMEtype.index.lacho → tipos de archivo del sistema (.lacho .theater…)
+
+# ══════════════════════════════════════════════════════════════════
+# ÍNDICE CRUZADO POR BIBLIOTECA LACHO
+# ══════════════════════════════════════════════════════════════════
+
+## TRUST → [A]ACTIVITY·ASIENTO·AUTHORITY·AXIOMA·ABSOLUTE_SYNC
+#          [C]COMMAND·COMMAND_DEFER·COMMAND_EXECUTE
+#          [F]FOUNDATION·FOUNDATION_COMPROMISED
+#          [K]KEYWORDS · [L]LACHO · [M]METHOD·MANAGEMENT·MAIL(wu-mail)
+#          [S]SCOPE·SEAL · [T]TERM·TRUST · [W]WHEN_NOW/DEFER/CRITICAL
+
+## SOCIAL → [D]DRIP · [G]GATO/{headcat} · [H]HEADCAT
+#           [M]MASKING · [N]NOTE/{note}·NOTARIA
+#           [O]OS(Scheduler OS) · [P]PAPERNOTE
+#           [S]SAMU·SOCIAL · [W]WAIT_QUEUE·WARNING
+
+## CRYPTO → [A]AES-256·ASIENTO·AUTHORITY·AUTHORIZED_0
+#           [B]BLAKE3·BLOCKCHAIN · [C]CRYPTO_OPEN/CLOSE
+#           [F]FIRMA_SOBERANA · [K]KEY/(key seat)
+#           [S]SEAL·SHIELD/(shield seat) · [Z]ZKP
+
+## STACKING → [A]APPEND_ONLY_LOG·ASCENSO·ABSOLUTE_SYNC
+#             [C]CRYSTAL_FINAL · [F]FABRIC/HL FABRIC
+#             [K]KNOWLEDGE_SYNTHESIS · [Q]QUIETUD
+#             [S]STACKING · [T]TOMO · [UF]H01·H02
+
+## GATE → [C]CONFLICT_6 · [E]ESPERA(H5) · [F]FIFO · [G]GATE·GATE_SIGIL
+#         [Q]QUARANTINE_HOLD·QUEUE_MANAGEMENT · [W]WAIT_QUEUE
+
+## WORK → [A]ACTUATOR·AS_DE_GUIA·ARMY_DEPLOY
+#         [B]BALLESTRINQUE·BRAKE/{brake} · [D]DOORMAN-MOBILE
+#         [F]FLYBOT/{flybot} · [G]GREEN-KNOWLEDGE/{green-knowledge}
+#         [M]METAL·MONITOR · [T]TRAZO_GRUESO · [W]WORK·WORM
+
+## SAMU → [@]arroba·SAMU · [A]AHORA·APRUEBA·AUDITORÍA
+#         [C]CONCIENCIA · [D]DIRIMENCIA·DRIFT
+#         [P]PSI(Ψ)·PATTERN-WITNESS · [R]RED-REGRET·RITMO
+#         [S]SAMU·SENSE·SILENCIO · [T]TAP
+
+## ACTIVITY → [A]ABISMO·ACTIVACIÓN·ACTIVITY
+#             [B]BATCH_PROCESSING·BACKGROUND_PROCESS
+#             [C]CREATIVE_PAUSE · [K]KNOWLEDGE_SYNTHESIS·KU·KU_DV
+#             [Q]QUIETUD · [R]RIFF · [UF]H01·H02
+#             [W]WU · [Z]ZIPPER
+
+## METHOD → [A]ALGORITHM·ALGEBRAICO · [B]BNF·BOOLEAN
+#           [C]CROSSOVER · [F]FLOW_STMT · [G]GRADIENT·GRAMMAR
+#           [M]METHOD · [P]PSI(Ψ) · [T]TIP
+
+# ══════════════════════════════════════════════════════════════════
+# ÍNDICE CRUZADO POR HEXAGRAMA (UF activas documentadas)
+# ══════════════════════════════════════════════════════════════════
+
+## H01 乾 Qián · Lo Creativo    → UF[H01-H02].index.lacho · [C]CEO
+## H02 坤 Kūn · Lo Receptivo    → UF[H01-H02].index.lacho · [H]HEADCAT
+## H05 需 Xū  · La Espera       → [E]ESPERA · [Q]QUEUE_MANAGEMENT
+## H06 訟 Sòng · El Conflicto   → [C]CONFLICT_6 · [A]ABORT
+## H07 師 Shī · El Ejército     → [B]BATCH_PROCESSING
+## H14 大有 · Gran Posesión      → [A]ASSET_VALUATION
+## H15 謙 Qiān · La Modestia    → [B]BACKGROUND_PROCESS
+## H29 坎 Kǎn · Lo Abismal      → [A]ABISMO · [D]DESKING · [M]MATE_LARGO
+## H42 益 Yì  · El Aumento      → [A]AUMENTO
+## H46 升 Shēng · El Ascenso    → [A]ASCENSO
+## H48 井 Jǐng · El Pozo        → [A]ACTIVIDAD_H48_RAG
+## H50 鼎 Dǐng · El Caldero     → [K]KNOWLEDGE_SYNTHESIS
+## H51 震 Zhèn · El Trueno      → [A]ACTIVACIÓN(H51) · [W]WHEN_NOW
+## H52 艮 Gèn · La Quietud      → [C]CREATIVE_PAUSE·CRYSTAL_FINAL · [Q]QUIETUD
+## H56 旅 Lǚ  · El Viajero      → [A]ACTIVIDAD_H03/H05/H06/H56
+## H57 巽 Xùn · Lo Penetrante   → [A]APPEND_ONLY_LOG
+## H58 兌 Duì · Lo Gozoso       → [A]0x3A_OUT
+## H61 中孚 · Fe Interior        → [A]ABSOLUTE_SYNC
+## H63 既濟 · Ya Cruzado         → [A]ACTIVIDAD_H63_CONSUMACION
+## H64 未濟 · No Cruzado         → [A]ALCANZADO(H64)·CREATIVE-FLOW-ALPHABET
+
+# ══════════════════════════════════════════════════════════════════
+# TOTALES VERIFICADOS
+# ══════════════════════════════════════════════════════════════════
+#
+#   Archivos con contenido:    28
+#   Archivos placeholder:      10
+#   Entradas documentadas:    489 (460 A–Z + 29 UF[H01-H02])
+#   Líneas totales (aprox):  4161
+#   Nivel N1 (fundamentos):   116  (23.7%)
+#   Nivel N2 (operativos):    196  (40.1%)
+#   Nivel N3 (estados):        87  (17.8%)
+#   Nivel N4 (referencias):   119  (24.3%) + 29 UF sin nivel estricto
+#
+# [term] :: activo · GLOSSARY_MAP.index.lacho · DIRIME/IMV · $sat 21-03-2026

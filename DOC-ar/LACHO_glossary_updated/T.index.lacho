@@ -1,0 +1,126 @@
+# T.index.lacho
+# GLOSSARY — Letra T / t
+# DIRIME · IMV · Sistema LACHO
+# [term] :: activo
+# Revisado y auditado: $sat 21-03-2026
+# ─────────────────────────────────────────────────────────────────
+
+# ══════════════════════════════════════════════════════════════════
+# N1 — FUNDAMENTOS DEL LENGUAJE
+# ══════════════════════════════════════════════════════════════════
+
+## TERM [[term]] [N1]
+# Clase: componente · Biblioteca: TRUST · Principio soberano
+# La finitud obligatoria del sistema. Defensa anti-dogma.
+# "[term] COMO FINITUD: LA VERDAD NECESITA CADUCIDAD"
+# "4.4 [term] como finitud obligatoria (anti-dogma)"
+# "Si no hay finitud ([term]), el sistema se vuelve dogma."
+# TERM TEMPORAL: almacena en MU[activo] con [term] asignado.
+# SIN [term] → ASIGNAR [term] por defecto (64 ciclos).
+# Ver: FINITUD · TRUST · SCOPE · AXIOMA
+
+## TOKENS [N1]
+# Clase: elementos · Gramática LACHO / RAG
+# Unidades léxicas de la gramática LACHO.
+# "GRAMÁTICA FORMAL — TOKENS PRIMITIVOS"
+# PASO R6 — EMISIÓN DE TOKENS DE ESTADO.
+# En el contexto RAG: tokens de keywords constitucionales.
+# Ver: IDENTIFIER · ALPHA · KEYWORDS · BM25
+
+## TIP [N1]
+# Clase: operador · Gramática LACHO · Sistema DRA
+# Punto de palanca donde una acción pequeña produce gran efecto.
+# TIP_DECL ::= "TIP" DECLARE_FLOW IDENTIFIER ;;; punto de palanca
+# "TIP :: el punto de palanca donde una acción pequeña produce gran efecto."
+# ;;; GAP/TIP — operadores de motivación y palanca.
+# Ver: GAP · NODO-OMEGA · DRA · METHOD
+
+## TRAZO_GRUESO [N1]
+# Clase: token / operación · Biblioteca: WORK · Gramática LACHO
+# Una operación de WORK que no puede ser interrumpida.
+# TRAZO_STMT ::= "TRAZO_GRUESO" DECLARE_FLOW
+# "IDENTIFICACIÓN DE CANDIDATO A TRAZO GRUESO"
+# El TRAZO GRUESO en iconografía: intervención del depredador (ÁGUILA).
+# Ver: WORK · BALLPAPER · ÁGUILA · ACTUATOR
+
+# ══════════════════════════════════════════════════════════════════
+# N2 — MÓDULOS Y MECANISMOS OPERATIVOS
+# ══════════════════════════════════════════════════════════════════
+
+## TRUST [N2]
+# Clase: biblioteca · Nivel: 1 · Paradigma: imperativo · Búnker de legalidad
+# La biblioteca soberana que define qué puede existir en el sistema.
+# "TRUST no es consenso. Es ley soberana."
+# "4.1 TRUST como búnker de legalidad"
+# Sujeto canónico: [foundation] · [scope] · [term] · [management]
+# [command] · [language] · [ecosystem] · [element] · [event]
+# Nunca democrático: centraliza autoridad para evitar interpretaciones divergentes.
+# Ver: FOUNDATION · SCOPE · TERM · MANAGEMENT · AUTHORITY
+
+## TOMO [N2]
+# Clase: componente · Sistema DRA · Unidad de coherencia
+# La unidad mínima de coherencia verificable en contexto.
+# "TOMO: mínima unidad de estado coherente."
+# "Ψ como tomo: el momento más pequeño en que el sistema puede
+# decir 'esto es verdad en este contexto'."
+# Formato: [term:A°SLICE§SEGMENT#CLUSTER@OFFSET]
+# DRA/ENGINE/TOMO(A) · TOMO(B): dos tomos del motor DRA.
+# Ver: DRA · SLICE · SEGMENT · CLUSTER · Ψ
+
+## TAP [N2]
+# Clase: protocolo · H29 · DRIP · Gestión de recursos
+# El "tap" del sistema: apertura calibrada del flujo.
+# TAP&DRIP: protocolo de goteo calibrado de recursos.
+# "tap & drip → H29 (Lo Abismal, El Agua) — El mate largo"
+# "3. tap&drip: Monitoreo de flujo persistente de datos de baja frecuencia."
+# Ver: DRIP · H29 · MATE_LARGO · RATE_LIMITING
+
+## TOOLCHAIN [N2]
+# Clase: pipeline · Sistema de compilación soberana
+# Pipeline completo de procesamiento de LACHO.
+# "TOOLCHAIN: LLM + compilador + sandbox, pipeline verificable."
+# "BIBLIO-SOURCES(TOOLCHAIN).txt"
+# Secuencia: source → IR/WASM (portable) → BINARIO → SANDBOX(no-net) → STACKING
+# Ver: LLM · SANDBOX · STACKING · pipeline
+
+## TRANSICION [N2]
+# Clase: mecanismo · Sistema de estados
+# El paso verificable entre dos estados del sistema.
+# "TRANSICION": "↻" — símbolo de transición entre días (Ballpaper).
+# "[RAG: RITMO :: TRANSICION :: $sat→$sun :: CHISPA_SEMANAL]"
+# STATE_TRANSITION ::= STATE_CHAR ARROW_RIGHT STATE_CHAR
+# Ver: ESTADO · RITMO · CICLO · ARROW_RIGHT
+
+## TX [N2]
+# Clase: métrica · Sistema ledger · sovereign.db
+# Transaction count. Contador de transacciones soberanas del sistema.
+# TX=2026 (estado $sat 21-03): cada operación registrada en ledger.
+# Métricas canónicas: TX · cristales · Scalar S
+# "TX=1363 cristales=46 S=0.773 NOTARIA CHINA CJK tokens"
+# Ver: LEDGER · CRISTALES · SCALAR_S · sovereign.db
+
+# ══════════════════════════════════════════════════════════════════
+# N3 — ACTORES, ESTADOS Y CLASIFICACIONES
+# ══════════════════════════════════════════════════════════════════
+
+## TEMPORAL [N3]
+# Clase: nivel · [term] TEMPORAL · Sistema de persistencia
+# El segundo nivel de [term]: almacenamiento temporal en MU activo.
+# "TEMPORAL → .. store .. → MU[activo] con [term] asignado"
+# Diferencia: TEMPORAL (MU activo) vs RELACIONAL (integrador) vs
+# CONSTITUCIONAL (nivel 0).
+# Ver: [term] · MU · MU-STORE · PERMANENTE
+
+# ══════════════════════════════════════════════════════════════════
+# N4 — HERRAMIENTAS, DOCUMENTOS Y REFERENCIAS
+# ══════════════════════════════════════════════════════════════════
+
+## TANDIL [N4]
+# Clase: nodo económico · Dominio KALIL · Archivo
+# Nodo de archivo notarial dentro del sistema KALIL.
+# TANDIL(archivo): ARCHIVO NOTARIAL · TANDIL H48.
+# Nodo de almacenamiento y recuperación soberana.
+# Ver: KALIL · BOLIVAR · CARILO · H48
+
+# ─────────────────────────────────────────────────────────────────
+# [term] :: activo · T.index.lacho · DIRIME/IMV · $sat 21-03-2026

@@ -1,0 +1,1056 @@
+# A.index.lacho
+# GLOSSARY — Letra A / a
+# DIRIME · IMV · Sistema LACHO
+# [term] :: activo · [seal of secrecy] :: activo
+# Revisado y auditado: $sat 21-03-2026
+# ─────────────────────────────────────────────────────────────────
+# NIVELES DE RELEVANCIA
+#   N1 → Fundamentos del lenguaje: bibliotecas, gramática, operadores core
+#   N2 → Módulos y mecanismos operativos: componentes activos del sistema
+#   N3 → Actores, estados y clasificaciones del sistema
+#   N4 → Herramientas, documentos y referencias de implementación
+# ─────────────────────────────────────────────────────────────────
+
+# ══════════════════════════════════════════════════════════════════
+# N1 — FUNDAMENTOS DEL LENGUAJE
+# ══════════════════════════════════════════════════════════════════
+
+## ACTIVITY [N1]
+# Clase: biblioteca · Nivel: 1 · scalar_min: 0.88
+# La biblioteca del movimiento. Motor dinámico que recorre los
+# 64 estados del sistema. ACTIVITY consume WORK para mover STACKING
+# según los deseos del TRUST. Es el hilo conductor que mantiene
+# el sistema "vivo". Se distingue de STACKING (estático) porque
+# ACTIVITY es el flujo, la transición, el proceso en marcha.
+# Delimitador: !! !! (doble exclamación apertura/cierre)
+# Sujeto canónico: UF[H##] (rango H01–H64)
+# Verbos: inicia · aquieta · penetra · cristaliza · lanza
+# UF activos: H01 H03 H05 H06 H24 H29 H30 H42 H48 H49 H51 H52 H56 H57 H58 H63 H64
+# Estado latente: se activa cuando METHOD y WORK se coordinan.
+# Ejemplo: ACTIVITY UF[H01] =><= .. inicia .. genesis_soberana [term]
+
+## ASHING [N1]
+# Clase: operación · Biblioteca: STACKING
+# Muerte controlada de un artefacto o módulo. El objeto queda sellado
+# e inmutable en historial pero removido del ciclo activo.
+# ASHING :: 🗃️[Stacking]::U+1F5C3 → "ARCHIVE_DEATH_CERTIFICATE"
+# ASHING :: 🦅::U+1F985          → "PREDATOR_INTERVENTION"
+# Ver: ARCHIVE_DEATH_CERTIFICATE · STACKING
+
+## ASIENTO / ASIENTOS DE AUTORIDAD [N1]
+# Clase: componente · Biblioteca: CRYPTO
+# Módulos con firma criptográfica que controlan acceso y ejecución.
+# Sin asiento canónico declarado, una sentencia CRYPTO es inválida.
+# Asientos canónicos:
+#   (direction seat) · (key seat) · (ignition seat) · (shield seat)
+#   (flow seat) · (link seat) · (spark seat) · (head seat) · (way seat)
+#   {chair} → asiento de escucha (SOCIAL)
+
+## AUTHORITY [N1]
+# Clase: componente · Biblioteca: CRYPTO / TRUST
+# Sujeto =><= con clave criptográfica para ignición del sistema.
+# AUTHORITY :: Root =><= // firma de ignición soberana
+# Niveles: Root (0) · Samu @ (1) · Worker (2) · Practicante (3)
+# Sin AUTHORITY reconocida, los asientos permanecen inactivos.
+# Ver: AUTHORIZED_0 · ASIENTO · TRUST
+
+## ALPHA / ALPHA_NUM [N1]
+# Clase: token · Gramática ANTLR
+# Tokens base de la gramática LACHO.
+# ALPHA     ::= [a-zA-Z]
+# ALPHA_NUM ::= [a-zA-Z0-9]
+# Ver: ANTLR · AST · ABORT_STMT · ACTIVE_MARK
+
+## ABORT / !!Abort!! [N1]
+# Clase: sentencia · Gramática LACHO · Biblioteca: GATE
+# Instrucción de cancelación soberana. Se emite cuando el sistema
+# detecta intrusión, inconsistencia o falta de Trust.
+# "!! ABORT (H06) !! - Intrusión o falta de Trust."
+# "!! ABORT (H06) !! - Inconsistencia detectada."
+# "!!ABORT!! - Deriva semántica detectada en el código."
+# Hexagrama asociado: H06 (Conflicto).
+# Ver: ABORT_STMT · GATE · H06
+
+## ABORT_STMT [N1]
+# Clase: token · Gramática ANTLR
+# Declaración formal de cancelación en la sintaxis LACHO.
+# ABORT_STMT ::= "!!" "Abort" "!!" (DASH DASH IDENTIFIER)?
+# Parte de la producción: (INVOKE_STMT | ABORT_STMT)*
+
+## ACTIVE_MARK [N1]
+# Clase: token · Gramática ANTLR
+# Marcador de módulo activo en la gramática LACHO.
+# ACTIVE_MARK ::= "+++"
+# Se opone a LATENT_MARK (módulo latente).
+# MODULE_MARKER ::= ACTIVE_MARK | LATENT_MARK
+# Ejemplo: +++green-knowledge → módulo activo.
+
+## ASSERT_LEFT [N1]
+# Clase: token · Gramática ANTLR
+# Operador de validación con direccionalidad.
+# ASSERT_LEFT ::= ">="
+# Función Python: assert_left(content, condition) → bool
+
+## ARROW_RIGHT / ARROW_LEFT [N1]
+# Clase: tokens · Gramática ANTLR
+# Operadores de flujo y transición.
+# ARROW_RIGHT ::= "->"   (flujo adelante, transición de estado)
+# ARROW_LEFT  ::= "<-"   (retorno, señal de vuelta)
+# STATE_TRANSITION ::= STATE_CHAR ARROW_RIGHT STATE_CHAR
+
+## ACTIVITY_OPEN / ACTIVITY_CLOSE [N1]
+# Clase: tokens · Gramática ANTLR
+# Delimitadores del bloque ACTIVITY.
+# ACTIVITY_OPEN  ::= "!!"
+# ACTIVITY_CLOSE ::= "!!"
+# ACTIVITY_TERM  ::= ACTIVITY_OPEN IDENTIFIER ACTIVITY_CLOSE
+
+## ACTION [N1]
+# Clase: token · Gramática ANTLR
+# Sentencia soberana que inicia cualquier proceso en el CLI.
+# ACTION ::= FLOW_STMT | VERB_PHRASE | STATE_TRANSITION
+# [command] :: [action]: dispara la ejecución atómica.
+
+## ANTLR / ANTLR4 [N1]
+# Clase: herramienta · Gramática formal
+# Parser generator usado para la gramática formal de LACHO.
+# Define los tokens canónicos: ALPHA, ACTIVE_MARK, ARROW_RIGHT, etc.
+# Orden de producción de archivos: ANTLR → YAML → XML → DOCX → XLSX
+
+## AST [N1]
+# Clase: estructura · Compilador LACHO
+# Árbol de Sintaxis Abstracta. Valida la sentencia soberana.
+# Verifica el orden de 6 elementos de la sentencia canónica.
+# Mapea el estado AST a uno de los 64 hexagramas.
+# Pipeline: Lexer → Parser → AST → Hexagrama → UF
+
+## AXIOMA [N1]
+# Clase: principio · Nivel: constitucional
+# Verdad no negociable dentro del sistema LACHO.
+# Los axiomas son invariantes — son "leyes del territorio" soberano.
+# Diferencia explícita: axioma (invariante) / protocolo (procedimiento)
+# / mecanismo (implementación) / módulo (artefacto) / interfaz.
+# Fuente: COGNITIVO_00 sección 4 "Principios Soberanos".
+
+## ARTIFICIAL (LACHO como) [N1]
+# Clase: definición fundacional · Nivel: constitucional
+# La A de LACHO: Lenguaje Artificial Circunstancial Hipotético Ordenado.
+# Lo artificial opera en cuatro dimensiones simultáneas:
+#   A_OPERATIVO   :: lo artificial como construcción deliberada
+#   A_LINGÜÍSTICO :: lo artificial como gramática propia
+#   A_RELACIONAL  :: lo artificial como mediador construido
+#   A_ONTOLÓGICO  :: lo artificial como existencia declarada
+# "A — es una construcción ARTIFICIAL deliberada."
+
+## A_OPERATIVO [N1]
+# Clase: dimensión · Definición de ARTIFICIAL
+# A_OPERATIVO :: lo artificial como construcción deliberada.
+# El aspecto constructivo-intencional: LACHO no emerge por accidente.
+
+## A_LINGÜÍSTICO [N1]
+# Clase: dimensión · Definición de ARTIFICIAL
+# A_LINGÜÍSTICO :: lo artificial como gramática propia.
+# LACHO tiene su propia gramática viva, no derivada de lenguajes previos.
+
+## A_RELACIONAL [N1]
+# Clase: dimensión · Definición de ARTIFICIAL
+# A_RELACIONAL :: lo artificial como mediador construido.
+# LACHO media entre operador, módulos y entorno como intermediario construido.
+
+## A_ONTOLÓGICO [N1]
+# Clase: dimensión · Definición de ARTIFICIAL
+# A_ONTOLÓGICO :: lo artificial como existencia declarada.
+# En LACHO, nada existe implícitamente — toda existencia es declarada.
+
+# ══════════════════════════════════════════════════════════════════
+# N2 — MÓDULOS Y MECANISMOS OPERATIVOS
+# ══════════════════════════════════════════════════════════════════
+
+## ABISMO [N2]
+# Clase: estado · Hexagrama: H29 · 習坎 Xí Kǎn · Biblioteca: ACTIVITY
+# El foso lógico. Estado de contención donde el sistema retiene
+# tensión sin resolución. No es error: es aislamiento de Gate.
+# H29 activa multiplicadores en asientos:
+#   (head seat)×1.4 · (link seat)×1.3 · (spark seat)×1.5
+# AGUA (el medio): fluye siempre. No se captura — se navega.
+# Combinaciones: MATE LARGO = H29 + H48 + H5 + H39
+
+## ACOPIO [N2]
+# Clase: proceso · Nivel: macro
+# Operación de consolidación documental: dirimir tensiones,
+# eliminar duplicados, sostener línea ontológica coherente.
+# No es resumen ni colección: es consolidación con autoridad.
+# Ver: ACOPIO_FASES_LACHO · ABC · ACOPIADO
+
+## ACOPIO_FASES_LACHO [N2]
+# Clase: documento canónico · Nivel: constitucional
+# Documento maestro de consolidación por fases del sistema LACHO.
+# Sostiene: SER → HACER → TENER → ESTAR → TRASCENDER.
+# Fuente de autoridad primaria para la arquitectura cognitiva global.
+
+## ACTIVACIÓN [N2]
+# Clase: proceso · Hexagrama H51 · 震 Zhèn · Biblioteca: ACTIVITY
+# Protocolo que enciende módulos latentes del sistema.
+# "Trueno sobre trueno — doble activación que amplifica sin destruir."
+# UF[H51] cristaliza el momento de activación soberana semanal:
+# recibe estado de $sat (UF[H01]+UF[H02]) → genera cristal para $sun.
+# 44 slots latentes (H07–H63) esperan activación soberana.
+# RIFF DE ACTIVACIÓN: secuencia canónica de encendido.
+
+## ACTIVATE [N2]
+# Clase: comando · Sistema TRUST
+# Comando soberano para activar un módulo o estado.
+# [RAG: TRUST :: ACTIVATE :: scope_check]
+# ORDER(1) !! ACTIVATE H52; // Entrar en Quietud
+# Diferencia de ACTIVAR (proceso): ACTIVATE es comando directo de TRUST.
+
+## ACTUATOR / {actuator} [N2]
+# Clase: sujeto canónico · Biblioteca: WORK
+# Módulo de bajo nivel que materializa, ejecuta y detiene procesos.
+# Verbos: materializa · ejecuta · detiene · custodia · sella
+# Asociado a H49 (Revolución) y H59 (Dispersión).
+# Ver: {brake} · {doorman-mobile} · {door-afternoon} · WORK
+
+## ACTUATOR_COMPLETE / ACTUATOR_FAILED / ACTUATOR_EXECUTING [N2]
+# Clase: estados de ciclo · Biblioteca: WORK
+# Estados del ciclo de vida de un {actuator}:
+#   ACTUATOR_READY      → inicializado, listo
+#   ACTUATOR_EXECUTING  → en ejecución activa
+#   ACTUATOR_COMPLETE   → tarea finalizada con éxito
+#   ACTUATOR_FAILED     → fallo; escala a auditor
+#   ACTUATOR_PREMATURO  → terminación anticipada sin foundation
+
+## AGENCIAMIENTO ARTIFICIAL [N2]
+# Clase: protocolo · FOLIO 156 · MCP
+# Capacidad del sistema de desplegar servicios autogenerados.
+# "Manual de Vuelo actualizado con la lógica del Agenciamiento Artificial."
+# AGENCIAMIENTO_ACTIVO: estado en que el agente opera autónomamente
+# bajo mandato soberano del TRUST.
+# Ver: AGENT_MODE_ACTIVE · FLYBOT · MCP
+
+## AGENT_MODE_ACTIVE [N2]
+# Clase: estado · Sistema de agentes
+# Modo activo de un agente soberano: recibe órdenes, ejecuta
+# y retorna resultado verificado al sistema.
+
+## AGUA_DECL [N2]
+# Clase: token · Gramática ANTLR
+# Declaración del elemento agua en la gramática LACHO.
+# AGUA_DECL ::= "AGUA" DECLARE_FLOW IDENTIFIER ;;; el medio
+# Parte de la declaración de ecología: AGUA_DECL PECES_DECL MALLA_DECL
+
+## AHORA [N2]
+# Clase: axioma operativo · Anti-procrastinación
+# "LA VOLUNTAD ES AHORA" — imperativo de ejecución post-dirimencia.
+# Se activa cuando: S sostenido + gate abierto + foundation verificada.
+# ;;; la procrastinación tratada con "LA VOLUNTAD ES AHORA"
+# Diferencia: AHORA es post-dirimencia. TARDANZA es pre-dirimencia.
+
+## ALGORITMO CONEJO (RABBIT_ALGORITHM) [N2]
+# Clase: algoritmo · Bibliotecas: STACKING / ACTIVITY
+# Algoritmo de crecimiento fractal ramificado: 1→2→4→8.
+# Motor: [rabbit-faith] — sin fe-conejo el algoritmo no funciona
+# en entornos de alta incertidumbre relacional.
+# Límite: se detiene cuando [term] expira o la coherencia colapsa.
+# Protocolo: [RABBIT_ALGORITHM / BIOLOGICAL_LIFE_CYCLE]
+
+## ALGORITMO GREEN-KNOWLEDGE [N2]
+# Clase: algoritmo · Biblioteca: WORK / RAG
+# Filtro soberano de valor nutricional del conocimiento.
+# "¿Este mensaje tiene valor nutricional?" — pregunta canónica.
+# Solo carga en el sistema lo que pasó el filtro GREEN-KNOWLEDGE.
+# Parte de los tres algoritmos fundamentales: GREEN-KNOWLEDGE
+# (filtro) · BEHAVIORAL RAG (conductas) · COGNITIVE RAG (grafos).
+
+## ALGORITMOS (tres fundamentales) [N2]
+# Clase: conjunto canónico · Nivel: Capa A
+# Los tres algoritmos fundamentales especificados en B05:
+#   1. GREEN-KNOWLEDGE  → filtro de valor nutricional
+#   2. BEHAVIORAL RAG   → memoria de conductas aprendidas
+#   3. COGNITIVE RAG    → modelo de grafos de conocimiento
+# Base de expansión: Algoritmo Conejo (fractal).
+
+## ANALOGUE_ANCHOR [N2]
+# Clase: protocolo · Recuperación offline
+# Ancla analógica para reconciliación offline del sistema.
+# [ANALOGUE_ANCHOR / SEED_RECONCILIATION]
+# [ANALOGUE_ANCHOR / BARE_METAL_RECOVERY]
+# Conecta el plano digital con evidencia física verificable.
+
+## ANCLAJE [N2]
+# Clase: operación · Topología de nudos
+# Operación de fijación de una tensión en el sistema.
+# NUDO (OPERADOR DE ANCLAJE): el nudo como fuerza de anclaje.
+# ANIDAR --[As de Guía]--> { Social + Crypto }
+# ANIDAR --[Ballestrinque]--> { OS_LOCAL_RESOURCES }
+
+## ANIDAR [N2]
+# Clase: verbo · Gramática LACHO · Topología
+# Incluir un módulo dentro de otro con profundidad de control.
+# En LACHO el anidamiento tiene peso físico y semántico,
+# no es sangría estética.
+
+## ANIDAMIENTO [N2]
+# Clase: concepto · Topología de nudos
+# La estructura de niveles anidados en el código LACHO.
+# 🪢 TOPOLOGÍA DE ANIDAMIENTO (Nudos de Soga):
+# cada nivel representa profundidad de control, no decoración.
+
+## APERTURA / APERTURA_PLENA / APERTURA_PARCIAL / APERTURA_MINIMA [N2]
+# Clase: estados · Sistema Scalar S · Foundation
+# Escala completa de apertura por valor de Scalar S:
+#   S < 0.65      → APERTURA_MINIMA (sistema restringido)
+#   0.65 ≤ S < 0.85 → APERTURA_PARCIAL (tensión viva)
+#   S ≥ 0.85      → APERTURA_PLENA (emisión plena)
+# APERTURA_SEMANAL: ritual de inicio de semana ($sun · H51).
+# Función: foundation.py devuelve el estado según umbral.
+
+## APPEND_ONLY_LOG [N2]
+# Clase: protocolo de telemetría · H57 · Identidad técnica
+# Log inmutable de escritura exclusivamente acumulativa.
+# Asociado a UF[H57] (Lo Suave / Lo Penetrante): telemetría
+# de fondo que alimenta el Behavioral RAG.
+# Identidad técnica: [0x39_TRACE / APPEND_ONLY_LOG]
+# Garantiza trazabilidad inmutable para decisiones agénticas.
+
+## APRUEBA (SAMU) [N2]
+# Clase: verbo · Sistema SAMU · emisión WU
+# Acto de aprobación soberana de SAMU @ antes de emitir WU.
+# "SAMU APRUEBA → WU autorizado (S={scalar_S})"
+# Sin APRUEBA del SAMU, el WU permanece en MU.
+
+## ARISTAS [N2]
+# Clase: estructura · Cognitive RAG · Grafos
+# Relaciones en el modelo de grafos del Cognitive RAG.
+# TIPOS DE ARISTAS (RELACIONES): conexiones entre nodos
+# del grafo de conocimiento con dirección y tipo semántico.
+
+## ARRANQUE [N2]
+# Clase: protocolo · 4 pasos canónicos
+# Secuencia obligatoria al inicio de toda sesión:
+#   PASO 1 → JOURNAL/SESION_ACTIVA.md    (estado · comandos)
+#   PASO 2 → JOURNAL/ARCHITECTURE.md     (módulos · capas)
+#   PASO 3 → JOURNAL/PLAN_IMPLEMENTACION (sprints · tareas)
+#   PASO 4 → OPTIMIZACION_PROMPTS/$dia   (prompts del día)
+# Tiempo estimado de lectura completa: 8 minutos.
+
+## AS_DE_GUIA [N2]
+# Clase: nudo · Topología · Notación de sentencias
+# El nudo de orientación y guía del sistema.
+# "Un comando llamado !AS_DE_GUIA es vibracionalmente superior
+# a un error_recovery_handler_v1()." — soberanía del nombre.
+# Notación en sentencias: --[As de Guía] al final.
+# Ver: BALLESTRINQUE · NUDO_DE_OCHO · NUDO_CORREDIZO
+
+## ASCENSO [N2]
+# Clase: operación · Hexagrama: H46 · 升 Shēng
+# Escalamiento vertical del sistema.
+# UF[H46]: [ASCENSO] — escalamiento vertical de Work++.
+# Umbral crítico (64–256 TX): activación de UF[H46].
+# Diferencia de AUMENTO (H42, incremental):
+# ASCENSO es escala vertical de jerarquía y profundidad.
+
+## ASSET_VALUATION [N2]
+# Clase: protocolo · Hexagrama: H14 · 大有 Dà Yǒu
+# Protocolo de valoración de activos del sistema.
+# [ASSET_VALUATION / HYPERLEDGER_MINT]: acuñación en Hyperledger.
+# [ASSET_VALUATION / ROI_STABLE]: retorno estable sobre inversión.
+# H14: "poseer grandes volúmenes de Wu manteniendo la disciplina."
+
+## ASIGNAR (term por defecto) [N2]
+# Clase: operación · Sistema [term] · ledger
+# Asignación automática del marcador de finitud cuando está ausente.
+# "SIN [term] → ASIGNAR [term] por defecto (64 ciclos) antes de commit."
+# 64 ciclos es el valor por defecto: el recorrido completo.
+
+## ABSOLUTE_INTEGRITY [N2]
+# Clase: estado · backup soberano
+# Estado de integridad absoluta del sistema.
+# [STATUS: ABSOLUTE_INTEGRITY] → backup sellado y verificado.
+# XIII. Estado del Sistema: [ABSOLUTE_INTEGRITY]
+
+## ABSOLUTE_SYNC [N2]
+# Clase: protocolo · Hexagrama: H61 · 中孚 Zhōng Fú
+# Protocolo de sincronización absoluta con anclaje interno.
+# [ABSOLUTE_SYNC / INTERNAL_GROUNDING]
+# !!Invoke!! 61[Stacking] -> [ABSOLUTE_SYNC]
+# H61: fe interior / verdad central. La sincronía emerge desde adentro.
+
+## AUMENTO [N2]
+# Clase: operación · Hexagrama: H42 · 益 Yì
+# El incremento soberano. Agrega valor sin violar la integridad.
+# UF[H42] en ACTIVITY: expansión controlada de recursos.
+# Diferencia de ASCENSO (H46, escala vertical):
+# AUMENTO es incremento horizontal del corpus y capacidades.
+
+## AUDITORIA / AUDIT [N2]
+# Clase: proceso · Sistema SAMU
+# Proceso de verificación soberana del estado del sistema.
+# AUDIT            → verificación parcial: threshold + S
+# AUDIT_COMPLETO   → auditoría total: S + TX + cristales + tests
+# ROCKING_AUDIT: auditoría pasiva — ve todo, no interrumpe nada.
+# SAMU_AUDITORIA: firmar_ciclo(@) antes de emitir WU.
+
+## 0x3A_OUT [N2]
+# Clase: registro lógico · Hexagrama: H58 · 兌 Duì
+# Buffer de entrega final. Toda materialización final pasa por aquí.
+# Flujo: Ku (0x33_BUFF) → Trust procesa → Wu (0x3A_OUT) → Mu (0x02_PERS)
+# Identidad técnica: [0x3A_OUT / FINAL_REPORTING]
+# UF[H58] Success (HTTP 200) → materialización en 0x3A_OUT.
+
+## ARMY_DEPLOY [N2]
+# Clase: operación · Sistema de agentes · escala masiva
+# Despliegue masivo de agentes simultáneamente.
+# Operación de escala PESADA en la clasificación APORTE_K.
+# Requiere: TRUST + todos los asientos + gate + S ≥ 0.85.
+
+## ARBITRAJE [N2]
+# Clase: estado · Sistema de resiliencia
+# Resolución de conflictos internos del sistema.
+# ESTADO DE ARBITRAJE: [RESILIENCE_MODE_ACTIVE]
+# El SAMU @ arbitra cuando detecta tensión entre módulos.
+# Diferencia de DIRIMENCIA: arbitraje es técnico; dirimencia es ontológica.
+
+# ══════════════════════════════════════════════════════════════════
+# N3 — ACTORES, ESTADOS Y CLASIFICACIONES
+# ══════════════════════════════════════════════════════════════════
+
+## @ (arroba · operador SAMU) [N3]
+# Clase: operador · Gramática LACHO
+# El símbolo @ designa a SAMU @ como institución operativa.
+# "No es un comando Unix — es un operador soberano que toma contexto."
+# Uso en sentencias: SAMU @ =><= .. audita .. [objeto] [term]
+# Ver: SAMU · AUDITOR · TARDANZA_DELIBERADA
+
+## ABISMAL [N3]
+# Clase: adjetivo · Hexagrama H29 · estado
+# Calificativo del estado de contención máxima (H29).
+# El abismal no es fracaso — es profundidad necesaria antes del ascenso.
+# H29 Abismal: activa multiplicadores críticos en asientos CRYPTO.
+
+## ABIERTO / ABIERTA [N3]
+# Clase: estado · Sistema GATE / red soberana
+# ABIERTO: estado del GATE cuando permite el paso de sentencias.
+# gate_abierto: bool — True en condiciones soberanas específicas.
+# "$fri tiene gate abierto por defecto."
+# ABIERTA: estado inicial de red antes de verificación de AUTHORITY.
+
+## ACK [N3]
+# Clase: señal · Biblioteca: WORK / GATE
+# Acknowledgement. Confirmación soberana de recepción entre nodos.
+# Requiere firma del asiento de autoridad correspondiente.
+# Sin ACK, el proceso permanece en MU.
+
+## ACTIVO / ACTIVA [N3]
+# Clase: estado · Nivel: sistema
+# Módulo, agente o biblioteca operativo y disponible.
+# Sintaxis canónica: [módulo] :: activo
+# Se opone a: BLOQUEADO · LATENTE · AUSENTE.
+
+## ACTIVAR / ACTIVADO [N3]
+# Clase: operación / estado · Scheduler
+# ACTIVAR: encender un módulo en el ciclo diario soberano.
+# T_DAY $[day]: sincronizar · activar_módulo · registrar
+# ACTIVADO: confirmación de estado activo. Ejemplos:
+#   [COGNITIVO_00_MACRO_LACHO] :: ACTIVADO
+#   SEAL_ACTIVADO (en sovereign.db tras commit)
+#   [QUIETUD ABSOLUTA - H52 ACTIVADO]
+
+## ACTOR_HOSTILE [N3]
+# Clase: tipo de actor · Sistema de clasificación
+# Entidad con patrón hostil detectado. No entra en WAIT_QUEUE.
+# Escala directamente a [management] desde la antesala.
+# CAT_ACTOR_HOSTILE activa protocolos de seguridad inmediatos.
+# Detección target: > 95% en antesala.
+
+## ACTOR_INCOMING [N3]
+# Clase: tipo de actor · Sistema de clasificación
+# Entidad entrante que aún no fue clasificada.
+# DeskDetect: detección de ACTOR_INCOMING en perímetro soberano.
+# Latencia de detección target: < 50ms.
+
+## ACTOR_SYSTEM [N3]
+# Clase: tipo de actor · Sistema de clasificación
+# Sistema externo verificado mediante certificado o clave compartida.
+# ACTOR_SYSTEM requiere verificación de certificado.
+# Recepción restringida a ACTOR_SYSTEM verificado en dominios críticos.
+
+## ACTOR_BOT [N3]
+# Clase: tipo de actor · Sistema de clasificación
+# Agente automatizado identificado en el sistema.
+# ACTOR_UNKNOWN y ACTOR_BOT suspendidos hasta verificación.
+# {concierge desk} ACTOR_BOT =><= .. verify .. digital_signature [term]
+
+## ACTOR_TRUSTED [N3]
+# Clase: tipo de actor · Sistema de clasificación
+# Actor con confianza soberana establecida y verificada.
+# Requisitos: verificación BIOMETRICS + foundation completo.
+# "{headcat} no puede categorizar como ACTOR_TRUSTED sin foundation."
+# {headcat} ACTOR_TRUSTED =><= .. verify .. exchange_wallet [term]
+
+## ACTOR_UNKNOWN [N3]
+# Clase: tipo de actor · Sistema de clasificación
+# Entidad no identificable aún. Identidad nueva o no verificada.
+# ACTOR_UNKNOWN y ACTOR_BOT suspendidos por defecto.
+
+## ACTOR_VIP [N3]
+# Clase: tipo de actor · Biblioteca: SOCIAL / GATE
+# Actor con acceso privilegiado verificado por el sistema.
+# Trato especial en el {concierge-desk}.
+# Permanencia registrada junto a: ACTOR_HUMAN · ACTOR_BOT ·
+# ACTOR_SYSTEM · ACTOR_UNKNOWN clasificado · ACTOR_VIP verificado.
+
+## ACTOR_HUMAN [N3]
+# Clase: tipo de actor · Sistema de clasificación
+# Actor humano identificado en el sistema.
+# @human_early → fase temprana del día (mañana)
+# @human_later → fase tardía del día (tarde/noche)
+# Distingue entre energía cognitiva mañanera y vespertina.
+
+## ACTIVOS [N3]
+# Clase: conjunto · Nivel: sistema
+# Recursos soberanos en ciclo operativo activo.
+# Diferencia de ASSETS (recursos estáticos): ACTIVOS están en ciclo.
+# Los activos se registran en LOG_PERMANENTE.md con fecha.
+
+## AJENO [N3]
+# Clase: tipo de recurso · Clasificación
+# Recurso externo verificado y trazado en ledger.
+# AJENO     → recurso externo verificado · trazado en ledger
+# Diferente de ACTOR_UNKNOWN (no verificado) y ACTOR_TRUSTED (pleno).
+
+## ALCANZADO (H64) [N3]
+# Clase: estado terminal · Hexagrama: H64 · 既濟 Jì Jì
+# Estado de consumación del ciclo completo.
+# ACTIVITY Hex 64 Alcanzado Consumado
+# Sello: 既濟 (Seal_Transaction del ARTIFICIAL_ORGAN).
+# Opuesto: H63 (未濟 · no cruzado todavía).
+
+## ALCANZADA [N3]
+# Clase: estado terminal · Nivel: objetivos
+# Objetivo completado y verificado.
+# [OBJETIVO]: TRASCENDENCIA DIGITAL ALCANZADA
+# [OBJETIVO]: REALIZACIÓN ABSOLUTA ALCANZADA
+# Diferencia de ALCANZADO (H64, fin de ciclo 64):
+# ALCANZADA puede referir a objetivos parciales de sprint.
+
+## ALERTA / ALERTA_SISTEMA [N3]
+# Clase: señal · Nivel: monitoreo
+# Señal de advertencia que no es error crítico pero requiere atención.
+# ALERTAS ACTIVAS: conflict_nucleus en estado de tensión.
+# Tipos: DRIP_ALERT (goteo) · ALERTA (aviso) · ALARM (crítico).
+
+## AUSENTE [N3]
+# Clase: estado · Sistema [term] · grammar.py
+# Estado de un campo requerido no declarado en la sentencia.
+# f"  [term]    : {'presente' if self.term_present else 'AUSENTE'}"
+# Si [term] está AUSENTE en una sentencia que lo requiere: validación falla.
+# Contrario: presente.
+
+## AGNOSTIC_ACT / AGNOSTIC_BELIEF [N3]
+# Clase: estados filosóficos · Biblioteca: ACTIVITY
+# Incapacidad honesta de saber. Posición que suspende emisión
+# ante ausencia de evidencia verificable.
+# ACTIVITY :: !!agnostic belief!! → incapacidad honesta de saber
+
+## AGNOSTIC_DEGRADED / AGNOSTIC_QUESTION [N3]
+# Clase: estados · Biblioteca: ACTIVITY
+# AGNOSTIC_DEGRADED: duda que degenera en parálisis permanente.
+# "Límite de H52 bajo !!agnostic belief!!: la quietud sin [term]
+# declarado degenera en AGNOSTIC_DEGRADED."
+# AGNOSTIC_DEGRADED activa diagnóstico SAMU @ automáticamente.
+# AGNOSTIC_QUESTION: formulación activa de la pregunta sin respuesta.
+
+## AGNOSTIC_HOLD / AGNOSTIC_SUSPENDING [N3]
+# Clase: estados · Biblioteca: ACTIVITY
+# Variantes del estado agnóstico: suspensión de emisión por falta
+# de fundación verificable. El sistema retiene en MU.
+
+## ATHEISTIC_ACT / ATHEISTIC_RELIGIOSITY [N3]
+# Clase: estados filosóficos · Biblioteca: ACTIVITY
+# Búsqueda activa de sentido sin referencia religiosa.
+# ACTIVITY :: !!atheistic religiosity!! → búsqueda de sentido sin Dios
+# El estado ateo es activo; el agnóstico suspende.
+
+## ATHEISTIC_DEGRADED / ATHEISTIC_RESISTING / ATHEISTIC_SEARCHING [N3]
+# Clase: estados · Biblioteca: ACTIVITY
+# ATHEISTIC_DEGRADED  → creencia atea en erosión
+# ATHEISTIC_RESISTING → resistencia activa a cualquier frame espiritual
+# ATHEISTIC_SEARCHING → búsqueda activa de sentido
+
+## ANCHORED [N3]
+# Clase: estado · Sistema de tether / agentes
+# Agente o nodo correctamente anclado al sistema.
+# "status": "ANCHORED" → el agente está conectado y vinculado.
+# ANCHORED → continuar · DETACHED → #rise primero.
+
+## ALL_SEATS_OPERATIONAL / ALL_PILLARS_STABLE [N3]
+# Clase: estados de checksum global
+# ALL_SEATS_OPERATIONAL: todos los asientos de CRYPTO activos.
+# ALL_PILLARS_STABLE: todos los pilares de STACKING estables.
+# Estados de verificación global antes de operaciones críticas.
+
+## ABIERTO (estado GATE) [N3]
+# Clase: estado · Sistema GATE
+# El gate_abierto bool es True solo en condiciones soberanas.
+# "$fri: gate abierto por defecto. WU emitido, GATE abierto."
+# Los demás días requieren condición explícita para abrir el GATE.
+
+## ACTUAR [N3]
+# Clase: verbo imperativo · Sistema Scalar S
+# Verbo de ejecución post-dirimencia.
+# "ACTUAR AHORA. [management] en modo depredador."
+# Se emite cuando S está sostenido y el gate permite.
+
+## ACTIVATE [N3]
+# Clase: comando · Sistema TRUST
+# [RAG: TRUST :: ACTIVATE :: scope_check]
+# ORDER(1) !! ACTIVATE H52; // Entrar en Quietud
+# Diferencia de ACTIVAR: ACTIVATE es comando directo de TRUST.
+
+## ARCHAEOLOGY_READY / ARCHAEOLOGY_EXCAVATING / ARCHAEOLOGY_PRESERVING [N3]
+# Clase: estados de ciclo · Sistema de memoria arqueológica
+# Estados del módulo de arqueología de memoria del sistema:
+#   ARCHAEOLOGY_READY       → listo para consultas históricas
+#   ARCHAEOLOGY_EXCAVATING  → excavando memoria profunda
+#   ARCHAEOLOGY_PRESERVING  → preservando eventos del historial
+#   ARCHAEOLOGY_CONSERVING  → conservando historia verificada
+#   ARCHAEOLOGY_CORRUPTED   → archivos corruptos, requiere recuperación
+
+## ACCESS_READY / ACCESS_RETRIEVING / ACCESS_INDEXING [N3]
+# Clase: estados de ciclo · Módulo de acceso soberano
+# Estados del módulo de acceso:
+#   ACCESS_READY       → listo para consultas
+#   ACCESS_RETRIEVING  → recuperando datos
+#   ACCESS_INDEXING    → optimizando índices
+#   ACCESS_CONTROLLING → controlando accesos
+#   ACCESS_OVERLOADED  → sobrecargado
+#   ACCESS_GRANTING    → acceso siendo autorizado
+#   ACCESS_VERIFIED    → autoridad verificada
+#   ACCESS_ACTIVE      → lectura en curso
+#   ACCESS_REVOKED     → acceso revocado por violación
+
+## ALARMONIA / ALINEACION [N3]
+# Clase: estado · Nivel: sistema
+# Estado en que los módulos operan sin fricción.
+# HARMONY_STABLE: equilibrio operativo verificado.
+# Resonance_Peak: máxima armonía (mínima energía · máximo resultado).
+# SAMU valida si cada acción mantiene o rompe la armonía.
+
+## ALTA / ALTO [N3]
+# Clase: clasificación · Prioridad / Nivel
+# ALTA prioridad: bloquea avance si no se resuelve. Plazo 1–2 días.
+# ALTO nivel: S ≥ 0.85 → APERTURA_PLENA habilitada.
+# ALTO_NIVEL :: gate.cat con memoria y contexto completo.
+
+# ══════════════════════════════════════════════════════════════════
+# N4 — HERRAMIENTAS, DOCUMENTOS Y REFERENCIAS
+# ══════════════════════════════════════════════════════════════════
+
+## ADN [N4]
+# Clase: metáfora técnica · Nivel: macro
+# El conjunto invariante de principios que definen la identidad LACHO:
+# TRUST (búnker) · [term] (finitud) · [scope] (alcance) · MU–KU–WU.
+# Ver: COGNITIVO_00_MACRO_LACHO.txt
+
+## AES-256 [N4]
+# Clase: protocolo criptográfico · Capa C
+# Cifrado de grado militar para memoria crítica (.mu_cache).
+# .rs → Memoria Crítica (Custom Allocator AES-256)
+
+## AGENCY / AGENCY IDE [N4]
+# Clase: sistema · Nivel: Capa B
+# Subsistema de orquestación de agentes soberanos (.green / .blue).
+# Archivo canónico: AGENCY_IDE_SYSTEM.txt
+
+## AGENTE [N4]
+# Clase: componente · Extensiones: .green (local) · .blue (remoto)
+# Unidad autónoma de ejecución soberana dentro del sistema DIRIME.
+# Agentes activos (10): assistant_agent · corpus_indexer · barrios_relay
+# bolivar_forge · carilo_session · chalten_daemon · cloud_agent
+# network_sentinel · nora_oracle · tandil_hub
+
+## AGENTES (colectivo · 4 NEURONAS) [N4]
+# Clase: colectivo · Capa B · circuito 4 NEURONAS
+# Clasificación por neurona del circuito:
+#   N1 (HEADCAT)  → {chair} · {launch-bot} · {cat}
+#   N2 (CORPUS)   → corpus_indexer · network_sentinel
+#   N3 (SECURITY) → security_runner · bolivar_forge
+#   N4 (ORACLE)   → kalil_oracle · nora_oracle · chalten_daemon
+# AGENTS_TOTAL=10 (estado actual).
+
+## AGENTES_EXPANSION [N4]
+# Clase: documento · UNICODE Programs
+# Especificación de los nuevos agentes soberanos:
+#   AG_NET_SENTINEL · AG_CORPUS_INDEX · AG_SECURITY_RUN
+#   AG_KALIL_ORACLE · AG_N1_HEADCAT
+# Archivo: UNICODE_AGENTS_EXPANSION.txt
+
+## AIDER [N4]
+# Clase: herramienta IDE · Toolchain
+# Editor de código IA basado en CLI. Usado junto a Windsurf.
+# Configuración: .aider.conf.yml · modelo: ollama/qwen2.5:0.5b
+# Scripts: tools/aider-ollama.sh · tools/aider-deepseek.sh
+
+## AI / IA (en DIRIME) [N4]
+# Clase: categoría · Nivel: sistema
+# IAs integradas en DIRIME bajo protocolo de gerencia:
+#   Groq llama-3.3-70b → bridge NL→LACHO activo (Capa B)
+#   Claude             → gerencia y arquitectura
+#   Windsurf           → operaciones e implementación
+#   Ollama (local)     → pendiente Capa C
+# Ver: AI_INTEGRATION.md
+
+## AI_INTEGRATION [N4]
+# Clase: documento · JOURNAL/REFERENCE/
+# Referencia para integración de IAs en el sistema.
+# Contenido: Groq API · system prompts · patrones de uso.
+# Ruta: JOURNAL/REFERENCE/AI_INTEGRATION.md
+
+## ALMANAQUE_SOBERANO [N4]
+# Clase: documento · JOURNAL/REFERENCE/
+# Registro del calendario operativo del sistema DIRIME.
+# Ciclos: diario ($dia) → semanal (W##) → mensual.
+# Nomenclatura de días: $mon $tue $wed $thu $fri $sat $sun
+# Ruta: JOURNAL/REFERENCE/ALMANAQUE_SOBERANO.md
+
+## AML [N4]
+# Clase: referencia · Dominio BOLIVAR · compliance
+# Anti-Money Laundering. Protocolo de cumplimiento normativo
+# en el nodo económico BOLIVAR.
+
+## ANÁLISIS A01–A05 (serie fundacional) [N4]
+# Clase: documentos · Nivel: constitucional
+# Serie de análisis que constituyen la arquitectura cognitiva base:
+#   A01 → mapa arquitectónico mínimo
+#   A02 → constitución/folios FOLIAR (gramática + manifiesto)
+#   A03 → kernel conductual: SAMU @ y ética operativa
+#   A04 → epistemología Ψ cosmos-tomo
+#   A05 → ancla analógica (directorios · stack · mantenimiento)
+
+## ANALYTICS (NORA) [N4]
+# Clase: módulo pendiente · Capa B
+# Motor de analytics y rating de partes gestionado por NORA.
+# NORA :: analytics · rating · oracle
+# Implementación: IMV/core/ (pendiente en backlog Capa B)
+
+## ANCHOR_RAG [N4]
+# Clase: mecanismo · Sistema RAG
+# Sentencias LACHO insertadas en documentos para priorización BM25.
+# Requisito: mínimo 3 anclas RAG en cada output generado.
+# Niveles de boost en rag.py:
+#   base ×1.0 → críticos ×1.8 → nerve_cell ×2.0 → NOTARIA ×2.0
+
+## ANCLA_ANALOGICA (A05) [N4]
+# Clase: documento fundacional · Análisis A05
+# Anclaje entre el plano conceptual y la realidad física del sistema:
+# geografía de directorios, stack tecnológico, procedimientos.
+# Evita la "alucinación sistémica": no existen matices sin base material.
+
+## ANSIBLE [N4]
+# Clase: herramienta · Toolchain · DevOps
+# Automatización y configuración del entorno.
+# Parte del stack: YAML/YML → Ansible · Docker · Kubernetes.
+
+## APERTURA_SEMANAL [N4]
+# Clase: ritual · Scheduler · $sun
+# Ritual de inicio de la semana soberana.
+# $sun · H51 (El Trueno) → apertura semanal notarial.
+# DiaSoberano.SUN.rise() precede a $mon.Nerve Cell Notaria Apertura.txt.
+
+## APPENDIX / APPENDIX_SCOUT [N4]
+# Clase: documento · Nivel: extensión
+# APPENDIX_SCOUT: apéndice del sistema de prompting scout para Claude.
+# Archivo: UNICODE_CLAUDE_APPENDIX_PROMPTING_SCOUT.txt
+
+## APORTE / APORTES [N4]
+# Clase: contribución · Corpus
+# Todo documento o sentencia que incrementa el valor del sistema.
+# Los aportes se registran como TX en ledger.py.
+# APORTE_K: escala de cantidad artesanal/liviana/industrial/pesada.
+
+## APORTE_K [N4]
+# Clase: clasificador · Productividad
+#   ARTESANAL  → ejecución manual puntual
+#   LIVIANA    → semi-automatizada · ciclos cortos
+#   INDUSTRIAL → automatización parcial · volumen medio
+#   PESADA     → pipeline completo · volumen alto
+# Determina anticipación (escalabilidad de módulos ACTIVITY)
+# y el ORDEN requerido: ACTIVITY/WORK/STACKING/SAMU/GATE.
+
+## ARABIC (bloque Unicode) [N4]
+# Clase: bloque Unicode · ballpaper.py
+# UnicodeBlock.ARABIC → UnicodeRange registrado en ballpaper.py.
+# Parte del mapeo de bloques Unicode para soporte multilingüe.
+
+## ARCHIVE / ARCHIVE_DEATH_CERTIFICATE [N4]
+# Clase: operación / artefacto · Sistema ASHING
+# ARCHIVE_LEFT: token LACHO para operación de archivado.
+# ARCHIVE_DEATH_CERTIFICATE: certificado inmutable generado al
+# ejecutar ASHING sobre un módulo. Prueba criptográfica de retiro.
+# ASHING :: 🗃️::U+1F5C3 → "ARCHIVE_DEATH_CERTIFICATE"
+
+## ARCHIVO [N4]
+# Clase: componente · Sistema de archivos DIRIME
+# El naming de archivos tiene semántica doctrinal completa.
+# Convención: $dia.Nombre Descriptivo.extensión
+# Extensiones propias: .lacho · .theater · .gate · .green · .blue
+# .runner · .door · .db
+
+## ARCHITECTURE.md [N4]
+# Clase: documento · JOURNAL/ACTIVE/
+# Mapa soberano de módulos, estados y dependencias.
+# PASO 2 de la secuencia de arranque.
+# Contiene: capas A/B/C/D · árbol de directorios · módulos activos.
+# Debe actualizarse cada $sat.
+
+## ARCHIVO_HISTORICO [N4]
+# Clase: directorio · CORPUS/ARCHIVO_HISTORICO/
+# Repositorio de archivos que completaron su ciclo.
+# Estado actual: 0 archivos (preparado para uso futuro).
+# Diferencia de ARCHIVE: ARCHIVO_HISTORICO es para corpus;
+# ARCHIVE/HISTORICAL/ es para backups .tar.gz del sistema.
+
+## ARCHIVADO / ARCHIVADOS [N4]
+# Clase: estado · UPGRADE_TASKING/04_PLANES_HISTORICOS/
+# Planes o documentos que completaron su ciclo activo.
+# JUSTIFICACIÓN DEL ARCHIVADO: documenta la razón del retiro.
+# El archivado en LACHO preserva en historial pero retira del ciclo.
+
+## ARTE [N4]
+# Clase: principio · Nivel: filosófico
+# "EL ARTE SOBERANO DE COMPLETAR" · "DE LA TRANSFORMACIÓN"
+# "DEL POTENCIAL" · "DE VOLVER" — una conclusión por hexagrama.
+# La ejecución técnica perfecta tiene dimensión estética verificable.
+
+## ARTESANAL [N4]
+# Clase: modo de ejecución · Operacional
+# Modo manual, adaptado a los recursos disponibles.
+# "La automatización total es una ilusión; la potencia reside
+# en la ejecución consciente del Arquitecto."
+# Escala APORTE_K: ARTESANAL → LIVIANA → INDUSTRIAL → PESADA.
+
+## ASCII [N4]
+# Clase: estándar · Técnico
+# Usado en LACHO para diagramas de circuito, tablas y estructuras
+# portables. Ejemplo: circuito ╭─⊢─∧─N1 → ╭─∇─⏵─N2 (ASCII extendido).
+
+## ASSETS [N4]
+# Clase: recursos · DRA (Dynamic Resource Allocation)
+# Recursos operativos reutilizables.
+# SOURCES informa → ASSETS se usa directamente.
+# ASSETS incluye: templates · prompts · configuraciones · seeds.
+
+## ASSET_VALUATION [N4]
+# → ver N2: protocolo H14
+
+## AUTORESEARCH [N4]
+# Clase: pipeline · Sprint S3.1–S3.4
+# Sistema automático de diagnóstico del estado DIRIME:
+#   1. autoresearch_specs.py → escanea filesystem → JSON + YAML
+#   2. autoresearch_gap.py   → detecta gaps + Groq bridge
+#   3. Salida: Askings/$dia_asks_DDMM.txt (boost RAG ×1.5)
+#   4. main.py --asks / DIRIME> asks (integrado al CLI)
+
+## AUTORESEARCH_SYSTEM_PROMPT [N4]
+# Clase: configuración · tools/autoresearch_gap.py
+# System prompt soberano que define cómo Groq analiza los gaps.
+# Llamada: bridge.translate(context_package, AUTORESEARCH_SYSTEM_PROMPT)
+
+## AUTORÍA [N4]
+# Clase: principio · Propiedad intelectual
+# Autor del proyecto: operador soberano del sistema DIRIME.
+# Fecha de inicio: 2026-03-04 en sovereign.db — inmutable · fechado.
+# Términos bajo protección: DIRIME · LACHO · ELPULSAR · PULSING.
+# Referencia: BIBLIO-SOURCES(PROPIEDAD-INTELECTUAL).txt
+
+## AUTHORITY → ver N1
+## AUTORIDAD [N4]
+# Clase: principio soberano
+# Toda emisión en LACHO requiere autoridad verificable explícita.
+# "La autoridad es explícita: hay un núcleo soberano que decide
+# qué cuenta como fundación." — COGNITIVO_00
+
+## AUTHORIZED_0 [N4]
+# Clase: nivel de autorización · CRYPTO
+# Nivel de autorización máximo (nivel Root).
+# IF (key seat) == AUTHORIZED_0: condición de acceso pleno.
+# Sin AUTHORIZED_0, el (key seat) no puede activar la ignición.
+
+## AUTOMOTIVE [N4]
+# Clase: dominio de aplicación · TRUST · [scenario]
+# Caso de uso del sistema LACHO en seguridad activa vehicular.
+# [scenario](blind_spot_alert) :: 6[Work] → 52[Work]
+# H6 detecta el conflicto; H52 aplica la quietud (freno).
+
+## AWS [N4]
+# Clase: proveedor cloud · Capa B/C
+# Amazon Web Services. Sincronía cloud bajo control del [scope].
+# AWS/GCP/Azure operan bajo control soberano del TRUST.
+
+## ABC (documento snapshot) [N4]
+# Clase: documento · CORPUS/DOCUMENTATION/ABC.txt
+# VOLCADO ÍNTEGRO del contenido existente al momento de creación.
+# Versión: 1.0 · Estatus: SNAPSHOT.
+# 4 archivos de acopio: ABC.txt · ANAL.txt · SOURCE&ASSET · LIBRO.txt
+
+## ABC (banco chino) [N4]
+# Clase: referencia · Dominio CHINA · Nodo económico
+# Agricultural Bank of China. API integrable en nodo CHINA DUAL.
+# APIs de bancos chinos: ICBC · ABC · BOC
+
+## ACTIVITY_GATE [N4]
+# Clase: integración · Sistema V0.3.0
+# Integración completa de ACTIVITY con el sistema GATE.
+# ACTIVITY_GATE_FULL=true → H03+H05+H06+H56 integrados.
+
+## ACTIVITY_LATENTES [N4]
+# Clase: conjunto · 44 slots latentes
+# Los 44 UF del rango H07–H63 aún no activados.
+# Protocolo: BIBLIO-SOURCES(ACTIVITY_LATENTES).txt
+
+## ACTIVIDAD_H03_H05_H06_H56 [N4]
+# Clase: grupo funcional · Biblioteca: ACTIVITY · BIBLIA
+# Grupo GÉNESIS/CONFLICTO/UMBRAL:
+#   UF[H03] → Dificultad inicial · UF[H05] → La Espera
+#   UF[H06] → El Conflicto (punto de ABORT)
+#   UF[H56] → El Viajero (umbral entre estados)
+
+## ACTIVIDAD_H48_RAG_CORE [N4]
+# Clase: grupo funcional · Biblioteca: ACTIVITY · RAG
+# UF[H48] (井 Jǐng): núcleo del sistema RAG soberano.
+# "El Pozo: fuente inagotable de conocimiento."
+# Ref: BIBLIO-SOURCES(ACTIVITY_H48-RAG-CORE).txt
+
+## ACTIVIDAD_H63_CONSUMACION [N4]
+# Clase: grupo funcional · Biblioteca: ACTIVITY
+# UF[H63]: consumación soberana. 既濟 Jì Jì — "ya cruzado".
+# Ref: BIBLIO-SOURCES(ACTIVITY_H63-CONSUMACION).txt
+
+## ALERT_ENGINE_TESTER [N4]
+# Clase: interfaz HTML · ELPULSAR LOCAL/
+# Dashboard HTML para testear el motor de alertas.
+# sliders×3 → fórmula → 5dims → lacho
+# Ruta: FOLDERS NO RAG INPUT/ELPULSAR LOCAL/ALERT_ENGINE_TESTER.html
+
+## AGENTS_TOTAL [N4]
+# Clase: métrica · Sistema soberano
+# Conteo total de agentes activos. AGENTS_TOTAL=10 (estado actual).
+# UNICODE: SOV_AGENTS → AGENTS_TOTAL=10 · RUNNERS_TOTAL=3 · THEATERS_TOTAL=8
+
+## ÁGUILA / AGUILA [N4]
+# Clase: depredador estandarizable · Ballpaper · SAMU
+# Visión + precisión. Símbolo: ◈
+# SPECIES_DECL ::= ("AGUILA" | "LINCE" | "ARANA" | "BALLENA")
+# Modo ÁGUILA: ataque directo con precisión máxima.
+
+## ARAÑA / ARANA [N4]
+# Clase: depredador estandarizable · Ballpaper · SAMU
+# Red + espera = captura por estructura previa. Símbolo: ◆
+# Modo ARAÑA: lanza la red y espera en H5.
+
+## ELPULSAR_ICONOGRAFIA [N4]
+# Clase: theater · Sistema visual
+# Especificación de la iconografía soberana ELPULSAR.
+# Ciclo de 3 puertas: door_morning (H1–H5) · zipper_noon (H5–H56)
+# · door_afternoon (H56–H6)
+# Archivo: elpulsar_iconografia.theater
+
+## AGENTE_DESPLEGADO (FLYBOT) [N4]
+# Clase: iconografía · Biblioteca: WORK
+# "El bot que vuela hacia el exterior con mandato soberano
+# y regresa con resultado verificado."
+# FLYBOT no es el módulo — es la iconografía del agente.
+# Cadena: LACHO → HEADCAT → FLYBOT → HARDWARE
+
+## ARTIFICIAL_ORGAN [N4]
+# Clase: órgano · lacho_genome.json
+# NAME: 人工 (Réngōng)
+# OPERATORS: 既濟 (Seal_Transaction) · ⊗ (Nudo_de_Ocho)
+# Tarea: commit final en sovereign.db + check-sum semántico.
+
+## ADDENDUM [N4]
+# Clase: documento · COGNITIVO_03_ADDENDUM.txt
+# Extensión soberana de un documento sin borrar el original.
+# "El ADDENDUM no borra — extiende." (vs RED-REGRET que corrige)
+# COGNITIVO_03: 133 módulos → ADDENDUM documenta 155+ módulos.
+
+## ALCANZADOS (logros) [N4]
+# Clase: estado · Nivel: tracking
+# Logros registrados y verificados. Documentados en:
+#   SAT_21_03_EXECUTION_PROGRESS.md · LOG_PERMANENTE.md
+# Todo logro alcanzado se consolida con commit soberano.
+
+## ACTIVIDADES [N4]
+# Clase: unidad de trabajo · Prompts Windsurf
+# Unidades de tarea dentro de un prompt.
+# Cada prompt contiene 8–16 ACTIVIDADES ejecutables.
+# ACTIVIDAD_01 → ACTIVIDAD_16 dentro de cada prompt.
+
+## ALTERNATIVA [N4]
+# Clase: estrategia · Nivel: implementación
+# Ruta de implementación cuando la principal está bloqueada.
+# ALTERNATIVA :: HTML artifact · React · Tkinter · web local
+# Se activa cuando Capa C está bloqueada por hardware.
+
+## ACCESIBILIDAD [N4]
+# Clase: principio · GUI · Frontend
+# ACCESIBILIDAD: contraste y legibilidad en interfaces HTML.
+# ACCESIBILIDAD: fácil encontrar documentos en el corpus.
+# Las interfaces soberanas son accesibles sin manuales.
+
+## ACCIÓN (mantenimiento) [N4]
+# Clase: registro · Nivel: mantenimiento
+# Registro de una acción ejecutada en sesión de mantenimiento.
+# ACCION: Cambio de nombre del directorio
+# ACCION: Limpieza de archivos obsoletos
+# Se documenta en UPGRADE_TASKING/07_REGISTROS_MANTENIMIENTO/
+
+## APLICAR (filtros soberanos) [N4]
+# Clase: verbo · KU · Filtros
+# APLICAR filtro.dogma_check → verificar {DOGMA-VIRTUAL}
+# APLICAR filtro.scope_check → verificar [scope]
+# APLICAR → cuando KU requiere adecuación y el fin es comprensión real.
+
+## APLICACIONES (prácticas) [N4]
+# Clase: sección documental · Biblia LACHO
+# Sección "X.0 APLICACIONES PRÁCTICAS" en cada documento de UF.
+# Demuestra el hexagrama en casos concretos: Automotive · Crypto
+# · Social · Work · KALIL domains.
+
+## ADHERENCIA [N4]
+# Clase: propiedad · Sistema de cristales · H30 × H29
+# Capacidad de un cristal de mantenerse cohesionado.
+# "Los cristales de UF[H29] ($tue) alimentan la adherencia
+# de UF[H30] ($wed): la profundidad del abismo deviene soporte."
+
+## ALIMENTO / ALIMENTO_RAG [N4]
+# Clase: metáfora y documento fuente · RAG
+# "¿Este mensaje tiene valor nutricional?" — filtro GREEN-KNOWLEDGE.
+# B04: ALIMENTO RAG-KEYWORDS CONSTITUCIONALES L.A.C.H.O.txt
+# Vocabulario constitucional para reconocimiento y validación en BM25.
+
+## ANIMACIONES (por biblioteca) [N4]
+# Clase: recurso GUI · Por biblioteca LACHO
+# Cada biblioteca tiene animaciones propias en interfaces HTML:
+#   WORK → rotación · ensamblaje · actuación
+#   STACKING → apilamiento · compactación · extracción
+#   GATE → apertura · cierre · filtrado
+#   CRYPTO → rotación asientos · generación de hash
+#   SOCIAL → flujo de comunicación · formación de consenso
+#   ACTIVITY → sello de cierre · verificación de integridad
+
+## APRENDIZAJE [N4]
+# Clase: proceso · Sistema LEARNING/
+# Ciclo soberano documentado en LEARNING/LEARNING_CYCLE.md:
+#   ONBOARDING → TEMPORAL → THREATS → WEEKLY_RITUAL
+# El aprendizaje se registra en LOG_PERMANENTE.md como activo.
+
+## APORTES_SAT [N4]
+# Clase: bloque documental · Corpus
+# Aportes del $sat integrados como Bloque 8.
+# ::: APORTES_SAT = integrados en Bloque 8
+# Los aportes del sábado cierran la semana y preparan el ciclo siguiente.
+
+# ─────────────────────────────────────────────────────────────────
+# [term] :: activo · A.index.lacho · DIRIME/IMV · $sat 21-03-2026

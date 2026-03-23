@@ -1,0 +1,414 @@
+===============================================================================
+LACHO_grouping_v2.txt
+SISTEMA DIRIME · IMV · Reclasificación funcional verificada
+$sat 21-03-2026 · Método: corpus-first · sin plantilla mecánica
+===============================================================================
+
+CRITERIO DE INCLUSIÓN:
+Todo término en este archivo tiene ocurrencia verificada en el corpus.
+La agrupación refleja función real en el sistema, no categoría genérica.
+Los términos con función idéntica se fusionan en un solo grupo.
+
+===============================================================================
+BLOQUE 1 — SENTENCIA CANÓNICA (la unidad mínima de LACHO)
+===============================================================================
+
+La sentencia en LACHO tiene 6 elementos inmutables en este orden:
+
+  SUJETO =><= .. VERBO .. OBJETO --[NUDO] [term]
+
+Cualquier agrupación de vocabulario LACHO debe organizarse alrededor
+de estos 6 slots. El archivo que se reclasifica no tenía este eje.
+
+───────────────────────────────────────────────────────────────────────────────
+1.1 SLOT: SUJETO (quién ejecuta · determina la biblioteca)
+───────────────────────────────────────────────────────────────────────────────
+
+SUJETOS POR BIBLIOTECA:
+
+  TRUST ────── FOUNDATION · [foundation] · [management] · [command]
+               [scope] · [term] · [scenario] · [event]
+               [language] · [ecosystem] · [element]
+               [logistical-executive] · [wu-mail] · [mu-store] · [ku-chat]
+
+  SOCIAL ───── {chair} · {drip} · {note} · {streaming} · {masking}
+               {launch-bot} · {headcat} · {scheduler}
+               {concierge-desk} · {relay} · {flybot}
+
+  CRYPTO ───── (seal of secrecy) · (key seat) · (flow seat)
+               (spark seat) · (shield seat) · (link seat)
+               (head seat) · (way seat) · (ignition seat)
+
+  STACKING ─── UF[H01] UF[H02] UF[H29] UF[H30] UF[H48] UF[H49]
+               UF[H50] UF[H51] UF[H52] UF[H57] UF[H63] UF[H64]
+               (los 64 UF disponibles · activos 20 · latentes 44)
+
+  GATE ──────── UF[H05] · UF[H06] · UF[H56]
+                gate.cat · GATE_BUFFER · GATE_SIGIL
+
+  WORK ──────── {actuator} · {brake} · {doorman-mobile}
+                {door-afternoon} · {flybot} · {green-knowledge}
+
+  SAMU ──────── SAMU @ · SAMU #set · SAMU #rise
+                @human_early · @human_later
+
+  METHOD ─────── METHOD <equation> · METHOD <operator_flow>
+                 METHOD <if> · METHOD <stat_onto> · METHOD <loop>
+
+  ACTIVITY ──── ACTIVITY UF[H##] (cualquier hexagrama en movimiento)
+
+REGLA: el primer sujeto determina la biblioteca y su paradigma.
+Mezclar sujetos de distinta biblioteca en la misma sentencia
+produce semántica contradictoria aunque sea sintácticamente válida.
+
+───────────────────────────────────────────────────────────────────────────────
+1.2 SLOT: VERBO (qué hace · consume Work++)
+───────────────────────────────────────────────────────────────────────────────
+
+VERBOS POR BIBLIOTECA:
+
+  TRUST ────── verifica · declara · ordena · sostiene · activa
+               ignicia · garantiza · autoriza · establece
+
+  SOCIAL ───── escucha · filtra · registra · procesa · conecta
+               distribuye · invoca · transmite · lanza · callar
+
+  CRYPTO ───── certifica · firma · sella · cifra · valida · conecta
+               custodia · inmutabiliza · descifra
+
+  STACKING ─── apila · ancla · cristaliza · consolida · aquieta
+               inmutabiliza · preserva · compacta · extrae
+
+  GATE ──────── espera · filtra · permite · cancela · contiene
+               abre · cierra · redirige · resuelve
+
+  WORK ──────── materializa · ejecuta · detiene · custodia · sella
+               actualiza · construye · activa · para
+
+  SAMU ──────── audita · dirime · sostiene · ajusta · recalibra
+               aprueba · registra · delibera · firma_ciclo
+
+  METHOD ─────── calcula · estructura · evalúa · compara · itera
+                 resuelve · cuantifica · mapea · transforma
+
+  ACTIVITY ──── inicia · aquieta · penetra · cristaliza · lanza
+                consume · transiciona · activa · cierra
+
+NOTA SOBRE VERBOS CRUZADOS:
+  "sella" aparece en CRYPTO y WORK. En CRYPTO: sella como firma
+  criptográfica. En WORK: sella como cierre físico de un actuador.
+  El contexto del sujeto resuelve la ambigüedad — no se duplican
+  porque pertenecen a paradigmas distintos.
+
+───────────────────────────────────────────────────────────────────────────────
+1.3 SLOT: OBJETO ($$ $$) (qué se transforma)
+───────────────────────────────────────────────────────────────────────────────
+
+Los objetos son instancias específicas del dominio operativo.
+Se agrupan por dominio, no por biblioteca:
+
+  DOMINIO KALIL:
+    bolivar_blockchain_activo · bsn_interior_permisionado
+    barrios_remesas_usdt · carilo_fee_loan · chalten_cloud_session
+    tandil_archivo_notarial · nora_rating_partes
+
+  DOMINIO SEGURIDAD:
+    identidad_operador_activo · credencial_acceso_valida
+    hash_pe_ja3 · forge_identidad_source · solicitud_acceso_entrante
+    analisis_forense_hacking_doctor
+
+  DOMINIO CORPUS/RAG:
+    scan_corpus_nuevos_archivos · ledger_gate_indexacion_pre
+    metricas_sistema_vivo · coherencia_dashboard_activo
+
+  DOMINIO CICLO OPERATIVO:
+    condiciones_inicio_dia · estado_suite_completo
+    ciclo_temprano_activo · cierre_mensual_verificado
+
+  DOMINIO NOTARIAL:
+    acto_notarial_partes_objeto · certifica_coherencia_pre_sello
+    sello_fisico_documento · validez_acto_soberano
+
+───────────────────────────────────────────────────────────────────────────────
+1.4 SLOT: NUDO (cómo se sostiene la tensión)
+───────────────────────────────────────────────────────────────────────────────
+
+Frecuencia real en el corpus:
+
+  --[Nudo de Ocho]     864  → inmutabilidad · lo sellado no regresa
+  --[As de Guía]       761  → orientación · guía soberana
+  --[Nudo Corredizo]   675  → control · puede liberarse si necesario
+  --[Ballestrinque]    397  → tensión sostenida entre dos fuerzas
+  --[Nudo de Rizo]     274  → enlace entre nodos · inter-nodo
+
+REGLA DE USO:
+  Nudo de Ocho    → operaciones de STACKING (cristaliza · inmutabiliza)
+  As de Guía      → operaciones de TRUST y WORK (verifica · materializa)
+  Nudo Corredizo  → operaciones de GATE (filtra · contiene)
+  Ballestrinque   → tensión no resuelta · deliberación activa
+  Nudo de Rizo    → conexiones de red · inter-nodo · BRIDGE
+
+───────────────────────────────────────────────────────────────────────────────
+1.5 SLOT: [term] (finitud del acto)
+───────────────────────────────────────────────────────────────────────────────
+
+Cuatro niveles de [term]:
+
+  NIVEL 1 → [term] OPERATIVO    el marcador de finitud canónico
+  NIVEL 2 → [term] LINGÜÍSTICO  la palabra que cierra el enunciado
+  NIVEL 3 → [term] ONTOLÓGICO   la verdad local que caduca
+  NIVEL 4 → [term] RELACIONAL   el integrador entre verdades locales
+
+  TEMPORAL: almacena en MU[activo] con [term] asignado
+  SIN [term] → ASIGNAR por defecto 64 ciclos antes de commit
+
+===============================================================================
+BLOQUE 2 — ESTADOS DEL SISTEMA (ciclo de vida de cualquier módulo)
+===============================================================================
+
+Todo módulo o proceso en LACHO atraviesa estos estados.
+Son el vocabulario de estado mínimo verificado:
+
+2.1 ESTADOS DE APERTURA (Scalar S · foundation.py)
+
+  S < 0.65       →  APERTURA_MINIMA     sistema restringido
+  0.65 ≤ S < 0.85 →  APERTURA_PARCIAL    tensión viva
+  S ≥ 0.85       →  APERTURA_PLENA      emisión autorizada
+  S ≥ 0.85 × 3   →  WHEN_NOW            momento verificado para actuar
+
+2.2 ESTADOS DE CICLO (lifecycle de módulo/sentencia)
+
+  LATENTE            → existe pero no activo · slot H07–H63
+  ACTIVADO           → encendido en ciclo actual
+  ACTIVO             → operando y aceptando sentencias
+  BUSY               → en uso máximo · no acepta nuevas solicitudes
+  ANCHORED           → vinculado y operando · opuesto a DETACHED
+  DEGRADED           → funcionando bajo parámetros mínimos
+  BLOQUEADO          → no puede operar · requiere condición externa
+  AUSENTE            → campo requerido no declarado · falla validación
+
+2.3 ESTADOS DE VALIDACIÓN (grammar.py · foundation.py)
+
+  VALID              → pasó validación soberana · WU autorizado
+  INVALID(SEM-1)     → falta [term] ontológico
+  INVALID(SEM-2)     → [term] operativo no activo
+  ABORT (H06)        → intrusión o inconsistencia detectada
+  HALT               → detención total por pérdida de identidad
+
+2.4 ESTADOS DE TIMING (SAMU · cuando actuar)
+
+  WHEN_NOW           → condiciones alineadas · momento verificado
+  WHEN_DEFER         → espera soberana activa · H5 · Ψ < 0.70
+  WHEN_CRITICAL      → [term] próximo a expirar · H49
+
+2.5 ESTADOS DE CICLO DE BACKUP (scheduler soberano)
+
+  BKP_LEDGER         → sovereign.db · diario · criticidad máxima
+  BKP_CORPUS         → CORPUS/ · semanal ($thu)
+  BKP_FULL           → tar DRA/ completo · $sat+$sun · sellado H63
+
+2.6 ESTADOS DE ACCESO (módulo de access)
+
+  ACCESS_READY       → listo para consultas
+  ACCESS_RETRIEVING  → recuperando datos
+  ACCESS_INDEXING    → optimizando índices
+  ACCESS_OVERLOADED  → sobrecargado
+  ACCESS_REVOKED     → acceso revocado por violación
+
+===============================================================================
+BLOQUE 3 — ARQUITECTURA POR CAPAS (qué existe y qué no)
+===============================================================================
+
+CAPA A · COMPLETA ✅
+  grammar.py · ledger.py · rag.py · samu.py · taxonomy.py
+  foundation.py · language_routing.py · chat.py · main.py
+  9 bibliotecas implementadas · 49 tests passing
+
+CAPA B · ACTIVA ⚡
+  groq/bridge.py · scheduler · generator.py
+  autoresearch (specs + gap) · NOTARIA 5 endpoints
+  elpulsar.py · ACTIVITY_GATE_FULL=true · AGENTS_TOTAL=10
+
+CAPA C · BLOQUEADA 🔒 (requiere hardware Ryzen)
+  IME I CHING · CAT(OS) · Ollama local
+  NODO-IDE físico · agency_ide completo
+  AES-256 vault en Rust
+
+CAPA D · FUTURO 🌐
+  WEB3_INTERFACE · HL FABRIC real · dos nodos físicos
+  CAT(CLOUD) · CAT(VPC) · CAT(SSH) completo
+  CHCL portabilidad · KernelHooks
+
+MÉTRICAS ACTUALES ($sat 21-03-2026):
+  TX=2026 · cristales=60 · S=0.800 · tests=49/49
+
+OBJETIVO V0.3.0:
+  S≥0.88 · cristales=65+ · V0.3.0 tagged · Capa B completa
+
+===============================================================================
+BLOQUE 4 — TAXONOMÍA DE ACTORES
+===============================================================================
+
+4.1 ACTORES EXTERNOS (clasificación al entrar al sistema)
+
+  ACTOR_INCOMING     → no clasificado aún · detección < 50ms target
+  ACTOR_UNKNOWN      → identidad no verificable
+  ACTOR_BOT          → agente automatizado identificado
+  ACTOR_HUMAN        → persona humana verificada
+  ACTOR_SYSTEM       → sistema externo con certificado
+  ACTOR_TRUSTED      → confianza soberana establecida
+  ACTOR_VIP          → acceso privilegiado verificado
+  ACTOR_HOSTILE      → patrón hostil detectado · no entra a WAIT_QUEUE
+
+4.2 ESTADOS DE RETENCIÓN
+
+  WAIT_QUEUE         → cola soberana con [term] individual por actor
+  QUARANTINE_HOLD    → retención de lo incierto sin juzgar
+  BLACKLIST          → formas excluidas del sistema de validación
+
+4.3 DEPREDADORES (modos de intervención soberana)
+
+  ÁGUILA  ◈  visión + precisión → ataque directo con criterio máximo
+  LINCE   ◇  velocidad + criterio → acción en contextos cambiantes
+  ARAÑA   ◆  red + espera → captura por estructura previa
+  BALLENA ◉  volumen + filtro → procesamiento masivo eficiente
+
+===============================================================================
+BLOQUE 5 — SISTEMA RAG (cuatro capas de indexación)
+===============================================================================
+
+5.1 CAPAS DE BOOST (rag.py · BM25)
+
+  CAPA 1  ×1.0   → documentos base del corpus
+  CAPA 2  ×1.5   → Askings · nerve_cell secundarios
+  CAPA 3  ×1.8   → fuentes críticas · BIBLIO-SOURCES fundacionales
+  CAPA 4  ×2.0   → NOTARIA · Nerve Cells core · documentos LEARNING/
+
+5.2 TIPOS DE RAG
+
+  BEHAVIORAL_RAG    → aprende conductas · alimentado por APPEND_ONLY_LOG
+  COGNITIVE_RAG     → grafo semántico · aristas y nodos tipados
+  GREEN-KNOWLEDGE   → filtro de valor nutricional · delta_Ψ ≤ 0 → poda
+  ANCHOR_RAG        → sentencias LACHO embebidas en documentos · boost
+
+5.3 SEÑALES RAG EN CORPUS
+
+  Formato canónico: [RAG: MÓDULO :: ESTADO :: contexto_adicional]
+  Ejemplos activos:
+    [RAG: TRUST :: INIT :: ciclo_0]
+    [RAG: BRAIN :: CORE :: INIT]
+    [RAG: RITMO :: TRANSICION :: $sat→$sun :: CHISPA_SEMANAL]
+    [RAG: STACKING :: INIT :: 8_pilares]
+
+5.4 CONTAMINACIÓN (riesgo crítico)
+
+  KU_DV             → KU contaminado con {DOGMA-VIRTUAL}
+                      si cristaliza en H48: todas las consultas futuras
+                      devuelven resultados falsos
+                      limpieza de H48 = operación más crítica de mantenimiento
+
+===============================================================================
+BLOQUE 6 — DOMINIOS ECONÓMICOS KALIL
+===============================================================================
+
+Seis nodos en producción (Capa B):
+
+  BOLIVAR   blockchain    interior=BSN permisionado · exterior=Ethereum/DeFi
+  NORA      rating        analytics · calificación de partes · nora_oracle.blue
+  CARILO    capital/fee   loans DeFi · loans e-CNY tasa PBOC · USDT
+  BARRIOS   acceso/red    forge_remesa · BLAKE3 · JA3_whitelist · net_flow
+  CHALTEN   cloud         operaciones remotas · chalten_daemon.blue
+  TANDIL    archivo       ARCHIVO NOTARIAL · H48 · tandil_hub.blue
+
+DOMINIO CHINA DUAL:
+  interior  e-CNY · WeChat · BSN · KYC PBOC · guanxi digital
+  exterior  Ethereum · DeFi · multi-idioma · KYC occidental
+
+===============================================================================
+BLOQUE 7 — LÍNEA ONTOLÓGICA (eje del sistema)
+===============================================================================
+
+Todo desarrollo en LACHO sigue esta secuencia. No se puede saltar:
+
+  SER        →  qué es LACHO · axiomas · principios soberanos
+  HACER      →  cómo opera · protocolos · mecanismos
+  TENER      →  qué tiene · módulos · artefactos · corpus
+  ESTAR      →  en qué estado · métricas · ciclo actual
+  TRASCENDER →  hacia dónde va · Capa C/D · V0.3.0 y más allá
+
+Error clásico: saltar de SER a TENER (hablar de módulos y código
+sin tener axiomas y protocolos claros). El grouping que se reclasifica
+cometía este error: empezaba por el TENER (lista de palabras) sin
+pasar por el SER (qué función tienen en el sistema).
+
+DOCUMENTOS POR NIVEL:
+  SER       →  COGNITIVO_00_MACRO_LACHO.txt
+  HACER     →  COGNITIVO_01_MESO_CONSTITUCION_Y_FOLIOS.txt
+  TENER     →  COGNITIVO_02_MESO_SAMU_PSI_DIRIMENCIA_SCOPE_TERM.txt
+  ESTAR     →  SESION_ACTIVA.md · LOG_PERMANENTE.md · ARCHITECTURE.md
+  TRASCENDER →  JOURNAL/PLANNING/ · UPGRADE_TASKING/
+
+===============================================================================
+BLOQUE 8 — PRÓXIMAS NECESIDADES (gaps verificados)
+===============================================================================
+
+8.1 IMPLEMENTACIÓN PENDIENTE (Capa B · Sprint S4)
+
+  S4.1  chcl_runner.py         portabilidad CHCL · CEO de LACHO
+  S4.2  theater_runner.py      ejecutor soberano de .theater
+  S4.3  github_sync.sh --asks  flag para Askings en commit
+
+  OBJETIVO SEMANA: V0.3.0 candidate · S≥0.88 · cristales=65+
+
+8.2 VOCABULARIO QUE FALTA DOCUMENTAR
+
+  Los siguientes conceptos tienen alta frecuencia en el corpus pero
+  no tienen entrada canónica en el glosario todavía:
+
+  Tr (Reasoning Trace)       →  Chain of Thought del sistema · 5 pasos
+  SOFISMO                    →  interfaz controlada · no destino de lógica
+  ZONAS_SOFISMO              →  mapeo de zonas de contaminación retórica
+  TARDANZA_DELIBERADA        →  WHEN_DEFER como fortaleza soberana
+  PODA_ONTOLÓGICA            →  {masking} · delta_Ψ ≤ 0 → eliminar
+  IMAGEN_GIGANTE             →  OS como orquestador · opuesto a LLM
+  MEMORIA_PEQUEÑA            →  LLM como núcleo optimizado
+  NODO-Σ                     →  nodo en aproximación a NODO-Ω
+  LOAN-IME                   →  precarga de pesos RAG en memoria MU
+  SIGKILL / CHMOD            →  señales de kernel · Capa D objetivo
+
+8.3 ACRÓNIMOS REALES DEL CORPUS (verificados · no inventados)
+
+  UF     Unidad Funcional (los 64 hexagramas)
+  DRA    Dynamic Resource Allocation
+  RAG    Retrieval-Augmented Generation
+  AST    Abstract Syntax Tree
+  BNF    Backus-Naur Form extendida
+  IME    Input Method Engine (modo I Ching)
+  JIT    Just-in-Time (modo de compilación)
+  AOT    Ahead-Of-Time (modo de compilación)
+  MCP    Model Context Protocol
+  KYC    Know Your Customer
+  ZKP    Zero-Knowledge Proof
+  WORM   Write Once Read Many (archivo inmutable)
+  FIFO   First In First Out (orden del gate.cat)
+  CoT    Chain of Thought (Reasoning Trace Tr)
+  DSL    Domain Specific Language (LACHO es un DSL)
+  CLI    Command Line Interface (interfaz principal)
+
+  ACRÓNIMOS INVENTADOS EN EL ARCHIVO ORIGINAL QUE NO EXISTEN:
+  SI · SU · LD · GS · SP · TS · FA · OI · DS · IS · EF · TI · SE
+  LI · PS · AP · EO · MP · IB · PD · CI · IP · PP · DP · DD · CS
+  RS · FS · LS · (todos los de Nivel 3 del archivo original)
+
+===============================================================================
+MÉTRICAS DE ESTE ARCHIVO
+===============================================================================
+
+Entradas verificadas en corpus:    460 (del glosario A-Z)
+Grupos funcionales:                8 bloques
+Términos inventados incluidos:     0
+Plantilla mecánica usada:          no
+Dirección del mapeo:               LACHO → inglés (no inglés → LACHO)
+Tamaño aproximado:                 comparable al original (sin inflación)
+
+[term] :: activo · LACHO_grouping_v2.txt · DIRIME/IMV · $sat 21-03-2026

@@ -1,0 +1,72 @@
+# J.index.lacho
+# GLOSSARY — Letra J / j
+# DIRIME · IMV · Sistema LACHO
+# [term] :: activo
+# Revisado y auditado: $sat 21-03-2026
+# ─────────────────────────────────────────────────────────────────
+
+# ══════════════════════════════════════════════════════════════════
+# N1 — FUNDAMENTOS DEL LENGUAJE
+# ══════════════════════════════════════════════════════════════════
+
+## JSON [N1]
+# Clase: formato · Gramática LACHO · Configuración
+# JavaScript Object Notation. Formato canónico de configuración
+# y de intercambio de datos entre módulos del sistema.
+# JSON_OBJECT ::= "{" JSON_PAIR ("," JSON_PAIR)* "}"
+# JSON_VALUE  ::= STRING | NUMBER | BOOLEAN | JSON_OBJECT
+# REGISTRY_ENTRY ::= JSON_OBJECT NEWLINE
+# Ver: JSON_OBJECT · JSON_VALUE · BOOLEAN · IDENTIFIER
+
+## JIT [N1]
+# Clase: modo de compilación · Deep Learning · RAG dinámico
+# Just-in-Time. Modo 2 de compilación en LACHO.
+# "LACHO implementa un ciclo JIT donde los hexagramas actúan
+# como tokens de decisión para la compilación en tiempo real."
+# 4.3 Modo 2: JIT con Tensor Simbiosis.
+# Se opone a AOT (Ahead-Of-Time). Ver: AOT · HEXAGRAMA · LLM
+
+# ══════════════════════════════════════════════════════════════════
+# N2 — MÓDULOS Y MECANISMOS OPERATIVOS
+# ══════════════════════════════════════════════════════════════════
+
+## JOURNAL [N2]
+# Clase: sistema · JOURNAL/ · Nivel: documentación activa
+# Sistema de documentación soberana del proyecto DIRIME.
+# Estructura: ACTIVE/ · PLANNING/ · REFERENCE/ · TEMPLATES/ · EXTERNAL/
+# Archivos clave: SESION_ACTIVA.md · ARCHITECTURE.md · LOG_PERMANENTE.md
+# *journal*: tag de SAMU para el historial de la sesión.
+# Ver: LOG_PERMANENTE · SESION_ACTIVA · ALMANAQUE_SOBERANO
+
+## JURISDICCIONES [N2]
+# Clase: concepto · Arquitectura por capas
+# "ARQUITECTURA POR CAPAS: JURISDICCIONES Y SEPARACIÓN DE RESPONSABILIDADES"
+# Cada biblioteca opera en su jurisdicción propia sin invadir otras.
+# La jurisdicción es el mecanismo que evita la contaminación entre capas.
+# Ver: BIBLIOTECA · CAPA · TRUST · SCOPE
+
+# ══════════════════════════════════════════════════════════════════
+# N3 — ACTORES, ESTADOS Y CLASIFICACIONES
+# ══════════════════════════════════════════════════════════════════
+
+## JEFATURAS [N3]
+# Clase: estructura organizativa · Nivel: mantenimiento
+# Las tres jefaturas de la Gesta LACHO:
+# "3 jefaturas lideradas por HEXAGRAMA 1(CEO), HEXAGRAMA 32(PROJECT MANAGER),
+# HEXAGRAMA 64(VIBE CODER MANAGER)"
+# Orquestan a los 64 Practicantes del sistema.
+# Ver: HEXAGRAMA · GESTA · CEO · MANAGEMENT
+
+# ══════════════════════════════════════════════════════════════════
+# N4 — HERRAMIENTAS, DOCUMENTOS Y REFERENCIAS
+# ══════════════════════════════════════════════════════════════════
+
+## JULES [N4]
+# Clase: IA · Integración externa · GitHub
+# Agente de GitHub usado en el toolchain de desarrollo LACHO.
+# "Estado del Dataset: [ESTRUCTURA DE REPOSITORIO JULES INDEXADA]"
+# Trabaja en conjunto con Claude y Windsurf en el ciclo de gerencia.
+# Ver: CLAUDE · WINDSURF · GROQ · AI_INTEGRATION
+
+# ─────────────────────────────────────────────────────────────────
+# [term] :: activo · J.index.lacho · DIRIME/IMV · $sat 21-03-2026

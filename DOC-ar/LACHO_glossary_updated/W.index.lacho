@@ -1,0 +1,113 @@
+# W.index.lacho
+# GLOSSARY — Letra W / w
+# DIRIME · IMV · Sistema LACHO
+# [term] :: activo
+# Revisado y auditado: $sat 21-03-2026
+# ─────────────────────────────────────────────────────────────────
+
+# ══════════════════════════════════════════════════════════════════
+# N1 — FUNDAMENTOS DEL LENGUAJE
+# ══════════════════════════════════════════════════════════════════
+
+## WHITESPACE [N1]
+# Clase: token · Gramática ANTLR
+# Espacio en blanco en la gramática LACHO.
+# WHITESPACE ::= (" " | "\t" | "\n" | "\r")+
+# DECL_LINE ::= DECL_MARK WHITESPACE IDENTIFIER WHITESPACE "=" WHITESPACE VALUE
+# Ver: DECL_LINE · NEWLINE · IDENTIFIER
+
+## WHEN_NOW / WHEN_DEFER / WHEN_CRITICAL [N1]
+# Clase: operadores temporales · Biblioteca: SAMU / TRUST
+# Tres modos de timing soberano del sistema:
+#   WHEN_NOW      → condiciones alineadas, momento verificado
+#                   H51 (Trueno): "la activación, el momento llegó"
+#   WHEN_DEFER    → tardanza soberana activa, H5 (Espera)
+#                   Fortaleza cuando Ψ_evidencia < 0.7
+#                   Violación si sostenido con Ψ_evidencia ≥ 0.85 por 3 ciclos
+#   WHEN_CRITICAL → ventana con [term] próximo a expirar
+#                   H49 (Revolución): "el momento de transformación no se repite"
+# Ver: TARDANZA_DELIBERADA · [term] · SAMU · UMBRAL_CALIENTE_S
+
+# ══════════════════════════════════════════════════════════════════
+# N2 — MÓDULOS Y MECANISMOS OPERATIVOS
+# ══════════════════════════════════════════════════════════════════
+
+## WU [N2]
+# Clase: estado · Tríada MU–KU–WU · Nivel: constitucional
+# Manifestación / emisión sellada / acción verificada.
+# "WU: salida del sistema al mundo. Acción o respuesta validada."
+# "No se emite sin evaluación."
+# [wu-mail]: protocolo de salida del conocimiento procesado.
+# Ver: MU · KU · SAMU · DIRIMENCIA · APRUEBA
+
+## WORK [N2]
+# Clase: biblioteca · Nivel: 1 · Paradigma: bajo nivel
+# La biblioteca del contacto con el metal: hardware y ejecución física.
+# "WORK como contacto con metal: hardware, actuadores, freno físico."
+# "GATE y WORK como binomio de control y ejecución."
+# Sujetos: {actuator} · {brake} · {doorman-mobile} · {door-afternoon}
+# {flybot} · {green-knowledge} · {masking-folder}
+# Ver: ACTUATOR · BRAKE · DOORMAN-MOBILE · FLYBOT
+
+## WORM [N2]
+# Clase: sistema de archivo · Inmutabilidad · HDD
+# Write Once, Read Many. Carpetas de solo lectura del sistema.
+# "/archive/WORM/ — Immutable Folios 00-256"
+# "Garantizando que nadie pueda alterar la historia de la Gesta."
+# SSD (core) + HDD (persistencia) + WORM (archivos inmutables)
+# Ver: HDD · SSD · APPEND_ONLY_LOG · ASHING
+
+## WARNING [N2]
+# Clase: señal · Sistema de monitoreo
+# Señal de advertencia en estado de tensión sin resolver.
+# "WARNING activo → Ballestrinque (tensión sin resolver)"
+# "Si X no aparece → WARNING: KU_VACÍO detectado"
+# Nivel entre ALERTA (informativo) y ALARM (crítico).
+# Ver: ALERTA · ALARM · DRIP_ALERT · MONITOR
+
+## WAIT_QUEUE [N2]
+# Clase: componente · Biblioteca: GATE · H05
+# Cola soberana de entidades en espera activa.
+# "WAIT_QUEUE: cola soberana con [term] individual declarado para cada una."
+# UF[H05] recibe la entidad en WAIT_QUEUE.
+# ACTOR_HOSTILE NO entra en WAIT_QUEUE bajo ninguna circunstancia.
+# Ver: QUEUE_MANAGEMENT · GATE · H05 · ACTOR_HOSTILE
+
+## YIELD [N2]
+# Clase: operación · Sistema WORK / SAMU
+# Ceder el turno momentáneamente para que el SAMU recalibre.
+# "YIELD (Ceder): Detiene el Work momentáneamente para que el
+# SAMU recalibre la circunstancia."
+# "YIELD: Pausa consciente para recalibración."
+# Ver: SAMU · WORK · CREATIVE_PAUSE · WHEN_DEFER
+
+# ══════════════════════════════════════════════════════════════════
+# N4 — HERRAMIENTAS, DOCUMENTOS Y REFERENCIAS
+# ══════════════════════════════════════════════════════════════════
+
+## WEB3 [N4]
+# Clase: capa · Dominio futuro · Capa D
+# Interfaz Web3 soberana del sistema LACHO.
+# BIBLIO-SOURCES(WEB3_INTERFACE).txt: interfaz WEB3 soberana verificada.
+# "GLOBAL :: Web3 · multi-idioma · crypto · KYC occidental"
+# Capa D: WEB3 Interface pendiente de implementación.
+# Ver: BLOCKCHAIN · CRYPTO · HYPERLEDGER · CAPA_D
+
+## WORKSTATION_AGENCY [N4]
+# Clase: sistema · NODO-WS · Autonomía
+# La WORKSTATION como agencia autónoma soberana.
+# "WORKSTATION AGENCY: MULTITASKING · MULTI OS · DOCKERIZACIÓN
+# · KUBERNETES · LLM · (WORKSTATION AGENCY)"
+# BIBLIO-SOURCES(NODO WORKSTATION AGENCY).txt
+# Ver: NODO-WS · AGENCY_IDE · LLM · CAPA_B
+
+## WINDSURF [N4]
+# Clase: IDE · Operaciones e implementación
+# IDE soberano principal para implementación de Capa B.
+# "Windsurf IDE · desarrollo · segunda PC · congelado hasta"
+# Rol diferenciado: Claude (gerencia) · Windsurf (operaciones).
+# Los prompts del $dia van en OPTIMIZACION_PROMPTS/$dia.txt.
+# Ver: CLAUDE · JULES · PROMPT · AIDER
+
+# ─────────────────────────────────────────────────────────────────
+# [term] :: activo · W.index.lacho · DIRIME/IMV · $sat 21-03-2026

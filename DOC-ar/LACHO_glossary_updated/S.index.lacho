@@ -1,0 +1,146 @@
+# S.index.lacho
+# GLOSSARY — Letra S / s
+# DIRIME · IMV · Sistema LACHO
+# [term] :: activo
+# Revisado y auditado: $sat 21-03-2026
+# ─────────────────────────────────────────────────────────────────
+
+# ══════════════════════════════════════════════════════════════════
+# N1 — FUNDAMENTOS DEL LENGUAJE
+# ══════════════════════════════════════════════════════════════════
+
+## SCOPE [[scope]] [N1]
+# Clase: componente · Biblioteca: TRUST · Principio soberano
+# Delimitación explícita del alcance de validez y recursos.
+# "[scope] COMO HONESTIDAD: LA VERDAD LOCAL NECESITA FRONTERAS"
+# "4.3 [scope] como honestidad de alcance"
+# "Toda verdad del sistema debe declarar su alcance."
+# Lo que queda fuera del scope no se coloniza con afirmaciones.
+# Ver: [term] · TRUST · FOUNDATION · DIRIMENCIA
+
+## SLANG [N1]
+# Clase: capa de traducción · DSL informal · Trilingüismo
+# Lenguaje operativo informal del sistema soberano.
+# "SLANG = capa de traducción informal al sistema soberano"
+# "SLANG = lenguaje operativo informal · inglés soberano"
+# Archivos: UNICODE DSL SLANG(english) · SLANG(spanish) · SLANG(Chinese)
+# Ver: DSL · CJK · LACHO · UNICODE
+
+## SILENCIO [N1]
+# Clase: estado · Sistema SAMU
+# El silencio soberano como mecanismo de control epistémico.
+# TIPOS DE SILENCIO: DIURNO · NOCTURNO
+# "SILENCE_IS_SOVEREIGN: la metáfora es el puente, el
+# (integrity_hash) es el suelo."
+# Ver: MU · SAMU · TARDANZA_DELIBERADA · INTEGRIDAD
+
+# ══════════════════════════════════════════════════════════════════
+# N2 — MÓDULOS Y MECANISMOS OPERATIVOS
+# ══════════════════════════════════════════════════════════════════
+
+## SAMU [N2]
+# Clase: biblioteca · Nivel: 1 · Paradigma: alto nivel
+# Motor de conciencia, auditoría y tardanza deliberada del sistema.
+# "SAMU @: CONCIENCIA, AUDITORÍA Y TARDANZA DELIBERADA"
+# "No es un asistente reactivo. Es un motor de conciencia y auditor."
+# Funciones: dirimencia · tardanza · auditoría · RED-REGRET.
+# Señales: SAMU #set · SAMU #rise · @human_early · @human_later
+# Ver: @ · DIRIMENCIA · RED-REGRET · AUDITORÍA
+
+## STACKING [N2]
+# Clase: biblioteca · Nivel: 1 · Paradigma: orientado a objetos
+# La biblioteca de la memoria estructurada y persistencia del sistema.
+# "STACKING — orientado a objetos"
+# 8 pilares de memoria soberana. Se distingue de ACTIVITY (estático vs dinámico).
+# Verbos: apila · inmutabiliza · consolida · ancla · reserva · cristaliza
+# Ver: CRYSTAL_FINAL · KNOWLEDGE_SYNTHESIS · PILAR · TOMO
+
+## SOCIAL [N2]
+# Clase: biblioteca · Nivel: 1 · Paradigma: declarativo
+# La biblioteca de las relaciones y la comunicación soberana.
+# "BIBLIOTECA SOCIAL (DECLARATIVO):"
+# Sujetos: {chair} · {drip} · {note} · {streaming} · {masking}
+# {launch-bot} · {headcat} · {scheduler} · {concierge-desk}
+# Ver: HEADCAT · DRIP · NOTE · MASKING · SCHEDULER
+
+## SEAL (of secrecy) [N2]
+# Clase: componente · Biblioteca: TRUST / CRYPTO
+# El sello de secreto soberano del sistema.
+# "[term] :: activo · [seal of secrecy] :: activo"
+# SEAL_ACTIVADO: en sovereign.db tras commit soberano.
+# BP_SEAL → "⊘": corte inmutable / seal inactivo en vault.rs.
+# FUNCIÓN 1 — SELLO DE HONESTIDAD EPISTÉMICA.
+# Ver: TRUST · CRYPTO · BP_SEAL · sovereign.db
+
+## SELLO [N2]
+# Clase: operación · Notaria / Ciclo soberano
+# Operación de sellado soberano de un artefacto o ciclo.
+# "SELLO DE CIERRE": marca el fin verificable de una sesión.
+# SELLO DE HONESTIDAD EPISTÉMICA: función del [seal of secrecy].
+# Ver: SEAL · NOTARIA · CIERRE · BKP
+
+## SENSE [N2]
+# Clase: módulo · work/sense.py · Radio del sistema
+# Módulo de monitoreo de entorno del sistema LACHO.
+# "sense.py: Módulo de monitoreo de entorno (la Radio)."
+# "Emite señales de estado para que el teatro se reconfigure."
+# "Si detecta saturación, termina devolviendo el código ST_BUSY."
+# BP_SENSE: Dict[str, str] → símbolo de estado por módulo.
+# Ver: MONITOR · BP_SENSE · THEATER · ORQUESTADOR
+
+## SISTEMA [N2]
+# Clase: concepto · Nivel: macro
+# La totalidad del sistema DIRIME/IMV como organismo soberano.
+# "SISTEMA RAG COMO INGENIERÍA DE CONOCIMIENTO"
+# "CORRECTO, ADECUADO, Y LEGAL DENTRO DEL SISTEMA"
+# En LACHO, el sistema es orgánico: crece, aprende y se autoverifica.
+# Ver: DIRIME · IMV · LACHO · ARQUITECTURA
+
+## SSH [N2]
+# Clase: protocolo · Sistema de comunicación remota
+# Secure Shell. Protocolo de acceso remoto entre nodos soberanos.
+# "main.teather gestiona conexiones SSH/API."
+# "setup.teather: verifica rutas, llaves SSH y dependencias."
+# "Si es remoto: main.teather envía la orden por SSH."
+# CAT(SSH): módulo de túneles SSH hacia nodo remoto (Capa C).
+# Ver: CAT(SSH) · NODO · BRIDGE · CLOUD
+
+# ══════════════════════════════════════════════════════════════════
+# N3 — ACTORES, ESTADOS Y CLASIFICACIONES
+# ══════════════════════════════════════════════════════════════════
+
+## SHIELD / (shield seat) [N3]
+# Clase: asiento de autoridad · Biblioteca: CRYPTO
+# El asiento de defensa y blindaje del sistema.
+# "6) (SHIELD SEAT) — ASIENTO DE DEFENSA"
+# Protege el búnker soberano ante intrusiones externas.
+# Ver: ASIENTO · CRYPTO · TRUST · (spark seat)
+
+## SOBERANA / SOBERANO [N3]
+# Clase: calificativo · Nivel: constitucional
+# Calificativo de máxima autoridad en el sistema LACHO.
+# "LA TRÍADA SOBERANA" · "commit soberano" · "ledger soberano"
+# Todo elemento soberano es: trazable · verificable · bajo [term].
+# Ver: TRUST · AUTORIDAD · FOUNDATION · AXIOMA
+
+## SSD [N3]
+# Clase: recurso hardware · Santuario lógico
+# Solid State Drive. El Santuario Lógico del sistema.
+# "SSD alberga exclusivamente el núcleo soberano y la lógica de control."
+# "Inteligencia Liviana en SSD, Fuerza Bruta en HDD."
+# "Despliegue de Semilla: nodo raíz en SSD, primer .egg en HDD."
+# Ver: HDD · CAT(MU) · RAM · HARDWARE
+
+# ══════════════════════════════════════════════════════════════════
+# N4 — HERRAMIENTAS, DOCUMENTOS Y REFERENCIAS
+# ══════════════════════════════════════════════════════════════════
+
+## SESION_ACTIVA [N4]
+# Clase: documento · JOURNAL/ACTIVE/
+# Punto de entrada único para toda sesión de trabajo.
+# "Copiar este archivo al inicio de toda conversación con AI."
+# Contiene: estado del sistema · comandos base · checklist de cierre.
+# Ver: JOURNAL · ARRANQUE · CIERRE · ARCHITECTURE
+
+# ─────────────────────────────────────────────────────────────────
+# [term] :: activo · S.index.lacho · DIRIME/IMV · $sat 21-03-2026

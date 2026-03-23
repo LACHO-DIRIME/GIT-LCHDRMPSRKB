@@ -1,0 +1,296 @@
+# B.index.lacho
+# GLOSSARY — Letra B / b
+# DIRIME · IMV · Sistema LACHO
+# [term] :: activo · [seal of secrecy] :: activo
+# Revisado y auditado: $sat 21-03-2026
+# ─────────────────────────────────────────────────────────────────
+# N1 → Fundamentos del lenguaje
+# N2 → Módulos y mecanismos operativos
+# N3 → Actores, estados y clasificaciones
+# N4 → Herramientas, documentos y referencias
+# ─────────────────────────────────────────────────────────────────
+
+# ══════════════════════════════════════════════════════════════════
+# N1 — FUNDAMENTOS DEL LENGUAJE
+# ══════════════════════════════════════════════════════════════════
+
+## BIBLIOTECA [N1]
+# Clase: órgano del lenguaje · Nivel: constitucional
+# En LACHO una biblioteca no es "un conjunto de funciones":
+# es un órgano con jurisdicción propia.
+# Las nueve bibliotecas del sistema:
+#   TRUST (imperativo) · SOCIAL (declarativo) · CRYPTO (funcional)
+#   STACKING (orientado a objetos) · GATE (de script)
+#   WORK (bajo nivel) · SAMU (alto nivel)
+#   METHOD (operadores) · ACTIVITY (movimiento/ciclos)
+# Fuente canónica: BIBLIOTECAS_MADRE_LACHO.txt
+
+## BILATERAL [N1]
+# Clase: operador · Gramática LACHO
+# Operación que afecta ambos lados simultáneamente.
+# BILATERAL ::= "<>"
+# El operador BILATERAL <> conecta el Vortex con el Stacking
+# principal para transferencia de Haberes validados.
+
+## BNF [N1]
+# Clase: notación · Gramática formal LACHO
+# Backus-Naur Form extendida (EBNF) propia del sistema.
+# ;;; — Notación BNF extendida (EBNF) propia del sistema
+# 5.3 Gramática BNF Simplificada: especificación de la sintaxis LACHO.
+# Ver: ANTLR · AST · BOOLEAN · BILATERAL
+
+## BOOLEAN [N1]
+# Clase: tipo de dato · Gramática ANTLR
+# Tipo de valor booleano en la gramática JSON/LACHO.
+# JSON_VALUE ::= STRING | NUMBER | BOOLEAN | JSON_OBJECT
+
+## BROADCAST [N1]
+# Clase: destino · Gramática LACHO
+# Destino especial que envía un mensaje a todos los nodos activos.
+# destino: IDENTIFIER | BROADCAST
+# IF destino == "broadcast": >> BROADCAST
+# [command] :: GLOBAL_BROADCAST
+
+## BLACKLIST [N1]
+# Clase: filtro · Gramática · ledger.py
+# Lista de formas verbales excluidas del sistema de validación.
+# En ledger.py: filtra cristales y verbos que no cumplen el estándar.
+# "Filtrar cristales que no estén en BLACKLIST"
+# Ver: GREEN-KNOWLEDGE · BEHAVIORAL_RAG
+
+# ══════════════════════════════════════════════════════════════════
+# N2 — MÓDULOS Y MECANISMOS OPERATIVOS
+# ══════════════════════════════════════════════════════════════════
+
+## BALLPAPER [N2]
+# Clase: módulo · IMV/core/ballpaper.py · UI de estado
+# Interfaz de texto soberana que renderiza el estado del sistema
+# en tiempo real sin overhead gráfico.
+# "BALLPAPER como UI universal de estado, renderizable en cualquier dispositivo."
+# Tabla 3 familias + assign_unicode_token().
+# Funciones: ballpaper_render() · bp_render() · NOTARIA BALLPAPER.
+# Ver: BP_RITMO · BP_SENSE · BP_REGRET · BP_NUDO · BP_SEAL · BP_TRUST · BP_GREEN
+
+## BEHAVIORAL_RAG [N2]
+# Clase: algoritmo · Sistema RAG · Nivel: Capa A
+# Motor de memoria dinámica que aprende conductas del sistema.
+# "BEHAVIORAL RAG: aprende conductas a partir de errores y correcciones."
+# Alimentado por: APPEND_ONLY_LOG · UF[H48] · journal.
+# Forma parte de los tres algoritmos fundamentales de LACHO.
+# Ver: COGNITIVE_RAG · GREEN-KNOWLEDGE · BM25
+
+## BM25 [N2]
+# Clase: algoritmo de indexación · Sistema RAG · rag.py
+# Best Match 25. Motor de búsqueda por relevancia del RAG.
+# "BM25 index · 4 capas · query boosted"
+# Índice construido desde el CORPUS soberano con boost por tipo de archivo
+# (×1.0 base → ×1.8 críticos → ×2.0 NOTARIA).
+# Ver: BEHAVIORAL_RAG · ANCHOR_RAG · BOOST
+
+## BRAIN [N2]
+# Clase: módulo · Trazo interno · brain.py
+# El trazo interno del sistema: KU → Ψ → WU.
+# "brain.py es el trazo interno. Python es el trazo."
+# BRAIN CORE — El trazo. Señal: [RAG: BRAIN :: CORE :: INIT]
+# Se opone a vault.rs (el guardián): BRAIN ejecuta; VAULT protege.
+# Ver: KU · Ψ · WU · SAMU
+
+## BACKUP / BKP [N2]
+# Clase: operación · Sistema de respaldo soberano
+#   BKP_LEDGER  → sovereign.db · diario · criticidad máxima
+#   BKP_CORPUS  → CORPUS/ · semanal ($thu)
+#   BKP_FULL    → tar DRA/ completo · sellado H63 · $sat+$sun
+# "NC_SUN_BKP_NOT: BKP_FULL $sun · tar sovereign.db · backup total"
+# Ver: ARCHIVE · sovereign.db
+
+## BATCH_PROCESSING [N2]
+# Clase: protocolo · Hexagrama: H07 · 師 Shī · Biblioteca: WORK
+# Movilización de grandes masas de datos bajo estructura de mando rígida.
+# Identidad técnica: [BATCH_PROCESSING / LOGISTICAL_COMMAND]
+# Directiva: no ejecutar sin calibración previa de UF[H07].
+# Riesgo: desbordamiento de RAM y pérdida de sincronía.
+
+## BACKGROUND_PROCESS [N2]
+# Clase: protocolo · Hexagrama: H15 · 謙 Qiān · Biblioteca: STACKING
+# Procesamiento en segundo plano sin disrupción visible.
+# Identidad técnica: [BACKGROUND_PROCESS / STEALTH_MODE]
+# !!Invoke!! 15[Stacking] -> [BACKGROUND_PROCESS]
+# S bajo (0.1–0.3): aprendizaje pasivo, registra en [mu-store].
+
+## BIOMETRICS [N2]
+# Clase: módulo · Sistema de acceso físico-digital
+# Validación biométrica para apertura de Gates soberanos.
+# "BIOMETRICS: sensores físicos para validar la huella única del operador."
+# "Sin resonancia biológica, el (spark seat) permanece bloqueado."
+# Controla acceso físico junto a DOORMAN-MOBILE.
+# Ver: (spark seat) · GATE · AUTHORITY
+
+## BOOST [N2]
+# Clase: multiplicador · Sistema RAG · rag.py
+# Factor de amplificación de relevancia para documentos en BM25.
+# Niveles: ×1.0 base · ×1.5 Askings · ×1.8 críticos · ×2.0 NOTARIA
+# Ver: BM25 · ANCHOR_RAG
+
+## BRAKE / {brake} [N2]
+# Clase: sujeto canónico · Biblioteca: WORK
+# Módulo de detención controlada del sistema.
+# "{brake}: custodiar / detener" — señal de saturación inmediata.
+# BRAKE_ACTIVE · BRAKE_WARNING · BRAKE_HOLDING · BRAKE_EMERGENCY
+# Ver: {actuator} · {doorman-mobile} · WORK
+
+## BRIDGE [N2]
+# Clase: módulo · CAT(BRIDGE) · DIRIME_v2
+# Enlace híbrido entre Stacking local y Cloud.
+# CAT(BRIDGE): conexión entre componentes heterogéneos.
+# SOCKET_BRIDGE: variante de comunicación por socket.
+# BRIDGE_ACTIVE: estado operativo del puente.
+# Ver: CAT(BRIDGE) · groq/bridge.py
+
+## BLOCKCHAIN [N2]
+# Clase: protocolo · Dominio BOLIVAR · Capa B
+# Registro inmutable distribuido en el nodo BOLIVAR.
+# Interior: BSN permisionado. Exterior: Ethereum/DeFi.
+# Ver: BOLIVAR · BSN · HYPERLEDGER · CRYPTO
+
+## BLAKE3 [N2]
+# Clase: función hash · Dominio BARRIOS · Seguridad
+# Algoritmo de hash criptográfico de alto rendimiento.
+# "BARRIOS: forge_remesa · canal_hash_BLAKE3"
+# NC_LR_HASH: MD5(0.3) · SHA256(0.9) · SHA3(0.95) · BLAKE3(0.92)
+# Ver: BARRIOS · SHA256 · LINEAR_REGRESSION
+
+## BOOT / CAT(BOOT) [N2]
+# Clase: módulo · Capa D · Ciclo matutino
+# Arranque soberano del sistema en cada ciclo diario.
+# CAT(BOOT): valida TRUST + autoridad del búnker al inicio.
+# "Optimizando el sistema para el próximo CAT(BOOT) matutino."
+# UF[H64]: Recursive Genesis → preparación para el próximo CAT(BOOT).
+# Ver: CAT · TRUST · UF[H64]
+
+## BLUEWORDS [N2]
+# Clase: mecanismo · DRA / ENGINE OFFSET
+# Palabras clave de estado KU en el Dynamic Resource Allocation.
+# OFFSET(BLUEWORDS): índice de Blue-Words pendientes en el DRA.
+# "Blue-Words → WU": el proceso de materialización de palabras KU.
+# Ver: DRA · KU · BLUE · OFFSET
+
+## BALLESTRINQUE [N2]
+# Clase: nudo · Topología · Notación de sentencias
+# El nudo de la tensión sostenida entre dos fuerzas.
+# "BALLESTRINQUE — H32_EVALUATING: tensión entre continuar sosteniendo
+# y reconocer que lo sostenido necesita transformarse."
+# Notación: --[Ballestrinque] al final de sentencias con tensión activa.
+# Ver: AS_DE_GUIA · NUDO_DE_OCHO · NUDO_CORREDIZO
+
+# ══════════════════════════════════════════════════════════════════
+# N3 — ACTORES, ESTADOS Y CLASIFICACIONES
+# ══════════════════════════════════════════════════════════════════
+
+## BALLENA [N3]
+# Clase: depredador estandarizable · Ballpaper · SAMU
+# Volumen + eficiencia = procesamiento masivo con filtro.
+# SPECIES_DECL ::= ("AGUILA" | "LINCE" | "ARANA" | "BALLENA")
+# Modo BALLENA: procesamiento de alto volumen con filtro soberano.
+# Ver: ÁGUILA · ARAÑA · LINCE · ballpaper.py
+
+## BLUE [N3]
+# Clase: extensión · Tipo de agente
+# Extensión .blue para agentes remotos/crypto/forge.
+# BRANCH_BLUE: feature branch de desarrollo con KU activo.
+# "BLUE: dra → KU · Dynamic Resource Allocation · pre-WU sistema"
+# Ver: .green (agente local) · AGENTE · DRA
+
+## BLOQUE [N3]
+# Clase: sección documental · Corpus
+# Unidad organizativa de los documentos cognitivos del sistema.
+# BLOQUE 1 → COGNITIVOS · BLOQUE 2 → ACTIVITY · BLOQUE 3 → WORK
+# BLOQUE 4 → SAMU/SOCIAL · BLOQUE 5 → STACKING · BLOQUE 6 → DIRIME LINUX
+# Cada bloque agrupa un dominio temático del corpus soberano.
+
+## BLOQUEADO [N3]
+# Clase: estado · Nivel: sistema
+# Estado de un módulo o capa que no puede operar.
+# Capa C: BLOQUEADA 🔒 (hardware Ryzen pendiente).
+# Contrario de: ACTIVO · ANCHORED.
+
+## BUSY [N3]
+# Clase: estado · Nivel: sistema
+# Estado de un módulo o recurso en uso máximo.
+# Un recurso BUSY no acepta nuevas solicitudes hasta liberar ciclo.
+# Ver: BRAKE · BUFFER · saturación
+
+## BETA [N3]
+# Clase: clasificación · Codex del sistema
+# |codex|: 02-BETA [The 64 Practitioners & The RAM Scarcity]:
+# simula cómo los 64 hexagramas compiten en 12GB de RAM.
+# Estado: [MODELO 02-BETA INDEXADO]
+
+## BRANCH_BLUE [N3]
+# Clase: estado · Sistema de versiones
+# Feature branch de desarrollo en modo KU activo.
+# SLANG: 分支 (fēnzhī) → branch → DIR(FORK) · BRANCH_BLUE · .blue
+# Ver: BLUE · KU · DIR(FORK)
+
+# ══════════════════════════════════════════════════════════════════
+# N4 — HERRAMIENTAS, DOCUMENTOS Y REFERENCIAS
+# ══════════════════════════════════════════════════════════════════
+
+## BIBLIO-SOURCES [N4]
+# Clase: tipo de documento · CORPUS/BIBLIA/
+# Archivos de fuentes doctrinales del sistema LACHO.
+# Naming: BIBLIO-SOURCES(NOMBRE).txt
+# "Es 'vivo': cuando creas un nuevo BIBLIO-SOURCES(NUEVO).txt,
+# agrégalo al CORPUS_INDEX.md siguiendo la plantilla."
+# Ver: BIBLIA · CORPUS · CORPUS_INDEX
+
+## BIBLIA [N4]
+# Clase: directorio · CORPUS/BIBLIA/
+# Directorio de referencias y fuentes doctrinales del corpus.
+# Contiene todos los BIBLIO-SOURCES(X).txt del sistema.
+# Ver: BIBLIO-SOURCES · CORPUS · BIBLIOTECA
+
+## BIBLIOTECAS_MADRE_LACHO [N4]
+# Clase: documento · CORPUS/DOCUMENTATION/
+# Documento fundacional que especifica las bibliotecas madre del sistema.
+# Base ontológica de la jerarquía de bibliotecas LACHO.
+
+## BOLIVAR [N4]
+# Clase: nodo económico · Dominio KALIL
+# Nodo de blockchain soberano dentro del sistema KALIL.
+# BOLIVAR(blockchain): interior=BSN permisionado · exterior=Ethereum/DeFi.
+# $fri: Nerve Cell BOLIVAR Blockchain Notaria.
+# Ver: KALIL · BSN · BLOCKCHAIN · BARRIOS
+
+## BARRIOS [N4]
+# Clase: nodo económico · Dominio KALIL
+# Nodo de acceso y remesas dentro del sistema KALIL.
+# BARRIOS(acceso): forge_remesa · canal_hash_BLAKE3 · JA3_whitelist · net_flow.
+# Ver: KALIL · BLAKE3 · BOLIVAR
+
+## BP_RITMO / BP_SENSE / BP_REGRET / BP_NUDO / BP_SEAL / BP_TRUST / BP_GREEN [N4]
+# Clase: constantes · ballpaper.py · vault.rs
+# Constantes de iconografía del sistema Ballpaper:
+#   BP_RITMO  → Dict[str, str]: símbolo de ritmo por día
+#   BP_SENSE  → Dict[str, str]: símbolo de estado por módulo
+#   BP_REGRET → "✕": señal de error o archivo no encontrado
+#   BP_NUDO   → "∞": símbolo de nudo soberano en ledger
+#   BP_SEAL   → "⊘": corte inmutable / seal inactivo
+#   BP_TRUST  → "⊞": trust inactivo / vault requiere verificación
+#   BP_GREEN  → "✦": entradas válidas en el índice
+# Ver: BALLPAPER · vault.rs · ledger.py
+
+## BSN [N4]
+# Clase: referencia · Infraestructura blockchain · China
+# Blockchain Service Network: red blockchain permisionada china.
+# "BOLIVAR :: interior=BSN permisionado"
+# "CHINA: e-CNY · BSN · KYC PBOC"
+# Ver: BOLIVAR · BLOCKCHAIN · CHINA_DUAL
+
+## BUILDER [N4]
+# Clase: interfaz · GUI · elpulsar.py
+# GUI del sistema LACHO para construcción de sentencias.
+# UNICODE: GAP_GUI_BUILDER → LACHO BUILDER GUI · port 8742
+# Ver: ELPULSAR · GUI · BALLPAPER
+
+# ─────────────────────────────────────────────────────────────────
+# [term] :: activo · B.index.lacho · DIRIME/IMV · $sat 21-03-2026

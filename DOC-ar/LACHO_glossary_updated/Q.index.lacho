@@ -1,0 +1,38 @@
+# Q.index.lacho
+# GLOSSARY — Letra Q / q
+# DIRIME · IMV · Sistema LACHO
+# [term] :: activo
+# Revisado y auditado: $sat 21-03-2026
+# ─────────────────────────────────────────────────────────────────
+
+# ══════════════════════════════════════════════════════════════════
+# N2 — MÓDULOS Y MECANISMOS OPERATIVOS
+# ══════════════════════════════════════════════════════════════════
+
+## QUIETUD [N2]
+# Clase: estado · Hexagrama: H52 · 艮 Gèn · Biblioteca: STACKING
+# El estado de quietud soberana del sistema.
+# "㊼ QUIETUD" — Estado Global: [SISTEMA EN QUIETUD ABSOLUTA - INTEGRIDAD 100%]
+# "el sistema completa el ciclo actual y entra en H52 (quietud)"
+# CREATIVE_PAUSE aplica H52 a H64.
+# UF[H52]: cristaliza el CRYSTAL_FINAL.
+# Ver: H52 · STACKING · CREATIVE_PAUSE · CRYSTAL_FINAL
+
+## QUEUE_MANAGEMENT [N2]
+# Clase: protocolo · Hexagrama: H05 · 需 Xū · Biblioteca: GATE
+# Gestión soberana de la cola de espera del sistema.
+# [QUEUE_MANAGEMENT / SYNC_WAIT]
+# !!Invoke!! 5[Gate] -> [QUEUE_MANAGEMENT]
+# La cola soberana retiene actores e inputs en espera activa.
+# Ver: H05 · GATE · ESPERA · CSC · FIFO
+
+## QUARANTINE_HOLD [N2]
+# Clase: estado · Sistema de seguridad
+# Retención soberana de actores o KU inciertos.
+# "QUARANTINE_HOLD — retención soberana de lo incierto,
+# el nudo que contiene sin juzgar."
+# "retención de actor o KU incierto hasta clasificación soberana completa."
+# Ver: ACTOR_UNKNOWN · KU · GATE · BLACKLIST
+
+# ─────────────────────────────────────────────────────────────────
+# [term] :: activo · Q.index.lacho · DIRIME/IMV · $sat 21-03-2026

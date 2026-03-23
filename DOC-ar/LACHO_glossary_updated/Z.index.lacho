@@ -1,0 +1,46 @@
+# Z.index.lacho
+# GLOSSARY — Letra Z / z
+# DIRIME · IMV · Sistema LACHO
+# [term] :: activo
+# Revisado y auditado: $sat 21-03-2026
+# ─────────────────────────────────────────────────────────────────
+
+# ══════════════════════════════════════════════════════════════════
+# N2 — MÓDULOS Y MECANISMOS OPERATIVOS
+# ══════════════════════════════════════════════════════════════════
+
+## ZIPPER [N2]
+# Clase: comando / protocolo de emergencia
+# Comando de cierre soberano de emergencia del sistema.
+# "! : Command. Ejecución inmediata en el bloque Work. (Ej: !ZIPPER)"
+# "THE ZIPPER-SERVICE [Emergency Protocol]"
+# "echo '🚨 [ZIPPER]: Activando Hexagrama 52 (Quietud Absoluta)'"
+# Trazabilidad: cada !ZIPPER es unívoco en el Ledger (Hashing UNICODE).
+# ZIPPER_NOON: transición soberana al mediodía (iconografía H5→H56).
+# Ver: H52 · QUIETUD · HALT · AS_DE_GUIA
+
+## ZKP [N2]
+# Clase: protocolo criptográfico · Identidad soberana
+# Zero-Knowledge Proof. Criptografía de identidad soberana.
+# "Asientos (Seats) + Criptografía de Identidad ZKP"
+# "Manual de Criptografía de Identidad (ZKP y Firma de Asientos)"
+# Blindaje de quién opera el sistema sin revelar la clave.
+# Ver: FIRMA_SOBERANA · AUTHORIZED_0 · ASIENTO · vault.rs
+
+## ZIP [N2]
+# Clase: módulo · CAT(ZIP) · Flujo de datos
+# Módulo de compresión y empaquetado soberano.
+# CAT(ZIP): protocolo de compresión dentro del pipeline CAT.
+# "CAT() (OS, CODE, MU, ZIP) — verificar que la tensión es correcta."
+# Ver: CAT · BKP · ARCHIVE · WORM
+
+## ZONA [N2]
+# Clase: concepto · Sistema SAMU · Nivel: cognitivo
+# Zona de operación soberana del sistema.
+# ZONAS_SOFISMO: mapeo de las zonas donde el sofismo puede infiltrarse.
+# "ZONAS_SOFISMO.md — Especificación de cada zona"
+# "MAPA DEL SOFISMO EN EL UNIVERSO LACHO"
+# Ver: SOFISMO · SAMU · UNIVERSO · SCOPE
+
+# ─────────────────────────────────────────────────────────────────
+# [term] :: activo · Z.index.lacho · DIRIME/IMV · $sat 21-03-2026

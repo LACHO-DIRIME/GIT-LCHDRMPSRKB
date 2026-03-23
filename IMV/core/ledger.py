@@ -37,6 +37,13 @@ class TransactionType(Enum):
     SYSTEM_EVENT = "SYSTEM_EVENT"
     UNICODE_SWITCH = "UNICODE_SWITCH"
     TOMO_RECORD = "TOMO_RECORD"
+    # TASK_2.3 — EVENT_SOURCING additions
+    SENTENCE_SUBMITTED = "SENTENCE_SUBMITTED"
+    GRAMMAR_VALIDATED  = "GRAMMAR_VALIDATED"
+    SAMU_APPROVED      = "SAMU_APPROVED"
+    CRYSTAL_WRITTEN    = "CRYSTAL_WRITTEN"
+    SCALAR_UPDATED     = "SCALAR_UPDATED"
+    TERM_EXPIRED       = "TERM_EXPIRED"
 
 
 # ── Modelo de transacción ─────────────────────────────────────────────
@@ -438,6 +445,42 @@ class HLFabric:
         except Exception as e:
             self.status = LedgerStatus.CORRUPTED
             return False
+
+    def record_event(self, event_type: TransactionType, data: dict) -> str:
+        """
+        EVENT_SOURCING: record every state transition, not just final state.
+        Returns event_id. Each call is append-only — never overwrites.
+        TASK_2.3
+        """
+        tx = Transaction(type=event_type, data=data)
+        return self.record_transaction(tx)
+
+    def get_history(self, since_timestamp: float = 0.0) -> list[dict]:
+        """
+        Returns ordered event log since given timestamp (epoch seconds).
+        TASK_2.3
+        """
+        try:
+            with sqlite3.connect(self.db_path) as conn:
+                rows = conn.execute(
+                    "SELECT id, type, timestamp, data FROM transactions "
+                    "WHERE timestamp >= ? ORDER BY timestamp ASC",
+                    (since_timestamp,)
+                ).fetchall()
+                import json
+                result = []
+                for row in rows:
+                    try:
+                        data = json.loads(row[3]) if row[3] else {}
+                    except Exception:
+                        data = {"raw": str(row[3])}
+                    result.append({
+                        "id": row[0], "type": row[1],
+                        "timestamp": row[2], "data": data
+                    })
+                return result
+        except Exception:
+            return []
 
     def get_stats(self) -> dict:
         """Estadísticas del ledger soberano."""

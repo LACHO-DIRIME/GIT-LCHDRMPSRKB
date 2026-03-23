@@ -1,0 +1,143 @@
+# F.index.lacho
+# GLOSSARY — Letra F / f
+# DIRIME · IMV · Sistema LACHO
+# [term] :: activo · [seal of secrecy] :: activo
+# Revisado y auditado: $sat 21-03-2026
+# ─────────────────────────────────────────────────────────────────
+
+# ══════════════════════════════════════════════════════════════════
+# N1 — FUNDAMENTOS DEL LENGUAJE
+# ══════════════════════════════════════════════════════════════════
+
+## FLOW_STMT [N1]
+# Clase: token · Gramática ANTLR
+# Declaración de flujo de datos en la gramática LACHO.
+# FLOW_STMT ::= SOURCE FLOW_OP PROCESS FLOW_OP DESTINATION
+# ACTION ::= FLOW_STMT | VERB_PHRASE | STATE_TRANSITION
+# Ver: ACTION · FLOW_RIGHT · FLOW_LEFT · ARROW_RIGHT
+
+## FILTER [N1]
+# Clase: operador · Biblioteca: SAMU / RAG
+# Filtro soberano aplicado sobre el flujo de mensajes o datos.
+# !!FILTER!! verifica ratio emoción/Tr en cada mensaje.
+# !!FILTER!! y !!ROUTE!! activos: pareja de operadores de selección.
+# Ver: GREEN-KNOWLEDGE · BLACKLIST · DOGMA-VIRTUAL · APLICAR
+
+## FIFO [N1]
+# Clase: estructura · Sistema GATE
+# First-In, First-Out. Orden de procesamiento del gate.cat.
+# "gate.cat procesa mensajes en orden FIFO estricto."
+# Buffer de interrupciones y alertas de alta prioridad en FIFO.
+# Ver: GATE · gate.cat · BUFFER · CSC
+
+## FINITUD [N1]
+# Clase: principio soberano · Tríada de Poder
+# La finitud es uno de los tres principios soberanos del sistema.
+# "TRÍADA DE PODER: TRUST, FINITUD, TENSIÓN"
+# "[term] como finitud obligatoria (anti-dogma)"
+# Todo ciclo debe tener fin. La finitud impide que una verdad
+# local se convierta en absoluto.
+# Ver: [term] · TRUST · TENSIÓN · AXIOMA
+
+# ══════════════════════════════════════════════════════════════════
+# N2 — MÓDULOS Y MECANISMOS OPERATIVOS
+# ══════════════════════════════════════════════════════════════════
+
+## FABRIC / HL FABRIC [N2]
+# Clase: protocolo · Hyperledger Fabric · Capa B/D
+# Red soberana inter-nodos basada en Hyperledger Fabric.
+# "DIRIME-IMV_LEDGER — ledger.py + HL FABRIC"
+# CLUSTER #FABRIC: segmento del DRA dedicado a la red soberana.
+# Capa D: HL FABRIC real con dos nodos físicos.
+# Ver: LEDGER · BLOCKCHAIN · BOLIVAR · DRA
+
+## FLYBOT [{flybot}] [N2]
+# Clase: sujeto canónico · Biblioteca: WORK · Agente nocturno
+# Bot de ejecución exterior: WU → movimiento → H51.
+# "FLYBOT · WU→movimiento · H51 · bot nocturno"
+# "Bot volador, exploración activa."
+# Ver también: AGENTE_DESPLEGADO · WORK · {launch-bot}
+
+## FOUNDATION [N2]
+# Clase: módulo · IMV/core/foundation.py · Nivel: Capa A
+# Módulo que verifica las condiciones soberanas del sistema.
+# TRUST FOUNDATION =><= .. verifica .. condiciones_soberanas
+# verify_sovereign_conditions(): función canónica.
+# "En los puntos críticos, la retórica está prohibida.
+# La fundación se verifica o no se verifica."
+# Ver: FOUNDATION_COMPROMISED · TRUST · SCALAR_S
+
+## FOUNDATION_COMPROMISED [N2]
+# Clase: estado de emergencia · Sistema foundation.py
+# Estado crítico cuando los componentes de fundación fallan.
+# "FOUNDATION_COMPROMISED: componentes críticos fallan."
+# "FOUNDATION_COMPROMISED + SCOPE_VIOLATED + TERM_EMERGENCY: emergencia."
+# Activa protocolo de crisis soberana.
+# Ver: FOUNDATION · CRISIS_MANAGEMENT · TRUST
+
+## FRACTAL [N2]
+# Clase: principio · Ingeniería del sistema · H51
+# Principio de expansión auto-similar del sistema LACHO.
+# "INGENIERÍA FRACTAL: EL LÍMITE DE LOS 256"
+# "LA ONTOLOGÍA DE LA IGNICIÓN FRACTAL (H51)"
+# "RIFF DE EXPANSIÓN FRACTAL ([ku-chat])"
+# El Algoritmo Conejo expande fractalmente: 1→2→4→8→256.
+# Ver: ALGORITMO_CONEJO · H51 · RABBIT_ALGORITHM
+
+## FIRMA_SOBERANA [N2]
+# Clase: mecanismo criptográfico · Sistema de verificación
+# Hash soberano que identifica unívocamente un módulo o estado.
+# "Genera FIRMA_SOBERANA como hash del vector."
+# "Todo módulo puede verificar contra FIRMA_SOBERANA."
+# Ver: BLAKE3 · SHA256 · AUTHORIZED_0 · vault.rs
+
+## FOLIAR [N2]
+# Clase: documento constitucional · Nivel: constitucional
+# "FOLIAR no es una fuente más — opera como constitución."
+# Declara: Manifiesto Fundacional (Folio 00) · Diccionario/Gramática
+# (Folio 01) · Informe de Arquitectura (Folio 02).
+# Ver: FOLIO · CONSTITUCIONAL · COGNITIVO_01
+
+## FOLIO [N2]
+# Clase: unidad documental · Sistema FOLIAR
+# Unidad de documentación dentro del sistema FOLIAR.
+# Formato: "# EMOJI FOLIO NNN: TÍTULO"
+# El sistema tiene 160+ folios en el corpus.
+# Los folios 107–134 tienen formato pendiente de corrección.
+# Ver: FOLIAR · CORPUS · DIRECTIVA
+
+# ══════════════════════════════════════════════════════════════════
+# N3 — ACTORES, ESTADOS Y CLASIFICACIONES
+# ══════════════════════════════════════════════════════════════════
+
+## FRACTAL (estado) [N3]
+# Clase: calificativo · Nivel: ingeniería
+# Calificativo de un proceso o estructura que se expande
+# auto-similarmente. En LACHO: arquitectura fractal del sistema.
+# "La arquitectura fractal permite escalar sin romper la coherencia."
+
+## FUTURO [N3]
+# Clase: estado · Capa D · Arquitectura
+# Estado de componentes o capacidades planificadas pero no activas.
+# Capa D — FUTURO 🌐: WEB3, dos nodos físicos, HL FABRIC real.
+# Ver: CAPA · BLOQUEADO · ACTIVO
+
+# ══════════════════════════════════════════════════════════════════
+# N4 — HERRAMIENTAS, DOCUMENTOS Y REFERENCIAS
+# ══════════════════════════════════════════════════════════════════
+
+## FASE [N4]
+# Clase: etapa · Sistema de sprints / Ciclos de desarrollo
+# Etapa de desarrollo del sistema. FASE 1 → FASE 2 → FASE N.
+# Ejemplo: "FASE 2 :: WeChat mini-prog test · e-CNY wallet · BSN testnet"
+# Ver: SPRINT · SEMANA · CAPA · CICLO
+
+## FORMATO [N4]
+# Clase: especificación · Documentación soberana
+# Convención de formato para archivos y documentos del sistema.
+# Formato canónico de sentencia LACHO: 6 elementos obligatorios.
+# Formato de folio: "# EMOJI FOLIO NNN: TÍTULO"
+# Ver: FOLIO · FOLIAR · NAMING
+
+# ─────────────────────────────────────────────────────────────────
+# [term] :: activo · F.index.lacho · DIRIME/IMV · $sat 21-03-2026

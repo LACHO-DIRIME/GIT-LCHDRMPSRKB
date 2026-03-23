@@ -1,0 +1,205 @@
+GUÍAS Y ELEMENTOS POCO FRECUENTES - SISTEMA DE DETECCIÓN
+===========================================================
+
+🔍 GUÍA PRINCIPAL - DETECCIÓN DE ACRÓNIMOS POR LETRAS RARAS:
+
+PASO 1: IDENTIFICACIÓN DE LETRAS RARAS
+---------------------------------------
+Letras de alta prioridad (más raras y significativas):
+- K, Q, X, Z, W, J, Y
+
+Criterio de rareza:
+- Frecuencia < 1% en vocabulario técnico general
+- Uso específico en contextos tecnológicos
+- Asociación fuerte con conceptos técnicos
+
+PASO 2: ANÁLISIS DE COINCIDENCIAS
+---------------------------------
+Para cada letra rara identificada:
+
+1. Buscar conceptos técnicos que inicien con esa letra
+2. Verificar si el contexto del sistema relaciona ambos
+3. Evaluar la coherencia semántica
+4. Comprobar si el resto de letras tienen significado
+
+PASO 3: VALIDACIÓN CONTEXTUAL
+------------------------------
+- Buscar documentación explícita
+- Verificar uso consistente en el sistema
+- Confirmar coherencia con otros componentes
+- Validar lógica interna del acrónimo
+
+🔍 ELEMENTOS POCO FRECUENTES IDENTIFICADOS:
+
+LETRA K:
+- Conceptos: Kernel, Key, Knowledge, Kilobyte
+- Contexto DIRIME: KALIL, KALIL_STATUS, KALIL_TRIGGER
+- Probabilidad acrónimo: ALTA
+- Evidencia: KALIL = Kernel AI Logic & Information Learning
+
+LETRA Q:
+- Conceptos: Query, Queue, Quantum, Quality
+- Contexto DIRIME: Query, Queue
+- Probabilidad acrónimo: MEDIA
+- Investigación requerida: Buscar palabras con Q inicial
+
+LETRA X:
+- Conceptos: XML, X-Server, eXecute, eXpand
+- Contexto DIRIME: XML, X-Server
+- Probabilidad acrónimo: MEDIA
+- Investigación requerida: Buscar palabras con X inicial
+
+LETRA W:
+- Conceptos: Web, Workspace, Window, Workflow
+- Contexto DIRIME: WORK, Workspace, Web
+- Probabilidad acrónimo: BAJA (WORK = Work, no acrónimo)
+- Investigación requerida: Buscar otras palabras con W
+
+LETRA Z:
+- Conceptos: Zone, Zero, Zip, Z-index
+- Contexto DIRIME: Zone, Zero
+- Probabilidad acrónimo: BAJA
+- Investigación requerida: Buscar palabras con Z inicial
+
+🔍 MÉTODO DE EVALUACIÓN DE COINCIDENCIAS:
+
+NIVELES DE EVIDENCIA:
+---------------------
+
+Nivel 1 - EVIDENCIA FUERTE:
+- Letra rara + coincidencia conceptual directa
+- Documentación explícita del acrónimo
+- Uso consistente en el sistema
+- Coherencia semántica completa
+
+Ejemplo: KALIL (K = Kernel, documentado, usado consistentemente)
+
+Nivel 2 - EVIDENCIA MODERADA:
+- Letra rara + coincidencia conceptual probable
+- Uso contextual pero sin documentación explícita
+- Coherencia semántica parcial
+
+Ejemplo: Palabras con Q, X, W sin confirmación
+
+Nivel 3 - EVIDENCIA DÉBIL:
+- Letra rara sin coincidencia conceptual clara
+- Uso ambiguo o múltiple
+- Sin coherencia semántica evidente
+
+Ejemplo: Palabras con Z sin contexto claro
+
+🔍 ALGORITMO DE DETECCIÓN:
+
+FUNCIÓN PRINCIPAL:
+------------------
+
+detectar_acronimo_por_letras_raras(palabra):
+    1. Identificar letras raras en la palabra
+    2. Para cada letra rara:
+        a. Buscar conceptos técnicos asociados
+        b. Evaluar coincidencia con contexto
+        c. Calcular probabilidad de acrónimo
+    3. Combinar evidencias de todas las letras
+    4. Generar veredicto con nivel de confianza
+    5. Proporcionar recomendación de investigación
+
+VARIABLES DE EVALUACIÓN:
+-----------------------
+
+- Rareza_letra: 0.0 - 1.0 (más rara = más valor)
+- Coincidencia_conceptual: 0.0 - 1.0 (más coincidencia = más probabilidad)
+- Coherencia_semantica: 0.0 - 1.0 (más coherencia = más confianza)
+- Documentacion_explicita: 0.0 - 1.0 (documentación = confirmación)
+
+PESOS DE EVALUACIÓN:
+------------------
+
+- Rareza_letra: 30%
+- Coincidencia_conceptual: 40%
+- Coherencia_semantica: 20%
+- Documentacion_explicita: 10%
+
+🔍 GUÍA DE INVESTIGACIÓN:
+
+PALABRAS PRIORITARIAS PARA INVESTIGAR:
+-----------------------------------
+
+1. Palabras con K inicial (prioridad máxima)
+2. Palabras con Q inicial (prioridad alta)
+3. Palabras con X inicial (prioridad media)
+4. Palabras con W inicial (prioridad baja)
+5. Palabras con Z inicial (prioridad mínima)
+
+MÉTODO DE INVESTIGACIÓN:
+------------------------
+
+1. Listar todas las palabras con letras raras
+2. Analizar cada una con el algoritmo
+3. Priorizar por nivel de evidencia
+4. Investigar documentación específica
+5. Validar con contexto del sistema
+6. Generar reporte de acrónimos confirmados
+
+🔍 HERRAMIENTAS DE SOPORTE:
+
+FUNCIONES AUXILIARES:
+------------------
+
+- buscar_palabras_con_letra(letra, contexto)
+- evaluar_coincidencia_conceptual(letra, palabra)
+- validar_coherencia_semantica(acronimo_propuesto)
+- buscar_documentacion_explicita(palabra)
+- generar_veredicto_acronimo(evidencias)
+
+REPORTES Y SALIDAS:
+------------------
+
+- Lista de palabras con letras raras
+- Evaluación de cada palabra
+- Nivel de evidencia para cada una
+- Recomendaciones de investigación
+- Veredictos finales con confianza
+
+🔍 EJEMPLOS PRÁCTICOS:
+
+CASO KALIL (ÉXITO):
+-----------------
+- Letra K identificada (rara)
+- Concepto Kernel asociado (coincidencia fuerte)
+- Documentación explícita encontrada
+- Veredicto: ACRÓNIMO CONFIRMADO
+
+CASO ELPULSAR (FRACASO):
+---------------------
+- Sin letras raras identificadas
+- Sin coincidencias conceptuales
+- Sin documentación de acrónimo
+- Veredicto: NO ES ACRÓNIMO
+
+CASO WORK (FRACASO):
+------------------
+- Letra W (común, no rara)
+- Concepto Work coincide pero es palabra común
+- Sin estructura de acrónimo
+- Veredicto: NO ES ACRÓNIMO
+
+🔍 CONCLUSIONES Y RECOMENDACIONES:
+
+REGLAS FINALES:
+--------------
+
+1. Las letras raras son las mejores pistas
+2. La coincidencia conceptual es clave
+3. La documentación explícita confirma
+4. La coherencia semántica valida
+5. Sin evidencia fuerte = no es acrónimo
+
+APLICACIÓN PRÁCTICA:
+-----------------
+
+Usar este sistema para:
+- Detectar acrónimos ocultos
+- Validar supuestos acrónimos
+- Priorizar investigaciones
+- Generar evidencia sólida
+- Evitar falsos positivos

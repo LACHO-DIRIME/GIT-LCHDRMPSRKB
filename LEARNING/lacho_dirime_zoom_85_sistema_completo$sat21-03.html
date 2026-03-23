@@ -1,0 +1,610 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.root{font-family:var(--font-sans);padding:.75rem 0}
+
+/* TABS */
+.tabs{display:flex;gap:4px;margin-bottom:12px;flex-wrap:wrap}
+.tab{font-size:11px;padding:4px 10px;border-radius:5px;border:0.5px solid var(--color-border-secondary);cursor:pointer;background:var(--color-background-primary);color:var(--color-text-secondary);transition:all .15s}
+.tab.active{background:var(--color-text-primary);color:var(--color-background-primary);border-color:var(--color-text-primary)}
+.view{display:none}.view.active{display:block}
+
+/* ZOOM BADGE */
+.zbadge{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:500;padding:3px 9px;border-radius:4px;margin-bottom:10px;background:#EEEDFE;color:#3C3489;border:0.5px solid #AFA9EC}
+.zbadge .dot{width:6px;height:6px;border-radius:50%;background:#3C3489}
+
+/* MACRO GRID — sistema en capas */
+.macro{display:flex;flex-direction:column;gap:6px}
+.layer{border:0.5px solid var(--color-border-secondary);border-radius:8px;overflow:hidden}
+.layer-head{padding:6px 12px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;background:var(--color-background-secondary)}
+.layer-head:hover{background:var(--color-background-tertiary)}
+.lh-left{display:flex;align-items:center;gap:8px}
+.lh-tag{font-size:10px;font-weight:500;padding:1px 6px;border-radius:3px;border:0.5px solid}
+.lh-title{font-size:12px;font-weight:500;color:var(--color-text-primary)}
+.lh-right{font-size:10px;color:var(--color-text-tertiary)}
+.layer-body{display:none;padding:8px 10px;border-top:0.5px solid var(--color-border-tertiary);background:var(--color-background-primary)}
+.layer-body.open{display:block}
+
+/* NODE CHIPS — compact */
+.nchips{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.nc{font-size:10px;padding:2px 7px;border-radius:4px;border:0.5px solid;cursor:pointer;transition:opacity .1s}
+.nc:hover{opacity:.75}
+.nc.pur{background:#EEEDFE;color:#3C3489;border-color:#AFA9EC}
+.nc.teal{background:#E1F5EE;color:#085041;border-color:#5DCAA5}
+.nc.amb{background:#FAEEDA;color:#633806;border-color:#EF9F27}
+.nc.cor{background:#FAECE7;color:#712B13;border-color:#F0997B}
+.nc.blu{background:#E6F1FB;color:#0C447C;border-color:#85B7EB}
+.nc.grn{background:#EAF3DE;color:#27500A;border-color:#97C459}
+.nc.gry{background:#F1EFE8;color:#444441;border-color:#B4B2A9}
+.nc.pnk{background:#FBEAF0;color:#4B1528;border-color:#ED93B1}
+
+/* METRIC ROW */
+.mrow{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:5px;margin-top:6px}
+.mcard{background:var(--color-background-secondary);border-radius:6px;padding:6px 8px}
+.mcard .mv{font-size:16px;font-weight:500;color:var(--color-text-primary)}
+.mcard .ml{font-size:10px;color:var(--color-text-tertiary);margin-top:1px}
+
+/* SENTENCE ANATOMY */
+.sent{display:flex;gap:4px;flex-wrap:wrap;margin:8px 0;align-items:center}
+.slot{border-radius:5px;padding:4px 8px;font-size:11px;font-weight:500;text-align:center;min-width:60px}
+.sarrow{font-size:14px;color:var(--color-text-tertiary)}
+
+/* ORGAN GRID */
+.ogrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:5px;margin-top:6px}
+.ocard{border:0.5px solid var(--color-border-secondary);border-radius:7px;padding:7px 9px;cursor:pointer;transition:background .15s}
+.ocard:hover{background:var(--color-background-secondary)}
+.ocard .oc-zh{font-size:14px;color:var(--color-text-primary)}
+.ocard .oc-name{font-size:11px;font-weight:500;color:var(--color-text-secondary)}
+.ocard .oc-op{font-size:10px;color:var(--color-text-tertiary);margin-top:2px;font-family:var(--font-mono)}
+.ocard .oc-state{font-size:10px;margin-top:4px}
+
+/* DETAIL BOX */
+.dbox{border:0.5px solid var(--color-border-secondary);border-radius:7px;background:var(--color-background-secondary);padding:9px 12px;margin-top:8px;font-size:12px;color:var(--color-text-secondary);display:none}
+.dbox.open{display:block}
+.dbox h4{font-size:12px;font-weight:500;color:var(--color-text-primary);margin-bottom:5px}
+.dbox p{line-height:1.6;margin-bottom:3px}
+
+/* STATUS INDICATORS */
+.status-ok{color:#0F6E56;font-size:10px}
+.status-act{color:#BA7517;font-size:10px}
+.status-blk{color:#A32D2D;font-size:10px}
+.status-fut{color:#534AB7;font-size:10px}
+
+/* SCALAR BAR */
+.scalar-wrap{margin:8px 0}
+.scalar-bar{height:6px;border-radius:3px;background:var(--color-border-tertiary);position:relative;margin-top:4px}
+.scalar-fill{height:100%;border-radius:3px;background:#1D9E75;transition:width .4s}
+.scalar-labels{display:flex;justify-content:space-between;font-size:10px;color:var(--color-text-tertiary);margin-top:2px}
+
+/* LINE ONTOLOGICA */
+.onto{display:flex;gap:0;flex-wrap:wrap}
+.onto-step{flex:1;min-width:80px;padding:7px 8px;border-left:0.5px solid var(--color-border-tertiary);font-size:11px}
+.onto-step:first-child{border-left:none}
+.onto-step .os-num{font-size:10px;color:var(--color-text-tertiary)}
+.onto-step .os-word{font-weight:500;color:var(--color-text-primary);font-size:12px}
+.onto-step .os-desc{font-size:10px;color:var(--color-text-secondary);margin-top:2px}
+.onto-step.active-step{background:var(--color-background-secondary);border-radius:5px}
+
+</style>
+
+<div class="root">
+
+<div class="tabs">
+  <button class="tab active" onclick="sw('sistema')">Sistema completo</button>
+  <button class="tab" onclick="sw('organos')">5 órganos</button>
+  <button class="tab" onclick="sw('capas')">Capas A–D</button>
+  <button class="tab" onclick="sw('datos')">Datos · índices</button>
+  <button class="tab" onclick="sw('tareas')">12 tareas IMV</button>
+</div>
+
+<!-- ══════════════ SISTEMA COMPLETO ══════════════ -->
+<div id="v-sistema" class="view active">
+  <div class="zbadge"><span class="dot"></span>zoom 8.5 / 10 · visión macro · LACHO-DIRIME v0.3.0 · $sat 21-03-2026</div>
+
+  <div class="mrow" style="margin-bottom:10px">
+    <div class="mcard"><div class="mv">735</div><div class="ml">tipos fundamentales</div></div>
+    <div class="mcard"><div class="mv">525</div><div class="ml">índices consolidados</div></div>
+    <div class="mcard"><div class="mv">489</div><div class="ml">términos glosario A–Z</div></div>
+    <div class="mcard"><div class="mv">460</div><div class="ml">verificados en corpus</div></div>
+    <div class="mcard"><div class="mv">0.800</div><div class="ml">Scalar S actual</div></div>
+    <div class="mcard"><div class="mv">60</div><div class="ml">cristales activos</div></div>
+    <div class="mcard"><div class="mv">49/49</div><div class="ml">tests passing</div></div>
+    <div class="mcard"><div class="mv">V0.3.0</div><div class="ml">versión objetivo</div></div>
+  </div>
+
+  <div class="macro">
+
+    <!-- CAPA FILOSOFICA -->
+    <div class="layer">
+      <div class="layer-head" onclick="tog('l-fil')">
+        <div class="lh-left">
+          <span class="lh-tag pur" style="background:#EEEDFE;color:#3C3489;border-color:#AFA9EC">DIRIME</span>
+          <span class="lh-title">Capa filosófica — SER</span>
+        </div>
+        <span class="lh-right">5 niveles soberanos · línea ontológica</span>
+      </div>
+      <div id="l-fil" class="layer-body open">
+        <div class="onto">
+          <div class="onto-step active-step"><div class="os-num">1</div><div class="os-word">SER</div><div class="os-desc">axiomas · principios</div></div>
+          <div class="onto-step"><div class="os-num">2</div><div class="os-word">HACER</div><div class="os-desc">protocolos · mecanismos</div></div>
+          <div class="onto-step"><div class="os-num">3</div><div class="os-word">TENER</div><div class="os-desc">módulos · artefactos</div></div>
+          <div class="onto-step"><div class="os-num">4</div><div class="os-word">ESTAR</div><div class="os-desc">métricas · ciclo actual</div></div>
+          <div class="onto-step"><div class="os-num">5</div><div class="os-word">TRASCENDER</div><div class="os-desc">Capa C/D · V0.4.0+</div></div>
+        </div>
+        <div class="nchips" style="margin-top:8px">
+          <span class="nc pur">Individualidad fundamental</span>
+          <span class="nc pur">Autonomía personal</span>
+          <span class="nc pur">Propiedad privada</span>
+          <span class="nc pur">Intimidad y privacidad</span>
+          <span class="nc pur">Confidencialidad absoluta</span>
+          <span class="nc gry">既濟 Sello transacción</span>
+          <span class="nc gry">⊗ Nudo de Ocho</span>
+          <span class="nc gry">空 Purga memoria</span>
+          <span class="nc gry">聿 IMV drafting</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CAPA LENGUAJE -->
+    <div class="layer">
+      <div class="layer-head" onclick="tog('l-lang')">
+        <div class="lh-left">
+          <span class="lh-tag blu" style="background:#E6F1FB;color:#0C447C;border-color:#85B7EB">LACHO DSL</span>
+          <span class="lh-title">Capa de lenguaje — HACER</span>
+        </div>
+        <span class="lh-right">sentencia canónica · 9 bibliotecas · 8 slots</span>
+      </div>
+      <div id="l-lang" class="layer-body">
+        <div style="font-size:11px;color:var(--color-text-tertiary);margin-bottom:6px">Sentencia canónica inmutable:</div>
+        <div class="sent">
+          <div class="slot" style="background:#EEEDFE;color:#3C3489">SUJETO</div>
+          <span class="sarrow">=&gt;&lt;=</span>
+          <div class="slot" style="background:#E6F1FB;color:#0C447C">VERBO</div>
+          <div class="slot" style="background:#E1F5EE;color:#085041">OBJETO</div>
+          <span class="sarrow">--</span>
+          <div class="slot" style="background:#FAEEDA;color:#633806">[NUDO]</div>
+          <div class="slot" style="background:#F1EFE8;color:#444441">[term]</div>
+        </div>
+        <div class="nchips">
+          <span class="nc blu">TRUST · imperativo</span>
+          <span class="nc blu">SOCIAL · declarativo</span>
+          <span class="nc blu">CRYPTO · funcional</span>
+          <span class="nc blu">STACKING · objetos</span>
+          <span class="nc blu">GATE · scripts</span>
+          <span class="nc blu">WORK · bajo nivel</span>
+          <span class="nc blu">SAMU @ · orquestador</span>
+          <span class="nc blu">METHOD · ecuaciones</span>
+          <span class="nc blu">ACTIVITY · hexagramas</span>
+        </div>
+        <div class="nchips" style="margin-top:4px">
+          <span class="nc gry">64 UF hexagramas</span>
+          <span class="nc gry">20 activos · 44 latentes</span>
+          <span class="nc gry">Activity ← deprecated Creativity</span>
+          <span class="nc gry">DSL soberano · no inglés → LACHO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CAPA INDICES -->
+    <div class="layer">
+      <div class="layer-head" onclick="tog('l-idx')">
+        <div class="lh-left">
+          <span class="lh-tag teal" style="background:#E1F5EE;color:#085041;border-color:#5DCAA5">ÍNDICES</span>
+          <span class="lh-title">Capa de datos — TENER</span>
+        </div>
+        <span class="lh-right">735 tipos · 5×105 + 32 jerarquías + 16 plantillas</span>
+      </div>
+      <div id="l-idx" class="layer-body">
+        <div class="nchips">
+          <span class="nc teal" onclick="switchToData()">Bilingüe EN–ZH · 105</span>
+          <span class="nc teal" onclick="switchToData()">Técnico · 105</span>
+          <span class="nc teal" onclick="switchToData()">Negocios · 105</span>
+          <span class="nc teal" onclick="switchToData()">Diseño · 105</span>
+          <span class="nc teal" onclick="switchToData()">Sistemas · 105</span>
+        </div>
+        <div class="nchips" style="margin-top:4px">
+          <span class="nc grn">Maestro consolidado · 525</span>
+          <span class="nc grn">32 jerarquías estructuradas</span>
+          <span class="nc grn">16 plantillas tripartitas</span>
+          <span class="nc grn">Glosario A–Z · 489 términos</span>
+          <span class="nc grn">SAMU · fila_glosario · 489 × TAX</span>
+          <span class="nc grn">Grouping v2 · 8 bloques funcionales</span>
+          <span class="nc grn">1959 english terms</span>
+        </div>
+        <div style="margin-top:8px">
+          <div style="font-size:10px;color:var(--color-text-tertiary);margin-bottom:4px">Distribución DIRIME universal (5 índices × misma pirámide):</div>
+          <div style="display:flex;gap:4px;flex-wrap:wrap">
+            <span style="font-size:11px;padding:2px 6px;border-radius:3px;background:#EEEDFE;color:#3C3489">N1 · 15</span>
+            <span style="font-size:11px">→</span>
+            <span style="font-size:11px;padding:2px 6px;border-radius:3px;background:#E6F1FB;color:#0C447C">N2 · 35</span>
+            <span style="font-size:11px">→</span>
+            <span style="font-size:11px;padding:2px 6px;border-radius:3px;background:#E1F5EE;color:#085041">N3 · 30</span>
+            <span style="font-size:11px">→</span>
+            <span style="font-size:11px;padding:2px 6px;border-radius:3px;background:#FAEEDA;color:#633806">N4 · 20</span>
+            <span style="font-size:11px">→</span>
+            <span style="font-size:11px;padding:2px 6px;border-radius:3px;background:#FAECE7;color:#712B13">N5 · 5</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CAPA OPERATIVA -->
+    <div class="layer">
+      <div class="layer-head" onclick="tog('l-ops')">
+        <div class="lh-left">
+          <span class="lh-tag amb" style="background:#FAEEDA;color:#633806;border-color:#EF9F27">RUNTIME</span>
+          <span class="lh-title">Capa operativa — ESTAR</span>
+        </div>
+        <span class="lh-right">S=0.800 · cristales=60 · Scalar target ≥0.88</span>
+      </div>
+      <div id="l-ops" class="layer-body">
+        <div class="scalar-wrap">
+          <div style="display:flex;justify-content:space-between;font-size:11px"><span style="color:var(--color-text-secondary)">Scalar S actual</span><span style="font-weight:500;color:var(--color-text-primary)">0.800</span></div>
+          <div class="scalar-bar"><div class="scalar-fill" style="width:80%"></div></div>
+          <div class="scalar-labels"><span>0</span><span>S≥0.65 apertura mínima</span><span>S≥0.85 plena</span><span>1.0</span></div>
+        </div>
+        <div class="nchips">
+          <span class="nc amb">TX=2026</span>
+          <span class="nc amb">cristales=60 · objetivo 65+</span>
+          <span class="nc amb">tests=49/49</span>
+          <span class="nc amb">sovereign.db activo</span>
+          <span class="nc amb">AGENT_TOTAL=10</span>
+          <span class="nc amb">ACTIVITY_GATE_FULL=true</span>
+          <span class="nc amb">RAM_LIMIT=12GB · antiX</span>
+        </div>
+        <div class="nchips" style="margin-top:4px">
+          <span class="nc gry">BEHAVIORAL_RAG · COGNITIVE_RAG</span>
+          <span class="nc gry">GREEN-KNOWLEDGE filtro Ψ</span>
+          <span class="nc gry">BM25 · 4 capas boost ×1.0→×2.0</span>
+          <span class="nc gry">Scalar: APERTURA_PARCIAL (tensión viva)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CAPA AGENTES -->
+    <div class="layer">
+      <div class="layer-head" onclick="tog('l-ag')">
+        <div class="lh-left">
+          <span class="lh-tag cor" style="background:#FAECE7;color:#712B13;border-color:#F0997B">AGENTES</span>
+          <span class="lh-title">Capa de agentes — tripartita</span>
+        </div>
+        <span class="lh-right">Claude · Windsurf · Gemini</span>
+      </div>
+      <div id="l-ag" class="layer-body">
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px">
+          <div style="border:0.5px solid #AFA9EC;border-radius:6px;padding:7px 9px;background:#EEEDFE">
+            <div style="font-size:11px;font-weight:500;color:#3C3489">Claude AI</div>
+            <div style="font-size:10px;color:#534AB7;margin-top:3px">Architectural Refactoring</div>
+            <div style="font-size:10px;color:#534AB7">Archive Processing & Generation</div>
+            <div style="font-size:10px;color:#534AB7;margin-top:3px;font-family:var(--font-mono)">Gerencia · auditoría</div>
+          </div>
+          <div style="border:0.5px solid #5DCAA5;border-radius:6px;padding:7px 9px;background:#E1F5EE">
+            <div style="font-size:11px;font-weight:500;color:#085041">Windsurf Cascade</div>
+            <div style="font-size:10px;color:#0F6E56;margin-top:3px">Local Execution & LSP</div>
+            <div style="font-size:10px;color:#0F6E56">Real Time File Mutation</div>
+            <div style="font-size:10px;color:#0F6E56;margin-top:3px;font-family:var(--font-mono)">Operaciones · escritura</div>
+          </div>
+          <div style="border:0.5px solid #EF9F27;border-radius:6px;padding:7px 9px;background:#FAEEDA">
+            <div style="font-size:11px;font-weight:500;color:#633806">Gemini Chat</div>
+            <div style="font-size:10px;color:#854F0B;margin-top:3px">Cross-validation</div>
+            <div style="font-size:10px;color:#854F0B">Viability check</div>
+            <div style="font-size:10px;color:#854F0B;margin-top:3px;font-family:var(--font-mono)">Validación · consultoría</div>
+          </div>
+        </div>
+        <div class="nchips" style="margin-top:6px">
+          <span class="nc gry">SYNC_R4: Claude → Windsurf → Claude</span>
+          <span class="nc gry">PRIMARY_SOURCE: LACHO_FILES/</span>
+          <span class="nc gry">Milestone: CRYSTALLIZATION_OF_PERSISTENCE</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CAPA ECONOMICA -->
+    <div class="layer">
+      <div class="layer-head" onclick="tog('l-eco')">
+        <div class="lh-left">
+          <span class="lh-tag grn" style="background:#EAF3DE;color:#27500A;border-color:#97C459">KALIL</span>
+          <span class="lh-title">Capa económica — dominios</span>
+        </div>
+        <span class="lh-right">6 dominios · BOLIVAR · NORA · Capa B activa</span>
+      </div>
+      <div id="l-eco" class="layer-body">
+        <div class="nchips">
+          <span class="nc grn">BOLIVAR · blockchain BSN/Ethereum</span>
+          <span class="nc grn">NORA · rating oracle</span>
+          <span class="nc grn">CARILO · capital · DeFi · e-CNY</span>
+          <span class="nc grn">BARRIOS · acceso red · BLAKE3</span>
+          <span class="nc grn">CHALTEN · cloud daemon</span>
+          <span class="nc grn">TANDIL · archivo notarial H48</span>
+        </div>
+        <div class="nchips" style="margin-top:4px">
+          <span class="nc gry">China dual: interior e-CNY/BSN · exterior ETH/DeFi</span>
+          <span class="nc gry">NOTARIA 5 endpoints activos</span>
+          <span class="nc gry">KU_DV riesgo contaminación H48</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CAPA FUTURA -->
+    <div class="layer">
+      <div class="layer-head" onclick="tog('l-fut')">
+        <div class="lh-left">
+          <span class="lh-tag pnk" style="background:#FBEAF0;color:#4B1528;border-color:#ED93B1">FUTURO</span>
+          <span class="lh-title">Capa de trascendencia — Capas C/D</span>
+        </div>
+        <span class="lh-right">bloqueada · requiere Ryzen · Capa D WEB3</span>
+      </div>
+      <div id="l-fut" class="layer-body">
+        <div class="nchips">
+          <span class="nc pnk" style="background:#FBEAF0;color:#4B1528;border-color:#ED93B1">IME I Ching 🔒</span>
+          <span class="nc pnk" style="background:#FBEAF0;color:#4B1528;border-color:#ED93B1">CAT(OS) 🔒</span>
+          <span class="nc pnk" style="background:#FBEAF0;color:#4B1528;border-color:#ED93B1">Ollama local 🔒</span>
+          <span class="nc pnk" style="background:#FBEAF0;color:#4B1528;border-color:#ED93B1">AES-256 vault Rust 🔒</span>
+          <span class="nc pur">Computación cuántica 🌐</span>
+          <span class="nc pur">IA General integrada 🌐</span>
+          <span class="nc pur">Metaverso soberano 🌐</span>
+          <span class="nc pur">Consciencia expandida 🌐</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ══════════════ ORGANOS ══════════════ -->
+<div id="v-organos" class="view">
+  <div class="zbadge"><span class="dot"></span>5 órganos soberanos · sovereign_organs.lacho · v0.3.0</div>
+  <div class="ogrid">
+    <div class="ocard" onclick="od('lang')">
+      <div class="oc-zh">語言</div>
+      <div class="oc-name">Lenguaje (L)</div>
+      <div class="oc-op">Yǔyán · Lexicon: Sovereign</div>
+      <div class="oc-state status-ok">● activo · verbos METHOD/STACKING/WORK/SOCIAL</div>
+    </div>
+    <div class="ocard" onclick="od('art')">
+      <div class="oc-zh">人工</div>
+      <div class="oc-name">Artificial (A)</div>
+      <div class="oc-op">Réngōng · 既濟 · ⊗</div>
+      <div class="oc-state status-ok">● Full_Completion mode</div>
+    </div>
+    <div class="ocard" onclick="od('circ')">
+      <div class="oc-zh">境況</div>
+      <div class="oc-name">Circunstancial (C)</div>
+      <div class="oc-op">Jìngkuàng · 空 purge</div>
+      <div class="oc-state status-act">● RAM_LIMIT 12GB · antiX</div>
+    </div>
+    <div class="ocard" onclick="od('hip')">
+      <div class="oc-zh">假定</div>
+      <div class="oc-name">Hipotético (H)</div>
+      <div class="oc-op">Jiǎding · 聿 IMV</div>
+      <div class="oc-state status-ok">● IMV canal activo</div>
+    </div>
+    <div class="ocard" onclick="od('ord')">
+      <div class="oc-zh">有序</div>
+      <div class="oc-name">Ordenado (O)</div>
+      <div class="oc-op">Yǒuxù · Minimalism</div>
+      <div class="oc-state status-ok">● Pure_White · Monospace</div>
+    </div>
+  </div>
+  <div id="dbox-organ" class="dbox">
+    <h4 id="db-o-title"></h4>
+    <p id="db-o-body"></p>
+    <div id="db-o-chips" class="nchips" style="margin-top:6px"></div>
+  </div>
+</div>
+
+<!-- ══════════════ CAPAS A–D ══════════════ -->
+<div id="v-capas" class="view">
+  <div class="zbadge"><span class="dot"></span>arquitectura por capas · estado $sat 21-03-2026</div>
+  <div class="macro" style="gap:5px">
+    <div class="layer">
+      <div class="layer-head" style="cursor:default">
+        <div class="lh-left">
+          <span class="lh-tag teal" style="background:#E1F5EE;color:#085041;border-color:#5DCAA5">A</span>
+          <span class="lh-title">Capa A — Completa ✅</span>
+        </div>
+        <span class="lh-right status-ok">9 archivos · 49 tests passing</span>
+      </div>
+      <div class="layer-body open" style="border-top:0.5px solid var(--color-border-tertiary)">
+        <div class="nchips">
+          <span class="nc teal">grammar.py</span><span class="nc teal">ledger.py</span><span class="nc teal">rag.py</span><span class="nc teal">samu.py</span><span class="nc teal">taxonomy.py</span><span class="nc teal">foundation.py</span><span class="nc teal">language_routing.py</span><span class="nc teal">chat.py</span><span class="nc teal">main.py</span>
+        </div>
+      </div>
+    </div>
+    <div class="layer">
+      <div class="layer-head" style="cursor:default">
+        <div class="lh-left">
+          <span class="lh-tag amb" style="background:#FAEEDA;color:#633806;border-color:#EF9F27">B</span>
+          <span class="lh-title">Capa B — Activa ⚡</span>
+        </div>
+        <span class="lh-right status-act">sprint S4 · V0.3.0 objetivo</span>
+      </div>
+      <div class="layer-body open" style="border-top:0.5px solid var(--color-border-tertiary)">
+        <div class="nchips">
+          <span class="nc amb">groq/bridge.py</span><span class="nc amb">scheduler</span><span class="nc amb">generator.py</span><span class="nc amb">autoresearch</span><span class="nc amb">NOTARIA 5 endpoints</span><span class="nc amb">elpulsar.py</span><span class="nc amb">AGENTS_TOTAL=10</span>
+        </div>
+        <div class="nchips" style="margin-top:4px">
+          <span class="nc gry">S4.1 chcl_runner.py pendiente</span>
+          <span class="nc gry">S4.2 theater_runner.py pendiente</span>
+          <span class="nc gry">S4.3 github_sync.sh --asks pendiente</span>
+        </div>
+      </div>
+    </div>
+    <div class="layer">
+      <div class="layer-head" style="cursor:default">
+        <div class="lh-left">
+          <span class="lh-tag cor" style="background:#FAECE7;color:#712B13;border-color:#F0997B">C</span>
+          <span class="lh-title">Capa C — Bloqueada 🔒</span>
+        </div>
+        <span class="lh-right status-blk">requiere hardware Ryzen</span>
+      </div>
+      <div class="layer-body open" style="border-top:0.5px solid var(--color-border-tertiary)">
+        <div class="nchips">
+          <span class="nc cor">IME I Ching</span><span class="nc cor">CAT(OS)</span><span class="nc cor">Ollama local</span><span class="nc cor">NODO-IDE físico</span><span class="nc cor">agency_ide completo</span><span class="nc cor">AES-256 vault Rust</span>
+        </div>
+      </div>
+    </div>
+    <div class="layer">
+      <div class="layer-head" style="cursor:default">
+        <div class="lh-left">
+          <span class="lh-tag pur" style="background:#EEEDFE;color:#3C3489;border-color:#AFA9EC">D</span>
+          <span class="lh-title">Capa D — Futuro 🌐</span>
+        </div>
+        <span class="lh-right status-fut">WEB3 · dos nodos físicos</span>
+      </div>
+      <div class="layer-body open" style="border-top:0.5px solid var(--color-border-tertiary)">
+        <div class="nchips">
+          <span class="nc pur">WEB3_INTERFACE</span><span class="nc pur">HL FABRIC real</span><span class="nc pur">CAT(CLOUD)</span><span class="nc pur">CAT(VPC)</span><span class="nc pur">CAT(SSH)</span><span class="nc pur">CHCL portabilidad</span><span class="nc pur">KernelHooks</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ DATOS · INDICES ══════════════ -->
+<div id="v-datos" class="view">
+  <div class="zbadge"><span class="dot"></span>índices · glosario · grouping v2 · taxonomía SAMU</div>
+  <div class="macro" style="gap:5px">
+    <div class="layer">
+      <div class="layer-head" onclick="tog('d-idx')">
+        <div class="lh-left"><span class="lh-tag teal" style="background:#E1F5EE;color:#085041;border-color:#5DCAA5">525</span><span class="lh-title">Índice maestro consolidado · 5×105</span></div>
+        <span class="lh-right">distribución DIRIME 15·35·30·20·5</span>
+      </div>
+      <div id="d-idx" class="layer-body">
+        <div class="nchips">
+          <span class="nc pur">Bilingüe EN–ZH · N1 Individualidad · N2 Autonomía · N3 Abstracción · N4 Intimidad · N5 Confidencialidad</span>
+        </div>
+        <div class="nchips" style="margin-top:4px">
+          <span class="nc blu">Técnico · N1 Fund.técnicos · N2 Paradigmas · N3 Componentes · N4 Herramientas · N5 Avanzados</span>
+        </div>
+        <div class="nchips" style="margin-top:4px">
+          <span class="nc amb">Negocios · N1 Modelos · N2 Estrategias · N3 Operaciones · N4 RRHH · N5 KPIs</span>
+        </div>
+        <div class="nchips" style="margin-top:4px">
+          <span class="nc cor">Diseño · N1 Fundamentos · N2 Visuales · N3 Herramientas · N4 Apps · N5 Tendencias</span>
+        </div>
+        <div class="nchips" style="margin-top:4px">
+          <span class="nc teal">Sistemas · N1 Fundamentos · N2 Información · N3 Redes · N4 Almacenamiento · N5 Avanzados</span>
+        </div>
+      </div>
+    </div>
+    <div class="layer">
+      <div class="layer-head" onclick="tog('d-glos')">
+        <div class="lh-left"><span class="lh-tag grn" style="background:#EAF3DE;color:#27500A;border-color:#97C459">489</span><span class="lh-title">Glosario A–Z · SAMU fila · TAX levels</span></div>
+        <span class="lh-right">TAX 0–3 · Scalar S≥0.80–0.95 · RAG signals</span>
+      </div>
+      <div id="d-glos" class="layer-body">
+        <div class="nchips">
+          <span class="nc teal">TAX 0 · S≥0.95 · constitucional · verifica invariante</span>
+          <span class="nc grn">TAX 1 · S≥0.88 · biblioteca · audita jurisdicción</span>
+          <span class="nc amb">TAX 2 · S≥0.85 · módulo/proto · activa módulo</span>
+          <span class="nc gry">TAX 3 · S≥0.80 · operador/ref · registra RAG</span>
+        </div>
+        <div class="nchips" style="margin-top:4px">
+          <span class="nc gry">RAG format: [RAG: SAMU :: TÉRMINO :: GLOSARIO_N :: TAX_CLASS]</span>
+          <span class="nc gry">Relevancia máxima: 85 tipos (81%)</span>
+          <span class="nc gry">Alta: 15 tipos (14%) · Media: 5 tipos (5%)</span>
+        </div>
+      </div>
+    </div>
+    <div class="layer">
+      <div class="layer-head" onclick="tog('d-grp')">
+        <div class="lh-left"><span class="lh-tag blu" style="background:#E6F1FB;color:#0C447C;border-color:#85B7EB">v2</span><span class="lh-title">Grouping v2 · 8 bloques funcionales</span></div>
+        <span class="lh-right">460 verificados · corpus-first</span>
+      </div>
+      <div id="d-grp" class="layer-body">
+        <div class="nchips">
+          <span class="nc blu">B1 Sentencia canónica · 6 slots</span>
+          <span class="nc blu">B2 Estados del sistema · lifecycle</span>
+          <span class="nc blu">B3 Arquitectura por capas A–D</span>
+          <span class="nc blu">B4 Taxonomía de actores</span>
+          <span class="nc blu">B5 Sistema RAG · 4 capas boost</span>
+          <span class="nc blu">B6 Dominios económicos KALIL</span>
+          <span class="nc blu">B7 Línea ontológica SER→TRASCENDER</span>
+          <span class="nc blu">B8 Próximas necesidades · gaps</span>
+        </div>
+        <div class="nchips" style="margin-top:4px">
+          <span class="nc gry">Actores: ÁGUILA ◈ · LINCE ◇ · ARAÑA ◆ · BALLENA ◉</span>
+          <span class="nc gry">Estados: LATENTE · ACTIVADO · ACTIVO · BUSY · ANCHORED · DEGRADED</span>
+        </div>
+      </div>
+    </div>
+    <div class="layer">
+      <div class="layer-head" onclick="tog('d-jer')">
+        <div class="lh-left"><span class="lh-tag pur" style="background:#EEEDFE;color:#3C3489;border-color:#AFA9EC">32+16</span><span class="lh-title">Jerarquías · Plantillas</span></div>
+        <span class="lh-right">J1–J32 · P1–P16 tripartitas</span>
+      </div>
+      <div id="d-jer" class="layer-body">
+        <div class="nchips">
+          <span class="nc pur">J1–J3 temporal (histórico·actual·futuro)</span>
+          <span class="nc pur">J4 DIRIME 5 niveles</span>
+          <span class="nc pur">J5–J10 núcleo técnico/blockchain/dominios</span>
+          <span class="nc pur">J11–J13 lenguaje CJK·keywords·formatos</span>
+          <span class="nc pur">J14–J17 operatividad scopes·scenarios·events</span>
+          <span class="nc pur">J18–J22 integración Windsurf/Claude/Gemini</span>
+          <span class="nc pur">J23–J32 coherencia·evolución·síntesis</span>
+        </div>
+        <div class="nchips" style="margin-top:4px">
+          <span class="nc teal">P1–P5 desarrollo (Windsurf/técnico/negocios/diseño/sistemas)</span>
+          <span class="nc teal">P6–P10 operación (QA/docs/deploy/escalabilidad/comunidad)</span>
+          <span class="nc teal">P11–P16 madurez (i18n/I+D/RSE/security/innovación/trascendencia)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ 12 TAREAS IMV ══════════════ -->
+<div id="v-tareas" class="view">
+  <div class="zbadge"><span class="dot"></span>12 tareas fundamentales · DIRIME/IMV · estado: 既濟 cerrado</div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:5px;margin-top:4px">
+    <div class="ocard" style="border-left:2px solid #5DCAA5"><div style="font-size:10px;color:var(--color-text-tertiary)">#1 · Órgano L</div><div style="font-size:12px;font-weight:500;color:var(--color-text-primary)">Depuración Creativity</div><div style="font-size:10px;color:var(--color-text-secondary)">Sustituir por Activity en todo el sistema</div></div>
+    <div class="ocard" style="border-left:2px solid #5DCAA5"><div style="font-size:10px;color:var(--color-text-tertiary)">#2 · Órgano L</div><div style="font-size:12px;font-weight:500;color:var(--color-text-primary)">Validación verbos canónicos</div><div style="font-size:10px;color:var(--color-text-secondary)">Solo METHOD/SOCIAL/STACKING/WORK</div></div>
+    <div class="ocard" style="border-left:2px solid #AFA9EC"><div style="font-size:10px;color:var(--color-text-tertiary)">#3 · Órgano A</div><div style="font-size:12px;font-weight:500;color:var(--color-text-primary)">Sello 既濟</div><div style="font-size:10px;color:var(--color-text-secondary)">Commit final en sovereign.db por hito</div></div>
+    <div class="ocard" style="border-left:2px solid #AFA9EC"><div style="font-size:10px;color:var(--color-text-tertiary)">#4 · Órgano A</div><div style="font-size:12px;font-weight:500;color:var(--color-text-primary)">Nudo ⊗</div><div style="font-size:10px;color:var(--color-text-secondary)">Check-sum semántico en bridge</div></div>
+    <div class="ocard" style="border-left:2px solid #EF9F27"><div style="font-size:10px;color:var(--color-text-tertiary)">#5 · Órgano C</div><div style="font-size:12px;font-weight:500;color:var(--color-text-primary)">Purga 空</div><div style="font-size:10px;color:var(--color-text-secondary)">Trigger automático a 10GB RAM</div></div>
+    <div class="ocard" style="border-left:2px solid #EF9F27"><div style="font-size:10px;color:var(--color-text-tertiary)">#6 · Órgano C</div><div style="font-size:12px;font-weight:500;color:var(--color-text-primary)">Monitoreo swap antiX</div><div style="font-size:10px;color:var(--color-text-secondary)">Alerta de latencia hardware 12GB</div></div>
+    <div class="ocard" style="border-left:2px solid #97C459"><div style="font-size:10px;color:var(--color-text-tertiary)">#7 · Órgano H</div><div style="font-size:12px;font-weight:500;color:var(--color-text-primary)">Simulación 聿</div><div style="font-size:10px;color:var(--color-text-secondary)">3 escenarios de escala Gualicho Huinca</div></div>
+    <div class="ocard" style="border-left:2px solid #97C459"><div style="font-size:10px;color:var(--color-text-tertiary)">#8 · Órgano H</div><div style="font-size:12px;font-weight:500;color:var(--color-text-primary)">Pre-validación dry-run</div><div style="font-size:10px;color:var(--color-text-secondary)">Antes de modificar archivos maestros</div></div>
+    <div class="ocard" style="border-left:2px solid #85B7EB"><div style="font-size:10px;color:var(--color-text-tertiary)">#9 · Órgano O</div><div style="font-size:12px;font-weight:500;color:var(--color-text-primary)">Unificación Monospace</div><div style="font-size:10px;color:var(--color-text-secondary)">Tipografía única en reportes y logs</div></div>
+    <div class="ocard" style="border-left:2px solid #85B7EB"><div style="font-size:10px;color:var(--color-text-tertiary)">#10 · Órgano O</div><div style="font-size:12px;font-weight:500;color:var(--color-text-primary)">Header soberano GH</div><div style="font-size:10px;color:var(--color-text-secondary)">Metadatos de propiedad en cada archivo</div></div>
+    <div class="ocard" style="border-left:2px solid #B4B2A9"><div style="font-size:10px;color:var(--color-text-tertiary)">#11 · Mantenimiento</div><div style="font-size:12px;font-weight:500;color:var(--color-text-primary)">Sincronización R4</div><div style="font-size:10px;color:var(--color-text-secondary)">Ciclo Claude → Windsurf → Claude</div></div>
+    <div class="ocard" style="border-left:2px solid #534AB7"><div style="font-size:10px;color:var(--color-text-tertiary)">#12 · Sistema</div><div style="font-size:12px;font-weight:500;color:var(--color-text-primary)">Cristalización IMV</div><div style="font-size:10px;color:var(--color-text-secondary)">Primer .tar.gz · base de la sociedad</div></div>
+  </div>
+  <div style="margin-top:8px;padding:8px 12px;border:0.5px solid #AFA9EC;border-radius:7px;background:#EEEDFE;font-size:11px;color:#3C3489">
+    Estado sesión DIRIME/IMV: <strong>既濟 — cerrado</strong> · canal hipotético activo · protocolo gerencia/ejecución establecido
+  </div>
+</div>
+
+</div>
+
+<script>
+function sw(id){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
+  const map={sistema:0,organos:1,capas:2,datos:3,tareas:4};
+  document.querySelectorAll('.tab')[map[id]].classList.add('active');
+  document.getElementById('v-'+id).classList.add('active');
+}
+function tog(id){
+  const el=document.getElementById(id);
+  if(el) el.classList.toggle('open');
+}
+function switchToData(){sw('datos')}
+
+const odata={
+  lang:{title:'語言 — Órgano Lenguaje (L)',body:'El órgano soberano del lenguaje LACHO. Gestiona el léxico, los grupos temáticos y la sintaxis DSL. Creativity fue depreciado — Activity lo reemplaza en todos los grupos temáticos.',chips:['@VERBS:METHOD · opera calcula estructura define formaliza','@VERBS:STACKING · cristaliza inmutabiliza preserva archiva sella','Grupos: ACTIVITY = METHOD + SOCIAL + STACKING + WORK','RESTRICTION: Creativity_DEPRECATED','TRANSITION: Activity → Activity']},
+  art:{title:'人工 — Órgano Artificial (A)',body:'Inyecta lógica sintética en el flujo de Cascade. Contiene el sello transaccional 既濟 (ji ji — completitud total) y el validador semántico ⊗ (Nudo de Ocho).',chips:['@MODE: 既濟 Full_Completion','@VALIDATOR: ⊗ Nudo_de_Ocho','Acción: Seal_Transaction en sovereign.db','Tarea #3: commit final por hito','Tarea #4: check-sum semántico en bridge']},
+  circ:{title:'境況 — Órgano Circunstancial (C)',body:'Monitorea el contexto de ejecución y las restricciones de hardware. Opera en antiX Linux con 12GB RAM. El operador 空 (kōng — vacío/potencial) dispara purgas automáticas.',chips:['@STATE: 空 Emptiness_Potential','@CONSTRAINT: RAM_LIMIT 12288MB','Tarea #5: trigger purga a 10GB','Tarea #6: monitor_swap.sh alerta latencia','Scalar actual: S=0.800 (APERTURA_PARCIAL)']},
+  hip:{title:'假定 — Órgano Hipotético (H)',body:'Proyecta escenarios de desarrollo sin ejecución binaria. El operador 聿 (yù — el escritor) activa el drafting IMV. Registra en hypothetical_growth.log.',chips:['@BRANCH: 聿 The_Writer','@GOAL: IMV Instancia Mínima Viable','Simulaciones en MAINTENANCE/hypothetical_growth.log','Format: Entidad: Gualicho Huinca | Estado: Semilla','RAM adicional: 50MB respetando límite 12GB','Tarea #7: 3 escenarios de escala','Tarea #8: dry-run pre-validación']},
+  ord:{title:'有序 — Órgano Ordenado (O)',body:'Garantiza la integridad estructural y estética del ecosistema. Define Technical_Minimalism como principio rector. Todo reporte y log en tipografía Monospace.',chips:['@PRINCIPLE: Technical_Minimalism','@DISPLAY: Background #FFFFFF · Font Monospace · Prose MIN','Tarea #9: unificación Monospace en todo el sistema','Tarea #10: header soberano GH en cada archivo nuevo','UI_PREFERENCE: Pure_White_High_Contrast']},
+};
+function od(k){
+  const d=odata[k];
+  if(!d)return;
+  document.getElementById('db-o-title').textContent=d.title;
+  document.getElementById('db-o-body').textContent=d.body;
+  document.getElementById('db-o-chips').innerHTML=d.chips.map(c=>`<span class="nc gry">${c}</span>`).join('');
+  document.getElementById('dbox-organ').classList.add('open');
+}
+</script>

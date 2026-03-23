@@ -4,6 +4,9 @@ generator.py — IMV genera su primer .lacho soberano
 SUITE SOBERANA · VECTOR 1 · 2026-03-10
 Uso: python3 tools/generator.py [--mode auto|stats|corpus|full] [--output path]
 """
+
+STYLE = {"font": "monospace", "bg": "#FFFFFF", "fg": "#000000"}
+
 import sys, argparse
 from pathlib import Path
 from datetime import datetime
@@ -241,23 +244,11 @@ def register_crystal(ts: str, path: Path) -> None:
 def main():
     parser = argparse.ArgumentParser(description="IMV generator — genera .lacho soberano")
     parser.add_argument("--mode",   default="stats",
-                        choices=["auto","stats","corpus","full","notaria"],
+                        choices=["auto","stats","corpus","full"],
                         help="modo de generación")
     parser.add_argument("--output", default=None,
                         help="ruta de salida (opcional)")
-    parser.add_argument("--partes", nargs="+", default=["parte_A", "parte_B"],
-                        help="partes del acto notarial")
-    parser.add_argument("--objeto", default="objeto_soberano",
-                        help="objeto del acto notarial")
     args = parser.parse_args()
-
-    if args.mode == "notaria":
-        path = generate_notaria_acto(args.partes, args.objeto)
-        print(f"\n✅ acto notarial: {path.name}")
-        print(f"   partes: {args.partes}")
-        print(f"   objeto: {args.objeto}")
-        print(f"   {path}\n")
-        return
 
     ts = datetime.now().strftime("%Y%m%d_%H%M%S")
     ts_human = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -292,59 +283,6 @@ def main():
     print(f"\n✅ generado: {out_path.name}")
     print(f"   {len(valid)} sentencias · score {avg} · mode={args.mode}")
     print(f"   {out_path}\n")
-
-def generate_notaria_acto(partes: list[str], objeto: str, output_dir: Path = None) -> Path:
-    """Genera archivo .lacho de acto notarial completo con 4 sentencias VALID."""
-    from datetime import datetime
-    from core.ledger import record_notaria_act, get_stats
-    from core.samu  import get_scalar_s
-
-    ts      = datetime.now().strftime("%Y%m%d_%H%M%S")
-    scalar  = get_scalar_s()
-    stats   = get_stats()
-    partes_str = "_".join(p.replace(" ", "_") for p in partes)
-    obj_clean  = objeto.replace(" ", "_")[:40]
-
-    sentencias = [
-        f"CRYPTO (spark seat) =><= .. certifica .. {obj_clean} --[Nudo de Ocho] [term]",
-        f"STACKING UF[H63] =><= .. sella .. {obj_clean}_wu --[Nudo de Ocho] [term]",
-        f"STACKING UF[H52] =><= .. inmutabiliza .. {obj_clean}_sealed --[Nudo de Ocho] [term]",
-        f"SAMU @ =><= .. audita .. acto_{obj_clean}_{ts} --[Ballestrinque] [term]",
-    ]
-
-    validas = [s for s in sentencias if validate(s).result.value == "VALID"]
-    avg     = round(sum(lacho_score(validate(s)) for s in validas) / len(validas), 3) if validas else 0.0
-
-    contenido = f"""//[genesis]   :: NOTARIA_ACT
-//[version]   :: {VERSION}
-//[tipo]      :: NOTARIA · AUTO
-//[fecha]     :: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
-//[partes]    :: {", ".join(partes)}
-//[objeto]    :: {objeto}
-//[scalar_s]  :: {scalar}
-//[tx_total]  :: {stats.get("transactions_total", 0)}
-//[score_avg] :: {avg}
-//[term]      :: activo
-//空聽數 · NOTARIA · H63 既濟
-
-// ── PIPELINE NOTARIAL {'─' * 38}
-{chr(10).join(validas)}
-
-// ── ANCLAS RAG {'─' * 44}
-TRUST FOUNDATION =><= .. declara .. notaria_act_{ts} --[Nudo de Ocho] [term]
-CRYPTO (spark seat) =><= .. certifica .. acto_{partes_str}_{ts} --[Nudo de Ocho] [term]
-SAMU @ =><= .. audita .. notaria_pipeline_{ts} --[Ballestrinque] [term]
-STACKING UF[H63] =><= .. inmutabiliza .. acto_notarial_wu_{ts} --[Nudo de Ocho] [term]
-
-//DIR(=) NOTARIA · {len(validas)} sentencias · score {avg} · {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
-"""
-    dest = (output_dir or ROOT.parent / "FOLDERS NO RAG INPUT" / "LACHO_FILES")
-    dest.mkdir(parents=True, exist_ok=True)
-    path = dest / f"notaria_{ts}.lacho"
-    path.write_text(contenido, encoding="utf-8")
-
-    record_notaria_act(f"notaria_{ts}", partes, objeto, scalar)
-    return path
 
 if __name__ == "__main__":
     main()

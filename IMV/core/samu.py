@@ -277,3 +277,27 @@ if __name__ == "__main__":
     
     print(f"\nEstado final: {get_status()}")
     print("═" * 60)
+
+
+# ── TASK_3.3 — ALGEBRAIC EFFECTS ────────────────────────────────
+from enum import Enum as _E
+
+class SamuEffect(_E):
+    """ALGEBRAIC_EFFECT declarations for SAMU. TASK_3.3"""
+    READ_SCALAR="READ_SCALAR"; WRITE_SCALAR="WRITE_SCALAR"
+    EMIT_WU="EMIT_WU"; LOG_RED_REGRET="LOG_RED_REGRET"
+
+EFFECT_REQUIREMENTS: dict = {
+    SamuEffect.READ_SCALAR:    {"term_required": False, "scalar_min": 0.0},
+    SamuEffect.WRITE_SCALAR:   {"term_required": True,  "scalar_min": 0.0},
+    SamuEffect.EMIT_WU:        {"term_required": True,  "scalar_min": 0.85},
+    SamuEffect.LOG_RED_REGRET: {"term_required": False, "scalar_min": 0.0},
+}
+
+def check_effect(effect: SamuEffect, term_active: bool, scalar: float) -> tuple:
+    req=EFFECT_REQUIREMENTS[effect]
+    if req["term_required"] and not term_active:
+        return False, f"EFFECT_DENIED: {effect.value} requires [term] active"
+    if scalar < req["scalar_min"]:
+        return False, f"EFFECT_DENIED: {effect.value} requires S>={req['scalar_min']}, got {scalar:.3f}"
+    return True, f"EFFECT_ALLOWED: {effect.value}"

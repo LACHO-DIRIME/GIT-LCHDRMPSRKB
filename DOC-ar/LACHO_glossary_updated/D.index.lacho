@@ -1,0 +1,174 @@
+# D.index.lacho
+# GLOSSARY — Letra D / d
+# DIRIME · IMV · Sistema LACHO
+# [term] :: activo · [seal of secrecy] :: activo
+# Revisado y auditado: $sat 21-03-2026
+# ─────────────────────────────────────────────────────────────────
+# N1 → Fundamentos del lenguaje
+# N2 → Módulos y mecanismos operativos
+# N3 → Actores, estados y clasificaciones
+# N4 → Herramientas, documentos y referencias
+# ─────────────────────────────────────────────────────────────────
+
+# ══════════════════════════════════════════════════════════════════
+# N1 — FUNDAMENTOS DEL LENGUAJE
+# ══════════════════════════════════════════════════════════════════
+
+## DAY_ID [N1]
+# Clase: token · Gramática ANTLR · Scheduler
+# Identificador de día soberano en la gramática LACHO.
+# DAY_ID ::= "$" ("mon"|"tue"|"wed"|"thu"|"fri"|"sat"|"sun")
+# CYCLE_ID ::= DAY_ID "#" HEX_ID "#" HEX_DIGIT+
+# Ver: ALMANAQUE_SOBERANO · SCHEDULER · $dia
+
+## DECLARE_FLOW [N1]
+# Clase: token · Gramática ANTLR
+# Operador de declaración de flujo en la gramática LACHO.
+# DECLARE_FLOW ::= "::"
+# SUBSECTION ::= INDENT IDENTIFIER DECLARE_FLOW VALUE
+# Vincula un identificador a su valor de declaración.
+
+## DECL_MARK [N1]
+# Clase: token · Gramática ANTLR
+# Marcador de declaración soberana en archivos .lacho.
+# DECL_MARK ::= ":::"
+# DECL_LINE ::= DECL_MARK WHITESPACE IDENTIFIER WHITESPACE "=" WHITESPACE VALUE
+# DECL_LINE+ ;;; ::: declaraciones soberanas
+
+## DECLARATIVO [N1]
+# Clase: paradigma · Biblioteca SOCIAL
+# Paradigma de programación de la biblioteca SOCIAL.
+# "BIBLIOTECA SOCIAL (DECLARATIVO):"
+# En LACHO, lo declarativo expresa intención relacional, no instrucción.
+# Ver: SOCIAL · imperativo (TRUST) · funcional (CRYPTO)
+
+## DIR [N1]
+# Clase: operador · Sistema DRA
+# Operador de dirección en el Dynamic Resource Allocation.
+# DIR(+): apertura o expansión de un directorio/segmento.
+# DIR(ING): dirección de flujo entrante (空 vacío receptivo).
+# DIR(FORK): bifurcación de rama de desarrollo.
+# Ver: DRA · SLICE · SEGMENT · CLUSTER
+
+## DSL [N1]
+# Clase: paradigma · Nivel: fundacional
+# Domain Specific Language. LACHO es un DSL de orquestación pura.
+# "Para crear otros lenguajes, LACHO se expresa como un DSL."
+# "No es DSL decorativo: es la matemática del sistema."
+# Ver: BNF · ANTLR · LACHO · CLI
+
+# ══════════════════════════════════════════════════════════════════
+# N2 — MÓDULOS Y MECANISMOS OPERATIVOS
+# ══════════════════════════════════════════════════════════════════
+
+## DIRIMENCIA [N2]
+# Clase: mecanismo · Sistema SAMU · Nivel: constitucional
+# Mecanismo de decisión entre verdad, adecuación y ética.
+# "DIRIMENCIA: CORRECTO, ADECUADO, Y LEGAL DENTRO DEL SISTEMA"
+# "MOTOR .CAT Y DIRIMENCIA: OPERADORES COMO JUECES DE REALIDAD"
+# La dirimencia es el proceso que precede a toda emisión WU.
+# Se distingue de arbitraje (técnico): dirimencia es ontológica.
+# Ver: SAMU · WU · CORRECTO · ADECUADO · LEGAL
+
+## DOGMA-VIRTUAL [{dogma-virtual}] [N2]
+# Clase: sujeto canónico · Biblioteca: SOCIAL
+# Certeza no verificada que vive en red, contagiosa y mutable.
+# "Sin fundamento físico pero con comportamiento contagioso."
+# APLICAR filtro.dogma_check: verificar siempre {DOGMA-VIRTUAL}.
+# El FLYBOT opera en el exterior poblado de {DOGMA-VIRTUAL}.
+# Ver: SOCIAL · GREEN-KNOWLEDGE · FILTER · APLICAR
+
+## DRIP [{drip}] [N2]
+# Clase: sujeto canónico · Biblioteca: SOCIAL
+# Procesamiento gradual y continuo. No batch — goteo controlado.
+# "{drip} es el componente de procesamiento gradual."
+# Flujo: {chair} → {drip} → {scheduler}
+# DRIP_ALERT: señal de alerta en modo goteo.
+# // TAP&DRIP aplicado: cómputo dosificado · no pleno · gradiente ∇
+# Ver: SOCIAL · {chair} · {scheduler} · DRIP_ALERT
+
+## DOORMAN-MOBILE [{doorman-mobile}] [N2]
+# Clase: sujeto canónico · Biblioteca: WORK
+# Módulo de custodia móvil soberana.
+# "Gestiona la latencia de sensor (H5) y aísla la firma en
+# entorno seguro (H29) validando la autoridad del asiento."
+# WORK_DOORMAN-MOBILE/BRAKE: "custodiar" / "detener"
+# Controla el acceso junto a BIOMETRICS.
+# Ver: WORK · BIOMETRICS · CUSTODIA · {brake}
+
+## DESKING [N2]
+# Clase: módulo · H29 · Puente entre contención y lanzamiento
+# "DESKING es el puente entre la contención y el lanzamiento."
+# "DESKING no es el escritorio del operador."
+# $thu$fri → UF[H29] ++ DESKING: activación en el ciclo semanal.
+# Ver: H29 · UF[H29] · CICLO · DRA
+
+## DATA_COMPUTING [N2]
+# Clase: módulo · DRA ENGINE CLUSTER
+# Cómputo soberano de datos del Dynamic Resource Allocation.
+# "DATA COMPUTING = cómputo sobre CORPUS · NLP · vectores · RAG · Scalar S"
+# CLUSTER(DATA_COMPUTING): el clúster del DRA dedicado al cómputo.
+# Ver: DRA · CLUSTER · BM25 · SCALAR_S
+
+## DRIFT [N2]
+# Clase: resultado · Sistema de evaluación · Biblioteca: METHOD
+# Desviación leve del resultado esperado, dentro del rango.
+# "[DRIFT]: el resultado está dentro del rango pero no es exacto."
+# (head seat) Recalibrar · --[As de Guía]
+# Si DRIFT se repite: el sistema activa re-encaminamiento automático.
+# SAMU ajusta coeficientes y permite re-ejecución suave.
+# Ver: SAMU · METHOD · HEAD_SEAT · SCALAR_S
+
+# ══════════════════════════════════════════════════════════════════
+# N3 — ACTORES, ESTADOS Y CLASIFICACIONES
+# ══════════════════════════════════════════════════════════════════
+
+## DEGRADED [N3]
+# Clase: estado · Nivel: sistema
+# Estado de degradación parcial de un módulo o creencia.
+# AGNOSTIC_DEGRADED / ATHEISTIC_DEGRADED: variantes filosóficas.
+# FOUNDATION_DEGRADED: fundación en proceso de erosión.
+# Ver: AGNOSTIC_DEGRADED · ATHEISTIC_DEGRADED · FOUNDATION
+
+## DEPREDADORES (estandarizables) [N3]
+# Clase: conjunto · Ballpaper · Sistema SAMU
+# Los cuatro depredadores estandarizables del sistema LACHO.
+# "DEPREDADORES ESTANDARIZABLES — gestión de recursos de WORK."
+# SPECIES_DECL ::= ("AGUILA" | "LINCE" | "ARANA" | "BALLENA")
+# Cada depredador representa un modo de intervención soberana.
+# Ver: ÁGUILA · ARAÑA · BALLENA · LINCE · ballpaper.py
+
+## DEFAULT [N3]
+# Clase: valor · Gramática LACHO
+# Valor predeterminado cuando no se declara explícitamente.
+# SIN [term] → ASIGNAR [term] por defecto (64 ciclos).
+# DEFAULT en LACHO siempre es explícito: no hay defaults silenciosos.
+
+## DOMINIOS (económicos) [N3]
+# Clase: conjunto · Sistema KALIL · Nivel: N4
+# Los seis dominios económicos soberanos del sistema KALIL:
+#   BOLIVAR(blockchain) · NORA(rating) · CARILO(fee)
+#   BARRIOS(acceso) · CHALTEN(cloud) · TANDIL(archivo)
+# "4.0 GESTIÓN DE DOMINIOS ECONÓMICOS" en CHCL-DOMINIOS-EXT.txt
+# Ver: KALIL · BOLIVAR · BARRIOS · CARILO · NORA · TANDIL · CHALTEN
+
+# ══════════════════════════════════════════════════════════════════
+# N4 — HERRAMIENTAS, DOCUMENTOS Y REFERENCIAS
+# ══════════════════════════════════════════════════════════════════
+
+## DIRIME [N4]
+# Clase: sistema · Nivel: raíz del proyecto
+# El sistema soberano de dirimencia. Nombre del proyecto completo.
+# "DIRIME — sistema soberano de dirimencia" (bajo protección).
+# Componentes: IMV (núcleo) · DIRIME_v2 (Capa B) · DIRIME_v3 (Capa C)
+# Ver: IMV · DIRIMENCIA · LACHO
+
+## DRA (Dynamic Resource Allocation) [N4]
+# Clase: sistema · CORPUS/DYNAMIC_RESOURCE_ALLOCATION/
+# Sistema de asignación dinámica de recursos del corpus.
+# Estructura: TOMO(A+B) · SLICE · SEGMENT · CLUSTER · OFFSET
+# Formato canónico: [term:A°SLICE§SEGMENT#CLUSTER@OFFSET]
+# Ver: CLUSTER · SLICE · SEGMENT · OFFSET · BLUEWORDS
+
+# ─────────────────────────────────────────────────────────────────
+# [term] :: activo · D.index.lacho · DIRIME/IMV · $sat 21-03-2026

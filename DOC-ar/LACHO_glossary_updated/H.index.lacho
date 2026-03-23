@@ -1,0 +1,139 @@
+# H.index.lacho
+# GLOSSARY — Letra H / h
+# DIRIME · IMV · Sistema LACHO
+# [term] :: activo
+# Revisado y auditado: $sat 21-03-2026
+# ─────────────────────────────────────────────────────────────────
+
+# ══════════════════════════════════════════════════════════════════
+# N1 — FUNDAMENTOS DEL LENGUAJE
+# ══════════════════════════════════════════════════════════════════
+
+## HEX_ID [N1]
+# Clase: token · Gramática ANTLR
+# Identificador hexadecimal en la gramática LACHO.
+# HEX_ID: referencia a uno de los 64 hexagramas.
+# CYCLE_ID ::= DAY_ID "#" HEX_ID "#" HEX_DIGIT+
+# Ver: DAY_ID · HEXAGRAMA · GATE_SIGIL
+
+## HIPOTETICO [N1]
+# Clase: modo · Gramática LACHO · SAMU
+# La H de LACHO: Lenguaje Artificial Circunstancial Hipotético Ordenado.
+# HIPOTETICO = 3 ;;; canal sin confirmación (H_OPERATIVO)
+# HANDSHAKE → ESTABLECIDO | HIPOTETICO | ERROR
+# Lo hipotético no es debilidad: es el dispositivo para operar
+# sin caer en dogma. Ver: H_OPERATIVO · SAMU · DIRIMENCIA
+
+## IF [N1]
+# Clase: token · Gramática ANTLR
+# Condicional en la gramática LACHO.
+# CONDITION_STMT ::= "IF" CONDITION "THEN" ACTION ("ELSE" ACTION)?
+# Ver: ELSE · CONDITION · ACTION · METHOD
+
+## IDENTIFIER [N1]
+# Clase: token · Gramática ANTLR
+# Identificador canónico en la gramática LACHO.
+# IDENTIFIER ::= ALPHA (ALPHA_NUM | UNDERSCORE | DASH)*
+# Usado en: DECL_LINE · GATE_SIGIL · SUBSECTION · DECLARE_FLOW
+
+## IMPERATIVO [N1]
+# Clase: paradigma · Biblioteca TRUST
+# Paradigma de programación de la biblioteca TRUST.
+# "BIBLIOTECA TRUST (IMPERATIVO):"
+# En LACHO, lo imperativo ordena sin negociación.
+# Ver: TRUST · DECLARATIVO (SOCIAL) · FUNCIONAL (CRYPTO)
+
+## INTEGRITY [N1]
+# Clase: propiedad criptográfica · TRUST
+# Sello criptográfico de integridad del sistema.
+# INTEGRITY :: (sha256_hash) // Sello criptográfico del bloque
+# Hash de Gracia: ID + AUTHORITY + INTEGRITY → sello único.
+# Ver: FIRMA_SOBERANA · BLAKE3 · SHA256 · TRUST
+
+## INVALID [N1]
+# Clase: estado · Sistema de validación · grammar.py
+# Estado de una sentencia o módulo que no pasó la validación.
+# INVALID(SEM-1): falta [term] ontológico.
+# INVALID(SEM-2): el [term] operativo no está activo.
+# Ver: AUSENTE · ABORT · FOUNDATION · VALIDACION
+
+# ══════════════════════════════════════════════════════════════════
+# N2 — MÓDULOS Y MECANISMOS OPERATIVOS
+# ══════════════════════════════════════════════════════════════════
+
+## HALT [N2]
+# Clase: estado de emergencia · Sistema de identidad
+# Detención completa del sistema por pérdida de identidad soberana.
+# "si core.teather no existe → HALT(IDENTIDAD_PERDIDA)"
+# "colapsable: sí — por condición de HALT"
+# Ver: FOUNDATION_COMPROMISED · CRISIS_MANAGEMENT · ABORT
+
+## HANDSHAKE [N2]
+# Clase: protocolo · Biblioteca: SOCIAL / CRYPTO
+# Protocolo de establecimiento de conexión soberana.
+# HANDSHAKE → EXCHANGE → ACK → SEAL
+# HANDSHAKE → ESTABLECIDO | HIPOTETICO | ERROR
+# "En LACHO busca la resonancia rítmica" (no solo confirmación técnica).
+# Ver: ACK · EXCHANGE · SEAL · CRYPTO · SOCIAL
+
+## HEADCAT [{headcat}] [N2]
+# Clase: sujeto canónico · Biblioteca: SOCIAL · Director de WU
+# Director de la salida soberana del sistema.
+# "HEADCAT Y GOBIERNO DE SALIDA: POR QUÉ LA EMISIÓN SE SEPARA"
+# Gobierna y audita la salida WU con taxonomía completa.
+# "Los ojos del headcat son el [ku-chat] activo."
+# Cadena: LACHO → HEADCAT → FLYBOT → HARDWARE.
+# Ver: WU · KU · SOCIAL · FLYBOT
+
+## HL (Hyperledger) [N2]
+# Clase: protocolo · Red soberana inter-nodos
+# Hyperledger Fabric: motor de registro inmutable de LACHO.
+# "HYPERLEDGER FABRIC = poke+trust ; peek+crypto."
+# "ledger.py + HL FABRIC": implementación de la Capa D.
+# Ver: FABRIC · BLOCKCHAIN · LEDGER · BOLIVAR
+
+## HEXAGRAMA [N2]
+# Clase: unidad funcional · Sistema I Ching × LACHO
+# Los 64 hexagramas del I Ching mapeados como estados soberanos.
+# Cada hexagrama es una UF (Unidad Funcional) del sistema.
+# "3 jefaturas: HEXAGRAMA 1(CEO) · HEXAGRAMA 32(PM) · HEXAGRAMA 64(VIBE)"
+# 64 estados × 6 líneas = la gramática de lo posible en LACHO.
+# Ver: UF · ACTIVITY · STACKING · H01–H64
+
+## HOUSE_DRONE [N2]
+# Clase: módulo · ELPULSAR LOCAL
+# Módulo de monitoreo doméstico soberano.
+# $thu: Nerve Cell HOUSE DRONE Notaria.
+# Ruta: FOLDERS NO RAG INPUT/ELPULSAR LOCAL/HOUSE_DRONE.html
+# Ver: ELPULSAR · NERVE_CELL · NOTARIA
+
+# ══════════════════════════════════════════════════════════════════
+# N3 — ACTORES, ESTADOS Y CLASIFICACIONES
+# ══════════════════════════════════════════════════════════════════
+
+## HARDWARE [N3]
+# Clase: referencia · Sistema físico · Capa C
+# El hardware del operador: Linux Mint · 12GB RAM · SSD 240GB · HDD 1TB.
+# [ESTADO DEL HARDWARE]: METAL_SYNC_STABLE · INTERRUPT_READY
+# La Capa C está bloqueada hasta tener hardware Ryzen.
+# Ver: RAM · CPU · HDD · SSD · CAT(OS)
+
+## HDD [N3]
+# Clase: recurso hardware · Sistema de archivos
+# Hard Disk Drive. Territorio del sistema: persistencia e historia.
+# "/territorio/mu-store/" en HDD para persistencia y WORM.
+# SSD (Santuario) + HDD (Territorio): geografía soberana de directorios.
+# Ver: SSD · CAT(MU) · MU-STORE · ARCHIVO
+
+# ══════════════════════════════════════════════════════════════════
+# N4 — HERRAMIENTAS, DOCUMENTOS Y REFERENCIAS
+# ══════════════════════════════════════════════════════════════════
+
+## HANZI [N4]
+# Clase: sistema de escritura · Trilingüismo
+# Caracteres chinos (漢字) usados en el sistema trilingüe de LACHO.
+# Parte del vocabulario CJK soberano.
+# Ver: CJK · UNICODE · CHINA_DUAL · language_routing
+
+# ─────────────────────────────────────────────────────────────────
+# [term] :: activo · H.index.lacho · DIRIME/IMV · $sat 21-03-2026

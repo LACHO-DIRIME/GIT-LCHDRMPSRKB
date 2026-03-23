@@ -1,0 +1,56 @@
+# rational_day.theater
+# MACRO: contexto soberano según el día
+# Genesis: padre común · árbol SUITE SOBERANA
+# [term] :: activo
+
+## CABECERA SOBERANA
+[genesis]     :: SUITE SOBERANA
+[version]     :: 1.0
+[autor]       :: LACHO SYSTEM
+[extension]   :: .theater
+[tipo]        :: MACRO · contexto/entorno
+
+## CONTEXTO TEMPORAL
+macro_temprano {
+  TRUST FOUNDATION =><= .. verifica .. condiciones_inicio_dia --[As de Guía] [term]
+  ACTIVITY UF[H01] =><= .. inicia .. ciclo_temprano_activo --[As de Guía] [term]
+  SAMU #rise =><= .. audita .. estado_sistema_apertura --[As de Guía] [term]
+  # CMD_STATS:  python3 /media/Personal/PLANERAI/DIRIME/IMV/main.py --stats
+  # CMD_ASKS:   python3 /media/Personal/PLANERAI/DIRIME/IMV/main.py --asks
+}
+
+macro_tarde {
+  SAMU @ =><= .. audita .. rendimiento_sesion_activa --[Ballestrinque] [term]
+  GATE UF[H56] =><= .. filtra .. tareas_pendientes_dia --[Ballestrinque] [term]
+  STACKING UF[H52] =><= .. cristaliza .. avances_verificados --[Nudo de Ocho] [term]
+  # CMD_STATS:  python3 /media/Personal/PLANERAI/DIRIME/IMV/main.py --stats
+  # CMD_TESTS:  cd /media/Personal/PLANERAI/DIRIME/IMV && python3 -m pytest tests/test_imv.py -v --tb=no
+}
+
+macro_cierre {
+  SAMU #set =><= .. dirime .. cierre_dia_soberano --[Nudo de Rizo] [term]
+  STACKING UF[H48] =><= .. preserva .. historial_dia_completo --[Nudo de Rizo] [term]
+  ACTIVITY UF[H52] =><= .. cristaliza .. wu_dia_verificado --[Nudo de Rizo] [term]
+  WORK {actuator} =><= .. ejecuta .. github_sync_cierre --[As de Guía] [term]
+  SAMU @ =><= .. registra .. stats_sesion_completada --[Ballestrinque] [term]
+  # CMD_CIERRE: bash /media/Personal/PLANERAI/DIRIME/tools/github_sync.sh
+  # CMD_STATS:  python3 /media/Personal/PLANERAI/DIRIME/IMV/main.py --stats
+  # CMD_TESTS:  cd /media/Personal/PLANERAI/DIRIME/IMV && python3 -m pytest tests/test_imv.py --tb=no -q
+}
+
+## SCHEDULER
+scheduler_instrucciones {
+  -- ejecutar macro_temprano al inicio de sesion
+  -- ejecutar macro_tarde a mitad de sesion
+  -- ejecutar macro_cierre al finalizar
+  -- cada macro genera sentencias LACHO verificables
+}
+
+## STREAMING
+streaming_instrucciones {
+  -- emitir estado en tiempo real via SOCIAL {launch-bot}
+  -- registrar en ledger cada transicion de macro
+  -- alertar via GATE si hay tension --[Ballestrinque]
+}
+
+[term] :: activo · [seal of secrecy] :: activo

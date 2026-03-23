@@ -1,0 +1,127 @@
+# P.index.lacho
+# GLOSSARY — Letra P / p
+# DIRIME · IMV · Sistema LACHO
+# [term] :: activo
+# Revisado y auditado: $sat 21-03-2026
+# ─────────────────────────────────────────────────────────────────
+
+# ══════════════════════════════════════════════════════════════════
+# N1 — FUNDAMENTOS DEL LENGUAJE
+# ══════════════════════════════════════════════════════════════════
+
+## PATO_INFLADO [N1]
+# Clase: token / protocolo · Gramática LACHO
+# Protocolo de separación de superficialidad.
+# PATO_STMT ::= "PATO_INFLADO" DECLARE_FLOW
+# "PATO INFLADO — separar la piel del pato con aire: fácil, rápido,
+# prolijo — sin ensuciarse."
+# ALGORITMO PATO_INFLADO (Superficie Separation Protocol):
+# separar la forma superficial del contenido soberano.
+# Ver: GREEN-KNOWLEDGE · FILTER · BLACKLIST
+
+## PARADIGMA [N1]
+# Clase: concepto · Gramática / Sistema cognitivo
+# Modo fundamental de operar de una biblioteca en LACHO.
+# ::: PARADIGMA = INICIALIZACIÓN — precede a todos los paradigmas
+# ::: PARADIGMA = RECEPTIVO — H2 como estado base permanente
+# Cada biblioteca tiene su paradigma: imperativo, declarativo,
+# funcional, orientado a objetos, de script, bajo nivel, alto nivel.
+# Ver: IMPERATIVO · DECLARATIVO · DSL · BIBLIOTECA
+
+# ══════════════════════════════════════════════════════════════════
+# N2 — MÓDULOS Y MECANISMOS OPERATIVOS
+# ══════════════════════════════════════════════════════════════════
+
+## PATTERN-WITNESS [N2]
+# Clase: función · Sistema de reconocimiento · H4
+# Capa que registra recurrencias sin interpretarlas todavía.
+# "PATTERN-WITNESS — registra recurrencias sin interpretarlas,
+# las almacena en MU hasta que acumulan suficiente Tr para ser dirimidas."
+# H4 :: PATTERN-WITNESS. Detectadas en la Imagen Gigante.
+# Ver: H4 · MU · DIRIMENCIA · CICLOTIMIA
+
+## PSI (Ψ) [N2]
+# Clase: operador · Sistema de estado soberano · Nivel: constitucional
+# Ψ: operador que convierte caos en estado ordenado, de forma local y verificable.
+# "PSI": "Ψ" — Ecuación de conciencia (Ballpaper).
+# "Ψ como OPERADOR COSMOS–TOMO: VERDAD LOCAL Y ORDEN VERIFICABLE"
+# Motor algebraico: ECUACIÓN DE ESTADO Ψ.
+# "Ψ sin SAMU es coherencia sin ética."
+# Ver: SAMU · MOTOR · ALGEBRAICO · DIRIMENCIA · COSMOS
+
+## PULSING [N2]
+# Clase: interfaz GUI · Sistema visual soberano
+# "PULSING es el nombre correcto para la GUI de LACHO."
+# "No es un dashboard estático — es un sistema que respira. Dos frames. Un ritmo."
+# PULSING + ASHING + COMPRESIÓN = tríada de procesamiento de output.
+# "PULSING → la forma en que el sistema presenta la información (GUI viva)"
+# Ver: GUI · ELPULSAR · BALLPAPER · ASHING
+
+## PROTOCOLO [N2]
+# Clase: procedimiento · Nivel: operativo
+# Secuencia verificable de pasos para una operación soberana.
+# Tipos en el corpus: PROTOCOLO DE HALT · PROTOCOLO DE ARRANQUE
+# PROTOCOLO NOTARIAL · PROTOCOLO DE BACKUP · PROTOCOLO DE SEGURIDAD
+# En LACHO, el protocolo no se "argumenta" — se ejecuta o no se ejecuta.
+# Ver: FOUNDATION · HALT · NOTARIA · BACKUP
+
+## PUENTE [N2]
+# Clase: función · Arquitectura del sistema
+# Mecanismo de conexión entre bibliotecas o sistemas distintos.
+# "BIBLIOTECAS EXISTENTES — NUEVOS MÓDULOS — FUNCIÓN DE PUENTE"
+# groq/bridge.py: puente NL→LACHO vía Groq (Capa B).
+# BIBLIO-SOURCES(DIRIME-LINUX_PUENTES).txt: puentes externos soberanos.
+# Ver: BRIDGE · GROQ · CANAL · CAT(BRIDGE)
+
+## PAPERNOTE [{note}] [N2]
+# Clase: componente · SOCIAL · Registro pasivo
+# El papernote es el pilar visual de STACKING asociado a H29/$tue.
+# "PAPERNOTE: Registro pasivo, memoria simple."
+# "+++ H29 :: {note} $tue — papernote, registro pasivo."
+# Pilar 4 del STACKING visual: memoria de la sesión.
+# Ver: NOTE · H29 · STACKING · CICLOTIMIA
+
+## PROMPT [N2]
+# Clase: instrucción · Windsurf / Groq · Toolchain
+# Instrucción soberana para IAs del sistema.
+# PROMPT MAESTRO: kernel conductual (A03) — SAMU @ y ética operativa.
+# Los prompts del $dia están en: OPTIMIZACION_PROMPTS/$dia.txt
+# Ver: WINDSURF · GROQ · SAMU · AUTORESEARCH_SYSTEM_PROMPT
+
+# ══════════════════════════════════════════════════════════════════
+# N3 — ACTORES, ESTADOS Y CLASIFICACIONES
+# ══════════════════════════════════════════════════════════════════
+
+## PASO [N3]
+# Clase: unidad de progreso · Nivel: operacional
+# Unidad de avance verificable en una secuencia soberana.
+# PASO 1→4: la secuencia canónica de arranque del sistema.
+# En NOTARIA: NOTARIA-9 define los pasos del pipeline.
+# Ver: ARRANQUE · PROTOCOLO · CIERRE
+
+# ══════════════════════════════════════════════════════════════════
+# N4 — HERRAMIENTAS, DOCUMENTOS Y REFERENCIAS
+# ══════════════════════════════════════════════════════════════════
+
+## PLANER [N4]
+# Clase: directorio raíz · Proyecto del operador
+# Directorio raíz del proyecto: /home/lacho/Documentos/PLANER AI/
+# PLANER AI: el espacio de trabajo soberano del operador.
+# Ver: DIRIME · IMV · CORPUS · JOURNAL
+
+## PESCA [N4]
+# Clase: metáfora · Sistema logístico · Paradigma
+# La red de pesca: paradigma logístico del sistema LACHO.
+# "RED DE PESCA — la malla está tendida, el agua pasa, los peces llegan."
+# "C: RED DE PESCA — paradigma logístico"
+# Ver: PATO_INFLADO · GREEN-KNOWLEDGE · FILTER
+
+## PBOC [N4]
+# Clase: referencia · Banco central chino · Dominio CHINA
+# People's Bank of China. Autoridad regulatoria del dominio CHINA.
+# "CARILO: capital · riesgo · loans DeFi/PBOC"
+# "Cumplimiento de regulaciones PBOC"
+# Ver: CHINA_DUAL · CNY · KYC · CARILO
+
+# ─────────────────────────────────────────────────────────────────
+# [term] :: activo · P.index.lacho · DIRIME/IMV · $sat 21-03-2026

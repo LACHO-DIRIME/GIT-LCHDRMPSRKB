@@ -237,3 +237,28 @@ def init_config_defaults() -> None:
                 "status": "OPEN",
                 "cycle_id": None
             }, f, indent=2)
+
+
+# ── TASK_3.1 — SOVEREIGN MONAD ──────────────────────────────────
+from dataclasses import dataclass as _dc
+from typing import Any as _Any, Callable as _Cb, Optional as _Opt
+
+@_dc
+class SovereignResult:
+    """SovereignMonad — MU→KU→WU chain. Short-circuits on ABORT. TASK_3.1"""
+    value: _Any; scalar: float; term_active: bool; library: str; error: _Opt[str] = None
+
+    @property
+    def is_valid(self) -> bool:
+        return self.term_active and self.error is None
+
+    def bind(self, fn: "_Cb[[SovereignResult], SovereignResult]") -> "SovereignResult":
+        if not self.is_valid: return self
+        try: return fn(self)
+        except Exception as e:
+            return SovereignResult(value=None, scalar=self.scalar,
+                term_active=False, library=self.library, error=f"MONAD_CHAIN_FAIL: {e}")
+
+    @classmethod
+    def unit(cls, value: _Any, scalar: float, library: str) -> "SovereignResult":
+        return cls(value=value, scalar=scalar, term_active=True, library=library)

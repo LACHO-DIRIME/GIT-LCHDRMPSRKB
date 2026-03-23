@@ -1,0 +1,25 @@
+# X.index.lacho
+# GLOSSARY — Letra X / x
+# DIRIME · IMV · Sistema LACHO
+# [term] :: activo
+# Revisado y auditado: $sat 21-03-2026
+# ─────────────────────────────────────────────────────────────────
+
+# ══════════════════════════════════════════════════════════════════
+# N4 — HERRAMIENTAS, DOCUMENTOS Y REFERENCIAS
+# ══════════════════════════════════════════════════════════════════
+
+## XML [N4]
+# Clase: formato · Toolchain · Pipeline de producción
+# Extensible Markup Language. Formato intermedio en el pipeline LACHO.
+# Orden de producción: ANTLR → YAML → XML → DOCX → XLSX → GPX
+# Ver: YAML · XLSX · ANTLR · TOOLCHAIN
+
+## XLSX [N4]
+# Clase: formato · Toolchain · Pipeline de producción
+# Hoja de cálculo. Formato de salida en el pipeline de producción.
+# Orden de producción: ANTLR → YAML → XML → DOCX → XLSX → GPX
+# Ver: XML · YAML · DOCX · TOOLCHAIN
+
+# ─────────────────────────────────────────────────────────────────
+# [term] :: activo · X.index.lacho · DIRIME/IMV · $sat 21-03-2026

@@ -1,0 +1,94 @@
+PISTAS VALIOSAS - LETRAS RARAS Y CONCEPTUALES
+================================================
+
+🔍 LETRAS POCO FRECUENTES EN ESPAÑOL/INGLÉS TÉCNICO:
+
+K - Kernel, Kilobyte, Key, Knowledge
+Q - Query, Queue, Quantum, Quality
+X - XML, X-Server, eXecute, eXpand
+W - Web, Workspace, Window, Workflow
+Z - Zone, Zero, Zip, Z-index
+J - JSON, Jurisdiction, Job, Journal
+Y - YAML, Yield, Y-axis
+
+🔍 PATRONES DE COINCIDENCIA LETRA-CONCEPTO:
+
+K + Kernel = Alta probabilidad de acrónimo
+Q + Query/Queue = Alta probabilidad
+X + XML/eXecute = Alta probabilidad
+W + Web/Workflow = Alta probabilidad
+Z + Zone/Zero = Alta probabilidad
+
+🔍 CONCEPTOS TÉCNICOS ASOCIADOS:
+
+K:
+- Kernel (núcleo de sistema)
+- Key (clave, llave)
+- Knowledge (conocimiento)
+- Kilobyte (unidad de medida)
+
+Q:
+- Query (consulta)
+- Queue (cola de procesos)
+- Quantum (unidad mínima)
+- Quality (calidad)
+
+X:
+- XML (lenguaje de marcado)
+- eXecute (ejecutar)
+- eXpand (expandir)
+- X-Server (servidor gráfico)
+
+W:
+- Web (red mundial)
+- Workspace (espacio de trabajo)
+- Window (ventana)
+- Workflow (flujo de trabajo)
+
+🔍 ESTRATEGIA DE DETECCIÓN:
+
+1. Identificar letras raras en la palabra
+2. Buscar coincidencias conceptuales
+3. Verificar si la letra inicial coincide con concepto
+4. Validar si el resto de letras tienen significado coherente
+5. Confirmar si la palabra completa forma acrónimo lógico
+
+🔍 EJEMPLOS DE ÉXITO:
+
+KALIL:
+- K = Kernel (coincidencia perfecta)
+- A = AI (Artificial Intelligence)
+- L = Logic
+- I = Information
+- L = Learning
+- Resultado: Kernel AI Logic & Information Learning
+
+🔍 MÉTODO DE VALIDACIÓN:
+
+- Letra rara + concepto técnico = Pista fuerte
+- Resto de letras con significado = Comprobación
+- Coherencia semántica = Confirmación
+- Documentación explícita = Verificación final
+
+🔍 LETRAS DE ALTA VALOR:
+
+Prioridad 1: K, Q, X, Z (más raras)
+Prioridad 2: W, J, Y (menos raras pero específicas)
+Prioridad 3: V, F, B (comunes pero con patrones técnicos)
+
+🔍 CONTEXTO DIRIME/LACHO:
+
+Letras identificadas en el sistema:
+- K (KALIL, KALIL_STATUS, KALIL_TRIGGER)
+- Q (Query, Queue)
+- X (XML, X-Server)
+- W (WORK, Workspace)
+- Z (Zone, Zero)
+
+🔍 REGLAS DE ORO:
+
+1. Una letra rara en la palabra = Investigar profundamente
+2. Coincidencia letra-concepto = Evidencia fuerte
+3. Múltiples letras con significado = Alta probabilidad
+4. Documentación explícita = Confirmación absoluta
+5. Ausencia de coincidencia = Descartar acrónimo

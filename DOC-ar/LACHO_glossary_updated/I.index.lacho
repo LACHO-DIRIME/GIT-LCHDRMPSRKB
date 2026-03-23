@@ -1,0 +1,105 @@
+# I.index.lacho
+# GLOSSARY — Letra I / i
+# DIRIME · IMV · Sistema LACHO
+# [term] :: activo
+# Revisado y auditado: $sat 21-03-2026
+# ─────────────────────────────────────────────────────────────────
+
+# ══════════════════════════════════════════════════════════════════
+# N1 — FUNDAMENTOS DEL LENGUAJE
+# ══════════════════════════════════════════════════════════════════
+
+## IDENTIFIER [N1]
+# → ver H.index.lacho (mismo token, referencia cruzada)
+# IDENTIFIER ::= ALPHA (ALPHA_NUM | UNDERSCORE | DASH)*
+
+## IF [N1]
+# → ver H.index.lacho (mismo token, referencia cruzada)
+
+## IMPERATIVO [N1]
+# → ver H.index.lacho (paradigma TRUST)
+
+# ══════════════════════════════════════════════════════════════════
+# N2 — MÓDULOS Y MECANISMOS OPERATIVOS
+# ══════════════════════════════════════════════════════════════════
+
+## IME [N2]
+# Clase: módulo · I Ching Engine · Capa C
+# Input Method Engine modo I Ching: procesa hexagramas en background.
+# "IME Modo I CHING · LOAN-IME · background hex"
+# LOAN-IME: precarga pesos RAG en memoria MU.
+# Bloqueado en Capa C (requiere Ollama local en hardware Ryzen).
+# Ver: CAT · DIRIME_v3 · OLLAMA · CAPA_C
+
+## IMV [N2]
+# Clase: sistema · Núcleo ejecutable · Capa A+B
+# Integrated Modular Validator. Núcleo Python del sistema DIRIME.
+# "Tests IMV: 49/49 ✅"
+# Estructura: core/ · interface/ · tools/ · data/sovereign.db
+# Comando base: cd ~/DIRIME/IMV && python3 main.py --stats
+# Ver: DIRIME · grammar.py · ledger.py · samu.py · rag.py
+
+## IMPORT [N2]
+# Clase: operación · CAT(IMPORT) · Sistema de flujo
+# Importación soberana de recursos entre nodos.
+# headcat CAT(IMPORT) FROM "logic.lacho" --[As de Guía]
+# IMPORT FROM "FOLIAR.txt" -> [foundation]
+# CAT(IMPORT): módulo de importación entre nodos (Capa D).
+# Ver: EXPORT · CAT · FABRIC · BRIDGE
+
+## INIT [N2]
+# Clase: señal · Sistema RAG · Ciclo de inicio
+# Señal de inicialización de un módulo o ciclo.
+# [RAG: TRUST :: INIT :: ciclo_0]
+# [RAG: STACKING :: INIT :: 8_pilares]
+# El INIT registra en RAG el momento de activación soberana.
+# Ver: ACTIVATE · ARRANQUE · BOOT
+
+## INTEGRIDAD [N2]
+# Clase: propiedad · Sistema soberano
+# "VERIFICAR INTEGRIDAD DE IDENTIDAD" — primer paso del protocolo.
+# "SILENCE_IS_SOVEREIGN": la integridad en silencio.
+# "(integrity_hash) es el suelo" — base verificable, no metáfora.
+# Ver: INTEGRITY · FIRMA_SOBERANA · FOUNDATION · TRUST
+
+## IRQ [N2]
+# Clase: señal hardware · Bajo nivel · Capa C/D
+# Interrupt Request. Señal de interrupción de hardware.
+# "Mapear los 64 hexagramas a instrucciones reales de hardware
+# (señales de Kernel, interrupciones IRQ, estados de CPU)."
+# Ver: CPU · HARDWARE · CAT(OS) · KERNEL
+
+# ══════════════════════════════════════════════════════════════════
+# N3 — ACTORES, ESTADOS Y CLASIFICACIONES
+# ══════════════════════════════════════════════════════════════════
+
+## INDEXADO [N3]
+# Clase: estado · Sistema RAG
+# Estado de un archivo ya procesado e incluido en el índice BM25.
+# CORPUS: 281+ archivos INDEXADOS.
+# INDEXADOS: confirmación de que el RAG los puede consultar.
+# Ver: BM25 · ANCHOR_RAG · CORPUS · rag.py
+
+## INTERMEDIO [N3]
+# Clase: nivel · Taxonomía del sistema
+# Nivel intermedio de la jerarquía operativa de LACHO.
+# "modo intermedio" para biblioteca ACTIVITY en grammar.py.
+# Entre lo constitucional (nivel 0) y lo técnico (nivel 3).
+
+## INVALID [N3]
+# → ver H.index.lacho
+
+# ══════════════════════════════════════════════════════════════════
+# N4 — HERRAMIENTAS, DOCUMENTOS Y REFERENCIAS
+# ══════════════════════════════════════════════════════════════════
+
+## IDE [N4]
+# Clase: entorno de desarrollo · Toolchain
+# Integrated Development Environment. Dos IDEs soberanos en DIRIME:
+# CIDE: Circuit IDE (visual, HTML).
+# AGENCY IDE SYSTEM: orquestación de agentes (.green/.blue).
+# NODO-IDE físico: pendiente Capa C (segunda PC).
+# Ver: CIDE · AGENCY_IDE · AIDER · WINDSURF
+
+# ─────────────────────────────────────────────────────────────────
+# [term] :: activo · I.index.lacho · DIRIME/IMV · $sat 21-03-2026

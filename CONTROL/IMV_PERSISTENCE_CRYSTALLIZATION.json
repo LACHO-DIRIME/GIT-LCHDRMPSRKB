@@ -1,0 +1,23 @@
+{
+  "ENTITY": "IMV_PERSISTENCE_CRYSTALLIZATION",
+  "PHASE": "NEXT_MILESTONE",
+  "OPERATIONAL_GOAL": "Sincronizar las 15 tablas de Windsurf con los verbos de STACKING.",
+  "ACTION_PLAN": [
+    {
+      "STEP": "1_MAPPING",
+      "ACTION": "Vincular tipos de datos SQL con operadores 人工 (Artificial).",
+      "TOOL": "Windsurf_Cascade_Compose"
+    },
+    {
+      "STEP": "2_VALIDATION",
+      "ACTION": "Aplicar el validador ⊗ (Nudo de Ocho) a cada entrada de tabla.",
+      "TOOL": "final_priority_corrections.py"
+    },
+    {
+      "STEP": "3_SEALING",
+      "ACTION": "Usar el modo 既濟 para inmutabilizar el estado inicial de la DB.",
+      "TOOL": "sovereign_organs.lacho"
+    }
+  ],
+  "RESOURCE_MANAGEMENT": "Verificación de swap y RAM libre post-operación 空 (Kōng)."
+}

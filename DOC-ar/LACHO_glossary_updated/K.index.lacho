@@ -1,0 +1,98 @@
+# K.index.lacho
+# GLOSSARY — Letra K / k
+# DIRIME · IMV · Sistema LACHO
+# [term] :: activo
+# Revisado y auditado: $sat 21-03-2026
+# ─────────────────────────────────────────────────────────────────
+
+# ══════════════════════════════════════════════════════════════════
+# N1 — FUNDAMENTOS DEL LENGUAJE
+# ══════════════════════════════════════════════════════════════════
+
+## KEYWORDS [N1]
+# Clase: vocabulario · Sistema RAG · Nivel: constitucional
+# Vocabulario constitucional del sistema LACHO para reconocimiento RAG.
+# "=== KEYWORDS NUEVAS — INCORPORADAS EN ESTA INSTANCIA ==="
+# B04: ALIMENTO RAG-KEYWORDS CONSTITUCIONALES L.A.C.H.O.txt
+# KEYWORDS_SYSTEM · KEYWORDS_ASSET: variantes por dominio.
+# Ver: BEHAVIORAL_RAG · BM25 · ANCHOR_RAG
+
+# ══════════════════════════════════════════════════════════════════
+# N2 — MÓDULOS Y MECANISMOS OPERATIVOS
+# ══════════════════════════════════════════════════════════════════
+
+## KU [N2]
+# Clase: estado · Tríada MU–KU–WU · Nivel: constitucional
+# Contexto / Canal de comprensión / Exploración activa.
+# "KU: lectura del entorno. Canal de comprensión."
+# "Traduce 'situación' en información utilizable por el sistema."
+# KU no ejecuta — escucha y comprende.
+# KU_DV: KU contaminado con {DOGMA-VIRTUAL}.
+# KU_NOISE: ruido relacional que filtra el sistema.
+# KU_SATURATED: KU en límite de capacidad.
+# Correlato: [ku-chat] como interfaz de escucha soberana.
+# Ver: MU · WU · SAMU · DIRIMENCIA
+
+## KU_DV [N2]
+# Clase: estado patológico · Sistema KU
+# KU contaminado con {DOGMA-VIRTUAL} — consultas falsas.
+# "Si KU_DV se cristalizó en STACKING_H48, todas las consultas
+# futuras están contaminadas."
+# "La limpieza de H48 es la operación más crítica de mantenimiento."
+# Ver: DOGMA-VIRTUAL · KU · STACKING · H48
+
+## KNOWLEDGE_SYNTHESIS [N2]
+# Clase: protocolo · Hexagrama: H50 · 鼎 Dǐng · Biblioteca: STACKING
+# Protocolo de síntesis del conocimiento. El caldero alquímico.
+# [KNOWLEDGE_SYNTHESIS / DATA_REFINEMENT]
+# [KNOWLEDGE_SYNTHESIS / DEEP_ALCHEMICAL_PROCESS]
+# !!Invoke!! 50[Stacking] -> [KNOWLEDGE_SYNTHESIS]
+# Ver: H50 · STACKING · COGNITIVE_RAG · GREEN-KNOWLEDGE
+
+## KERNEL [N2]
+# Clase: módulo · Sistema operativo soberano · Capa C/D
+# Núcleo del sistema operativo. Objetivo: soberanía de bajo nivel.
+# [ESTADO DEL KERNEL]: LOW_LEVEL_SOVEREIGNTY_ACTIVE
+# "FOLIO 130: REVOLUCIÓN Y EVOLUCIÓN DEL KERNEL"
+# Mapeo de hexagramas a instrucciones de Kernel, IRQ, estados de CPU.
+# Ver: CAT(OS) · IRQ · CPU · HARDWARE · CAPA_D
+
+## KUBERNETES [N2]
+# Clase: herramienta · Orquestación de contenedores · Toolchain
+# Sistema de orquestación de contenedores en el stack LACHO.
+# yaml/yml (Ansible, Docker, Kubernetes): stack de configuración.
+# "MCP para conectar agentes con herramientas como Kubernetes."
+# Ver: ANSIBLE · DOCKER · MCP · CAPA_C
+
+# ══════════════════════════════════════════════════════════════════
+# N3 — ACTORES, ESTADOS Y CLASIFICACIONES
+# ══════════════════════════════════════════════════════════════════
+
+## KEY / (key seat) [N3]
+# Clase: asiento de autoridad · Biblioteca: CRYPTO
+# El asiento de llave: cifrado de identidad y acceso.
+# "+++ (KEY SEAT) — cifrado de identidad y acceso — ACTIVO"
+# KEY_COMPROMISED: estado de llave comprometida.
+# KEY_RESTRICTED: acceso restringido por política soberana.
+# Ver: ASIENTO · AUTHORIZED_0 · CRYPTO · (spark seat)
+
+## KYC [N3]
+# Clase: protocolo · Compliance · Dominio CHINA / GLOBAL
+# Know Your Customer. Verificación de identidad soberana.
+# GLOBAL :: crypto · KYC occidental
+# CHINA  :: e-CNY · BSN · KYC PBOC (banco central chino)
+# Ver: BIOMETRICS · CHINA_DUAL · BOLIVAR · HANDSHAKE
+
+# ══════════════════════════════════════════════════════════════════
+# N4 — HERRAMIENTAS, DOCUMENTOS Y REFERENCIAS
+# ══════════════════════════════════════════════════════════════════
+
+## KALIL [N4]
+# Clase: sistema · Dominio económico soberano
+# Sistema de agentes económicos soberanos de DIRIME.
+# Seis nodos: BOLIVAR · NORA · CARILO · BARRIOS · CHALTEN · TANDIL
+# "KALIL-CHINA-DUAL.txt · KALIL-NODOS-LACHO.txt"
+# Ver: BOLIVAR · BARRIOS · CARILO · NORA · CHALTEN · TANDIL
+
+# ─────────────────────────────────────────────────────────────────
+# [term] :: activo · K.index.lacho · DIRIME/IMV · $sat 21-03-2026

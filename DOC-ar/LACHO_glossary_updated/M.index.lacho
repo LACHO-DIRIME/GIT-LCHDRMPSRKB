@@ -1,0 +1,147 @@
+# M.index.lacho
+# GLOSSARY — Letra M / m
+# DIRIME · IMV · Sistema LACHO
+# [term] :: activo
+# Revisado y auditado: $sat 21-03-2026
+# ─────────────────────────────────────────────────────────────────
+
+# ══════════════════════════════════════════════════════════════════
+# N1 — FUNDAMENTOS DEL LENGUAJE
+# ══════════════════════════════════════════════════════════════════
+
+## METHOD [N1]
+# Clase: biblioteca · Nivel: 1 · Paradigma: operadores
+# Biblioteca de operadores matemáticos y lógicos del sistema LACHO.
+# "Si el TRUST es la ley, el METHOD es la técnica de ensamblaje."
+# Cinco operadores canónicos:
+#   <equation>      → álgebra soberana
+#   <operator_flow> → flujo de operadores (H50)
+#   <if>            → condicional soberano
+#   <stat_onto>     → estadística ontológica
+#   <loop>          → ciclo controlado
+# Ver: BILATERAL · CROSSOVER · FILTER · grammar.py
+
+## MACRO [N1]
+# Clase: nivel de lectura · Corpus / Cognitivo
+# Nivel más alto de abstracción en la jerarquía documental.
+# "LIBRO LACHO (ACOPIO) — ARQUITECTURA COGNITIVA GLOBAL (NIVEL MACRO)"
+# MACRO → MESO → MICRO: escala de lectura del sistema.
+# Ver: MESO · MICRO · COGNITIVO_00 · LIBRO
+
+## MESO [N1]
+# Clase: nivel de lectura · Corpus / Cognitivo
+# Nivel intermedio entre MACRO (principios) y MICRO (módulos).
+# "Este MESO 02 fija el régimen de decisión: cómo se pasa de
+# comprender a emitir sin violar la soberanía."
+# Ver: MACRO · MICRO · COGNITIVO_01 · COGNITIVO_02
+
+## MICRO [N1]
+# Clase: nivel de lectura · Corpus / Cognitivo
+# Nivel de especificación técnica concreta de cada módulo.
+# "MICRO components integran nuevo material"
+# MICRO_ARCHITECTURE/: documentos de especificación micro del corpus.
+# Ver: MACRO · MESO · COGNITIVO · MICRO_ARCHITECTURE
+
+# ══════════════════════════════════════════════════════════════════
+# N2 — MÓDULOS Y MECANISMOS OPERATIVOS
+# ══════════════════════════════════════════════════════════════════
+
+## MU [N2]
+# Clase: estado · Tríada MU–KU–WU · Nivel: constitucional
+# Vacuidad operativa. Laboratorio de potencialidad.
+# "MU: espacio donde lo no resuelto se guarda sin emitir."
+# "Memoria del vacío: no es olvido, es contención."
+# [mu-store]: implementación técnica de MU como almacenamiento.
+# MU-STORE: base de datos local de persistencia soberana.
+# Ver: KU · WU · SAMU · MU-STORE
+
+## MCP [N2]
+# Clase: protocolo · Integración agéntica · Nivel: Capa B
+# Model Context Protocol. Desacopla el modelo del contexto del host.
+# "LACHO utiliza MCP para desacoplar 'Pensamiento' (Modelo) del
+# 'Contexto' (Host/Herramientas)."
+# "Conectar agentes con herramientas como Terraform o Kubernetes."
+# Jerarquía de Skills MCP: Percepción (Ku) → Hipótesis (Samu)
+# → Acción (Trust) → Validación (Wu).
+# Ver: AGENCIAMIENTO_ARTIFICIAL · CLAUDE · KUBERNETES · KU
+
+## MANAGEMENT [[management]] [N2]
+# Clase: componente · Biblioteca: TRUST
+# Gobernanza, identidad y políticas de seguridad del sistema.
+# [management]: "El Cerebro Político" — toma decisiones de alto nivel.
+# nota: el MATE LARGO es [management] en su máxima expresión.
+# Escala: ACTOR_HOSTILE desde antesala → [management].
+# Ver: TRUST · COMMAND · JEFATURAS · MATE_LARGO
+
+## MASKING [{masking}] [N2]
+# Clase: sujeto canónico · Biblioteca: SOCIAL
+# El enmascaramiento protector del sistema.
+# "{MASKING} — EL ENMASCARAMIENTO PROTECTOR"
+# Oculta, poda ontológicamente, aplica GREEN-KNOWLEDGE.
+# mate_fuerte_frío :: {masking} activo + H29 activo
+# Ver: SOCIAL · GREEN-KNOWLEDGE · H23 · PODA
+
+## MATE_LARGO [N2]
+# Clase: protocolo · H29 · Sistema de espera sostenida
+# El mate largo como metáfora de procesamiento gradual sostenido.
+# "tap & drip → H29 (Lo Abismal, El Agua) — El mate largo"
+# "nota: el MATE LARGO es [management] en su máxima expresión"
+# Combinación: MATE LARGO = H29 + H48 + H5 + H39
+# Ver: DRIP · H29 · MANAGEMENT · TAP
+
+## METAL [N2]
+# Clase: símbolo · $thu · WORK físico
+# El metal como elemento del día $thu y de la capa WORK.
+# "METAL": "◈" — corta, delimita.
+# "WORK como contacto con metal: hardware, actuadores, freno físico."
+# "EL METAL Y EL AGUA NO PENETRAN IGUAL. $thu es el metal
+# que define el canal."
+# Ver: WORK · $thu · GRADIENT · BALLPAPER
+
+## MONITOR [N2]
+# Clase: operación · Sistema de vigilancia
+# Vigilancia continua de recursos o condiciones del sistema.
+# MONITOR ram_usage: monitoreo de RAM soberano.
+# "MONITOR: vigilancia continua de PREDATOR_LATENT."
+# monitor_swap.sh: script de alerta de latencia de swap.
+# Ver: ALARM · ALERTA · RAM · CAT(SCAN)
+
+## MOTOR [N2]
+# Clase: concepto · Sistema SAMU / Cognitivo
+# Motor de decisión o de coherencia del sistema.
+# "MOTOR .CAT Y DIRIMENCIA: OPERADORES COMO JUECES DE REALIDAD"
+# "LA CONSTITUCIÓN COMO MOTOR DE COHERENCIA"
+# MOTOR ALGEBRAICO: ecuación de estado Ψ.
+# Ver: DIRIMENCIA · Ψ · ALGEBRAICO · SAMU
+
+## MAIL [wu-mail] [N2]
+# Clase: protocolo · WU · Sistema de salida
+# Protocolo de salida de conocimiento procesado del sistema.
+# "[wu-mail]: La manifestación de la sabiduría compartida. Es el
+# protocolo de salida donde Work++ fluye con mínima resistencia."
+# [wu-mail][mu-store][ku-chat]: tríada de interfaces MU/KU/WU.
+# Ver: WU · MU-STORE · KU · TRUST
+
+# ══════════════════════════════════════════════════════════════════
+# N3 — ACTORES, ESTADOS Y CLASIFICACIONES
+# ══════════════════════════════════════════════════════════════════
+
+## MEMECOINS [N3]
+# Clase: referencia · Dominio económico · KALIL
+# Caso de uso de práctica del sistema KALIL.
+# PRACTICE-MEMECOINS-V2.txt: documento de práctica soberana.
+# MEMECOINS/VOLATILIDAD: dominio de análisis en el sistema.
+# Ver: KALIL · BOLIVAR · PRACTICE · CRYPTO
+
+# ══════════════════════════════════════════════════════════════════
+# N4 — HERRAMIENTAS, DOCUMENTOS Y REFERENCIAS
+# ══════════════════════════════════════════════════════════════════
+
+## MAIN [N4]
+# Clase: módulo · IMV/main.py · Orquestador
+# Orquestador principal del sistema IMV.
+# Comandos: python3 main.py --stats · --asks · --notaria
+# Ver: IMV · CLI · AUTORESEARCH · SCHEDULER
+
+# ─────────────────────────────────────────────────────────────────
+# [term] :: activo · M.index.lacho · DIRIME/IMV · $sat 21-03-2026

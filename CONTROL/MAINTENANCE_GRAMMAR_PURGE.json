@@ -1,0 +1,10 @@
+{
+  "ENTITY": "MAINTENANCE_GRAMMAR_PURGE",
+  "MAPPING_LEVEL": "L2_LEXICAL_CLEANUP",
+  "DATA_STRUCTURE": {
+    "TARGET": "MAINTENANCE/final_priority_corrections.py",
+    "DEPRECATION": "Term: 'Creativity'",
+    "REPLACEMENT": "Term: 'Activity'",
+    "VALIDATION_LOGIC": "Strict_Sovereign_Verbs (METHOD, SOCIAL, STACKING, WORK)"
+  }
+}

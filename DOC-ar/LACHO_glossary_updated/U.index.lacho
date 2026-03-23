@@ -1,0 +1,68 @@
+# U.index.lacho
+# GLOSSARY — Letra U / u
+# DIRIME · IMV · Sistema LACHO
+# [term] :: activo
+# Revisado y auditado: $sat 21-03-2026
+# ─────────────────────────────────────────────────────────────────
+
+# ══════════════════════════════════════════════════════════════════
+# N1 — FUNDAMENTOS DEL LENGUAJE
+# ══════════════════════════════════════════════════════════════════
+
+## UNDERSCORE [N1]
+# Clase: token · Gramática ANTLR
+# Carácter de subrayado en la gramática LACHO.
+# UNDERSCORE ::= "_"
+# IDENTIFIER ::= ALPHA (ALPHA_NUM | UNDERSCORE | DASH)*
+# Ver: IDENTIFIER · ALPHA · DASH · BNF
+
+## UNICODE [N1]
+# Clase: sistema · Nivel: fundacional
+# Sistema de codificación universal del sistema LACHO.
+# "Definir fuentes UNICODE configurables y programables."
+# Los programas UNICODE de LACHO (UNICODE_*.txt) definen
+# el vocabulario soberano en tres idiomas ES/EN/CJK.
+# assign_unicode_token(): función de ballpaper.py.
+# Ver: CJK · BALLPAPER · IME · SLANG
+
+# ══════════════════════════════════════════════════════════════════
+# N2 — MÓDULOS Y MECANISMOS OPERATIVOS
+# ══════════════════════════════════════════════════════════════════
+
+## UF (Unidad Funcional) [N2]
+# Clase: componente · Sistema hexagramas · Biblioteca: ACTIVITY
+# Las 64 Unidades Funcionales que mapean los hexagramas del I Ching
+# a estados operativos del sistema LACHO.
+# "UF[H##]: puedes crear nuevos, pero cada ciclo debe cerrar por [term]."
+# UF_H52, UF_H57, UF_H51: las más activas en el sistema actual.
+# Ver: HEXAGRAMA · ACTIVITY · STACKING · [term]
+
+## UMBRAL_CALIENTE_S [N2]
+# Clase: constante · Sistema Scalar S · foundation.py
+# Umbral de apertura plena del sistema soberano.
+# UMBRAL_CALIENTE_S = 0.85
+# all(s >= UMBRAL_CALIENTE_S for s in S_historial[-3:])
+# Cuando S ≥ 0.85 durante 3 ciclos: sistema en APERTURA_PLENA.
+# Ver: SCALAR_S · APERTURA_PLENA · FOUNDATION · WHEN_NOW
+
+## USDT [N2]
+# Clase: referencia · Dominio económico · CARILO
+# Tether USD. Activo de referencia en el nodo exterior de CARILO.
+# "CARILO :: exterior=loans USDT · interior=loans e-CNY tasa PBOC"
+# Activos: USDT · ETH · DeFi tokens · redes públicas blockchain.
+# Ver: CARILO · KALIL · CNY · CRYPTO
+
+# ══════════════════════════════════════════════════════════════════
+# N3 — ACTORES, ESTADOS Y CLASIFICACIONES
+# ══════════════════════════════════════════════════════════════════
+
+## UNIVERSO [N3]
+# Clase: dominio · Sistema LACHO
+# Cada biblioteca de LACHO opera en su universo propio.
+# "EL ORDENAMIENTO ESTRICTO DEL UNIVERSO" — mapeo soberano.
+# "MAPA DEL SOFISMO EN EL UNIVERSO LACHO"
+# Los universos: Trust · Social · Crypto · SAMU · Stacking.
+# Ver: BIBLIOTECA · DOMINIO · SCOPE · JURISDICCIONES
+
+# ─────────────────────────────────────────────────────────────────
+# [term] :: activo · U.index.lacho · DIRIME/IMV · $sat 21-03-2026

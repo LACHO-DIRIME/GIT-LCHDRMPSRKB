@@ -1,0 +1,108 @@
+# E.index.lacho
+# GLOSSARY — Letra E / e
+# DIRIME · IMV · Sistema LACHO
+# [term] :: activo · [seal of secrecy] :: activo
+# Revisado y auditado: $sat 21-03-2026
+# ─────────────────────────────────────────────────────────────────
+
+# ══════════════════════════════════════════════════════════════════
+# N1 — FUNDAMENTOS DEL LENGUAJE
+# ══════════════════════════════════════════════════════════════════
+
+## EBNF [N1]
+# Clase: notación · Gramática formal LACHO
+# Extended Backus-Naur Form. La EBNF propia del sistema extiende
+# la BNF estándar con operadores soberanos de LACHO.
+# ;;; — Notación BNF extendida (EBNF) propia del sistema
+# Ver: BNF · ANTLR · AST
+
+## ELSE [N1]
+# Clase: token SQL · ledger.py
+# Operador condicional en las consultas SQL de sovereign.db.
+# THEN 1 ELSE 0 END: patrón canónico en consultas de validación.
+# Ver: ledger.py · sovereign.db · SQL
+
+## ENTRYPOINT [N1]
+# Clase: punto de entrada · Sistema LACHO
+# Punto de inicio declarado del sistema o de un módulo.
+# # ENTRYPOINT — DEFAULT INSTALLATION
+# [RAG: RITMO_CAT :: ENTRYPOINT :: default]
+# El entrypoint define el primer estado soberano al arrancar.
+
+## ENUMERABLE [N1]
+# Clase: tipo · Gramática LACHO
+# Tipo de dato enumerable en el sistema de tipos LACHO.
+# Usado para clasificaciones cerradas: bibliotecas, estados, actores.
+# Ver: BOOLEAN · DATA · COMMAND
+
+# ══════════════════════════════════════════════════════════════════
+# N2 — MÓDULOS Y MECANISMOS OPERATIVOS
+# ══════════════════════════════════════════════════════════════════
+
+## ELPULSAR [N2]
+# Clase: módulo · Nivel: 2 · scalar_min: 0.85 · Capa B
+# Módulo de procesamiento agéntico y dashboard visual del sistema.
+# "ELPULSAR: procesamiento agéntico · dashboard"
+# "ELPULSAR": {"level": 2, "scalar_min": 0.85, "class": "modulo"}
+# Incluye: API REST (5 endpoints NOTARIA) · GUI Builder · CIDE.
+# Ruta: DIRIME_v2/elpulsar/elpulsar.py · port 8742.
+# Ver: CIDE · BUILDER · NOTARIA · API
+
+## ESTADO [N2]
+# Clase: concepto · Nivel: nuclear
+# Condición verificable del sistema en un momento dado.
+# En LACHO, el estado es local y declarado — nunca implícito.
+# Formato canónico: [ESTADO]: NOMBRE_ESTADO
+# Ejemplos: [ESTADO]: OPERATIVO · NEURAL_SYNC_ACTIVE · COMPLETO_VERIFICADO
+# El estado mapea a uno de los 64 hexagramas.
+
+## EXPORT [N2]
+# Clase: operación · Sistema NOTARIA / CAT
+# Exportación de datos soberanos desde el sistema.
+# /api/notaria/export: endpoint de exportación de actos notariales.
+# CAT(EXPORT): módulo de exportación entre nodos (Capa D).
+# Ver: NOTARIA · CAT · IMPORT · BKP
+
+## EVENT_CRITICAL [N2]
+# Clase: evento · Sistema de alertas
+# Evento que supera el umbral crítico y activa protocolo de emergencia.
+# DRIP_ALERT ante EVENT_CRITICAL de seguridad.
+# FOUNDATION_COMPROMISED + EVENT_CRITICAL: emergencia soberana.
+# Ver: DRIP_ALERT · ALARM · CRISIS_MANAGEMENT · FOUNDATION_COMPROMISED
+
+## ENGINE [N2]
+# Clase: subsistema · DRA · Nivel: Capa B
+# Motor de procesamiento dentro del Dynamic Resource Allocation.
+# DRA/ENGINE/: contiene CLUSTER(DATA_COMPUTING) · OFFSET(BLUEWORDS)
+# SEGMENT(SAMU) · SLICE(LACHO) · TOMO(A) · TOMO(B)
+# Ver: DRA · CLUSTER · DATA_COMPUTING · SEGMENT
+
+# ══════════════════════════════════════════════════════════════════
+# N3 — ACTORES, ESTADOS Y CLASIFICACIONES
+# ══════════════════════════════════════════════════════════════════
+
+## ESTABLE [N3]
+# Clase: estado · Corpus / Sistema
+# Estado de un documento o módulo que no requiere modificación.
+# En el CORPUS_INDEX: columna ESTABLE vs NUEVO vs EN_PROGRESO.
+# Capa A: ESTABLE — no modificar sin tests.
+
+## EXECUTE [N3]
+# Clase: verbo imperativo · Sistema TRUST
+# Orden de ejecución directa emitida por el TRUST.
+# COMMAND_EXECUTE: variante formalizada de EXECUTE.
+# Ver: COMMAND · ACTIVATE · ACTUAR
+
+# ══════════════════════════════════════════════════════════════════
+# N4 — HERRAMIENTAS, DOCUMENTOS Y REFERENCIAS
+# ══════════════════════════════════════════════════════════════════
+
+## ESPERA (H5) [N4]
+# Clase: hexagrama · H05 · 需 Xū · Biblioteca: GATE
+# La Espera soberana. No es inactividad: es confianza en el momento.
+# GATE UF[H05] =><= .. espera .. deliberacion_soberana
+# COMMAND_DEFER aplica H5: orden con latencia deliberada.
+# Ver: H05 · GATE · COMMAND_DEFER · TARDANZA_DELIBERADA
+
+# ─────────────────────────────────────────────────────────────────
+# [term] :: activo · E.index.lacho · DIRIME/IMV · $sat 21-03-2026

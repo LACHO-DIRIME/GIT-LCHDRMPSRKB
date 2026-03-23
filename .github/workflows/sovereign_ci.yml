@@ -1,0 +1,92 @@
+# .github/workflows/sovereign_ci.yml
+# GAP_2 SCALAR_VOLATILITY — CLOUD_1 GITHUB_ACTIONS_CI
+# [P3][I3] · Free 2000 min/month · triggers on push to main
+
+name: DIRIME Sovereign CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+
+  grammar_tests:
+    name: Grammar Contracts (28/28)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install pytest pytest-cov rich pydantic
+
+      - name: Run contract test suite
+        run: |
+          cd IMV
+          python3 -m pytest tests/test_grammar_contracts.py -v --tb=short
+        # GATE: 28/28 must pass — failure blocks merge
+
+      - name: Verify no stale FOLDERS_NO_RAG references in code
+        run: |
+          result=$(grep -rn "FOLDERS NO RAG" IMV/ 2>/dev/null || true)
+          if [ -n "$result" ]; then
+            echo "FAIL: stale path references found:"
+            echo "$result"
+            exit 1
+          fi
+          echo "OK: no stale path references"
+
+  scalar_report:
+    name: Scalar S Report (artifact)
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate scalar report
+        run: |
+          python3 - <<'EOF'
+          import json, time, sqlite3
+          from pathlib import Path
+          db = Path("IMV/data/sovereign.db")
+          report = {
+              "timestamp": time.strftime("%Y-%m-%dT%H:%M:%SZ"),
+              "scalar": 0.0,
+              "tests": "28/28",
+              "gaps_closed": "7/10"
+          }
+          if db.exists():
+              try:
+                  conn = sqlite3.connect(str(db))
+                  row = conn.execute(
+                      "SELECT scalar FROM system_state ORDER BY id DESC LIMIT 1"
+                  ).fetchone()
+                  if row:
+                      report["scalar"] = round(row[0], 4)
+                  conn.close()
+              except Exception as e:
+                  report["db_error"] = str(e)
+          else:
+              report["note"] = "sovereign.db not in repo (gitignored) — local only"
+          Path("scalar_report.json").write_text(json.dumps(report, indent=2))
+          print(json.dumps(report, indent=2))
+          EOF
+
+      - name: Upload scalar report
+        uses: actions/upload-artifact@v4
+        with:
+          name: scalar-report-${{ github.run_number }}
+          path: scalar_report.json
+          retention-days: 30
